@@ -1,0 +1,103 @@
+#!/bin/bash
+
+# In case someone's running the script after unpacking the installer...
+if [ "x$BASH_VERSION" = "x" ]; then
+    echo "re-run using bash"
+    exit 1
+fi
+
+. ./VERSION
+
+PRODUCT="${*: -1}"
+# ensure we are only using some known products
+if [[ $PRODUCT != "wp2" && $PRODUCT != "dnsonly" ]]; then
+  PRODUCT="cpanel"
+fi
+LOGO="installlogo"
+if [ -e "/var/cpanel/disable_cpanel_terminal_colors" ]; then
+    LOGO="${LOGO}-bw"
+fi
+if [ -e "${LOGO}.${PRODUCT}" ]; then
+  LOGO="${LOGO}.${PRODUCT}"
+fi
+
+[ -e $LOGO ] && cat $LOGO
+
+cat <<EOF
+  Installer Version $INSTALLER_VERSION r$REVISION
+
+EOF
+
+CWD=`pwd`
+
+# Ensure Perl is available
+if [ ! -e "/usr/bin/perl" -a -e "/usr/local/bin/perl" ]; then
+    echo "Linking /usr/local/bin/perl to /usr/bin/perl"
+    ln -s /usr/local/bin/perl /usr/bin/perl
+fi
+
+# Ensure the fastest mirror plugin
+# is setup right away so we do not stall when
+# we install perl
+#
+#  We used to support 512MB of ram which caused a problem with a high
+#  maxthreads (FB-51412), however this is no longer an issue
+#  https://documentation.cpanel.net/display/78Docs/Installation+Guide+-+System+Requirements
+#
+if [ -e /etc/debian_version ]; then
+  IS_UBUNTU=1
+  export DEBIAN_FRONTEND=noninteractive
+fi
+
+if [ ! $IS_UBUNTU ]; then
+  if [ -e "/etc/yum/pluginconf.d/fastestmirror.conf" ] && ! grep -q '#cpanel modified' /etc/yum/pluginconf.d/fastestmirror.conf ; then
+    echo -e "\n#cpanel modified\nsocket_timeout=2\nmaxthreads=65\n" >> /etc/yum/pluginconf.d/fastestmirror.conf
+  fi
+  yum clean all
+fi
+
+PACKAGES=""
+
+if [ ! -e /usr/bin/perl ]; then
+    PACKAGES="perl"
+fi
+
+if [ ! -e /usr/sbin/ip ]; then
+    if [ $IS_UBUNTU ]; then
+      PACKAGES="$PACKAGES iproute2"
+    else
+      PACKAGES="$PACKAGES iproute"
+    fi
+fi
+
+if [ "$PACKAGES" != "" ]; then
+    echo "Installing $PACKAGES ..."
+    if [ $IS_UBUNTU ]; then
+      apt -y install $PACKAGES
+    else
+      yum update -y rpm yum
+      yum -y install $PACKAGES
+    fi
+fi
+
+if [ ! -e "/usr/bin/perl" ]; then
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo "Fatal! Perl must be installed before proceeding!"
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    exit 1
+fi
+
+# Ensure perl version >= 5.10.0
+PERLGOOD=`/usr/bin/perl -e 'if(\$] < 5.010){print "no"}else{print "yes"}'`
+if [ $PERLGOOD != "yes" ]; then
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo "perl 5.10.0 or greater is required at perl for installation"
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    exit 1
+fi
+
+echo "Beginning main installation."
+exec ./install $*
+
+# We now know Perl 5.10 is available. Run perl.
+# NO OTHER checks should be in this file unless install cannot physically handle the check.

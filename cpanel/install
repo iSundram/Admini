@@ -1,0 +1,169 @@
+#!/usr/bin/perl
+
+# cpanel - installd/install                        Copyright 2021 cPanel, L.L.C.
+#                                                           All rights reserved.
+# copyright@cpanel.net                                         http://cpanel.net
+# This code is subject to the cPanel license. Unauthorized copying is prohibited
+
+package installd::install;
+
+use strict;
+use warnings;
+use FindBin;
+
+use Cwd          ();
+use Getopt::Long ();
+
+use lib $FindBin::Bin;
+use Common ();
+use CpanelLogger;    # need imports!
+
+use Installer ();
+
+my $background_pre_sysup_pid;
+
+exit run(@ARGV) unless caller;
+
+sub run {
+    my (@args) = @_;
+    my $ret = eval { script(@args) };
+    if ( !defined $ret || $@ ) {
+        chomp $@;
+        print STDERR $@ if $@;
+        return 1;
+    }
+    return $ret;
+}
+
+sub script {
+    my (@args) = @_;
+
+    my $installer = Installer->new;
+    $installer->setup(@args);
+
+    # Determine local distro and version. Fail if unsupported.
+    $installer->check_system_support();
+
+    # Do the clean install check pause right after
+    # network manager so they see the warning since
+    # this will pause for 5 seconds
+    $installer->check_networking_scripts();
+    $installer->clean_install_check();
+
+    # Bootstrap checks.
+    INFO("Running health checks prior to start.");
+    $installer->check_system_files();
+    $installer->setup_and_check_resolv_conf;
+
+    $installer->ensure_pkgs_installed;
+
+    # Remove rpms and stop unneeded services. This must happen before there are parallel executions of yum/rpm
+    # because rpm from 4.12.0-alpha-90 does not wait for transaction lock when stdin is not a tty
+    # (it errors and dies instead). My CentOS 8 VM has rpm 4.14.2. We could work around this with fcntl, but
+    # that syscall is complicated to use in this bootstrap environment.
+    $installer->remove_distro_software;
+
+    # lts_version also bootstraps our version info.
+    # Install base distro required RPMS and setup YUM
+    my $lts          = $installer->lts_version;
+    my $product_name = $installer->product_name;
+    INFO("Installing $product_name major version $lts.");
+    $installer->do_initial_clock_update;
+    $installer->start_nscd;
+
+    # Look for conditions that require tier manipulation or require us to block the install.
+    $installer->check_for_install_version_blockers;
+
+    # bootstrap the cPanel perl ecosystem in a background process.
+    my $bootstrap_cpanel_perl_pid = $installer->run_in_background( sub { $installer->bootstrap_cpanel_perl } );
+
+    # We don't allow this to run in parallel on systems that exit if an installer lock exists.
+    if ( $installer->distro_type eq 'debian' || $installer->distro_major >= 8 ) {
+        wait_for_cpanel_perl_to_finish($bootstrap_cpanel_perl_pid);
+        undef $bootstrap_cpanel_perl_pid;
+    }
+
+    $installer->pre_checks_while_waiting_for_fix_cpanel_perl;
+
+    # Start background rpm download only after disable_software since it does rpm -e
+    $background_pre_sysup_pid = $installer->background_download_packages_used_during_initial_install;
+
+    wait_for_cpanel_perl_to_finish($bootstrap_cpanel_perl_pid);
+
+    # Install cPanel files.
+    INFO('Installing /usr/local/cpanel files...');
+    DEBUG( "HTTPUPDATE is set to " . CpanelConfig::source() );
+
+    if ( $installer->stop_at_update_now ) {
+        waitpid( $background_pre_sysup_pid, 0 );
+        DEBUG("") for ( 1 .. 5 );
+        DEBUG("The system is in dry run mode (--stop_at_update_now). It would normally");
+        DEBUG("run updatenow and cpanel_initial_install at this point.");
+        DEBUG(" If you're reaching this point, then the latest script has succeeded!");
+        return 0;
+    }
+
+    # Install cpanel files and directories. TERMINATE if failure.
+    $installer->updatenow;
+
+    if ( $installer->stop_after_update_now ) {
+        waitpid( $background_pre_sysup_pid, 0 );
+        DEBUG("") for ( 1 .. 5 );
+        DEBUG("The system is in dry run mode (--stop_after_update_now). It would normally");
+        DEBUG("run cpanel_initial_install at this point.");
+        DEBUG(" If you're reaching this point, then the latest script has succeeded!");
+        return 0;
+    }
+
+    # We used to wait for yum to finish here but
+    # that just blocked the installer from downloading
+    # rpms so we do the waitpid after
+
+    chmod( 0700, '/usr/local/cpanel/scripts/cpanel_initial_install' );
+
+    system( '/usr/local/cpanel/scripts/cpanel_initial_install', '--skipapache', $installer->skip_apache, '--skipreposetup', $installer->skip_repo_setup, '--installstart', $installer->install_start );
+
+    if ( $? >> 8 != 0 ) {
+        kill 'TERM', $background_pre_sysup_pid if $background_pre_sysup_pid;
+        FATAL('The system failed to run the /usr/local/cpanel/scripts/cpanel_initial_install script.');
+
+        return 1;
+    }
+
+    # Cleanup before exiting
+    waitpid( $background_pre_sysup_pid, 0 );
+
+    # Should we worry about this flag being set by something other than cpanel? The 'bad' side of using standard files...
+    if ( $installer->is_wp2 ) {
+        undef $installer;    # reap the object explicitly, so that its DESTROY block runs, and cleans up properly
+                             # We only need to do this here, cause we'll possibly reboot in the next check.
+        _system_reboot() if -e "/run/reboot-required";
+    }
+
+    return 0;
+}
+
+sub _system_reboot {
+
+    # Cpanel::Install::Utils::Command::ssystem() will error
+    # due to writing to a closed log file, so we call
+    # system directly
+    DEBUG("Performing system reboot as the last step");
+    system "systemctl reboot";
+}
+
+sub wait_for_cpanel_perl_to_finish {
+    my ($pid) = @_;
+    return unless $pid;    # Skip if it has cleared.
+
+    local $?;
+    waitpid( $pid, 0 );
+    if ( $? != 0 ) {
+        kill 'TERM', $background_pre_sysup_pid if $background_pre_sysup_pid;
+        FATAL("Bootstrapping cPanel Perl failed: $?");
+    }
+
+    return;
+}
+
+1;
