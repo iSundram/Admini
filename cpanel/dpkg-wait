@@ -1,0 +1,64 @@
+#!/usr/bin/perl
+# cpanel - installd/apt-get-wait                   Copyright 2021 cPanel, L.L.C.
+#                                                           All rights reserved.
+# copyright@cpanel.net                                         http://cpanel.net
+# This code is subject to the cPanel license. Unauthorized copying is prohibited
+
+use strict;
+use warnings;
+
+use File::FcntlLock;
+
+# Define our locks, assume all are locked to start
+my %lock_files = (
+    '/var/lib/dpkg/lock'           => 1,
+    '/var/lib/dpkg/lock-frontend'  => 1,
+    '/var/cache/apt/archives/lock' => 1,
+    '/var/lib/apt/lists/'          => 1
+);
+
+my $args = join( " ", @ARGV );
+my $cmd  = $0;
+$cmd =~ s/^(?:.+\/)?(.+)\-wait$/$1/;
+
+my $clear = 0;
+
+until ($clear) {
+
+    foreach my $path ( keys %lock_files ) {
+        my $fs = File::FcntlLock->new();
+        open my $fh, '<', $path or die "Can't open file: $!\n";
+
+        if ( !$fs->lock( $fh, F_SETLK ) ) {
+            close($fh) or die "can't close $path: $!";
+            $lock_files{$path} = 1;
+
+            # Locking failed: File or segment already locked by other process(es)
+            # wait a tenth of a second and try again
+            select( undef, undef, undef, .10 );
+        }
+        else {
+            $fs->l_type(F_UNLCK);
+            $fs->lock( $fh, F_SETLK ) or print "Unlocking failed: " . $fs->error . "\n";
+            close($fh)                or print "can't close $path: $! !!!\n";
+            $lock_files{$path} = 0;
+        }
+    }
+
+    # If either path is locked, set all paths to locked and start over
+    foreach my $locked ( values %lock_files ) {
+        if ( $locked == 1 ) {
+            foreach my $lock_file_path ( keys %lock_files ) {
+                $lock_files{$lock_file_path} = 1;
+            }
+            $clear = 0;
+            last;
+        }
+        else {
+            $clear = 1;
+        }
+    }
+}
+
+exec "$cmd $args";
+
