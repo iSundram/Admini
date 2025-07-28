@@ -1,0 +1,2 @@
+/cpanel/scripts/fix-cpanel-perl.xz
+/cpanel/scripts/updatenow.static.bz2
