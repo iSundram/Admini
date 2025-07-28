@@ -1,0 +1,35 @@
+2025-07-28 03:49:54,419 - INFO - Starting cPanel installation setup...
+2025-07-28 03:49:54,419 - INFO - Target version: 11.128.0.15
+2025-07-28 03:49:54,419 - INFO - Update source: httpupdate.cpanel.net/cpanelsync/
+2025-07-28 03:49:54,431 - INFO - Successfully extracted cpanel.zip to /home/runner/work/Admini/Admini/cpanel_extracted
+2025-07-28 03:49:54,431 - INFO - Created directory: /usr/local/cpanel/scripts
+2025-07-28 03:49:54,431 - INFO - Created directory: /usr/local/cpanel/bin
+2025-07-28 03:49:54,431 - INFO - Created directory: /usr/local/cpanel/3rdparty/bin
+2025-07-28 03:49:54,431 - WARNING - Permission denied creating /var/cpanel, trying with sudo
+2025-07-28 03:49:54,447 - INFO - Created directory with sudo: /var/cpanel
+2025-07-28 03:49:54,447 - INFO - Created directory: /etc
+2025-07-28 03:49:54,448 - ERROR - Failed to create config file /etc/cpupdate.conf: [Errno 13] Permission denied: '/etc/cpupdate.conf.tmp'
+2025-07-28 03:50:20,635 - INFO - Starting cPanel installation setup...
+2025-07-28 03:50:20,635 - INFO - Target version: 11.128.0.15
+2025-07-28 03:50:20,635 - INFO - Update source: httpupdate.cpanel.net/cpanelsync/
+2025-07-28 03:50:20,648 - INFO - Successfully extracted cpanel.zip to /home/runner/work/Admini/Admini/cpanel_extracted
+2025-07-28 03:50:20,648 - INFO - Created directory: /usr/local/cpanel/scripts
+2025-07-28 03:50:20,649 - INFO - Created directory: /usr/local/cpanel/bin
+2025-07-28 03:50:20,649 - INFO - Created directory: /usr/local/cpanel/3rdparty/bin
+2025-07-28 03:50:20,649 - INFO - Created directory: /var/cpanel
+2025-07-28 03:50:20,649 - INFO - Created directory: /etc
+2025-07-28 03:50:20,673 - INFO - Created config file with sudo: /etc/cpupdate.conf
+2025-07-28 03:50:20,695 - INFO - Created config file with sudo: /etc/cpsources.conf
+2025-07-28 03:50:20,712 - INFO - Copied with sudo updatenow.static to /usr/local/cpanel/scripts/updatenow
+2025-07-28 03:50:20,727 - INFO - Copied with sudo install to /usr/local/cpanel/scripts/install
+2025-07-28 03:50:20,742 - INFO - Copied with sudo cpanel_initial_install to /usr/local/cpanel/scripts/cpanel_initial_install
+2025-07-28 03:50:20,749 - INFO - Copied with sudo Installer.pm to /usr/local/cpanel/Installer.pm
+2025-07-28 03:50:20,757 - INFO - Copied with sudo CpanelConfig.pm to /usr/local/cpanel/CpanelConfig.pm
+2025-07-28 03:50:20,765 - INFO - Copied with sudo Common.pm to /usr/local/cpanel/Common.pm
+2025-07-28 03:50:20,773 - INFO - Copied with sudo CpanelLogger.pm to /usr/local/cpanel/CpanelLogger.pm
+2025-07-28 03:50:20,780 - INFO - Copied with sudo VERSION to /usr/local/cpanel/VERSION
+2025-07-28 03:50:20,781 - INFO - Created update script: /home/runner/work/Admini/Admini/run_cpanel_update.sh
+2025-07-28 03:50:20,781 - INFO - cPanel installation setup completed successfully!
+2025-07-28 03:50:20,781 - INFO - Files installed to: /usr/local/cpanel
+2025-07-28 03:50:20,781 - INFO - Configuration files created in /etc/
+2025-07-28 03:50:20,781 - INFO - Run ./run_cpanel_update.sh to start the update process
