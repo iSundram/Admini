@@ -1,0 +1,4 @@
+/var/log/exim/mainlog /var/log/exim/processlog /var/log/exim/rejectlog /var/log/exim/paniclog {
+missingok
+sharedscripts
+}
