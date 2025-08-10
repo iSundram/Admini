@@ -1,0 +1,1 @@
+import{d as t,br as i,c as p,_ as d}from"../index.DtGSrwJ3.js";const s=t({name:"AppValidationProvider",props:{valid:{type:Boolean,default:!0}},setup(r,a){return i("dirtyWithErrors",p(()=>!r.valid)),()=>{var o,e;return((e=(o=a.slots).default)==null?void 0:e.call(o))||null}}}),l=d(s,[["__file","app-validation-provider.vue"]]);export{l as A};
