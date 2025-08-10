@@ -1,0 +1,1 @@
+import{a8 as s}from"../index.DtGSrwJ3.js";const e="/CMD_EDIT_USER_MESSAGE",r=s.get({id:"USER_MESSAGE",url:e,after:a=>a.mapProp("message",a.convert.toAppText)}),o=s.post({url:e,params:{save:!0},schema:{subject:s.REQUIRED_STRING,message:s.REQUIRED_STRING}}),E=s.post({url:e,params:{reset:!0}});export{r as g,E as r,o as u};
