@@ -1,0 +1,7698 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Persian (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Persian <https://translate.directadmin.com/projects/"
+"directadmin/internal/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d پیام جدید"
+msgstr[1] " - %d پیام‎ جدید"
+
+msgid " / Day"
+msgstr " / روز"
+
+msgid "# of Domains"
+msgstr "تعداد دامنه‌ها"
+
+msgid "# of IPs"
+msgstr "تعداد IP ها"
+
+msgid "# of MySQL DBs"
+msgstr "تعداد پایگاه‌های داده MySQL"
+
+msgid "# of Resellers"
+msgstr "تعداد نمایندگان"
+
+msgid "# of SubDomains"
+msgstr "تعداد زیر دامنه‌ها"
+
+msgid "# of Users"
+msgstr "تعداد حساب‌های کاربری"
+
+msgid "# of free IPs"
+msgstr "تعداد IP های آزاد"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d روز, %d ساعت و %d دقیقه"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "در حال حاضر %d از %d ادمین/نماینده وجود دارد."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "در حال حاضر %d از %d حساب کاربری وجود دارد."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "در حال حاضر %d از %d دامنه وجود دارد."
+
+#, c-format, fuzzy
+msgid "%d settings updated"
+msgstr "تنظیمات FTP ذخیره شد"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s وجود ندارد"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr "%s '%s' در '%s' قابل بازیابی نیست. تحت پیشفرض فایل: '%s' بازیابی می‌شود"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - آی‌پی فعلی کاربر %s"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr ""
+"%s پیام خوش آمد کاربر را ویرایش کنید تا مطمئن شوید عنوان و پیام فعال شده "
+"باشند."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "حساب %s با نام %s ایجاد شد"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s از قبل وجود دارد"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s از قبل بر روی سرور ریموت وجود دارد."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s از قبل بر روی سرور وجود دارد."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s از قبل وجود دارد. برای اعمال اجباری overwrite=yes را اضافه کنید"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s به شکل لینک نمایش داده می‌شود. لغو کردن."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s هم اکنون می‌تواند به اشتراک گذاشته شود."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s حاوی کاراکترهای خطرناک است"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr ""
+"%s نمی‌تواند اختصاص داده شود، ابتدا باید رایگان و اختصاص داده نشده باشد."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s نمی‌تواند آزاد باشد، در صورت اشتراک گذاری، ابتدا باید هیچ دامنه‌ای نداشته "
+"باشد، یا باید رزرو شود."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s قابل حذف نیست، ابتدا می‌بایست آن‌ را آزاد کنید."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s قابل اشتراک گذاری نیست، ابتدا باید آزاد باشد"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s با موفقیت حذف شد."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s وجود ندارد"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s مالکیت مانند %s ندارد"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s از لیست حذف شد"
+
+msgid "%s has been saved as %s."
+msgstr "%s بعنوان %s ذخیره شد."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s معلق شده است"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s از حالت تعلیق خارج شد"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s یک دایرکتوری است، قابلیت حذف ندارد"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s یک لینک است"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s یک لینک Symbolic یا سخت است"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s وجود ندارد"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s یک دایرکتوری نیست"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s یک سوکت نیست"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s symlink نیست"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s یک IP معتبر یا رِنج نیست"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s یک ip range معتبر نیست. از 1.2.3.4 - 10 استفاده کنید"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr "%s به %s تبدیل نمی‌شود که دلیل احتمالی ناموفق بودن اکسترکت شدن است"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s فعال نیست"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s در لیست IP دامنه شما نیست"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s یکی از انواع ریدایرکت لیست شده نیست"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s مالک %s نیست"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s به صورت \"رایگان\" تنظیم نشده است یا همچنان مخصوص ریسلر است"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s هم اکنون توسط %s کنترل می‌شود"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s هم اکنون آزاد است"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s اکنون واگذار نشده است."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s دامنه پیشفرض شما است."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s از رنج خارج است"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s برای %s مورد نیاز است"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s نباید یک symlink باشد"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s دیگر لیبل Name Server را ندارد."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s اجرا نشد"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "رکوردهای %s در این مرحله غیرفعال شده است"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s مقدار از %s در home_override_list نیست"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "فایل‌های کانفیگ %s پاک شده‌اند"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: خطای Istat در مقدار لینک \"%s\":%s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s:خطای readlink: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' نوع معتبر %s نیست"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%s اینجا کلیک کنید %s تا یاد بگیرید چگونه آن را فعال کنید"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%s روی اینجا کلیک کنید %s تا اطلاعات زون خام داخلی را مشاهده کنید"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' وجود ندارد"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' وجود ندارد\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' با '%s' شروع نمی‌شود\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' به '%s' تنظیم شده‌است"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' یک نام پکیج ممنوعه است."
+
+msgid "'%s' is disabled"
+msgstr "'%s' غیرفعال است"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' یک css hex color معتبر نیست"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' به اکانت ریسلر شما اختصاص داده نشده‌است."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' در لایسنس شما فعال نشده است"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' در سیستم شما فعال نشده‌است."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' موردنیاز است"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' باید '%s' یا '%s' باشد"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "به نظر نمی‌رسد که \"ایمپورت\" با base 64 کدگذاری شده باشد"
+
+msgid "'when' should be all, newer or older"
+msgstr "\"چه زمانی\" باید همگی یا جدیدتر یا قدیمی‌تر باشد"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) هاردلینک‌های زیر تحت کاربر %s یافت شده‌اند:"
+
+msgid "* irretrievable *"
+msgstr "* غیرقابل بازگشت *"
+
+msgid "*** Stopped ***"
+msgstr "*** متوقف شده***"
+
+msgid "-- None Available --"
+msgstr "-- موجود نیست --"
+
+msgid "-- Reason:"
+msgstr "-- دلیل:"
+
+msgid "-- Select IP"
+msgstr "-- انتخاب IP"
+
+msgid "-- Select Package"
+msgstr "-- انتخاب پکیج"
+
+msgid "-- any time --"
+msgstr "-- هر زمان --"
+
+msgid "-- anything --"
+msgstr "-- هر چیزی --"
+
+#, fuzzy
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "%s=%s نیازمند nginx_proxy=1 و %s Pro-Pack است"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "یک رکورد %s در حال حاضر با آن نام وجود دارد"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "یک IP \"آزاد\" فقط می‌تواند به 1 کاربر اختصاص یابد"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "یک نوع رکورد نیاز است: A, NS, MX, CNAME, PTR, یا TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "یک ریسلر نمی‌تواند سایر سطوح اکانت مشابه یا بالاتر را کنترل کند"
+
+msgid "A file is required"
+msgstr "یک فایل موردنیاز است"
+
+msgid "A forwarder already exists with that name"
+msgstr "یک فورواردر از قبل با آن نام وجود دارد"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "یک دامنه/زون کامل با این نام از قبل وجود دارد."
+
+msgid "A key with that name already exists"
+msgstr "یک کلید با این نام از قبل وجود دارد"
+
+#, fuzzy
+msgid "A key with that value already exists"
+msgstr "یک کلید با این نام از قبل وجود دارد"
+
+msgid "A list alias already exists with that name"
+msgstr "یک لیست نام مستعار از قبل با آن نام وجود دارد"
+
+msgid "A message for that user already exists"
+msgstr "یک پیام برای آن کاربر از قبل وجود دارد"
+
+msgid "A pop account already exists with that name"
+msgstr "یک اکانت pop با آن نام از قبل وجود دارد"
+
+msgid "A skin name is required"
+msgstr "یک نام پوسته موردنیاز است"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr ""
+"یک ساب‌دامین با همین نام در حال حاضر در سیستم تحت دامنه دیگری وجود دارد."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "محدودیت حافظه مطلق. قاتل خارج از حافظه را تحریک می‌کند."
+
+msgid "Abuse"
+msgstr "سوء استفاده"
+
+msgid "Access Hosts"
+msgstr "دسترسی به هاست‌ها"
+
+msgid "Access host has been added"
+msgstr "دسترسی هاست اضافه شده‌است"
+
+msgid "Access hosts have been removed"
+msgstr "دسترسی هاست پاک شده‌است"
+
+msgid "Account"
+msgstr "اکانت"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "اکانت %s هم اکنون %s%s از IP %s ایجاد کرده‌است"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "اکانت %s به دلیل تعلیق رد شد"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr ""
+"حساب %s توسط یک ادمین به حالت تعلیق درآمده است و شما فقط دسترسی ریسلر دارید."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "اکانت %s با دامنه %s دارای گواهی caroot خالی است"
+
+msgid "Account created"
+msgstr "اکانت ایجاد شده است"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "اکانت از BlockCracking رفع بلاک شده است"
+
+msgid "Account is not a Reseller"
+msgstr "اکانت، ریسلر نیست"
+
+msgid "Account is suspended"
+msgstr "اکانت ساسپند شده است"
+
+msgid "Account password changed"
+msgstr "رمزعبور اکانت تغییر پیدا کرد"
+
+#, fuzzy
+msgid "Account(s) Suspended"
+msgstr "اکانت ساسپند شده است"
+
+#, fuzzy
+msgid "Account(s) Unuspended"
+msgstr "اکانت ساسپند شده است"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "اکانت‌ها به پارتیشن %s بازیابی شدند."
+
+msgid "Action"
+msgstr "اجرا"
+
+msgid "Activate"
+msgstr "فعال کن"
+
+msgid "Active"
+msgstr "فعال"
+
+#, c-format
+msgid "Add %s"
+msgstr "افزودن %s"
+
+msgid "Add Host"
+msgstr "اضافه کردن هاست"
+
+msgid "Add Override"
+msgstr "اضافه کردن Override"
+
+msgid "Add the new NS records first."
+msgstr "ابتدا رکوردهای NS جدید را اضافه کنید."
+
+msgid "Add to Apache"
+msgstr "افزودن به آپاچی"
+
+msgid "Add to Clipboard"
+msgstr "افزودن به کلیپ‌برد"
+
+msgid "Add to DNS"
+msgstr "افزودن به DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "ns1 به عنوان %s و ns2 به عنوان %s اضافه شد"
+
+msgid "Additional"
+msgstr "اضافی"
+
+msgid "Admin"
+msgstr "ادمین"
+
+msgid "Admin SSL"
+msgstr "گواهینامه SSL ادمین"
+
+msgid "Admin SSL is not enabled"
+msgstr "Admin SSL فعال نیست"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "جستجوی پیشرفته"
+
+msgid "Afternoon"
+msgstr "بعد از ظهر"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "نام مستعار %s@%s -> %s ایجاد شده است"
+
+msgid "All"
+msgstr "همگی"
+
+msgid "All Data"
+msgstr "تمامی داده‌ها"
+
+msgid "All E-Mail"
+msgstr "تمامی ایمیل‌ها"
+
+msgid "All Months (cgi)"
+msgstr "تمامی ماه‌ها (cgi)"
+
+msgid "All Resellers"
+msgstr "تمامی ریسلرها"
+
+msgid "All Users"
+msgstr "تمامی کاربران"
+
+msgid "All Users Except Selected Users"
+msgstr "تمامی کاربران به جز کاربران انتخاب شده"
+
+msgid "All Users Except:"
+msgstr "تمامی کاربران به جز:"
+
+msgid "All of Your Users"
+msgstr "تمامی کاربران شما"
+
+msgid "All privileges have been set"
+msgstr "تمام امتیازات تعیین شده‌است"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "همه مراحل مسیر به جز آخرین مرحله باید دارای یک \"مطابقت\" باشند"
+
+msgid "All selected Users have been suspended"
+msgstr "همه کاربران انتخاب شده به حالت تعلیق درآمده‌اند"
+
+msgid "All selected Users have been unsuspended"
+msgstr "همه کاربران انتخاب شده لغو تعلیق شده‌اند"
+
+msgid "All specified forwarders removed"
+msgstr "همه فورواردهای مشخص شده حذف شدند"
+
+msgid "Allocated"
+msgstr "تخصیص یافته"
+
+msgid "Allow"
+msgstr "اجازه بده"
+
+msgid "Allow Overselling"
+msgstr "مجاز بودن Overselling"
+
+#, fuzzy
+msgid "Allowance threshold is 0%"
+msgstr "آستانه مجوز %%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "اجازه دادن به این مقدار %s شما را از حد %s خود فراتر می‌برد"
+
+msgid "Alpha"
+msgstr "آلفا"
+
+msgid "Already Exists"
+msgstr "درحال حاضر وجود دارد"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"اگرچه یک خطای بک‌آپ گیری رخ داده است، بارگذاری نسخه‌های بک‌آپ معتبر همچنان "
+"انجام می‌شد"
+
+msgid "An Error Occurred"
+msgstr "یک خطا رخ داده است"
+
+msgid "An Error has occurred"
+msgstr "یک خطا رخ داده است"
+
+msgid "An auto responder already exists with that name"
+msgstr "یک auto responder از قبل با آن نام وجود دارد"
+
+msgid "An autoresponder with that name already exists"
+msgstr "یک پاسخگوی خودکار از قبل با آن نام وجود دارد"
+
+msgid "An error has occurred"
+msgstr "یک خطا رخ داده است"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "هنگام بازنویسی پیکربندی واحد Nginx خطایی رخ داده است"
+
+msgid "An error occured during extraction"
+msgstr "هنگام اکسترکت کردن خطایی رخ داده است"
+
+msgid "An error occured while creating the compressed file"
+msgstr "هنگام ایجاد فایل فشرده خطایی رخ داد"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "هنگام بازنشانی مالکیت فایل خطایی رخ داد"
+
+msgid "An error occurred during the backup"
+msgstr "هنگام بک‌‎آپ خطایی رخ داد"
+
+#, fuzzy
+msgid "An error occurred during the restore"
+msgstr "هنگام بک‌‎آپ خطایی رخ داد"
+
+msgid "An error occurred when unblocking the account"
+msgstr "هنگام آنبلاک کردن اکانت خطایی رخ داد"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "هنگام اعمال تنظیمات برای کاربران شما خطایی رخ داد"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "هنگام تلاش برای کپی کردن فایل خطایی رخ داد"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "هنگام تلاش برای ایجاد دایرکتوری خطایی رخ داد"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "هنگام تلاش برای محافظت از دایرکتوری خطایی رخ داد"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "هنگام تلاش برای تغییر نام فایل خطایی رخ داد"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "هنگام تلاش برای بازیابی فایل خطایی رخ داد"
+
+msgid "Anonymous Ftp"
+msgstr "FTP ناشناس"
+
+msgid "Apache"
+msgstr "آپاچی"
+
+msgid "Apache config file re-written with new ip"
+msgstr "فایل کانفیگ آپاچی با IP جدید دوباره نوشته شد"
+
+msgid "Apparent Size"
+msgstr "حجم ظاهری"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "به عنوان اولین آیتم در بخش <Directory> ظاهر می‌شود."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "در ابتدای قالب، پیش از تعریف متغییرها، اضافه خواهد شد."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"در تمامی بخش‌های context{} اضافه شده و برای شاخه‌های حفاظت شده با گذرواژه "
+"استفاده خواهد شد."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "در بخش phpIniOverride{} ظاهر می‌شود."
+
+msgid "Appears in rewrite{} section."
+msgstr "در بخش rewrite{} نمایش داده می‌شود."
+
+msgid "Appears in scripthandler{} section."
+msgstr "در بخش scripthandler{} نمایش داده می‌شود."
+
+msgid "Appears in vhssl{} section."
+msgstr "در بخش vhssl{} نمایش داده می‌شود."
+
+msgid "Appears just before the <Directory> section."
+msgstr "قبل از قسمت <Directory> ظاهر می‌شود."
+
+msgid "Apply to All Users"
+msgstr "اعمال برای تمامی کاربران"
+
+msgid "Apply to Me"
+msgstr "اعمال برای من"
+
+msgid "Apply to existing Domains"
+msgstr "برای دامنه‌های موجود اعمال کنید"
+
+msgid "Apr"
+msgstr "آپریل"
+
+msgid "Archive Size"
+msgstr "سایز آرشیو"
+
+msgid "Archives purged"
+msgstr "آرشیو پاکسازی شد"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "آیا مطمئن هستید که می خواهید اکانت‌های انتخاب شده را حذف کنید؟"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "آیا مطمئن هستید که می خواهید دیتابیس‌های انتخاب شده را حذف کنید؟"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "آیا مطمئن هستید که می‌خواهید کلیدهای انتخاب شده را حذف کنید؟"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "آیا مطمئن هستید که می‌خواهید زون‌های انتخاب شده را حذف کنید؟"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "آیا مطمئن هستید که می‌خواهید این فایل ها را حذف کنید؟"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "آیا مطمئن هستید که می‌خواهید این پروسه‌ها را از بین ببرید؟"
+
+msgid "Ascending"
+msgstr "صعودی"
+
+msgid "Assign to"
+msgstr "اختصاص یافته به"
+
+msgid "Assigned"
+msgstr "اختصاص یافته"
+
+msgid "At least one crediential is required."
+msgstr "حداقل یک مدرک مورد نیاز است."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "تلاش برای کپی کردن %s روی خودش، فایل از قلم افتاد."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "تلاش برای انتقال %s به خودش، فایل از قلم افتاد."
+
+msgid "Attempts"
+msgstr "تلاش‌ها"
+
+msgid "Aug"
+msgstr "آگوست"
+
+msgid "Authentication"
+msgstr "احراز هویت"
+
+msgid "Authorize"
+msgstr "اجازه دادن"
+
+msgid "Auto"
+msgstr "خودکار"
+
+msgid "Auto media selection active."
+msgstr "انتخاب خودکار رسانه فعال است."
+
+msgid "Auto+Confirm"
+msgstr "خودکار + تأیید"
+
+msgid "AutoResponders"
+msgstr "AutoResponder ها"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "تمدید خودکار گواهینامه برای %s با موفقیت انجام شد"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr ""
+
+msgid "Autoreply"
+msgstr "پاسخ خودکار"
+
+msgid "Autoresponder"
+msgstr "پاسخ دهنده خودکار"
+
+#, fuzzy
+msgid "Autoresponder created"
+msgstr "پاسخ دهنده خودکار به روز شد"
+
+msgid "Autoresponder updated"
+msgstr "پاسخ دهنده خودکار به روز شد"
+
+#, fuzzy
+msgid "Autoresponder(s) removed"
+msgstr "پاسخ دهنده‌های خودکار"
+
+msgid "Avoid use of trailers."
+msgstr "از استفاده از تریلر خودداری کنید."
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "تنظیمات Awstats تغییر کرد"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "بازگشت"
+
+msgid "Backing up Databases"
+msgstr "بک‌آپ گیری از دیتابیس‌ها"
+
+msgid "Backing up E-Mail Data"
+msgstr "بک‌آپ گیری از اطلاعات ایمیل"
+
+msgid "Backing up E-Mail Settings"
+msgstr "بک‌آپ گیری از تنظیمات ایمیل"
+
+msgid "Backing up FTP"
+msgstr "بک‌آپ گیری از FTP"
+
+msgid "Backing up User Configs"
+msgstr "بک‌آپ گیری از تنظیمات کاربر"
+
+msgid "Backing up User Data"
+msgstr "بک‌آپ گیری از اطلاعات کاربر"
+
+msgid "Backing up extra E-Mail items"
+msgstr "بک‌آپ گیری از آیتم‌های اضافی ایمیل"
+
+msgid "Backup"
+msgstr "بک‌آپ"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "نسخه پشتیبان %d در حال حاضر اجرا نمی‌شود."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr "بک‌آپ گیری لغو شد (%d): یک هارد لینک تحت مسیر کاربر %s پیدا شد"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "خطای بک‌آپ گیری با واحد Nginx: %s"
+
+msgid "Backup Halted"
+msgstr "بک‌آپ گیری متوقف شد"
+
+msgid "Backup ID"
+msgstr "شناسه بک‌آپ"
+
+msgid "Backup creation added to queue"
+msgstr "ایجاد بک‌آپ به صف اضافه شد"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "مسیر بک‌آپ %s ایجادشد."
+
+#, fuzzy
+msgid "Backup(s) Killed"
+msgstr "بک‌آپ گیری متوقف شد"
+
+msgid "Backups added to Queue"
+msgstr "بک‌آپ‌ها به صف اضافه شدند"
+
+msgid "Bandwidth"
+msgstr "پهنای باند"
+
+msgid "Bandwidth (MB)"
+msgstr "پهنای باند (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "پهنای باند مصرفی"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr ""
+"مطمئن شوید که QR Code را بار دیگر اسکن کنید. کدهای قبلی، نامعتبر خواهند شد."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"از آنجایی که اسکریپت معیارهای لازم را دارد، از طریق chmod به 0 غیرفعال شده "
+"است."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"قبل از رفع بلاک، مطمئن شوید که اسکریپت‌های در معرض خطر حذف یا رفع شده‌اند."
+
+msgid "Beta"
+msgstr "بتا"
+
+msgid "Billing Issue"
+msgstr "مشکل صورتحساب"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "هنگام جستجوی بک‌‎آپ تبدیل شده در %s، %s خالی است"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "مقدار خالی: پیش‌فرض، محدودیت کلی %d"
+
+msgid "Bleeding edge features"
+msgstr "ویژگی‌های لبه Bleeding"
+
+msgid "Block Usage"
+msgstr "مصرف بلوک"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker، مسیرها را بلاک کرده است"
+
+msgid "Blocked"
+msgstr "بلاک شده"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "هر دو کنترل DNS و لغو ttl باید فعال باشند"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "حمله Brute-Force در گزارش سرویس شناسایی شد"
+
+msgid "CA Certificate is Invalid"
+msgstr "گواهینامه CA نامعتبر است"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr "گواهینامه CA اوکی است. سایت شما در عرض چند دقیقه ایمن می‌شود."
+
+msgid "CC Address"
+msgstr "عنوان CC"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "سهمیه CPU"
+
+msgid "Can use Server IP"
+msgstr "می‌توان از IP سرور استفاده کرد"
+
+msgid "Can't get file lock on"
+msgstr "نمی‌توان قفل فایل را روشن کرد"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "نمی‌توان فایل %s را برای خواندن باز کرد"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "نمی‌توان فایل %s را برای افزودن باز کردن"
+
+msgid "Cancel"
+msgstr "لغو"
+
+#, fuzzy
+msgid "Cancel Request"
+msgstr "نمی‌توان درخواست شما را اجرا کرد"
+
+msgid "Cannot Add A Record"
+msgstr "نمی‌توان A Record اضافه کرد"
+
+msgid "Cannot Add CNAME Record"
+msgstr "نمی‌توان CNAME Record اضافه کرد"
+
+msgid "Cannot Add Record"
+msgstr "نمی‌توان رکورد اضافه کرد"
+
+msgid "Cannot Create Account"
+msgstr "نمی‌توان اکانت ایجاد کرد"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "نمی‌توان یک پاسخ‌دهنده خودکار دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Database"
+msgstr "نمی‌توان دیتابیس دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Domain"
+msgstr "نمی‌توان دامنه دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "نمی‌تواند اشاره‌گر دامنه دیگر ایجاد کرد"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "نمی‌توان اکانت FTP دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "نمی‌توان فورواردر دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "نمی‌توان لیست ایمیل دیگر ایجاد کرد"
+
+msgid "Cannot Create Another POP Account"
+msgstr "نمی‌توان اکانت POP دیگر ایجاد کرد"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "نمی‌توان ساب‌دامین دیگر ایجاد کرد"
+
+msgid "Cannot Create Autoresponder"
+msgstr "نمی‌توان پاسخ‌دهنده خودکار دیگر ایجاد کرد"
+
+msgid "Cannot Create Domain"
+msgstr "نمی‌توان دامنه ایجاد کرد"
+
+msgid "Cannot Create Vacation Message"
+msgstr "نمی‌توان پیام تعطیلات ایجاد کرد"
+
+msgid "Cannot Create a Message"
+msgstr "نمی‌توان یک پیام ایجاد کرد"
+
+msgid "Cannot Execute Command"
+msgstr "نمی‌توان فرمان را اجرا کرد"
+
+msgid "Cannot Execute Your Request"
+msgstr "نمی‌توان درخواست شما را اجرا کرد"
+
+msgid "Cannot Modify Key"
+msgstr "نمی‌توان کلید ایجاد کرد"
+
+msgid "Cannot Modify User"
+msgstr "نمی‌توان کاربر ایجاد کرد"
+
+msgid "Cannot View Domain Settings"
+msgstr "نمی‌توان تنظیمات دامنه را مشاهده کرد"
+
+#, fuzzy
+msgid "Cannot be a list"
+msgstr "نمی‌توان یک object باشد"
+
+msgid "Cannot be an object"
+msgstr "نمی‌توان یک object باشد"
+
+msgid "Cannot change the ip"
+msgstr "نمی‌‎توان ip را تغییر داد"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"رمز عبور اکانت سیستم را نمی‌توان تغییر داد. برای انجام این کار وارد کنترل "
+"پنل شوید."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"رمز عبور این اکانت ایمیل را نمی‌توان تغییر داد. حساب در حال حاضر در یک دامنه "
+"معلق است."
+
+msgid "Cannot change your email"
+msgstr "ایمیل خود را نمی‌توانید تغییر دهید"
+
+msgid "Cannot change your name"
+msgstr "نمی‌توان نام خود را تغییر داد"
+
+msgid "Cannot change your password"
+msgstr "نمی‌توان رمزعبور را تغییر داد"
+
+msgid "Cannot check domain existance"
+msgstr "وجود دامنه را نمی‌توان بررسی کرد"
+
+msgid "Cannot create User Backup"
+msgstr "بک‌آپ کاربر را نمی‌توان ایجاد کرد"
+
+msgid "Cannot create domain"
+msgstr "نمی‌توان دامنه را ایجاد کرد"
+
+msgid "Cannot create that domain"
+msgstr "نمی‌توان آن دامنه را ایجاد کرد"
+
+msgid "Cannot create user using those settings"
+msgstr "نمی‌توان کاربری با استفاده از آن تنظیمات ایجاد کرد"
+
+msgid "Cannot delete records"
+msgstr "نمی‌توان رکوردها را حذف کرد"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "نمی‌توان پوسته‌ای که درحال حاضر استفاده می‌کنید را حذف کرد."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "نمی توان مالک ساب‌دامین '%s' را تعیین کرد"
+
+msgid "Cannot execute your request"
+msgstr "امکان انجام درخواست شما وجود ندارد"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "نمی‌توان %s را یافت"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "نمی‌توان %s را در لیست یافت"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "نمی‌توان %s را در نام یافت"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "نمی توان %s را پیدا کرد، در حال رد کردن."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "نمی‌توان %s را پیدا کرد. مطمئن شوید که دامنه وجود دارد و معلق نشده است"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "نمی‌توان '%s' را پیدا کرد"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "نمی‌توان \"%s\" را در لیست مقادیر مجاز برای %s پیدا کرد"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "\"%s\" را نمی‌توان در الگو پیدا کرد"
+
+msgid "Cannot find IP"
+msgstr "IP پیدا نمی‌شود"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "نمی‌توان کاربر '%s' را پیدا کرد"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr "یک نام کاربری معتبر سیستم در فایل domainowners پیدا نمی‌شود."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "هیچ مقدار SANی در گواهینامه یافت نشد."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "پس از تبدیل از %s نمی‌توان هیچ tar.gz را پیدا کرد"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "دامنه در فایل صاحبان دامنه پیدا نمی‌شود"
+
+msgid "Cannot find domain in the certificate."
+msgstr "دامنه در گواهینامه پیدا نشد."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "نمی‌توان مقدار کلید را در %s پیدا کرد"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "فایل لوگو برای توکن %s در پوسته %s یافت نمی‌شود"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "فایل لوگو برای توکن %s=%s در پوسته %s یافت نمی‌شود"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "نمی توان show_blocked_ips.sh را پیدا کرد"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "نمی توان template_php_ini یا domain_php_ini را در json پیدا کرد"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "نمی‌توان آن دامنه را در فایل domainowners پیدا کرد"
+
+msgid "Cannot find that key id"
+msgstr "نمی توان آن ID کلید را پیدا کرد"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "نه می‌توان اکانت را پیدا کرد و نه فورواردر"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "نمی‌توان اسکریپت letsencrypt.sh را پیدا کرد"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "کاربر %s را که از قبل باید وجود داشته باشد، پیدا نمی‌شود"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "نمی‌توان mime-type را برای %s دریافت کرد"
+
+msgid "Cannot have newline characters in subject"
+msgstr "نمی توان کاراکترهای newline را در موضوع داشت"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "نمی‌توان سهمیه ایمیل نامحدودی داشت"
+
+msgid "Cannot manage zone"
+msgstr "نمی‌توان زون را مدیریت کرد"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "نمی‌توان دایرکتوری (%s) را به فایل یا فهرست موجود (%s) منتقل کرد"
+
+msgid "Cannot open the password file to add the user"
+msgstr "نمی‌توان فایل پسورد را برای افزودن کاربر باز کرد"
+
+msgid "Cannot open the password file to change the password"
+msgstr "نمی‌توان فایل پسورد را برای تغییر پسورد باز کرد"
+
+msgid "Cannot open the user password file for reading"
+msgstr "نمی‌توان فایل پسورد کاربر را برای خواندن باز کرد"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "نمی‌توان یک دایرکتوری را به یک فایل یا دایرکتوری موجود تغییر نام داد"
+
+msgid "Cannot resend welcome email"
+msgstr "ایمیل خوش آمدگویی مجددا ارسال نمی‌شود"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr ""
+"نمی‌توان اکانت ftp را برای %s بازیابی کرد. شما به حد مجاز خود (%s) رسیده‌اید."
+
+msgid "Cannot set TTL"
+msgstr "نمی‌توان TTL را تنظیم کرد"
+
+msgid "Cannot set default domain"
+msgstr "نمی‌توان دامنه پیشفرض را تنظیم کرد"
+
+#, fuzzy
+msgid "Cannot show page"
+msgstr "نمی‌توان lang po را بارگیری کرد"
+
+msgid "Cannot stat the source file"
+msgstr "نمی‌توان فایل سورس را اعلام کرد"
+
+msgid "Cannot use the main account username"
+msgstr "نمی توان از نام کاربری اصلی اکانت استفاده کرد"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Catch all اکنون روی %s تنظیم شده‌است"
+
+msgid "Catch-All Email"
+msgstr "ایمیل Catch-All"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "ایمیل Catch-All بر روی این اکانت غیرفعال شده است"
+
+msgid "Catch-All email updated successfully"
+msgstr "ایمیل Catch-All با موفقیت به روز شد"
+
+#, fuzzy
+msgid "Catch-All is disabled"
+msgstr "ایمیل Catch-All"
+
+msgid "Catch-All is now set to fail"
+msgstr "تنظیمل ایمیل Catch-All ناموفق بود"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All اکنون برای نادیده گرفتن آدرس‌های اشتباه تنظیم شده‌است"
+
+msgid "Certificate"
+msgstr "گواهینامه"
+
+msgid "Certificate and Key Saved."
+msgstr "گواهینامه و کلید ذخیره شد."
+
+msgid "Certificate is Invalid"
+msgstr "گواهینامه نامعتبر است"
+
+msgid "Certificate is Self-Signed"
+msgstr "گواهینامه از نوع Self-Signed است"
+
+msgid "Change the password to unblock it."
+msgstr "برای رفع بلاک رمز عبور را تغییر دهید."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "تغییر با IP: %s"
+
+msgid "Changes saved"
+msgstr "تغییرات ذخیره شد"
+
+msgid "Check"
+msgstr "بررسی"
+
+msgid "Check the error log for more information."
+msgstr "برای اطلاعات بیشتر، گزارش خطا را بررسی کنید."
+
+msgid "Check to see if the current software is valid"
+msgstr "بررسی کنید که آیا نرم‌افزار فعلی معتبر است یا خیر"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "کاربر چایلد %s حذف شد"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"انتخاب از بین: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "شهر فقط باید شامل حروف، فاصله و/یا نقطه باشد"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "پاک کردن فورواردرها"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "در حال پاکسازی %s"
+
+msgid "Clear Customization"
+msgstr "پاک کردن سفارشی سازی"
+
+msgid "Clear Messages System"
+msgstr "سیستم پاک کرد پیام‌ها"
+
+msgid "Clear NS"
+msgstr "پاک کردن NS"
+
+msgid "Clear Search Filter"
+msgstr "پاک کردن فیلتر جستجو"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "برای بازگشت بر روی %sاینجا%s کلیک کنید"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "برای بازگشت %sاینجا%s را کلیک کنید"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "برای بازگشت به صفحه اصلی، %sاینجا%s را کلیک کنید"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "برای دانلود آخرین نسخه بک‌آپ اینجا کلیک کنید"
+
+msgid "Click here to close this window"
+msgstr "برای بستن پنجره، اینجا کلیک کنید"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "برای فعال کردن SSL در دامنه اینجا را کلیک کنید"
+
+msgid "Clipboard"
+msgstr "کلیپ بورد"
+
+#, fuzzy
+msgid "Clipboard emptied"
+msgstr "کلیپ بورد"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Closed"
+msgstr "بسته شده"
+
+msgid "Closed+Confirm"
+msgstr "بسته شده + تایید"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "رنگ %s (%s) از لیست نیست: %s"
+
+msgid "Color has been customized"
+msgstr "رنگ شخصی سازی شد"
+
+msgid "Column in"
+msgstr "ستون در"
+
+msgid "Command"
+msgstr "دستور"
+
+msgid "Command Returned"
+msgstr "دستور بازگردانده شد"
+
+msgid "Comment"
+msgstr "دیدگاه"
+
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+#, fuzzy
+msgid "Comments Saved"
+msgstr "دیدگاه‌ها"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "شرکت فقط باید دارای حروف، اعداد، فاصله و/یا نقطه باشد"
+
+msgid "Compressed File Created"
+msgstr "فایل فشرده ایجاد شد"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "فشرده‌سازی %s"
+
+msgid "Confirm"
+msgstr "تایید"
+
+#, fuzzy
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "نتایج را در <a href=\"%s\">وب‌سایت DirectAdmin</a> تأیید کنید"
+
+#, fuzzy
+msgid "Confirmation code is invalid or request have expired"
+msgstr ""
+"چنین نام کاربری در لیست درخواست وجود ندارد. ممکن است درخواست شما منقضی شده "
+"باشد."
+
+msgid "Continuing with the other files."
+msgstr "ادامه دادن با فایل‌های دیگر."
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Copy Clipboard Files here"
+msgstr "فایل‌های کلیپ‌بورد را اینجا کپی کنید"
+
+msgid "Copy the packages export data"
+msgstr "اطلاعات استخراج پکیج‌ها را کپی کنید"
+
+msgid "Copying Admin Data"
+msgstr "کپی‌کردن اطلاعات ادمین"
+
+msgid "Copying Reseller Data"
+msgstr "کپی کردن اطلاعات ریسلر"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr "کپی فایل‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Copying unreadable data"
+msgstr "کپی کردن داده‌های ناخوانا"
+
+msgid "Could not excute your request"
+msgstr "نمی‌توان درخواست شما را اجرا کرد"
+
+msgid "Could not execute your request"
+msgstr "نمی‌توان درخواست شما را اجرا کرد"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr ""
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr "فایل ریموت '%s' برای تأیید اندازه پس از آپلود یافت نشد"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "نمی توان rDNS برای IP '%s' دریافت کرد"
+
+msgid "Could not read tickets"
+msgstr "نمی‌توان تیکت‌ها را خواند"
+
+msgid "Could not write tickets"
+msgstr "امکان نوشتن تیکت وجود ندارد"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr "هیچ IP از هر نوع برای دادن به کاربر پیدا نشد (IP=%s درخواست شده)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr "فایل db برای %s خوانده نشد. نمی توان ns1 و ns2 را به آن اضافه کرد."
+
+msgid "Count"
+msgstr "شمارش"
+
+msgid "Counted"
+msgstr "شمرده شده"
+
+msgid "Country code must be 2 letters"
+msgstr "کد کشور باید 2 حرف باشد"
+
+msgid "Created"
+msgstr "ایجاد شده"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"ایجاد دایرکتوری‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "ایجاد این تعداد %s شما را از حدنصاب %s خود فراتر می‌برد"
+
+msgid "Creator"
+msgstr "سازنده"
+
+msgid "Creator Duplicate"
+msgstr "دونسخه کردن ایجاد کننده"
+
+msgid "Creators and their Users"
+msgstr "ایجاد کنندگان و کاربرانشان"
+
+msgid "Cron Created"
+msgstr "کرون ایجاد شده است"
+
+msgid "Cron E-Mail set"
+msgstr "ایمیل کرون تنظیم شد"
+
+msgid "Cron Job(s) Deleted"
+msgstr "کران جاب‌(ها) حذف شدند"
+
+msgid "Cron Jobs"
+msgstr "کران جاب‌ها"
+
+msgid "Cron Jobs Deleted"
+msgstr "کران جاب‌ها حذف شدند"
+
+msgid "Cron Jobs Duplicated"
+msgstr "کران جاب‌ها تکرار شدند"
+
+msgid "Cron Jobs will run in the background"
+msgstr "کران جاب‌ها در پس زمینه اجرا خواهد شد"
+
+msgid "Cron Modified"
+msgstr "کران اصلاح شد"
+
+msgid "Cron job has been created"
+msgstr "کران جاب ایجاد شده است"
+
+msgid "Current"
+msgstr "فعلی"
+
+msgid "Current IPs"
+msgstr "آی‌پی‌های (IP) فعلی"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "IPهای فعلی به %s اختصاص داده شده است"
+
+msgid "Current Protected Directories"
+msgstr "دایرکتوری‌های محافظت‌شده در زمان جاری"
+
+msgid "Current Usage"
+msgstr "میزان مصرف جاری"
+
+msgid "Custom"
+msgstr "سفارشی"
+
+msgid "Custom Color"
+msgstr "رنگ سفارشی"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "لوگوی پوسته‌ی سفارشی آپلود شد"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "لوگوهای پوسته سفارشی فعال نیستند"
+
+msgid "Custom logo deleted"
+msgstr "لوگوی سفارشی حذف شد"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr "آستانه سفارشی باید یک عدد معتبر باشد. اعشار مجاز است."
+
+msgid "Customization Disabled"
+msgstr "سفارشی سازی غیرفعال است"
+
+msgid "Customization written"
+msgstr "سفارشی سازی نوشته شده است"
+
+msgid "Customize the skin"
+msgstr "پوسته را سفارشی کنید"
+
+msgid "DKIM disabled"
+msgstr "DKIM غیرفعال شده"
+
+msgid "DKIM enabled"
+msgstr "DKIM فعال شده"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "کنترل DNS"
+
+#, fuzzy
+msgid "DNS Zone does not exist"
+msgstr "منطقه زمانی وجود ندارد"
+
+msgid "DNSSEC Keys generated"
+msgstr "کلیدهای DNSSEC ایجاد شد"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC فعال نیست"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSSEC - امنیت DNS"
+
+msgid "Database"
+msgstr "دیتابیس"
+
+msgid "Database Created"
+msgstr "دیتابیس ایجاد شد"
+
+msgid "Database Disk Usage"
+msgstr "مقدار استفاده از دیسک دیتابیس"
+
+msgid "Database has been successfully Restored"
+msgstr "دیتابیس با موفقیت بازیابی شد"
+
+msgid "Database:"
+msgstr "دیتابیس:"
+
+msgid "Databases"
+msgstr "دیتابیس‌ها"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Date Added"
+msgstr "تاریخ اضافه شد"
+
+msgid "Date Blocked"
+msgstr "تاریخ بلاک شد"
+
+msgid "Date Created"
+msgstr "تاریخ ایجاد"
+
+msgid "Date Suspended"
+msgstr "تاریخ تعلیق"
+
+#, fuzzy
+msgid "Day"
+msgstr "می"
+
+msgid "Day of Month"
+msgstr "روز از ماه"
+
+msgid "Day of Week"
+msgstr "روز از هفته"
+
+msgid "Days must be a valid number."
+msgstr "روزها باید یک عدد معتبر باشند."
+
+msgid "Debug Guide"
+msgstr "راهنمای دیباگ"
+
+msgid "Dec"
+msgstr "دسامبر"
+
+msgid "Decending"
+msgstr "نزولی"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "رمزگشایی %s انجام نشد"
+
+msgid "Default"
+msgstr "پیشفرض"
+
+msgid "Default release schedule"
+msgstr "برنامه انتشار پیش فرض"
+
+msgid "Delayed release schedule"
+msgstr "برنامه انتشار با تاخیر"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete Extension"
+msgstr "حذف اکستنشن"
+
+msgid "Delete Handler"
+msgstr "حذف شناسه"
+
+msgid "Delete MimeType"
+msgstr "حذف MimeType"
+
+msgid "Delete Selected"
+msgstr "حذف انتخاب شده‌ها"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "حذف کلیدهای DNSSEC و استفاده از زون non-signed"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "حذف کاربر زیر"
+msgstr[1] "حذف کاربران زیر"
+
+msgid "Delete the following domains:"
+msgstr "حذف دامنه‌های زیر:"
+
+msgid "Delete web data"
+msgstr "حذف اطلاعات وب"
+
+msgid "Deleted"
+msgstr "حذف شده"
+
+msgid "Deleted User Bandwidth"
+msgstr "پهنای باند کاربر حذف شده"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "در حال حذف %s..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"حذف فایل‌ها/دایرکتوری‌ها با گزینه filemanager_disable_features غیرفعال شده "
+"است"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "با حذف این رکوردهای NS شما با 0 مواجه خواهید شد."
+
+msgid "Deny"
+msgstr "رد کردن"
+
+msgid "Destination"
+msgstr "مقصد"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "خطای URL مقصد: %s"
+
+msgid "Detail"
+msgstr "جزئیات"
+
+msgid "Details"
+msgstr "جزئیات"
+
+msgid "Digest Subscriber"
+msgstr "مشترک مجموعه"
+
+msgid "Digest Subscribers"
+msgstr "مشترکین مجموعه"
+
+#, fuzzy
+msgid "DirectAdmin License"
+msgstr "لایسنس آزمایشی"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "دایرکت ادمین 1 دقیقه دیگر ری‌استارت می‌شود"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "دایرکت ادمین در عرض 1 دقیقه ری‌استارت می‌شود"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "تنظیمات حفاظت دایرکتوری ذخیره شده است."
+
+msgid "Directory created"
+msgstr "دایرکتوری ایجاد شد"
+
+msgid "Disable"
+msgstr "غیرفعال"
+
+msgid "Disable Auto-Renew"
+msgstr "غیرفعال کردن تمدید خودکار"
+
+msgid "Disabled"
+msgstr "غیرفعال شده"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"تنظیمات Reseller غیرفعال برای کاربران و پکیج‌ها در پس‌زمینه اعمال خواهد شد."
+
+msgid "Disk Space"
+msgstr "فضای دیسک"
+
+msgid "Disk Space (MB)"
+msgstr "فضای دیسک(MB)"
+
+msgid "Disk Usage"
+msgstr "فضای مصرفی دیسک"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "بخش باید فقط شامل حروف، اعداد، فاصله و/یا نقطه باشد"
+
+msgid "Dns Provider reset."
+msgstr "بازنشانی ارائه دهنده DNS."
+
+msgid "Dns Provider saved."
+msgstr "ارائه دهنده DNS ذخیره شد."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "در نام دامنه از حروف بزرگ استفاده نکنید."
+
+msgid "Do not use any spaces between the email names."
+msgstr "از فاصله بین نام ایمیل استفاده نکنید."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "از فاصله در مقدار %s استفاده نکنید"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "آیا می‌خواهید فایل‌های موجود را بازنویسی کنید؟"
+
+msgid "DocumentRoot"
+msgstr "DocumentRoot"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "با تنظیمات مطابقت ندارد: %s"
+
+msgid "Domain"
+msgstr "دامنه"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "دامنه %s ایجاد شد"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "دامنه %s ممکن است از مسیر ردیابی %s %s استفاده نکند"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"دامنه %s توسط یک ادمین به حالت تعلیق درآمده است و شما این دسترسی را ندارید. "
+"شما نمی‌توانید این دامنه را لغو تعلیق کنید."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr ""
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "دامنه '%s' از php-fpm استفاده می‌کند."
+
+msgid "Domain AWstats"
+msgstr "دامنه AWstats"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "دامنه AWstats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "پهنای باند دامنه"
+
+msgid "Domain Created"
+msgstr "دامنه ایجاد شده"
+
+msgid "Domain Created Successfully"
+msgstr "دامنه با موفقیت ایجاد شده"
+
+msgid "Domain Deletion Results"
+msgstr "نتایج حذف دامنه"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "اشاره‌گر دامنه"
+msgstr[1] "اشاره‌گر‌های دامنه"
+
+msgid "Domain Pointer Added"
+msgstr "اشاره‌گر دامنه اضافه شد"
+
+msgid "Domain Pointer on"
+msgstr "اشاره‌گر دامنه روشن است"
+
+msgid "Domain Pointers"
+msgstr "اشاره‌گرهای دامنه"
+
+#, fuzzy
+msgid "Domain Pointers Removed"
+msgstr "اشاره‌گر دامنه روشن است"
+
+msgid "Domain Quota"
+msgstr "سهمیه دامنه"
+
+msgid "Domain Renaming is not enabled"
+msgstr "تغییر نام دامنه فعال نیست"
+
+msgid "Domain Webalizer Stats"
+msgstr "آمار Webalizer دامنه"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+
+msgid "Domain does not belong to you"
+msgstr "دامنه متعلق به شما نیست"
+
+#, fuzzy
+msgid "Domain does not belong to you."
+msgstr "دامنه متعلق به شما نیست"
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "دامنه در %s وجود دارد"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"دامنه قبلاً در حال پردازش درخواست SSL است. لطفاً قبل از ایجاد تغییرات دیگر "
+"اجازه دهید تا پایان یابد."
+
+msgid "Domain is forbidden"
+msgstr "دامنه ممنوع است"
+
+msgid "Domain is not in your list"
+msgstr "دامنه در لیست شما نیست"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr ""
+
+msgid "Domain name has been successfully changed"
+msgstr "نام دامنه با موفقیت تغییر کرد"
+
+msgid "Domain php.ini overrides"
+msgstr "دامنه php.ini لغو می‌شود"
+
+msgid "Domain(s)"
+msgstr "دامنه(ها)"
+
+msgid "Domain(s) modified"
+msgstr "دامنه(ها) اصلاح شد"
+
+msgid "Domains"
+msgstr "دامنه‌ها"
+
+msgid "Domains directory created successfully"
+msgstr "دایرکتوری دامنه‌ها با موفقیت ایجاد شد"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "دایرکتوری دامنه‌ها با موفقیت در صفحه اصلی کاربر ایجاد شد"
+
+msgid "Double click for main domain page"
+msgstr "برای صفحه دامنه اصلی دوبار کلیک کنید"
+
+#, c-format, fuzzy
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "فایل Dovecot '%s' فاقد اطلاعات است. './build dovecot_conf' را اجرا کنید"
+
+msgid "Download"
+msgstr "دانلود"
+
+msgid "Download Backup"
+msgstr "دانلود نسخه پشتیبان"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "دانلود شده: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "دانلود باینری webalizer جدید"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"دانلود فولدرهای فشرده با گزینه filemanager_disable_features غیرفعال شده‌است"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "دانلود فایل ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Driver signals L1 up."
+msgstr "درایور به L1 سیگنال می دهد."
+
+msgid "Driver signals dormant."
+msgstr "سیگنال درایور خاموش است."
+
+msgid "Duplicate"
+msgstr "تکراری"
+
+msgid "E-Mail"
+msgstr "ایمیل"
+
+msgid "E-Mail Accounts"
+msgstr "اکانت‌های ایمیل"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "اکانت‌های ایمیل حذف شدند"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "آدرس ایمیل با موفقیت تغییر پیدا کرد"
+
+msgid "E-Mail Limit has been set"
+msgstr "محدودیت ایمیل تنظیم شد"
+
+#, fuzzy
+msgid "E-Mail Update Failed"
+msgstr "ایمیل بروز شد"
+
+msgid "E-Mail Updated"
+msgstr "ایمیل بروز شد"
+
+msgid "E-Mail account already exists"
+msgstr "اکانت ایمیل در حال حاضر وجود دارد"
+
+msgid "E-Mail has been changed"
+msgstr "ایمیل تغییر پیدا کرده است"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "ایمیل به %s تغییر پیدا کرده است"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "سهمیه ایمیل نباید از %s تجاوز کند"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo ی پکت‌های ارسال شده."
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Edit the zone on the master server."
+msgstr "زون را در سرور اصلی ویرایش کنید."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"یا از سازنده حساب خود بخواهید رمز عبور شما را برای رفع بلاک تغییر دهد، یا از "
+"ویژگی Lost Password در صفحه ورود استفاده کنید (در صورت فعال بودن)."
+
+msgid "Email"
+msgstr "ایمیل"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "ایمیل '%s' وجود ندارد"
+
+#, fuzzy
+msgid "Email Added to list"
+msgstr "ایمیل '%s' وجود ندارد"
+
+msgid "Email Deliveries (Sent)"
+msgstr "ارسال ایمیل (ارسال شده)"
+
+msgid "Email Disk Usage"
+msgstr "استفاده از دیسک ایمیل"
+
+msgid "Email Forwarders"
+msgstr "فورواردرهای ایمیل"
+
+msgid "Email Only"
+msgstr "فقط ایمیل"
+
+msgid "Email Sent"
+msgstr "ایمیل ارسال شد"
+
+#, fuzzy
+msgid "Email Set"
+msgstr "ایمیل ارسال شد"
+
+msgid "Email created but"
+msgstr "ایمیل ایجاد شد ولی"
+
+#, fuzzy
+msgid "Email removed"
+msgstr "ایمیل ایجاد شد ولی"
+
+msgid "Empty Clipboard"
+msgstr "کلیپ بورد خالی"
+
+msgid "Empty path"
+msgstr "مسیر خالی"
+
+msgid "Enable"
+msgstr "فعالسازی"
+
+msgid "Enabled"
+msgstr "فعال شده"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "رمزگذاری %s انجام نشد"
+
+msgid "End Time"
+msgstr "زمان پایان"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "هنگام خواندن %lld بایت از %s به پایان فایل رسید. filled=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "اطمینان حاصل کنید که کلید دوم با کلید اول مطابقت دارد"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "اطمینان حاصل کنید که ip.list ریسلر دارای چند IP قابل استفاده است."
+
+msgid "Ensuring stored domains are present"
+msgstr "اطمینان از وجود دامنه‌های ذخیره شده"
+
+#, fuzzy
+msgid "Error"
+msgstr "خطاها"
+
+msgid "Error Compressing the backup file"
+msgstr "خطا در فشرده سازی فایل بک‌آپ"
+
+msgid "Error Creating Cron Job"
+msgstr "خطا در ایجاد Cron Job"
+
+msgid "Error Creating Domain"
+msgstr "خطا در ایجاد دامنه"
+
+msgid "Error Creating Key"
+msgstr "خطا در ایجاد کلید"
+
+msgid "Error Creating User"
+msgstr "خطا در ایجاد کاربر"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "خطا در حذف %s"
+
+msgid "Error Executing Perl"
+msgstr "خطا در اجرای Perl"
+
+msgid "Error Log"
+msgstr "گزارش خطا"
+
+msgid "Error Reading Message File"
+msgstr "خطا در خواندن فایل پیام"
+
+msgid "Error Reading db file"
+msgstr "خطا در خواندن فایل db"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "خطا در حذف کاربر %s"
+
+msgid "Error Resetting Zone"
+msgstr "خطا در تنظیم مجدد زون"
+
+msgid "Error Restoring database"
+msgstr "خطا در بازگردانی دیتابیس"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "خطا در ذخیره‌سازی پسورد: %s"
+
+msgid "Error Unblocking paths"
+msgstr "خطا در رفع بلاک مسیرها"
+
+msgid "Error Updating User"
+msgstr "خطا در آپدیت کاربر"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "خطا در نوشتن %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "خطا در فعال کردن کاربر %s %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "خطا در فعال کردن cronjobs: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "خطا در فعال کردن داده برای %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "خطا در افزودن رکوردهای DS برای %s به زون والد ریموت: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "خطا در تأیید کلید SSH"
+
+msgid "Error changing password"
+msgstr "خطا در تغییر رمز عبور"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "خطا در پاک کردن فایل‌های LetsEncrypt"
+
+msgid "Error converting file: "
+msgstr "خطا در تبدیل فایل: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "خطا در کپی %s در %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "خطا در کپی کردن %s در %s: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "خطا در کپی کردن فایل لوگو: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "خطا در ایجاد %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "خطا در ایجاد %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "خطا در ایجاد پاسخگوی خودکار"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "خطا در ایجاد برنامه NginxUnit '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "خطا در ایجاد مسیر NginxUnit '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "خطا در ایجاد کلید SSH"
+
+msgid "Error creating User"
+msgstr "خطا در ایجاد کاربر"
+
+msgid "Error creating Vacation Message"
+msgstr "خطا در ایجاد پیام تعطیلات"
+
+msgid "Error creating account"
+msgstr "خطا در ایجاد اکانت"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"خطا در ایجاد دایرکتوری‌های پیش فرض در %s. برای اطلاعات بیشتر به error.log "
+"مراجعه کنید."
+
+msgid "Error creating forwarder"
+msgstr "خطا در ایجاد فوروارد"
+
+msgid "Error creating the database"
+msgstr "خطا در ایجاد دیتابیس"
+
+msgid "Error decoding the base 64 data"
+msgstr "خطا در رمزگشایی اطلاعات پایه 64"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "خطا در حذف %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "خطا در حذف کلید SSH"
+
+msgid "Error deleting account(s)"
+msgstr "خطا در حذف اکانت(ها)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "خطا در حذف پاسخ دهنده(ها)ی خودکار"
+
+msgid "Error deleting filter(s)"
+msgstr "خطا در حذف فیلتر (ها)"
+
+msgid "Error deleting records"
+msgstr "خطا در حذف رکوردها"
+
+msgid "Error determining username from "
+msgstr "خطا در تعیین نام کاربری از "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "خطا در حین تمدید خودکار گواهینامه برای %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "خطا در حین حذف کاربر چایلد %s"
+
+msgid "Error during extraction"
+msgstr "خطا در حین استخراج"
+
+msgid "Error executing your request"
+msgstr "خطا در اجرای درخواست شما"
+
+msgid "Error generating zone keys"
+msgstr "خطا در ایجاد کلیدهای زون"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "خطا در وارد کردن پکیج‎‌های کدگذاری شده پایه 64"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "خطا در پست. به دامنه، نوع و مقدار نیاز دارد."
+
+msgid "Error modifying SSH key"
+msgstr "خطا در تغییر کلید SSH"
+
+#, c-format, fuzzy
+msgid "Error parsing %s path: wrong type"
+msgstr "خطا در تجزیه خروجی json"
+
+msgid "Error parsing 'routes'."
+msgstr "خطا در تجزیه \"مسیرها\"."
+
+msgid "Error parsing json output"
+msgstr "خطا در تجزیه خروجی json"
+
+msgid "Error purging archives"
+msgstr "خطا در پاکسازی آرشیوها"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "خطا در خواندن %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "خطا در خواندن فایل پیکربندی دامنه"
+
+msgid "Error reading domain config files"
+msgstr "خطا در خواندن فایل‌های پیکربندی دامنه"
+
+msgid "Error reading domainowners"
+msgstr "خطا در خواندن domainowners"
+
+msgid "Error reading domainowners file"
+msgstr "خطا در خواندن فایل domainowners"
+
+msgid "Error reading named db file"
+msgstr "خطا در خواندن فایل با نام db"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "خطا در خواندن فایل db پس از نوشتن در آن، قبل از امضای DNSSEC"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "خطا در خواندن فایل‌های کاربر برای %s، به هر حال ادامه دارد."
+
+msgid "Error reading user_ip.list file"
+msgstr "خطا در خواندن فایل user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "خطا در حذف %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "خطا در حذف IP(ها) از %s"
+
+msgid "Error removing file: "
+msgstr "خطا در حذف فایل: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "خطا در حذف مسیر %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "خطا در حذف ساب‌دامین"
+
+msgid "Error removing subdomain(s)"
+msgstr "خطا در حذف ساب‌دامین(ها)"
+
+msgid "Error removing subdomains"
+msgstr "خطا در حذف ساب‌دامین‌ها"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "خطا در حذف کاربر %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "خطا در تغییر نام %s به %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "خطا در بازیابی %s: %s"
+
+msgid "Error restoring domain"
+msgstr "خطا در بازیابی دامنه"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "خطا در بازیابی تنظیمات php برای '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "خطا در بازنویسی %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "خطا در اجرای %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "خطا در اجرای rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "خطا در اجرای rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "خطا در ذخیره ایمیل Cron"
+
+msgid "Error saving Nameservers"
+msgstr "خطا در ذخیره نیم‌سرورها"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "خطا در ارسال سیگنال به %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "خطا در تنظیم تمپلیت MX"
+
+msgid "Error setting MX template for pointer"
+msgstr "خطا در تنظیم تمپلیت MX برای اشاره‌گر"
+
+msgid "Error setting PHP versions"
+msgstr "خطا در تنظیم نسخه‌های PHP"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "خطا در تنظیم محدودیت‌های cgroup برای %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "خطا در تنظیم فایل‌های کلیپ‌بورد"
+
+msgid "Error setting global key"
+msgstr "خطا در تنظیم کلید جهانی"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "خطا در تنظیم مجوز در %s: %s"
+
+msgid "Error setting the filter"
+msgstr "خطا در تنظیم فیلتر"
+
+msgid "Error setting the spam filter"
+msgstr "خطا در تنظیم فیلتر اسپم"
+
+msgid "Error setting timezone"
+msgstr "خطا در تنظیم منطقه زمانی"
+
+msgid "Error showing Email Acounts"
+msgstr "خطا در نمایش اکانت‌های ایمیل"
+
+msgid "Error showing message ID info"
+msgstr "خطا در نمایش اطلاعات ID پیام"
+
+msgid "Error showing smtp log info"
+msgstr "خطا در نمایش اطلاعات گزارش smtp"
+
+msgid "Error signing zone"
+msgstr "خطا در ایجاد زون"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "خطا در تعلیق کاربر %s %s: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "خطا در تعلیق cronjobs: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "خطا در به‌روزرسانی پاسخگوی خودکار"
+
+msgid "Error updating Catch-All value"
+msgstr "خطا در به‌روزرسانی مقدار Catch-All"
+
+msgid "Error updating Vacation Message"
+msgstr "خطا در به‌روزرسانی پیام تعطیلات"
+
+msgid "Error updating forwarder"
+msgstr "خطا در بروزرسانی فورواردر"
+
+msgid "Error while compressing file"
+msgstr "خطا در فشرده سازی فایل"
+
+msgid "Error while creating User"
+msgstr "خطا هنگام ایجاد کاربر"
+
+msgid "Error while deleting Users"
+msgstr "خطا هنگام حذف کاربران"
+
+msgid "Error while saving changes"
+msgstr "خطا هنگام ذخیره تغییرات"
+
+msgid "Error while saving password"
+msgstr "خطا هنگام ذخیره رمز عبور"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "خطا هنگام نوشتن %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "خطا در درخواست LetsEncrypt"
+
+msgid "Error with curl request"
+msgstr "خطا در درخواست curl"
+
+msgid "Error with exigrep"
+msgstr "خطا در exigrep"
+
+msgid "Error with fchownat"
+msgstr "خطا در fchownat"
+
+msgid "Error with system Quotas"
+msgstr "خطا در سهمیه سیستم"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"خطا در طرح بک‌آپ (تغییر نام انجام نشد): کپی %s به %s نیز شکست خورده است: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "خطا در نوشتن %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "خطا در نوشتن %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "خطا در نوشتن فایل پیکربندی دامنه"
+
+msgid "Error writing pop cache"
+msgstr "خطا در نوشتن pop cache"
+
+msgid "Error writing the directadmin.conf"
+msgstr "خطا در نوشتن directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "خطا در نوشتن در %s: %s"
+
+msgid "Errors"
+msgstr "خطاها"
+
+msgid "Evening"
+msgstr "عصر"
+
+msgid "Expecting 0 or 1"
+msgstr "انتظار 0 یا 1"
+
+msgid "Expecting any integer"
+msgstr "انتظار هر عدد صحیح"
+
+msgid "Expecting any long long integer"
+msgstr "انتظار هر عدد صحیح طولانی"
+
+msgid "Expired"
+msgstr "منقضی"
+
+msgid "Expiry"
+msgstr "انقضا"
+
+msgid "Export Selected"
+msgstr "اکسپورت انتخاب شد"
+
+msgid "Extension"
+msgstr "اکستنشن"
+
+msgid "Extensions"
+msgstr "اکستنشن‌ها"
+
+msgid "Extract"
+msgstr "خارج کردن"
+
+msgid "Extract selected to directory"
+msgstr "خارج کردن انتخاب شده‌ها داخل دایرکتوری"
+
+msgid "Extracting User Data"
+msgstr "خارج کردن اطلاعات کاربر"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "استخراج فایل ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Extracting non-readable files"
+msgstr "استخراج فایل‌های غیرقابل خواندن"
+
+msgid "Extracting ~/domains directory"
+msgstr "استخراج دایرکتوری ~/domains"
+
+msgid "Extracting ~/imap directory"
+msgstr "استخراج دایرکتوری ~/imap"
+
+msgid "FTP"
+msgstr "پروتکل FTP"
+
+msgid "FTP account already exists"
+msgstr "اکانت FTP از قبل وجود دارد"
+
+msgid "FTP information invalid."
+msgstr "اطلاعات FTP نامعتبر است."
+
+msgid "FTP: default creation error"
+msgstr "FTP: خطای ایجاد پیش فرض"
+
+msgid "Feature Disabled"
+msgstr "قابلیت غیرفعال شده"
+
+msgid "Feb"
+msgstr "فوریه"
+
+msgid "File"
+msgstr "فایل"
+
+msgid "File %s already exists, file skipped."
+msgstr "فایل %s از قبل وجود دارد، فایل رد شده است."
+
+msgid "File Extracted"
+msgstr "فایل استخراج شد"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "فایل در حال خواندن به عنوان \"%s\" است"
+
+msgid "File copied successfully"
+msgstr "فایل با موفقیت کپی شد"
+
+msgid "File does not exist"
+msgstr "فایل وجود ندارد"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "فایل وجود ندارد یا شما به فایل دسترسی ندارید"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "فایل استخراج شد"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "بازنشانی مالکیت فایل"
+
+#, fuzzy
+msgid "File purged"
+msgstr "آرشیو پاکسازی شد"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "فایل با موفقیت بازیابی شد"
+
+msgid "File restored successfully"
+msgstr "فایل با موفقیت بازیابی شد"
+
+msgid "Filename"
+msgstr "نام فایل"
+
+msgid "Files added to clipboard"
+msgstr "فایل‌ها به کلیپ بورد اضافه شدند"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "فایل استخراج شد"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "کلید(ها) حذف شدند"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "%s حذف شد"
+
+msgid "Filter"
+msgstr "فیلتر"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "فیلتر"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP(ها) حذف شدند"
+
+msgid "Fingerprint"
+msgstr "اثر انگشت"
+
+msgid "First"
+msgstr "اولین"
+
+msgid "First PHP"
+msgstr "اولین PHP"
+
+msgid "First Page"
+msgstr "اولین صفحه"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "مقدار فلگ برای '%s' خالی است"
+
+msgid "Flush from DNS"
+msgstr "فلاش از DNS"
+
+msgid "For backwards compatibility"
+msgstr "برای سازگاری با سابقه‌ها"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"برای مواردی که تعداد زیادی دامنه برای پردازش ممکن است باعث مهلت زمانی شود"
+
+msgid "Forwarder"
+msgstr "فورواردر"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "فورواردر %s نمی تواند به خودش اشاره کند"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "فورواردر %s@%s حذف شد زیرا هیچ گیرنده‌ای برای آن باقی نمانده بود."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "فورواردر '%s' از قبل وجود دارد."
+
+msgid "Forwarder already exists"
+msgstr "فورواردر از قبل وجود دارد"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Forwarder حاوی یک کاراکتر پسوند local_part_است: '%s' به این معنی که همه چیز "
+"پس از آن نادیده گرفته می‌شود و فوروارد کننده هرگز مطابقت نخواهد داشت."
+
+msgid "Forwarder created"
+msgstr "فورواردر ایجاد شد"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "لوپ Forwarder پیدا شد: %s"
+
+msgid "Forwarder updated"
+msgstr "فورواردر آپدیت شد"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "فورواردر ایجاد شد"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "0 فایل در %s درحال خواندن به عنوان %s یافت شد"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr ""
+
+msgid "Free - randomly selected"
+msgstr "رایگان - به صورت تصادفی انتخاب شده است"
+
+msgid "Free Memory"
+msgstr "حافظه خالی"
+
+msgid "Free Selected"
+msgstr "انتخاب آزاد"
+
+msgid "Free Swap Memory"
+msgstr "حافظه Swap خالی"
+
+msgid "From"
+msgstr "از"
+
+msgid "Ftp"
+msgstr ""
+
+msgid "Ftp Accounts"
+msgstr "اکانت‌های FTP"
+
+msgid "Ftp account changed"
+msgstr "اکانت FTP تغییر پیدا کرد"
+
+msgid "Ftp settings saved"
+msgstr "تنظیمات FTP ذخیره شد"
+
+msgid "Full Date"
+msgstr "تاریخ کامل"
+
+msgid "Full Name has been successfully changed"
+msgstr "نام کامل با موفقیت تغییر کرده است"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "نام کامل \"%s\" به نام زون ختم نمی‌شود"
+
+msgid "GB"
+msgstr "گیگابایت"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "ایجاد کلیدها"
+
+msgid "Git Repositories"
+msgstr "مخازن Git"
+
+msgid "Global"
+msgstr "عمومی"
+
+msgid "Global - randomly selected"
+msgstr "جهانی - به طور تصادفی انتخاب شده است"
+
+msgid "Global Key"
+msgstr "کلید عمومی"
+
+msgid "Global Key set"
+msgstr "کلید جهانی تنظیم شد"
+
+msgid "Global ssh keys not available to Users"
+msgstr "کلیدهای ssh گلوبال در دسترس کاربران نیست"
+
+msgid "Go to %s"
+msgstr "برو به %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "گروه %s در حال حاضر وجود دارد. لطفا نام کاربری دیگری را انتخاب کنید."
+
+msgid "Handler"
+msgstr "شناسه"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "رکورد حذف شد"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "شناسه"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"سلام،\n"
+"\n"
+"این پیام برای این است که به شما اطلاع دهد که حساب شما '|USERNAME|' معلق شده."
+"\n"
+"دلیل: |REASON|\n"
+"\n"
+"اگر فکر می‌کنید این کار به اشتباه انجام شده است، لطفاً برای اطلاعات بیشتر با "
+"ارائه دهنده هاست خود تماس بگیرید\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "این نتایج است"
+
+msgid "Here are the results:"
+msgstr "این نتایج است:"
+
+msgid "High"
+msgstr "بالا"
+
+msgid "Highest"
+msgstr "بیشترین"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "هنگام جستجوی @ یا خط هدر دامنه، انتهای فایل را بزنید"
+
+msgid "Home Directory"
+msgstr "دایرکتوری Home"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "مسیر اصلی '%s' در home_override_list مجاز نیست"
+
+msgid "Host:"
+msgstr "هاست:"
+
+msgid "Hosts"
+msgstr "هاست‌ها"
+
+msgid "Hour"
+msgstr "ساعت"
+
+msgid "How to process the request"
+msgstr "نحوه‌ی پردازش درخواست"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"با این حال، پس از %s تلاش، آن‌ها نتوانستند یک کد احراز هویت دومرحله ای معتبر "
+"ارائه دهند، بنابراین هیچ دسترسی اعطا نشد."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "با این حال، به جای آن، ساب‌دامین‌ها پیدا شده‌اند. با آنها پیش می‌رویم."
+
+msgid "ID"
+msgstr "شناسه (ID)"
+
+msgid "ID does not belong to you"
+msgstr "ID به شما متعلق نیست"
+
+#, fuzzy
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 یا \"1234-1239\""
+
+msgid "IO Read Bandwidth Max"
+msgstr "حداکثر پهنای باند خواندن IO"
+
+msgid "IO Write Bandwidth Max"
+msgstr "حداکثر پهنای باند نوشتن IO"
+
+msgid "IOPS Read Max"
+msgstr "حداکثر خواندن IOPS"
+
+msgid "IOPS Write Max"
+msgstr "حداکثر نوشتن IOPS"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP اضافه شد"
+
+msgid "IP Info"
+msgstr "اطلاعات IP"
+
+msgid "IP Link Added"
+msgstr "لینک IP اضافه شد"
+
+msgid "IP Link(s) Removed"
+msgstr "لینک(های) IP حذف شدند"
+
+msgid "IP List is empty"
+msgstr "لیست IP خالی است"
+
+msgid "IP Netmask Set"
+msgstr "IP Netmask تنظیم شد"
+
+msgid "IP Type"
+msgstr "نوع IP"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP در فایل پیکربندی دامنه (%s) معتبر نیست."
+
+msgid "IP must be shared or free"
+msgstr "IP باید اشتراکی یا رایگان باشد"
+
+msgid "IP will be linked in the background"
+msgstr "IP در پس زمینه لینک خواهد شد"
+
+msgid "IP(s)"
+msgstr "IP(ها)"
+
+msgid "IP(s) removed"
+msgstr "IP(ها) حذف شدند"
+
+msgid "IP/User"
+msgstr "IP/کاربر"
+
+msgid "IPs"
+msgstr "IP ها"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"اگر نام کاربری وارد شده صحیح باشد، به زودی یک ایمیل تایید دریافت خواهید کرد."
+
+msgid "If this is not your IP, change your password."
+msgstr "اگر این IP شما نیست، رمز عبور خود را تغییر دهید."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"اگر نمی‌خواهید گواهینامه فعلی را بازنویسی کنید، لطفاً تمدید خودکار را "
+"غیرفعال کنید"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"اگر ادامه دهید، این حساب‌های کاربری، به همراه تمام محتوای وب‌سایت و ایمیل "
+"مرتبط، که در اینجا فهرست نشده‌اند، نیز حذف خواهند شد."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"اگر آن را روی 0 تنظیم کنید، هیچ درخواست اصلی http کار نخواهد کرد. شما حتی "
+"نمی‌توانید وارد شوید."
+
+msgid "Image filenames only have 1 dot"
+msgstr "نام فایل‌های تصویری فقط 1 نقطه دارند"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "فولدرهای Imap"
+
+msgid "Inactive"
+msgstr "غیرفعال"
+
+msgid "Inbox"
+msgstr "صندوق ورودی"
+
+msgid "Include Domains"
+msgstr "شامل دامنه‌ها"
+
+msgid "Info"
+msgstr "اطلاعات"
+
+msgid "Info for admins"
+msgstr "اطلاعات برای ادمین‌ها"
+
+msgid "Inherit"
+msgstr "به ارث می برند"
+
+msgid "Inodes"
+msgstr "آینودها"
+
+msgid "Installed"
+msgstr "نصب شده"
+
+msgid "Installed Perl Modules"
+msgstr "ماژول‌های Perl نصب شده"
+
+msgid "Interface is a loopback interface."
+msgstr "رابط یک رابط Loopback است."
+
+msgid "Interface is a point-to-point link."
+msgstr "رابط یک لینک نقطه به نقطه است."
+
+msgid "Interface is in promiscuous mode."
+msgstr "اینترفیس در حالت بی‌وقفه است."
+
+msgid "Interface is running."
+msgstr "رابط در حال اجرا است."
+
+msgid "Internal debugging flag."
+msgstr "فلگ اشکال زدایی داخلی."
+
+msgid "Invalid "
+msgstr "نامعتبر "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "'%s' نامعتبر"
+
+msgid "Invalid CC email address"
+msgstr "آدرس ایمیل CC نامعتبر است"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"کاراکترهای نامعتبر در نام پوسته. فقط از a-zA-Z0-9 استفاده کنید._-[] نباید با "
+"'.' شروع شود"
+
+msgid "Invalid Cron ID"
+msgstr "ID کران نامعتبر"
+
+msgid "Invalid DNS name"
+msgstr "نام DNS نامعتبر است"
+
+msgid "Invalid DNS value"
+msgstr "مقدار DNS نامعتبر است"
+
+msgid "Invalid Domain"
+msgstr "دامنه نامعتبر است"
+
+msgid "Invalid Domain Name"
+msgstr "نام دامنه نامعتبر است"
+
+msgid "Invalid E-Mail"
+msgstr "ایمیل نامعتبر است"
+
+msgid "Invalid E-Mail User"
+msgstr "کاربر ایمیل نامعتبر است"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"آدرس ایمیل نامعتبر است. نام کاربری دایرکت ادمین و ورود به سیستم چندگانه، یا "
+"خالی نیز مجاز است"
+
+msgid "Invalid Email"
+msgstr "ایمیل نامعتبر"
+
+msgid "Invalid Email Name"
+msgstr "نام ایمیل نامعتبر"
+
+msgid "Invalid Email limit"
+msgstr "محدودیت ایمیل نامعتبر است"
+
+msgid "Invalid FTP account"
+msgstr "اکانت FTP نامعتبر است"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "IP (1.2.3.4) یا محدوده IP (1.2.3.4-5) نامعتبر است"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "IP/Domain برای اتصال ftp نامعتبر است"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "مقدار Log Rotate نامعتبر: %d"
+
+msgid "Invalid MX value"
+msgstr "مقدار MX نامعتبر است"
+
+msgid "Invalid Name"
+msgstr "نام نامعتبر"
+
+msgid "Invalid Netmask"
+msgstr "Netmask نامعتبر است"
+
+msgid "Invalid Password"
+msgstr "رمزعبور نامعتبر است"
+
+msgid "Invalid RSA comment"
+msgstr "RSA Comment نامعتبر است"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "شناسه RSA نامعتبر است. از کاراکترهای ساده استفاده کنید: a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "کلید RSA نامعتبر است"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "مقدار SecRuleRemoveById نامعتبر است"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "مقدار SecRuleRemoveById نامعتبر است: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "ساب‌دامین نامعتبر است"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "کد احراز هویت دو مرحله ای نامعتبر است"
+
+#, fuzzy
+msgid "Invalid Two-Step Authentication code"
+msgstr "کد احراز هویت دو مرحله ای نامعتبر است"
+
+msgid "Invalid URL"
+msgstr "لینک نامعتبر است"
+
+msgid "Invalid Username"
+msgstr "نام کاربری نامعتبر است"
+
+msgid "Invalid Username or Password"
+msgstr "نام کاربری یا رمزعبور نامعتبر است"
+
+msgid "Invalid characters in password"
+msgstr "کاراکترهای نامعتبر در رمزعبور"
+
+msgid "Invalid characters in word"
+msgstr "کاراکترهای نامعتبر در کلمه"
+
+msgid "Invalid crypted passwd"
+msgstr "رمزعبور رمزنگاری شده نامعتبر است"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"delete_messages_days یا delete_tickets_days نامعتبر است. خیلی طولانی است. "
+"حداکثر = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"delete_messages_days یا delete_tickets_days نامعتبر است. باید 0 یا یک عدد "
+"صحیح مثبت باشد."
+
+msgid "Invalid dnsprovider"
+msgstr "dnsprovider نامعتبر است"
+
+#, fuzzy
+msgid "Invalid dnsprovider type"
+msgstr "dnsprovider نامعتبر است"
+
+msgid "Invalid domain"
+msgstr "دامنه نامعتبر است"
+
+msgid "Invalid email address"
+msgstr "آدرس ایمیل نامعتبر"
+
+msgid "Invalid email user"
+msgstr "کاربر ایمیل نامعتبر است"
+
+msgid "Invalid email username"
+msgstr "نام کاربری ایمیل نامعتبر است"
+
+msgid "Invalid encryption password"
+msgstr "رمزعبور رمزگذاری نامعتبر است"
+
+msgid "Invalid file extension list"
+msgstr "لیست اکستنشن فایل نامعتبر است"
+
+msgid "Invalid filename:"
+msgstr "نام فایل نامعتبر:"
+
+msgid "Invalid filter type"
+msgstr "نوع فیلتر نامعتبر است"
+
+msgid "Invalid fingerprint"
+msgstr "اثر انگشت نامعتبر است"
+
+msgid "Invalid ftp password"
+msgstr "رمزعبور ftp نامعتبر است"
+
+msgid "Invalid ftp path"
+msgstr "مسیر ftp نامعتبر"
+
+msgid "Invalid ftp port"
+msgstr "پورت ftp نامعتبر"
+
+msgid "Invalid ftp username"
+msgstr "نام کاربری ftp نامعتبر"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "طول بیت کلید نامعتبر: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "نام یا مقدار گزینه کلید نامعتبر: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "نوع کلید نامعتبر: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "اندازه کلید نامعتبر است. مقادیر معتبر: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "لیست نامعتبر از دامنه‌های مجاز"
+
+msgid "Invalid local path"
+msgstr "مسیر محلی نامعتبر است"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "ورود نامعتبر است. لطفا نام کاربری و رمز خودتان را تائید کنید"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "روزهای پیغام نامعتبر است. باید یک عدد صحیح مثبت باشد."
+
+msgid "Invalid message id"
+msgstr "شناسه پیام نامعتبر است"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "نوع پیام نامعتبر است. فقط درخواست، پاسخ و پیام مجاز است"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "روش نامعتبر: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "نام یا پسوند نامعتبر است"
+
+msgid "Invalid netmask type for IP type"
+msgstr "نوع netmask برای نوع IP نامعتبر است"
+
+msgid "Invalid new user value"
+msgstr "مقدار کاربر جدید نامعتبر است"
+
+msgid "Invalid number"
+msgstr "شماره نامعتبر است"
+
+msgid "Invalid package name"
+msgstr "نام پکیج نامعتبر است"
+
+msgid "Invalid path"
+msgstr "مسیر نامعتبر است"
+
+msgid "Invalid path append value"
+msgstr "مقدار اضافه مسیر نامعتبر است"
+
+msgid "Invalid redirect URL"
+msgstr "لینک ریدایرکت نامعتبر است"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "زمان پایان سشن یا حداکثر مقادیر اندازه فایل نامعتبر است"
+
+msgid "Invalid subdomain name"
+msgstr "نام ساب‌دامین نامعتبر است"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "روزهای تیکت نامعتبر است. باید یک عدد صحیح مثبت باشد."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "روزهای بلیت نامعتبر است. خیلی بزرگ اشت. حداکثر = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "نوع نامعتبر برای '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "کانال به روز رسانی نامعتبر است"
+
+msgid "Invalid username"
+msgstr "نام کاربری نامعتبر است"
+
+msgid "Invalid values"
+msgstr "مقادیر نامعتبر"
+
+msgid "Is able to select media type via ifmap."
+msgstr "قادر به انتخاب نوع رسانه از طریق ifmap است."
+
+msgid "Issue verifying license"
+msgstr "صدور لایسنس تایید"
+
+msgid "Issuer"
+msgstr "صادر کننده"
+
+msgid "It already exists on the following system(s)"
+msgstr "قبلاً در سیستم(های) زیر وجود دارد"
+
+msgid "It has been disabled"
+msgstr "غیر فعال شده است"
+
+msgid "It must be a positive integer."
+msgstr "باید یک عدد صحیح مثبت باشد."
+
+msgid "It must not be an IP"
+msgstr "نباید IP باشد"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "قبلاً با %s مرتبط است"
+
+msgid "Items per page"
+msgstr "آیتم‌ها در هر صفحه"
+
+msgid "Jailed Home"
+msgstr "خانه مبحوس"
+
+msgid "Jan"
+msgstr "ژانویه"
+
+msgid "Jul"
+msgstr "جولای"
+
+msgid "Jun"
+msgstr "ژوئن"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "کیلوبایت"
+
+msgid "Keep it for future reference."
+msgstr "آن را برای مراجعات بعدی نگه دارید."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "لطفا اعداد را در یک مقدار واقعی نگه دارید."
+
+msgid "Key"
+msgstr "کلید"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "کلید ایجاد شد. به ارزش آن توجه داشته باشید و آن را ایمن نگه دارید."
+
+msgid "Key ID"
+msgstr "شناسه کلید"
+
+msgid "Key Name"
+msgstr "نام کلید"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "نام کلید باید ساده باشد: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "کلید در حال حاضر از طریق تطبیق اثر انگشت وجود دارد"
+
+msgid "Key is Invalid"
+msgstr "کلید نامعتبر است"
+
+msgid "Key(s) deleted"
+msgstr "کلید(ها) حذف شدند"
+
+msgid "Keys"
+msgstr "کلیدها"
+
+msgid "Keys listed below"
+msgstr "کلیدها در زیر لیست شده‌اند"
+
+msgid "Kill"
+msgstr "قطع کردن"
+
+msgid "Language"
+msgstr "زبان"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "زبان به %s تغییر یافته است"
+
+msgid "Language has been successfully changed"
+msgstr "زبان با موفقیت تغییر کرده‌است"
+
+msgid "Last"
+msgstr "آخرین"
+
+msgid "Last Accessed"
+msgstr "آخرین دسترسی"
+
+msgid "Last Changed"
+msgstr "آخرین تغییر"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "آخرین IP ورود: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "آخرین ورود: %s"
+
+msgid "Last Message"
+msgstr "آخرین پیغام"
+
+msgid "Last Modified"
+msgstr "آخرین اصلاح"
+
+msgid "Last Page"
+msgstr "آخرین صفحه"
+
+msgid "Last Tally Completion"
+msgstr "آخرین تکمیل شمارش"
+
+msgid "Leave DNS"
+msgstr "ترک DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "کاربر سمت چپ در لیست %s"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "ورودی‌های گواهینامه Let's Encrypt"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt فعال نیست. شما نمی توانید از این گزینه استفاده کنید."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "فایل‌های LetsEncrypt پاک شده‌اند"
+
+msgid "LetsEncrypt request successful"
+msgstr "درخواست LetsEncrypt با موفقیت انجام شد"
+
+msgid "LetsEncrypt request successful for"
+msgstr "درخواست موفقیت آمیز LetsEncrypt برای"
+
+msgid "License file is no longer supported"
+msgstr "فایل لایسنس دیگر پشتیبانی نمی‌شود"
+
+msgid "License file unchanged"
+msgstr "فایل لایسنس تغییر پیدا نکرد"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "مجوز از طریق سیستم لایسنس دایرکت ادمین تایید شده است"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr "لایسنس محدود به %d مدیر/ریسلر است و شما در حال حاضر %d دارید"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "مجوز محدود به %d اکانت است و شما در حال حاضر %d دارید"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "مجوز محدود به %d دامنه است و شما در حال حاضر %d دارید"
+
+msgid "License is not valid"
+msgstr "لایسنس معتبر نیست"
+
+msgid "License limits exceeded"
+msgstr "از حد مجاز لایسنس فراتر رفت"
+
+msgid "License verified"
+msgstr "لایسنس تایید شده است"
+
+msgid "Limit Notice"
+msgstr "اعلام محدودیت"
+
+msgid "Limit is not a number"
+msgstr "محدودیت یک عدد نیست"
+
+msgid "Link"
+msgstr "لینک"
+
+msgid "Link in Background"
+msgstr "لینک در پس زمینه"
+
+msgid "Linked IPs"
+msgstr "IPهای لینک شده"
+
+msgid "List"
+msgstr "لیست"
+
+msgid "List Configurations Saved"
+msgstr "تنظیمات لیست ذخیره شد"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "نام فهرست باید %d کاراکتر یا کمتر باشد"
+
+msgid "Listname must be all lower case letters"
+msgstr "نام لیست باید همه حروف کوچک باشد"
+
+msgid "Load Average"
+msgstr "متوسط بارگذاری"
+
+msgid "Local Data"
+msgstr "داده‌های محلی"
+
+msgid "Local Default"
+msgstr "پیشفرض لوکال"
+
+msgid "Local Mail"
+msgstr "ایمیل محلی"
+
+msgid "Local URL Path"
+msgstr "مسیر لینک محلی"
+
+msgid "Log"
+msgstr "گزارش"
+
+msgid "Log Entry"
+msgstr "ورودی گزارش"
+
+msgid "Log Usage"
+msgstr "استفاده از گزارش"
+
+msgid "Login"
+msgstr "ورود"
+
+msgid "Login Failures"
+msgstr "ورود ناموفق"
+
+msgid "Login Keys"
+msgstr "کلیدهای ورود"
+
+#, c-format
+msgid "Login as %s"
+msgstr "ورود بعنوان %s"
+
+msgid "Low"
+msgstr "کم"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "مگابایت"
+
+msgid "MX Template set"
+msgstr "تمپلیت MX تنظیم شد"
+
+msgid "MX Templates are disabled"
+msgstr "تمپلیت‌های MX غیرفعال شدند"
+
+msgid "MX priority should be an positive number"
+msgstr "اولویت MX باید یک عدد مثبت باشد"
+
+msgid "Mailing List"
+msgstr "لیست ایمیل"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "لیست ایمیل"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "لیست‌های ایمیل"
+
+msgid "Mailing Lists"
+msgstr "لیست‌های ایمیل"
+
+msgid "Main"
+msgstr "اصلی"
+
+msgid "Main Domain ..."
+msgstr "دامنه اصلی ..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "خطای اساسی: خطا در یافتن خانه برای %s"
+
+msgid "Make sure 'unit' is running"
+msgstr "مطمئن شوید که \"unit\" در حال اجرا است"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "مطمئن شوید که مقادیر ارسال شده برای نوع خود معتبر هستند"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "به صورت دستی توسط %s"
+
+msgid "Mar"
+msgstr "مارس"
+
+msgid "Mark as read"
+msgstr "انتخاب به عنوان خوانده شده"
+
+msgid "Master of a load balancing bundle."
+msgstr "مَستر یک باندل Load Balancing."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "حداکثر وظایفی که ممکن است در واحد ایجاد شوند"
+
+msgid "Max Usage (Meg)"
+msgstr "بیشترین استفاده (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr "حداکثر عملیات خواندن دیسک در ثانیه."
+
+msgid "Max disk write operations per second."
+msgstr "حداکثر عملیات رایت دیسک در ثانیه."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "حداکثر محدودیت کاربر می تواند در هر ایمیل تعیین کند"
+
+msgid "Max rate data can be read from a disk."
+msgstr "بیشترین نرخ داده را می‌توان از یک دیسک خواند."
+
+msgid "Max rate data can be written to a disk."
+msgstr "بیشترین نرخ داده می‌تواند در یک دیسک رایت شود."
+
+msgid "Maximum Usage"
+msgstr "بیشترین استفاده"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "بیشترین مقدار: %s=%s"
+
+msgid "May"
+msgstr "می"
+
+msgid "Medium"
+msgstr "متوسط"
+
+msgid "Meg"
+msgstr "مگ"
+
+msgid "Memory High"
+msgstr "حافظه بالا"
+
+msgid "Memory Max"
+msgstr "حداکثر حافظه"
+
+msgid "Memory Usage"
+msgstr "استفاده از حافظه"
+
+msgid "Message #"
+msgstr "پیام #"
+
+msgid "Message Reset"
+msgstr "بازنشانی پیام"
+
+msgid "Message Type"
+msgstr "نوع پیام"
+
+msgid "Message is being sent"
+msgstr "پیام فرستاده شد"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "پیام حذف شد"
+msgstr[1] "پیام‌ها حذف شدند"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "پیام‌ها به روز شد"
+
+msgid "Messages Updated"
+msgstr "پیام‌ها به روز شد"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Mime Type ها"
+
+#, fuzzy
+msgid "Mime-Type added"
+msgstr "MimeType"
+
+msgid "MimeType"
+msgstr "MimeType"
+
+msgid "Minute"
+msgstr "دقیقه"
+
+msgid "Missing closing bracket in zone line."
+msgstr "براکت بسته شدن در خط زون وجود ندارد."
+
+msgid "Missing open bracket in zone line."
+msgstr "براکت باز در خط زون وجود ندارد."
+
+msgid "ModSecurity Flags"
+msgstr "فلگ‌های ModSecurity"
+
+msgid "ModSecurity Rules Saved"
+msgstr "قوانین ModSecurity ذخیره شد"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "قوانین حذف شده از ModSecurity"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity فعال نیست"
+
+msgid "Modify"
+msgstr "تغییر"
+
+msgid "Modify Password"
+msgstr "رمز عبور را تغییر دهید"
+
+msgid "Month"
+msgstr "ماه"
+
+msgid "More Info"
+msgstr "اطلاعات بیشتر"
+
+msgid "Morning"
+msgstr "صبح"
+
+msgid "Move Clipboard Files here"
+msgstr "فایل‌های کلیپ بورد را به اینجا منتقل کنید"
+
+msgid "Move to Trash"
+msgstr "انتقال به زباله‌دان"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"باید یک MimeType یا نام Handler و یک اکستنشن تنها ارائه کند. به عنوان مثال: "
+"\"text/html\" یا \"cgi-script\" و \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "باید بیش از صفر ورودی LetsEncrypt را انتخاب کنید."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"برای گزینه‌ها باید از letsencrypt=1 استفاده کنید. letsencrypt=%d در حال حاضر "
+"تنظیم شده است."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL در این سرور فعال نیست"
+
+msgid "NGINX Unit"
+msgstr "واحد NGINX"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Name Server 1"
+msgstr "نیم‌سرور 1"
+
+msgid "Name Server 2"
+msgstr "نیم‌سرور 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "نام فقط باید شامل حروف، فاصله و/یا نقطه باشد"
+
+msgid "Nameserver"
+msgstr "نیم‌سرور"
+
+msgid "Nameservers deleted"
+msgstr "نیم‌سرورها حذف شدند"
+
+msgid "Nameservers have been changed"
+msgstr "نیم‌سرورها تغییر پیدا کردند"
+
+msgid "Namesevers have been changed."
+msgstr "نیم‌سرورها تغییر پیدا کردند."
+
+msgid "Netmask"
+msgstr "Netmask"
+
+msgid "Never"
+msgstr "هرگز"
+
+msgid "New Secret Set: %s"
+msgstr "سوال امنیتی جدید تنظیم شد: %s"
+
+msgid "New password isn't different"
+msgstr "رمزعبور جدید متفاوت نیست"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "کلید تازه نصب شده %s-bit است"
+
+msgid "Next Retry"
+msgstr "تلاش بعدی"
+
+msgid "Nginx Template"
+msgstr "قالب Nginx"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx فعال نیست"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit فعال نیست یا اجرا نمی‌شود"
+
+msgid "No"
+msgstr "نه"
+
+msgid "No Awstats"
+msgstr "بدون Awstats"
+
+msgid "No Data to Show"
+msgstr "هیچ اطلاعاتی برای نمایش وجود ندارد"
+
+msgid "No IPs selected"
+msgstr "هیچ IP ای انتخاب نشده است"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "هیچ ListFileی در کانتینر در موقعیت مسیر %lld وجود ندارد"
+
+msgid "No Send class set"
+msgstr "هیچ کلاس ارسالی تنظیم نشده است"
+
+msgid "No User Data"
+msgstr "هیچ اطلاعات کاربری ای وجود ندارد"
+
+msgid "No action"
+msgstr "بدون انجام"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "پروتکل arp وجود ندارد، آدرس مقصد L2 تنظیم نشده است."
+
+msgid "No changes have been made"
+msgstr "هیچ تغییری ایجاد نشده است"
+
+msgid "No changes were needed. Skipping write."
+msgstr "هیچ تغییری لازم نبود. رد شدن از رایت."
+
+msgid "No colors have been selected"
+msgstr "هیچ رنگی انتخاب نشده است"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "کانتینری در موقعیت مسیر %lld وجود ندارد"
+
+msgid "No events for this period."
+msgstr "هیچ رویدادی برای این دوره وجود ندارد."
+
+msgid "No files have been selected for upload."
+msgstr "هیچ فایلی برای آپلود انتخاب نشده است."
+
+msgid "No free IPs found"
+msgstr "هیچ IP آزادی یافت نشده است"
+
+msgid "No global IPs found"
+msgstr "هیچ IP عمومی ای یافت نشد"
+
+msgid "No keys selected"
+msgstr "هیچ کلیدی انتخاب نشده است"
+
+msgid "No passwd entries provided."
+msgstr "هیچ ورودی رمز عبوری ارائه نشده است."
+
+msgid "No paths were provided."
+msgstr "هیچ مسیری ارائه نشده است."
+
+msgid "No shared IPs found"
+msgstr "هیچ IP اشتراکی‌ای یافت نشد"
+
+msgid "No text provided"
+msgstr "متنی ارائه نشده است"
+
+msgid "No vacation message set"
+msgstr "پیام تعطیلات تنظیم نشده است"
+
+msgid "None"
+msgstr ""
+
+msgid "Not a valid IP Address"
+msgstr "یک آدرس IP معتبر نیست"
+
+msgid "Not allowed for Resellers"
+msgstr "برای فروشندگان مجاز نیست"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+"IP کافی برای ایجاد نیم‌سرورها وجود ندارد. حداقل %d آی پی آزاد و اختصاص "
+"نیافته نیاز دارد."
+
+msgid "Not setting up Mail SNI."
+msgstr "تنظیم نشدن Mail SNI."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "به دلیل کاراکتر «%c» در ایندکس %d معتبر نیست"
+
+msgid "Not yet generated"
+msgstr "هنوز تولید نشده است"
+
+msgid "Not yet signed"
+msgstr "هنوز ثبت نشده است"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"توجه: پیکربندی قبلی Let's Encrypt همچنان تنظیم شده است تا در %d روز تمدید "
+"شود."
+
+msgid "Nothing"
+msgstr "هیچ چیزی"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "اعلان اینکه کلید ورود %s با موفقیت توسط %s ایجاد شده است"
+
+msgid "Notified"
+msgstr "اطلاع داده شده"
+
+msgid "Nov"
+msgstr "نوامبر"
+
+msgid "Null values"
+msgstr "مقادیر تهی"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "عدد %s=%s خارج از محدوده است (الزامی: %d-%d)"
+
+msgid "Number of Users"
+msgstr "تعداد کاربران"
+
+msgid "OK"
+msgstr "اوکی"
+
+msgid "Oct"
+msgstr "اکتبر"
+
+msgid "Off"
+msgstr "خاموش"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "کلید قدیمی %s-bit در %s بک‌آپ شده است"
+
+msgid "Old password incorrect"
+msgstr "پسورد قدیمی نادرست است"
+
+#, c-format, fuzzy
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "قدیمی‌تر از %s روز."
+msgstr[1] "قدیمی‌تر از %s روز."
+
+msgid "On"
+msgstr "روشن"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr "یک (یا چند) عدد از IP های انتخاب شده در حال حاضر در لیست شما نیستند"
+
+#, fuzzy
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "cgroup در directadmin.conf خاموش است"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"برای ورود به سیستم با یک کلیک، webmail_link=%s پشتیبانی نمی‌شود. "
+"webmail_link=roundcube را امتحان کنید."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "فقط %d از %d IP جهانی درخواستی اختصاص داده شد."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "فقط IP های «اضافی» را می توان با استفاده از این روش از کاربر حذف کرد"
+
+msgid "Only API access is allowed"
+msgstr ""
+
+msgid "Only Admin accounts can save settings"
+msgstr "فقط حساب‌های Admin می‌توانند تنظیمات را ذخیره کنند"
+
+msgid "Only Admins can reset the usage count"
+msgstr "فقط ادمین‌ها می‌توانند تعداد استفاده را ریست کنند"
+
+msgid "Only Admins may run this request"
+msgstr "فقط ادمین‌ها می‌توانند این درخواست را اجرا کنند"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+"هر بار فقط یک اکستنشن ارائه دهید. به عنوان مثال: \"jpg\" و نه \"jpg jpeg "
+"jpe\""
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "فقط دامنه پیش فرض '%s' قادر به کنترل تنظیمات php است."
+
+msgid "Only the location of the route can be renamed"
+msgstr "فقط مکان route را می توان تغییر نام داد"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr "فقط از wildcard برای دامنه‌هایی که Local DNS کاربردی دارند استفاده کنید"
+
+msgid "Open"
+msgstr "باز کردن"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir در دامنه‌های انتخابی غیرفعال است"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir در دامنه‌های انتخابی فعال است"
+
+msgid "Open+Confirm"
+msgstr "بازکردن + تایید"
+
+msgid "Operation"
+msgstr "عملیات"
+
+msgid "Optimize"
+msgstr "بهینه‌سازی"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "گزینه '%s' قبلاً تنظیم شده است"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "تنظیمات ذخیره شد"
+
+msgid "Options"
+msgstr "گزینه‌ها"
+
+msgid "Options changed successfully"
+msgstr "گزینه‌ها با موفقیت تغییر کردند"
+
+msgid "Order"
+msgstr "سفارش"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "ترتیب (زمانی که مقادیر مرتب سازی اول برابر باشند)"
+
+msgid "Original Package"
+msgstr "پکیج اصلی"
+
+msgid "Other"
+msgstr "دیگری"
+
+msgid "Other Disk Usage"
+msgstr "مصرف دیسک دیگر"
+
+msgid "Other Usage"
+msgstr "مصرف دیگر"
+
+msgid "Overview"
+msgstr "بررسی اجمالی"
+
+msgid "Owner"
+msgstr "صاحب"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "مالک IP جهانی با ادمین %s تعویض شد"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "نام اسکریپت PHP"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "تنظیمات PHP را نمی‌توان تحت این دامنه کنترل کرد"
+
+msgid "PHP Version Selector"
+msgstr "انتخاب ورژن PHP"
+
+msgid "PHP versions saved"
+msgstr "نسخه‌های PHP ذخیره شده است"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' یک عدد نیست"
+
+msgid "POP Email Accounts"
+msgstr "اکانت‌های ایمیل pop"
+
+msgid "POP/IMAP Server"
+msgstr "سرور POP/IMAP"
+
+msgid "Package"
+msgstr "پکیج"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "پکیج \"%s\" از قبل وجود دارد"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "پکیج \"%s\" وجود ندارد"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "پکیج '%s' در لیست شما نیست"
+
+msgid "Package not found"
+msgstr "پکیج پیدا نشد"
+
+msgid "Page"
+msgstr "صفحه"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "دایرکتوری والد %s ایجاد شد."
+
+msgid "Parsing Error. Check logs"
+msgstr "خطای Parsing. لاگ‌ها را بررسی کنید"
+
+msgid "Password"
+msgstr "گذرواژه"
+
+msgid "Password Changed"
+msgstr "کلمه عبور تغییر پیدا کرد"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "کلمه عبور تغییر پیدا کرد: %s"
+
+msgid "Password Not Changed"
+msgstr "رمزعبور تغییر پیدا نکرد"
+
+msgid "Password Saved!"
+msgstr "رمزعبور ذخیره شد!"
+
+msgid "Password is not valid"
+msgstr "رمزعبور معتبر نیست"
+
+msgid "Password is too long"
+msgstr "رمزعبور بسیار طولانی است"
+
+msgid "Password is too short"
+msgstr "رمزعبور بسیار کوتاه است"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "رمز عبور خیلی کوتاه است (%d). از حداقل %d کاراکتر استفاده کنید"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "رمز عبور باید بیش از %d کاراکتر باشد"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "پوسته با موفقیت تغییر کرده است"
+
+msgid "Password/Quota"
+msgstr "رمزعبور / سهمیه"
+
+msgid "Password:"
+msgstr "رمزعبور:"
+
+msgid "Passwords do not match"
+msgstr "رمزهای عبور مطابقت ندارند"
+
+msgid "Passwords do not match or are invalid"
+msgstr "گذرواژه‌ها مطابقت ندارند یا نامعتبر هستند"
+
+msgid "Path"
+msgstr "مسیر"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "مسیر %s وجود ندارد یا توسط کاربر %s قابل دسترسی نیست."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"مسیر '%s' از قبل از ایجاد کاربر وجود دارد. لطفا ابتدا این مسیر را حذف یا "
+"تغییر نام دهید."
+
+msgid "Path does not exist"
+msgstr "مسیر وجود ندارد"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "مسیر باید با اسلش رو به جلو شروع شود (/)"
+
+msgid "Paths Unblocked"
+msgstr "مسیرها آنبلاک شدند"
+
+msgid "Paths must be within your home directory"
+msgstr "مسیرها باید در فهرست اصلی شما باشند"
+
+msgid "Percent"
+msgstr "درصد"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "درصد باید با کاراکتر c% تمام شود"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "درصد CPU Core > 100% برای هسته های بیشتر."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "درصد باید بین %d و %d باشد"
+
+msgid "Perm."
+msgstr "Perm."
+
+msgid "Permissions set"
+msgstr "مجوزها تنظیم شده است"
+
+msgid "Php is not enabled"
+msgstr "php فعال نیست"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr "لطفاً زون %s را بررسی کنید تا از صحت A Record نیم‌سرور آن مطمئن شوید."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "لطفاً تأیید کنید که می‌خواهید اطلاعات DNSSEC خود را حذف کنید"
+
+msgid "Please pick only one skin to apply"
+msgstr "لطفا فقط یک پوسته را برای اعمال انتخاب کنید"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "لطفاً یک '%s' ارائه دهید"
+
+msgid "Please provide at least one IP"
+msgstr "لطفا حداقل یک IP ارائه دهید"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "لطفاً این URL را ببینید و کد خروجی \"(%d)\" را بررسی کنید: %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "لطفاً 1 دامنه را به عنوان دامنه پیش فرض خود انتخاب کنید"
+
+msgid "Please select at least one User"
+msgstr "لطفا حداقل یک کاربر را انتخاب کنید"
+
+msgid "Please select at least one domains"
+msgstr "لطفا حداقل یک دامنه را انتخاب کنید"
+
+msgid "Please select at least one file"
+msgstr "لطفا حداقل یک فایل را انتخاب کنید"
+
+msgid "Please select at least one item"
+msgstr "لطفا حداقل یک آیتم را انتخاب کنید"
+
+msgid "Please select at least one package"
+msgstr "لطفا حداقل یک پکیج را انتخاب کنید"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "لطفاً بیش از صفر فایل را برای استخراج از آرشیو انتخاب کنید"
+
+msgid "Please select one or more Databases"
+msgstr "لطفاً یک یا چند پایگاه داده را انتخاب کنید"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "لطفا فقط یک cronjob را برای ویرایش انتخاب کنید"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "لطفاً لیمیتی را بین 1 تا %d تنظیم کنید"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "لطفاً قبل از حذف، لینک همه IPها را از «%s» لغو کنید."
+
+msgid "Please use all lower case characters in the username"
+msgstr "لطفا از تمام حروف کوچک در نام کاربری استفاده کنید"
+
+msgid "Plugin Uploaded"
+msgstr "افزونه آپلود شد"
+
+msgid "Plugin(s) Installed"
+msgstr "افزونه (ها) نصب شدند"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "پلاگین (ها)، نصب نشده‌اند"
+
+msgid "Plugin(s) Updated"
+msgstr "پلاگین (ها) به روز شدند"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "پوینتر '%s' متعلق به شما نیست."
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "پست اسکریپت ها"
+
+msgid "Post scripts"
+msgstr "پست اسکریپت‌ها"
+
+msgid "Pre-backup hard-link check"
+msgstr "بررسی هارد لینک پیش از بک‌آپ گیری"
+
+msgid "Preparing 'domains' data"
+msgstr "آماده سازی اطلاعات «دامنه ها»"
+
+msgid "Preparing data (no 'domains')"
+msgstr "آماده سازی اطلاعات (بدون «دامنه»)"
+
+msgid "Present"
+msgstr "کنونی"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"حفظ داده‌های وب فقط برای /domains/domain.com اعمال می‌شود. مناطق دیگر مانند "
+"داده‌های ایمیل حفظ نخواهند شد."
+
+msgid "Priority"
+msgstr "اولویت"
+
+msgid "Privileges"
+msgstr "امتیازات"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "ID پردازش %d «dataskq» نیست. این '%s' است"
+
+msgid "Process is running"
+msgstr "فرآیند در حال اجراست"
+
+msgid "Process is stopped"
+msgstr "فرآیند متوقف شده است"
+
+msgid "Processor Name"
+msgstr "نام پردازشگر"
+
+msgid "Processor Speed (MHz)"
+msgstr "سرعت پردازشگر (MHz)"
+
+msgid "Progress"
+msgstr "پیشرفت"
+
+msgid "Protect"
+msgstr "محافظت"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr ""
+"نام دایرکتوری محافظت شده حاوی کاراکترهای نامعتبر است. آن را ساده نگه دارید"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"حفاظت از دایرکتوری‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "یک IP، یک محدوده IP، دامنه، یا دامنه وایلدکارت ارائه دهید."
+
+msgid "Provided password is not correct."
+msgstr "رمز عبور ارائه شده صحیح نیست."
+
+#, fuzzy
+msgid "Provided password is weak"
+msgstr "رمز عبور ارائه شده صحیح نیست."
+
+msgid "Provided value is not a Username or Email address"
+msgstr "مقدار ارائه شده یک نام کاربری یا آدرس ایمیل نیست"
+
+msgid "Provided value is not valid."
+msgstr "مقدار ارائه شده معتبر نیست."
+
+msgid "Proxy socket address"
+msgstr "آدرس Proxy Socket"
+
+msgid "Publish"
+msgstr "انتشار"
+
+msgid "Purge"
+msgstr "پاکسازی"
+
+msgid "Purge Archives"
+msgstr "پاکسازی آرشیو‌ها"
+
+msgid "Purge From"
+msgstr "پاک کردن از"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "پاک کردن در %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "انتقال دادن httpd.conf rewrite کارهای پس زمینه."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "تغییرات ذخیره شد"
+
+msgid "Re-sign your zone."
+msgstr "زون خود را دوباره وارد کنید."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "خطای خواندن با %s: %s"
+
+msgid "Reason:"
+msgstr "دلیل:"
+
+msgid "Reboot"
+msgstr "راه‌اندازی مجدد"
+
+msgid "Receive all multicast packets."
+msgstr "تمام پکیج‌های چندپخشی را دریافت کنید."
+
+msgid "Received"
+msgstr "دریافت شده"
+
+msgid "Received Emails"
+msgstr "ایمیل‌های دریافت شده"
+
+msgid "Reconfiguration Error"
+msgstr "خطای پیکربندی مجدد"
+
+msgid "Record Added"
+msgstr "رکورد اضافه شد"
+
+msgid "Record Edited"
+msgstr "رکورد ویرایش شد"
+
+msgid "Records Deleted"
+msgstr "رکورد حذف شد"
+
+msgid "Recursive"
+msgstr "بازگشتی"
+
+msgid "Recursively"
+msgstr "به صورت بازگشتی"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"بازنشانی بازگشتی مالکیت با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Redirect Added"
+msgstr "ریدایرکت اضافه شد"
+
+msgid "Redirect URL"
+msgstr "لینک ریدایرکت"
+
+msgid "Redirect(s) deleted"
+msgstr "ریدایرکت (ها) پاک شدند"
+
+msgid "Redis"
+msgstr "ردیس"
+
+msgid "Refresh"
+msgstr "رفرش"
+
+#, fuzzy
+msgid "Regenerate Codes"
+msgstr "ایجاد کلیدها"
+
+msgid "Related"
+msgstr "مرتبط"
+
+msgid "Release Candidates"
+msgstr "کاندیداها را آزاد کنید"
+
+msgid "Reload"
+msgstr "بارگیری مجدد"
+
+msgid "Reload requested"
+msgstr "بارگیری مجدد درخواست شد"
+
+msgid "Remote Mail"
+msgstr "ایمیل از راه دور"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "حذف رکوردهای DNS برای IP(ها)"
+
+msgid "Remove DNSSEC"
+msgstr "حذف DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "حذف محتواهای دایرکتوری"
+
+msgid "Remove From Skip List"
+msgstr "حذف از لیست پرش"
+
+msgid "Remove from reseller"
+msgstr "حذف از ریسلر"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "کاربر از لیست %s حذف شد"
+
+msgid "Rename"
+msgstr "تغییر نام"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr "تغییر نام فایل ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Repair"
+msgstr "اصلاح"
+
+msgid "Replies"
+msgstr "پاسخ‌ها"
+
+msgid "Reply"
+msgstr "پاسخ"
+
+msgid "Reply Sent"
+msgstr "پاسخ ارسال شد"
+
+msgid "Request added to task.queue"
+msgstr "درخواست به task.queue اضافه شد"
+
+msgid "Request will be processed in the background."
+msgstr "درخواست در پس‌زمینه پردازش می‌شود."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "مقدار درخواست شده LetsEncrypt برای '%s' یک مقدار مجاز نیست."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr ""
+"اندازه فایل درخواستی (%lld) از مقدار حداکثر اندازه فایل (%lld) بیشتر است"
+
+msgid "Requests Cancelled"
+msgstr ""
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "مورد نیاز: '%s' یا '%s'"
+
+msgid "Reseller"
+msgstr "ریسلر"
+
+msgid "Reseller Bandwidth"
+msgstr "پهنای باند ریسلر"
+
+msgid "Reseller History"
+msgstr "تاریخچه ریسلر"
+
+msgid "Reseller Quota"
+msgstr "سهمیه ریسلر"
+
+msgid "Reseller created"
+msgstr "ریسلر ایجاد شد"
+
+msgid "Reseller deleted"
+msgstr "ریسلر حذف شد"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr "به ریسلر، صفر IP اختصاص داده شده است. بدون IP نمی‌توان دامنه ایجاد کرد."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "ریسلر فقط %s از %s IP خود را دریافت کرد."
+msgstr[1] "ریسلر فقط %s از %s IPهای خود را دریافت کرد."
+
+msgid "Reseller's IP"
+msgstr "IP ریسلر"
+
+msgid "Reset"
+msgstr "ریست"
+
+msgid "Reset Owner"
+msgstr "بازنشانی مالک"
+
+msgid "Reset Ownership"
+msgstr "ریست مالکیت"
+
+msgid "Reset Today"
+msgstr "امروز ریست کن"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"بازنشانی مالکیت فایل با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Resources allocated."
+msgstr "منابع تخصیص یافته است."
+
+msgid "Restart"
+msgstr "راه‌اندازی مجدد"
+
+msgid "Restore"
+msgstr "بازگردانی"
+
+msgid "Restore Complete!"
+msgstr "بازیابی کامل شد!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "خطای بازیابی با واحد Nginx: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"بازیابی حساب '%s' به سازنده '%s' رد شده است، زیرا این حساب از قبل تحت کنترل "
+"سازنده '%s' وجود دارد"
+
+msgid "Restore will run in the background"
+msgstr "بازیابی در پس‌زمینه اجرا می‌شود"
+
+msgid "Restores added to Queue"
+msgstr "بازیابی به صف اضافه شده است"
+
+msgid "Restoring Databases"
+msgstr "بازیابی دیتابیس‌ها"
+
+msgid "Restoring Domains Data"
+msgstr "بازیابی اطلاعات دامنه‌ها"
+
+msgid "Restoring E-Mail Data"
+msgstr "بازیابی اطلاعات ایمیل"
+
+msgid "Restoring E-Mail Settings"
+msgstr "بازیابی تنظیمات ایمیل"
+
+msgid "Restoring Extra Admin Data"
+msgstr "بازیابی اطلاعات اضافی ادمین"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "بازیابی اطلاعات اضافی فروشنده"
+
+msgid "Restoring Extra User Data"
+msgstr "بازیابی اطلاعات اضافی کاربر"
+
+msgid "Restoring FTP"
+msgstr "بازیابی FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "بازیابی موارد اضافی ایمیل"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "بازیابی فایل‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Result"
+msgstr "نتیجه"
+
+msgid "Result of file copy"
+msgstr "نتیجه کپی فایل"
+
+msgid "Result of file move"
+msgstr "نتیجه انتقال فایل"
+
+msgid "Results"
+msgstr "نتایج"
+
+msgid "Retries"
+msgstr "تلاش‌های مجدد"
+
+msgid "Retry"
+msgstr "تلاش مجدد"
+
+#, fuzzy
+msgid "Retry counter has been cleared."
+msgstr "کوکی تراست پاک شد"
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "کد برگشتی 3XX(%d) به یک مکان نیاز دارد"
+
+msgid "Return with httpd code"
+msgstr "برگشت با کد httpd"
+
+msgid "Rewrite Apache"
+msgstr "آپاچی را بازنویسی کنید"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr ""
+"RoundCube گزینه direct_login را ندارد. لطفا RoundCube را دوباره نصب کنید."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "مسیر '%s' به '%s' ختم نمی‌شود"
+
+msgid "Rules Reset"
+msgstr "بازنشانی قوانین"
+
+msgid "Run Now"
+msgstr "الان اجرا کن"
+
+msgid "Running"
+msgstr "در حال اجرا"
+
+msgid "SMTP Log"
+msgstr "گزارش SMTP"
+
+msgid "SMTP Server"
+msgstr "سرور SMTP"
+
+msgid "SNI Host"
+msgstr "میزبانی SNI"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI برای این دامنه غیرفعال است"
+
+msgid "SSH Key Modified"
+msgstr "کلید SSH اصلاح شد"
+
+msgid "SSH Key authorized"
+msgstr "کلید SSH مجاز است"
+
+msgid "SSH Key created"
+msgstr "کلید SSH ایجاد شد"
+
+msgid "SSH Key deleted"
+msgstr "کلید SSH حذف شد"
+
+msgid "SSH is not enabled"
+msgstr "SSH فعال نیست"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL برای این دامنه فعال نیست"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "حالت ایمن در دامنه‌های انتخابی غیرفعال است"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "حالت ایمن در دامنه های انتخاب شده فعال است"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Save Awstats"
+msgstr "Awstats را ذخیره کنید"
+
+msgid "Save Comments"
+msgstr "تغییره دیدگاه‌ها"
+
+msgid "Save E-Mail"
+msgstr "ایمیل را ذخیره کنید"
+
+msgid "Save Increase"
+msgstr "ذخیره افزایش"
+
+msgid "Save Language"
+msgstr "ذخیره زبان"
+
+msgid "Save Limit"
+msgstr "ذخیره محدودیت"
+
+msgid "Save Limit Notice"
+msgstr "اعلان محدودیت ذخیره"
+
+msgid "Save Name"
+msgstr "ذخیره نام"
+
+msgid "Save Nameservers"
+msgstr "ذخیره نیم‌سرورها"
+
+msgid "Save Skin"
+msgstr "ذخیره پوسته"
+
+#, fuzzy
+msgid "Saved"
+msgstr "ذخیره"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"ذخیره/ویرایش فایل‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Scratch Codes"
+msgstr "کدهای خراش"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "کدهای Scratch"
+
+msgid "Script output"
+msgstr "خروجی اسکریپت"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "شناسه SecRuleRemoveById خالی است"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "لایه سوکت امن (SSL)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "برای رفع آن %s به راهنمای %s مراجعه کنید."
+
+msgid "See Error log for more information."
+msgstr "برای اطلاعات بیشتر به گزارش خطا مراجعه کنید."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "این راهنما را مشاهده کنید: %s"
+
+msgid "Select"
+msgstr "انتخاب"
+
+msgid "Select MX Template"
+msgstr "انتخاب قالب MX"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "یک IP را برای پیوند به %s انتخاب کنید"
+
+msgid "Selected Content-Type is not valid."
+msgstr "نوع محتوای انتخابی معتبر نیست."
+
+msgid "Selected Data"
+msgstr "اطلاعات انتخاب شده"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "پلاگین‌های انتخاب شده فعال شد"
+
+msgid "Selected Plugins De-Activated"
+msgstr "پلاگین‌های انتخابی غیرفعال شدند"
+
+msgid "Selected Plugins Deleted"
+msgstr "پلاگین‌های انتخابی حذف شدند"
+
+msgid "Selected Users"
+msgstr "کاربران انتخاب شده"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "رمزگذاری مجموعه کاراکتر انتخابی معتبر نیست."
+
+msgid "Send Count"
+msgstr "ارسال تعداد"
+
+msgid "Send Signal"
+msgstr "ارسال سیگنال"
+
+msgid "Send a Message"
+msgstr "ارسال یک پیغام"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "محدودیت ارسال باید یک عدد معتبر یا خالی باشد."
+
+msgid "Sender"
+msgstr "ارسال کننده"
+
+msgid "Sender Host"
+msgstr "هاست فرستنده"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr ""
+"دامنه فرستنده باید با دامنه فهرست «%s» مطابقت داشته باشد یا از «%s» استفاده "
+"کند"
+
+msgid "Sent"
+msgstr "ارسال شده"
+
+msgid "Sent E-mails"
+msgstr "ایمیل‌های ارسال شده"
+
+msgid "Sent Emails"
+msgstr "ایمیل‌های ارسال شده"
+
+msgid "Sep"
+msgstr "سپتامبر"
+
+msgid "Server"
+msgstr "سرور"
+
+msgid "Server History"
+msgstr "تاریخچه سرور"
+
+msgid "Server Path"
+msgstr "مسیر سرور"
+
+msgid "Service"
+msgstr "سرویس"
+
+msgid "Set"
+msgstr "تنظیم"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+"0 را برای نامحدود تنظیم کنید. یک مقدار خالی تنظیم کنید تا به حالت پیش فرض "
+"بازنشانی شود."
+
+msgid "Set Global Shared"
+msgstr "تنظیم اشتراک عمومی"
+
+msgid "Set as Default"
+msgstr "تنظیم بعنوان پیشفرض"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr ""
+"دامنه‌های انتخابی را طوری تنظیم کنید که آن‌ها به صورت عمومی قابل مشاهده باشند"
+
+msgid "Set selected to"
+msgstr "تنظیم انتخاب شده به"
+
+msgid "Set to"
+msgstr "تنظیم کنید"
+
+msgid "Setting"
+msgstr "تنظیمات"
+
+msgid "Setting changed"
+msgstr "تنظیمات تغییر کرد"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"تنظیم مجوزهای فایل/دایرکتوری با گزینه filemanager_disable_features غیرفعال "
+"شده است"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Settings Saved"
+msgstr "تنظیمات ذخیره شد"
+
+msgid "Share Selected"
+msgstr "اشتراک گذاری انتخاب شده"
+
+msgid "Share a static path"
+msgstr "اشتراک گذاری مسیر استاتیک"
+
+msgid "Shared"
+msgstr "اشتراکی"
+
+msgid "Shared - randomly selected"
+msgstr "مشترک - انتخاب شده به صورت تصادفی"
+
+msgid "Shell Access (ssh)"
+msgstr "دسترسی Shell (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "شل برای کاربران ریسلر"
+
+msgid "Show"
+msgstr "نمایش"
+
+msgid "Sign"
+msgstr "ورود"
+
+msgid "Signed"
+msgstr "وارد شده"
+
+msgid "Size"
+msgstr "حجم"
+
+msgid "Size is not a number"
+msgstr "سایز یک عدد نیست"
+
+msgid "Skin"
+msgstr "پوسته"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "پوسته‌ی '%s' هیچ متغیر رنگ سفارشی برای تنظیم ندارد"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "پوسته‌ها حذف شدند"
+
+msgid "Skin Installed"
+msgstr "پوسته نصب شد"
+
+msgid "Skin Name"
+msgstr "نام پوسته"
+
+msgid "Skin Owner"
+msgstr "مالک پوسته"
+
+msgid "Skin Set"
+msgstr "پوسته تنظیم شد"
+
+msgid "Skin applied to all users"
+msgstr "پوسته برای همه کاربران اعمال می‌شود"
+
+msgid "Skin has been customized"
+msgstr "پوسته سفارشی شده است"
+
+msgid "Skin has been successfully changed"
+msgstr "پوسته با موفقیت تغییر کرده است"
+
+msgid "Skins Deleted"
+msgstr "پوسته‌ها حذف شدند"
+
+msgid "Skip Suspended"
+msgstr "رد کردن حالت تعلیق"
+
+msgid "Skipped rule added"
+msgstr "قانون نادیده گرفته شده اضافه شد"
+
+msgid "Skipping system E-Mail account"
+msgstr "پرش از حساب ایمیل سیستم"
+
+msgid "Slave of a load balancing bundle."
+msgstr "اسلیو یک باندل load balancing."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "متأسفیم، این تابع در حال حاضر از پوینترهای دامنه پشتیبانی نمی‌کند"
+
+msgid "Sort"
+msgstr "مرتب سازی"
+
+msgid "Sort Selected Column in"
+msgstr "مرتب سازی ستون انتخاب شده در"
+
+msgid "Source Domain"
+msgstr "دامنه مبدا"
+
+msgid "Spam"
+msgstr "اسپم"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAssassin در حساب شما غیرفعال است"
+
+msgid "SpamAssassin"
+msgstr "قاتل اسپم"
+
+msgid "Spamassassin disabled"
+msgstr "Spamassassin غیرفعال شد"
+
+msgid "Spambox"
+msgstr "صندوق اسپم"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd روی سیستم شما اجرا نمی‌شود."
+
+msgid "Splitting error for unix socket"
+msgstr "خطای تقسیم برای سوکت یونیکس"
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr "پایدار"
+
+msgid "Start"
+msgstr "استارت"
+
+msgid "Start Time"
+msgstr "زمان شروع"
+
+msgid "Start Time must be before End Time."
+msgstr "زمان شروع باید قبل از زمان پایان باشد."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "ایالت/استان فقط باید دارای حروف، فاصله و/یا نقطه باشد"
+
+msgid "Stats links created"
+msgstr "لینک‌های آماری ایجاد شد"
+
+msgid "Stats links removed"
+msgstr "لینک‌های آماری حذف شد"
+
+msgid "Status"
+msgstr "وضعیت"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "وضعیت"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "بیت چسبنده مجاز نیست: 777 حداکثر مجوز مجاز است"
+
+msgid "Stop"
+msgstr "توقف"
+
+msgid "Stopped"
+msgstr "متوقف شده"
+
+msgid "String contains an invalid email address"
+msgstr "String حاوی یک آدرس ایمیل نامعتبر است"
+
+msgid "Sub Domains"
+msgstr "ساب‌دامنه‌ها"
+
+msgid "Sub Sort"
+msgstr "مرتب سازی فرعی"
+
+msgid "Sub Sort Selected Column in"
+msgstr "مرتب‌سازی فرعی ستون انتخاب شده در"
+
+msgid "Sub-domain is forbidden"
+msgstr "ساب‌دامین ممنوعه است"
+
+msgid "SubDomain Name"
+msgstr "نام ساب‌دامین"
+
+msgid "Subdomain Created"
+msgstr "ساب‌دامین ایجاد شد"
+
+msgid "Subdomain Removed"
+msgstr "ساب‌دامین حذف شد"
+
+msgid "Subdomain Stats"
+msgstr "آمار ساب‌دامین"
+
+msgid "Subdomain already exists"
+msgstr "ساب‌دامین از قبل وجود دارد"
+
+msgid "Subdomain created"
+msgstr "ساب‌دامین ایجاد شد"
+
+msgid "Subdomain does not exist"
+msgstr "ساب‌دامین وجود ندارد"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "نام ساب‌دامین بسیار طولانی است. حداکثر %d کاراکتر باید باشد."
+
+msgid "Subdomains"
+msgstr "ساب‌دامین‌ها"
+
+msgid "Subdomains Removed"
+msgstr "ساب‌دامین‌ها پاک شدند"
+
+msgid "Subdomains deleted"
+msgstr "ساب‌دامین‌ها حذف شدند"
+
+msgid "Subject"
+msgstr "موضوع"
+
+msgid "Subject Contains"
+msgstr "موضوع شامل"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "پیشوند موضوع شامل کاراکترهای نامعتبر است. از %s استفاده کنید"
+
+msgid "Subscriber"
+msgstr "مشترک"
+
+msgid "Subscribers"
+msgstr "مشترکین"
+
+msgid "Success"
+msgstr "موفقیت"
+
+msgid "Supports multicast"
+msgstr "پشتیبانی از multicast"
+
+msgid "Suspend"
+msgstr "معلق"
+
+msgid "Suspend / Unsuspend"
+msgstr "معلق / خروج از حالت تعلیق"
+
+msgid "Suspend Reason"
+msgstr "دلیل تعلیق"
+
+msgid "Suspend at Limit"
+msgstr "تعلیق در حدنصاب"
+
+msgid "Suspended"
+msgstr "معلق"
+
+msgid "Syntax check has been disabled"
+msgstr "بررسی Syntax غیرفعال شده است"
+
+msgid "System Info"
+msgstr "اطلاعات سیستم"
+
+msgid "System Rebooting Now!"
+msgstr "سیستم الان ریبوت می‌شود!"
+
+msgid "System Uptime"
+msgstr "آپتایم سیستم"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+"اکانت سیستم وجود دارد، اما قادر به خواندن فایل‌های اطلاعات کاربر برای کاربر "
+"%s نیست"
+
+msgid "Systems Quotas are size 0."
+msgstr "سهمیه سیستم‌ها اندازه 0 است."
+
+msgid "TB"
+msgstr "ترابایت"
+
+msgid "TTL has been saved"
+msgstr "TTL ذخیره شد"
+
+msgid "Table"
+msgstr "جدول"
+
+msgid "Tail"
+msgstr "ذیل"
+
+msgid "Tasks Max"
+msgstr "حداکثر وظایف"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"فایل Temp %s پس از رایت روی دیسک 0 بایت است. نام آن را تغییر نخواهد داد."
+
+msgid "Template does not exist"
+msgstr "قالب موجود نیست"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "افزایش موقت پهنای باند"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+"قفل اقدام موقت حساب در محل. ممکن است فرآیند دیگری روی حساب کار کند. این "
+"نباید بیش از %d دقیقه طول بکشد"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "افزایش موقت پهنای باند اعمال شده است"
+
+msgid "Text"
+msgstr "متن"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "این شناسه از نوع \"admin\" نیست"
+
+msgid "That IP already exists on the domain"
+msgstr "آن IP از قبل در دامنه وجود دارد"
+
+msgid "That IP does not exist"
+msgstr "آن IP وجود ندارد"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "آن IP در لیست IP کاربر شما وجود ندارد"
+
+msgid "That IP does not exist in your list"
+msgstr "آن IP در لیست شما وجود ندارد"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "آن IP قبلاً در لیست IP های اضافی شما قرار دارد"
+
+msgid "That IP is already owned"
+msgstr "آن IP از قبل متعلق به شخصی است"
+
+msgid "That IP is not available for linking"
+msgstr "آن IP برای لینک دادن در دسترس نیست"
+
+msgid "That User already exists on another server"
+msgstr "آن کاربر از قبل در سرور دیگری وجود دارد"
+
+msgid "That database already exists"
+msgstr "آن دیتابیس از قبل وجود دارد"
+
+msgid "That database does not belong to you"
+msgstr "آن دیتابیس متعلق به شما نیست"
+
+msgid "That database does not exist"
+msgstr "آن دیتابیس وجود ندارد"
+
+msgid "That domain already exists"
+msgstr "آن دامنه از قبل وجود دارد"
+
+msgid "That domain already exists on another server"
+msgstr "آن دامنه در سرور دیگری وجود دارد"
+
+msgid "That domain does not belong to you"
+msgstr "آن دامنه به شما تعلق ندارد"
+
+msgid "That domain does not exist"
+msgstr "آن دامنه وجود ندارد"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "آن دامنه معلق است. قبل از تغییر نام آن را از حالت تعلیق خارج کنید"
+
+msgid "That email user does not exist"
+msgstr "آن کاربر ایمیل وجود ندارد"
+
+msgid "That file was empty"
+msgstr "آن فایل خالی بود"
+
+msgid "That filter already exists"
+msgstr "آن فیلتر از قبل وجود دارد"
+
+msgid "That ftp_password file does not exist"
+msgstr "آن فایل ftp_password وجود ندارد"
+
+msgid "That is an invalid email address / email list"
+msgstr "این یک آدرس ایمیل / لیست ایمیل نامعتبر است"
+
+msgid "That is an invalid filename"
+msgstr "این یک نام فایل نامعتبر است"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+"این یک مسیر معتبر نیست. یا در فهرست اصلی شما نیست، یا حاوی لیتک‌های نمادین "
+"است، یا حاوی کاراکترهای نامعتبر است"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"این یک مسیر معتبر نیست. یا در دایرکتوری اصلی شما نیست، یا وجود ندارد، یا "
+"حاوی لینک‌های سیمبولیک است، یا حاوی کاراکترهای نامعتبر است"
+
+msgid "That is not a valid quota"
+msgstr "این یک سهمیه معتبر نیست"
+
+msgid "That is not a valid username"
+msgstr "این یک نام کاربری معتبر نیست"
+
+msgid "That is not your domain"
+msgstr "آن دامنه شما نیست"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"آن Hostnameی است که رزرو شده است. یا نام Hostname را تغییر دهید یا از دامنه "
+"دیگری استفاده کنید"
+
+msgid "That key does not exist"
+msgstr "آن کلید وجود ندارد"
+
+msgid "That password is incorrect"
+msgstr "آن رمزعبور نادرست است"
+
+msgid "That path isn't protectable"
+msgstr "آن مسیر قابل محافظت نیست"
+
+msgid "That pop account doesn't exist"
+msgstr "آن اکانت pop وجود ندارد"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "آن پوسته را نمی‌توان سفارشی کرد. این skin.conf به %s نیاز دارد"
+
+msgid "That skin does not exist"
+msgstr "آن پوسته وجود ندارد"
+
+msgid "That skin is not in your list"
+msgstr "آن پوسته در لیست شما وجود ندارد"
+
+#, fuzzy
+msgid "That skin name already exists"
+msgstr "آن زون از قبل وجود دارد"
+
+msgid "That user already exists"
+msgstr "آن کاربر از قبل وجود دارد"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr "آن کاربر شامل جداکننده ftp (%c) است که نمی‌تواند در نام کاربری باشد."
+
+msgid "That user does not belong to you"
+msgstr "آن کاربر متعلق به شما نیست"
+
+msgid "That user does not exist"
+msgstr "آن کاربر وجود ندارد"
+
+msgid "That user doesn't exist"
+msgstr "آن کاربر وجود ندارد"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "آن کاربر برای اکانت ناشناس رزرو شده است"
+
+msgid "That username already exists on the system"
+msgstr "آن نام کاربری از قبل بر روی سیستم وجود دارد"
+
+msgid "That username is a reserved system name"
+msgstr "آن نام کاربری یک نام سیستم رزرو شده است"
+
+msgid "That zone already exists"
+msgstr "آن زون از قبل وجود دارد"
+
+msgid "Thats a reserved skin name."
+msgstr "آن یک نام پوسته رزرو شده است."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "نسخه بک‌آپ %s در %s ایجاد شده است"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "مقدار 'ttl' ارسال شده یک عدد نیست یا خیلی بزرگ است"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "Administrator، عملکرد بک‌آپ‌گیری کاربر را غیرفعال کرده است"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "گواهینامه CA استفاده نخواهد شد. فایل باقی می‌ماند، اما شامل نمی‌شود."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"مقدار CC وارد شده یک حلقه بی‌نهایت ایجاد می‌کند. لطفاً از یک مقدار CC متفاوت "
+"استفاده کنید."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "ایمیل '%s' حاوی کاراکترهای نامعتبر است"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP %s وجود ندارد. کاربر %s ایجاد نخواهد شد"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP %s رمز عبور صحیح را برای اکانت %s ارائه کرده است."
+
+msgid "The Ticket System is not enabled."
+msgstr "تیکت سیستم فعال نیست."
+
+msgid "The User backups have been uploaded to"
+msgstr "بک‌آپ‌های کاربر آپلود شده در"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "فایل‌های کاربر از %s بازیابی شده‌اند"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "کش نمایش کاربران به صورت لحظه‌ای به روز می‌شود."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "آدرس‌ها با از بین رفتن رابط از بین می‌روند."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"کش در حال به روز رسانی است، ممکن است مقادیر فعلی صحیح نباشند. لطفاً در 1 "
+"دقیقه دیگر صفحه را رفرش کنید."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"گواهینامه و کلید مطابقت ندارند. لطفاً مطمئن شوید که از کلید صحیح با این "
+"گواهینامه استفاده می‌کنید"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "کلیپ بورد با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "The command cannot contain any newline characters"
+msgstr "دستور، نمی‌تواند شامل هیچ کاراکتر خط جدیدی باشد"
+
+msgid "The database '%s' does not belong to you"
+msgstr "دیتابیس '%s' متعلق به شما نیست"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "روز ماه یک مقدار کرون معتبر نیست (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "روز هفته یک مقدار کرون معتبر نیست (0-7)"
+
+msgid "The default has been set"
+msgstr "پیش فرض تنظیم شده است"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"به نظر می‌رسد دایرکتوری %s متعلق به 'apache' باشد. از گزینه \"Reset Owner\" "
+"استفاده کنید، سپس دوباره امتحان کنید."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+"میزان استفاده از دیسک برای کاربران انتخاب شده در مجموع بیش از %d مگابایت است،"
+" بنابراین در پس‌زمینه حذف خواهد شد."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "دامنه %s متعلق به شما نیست."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "دامنه %s متعلق به شما نیست. ساب‌دامین ایجاد نخواهد شد."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "دامنه وارد شده نامعتبر است. باید به شکل «sourcedomain.com» باشد"
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "پیش فرض تنظیم شده است"
+
+msgid "The domain must not match your hostname."
+msgstr "دامنه نباید با hostname شما مطابقت داشته باشد."
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "هیچ تغییری ایجاد نشده است"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "ایمیل حاوی رمز عبور جدید شما ارسال شده است."
+
+msgid "The email address provided is not a valid email address"
+msgstr "آدرس ایمیل ارائه شده یک آدرس ایمیل معتبر نیست"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "مسیر وارد شده باید a-zA-Z0-9 باشد"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "فایل %s بیش از 1 hard link دارد"
+
+msgid "The file is generated when the account is reset."
+msgstr "وقتی اکانت بازنشانی می‌شود، فایل ایجاد می‌شود."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "فایل باید به این شکل باشد: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "فایل باید به این شکل باشد: username.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "فایل: '%s' به شکل username.tar.gz نیست"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "فایل زیر یافت نشد. بدون نیاز به تنظیم مجدد"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Hard Linkهای زیر برای کاربر %s یافت شده است:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "کاربر ftp %s در فایل passwd %s وجود ندارد"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "نام فرمت کامل وارد شده به نام زون ختم نمی‌شود"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "مسیر url محلی یا آدرس مقصد نامعتبر است."
+
+msgid "The location has not changed"
+msgstr "مکان تغییر نکرده است"
+
+msgid "The max upload size cannot be 0"
+msgstr "حداکثر اندازه آپلود نمی‌تواند 0 باشد"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "حداکثر برای %s %s است"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "حداکثر مقدار %d است"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "حداقل برای %s %s است"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "ماه یک مقدار کرون معتبر نیست (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "نامی که وارد کرده‌اید حاوی کاراکترهای نامعتبر است"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "کلید جدید ایجاد شد، اما مشکلی در حین احراز هویت وجود داشت"
+
+msgid "The new passwords do not match"
+msgstr "رمزهای عبور جدید مطابقت ندارند"
+
+msgid "The number and type of ticket is required"
+msgstr "شماره و نوع تیکت الزامی است"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "مالک %s %s نیست"
+
+msgid "The password changing feature has been disabled"
+msgstr "قابلیت تغییر رمز عبور غیرفعال شده است"
+
+msgid "The path %s already exists"
+msgstr "مسیر %s از قبل وجود دارد"
+
+msgid "The path already exists, but is not a directory"
+msgstr "مسیر از قبل وجود دارد، اما یک دایرکتوری نیست"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"این فرآیند در حال حاضر برای اجرای این درخواست استفاده می‌شود، بنابراین به "
+"زودی توسط Task Queue اجرا می‌شود."
+
+msgid "The provided IP is not valid"
+msgstr "IP ارائه شده معتبر نیست"
+
+msgid "The provided domain name matches your hostname."
+msgstr "نام دامنه ارائه شده با Hostname شما مطابقت دارد."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr "درخواستی که داده‌اید قابل اجرا نیست زیرا در سطح اختیارات شما وجود ندارد"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "دستور درخواستی به POST نیاز دارد اما از GET استفاده شده است"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"پکیج پوسته به درستی نصب نشده است. یا فایل هایی وجود نداشتند، یا مجوزهای آنها "
+"به درستی تنظیم نشده بود"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "ساب‌دامین '%s' از قبل در دامنه %s وجود دارد"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"زمان‌ها باید مانند یکی از موارد زیر قالب بندی شوند (مثلاً ساعت، بدون فاصله)"
+
+msgid "The user %s does not belong to you"
+msgstr "کاربر %s متعلق به شما نیست"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"نام کاربری نامعتبر است. نام کاربری باید با a-z شروع شود، حاوی >= 3 کاراکتر و "
+"<= %d باشد."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "نام کاربری نامعتبر است. نام کاربری باید از a-z0-9 استفاده کند"
+
+msgid "The value must be an IP address"
+msgstr "مقدار باید یک آدرس IP باشد"
+
+msgid "The very last entry."
+msgstr "آخرین ورودی."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "ایمیل(های) خوش آمدگویی مجدد با موفقیت ارسال شد."
+
+msgid "There are no messages for that ticket"
+msgstr "هیچ پیامی برای آن تیکت وجود ندارد"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "هنوز %d مسیر با استفاده از «%s» وجود دارد."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+"هنوز اکانت‌هایی وجود دارند که از %s استفاده می‌کنند. ابتدا آن‌ها را از IP "
+"حذف کنید و سپس آن را روی حالت \"آزاد\" تنظیم کنید."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "%d شکست در تمدید وجود داشته است، بنابراین دیگر تلاشی انجام نخواهد شد.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "قبلاً یک رکورد CNAME با آن نام وجود دارد"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "در حال حاضر یک لیست ایمیل مستعار با آن نام وجود دارد"
+
+msgid "There is already an A record with that name"
+msgstr "قبلاً یک رکورد A با این نام وجود دارد"
+
+msgid "There is already an account with that name"
+msgstr "قبلاً یک حساب کاربری با این نام وجود دارد"
+
+msgid "There is already an autoresponder with that name"
+msgstr "قبلاً یک پاسخگوی خودکار با این نام وجود دارد"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "فضای کافی در %s برای آپلود %lld بایت اطلاعات وجود ندارد"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "فقط 1 %s رکورد برای %s=%s وجود دارد که حذف نشده است"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "اینها مقادیر داینامیک هستند. با تاریخ تغییر می‌کنند."
+
+msgid "This Login Key is read-only"
+msgstr "این کلید ورود read-only است"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"این سیستم عامل در حال حاضر به پایان عمر خود رسیده است. به‌روزرسانی‌های "
+"خودکار آینده ممکن است با شکست مواجه شوند."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"این حساب ریسلر قادر به تخصیص نامحدود %s نیست، اما این مقدار قبلاً تخصیص "
+"یافته است."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"این حساب از قبل در سیستم وجود دارد. اگر بازیابی کنید، اطلاعات را بازنویسی و/"
+"یا ادغام می‌کند."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "این حساب از طریق BlockCracking بلاک شده است."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr "این حساب از طریق BlockCracking بلاک شده است. آنبلاک غیرفعال است."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"این دامنه اکنون به طور موقت از گواهینامه مشترک سرور استفاده می‌کند، مگر "
+"اینکه کلید بک‌آپ را بازیابی کنید (اما ابتدا از کلید جدید، بک‌آپ تهیه کنید "
+"وگرنه گم می‌شود)"
+
+#, fuzzy
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+"این یک آدرس ورودی هش است. شما می‌توانید آن را حذف کنید، اما نمی توانید آن را "
+"تغییر دهید."
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+"این یک آدرس ورودی هش است. شما می‌توانید آن را حذف کنید، اما نمی توانید آن را "
+"تغییر دهید."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "این یک مکان نگهدارنده برای ساب‌دامین است"
+
+msgid "This may give unexpected results"
+msgstr "این ممکن است نتایج غیر منتظره‌ای به همراه داشته باشد"
+
+msgid "This may give unexpected results."
+msgstr "این ممکن است نتایج غیر منتظره‌ای به همراه داشته باشد."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr "این افزونه برای حساب کاربری شما غیرفعال شده است"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+"این فقط *بعد از* وجود گزارش‌ها اتفاق می‌افتد (دامنه باید resolve و استفاده "
+"شود)."
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr ""
+"با این کار از حذف ناحیه dns صرف‌نظر می‌شود و آن را در جای خود باقی می‌گذارد."
+
+msgid "Thread Count"
+msgstr "تعداد موضوع"
+
+msgid "Throttle Memory above this limit."
+msgstr "حافظه بالاتر از این حد است."
+
+msgid "Ticket #"
+msgstr "تیکت #"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "سهمیه‌های سیستم کاربر تنظیم شد"
+
+msgid "Tickets Updated"
+msgstr "تیکت‌ها آپدیت شدند"
+
+msgid "Time"
+msgstr "زمان"
+
+msgid "Timeout during read"
+msgstr "وقفه در حین خواندن"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "هنگام تلاش برای اتصال به %s، مهلت زمانی تمام شد"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "منطقه زمانی '%s' در سیستم وجود ندارد"
+
+msgid "Timezone does not exist"
+msgstr "منطقه زمانی وجود ندارد"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"برای اضافه کردن یک کران جاب، به تمام موارد زیر نیاز دارید: دقیقه، ساعت، روزی "
+"از ماه، ماه، روزی از هفته و فرمان"
+
+msgid "Today"
+msgstr "امروز"
+
+msgid "Today at"
+msgstr "امروز در"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "حساب ایمیل امروز برای کاربر %s بازنشانی شده است"
+
+msgid "Too long"
+msgstr "بسیار طولانی"
+
+msgid "Too short"
+msgstr "بسیار کوتاه"
+
+msgid "Total"
+msgstr "مجموع"
+
+msgid "Total Disk Usage (MB)"
+msgstr "کل مصرف دیسک (MB)"
+
+msgid "Total Memory"
+msgstr "کل حافظه"
+
+msgid "Total Size:"
+msgstr "سایز کلی:"
+
+msgid "Total Swap Memory"
+msgstr "کل حافظه Swap"
+
+msgid "Total Usage"
+msgstr "کل استفاده"
+
+#, fuzzy
+msgid "Two-Step Authentication code is missing."
+msgstr "احراز هویت دو مرحله ای غیرفعال است"
+
+msgid "Type"
+msgstr "نوع"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "نوع '%s' غیرفعال است"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "نوع باید «paste» یا «id» باشد"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgid "URL already exists"
+msgstr "%s از قبل وجود دارد"
+
+msgid "Un-Link"
+msgstr "Un-Link"
+
+msgid "Un-Set"
+msgstr "Un-Set"
+
+msgid "Unable To Execute Your Request"
+msgstr "قادر به اجرای درخواست شما نیست"
+
+msgid "Unable to Execute Your Command"
+msgstr "قادر به اجرای فرمان شما نیست"
+
+msgid "Unable to Locate that domain"
+msgstr "نمی‌توان آن دامنه را پیدا کرد"
+
+msgid "Unable to add IP"
+msgstr "امکان افزودن IP وجود ندارد"
+
+msgid "Unable to add access host:"
+msgstr "امکان افزودن دسترسی هاست وجود ندارد:"
+
+msgid "Unable to add domain pointer"
+msgstr "امکان افزودن اشاره‌گر دامنه وجود ندارد"
+
+msgid "Unable to add user to ssh config file"
+msgstr "امکان افزودن کاربر به فایل کانفیگ SSH وجود ندارد"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"امکان تخصیص نامحدود %s وجود ندارد. این اکانت مجاز به ایجاد آن مقدار نیست."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+"تخصیص هیچ یک از IPهای ریسلر ممکن نیست. مطمئن شوید که IP های رایگان و اختصاص "
+"داده نشده دارید."
+
+#, fuzzy
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "احراز هویت ممکن نیست: رمز عبور خود را از نظر Syntax بررسی کنید"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "احراز هویت ممکن نیست: رمز عبور نامعتبر است"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "امکان تغییر %s وجود ندارد"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "تغییر کانال به روز رسانی Directadmin ممکن نیست"
+
+msgid "Unable to change password"
+msgstr "امکان تغییر کلمه عبور وجود ندارد"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "امکان تغییر آدرس ایمیل وجود ندارد"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "امکان تغییر آدرس ایمیل سیستم پیام وجود ندارد"
+
+msgid "Unable to change the Name"
+msgstr "امکان تغییر نام وجود ندارد"
+
+msgid "Unable to change the limit"
+msgstr "امکان تغییر محدودیت وجود ندارد"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "امکان تغییر افزایش موقت پهنای باند وجود ندارد"
+
+msgid "Unable to check latest version"
+msgstr "نمی توان آخرین نسخه را بررسی کرد"
+
+msgid "Unable to connect to secure socket"
+msgstr "امکان اتصال به SSL وجود ندارد"
+
+msgid "Unable to connect to the database"
+msgstr "امکان اتصال به دیتابیس وجود ندارد"
+
+msgid "Unable to create a Reseller"
+msgstr "ایجاد ریسلر ممکن نیست"
+
+msgid "Unable to create a User"
+msgstr "ایجاد کاربر ممکن نیست"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "ایجاد دایرکتوری بک‌آپ ممکن نیست. (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "ایجاد دایرکتوری %s ممکن نیست"
+
+msgid "Unable to create new file"
+msgstr "ایجاد فایل جدید ممکن نیست"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "ایجاد reverse IP lookup ممکن نیست"
+
+msgid "Unable to create subdomain"
+msgstr "ایجاد ساب‌دامین ممکن نیست"
+
+msgid "Unable to create user's data directory"
+msgstr "ایجاد دایرکتوری اطلاعات کاربر ممکن نیست"
+
+msgid "Unable to create zone"
+msgstr "ایجاد زون ممکن نیست"
+
+msgid "Unable to create zone."
+msgstr "ایجاد زون ممکن نیست."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "حذف %s: %s امکان‌پذیر نیست"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "حذف دایرکتوری %s: %s ممکن نیست"
+
+msgid "Unable to delete files"
+msgstr "حذف فایل‌ها ممکن نیست"
+
+msgid "Unable to delete the main email account"
+msgstr "امکان حذف اکانت ایمیل اصلی وجود ندارد"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "حذف فایل ip.list ریسلر امکان پذیر نیست."
+
+msgid "Unable to delete users's domains directory"
+msgstr "حذف دایرکتوری دامنه‌های کاربران امکان پذیر نیست"
+
+msgid "Unable to edit file"
+msgstr "امکان ویرایش فایل وجود ندارد"
+
+msgid "Unable to execute script"
+msgstr "امکان اجرای اسکریپت وجود ندارد"
+
+msgid "Unable to execute your command"
+msgstr "امکان اجرای دستور شما وجود ندارد"
+
+msgid "Unable to execute your request"
+msgstr "امکان اجرای درخواست شما وجود ندارد"
+
+msgid "Unable to export packages"
+msgstr "امکان خروجی گرفتن از پکیج‌ها وجود ندارد"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "امکان استخراج گرفتن از فرم %s وجود ندارد"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "استخراج user.conf، reseller.conf یا ip.list ممکن نیست"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "%s پیدا نشد"
+
+msgid "Unable to find CA certificate"
+msgstr "گواهینامه CA پیدا نشد"
+
+msgid "Unable to find certificate"
+msgstr "گواهینامه پیدا نشد"
+
+msgid "Unable to find key"
+msgstr "کلید پیدا نشد"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "دریافت آمار فایل در %s ممکن نیست"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "دریافت قفل در %s ممکن نیست"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr "دریافت رمز عبور رمزنگاری شده کاربر برای فایل ftp passwd ممکن نیست"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "قفل کردن %s ناحیه ممکن نیست"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "قفل کردن %s امکان پذیر نیست: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "قفل کردن اقدامات اکانت '%s' ممکن نیست"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "قادر به قفل کردن کاربر %s: %s نیست"
+
+msgid "Unable to modify that domain"
+msgstr "امکان تغییر آن دامنه وجود ندارد"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "باز کردن %s برای افزودن امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "باز کردن %s برای افزودن: %s امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "باز کردن %s برای خواندن ممکن نیست"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "باز کردن %s برای نوشتن: %s امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "%s نمی تواند باز شود: %s"
+
+msgid "Unable to open a socket"
+msgstr "امکان باز کردن سوکت وجود ندارد"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "فایل گواهینامه ca (%s) برای نوشتن در: %s باز نمی‌شود"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "فایل گواهینامه (%s) برای نوشتن در: %s باز نمی‌شود"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "تجزیه %s از خروجی اسکریپت «%s» (%s) ممکن نیست:"
+
+msgid "Unable to parse form"
+msgstr "تجزیه فرم ممکن نیست"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "خواندن %s به عنوان اکانت %s ممکن نیست"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "نمی‌توان فایل‌های کاربر %s را خواند"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr "قادر به خواندن %s نیست. این فایل فقط پس از اجرا شدن جدول ایجاد می‌شود."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr ""
+"قادر به خواندن %s نیست. این فایل تنها زمانی ایجاد می‌شود که ایمیل‌ها دریافت "
+"شوند."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "قادر به خواندن %s: %s نیست"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "نمی‌توان فایل DS %s را خواند"
+
+msgid "Unable to read History File."
+msgstr "نمی‌توان فایل تاریخچه را خواند."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "خواندن اسکریپت بک‌آپ RoundCube: %s ممکن نیست"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "خواندن اسکریپت بازیابی RoundCube: %s امکان پذیر نیست"
+
+msgid "Unable to read data from %s"
+msgstr "خواندن اطلاعات از %s امکان پذیر نیست"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "قادر به خواندن directatdmin.conf نیست"
+
+msgid "Unable to read domain configuration files"
+msgstr "خواندن فایل‌های پیکربندی دامنه امکان‌پذیر نیست"
+
+#, fuzzy
+msgid "Unable to read login history file"
+msgstr "نمی‌توان فایل تاریخچه را خواند."
+
+msgid "Unable to read package"
+msgstr "قادر به خواندن پکیج نیست"
+
+msgid "Unable to read system uptime"
+msgstr "قادر به خواندن آپتایم سیستم نیست"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr "قادر به خواندن فایل ftp passwd سیستم برای افزودن کاربر به آن نیست."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr "خواندن فایل ftp passwd سیستم برای حذف کاربر ftp سیستم امکان پذیر نیست"
+
+msgid "Unable to read the user's files"
+msgstr "قادر به خواندن فایل های کاربر نیست"
+
+msgid "Unable to read ticket config file"
+msgstr "نمی‌توان فایل پیکربندی تیکت را خواند"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "خواندن فایل زون برای افزایش سریال امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "قادر به خواندن zonefile برای %s نیست"
+
+msgid "Unable to reboot"
+msgstr "راه‌اندازی مجدد امکان پذیر نیست"
+
+msgid "Unable to remove IP(s)"
+msgstr "حذف IP(ها) ممکن نیست"
+
+msgid "Unable to remove Unix User."
+msgstr "حذف کاربر یونیکس ممکن نیست."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "حذف همه کاربران ریسلر ممکن نیست"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "تغییر نام %s به %s امکان پذیر نیست: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "بازیابی %s به %s امکان‌پذیر نیست: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"بازیابی \"%s\" ممکن نیست زیرا ریسلر یا ادمین \"%s\" یافت نمی‌شود. در صورت "
+"نیاز نام فایل را تغییر دهید."
+
+msgid "Unable to restore database"
+msgstr "نمی توان دیتابیس را بازیابی کرد"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "امکان ذخیره زون dns وجود ندارد: named-checkzone برگردانده شد:"
+
+msgid "Unable to save your changes"
+msgstr "امکان ذخیره تغییرات شما وجود ندارد"
+
+msgid "Unable to set bandwidth"
+msgstr "تنظیم پهنای باند امکان پذیر نیست"
+
+msgid "Unable to set file permissions"
+msgstr "امکان تنظیم مجوزهای فایل وجود ندارد"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "نمی‌توان ip %s را به عنوان نیم‌سرور تنظیم کرد. به هر حال ادامه دارد."
+
+msgid "Unable to set password"
+msgstr "تنظیم رمز عبور ممکن نیست"
+
+msgid "Unable to set quota"
+msgstr "تعیین سهمیه ممکن نیست"
+
+msgid "Unable to set stats link"
+msgstr "امکان تنظیم لینک آمار وجود ندارد"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "نمی توان محدودیت ایمیل را تنظیم کرد"
+
+msgid "Unable to set the shell"
+msgstr "تنظیم Shell ممکن نیست"
+
+msgid "Unable to show Admin History"
+msgstr "نمایش سابقه ادمین ممکن نیست"
+
+msgid "Unable to show Reseller History"
+msgstr "نمایش سابقه ریسلر ممکن نیست"
+
+msgid "Unable to show User History"
+msgstr "تاریخچه کاربر نمایش داده نمی‌شود"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "امکان نمایش استفاده از ایمیل فعلی وجود ندارد"
+
+msgid "Unable to show the system information"
+msgstr "نمی‌توان اطلاعات سیستم را نشان داد"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "حذف %s به %s امکان‌پذیر نیست: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "باز کردن قفل کاربر %s: %s ممکن نیست"
+
+msgid "Unable to update Directadmin"
+msgstr "Directadmin به روز رسانی نمی شود"
+
+msgid "Unable to update your Disk Usage"
+msgstr "امکان به روز رسانی مصرف دیسک شما وجود ندارد"
+
+msgid "Unable to use that new domain name"
+msgstr "امکان استفاده از آن نام دامنه جدید وجود ندارد"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "نوشتن فایل‌های کاربر %s امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "نوشتن %s: %s امکان‌پذیر نیست"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "httpd.conf کاربر را نمی‌تواند بنویسد"
+
+msgid "Unable to write reseller's IP list"
+msgstr "نوشتن لیست IP ریسلر امکان پذیر نیست"
+
+msgid "Unable to write the domain config file"
+msgstr "امکان نوشتن فایل پیکربندی دامنه وجود ندارد"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr "نمی توان فایل رمز اصلی ftp را نوشت. تغییرات شما اعمال نخواهد شد."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"امکان نوشتن فایل سهمیه وجود ندارد. به ادمین خود اطلاع دهید که %s غیرقابل "
+"نوشتن است."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr "نوشتن فایل ftp passwd سیستم برای حذف کاربر ftp سیستم امکان پذیر نیست"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"نوشتن فایل usage.cache ممکن نیست. به ادمین خود اطلاع دهید که %s غیرقابل "
+"نوشتن است."
+
+msgid "Unable to write ticket config"
+msgstr "امکان نوشتن تنظیمات تیکت وجود ندارد"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"امکان نوشتن در فایل رمز عبور وجود ندارد. به ادمین خود اطلاع دهید که %s "
+"غیرقابل نوشتن است."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr "نوشتن در فایل ftp passwd سیستم برای افزودن کاربر به آن امکان پذیر نیست."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "نوشتن فایل زون برای افزایش سریال امکان پذیر نیست"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "امکان نوشتن zonefile برای %s وجود ندارد"
+
+msgid "Unblock"
+msgstr "آنبلاک"
+
+msgid "Unblocking is disabled."
+msgstr "آنبلاک کردن غیرفعال شده است."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "با برداشتن علامت، فایل بلافاصله از دیسک حذف می‌شود و قابل بازیابی نیست"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr ""
+
+msgid "Unhandled exception name"
+msgstr "نام استثنای کنترل نشده"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "مسیر کنترل نشده %s مقدار '%s'"
+
+msgid "Unix User created successfully"
+msgstr "کاربر یونیکس با موفقیت ایجاد شد"
+
+msgid "Unix User removed from the server"
+msgstr "کاربر یونیکس از سرور حذف شد"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr "IP/پورت پروکسی یونیکس نباید مسیر، کوئری یا هش داشته باشد"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "'%s' ناشناخته"
+
+msgid "Unknown action"
+msgstr "اقدام ناشناخته"
+
+msgid "Unknown backup destination"
+msgstr "مقصد بک‌آپ نامشخص"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "نوع گواهینامه نامشخص. فقط سرور، ایجاد و چسباندن مجاز است"
+
+msgid "Unknown ftp type"
+msgstr "نوع ftp ناشناخته"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "گزینه ناشناخته '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "مقدار ناشناخته برای %s"
+
+msgid "Unlimited"
+msgstr "نامحدود"
+
+msgid "Unsuspend"
+msgstr "لغو تعلیق"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+"تا زمانی که کش ایجاد نشود، ممکن است مقادیر صحیح نباشند. صفحه را در 1 دقیقه "
+"دیگر رفرش کنید."
+
+msgid "Up a Level"
+msgstr "بالاتر از یک سطح"
+
+msgid "Update"
+msgstr "بروزرسانی"
+
+msgid "Update Successful"
+msgstr "بروزرسانی موفقیت آمیز بود"
+
+msgid "Update channel has been successfully changed"
+msgstr "کانال آپدیت با موفقیت تغییر کرد"
+
+msgid "Update not necessary"
+msgstr "به روز رسانی لازم نیست"
+
+msgid "Update queued"
+msgstr "به روز رسانی در صف است"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+"تأیید آپلود برای %s انجام نشد: بایت‌های ریموت %lld با بایت‌های لوکال %lld "
+"مطابقت ندارند."
+
+msgid "Upload successful"
+msgstr "آپلود با موفقیت انجام شد"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "فایل آپلود شده برای کپی معتبر نیست"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "آپلود شده: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "آپلود فایل‌ها با گزینه filemanager_disable_features غیرفعال شده است"
+
+msgid "Usage (Meg)"
+msgstr "مصرف (Meg)"
+
+msgid "Usage Log"
+msgstr "گزارش استفاده"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "آمار مصرف هنوز برای این اکانت جمع آوری نشده است"
+
+msgid "User"
+msgstr "کاربر"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "کاربر %s حذف شد"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "کاربر %s از قبل وجود دارد. لطفا نام کاربری دیگری انتخاب کنید."
+
+#, c-format
+msgid "User %s created"
+msgstr "کاربر %s ایجاد شد"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "کاربر %s در سرور وجود نداشت. در حال حذف آن از لیست شما."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "کاربر %s در سیستم وجود ندارد."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "کاربر %s در سیستم وجود دارد اما در لیست کاربران شما نیست"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "کاربر %s به دیتابیس شما اضافه شده است. از مقادیر زیر استفاده کنید:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "از کاربر %s بک‌آپ تهیه شده است."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "کاربر %s بازیابی شده است"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "کاربر %s به روز شده است. از مقادیر زیر استفاده کنید:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "کاربر %s یک یا چند هارد لینک در مسیر خود دارد:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "کاربر %s قبلاً به حالت تعلیق درآمده است"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "کاربر %s قبلاً به حالت تعلیق درآمده است"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr "کاربر %s در لیست شما نیست. شما نمی‌توانید برای او یک بک‌آپ تهیه کنید."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+"کاربر %s در لیست شما نیست. شما نمی‌توانید برای آن‌ها یک بک‌آپ تهیه کنید."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "کاربر %s حذف نشد. نمی‌توان همه کاربران خود را حذف کرد."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "کاربر %s توسط شما ایجاد نشده است-> حذف نشده است."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr "کاربر %s در بک‌آپ به حالت تعلیق درآمد. اکانت معلق شده است."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr "کاربر %s در بک‌آپ به حالت تعلیق درآمد. خطا در تعلیق حساب:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "کاربر '%s' وجود ندارد"
+
+msgid "User Acconts"
+msgstr "حساب‌های کاربری"
+
+msgid "User Accounts"
+msgstr "اکانت‌های کاربر"
+
+msgid "User Bandwidth"
+msgstr "پهنای باند کاربر"
+
+msgid "User Comment Box"
+msgstr "جعبه نظرات کاربر"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "کنترل DNSSEC کاربر غیرفعال است"
+
+msgid "User Disk Quota"
+msgstr "سهمیه دیسک کاربر"
+
+msgid "User History"
+msgstr "تاریخچه کاربر"
+
+msgid "User Modified"
+msgstr "کاربر اصلاح شد"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "گزارش‌های SMTP کاربر فعال نیستند"
+
+msgid "User Updated"
+msgstr "کاربر آپدیت شد"
+
+#, fuzzy
+msgid "User account is disabled"
+msgstr "کنترل DNSSEC کاربر غیرفعال است"
+
+msgid "User added to SSH config file successfully"
+msgstr "کاربر با موفقیت به فایل پیکربندی SSH اضافه شد"
+
+msgid "User added to database"
+msgstr "کاربر به دیتابیس اضافه شد"
+
+msgid "User added to named.conf file successfully"
+msgstr "کاربر با موفقیت به فایل named.conf اضافه شد"
+
+msgid "User added to ssh config file."
+msgstr "کاربر به فایل پیکربندی ssh اضافه شد."
+
+msgid "User backups have been disabled."
+msgstr "بک‌آپ کاربر غیرفعال شده است."
+
+msgid "User config file updated."
+msgstr "فایل پیکربندی کاربر آپدیت شد."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "کاربر پاک شد"
+msgstr[1] "کاربران پاک شدند"
+
+msgid "User removed from SSH"
+msgstr "کاربر از SSH حذف شد"
+
+msgid "User's System Quotas set"
+msgstr "سهمیه‌های سیستم کاربر تنظیم شد"
+
+msgid "User's config files deleted"
+msgstr "فایل‌های پیکربندی کاربر حذف شد"
+
+msgid "User's data directory created successfully"
+msgstr "فهرست اطلاعات کاربر با موفقیت ایجاد شد"
+
+msgid "User's data directory removed."
+msgstr "فهرست اطلاعات کاربر حذف شد."
+
+msgid "User(s)"
+msgstr "کاربر (ها)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "UserDir: %s"
+
+msgid "Username"
+msgstr "نام کاربری"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "نام کاربری '%s' خیلی طولانی است. طول %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "نام کاربری خیلی کوتاه است باید حداقل 2 کاراکتر باشد."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"نام کاربری باید حروف عددی باشد (a-z، A-Z، 0-9)، و اولین کاراکتر یک حرف باشد"
+
+msgid "Username:"
+msgstr "نام کاربری:"
+
+msgid "Users"
+msgstr "کاربران"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "کاربر پاک شد"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "کاربر %s حذف شد"
+
+msgid "Users will be deleted in the background."
+msgstr "کاربران در پس زمینه حذف خواهند شد."
+
+msgid "Users's domains directory removed."
+msgstr "دایرکتوری دامنه کاربران حذف شد."
+
+msgid "Usertype"
+msgstr "نوع کاربر"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "استفاده از مسیر %s مجاز نیست."
+
+msgid "Vacation Account"
+msgstr "اکانت تعطیلات"
+
+msgid "Vacation Message Deleted"
+msgstr "پیام تعطیلات حذف شد"
+
+msgid "Vacation Message set"
+msgstr "پیام تعطیلات تنظیم شد"
+
+msgid "Vacation Message updated"
+msgstr "پیام تعطیلات بروزرسانی شد"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "پیام تعطیلات حذف شد"
+
+msgid "Valid"
+msgstr "معتبر"
+
+msgid "Valid broadcast address set."
+msgstr "آدرس broadcast معتبر تنظیم شد."
+
+msgid "Value"
+msgstr "مقدار"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "متغیر 'ip' در ارسال وجود ندارد"
+
+msgid "Vendor ID"
+msgstr "شناسه Vendor"
+
+msgid "Verify"
+msgstr "تایید"
+
+msgid "View"
+msgstr "مشاهده"
+
+msgid "View Clipboard"
+msgstr "مشاهده کلیپ بورد"
+
+msgid "View previous sort"
+msgstr "مشاهده مرتب سازی قبلی"
+
+msgid "Warning from named-checkzone:"
+msgstr "هشدار از named-checkzone:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"هشدار: %s یک رمز عبور معتبر برای %s دارد اما کد احراز هویت دومرحله‌ای %s بار "
+"ناموفق است."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "هشدار: سهمیه به حد نصاب رسیده است. ممکن است فایل(ها) خالی باشد."
+
+msgid "Warning: The system load average is"
+msgstr "هشدار: میانگین بار سیستم است"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "ما فقط %lld از %lld فایل بایت را از %s خوانده‌ایم"
+
+msgid "Webalizer"
+msgstr "وبلایزر"
+
+msgid "Webmail"
+msgstr "وب‌میل"
+
+msgid "Webmail Attachments"
+msgstr "پیوست‌های وب‌میل"
+
+msgid "Webmail SSO"
+msgstr "وب‌میل SSO"
+
+msgid "Week of Month"
+msgstr "هفته از ماه"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "به حد مجاز نرخ هفتگی %d برای '%s' رسیده است"
+
+msgid "What"
+msgstr "چه چیزی"
+
+msgid "When"
+msgstr "چه زمانی"
+
+msgid "Where"
+msgstr "کجا"
+
+msgid "Who"
+msgstr "چه کسی"
+
+msgid "Wildcard"
+msgstr "وایلدکارت"
+
+msgid "With Selected"
+msgstr "با انتخاب شده"
+
+msgid "With selected"
+msgstr "با انتخاب شده"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "حساب %s را فعال نمی‌کند زیرا خاموش است"
+
+msgid "Wordpress"
+msgstr "وردپرس"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "خطای نوشتن با %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "تعداد المان \"%s\" اشتباه است. مجاز: 1 یا 2 با '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "تعداد اشتباه مقادیر «pass»: %d در «%s» (اسلش جدا شده)"
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "You already have the most recent version of the program"
+msgstr "شما در حال حاضر جدیدترین نسخه برنامه را دارید"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+"شما در حال حذف اکانت‌های ادمین یا ریسلر هستید که %d کاربر را تحت کنترل خود "
+"دارند."
+msgstr[1] ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "شما مجاز به فعال کردن ftp ناشناس نیستید"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "شما مجاز به تغییر تنظیمات ssl خود نیستید"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "شما در حال بازگردانی فایل zst هستید، اما zstd در سیستم شما فعال نیست."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "شما مجاز به تغییر آن تیکت نیستید"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"می‌توانید روی ایمیل زیر کلیک کنید تا بلافاصله به عنوان این کاربر به %s وارد "
+"شوید، بدون اینکه رمز عبور آن‌ها را بدانید."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"شما نمی‌توانید لیستی به نام majordomo به عنوان نام مستعار رزرو شده ایجاد کنید"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "شما نمی‌توانید root را تعلیق کنید. این بد خواهد بود"
+
+msgid "You cannot add that extension"
+msgstr "شما نمی توانید آن اکستنشن را اضافه کنید"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "شما نمی‌توانید پهنای باند بیشتری نسبت به اکانت خود به دامنه اختصاص دهید"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "شما نمی‌توانید سهمیه‌ای بیشتر از اکانت خود به دامنه اختصاص دهید"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "شما نمی‌توانید تعداد کاربران بیشتری از دامنه مجاز خود ایجاد کنید."
+
+msgid "You cannot delete all of your IPs"
+msgstr "شما نمی‌توانید تمام IP های خود را حذف کنید"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr "نمی‌توانید اکانت %s را حذف کنید زیرا به اکانت سیستم شما لینک شده است"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "شما نمی‌توانید خودتان را حذف کنید (%s)"
+
+msgid "You cannot execute that command"
+msgstr "شما نمی‌توانید آن دستور را اجرا کنید"
+
+msgid "You cannot modify yourself"
+msgstr "شما نمی‌توانید خودتان را ویرایش کنید"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"شما نمی‌توانید چندین کاربر را در یک IP آزاد بازیابی کنید. ابتدا باید IP به "
+"اشتراک گذاشته شود."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "شما نمی‌توانید یک محدودیت ارسال نامحدود تعیین کنید."
+
+msgid "You cannot suspend yourself"
+msgstr "شما نمی‌توانید خود را معلق کنید"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "شما نمی‌توانید خودتان را تعلیق/لغو تعلیق کنید"
+
+msgid "You cannot unsuspend this account."
+msgstr "شما نمی‌توانید این اکانت را لغو تعلیق کنید."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr ""
+"شما نمی‌توانید از آن دامنه به عنوان یک اشاره‌گر استفاده کنید. از قبل روی "
+"سرور وجود دارد"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "شما در حال حاضر %s کاربر و حداکثر %s دامنه دارید."
+
+msgid "You did not select any domains to modify"
+msgstr "شما هیچ دامنه‌ای را برای ویرایش انتخاب نکردید"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "شما ip دیگری انتخاب نکردید، هیچ تغییری ایجاد نشده است"
+
+msgid "You didn't select anyone to send it to"
+msgstr "شما کسی را برای ارسال آن انتخاب نکردید"
+
+msgid "You do not have control over user"
+msgstr "شما کنترلی روی کاربر ندارید"
+
+msgid "You do not own any IPs"
+msgstr "شما صاحب هیچ آی پی نیستید"
+
+msgid "You do not own that IP"
+msgstr "شما صاحب آن IP نیستید"
+
+msgid "You do not own that domain"
+msgstr "شما صاحب آن دامنه نیستید"
+
+msgid "You do not own that ip"
+msgstr "شما صاحب آن IP نیستید"
+
+msgid "You do not own that that cron ID"
+msgstr "شما صاحب آن شناسه cron نیستید"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "شما مالک IP %s نیستید. کاربر %s ایجاد نخواهد شد"
+
+msgid "You don't have authority over that User"
+msgstr "شما اختیاری بر آن کاربر ندارید"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "شما اجازه پاسخگویی به آن تیکت را ندارید"
+
+msgid "You don't have permission to restore user"
+msgstr "شما اجازه بازیابی کاربر را ندارید"
+
+msgid "You don't have permission to view that ticket"
+msgstr "شما اجازه مشاهده آن تیکت را ندارید"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "شما %d:%.2d باقی مانده دارید."
+
+msgid "You have already reached your assigned limit"
+msgstr "شما قبلاً به حد مجاز تعیین شده خود رسیده‌اید"
+
+msgid "You have not added any files to the clipboard."
+msgstr "شما هیچ فایلی به کلیپ بورد اضافه نکرده‌اید."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"شما هیچ IP به ریسلر نداده‌اید. امکان ایجاد یک دامنه IP اختصاص داده شده یا هر "
+"نیم‌سروری بدون هیچی وجود ندارد"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"شما هیچ فایلی را انتخاب نکرده‌اید. لطفاً به عقب برگردید و قبل از بازیابی "
+"بک‌آپ، تعدادی را انتخاب کنید."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"شما هیچ کاربری را انتخاب نکرده‌اید. لطفاً قبل از ایجاد بک‌آپ به عقب برگردید "
+"و تعدادی را انتخاب کنید."
+
+msgid "You have not selected any domains"
+msgstr "شما هیچ دامنه ای را انتخاب نکرده اید"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"شما با موفقیت دستور راه اندازی مجدد سرور را صادر کردید. ممکن است چند دقیقه "
+"طول بکشد تا سیستم بوت شود و دوباره فعال شود."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+"از %d%% مصرفی از دیسک خود استفاده کرده‌اید، که بیشتر از آستانه مجاز %d%% است."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "برای بارگذاری مجدد لوگو ممکن است لازم باشد F5 را فشار دهید"
+
+msgid "You may not use an IP for a domain name"
+msgstr "شما نمی‌توانید از IP برای نام دامنه استفاده کنید"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "باید مقدار chmod را وارد کنید. به عنوان مثال: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "باید یک 'نام' پوشه را وارد کنید. به عنوان مثال: تصاویر"
+
+msgid "You must enter both password"
+msgstr "شما باید هر دو رمز عبور را وارد کنید"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "باید شماره، کاربر، موضوع، اولویت، وضعیت و پیام را وارد کنید"
+
+msgid "You must enter the password in both fields"
+msgstr "شما باید رمز عبور را در هر دو قسمت وارد کنید"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "باید کاربر، موضوع، اولویت و پیام را وارد کنید"
+
+msgid "You must first create some packages"
+msgstr "ابتدا باید چند پکیج ایجاد کنید"
+
+msgid "You must first own an IP"
+msgstr "ابتدا باید یک IP داشته باشید"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "شما باید بیش از 0 رکورد NS داشته باشید وگرنه ممکن است با نام شروع نشود."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"اگر 'required_hits' «سفارشی» است، باید 'required_hits' و "
+"'required_hits_custom' را ارائه دهید"
+
+msgid "You must provide a list name"
+msgstr "شما باید یک list name ارائه دهید"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+"شما باید یک اعلان رمز عبور دایرکتوری محافظت شده ارائه دهید. به عنوان مثال: "
+"محیط اعضا"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "شما باید یک دامنه معتبر، ip، ns1 و ns2 ارائه دهید"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+"شما باید یک آدرس ایمیل معتبر، گذرواژه قدیمی، رمز عبور 1 و رمز عبور 2 ارائه "
+"دهید"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr ""
+"شما باید یک آدرس ftp معتبر، Oldpassword، password1 و password2 ارائه دهید"
+
+msgid "You must provide a valid ip"
+msgstr "شما باید یک ip معتبر ارائه دهید"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "شما باید یک نام معتبر ارائه دهید و باید وجود داشته باشد."
+
+msgid "You must provide a valid name and value"
+msgstr "شما باید یک نام و مقدار معتبر ارائه دهید"
+
+msgid "You must provide the passwd variable"
+msgstr "شما باید متغیر passwd را ارائه دهید"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr ""
+"شما باید یک جفت IP نیم‌سرور (ns1.domain.com و ns2.domain.com) را انتخاب کنید"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "شما باید حداقل یک لیست ایمیل را برای حذف انتخاب کنید"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "شما باید حداقل یک لیست ایمیل را برای پاکسازی انتخاب کنید"
+
+msgid "You must select exactly one key"
+msgstr "شما باید دقیقا یک کلید را انتخاب کنید"
+
+msgid "You must select something"
+msgstr "شما باید چیزی را انتخاب کنید"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"شما باید از یک عدد برای ساعت (0-23) استفاده کنید. فقط یک بار در روز می‌"
+"توانید کران را اجرا کنید. (می‌توانید بیش از یک کران درست کنید)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"شما باید از یک عدد برای دقیقه (0-59) استفاده کنید. فقط یک بار در روز می‌"
+"توانید کران را اجرا کنید. (می‌توانید بیش از یک کران درست کنید)"
+
+msgid "You must use a valid path"
+msgstr "شما باید از یک مسیر معتبر استفاده کنید"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "باید حداقل %d دقیقه بین به‌روزرسانی‌ها صبر کنید."
+msgstr[1] "You must wait at least %d minute between updates."
+
+msgid "You must wait for the stats to be computed."
+msgstr "باید منتظر بمانید تا آمار محاسبه شود."
+
+msgid "You need to specify a domain"
+msgstr "شما باید یک دامنه را مشخص کنید"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "شما به یک دامنه، anon، anonup و یک پیام نیاز دارید"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "برای همگام سازی حساب‌ها به لیست دامنه و رمز عبور نیاز دارید"
+
+msgid "You require either the passwd or quota"
+msgstr "شما به رمزعبور یا سهمیه نیاز دارید"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"شما به مسیر url مبدا (به عنوان مثال: /redirect) و آدرس مقصد (به عنوان مثال: "
+"www.redirect.com) نیاز دارید"
+
+msgid "You require user and domain to change a pop account"
+msgstr "برای تغییر اکانت POP به کاربر و دامنه نیاز دارید"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "برای افزودن یک اکانت POP به کاربر، دامنه و passwd نیاز دارید"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "پس از تکمیل از طریق سامانه پیام رسانی به شما اطلاع داده خواهد شد."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "پس از اتمام مراحل از طریق سامانه پیام رسانی به شما اطلاع داده خواهد شد"
+
+msgid "You will receive a message when it's complete."
+msgstr "وقتی کامل شد پیامی دریافت خواهید کرد."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"شما از گزینه login-as استفاده می‌کنید، پس از رمز عبور خود استفاده کنید. نه "
+"از رمزعبور کاربر نیست."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "ورود به آدرس هش شما '%s' ایجاد شده است"
+
+msgid "Your IP is blacklisted"
+msgstr "IP شما در لیست سیاه قرار دارد"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "کلید ورود شما '%s' ایجاد شده است"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "نام شما به %s تغییر کرده است"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "فایل‌های کاربر از %s بازیابی شده‌اند"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "فایل‌های کاربر از %s بازیابی شده‌اند"
+
+msgid "Your account"
+msgstr "اکانت شما"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "حساب %s@%s شما راه اندازی شده است. در برنامه ایمیل خود استفاده کنید"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "حساب شما '|USERNAME|' معلق شده. دلیل: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "حساب شما برای |domain| اکنون آماده استفاده است."
+
+msgid "Your backups are now ready"
+msgstr "نسخه پشتیبان شما اکنون آماده است"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "دیتابیس شما راه اندازی شده است. از مقادیر زیر استفاده کنید:"
+
+msgid "Your default domain has been set"
+msgstr "دامنه پیش فرض شما تنظیم شده است"
+
+msgid "Your disk quota limit has been reached."
+msgstr "به حد نصاب دیسک شما رسیده است."
+
+msgid "Your disk usage has been updated"
+msgstr "استفاده از دیسک شما به روز شده است"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+"کلید موجود شما رونویسی نشده است، اما نمی‌توان از آن با گواهینامه جدید "
+"استفاده کرد."
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "پیام شما ذخیره شده است"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "زبان به %s تغییر یافته است"
+
+msgid "Your message has been saved"
+msgstr "پیام شما ذخیره شده است"
+
+msgid "Your message has been sent"
+msgstr "پیام شما ارسال شد"
+
+msgid "Your message is being sent in the background"
+msgstr "پیام شما در پس‌زمینه ارسال می‌شود"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr "پیام شما خالی است کاربران بهتر است بدانند که چه چیزی دریافت می‌کنند."
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "نام شما به %s تغییر کرده است"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "کلید جدید شما در مکان زیر بک‌آپ گیری شده است: %s"
+
+msgid "Your password"
+msgstr "رمزعبور شما"
+
+msgid "Your password is invalid"
+msgstr "رمزعبور شما نامعتبر است"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+"درخواست شما برای به‌روزرسانی کمتر از یک دقیقه دیگر آغاز می‌شود. پس از تکمیل "
+"باید از طریق سامانه پیام به شما اطلاع داده شود"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "درخواست شما در عرض 1 دقیقه اجرا می‌شود"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"درخواست شما در پس زمینه اجرا می شود. پس از تکمیل، در سیستم پیام به شما اطلاع "
+"داده می‌شود."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "حساب ریسلر شما به سقف تعیین شده خود رسیده است"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "ریسلر شما به حد مجاز تعیین شده خود رسیده است"
+
+msgid "Your subject contains invalid characters."
+msgstr "موضوع شما حاوی کاراکترهای نامعتبر است."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "شماره تیکت شما: %s."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "کلیدهای Zone جدیدتر از Zone Signing هستند."
+
+msgid "Zone Reset"
+msgstr "ریست زون"
+
+msgid "Zone Signing has expired."
+msgstr "Zone Signing منقضی شده است."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "کرون ایجاد شده است"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+"زون هنوز وارد نشده است. اطمینان حاصل کنید که ابتدا کلیدها را ایجاد کرده و "
+"قبل از استفاده از این ابزار علامت خودکار، یکی را وارد کرده‌اید"
+
+msgid "Zone is of type DNSSEC."
+msgstr "Zone از نوع DNSSEC است."
+
+msgid "Zone keys generated"
+msgstr "کلیدهای زون تولید شد"
+
+msgid "Zone signed"
+msgstr "زون وارد شد"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "پیام حذف شد"
+
+msgid "account ..."
+msgstr "اکانت ...."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "و %d کاربر"
+msgstr[1] "and %d Users"
+
+msgid "at least"
+msgstr "حداقل"
+
+msgid "at most"
+msgstr "در اکثر"
+
+msgid "back"
+msgstr ""
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec فعال نیست. نمی‌توان زون را وارد شد."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "نمی تواند fstatat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "نمی توان %s: %s را قطع کرد"
+
+msgid "catch is required"
+msgstr "کش موردنیاز است"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "خطای cgroup: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup در لایسنس شما فعال نیست"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup در directadmin.conf خاموش است"
+
+msgid "change"
+msgstr "تغییر"
+
+msgid "click here if form does not include two-step code input"
+msgstr ""
+
+msgid "contains"
+msgstr "شامل می‌شود"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "روز"
+msgstr[1] "روزها"
+
+msgid "day(s)"
+msgstr "روز (ها)"
+
+msgid "days"
+msgstr "روزها"
+
+msgid "default user"
+msgstr "کاربر پیشفرض"
+
+msgid "dns error"
+msgstr "خطای dns"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "گزینه dnsprovider '%s' حاوی کاراکترهای نامعتبر است"
+
+msgid "does not belong to you"
+msgstr "به شما تعلق ندارد"
+
+msgid "emails have just been sent by"
+msgstr "ایمیل‌ها به تازگی ارسال شدند توسط"
+
+msgid "equals"
+msgstr "مساوی است با"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "تغییر پیدا کرده است."
+
+msgid "has been updated with the new ip"
+msgstr "با IP جدید آپدیت شد"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score باید در محدوده 1 تا 99 باشد"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "ساعت"
+msgstr[1] "ساعات"
+
+msgid "hours"
+msgstr "ساعات"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr ""
+
+#, fuzzy
+msgid "invalid IP or range: %s"
+msgstr "%s یک IP معتبر یا رِنج نیست"
+
+#, fuzzy
+msgid "invalid code"
+msgstr "کد نامعتبر است"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "یک آدرس ایمیل نامعتبر است. کاربر %s ایجاد نخواهد شد"
+
+msgid "is currently down"
+msgstr "هم اکنون down است"
+
+msgid "is not a valid username"
+msgstr "نام کاربری معتبر نیست"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr "is_ip_in_mask_range:%s:%s: محدوده '%s' باید یک عدد صحیح مثبت باشد"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr "is_ip_in_mask_range:%s:%s: محدوده '%s' باید بین 1 تا 128 باشد، شامل"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: محدوده / ندارد"
+
+msgid "json string"
+msgstr "استرینگ json"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "خطای lstat: %s"
+
+msgid "mail() line number"
+msgstr "شماره خط mail()"
+
+msgid "message is empty. Please enter some text."
+msgstr "پیام خالی است. لطفا متنی را وارد کنید."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "mime type (%s) برای '%s' از نوع 'image/' نیست"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "دقیقه"
+msgstr[1] "دقایق"
+
+msgid "minutes"
+msgstr "دقایق"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "خطای mkdir(%s): %s"
+
+msgid "modify password"
+msgstr "تغییر پسورد"
+
+msgid "modify privileges"
+msgstr "تغییر امتیازات"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "ماه"
+msgstr[1] "ماه‌ها"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain یک دامنه معتبر نیست"
+
+msgid "newer than"
+msgstr "جدیدتر از"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 یا ns2 نیم‌سرورهای معتبری نیستند"
+
+msgid "of"
+msgstr "از"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package یا new_package نام پکیج معتبر نیستند"
+
+msgid "older than"
+msgstr "قدیمی‌تر از"
+
+#, c-format
+msgid "older than %s days."
+msgstr "قدیمی‌تر از %s روز."
+
+msgid "or"
+msgstr "یا"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "یا IPv6 (1:2:3:4:5:6:7:8) یا محدوده IPv6 (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "یا انتخاب کنید از"
+
+msgid "php.ini override added"
+msgstr "لغو php.ini اضافه شد"
+
+#, c-format, fuzzy
+msgid "php1_select entry %d is not available"
+msgstr "ویجت '%s' در دسترس نیست"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache فعال نیست"
+
+msgid "port"
+msgstr "پورت"
+
+#, fuzzy
+msgid "request created"
+msgstr "دایرکتوری ایجاد شد"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+"reseller_can_set_email_limit=0 تنظیم شده است، بنابراین شما نمی‌توانید "
+"محدودیتی تعیین کنید"
+
+msgid "retry"
+msgstr "تلاش مجدد"
+
+msgid "routes must start with a [ character."
+msgstr "روت‌ها باید با کاراکتر [ شروع شوند."
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "طول جستجوی خارج از محدوده: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "ثانیه"
+msgstr[1] "ثانیه‌ها"
+
+msgid "selected"
+msgstr "انتخاب شده"
+
+msgid "selected overrides removed from php.ini"
+msgstr "لغو انتخاب شده از php.ini حذف شد"
+
+msgid "selected skipped rules removed"
+msgstr "قوانین نادیده گرفته شده انتخابی حذف شد"
+
+msgid "selecting none includes all domains"
+msgstr "انتخاب هیچکدام، شامل همه دامنه ها می‌شود"
+
+msgid "sent"
+msgstr "ارسال شده"
+
+msgid "set Permission"
+msgstr "تنظیم دسترسی"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "خروجی show_blocked_ips.sh:"
+
+msgid "starts with"
+msgstr "شروع می‌شود با"
+
+msgid "subject contains invalid characters."
+msgstr "موضوع شامل کاراکترهای نامعتبر است."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr "subject_select != %d، اما موضوع تنظیم نشده است. این اتفاق نباید بیفتد."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "که هاست‌نیم سرور است و شما نمی‌توانید از آن استفاده کنید"
+
+msgid "the new domain name already exists on your system"
+msgstr "نام دامنه جدید از قبل در سیستم شما وجود دارد"
+
+msgid "too many iterations"
+msgstr "تکرارهای بیش از حد"
+
+#, fuzzy
+msgid "unable to load secret"
+msgstr "امکان باز کردن سوکت وجود ندارد"
+
+msgid "unlimited"
+msgstr "نامحدود"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "user، passwd، passwd2 و type مورد نیاز است"
+
+msgid "user.conf override"
+msgstr "نادیده گرفتن user.conf"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount غیرفعال شد"
+
+msgid "user_modify_pre.sh error"
+msgstr "خطای user_modify_pre.sh"
+
+#, fuzzy
+msgid "valid code"
+msgstr "کد نامعتبر است"
+
+msgid "value is required"
+msgstr "مقدار، مودنیاز است"
+
+#, c-format, fuzzy
+msgid "value must be '%s' or '%s'"
+msgstr "'%s' باید '%s' یا '%s' باشد"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "Where=spamfolder از طریق show_main_spambox=0 غیرفعال شده است"
+
+msgid "your new password is"
+msgstr "رمز عبور جدید شما است"
+
+msgid "your new quota is"
+msgstr "سهمیه جدید شما هست"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "محدودیت ارسال جدید شما: %s است"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr ""
+"دامنه‌های ~/ از دست رفته بودند، اما هنگام تلاش برای ایجاد مجدد آن با خطا "
+"مواجه شدیم"
