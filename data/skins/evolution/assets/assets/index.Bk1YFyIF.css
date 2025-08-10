@@ -1,0 +1,1 @@
+.pressure-line{white-space:nowrap}.pressure-line .pressure-item:not(:last-child):after{margin-left:5px;content:"|";margin-right:5px;color:#34383c}.pressure-line .pressure-item.--theme-safe{color:rgb(var(--ui-safe-500) / 1)}.pressure-line .pressure-item.--theme-danger{color:rgb(var(--ui-danger-500) / 1)}.pressure-line .pressure-item.--theme-warning{color:#faab63}
