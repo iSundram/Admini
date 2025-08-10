@@ -1,0 +1,44 @@
+|LF_STANDARD|
+|LF_DB|
+|*if SESSION_SELECTED_DOMAIN=""|
+|?TREE=&raquo; <a class=tree href="/HTM_INDEX_USER">`LANG_HOME`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`name`">`LANG_VIEW` `name`</a> &raquo; <a class=tree href="/CMD_DB_USER_PRIV?name=`name`&user=`user`">`LANG_USER_PRIVS`</a>|
+|*else|
+|?TREE=&raquo; <a class=tree href="/CMD_SHOW_DOMAIN?domain=`SESSION_SELECTED_DOMAIN`">`SESSION_SELECTED_DOMAIN`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`name`">`LANG_VIEW` `name`</a> &raquo; <a class=tree href="/CMD_DB_USER_PRIV?name=`name`&user=`user`">`LANG_USER_PRIVS`</a>|
+|*endif|
+|?HELP_SECTION=`USER_HELPER`/mysql.html|
+|HTM_USER_TOP|
+
+<table class=list cellpadding=3 cellspacing=1>
+	<form name=info action="CMD_DB_USER_PRIVS" method="post">
+		<input type=hidden name=action value=save>
+		<input type=hidden name=name value="|name|">
+		<input type=hidden name=user value="|user|">
+
+		<tr><td class=listtitle colspan=4>|LANG_PRIVS_1| |user| |LANG_PRIVS_2| |name|</td></tr>
+
+		<tr><td class=list align=right width=25%>|LANG_SELECT|</td><td class=list width=25%>|SELECT|</td>
+		<td class=list align=right width=25%>|LANG_INSERT|</td><td class=list width=25%>|INSERT|</td></tr>
+		<tr><td class=list align=right>|LANG_UPDATE|</td><td class=list>|UPDATE|</td>
+		<td class=list align=right>|LANG_DELETE|</td><td class=list>|DELETE|</td></tr>
+		<tr><td class=list align=right>|LANG_CREATE|</td><td class=list>|CREATE|</td>
+		<td class=list align=right>|LANG_DROP|</td><td class=list>|DROP|</td></tr>
+		<tr><td class=list align=right>|LANG_ALTER|</td><td class=list>|ALTER|</td>
+		<td class=list align=right>|LANG_INDEX|</td><td class=list>|INDEX|</td></tr>
+		<tr><td class=list align=right>|LANG_REFERENCE|</td><td class=list>|REFERENCE|</td>
+		<td class=list align=right>|LANG_TMP_TABLE|</td><td class=list>|CREATE_TMP_TABLE|</td></tr>
+		<tr><td class=list align=right>|LANG_LOCK|</td><td class=list>|LOCK_TABLE|</td>
+		<td class=list align=right>|LANG_SHOW_VIEW|</td><td class=list>|SHOW_VIEW_PRIV|</td></tr>
+		<tr><td class=list align=right>|LANG_CREATE_ROUTINE|</td><td class=list>|CREATE_ROUTINE_PRIV|</td>
+		<td class=list align=right>|LANG_ALTER_ROUTINE|</td><td class=list>|ALTER_ROUTINE_PRIV|</td></tr>
+		<tr><td class=list align=right>|LANG_EXECUTE|</td><td class=list>|EXECUTE_PRIV|</td>
+		<td class=list align=right>|LANG_CREATE_VIEW|</td><td class=list>|CREATE_VIEW_PRIV|</td></tr>
+		<tr><td class=list align=right>|LANG_EVENT|</td><td class=list>|EVENT_PRIV|</td>
+		<td class=list align=right>|LANG_TRIGGER|</td><td class=list>|TRIGGER_PRIV|</td></tr>
+
+		<tr><td class=listtitle colspan=4 align=right>
+			<input type=submit value="|LANG_SAVE|">
+		</td></tr>
+	</form>
+</table>
+
+|HTM_USER_BOTTOM|
