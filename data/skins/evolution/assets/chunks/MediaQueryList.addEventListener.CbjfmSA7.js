@@ -1,0 +1,1 @@
+MediaQueryList.prototype.addEventListener=function(t,e,i){t==="change"&&this.addListener(e),typeof i=="object"&&i.once&&this.addListener(()=>{this.removeListener(e)})};MediaQueryList.prototype.removeEventListener=function(t,e){t==="change"&&this.removeListener(e)};const r=null;export{r as default};
