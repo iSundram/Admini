@@ -1,0 +1,11 @@
+--- a/src/lib-master/master-service.c	2023-09-14 13:17:46.000000000 +0000
++++ b/src/lib-master/master-service.c	2024-06-17 13:24:25.666490645 +0000
+@@ -486,7 +486,7 @@
+ 		if (!syslog_facility_find(service->set->syslog_facility,
+ 					  &facility))
+ 			facility = LOG_MAIL;
+-		i_set_failure_syslog(service->set->instance_name, LOG_NDELAY,
++		i_set_failure_syslog(service->set->instance_name, LOG_NDELAY|LOG_PID,
+ 				     facility);
+ 		i_set_failure_prefix("%s", prefix);
+ 
