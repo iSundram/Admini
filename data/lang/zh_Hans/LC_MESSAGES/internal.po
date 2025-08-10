@@ -1,0 +1,7464 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chinese (Simplified) (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Simplified) <https://translate.directadmin.com/"
+"projects/directadmin/internal/zh_Hans/>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d 新的内部消息"
+
+msgid " / Day"
+msgstr " / 天"
+
+msgid "# of Domains"
+msgstr "域名数量"
+
+msgid "# of IPs"
+msgstr "IP数量"
+
+msgid "# of MySQL DBs"
+msgstr "MySQL数据库数量"
+
+msgid "# of Resellers"
+msgstr "分销者数量"
+
+msgid "# of SubDomains"
+msgstr "# 的子域"
+
+msgid "# of Users"
+msgstr "用户数量"
+
+msgid "# of free IPs"
+msgstr "可用IP数量"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d 天, %d 小时和 %d 分钟"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d of %d 管理员/经销商帐户当前存在."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d of %d 当前存在的账户."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d of %d 域名当前存在."
+
+# Suggested in Weblate: %d 设置已保存
+#, c-format
+msgid "%d settings updated"
+msgstr "%d 设置已更新"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s 不存在"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr "%s '%s' 无法恢复在 '%s'.  恢复文件的默认值: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - 用户的 '%s' 当前IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr "%s 编辑用户欢迎消息，以确保设置主题和消息."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s 账户 %s 刚刚被创建"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s 已经存在"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s 在远程服务器上已经存在."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s 服务器上已经存在."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s 已经存在. 通过overwrite = yes强制执行"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s 似乎是一个链接. 中止."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s 可以现在共享."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s 包含危险字符"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr "%s 无法分配，它必须是空闲且未分配."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr "无法释放 %s，如果它是共享的首先它必须没有域名, 或者必须保留."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s 无法删除，您必须先释放它."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s 无法共享，它必须首先是空闲的"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s 删除成功."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s 不存在"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s 与 %s 的所有者不同"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s 已从列表中删除"
+
+msgid "%s has been saved as %s."
+msgstr "%s 已保存为 %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s 已被暂停"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s 已取消暂停"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s 是一个目录，不会删除"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s 是一个链接"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s 是硬链接或符号链接"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s 不存在"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s 不是目录"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s 不是套接字"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s 不是符号链接"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s 不是有效的 IP 或范围"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s 不是有效的 IP 范围.  使用:1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr "%s 未分配给 %s，这可能是导致解压失败的原因"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s 未启用"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s 不在您域名的 IP 列表中"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s 不在重定向类型列表中"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s 不属于 %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s 未设置为 '空闲'或已分配给经销商"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s 现在由 %s 控制"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s 现在是空闲的"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s 现已取消分配."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s 现在是您的默认域名."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s 已超出范围"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s 是 %s 的必填项"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s 不能是符号链接"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s 不再具有名称服务器标签。"
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s 尚未实现"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s 此级别记录已禁用"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s 的%s的值不在 home_override_list 中"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s的配置文件已删除"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: 链接值 '%s' 上的 lstat 错误: %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: 读取链接错误: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' 不是有效的 %s 类型"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%s点击这里%s 来学习如何启用它"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%s点击这里%s 查看本地原始区域数据"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' 不存在"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' 不存在\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' 不是以 '%s' 开头\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' 已被设置为 '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' 是被禁止的软件包名。"
+
+msgid "'%s' is disabled"
+msgstr "'%s’ 已禁用"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' 不是有效的 css 十六进制颜色"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' 没有分配给您的分销商帐户。"
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' 没有在您的许可证中启用"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' 未在系统中启用。"
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' 是必填项"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' 必须是 '%s' 或 '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "“导入”似乎不是base64编码"
+
+msgid "'when' should be all, newer or older"
+msgstr "'when' 应该是全部，新的或旧的"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) 在用户 %s 下找到了下列硬链接："
+
+msgid "* irretrievable *"
+msgstr "* 无法检索*"
+
+msgid "*** Stopped ***"
+msgstr "*** 已停止 ***"
+
+msgid "-- None Available --"
+msgstr "-- 无可用 --"
+
+msgid "-- Reason:"
+msgstr "-- 原因："
+
+msgid "-- Select IP"
+msgstr "-- 选择 IP"
+
+msgid "-- Select Package"
+msgstr "-- 选择软件包"
+
+msgid "-- any time --"
+msgstr "-- 任何时间 --"
+
+msgid "-- anything --"
+msgstr "-- 任何--"
+
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "=1 需要 nginx_proxy=1 与 DirectAdmin Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "%s 记录已存在该名称"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "“免费”IP只能分配给一个用户"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "需要记录类型：A、NS、MX、CNAME、PTR或TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "分销商无法控制其他等于或更高的帐户级别"
+
+msgid "A file is required"
+msgstr "文件是必需的"
+
+msgid "A forwarder already exists with that name"
+msgstr "已存在一个具有此名称的转发器"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "具有此名称的完整域名/区域已存在。"
+
+msgid "A key with that name already exists"
+msgstr "此名称的密钥已存在"
+
+#, fuzzy
+msgid "A key with that value already exists"
+msgstr "此名称的密钥已存在"
+
+msgid "A list alias already exists with that name"
+msgstr "列表别名已存在"
+
+msgid "A message for that user already exists"
+msgstr "此用户的消息已存在"
+
+msgid "A pop account already exists with that name"
+msgstr "已存在一个带有该名称的pop 帐户"
+
+msgid "A skin name is required"
+msgstr "必须填写皮肤名称"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr "在另一个域名下的系统中已存在具有相同名称的子域名。"
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "绝对内存限制。 触发内存不足杀手。"
+
+msgid "Abuse"
+msgstr "滥用"
+
+msgid "Access Hosts"
+msgstr "授权访问的主机"
+
+msgid "Access host has been added"
+msgstr "已添加访问主机"
+
+msgid "Access hosts have been removed"
+msgstr "已删除访问主机"
+
+msgid "Account"
+msgstr "账号"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "帐户 %s 刚刚从 IP %s 创建了 %s %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "账户 %s 因暂停而跳过"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr "帐户 %s 已被管理员暂停，您只能使用分销商权限。"
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "帐户 %s下的域名 %s 中有一个空的 CA 根证书"
+
+msgid "Account created"
+msgstr "帐户已创建"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "帐户已从BlockCracking 解锁"
+
+msgid "Account is not a Reseller"
+msgstr "帐户不是一个分销商"
+
+msgid "Account is suspended"
+msgstr "帐户已暂停"
+
+msgid "Account password changed"
+msgstr "帐户密码已更改"
+
+msgid "Account(s) Suspended"
+msgstr "帐户已暂停"
+
+msgid "Account(s) Unuspended"
+msgstr "帐户已恢复"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "帐户还原到 %s 分区。"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "Activate"
+msgstr "启用"
+
+msgid "Active"
+msgstr "启用"
+
+#, c-format
+msgid "Add %s"
+msgstr "添加 %s"
+
+msgid "Add Host"
+msgstr "添加主机"
+
+msgid "Add Override"
+msgstr "添加重写"
+
+msgid "Add the new NS records first."
+msgstr "首先添加新的 NS 记录。"
+
+msgid "Add to Apache"
+msgstr "添加到Apache"
+
+msgid "Add to Clipboard"
+msgstr "添加到剪贴板"
+
+msgid "Add to DNS"
+msgstr "添加到DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "已添加 ns1 为 %s 和 ns2 为 %s"
+
+msgid "Additional"
+msgstr "附加的"
+
+msgid "Admin"
+msgstr "管理员"
+
+msgid "Admin SSL"
+msgstr "管理员 SSL"
+
+msgid "Admin SSL is not enabled"
+msgstr "管理员SSL未启用"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "高级搜索"
+
+msgid "Afternoon"
+msgstr "下午"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "别名 %s@%s -> %s 已创建"
+
+msgid "All"
+msgstr "全部"
+
+msgid "All Data"
+msgstr "所有数据"
+
+msgid "All E-Mail"
+msgstr "所有电子邮件"
+
+msgid "All Months (cgi)"
+msgstr "所有月份(cgi)"
+
+msgid "All Resellers"
+msgstr "所有经销商"
+
+msgid "All Users"
+msgstr "所有用户"
+
+msgid "All Users Except Selected Users"
+msgstr "除选中用户外的所有用户"
+
+msgid "All Users Except:"
+msgstr "所有除以下用户的用户："
+
+msgid "All of Your Users"
+msgstr "当前账号下的所有用户"
+
+msgid "All privileges have been set"
+msgstr "已设置所有权限"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "除最后一步外，所有路由步骤都必须有一个“匹配”"
+
+msgid "All selected Users have been suspended"
+msgstr "所有选定的用户已被暂停"
+
+msgid "All selected Users have been unsuspended"
+msgstr "所有选定的用户已被取消暂停"
+
+msgid "All specified forwarders removed"
+msgstr "所有指定的转发器已删除"
+
+msgid "Allocated"
+msgstr "分配"
+
+msgid "Allow"
+msgstr "允许"
+
+msgid "Allow Overselling"
+msgstr "允许超售"
+
+msgid "Allowance threshold is 0%"
+msgstr "允许阈值为 0%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "允许这么多 %s 会使您超过您的 %s 的极限"
+
+msgid "Alpha"
+msgstr "Alpha"
+
+msgid "Already Exists"
+msgstr "已存在"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr "虽然出现了备份错误，但上传有效的备份仍会尝试到"
+
+msgid "An Error Occurred"
+msgstr "发生错误"
+
+msgid "An Error has occurred"
+msgstr "发生错误"
+
+msgid "An auto responder already exists with that name"
+msgstr "已存在同名的自动响应"
+
+msgid "An autoresponder with that name already exists"
+msgstr "已存在同名的自动回复"
+
+msgid "An error has occurred"
+msgstr "发生错误"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "重写Nginx 设备配置时发生错误"
+
+msgid "An error occured during extraction"
+msgstr "提取过程中发生错误"
+
+msgid "An error occured while creating the compressed file"
+msgstr "创建压缩文件时发生错误"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "重置文件所有权时发生错误"
+
+msgid "An error occurred during the backup"
+msgstr "备份期间发生错误"
+
+msgid "An error occurred during the restore"
+msgstr "还原期间发生错误"
+
+msgid "An error occurred when unblocking the account"
+msgstr "解锁帐户时发生错误"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "应用设置时发生错误"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "复制文件时发生错误"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "创建目录时发生错误"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "尝试保护目录时发生错误"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "重命名文件时发生错误"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "尝试恢复文件时出错"
+
+msgid "Anonymous Ftp"
+msgstr "匿名Ftp"
+
+msgid "Apache"
+msgstr "Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "使用新IP重写Apache 配置文件"
+
+msgid "Apparent Size"
+msgstr "视图大小"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "在 <Directory> 部分内显示为第一个项目。"
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "添加在模板的最顶部，变量定义之前."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr "放在所有context{} section里以用于密码保护目录."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "放在phpIniOverride{} section里."
+
+msgid "Appears in rewrite{} section."
+msgstr "在 rewrite{} 部分显示."
+
+msgid "Appears in scripthandler{} section."
+msgstr "放在scripthandler{} section里."
+
+msgid "Appears in vhssl{} section."
+msgstr "放在vhssl{} section里."
+
+msgid "Appears just before the <Directory> section."
+msgstr "在 <Directory> section 上方."
+
+msgid "Apply to All Users"
+msgstr "应用到所有用户"
+
+msgid "Apply to Me"
+msgstr "应用到当前账号"
+
+msgid "Apply to existing Domains"
+msgstr "应用到现有域名"
+
+msgid "Apr"
+msgstr "四月"
+
+msgid "Archive Size"
+msgstr "存档大小"
+
+msgid "Archives purged"
+msgstr "归档已清除"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "您确定要删除选定的帐户吗？"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "您确定要删除选定的数据库吗？"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "您确定要删除选中的密钥吗？"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "您确定要删除选定的区域吗？"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "您确定要删除这些文件吗？"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "您确定要结束这些进程吗？"
+
+msgid "Ascending"
+msgstr "升序"
+
+msgid "Assign to"
+msgstr "分配给"
+
+msgid "Assigned"
+msgstr "已分配"
+
+msgid "At least one crediential is required."
+msgstr "至少需要一个凭证。"
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "试图将 %s 复制到自身，文件已跳过。"
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "试图将 %s 移动到自身，文件已跳过。"
+
+msgid "Attempts"
+msgstr "尝试次数"
+
+msgid "Aug"
+msgstr "八月"
+
+msgid "Authentication"
+msgstr "验证"
+
+msgid "Authorize"
+msgstr "授权"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Auto media selection active."
+msgstr "自动媒体选择处于活动状态。"
+
+msgid "Auto+Confirm"
+msgstr "自动 + 确认"
+
+msgid "AutoResponders"
+msgstr "自动回复"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "%s 的自动证书续订成功"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "自动生成 security.txt (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "自动回复"
+
+msgid "Autoresponder"
+msgstr "自动回复"
+
+msgid "Autoresponder created"
+msgstr "自动回复已创建"
+
+msgid "Autoresponder updated"
+msgstr "自动回复已更新"
+
+msgid "Autoresponder(s) removed"
+msgstr "自动回复已删除"
+
+msgid "Avoid use of trailers."
+msgstr "避免使用拖车。"
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "Awstats 设置已更改"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Backing up Databases"
+msgstr "正在备份数据库"
+
+msgid "Backing up E-Mail Data"
+msgstr "正在备份电子邮件数据"
+
+msgid "Backing up E-Mail Settings"
+msgstr "正在备份电子邮件设置"
+
+msgid "Backing up FTP"
+msgstr "正在备份 FTP"
+
+msgid "Backing up User Configs"
+msgstr "正在备份用户配置"
+
+msgid "Backing up User Data"
+msgstr "正在备份用户数据"
+
+msgid "Backing up extra E-Mail items"
+msgstr "正在备份额外的电子邮件项目"
+
+msgid "Backup"
+msgstr "备份"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "备份 %d 目前尚未运行。"
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr "备份中止(%d)：在用户 %s的路径下找到了一个硬链接"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Nginx Unit 备份错误： %s"
+
+msgid "Backup Halted"
+msgstr "备份已停止"
+
+msgid "Backup ID"
+msgstr "备份ID"
+
+msgid "Backup creation added to queue"
+msgstr "创建备份已添加到队列"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr "将live key备份到%s失败。如果需要，请记下old key："
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "已创建备份路径 %s。"
+
+msgid "Backup(s) Killed"
+msgstr "备份已停止"
+
+msgid "Backups added to Queue"
+msgstr "备份已添加到队列"
+
+msgid "Bandwidth"
+msgstr "流量"
+
+msgid "Bandwidth (MB)"
+msgstr "流量 (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "带宽使用量"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr "请务必重新扫描新的二维码，旧的二维码将全部失效。"
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr "因为脚本符合所需的标准，它已被通过chmod禁用到 0。"
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr "在解除屏蔽前，确保任何已损坏的脚本已删除或修复。"
+
+msgid "Beta"
+msgstr "测试版"
+
+msgid "Billing Issue"
+msgstr "账单问题"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "在 %s 中寻找转换后的备份文件时出现空白 %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "空白值：默认，全局限制 %d"
+
+msgid "Bleeding edge features"
+msgstr "前沿风险特征"
+
+msgid "Block Usage"
+msgstr "区块使用情况"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker 拦截的路径"
+
+msgid "Blocked"
+msgstr "已拦截"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "必须启用 DNS 控制和ttl 覆盖"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "在服务日志中检测到的强力攻击"
+
+msgid "CA Certificate is Invalid"
+msgstr "CA 证书无效"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr "CA 证书是正确的。您的网站应该在几分钟内就安全了。"
+
+msgid "CC Address"
+msgstr "CC地址"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "CPU 限额"
+
+msgid "Can use Server IP"
+msgstr "可以使用服务器IP"
+
+msgid "Can't get file lock on"
+msgstr "无法获取文件锁定"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "无法打开文件 %s 进行读取"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "无法重新打开文件 %s 追加文件"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel Request"
+msgstr "取消请求"
+
+msgid "Cannot Add A Record"
+msgstr "无法添加记录"
+
+msgid "Cannot Add CNAME Record"
+msgstr "无法添加 CNAME 记录"
+
+msgid "Cannot Add Record"
+msgstr "无法添加记录"
+
+msgid "Cannot Create Account"
+msgstr "无法创建帐户"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "无法创建另一个自动响应"
+
+msgid "Cannot Create Another Database"
+msgstr "无法创建另一个数据库"
+
+msgid "Cannot Create Another Domain"
+msgstr "无法创建另一个域名"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "无法创建另一个域名指向"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "无法创建另一个 FTP 帐户"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "无法创建另一个转发器"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "无法创建另一个邮件列表"
+
+msgid "Cannot Create Another POP Account"
+msgstr "无法创建另一个POP 账户"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "无法创建另一个子域名"
+
+msgid "Cannot Create Autoresponder"
+msgstr "无法创建自动回复"
+
+msgid "Cannot Create Domain"
+msgstr "无法创建域名"
+
+msgid "Cannot Create Vacation Message"
+msgstr "无法创建休假消息"
+
+msgid "Cannot Create a Message"
+msgstr "无法创建消息"
+
+msgid "Cannot Execute Command"
+msgstr "无法执行命令"
+
+msgid "Cannot Execute Your Request"
+msgstr "无法执行请求"
+
+msgid "Cannot Modify Key"
+msgstr "无法修改密钥"
+
+msgid "Cannot Modify User"
+msgstr "无法修改用户"
+
+msgid "Cannot View Domain Settings"
+msgstr "无法查看域名设置"
+
+msgid "Cannot be a list"
+msgstr "它不能是一个列表"
+
+msgid "Cannot be an object"
+msgstr "不能是对象"
+
+msgid "Cannot change the ip"
+msgstr "无法更改IP地址"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr "无法更改系统帐户的密码。请登录到控制面板进行此操作。"
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr "无法更改此电子邮件帐户的密码。该帐户目前处于暂停的域名。"
+
+msgid "Cannot change your email"
+msgstr "无法更改您的电子邮件"
+
+msgid "Cannot change your name"
+msgstr "无法更改您的名称"
+
+msgid "Cannot change your password"
+msgstr "无法更改您的密码"
+
+msgid "Cannot check domain existance"
+msgstr "无法检查域名存在"
+
+msgid "Cannot create User Backup"
+msgstr "无法创建用户备份"
+
+msgid "Cannot create domain"
+msgstr "无法创建域名"
+
+msgid "Cannot create that domain"
+msgstr "无法创建该域名"
+
+msgid "Cannot create user using those settings"
+msgstr "无法使用这些设置创建用户"
+
+msgid "Cannot delete records"
+msgstr "无法删除记录"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "无法删除您当前使用的皮肤。"
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "无法确定子域名 %s 的所有者"
+
+msgid "Cannot execute your request"
+msgstr "无法执行请求"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "找不到 %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "无法在列表中找到 %s"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "找不到 %s 的名称"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "找不到 %s，跳过。"
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "找不到 %s。请确保域名存在并且没有被暂停"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "找不到'%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "在 %s 的允许值列表中找不到 '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "在模板中找不到'%s'"
+
+msgid "Cannot find IP"
+msgstr "找不到IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "找不到用户 '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr "在域名所有者文件中找不到有效的系统用户名。"
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "无法在证书中找到任何SAN值。"
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "从 %s 转换后找不到任何tar.gz"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "无法在域名所有者文件中找到域名"
+
+msgid "Cannot find domain in the certificate."
+msgstr "无法在证书中找到域名。"
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "无法在 %s 中找到密钥值"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "无法在皮肤中找到标记 %s 的LOGO文件 %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "无法在皮肤中找到标记 %s=%s 的LOGO文件 %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "找不到 show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "在 json 中找不到 template_php_ini 或 domain_php_ini"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "无法在域名所有者文件中找到该域名"
+
+msgid "Cannot find that key id"
+msgstr "找不到此密钥ID"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "找不到帐户或转发器"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "找不到 letsencrypt.sh 脚本"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "找不到应该存在的用户 %s"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "无法获取 %s 的 mime 类型"
+
+msgid "Cannot have newline characters in subject"
+msgstr "主题中不能有新行字符"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "无法拥有无限的电子邮件配额"
+
+msgid "Cannot manage zone"
+msgstr "无法管理区域"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "无法移动目录 (%s) 到现有文件或目录 (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "无法打开密码文件来添加用户"
+
+msgid "Cannot open the password file to change the password"
+msgstr "无法打开密码文件来更改密码"
+
+msgid "Cannot open the user password file for reading"
+msgstr "无法打开用户密码文件进行读取"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "无法将目录重命名为现有的文件或目录"
+
+msgid "Cannot resend welcome email"
+msgstr "无法重新发送欢迎邮件"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "无法恢复 %s 的 ftp 帐户。您已达到极限(%s)。"
+
+msgid "Cannot set TTL"
+msgstr "无法设置 TTL"
+
+msgid "Cannot set default domain"
+msgstr "无法设置默认域名"
+
+msgid "Cannot show page"
+msgstr "无法显示页面"
+
+msgid "Cannot stat the source file"
+msgstr "无法统计源文件"
+
+msgid "Cannot use the main account username"
+msgstr "无法使用主要账户用户名"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Catch all 现在设置为 %s"
+
+msgid "Catch-All Email"
+msgstr "通配邮件"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "Catch-all Email 已被此帐户禁用"
+
+msgid "Catch-All email updated successfully"
+msgstr "Catch-all 电子邮件已成功更新"
+
+msgid "Catch-All is disabled"
+msgstr "邮件收集器(Catch-All)已禁用"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catchall 已设置失败"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "集成全局现在设置为忽略错误地址"
+
+msgid "Certificate"
+msgstr "证书"
+
+msgid "Certificate and Key Saved."
+msgstr "证书和密钥已保存。"
+
+msgid "Certificate is Invalid"
+msgstr "证书无效"
+
+msgid "Certificate is Self-Signed"
+msgstr "证书是自签名"
+
+msgid "Change the password to unblock it."
+msgstr "更改密码以解除屏蔽。"
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "由 IP 更改： %s"
+
+msgid "Changes saved"
+msgstr "已保存更改"
+
+msgid "Check"
+msgstr "检查"
+
+msgid "Check the error log for more information."
+msgstr "请检查错误日志以获取更多信息。"
+
+msgid "Check to see if the current software is valid"
+msgstr "检查当前软件是否有效"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "子用户 %s 已删除"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"选择来自：blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "城市只能包含字母、空格或周期"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "清除转发器"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "正在清除 %s"
+
+msgid "Clear Customization"
+msgstr "清除自定义"
+
+msgid "Clear Messages System"
+msgstr "清除消息系统"
+
+msgid "Clear NS"
+msgstr "清除NS"
+
+msgid "Clear Search Filter"
+msgstr "清除搜索过滤器"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "点击 %sHERE%s 返回"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "点击 %sHERE%s 返回"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "点击 %sHERE%s 返回首页"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "点击这里下载最新备份"
+
+msgid "Click here to close this window"
+msgstr "点击此处关闭此窗口"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "点击此处启用域名上的 SSL"
+
+msgid "Clipboard"
+msgstr "剪切板"
+
+msgid "Clipboard emptied"
+msgstr "剪贴板已清空"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Closed"
+msgstr "已关闭"
+
+msgid "Closed+Confirm"
+msgstr "已关闭+确认"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "颜色 %s (%s) 不在列表中: %s"
+
+msgid "Color has been customized"
+msgstr "已自定义颜色"
+
+msgid "Column in"
+msgstr "列在"
+
+msgid "Command"
+msgstr "命令"
+
+msgid "Command Returned"
+msgstr "命令已返回"
+
+msgid "Comment"
+msgstr "注释"
+
+msgid "Comments"
+msgstr "评论"
+
+msgid "Comments Saved"
+msgstr "注释已保存"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "公司只能包含字母、数字、空格和/或周期"
+
+msgid "Compressed File Created"
+msgstr "压缩文件已创建"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "正在压缩 %s"
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "在 %sDirectAdmin 网站%s 上确认结果"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "确认代码无效或请求已过期"
+
+msgid "Continuing with the other files."
+msgstr "继续处理其他文件。"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Copy Clipboard Files here"
+msgstr "复制剪贴板文件到这里"
+
+msgid "Copy the packages export data"
+msgstr "复制软件包导出数据"
+
+msgid "Copying Admin Data"
+msgstr "正复制管理员数据"
+
+msgid "Copying Reseller Data"
+msgstr "正在复制分销商数据"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用复制文件"
+
+msgid "Copying unreadable data"
+msgstr "正在复制不可读的数据"
+
+msgid "Could not excute your request"
+msgstr "无法执行您的请求"
+
+msgid "Could not execute your request"
+msgstr "无法执行您的请求"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr "无法在%s中找到任何匹配的备份keys"
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr "上传后找不到远程文件“%s”用于验证大小"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "无法获取 IP '%s' 的 rDNS"
+
+msgid "Could not read tickets"
+msgstr "无法读取工单"
+
+msgid "Could not write tickets"
+msgstr "无法写入工单"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr "找不到任何类型的 IP 给用户 (requested ip=%s)。"
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr "无法读取 %s 的 db 文件，无法添加 ns1 和 ns2 到它。"
+
+msgid "Count"
+msgstr "数量"
+
+msgid "Counted"
+msgstr "已计数"
+
+msgid "Country code must be 2 letters"
+msgstr "国家代码必须是 2 个字母"
+
+msgid "Created"
+msgstr "已创建"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr "使用 filemanager_disable_features 选项已禁用创建目录"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "创建这么多 %s 会使您超过您的 %s 的限制"
+
+msgid "Creator"
+msgstr "创建人"
+
+msgid "Creator Duplicate"
+msgstr "创建人重复"
+
+msgid "Creators and their Users"
+msgstr "创建者及其用户"
+
+msgid "Cron Created"
+msgstr "Cron 已创建"
+
+msgid "Cron E-Mail set"
+msgstr "Cron 电子邮件设置"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Cron 任务已删除"
+
+msgid "Cron Jobs"
+msgstr "Cron任务"
+
+msgid "Cron Jobs Deleted"
+msgstr "Cron 任务已删除"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Cron任务已重复"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Cron任务将在后台运行"
+
+msgid "Cron Modified"
+msgstr "Cron 已修改"
+
+msgid "Cron job has been created"
+msgstr "Cron 任务已创建"
+
+msgid "Current"
+msgstr "当前"
+
+msgid "Current IPs"
+msgstr "当前IP地址"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "当前分配给 %s 的 IP 地址"
+
+msgid "Current Protected Directories"
+msgstr "当前受保护的目录"
+
+msgid "Current Usage"
+msgstr "当前使用量"
+
+msgid "Custom"
+msgstr "自定义"
+
+msgid "Custom Color"
+msgstr "自定义颜色"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "已上传自定义皮肤LOGO"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "未启用自定义皮肤LOGO"
+
+msgid "Custom logo deleted"
+msgstr "自定义LOGO已删除"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr "自定义阈值必须是一个有效的数字。允许小数。"
+
+msgid "Customization Disabled"
+msgstr "自定义已禁用"
+
+msgid "Customization written"
+msgstr "自定义已写入"
+
+msgid "Customize the skin"
+msgstr "自定义皮肤"
+
+msgid "DKIM disabled"
+msgstr "DKIM 已禁用"
+
+msgid "DKIM enabled"
+msgstr "DKIM已启用"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "DNS 控制"
+
+msgid "DNS Zone does not exist"
+msgstr "DNS Zone不存在"
+
+msgid "DNSSEC Keys generated"
+msgstr "生成DNSSEC 密钥"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC 未启用"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSSEC - DNS 安全"
+
+msgid "Database"
+msgstr "数据库"
+
+msgid "Database Created"
+msgstr "数据库已创建"
+
+msgid "Database Disk Usage"
+msgstr "数据库磁盘使用情况"
+
+msgid "Database has been successfully Restored"
+msgstr "数据库已成功恢复"
+
+msgid "Database:"
+msgstr "数据库："
+
+msgid "Databases"
+msgstr "数据库"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Date Added"
+msgstr "已添加日期"
+
+msgid "Date Blocked"
+msgstr "已屏蔽日期"
+
+msgid "Date Created"
+msgstr "日期已创建"
+
+msgid "Date Suspended"
+msgstr "中止日期"
+
+msgid "Day"
+msgstr "日"
+
+msgid "Day of Month"
+msgstr "月份的天"
+
+msgid "Day of Week"
+msgstr "一周的天"
+
+msgid "Days must be a valid number."
+msgstr "天数必须是有效的数字。"
+
+msgid "Debug Guide"
+msgstr "调试指南"
+
+msgid "Dec"
+msgstr "十二月"
+
+msgid "Decending"
+msgstr "倒计时"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "解密 %s 失败"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Default release schedule"
+msgstr "默认发布计划"
+
+msgid "Delayed release schedule"
+msgstr "延迟发布计划"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete Extension"
+msgstr "删除扩展"
+
+msgid "Delete Handler"
+msgstr "删除处理程序"
+
+msgid "Delete MimeType"
+msgstr "删除 MimeType"
+
+msgid "Delete Selected"
+msgstr "删除选中项目"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "删除DNSSEC 密钥并使用无签名区域"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "删除以下用户"
+
+msgid "Delete the following domains:"
+msgstr "删除以下域名："
+
+msgid "Delete web data"
+msgstr "删除 web 数据"
+
+msgid "Deleted"
+msgstr "已删除"
+
+msgid "Deleted User Bandwidth"
+msgstr "已删除用户带宽"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "正在删除 %s..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用删除文件/目录"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "删除这些NS记录将会给您留下0个记录。"
+
+msgid "Deny"
+msgstr "拒绝"
+
+msgid "Destination"
+msgstr "目标"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "目标URL 错误： %s"
+
+msgid "Detail"
+msgstr "详情"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "Digest Subscriber"
+msgstr "摘要订阅者"
+
+msgid "Digest Subscribers"
+msgstr "摘要订阅者"
+
+msgid "DirectAdmin License"
+msgstr "DirectAdmin 许可证"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin将在 1 分钟后重启"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin 将在 1 分钟内重启"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "目录保护设置已保存。"
+
+msgid "Directory created"
+msgstr "目录已创建"
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Disable Auto-Renew"
+msgstr "禁用自动续订"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr "禁用的分销商设置将在后台应用于用户和软件包。"
+
+msgid "Disk Space"
+msgstr "磁盘空间"
+
+msgid "Disk Space (MB)"
+msgstr "磁盘空间 (MB)"
+
+msgid "Disk Usage"
+msgstr "磁盘使用量"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "分区只能包含字母、数字、空格和/或句号"
+
+msgid "Dns Provider reset."
+msgstr "Dns 提供程序重置。"
+
+msgid "Dns Provider saved."
+msgstr "Dns 提供程序已保存。"
+
+msgid "Do not use CAPS in the domain name."
+msgstr "不要在域名中使用 CAPS。"
+
+msgid "Do not use any spaces between the email names."
+msgstr "不要在电子邮件名称之间使用任何空格。"
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "不要在 %s 值中使用空格"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "您想要覆盖任何现有文件吗？"
+
+msgid "DocumentRoot"
+msgstr "文档Root"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "不匹配设置： %s"
+
+msgid "Domain"
+msgstr "域名"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "域名 %s 已创建"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "域名 %s 不能使用一个 %s 覆盖路径的 %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr "域名 %s 被管理员暂停，您没有此访问权限。您不能取消暂停此域名。"
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr "域名 “%s”的 DNS 提供商已被清除。"
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "域名%s正在使用 php-fpm。"
+
+msgid "Domain AWstats"
+msgstr "域名AWStats"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "域名AWstats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "域名带宽"
+
+msgid "Domain Created"
+msgstr "域名已创建"
+
+msgid "Domain Created Successfully"
+msgstr "域名创建成功"
+
+msgid "Domain Deletion Results"
+msgstr "域名删除结果"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "域名指向"
+
+msgid "Domain Pointer Added"
+msgstr "域名指向添加成功"
+
+msgid "Domain Pointer on"
+msgstr "域名指向开启"
+
+msgid "Domain Pointers"
+msgstr "域名指向"
+
+msgid "Domain Pointers Removed"
+msgstr "域名指向已移除"
+
+msgid "Domain Quota"
+msgstr "域名限额"
+
+msgid "Domain Renaming is not enabled"
+msgstr "域名重命名未启用"
+
+msgid "Domain Webalizer Stats"
+msgstr "域名 Webalizer 统计信息"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr "域名中包含UTF-8字符。请提交punycode域或启用 convert_to_punycode。"
+
+msgid "Domain does not belong to you"
+msgstr "域名不属于您"
+
+msgid "Domain does not belong to you."
+msgstr "域名不属于您。"
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "域名存在于 %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr "域名已经在处理一个 SSL 请求。请允许它完成后再做其他更改。"
+
+msgid "Domain is forbidden"
+msgstr "禁用域名"
+
+msgid "Domain is not in your list"
+msgstr "域名不在您的列表中"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr "域名不能仅有域名后缀"
+
+msgid "Domain name has been successfully changed"
+msgstr "域名已成功更改"
+
+msgid "Domain php.ini overrides"
+msgstr "域名 php.ini 覆盖"
+
+msgid "Domain(s)"
+msgstr "域名"
+
+msgid "Domain(s) modified"
+msgstr "域名已修改"
+
+msgid "Domains"
+msgstr "域名"
+
+msgid "Domains directory created successfully"
+msgstr "域名目录创建成功"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "成功在用户的home目录中创建域名目录"
+
+msgid "Double click for main domain page"
+msgstr "双击主域页面"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "Dovecot 文件 '%s' 丢失了数据。运行 'da build dovecot_conf'"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Download Backup"
+msgstr "下载备份"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "已下载： %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "正在下载一个新的webalizer二进制文件"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用下载压缩文件夹"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "已使用 filemanager_disable_features 选项禁用下载文件"
+
+msgid "Driver signals L1 up."
+msgstr "驱动器信号 L1 向上。"
+
+msgid "Driver signals dormant."
+msgstr "驱动信号休眠。"
+
+msgid "Duplicate"
+msgstr "副本"
+
+msgid "E-Mail"
+msgstr "电子邮件"
+
+msgid "E-Mail Accounts"
+msgstr "电子邮件帐户"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "电子邮件帐户已删除"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "电子邮件地址已成功更改"
+
+msgid "E-Mail Limit has been set"
+msgstr "已设置电子邮件限制"
+
+msgid "E-Mail Update Failed"
+msgstr "电子邮箱更新失败"
+
+msgid "E-Mail Updated"
+msgstr "电子邮件已更新"
+
+msgid "E-Mail account already exists"
+msgstr "电子邮件帐户已存在"
+
+msgid "E-Mail has been changed"
+msgstr "电子邮件已更改"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "电子邮件已更改为 %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "电子邮件配额不能超过 %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo 发送的数据包。"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit the zone on the master server."
+msgstr "编辑主服务器上的区域。"
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr "您的帐户创建者要么更改您的密码以解除屏蔽，要么使用登录页面上丢失的密码功能(如"
+"果启用)。"
+
+msgid "Email"
+msgstr "电子邮件"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "电子邮件'%s'不存在"
+
+msgid "Email Added to list"
+msgstr "电子邮箱已添加到列表"
+
+msgid "Email Deliveries (Sent)"
+msgstr "电子邮件发送(发送)"
+
+msgid "Email Disk Usage"
+msgstr "电子邮件磁盘使用情况"
+
+msgid "Email Forwarders"
+msgstr "电子邮件转发器"
+
+msgid "Email Only"
+msgstr "仅限电子邮件"
+
+msgid "Email Sent"
+msgstr "电子邮件已发送"
+
+msgid "Email Set"
+msgstr "设置电子邮箱"
+
+msgid "Email created but"
+msgstr "电子邮件已创建，但是"
+
+msgid "Email removed"
+msgstr "电子邮件已移除"
+
+msgid "Empty Clipboard"
+msgstr "空剪贴板"
+
+msgid "Empty path"
+msgstr "空路径"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Enabled"
+msgstr "已启用"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "%s 加密失败"
+
+msgid "End Time"
+msgstr "结束时间"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "尝试从 %lld 字节读取 %s时到达文件末尾。已填充=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "确保第二个密钥与第一个匹配"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "请确保分销商的 ip.list 有一些可用IP。"
+
+msgid "Ensuring stored domains are present"
+msgstr "确保存储的域名存在"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Error Compressing the backup file"
+msgstr "压缩备份文件时出错"
+
+msgid "Error Creating Cron Job"
+msgstr "创建Cron Job出错"
+
+msgid "Error Creating Domain"
+msgstr "创建域名时出错"
+
+msgid "Error Creating Key"
+msgstr "创建密钥时出错"
+
+msgid "Error Creating User"
+msgstr "创建用户时出错"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "删除 %s 时出错"
+
+msgid "Error Executing Perl"
+msgstr "执行 Perl 时出错"
+
+msgid "Error Log"
+msgstr "错误日志"
+
+msgid "Error Reading Message File"
+msgstr "读取消息文件出错"
+
+msgid "Error Reading db file"
+msgstr "读取db文件出错"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "删除用户 %s 时出错"
+
+msgid "Error Resetting Zone"
+msgstr "重置区域时出错"
+
+msgid "Error Restoring database"
+msgstr "恢复数据库时出错"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "保存密码时出错： %s"
+
+msgid "Error Unblocking paths"
+msgstr "解锁路径时出错"
+
+msgid "Error Updating User"
+msgstr "更新用户时出错"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "写入 %s 时出错"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "激活 %s 用户 %s 时出错： %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "激活cronjob时出错： %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "激活 %s的数据时出错： %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "将 %s 的 DS 记录添加到远程父区时出错： %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "授权 SSH 密钥时出错"
+
+msgid "Error changing password"
+msgstr "更改密码出错"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "清除 LetsEncrypt 文件时出错"
+
+msgid "Error converting file: "
+msgstr "转换文件时发生错误： "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "复制 %s 到 %s 时出错： %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "复制 %s 到 %s时发生错误: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "复制LOGO文件时出错： %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "创建 %s 出错"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "创建 %s时出错： %s"
+
+msgid "Error creating Autoresponder"
+msgstr "创建自动回复时出错"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "创建 NginxUnit 应用程序'%s'时出错： %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "创建 NginxUnit 路由%s出错： %s"
+
+msgid "Error creating SSH Key"
+msgstr "创建 SSH 密钥出错"
+
+msgid "Error creating User"
+msgstr "创建用户时出错"
+
+msgid "Error creating Vacation Message"
+msgstr "创建休假消息时出错"
+
+msgid "Error creating account"
+msgstr "创建帐户时出错"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr "在 %s中创建默认目录时出错。请参阅错误日志以获取更多信息。"
+
+msgid "Error creating forwarder"
+msgstr "创建转发器出错"
+
+msgid "Error creating the database"
+msgstr "创建数据库时出错"
+
+msgid "Error decoding the base 64 data"
+msgstr "解码 base64 数据时出错"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "删除 %s 出错： %s"
+
+msgid "Error deleting SSH Key"
+msgstr "删除 SSH 密钥出错"
+
+msgid "Error deleting account(s)"
+msgstr "删除帐户时发生错误"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "删除自动回复时发生错误"
+
+msgid "Error deleting filter(s)"
+msgstr "删除过滤器时发生错误"
+
+msgid "Error deleting records"
+msgstr "删除记录时出错"
+
+msgid "Error determining username from "
+msgstr "确定用户名错误 来自 "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "%s自动续订证书时发生错误"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "删除子用户 %s 时发生错误"
+
+msgid "Error during extraction"
+msgstr "提取时出错"
+
+msgid "Error executing your request"
+msgstr "执行您的请求出错"
+
+msgid "Error generating zone keys"
+msgstr "生成区域密钥时出错"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "导入 base64 编码包时出错"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "提交数据错误，需要域名、类型和值。"
+
+msgid "Error modifying SSH key"
+msgstr "修改 SSH 密钥出错"
+
+#, c-format, fuzzy
+msgid "Error parsing %s path: wrong type"
+msgstr "解析 json 输出时出错"
+
+msgid "Error parsing 'routes'."
+msgstr "解析“路由”时出错。"
+
+msgid "Error parsing json output"
+msgstr "解析 json 输出时出错"
+
+msgid "Error purging archives"
+msgstr "清理归档错误"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "读取 %s时出错： %s"
+
+msgid "Error reading domain config file"
+msgstr "读取域名配置文件时出错"
+
+msgid "Error reading domain config files"
+msgstr "读取域名配置文件出错"
+
+msgid "Error reading domainowners"
+msgstr "读取域名所有者时出错"
+
+msgid "Error reading domainowners file"
+msgstr "读取域名所有者文件出错"
+
+msgid "Error reading named db file"
+msgstr "读取 named db 文件时出错"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "写入DNSSEC 签名前读取db 文件时出错"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "读取 %s的用户文件时出错，仍在继续。"
+
+msgid "Error reading user_ip.list file"
+msgstr "读取user_ip.list文件出错"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "删除 %s出错： %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "从 %s 移除 IP 时出错"
+
+msgid "Error removing file: "
+msgstr "删除文件时发生错误： "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "删除路径 %s时出错： %s"
+
+msgid "Error removing subdomain"
+msgstr "删除子域时出错"
+
+msgid "Error removing subdomain(s)"
+msgstr "删除子域名时发生错误"
+
+msgid "Error removing subdomains"
+msgstr "删除子域名时出错"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "删除用户 %s 时出错"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "重命名 %s 为 %s时出错： %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "恢复 %s时出错： %s"
+
+msgid "Error restoring domain"
+msgstr "还原域名时出错"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "恢复%s的 php 设置时出错： %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "重写 %s 时出错"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "运行 %s出错： %s"
+
+msgid "Error running rndc addzone."
+msgstr "运行 rndc addzone 时出错。"
+
+msgid "Error running rndc delzone."
+msgstr "运行 rndc delzone 时出错。"
+
+msgid "Error saving Cron E-Mail"
+msgstr "保存Cron电子邮件时出错"
+
+msgid "Error saving Nameservers"
+msgstr "保存域名服务器时出错"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "向 %d 发送信号时出错： %s"
+
+msgid "Error setting MX Template"
+msgstr "设置 MX 模板出错"
+
+msgid "Error setting MX template for pointer"
+msgstr "设置指向的 MX 模板出错"
+
+msgid "Error setting PHP versions"
+msgstr "设置 PHP 版本时出错"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "设置 %s的 cgroupe 限制时出错： %s"
+
+msgid "Error setting clipboard files"
+msgstr "设置剪贴板文件出错"
+
+msgid "Error setting global key"
+msgstr "设置全局密钥出错"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "在 %s 设置权限时出错： %s"
+
+msgid "Error setting the filter"
+msgstr "设置过滤器时出错"
+
+msgid "Error setting the spam filter"
+msgstr "设置垃圾邮件过滤器时出错"
+
+msgid "Error setting timezone"
+msgstr "设置时区出错"
+
+msgid "Error showing Email Acounts"
+msgstr "显示电子邮件地址时出错"
+
+msgid "Error showing message ID info"
+msgstr "显示消息 ID 信息时出错"
+
+msgid "Error showing smtp log info"
+msgstr "显示smtp日志信息出错"
+
+msgid "Error signing zone"
+msgstr "签名区域时出错"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "挂起 %s 的用户 %s时出错： %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "暂停cronjob时出错： %s"
+
+msgid "Error updating Autoresponder"
+msgstr "更新自动回复时出错"
+
+msgid "Error updating Catch-All value"
+msgstr "更新 Catch-All 值时出错"
+
+msgid "Error updating Vacation Message"
+msgstr "更新休假消息时出错"
+
+msgid "Error updating forwarder"
+msgstr "更新转发器时出错"
+
+msgid "Error while compressing file"
+msgstr "压缩文件时出错"
+
+msgid "Error while creating User"
+msgstr "创建用户时出错"
+
+msgid "Error while deleting Users"
+msgstr "删除用户时出错"
+
+msgid "Error while saving changes"
+msgstr "保存更改时出错"
+
+msgid "Error while saving password"
+msgstr "保存密码时出错"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "写入 %s 时出错"
+
+msgid "Error with LetsEncrypt request"
+msgstr "LetsEncrypt 请求错误"
+
+msgid "Error with curl request"
+msgstr "Curl 请求错误"
+
+msgid "Error with exigrep"
+msgstr "exigrep 出错"
+
+msgid "Error with fchownat"
+msgstr "fchownat 出错"
+
+msgid "Error with system Quotas"
+msgstr "系统配额错误"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr "备份计划错误 (重命名失败): %s 到 %s 的副本也失败: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "写入 %s 时出错"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "写入 %s出错： %s"
+
+msgid "Error writing domain config file"
+msgstr "写入域名配置文件时出错"
+
+msgid "Error writing pop cache"
+msgstr "写入pop 缓存时出错"
+
+msgid "Error writing the directadmin.conf"
+msgstr "写入 directadmin.conf 时出错"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "写入到 %s出错： %s"
+
+msgid "Errors"
+msgstr "错误"
+
+msgid "Evening"
+msgstr "晚上"
+
+msgid "Expecting 0 or 1"
+msgstr "正在等待 0 或 1"
+
+msgid "Expecting any integer"
+msgstr "要求任何整数"
+
+msgid "Expecting any long long integer"
+msgstr "要求任何长整数"
+
+msgid "Expired"
+msgstr "已过期"
+
+msgid "Expiry"
+msgstr "到期"
+
+msgid "Export Selected"
+msgstr "导出选中项"
+
+msgid "Extension"
+msgstr "扩展"
+
+msgid "Extensions"
+msgstr "扩展"
+
+msgid "Extract"
+msgstr "解压"
+
+msgid "Extract selected to directory"
+msgstr "解压选中到目录"
+
+msgid "Extracting User Data"
+msgstr "提取用户数据"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "已使用 filemanager_disable_features 选项禁用提取文件"
+
+msgid "Extracting non-readable files"
+msgstr "提取不可读文件"
+
+msgid "Extracting ~/domains directory"
+msgstr "正在解压 ~/domains 目录"
+
+msgid "Extracting ~/imap directory"
+msgstr "正在解压 ~/imap 目录"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "FTP 帐户已存在"
+
+msgid "FTP information invalid."
+msgstr "FTP 信息无效。"
+
+msgid "FTP: default creation error"
+msgstr "FTP：默认创建错误"
+
+msgid "Feature Disabled"
+msgstr "功能已禁用"
+
+msgid "Feb"
+msgstr "二月"
+
+msgid "File"
+msgstr "文件"
+
+msgid "File %s already exists, file skipped."
+msgstr "文件 %s 已存在，文件已跳过。"
+
+msgid "File Extracted"
+msgstr "已提取文件"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "正在读取的文件为'%s"
+
+msgid "File copied successfully"
+msgstr "文件复制成功"
+
+msgid "File does not exist"
+msgstr "文件不存在"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "文件不存在或您没有访问文件"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "已提取文件"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "重置文件所有权"
+
+#, fuzzy
+msgid "File purged"
+msgstr "归档已清除"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "文件已成功恢复"
+
+msgid "File restored successfully"
+msgstr "文件已成功恢复"
+
+msgid "Filename"
+msgstr "文件名称"
+
+msgid "Files added to clipboard"
+msgstr "文件已添加到剪贴板"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "已提取文件"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "密钥已删除"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "%s 已移除"
+
+msgid "Filter"
+msgstr "筛选器"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "筛选器"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP 已删除"
+
+msgid "Fingerprint"
+msgstr "指纹"
+
+msgid "First"
+msgstr "第一个"
+
+msgid "First PHP"
+msgstr "首个PHP"
+
+msgid "First Page"
+msgstr "第一页"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "'%s' 的标记值为空"
+
+msgid "Flush from DNS"
+msgstr "从 DNS 刷新"
+
+msgid "For backwards compatibility"
+msgstr "后向兼容性"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr "对于需要处理的域名数量庞大的情况可能导致超时"
+
+msgid "Forwarder"
+msgstr "转发器"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "转发器 %s 不能指向自己"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "转发器 %s@%s 已删除，因为它剩余的收件人为0。"
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "转发器 '%s' 已经存在。"
+
+msgid "Forwarder already exists"
+msgstr "转发器已存在"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr "转发器包含一个 local_part_suffix 字符：'%s' "
+"表示它之后的所有内容都将被忽略，并且转发器将永远不会匹配。"
+
+msgid "Forwarder created"
+msgstr "转发器已创建"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "找到转发器循环: %s"
+
+msgid "Forwarder updated"
+msgstr "转发器已更新"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "转发器已创建"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "在 %s 中找到 0 个读取为 %s 的文件"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr ""
+
+msgid "Free - randomly selected"
+msgstr "免费－随机选择"
+
+msgid "Free Memory"
+msgstr "空闲内存"
+
+msgid "Free Selected"
+msgstr "自由选择"
+
+msgid "Free Swap Memory"
+msgstr "空闲交换内存"
+
+msgid "From"
+msgstr "从"
+
+msgid "Ftp"
+msgstr "Ftp"
+
+msgid "Ftp Accounts"
+msgstr "Ftp 账户"
+
+msgid "Ftp account changed"
+msgstr "Ftp 帐户已更改"
+
+msgid "Ftp settings saved"
+msgstr "Ftp 设置已保存"
+
+msgid "Full Date"
+msgstr "完整日期"
+
+msgid "Full Name has been successfully changed"
+msgstr "全名已成功更改"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "完整格式名称 '%s' 不以区域名称结束"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "生成密钥"
+
+msgid "Git Repositories"
+msgstr "Git 存储库"
+
+msgid "Global"
+msgstr "全球"
+
+msgid "Global - randomly selected"
+msgstr "全局－随机选择"
+
+msgid "Global Key"
+msgstr "全局密钥"
+
+msgid "Global Key set"
+msgstr "全局密钥设置"
+
+msgid "Global ssh keys not available to Users"
+msgstr "全局 ssh 密钥对用户不可用"
+
+msgid "Go to %s"
+msgstr "跳转至 %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "组 %s 已经存在，请选择一个不同的用户名。"
+
+msgid "Handler"
+msgstr "Handler"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "记录已删除"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "Handler"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"您好，\n"
+"\n"
+"此消息是为了通知您，您的帐户'|USERNAME|' 已被暂停。\n"
+"原因：|REASON|\n"
+"\n"
+"如果您觉得这样做有误，请联系您的主机提供商了解更多信息\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "下面是结果"
+
+msgid "Here are the results:"
+msgstr "以下是结果："
+
+msgid "High"
+msgstr "高"
+
+msgid "Highest"
+msgstr "最高"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "搜索 @ 或域名标题行时命中文件结尾在"
+
+msgid "Home Directory"
+msgstr "主目录"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "主路径“%s”不在允许的 home_override_list 中"
+
+msgid "Host:"
+msgstr "主机："
+
+msgid "Hosts"
+msgstr "主机"
+
+msgid "Hour"
+msgstr "小时"
+
+msgid "How to process the request"
+msgstr "如何处理请求"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr "然而，在 %s "
+"次尝试后，他们无法提供一个有效的双步骤认证代码，因此没有授予访问权限。"
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "但是已经找到子域名，然后继续处理。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID不属于您"
+
+#, fuzzy
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID： 1234 或 \"1234-1239\""
+
+msgid "IO Read Bandwidth Max"
+msgstr "IO 读取带宽最大值"
+
+msgid "IO Write Bandwidth Max"
+msgstr "IO 读取带宽最大值"
+
+msgid "IOPS Read Max"
+msgstr "IOPS 读取上限"
+
+msgid "IOPS Write Max"
+msgstr "IOPS 写入上限"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP已添加"
+
+msgid "IP Info"
+msgstr "IP 信息"
+
+msgid "IP Link Added"
+msgstr "IP链接已添加"
+
+msgid "IP Link(s) Removed"
+msgstr "IP 链接已删除"
+
+msgid "IP List is empty"
+msgstr "IP 列表为空"
+
+msgid "IP Netmask Set"
+msgstr "IP网络掩码设置"
+
+msgid "IP Type"
+msgstr "IP 类型"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "域名配置文件中的 IP (%s) 无效。"
+
+msgid "IP must be shared or free"
+msgstr "IP必须共享或免费"
+
+msgid "IP will be linked in the background"
+msgstr "IP将在后台连接"
+
+msgid "IP(s)"
+msgstr "IP"
+
+msgid "IP(s) removed"
+msgstr "IP 已删除"
+
+msgid "IP/User"
+msgstr "IP/用户"
+
+msgid "IPs"
+msgstr "IP"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr "如果输入的用户名正确，您将很快收到一封确认邮件。"
+
+msgid "If this is not your IP, change your password."
+msgstr "如果不是您的IP，请更改您的密码。"
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr "如果您不想覆盖当前证书，请禁用自动续期"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr "如果您继续，这些用户帐户以及所有关联的网站和电子邮件内容都将被删除，这些未在"
+"此列出。"
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr "如果您设置为 0，则不会正常运行 httpd 请求。您甚至无法登录。"
+
+msgid "Image filenames only have 1 dot"
+msgstr "镜像文件仅有1个点数"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "Imap 文件夹"
+
+msgid "Inactive"
+msgstr "不活跃"
+
+msgid "Inbox"
+msgstr "收件箱"
+
+msgid "Include Domains"
+msgstr "包括域名"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Info for admins"
+msgstr "管理员信息"
+
+msgid "Inherit"
+msgstr "继承"
+
+msgid "Inodes"
+msgstr "索引节点"
+
+msgid "Installed"
+msgstr "已安装"
+
+msgid "Installed Perl Modules"
+msgstr "已安装的Perl模块"
+
+msgid "Interface is a loopback interface."
+msgstr "接口是一个循环接口。"
+
+msgid "Interface is a point-to-point link."
+msgstr "接口是一个点对点链接。"
+
+msgid "Interface is in promiscuous mode."
+msgstr "接口处于混合模式。"
+
+msgid "Interface is running."
+msgstr "接口正在运行。"
+
+msgid "Internal debugging flag."
+msgstr "内部调试标志."
+
+msgid "Invalid "
+msgstr "无效 "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "无效的'%s'"
+
+msgid "Invalid CC email address"
+msgstr "CC 电子邮件地址无效"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr "皮肤名称中的无效字符。 只能使用 a-zA-Z0-9._-[] 不能以 '.' 开头"
+
+msgid "Invalid Cron ID"
+msgstr "无效的 Cron ID"
+
+msgid "Invalid DNS name"
+msgstr "无效的 DNS 名称"
+
+msgid "Invalid DNS value"
+msgstr "无效的 DNS 值"
+
+msgid "Invalid Domain"
+msgstr "无效域名"
+
+msgid "Invalid Domain Name"
+msgstr "无效的域名"
+
+msgid "Invalid E-Mail"
+msgstr "电子邮件无效"
+
+msgid "Invalid E-Mail User"
+msgstr "无效的电子邮件用户"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr "无效的邮件地址。 多个和 DirectAdmin 登录用户名，或空白也允许"
+
+msgid "Invalid Email"
+msgstr "无效的电子邮件"
+
+msgid "Invalid Email Name"
+msgstr "无效的电子邮件名称"
+
+msgid "Invalid Email limit"
+msgstr "无效的电子邮件限制"
+
+msgid "Invalid FTP account"
+msgstr "无效的 FTP 帐户"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "无效的 IP (1.2.3.4) 或 IP 范围(1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "ftp 连接的 IP/域名无效"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "无效的日志轮换值：%d"
+
+msgid "Invalid MX value"
+msgstr "无效的 MX 值"
+
+msgid "Invalid Name"
+msgstr "无效名称"
+
+msgid "Invalid Netmask"
+msgstr "无效的网络掩码"
+
+msgid "Invalid Password"
+msgstr "无效密码"
+
+msgid "Invalid RSA comment"
+msgstr "无效的 RSA 注释"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "无效的 RSA ID。使用简单字符： a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "无效的 RSA 密钥"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "无效的 SecRuleRemoveById 值"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "无效的会话分钟值： %lld"
+
+msgid "Invalid Subdomain"
+msgstr "无效的子域名"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "无效的两步验证代码"
+
+#, fuzzy
+msgid "Invalid Two-Step Authentication code"
+msgstr "无效的两步验证代码"
+
+msgid "Invalid URL"
+msgstr "无效的 URL"
+
+msgid "Invalid Username"
+msgstr "用户名无效"
+
+msgid "Invalid Username or Password"
+msgstr "无效的用户名或密码"
+
+msgid "Invalid characters in password"
+msgstr "密码中有无效字符"
+
+msgid "Invalid characters in word"
+msgstr "单词中有无效字符"
+
+msgid "Invalid crypted passwd"
+msgstr "加密密码无效"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr "无效的delete_messages_days 或 delete_tickets_days。过大，最大值 = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr "无效的 delete_messages_days 或 delete_tickets_days。应该为 0 或一个正整数。"
+
+msgid "Invalid dnsprovider"
+msgstr "无效的 dnsprovider"
+
+#, fuzzy
+msgid "Invalid dnsprovider type"
+msgstr "无效的 dnsprovider"
+
+msgid "Invalid domain"
+msgstr "无效的域名"
+
+msgid "Invalid email address"
+msgstr "无效的电子邮件地址"
+
+msgid "Invalid email user"
+msgstr "无效的电子邮件用户"
+
+msgid "Invalid email username"
+msgstr "无效的电子邮件用户名"
+
+msgid "Invalid encryption password"
+msgstr "无效的加密密码"
+
+msgid "Invalid file extension list"
+msgstr "无效的文件扩展名列表"
+
+msgid "Invalid filename:"
+msgstr "无效的文件名："
+
+msgid "Invalid filter type"
+msgstr "无效的过滤器类型"
+
+msgid "Invalid fingerprint"
+msgstr "无效指纹"
+
+msgid "Invalid ftp password"
+msgstr "无效的 ftp 密码"
+
+msgid "Invalid ftp path"
+msgstr "无效的 ftp 路径"
+
+msgid "Invalid ftp port"
+msgstr "无效的 ftp 端口"
+
+msgid "Invalid ftp username"
+msgstr "无效的 ftp 用户名"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "密钥位长度无效:%s"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "无效的密钥选项名称或值: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "无效的密钥类型: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "密钥大小无效。有效值： %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "允许域名列表无效"
+
+msgid "Invalid local path"
+msgstr "无效的本地路径"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "登录无效。请验证您的用户名和密码"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "无效的消息天数。应为正整数。"
+
+msgid "Invalid message id"
+msgstr "无效的消息 id"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "无效的消息类型。只允许请求、回复和消息"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "无效的方法: '%s"
+
+msgid "Invalid name or extension"
+msgstr "无效的名称或扩展"
+
+msgid "Invalid netmask type for IP type"
+msgstr "IP类型无效的网络掩码类型"
+
+msgid "Invalid new user value"
+msgstr "无效的新用户"
+
+msgid "Invalid number"
+msgstr "无效的数字"
+
+msgid "Invalid package name"
+msgstr "无效的软件包名称"
+
+msgid "Invalid path"
+msgstr "无效路径"
+
+msgid "Invalid path append value"
+msgstr "无效的路径附加值"
+
+msgid "Invalid redirect URL"
+msgstr "无效的重定向URL"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "会话超时或最大文件大小值无效"
+
+msgid "Invalid subdomain name"
+msgstr "无效的子域名"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "工单日期无效。应为正整数。"
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "工单天数无效。最大值 = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "无效的类型 '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "更新渠道无效"
+
+msgid "Invalid username"
+msgstr "用户名无效"
+
+msgid "Invalid values"
+msgstr "无效的值"
+
+msgid "Is able to select media type via ifmap."
+msgstr "可以通过ifmap选择媒体类型。"
+
+msgid "Issue verifying license"
+msgstr "签发验证许可证"
+
+msgid "Issuer"
+msgstr "发行人"
+
+msgid "It already exists on the following system(s)"
+msgstr "它已经存在于以下系统"
+
+msgid "It has been disabled"
+msgstr "它已被禁用"
+
+msgid "It must be a positive integer."
+msgstr "它必须是一个正整数。"
+
+msgid "It must not be an IP"
+msgstr "它不能是IP"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "它已经与 %s 关联"
+
+msgid "Items per page"
+msgstr "每页条数"
+
+msgid "Jailed Home"
+msgstr "监禁主页"
+
+msgid "Jan"
+msgstr "1月"
+
+msgid "Jul"
+msgstr "7月"
+
+msgid "Jun"
+msgstr "6月"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "保留它以供未来参考。"
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "请将数字保留为现实值。"
+
+msgid "Key"
+msgstr "密钥"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "密钥已创建。注意它的值并保持安全。"
+
+msgid "Key ID"
+msgstr "Key ID"
+
+msgid "Key Name"
+msgstr "密钥名称"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "密钥名称必须是简单的：a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "已经通过指纹匹配存在密钥"
+
+msgid "Key is Invalid"
+msgstr "密钥无效"
+
+msgid "Key(s) deleted"
+msgstr "密钥已删除"
+
+msgid "Keys"
+msgstr "密钥"
+
+msgid "Keys listed below"
+msgstr "下面列出的密钥"
+
+msgid "Kill"
+msgstr "终止"
+
+msgid "Language"
+msgstr "语言"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "语言已更改为 %s"
+
+msgid "Language has been successfully changed"
+msgstr "语言已成功更改"
+
+msgid "Last"
+msgstr "最后一个"
+
+msgid "Last Accessed"
+msgstr "上次访问"
+
+msgid "Last Changed"
+msgstr "上次更改"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "上次登录IP： %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "上次登录： %s"
+
+msgid "Last Message"
+msgstr "最后一条消息"
+
+msgid "Last Modified"
+msgstr "最后修改"
+
+msgid "Last Page"
+msgstr "最后一页"
+
+msgid "Last Tally Completion"
+msgstr "上次统计完成"
+
+msgid "Leave DNS"
+msgstr "退出DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "将用户留在 %s 的列表中"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Let's Encrypt 证书"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt 没有启用。 您不能使用此选项。"
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "LetsEncrypt 文件已被清除"
+
+msgid "LetsEncrypt request successful"
+msgstr "LetsEncrypt 请求成功"
+
+msgid "LetsEncrypt request successful for"
+msgstr "LetsEncrypt 请求成功"
+
+msgid "License file is no longer supported"
+msgstr "不再支持许可证文件"
+
+msgid "License file unchanged"
+msgstr "许可证文件未改变"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "许可证已通过 DirectAdmin 许可系统验证"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr "许可证限制为 %d 个管理员/分销商，您目前有 %d个"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "许可证限制为 %d 个帐户，您目前有 %d个"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "许可证限制为 %d 个域名，您目前有 %d个"
+
+msgid "License is not valid"
+msgstr "许可证无效"
+
+msgid "License limits exceeded"
+msgstr "超出许可限制"
+
+msgid "License verified"
+msgstr "许可证已验证"
+
+msgid "Limit Notice"
+msgstr "限制通知"
+
+msgid "Limit is not a number"
+msgstr "限制不是数字"
+
+msgid "Link"
+msgstr "链接"
+
+msgid "Link in Background"
+msgstr "后台链接"
+
+msgid "Linked IPs"
+msgstr "链接的 IP"
+
+msgid "List"
+msgstr "列表"
+
+msgid "List Configurations Saved"
+msgstr "列表配置已保存"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "列表名称必须是 %d 个字符或更少字符"
+
+msgid "Listname must be all lower case letters"
+msgstr "列表名称必须是小写字母"
+
+msgid "Load Average"
+msgstr "平均负载"
+
+msgid "Local Data"
+msgstr "本地数据"
+
+msgid "Local Default"
+msgstr "本地默认"
+
+msgid "Local Mail"
+msgstr "本地邮件"
+
+msgid "Local URL Path"
+msgstr "本地URL路径"
+
+msgid "Log"
+msgstr "日志"
+
+msgid "Log Entry"
+msgstr "日志条目"
+
+msgid "Log Usage"
+msgstr "日志使用情况"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Login Failures"
+msgstr "登录失败"
+
+msgid "Login Keys"
+msgstr "登录密钥"
+
+#, c-format
+msgid "Login as %s"
+msgstr "以 %s 登录"
+
+msgid "Low"
+msgstr "低"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "MX 模板设置"
+
+msgid "MX Templates are disabled"
+msgstr "已禁用 MX 模板"
+
+msgid "MX priority should be an positive number"
+msgstr "MX 优先级应该是一个正数"
+
+msgid "Mailing List"
+msgstr "邮件列表"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "邮件列表"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "邮件列表"
+
+msgid "Mailing Lists"
+msgstr "邮件列表"
+
+msgid "Main"
+msgstr "主界面"
+
+msgid "Main Domain ..."
+msgstr "主域名..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "主要错误: 找到 %s 的首页错误"
+
+msgid "Make sure 'unit' is running"
+msgstr "确保“单元”正在运行"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "确保传递的值对其类型有效"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "手动由 %s"
+
+msgid "Mar"
+msgstr "3月"
+
+msgid "Mark as read"
+msgstr "标记为已读"
+
+msgid "Master of a load balancing bundle."
+msgstr "负载平衡捆绑包的主人。"
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "可在单元中创建的最大任务"
+
+msgid "Max Usage (Meg)"
+msgstr "最大使用量 (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr "每秒最大磁盘读取操作。"
+
+msgid "Max disk write operations per second."
+msgstr "每秒最大磁盘写入操作。"
+
+msgid "Max limit User can set per E-Mail"
+msgstr "每个电子邮件可以设置最大用户数"
+
+msgid "Max rate data can be read from a disk."
+msgstr "最大比率数据可以从磁盘读取。"
+
+msgid "Max rate data can be written to a disk."
+msgstr "最大比率数据可以写入磁盘。"
+
+msgid "Maximum Usage"
+msgstr "最大使用量"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "最大值： %s=%s"
+
+msgid "May"
+msgstr "5月"
+
+msgid "Medium"
+msgstr "中"
+
+msgid "Meg"
+msgstr "Meg"
+
+msgid "Memory High"
+msgstr "内存高"
+
+msgid "Memory Max"
+msgstr "内存最大值"
+
+msgid "Memory Usage"
+msgstr "内存使用情况"
+
+msgid "Message #"
+msgstr "消息 #"
+
+msgid "Message Reset"
+msgstr "重置消息"
+
+msgid "Message Type"
+msgstr "消息类型"
+
+msgid "Message is being sent"
+msgstr "正在发送消息"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "已删除消息"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "消息已更新"
+
+msgid "Messages Updated"
+msgstr "消息已更新"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Mime 类型"
+
+#, fuzzy
+msgid "Mime-Type added"
+msgstr "MimeType"
+
+msgid "MimeType"
+msgstr "MimeType"
+
+msgid "Minute"
+msgstr "分钟"
+
+msgid "Missing closing bracket in zone line."
+msgstr "区域行中缺少闭合括号。"
+
+msgid "Missing open bracket in zone line."
+msgstr "区域行中缺少打开的括号。"
+
+msgid "ModSecurity Flags"
+msgstr "ModSecurity 标志"
+
+msgid "ModSecurity Rules Saved"
+msgstr "ModSecurity 规则已保存"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "ModSecurity 已跳过规则"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity 未启用"
+
+msgid "Modify"
+msgstr "修改"
+
+msgid "Modify Password"
+msgstr "修改密码"
+
+msgid "Month"
+msgstr "月"
+
+msgid "More Info"
+msgstr "更多信息"
+
+msgid "Morning"
+msgstr "上午"
+
+msgid "Move Clipboard Files here"
+msgstr "将剪贴板文件移动到这里"
+
+msgid "Move to Trash"
+msgstr "移动到回收站"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr "必须提供 mime 类型或处理程序名称和单个扩展。例如: \"text/html\" 或 \"cgi-"
+"script\" 和 \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "必须选择大于0 LetsEncrypt条目。"
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr "必须使用 letsencrypt=1 作为选项。letsencrypt=%d 目前已设置。"
+
+msgid "MySQL is not enabled on this server"
+msgstr "此服务器上未启用 MySQL"
+
+msgid "NGINX Unit"
+msgstr "NGINX 单元"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Name Server 1"
+msgstr "域名服务器1"
+
+msgid "Name Server 2"
+msgstr "域名服务器2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "名称只能包含字母、空格和/或周期"
+
+msgid "Nameserver"
+msgstr "域名服务器"
+
+msgid "Nameservers deleted"
+msgstr "域名服务器已删除"
+
+msgid "Nameservers have been changed"
+msgstr "域名服务器已更改"
+
+msgid "Namesevers have been changed."
+msgstr "域名服务器已更改。"
+
+msgid "Netmask"
+msgstr "网络掩码"
+
+msgid "Never"
+msgstr "从不使用"
+
+msgid "New Secret Set: %s"
+msgstr "新密钥集: %s"
+
+msgid "New password isn't different"
+msgstr "新密码不相同"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "新安装的密钥是 %s位"
+
+msgid "Next Retry"
+msgstr "下次重试"
+
+msgid "Nginx Template"
+msgstr "Nginx 模板"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx 未启用"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit 未启用或未运行"
+
+msgid "No"
+msgstr "否"
+
+msgid "No Awstats"
+msgstr "无Awstats"
+
+msgid "No Data to Show"
+msgstr "没有要显示的数据"
+
+msgid "No IPs selected"
+msgstr "没有选择IP"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "在路由位置 %lld 的容器中没有列表文件"
+
+msgid "No Send class set"
+msgstr "未设置发送类"
+
+msgid "No User Data"
+msgstr "没有用户数据"
+
+msgid "No action"
+msgstr "无操作"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "没有参数协议，L2目标地址未设置。"
+
+msgid "No changes have been made"
+msgstr "没有更改"
+
+msgid "No changes were needed. Skipping write."
+msgstr "无需更改。跳过写入。"
+
+msgid "No colors have been selected"
+msgstr "未选择颜色"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "路由位置 %lld 没有容器"
+
+msgid "No events for this period."
+msgstr "此期间没有事件。"
+
+msgid "No files have been selected for upload."
+msgstr "没有选择要上传的文件。"
+
+msgid "No free IPs found"
+msgstr "没有找到可用的 IP"
+
+msgid "No global IPs found"
+msgstr "没有找到全局IP"
+
+msgid "No keys selected"
+msgstr "没有选择密钥"
+
+msgid "No passwd entries provided."
+msgstr "未提供 passwd 条目。"
+
+msgid "No paths were provided."
+msgstr "没有提供路径。"
+
+msgid "No shared IPs found"
+msgstr "未找到共享IP地址"
+
+msgid "No text provided"
+msgstr "未提供文本"
+
+msgid "No vacation message set"
+msgstr "没有设置休假消息"
+
+msgid "None"
+msgstr ""
+
+msgid "Not a valid IP Address"
+msgstr "不是有效的 IP 地址"
+
+msgid "Not allowed for Resellers"
+msgstr "不允许分销商使用"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr "没有足够的 IP 来创建域名服务器。 它至少需要 %d 个免费的、未分配的 ip。"
+
+msgid "Not setting up Mail SNI."
+msgstr "未设置邮件SNI。"
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "字符 “%c” 无效，在索引 %d 处"
+
+msgid "Not yet generated"
+msgstr "尚未生成"
+
+msgid "Not yet signed"
+msgstr "尚未签名"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr "注意：我们先前的加密配置仍然在 %d 天内更新。"
+
+msgid "Nothing"
+msgstr "无"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "登录密钥 %s 的通知已成功由 %s 创建"
+
+msgid "Notified"
+msgstr "已通知"
+
+msgid "Nov"
+msgstr "11月"
+
+msgid "Null values"
+msgstr "空值"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "数字 %s=%s 超出了范围 (必须： %d-%d)"
+
+msgid "Number of Users"
+msgstr "用户数"
+
+msgid "OK"
+msgstr "确定"
+
+msgid "Oct"
+msgstr "10月"
+
+msgid "Off"
+msgstr "关闭"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "旧的 %s位密钥已备份到 %s"
+
+msgid "Old password incorrect"
+msgstr "旧密码错误"
+
+#, c-format, fuzzy
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "超过 %s 天。"
+
+msgid "On"
+msgstr "开启"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr "所选IP中的一个 (或更多) 目前不在您的列表"
+
+#, fuzzy
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "cgroup 在 directadmin.conf 中被关闭"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr "一键登录要求不支持 webmail_link=%s。 试试 webmail_link=roundcube。"
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "仅分配了请求的 %d 个全局 IP 中的 %d 个。"
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "只有“附加”IP可以使用此方法从用户中删除"
+
+msgid "Only API access is allowed"
+msgstr ""
+
+msgid "Only Admin accounts can save settings"
+msgstr "只有管理员帐户可以保存设置"
+
+msgid "Only Admins can reset the usage count"
+msgstr "只有管理员可以重置使用次数"
+
+msgid "Only Admins may run this request"
+msgstr "只有管理员可以运行此请求"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr "一次只提供一个扩展名。 例如：“jpg”而不是“jpg jpeg jpe”"
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "只有默认的 '%s' 域名能够控制 php 设置。"
+
+msgid "Only the location of the route can be renamed"
+msgstr "只能重命名路由位置"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr "仅在当前具有功能本地 DNS 的域名上使用通配符"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "在选定的域上禁用 Open Basedir"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "在选定的域上启用 Open Basedir"
+
+msgid "Open+Confirm"
+msgstr "打开 + 确认"
+
+msgid "Operation"
+msgstr "操作"
+
+msgid "Optimize"
+msgstr "优化"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "选项%s已经设置"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "设置已保存"
+
+msgid "Options"
+msgstr "选项"
+
+msgid "Options changed successfully"
+msgstr "选项已成功更改"
+
+msgid "Order"
+msgstr "顺序"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "排序(当第一排序值相同时)"
+
+msgid "Original Package"
+msgstr "原始软件包"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Other Disk Usage"
+msgstr "其他磁盘使用情况"
+
+msgid "Other Usage"
+msgstr "其他使用情况"
+
+msgid "Overview"
+msgstr "概览"
+
+msgid "Owner"
+msgstr "所有者"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "全局IP被交换到管理员 %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "PHP 脚本名称"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "无法在此域名下控制 PHP 设置"
+
+msgid "PHP Version Selector"
+msgstr "PHP 版本选择器"
+
+msgid "PHP versions saved"
+msgstr "已保存 PHP 版本"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID%s不是数字"
+
+msgid "POP Email Accounts"
+msgstr "POP 电子邮件账户"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP 服务器"
+
+msgid "Package"
+msgstr "软件包"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "软件包%s已存在"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "软件包%s不存在"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "软件包%s不在您的列表中"
+
+msgid "Package not found"
+msgstr "软件包未找到"
+
+msgid "Page"
+msgstr "页面"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "父目录 %s 已创建。"
+
+msgid "Parsing Error. Check logs"
+msgstr "解析错误。检查日志"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Password Changed"
+msgstr "密码已更改"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "更改密码： %s"
+
+msgid "Password Not Changed"
+msgstr "密码未更改"
+
+msgid "Password Saved!"
+msgstr "密码已保存！"
+
+msgid "Password is not valid"
+msgstr "密码无效"
+
+msgid "Password is too long"
+msgstr "密码太长"
+
+msgid "Password is too short"
+msgstr "密码太短"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "密码太短(%d)。请使用至少 %d 个字符"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "密码必须大于 %d 个字符"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "皮肤已成功更改"
+
+msgid "Password/Quota"
+msgstr "密码/限额"
+
+msgid "Password:"
+msgstr "密码："
+
+msgid "Passwords do not match"
+msgstr "密码不匹配"
+
+msgid "Passwords do not match or are invalid"
+msgstr "密码不匹配或无效"
+
+msgid "Path"
+msgstr "路径"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "路径 %s 不存在或无法被 %s 用户访问。"
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr "路径%s在用户创建之前已经存在。请先删除/重命名此路径。"
+
+msgid "Path does not exist"
+msgstr "路径不存在"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "路径必须以斜线开头(/)"
+
+msgid "Paths Unblocked"
+msgstr "已解除封锁的路径"
+
+msgid "Paths must be within your home directory"
+msgstr "路径必须在您的主目录内"
+
+msgid "Percent"
+msgstr "百分比"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "百分比必须以 % 字符结束"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "CPU 核心的百分比。 >100% 以获得更多核心。"
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "百分比必须介于 %d 和 %d之间，包含"
+
+msgid "Perm."
+msgstr "权限."
+
+msgid "Permissions set"
+msgstr "权限设置"
+
+msgid "Php is not enabled"
+msgstr "Php 未启用"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr "请检查 %s 区域以确保域名服务器 A 记录是正确的。"
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "请确认您想要删除您的DNSSEC 数据"
+
+msgid "Please pick only one skin to apply"
+msgstr "请只选择一个皮肤来应用"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "请提供一个 '%s'"
+
+msgid "Please provide at least one IP"
+msgstr "请至少提供一个 IP"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "请查看此 URL 并检查curl 退出代码 '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "请选择一个域名作为您的默认域名"
+
+msgid "Please select at least one User"
+msgstr "请选择至少一个用户"
+
+msgid "Please select at least one domains"
+msgstr "请选择至少一个域名"
+
+msgid "Please select at least one file"
+msgstr "请选择至少一个文件"
+
+msgid "Please select at least one item"
+msgstr "请选择至少一个项目"
+
+msgid "Please select at least one package"
+msgstr "请选择至少一个软件包"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "请选择多个文件从归档中提取"
+
+msgid "Please select one or more Databases"
+msgstr "请选择一个或多个数据库"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "请只选择一个要编辑的 cronjob"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "请设置介于 1 到 %d 之间"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "请在删除之前取消所有 IP 与 '%s' 的链接。"
+
+msgid "Please use all lower case characters in the username"
+msgstr "请在用户名中使用所有小写字符"
+
+msgid "Plugin Uploaded"
+msgstr "插件已上传"
+
+msgid "Plugin(s) Installed"
+msgstr "已安装插件"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "插件未安装"
+
+msgid "Plugin(s) Updated"
+msgstr "插件已更新"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "指向 '%s' 不属于您。"
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "发布脚本"
+
+msgid "Post scripts"
+msgstr "发布脚本"
+
+msgid "Pre-backup hard-link check"
+msgstr "备份前硬链接检查"
+
+msgid "Preparing 'domains' data"
+msgstr "准备“域名”数据"
+
+msgid "Preparing data (no 'domains')"
+msgstr "正在准备数据 (没有域名)"
+
+msgid "Present"
+msgstr "展示"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr "保留 Web 数据仅适用于 /domains/domain.com。 不会保留电子邮件数据等其他区域。"
+
+msgid "Priority"
+msgstr "优先级"
+
+msgid "Privileges"
+msgstr "权限"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "进程 ID %d 不是“daptaskq”。它是'%s'"
+
+msgid "Process is running"
+msgstr "进程正在运行"
+
+msgid "Process is stopped"
+msgstr "进程已停止"
+
+msgid "Processor Name"
+msgstr "处理器名称"
+
+msgid "Processor Speed (MHz)"
+msgstr "处理器速度 (MHz)"
+
+msgid "Progress"
+msgstr "进度"
+
+msgid "Protect"
+msgstr "保护"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "受保护的目录名称包含无效字符。保持简单易用"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用保护目录"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "提供一个 IP地址、IP 范围、域名或通配符域名。"
+
+msgid "Provided password is not correct."
+msgstr "提供的密码不正确。"
+
+#, fuzzy
+msgid "Provided password is weak"
+msgstr "提供的密码不正确。"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "提供的值不是用户名或电子邮件地址"
+
+msgid "Provided value is not valid."
+msgstr "提供的值无效。"
+
+msgid "Proxy socket address"
+msgstr "代理套接字地址"
+
+msgid "Publish"
+msgstr "发布"
+
+msgid "Purge"
+msgstr "清除"
+
+msgid "Purge Archives"
+msgstr "清除归档"
+
+msgid "Purge From"
+msgstr "清除来自"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "在 %s 中清除"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "推送httpd.conf 重写到后台任务。"
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "已保存更改"
+
+msgid "Re-sign your zone."
+msgstr "重新签署您的区域。"
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "读取错误 %s: %s"
+
+msgid "Reason:"
+msgstr "原因："
+
+msgid "Reboot"
+msgstr "重启"
+
+msgid "Receive all multicast packets."
+msgstr "接收所有多播数据包。"
+
+msgid "Received"
+msgstr "已接收"
+
+msgid "Received Emails"
+msgstr "收到的邮件"
+
+msgid "Reconfiguration Error"
+msgstr "重新配置出错"
+
+msgid "Record Added"
+msgstr "记录已添加"
+
+msgid "Record Edited"
+msgstr "记录已编辑"
+
+msgid "Records Deleted"
+msgstr "记录已删除"
+
+msgid "Recursive"
+msgstr "递归模式"
+
+msgid "Recursively"
+msgstr "递归式"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr "使用 filemanager_disable_features 选项禁用递归重置所有权"
+
+msgid "Redirect Added"
+msgstr "重定向已添加"
+
+msgid "Redirect URL"
+msgstr "重定向网址"
+
+msgid "Redirect(s) deleted"
+msgstr "重定向已删除"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "刷新"
+
+#, fuzzy
+msgid "Regenerate Codes"
+msgstr "生成密钥"
+
+msgid "Related"
+msgstr "关联"
+
+msgid "Release Candidates"
+msgstr "发布候选项"
+
+msgid "Reload"
+msgstr "重新加载"
+
+msgid "Reload requested"
+msgstr "请求重新加载"
+
+msgid "Remote Mail"
+msgstr "远程邮件"
+
+msgid "Remove"
+msgstr "删除"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "删除 IP 的DNS 记录"
+
+msgid "Remove DNSSEC"
+msgstr "移除DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "删除目录内容"
+
+msgid "Remove From Skip List"
+msgstr "从跳过列表中删除"
+
+msgid "Remove from reseller"
+msgstr "从分销商中删除"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "已从 %s的列表中删除用户"
+
+msgid "Rename"
+msgstr "重命名"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用重命名文件"
+
+msgid "Repair"
+msgstr "修复"
+
+msgid "Replies"
+msgstr "回复"
+
+msgid "Reply"
+msgstr "回复"
+
+msgid "Reply Sent"
+msgstr "回复发送"
+
+msgid "Request added to task.queue"
+msgstr "请求已添加到任务队列"
+
+msgid "Request will be processed in the background."
+msgstr "请求将在后台处理。"
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "请求的 '%s的 LetsEncrypt 值是不允许的值。"
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "请求的文件大小(%lld) 超过最大文件大小值 (%lld)"
+
+msgid "Requests Cancelled"
+msgstr ""
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "要求：'%s'或 '%s'"
+
+msgid "Reseller"
+msgstr "分销商"
+
+msgid "Reseller Bandwidth"
+msgstr "分销者带宽"
+
+msgid "Reseller History"
+msgstr "分销商历史"
+
+msgid "Reseller Quota"
+msgstr "分销商限额"
+
+msgid "Reseller created"
+msgstr "分销商已创建"
+
+msgid "Reseller deleted"
+msgstr "分销商已删除"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr "分销商被分配为0个IP。无法创建一个没有ip的域名。"
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "分销商只获得他们的 %s 的 %s ip。"
+
+msgid "Reseller's IP"
+msgstr "分销者IP"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Reset Owner"
+msgstr "重置所有者"
+
+msgid "Reset Ownership"
+msgstr "重置所有权"
+
+msgid "Reset Today"
+msgstr "今日重置"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用重置文件所有权"
+
+msgid "Resources allocated."
+msgstr "已分配资源。"
+
+msgid "Restart"
+msgstr "重新启动"
+
+msgid "Restore"
+msgstr "还原"
+
+msgid "Restore Complete!"
+msgstr "还原完成！"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Nginx Unit 恢复错误: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr "还原帐户 '%s' 到创建者 '%s' 已被拒绝， 因为这个帐户已经存在于创建者的控制下 "
+"'%s'"
+
+msgid "Restore will run in the background"
+msgstr "还原将在后台运行"
+
+msgid "Restores added to Queue"
+msgstr "还原添加到队列"
+
+msgid "Restoring Databases"
+msgstr "正在恢复数据库"
+
+msgid "Restoring Domains Data"
+msgstr "正在恢复域名数据"
+
+msgid "Restoring E-Mail Data"
+msgstr "正在恢复电子邮件数据"
+
+msgid "Restoring E-Mail Settings"
+msgstr "正在恢复电子邮件设置"
+
+msgid "Restoring Extra Admin Data"
+msgstr "正在恢复额外的管理员数据"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "正在还原额外的分销商数据"
+
+msgid "Restoring Extra User Data"
+msgstr "正在还原额外用户数据"
+
+msgid "Restoring FTP"
+msgstr "正在恢复 FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "正在恢复额外的电子邮件项目"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "已使用 filemanager_disable_features 选项禁用恢复文件"
+
+msgid "Result"
+msgstr "结果"
+
+msgid "Result of file copy"
+msgstr "文件复制结果"
+
+msgid "Result of file move"
+msgstr "文件移动结果"
+
+msgid "Results"
+msgstr "结果"
+
+msgid "Retries"
+msgstr "重试"
+
+msgid "Retry"
+msgstr "重试"
+
+#, fuzzy
+msgid "Retry counter has been cleared."
+msgstr "信任 cookie 已被清除"
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "返回代码3XX(%d) 需要一个位置"
+
+msgid "Return with httpd code"
+msgstr "使用httpd代码返回"
+
+msgid "Rewrite Apache"
+msgstr "重写 Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr "RoundCube 缺少 direct_login 选项。 请重新安装 RoundCube。"
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "路由'%s' 不以 '%s' 结束"
+
+msgid "Rules Reset"
+msgstr "重置规则"
+
+msgid "Run Now"
+msgstr "立即运行"
+
+msgid "Running"
+msgstr "正在运行"
+
+msgid "SMTP Log"
+msgstr "SMTP 日志"
+
+msgid "SMTP Server"
+msgstr "SMTP 服务器"
+
+msgid "SNI Host"
+msgstr "SNI 主机"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI 已禁用此域名"
+
+msgid "SSH Key Modified"
+msgstr "SSH 密钥已修改"
+
+msgid "SSH Key authorized"
+msgstr "SSH 密钥已授权"
+
+msgid "SSH Key created"
+msgstr "SSH 密钥已创建"
+
+msgid "SSH Key deleted"
+msgstr "SSH 密钥已删除"
+
+msgid "SSH is not enabled"
+msgstr "SSH 未启用"
+
+msgid "SSL is not enabled for this domain"
+msgstr "没有为此域启用SSL"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "在选定域名上禁用安全模式"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "在选定域上启用安全模式"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save Awstats"
+msgstr "保存 Awstats"
+
+msgid "Save Comments"
+msgstr "保存注释"
+
+msgid "Save E-Mail"
+msgstr "保存电子邮件"
+
+msgid "Save Increase"
+msgstr "保存增量"
+
+msgid "Save Language"
+msgstr "保存语言"
+
+msgid "Save Limit"
+msgstr "保存限制"
+
+msgid "Save Limit Notice"
+msgstr "保存限制通知"
+
+msgid "Save Name"
+msgstr "保存名称"
+
+msgid "Save Nameservers"
+msgstr "保存域名服务器"
+
+msgid "Save Skin"
+msgstr "保存皮肤"
+
+#, fuzzy
+msgid "Saved"
+msgstr "保存"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "已使用 filemanager_disable_features 选项禁用保存/编辑文件"
+
+msgid "Scratch Codes"
+msgstr "Scratch 代码"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Scratch 代码"
+
+msgid "Script output"
+msgstr "脚本输出"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRulRemoveByID 为空"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "安全套接字层 (ssl)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "请参阅 %s本指南%s 来修复它。"
+
+msgid "See Error log for more information."
+msgstr "有关详细信息，请参阅错误日志。"
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "请参阅本指南：%s"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Select MX Template"
+msgstr "选择 MX 模板"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "选择要链接到 %s的IP"
+
+msgid "Selected Content-Type is not valid."
+msgstr "所选的 Content-Type 无效。"
+
+msgid "Selected Data"
+msgstr "所选数据"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "所选插件已激活"
+
+msgid "Selected Plugins De-Activated"
+msgstr "已取消激活所选插件"
+
+msgid "Selected Plugins Deleted"
+msgstr "所选插件已删除"
+
+msgid "Selected Users"
+msgstr "所选用户"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "所选字符集编码无效。"
+
+msgid "Send Count"
+msgstr "发送次数"
+
+msgid "Send Signal"
+msgstr "发送信号"
+
+msgid "Send a Message"
+msgstr "发送消息"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "发送限制必须是有效的数字或空白。"
+
+msgid "Sender"
+msgstr "发件人"
+
+msgid "Sender Host"
+msgstr "发件人主机"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr "发件人域名必须匹配列表域名 '%s'，或使用 '%s'"
+
+msgid "Sent"
+msgstr "已发送"
+
+msgid "Sent E-mails"
+msgstr "已发送邮件"
+
+msgid "Sent Emails"
+msgstr "已发送邮件"
+
+msgid "Sep"
+msgstr "9月"
+
+msgid "Server"
+msgstr "服务器"
+
+msgid "Server History"
+msgstr "服务器历史"
+
+msgid "Server Path"
+msgstr "服务器路径"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "Set"
+msgstr "设置"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr "无限制设置0，设置空白值重置为默认值。"
+
+msgid "Set Global Shared"
+msgstr "设置全局共享"
+
+msgid "Set as Default"
+msgstr "设置为默认"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "设置可公开查看的域名"
+
+msgid "Set selected to"
+msgstr "设置选中为"
+
+msgid "Set to"
+msgstr "设置为"
+
+msgid "Setting"
+msgstr "设置"
+
+msgid "Setting changed"
+msgstr "设置已更改"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用设置文件/目录权限"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Settings Saved"
+msgstr "设置已保存"
+
+msgid "Share Selected"
+msgstr "分享所选内容"
+
+msgid "Share a static path"
+msgstr "共享静态路径"
+
+msgid "Shared"
+msgstr "共享"
+
+msgid "Shared - randomly selected"
+msgstr "共享 - 随机选择"
+
+msgid "Shell Access (ssh)"
+msgstr "Shell 访问 (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "分销商用户的 Shell"
+
+msgid "Show"
+msgstr "显示"
+
+msgid "Sign"
+msgstr "签名"
+
+msgid "Signed"
+msgstr "已签名"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Size is not a number"
+msgstr "大小不是数字"
+
+msgid "Skin"
+msgstr "风格"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "皮肤'%s没有任何自定义颜色变量来设置"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "皮肤已删除"
+
+msgid "Skin Installed"
+msgstr "皮肤已安装"
+
+msgid "Skin Name"
+msgstr "皮肤名称"
+
+msgid "Skin Owner"
+msgstr "皮肤所有者"
+
+msgid "Skin Set"
+msgstr "皮肤设置"
+
+msgid "Skin applied to all users"
+msgstr "皮肤应用于所有用户"
+
+msgid "Skin has been customized"
+msgstr "皮肤已被自定义"
+
+msgid "Skin has been successfully changed"
+msgstr "皮肤已成功更改"
+
+msgid "Skins Deleted"
+msgstr "皮肤已删除"
+
+msgid "Skip Suspended"
+msgstr "跳过暂停"
+
+msgid "Skipped rule added"
+msgstr "已添加跳过规则"
+
+msgid "Skipping system E-Mail account"
+msgstr "跳过系统电子邮件帐户"
+
+msgid "Slave of a load balancing bundle."
+msgstr "负载平衡捆绑包的从属设备。"
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "对不起，此函数目前不支持域名指向"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Sort Selected Column in"
+msgstr "排序选中的列"
+
+msgid "Source Domain"
+msgstr "源域名"
+
+msgid "Spam"
+msgstr "垃圾箱"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "您的帐户禁用了垃圾邮件刺客"
+
+msgid "SpamAssassin"
+msgstr "垃圾邮件过滤器"
+
+msgid "Spamassassin disabled"
+msgstr "垃圾邮件刺客已禁用"
+
+msgid "Spambox"
+msgstr "垃圾箱"
+
+msgid "Spamd is not running on your system."
+msgstr "垃圾邮件未在您的系统上运行。"
+
+msgid "Splitting error for unix socket"
+msgstr "Unix 套接字拆分错误"
+
+msgid "Ssl"
+msgstr "Ssl"
+
+msgid "Stable"
+msgstr "稳定状态"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Start Time"
+msgstr "开始时间"
+
+msgid "Start Time must be before End Time."
+msgstr "开始时间必须早于结束时间。"
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "州/省只能包含字母、空格和/或周期"
+
+msgid "Stats links created"
+msgstr "统计链接已创建"
+
+msgid "Stats links removed"
+msgstr "统计链接已删除"
+
+msgid "Status"
+msgstr "状态"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "状态"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "不允许权限粘滞位：777 是最大允许权限"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Stopped"
+msgstr "已停止"
+
+msgid "String contains an invalid email address"
+msgstr "字符串包含一个无效的电子邮件地址"
+
+msgid "Sub Domains"
+msgstr "子域名"
+
+msgid "Sub Sort"
+msgstr "子项排序"
+
+msgid "Sub Sort Selected Column in"
+msgstr "子排序选中的列"
+
+msgid "Sub-domain is forbidden"
+msgstr "禁止子域名"
+
+msgid "SubDomain Name"
+msgstr "子域名"
+
+msgid "Subdomain Created"
+msgstr "子域名已创建"
+
+msgid "Subdomain Removed"
+msgstr "子域名已删除"
+
+msgid "Subdomain Stats"
+msgstr "子域名统计"
+
+msgid "Subdomain already exists"
+msgstr "子域名已存在"
+
+msgid "Subdomain created"
+msgstr "子域名创建成功"
+
+msgid "Subdomain does not exist"
+msgstr "子域名不存在"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "子域名太长。最大 %d 个字符。"
+
+msgid "Subdomains"
+msgstr "子域名"
+
+msgid "Subdomains Removed"
+msgstr "子域名已删除"
+
+msgid "Subdomains deleted"
+msgstr "子域名已删除"
+
+msgid "Subject"
+msgstr "主题"
+
+msgid "Subject Contains"
+msgstr "主题包含"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "主题前缀包含无效字符。请使用 %s"
+
+msgid "Subscriber"
+msgstr "订阅者"
+
+msgid "Subscribers"
+msgstr "订阅者"
+
+msgid "Success"
+msgstr "成功"
+
+msgid "Supports multicast"
+msgstr "支持多播模式"
+
+msgid "Suspend"
+msgstr "暂停"
+
+msgid "Suspend / Unsuspend"
+msgstr "暂停 / 取消暂停"
+
+msgid "Suspend Reason"
+msgstr "暂停原因"
+
+msgid "Suspend at Limit"
+msgstr "暂停限制"
+
+msgid "Suspended"
+msgstr "已暂停"
+
+msgid "Syntax check has been disabled"
+msgstr "语法检查已被禁用"
+
+msgid "System Info"
+msgstr "系统信息"
+
+msgid "System Rebooting Now!"
+msgstr "系统正在重启！"
+
+msgid "System Uptime"
+msgstr "系统启动时间"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr "系统帐户已存在，但无法读取用户 %s 的用户数据文件"
+
+msgid "Systems Quotas are size 0."
+msgstr "系统配额为 0。"
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL 已保存"
+
+msgid "Table"
+msgstr "表格"
+
+msgid "Tail"
+msgstr "故障"
+
+msgid "Tasks Max"
+msgstr "任务上限"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr "临时文件 %s 在写入磁盘后为 0 字节。不会重命名它。"
+
+msgid "Template does not exist"
+msgstr "模板不存在"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "临时带宽增加"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr "临时帐户操作锁定。账户中可能还有其他一些进程在运行。这不应超过 %d 分钟"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "临时带宽增加已设置"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "该ID不属于“admin”类型"
+
+msgid "That IP already exists on the domain"
+msgstr "那个IP已经存在于域名"
+
+msgid "That IP does not exist"
+msgstr "此 IP 不存在"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "此IP不存在于您的用户IP列表"
+
+msgid "That IP does not exist in your list"
+msgstr "该IP不存在于您的列表"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "那个IP已经在您的附加IP列表中"
+
+msgid "That IP is already owned"
+msgstr "那个IP已经存在"
+
+msgid "That IP is not available for linking"
+msgstr "此 IP 不可用于链接"
+
+msgid "That User already exists on another server"
+msgstr "该用户已经存在于另一个服务器"
+
+msgid "That database already exists"
+msgstr "该数据库已存在"
+
+msgid "That database does not belong to you"
+msgstr "该数据库不属于您"
+
+msgid "That database does not exist"
+msgstr "该数据库不存在"
+
+msgid "That domain already exists"
+msgstr "该域名已存在"
+
+msgid "That domain already exists on another server"
+msgstr "此域已存在于另一个服务器"
+
+msgid "That domain does not belong to you"
+msgstr "此域名不属于您"
+
+msgid "That domain does not exist"
+msgstr "此域名不存在"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "该域名已暂停。请在更改名称前取消暂停"
+
+msgid "That email user does not exist"
+msgstr "该电子邮件用户不存在"
+
+msgid "That file was empty"
+msgstr "此文件为空"
+
+msgid "That filter already exists"
+msgstr "此过滤器已存在"
+
+msgid "That ftp_password file does not exist"
+msgstr "此 ftp_password 文件不存在"
+
+msgid "That is an invalid email address / email list"
+msgstr "这是一个无效的电子邮件地址/电子邮件列表"
+
+msgid "That is an invalid filename"
+msgstr "此文件名无效"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr "这不是一个有效的路径。它不是在您的主目录中，它包含符号链接，或者它包含无效字"
+"符"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr "这不是一个有效的路径。 "
+"它不是在您的主目录中，它不存在，它包含符号链接，或者包含无效字符"
+
+msgid "That is not a valid quota"
+msgstr "这不是一个有效的配额"
+
+msgid "That is not a valid username"
+msgstr "这不是一个有效的用户名"
+
+msgid "That is not your domain"
+msgstr "这不是你的域名"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr "这是保留的主机名。要么更改主机名，要么使用不同的域名"
+
+msgid "That key does not exist"
+msgstr "此密钥不存在"
+
+msgid "That password is incorrect"
+msgstr "密码不正确"
+
+msgid "That path isn't protectable"
+msgstr "该路径不可保护"
+
+msgid "That pop account doesn't exist"
+msgstr "该pop 帐户不存在"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "该皮肤无法自定义。它需要 %s"
+
+msgid "That skin does not exist"
+msgstr "该皮肤不存在"
+
+msgid "That skin is not in your list"
+msgstr "该皮肤不在您的列表"
+
+#, fuzzy
+msgid "That skin name already exists"
+msgstr "此区域已存在"
+
+msgid "That user already exists"
+msgstr "该用户已存在"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr "该用户包含不能在用户名中的 ftp 分隔符 (%c)。"
+
+msgid "That user does not belong to you"
+msgstr "此用户不属于您"
+
+msgid "That user does not exist"
+msgstr "此用户不存在"
+
+msgid "That user doesn't exist"
+msgstr "此用户不存在"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "该用户保留给匿名帐户"
+
+msgid "That username already exists on the system"
+msgstr "该用户名已经存在于系统中"
+
+msgid "That username is a reserved system name"
+msgstr "该用户名是一个保留的系统名称"
+
+msgid "That zone already exists"
+msgstr "此区域已存在"
+
+msgid "Thats a reserved skin name."
+msgstr "那是一个保留的皮肤名称。"
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "%s 备份创建于 %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "传递的“ttl”值不是一个数字或太大"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "管理员已禁用用户备份功能"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "CA证书将不会被使用。该文件将仍然存在，但不会被包含。"
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr "输入的 CC值将创建一个无限循环。请使用不同的 CC值。"
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "电子邮件'%s'含有无效字符"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP %s 不存在。用户 %s 将不被创建"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP %s 为 %s 帐户提供了正确的密码。"
+
+msgid "The Ticket System is not enabled."
+msgstr "工单系统未启用。"
+
+msgid "The User backups have been uploaded to"
+msgstr "用户备份已上传到"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "用户文件已从 %s 恢复"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "用户显示缓存将立即更新。"
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "当接口关闭时，地址会丢失。"
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr "缓存正在更新，当前值可能不正确。请在1分钟后刷新页面。"
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr "证书和密钥不匹配。请确保您使用此证书的正确密钥"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "已使用 filemanager_disable_features 选项禁用剪贴板"
+
+msgid "The command cannot contain any newline characters"
+msgstr "命令不能包含任何换行字符"
+
+msgid "The database '%s' does not belong to you"
+msgstr "数据库 '%s' 不属于您"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "月份的日期不是一个有效的 cron 值 (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "每周的日期不是一个有效的 cron 值 (0-7)"
+
+msgid "The default has been set"
+msgstr "默认值已设置"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr "目录 %s 似乎被'apache'所拥有。请尝试使用 '重置所有者' 选项，然后重试。"
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr "所选用户的磁盘使用量总计大于 %d MB，因此将在后台删除。"
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "域名 %s 不属于您。"
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "域名 %s 不属于您。子域名将不会被创建。"
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "输入的域名无效。它必须是 'sourcedomain.com' 的形式"
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "默认值已设置"
+
+msgid "The domain must not match your hostname."
+msgstr "域名不能与您的主机名匹配。"
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "没有更改"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "包含您新密码的电子邮件已发送。"
+
+msgid "The email address provided is not a valid email address"
+msgstr "提供的电子邮件地址不是有效的电子邮件地址"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "输入的路径必须是 a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "文件 %s 含有超过 1 个硬链接"
+
+msgid "The file is generated when the account is reset."
+msgstr "该文件是在重置帐户时生成的。"
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "该文件的格式必须为：type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "该文件的格式必须为：username.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "文件：'%s' 的格式不是 username.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "找不到以下文件。无需重置"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "在用户 %s 下找到了以下硬链接："
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "ftp 用户 %s 在 passwd 文件 %s 中不存在"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "输入的完整格式名称不以区域名称结尾"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "本地URL路径或目标URL无效。"
+
+msgid "The location has not changed"
+msgstr "位置未更改"
+
+msgid "The max upload size cannot be 0"
+msgstr "最大上传大小不能为 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "%s 的最大值是 %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "最大值是 %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "%s 的最小值为 %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "月份不是一个有效的 cron 值 (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "您输入的名称包含无效字符"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "新密钥已创建，但在授权过程中出现问题"
+
+msgid "The new passwords do not match"
+msgstr "新密码不匹配"
+
+msgid "The number and type of ticket is required"
+msgstr "工单数量和类型是必填项"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "%s 的所有者不是 %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "密码更改功能已禁用"
+
+msgid "The path %s already exists"
+msgstr "路径 %s 已存在"
+
+msgid "The path already exists, but is not a directory"
+msgstr "路径已存在，但不是目录"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr "目前正在使用此进程来执行此请求，因此它将很快由任务队列执行。"
+
+msgid "The provided IP is not valid"
+msgstr "提供的 IP 无效"
+
+msgid "The provided domain name matches your hostname."
+msgstr "提供的域名与您的主机名匹配。"
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr "您提出的请求不能执行，因为它不存在于您的权限级别"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "请求的命令需要 POST 但已使用 GET"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr "皮肤包安装不正确。文件丢失，或者他们的权限设置错误"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "子域名%s已经在 %s 域名下存在"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr "时间必须格式化为以下时间之一(例如小时, 无空格)"
+
+msgid "The user %s does not belong to you"
+msgstr "用户 %s 不属于您"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr "用户名无效。用户名必须以 a-z 开头，包含 >= 3 个字符和 <= %d。"
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "用户名无效。用户名必须使用 a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "值必须是IP地址"
+
+msgid "The very last entry."
+msgstr "最后一个条目."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "欢迎邮件已成功发送。"
+
+msgid "There are no messages for that ticket"
+msgstr "该工单没有消息"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "目前还有 %d 条路由使用 '%s'。"
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr "%s上还有用户。首先从IP中删除他们，并将其设置为“免费”。"
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "已经有 %d 次续订失败，因此将不再尝试。%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "已存在具有该名称的 CNAME 记录"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "已经有一个具有该名称的邮件列表别名"
+
+msgid "There is already an A record with that name"
+msgstr "已经有一个具有该名称的 A 记录"
+
+msgid "There is already an account with that name"
+msgstr "已经有一个使用该名称的帐户"
+
+msgid "There is already an autoresponder with that name"
+msgstr "已经有一个同名的自动回复"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "%s 空间不足，无法上传 %lld 字节数据"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "%s=%s 只有 1 %s 记录，不能删除它"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "这些是动态值。它们随着日期的变化而变化。"
+
+msgid "This Login Key is read-only"
+msgstr "此登录密钥为只读"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr "该操作系统现已停止维护， 未来的自动更新可能会失败。"
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr "此分销商帐户无法无限分配 %s，但该金额已经分配。"
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr "此帐户已存在于系统中。如果您恢复，它将覆盖和/或合并数据。"
+
+msgid "This account is blocked via BlockCracking."
+msgstr "此帐户通过BlockCrack被屏蔽。"
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr "此帐户通过BlockCrack被屏蔽。解除屏蔽被禁用。"
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr "此域名现在将暂时使用共享服务器证书， "
+"除非您还原备份密钥(但首先备份新密钥或它将丢失)"
+
+#, fuzzy
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr "这是一个哈希URL登录。您可以删除它，但您不能修改它。"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr "这是一个哈希URL登录。您可以删除它，但您不能修改它。"
+
+msgid "This is a placeholder for the subdomain"
+msgstr "这是子域名的占位符"
+
+msgid "This may give unexpected results"
+msgstr "这可能会产生意外的结果"
+
+msgid "This may give unexpected results."
+msgstr "这可能会产生意外的结果."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr "您的帐户已禁用此插件"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr "这只会在日志存在后才会发生（必须解析并使用域名）。"
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr "这将跳过 dns 区域的删除，将其保留在原位。"
+
+msgid "Thread Count"
+msgstr "线程数"
+
+msgid "Throttle Memory above this limit."
+msgstr "超过此限制的节流内存。"
+
+msgid "Ticket #"
+msgstr "工单 #"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "用户系统配额设置"
+
+msgid "Tickets Updated"
+msgstr "工单已更新"
+
+msgid "Time"
+msgstr "时间"
+
+msgid "Timeout during read"
+msgstr "读取超时"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "尝试连接到 %s 时超时"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "时区%s在系统中不存在"
+
+msgid "Timezone does not exist"
+msgstr "时区不存在"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr "要添加 cron 作业，您需要以下所有内容：分钟、小时、月日、月、周日和命令"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Today at"
+msgstr "今天在"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "今天的电子邮件计数已为用户 %s 重置"
+
+msgid "Too long"
+msgstr "太长"
+
+msgid "Too short"
+msgstr "太短"
+
+msgid "Total"
+msgstr "总计"
+
+msgid "Total Disk Usage (MB)"
+msgstr "总磁盘使用量 (MB)"
+
+msgid "Total Memory"
+msgstr "总内存"
+
+msgid "Total Size:"
+msgstr "总大小："
+
+msgid "Total Swap Memory"
+msgstr "总交换内存"
+
+msgid "Total Usage"
+msgstr "总使用量"
+
+#, fuzzy
+msgid "Two-Step Authentication code is missing."
+msgstr "两步验证已禁用"
+
+msgid "Type"
+msgstr "类型"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "类型 '%s' 已禁用"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "类型必须是“粘贴”或“ID”"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgid "URL already exists"
+msgstr "%s 已经存在"
+
+msgid "Un-Link"
+msgstr "取消链接"
+
+msgid "Un-Set"
+msgstr "未设置"
+
+msgid "Unable To Execute Your Request"
+msgstr "无法执行您的请求"
+
+msgid "Unable to Execute Your Command"
+msgstr "无法执行您的命令"
+
+msgid "Unable to Locate that domain"
+msgstr "无法找到该域名"
+
+msgid "Unable to add IP"
+msgstr "无法添加 IP"
+
+msgid "Unable to add access host:"
+msgstr "无法添加访问主机："
+
+msgid "Unable to add domain pointer"
+msgstr "无法添加域名指向"
+
+msgid "Unable to add user to ssh config file"
+msgstr "无法将用户添加到 ssh 配置文件"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr "无法分配无限的 %s。该帐户不允许创建该金额。"
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr "无法为分销商分配任何 ip。 确保有免费的、未分配的 ip。"
+
+#, fuzzy
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "无法验证：检查密码的语法"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "无法验证：密码无效"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "无法更改 %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "无法更改 Directadmin 更新渠道"
+
+msgid "Unable to change password"
+msgstr "无法更改密码"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "无法更改电子邮件地址"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "无法更改消息系统电子邮件地址"
+
+msgid "Unable to change the Name"
+msgstr "无法更改名称"
+
+msgid "Unable to change the limit"
+msgstr "无法更改限制"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "无法更改临时带宽的增加"
+
+msgid "Unable to check latest version"
+msgstr "无法检查最新版本"
+
+msgid "Unable to connect to secure socket"
+msgstr "无法连接到安全套接字"
+
+msgid "Unable to connect to the database"
+msgstr "无法连接到数据库"
+
+msgid "Unable to create a Reseller"
+msgstr "无法创建分销商"
+
+msgid "Unable to create a User"
+msgstr "无法创建用户"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "无法创建备份目录 (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "无法创建目录 %s"
+
+msgid "Unable to create new file"
+msgstr "无法创建新文件"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "无法创建反向IP查询"
+
+msgid "Unable to create subdomain"
+msgstr "无法创建子域名"
+
+msgid "Unable to create user's data directory"
+msgstr "无法创建用户的数据目录"
+
+msgid "Unable to create zone"
+msgstr "无法创建区域"
+
+msgid "Unable to create zone."
+msgstr "无法创建区域。"
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "无法删除 %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "无法删除目录 %s: %s"
+
+msgid "Unable to delete files"
+msgstr "无法删除文件"
+
+msgid "Unable to delete the main email account"
+msgstr "无法删除主要电子邮件帐户"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "无法删除分销商的 ip.list 文件。"
+
+msgid "Unable to delete users's domains directory"
+msgstr "无法删除用户的域名目录"
+
+msgid "Unable to edit file"
+msgstr "无法编辑文件"
+
+msgid "Unable to execute script"
+msgstr "无法执行脚本"
+
+msgid "Unable to execute your command"
+msgstr "无法执行您的命令"
+
+msgid "Unable to execute your request"
+msgstr "无法执行您的请求"
+
+msgid "Unable to export packages"
+msgstr "无法导出软件包"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "无法解压 %s 来自"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "无法从 user.conf、reseller.conf 或 ip.list 提取用户"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "找不到 %s"
+
+msgid "Unable to find CA certificate"
+msgstr "找不到 CA 证书"
+
+msgid "Unable to find certificate"
+msgstr "找不到证书"
+
+msgid "Unable to find key"
+msgstr "无法找到密钥"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "无法获取 %s 上的文件统计信息"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "无法锁定 %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr "无法获取 ftp passwd 文件的用户加密密码"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "无法锁定 %s 区域"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "无法锁定 %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "无法锁定'%s的帐户操作"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "无法锁定用户 %s： %s"
+
+msgid "Unable to modify that domain"
+msgstr "无法修改域名"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "无法打开 %s 以追加文件"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "无法打开 %s 等待追加： %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "无法打开 %s 进行读取"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "无法打开 %s 进行写入： %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "无法打开 %s: %s"
+
+msgid "Unable to open a socket"
+msgstr "无法打开套接字"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "无法打开要写入的 CA 证书文件 (%s): %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "无法打开证书文件 (%s) 写入到: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "无法从脚本中解析 %s%s '(%s) 输出："
+
+msgid "Unable to parse form"
+msgstr "无法解析表单"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "无法读取 %s 作为帐户 %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "无法读取 %s的用户文件"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr "无法读取 %s。此文件仅在计算运行后才创建。"
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr "无法读取 %s，此文件仅在邮件发送时才被创建。"
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "无法读取 %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "无法读取DS文件 %s"
+
+msgid "Unable to read History File."
+msgstr "无法读取历史文件。"
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "无法读取 RoundCube 备份脚本： %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "无法读取RoundCube恢复脚本： %s"
+
+msgid "Unable to read data from %s"
+msgstr "无法从 %s 读取数据"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "无法读取 directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "无法读取域名配置文件"
+
+#, fuzzy
+msgid "Unable to read login history file"
+msgstr "无法读取历史文件。"
+
+msgid "Unable to read package"
+msgstr "无法读取软件包"
+
+msgid "Unable to read system uptime"
+msgstr "无法读取系统运行时间"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr "无法读取要将用户添加到系统的 ftp passwd 文件。"
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr "无法读取系统的 ftp passwd 文件来移除系统 ftp 用户"
+
+msgid "Unable to read the user's files"
+msgstr "无法读取用户的文件"
+
+msgid "Unable to read ticket config file"
+msgstr "无法读取工单配置文件"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "无法读取区域文件以增加串口"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "无法读取 %s 的区域文件"
+
+msgid "Unable to reboot"
+msgstr "无法重新启动"
+
+msgid "Unable to remove IP(s)"
+msgstr "无法删除 IP"
+
+msgid "Unable to remove Unix User."
+msgstr "无法删除 Unix 用户。"
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "无法删除分销商的所有用户"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "无法将 %s 重命名为 %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "无法恢复 %s 到 %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr "无法还原'%s'，因为找不到分销商或管理员'%s'，如果需要重命名文件。"
+
+msgid "Unable to restore database"
+msgstr "无法还原数据库"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "无法保存 dns 区域：named-checkzone 返回："
+
+msgid "Unable to save your changes"
+msgstr "无法保存您的更改"
+
+msgid "Unable to set bandwidth"
+msgstr "无法设置带宽"
+
+msgid "Unable to set file permissions"
+msgstr "无法设置文件权限"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "无法将 IP %s 设置为域名服务器。仍然继续。"
+
+msgid "Unable to set password"
+msgstr "无法设置密码"
+
+msgid "Unable to set quota"
+msgstr "无法设置配额"
+
+msgid "Unable to set stats link"
+msgstr "无法设置统计链接"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "无法设置电子邮件限制"
+
+msgid "Unable to set the shell"
+msgstr "无法设置 shell"
+
+msgid "Unable to show Admin History"
+msgstr "无法显示管理员历史"
+
+msgid "Unable to show Reseller History"
+msgstr "无法显示分销商历史"
+
+msgid "Unable to show User History"
+msgstr "无法显示用户历史"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "无法显示当前电子邮件使用情况"
+
+msgid "Unable to show the system information"
+msgstr "无法显示系统信息"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "无法删除 %s 至 %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "无法解锁用户 %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "无法更新 Directadmin"
+
+msgid "Unable to update your Disk Usage"
+msgstr "无法更新您的磁盘用量"
+
+msgid "Unable to use that new domain name"
+msgstr "无法使用新的域名"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "无法写入 %s的用户文件"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "无法写入 %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "无法写入用户的 httpd.conf"
+
+msgid "Unable to write reseller's IP list"
+msgstr "无法写入分销商的 IP 列表"
+
+msgid "Unable to write the domain config file"
+msgstr "无法写入域名配置文件"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr "无法写入主 ftp 密码文件，您的更改将不会生效。"
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr "无法写入配额文件，让您的管理员知道 %s 是不可写的。"
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr "无法写入系统的 ftp passwd 文件来删除系统的 ftp 用户"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr "无法写入 usage.cache 文件，让您的管理员知道 %s 是不可写的。"
+
+msgid "Unable to write ticket config"
+msgstr "无法写入工单配置"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr "无法写入密码文件，让您的管理员知道 %s 是不可写的。"
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr "无法写入系统的 ftp passwd 文件来添加用户。"
+
+msgid "Unable to write zone file to increase serial"
+msgstr "无法写入区域文件以增加串口"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "无法为 %s 写入区域文件"
+
+msgid "Unblock"
+msgstr "解除屏蔽"
+
+msgid "Unblocking is disabled."
+msgstr "解除屏蔽功能已禁用。"
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "取消选中将立即从磁盘上删除该文件，无法恢复"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr ""
+
+msgid "Unhandled exception name"
+msgstr "未处理的异常名称"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "未处理的路由 %s 值 '%s'"
+
+msgid "Unix User created successfully"
+msgstr "Unix 用户创建成功"
+
+msgid "Unix User removed from the server"
+msgstr "从服务器中移除Unix 用户"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr "Unix 代理 IP/端口不应有任何路径、查询或哈希"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "未知 '%s'"
+
+msgid "Unknown action"
+msgstr "未知操作"
+
+msgid "Unknown backup destination"
+msgstr "未知的备份目标"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "未知的证书类型。只允许服务器，创建和粘贴"
+
+msgid "Unknown ftp type"
+msgstr "未知的 ftp 类型"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "未知选项 '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "%s 的未知值"
+
+msgid "Unlimited"
+msgstr "无限制"
+
+msgid "Unsuspend"
+msgstr "取消暂停"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr "在创建缓存之前，这些值可能不正确，1分钟后刷新页面。"
+
+msgid "Up a Level"
+msgstr "提升级别"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Update Successful"
+msgstr "更新成功"
+
+msgid "Update channel has been successfully changed"
+msgstr "更新渠道已成功更改"
+
+msgid "Update not necessary"
+msgstr "不需要更新"
+
+msgid "Update queued"
+msgstr "更新已添加到队列"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr "%s 的上传确认失败：远程字节 %lld 与本地字节 %lld 不匹配。"
+
+msgid "Upload successful"
+msgstr "上传成功"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "上传的文件对副本无效"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "已上传：%s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "已使用 filemanager_disable_features 选项禁用上传文件"
+
+msgid "Usage (Meg)"
+msgstr "使用量 (Meg)"
+
+msgid "Usage Log"
+msgstr "使用日志"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "尚未收集此帐号的使用情况统计信息"
+
+msgid "User"
+msgstr "用户"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "用户 %s 已删除"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "用户 %s 已存在，请选择其他用户名。"
+
+#, c-format
+msgid "User %s created"
+msgstr "已创建用户 %s"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "服务器上不存在用户 %s，将其从您的列表中删除。"
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "用户 %s 不存在于系统中。"
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "用户 %s 存在于系统中，但不在您的用户列表"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "用户 %s 已添加到您的数据库，使用以下值："
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "用户 %s 已备份。"
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "用户 %s 已恢复"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "用户 %s 已更新。使用以下值："
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "用户 %s 在其路径中有一个或多个硬链接："
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "用户 %s 已被暂停"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "用户 %s 已被取消暂停"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr "用户 %s 不在您的列表中。您不能为他做备份。"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr "用户 %s 不在您的列表中。您不能为他们做备份。"
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "用户 %s 未被删除，无法删除其所有用户。"
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "用户 %s 不是由您创建的 -> 未删除。"
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr "用户 %s 在备份中被暂停。帐户已暂停。"
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr "用户 %s 在备份中被暂停。暂停账户时出错："
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "用户 '%s' 不存在"
+
+msgid "User Acconts"
+msgstr "用户帐户"
+
+msgid "User Accounts"
+msgstr "用户帐户"
+
+msgid "User Bandwidth"
+msgstr "用户带宽"
+
+msgid "User Comment Box"
+msgstr "用户评论框"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "用户DNSSEC 控制已禁用"
+
+msgid "User Disk Quota"
+msgstr "用户磁盘限额"
+
+msgid "User History"
+msgstr "用户历史"
+
+msgid "User Modified"
+msgstr "用户已修改"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "用户SMTP日志未启用"
+
+msgid "User Updated"
+msgstr "用户已更新"
+
+#, fuzzy
+msgid "User account is disabled"
+msgstr "用户DNSSEC 控制已禁用"
+
+msgid "User added to SSH config file successfully"
+msgstr "用户添加到 SSH 配置文件成功"
+
+msgid "User added to database"
+msgstr "用户已添加到数据库"
+
+msgid "User added to named.conf file successfully"
+msgstr "用户已成功添加到named.conf 文件"
+
+msgid "User added to ssh config file."
+msgstr "用户已添加到 ssh 配置文件。"
+
+msgid "User backups have been disabled."
+msgstr "用户备份已被禁用。"
+
+msgid "User config file updated."
+msgstr "用户配置文件已更新。"
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "用户已删除"
+
+msgid "User removed from SSH"
+msgstr "用户已从 SSH 移除"
+
+msgid "User's System Quotas set"
+msgstr "用户系统配额设置"
+
+msgid "User's config files deleted"
+msgstr "用户的配置文件已删除"
+
+msgid "User's data directory created successfully"
+msgstr "用户数据目录创建成功"
+
+msgid "User's data directory removed."
+msgstr "用户数据目录已删除。"
+
+msgid "User(s)"
+msgstr "用户"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "用户目录： %s"
+
+msgid "Username"
+msgstr "用户名"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "用户名%s太长，长度 %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "用户名太短，它必须至少 2 个字符。"
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr "用户名必须是字母数字的 (a-z，A-Z，0-9)，第一个字符必须是字母"
+
+msgid "Username:"
+msgstr "用户名:"
+
+msgid "Users"
+msgstr "用户"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "用户已删除"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "用户 %s 已删除"
+
+msgid "Users will be deleted in the background."
+msgstr "用户将在后台被删除。"
+
+msgid "Users's domains directory removed."
+msgstr "用户域名目录已删除。"
+
+msgid "Usertype"
+msgstr "Usertype"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "不允许使用路径 %s。"
+
+msgid "Vacation Account"
+msgstr "休假账户"
+
+msgid "Vacation Message Deleted"
+msgstr "休假消息已删除"
+
+msgid "Vacation Message set"
+msgstr "休假消息设置"
+
+msgid "Vacation Message updated"
+msgstr "休假消息已更新"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "休假消息已删除"
+
+msgid "Valid"
+msgstr "有效"
+
+msgid "Valid broadcast address set."
+msgstr "已设置有效的广播地址。"
+
+msgid "Value"
+msgstr "值"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "提交中缺少变量“ip”"
+
+msgid "Vendor ID"
+msgstr "供应商ID"
+
+msgid "Verify"
+msgstr "验证"
+
+msgid "View"
+msgstr "视图"
+
+msgid "View Clipboard"
+msgstr "查看剪贴板"
+
+msgid "View previous sort"
+msgstr "查看上一个排序"
+
+msgid "Warning from named-checkzone:"
+msgstr "来自 named-checkzone 的警告："
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr "警告：%s 有 %s 的有效密码，但两步验证代码 %s 次失败。"
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "警告：已达到配额限制。文件可能是空的。"
+
+msgid "Warning: The system load average is"
+msgstr "警告：系统负载平均值为"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "我们只读取了 %lld 字节文件的 %lld从 %s"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "Webmail"
+
+msgid "Webmail Attachments"
+msgstr "Webmail 附件"
+
+msgid "Webmail SSO"
+msgstr "Webmail SSO"
+
+msgid "Week of Month"
+msgstr "月份的一周"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "已经达到了 %d 的%s的每周费率上限"
+
+msgid "What"
+msgstr "什么"
+
+msgid "When"
+msgstr "当"
+
+msgid "Where"
+msgstr "在哪里"
+
+msgid "Who"
+msgstr "谁"
+
+msgid "Wildcard"
+msgstr "通配符"
+
+msgid "With Selected"
+msgstr "已选中"
+
+msgid "With selected"
+msgstr "已选中"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "因为 %s的帐户已经关闭，所以没有激活"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "写入错误 %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "'%s' 元素的数值错误。允许：1或2，含'%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "'pass' 值的数量错误： %d在 '%s' 中（斜线分隔）"
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You already have the most recent version of the program"
+msgstr "您已经拥有该程序的最新版本"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] "您正在删除管理员帐户或分销商帐户，这些帐户有 %d 个用户在他们的控制之下。"
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "您无权启用匿名ftp"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "您无权修改您的 ssl 设置"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "您正在尝试还原zst文件，但系统上未启用zstd。"
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "您无权修改该工单"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr "您可以单击下面的电子邮件以此用户身份立刻登录 %s ，无需知道他们的密码。"
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr "您不能将名为 majordomo 的列表作为其保留别名"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "你不能暂停root。 那会很糟糕"
+
+msgid "You cannot add that extension"
+msgstr "您不能添加此扩展"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "您不能为域名分配比您的帐户更多的带宽"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "您不能为域名分配比您的帐户更多的配额"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "您创建的用户数不能超过允许的域名数。"
+
+msgid "You cannot delete all of your IPs"
+msgstr "您不能删除您的所有IP地址"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr "您不能删除帐户 %s ，因为它已链接到您的系统帐户"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "您不能删除自己 (%s)"
+
+msgid "You cannot execute that command"
+msgstr "您无法执行该命令"
+
+msgid "You cannot modify yourself"
+msgstr "您不能修改自己"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr "您不能在一个免费IP上还原多个用户，IP必须首先共享。"
+
+msgid "You cannot set an unlimited send limit."
+msgstr "您不能设置一个无限制的发送限制。"
+
+msgid "You cannot suspend yourself"
+msgstr "您不能暂停自己的活动"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "您不能暂停/取消暂停自己"
+
+msgid "You cannot unsuspend this account."
+msgstr "您无法取消暂停此帐户。"
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr "您不能使用该域名作为指向，它已经存在于服务器"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "您目前有 %s 个用户，最多有 %s 个域名。"
+
+msgid "You did not select any domains to modify"
+msgstr "您没有选择要修改的域名"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "您没有选择不同的 ip，没有做任何更改"
+
+msgid "You didn't select anyone to send it to"
+msgstr "您没有选择将其发送给任何人"
+
+msgid "You do not have control over user"
+msgstr "您对用户没有控制"
+
+msgid "You do not own any IPs"
+msgstr "您没有任何IP地址"
+
+msgid "You do not own that IP"
+msgstr "您不拥有该IP"
+
+msgid "You do not own that domain"
+msgstr "您并不拥有该域名"
+
+msgid "You do not own that ip"
+msgstr "您不拥有该ip"
+
+msgid "You do not own that that cron ID"
+msgstr "您不拥有该cron ID"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "您不拥有IP %s。用户 %s 将不会被创建"
+
+msgid "You don't have authority over that User"
+msgstr "您对该用户没有权限"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "您没有权限回复该工单"
+
+msgid "You don't have permission to restore user"
+msgstr "您没有恢复用户的权限"
+
+msgid "You don't have permission to view that ticket"
+msgstr "您没有权限查看该工单"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "你还剩 %d:%.2d。"
+
+msgid "You have already reached your assigned limit"
+msgstr "您已经达到指定的限制"
+
+msgid "You have not added any files to the clipboard."
+msgstr "您还没有添加任何文件到剪贴板。"
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr "您没有给分销商任何 IP， 无法创建分配的 IP 域名或没有任何名称的任何域名服务器"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr "您尚未选择任何文件。请返回并选择一些文件，然后恢复备份。"
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr "您尚未选择任何用户，请返回并在创建备份前选择一些用户。"
+
+msgid "You have not selected any domains"
+msgstr "您没有选择任何域名"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr "您已成功发出服务器重新启动命令，系统启动并重新启用可能需要几分钟。"
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr "您已使用 %d%% 的磁盘使用量，超过了允许的 %d%% 阈值。"
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "您可能需要按 F5 重新加载LOGO"
+
+msgid "You may not use an IP for a domain name"
+msgstr "您不能将 IP 用于域名"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "您必须输入一个chmod 值，例如 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "您必须输入一个文件夹“名称”，例如 images"
+
+msgid "You must enter both password"
+msgstr "您必须同时输入两个密码"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "您必须输入号码、用户、主题、优先级、状态和消息"
+
+msgid "You must enter the password in both fields"
+msgstr "您必须在两个字段中输入密码"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "您必须输入用户、主题、优先级和消息"
+
+msgid "You must first create some packages"
+msgstr "您必须先创建一些软件包"
+
+msgid "You must first own an IP"
+msgstr "您必须先拥有一个 IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "您必须有超过 0 条 NS 记录，否则命名可能无法启动。"
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"如果 'required_hits' 是 'custom'，您必须提供 'required_hits' 和 "
+"'required_hits_custom'"
+
+msgid "You must provide a list name"
+msgstr "您必须提供列表名称"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr "您必须提供受保护的目录密码提示。 例如：会员专区"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "您必须提供一个有效的域名, ip, ns1 和 ns2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr "您必须提供有效的电子邮件地址、旧密码、密码 1 和密码 2"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr "您必须提供有效的 ftp 地址、 旧密码、 密码1 和 密码2"
+
+msgid "You must provide a valid ip"
+msgstr "您必须提供一个有效的 ip"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "您必须提供一个有效的名称并且它必须存在。"
+
+msgid "You must provide a valid name and value"
+msgstr "您必须提供一个有效的名称和值"
+
+msgid "You must provide the passwd variable"
+msgstr "您必须提供 passwd 变量"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr "您必须选择一个域名服务器 IP 配对（ns1.domain.com 和 ns2.domain.com）"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "您必须选择至少一个邮件列表才能删除"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "您必须选择至少一个邮件列表来清除"
+
+msgid "You must select exactly one key"
+msgstr "您必须选择一个密钥"
+
+msgid "You must select something"
+msgstr "您必须选择一些内容"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr "您必须使用数字表示小时 (0-23)，您每天只能运行一次 cron。（您可以制作多个 "
+"cron）"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr "您必须使用一个数字来表示分钟 (0-59)，您每天只能运行一次 cron。 （"
+"您可以制作多个 cron）"
+
+msgid "You must use a valid path"
+msgstr "您必须使用一个有效的路径"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "您必须在更新之间等待至少 %d 分钟。"
+
+msgid "You must wait for the stats to be computed."
+msgstr "您必须等待统计信息的计算。"
+
+msgid "You need to specify a domain"
+msgstr "您需要指定域名"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "您需要一个域名、 anon、 anonup和一条消息"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "您需要域名和密码列表才能同步帐户"
+
+msgid "You require either the passwd or quota"
+msgstr "您需要密码或配额"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr "您需要源URL路径(e.g: /redirect) 和目标URL(e.g: www.redirect.com)"
+
+msgid "You require user and domain to change a pop account"
+msgstr "您需要用户和域名才能更改Pop 帐户"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "您需要用户、域名和密码来添加一个pop 帐户"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "您将在完成后通过消息系统收到通知。"
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "过程完成后，您将通过消息系统收到通知"
+
+msgid "You will receive a message when it's complete."
+msgstr "完成后，您将收到一条消息。"
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr "您正在使用登录作为选项，所以使用您自己的密码。而不是用户的密码。"
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "您的哈希URL登录 '%s' 已创建"
+
+msgid "Your IP is blacklisted"
+msgstr "您的IP已列入黑名单"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "您的登录密钥 '%s' 已创建"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "您的名字已更改为 %s"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "用户文件已从 %s 恢复"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "用户文件已从 %s 恢复"
+
+msgid "Your account"
+msgstr "您的帐户"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "您的帐户 %s@%s 已经设置。在您的电子邮件程序中，请使用"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "您的帐户'|USERNAME|' 已被暂停。原因：'|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "您的 |domain| 帐户现已准备就绪。"
+
+msgid "Your backups are now ready"
+msgstr "您的备份已准备就绪"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "您的数据库已设置。使用以下值："
+
+msgid "Your default domain has been set"
+msgstr "您的默认域名已设置"
+
+msgid "Your disk quota limit has been reached."
+msgstr "已达到您的磁盘配额限制。"
+
+msgid "Your disk usage has been updated"
+msgstr "您的磁盘使用量已更新"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr "您现有的密钥尚未被覆盖，但不能与新证书一起使用。"
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "您的消息已保存"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "语言已更改为 %s"
+
+msgid "Your message has been saved"
+msgstr "您的消息已保存"
+
+msgid "Your message has been sent"
+msgstr "您的消息已发送"
+
+msgid "Your message is being sent in the background"
+msgstr "您的消息正在后台发送"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr "您的消息为空。用户可能会很高兴知道他们正在获取什么。"
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "您的名字已更改为 %s"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "您的新密钥已备份到以下位置： %s"
+
+msgid "Your password"
+msgstr "您的密码"
+
+msgid "Your password is invalid"
+msgstr "您的密码无效"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr "您的更新请求将在一分钟内开始。完成后，您应该通过消息系统收到通知"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "您的请求将在 1 分钟内执行"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr "您的请求将在后台运行。完成后，您将收到消息系统的通知。"
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "您的分销商帐户已经达到指定的上限"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "您的分销商已达到分配的限制"
+
+msgid "Your subject contains invalid characters."
+msgstr "您的主题包含无效字符。"
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "您的工单号码是 %s。"
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "区域密钥比区域签名更新。"
+
+msgid "Zone Reset"
+msgstr "区域重置"
+
+msgid "Zone Signing has expired."
+msgstr "区域签名已过期。"
+
+#, fuzzy
+msgid "Zone created"
+msgstr "Cron 已创建"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr "区域尚未签名。 请确保您首先生成密钥并在使用此自动签名工具之前签名"
+
+msgid "Zone is of type DNSSEC."
+msgstr "区域是DNSSEC类型。"
+
+msgid "Zone keys generated"
+msgstr "已生成区域密钥"
+
+msgid "Zone signed"
+msgstr "已签名区域"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "已删除消息"
+
+msgid "account ..."
+msgstr "帐户..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "和 %d 用户"
+
+msgid "at least"
+msgstr "至少"
+
+msgid "at most"
+msgstr "最多"
+
+msgid "back"
+msgstr ""
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "不能启用dnssec 。无法签署区域。"
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "无法fstatat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "无法取消链接 %s: %s"
+
+msgid "catch is required"
+msgstr "捕获是必填项"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "cgroup 错误: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "您的许可证中未启用 cgroup"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup 在 directadmin.conf 中被关闭"
+
+msgid "change"
+msgstr "更改"
+
+msgid "click here if form does not include two-step code input"
+msgstr ""
+
+msgid "contains"
+msgstr "包含"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "天"
+
+msgid "day(s)"
+msgstr "天"
+
+msgid "days"
+msgstr "天数"
+
+msgid "default user"
+msgstr "默认用户"
+
+msgid "dns error"
+msgstr "dns 错误"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "dnsprovider 选项“%s”包含无效字符"
+
+msgid "does not belong to you"
+msgstr "不属于你"
+
+msgid "emails have just been sent by"
+msgstr "电子邮件刚刚由"
+
+msgid "equals"
+msgstr "等于"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "已经改变。"
+
+msgid "has been updated with the new ip"
+msgstr "已经更新了新的ip"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score 必须在 1 到 99 的范围内"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "小时"
+
+msgid "hours"
+msgstr "小时"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr ""
+
+#, fuzzy
+msgid "invalid IP or range: %s"
+msgstr "%s 不是有效的 IP 或范围"
+
+#, fuzzy
+msgid "invalid code"
+msgstr "无效的代码"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "是无效的电子邮件地址， 不会创建用户 %s"
+
+msgid "is currently down"
+msgstr "目前已关闭"
+
+msgid "is not a valid username"
+msgstr "这不是一个有效的用户名"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr "is_ip_in_mask_range:%s:%s: 范围 '%s' 必须是正整数"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr "is_ip_in_mask_range:%s:%s: 范围 '%s' 必须介于 1 和 128 之间，包括 1 和 128"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: 范围没有/"
+
+msgid "json string"
+msgstr "json字符串"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lstat 错误: %s"
+
+msgid "mail() line number"
+msgstr "mail() 行号"
+
+msgid "message is empty. Please enter some text."
+msgstr "消息为空。请输入一些文本。"
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "'%s' 的 mime 类型 (%s) 不是 'image/' 类型"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "分钟"
+
+msgid "minutes"
+msgstr "分钟"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "mkdir(%s) 错误: %s"
+
+msgid "modify password"
+msgstr "修改密码"
+
+msgid "modify privileges"
+msgstr "修改权限"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "月"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain 不是有效的域名"
+
+msgid "newer than"
+msgstr "更新自"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 或 ns2 不是有效的域名服务器"
+
+msgid "of"
+msgstr "于"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "旧软件包或新软件包不是有效的软件包名称"
+
+msgid "older than"
+msgstr "日期之前"
+
+#, c-format
+msgid "older than %s days."
+msgstr "超过 %s 天。"
+
+msgid "or"
+msgstr "或者"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "或 IPv6 (1:2:3:4:5:6:7:8) 或IPv6 范围(1:2:3:4:5:6:8-9)"
+
+msgid "or select from"
+msgstr "或者从中选择"
+
+msgid "php.ini override added"
+msgstr "已添加 php.ini 覆盖"
+
+#, c-format, fuzzy
+msgid "php1_select entry %d is not available"
+msgstr "小部件“%s”不可用"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache未启用"
+
+msgid "port"
+msgstr "端口"
+
+#, fuzzy
+msgid "request created"
+msgstr "目录已创建"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr "已设置reseller_can_set_email_limit=0 ，因此您不能设置一个限制"
+
+msgid "retry"
+msgstr "重试"
+
+msgid "routes must start with a [ character."
+msgstr "路由必须以 [ 字符开头。"
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "搜索长度超出范围：2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "秒"
+
+msgid "selected"
+msgstr "已选择"
+
+msgid "selected overrides removed from php.ini"
+msgstr "从 php.ini 中删除选定的覆盖"
+
+msgid "selected skipped rules removed"
+msgstr "已删除选定的已跳过规则"
+
+msgid "selecting none includes all domains"
+msgstr "选择无包括所有域名"
+
+msgid "sent"
+msgstr "已发送"
+
+msgid "set Permission"
+msgstr "设置权限"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "show_blocked_ips.sh 输出："
+
+msgid "starts with"
+msgstr "开始于"
+
+msgid "subject contains invalid characters."
+msgstr "主题包含无效字符。"
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr "subject_select != %d，但未设置主题。 这不应该发生。"
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "那是服务器的主机名，您不能使用它"
+
+msgid "the new domain name already exists on your system"
+msgstr "新域名已存在于您的系统中"
+
+msgid "too many iterations"
+msgstr "迭代太多"
+
+#, fuzzy
+msgid "unable to load secret"
+msgstr "无法打开套接字"
+
+msgid "unlimited"
+msgstr "无限制"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "用户,密码,密码2和类型是必需的"
+
+msgid "user.conf override"
+msgstr "user.conf已覆盖"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount已禁用"
+
+msgid "user_modify_pre.sh error"
+msgstr "user_modify_pre.sh 错误"
+
+#, fuzzy
+msgid "valid code"
+msgstr "无效的代码"
+
+msgid "value is required"
+msgstr "输入必需的值"
+
+#, c-format, fuzzy
+msgid "value must be '%s' or '%s'"
+msgstr "'%s' 必须是 '%s' 或 '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder 已通过 show_main_spambox=0 禁用"
+
+msgid "your new password is"
+msgstr "您新的密码是"
+
+msgid "your new quota is"
+msgstr "您新的配额是"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "您新的发送限制为: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr "~/domains 丢失了, 但我们在尝试重新创建它时遇到了错误"
