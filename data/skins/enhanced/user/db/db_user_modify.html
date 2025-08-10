@@ -1,0 +1,41 @@
+|LF_STANDARD|
+|LF_DB|
+|*if SESSION_SELECTED_DOMAIN=""|
+|?TREE=&raquo; <a class=tree href="/HTM_INDEX_USER">`LANG_HOME`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`NAME`">`LANG_VIEW` `NAME`</a> &raquo; <a class=tree href="/HTM_DB_USER_MODIFY?NAME=`NAME`&USER=`USER`">`LANG_MODIFY` `USER`</a>|
+|*else|
+|?TREE=&raquo; <a class=tree href="/CMD_SHOW_DOMAIN?domain=`SESSION_SELECTED_DOMAIN`">`SESSION_SELECTED_DOMAIN`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`NAME`">`LANG_VIEW` `NAME`</a> &raquo; <a class=tree href="/HTM_DB_USER_MODIFY?NAME=`NAME`&USER=`USER`">`LANG_MODIFY` `USER`</a>|
+|*endif|
+|?HELP_SECTION=`USER_HELPER`/mysql.html#password|
+|HTM_USER_TOP|
+
+|?CHECK_PASS=|
+|?RANDOM_PASS=randomPass()|
+|*if AJAX="1"|
+	|?CHECK_PASS=onChange="ajax_checkPass()"|
+	|?RANDOM_PASS=ajax_randomPass('')|
+	<script type="text/javascript" src="/assets/creation_check.js"></script>
+|*endif|
+
+<script type="text/javascript">
+
+|HTM_JAVASCRIPT|
+
+</script>
+
+	<table class=list cellpadding=3 cellspacing=1>
+	<form name=reseller action="CMD_DB" method="post">
+		<input type=hidden name=action value=modifyuser>
+		<input type=hidden name=name value="|NAME|">
+		<input type=hidden name=user value="|USER|">
+
+		<tr><td class=listtitle colspan=2>|LANG_MODIFY_1| |USER| |LANG_MODIFY_2| |NAME|</td></tr>
+		<tr><td class=list>|LANG_DB_PASS|</td><td class=list><input type=password id=passwd name=passwd size=20 |CHECK_PASS|> <input type=button value="|LANG_RANDOM|" onClick="|RANDOM_PASS|"><div id=passwd_result class=warning></div></td></tr>
+		<tr><td class=list>|LANG_DB_PASS_AGAIN|</td><td class=list><input type=password id=passwd2 name=passwd2 size=20 onChange="checkPass()"> <img class='hand' src='/assets/images/eye.png' title='|LANG_SHOW_PASS|' onclick="toggle_show_password(document.reseller.passwd, document.reseller.passwd2);"></td></tr>
+
+		<tr><td class=listtitle colspan=3 align=right>
+			<input type=submit name=create value="|LANG_SAVE|">
+		</td></tr>
+	</form>
+</table>
+
+|HTM_USER_BOTTOM|
