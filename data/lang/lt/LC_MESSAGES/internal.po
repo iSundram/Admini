@@ -1,0 +1,7659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lithuanian (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Lithuanian <https://translate.directadmin.com/projects/"
+"directadmin/internal/lt/>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && ("
+"n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d Nauja žinutė"
+msgstr[1] " - %d Naujos žinutės"
+msgstr[2] " - %d Naujų žinučių"
+
+msgid " / Day"
+msgstr " / Diena"
+
+msgid "# of Domains"
+msgstr "# Domenai"
+
+msgid "# of IPs"
+msgstr "# IP"
+
+msgid "# of MySQL DBs"
+msgstr "# MySQL duomenų bazės"
+
+msgid "# of Resellers"
+msgstr "# Didmenininkai"
+
+msgid "# of SubDomains"
+msgstr "# Subdomenai"
+
+msgid "# of Users"
+msgstr "# Naudotojai"
+
+msgid "# of free IPs"
+msgstr "# laisvi IP"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d dienos, %d valandos ir %d minutės"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d iš %d Administratoriaus/Didmenininko paskyros."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d iš %d paskyrų sukurta."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d iš %d domenų sukurta."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d nustatymai atnaujinti"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s neegzistuoja"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr "%s '%s' atstatymas negalimas '%s'. Atstatoma su numatytomis failo: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - naudotojo '%s' IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr ""
+"%s Redaguokite naudotojo Sveikinimo Pranešimą, kad įsitikintumėte, jog tema "
+"ir pranešimas yra nustatyti."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s paskyra %s sukurta"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s jau egzistuoja"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s jau egzistuoja nuotoliniame serveryje."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s jau egzistuoja serveryje."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s jau egzistuoja. Priverstinis naudojimas overwrite=yes"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s yra nuoroda. Nutraukiama."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s dabar galima bendrinti."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s yra pavojingų simbolių"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr ""
+"%s nepavyko priskirti, nes prieš priskiriant turi būti laisvas ir "
+"nepriskirtas."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s nepavyko atlaisvinti, nes prieš atlaisvinant neturi turėti bendrų domenų, "
+"arba turi būti rezervuotas."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s nepavyko pašalinti, nes būtina atlaisvinti prieš pašalinant."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s nepavyko bendrinti, nes nėra laivas"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s sėkmingai pašalinta."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s neegzistuoja"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s savininkas nesutampa su %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s pašalintas iš sąrašo"
+
+msgid "%s has been saved as %s."
+msgstr "%s išsaugotas kaip %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s buvo sustabdytas"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s Naudotojų paskyros sėkmingai įjungtos"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s yra katalogas, todėl nebus ištrintas"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s yra nuoroda"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s yra kietoji arba simbolinė nuoroda"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s nerasta"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s nėra katalogas"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s nėra jungtis"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s nėra simbolinė nuoroda"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s netinkamas IP adresas arba ruožas"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s netinkamas IP ruožas. Naudokite: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr ""
+"%s nuosavybės teisės nepakeistos į %s, dėl ko greičiausiai ir nepavyko "
+"išskleisti archyvo"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s neįjungtas"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s nėra įtrauktas į Jūsų domeno IP sąrašą"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s nėra įtrauktas į peradresavimo tipų sąrašą"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s savininkas nėra %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s nėra 'laisvas' arba vis dar yra priskirtas didmenininkui"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s dabar valdo %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s dabar yra laisvas"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s dabar yra nepriskirtas."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s dabar yra Jūsų pagrindinis domenas."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s yra už ribų"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s reikalingas %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s negali būti simbolinė nuoroda"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s neturi Vardų Serverių Žymėjimo."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s nėra įgyvendinta"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s įrašai išjungti šiame lygyje"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s reikšmė iš '%s' nėra įtraukta į home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s konfigūracijos failai pašalinti"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: lstat nuorodos klaida '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: readlinke klaida: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' netinkamas %s tipas"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sSpauskite čia%s ir sužinokite kaip tai įjungti"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sSpauskite Čia%s ir peržiūrėkite vietinius neapdorotus zonų duomenis"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' neegzistuoja"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' neegzistuoja\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' turi prasidėti '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' pakeistas į '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' yra draudžiamas plano pavadinimas."
+
+msgid "'%s' is disabled"
+msgstr "'%s' yra išjungtas"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' netinkamas css hex spalvos kodas"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' nėra įjungtas Jūsų didmenininko paskyrai."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' nėra įjungtas Jūsų licencijoje"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' serveryje nėra įjungtas."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' yra būtinas"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' turi būti '%s' arba '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import' nėra užkoduotas base 64 šifru"
+
+msgid "'when' should be all, newer or older"
+msgstr "'kada' turėtų būti visi, naujesni ar senesni"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) Šios kietosios nuorodos rastos pas Naudotoją %s:"
+
+msgid "* irretrievable *"
+msgstr "* negrįžtamas *"
+
+msgid "*** Stopped ***"
+msgstr "*** Sustabdyta ***"
+
+msgid "-- None Available --"
+msgstr "-- Nėra --"
+
+msgid "-- Reason:"
+msgstr "-- Priežastis:"
+
+msgid "-- Select IP"
+msgstr "-- Pasirinkti IP"
+
+msgid "-- Select Package"
+msgstr "-- Pasirinkti Planą"
+
+msgid "-- any time --"
+msgstr "-- bet koks laikas --"
+
+msgid "-- anything --"
+msgstr "-- bet kas --"
+
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "=1 reikalingas nustatymas nginx_proxy=1 ir DirectAdmin Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "Įrašas %s pavadinimų jau egzistuoja"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "'Laisvą' IP adresą galima priskirti tik 1 Naudotojui"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "Reikalingas Įrašo Tipas yra: A, NS, MX, CNAME, PTR, or TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr ""
+"Didmenininkas negali valdyti kitų to paties lygmens arba aukštesnio lygmens "
+"paskyrų"
+
+msgid "A file is required"
+msgstr "Reikalingas failas"
+
+msgid "A forwarder already exists with that name"
+msgstr "Peradresavimas tokiu pavadinimu jau egzistuoja"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "Toks domenas/zona jau egzistuoja."
+
+msgid "A key with that name already exists"
+msgstr "Raktas tokiu pavadinimu jau egzistuoja"
+
+msgid "A key with that value already exists"
+msgstr "Raktas tokia reikšme jau egzistuoja"
+
+msgid "A list alias already exists with that name"
+msgstr "Pseudonimų sąrašas tokiu pavadinimu jau egzistuoja"
+
+msgid "A message for that user already exists"
+msgstr "Pranešimas šiam naudotojui jau egzistuoja"
+
+msgid "A pop account already exists with that name"
+msgstr "Pašto (pop) paskyra tokiu pavadinimų jau egzistuoja"
+
+msgid "A skin name is required"
+msgstr "Reikalingas apipavidalinimo vardas"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr "Toks subdomenas jau egzistuoja ir yra priskirtas kitam domenui."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "Absoliuti atminties riba. Suaktyvina atminties žudiką."
+
+msgid "Abuse"
+msgstr "Piktnaudžiavimo"
+
+msgid "Access Hosts"
+msgstr "Serverių Prieiga"
+
+msgid "Access host has been added"
+msgstr "Serverio prieiga pridėta"
+
+msgid "Access hosts have been removed"
+msgstr "Serverio prieiga pašalinta"
+
+msgid "Account"
+msgstr "Paskyra"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Paskyra %s sukūrė %s %s su IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Paskyra %s praleista, nes yra išjungta"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr ""
+"Paskyrą %s išjungė Administratorius, oJūs turite tik Didmenininko "
+"privilegijas."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Paskyra %s su domenu %s neturi šakninio \"caroot\" sertifikato"
+
+msgid "Account created"
+msgstr "Paskyra sukurta"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Paskyra atblokuota iš BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Paskyra nėra Didmenininko lygmens"
+
+msgid "Account is suspended"
+msgstr "Paskyra išjungta"
+
+msgid "Account password changed"
+msgstr "Paskyros slaptažodis pakeistas"
+
+msgid "Account(s) Suspended"
+msgstr "Paskyra(-os) išjungta(-os)"
+
+msgid "Account(s) Unuspended"
+msgstr "Paskyra(-os) įjungta(-os)"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Paskyra atkurta skaidinyje %s."
+
+msgid "Action"
+msgstr "Veiksmas"
+
+msgid "Activate"
+msgstr "Aktyvinti"
+
+msgid "Active"
+msgstr "Aktyvusis"
+
+#, c-format
+msgid "Add %s"
+msgstr "Pridėti %s"
+
+msgid "Add Host"
+msgstr "Pridėti prisijungimo IP adresą"
+
+msgid "Add Override"
+msgstr "Pridėti Pakeitimą"
+
+msgid "Add the new NS records first."
+msgstr "Pirmiausia pridėkite naujus NS įrašus."
+
+msgid "Add to Apache"
+msgstr "Pridėti prie \"Apache\""
+
+msgid "Add to Clipboard"
+msgstr "Pridėti į Laikinąją Saugyklą"
+
+msgid "Add to DNS"
+msgstr "Įtraukti į DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "Ns1 pridėtas kaip %s ir ns2 pridėtas kaip %s"
+
+msgid "Additional"
+msgstr "Papildomas"
+
+msgid "Admin"
+msgstr "Administratorius"
+
+msgid "Admin SSL"
+msgstr "Admin SSL"
+
+msgid "Admin SSL is not enabled"
+msgstr "Administravimo SSL neįgalintas"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "Išplėstinė Paieška"
+
+msgid "Afternoon"
+msgstr "Po pietų"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Pseudonimas %s@%s -> %s sėkmingai sukurtas"
+
+msgid "All"
+msgstr "Visi"
+
+msgid "All Data"
+msgstr "Visi Duomenys"
+
+msgid "All E-Mail"
+msgstr "Visas El. Paštas"
+
+msgid "All Months (cgi)"
+msgstr "Visi Mėnesiai (cgi)"
+
+msgid "All Resellers"
+msgstr "# Didmenininkai"
+
+msgid "All Users"
+msgstr "Visi naudotojai"
+
+msgid "All Users Except Selected Users"
+msgstr "Visi naudotojai išskyrus pasirinktus"
+
+msgid "All Users Except:"
+msgstr "Visi Naudotojai Išskyrus:"
+
+msgid "All of Your Users"
+msgstr "Visi jūsų naudotojai"
+
+msgid "All privileges have been set"
+msgstr "Visos privilegijos sėkmingai priskirtos"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Visi maršruto žingsniai, išskyrus paskutinį, turi 'atitikti'"
+
+msgid "All selected Users have been suspended"
+msgstr "Visos pasirinktos Naudotojų paskyros sėkmingai išjungtos"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Visos pasirinktos Naudotojų paskyros sėkmingai įjungtos"
+
+msgid "All specified forwarders removed"
+msgstr "Visi pažymėti peradresavimai sėkmingai pašalinti"
+
+msgid "Allocated"
+msgstr "Paskirta"
+
+msgid "Allow"
+msgstr "Leisti"
+
+msgid "Allow Overselling"
+msgstr "Leisti perpardavimą"
+
+msgid "Allowance threshold is 0%"
+msgstr "Leidžiama riba yra 0 %"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Tiek daug leidus %s būtų viršytas Jūsų limitas, kuris yra %s"
+
+msgid "Alpha"
+msgstr "Alfa"
+
+msgid "Already Exists"
+msgstr "Jau Egzistuoja"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"Nors ir įvyko atsarginės kopijos klaida, korektiškas atsargines kopijas bus "
+"bandome įkelti"
+
+msgid "An Error Occurred"
+msgstr "Įvyko Klaida"
+
+msgid "An Error has occurred"
+msgstr "Įvyko Klaida"
+
+msgid "An auto responder already exists with that name"
+msgstr "Auto atsakiklis tokiu pavadinimu jau egzistuoja"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Autoatsakiklis tokiu pavadinimu jau egzistuoja"
+
+msgid "An error has occurred"
+msgstr "Įvyko klaida"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Įvyko klaida bandant perrašyti Nginx Unit konfigūraciją"
+
+msgid "An error occured during extraction"
+msgstr "Išskleidžiant failus įvyko klaida"
+
+msgid "An error occured while creating the compressed file"
+msgstr "Archyvuojant failus įvyko klaida"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "Nustatant failų savininką įvyko klaida"
+
+msgid "An error occurred during the backup"
+msgstr "Atsarginės kopijos kūrimo metu įvyko klaida"
+
+msgid "An error occurred during the restore"
+msgstr "Atsarginės kopijos atstatymo metu įvyko klaida"
+
+msgid "An error occurred when unblocking the account"
+msgstr "Atblokuojant paskyrą įvyko klaida"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "Pridedant nustatymus Jūsų Naudotojams įvyko klaida"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "Bandant kopijuoti failą įvyko klaida"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "Bandant sukurti katalogą įvyko klaida"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "Bandant apsaugoti katalogą įvyko klaida"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "Bandant pervadinti failą įvyko klaida"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "Bandant atstatyti failą įvyko klaida"
+
+msgid "Anonymous Ftp"
+msgstr "Anoniminis Ftp"
+
+msgid "Apache"
+msgstr "Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Apache konfigūracijos failas perkurtas naudojant naują IP"
+
+msgid "Apparent Size"
+msgstr "Atvaizduojamas Dydis"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Atvaizduojamas kaip pirmas elementas skyrelyje <Directory>."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Atvaizduojamas pačiame šablono viršuje, prieš aprašant kintamuosius."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Atvaizduojama VISUOSE context{} skyreliuose, naudojama slaptažodžiu "
+"apsaugotiems katalogams."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Atvaizduojama phpIniOverride{} skyrelyje."
+
+msgid "Appears in rewrite{} section."
+msgstr "Atvaizduojama rewrite{} skyrelyje."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Atvaizduojama scripthandler{} skyrelyje."
+
+msgid "Appears in vhssl{} section."
+msgstr "Atvaizduojama vhssl{} skyrelyje."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Atvaizduojama prieš pat <Directory> skyrelį."
+
+msgid "Apply to All Users"
+msgstr "Taikyti Visiems Naudotojams"
+
+msgid "Apply to Me"
+msgstr "Taikyti Man"
+
+msgid "Apply to existing Domains"
+msgstr "Taikyti egzistuojantiems Domenams"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "Archive Size"
+msgstr "Archyvo dydis"
+
+msgid "Archives purged"
+msgstr "Archyvai išvalyti"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Ar tikrai norite Pašalinti pasirinktas paskyras?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Ar tikrai norite Pašalinti pasirinktas duomenų bazes?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Ar tikrai norite Pašalinti pasirinktus raktus?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Ar tikrai norite Pašalinti pasirinktas zonas?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Ar tikrai norite pašalinti šiuos failus?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Ar tikrai norite išjungti šiuos procesus?"
+
+msgid "Ascending"
+msgstr "Didėjimo tvarka"
+
+msgid "Assign to"
+msgstr "Priskirti"
+
+msgid "Assigned"
+msgstr "Priskirta"
+
+msgid "At least one crediential is required."
+msgstr "Reikalingas bent vienas prisijungimo elementas."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Bandoma kopijuoti %s į save, failas praleistas."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Bandoma perkelti %s į save, failas praleistas."
+
+msgid "Attempts"
+msgstr "Bandymai"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Authentication"
+msgstr "Autentifikavimas"
+
+msgid "Authorize"
+msgstr "Įgalioti"
+
+msgid "Auto"
+msgstr "Automatinis"
+
+msgid "Auto media selection active."
+msgstr "Automatinis laikmenų pasirinkimas aktyvus."
+
+msgid "Auto+Confirm"
+msgstr "Automatinis+Patvirtinti"
+
+msgid "AutoResponders"
+msgstr "Auto Atsakikliai"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "Automatinis %s sertifikato atnaujinimas sėkmingas"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "Automatiškai generuotas \"security.txt\" failas (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "Automatinis atsakymas"
+
+msgid "Autoresponder"
+msgstr "Automatinis atsakiklis"
+
+msgid "Autoresponder created"
+msgstr "Sukurtas automatinis atsakiklis"
+
+msgid "Autoresponder updated"
+msgstr "Automatinis atsakiklis atnaujintas"
+
+msgid "Autoresponder(s) removed"
+msgstr "Automatinis (-iai) atsakiklis (-iai) pašalintas (-i)"
+
+msgid "Avoid use of trailers."
+msgstr "Venkite naudoti priekabas."
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "Awstats nustatymas pakeistas"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Atgal"
+
+msgid "Backing up Databases"
+msgstr "Kuriamos Duomenų Bazių Atsarginės Kopijos"
+
+msgid "Backing up E-Mail Data"
+msgstr "Kuriamos El. Pašto Duomenų Atsarginės Kopijos"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Kuriama El. Pašto nustatymų Atsarginė Kopija"
+
+msgid "Backing up FTP"
+msgstr "Kuriama FTP Atsarginė Kopija"
+
+msgid "Backing up User Configs"
+msgstr "Kuriama Naudotojo Konfigūracijos Atsarginė Kopija"
+
+msgid "Backing up User Data"
+msgstr "Kuriama Naudotojo Duomenų Atsarginė Kopija"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Kuriama papildomų El. Pašto elementų Atsarginė Kopija"
+
+msgid "Backup"
+msgstr "Atsarginė Kopija"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Atsarginė kopija %d šiuo metu nekuriama."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr ""
+"Atsarginės kopijos kūrimas Atšauktas (%d): Naudotojo failuose aptikta "
+"kietoji nuoroda %s's"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Nginx Unit Atsarginės kopijos klaida: %s"
+
+msgid "Backup Halted"
+msgstr "Atsarginės Kopijos Kūrimas Pristabdytas"
+
+msgid "Backup ID"
+msgstr "Atsarginės Kopijos ID"
+
+msgid "Backup creation added to queue"
+msgstr "Atsarginės kopijos kūrimas pridėtas į užduočių sąrašą"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+"Nepavyko sukurti atsarginės „Live“ rakto kopijos į %s. Jei reikia, "
+"įsidėmėkite senąjį raktą:"
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Kelias %s atsarginei kopijai sukurtas."
+
+msgid "Backup(s) Killed"
+msgstr "Atsarginės(-ių) Kopijos(-ų) Kūrimas Nutrauktas"
+
+msgid "Backups added to Queue"
+msgstr "Atsarginių kopijų kūrimas pridėtas į užduočių Eilę"
+
+msgid "Bandwidth"
+msgstr "Duomenų srautas"
+
+msgid "Bandwidth (MB)"
+msgstr "Duomenų srautas (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "Duomenų srauto sunaudojimas"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr ""
+"Būtinai iš naujo nuskaitykite QR kodą, nes visi seni kodai tampa "
+"negaliojantys."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"Kadangi skriptas atitinka kriterijus, jis buvo išjungtas naudojant komandą "
+"chmod 0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"Prieš atblokuodami įsitikinkite, kad visi pažeisti skriptai buvo pašalinti "
+"arba pataisyti."
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "Billing Issue"
+msgstr "Apmokėjimo problema"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "Tuščias %s ieškant konvertuotos atsarginės kopijos failo %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Tuščia reikšmė: numatytieji nustatymai, globali riba %d"
+
+msgid "Bleeding edge features"
+msgstr "Kraujavimo krašto savybės"
+
+msgid "Block Usage"
+msgstr "Blokuoti naudojimą"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker blokuojami keliai iki failų"
+
+msgid "Blocked"
+msgstr "Užblokuota"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "DNS Control ir ttl override nuostatos turi būti įjungtos"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "Tarnybos žurnale aptikta Brute-Force ataka"
+
+msgid "CA Certificate is Invalid"
+msgstr "CA sertifikatas netinkamas"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr ""
+"CA sertifikatas priimtas. Jūsų svetainė turėtų būti apsaugota per keletą "
+"minučių."
+
+msgid "CC Address"
+msgstr "CC adresas"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "CPU limitas"
+
+msgid "Can use Server IP"
+msgstr "Galima naudoti serverio IP"
+
+msgid "Can't get file lock on"
+msgstr "Nepavyko užrakinti failo"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Nepavyko atidaryti failo %s duomenų nuskaitymui"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Nepavyko atidaryti failo %s duomenų pridėjimui"
+
+msgid "Cancel"
+msgstr "Atšaukti"
+
+msgid "Cancel Request"
+msgstr "Atšaukti užklausą"
+
+msgid "Cannot Add A Record"
+msgstr "Nepavyko pridėti A tipo įrašo"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Nepavyko pridėti CNAME tipo įrašo"
+
+msgid "Cannot Add Record"
+msgstr "Nepavyko pridėti įrašo"
+
+msgid "Cannot Create Account"
+msgstr "Nepavyko sukurti paskyros"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Nepavyko pridėti papildomo auto atsakiklio"
+
+msgid "Cannot Create Another Database"
+msgstr "Nepavyko pridėti papildomos duomenų bazės"
+
+msgid "Cannot Create Another Domain"
+msgstr "Nepavyko pridėti papildomo domeno"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Nepavyko pridėti parkuojamo domeno"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Nepavyko pridėti papildomos FTP paskyros"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Nepavyko pridėti papildomo peradresavimo"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Nepavyko pridėti papildomos el. pašto konferencijos"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Nepavyko pridėti papildomos el. pašto (POP) paskyros"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Nepavyko pridėti papildomo subdomeno"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Nepavyko pridėti auto atsakiklio"
+
+msgid "Cannot Create Domain"
+msgstr "Nepavyko pridėti domeno"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Nepavyko pridėti atostogų pranešimo"
+
+msgid "Cannot Create a Message"
+msgstr "Nepavyko pridėti žinutės"
+
+msgid "Cannot Execute Command"
+msgstr "Nepavyko įvykdyti komandos"
+
+msgid "Cannot Execute Your Request"
+msgstr "Nepavyko įvykdyti Jūsų užklausos"
+
+msgid "Cannot Modify Key"
+msgstr "Nepavyko pakeisti rakto"
+
+msgid "Cannot Modify User"
+msgstr "Nepavyko pakeisti naudotojo nuostatų"
+
+msgid "Cannot View Domain Settings"
+msgstr "Nepavyko atvaizduoti domeno nuostatų"
+
+msgid "Cannot be a list"
+msgstr "Negali būti sąrašas"
+
+msgid "Cannot be an object"
+msgstr "Negali būti objektas"
+
+msgid "Cannot change the ip"
+msgstr "Nepavyko pakeisti IP"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Nepavyko pakeisti slaptažodžio sisteminei paskyrai. Prisijunkite prie "
+"valdymo pulto, kad galėtumėte tai atlikti."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Nepavyko pakeisti šios el. pašto paskyros slaptažodžio, nes domenas, kuriam "
+"priklauso ši paskyra, yra išjungtas."
+
+msgid "Cannot change your email"
+msgstr "Nepavyko pakeisti Jūsų el. pašto adreso"
+
+msgid "Cannot change your name"
+msgstr "Nepavyko pakeisti Jūsų vardo"
+
+msgid "Cannot change your password"
+msgstr "Nepavyko pakeisti Jūsų slaptažodžio"
+
+msgid "Cannot check domain existance"
+msgstr "Nepavyko patikrinti ar domenas egzistuoja"
+
+msgid "Cannot create User Backup"
+msgstr "Negalima sukurti vartotojo atsarginės kopijos"
+
+msgid "Cannot create domain"
+msgstr "Nepavyksta sukurti domeno"
+
+msgid "Cannot create that domain"
+msgstr "Neįmanoma sukurti šio domeno"
+
+msgid "Cannot create user using those settings"
+msgstr "Negalima sukurti vartotojo naudojant šiuos parametrus"
+
+msgid "Cannot delete records"
+msgstr "Negalima panaikinti įrašų"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "Negalima panaikinti odos, kurią šiuo metu naudojate."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Nepavyko pridėti papildomo subdomeno '%s'"
+
+msgid "Cannot execute your request"
+msgstr "Negalite įvykdyti užklausos"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Neįmanoma rasti %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "Nepavyksta rasti %s sąraše"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "Nepavyksta rasti %s vardu"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Nepavyksta rasti %s Praleidžiant."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "Nepavyksta rasti %s. Įsitikinkite, kad domenas yra ir nėra sustabdytas"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Nepavyksta rasti '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Nepavyksta rasti '%s\" leidžiamų reikšmių sąraše, skirtame %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "Nepavyksta rasti '%s\" šablone"
+
+msgid "Cannot find IP"
+msgstr "Nepavyksta rasti IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Nepavyksta rasti vartotojo '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr ""
+"Domenų savininkų faile nepavyksta rasti tinkamo sistemos vartotojo vardo."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "Sertifikate nepavyksta rasti jokių SAN reikšmių."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "Konvertavus iš dervos.gz rasti negalima rasti dervos.gz %s"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Domenų savininkų faile nepavyksta rasti domeno"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Sertifikate nepavyksta rasti domeno."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Nepavyksta rasti rakto reikšmės %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Nepavyksta rasti atpažinimo ženklo logotipo failo %s odoje %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Nepavyksta rasti atpažinimo ženklo logotipo failo %s=%s odoje %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Nepavyksta rasti show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Nepavyksta rasti template_php_ini ar domain_php_ini json"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "Nepavyksta rasti šio domeno domenų savininkų faile"
+
+msgid "Cannot find that key id"
+msgstr "Nepavyksta rasti to rakto ID"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "Nepavyksta rasti nei abonemento, nei ekspeditoriaus"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Nepavyksta rasti letsencrypt.sh scenarijaus"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "Nepavyksta rasti vartotojo %s Kas jau turėtų egzistuoti"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Negalima gauti mime tipo %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Programoje negali būti naujos linijos simbolių"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Negali būti neribotų elektroninio pašto kvotų"
+
+msgid "Cannot manage zone"
+msgstr "Neįmanoma valdyti zonos"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "Negalima perkelti katalogo (%s) į esamą failą arba katalogą (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "Negalima atidaryti slaptažodžio failo vartotojui įtraukti"
+
+msgid "Cannot open the password file to change the password"
+msgstr ""
+"Negalima atidaryti slaptažodžio failo, kad būtų galima pakeisti slaptažodį"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Negalima atidaryti vartotojo slaptažodžio failo skaitymui"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "Negalima pervardyti katalogo į esamą failą arba katalogą"
+
+msgid "Cannot resend welcome email"
+msgstr "Negalima persiųsti pasveikinimo el. laiško"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "Negalima atkurti FTP sąskaitos %s. Jūs pasiekėte savo ribą (  %s)."
+
+msgid "Cannot set TTL"
+msgstr "Negalima nustatyti TTL"
+
+msgid "Cannot set default domain"
+msgstr "Negalima nustatyti numatytojo domeno"
+
+msgid "Cannot show page"
+msgstr "Negalima parodyti puslapio"
+
+msgid "Cannot stat the source file"
+msgstr "Negalima statizuoti šaltinio failo"
+
+msgid "Cannot use the main account username"
+msgstr "Negalima naudoti pagrindinio abonemento vartotojo vardo"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Sugavimo viskas dabar nustatyta į %s"
+
+msgid "Catch-All Email"
+msgstr "\"Catch-all\" el. paštas"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "\"Catch-All\" el. paštas šioje paskyroje išjungtas"
+
+msgid "Catch-All email updated successfully"
+msgstr "\"Catch-All\" el. laiškas sėkmingai atnaujintas"
+
+msgid "Catch-All is disabled"
+msgstr "\"Catch-all\" el. paštas išjungtas"
+
+msgid "Catch-All is now set to fail"
+msgstr "\"Catch-All\" dabar yra nustatytas žlugti"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "\"Catch-All\" dabar nustatyta nepaisyti neteisingų adresų"
+
+msgid "Certificate"
+msgstr "Sertifikatas"
+
+msgid "Certificate and Key Saved."
+msgstr "Sertifikatas ir raktas įrašyti."
+
+msgid "Certificate is Invalid"
+msgstr "Sertifikatas neleistinas"
+
+msgid "Certificate is Self-Signed"
+msgstr "Sertifikatas pasirašytas savarankiškai"
+
+msgid "Change the password to unblock it."
+msgstr "Pakeiskite slaptažodį kad atblokuotumėte."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Pakeitė IP: %s"
+
+msgid "Changes saved"
+msgstr "Įrašyti keitimai"
+
+msgid "Check"
+msgstr "Patikrinti"
+
+msgid "Check the error log for more information."
+msgstr "Norėdami gauti daugiau informacijos, patikrinkite klaidų žurnalą."
+
+msgid "Check to see if the current software is valid"
+msgstr "Patikrinkite, ar dabartinė programinė įranga yra tinkama"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Antrinis vartotojas %s Panaikinti"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Pasirinkite iš: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "Mieste turi būti tik raidės, tarpai ir (arba) laikotarpiai"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "Išvalyti el. laiškų peradresavimus"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Valymo %s"
+
+msgid "Clear Customization"
+msgstr "Valyti tinkinimą"
+
+msgid "Clear Messages System"
+msgstr "Valyti pranešimų sistemą"
+
+msgid "Clear NS"
+msgstr "Valyti NS"
+
+msgid "Clear Search Filter"
+msgstr "Valyti ieškos filtrą"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Spauskite %sČIA%s , kad grįžti atgal"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Spauskite %sČIA%s , kad grįžti"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Spauskite %sČIA%s , kad grįžti į pradinį puslapį"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Spustelėkite čia, jei norite atsisiųsti naujausią atsarginę kopiją"
+
+msgid "Click here to close this window"
+msgstr "Spustelėkite čia, jei norite uždaryti šį langą"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Spustelėkite čia, jei norite įgalinti SSL domene"
+
+msgid "Clipboard"
+msgstr "Mainų sritį"
+
+msgid "Clipboard emptied"
+msgstr "Laikinoji saugykla išvalyta"
+
+msgid "Close"
+msgstr "Uždaryti"
+
+msgid "Closed"
+msgstr "Uždarytas"
+
+msgid "Closed+Confirm"
+msgstr "Uždaryta + patvirtinkite"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "Spalvos %s (%s) nėra sąraše: %s"
+
+msgid "Color has been customized"
+msgstr "Spalva tinkinta"
+
+msgid "Column in"
+msgstr "Stulpelis, esantis"
+
+msgid "Command"
+msgstr "Komanda"
+
+msgid "Command Returned"
+msgstr "Komanda grąžinta"
+
+msgid "Comment"
+msgstr "Komentaras"
+
+msgid "Comments"
+msgstr "Komentarai"
+
+msgid "Comments Saved"
+msgstr "Komentarai išsaugoti"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "Įmonėje turi būti tik raidės, skaičiai, tarpai ir (arba) laikotarpiai"
+
+msgid "Compressed File Created"
+msgstr "Sukurtas suglaudintas failas"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Spaudžiama %s"
+
+msgid "Confirm"
+msgstr "Patvirtinti"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Patvirtinti rezultatą %sDirectAdmin puslapyje%s"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "Patvirtinimo kodas neteisingas arba jo galiojimas pasibaigė"
+
+msgid "Continuing with the other files."
+msgstr "Tęskite su kitais failais."
+
+msgid "Copy"
+msgstr "Kopija"
+
+msgid "Copy Clipboard Files here"
+msgstr "Kopijuoti mainų srities failus čia"
+
+msgid "Copy the packages export data"
+msgstr "Kopijuoti paketų eksportavimo duomenis"
+
+msgid "Copying Admin Data"
+msgstr "Administratoriaus duomenų kopijavimas"
+
+msgid "Copying Reseller Data"
+msgstr "Perpardavėjo duomenų kopijavimas"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Failų kopijavimas išjungtas naudojant parinktį filemanager_disable_features"
+
+msgid "Copying unreadable data"
+msgstr "Neįskaitomų duomenų kopijavimas"
+
+msgid "Could not excute your request"
+msgstr "Nepavyko išspausti jūsų užklausos"
+
+msgid "Could not execute your request"
+msgstr "Nepavyko įvykdyti jūsų užklausos"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr "Nepavyko rasti jokių atitinkančių atsarginių raktų %s"
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr ""
+"Nepavyko rasti nuotolinio failo „%s“, kad būtų patikrinta dydis po įkėlimo"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Nerastas rDNS IP adresui '%s'"
+
+msgid "Could not read tickets"
+msgstr "Nepavyko perskaityti bilietų"
+
+msgid "Could not write tickets"
+msgstr "Nepavyko parašyti bilietų"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr ""
+"Nepavyko rasti jokių IP adresų, kuriuos būtų galima suteikti vartotojui ("
+"prašomas IP = %s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr ""
+"Nepavyko perskaityti duomenų bazės failo %s. Nepavyko pridėti ns1 ir ns2."
+
+msgid "Count"
+msgstr "Skaičiuoti"
+
+msgid "Counted"
+msgstr "Skaičiuojami"
+
+msgid "Country code must be 2 letters"
+msgstr "Šalies kodas turi būti 2 raidės"
+
+msgid "Created"
+msgstr "Sukurta"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Katalogų kūrimas išjungtas naudojant parinktį filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Tokio kiekio %s sukūrimas viršytų jūsų limitą, kuris yra %s"
+
+msgid "Creator"
+msgstr "Kūrėjas"
+
+msgid "Creator Duplicate"
+msgstr "Kūrėjo dublikatas"
+
+msgid "Creators and their Users"
+msgstr "Kūrėjai ir jų vartotojai"
+
+msgid "Cron Created"
+msgstr "Periodinė užduotis sukurta"
+
+msgid "Cron E-Mail set"
+msgstr "Periodinių užduočių el. paštas nustatytas"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Periodinė(-s) užduotis(-ys) panaikinta(-os)"
+
+msgid "Cron Jobs"
+msgstr "Periodinės užduotys"
+
+msgid "Cron Jobs Deleted"
+msgstr "Periodinės užduotys panaikintos"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Periodinės užduotys dubliuotos"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Periodinės užduotys veiks fone"
+
+msgid "Cron Modified"
+msgstr "Periodinė užduotis modifikuota"
+
+msgid "Cron job has been created"
+msgstr "Periodinė užduotis sukurta"
+
+msgid "Current"
+msgstr "Srovė"
+
+msgid "Current IPs"
+msgstr "Dabartiniai IP adresai"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "Dabartiniai IP, priskirti %s"
+
+msgid "Current Protected Directories"
+msgstr "Dabartiniai saugomi katalogai"
+
+msgid "Current Usage"
+msgstr "Dabartinis naudojimas"
+
+msgid "Custom"
+msgstr "Tinkinti"
+
+msgid "Custom Color"
+msgstr "Pasirinktinė spalva"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "Įkeltas pasirinktinis odos logotipas"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "Pasirinktiniai odos logotipai neįgalinti"
+
+msgid "Custom logo deleted"
+msgstr "Pasirinktinis logotipas panaikintas"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr ""
+"Pasirinktinė riba turi būti galiojantis skaičius. Leidžiama naudoti "
+"dešimtainį skaičių."
+
+msgid "Customization Disabled"
+msgstr "Modifikavimas išjungtas"
+
+msgid "Customization written"
+msgstr "Modifikavimas įrašytas"
+
+msgid "Customize the skin"
+msgstr "Modifikuoti apipavidalinimą"
+
+msgid "DKIM disabled"
+msgstr "DKIM išjungtas"
+
+msgid "DKIM enabled"
+msgstr "DKIM Įjungtas"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "DNS valdymas"
+
+msgid "DNS Zone does not exist"
+msgstr "DNS sritis neegzistuoja"
+
+msgid "DNSSEC Keys generated"
+msgstr "DNSSEC raktai sugeneruoti"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC neįgalintas"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSEC - DNS saugumas"
+
+msgid "Database"
+msgstr "Duomenų bazė"
+
+msgid "Database Created"
+msgstr "Duomenų bazė sukurta"
+
+msgid "Database Disk Usage"
+msgstr "DB disko sąnaudos"
+
+msgid "Database has been successfully Restored"
+msgstr "DB sėkmingai atstatyta"
+
+msgid "Database:"
+msgstr "Duomenų bazė:"
+
+msgid "Databases"
+msgstr "Duomenų bazės"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Date Added"
+msgstr "Pridėjimo data"
+
+msgid "Date Blocked"
+msgstr "Blokavimo data"
+
+msgid "Date Created"
+msgstr "Sukūrimo data"
+
+msgid "Date Suspended"
+msgstr "Sustabdymo data"
+
+msgid "Day"
+msgstr "Diena"
+
+msgid "Day of Month"
+msgstr "Mėnesio diena"
+
+msgid "Day of Week"
+msgstr "Savaitės diena"
+
+msgid "Days must be a valid number."
+msgstr "Dienos turi būti galiojantis skaičius."
+
+msgid "Debug Guide"
+msgstr "Derinimo vadovas"
+
+msgid "Dec"
+msgstr "Gruodis"
+
+msgid "Decending"
+msgstr "Mažėjantis"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "%s iššifravimas nepavyko"
+
+msgid "Default"
+msgstr "Numatytasis"
+
+msgid "Default release schedule"
+msgstr "Numatytasis išleidimo grafikas"
+
+msgid "Delayed release schedule"
+msgstr "Atidėtas išleidimo grafikas"
+
+msgid "Delete"
+msgstr "Pašalinti"
+
+msgid "Delete Extension"
+msgstr "Pašalinti plėtinį"
+
+msgid "Delete Handler"
+msgstr "Pašalinti Handler"
+
+msgid "Delete MimeType"
+msgstr "Pašalinti MimeType"
+
+msgid "Delete Selected"
+msgstr "Pašalinti pasirinktą"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "Ištrinkite DNSSEC raktus ir naudokite nepasirašytą zoną"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Ištrinkite šį naudotoją"
+msgstr[1] "Ištrinkite šiuos naudotojus"
+msgstr[2] "Ištrinkite šiuos naudotojus"
+
+msgid "Delete the following domains:"
+msgstr "Ištrinti šiuos domenus:"
+
+msgid "Delete web data"
+msgstr "Ištrinti svetainės duomenis"
+
+msgid "Deleted"
+msgstr "Ištrinta"
+
+msgid "Deleted User Bandwidth"
+msgstr "Ištrinti vartotojo srauto informaciją"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Trinama %s…"
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "Failų ir katalogų trynimas yra išjungtas serverio nustatymuose"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Ištrynus šiuos NS įrašus, liksite su 0 įrašų."
+
+msgid "Deny"
+msgstr "Uždrausti"
+
+msgid "Destination"
+msgstr "Paskirties vieta"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "Adreso, į kurį nukreipti, klaida: %s"
+
+msgid "Detail"
+msgstr "Detaliau"
+
+msgid "Details"
+msgstr "Smulkiau"
+
+msgid "Digest Subscriber"
+msgstr "„Digest“ prenumeratorius"
+
+msgid "Digest Subscribers"
+msgstr "Santraukos prenumeratoriai"
+
+msgid "DirectAdmin License"
+msgstr "DirectAdmin licencija"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin bus paleistas iš naujo po 1 minutės"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin bus paleistas iš naujo per 1 minutę"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Katalogo apsaugos nustatymai išsaugoti."
+
+msgid "Directory created"
+msgstr "Sukurtas aplankas"
+
+msgid "Disable"
+msgstr "Išjungti"
+
+msgid "Disable Auto-Renew"
+msgstr "Išjungti automatinį pratęsimą"
+
+msgid "Disabled"
+msgstr "Išjungta"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"Išjungti pagrindinio naudotojo nustatymai bus taikomi naudotojams ir "
+"paketams fone."
+
+msgid "Disk Space"
+msgstr "Disko vieta"
+
+msgid "Disk Space (MB)"
+msgstr "Disko vieta (MB)"
+
+msgid "Disk Usage"
+msgstr "Išnaudota disko vieta"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "Skyriuje turi būti tik raidės, skaičiai, tarpai ir/arba taškai"
+
+msgid "Dns Provider reset."
+msgstr "DNS tiekėjo atkūrimas."
+
+msgid "Dns Provider saved."
+msgstr "DNS tiekėjas išsaugotas."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Nenaudokite didžiųjų raidžių domeno pavadinime."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Tarp el. pašto vardų nenaudokite tarpų."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "%s reikšmėje nenaudokite tarpų"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Esami failai bus perrašyti"
+
+msgid "DocumentRoot"
+msgstr "DocumentRoot"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Neatitinka parametro: %s"
+
+msgid "Domain"
+msgstr "Domenas"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Sukurtas domenas %s"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Domenas %s negali naudoti %s pakeitimo kelio %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Administratorius sustabdė domeno %s veikimą ir Jūs neturite šios prieigas. "
+"Jūs negalite įjungti šio domeno."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr "Išvalytas domeno '%s' dnsprovideris."
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Domenas '%s' naudoja php-fpm."
+
+msgid "Domain AWstats"
+msgstr "Domeno statistika (AWstats)"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "Domeno statistika AWstats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "Domeno duomenų srautas"
+
+msgid "Domain Created"
+msgstr "Domenas sukurtas"
+
+msgid "Domain Created Successfully"
+msgstr "Domenas sėkmingai sukurtas"
+
+msgid "Domain Deletion Results"
+msgstr "Domeno trynimo rezultatai"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Domeno nukreipimas"
+msgstr[1] "Domenų nukreipimai"
+msgstr[2] "Domenų nukreipimai"
+
+msgid "Domain Pointer Added"
+msgstr "Domeno nukreipimas pridėtas"
+
+msgid "Domain Pointer on"
+msgstr "Domeno nukreiptimas įjungtas"
+
+msgid "Domain Pointers"
+msgstr "Parkuojami domenai"
+
+msgid "Domain Pointers Removed"
+msgstr "Parkuojamas domenas pašalintas"
+
+msgid "Domain Quota"
+msgstr "Domeno kvota"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Domeno pervadinimo galimybė nėra įjungta"
+
+msgid "Domain Webalizer Stats"
+msgstr "Domeno statistika Webalizer"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+"Domene yra UTF-8 ženklų. Prašome pateikti domeno pavadinimą punycode formatu "
+"arba įjungti convert_to_punycode."
+
+msgid "Domain does not belong to you"
+msgstr "Domenas nepriklauso jums"
+
+msgid "Domain does not belong to you."
+msgstr "Domenas nepriklauso jums."
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Domenas egzistuoja %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Domenas jau apdoroja SSL užklausą.  Prieš atlikdami kitus pakeitimus, "
+"leiskite jai užsibaigti."
+
+msgid "Domain is forbidden"
+msgstr "Domenas uždraustas"
+
+msgid "Domain is not in your list"
+msgstr "Domenas nėra jūsų sąraše"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr "Domenas neturi būti aukščiausio lygio domeno plėtinys"
+
+msgid "Domain name has been successfully changed"
+msgstr "Domeno vardas buvo sėkmingai pakeistas"
+
+msgid "Domain php.ini overrides"
+msgstr "Domeno php.ini perrašymai"
+
+msgid "Domain(s)"
+msgstr "Domenas(-ai)"
+
+msgid "Domain(s) modified"
+msgstr "Pakeistas (-i) domenas (-ai)"
+
+msgid "Domains"
+msgstr "Domenai"
+
+msgid "Domains directory created successfully"
+msgstr "Domenų katalogas sukurtas sėkmingai"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "Vartotojo namų kataloge sėkmingai sukurtas domenų aplankas"
+
+msgid "Double click for main domain page"
+msgstr "Dukart spustelėkite norint pereiti į pagrindinį domeno puslapį"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "Dovecot faile ‚%s‘ trūksta duomenų. Paleiskite 'da build dovecot_conf'"
+
+msgid "Download"
+msgstr "Parsisiųsti"
+
+msgid "Download Backup"
+msgstr "Parsisiųsti atsarginę kopiją"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Parsisiųsta: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "Atsisiunčiamas naujas webalizer dvejetainis failas"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Suspaustų aplankų atsisiuntimas buvo išjungtas naudojant failų tvarkyklės "
+"parinktį filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Failų atsisiuntimas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr ""
+
+msgid "Driver signals dormant."
+msgstr "Tvarkyklė signalizuoja neveiklumą."
+
+msgid "Duplicate"
+msgstr "Klonuoti"
+
+msgid "E-Mail"
+msgstr "El.paštas"
+
+msgid "E-Mail Accounts"
+msgstr "El.pašto paskyros"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "Ištrintos el. pašto paskyros"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "El. pašto adresas sėkmingai pakeistas"
+
+msgid "E-Mail Limit has been set"
+msgstr "Nustatytas el. pašto limitas"
+
+msgid "E-Mail Update Failed"
+msgstr "Nepavyko atnaujinti el. pašto"
+
+msgid "E-Mail Updated"
+msgstr "El. paštas sėkmingai atnaujintas"
+
+msgid "E-Mail account already exists"
+msgstr "El. pašto paskyra jau egzistuoja"
+
+msgid "E-Mail has been changed"
+msgstr "El. paštas sėkmingai pakeistas"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "El. paštas pakeistas į %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "El. pašto kvota negali viršyti %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo nusiųsti paketai."
+
+msgid "Edit"
+msgstr "Redaguoti"
+
+msgid "Edit the zone on the master server."
+msgstr "Redaguokite zoną pagrindiniame serveryje."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Kad atblokuotumėte slaptažodį, paprašykite paskyros kūrėjo jį pakeisti arba "
+"pasinaudokite prisijungimo puslapyje esančia funkcija „Pamiršau slaptažodį“ ("
+"jei ji įjungta)."
+
+msgid "Email"
+msgstr "El. paštas"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "El. paštas '%s' neegzistuoja"
+
+msgid "Email Added to list"
+msgstr "El. paštas įtrauktas į sąrašą"
+
+msgid "Email Deliveries (Sent)"
+msgstr "El. laiškų pristatymai (išsiųsti)"
+
+msgid "Email Disk Usage"
+msgstr "El. pašto disko naudojimas"
+
+msgid "Email Forwarders"
+msgstr "El. pašto peradresavimai"
+
+msgid "Email Only"
+msgstr "Tik el.paštas"
+
+msgid "Email Sent"
+msgstr "El.laiškas išsiųstas"
+
+msgid "Email Set"
+msgstr "Nustatytas el. paštas"
+
+msgid "Email created but"
+msgstr "El.laiškas sukurtas, bet"
+
+msgid "Email removed"
+msgstr "El. paštas pašalintas"
+
+msgid "Empty Clipboard"
+msgstr "laikinoji saugykla tuščia"
+
+msgid "Empty path"
+msgstr "Tuščias kelias"
+
+msgid "Enable"
+msgstr "Įgalinti"
+
+msgid "Enabled"
+msgstr "Įjungta"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "%s šifravimas nepavyko"
+
+msgid "End Time"
+msgstr "Pabaigos laikas"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "Bandant skaityti %lld baitų iš %s pasiektas failo galas. filled=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Įsitikinkite jog antrasis raktas sutampa su pirmuoju"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "Įsitikinkite, jog didmenininko ip.list turi naudotinų IP adresų."
+
+msgid "Ensuring stored domains are present"
+msgstr "Užtikrinti, kad būtų saugomi domenai"
+
+msgid "Error"
+msgstr "Klaida"
+
+msgid "Error Compressing the backup file"
+msgstr "Klaida supaudžiant atsarginę kopiją"
+
+msgid "Error Creating Cron Job"
+msgstr "Klaida kuriant periodinę užduotį"
+
+msgid "Error Creating Domain"
+msgstr "Klaida kuriant domeną"
+
+msgid "Error Creating Key"
+msgstr "Klaida kuriant raktą"
+
+msgid "Error Creating User"
+msgstr "Klaida kuriant vartotoją"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Klaida trinant %s"
+
+msgid "Error Executing Perl"
+msgstr "Klaida vykdant Perl"
+
+msgid "Error Log"
+msgstr "Klaidų išrašas"
+
+msgid "Error Reading Message File"
+msgstr "Klaida skaitant žinutę"
+
+msgid "Error Reading db file"
+msgstr "Klaida skaitant db failą"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Klaida šalinant vartotoja %s"
+
+msgid "Error Resetting Zone"
+msgstr "Klaida iš naujo nustatant zoną"
+
+msgid "Error Restoring database"
+msgstr "Klaida atkuriant duomenų bazę"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Klaida saugant slaptažodį: %s"
+
+msgid "Error Unblocking paths"
+msgstr "Klaida atblokuojant kelius"
+
+msgid "Error Updating User"
+msgstr "Klaida atnaujinant vartotoją"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Klaida įrašant %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "Klaida aktyvuojant %s vartotoją %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Klaida aktyvuojant periodinę užduotį: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Klaida aktyvuojant %s duomenis: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "Klaida, įtraukiant %s DS įrašus į nuotolinę pagrindinę zoną: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "SSH rakto autorizavimo klaida"
+
+msgid "Error changing password"
+msgstr "Slaptažodžio keitimo klaida"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Klaida valant LetsEncrypt failus"
+
+msgid "Error converting file: "
+msgstr "Klaida konvertuojant failą: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Klaida kopijuojant %s į %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Klaida kopijuojant %s į %s : %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Klaida kopijuojant logotipo failą: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Klaida kuriant %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Klaida kuriant %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Klaida kuriant autoatsakiklį"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Klaida kuriant „NginxUnit“ programą '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Klaida kuriant NginxUnit kelią '%s':%s"
+
+msgid "Error creating SSH Key"
+msgstr "Klaida kuriant SSH raktą"
+
+msgid "Error creating User"
+msgstr "Klaida kuriant vartotoją"
+
+msgid "Error creating Vacation Message"
+msgstr "Klaida kuriant atostogų pranešimą"
+
+msgid "Error creating account"
+msgstr "Klaida kuriant paskyrą"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Klaida kuriant numatytuosius katalogus %s.  Daugiau informacijos žr. error."
+"log."
+
+msgid "Error creating forwarder"
+msgstr "Klaida kuriant nukreipimą"
+
+msgid "Error creating the database"
+msgstr "Klaida kuriant duomenų bazę"
+
+msgid "Error decoding the base 64 data"
+msgstr "Klaida iškoduojant base64 duomenis"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Klaida šalinant %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Klaida trinant SSH raktą"
+
+msgid "Error deleting account(s)"
+msgstr "Klaida trinant paskyrą(s)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Kali trinant autoatsakiklį(ius)"
+
+msgid "Error deleting filter(s)"
+msgstr "Klaida trinant filtrą(us)"
+
+msgid "Error deleting records"
+msgstr "Klaida trinant įrašus"
+
+msgid "Error determining username from "
+msgstr "Klaida nustatant vartotojo vardą iš "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Klaida atliekant automatinį sertifikato atnaujinimą domenui %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Klaida ištrinant antrinį naudotoją %s"
+
+msgid "Error during extraction"
+msgstr "Klaida išpakuojant"
+
+msgid "Error executing your request"
+msgstr "Klaida vykdant Jūsų užklausą"
+
+msgid "Error generating zone keys"
+msgstr "Klaida generuojant sričių faktus"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Klaida importuojant base64 koduotus paketus"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Klaida pranešime.  Reikia domeno, tipo ir reikšmės."
+
+msgid "Error modifying SSH key"
+msgstr "Klaida modifikuojant SSH raktą"
+
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr "Klaida analizuojant %s kelią: neteisingas tipas"
+
+msgid "Error parsing 'routes'."
+msgstr "Klaida analizuojant 'routes'."
+
+msgid "Error parsing json output"
+msgstr "Klaida analizuojant json išvestį"
+
+msgid "Error purging archives"
+msgstr "Klaida valant archyvus"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Klaida skaitant %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Klaida skaitant domeno konfigūracijos failą"
+
+msgid "Error reading domain config files"
+msgstr "Klaida skaitant domeno konfigūracijos failus"
+
+msgid "Error reading domainowners"
+msgstr "Klaida skaitant domainowners"
+
+msgid "Error reading domainowners file"
+msgstr "Klaida skaitant domainowners failą"
+
+msgid "Error reading named db file"
+msgstr "Klaida skaitant pavadintą duomenų bazės failą"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr ""
+"Klaida skaitant db failą po to, kai į jį buvo įrašyta prieš DNSSEC pasirašymą"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "Klaida skaitant %s naudotojo failus, bet vis tiek tęsiama."
+
+msgid "Error reading user_ip.list file"
+msgstr "Klaida skaitant user_ip.list failą"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Klaida šalinant %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Klaida šalinant IP adresą/us iš %s"
+
+msgid "Error removing file: "
+msgstr "Klaida šalinant failą: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Klaida šalinant kelią %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Klaida šalinant subdomeną"
+
+msgid "Error removing subdomain(s)"
+msgstr "Klaida šalinant subdomeną/us"
+
+msgid "Error removing subdomains"
+msgstr "Klaida šalinant subdomenus"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Klaida šalinant naudotoją %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Klaida pervadinant %s į %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Klaida atstatant %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Klaida atstatant domeną"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Klaida atstatant php nustatymus skirtus '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Klaida perrašant %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Klaida leidžaint %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Klaida leidžiant rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Klaida leidžiant rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Klaida saugant Cron El. Paštą"
+
+msgid "Error saving Nameservers"
+msgstr "Klaida saugant vardų serverius"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Klaida siunčiant signalą į %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Klaida keičiant MX šabloną"
+
+msgid "Error setting MX template for pointer"
+msgstr "Klaida keičiant MX šabloną pointeriui"
+
+msgid "Error setting PHP versions"
+msgstr "Klaida keičiant PHP versijas"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Klaida nustatant cgroup limitus skirtus %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Klaida nustatant iškarpinės failus"
+
+msgid "Error setting global key"
+msgstr "Klaida nustatant visuotinį raktą"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Klaida nustatant leidimą %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Klaida nustatant filtrą"
+
+msgid "Error setting the spam filter"
+msgstr "Klaida nustatant spam filtrą"
+
+msgid "Error setting timezone"
+msgstr "Klaida nustatant laiko zoną"
+
+msgid "Error showing Email Acounts"
+msgstr "El. pašto paskyrų rodymo klaida"
+
+msgid "Error showing message ID info"
+msgstr "Klaida rodant pranešimo ID informaciją"
+
+msgid "Error showing smtp log info"
+msgstr "Klaida rodant smtp žurnalo informaciją"
+
+msgid "Error signing zone"
+msgstr "Klaida pasirašant zoną"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "Klaida sustabdant %s naudotojo %s veiklą: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Klaida sustabdant periodines užduotis: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Klaida atnaujinant autoatsakiklį"
+
+msgid "Error updating Catch-All value"
+msgstr "Klaida atnaujinant Catch-All reikšmę"
+
+msgid "Error updating Vacation Message"
+msgstr "Klaida atnaujinant atostogų žinutę"
+
+msgid "Error updating forwarder"
+msgstr "Klaida atnaujinant peradresavimą"
+
+msgid "Error while compressing file"
+msgstr "Klaida archyvuojant failą"
+
+msgid "Error while creating User"
+msgstr "Klaida kuriant vartotoją"
+
+msgid "Error while deleting Users"
+msgstr "Klaida šalinant naudotojus"
+
+msgid "Error while saving changes"
+msgstr "Klaida išsaugant pakeitimus"
+
+msgid "Error while saving password"
+msgstr "Klaida išsaugant slaptažodį"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Klaida rašant %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Klaida su LetsEncrypt užklausa"
+
+msgid "Error with curl request"
+msgstr "Klaida su curl užklausa"
+
+msgid "Error with exigrep"
+msgstr "Klaida naudojant exigrep"
+
+msgid "Error with fchownat"
+msgstr "Klaida naudojant fchownat"
+
+msgid "Error with system Quotas"
+msgstr "Klaida dėl sistemos kvotų"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Atsarginės kopijos plano klaida (nepavyko pervadinti): nepavyko nukopijuoti "
+"%s į %s: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Klaida įrašant %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Klaida įrašant %s:%s"
+
+msgid "Error writing domain config file"
+msgstr "Klaida įrašant domeno konfigūracijos failą"
+
+msgid "Error writing pop cache"
+msgstr "Klaida įrašant pop cache"
+
+msgid "Error writing the directadmin.conf"
+msgstr "Klaida įrašant directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Klaida įrašant į %s: %s"
+
+msgid "Errors"
+msgstr "Klaidos"
+
+msgid "Evening"
+msgstr "Vakaras"
+
+msgid "Expecting 0 or 1"
+msgstr "Tikimasi 0 arba 1"
+
+msgid "Expecting any integer"
+msgstr "Tikimasi bet kokio sveikojo skaičiaus"
+
+msgid "Expecting any long long integer"
+msgstr "Tikimasi bet kokio ilgojo ilgojo sveikojo skaičiaus"
+
+msgid "Expired"
+msgstr "Baigėsi galiojimo laikas"
+
+msgid "Expiry"
+msgstr "Galiojimas"
+
+msgid "Export Selected"
+msgstr "Pasirinktas eksportas"
+
+msgid "Extension"
+msgstr "Išplėtimas"
+
+msgid "Extensions"
+msgstr "Plėtiniai"
+
+msgid "Extract"
+msgstr "Išskleisti"
+
+msgid "Extract selected to directory"
+msgstr "Pasirinktus išspausti į katalogą"
+
+msgid "Extracting User Data"
+msgstr "Išskleidžiama vartotojo informacija"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Failų išskleidimas buvo išjungtas naudojant filemanager_disable_features "
+"parinktį"
+
+msgid "Extracting non-readable files"
+msgstr "Išskleidžiami nenuskaitomi failai"
+
+msgid "Extracting ~/domains directory"
+msgstr "Išskleidžiamas ~/domains aplankas"
+
+msgid "Extracting ~/imap directory"
+msgstr "Išskleidžiamas ~/imap aplankas"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "toks FTP naudotojas jau egzistuoja"
+
+msgid "FTP information invalid."
+msgstr "FTP informacija neteisinga."
+
+msgid "FTP: default creation error"
+msgstr "FTP: numatytoji sukūrimo klaida"
+
+msgid "Feature Disabled"
+msgstr "Funkcija išjungta"
+
+msgid "Feb"
+msgstr "Vasaris"
+
+msgid "File"
+msgstr "Failas"
+
+msgid "File %s already exists, file skipped."
+msgstr "Failas %s jau egzistuoja, failas praleistas."
+
+msgid "File Extracted"
+msgstr "Failas išskleistas"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Failas nuskaitomas kaip '%s'"
+
+msgid "File copied successfully"
+msgstr "Failas nukopijuotas sėkmingai"
+
+msgid "File does not exist"
+msgstr "Failas neegzistuoja"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Failas neegzistuoja arba neturite prieigos prie failo"
+
+msgid "File emptied"
+msgstr "Failo turinys ištuštintas"
+
+msgid "File exists check"
+msgstr "Failo egzistavimo patikrinimas"
+
+msgid "File ownership reset"
+msgstr "Failų teisių atkūrimas"
+
+msgid "File purged"
+msgstr "Failas pašalintas"
+
+msgid "File renamed successfully"
+msgstr "Failas sėkmingai pervadintas"
+
+msgid "File restored successfully"
+msgstr "Failas sėkmingai atstatytas"
+
+msgid "Filename"
+msgstr "Failo pavadinimas"
+
+msgid "Files added to clipboard"
+msgstr "Į iškarpinę pridėti failai"
+
+msgid "Files copied"
+msgstr "Failai nukopijuoti"
+
+msgid "Files deleted"
+msgstr "Failai ištrinti"
+
+msgid "Files moved"
+msgstr "Failai perkelti"
+
+msgid "Filter"
+msgstr "Filtras"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "Filtras"
+
+msgid "Filter(s) removed"
+msgstr "Filtras(-ai) pašalinti"
+
+msgid "Fingerprint"
+msgstr "Pirštų atspaudas"
+
+msgid "First"
+msgstr "Pirmas"
+
+msgid "First PHP"
+msgstr "Pirmoji PHP versija"
+
+msgid "First Page"
+msgstr "Pirmas puslapis"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Flag '%s' reikšmė yra tuščia"
+
+msgid "Flush from DNS"
+msgstr "Pašalinti iš DNS"
+
+msgid "For backwards compatibility"
+msgstr "Dėl atgalinio suderinamumo"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"Tais atvejais, kai dėl didelio apdorojamų domenų skaičiaus gali pritrūkti "
+"skirtojo laiko"
+
+msgid "Forwarder"
+msgstr "Peradresavimas"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Peradresavimas %s negali būti nukreiptas į save"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "Peradresavimas %s@%s pašalintas, nes jame nebeliko gavėjų."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Peradresavimas '%s' jau egzistuoja."
+
+msgid "Forwarder already exists"
+msgstr "Peradresavimas jau egzistuoja"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Peradresavime yra local_part_suffix simbolis: „%s“, kuris reiškia, kad "
+"viskas, kas yra po jo, bus ignoruojama ir peradresavimas niekada nesuveiks."
+
+msgid "Forwarder created"
+msgstr "Peradresavimas sukurtas"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Begalinis peradresavimas: %s"
+
+msgid "Forwarder updated"
+msgstr "Peradresavimas atnaujintas"
+
+msgid "Forwarders deleted"
+msgstr "Peradresavimai pašalinti"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Rasta 0 failų %s, skaitomų kaip %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr "Rastas atitinkantis raktas iš %s"
+
+msgid "Free - randomly selected"
+msgstr "Atlaisvinti - parinkti atsitiktiniu būdu"
+
+msgid "Free Memory"
+msgstr "Laisva atmintis"
+
+msgid "Free Selected"
+msgstr "Atlaisvinti pasirinktą"
+
+msgid "Free Swap Memory"
+msgstr "Atlaisvinti Swap atmintį"
+
+msgid "From"
+msgstr "Iš"
+
+msgid "Ftp"
+msgstr "FTP"
+
+msgid "Ftp Accounts"
+msgstr "FTP paskyros"
+
+msgid "Ftp account changed"
+msgstr "FTP paskyra pakeista"
+
+msgid "Ftp settings saved"
+msgstr "FTP nustatymai išsaugoti"
+
+msgid "Full Date"
+msgstr "Pilna data"
+
+msgid "Full Name has been successfully changed"
+msgstr "Vardas buvo sėkmingai pakeistas"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "Pilno formato pavadinimas '%s' nesibaigia zonos pavadinimu"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "Generuoti raktus"
+
+msgid "Git Repositories"
+msgstr "Git repozitorijos"
+
+msgid "Global"
+msgstr "Globalus"
+
+msgid "Global - randomly selected"
+msgstr "Globalus - atsitiktinai parinktas"
+
+msgid "Global Key"
+msgstr "Globalus raktas"
+
+msgid "Global Key set"
+msgstr "Globalus raktų rinkinys"
+
+msgid "Global ssh keys not available to Users"
+msgstr "Globalūs ssh raktai vartotojams negalimi"
+
+msgid "Go to %s"
+msgstr "Eiti į %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Tokia grupė jau egzistuoja (%s). Pasirinkite kitą vartotojo vardą."
+
+msgid "Handler"
+msgstr "Tvarkyklė"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "Įrašai ištrinti"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "Tvarkyklė"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"Sveiki,\n"
+"\n"
+"Šia žinute norime pranešti, kad jūsų paskyra '|USERNAME|' buvo išjungta.\n"
+"Priežastis: |REASON|\n"
+"\n"
+"Jei manote, kad tai buvo padaryta per klaidą, susisiekite su savo hostingo "
+"paslaugų teikėju, kad gautumėte daugiau informacijos.\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "Štai rezultatai"
+
+msgid "Here are the results:"
+msgstr "Štai rezultatai:"
+
+msgid "High"
+msgstr "Aukštas"
+
+msgid "Highest"
+msgstr "Aukščiausias"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "Pasiekta failo pabaiga ieškant @ arba domeno antraštės eilutės"
+
+msgid "Home Directory"
+msgstr "Namų katalogas"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "Namų kelias '%s' nėra leidžiamas home_override_list"
+
+msgid "Host:"
+msgstr "Serveris:"
+
+msgid "Hosts"
+msgstr "Hosts"
+
+msgid "Hour"
+msgstr "Valanda"
+
+msgid "How to process the request"
+msgstr "Kaip apdoroti procesą"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Tačiau po %s bandymų jiems nepavyko pateikti teisingo dviejų dalių "
+"autentifikavimo kodo, todėl prieiga nebuvo suteikta."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "Tačiau vietoje jų buvo rasti subdomenai.  Tęsiama darbą su jais."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "Šis ID Jums nepriklauso"
+
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 arba 1234-1239"
+
+msgid "IO Read Bandwidth Max"
+msgstr "Maksimalus skaitymo IO srautas"
+
+msgid "IO Write Bandwidth Max"
+msgstr "Maksimalus rašymo IO srautas"
+
+msgid "IOPS Read Max"
+msgstr "Maksimalus skaitymo IOPS"
+
+msgid "IOPS Write Max"
+msgstr "Maksimalus rašymo IOPS"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP adresas pridėtas"
+
+msgid "IP Info"
+msgstr "IP informacija"
+
+msgid "IP Link Added"
+msgstr "IP nuoroda pridėta"
+
+msgid "IP Link(s) Removed"
+msgstr "IP nuoroda(os) pašalinta(os)"
+
+msgid "IP List is empty"
+msgstr "IP sąrašas tuščias"
+
+msgid "IP Netmask Set"
+msgstr "IP tinklo kaukės rinkinys"
+
+msgid "IP Type"
+msgstr "IP tipas"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP domeno konfigūracijos faile (%s) yra neteisingas."
+
+msgid "IP must be shared or free"
+msgstr "IP turi būti bendras arba laisvas"
+
+msgid "IP will be linked in the background"
+msgstr "IP adresas bus susietas fone"
+
+msgid "IP(s)"
+msgstr "IP adresas(-ai)"
+
+msgid "IP(s) removed"
+msgstr "IP adresas(-ai) pašalinti"
+
+msgid "IP/User"
+msgstr "IP adresas/Vartotojas"
+
+msgid "IPs"
+msgstr "IP adresai"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+"Jei reikia, susisiekite su serverio administratoriumi dėl zonos atkūrimo."
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Jei įvestas vartotojo vardas yra teisingas, netrukus gausite patvirtinimo "
+"el. laišką."
+
+msgid "If this is not your IP, change your password."
+msgstr "Jei tai ne Jūsų IP, pasikeiskite slaptažodį."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Jei nenorite perrašyti esamo sertifikato, išjunkite automatinį atnaujinimą"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"Jeigu tęsite, šios naudotojo paskyros kartu su VISU susijusiu svetainės ir "
+"el. pašto turiniu, kuris čia nenurodytas, taip pat bus pašalintos."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Jei nustatysite reikšmę 0, jokia įprasta httpd užklausa neveiks.  Netgi "
+"negalėsite prisijungti."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Vaizdų failų pavadinimai turi tik 1 tašką"
+
+msgid "Imap"
+msgstr "IMAP"
+
+msgid "Imap Folders"
+msgstr "IMAP aplankai"
+
+msgid "Inactive"
+msgstr "Neaktyvus"
+
+msgid "Inbox"
+msgstr "Gautieji"
+
+msgid "Include Domains"
+msgstr "Įtraukti domenus"
+
+msgid "Info"
+msgstr "Informacija"
+
+msgid "Info for admins"
+msgstr "Informacija administratoriams"
+
+msgid "Inherit"
+msgstr "Paveldėti"
+
+msgid "Inodes"
+msgstr "Inodes"
+
+msgid "Installed"
+msgstr "Įdiegta"
+
+msgid "Installed Perl Modules"
+msgstr "Įdiegti Perl moduliai"
+
+msgid "Interface is a loopback interface."
+msgstr "Sąsaja yra atgalinio ryšio sąsaja."
+
+msgid "Interface is a point-to-point link."
+msgstr "Sąsaja yra nuoroda iš taško į tašką."
+
+msgid "Interface is in promiscuous mode."
+msgstr "Sąsaja veikia neteisėtu režimu."
+
+msgid "Interface is running."
+msgstr "Sąsaja veikia."
+
+msgid "Internal debugging flag."
+msgstr "Vidinė derinimo vėliava."
+
+msgid "Invalid "
+msgstr "Neteisingas "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "Neteisingas '%s'"
+
+msgid "Invalid CC email address"
+msgstr "Neteisingas CC el. paštas"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Netinkami dizaino pavadinimo simboliai.  Naudokite tik a-zA-Z0-9._-[] Negali "
+"prasidėti „.“"
+
+msgid "Invalid Cron ID"
+msgstr "Neteisingas Cron ID"
+
+msgid "Invalid DNS name"
+msgstr "Netinkamas DNS vardas"
+
+msgid "Invalid DNS value"
+msgstr "Neteisinga DNS reikšmė"
+
+msgid "Invalid Domain"
+msgstr "Neteisingas domenas"
+
+msgid "Invalid Domain Name"
+msgstr "Neteisingas domeno pavadinimas"
+
+msgid "Invalid E-Mail"
+msgstr "Neteisingas el. paštas"
+
+msgid "Invalid E-Mail User"
+msgstr "Neteisingas el. pašto vartotojas"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"Netinkamas el. pašto adresas. Leidžiama naudoti kelis DirectAdmin "
+"prisijungimo vardus arba tuščią vardą"
+
+msgid "Invalid Email"
+msgstr "Neteisingas el. paštas"
+
+msgid "Invalid Email Name"
+msgstr "Neteisingas el. pašto pavadinimas"
+
+msgid "Invalid Email limit"
+msgstr "Neteisingas el. pašto limitas"
+
+msgid "Invalid FTP account"
+msgstr "Neteisinga FTP paskyra"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "Neteisingas IP adresas (1.2.3.4) arba intervalas (1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "Neteisingas IP / domenas FTP ryšiui"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Neteisinga žurnalo rotavimo vertė: %d"
+
+msgid "Invalid MX value"
+msgstr "Neteisinga MX reikšmė"
+
+msgid "Invalid Name"
+msgstr "Neteisingas vardas"
+
+msgid "Invalid Netmask"
+msgstr "Neteisinga tinklo kaukė (Netmask)"
+
+msgid "Invalid Password"
+msgstr "Neteisingas slaptažodis"
+
+msgid "Invalid RSA comment"
+msgstr "Neteisingas RSA komentaras"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "Neteisingas RSA ID. Naudokite paprastus simbolius: a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "Neteisingas RSA raktas"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "Neteisinga SecRuleRemoveById reikšmė"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Neteisinga sesijos minučių reikšmė: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Neteisingas subdomenas"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Neteisingas dviejų lygių autentifikavimo kodas"
+
+msgid "Invalid Two-Step Authentication code"
+msgstr "Neteisingas dviejų lygių autentifikavimo kodas"
+
+msgid "Invalid URL"
+msgstr "Neteisingas URL"
+
+msgid "Invalid Username"
+msgstr "Neteisingas vartotojo vardas"
+
+msgid "Invalid Username or Password"
+msgstr "Neteisingas vartotojo vardas arba slaptažodis"
+
+msgid "Invalid characters in password"
+msgstr "Neteisingi simboliai slaptažodyje"
+
+msgid "Invalid characters in word"
+msgstr "Netinkami ženklai žodyje"
+
+msgid "Invalid crypted passwd"
+msgstr "Neteisingas šifruotas slaptažodis"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"Netinkamas delete_messages_days arba delete_tickets_days.  Per didelė "
+"reikšmė.  Max = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"Netinkamas delete_messages_days arba delete_tickets_days. Turi būti 0 arba "
+"teigiamas sveikasis skaičius."
+
+msgid "Invalid dnsprovider"
+msgstr "Netinkamas dnsprovider"
+
+msgid "Invalid dnsprovider type"
+msgstr "Netinkamas dnsprovider tipas"
+
+msgid "Invalid domain"
+msgstr "Netinkamas domenas"
+
+msgid "Invalid email address"
+msgstr "Neteisingas el. pašto adresas"
+
+msgid "Invalid email user"
+msgstr "Neteisingas el. pašto vartotojas"
+
+msgid "Invalid email username"
+msgstr "Neteisingas el. pašto prisijungimo vardas"
+
+msgid "Invalid encryption password"
+msgstr "Neteisingas šifravimo slaptažodis"
+
+msgid "Invalid file extension list"
+msgstr "Netinkamas failų plėtinių sąrašas"
+
+msgid "Invalid filename:"
+msgstr "Neteisingas failo pavadinimas:"
+
+msgid "Invalid filter type"
+msgstr "Neteisingas filtro tipas"
+
+msgid "Invalid fingerprint"
+msgstr "Netinkamas piršto antspaudas"
+
+msgid "Invalid ftp password"
+msgstr "Neteisingas FTP slaptažodis"
+
+msgid "Invalid ftp path"
+msgstr "Neteisingas FTP kelias"
+
+msgid "Invalid ftp port"
+msgstr "Neteisingas FTP prievadas"
+
+msgid "Invalid ftp username"
+msgstr "Neteisingas FTP vartotojo vardas"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "Neteisingas rakto bitų ilgis: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "Neteisingas rakto parametro pavadinimas arba reikšmė: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "Netinkamas rakto tipas: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Neteisingas raktų dydis. Galimos reikšmės: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Neteisingas leidžiamų domenų sąrašas"
+
+msgid "Invalid local path"
+msgstr "Netinkamas vietinis kelias"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "Nepavyko prisijungti. Patikrinkite savo vartotojo vardą ir slaptažodį"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Netinkamos pranešimo dienos. Turėtų būti teigiamas sveikasis skaičius."
+
+msgid "Invalid message id"
+msgstr "Neteisingas pranešimo ID"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr ""
+"Netinkamas pranešimo tipas. Leidžiama naudoti tik užklausą, atsakymą ir "
+"pranešimą."
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "Netinkamas metodas: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "Netinkamas vardas arba plėtinys"
+
+msgid "Invalid netmask type for IP type"
+msgstr "Netinkamas netmask tipas IP tipui"
+
+msgid "Invalid new user value"
+msgstr "Neteisinga naujo naudotojo reikšmė"
+
+msgid "Invalid number"
+msgstr "Neteisingas numeris"
+
+msgid "Invalid package name"
+msgstr "Neteisingas paketo pavadinimas"
+
+msgid "Invalid path"
+msgstr "Neteisingas kelias"
+
+msgid "Invalid path append value"
+msgstr "Neteisinga path append reikšmė"
+
+msgid "Invalid redirect URL"
+msgstr "Neteisingas nukreipimo URL adresas"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "Neteisingos sesijos laiko limito arba maksimalaus failų dydžio reikšmės"
+
+msgid "Invalid subdomain name"
+msgstr "Netinkamas subdomeno vardas"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "Neteisingos bilieto dienos. Turi būti teigiamas sveikasis skaičius."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "Klaidinga užklausos diena. Per didelis. Max=%s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "Netinkamas tipas '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "Netinkamas atnaujinimo kanalas"
+
+msgid "Invalid username"
+msgstr "Neteisingas vartotojo vardas"
+
+msgid "Invalid values"
+msgstr "Neteisingos reikšmės"
+
+msgid "Is able to select media type via ifmap."
+msgstr "Galima pasirinkti medijos tipą per ifmap."
+
+msgid "Issue verifying license"
+msgstr "Licencijos patvirtinimo problema"
+
+msgid "Issuer"
+msgstr "Leidėjas"
+
+msgid "It already exists on the following system(s)"
+msgstr "Tai jau yra šioje (-se) sistemoje (-se)"
+
+msgid "It has been disabled"
+msgstr "Jis buvo išjungtas"
+
+msgid "It must be a positive integer."
+msgstr "Tai turi būti teigiamas sveikasis skaičius."
+
+msgid "It must not be an IP"
+msgstr "Tai neturi būti IP"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "Tai jau yra susieta su %s"
+
+msgid "Items per page"
+msgstr "Elementų puslapyje"
+
+msgid "Jailed Home"
+msgstr "Apribotas Namų Katalogas"
+
+msgid "Jan"
+msgstr "Sau"
+
+msgid "Jul"
+msgstr "Liepa"
+
+msgid "Jun"
+msgstr "Birželis"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "Išsisaugokite tai ateičiai."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Prašome įvesti realistišką skaičių."
+
+msgid "Key"
+msgstr "Raktas"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "Raktas sukurtas. Įsidėmėkite jo reikšmę ir išsaugokite."
+
+msgid "Key ID"
+msgstr "Rakto ID"
+
+msgid "Key Name"
+msgstr "Rakto pavadinimas"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Rakto pavadinimas (Key Name) turi būti paprastas: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "Raktas jau egzistuoja naudojant pirštų atspaudų atitikmenį"
+
+msgid "Key is Invalid"
+msgstr "Raktas yra neteisingas"
+
+msgid "Key(s) deleted"
+msgstr "Raktas(ai) ištrinti"
+
+msgid "Keys"
+msgstr "Raktai"
+
+msgid "Keys listed below"
+msgstr "Raktai išvardinti žemiau"
+
+msgid "Kill"
+msgstr "Nutraukti"
+
+msgid "Language"
+msgstr "Kalba"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Kalba pakeista į %s"
+
+msgid "Language has been successfully changed"
+msgstr "Kalba pakeista sėkmingai"
+
+msgid "Last"
+msgstr "Paskutinis"
+
+msgid "Last Accessed"
+msgstr "Paskutinis aplankymas"
+
+msgid "Last Changed"
+msgstr "Paskutinis pakeitimas"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "Paskutinis prisijungimo IP: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Paskutinis prisijungimas: %s"
+
+msgid "Last Message"
+msgstr "Paskutinė žinutė"
+
+msgid "Last Modified"
+msgstr "Modifikavimo data"
+
+msgid "Last Page"
+msgstr "Paskutinis puslapis"
+
+msgid "Last Tally Completion"
+msgstr "Paskutinio skaičiavimo užbaigimas"
+
+msgid "Leave DNS"
+msgstr "Išeiti iš DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Palikti vartotoją %s sąraše"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Let's Encrypt sertfikato įrašai"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt neįgalintas.  Jums šis nustatymas neprieinamas."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "LetsEncrypt failai išvalyti"
+
+msgid "LetsEncrypt request successful"
+msgstr "LetsEncrypt užklausa sėkminga"
+
+msgid "LetsEncrypt request successful for"
+msgstr "Sėkminga „LetsEncrypt“ užklausa dėl"
+
+msgid "License file is no longer supported"
+msgstr "Licencijos failas nebepalaikomas"
+
+msgid "License file unchanged"
+msgstr "Licencijos failas nepakeistas"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "Licencijos failas patvirtintas per Directadmin licencijavimo sistemą"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr ""
+"Licencija galioja tik %d administratorių / didmenininkų, o šiuo metu turite "
+"%d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "Licencija galioja tik %d paskyrų, o šiuo metu turite %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Licencija galioja tik %d domenų, o šiuo metu turite %d"
+
+msgid "License is not valid"
+msgstr "Licencija neteisinga"
+
+msgid "License limits exceeded"
+msgstr "Viršyti licencijos limitai"
+
+msgid "License verified"
+msgstr "Licencija patikrinta"
+
+msgid "Limit Notice"
+msgstr "Limitų nustatymai"
+
+msgid "Limit is not a number"
+msgstr "Limitas nėra skaičius"
+
+msgid "Link"
+msgstr "Nuoroda"
+
+msgid "Link in Background"
+msgstr "Nuoroda fone"
+
+msgid "Linked IPs"
+msgstr "Susieti IP adresai"
+
+msgid "List"
+msgstr "Sąrašas"
+
+msgid "List Configurations Saved"
+msgstr "Išsaugotų konfigūracijų sąrašas"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Sąrašo pavadinimą turi sudaryti ne daugiau kaip %d simbolių"
+
+msgid "Listname must be all lower case letters"
+msgstr "Sąrašo pavadinime turi būti tik mažosios raidės"
+
+msgid "Load Average"
+msgstr "Vidutinis apkrovimas"
+
+msgid "Local Data"
+msgstr "Lokalūs duomenys"
+
+msgid "Local Default"
+msgstr "Lokali numatytoji reikšmė"
+
+msgid "Local Mail"
+msgstr "Lokalus paštas"
+
+msgid "Local URL Path"
+msgstr "Vietinis URL kelias"
+
+msgid "Log"
+msgstr "Žurnalas"
+
+msgid "Log Entry"
+msgstr "Žurnalo įrašas"
+
+msgid "Log Usage"
+msgstr "Žurnalo naudojimas"
+
+msgid "Login"
+msgstr "Prisijungti"
+
+msgid "Login Failures"
+msgstr "Nepavykę prisijungimai"
+
+msgid "Login Keys"
+msgstr "Prisijungimo raktai"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Prisijungti kaip %s"
+
+msgid "Low"
+msgstr "Žemas"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "MX šablonas nustatytas"
+
+msgid "MX Templates are disabled"
+msgstr "MX šablonai išjungti"
+
+msgid "MX priority should be an positive number"
+msgstr "MX prioritetas turi būti teigiamas skaičius"
+
+msgid "Mailing List"
+msgstr "El. pašto konferencija"
+
+msgid "Mailing List Created"
+msgstr "El. pašto konferencija sukurta"
+
+msgid "Mailing List(s) Deleted"
+msgstr "El. pašto konferencija (-os) pašalinta (-os)"
+
+msgid "Mailing Lists"
+msgstr "El. pašto konferencijos"
+
+msgid "Main"
+msgstr "Pagrindinis"
+
+msgid "Main Domain ..."
+msgstr "Pagrindinis domenas ..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "Kritinė klaida: Nerastas namų katalogas vartotojui %s"
+
+msgid "Make sure 'unit' is running"
+msgstr "Įsitikinkite, kad 'unit' veikia"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Įsitikinkite, kad pateiktos reikšmės atitinka jų tipą"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "Rankiniu būdu pagal %s"
+
+msgid "Mar"
+msgstr "Kov"
+
+msgid "Mark as read"
+msgstr "Pažymėti kaip perskaitytą"
+
+msgid "Master of a load balancing bundle."
+msgstr "Krovos balansavimo paketo valdiklis."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "Maksimalus užduočių skaičius, kurį galima sukurti vienete"
+
+msgid "Max Usage (Meg)"
+msgstr "Maksimalus sunaudojimas (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr "Max skaitymo operacijų per sekundę."
+
+msgid "Max disk write operations per second."
+msgstr "Max rašymo operacijų per sekundę."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "Didžiausias limitas, kuri naudotojas gali nustatyti vienam el. paštui"
+
+msgid "Max rate data can be read from a disk."
+msgstr "Didžiausias duomenų nuskaitymo iš disko greitis."
+
+msgid "Max rate data can be written to a disk."
+msgstr "Maksimalus duomenų įrašymo į diską greitis."
+
+msgid "Maximum Usage"
+msgstr "Didžiausias naudojimas"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "Didžiausia reikšmė: %s=%s"
+
+msgid "May"
+msgstr "Geg"
+
+msgid "Medium"
+msgstr "VIdutinis"
+
+msgid "Meg"
+msgstr "Meg"
+
+msgid "Memory High"
+msgstr "Didelis atminties kiekis"
+
+msgid "Memory Max"
+msgstr "Max atminties"
+
+msgid "Memory Usage"
+msgstr "Atminties išnaudojimas"
+
+msgid "Message #"
+msgstr "Žinutė #"
+
+msgid "Message Reset"
+msgstr "Pranešimo atkūrimas"
+
+msgid "Message Type"
+msgstr "Žinutės tipas"
+
+msgid "Message is being sent"
+msgstr "Žinutė siunčiama"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "Žinutė Pašalinta"
+msgstr[1] "Žinutės Pašalintos"
+msgstr[2] "Žinutės Pašalintos"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "Žinutės atnaujintos"
+
+msgid "Messages Updated"
+msgstr "Žinutės atnaujintos"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Dizainai ištrinti"
+
+msgid "Mime-Type added"
+msgstr "MIME tipas pridėtas"
+
+msgid "MimeType"
+msgstr "MIME tipas"
+
+msgid "Minute"
+msgstr "Minutė"
+
+msgid "Missing closing bracket in zone line."
+msgstr "Trūksta uždarymo skliaustelio zonos eilutėje."
+
+msgid "Missing open bracket in zone line."
+msgstr "Trūksta atviro skliausto zonos eilutėje."
+
+msgid "ModSecurity Flags"
+msgstr "ModSecurity vėliavos"
+
+msgid "ModSecurity Rules Saved"
+msgstr "ModSecurity taisyklės išsaugotos"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "Praleistos ModSecurity taisyklės"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity išjungta"
+
+msgid "Modify"
+msgstr "Keisti"
+
+msgid "Modify Password"
+msgstr "Keisti slaptažodį"
+
+msgid "Month"
+msgstr "Mėnuo"
+
+msgid "More Info"
+msgstr "Daugiau informacijos"
+
+msgid "Morning"
+msgstr "Rytas"
+
+msgid "Move Clipboard Files here"
+msgstr "Perkelti failus iš laikinosios saugyklos čia"
+
+msgid "Move to Trash"
+msgstr "Perkelti į šiukšlinę"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Turi būti nurodytas mime tipas arba handler pavadinimas ir vienas plėtinys, "
+"pvz.: „text/html“ arba „cgi-script“ ir „html“"
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Turi būti pasirinkta daugiau nei nulis „LetsEncrypt“ įrašų."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Parinktims turi būti naudojama letsencrypt=1. Šiuo metu nustatytas "
+"letsencrypt=%d."
+
+msgid "MySQL is not enabled on this server"
+msgstr "Serveryje MySQL išjungtas"
+
+msgid "NGINX Unit"
+msgstr "NGINX vienetas"
+
+msgid "Name"
+msgstr "Vardas"
+
+msgid "Name Server 1"
+msgstr "Vardų serveris 1"
+
+msgid "Name Server 2"
+msgstr "Vardų serveris 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Varas gali būti sudarytas tik iš radžių, tarpų ir taškų"
+
+msgid "Nameserver"
+msgstr "Vardų serveris"
+
+msgid "Nameservers deleted"
+msgstr "Vardų serveriai pašalinti"
+
+msgid "Nameservers have been changed"
+msgstr "Vardų serveriai pakeisti"
+
+msgid "Namesevers have been changed."
+msgstr "Vardų serveriai pakeisti."
+
+msgid "Netmask"
+msgstr "Tinklo kaukė"
+
+msgid "Never"
+msgstr "Niekada"
+
+msgid "New Secret Set: %s"
+msgstr "Naujas slaptas rinkinys: %s"
+
+msgid "New password isn't different"
+msgstr "Naujasis slaptažodis nesiskiria nuo senojo"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Naujai sudiegtas raktas yra %s-bitų"
+
+msgid "Next Retry"
+msgstr "Kitas bandymas"
+
+msgid "Nginx Template"
+msgstr "Nginx šablonas"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx neįgalintas"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "Nginx unit neįgalintas arba išjungtas"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "No Awstats"
+msgstr "Nėra Awstats"
+
+msgid "No Data to Show"
+msgstr "Nėra duomenų"
+
+msgid "No IPs selected"
+msgstr "Nepasirinktas IP"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "Maršruto pozicijoje %lld konteineryje nėra sąrašo failo"
+
+msgid "No Send class set"
+msgstr "Nėra Siųsti klasės rinkinio"
+
+msgid "No User Data"
+msgstr "Nėra vartotojo duomenų"
+
+msgid "No action"
+msgstr "Jokio veiksmo"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "ARP protokolas nepalaikomas, L2 adresas neišsaugotas."
+
+msgid "No changes have been made"
+msgstr "Pakeitimai neatlikti"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Pakeitimai nebuvo reikalingi. Įrašymas praleistas."
+
+msgid "No colors have been selected"
+msgstr "Nepasirinktos spalvos"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "Maršruto pozicijoje %lld nėra konteinerio"
+
+msgid "No events for this period."
+msgstr "Šiame periode įvykių nebuvo."
+
+msgid "No files have been selected for upload."
+msgstr "Nepasirinkti įkeltini failai."
+
+msgid "No free IPs found"
+msgstr "Nerasta laisvų IP adresų"
+
+msgid "No global IPs found"
+msgstr "Nerasta bendrų IP adresų"
+
+msgid "No keys selected"
+msgstr "Nepasirinktas raktas"
+
+msgid "No passwd entries provided."
+msgstr "Nepateikta jokių slaptažodžių įrašų."
+
+msgid "No paths were provided."
+msgstr "Nebuvo pateikta jokių kelių."
+
+msgid "No shared IPs found"
+msgstr "Nėra bendrintų IP adresų"
+
+msgid "No text provided"
+msgstr "Neįvestas tekstas"
+
+msgid "No vacation message set"
+msgstr "Tuščias atostogų pranešimo tekstas"
+
+msgid "None"
+msgstr "Nėra"
+
+msgid "Not a valid IP Address"
+msgstr "Klaidingas IP adresas"
+
+msgid "Not allowed for Resellers"
+msgstr "Negalima didmeninkas"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+"Nepakanka IP adresų vardų serveriams sukurti. Reikia bent %d laisvų "
+"nepaskirstytų IP."
+
+msgid "Not setting up Mail SNI."
+msgstr "Pašto SNI neįjungiamas."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "Negalioja dėl simbolio '%c' indekse %d"
+
+msgid "Not yet generated"
+msgstr "Dar ne sugeneruota"
+
+msgid "Not yet signed"
+msgstr "Dar nepasirašyta"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Pastaba: ankstesnė „Let's Encrypt“ konfigūracija vis dar nustatyta "
+"atnaujinti po %d dienų."
+
+msgid "Nothing"
+msgstr "Tuščia"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "Pranešimas, kad prisijungimo raktą %s sėkmingai sukūrė %s"
+
+msgid "Notified"
+msgstr "Informuotas"
+
+msgid "Nov"
+msgstr "Lapk"
+
+msgid "Null values"
+msgstr "Tuščios reikšmės"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "Skaičius %s=%s yra už intervalo ribų (būtina: %d-%d)"
+
+msgid "Number of Users"
+msgstr "Vartotojų skaičius"
+
+msgid "OK"
+msgstr "Gerai"
+
+msgid "Oct"
+msgstr "Spa"
+
+msgid "Off"
+msgstr "Išjungtas"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Senasis %s-bitų raktas išsaugotas kaip %s"
+
+msgid "Old password incorrect"
+msgstr "Senasis slaptažodis neteisingas"
+
+#, c-format
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "Senesnius nei %d diena"
+msgstr[1] "Senesnius nei %d dienos"
+msgstr[2] "Senesnius nei %d dienų"
+
+msgid "On"
+msgstr "Įjungta"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr "Vienas (arba daugiau) iš pasirinktų IP šiuo metu nėra Jūsų sąraše"
+
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr ""
+"Vieno paspaudimo (One-Click) prisijungimas nėra įjungtas directadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "Priskirta tik %d iš prašomų %d globalių IP adresų."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "Naudojant šį metodą iš vartotojo galima pašalinti tik papildomus IP"
+
+msgid "Only API access is allowed"
+msgstr "Pasiekiama tik per API"
+
+msgid "Only Admin accounts can save settings"
+msgstr "Išsaugoti gali tik administratorius"
+
+msgid "Only Admins can reset the usage count"
+msgstr "Naudojimo statistika nulinti gali tik administratorius"
+
+msgid "Only Admins may run this request"
+msgstr "Ši užklausa galima tik administratoriui"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+"Vienu metu pateikite tik vieną plėtinį, pvz.: „jpg“, o ne „jpg jpeg jpe“"
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "Tik numatytasis '%s' domenas gali valdyti php nustatymus."
+
+msgid "Only the location of the route can be renamed"
+msgstr "Galima pervadinti tik maršruto lokaciją"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr ""
+"Pakaitos simbolį (wildcard) naudokite tik tuose domenuose, kuriuose šiuo "
+"metu veikia lokalus DNS"
+
+msgid "Open"
+msgstr "Atidaryti"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir išjungta pasirinktuose domenuose"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir įjungtas pasirinktuose domenuose"
+
+msgid "Open+Confirm"
+msgstr "Atidaryti+patvirtinti"
+
+msgid "Operation"
+msgstr "Valdymas"
+
+msgid "Optimize"
+msgstr "Optimizuoti"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "Parinktis '%s' jau nustatyta"
+
+msgid "Option Saved"
+msgstr "Pasirinkimas išsaugotas"
+
+msgid "Options"
+msgstr "Pasirinkimai"
+
+msgid "Options changed successfully"
+msgstr "Nustatymai pakeisti"
+
+msgid "Order"
+msgstr "Rūšiuoti"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "Rūšiavimas (kai pirmosios rūšiavimo reikšmės yra vienodos)"
+
+msgid "Original Package"
+msgstr "Originalus paketas"
+
+msgid "Other"
+msgstr "Kita"
+
+msgid "Other Disk Usage"
+msgstr "Kitas disko naudojimas"
+
+msgid "Other Usage"
+msgstr "Kitas išnaudojimas"
+
+msgid "Overview"
+msgstr "Apžvalga"
+
+msgid "Owner"
+msgstr "Savininkas"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "Globalaus IP savininkas pakeistas į Admin %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "PHP skripto pavadinimas"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "PHP nustatymai šiam domenui negalimi"
+
+msgid "PHP Version Selector"
+msgstr "PHP versijos pasirinkimas"
+
+msgid "PHP versions saved"
+msgstr "PHP versija išsaugota"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' nėra skaičius"
+
+msgid "POP Email Accounts"
+msgstr "POP pašto dėžutės"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP serveris"
+
+msgid "Package"
+msgstr "Planas"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Toks planas jau sukurtas (%s)"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Paketas '%s' neegzistuoja"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Paketo '%s' nėra jūsų sąraše"
+
+msgid "Package not found"
+msgstr "Paketas nerastas"
+
+msgid "Page"
+msgstr "Puslapis"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Sukurtas virškatalogis (parent directory) %s."
+
+msgid "Parsing Error. Check logs"
+msgstr "Skaitymo klaida. Patikrinkite žurnalo išrašus"
+
+msgid "Password"
+msgstr "Slaptažodis"
+
+msgid "Password Changed"
+msgstr "Slaptažodis pakeistas"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Slaptažodis pakeistas: %s"
+
+msgid "Password Not Changed"
+msgstr "Slaptažodis nebuvo pakeistas"
+
+msgid "Password Saved!"
+msgstr "Slaptažodis išsaugotas!"
+
+msgid "Password is not valid"
+msgstr "Slaptažodis neteisingas"
+
+msgid "Password is too long"
+msgstr "Slaptažodis per ilgas"
+
+msgid "Password is too short"
+msgstr "Slaptažodis per trumpas"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "Slaptažodis yra per trumpas (%d).  Naudokite bent %d simbolių"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Slaptažodis turi būti ilgesnis nei %d simbolių"
+
+msgid "Password successfully changed"
+msgstr "Slaptažodis sėkmingai pakeistas"
+
+msgid "Password/Quota"
+msgstr "Slaptažodis / kvota"
+
+msgid "Password:"
+msgstr "Slaptažodis:"
+
+msgid "Passwords do not match"
+msgstr "Slaptažodžiai nesutampa"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Slaptažodžiai nesutampa arba yra neteisingi"
+
+msgid "Path"
+msgstr "Kelias"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Kelias %s neegzistuoja arba nėra prieinamas naudotojui %s."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Kelias '%s' jau egzistuoja prieš sukuriant naudotoją. Pirmiausia pašalinkite/"
+"pervadinkite šį kelią."
+
+msgid "Path does not exist"
+msgstr "Kelias neegzistuoja"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Kelias turi prasidėti pasviruoju brūkšniu (/)"
+
+msgid "Paths Unblocked"
+msgstr "Kelias atblokuotas"
+
+msgid "Paths must be within your home directory"
+msgstr "Keliai turi būti jūsų namų kataloge"
+
+msgid "Percent"
+msgstr "Procentai"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "Procentai turi baigtis ženklu % c"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr ""
+"Centrinio procesoriaus branduolio procentinė dalis. >100% f, jei norite "
+"daugiau branduolių."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "Procentinė dalis turi būti nuo %d iki %d (imtinai)"
+
+msgid "Perm."
+msgstr "Nuol."
+
+msgid "Permissions set"
+msgstr "Leidimai nustatyti"
+
+msgid "Php is not enabled"
+msgstr "PHP nėra įjungtas"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr ""
+"Patikrinkite %s zoną, kad įsitikintumėte, jog vardų serverio A įrašai yra "
+"teisingi."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Patvirtinkite, kad norite ištrinti DNSSEC duomenis"
+
+msgid "Please pick only one skin to apply"
+msgstr "Prašome pasirinkti tik vieną dizainą"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "Prašome pateikti '%s'"
+
+msgid "Please provide at least one IP"
+msgstr "Nurodykite bent vieną IP"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr ""
+"Peržiūrėkite šį URL adresą ir patikrinkite, ar nėra curl išėjimo kodo '(%d)':"
+" %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Pasirinkite 1 domeną, kuris bus jūsų numatytasis domenas"
+
+msgid "Please select at least one User"
+msgstr "Pasirinkite bent vieną vartotoją"
+
+msgid "Please select at least one domains"
+msgstr "Pasirinkite bent vieną domeną"
+
+msgid "Please select at least one file"
+msgstr "Pasirinkite bent vieną failą"
+
+msgid "Please select at least one item"
+msgstr "Pasirinkite bent vieną elementą"
+
+msgid "Please select at least one package"
+msgstr "Pasirinkite bent vieną paketą"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "Pasirinkite daugiau nei nulį failų, kuriuos norite ištraukti iš archyvo"
+
+msgid "Please select one or more Databases"
+msgstr "Pasirinkite vieną ar daugiau duomenų bazių"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Pasirinkite tik vieną periodinę užduotį, kurią redaguosite"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Prašome nustatyti ribą nuo 1 iki %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "Panaikinkite visų IP sąsajas prieš ištrindami '%s'."
+
+msgid "Please use all lower case characters in the username"
+msgstr "Vartotojo vardą rašykite tik mažosiomis raidėmis"
+
+msgid "Plugin Uploaded"
+msgstr "Įkeltas įskiepis"
+
+msgid "Plugin(s) Installed"
+msgstr "Įdiegtas (-i) įskiepis (-iai)"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Įskiepis (-iai) pašalintas (-i)"
+
+msgid "Plugin(s) Updated"
+msgstr "Atnaujintas (-i) įskiepis (-iai)"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Rodyklė '%s' jums nepriklauso."
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "Post scenarijai"
+
+msgid "Post scripts"
+msgstr "Post scenarijai"
+
+msgid "Pre-backup hard-link check"
+msgstr "Hard-link patikrinimas prieš atsarginės kopijos sukūrimą"
+
+msgid "Preparing 'domains' data"
+msgstr "'domains' duomenų paruošimas"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Duomenų paruošimas (be 'domains')"
+
+msgid "Present"
+msgstr "Esamas"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Svetainės duomenų išsaugojimas taikomas tik /domains/domain.com. Kitos "
+"sritys, pavyzdžiui, el. pašto duomenys, nebus išsaugotos."
+
+msgid "Priority"
+msgstr "Prioritetas"
+
+msgid "Privileges"
+msgstr "Privilegijos"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "Proceso ID %d nėra 'dataskq'. Tai '%s'"
+
+msgid "Process is running"
+msgstr "Procesas vykdomas"
+
+msgid "Process is stopped"
+msgstr "Procesas sustabdytas"
+
+msgid "Processor Name"
+msgstr "Procesoriaus pavadinimas"
+
+msgid "Processor Speed (MHz)"
+msgstr "Procesoriaus greitis (MHz)"
+
+msgid "Progress"
+msgstr "Būsena"
+
+msgid "Protect"
+msgstr "Apsaugoti"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr ""
+"Apsaugoto katalogo pavadinime yra netinkamų simbolių. Išlaikykite jį paprastą"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Katalogų apsauga buvo išjungta naudojant funkciją "
+"filemanager_disable_features"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr ""
+"Nurodykite IP adresą, IP rėžį, domeną arba pakaitos simbolio (wildcard) "
+"domeną."
+
+msgid "Provided password is not correct."
+msgstr "Pateiktas neteisingas slaptažodis."
+
+msgid "Provided password is weak"
+msgstr "Pateiktas slaptažodis yra silpnas"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "Pateikta reikšmė nėra vartotojo vardas arba el. pašto adresas"
+
+msgid "Provided value is not valid."
+msgstr "Pateikta reikšmė nėra teisinga."
+
+msgid "Proxy socket address"
+msgstr "Proxy lizdo adresas"
+
+msgid "Publish"
+msgstr "Publikuoti"
+
+msgid "Purge"
+msgstr "Išvalyti"
+
+msgid "Purge Archives"
+msgstr "Sunaikinti archyvus"
+
+msgid "Purge From"
+msgstr "Išvalyti nuo"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "Išvalyti %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "httpd.conf perrašymas perkeliamas į foninę užduotį."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "Įrašyti keitimai"
+
+msgid "Re-sign your zone."
+msgstr "Pasirašykite savo zoną iš naujo."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Skaitymo klaida su %s: %s"
+
+msgid "Reason:"
+msgstr "Priežastis:"
+
+msgid "Reboot"
+msgstr "Perkrauti"
+
+msgid "Receive all multicast packets."
+msgstr "Gauti visus daugiaadresinio transliavimo paketus."
+
+msgid "Received"
+msgstr "Gauta"
+
+msgid "Received Emails"
+msgstr "Gautieji el. laiškai"
+
+msgid "Reconfiguration Error"
+msgstr "Rekonfigūracijos klaida"
+
+msgid "Record Added"
+msgstr "Įrašas pridėtas"
+
+msgid "Record Edited"
+msgstr "Įrašas redaguotas"
+
+msgid "Records Deleted"
+msgstr "Įrašai ištrinti"
+
+msgid "Recursive"
+msgstr "Rekursyviai"
+
+msgid "Recursively"
+msgstr "Rekursyviai"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Rekursinis nuosavybės atstatymas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Redirect Added"
+msgstr "Peradresavimas pridėtas"
+
+msgid "Redirect URL"
+msgstr "Peradresavimo URL"
+
+msgid "Redirect(s) deleted"
+msgstr "Ištrintas (-ti) nukreipimas (-ai)"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "Atnaujinti"
+
+msgid "Regenerate Codes"
+msgstr "Pergeneruoti kodus"
+
+msgid "Related"
+msgstr "Susiję"
+
+msgid "Release Candidates"
+msgstr "Išleidimo kandidatai"
+
+msgid "Reload"
+msgstr "Atnaujinti"
+
+msgid "Reload requested"
+msgstr "Prašoma perkrauti"
+
+msgid "Remote Mail"
+msgstr "Nuotolinis paštas"
+
+msgid "Remove"
+msgstr "Pašalinti"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Remove DNS records for IP adresui (-ams)"
+
+msgid "Remove DNSSEC"
+msgstr "Pašalinti DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Pašalinti aplanko turinį"
+
+msgid "Remove From Skip List"
+msgstr "Pašalinti iš Skip sąrašo"
+
+msgid "Remove from reseller"
+msgstr "Pašalinti iš didmenininko"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Pašalintas iš %s sąrašo"
+
+msgid "Rename"
+msgstr "Pervadinti"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Failų pervadinimas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Repair"
+msgstr "Taisyti"
+
+msgid "Replies"
+msgstr "Atsakymai"
+
+msgid "Reply"
+msgstr "Atsakyti"
+
+msgid "Reply Sent"
+msgstr "Atsakymas išsiųstas"
+
+msgid "Request added to task.queue"
+msgstr "Užklausa išsiųsta į task.queue"
+
+msgid "Request will be processed in the background."
+msgstr "Užklausa bus apdorota fone."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "Prašoma LetsEncrypt reikšmė '%s' nėra leistina."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "Prašomas failų dydis (%lld) viršija maxfilesize vertę (%lld)"
+
+msgid "Requests Cancelled"
+msgstr "Atšauktos užklausos"
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Būtina: \"%s\" arba \"%s'"
+
+msgid "Reseller"
+msgstr "Didmenininkas"
+
+msgid "Reseller Bandwidth"
+msgstr "Didmenininko pralaidumas"
+
+msgid "Reseller History"
+msgstr "Didmenininko istorija"
+
+msgid "Reseller Quota"
+msgstr "Didmenininko kvota"
+
+msgid "Reseller created"
+msgstr "Didmenininkas sukurtas"
+
+msgid "Reseller deleted"
+msgstr "Didmenininkas pašalintas"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr ""
+"Didmenininkui priskirta nulis IP adresų. Negalima sukurti domeno be IP "
+"adreso."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "Didmenininkas gavo tik %s iš %s IP adreso."
+msgstr[1] "Didmenininkas gavo tik %s iš %s IP adresų."
+msgstr[2] "Didmenininkas gavo tik %s iš %s IP adresų."
+
+msgid "Reseller's IP"
+msgstr "Didmenininko IP"
+
+msgid "Reset"
+msgstr "Atkurti"
+
+msgid "Reset Owner"
+msgstr "Atkurti savininką"
+
+msgid "Reset Ownership"
+msgstr "Iš naujo nustatyti nuosavybės teises"
+
+msgid "Reset Today"
+msgstr "Atkurti šiandien"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Failų nuosavybės atstatymas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Resources allocated."
+msgstr "Resursai priskirti."
+
+msgid "Restart"
+msgstr "Perkrauti"
+
+msgid "Restore"
+msgstr "Atstatyti"
+
+msgid "Restore Complete!"
+msgstr "Atstatymas baigtas!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Atstatymo klaida su Nginx vienetu: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"Neleista atstatyti paskyros '%s' kūrėjui '%s', nes šią paskyrą jau "
+"kontroliuoja kūrėjas '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Atstatymas bus vykdomas fone"
+
+msgid "Restores added to Queue"
+msgstr "Atstatymo operacijos įtrauktos į eilę"
+
+msgid "Restoring Databases"
+msgstr "Atstatomos duomenų bazės"
+
+msgid "Restoring Domains Data"
+msgstr "Atstatomi domenų duomenys"
+
+msgid "Restoring E-Mail Data"
+msgstr "Atstatomi el.pašto duomenys"
+
+msgid "Restoring E-Mail Settings"
+msgstr "Atstatomi el.pašto nustatymai"
+
+msgid "Restoring Extra Admin Data"
+msgstr "Atstatomi papildomi Admin duomenys"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "Atstatomi papildomi didmenininko duomenys"
+
+msgid "Restoring Extra User Data"
+msgstr "Atstatomi papildomi vartotojo duomenys"
+
+msgid "Restoring FTP"
+msgstr "Atstatomas FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "Papildomų el. pašto elementų atkūrimas"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Failų atkūrimas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Result"
+msgstr "Rezultatas"
+
+msgid "Result of file copy"
+msgstr "Failo kopijavimo rezultatas"
+
+msgid "Result of file move"
+msgstr "Failo perkėlimo rezultatas"
+
+msgid "Results"
+msgstr "Rezultatai"
+
+msgid "Retries"
+msgstr "Pakartotiniai bandymai"
+
+msgid "Retry"
+msgstr "Pakartoti"
+
+msgid "Retry counter has been cleared."
+msgstr "Pakartotinių bandymų skaitliukas buvo išvalytas."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "Grąžinimo kodas 3XX(%d) reikalauja pateikti vietą"
+
+msgid "Return with httpd code"
+msgstr "Grąžinta su httpd kodu"
+
+msgid "Rewrite Apache"
+msgstr "Perrašyti Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr ""
+"RoundCube trūksta direct_login parinkties. Prašome iš naujo įdiegti "
+"RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "Maršrutas '%s' nesibaigia '%s'"
+
+msgid "Rules Reset"
+msgstr "Taisyklių atstatymas"
+
+msgid "Run Now"
+msgstr "Vykdyti dabar"
+
+msgid "Running"
+msgstr "Vykdoma"
+
+msgid "SMTP Log"
+msgstr "SMTP išrašas"
+
+msgid "SMTP Server"
+msgstr "SMTP serveris"
+
+msgid "SNI Host"
+msgstr "SNI pavadinimas"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI šiam domenui išjungtas"
+
+msgid "SSH Key Modified"
+msgstr "SSH raktas pakeistas"
+
+msgid "SSH Key authorized"
+msgstr "SSH raktas autorizuotas"
+
+msgid "SSH Key created"
+msgstr "SSH raktas sukurtas"
+
+msgid "SSH Key deleted"
+msgstr "SSH raktas ištrintas"
+
+msgid "SSH is not enabled"
+msgstr "SSH neįgalintas"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL šiam domenui išjungtas"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Saugus režimas šiems domenams išjungtas"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Saugus režimas pasirinktiems domenams įjungtas"
+
+msgid "Save"
+msgstr "Išsaugoti"
+
+msgid "Save Awstats"
+msgstr "Išsaugoti Awstats"
+
+msgid "Save Comments"
+msgstr "Išsaugoti komentarus"
+
+msgid "Save E-Mail"
+msgstr "Išsaugoti el. paštą"
+
+msgid "Save Increase"
+msgstr "Išsaugoti licenciją"
+
+msgid "Save Language"
+msgstr "Išsaugoti kalbą"
+
+msgid "Save Limit"
+msgstr "Išsaugoti limitą"
+
+msgid "Save Limit Notice"
+msgstr "Išsaugoti pranešimą apie limitą"
+
+msgid "Save Name"
+msgstr "Išsaugoti vardą"
+
+msgid "Save Nameservers"
+msgstr "Išsaugoti vardų serverius"
+
+msgid "Save Skin"
+msgstr "Išsaugoti temą"
+
+#, fuzzy
+msgid "Saved"
+msgstr "Išsaugoti"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Failų išsaugojimas / redagavimas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Scratch Codes"
+msgstr "Pradiniai kodai"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Pradiniai kodai"
+
+msgid "Script output"
+msgstr "Scenarijaus išvestis"
+
+msgid "Search"
+msgstr "Paieška"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRuleRemoveById id yra tuščias"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "Secure Socket Layer (ssl)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "Žr. %sšiame vadove%s kaip tai pataisyti."
+
+msgid "See Error log for more information."
+msgstr "Daugiau informacijos rasite dalyje klaidų žurnalas."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "Žr. šį vadovą: %s"
+
+msgid "Select"
+msgstr "Pasirinkti"
+
+msgid "Select MX Template"
+msgstr "Pasirinkite MX šabloną"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Pasirinkite IP, kurį norite susieti su %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Pasirinktas turinio tipas yra netinkamas."
+
+msgid "Selected Data"
+msgstr "Pasirinkti duomenys"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "Pasirinkti įskiepiai įjungti"
+
+msgid "Selected Plugins De-Activated"
+msgstr "Pasirinkti įskiepiai išjungti"
+
+msgid "Selected Plugins Deleted"
+msgstr "Pasirinkti įskiepiai ištrinti"
+
+msgid "Selected Users"
+msgstr "Pasirinkti naudotojai"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "Pasirinkta simbolių rinkinio koduotė negalioja."
+
+msgid "Send Count"
+msgstr "Siųsti skaičių"
+
+msgid "Send Signal"
+msgstr "Siųsti signalą"
+
+msgid "Send a Message"
+msgstr "Išsiųsti žinutę"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Siuntimo limitas turi būti galiojantis skaičius arba tuščia."
+
+msgid "Sender"
+msgstr "Siuntėjas"
+
+msgid "Sender Host"
+msgstr "Siuntimo serveris"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr "Siuntėjo domenas turi sutapti su sąrašo domenu '%s' arba naudokite '%s'"
+
+msgid "Sent"
+msgstr "Išsiųsta"
+
+msgid "Sent E-mails"
+msgstr "Išsiųsti laiškai"
+
+msgid "Sent Emails"
+msgstr "Išsiųsti laiškai"
+
+msgid "Sep"
+msgstr "Rug"
+
+msgid "Server"
+msgstr "Serveris"
+
+msgid "Server History"
+msgstr "Serverio istorija"
+
+msgid "Server Path"
+msgstr "Serverio kelias"
+
+msgid "Service"
+msgstr "Tarnyba"
+
+msgid "Set"
+msgstr "Nustatyti"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+
+msgid "Set Global Shared"
+msgstr "Nustatyti visuotinį bendrinamą"
+
+msgid "Set as Default"
+msgstr "Nustatyti kaip numatytąjį"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Nustatykite, kad pasirinktus domenus būtų galima viešai peržiūrėti iš"
+
+msgid "Set selected to"
+msgstr "Nustatykite pasirinktą į"
+
+msgid "Set to"
+msgstr "Nustatyti į"
+
+msgid "Setting"
+msgstr "Nustatymas"
+
+msgid "Setting changed"
+msgstr "Nustatymas pakeistas"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Failų / katalogų leidimų nustatymas buvo išjungtas naudojant parinktį "
+"filemanager_disable_features"
+
+msgid "Settings"
+msgstr "Nustatymai"
+
+msgid "Settings Saved"
+msgstr "Nustatymai išsaugoti"
+
+msgid "Share Selected"
+msgstr "Dalintis pasirinktais"
+
+msgid "Share a static path"
+msgstr "Dalintis statiniu keliu"
+
+msgid "Shared"
+msgstr "Pasidalinta"
+
+msgid "Shared - randomly selected"
+msgstr "Bendrai naudojami - atsitiktine tvarka atrinkti"
+
+msgid "Shell Access (ssh)"
+msgstr "SSH prieiga"
+
+msgid "Shell for Resellers's Users"
+msgstr ""
+
+msgid "Show"
+msgstr "Rodyti"
+
+msgid "Sign"
+msgstr "Pasirašyti"
+
+msgid "Signed"
+msgstr "Pasirašyta"
+
+msgid "Size"
+msgstr "Dydis"
+
+msgid "Size is not a number"
+msgstr "Dydis nėra skaičius"
+
+msgid "Skin"
+msgstr "Dizainas"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr ""
+"Dizainas '%s' neturi jokių pasirinktinių spalvų kintamųjų, kuriuos būtų "
+"galima nustatyti"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "Dizainai ištrinti"
+
+msgid "Skin Installed"
+msgstr "Dizainas įdiegtas"
+
+msgid "Skin Name"
+msgstr "Dizaino pavadinimas"
+
+msgid "Skin Owner"
+msgstr "Dizaino savininkas"
+
+msgid "Skin Set"
+msgstr "Dizainas nustatytas"
+
+msgid "Skin applied to all users"
+msgstr "Dizainas pritaikytas visiems vartotojams"
+
+msgid "Skin has been customized"
+msgstr "Dizainas buvo pakeistas"
+
+msgid "Skin has been successfully changed"
+msgstr "Dizainas buvo sėkmingai pakeistas"
+
+msgid "Skins Deleted"
+msgstr "Dizainai ištrinti"
+
+msgid "Skip Suspended"
+msgstr "Praleisti sustabdytus"
+
+msgid "Skipped rule added"
+msgstr "Pridėta praleista taisyklė"
+
+msgid "Skipping system E-Mail account"
+msgstr "Praleidžiama sisteminė el. pašto paskyra"
+
+msgid "Slave of a load balancing bundle."
+msgstr "Apkrovos balansavimo paketo pavaldusis įrenginys."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr ""
+
+msgid "Sort"
+msgstr "Rūšiuoti"
+
+msgid "Sort Selected Column in"
+msgstr "Rūšiuoti pasirinktą stulpelį"
+
+msgid "Source Domain"
+msgstr "Pagrindinis domenas"
+
+msgid "Spam"
+msgstr "Spam"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "Jūsų paskyroje SpamAassassin yra išjungtas"
+
+msgid "SpamAssassin"
+msgstr "SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "Spamassassin išjungtas"
+
+msgid "Spambox"
+msgstr "Spambox"
+
+msgid "Spamd is not running on your system."
+msgstr "Jūsų sistemoje neveikia Spamd."
+
+msgid "Splitting error for unix socket"
+msgstr ""
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr ""
+
+msgid "Start"
+msgstr "Pradžia"
+
+msgid "Start Time"
+msgstr "Pradžios laikas"
+
+msgid "Start Time must be before End Time."
+msgstr "Pradžios laikas turi būti ankstesnis už pabaigos laiką."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "State/Province turi būti tik raidės, tarpai ir (arba) taškai"
+
+msgid "Stats links created"
+msgstr ""
+
+msgid "Stats links removed"
+msgstr ""
+
+msgid "Status"
+msgstr "Statusas"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "Statusas"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr ""
+
+msgid "Stop"
+msgstr "Sustabdyti"
+
+msgid "Stopped"
+msgstr "Sustabdyta"
+
+msgid "String contains an invalid email address"
+msgstr "Eilutėje yra neteisingas el. pašto adresas"
+
+msgid "Sub Domains"
+msgstr "Subdomenas"
+
+msgid "Sub Sort"
+msgstr ""
+
+msgid "Sub Sort Selected Column in"
+msgstr ""
+
+msgid "Sub-domain is forbidden"
+msgstr "Subdomenas draudžiamas"
+
+msgid "SubDomain Name"
+msgstr "Subdomeno pavadinimas"
+
+msgid "Subdomain Created"
+msgstr "Subdomenas sukurtas"
+
+msgid "Subdomain Removed"
+msgstr "Subdomenas pašalintas"
+
+msgid "Subdomain Stats"
+msgstr "Subdomeno statistika"
+
+msgid "Subdomain already exists"
+msgstr "Subdomenas jau egzistuoja"
+
+msgid "Subdomain created"
+msgstr "Subdomenas sukurtas"
+
+msgid "Subdomain does not exist"
+msgstr "Subdomenas neegzistuoja"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Subdomenas per ilgas. Daugiausiai %d simboliai."
+
+msgid "Subdomains"
+msgstr "Subdomenai"
+
+msgid "Subdomains Removed"
+msgstr "Subdomenai pašalinti"
+
+msgid "Subdomains deleted"
+msgstr "Subdomenai pašalinti"
+
+msgid "Subject"
+msgstr "Pavadinimas"
+
+msgid "Subject Contains"
+msgstr "Pavadinimas turi"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Pavadinimas turi negalimų simbolių. Naudokite %s"
+
+msgid "Subscriber"
+msgstr "Prenumeratorius"
+
+msgid "Subscribers"
+msgstr "Prenumeratoriai"
+
+msgid "Success"
+msgstr "Pavyko"
+
+msgid "Supports multicast"
+msgstr "Palaiko multicast"
+
+msgid "Suspend"
+msgstr "Išjungti"
+
+msgid "Suspend / Unsuspend"
+msgstr "Išjungti / įjungti"
+
+msgid "Suspend Reason"
+msgstr "Pristabdymo priežastis"
+
+msgid "Suspend at Limit"
+msgstr "Išjungti pasiekus limitą"
+
+msgid "Suspended"
+msgstr "Išjungtas"
+
+msgid "Syntax check has been disabled"
+msgstr "Sintaksės tikrinimas buvo išjungtas"
+
+msgid "System Info"
+msgstr "Sisteminė informacija"
+
+msgid "System Rebooting Now!"
+msgstr "Sistema perkraunama!"
+
+msgid "System Uptime"
+msgstr "Sistemos veikimo laikas"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr "Sisteminis naudotojas egzistuoja, bet vartotojo %s failai nerasti"
+
+msgid "Systems Quotas are size 0."
+msgstr "Systemos kvota lygi 0."
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL išsaugotas"
+
+msgid "Table"
+msgstr "Lentelė"
+
+msgid "Tail"
+msgstr "Failo pabaigos peržiūra"
+
+msgid "Tasks Max"
+msgstr "Max užduočių"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"Laikinasis failas %s yra 0 baitų po įrašymo į diską.  Jo nepavyks pervadinti."
+
+msgid "Template does not exist"
+msgstr "Šablonas nerastas"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "Laikinas srauto limito padidinimas"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "Nustatytas laikinas pralaidumo padidinimas"
+
+msgid "Text"
+msgstr "Tekstas"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "Šis ID nėra ‘admin’ tipo"
+
+msgid "That IP already exists on the domain"
+msgstr "Šis IP adresas jau priskirtas domenui"
+
+msgid "That IP does not exist"
+msgstr "IP adresas neegzistuoja"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "Šis IP nerastas Jūsų vartotojo IP adresų sąraše"
+
+msgid "That IP does not exist in your list"
+msgstr "Šis IP nepriklauso Jums"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "Šis IP adresas jau priskirtas Jums"
+
+msgid "That IP is already owned"
+msgstr "Šis IP adresas jau turi šeimininką"
+
+msgid "That IP is not available for linking"
+msgstr "Šis IP negali būti susietas"
+
+msgid "That User already exists on another server"
+msgstr "Vartotojas egzistuoja kitame serveryje"
+
+msgid "That database already exists"
+msgstr "Duomenų bazė jau egzistuoja"
+
+msgid "That database does not belong to you"
+msgstr "Ši duomenų bazė Jums nepriklauso"
+
+msgid "That database does not exist"
+msgstr "Duomenų bazė nerasta"
+
+msgid "That domain already exists"
+msgstr "Domenas užimtas"
+
+msgid "That domain already exists on another server"
+msgstr "Domenas naudojamas kitame serveryje"
+
+msgid "That domain does not belong to you"
+msgstr "Šis domenas Jums nepriklauso"
+
+msgid "That domain does not exist"
+msgstr "Domenas neegzistuoja"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr ""
+
+msgid "That email user does not exist"
+msgstr "El.pašto vartotojas nerastas"
+
+msgid "That file was empty"
+msgstr "Failas yra tuščias"
+
+msgid "That filter already exists"
+msgstr "Toks filtras jau yra"
+
+msgid "That ftp_password file does not exist"
+msgstr "Šis ftp_password failas neegzistuoja"
+
+msgid "That is an invalid email address / email list"
+msgstr "Neteisingas el. paštas adresas / el. pašto sąrašas"
+
+msgid "That is an invalid filename"
+msgstr "Klaidinga failo galūnė"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+
+msgid "That is not a valid quota"
+msgstr "Klaidingas kvotos dydis"
+
+msgid "That is not a valid username"
+msgstr "Neteisingas vartotojo vardas"
+
+msgid "That is not your domain"
+msgstr "Domenas Jums nepriklauso"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Šis kompiuterio vardas jau naudojamas. Arba pakeiskite kompiuterio vardą, "
+"arba naudokite kita domeno vardą"
+
+msgid "That key does not exist"
+msgstr "Toks raktas nerastas"
+
+msgid "That password is incorrect"
+msgstr "Slaptažodis neteisingas"
+
+msgid "That path isn't protectable"
+msgstr "Šio katalogo apsaugoti negalima"
+
+msgid "That pop account doesn't exist"
+msgstr ""
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Šio dizaino negalima pritaikyti. skin.conf reikalauja %s"
+
+msgid "That skin does not exist"
+msgstr "Šis dizainas neegzistuoja"
+
+msgid "That skin is not in your list"
+msgstr "Šio dizaino nėra Jūsų sąraše"
+
+#, fuzzy
+msgid "That skin name already exists"
+msgstr "Raktas tokiu pavadinimu jau egzistuoja"
+
+msgid "That user already exists"
+msgstr "Toks naudotojas jau naudojamas"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+
+msgid "That user does not belong to you"
+msgstr "Šitas naudotojas jums nepriklauso"
+
+msgid "That user does not exist"
+msgstr "Tokio naudotojo vardo nėra"
+
+msgid "That user doesn't exist"
+msgstr "Tokio naudotojo vardo nėra"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Toks naudotojo vardas yra užimtas anoniminės paskyros naudojimui"
+
+msgid "That username already exists on the system"
+msgstr "Šis naudotojas jau sukurtas"
+
+msgid "That username is a reserved system name"
+msgstr "Naudotojo vardas yra užimtas sistemos"
+
+msgid "That zone already exists"
+msgstr "Zona jau sukurta"
+
+msgid "Thats a reserved skin name."
+msgstr "Tai yra rezervuotas dizaino pavadinimas."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "Atsarginės kopijos %s buvo sukurtos ant %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "Perduota 'ttl' reikšmė nėra skaičius arba yra per didelė"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "Naudotojo atsargignės kopijos funcija išjungta administratoriaus"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "CA sertifikatas nebus naudojamas.  Failas išliks, bet nebus įtrauktas."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr "Įvesta CC vertė sukurs begalinį ciklą.  Įveskite kitą CC vertę."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "El. pašto adresas '%s' naudoja neteiksingus simbolius"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP adresas %s nerastas. Vartotojas %s sukurtas nebus"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP %s pateikė teisingą %s paskyros slaptažodį."
+
+msgid "The Ticket System is not enabled."
+msgstr "Pagalbos sistema išjungta."
+
+msgid "The User backups have been uploaded to"
+msgstr "Vartotojo atsarginė kopija buvo įkelta į"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "Naudotojo atsarginė kopija buvo atstatyta iš %s"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr ""
+
+msgid "The addresses are lost when the interface goes down."
+msgstr ""
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Laikinoji atmintis yra atnaujinama, dabartinės reikšmės gali būti "
+"neteisingos. Prašome atnaujinti puslapį po 1 minutės"
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Sertifikatas ir raktas nesutampa.  Įsitikinkite, kad su šiuo sertifikatu "
+"naudojate tinkamą raktą"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "Iškarpinė buvo išjungta naudojant parinktį filemanager_disable_features"
+
+msgid "The command cannot contain any newline characters"
+msgstr "Komanda negali turėti naujos eilutės simbolio"
+
+msgid "The database '%s' does not belong to you"
+msgstr "Duomenų bazė '%s' Jums nepriklauso"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "Mėnesio diena nėra galiojanti cron reikšmė (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "Savaitės diena nėra galiojanti cron reikšmė (0-7)"
+
+msgid "The default has been set"
+msgstr ""
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Šis domenas %s Jums nepriklauso."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "Šis domenas %s Jums nepriklauso. Subdomenas nebus sukurtas."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr ""
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "Pakeistas (-i) domenas (-ai)"
+
+msgid "The domain must not match your hostname."
+msgstr "Domenas negali atitikti Jūsų kompiuterio vardo"
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "Pakeitimai neatlikti"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "El. laiškas su jūsų nauju slaptažodžiu buvo išsiųstas."
+
+msgid "The email address provided is not a valid email address"
+msgstr "Pateiktas el. pašto adresas nėra galiojantis"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Įvestas kelias turi būti a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr ""
+
+msgid "The file is generated when the account is reset."
+msgstr "Failas sukuriamas atstatant paskyrą."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Failas privalo atitikti formą: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Failas privalo atitikti formą: username.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr ""
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Nepavyko rasti šio failo.  Atstatymas nėra būtinas"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr ""
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "ftp naudotojas %s neegzistuoja slaptažodžių faile %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr ""
+
+msgid "The local url path or the destination url is invalid."
+msgstr ""
+
+msgid "The location has not changed"
+msgstr "Vieta nepasikeitė"
+
+msgid "The max upload size cannot be 0"
+msgstr "Maksimalus įkėlimo dydis negali būti 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "Didžiausia %s reikšmė yra %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "Maksimali vertė yra %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "Mažiausia %s reikšmė yra %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "Pateiktas mėnuo nėra teisinga cron reikšmė (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "Įvestame pavadinime yra netinkamų simbolių"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr "Nauji slaptažodžiai nesutampa"
+
+msgid "The number and type of ticket is required"
+msgstr "Reikia nurodyti užklausos numerį ir tipą"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr ""
+
+msgid "The password changing feature has been disabled"
+msgstr "Slaptažodžio keitimo funkcija buvo išjungta"
+
+msgid "The path %s already exists"
+msgstr "Kelias %s jau egzistuoja"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Kelias jau egzistuoja, bet tai nėra katalogas"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+
+msgid "The provided IP is not valid"
+msgstr "Pateiktas IP yra neteisingas"
+
+msgid "The provided domain name matches your hostname."
+msgstr "Pateiktas domeno vardas sutampa su jūsų serverio vardu."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+
+msgid "The requested command requires POST but GET was used"
+msgstr "Prašoma komanda turi būti POST, bet buvo naudojama GET"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Subdomenas '%s' jau egzistuoja po domenu %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"Laikas turi būti pateiktas taip, kaip nurodyta toliau (pvz., valanda, be "
+"tarpų)"
+
+msgid "The user %s does not belong to you"
+msgstr "Naudotojas %s tau nepriklauso"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Naudotojo vardas netinkamas. Naudotojų vardai turi prasidėti a-z raidėmis, "
+"turėti tarp 3 ir %d simbolių."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "Naudotojo vardas netinkamas. Naudotojų vardai turi naudoti a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Reikšmė turi būti IP adresas"
+
+msgid "The very last entry."
+msgstr "Pats paskutinis įrašas."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Pasveikinimo laiškas (-ai) sėkmingai išsiųstas (-i) iš naujo."
+
+msgid "There are no messages for that ticket"
+msgstr "Nėra jokių pranešimų šiai užklausai"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "Vis dar yra %d keliai naudojantys '%s'."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "Nepavyko atnaujinti %d kartų, todėl daugiau bandymų nebus atliekama.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Jau yra CNAME įrašas su šiuo vardu"
+
+msgid "There is already a mailing list alias with that name"
+msgstr ""
+
+msgid "There is already an A record with that name"
+msgstr "Jau yra A įrašas su šiuo vardu"
+
+msgid "There is already an account with that name"
+msgstr "Jau yra paskyra su šiuo vardu"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Jau yra auto atsakiklis su šiuo vardu"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "%s nėra pakankamai vietos, kad būtų galima įkelti %lld baitų duomenų"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr ""
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Tai yra dinaminės vertės. Jos keičiasi priklausomai nuo datos."
+
+msgid "This Login Key is read-only"
+msgstr "Šis prisijungimo raktas skirtas tik skaitymui"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Ši operacinė sistema jau nebepalaikoma. Ateityje automatiniai atnaujinimai "
+"gali nepavykti."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"Ši paskyra jau egzistuoja sistemoje. Jei ją atstatysite, duomenys bus "
+"perrašyti ir (arba) sujungti."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "Ši paskyra užblokuota naudojant BlockCracking."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr "Ši paskyra užblokuota naudojant BlockCracking. Atblokavimas išjungtas."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+
+msgid "This is a placeholder for the subdomain"
+msgstr ""
+
+msgid "This may give unexpected results"
+msgstr "Tai gali duoti netikėtų rezultatų"
+
+msgid "This may give unexpected results."
+msgstr "Tai gali duoti netikėtų rezultatų."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr "Šis įskiepis buvo išjungtas jūsų paskyroje"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr ""
+
+msgid "Thread Count"
+msgstr "Gijų skaičius"
+
+msgid "Throttle Memory above this limit."
+msgstr ""
+
+msgid "Ticket #"
+msgstr "Užklausos #"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "Nustatytos naudotojo sistemos kvotos"
+
+msgid "Tickets Updated"
+msgstr "Užklausos atnaujintos"
+
+msgid "Time"
+msgstr "Laikas"
+
+msgid "Timeout during read"
+msgstr ""
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr ""
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "Laiko juosta '%s' sistemoje neegzistuoja"
+
+msgid "Timezone does not exist"
+msgstr "Laiko juosta neegzistuoja"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"Norint pridėti periodinę užduotį, reikia visų šių parametrų: minutės, "
+"valandos, mėnesio dienos, mėnesio, savaitės dienos ir komandos"
+
+msgid "Today"
+msgstr "Šiandien"
+
+msgid "Today at"
+msgstr "Šiandien"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Vartotojo %s šiandienos el. laiškų skaičius iš naujo nustatytas"
+
+msgid "Too long"
+msgstr "Per ilgas"
+
+msgid "Too short"
+msgstr "Per trumpas"
+
+msgid "Total"
+msgstr "Iš viso"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Bendras disko naudojimas (MB)"
+
+msgid "Total Memory"
+msgstr "Viso atminties"
+
+msgid "Total Size:"
+msgstr "Bendras dydis:"
+
+msgid "Total Swap Memory"
+msgstr "Viso swap atminties"
+
+msgid "Total Usage"
+msgstr "Visas sunaudojimas"
+
+msgid "Two-Step Authentication code is missing."
+msgstr "Trūksta divejų lygių autentifikacijos kodo."
+
+msgid "Type"
+msgstr "Tipas"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Toks tipas (%s) išjungtas"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "Galimi tipai 'paste' arba 'id'"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL already exists"
+msgstr "URL egzistuoja"
+
+msgid "Un-Link"
+msgstr "Atsieti"
+
+msgid "Un-Set"
+msgstr ""
+
+msgid "Unable To Execute Your Request"
+msgstr "Nepavyko įvykdyti Jūsų užklausos"
+
+msgid "Unable to Execute Your Command"
+msgstr "Nepavyko įvykdyti Jūsų komandos"
+
+msgid "Unable to Locate that domain"
+msgstr "Toks domenas nerastas"
+
+msgid "Unable to add IP"
+msgstr "Nepavyko pridėti IP"
+
+msgid "Unable to add access host:"
+msgstr ""
+
+msgid "Unable to add domain pointer"
+msgstr "Nepavyko pridėti domeno nuorodos"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Nepavyko pridėti vartotojo į ssh konfiguracijos failą"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Nepavyksta paskirstyti neriboto %s. Šiai paskyrai neleidžiama sukurti tokios "
+"sumos."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "Nepavyksta patvirtinti autentiškumo: Patikrinkite slaptažodžio sintaksę"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Autentifikacija nepavyko: neteisingas slaptažodis"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "Nepavyksta pakeisti %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "Nepavyksta pakeisti „Directadmin“ naujinimo kanalo"
+
+msgid "Unable to change password"
+msgstr "Slaptažodžio keitimas nesėkmingas"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Nepavyksta pakeisti el. pašto adreso"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Nepavyksta pakeisti pranešimų sistemos el. pašto adreso"
+
+msgid "Unable to change the Name"
+msgstr "Nepavyksta pakeisti vardo"
+
+msgid "Unable to change the limit"
+msgstr "Nepavyksta pakeisti limito"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "Nepavyksta pakeisti laikino pralaidumo padidinimo"
+
+msgid "Unable to check latest version"
+msgstr "Nepavyksta patikrinti naujausios versijos"
+
+msgid "Unable to connect to secure socket"
+msgstr ""
+
+msgid "Unable to connect to the database"
+msgstr "Nepavyksta prisijungti prie duomenų bazės"
+
+msgid "Unable to create a Reseller"
+msgstr "Nepavyksta sukurti didmenininko"
+
+msgid "Unable to create a User"
+msgstr "Nepavyksta sukurti naudotojo"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "Nepavyksta sukurti atsarginės kopijos katalogo (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Nepavyksta sukurti katalogo %s"
+
+msgid "Unable to create new file"
+msgstr "Nepavyksta sukurti naujo failo"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Neįmanoma sukurti IP adreso reverso paieškos"
+
+msgid "Unable to create subdomain"
+msgstr "Nepavyksta sukurti subdomeno"
+
+msgid "Unable to create user's data directory"
+msgstr "Nepavyksta sukurti naudotojo duomenų katalogo"
+
+msgid "Unable to create zone"
+msgstr "Nepavyksta sukurti srities"
+
+msgid "Unable to create zone."
+msgstr "Nepavyksta sukurti srities."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Nepavyksta ištrinti %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Nepavyksta ištrinti katalogo %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Nepavyksta ištrinti failų"
+
+msgid "Unable to delete the main email account"
+msgstr "Nepavyksta ištrinti pagrindinės el. pašto paskyros"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "Nepavyksta ištrinti perpardavėjo ip.list failo."
+
+msgid "Unable to delete users's domains directory"
+msgstr "Nepavyksta ištrinti naudotojų domenų katalogo"
+
+msgid "Unable to edit file"
+msgstr "Nepavyksta redaguoti failo"
+
+msgid "Unable to execute script"
+msgstr "Nepavyksta įvykdyti scenarijaus"
+
+msgid "Unable to execute your command"
+msgstr "Nepavyksta įvykdyti jūsų komandos"
+
+msgid "Unable to execute your request"
+msgstr "Nepavyksta įvykdyti jūsų užklausos"
+
+msgid "Unable to export packages"
+msgstr "Nepavyksta eksportuoti paketų"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Nepavyksta išgauti %s iš"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Nepavyksta išgauti user.conf, reseller.conf arba ip.list iš"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Nepavyksta rasti %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Nepavyksta rasti CA sertifikato"
+
+msgid "Unable to find certificate"
+msgstr "Nepavyksta rasti sertifikato"
+
+msgid "Unable to find key"
+msgstr "Nepavyksta rasti rakto"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "Nepavyksta gauti %s failo statistikos"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Nepavyksta užrakinti %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr ""
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "Nepavyksta užrakinti %s srities"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "Nepavyksta užrakinti %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Nepavyksta užrakinti „%s“ paskyros veiksmų"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Nepavyksta užrakinti naudotojo %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr "Nepavyksta modifikuoti šio domeno"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "Nepavyksta atidaryti %s pridėjimui"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "Nepavyksta atidaryti %s pridėjimui: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "Nepavyksta atidaryti %s skaitymui"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "Nepavyksta atidaryti %s įrašymui: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "Nepavyksta atidaryti %s: %s"
+
+msgid "Unable to open a socket"
+msgstr ""
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr ""
+"Nepavyksta atidaryti ca sertifikato failo (%s), į kurį būtų galima rašyti: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr ""
+"Nepavyksta atidaryti sertifikato failo (%s), į kurį būtų galima įrašyti: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "Nepavyko nuskaityti %s iš skripto '%s ' (%s) išvesties:"
+
+msgid "Unable to parse form"
+msgstr ""
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "Nepavyksta nuskaityti %s kaip paskyros %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Nepavyksta perskaityti naudotojo %s failų"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr ""
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr ""
+"Nepavyksta perskaityti %s.  Šis failas sukuriamas tik tada, kai pristatomi "
+"el. laiškai."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Nepavyksta perskaityti %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Nepavyko nuskaityti DS failo %s"
+
+msgid "Unable to read History File."
+msgstr "Nepavyksta perskaityti istorijos failo."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Nepavyksta perskaityti „RoundCube“ atsarginės kopijos scenarijaus: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Nepavyksta perskaityti \"RoundCube\" atstatymo scenarijaus: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Nepavyksta nuskaityti duomenų iš %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "Nepavyksta perskaityti directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "Nepavyksta nuskaityti domeno konfigūracijos failų"
+
+msgid "Unable to read login history file"
+msgstr "Nepavyksta perskaityti prisijungimo istorijos failo"
+
+msgid "Unable to read package"
+msgstr "Nepavyksta perskaityti paketo"
+
+msgid "Unable to read system uptime"
+msgstr "Nepavyksta nuskaityti sistemos veikimo laiko"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr ""
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr ""
+
+msgid "Unable to read the user's files"
+msgstr "Nepavyksta perskaityti naudotojo failų"
+
+msgid "Unable to read ticket config file"
+msgstr "Nepavyksta nuskaityti bilieto konfigūracijos failo"
+
+msgid "Unable to read zone file to increase serial"
+msgstr ""
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr ""
+
+msgid "Unable to reboot"
+msgstr "Nepavyksta paleisti iš naujo"
+
+msgid "Unable to remove IP(s)"
+msgstr "Nepavyksta pašalinti IP adreso (-ų)"
+
+msgid "Unable to remove Unix User."
+msgstr "Nepavyksta pašalinti „Unix“ vartotojo."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "Nepavyksta pašalinti visų didmenininko naudotojų"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Nepavyksta pervadinti %s į %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "Nepavyksta atstatyti %s į %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Nepavyksta atstatyti „%s“, nes negalima rasti didmenininko arba "
+"administratoriaus „%s“. Jei reikia, pakeiskite failo pavadinimą."
+
+msgid "Unable to restore database"
+msgstr "Nepavyksta atstatyti duomenų bazės"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "Nepavyko išsaugoti dns zonos: named-checkzone grąžinta:"
+
+msgid "Unable to save your changes"
+msgstr "Nepavyksta išsaugoti pakeitimų"
+
+msgid "Unable to set bandwidth"
+msgstr "Nepavyksta nustatyti pralaidumo"
+
+msgid "Unable to set file permissions"
+msgstr "Nepavyksta nustatyti failų leidimų"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "Nepavyksta nustatyti ip %s kaip vardų serverio. Vis tiek tęsiame."
+
+msgid "Unable to set password"
+msgstr "Nepavyksta nustatyti slaptažodžio"
+
+msgid "Unable to set quota"
+msgstr "Nepavyksta nustatyti kvotos"
+
+msgid "Unable to set stats link"
+msgstr "Nepavyksta nustatyti statistikos nuorodos"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Nepavyksta nustatyti el.pašto limito"
+
+msgid "Unable to set the shell"
+msgstr ""
+
+msgid "Unable to show Admin History"
+msgstr "Nepavyksta parodyti „Admin“ istorijos"
+
+msgid "Unable to show Reseller History"
+msgstr "Nepavyksta parodyti „didmenininko“ istorijos"
+
+msgid "Unable to show User History"
+msgstr "Nepavyksta parodyti naudotojo istorijos"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Nepavyksta parodyti dabartinio el. pašto sunaudojimo"
+
+msgid "Unable to show the system information"
+msgstr "Nepavyksta parodyti sistemos informacijos"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "Nepavyksta išmesti %s į %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Nepavyksta atrakinti naudotojo %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Nepavyksta atnaujinti Directadmin"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Nepavyksta atnaujinti disko išnaudojimo"
+
+msgid "Unable to use that new domain name"
+msgstr "Negalima naudoti šio naujo domeno vardo"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Nepavyksta įrašyti naudotojo %s failų"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Nepavyksta įrašyti %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "Nepavyksta įrašyti naudotojo httpd.conf"
+
+msgid "Unable to write reseller's IP list"
+msgstr "Nepavyksta įrašyti didmenininko IP sąrašo"
+
+msgid "Unable to write the domain config file"
+msgstr "Nepavyksta įrašyti domeno konfigūracijos failo"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Nepavyksta įrašyti kvotos failo. Praneškite administratoriui, kad %s yra "
+"neįrašomas."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Nepavyksta įrašyti sistemos ftp slaptažodžių failo, kad būtų pašalintas "
+"sistemos ftp naudotojas"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+
+msgid "Unable to write ticket config"
+msgstr "Nepavyksta įrašyti bilieto konfigūracijos"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+
+msgid "Unable to write zone file to increase serial"
+msgstr ""
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr ""
+
+msgid "Unblock"
+msgstr "Atblokuoti"
+
+msgid "Unblocking is disabled."
+msgstr "Atblokavimas išjungtas."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr ""
+"Atžymėjus, failas bus nedelsiant panaikintas iš disko ir jo nebus galima "
+"atkurti"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr "Netikėta klaida, kreipkitės į serverio administratorių"
+
+msgid "Unhandled exception name"
+msgstr ""
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr ""
+
+msgid "Unix User created successfully"
+msgstr "Sėkmingai sukurtas Unix vartotojas"
+
+msgid "Unix User removed from the server"
+msgstr "Unix vartotojas pašalintas iš serverio"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr ""
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "Nežinomas '%s'"
+
+msgid "Unknown action"
+msgstr "Nežinomas veiksmas"
+
+msgid "Unknown backup destination"
+msgstr ""
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr ""
+
+msgid "Unknown ftp type"
+msgstr "Nežinomas ftp tipas"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "Nežinoma parinktis '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "Nežinoma reikšmė '%s'"
+
+msgid "Unlimited"
+msgstr "Neribota"
+
+msgid "Unsuspend"
+msgstr "Įjungti"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+
+msgid "Up a Level"
+msgstr "Lygiu aukščiau"
+
+msgid "Update"
+msgstr "Atnaujinti"
+
+msgid "Update Successful"
+msgstr "Atnaujinimas sėkmingas"
+
+msgid "Update channel has been successfully changed"
+msgstr ""
+
+msgid "Update not necessary"
+msgstr "Atnaujinimas nebūtinas"
+
+msgid "Update queued"
+msgstr ""
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+
+msgid "Upload successful"
+msgstr "Įkėlimas sėkmingas"
+
+msgid "Uploaded file is not valid for copy"
+msgstr ""
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "Įkelta: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Failų įkėlimas buvo išjungtas naudojant parinktį filemanager_disable_features"
+
+msgid "Usage (Meg)"
+msgstr "Naudojimas (MB)"
+
+msgid "Usage Log"
+msgstr "Naudojimo išrašas"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "Šios paskyros naudojimosi statistika dar nesurinkta"
+
+msgid "User"
+msgstr "Naudotojas"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "Vartotojas %s pašalintas"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "Vartotojas %s jau egzistuoja.  Pasirinkite kitą naudotojo vardą."
+
+#, c-format
+msgid "User %s created"
+msgstr "Vartotojas %s sukurtas"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr ""
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "Vartotojas %s neegzistuoja sistemoje."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "Vartotojas %s egzistuoja sistemoje, bet jo nėra jūsų vartotojų sąraše"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "Vartotojas %s įtrauktas į jūsų duomenų bazę.  Naudokite šias reikšmes:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "Naudotojo %s atsarginė kopija sukurta."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Naudotojas %s atkurtas"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Vartotojas %s buvo atnaujintas.  Naudokite šias reikšmes:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr ""
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "Vartotojas %s jau išjungtas"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "Vartotojas %s jau įjungtas"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr "Vartotojo %s nėra jūsų sąraše.  Negalite sukurti jo atsarginės kopijos."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr ""
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr ""
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr ""
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr ""
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "Vartotojas '%s' neegzistuoja"
+
+msgid "User Acconts"
+msgstr ""
+
+msgid "User Accounts"
+msgstr "Naudotojo paskyros"
+
+msgid "User Bandwidth"
+msgstr "Naudotojo duomenų srautas"
+
+msgid "User Comment Box"
+msgstr ""
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Vartotojo DNSSEC valdymas išjungtas"
+
+msgid "User Disk Quota"
+msgstr "Vartotojo disko kvota"
+
+msgid "User History"
+msgstr "Naudotojo istorija"
+
+msgid "User Modified"
+msgstr ""
+
+msgid "User SMTP Logs are are not enabled"
+msgstr ""
+
+msgid "User Updated"
+msgstr "Vartotojas atnaujintas"
+
+#, fuzzy
+msgid "User account is disabled"
+msgstr "'%s' yra būtinas"
+
+msgid "User added to SSH config file successfully"
+msgstr "Vartotojas sėkmingai įtrauktas į SSH konfigūracijos failą"
+
+msgid "User added to database"
+msgstr "Vartotojas įtrauktas į duomenų bazę"
+
+msgid "User added to named.conf file successfully"
+msgstr "Vartotojas sėkmingai įtrauktas į named.conf failą"
+
+msgid "User added to ssh config file."
+msgstr "Vartotojas įtrauktas į ssh konfigūracijos failą."
+
+msgid "User backups have been disabled."
+msgstr "Vartotojo atsarginės kopijos buvo išjungtos."
+
+msgid "User config file updated."
+msgstr "Atnaujintas vartotojo konfigūracijos failas."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "User removed from SSH"
+msgstr "Vartotojas pašalintas iš SSH"
+
+msgid "User's System Quotas set"
+msgstr "Nustatytos naudotojo sistemos kvotos"
+
+msgid "User's config files deleted"
+msgstr "Ištrinti naudotojo konfigūracijos failai"
+
+msgid "User's data directory created successfully"
+msgstr "Sėkmingai sukurtas naudotojo duomenų katalogas"
+
+msgid "User's data directory removed."
+msgstr "Pašalintas naudotojo duomenų katalogas."
+
+msgid "User(s)"
+msgstr "Naudotojas (-ai)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "UserDir: %s"
+
+msgid "Username"
+msgstr "Naudotojo vardas"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "Vartotojo vardas „%s“ yra per ilgas. Ilgis %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "Vartotojo vardas per trumpas, naudokite bent 2 simbolius."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"Vartotojo vardas turi susidėti iš raidžių ir skaičių (a-z, A-Z, 0-9), o "
+"pirmasis simbolis turi būti raidė"
+
+msgid "Username:"
+msgstr "Vartotojo vardas:"
+
+msgid "Users"
+msgstr "Naudotojai"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "Įrašai ištrinti"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "Vartotojas %s pašalintas"
+
+msgid "Users will be deleted in the background."
+msgstr "Vartotojai bus ištrinti fone."
+
+msgid "Users's domains directory removed."
+msgstr "Vartotojo domeno katalogas pašalintas."
+
+msgid "Usertype"
+msgstr "Naudotojo tipas"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Kelio %s naudojimas neleidžiamas."
+
+msgid "Vacation Account"
+msgstr "Atostogų paskyra"
+
+msgid "Vacation Message Deleted"
+msgstr "Atostogų pranešimas pašalintas"
+
+msgid "Vacation Message set"
+msgstr "Atostogų pranešimas nustatytas"
+
+msgid "Vacation Message updated"
+msgstr "Atostogų pranešimas atnaujintas"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "Atostogų pranešimas pašalintas"
+
+msgid "Valid"
+msgstr "Tinkamas"
+
+msgid "Valid broadcast address set."
+msgstr "Transliavimo adresas nustatytas."
+
+msgid "Value"
+msgstr "Reikšmė"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "Pateiktoje paraiškoje trūksta kintamojo ‘ip‘"
+
+msgid "Vendor ID"
+msgstr "Tiekėjo ID"
+
+msgid "Verify"
+msgstr "Patikrinti"
+
+msgid "View"
+msgstr "Rodinys"
+
+msgid "View Clipboard"
+msgstr "Peržiūrėti iškarpinę"
+
+msgid "View previous sort"
+msgstr "Peržiūrėti ankstesnį rūšiavimą"
+
+msgid "Warning from named-checkzone:"
+msgstr "Įspėjimas iš named-checkzone:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"Įspėjimas: %s turi teisingą slaptažodį %s, tačiau %s kartų nepavyko įvesti "
+"teisingo dviejų faktorių autentifikacijos kodo."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr ""
+"Įspėjimas: Pasiektas kvotos limitas. Failas (-ai) gali būti tuščias (-i)."
+
+msgid "Warning: The system load average is"
+msgstr "Dėmesio: sistemos apkrova yra"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr ""
+
+msgid "Webalizer"
+msgstr "Webalizeras"
+
+msgid "Webmail"
+msgstr "Webmail"
+
+msgid "Webmail Attachments"
+msgstr "„Webmail“ priedai"
+
+msgid "Webmail SSO"
+msgstr ""
+
+msgid "Week of Month"
+msgstr "Mėnesio savaitė"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr ""
+
+msgid "What"
+msgstr "Ką"
+
+msgid "When"
+msgstr "Kada"
+
+msgid "Where"
+msgstr "Kur"
+
+msgid "Who"
+msgstr "Kas"
+
+msgid "Wildcard"
+msgstr "Wildcard"
+
+msgid "With Selected"
+msgstr "Su pasirinkta"
+
+msgid "With selected"
+msgstr "Su pasirinktais"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Nepavyksta aktyvuoti %s paskyros, nes ji išjungta"
+
+msgid "Wordpress"
+msgstr "Wordpresas"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Įrašymo klaida, susijusi su %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "Neteisingas elementų '%s' skaičius.  Leidžiama: 1 arba 2 su '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr ""
+
+msgid "Year"
+msgstr "Metai"
+
+msgid "Yes"
+msgstr "Taip"
+
+msgid "You already have the most recent version of the program"
+msgstr "Jau turite naujausią programinę įrangą"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Jums neleidžiama įjungti anoniminio ftp"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Jums neleidžiama keisti ssl nustatymų"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "Bandote atkurti zst failą, tačiau sistemoje nėra įjungtas zstd."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "Jums neleidžiama keisti to bilieto"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr "Pavadinimas “majordomo” yra rezervuotas"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Root vartotojas suspenduoti negalima."
+
+msgid "You cannot add that extension"
+msgstr "Šio plėtinio pridėti negalima"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr ""
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "Negalite priskirti domenui didesnės kvotos nei nustatya jūsų paskyroje"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "Negalite sukurti daugiau vartotojų, nei leidžiama domenų."
+
+msgid "You cannot delete all of your IPs"
+msgstr "Visų IP adresų pašalinti negalima"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr "Negalite ištrinti paskyros %s, nes ji susieta su jūsų sistemos paskyra"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Neįmanoma ištrinti savo paskyros (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Ši komanda negalima"
+
+msgid "You cannot modify yourself"
+msgstr "Savo paskyros redagavimas negalimas"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"Negalima atstatyti kelių naudotojų su tuo pačiu laisvu IP adresu. Visų pirma "
+"padarykite IP adresą bendrinamu (shared)."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Išsiųstų laiškų limitas neribotas būti negali."
+
+msgid "You cannot suspend yourself"
+msgstr "Negalima suspenduoti savęs"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr ""
+
+msgid "You cannot unsuspend this account."
+msgstr ""
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr "Šis domenas jau naudojamas serveryje, tad negalite jo naudoti"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr ""
+
+msgid "You did not select any domains to modify"
+msgstr "Nepasirinkote jokio domeno"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr ""
+
+msgid "You didn't select anyone to send it to"
+msgstr "Nepasirinkote, kam jį siųsti"
+
+msgid "You do not have control over user"
+msgstr "Šio vartotojo Jūs nevaldote"
+
+msgid "You do not own any IPs"
+msgstr "Jums nepriklauso joks IP adresas"
+
+msgid "You do not own that IP"
+msgstr "Šis IP adresas Jums nepriklauso"
+
+msgid "You do not own that domain"
+msgstr "Šis domenas Jums nepriklauso"
+
+msgid "You do not own that ip"
+msgstr "Šis IP Jums nepriklauso"
+
+msgid "You do not own that that cron ID"
+msgstr "Šis cron ID Jums nepriklauso"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "Jums nepriklauso IP %s. Vartotojas %s nebus sukurtas"
+
+msgid "You don't have authority over that User"
+msgstr ""
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "Neturite teisės atsakyti bilietą"
+
+msgid "You don't have permission to restore user"
+msgstr "Neturite teisių atstatyti naudotoją"
+
+msgid "You don't have permission to view that ticket"
+msgstr "Neturite teisių peržiūrėti šį bilietą"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "Jums liko %d:%.2d."
+
+msgid "You have already reached your assigned limit"
+msgstr "Jau pasiekėte jums paskirtą limitą"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Ne pridėjote jokių failų į laikinąją atmintį."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Jūs nepasirinkote jokių failų.  Prieš atkuriant atsarginę kopiją, grįžkite "
+"atgal ir pasirinkite bent vieną failą."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Jūs nepasirinkote jokių vartotojų.  Prieš atkuriant atsarginę kopiją, "
+"grįžkite atgal ir pasirinkite bent vieną vartotoją."
+
+msgid "You have not selected any domains"
+msgstr "Nepasirinkote jokių domenų"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+
+msgid "You may need to press F5 to reload the logo"
+msgstr ""
+
+msgid "You may not use an IP for a domain name"
+msgstr "Negalima naudoti IP adreso domeno vardui"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Turite įvesti chmod reikšmę, pvz.: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Turite įvesti aplanko „pavadinimą“, pvz.: images"
+
+msgid "You must enter both password"
+msgstr "Privalote įvesti abu slaptažodžius"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "Turite įvesti numerį, vartotoją, temą, prioritetą, būseną ir pranešimą"
+
+msgid "You must enter the password in both fields"
+msgstr "Įveskite slaptažodį abiejuose laukeliuose"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Turite įvesti vartotoją, temą, prioritetą ir pranešimą"
+
+msgid "You must first create some packages"
+msgstr "Is pradžių sukurkite planą"
+
+msgid "You must first own an IP"
+msgstr "IP turi priklausyti Jums"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr ""
+"Privalote turėti daugiau nei 0 NS įrašų, kitaip named negali būti paleistas."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"Jei 'required_hits' yra 'custom', turite nurodyti 'required_hits' ir "
+"'required_hits_custom'"
+
+msgid "You must provide a list name"
+msgstr "Turite nurodyti sąrašo pavadinimą"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Turite nurodyti galiojantį domeną, ip, ns1 ir ns2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+"Turite nurodyti galiojantį el. pašto adresą, oldpassword, password1 ir "
+"password2"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr ""
+"Turite nurodyti galiojantį ftp adresą, oldpassword, password1 ir password2"
+
+msgid "You must provide a valid ip"
+msgstr "Turite pateikti galiojantį ip"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Turite nurodyti galiojantį naudotojo vardą ir jis turi egzistuoti."
+
+msgid "You must provide a valid name and value"
+msgstr "Turite nurodyti galiojantį pavadinimą ir vertę"
+
+msgid "You must provide the passwd variable"
+msgstr "Turite nurodyti kintamąjį ‘passwd­‘"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr ""
+"Turite pasirinkti vardų serverio ip porą (ns1.domain.com ir ns2.domain.com)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Turite pasirinkti bent vieną adresatų sąrašą, kurį norite ištrinti"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Turite pasirinkti bent vieną adresatų sąrašą, kurį norite išvalyti"
+
+msgid "You must select exactly one key"
+msgstr "Turite pasirinkti lygiai vieną raktą"
+
+msgid "You must select something"
+msgstr "Privalote ką nors pasirinkti"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Valandai žymėti turite naudoti skaičių (0-23). Per dieną periodinė užduotis "
+"gali būti paleidžiama tik vieną kartą. (Tačiau galite sukurti daugiau nei "
+"vieną periodinę užduotį)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Minutei žymėti turite naudoti skaičių (0-59). Per dieną periodinė užduotis "
+"gali būti paleidžiama tik vieną kartą. (Tačiau galite sukurti daugiau nei "
+"vieną periodinę užduotį)"
+
+msgid "You must use a valid path"
+msgstr "Turite naudoti galiojantį kelią"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "You must wait for the stats to be computed."
+msgstr "Turite palaukti, kol bus apskaičiuota statistika."
+
+msgid "You need to specify a domain"
+msgstr "Turite nurodyti domeną"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Jums reikia domeno, anon, anonup ir pranešimo"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "Norint sinchronizuoti paskyras, reikia domeno ir slaptažodžių sąrašo"
+
+msgid "You require either the passwd or quota"
+msgstr "Jums reikia slaptažodžio arba kvotos"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"Reikia nurodyti šaltinio url kelią (pvz.: /redirect) ir paskirties url (pvz.:"
+" www.redirect.com)"
+
+msgid "You require user and domain to change a pop account"
+msgstr "Norint pakeisti pop paskyrą, reikia naudotojo ir domeno"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "Norint pridėti pop paskyrą, reikia naudotojo, domeno ir slaptažodžio"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "Apie pabaigtą darbą būsite informuoti per pranešimų sistemą."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "Apie pabaigtą procesą būsite informuoti per pranešimų sistemą"
+
+msgid "You will receive a message when it's complete."
+msgstr "Apie įvykdymą būsite informuoti pranešimų sistemoje."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr ""
+
+#, fuzzy
+msgid "Your IP is blacklisted"
+msgstr "%sJūsų IP bus įtrauktas į juodąjį sąrašą"
+
+msgid "Your Login Key '%s' has been created"
+msgstr ""
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Jūsų vardas pakeistas į %s"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "Naudotojo atsarginė kopija buvo atstatyta iš %s"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "Naudotojo atsarginė kopija buvo atstatyta iš %s"
+
+msgid "Your account"
+msgstr "Tavo paskyra"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "Tavo paskyra %s@%s buvo paruošta. Savo pašto programoje naudokite"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "Tavo paskyra '|USERNAME|' buvo suspenduota. Priežastis: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Tavo paskyra skirta |domain| jau paruošta naudojimui."
+
+msgid "Your backups are now ready"
+msgstr "Tavo atsarginės kopijos paruoštos"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Tavo duomenų bazė paruošta.   Naudokite šias reikšmes:"
+
+msgid "Your default domain has been set"
+msgstr "Buvo sukonfigūruotas tavo pagrindinis domenas"
+
+msgid "Your disk quota limit has been reached."
+msgstr "Tavo disko kvota buvo pasiekta."
+
+msgid "Your disk usage has been updated"
+msgstr "Tavo disko naudojimas buvo atnaujintas"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+"Tavo egzistuojantis raktas nebuvo perrašytas, bet jis negali būti naudojamas "
+"su nauju sertifikatu."
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "Tavo žinute buvo išsaugota"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "Kalba pakeista į %s"
+
+msgid "Your message has been saved"
+msgstr "Tavo žinute buvo išsaugota"
+
+msgid "Your message has been sent"
+msgstr "Tavo žinutė buvo išsiųsta"
+
+msgid "Your message is being sent in the background"
+msgstr "Tavo žinutė yra siunčiama fone"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr ""
+"Tavo žinutė tuščia. Naudotojai turbūt apsidžiaugtų, jei žinotų ką jie gauna."
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "Jūsų vardas pakeistas į %s"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "Tavo naujas raktas buvo išsaugotas šioje vietoje: %s"
+
+msgid "Your password"
+msgstr "Tavo slaptažodis"
+
+msgid "Your password is invalid"
+msgstr "Tavo slaptažodis neteisingas"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+
+msgid "Your request will be executed within 1 minute"
+msgstr "Jūsų užklausa bus įvykdyta per 1 minutę"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"Jūsų užklausa bus vykdoma fone. Kai ji bus įvykdyta, apie tai būsite "
+"informuoti pranešimų sistemoje."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "Jūsų didmenininko paskyra pasiekė jai priskirtą limitą"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "Jūsų didmenininkas pasiekė jam priskirtą limitą"
+
+msgid "Your subject contains invalid characters."
+msgstr "Pavadinime rasta neteisingų simbolių."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "Jūsų bilieto numeris yra %s."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr ""
+
+msgid "Zone Reset"
+msgstr "Zonos atstatymas"
+
+msgid "Zone Signing has expired."
+msgstr "Zonos parašo galiojimo laikas baigėsi."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "Periodinė užduotis sukurta"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+
+msgid "Zone is of type DNSSEC."
+msgstr "Zona yra DNSSEC tipo."
+
+msgid "Zone keys generated"
+msgstr "Zonos raktai sugeneruoti"
+
+msgid "Zone signed"
+msgstr "Zona pasirašyta"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "Žinutė Pašalinta"
+
+msgid "account ..."
+msgstr "paskyra..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "ir %d Naudotojas"
+msgstr[1] "ir %d Naudotojai"
+msgstr[2] "ir %d Naudotojų"
+
+msgid "at least"
+msgstr "mažiausiai"
+
+msgid "at most"
+msgstr "daugiausiai"
+
+msgid "back"
+msgstr "atgal"
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec neįgalintas. Negalima pasirašyti zonos."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "negalima vykdyti fstat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr ""
+
+msgid "catch is required"
+msgstr ""
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "cgroup klaida: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup Jūsų licencijoje neįgalintas"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup išjungtas directadmin nustatymuose"
+
+msgid "change"
+msgstr "pakeisti"
+
+msgid "click here if form does not include two-step code input"
+msgstr "Spustelėkite čia, jei formoje nėra dviejų etapų kodo įvedimo"
+
+msgid "contains"
+msgstr "sudėtyje yra"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "diena"
+msgstr[1] "dienos"
+msgstr[2] "dienų"
+
+msgid "day(s)"
+msgstr "diena(os)"
+
+msgid "days"
+msgstr "dienos"
+
+msgid "default user"
+msgstr "Numatytasis vartotojas"
+
+msgid "dns error"
+msgstr "DNS klaida"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "dnsprovider nustatymas '%s' turi neteisingų simbolių"
+
+msgid "does not belong to you"
+msgstr "Jums nepriklauso"
+
+msgid "emails have just been sent by"
+msgstr "el. laiškus ką tik išsiuntė"
+
+msgid "equals"
+msgstr "lygu"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "buvo pakeista."
+
+msgid "has been updated with the new ip"
+msgstr "buvo atnaujinta su naujuoju IP"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score turi būti nuo 1 iki 99"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "valanda"
+msgstr[1] "valandos"
+msgstr[2] "valandų"
+
+msgid "hours"
+msgstr "valandos"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr "httpd.conf bus parašytas vėliau naudojant task.queue"
+
+#, fuzzy
+msgid "invalid IP or range: %s"
+msgstr "%s netinkamas IP adresas arba ruožas"
+
+msgid "invalid code"
+msgstr "Neteisingas kodas"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr ""
+
+msgid "is currently down"
+msgstr "šiuo metu sustabdyta"
+
+msgid "is not a valid username"
+msgstr "neteisingas vartotojo vardas"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr ""
+"is_ip_in_mask_range:%s:%s: intervalas '%s' turi būti teigiamas sveikasis "
+"skaičius"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr ""
+"is_ip_in_mask_range:%s:%s: intervalas '%s' turi būti nuo 1 iki 128 imtinai"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: intervalas neturi /"
+
+msgid "json string"
+msgstr "JSON simbolis"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lstat klaida: %s"
+
+msgid "mail() line number"
+msgstr "mail() eilutės numeris"
+
+msgid "message is empty. Please enter some text."
+msgstr "žinutė tuščia. Įrašykite tekstą."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "'%s' mime tipas (%s) nėra 'image/' tipo"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minutė"
+msgstr[1] "minutės"
+msgstr[2] "minučių"
+
+msgid "minutes"
+msgstr "minutės"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "mkdir(%s) klaida: %s"
+
+msgid "modify password"
+msgstr "keisti slaptažodį"
+
+msgid "modify privileges"
+msgstr "keisti privilegijas"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "mėnesis"
+msgstr[1] "mėnesiai"
+msgstr[2] "mėnesių"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain netinkamas domenas"
+
+msgid "newer than"
+msgstr "naujesnis už"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 ar ns2 nėra tinkamas vardų serveris"
+
+msgid "of"
+msgstr "iš"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package arba new_package yra negaliojantys paketų pavadinimai"
+
+msgid "older than"
+msgstr "senesnis už"
+
+#, c-format
+msgid "older than %s days."
+msgstr "senesis už %s dienas."
+
+msgid "or"
+msgstr "ar"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "arba IPv6 (1:2:3:4:5:6:7:8), arba IPv6 intervalas (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "ar pasilikti iš"
+
+msgid "php.ini override added"
+msgstr ""
+
+#, c-format
+msgid "php1_select entry %d is not available"
+msgstr "php1_select įrašas %d nėra prieinamas"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "'pop_disk_usage_cache' nėra įjungtas"
+
+msgid "port"
+msgstr "prievadas"
+
+#, fuzzy
+msgid "request created"
+msgstr "Sukurtas aplankas"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+"Kadangi yra nustatytas reseller_can_set_email_limit=0, negalite nustatyti "
+"limito"
+
+msgid "retry"
+msgstr "pakartoti"
+
+msgid "routes must start with a [ character."
+msgstr "maršrutai turi prasidėti simboliu [."
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "paieškos ilgis už ribų: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "sekundė"
+msgstr[1] "sekundės"
+msgstr[2] "sekundžių"
+
+msgid "selected"
+msgstr "pasirinkta"
+
+msgid "selected overrides removed from php.ini"
+msgstr ""
+
+msgid "selected skipped rules removed"
+msgstr ""
+
+msgid "selecting none includes all domains"
+msgstr ""
+
+msgid "sent"
+msgstr "išsiųsta"
+
+msgid "set Permission"
+msgstr "nustatyti teises"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "show_blocked_ips.sh išvestis:"
+
+msgid "starts with"
+msgstr "prasideda su"
+
+msgid "subject contains invalid characters."
+msgstr "pavadinimas turi netinkamų simbolių."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr "subject_select != %d, bet tema nenustatyta. Taip neturėtų atsitikti."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "tai yra serverio pavadinimas, todėl negalite jo naudoti"
+
+msgid "the new domain name already exists on your system"
+msgstr "naujas domeno vardas jau egzistuoja jūsų sistemoje."
+
+msgid "too many iterations"
+msgstr "per daug iteracijų"
+
+msgid "unable to load secret"
+msgstr ""
+
+msgid "unlimited"
+msgstr "be limito"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "user, passwd, passwd2 ir type laukeliai yra privalomi"
+
+msgid "user.conf override"
+msgstr "user.conf keitimas"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount išjungtas"
+
+msgid "user_modify_pre.sh error"
+msgstr "user_modify_pre.sh klaida"
+
+msgid "valid code"
+msgstr "validus kodas"
+
+msgid "value is required"
+msgstr "reikšmė yra privaloma"
+
+#, c-format
+msgid "value must be '%s' or '%s'"
+msgstr "reikšmė turi būti '%s' arba '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder buvo išjungtas per show_main_spambox=0"
+
+msgid "your new password is"
+msgstr "tavo naujas slaptažodis yra"
+
+msgid "your new quota is"
+msgstr "tavo nauja kvota yra"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "tavo naujas siuntimo limitas yra: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr "~/domenų trūko, bet bandydami ją iš naujo sukurti aptikome klaidą"
