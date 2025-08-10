@@ -1,0 +1,37 @@
+#!/bin/bash
+
+DIRECTADMIN_BIN=/usr/local/directadmin/directadmin
+DIRECTADMIN_CONF=/usr/local/directadmin/conf/directadmin.conf
+if [ -s $DIRECTADMIN_CONF ] && [ -x $DIRECTADMIN_BIN ]; then
+        ETH_DEV=`$DIRECTADMIN_BIN c | grep '^ethernet_dev=' | cut -d= -f2`
+fi
+if [ -z "${ETH_DEV}" ]; then
+        ETH_DEV=`ip route show | grep -m1 "default" | awk '{print $5}'`
+fi
+
+SBIN_IP=/sbin/ip
+if [ ! -x ${SBIN_IP} ] && [ -x /usr/sbin/ip ]; then
+	SBIN_IP=/usr/sbin/ip
+fi
+if [ ! -x ${SBIN_IP} ]; then
+	echo "Cannot find ${SBIN_IP} nor in other locations."
+	exit 2
+fi
+
+# we need the ip to delete
+if [ $# -ne "1" ] && [ $# -ne "2" ]; then
+        echo "Usage: $0 <ip> (<condensed_ipv6>)"
+        exit 1
+fi
+
+if ${SBIN_IP} a | grep -m1 -q " $1/"; then
+	#"ip" accepts IPs without netmasks, but shows a warning that the feature might not be avail in the future, this we delete IP with its mask
+	IP_TO_REMOVE="`${SBIN_IP} a | grep -m1 -o \" ${1}/[0-9]*\" | awk '{print $1}'`"
+	${SBIN_IP} addr del ${IP_TO_REMOVE} dev ${ETH_DEV}
+	if [ "$?" -ne 0 ] && /sbin/ip a | grep -m1 -q " $1/"; then
+		exit 1
+	fi
+fi
+
+exit 0
+#can't find it, it must be gone
