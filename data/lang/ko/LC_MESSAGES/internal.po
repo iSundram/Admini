@@ -1,0 +1,7537 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Korean (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Korean <https://translate.directadmin.com/projects/"
+"directadmin/internal/ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d개의 새로운 메시지가 있습니다"
+
+msgid " / Day"
+msgstr " / 일"
+
+msgid "# of Domains"
+msgstr "# 도메인 수"
+
+msgid "# of IPs"
+msgstr "# IP 수"
+
+msgid "# of MySQL DBs"
+msgstr "# MySQL DB 수"
+
+msgid "# of Resellers"
+msgstr "# 리셀러 수"
+
+msgid "# of SubDomains"
+msgstr "# 서브도메인 수"
+
+msgid "# of Users"
+msgstr "# 사용자 수"
+
+msgid "# of free IPs"
+msgstr "# 사용 가능한 IP 수"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d일, %d시간, %d분"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d개 중 %d개의 관리자/리셀러 계정이 존재합니다."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d개 중 %d개의 계정이 존재합니다."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d개 중 %d개의 계정이 존재합니다."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d개의 설정이 업데이트되었습니다"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s이(가) 존재하지 않습니다"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr "%s '%s'을(를) '%s' 아래에 복원할 수 없습니다.  파일의 기본 위치: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - 사용자 '%s'의 현재 IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr "%s 사용자 환영 메시지를 편집하여 제목과 메시지가 설정되었는지 확인하십시오."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s 계정 %s이(가) 방금 생성되었습니다"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s이(가) 이미 존재합니다"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s이(가) 원격 서버에 이미 존재합니다."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s이(가) 서버에 이미 존재합니다."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s이(가) 이미 존재합니다. 덮어쓰기를 강제하려면 덮어쓰기=yes를 전달하십시오"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s이(가) 링크로 보입니다. 작업을 중단합니다."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s을(를) 이제 공유할 수 있습니다."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s에 위험한 문자가 포함되어 있습니다"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr "%s을(를) 할당할 수 없습니다. 먼저 사용 가능하고 할당되지 않은 상태여야 "
+"합니다."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr "%s을(를) 해제할 수 없습니다. 공유된 경우 먼저 도메인이 0개여야 하며, 그렇지 "
+"않으면 예약 상태여야 합니다."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s을(를) 제거할 수 없습니다. 먼저 해제해야 합니다."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s을(를) 공유할 수 없습니다. 먼저 사용 가능해야 합니다"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s이(가) 성공적으로 삭제되었습니다."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s이(가) 존재하지 않습니다"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s이(가) %s과(와) 동일한 소유권을 가지고 있지 않습니다"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s이(가) 목록에서 제거되었습니다"
+
+msgid "%s has been saved as %s."
+msgstr "%s이(가) %s(으)로 저장되었습니다."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s이(가) 정지되었습니다"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s이(가) 정지가 해제되었습니다"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s은(는) 디렉터리이므로 삭제되지 않습니다"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s은(는) 링크입니다"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s은(는) 하드 링크 또는 심볼릭 링크입니다"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s이(가) 누락되었습니다"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s은(는) 디렉터리가 아닙니다"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s은(는) 소켓이 아닙니다"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s은(는) 심볼릭 링크가 아닙니다"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s은(는) 유효한 IP 또는 범위가 아닙니다"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s은(는) 유효한 IP 범위가 아닙니다. 사용 예: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr "%s이(가) %s에 소유권이 변경되지 않아 추출 실패의 원인이 될 수 있습니다"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s이(가) 활성화되지 않았습니다"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s은(는) 도메인의 IP 목록에 없습니다"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s은(는) 나열된 리디렉션 유형 중 하나가 아닙니다"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s은(는) %s의 소유가 아닙니다"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s은(는) '사용 가능' 상태로 설정되지 않았거나 여전히 리셀러에게 할당되어 "
+"있습니다"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s이(가) 이제 %s에 의해 제어됩니다"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s이(가) 이제 사용 가능합니다"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s이(가) 이제 할당 해제되었습니다."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s이(가) 이제 기본 도메인으로 설정되었습니다."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s이(가) 범위를 벗어났습니다"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s이(가) %s에 필요합니다"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s은(는) 심볼릭 링크여서는 안 됩니다"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s에 더 이상 네임 서버 레이블이 없습니다."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s은(는) 구현되지 않았습니다"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s 레코드는 이 수준에서 비활성화되었습니다"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s 값 '%s'은(는) home_override_list에 없습니다"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s의 구성 파일이 제거되었습니다"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: 링크 값 '%s'에서 lstat 오류 발생: %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: readlink 오류: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s'은(는) 유효한 %s 유형이 아닙니다"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%s여기를 클릭%s하여 활성화하는 방법을 확인하세요"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%s여기를 클릭%s하여 로컬 원시 영역 데이터를 확인하세요"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s'이(가) 존재하지 않습니다"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s'이(가) 존재하지 않습니다\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s'이(가) '%s'로 시작하지 않습니다\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s'이(가) '%s'(으)로 설정되었습니다"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s'은(는) 금지된 패키지 이름입니다."
+
+msgid "'%s' is disabled"
+msgstr "'%s'이(가) 비활성화되었습니다"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s'은(는) 유효한 CSS 16진수 색상이 아닙니다"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s'은(는) 리셀러 계정에 할당되지 않았습니다."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s'은(는) 라이선스에서 활성화되지 않았습니다"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s'은(는) 시스템에서 활성화되지 않았습니다."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s'이(가) 필요합니다"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s'은(는) '%s' 또는 '%s'이어야 합니다"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import'는 Base64로 인코딩된 것처럼 보이지 않습니다"
+
+msgid "'when' should be all, newer or older"
+msgstr "'when' 값은 all, newer 또는 older여야 합니다"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) 사용자 %s 아래에서 다음 하드 링크가 발견되었습니다:"
+
+msgid "* irretrievable *"
+msgstr "* 복구 불가능 *"
+
+msgid "*** Stopped ***"
+msgstr "*** 중지됨 ***"
+
+msgid "-- None Available --"
+msgstr "-- 사용 가능 항목 없음 --"
+
+msgid "-- Reason:"
+msgstr "-- 이유:"
+
+msgid "-- Select IP"
+msgstr "-- IP 선택"
+
+msgid "-- Select Package"
+msgstr "-- 패키지 선택"
+
+msgid "-- any time --"
+msgstr "-- 언제든지 --"
+
+msgid "-- anything --"
+msgstr "-- 모든 것 --"
+
+#, fuzzy
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "%s=%s은(는) nginx_proxy=1 및 %s Pro-Pack이 필요합니다"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "해당 이름의 %s 레코드가 이미 존재합니다"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "'사용 가능' IP는 한 사용자에게만 할당될 수 있습니다"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "레코드 유형이 필요합니다: A, NS, MX, CNAME, PTR 또는 TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "리셀러는 동일하거나 더 높은 계정 수준을 제어할 수 없습니다"
+
+msgid "A file is required"
+msgstr "파일이 필요합니다"
+
+msgid "A forwarder already exists with that name"
+msgstr "해당 이름의 전달자가 이미 존재합니다"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "해당 이름의 전체 도메인/존이 이미 존재합니다."
+
+msgid "A key with that name already exists"
+msgstr "해당 이름의 키가 이미 존재합니다"
+
+msgid "A key with that value already exists"
+msgstr "해당 값의 키가 이미 존재합니다"
+
+msgid "A list alias already exists with that name"
+msgstr "해당 이름의 목록 별칭이 이미 존재합니다"
+
+msgid "A message for that user already exists"
+msgstr "해당 사용자에 대한 메시지가 이미 존재합니다"
+
+msgid "A pop account already exists with that name"
+msgstr "해당 이름의 POP 계정이 이미 존재합니다"
+
+msgid "A skin name is required"
+msgstr "스킨 이름이 필요합니다"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr "해당 이름의 서브도메인이 시스템 내 다른 도메인 아래에 이미 존재합니다."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "절대 메모리 제한. OOM(Out-Of-Memory) 킬러가 트리거됩니다."
+
+msgid "Abuse"
+msgstr "악용"
+
+msgid "Access Hosts"
+msgstr "접속 호스트"
+
+msgid "Access host has been added"
+msgstr "접속 호스트가 추가되었습니다"
+
+msgid "Access hosts have been removed"
+msgstr "접속 호스트가 제거되었습니다"
+
+msgid "Account"
+msgstr "계정"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "\"계정 %s이(가) IP %s에서 %s %s을(를) 생성했습니다"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "계정 %s이(가) 정지 상태이므로 건너뛰었습니다"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr "계정 %s이(가) 관리자에 의해 정지되었으며, 리셀러 접근 권한만 있습니다."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "도메인 %s을(를) 가진 계정 %s의 caroot 인증서가 비어 있습니다"
+
+msgid "Account created"
+msgstr "계정이 생성되었습니다"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "계정이 BlockCracking에서 차단 해제되었습니다"
+
+msgid "Account is not a Reseller"
+msgstr "계정이 리셀러가 아닙니다"
+
+msgid "Account is suspended"
+msgstr "계정이 정지되었습니다"
+
+msgid "Account password changed"
+msgstr "계정 비밀번호가 변경되었습니다"
+
+#, fuzzy
+msgid "Account(s) Suspended"
+msgstr "계정이 정지되었습니다"
+
+#, fuzzy
+msgid "Account(s) Unuspended"
+msgstr "계정이 정지되었습니다"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "계정이 %s 파티션으로 복원되었습니다."
+
+msgid "Action"
+msgstr "작업"
+
+msgid "Activate"
+msgstr "활성화"
+
+msgid "Active"
+msgstr "활성"
+
+#, c-format
+msgid "Add %s"
+msgstr "%s 추가"
+
+msgid "Add Host"
+msgstr "호스트 추가"
+
+msgid "Add Override"
+msgstr "재정의 추가"
+
+msgid "Add the new NS records first."
+msgstr "새 NS 레코드를 먼저 추가하세요."
+
+msgid "Add to Apache"
+msgstr "아파치에 추가"
+
+msgid "Add to Clipboard"
+msgstr "DNS에 추가"
+
+msgid "Add to DNS"
+msgstr "DNS에 추가"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "ns1을 %s(으)로, ns2를 %s(으)로 추가했습니다"
+
+msgid "Additional"
+msgstr "추가"
+
+msgid "Admin"
+msgstr "관리자"
+
+msgid "Admin SSL"
+msgstr "관리자 SSL"
+
+msgid "Admin SSL is not enabled"
+msgstr "관리자 SSL이 활성화되지 않았습니다"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "고급 검색"
+
+msgid "Afternoon"
+msgstr "오후"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "별칭 %s@%s -> %s이(가) 생성되었습니다"
+
+msgid "All"
+msgstr "전체"
+
+msgid "All Data"
+msgstr "모든 데이터"
+
+msgid "All E-Mail"
+msgstr "모든 이메일"
+
+msgid "All Months (cgi)"
+msgstr "모든 월 (CGI)"
+
+msgid "All Resellers"
+msgstr "모든 리셀러"
+
+msgid "All Users"
+msgstr "모든 사용자"
+
+msgid "All Users Except Selected Users"
+msgstr "선택된 사용자를 제외한 모든 사용자"
+
+msgid "All Users Except:"
+msgstr "제외할 사용자:"
+
+msgid "All of Your Users"
+msgstr "모든 사용자 계정"
+
+msgid "All privileges have been set"
+msgstr "모든 권한이 설정되었습니다"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "마지막 단계를 제외한 모든 경로 단계에는 'match'가 필요합니다"
+
+msgid "All selected Users have been suspended"
+msgstr "선택된 모든 사용자가 정지되었습니다"
+
+msgid "All selected Users have been unsuspended"
+msgstr "선택된 모든 사용자의 정지가 해제되었습니다"
+
+msgid "All specified forwarders removed"
+msgstr "지정된 모든 전달자가 제거되었습니다"
+
+msgid "Allocated"
+msgstr "할당됨"
+
+msgid "Allow"
+msgstr "허용"
+
+msgid "Allow Overselling"
+msgstr "초과 판매 허용"
+
+#, fuzzy
+msgid "Allowance threshold is 0%"
+msgstr "허용 임계값은 0%%입니다"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "%s을(를) 허용하면 %s 제한을 초과하게 됩니다"
+
+msgid "Alpha"
+msgstr "알파"
+
+msgid "Already Exists"
+msgstr "이미 존재함"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr "백업 오류가 발생했지만, 유효한 백업의 업로드는 여전히 시도되었습니다"
+
+msgid "An Error Occurred"
+msgstr "오류가 발생했습니다"
+
+msgid "An Error has occurred"
+msgstr "해당 이름의 자동 응답기가 이미 존재합니다"
+
+msgid "An auto responder already exists with that name"
+msgstr "해당 이름의 자동 응답기가 이미 존재합니다"
+
+msgid "An autoresponder with that name already exists"
+msgstr "해당 이름의 자동 응답기가 이미 존재합니다"
+
+msgid "An error has occurred"
+msgstr "오류가 발생했습니다"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Nginx Unit 설정을 다시 작성하는 동안 오류가 발생했습니다"
+
+msgid "An error occured during extraction"
+msgstr "압축 해제 중 오류가 발생했습니다"
+
+msgid "An error occured while creating the compressed file"
+msgstr "압축 파일을 생성하는 동안 오류가 발생했습니다"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "파일 소유권을 재설정하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred during the backup"
+msgstr "백업 중 오류가 발생했습니다"
+
+#, fuzzy
+msgid "An error occurred during the restore"
+msgstr "백업 중 오류가 발생했습니다"
+
+msgid "An error occurred when unblocking the account"
+msgstr "계정을 차단 해제하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "사용자에게 설정을 적용하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "파일을 복사하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "디렉터리를 생성하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "디렉터리를 보호하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "파일 이름을 변경하는 동안 오류가 발생했습니다"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "파일을 복원하는 동안 오류가 발생했습니다"
+
+msgid "Anonymous Ftp"
+msgstr "익명 FTP"
+
+msgid "Apache"
+msgstr "아파치"
+
+msgid "Apache config file re-written with new ip"
+msgstr "아파치"
+
+msgid "Apparent Size"
+msgstr "새로운 IP로 Apache 설정 파일이 다시 작성되었습니다"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "<Directory> 섹션에서 첫 번째 항목으로 나타납니다."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "변수를 설정하기 전에 템플릿의 맨 위에 나타납니다."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr "모든 context{} 섹션에 나타나며, 비밀번호 보호된 디렉터리에 사용됩니다."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "phpIniOverride{} 섹션에 나타납니다."
+
+msgid "Appears in rewrite{} section."
+msgstr "rewrite{} 섹션에 나타납니다."
+
+msgid "Appears in scripthandler{} section."
+msgstr "scripthandler{} 섹션에 나타납니다."
+
+msgid "Appears in vhssl{} section."
+msgstr "vhssl{} 섹션에 나타납니다."
+
+msgid "Appears just before the <Directory> section."
+msgstr "\"<Directory> 섹션 바로 앞에 나타납니다."
+
+msgid "Apply to All Users"
+msgstr "모든 사용자에게 적용"
+
+msgid "Apply to Me"
+msgstr "나에게 적용"
+
+msgid "Apply to existing Domains"
+msgstr "기존 도메인에 적용"
+
+msgid "Apr"
+msgstr "4월"
+
+msgid "Archive Size"
+msgstr "아카이브 크기"
+
+msgid "Archives purged"
+msgstr "아카이브가 정리되었습니다"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "선택한 계정을 삭제하시겠습니까?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "선택한 데이터베이스를 삭제하시겠습니까?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "선택한 키를 삭제하시겠습니까?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "선택한 존을 삭제하시겠습니까?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "이 파일들을 삭제하시겠습니까?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "이 프로세스를 강제 종료하시겠습니까?"
+
+msgid "Ascending"
+msgstr "오름차순"
+
+msgid "Assign to"
+msgstr "할당 대상"
+
+msgid "Assigned"
+msgstr "할당됨"
+
+msgid "At least one crediential is required."
+msgstr "최소한 하나의 자격 증명이 필요합니다."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "%s을(를) 자기 자신에게 복사하려고 했습니다. 파일을 건너뜁니다."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "%s을(를) 자기 자신으로 이동하려고 했습니다. 파일을 건너뜁니다."
+
+msgid "Attempts"
+msgstr "시도 횟수"
+
+msgid "Aug"
+msgstr "8월"
+
+msgid "Authentication"
+msgstr "인증"
+
+msgid "Authorize"
+msgstr "승인"
+
+msgid "Auto"
+msgstr "자동"
+
+msgid "Auto media selection active."
+msgstr "자동 미디어 선택 활성화됨."
+
+msgid "Auto+Confirm"
+msgstr "자동+확인"
+
+msgid "AutoResponders"
+msgstr "자동 응답기"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "%s의 자동 인증서 갱신이 성공했습니다"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "자동 security.txt (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "자동 응답"
+
+msgid "Autoresponder"
+msgstr "자동 응답기"
+
+#, fuzzy
+msgid "Autoresponder created"
+msgstr "자동 응답기가 업데이트되었습니다"
+
+msgid "Autoresponder updated"
+msgstr "자동 응답기가 업데이트되었습니다"
+
+#, fuzzy
+msgid "Autoresponder(s) removed"
+msgstr "자동 응답기가 업데이트되었습니다"
+
+msgid "Avoid use of trailers."
+msgstr "트레일러 사용을 피하십시오."
+
+msgid "Awstats"
+msgstr "서버통계"
+
+msgid "Awstats ..."
+msgstr "서버통계 ..."
+
+msgid "Awstats setting changed"
+msgstr "Awstats 설정이 변경되었습니다"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "뒤로"
+
+msgid "Backing up Databases"
+msgstr "데이터베이스 백업 중"
+
+msgid "Backing up E-Mail Data"
+msgstr "이메일 데이터 백업 중"
+
+msgid "Backing up E-Mail Settings"
+msgstr "이메일 설정 백업 중"
+
+msgid "Backing up FTP"
+msgstr "FTP 백업 중"
+
+msgid "Backing up User Configs"
+msgstr "사용자 설정 백업 중"
+
+msgid "Backing up User Data"
+msgstr "사용자 데이터 백업 중"
+
+msgid "Backing up extra E-Mail items"
+msgstr "추가 이메일 항목 백업 중"
+
+msgid "Backup"
+msgstr "백업"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "백업 %d이(가) 현재 실행되지 않고 있습니다."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr "백업 중단 (%d): 사용자 %s의 경로에서 하드 링크가 발견되었습니다"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Nginx Unit 백업 오류: %s"
+
+msgid "Backup Halted"
+msgstr "백업 중단됨"
+
+msgid "Backup ID"
+msgstr "백업 ID"
+
+msgid "Backup creation added to queue"
+msgstr "백업 생성이 대기열에 추가되었습니다"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr "라이브 키를 %s(으)로 백업하는 데 실패했습니다. 필요하면 이전 키를 "
+"확인하십시오:"
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "백업 경로 %s이(가) 생성되었습니다."
+
+#, fuzzy
+msgid "Backup(s) Killed"
+msgstr "백업 중단됨"
+
+msgid "Backups added to Queue"
+msgstr "백업이 대기열에 추가되었습니다"
+
+msgid "Bandwidth"
+msgstr "대역폭"
+
+msgid "Bandwidth (MB)"
+msgstr "대역폭 (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "대역폭 사용량"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr "모든 기존 코드가 무효화되므로 QR 코드를 다시 스캔해야 합니다."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr "스크립트가 요구되는 기준을 충족하므로 chmod 0을 통해 비활성화되었습니다."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr "차단 해제 전에 손상된 스크립트가 제거되었거나 수정되었는지 확인하십시오."
+
+msgid "Beta"
+msgstr "베타"
+
+msgid "Billing Issue"
+msgstr "결제 문제"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "변환된 백업 파일을 %s에서 찾을 때 %s이(가) 비어 있습니다"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "빈 값: 기본값, 전역 제한 %d"
+
+msgid "Bleeding edge features"
+msgstr "최신 기능"
+
+msgid "Block Usage"
+msgstr "차단 사용량"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker 차단된 경로"
+
+msgid "Blocked"
+msgstr "차단됨"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "DNS 제어 및 TTL 재정의가 모두 활성화되어야 합니다"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "서비스 로그에서 무차별 대입 공격이 감지되었습니다"
+
+msgid "CA Certificate is Invalid"
+msgstr "CA 인증서가 유효하지 않습니다"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr "CA 인증서가 정상입니다. 몇 분 내로 사이트가 안전해질 것입니다."
+
+msgid "CC Address"
+msgstr "참조(CC) 주소"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "CPU 할당량"
+
+msgid "Can use Server IP"
+msgstr "서버 IP 사용 가능"
+
+msgid "Can't get file lock on"
+msgstr "파일 잠금을 획득할 수 없습니다"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "%s 파일을 읽기 위해 열 수 없습니다"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "%s 파일을 추가 모드로 다시 열 수 없습니다"
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Cancel Request"
+msgstr "요청 취소"
+
+msgid "Cannot Add A Record"
+msgstr "A 레코드를 추가할 수 없습니다"
+
+msgid "Cannot Add CNAME Record"
+msgstr "CNAME 레코드를 추가할 수 없습니다"
+
+msgid "Cannot Add Record"
+msgstr "레코드를 추가할 수 없습니다"
+
+msgid "Cannot Create Account"
+msgstr "계정을 생성할 수 없습니다"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "다른 자동 응답기를 생성할 수 없습니다"
+
+msgid "Cannot Create Another Database"
+msgstr "다른 데이터베이스를 생성할 수 없습니다"
+
+msgid "Cannot Create Another Domain"
+msgstr "다른 도메인을 생성할 수 없습니다"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "다른 도메인 포인터를 생성할 수 없습니다"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "다른 FTP 계정을 생성할 수 없습니다"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "다른 전달자를 생성할 수 없습니다"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "다른 메일링 리스트를 생성할 수 없습니다"
+
+msgid "Cannot Create Another POP Account"
+msgstr "다른 POP 계정을 생성할 수 없습니다"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "다른 서브도메인을 생성할 수 없습니다"
+
+msgid "Cannot Create Autoresponder"
+msgstr "자동 응답기를 생성할 수 없습니다"
+
+msgid "Cannot Create Domain"
+msgstr "도메인을 생성할 수 없습니다"
+
+msgid "Cannot Create Vacation Message"
+msgstr "부재중 메시지를 생성할 수 없습니다"
+
+msgid "Cannot Create a Message"
+msgstr "메시지를 생성할 수 없습니다"
+
+msgid "Cannot Execute Command"
+msgstr "명령을 실행할 수 없습니다"
+
+msgid "Cannot Execute Your Request"
+msgstr "요청을 실행할 수 없습니다"
+
+msgid "Cannot Modify Key"
+msgstr "키를 수정할 수 없습니다"
+
+msgid "Cannot Modify User"
+msgstr "사용자를 수정할 수 없습니다"
+
+msgid "Cannot View Domain Settings"
+msgstr "도메인 설정을 볼 수 없습니다"
+
+msgid "Cannot be a list"
+msgstr "목록이 될 수 없습니다"
+
+msgid "Cannot be an object"
+msgstr "객체가 될 수 없습니다"
+
+msgid "Cannot change the ip"
+msgstr "IP를 변경할 수 없습니다"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr "시스템 계정의 비밀번호를 변경할 수 없습니다. 변경하려면 제어판에 "
+"로그인하십시오."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr "이 이메일 계정의 비밀번호를 변경할 수 없습니다. 현재 계정이 정지된 도메인에 "
+"있습니다."
+
+msgid "Cannot change your email"
+msgstr "이메일을 변경할 수 없습니다"
+
+msgid "Cannot change your name"
+msgstr "이름을 변경할 수 없습니다"
+
+msgid "Cannot change your password"
+msgstr "비밀번호를 변경할 수 없습니다"
+
+msgid "Cannot check domain existance"
+msgstr "도메인 존재 여부를 확인할 수 없습니다"
+
+msgid "Cannot create User Backup"
+msgstr "사용자 백업을 생성할 수 없습니다"
+
+msgid "Cannot create domain"
+msgstr "도메인을 생성할 수 없습니다"
+
+msgid "Cannot create that domain"
+msgstr "해당 도메인을 생성할 수 없습니다"
+
+msgid "Cannot create user using those settings"
+msgstr "해당 설정을 사용하여 사용자를 생성할 수 없습니다"
+
+msgid "Cannot delete records"
+msgstr "레코드를 삭제할 수 없습니다"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "현재 사용 중인 스킨을 삭제할 수 없습니다."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "서브도메인 '%s'의 소유자를 확인할 수 없습니다"
+
+msgid "Cannot execute your request"
+msgstr "요청을 실행할 수 없습니다"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "%s을(를) 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "목록에서 %s을(를) 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "이름에서 %s을(를) 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "%s을(를) 찾을 수 없습니다. 건너뜁니다."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "%s을(를) 찾을 수 없습니다. 도메인이 존재하며 정지되지 않았는지 확인하십시오"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "%s'을(를) 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "'%s'을(를) %s의 허용된 값 목록에서 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "템플릿에서 '%s'을(를) 찾을 수 없습니다"
+
+msgid "Cannot find IP"
+msgstr "IP를 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "사용자 '%s'을(를) 찾을 수 없습니다"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr "domainowners 파일에서 유효한 시스템 사용자 이름을 찾을 수 없습니다."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "인증서에서 SAN 값을 찾을 수 없습니다."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "%s에서 변환한 후 tar.gz 파일을 찾을 수 없습니다"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "domainowners 파일에서 도메인을 찾을 수 없습니다"
+
+msgid "Cannot find domain in the certificate."
+msgstr "인증서에서 도메인을 찾을 수 없습니다."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "%s에서 키 값을 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "스킨 %s에서 토큰 %s의 로고 파일을 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "스킨 %s에서 토큰 %s=%s의 로고 파일을 찾을 수 없습니다"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "show_blocked_ips.sh 파일을 찾을 수 없습니다"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "JSON에서 template_php_ini 또는 domain_php_ini을(를) 찾을 수 없습니다"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "domainowners 파일에서 해당 도메인을 찾을 수 없습니다"
+
+msgid "Cannot find that key id"
+msgstr "해당 키 ID를 찾을 수 없습니다"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "계정과 전달자를 찾을 수 없습니다"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "letsencrypt.sh 스크립트를 찾을 수 없습니다"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "이미 존재해야 하는 %s 사용자를 찾을 수 없습니다"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "%s의 MIME 유형을 가져올 수 없습니다"
+
+msgid "Cannot have newline characters in subject"
+msgstr "제목에 줄 바꿈 문자를 포함할 수 없습니다"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "이메일 할당량을 무제한으로 설정할 수 없습니다"
+
+msgid "Cannot manage zone"
+msgstr "존을 관리할 수 없습니다"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "디렉터리(%s)를 기존 파일 또는 디렉터리(%s)로 이동할 수 없습니다"
+
+msgid "Cannot open the password file to add the user"
+msgstr "사용자를 추가하기 위해 비밀번호 파일을 열 수 없습니다"
+
+msgid "Cannot open the password file to change the password"
+msgstr "비밀번호를 변경하기 위해 비밀번호 파일을 열 수 없습니다"
+
+msgid "Cannot open the user password file for reading"
+msgstr "사용자 비밀번호 파일을 읽기 위해 열 수 없습니다"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "디렉터리를 기존 파일이나 디렉터리로 이름을 변경할 수 없습니다"
+
+msgid "Cannot resend welcome email"
+msgstr "환영 이메일을 다시 보낼 수 없습니다"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "%s의 FTP 계정을 복원할 수 없습니다. 제한(%s)에 도달했습니다."
+
+msgid "Cannot set TTL"
+msgstr "TTL을 설정할 수 없습니다"
+
+msgid "Cannot set default domain"
+msgstr "기본 도메인을 설정할 수 없습니다"
+
+#, fuzzy
+msgid "Cannot show page"
+msgstr "이름을 변경할 수 없습니다"
+
+msgid "Cannot stat the source file"
+msgstr "원본 파일의 상태 정보를 가져올 수 없습니다"
+
+msgid "Cannot use the main account username"
+msgstr "주 계정 사용자 이름을 사용할 수 없습니다"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "모든 수신 주소가 %s(으)로 설정되었습니다"
+
+msgid "Catch-All Email"
+msgstr "Catch-All 이메일"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "이 계정에서 Catch-All 이메일이 비활성화되었습니다"
+
+msgid "Catch-All email updated successfully"
+msgstr "Catch-All 이메일이 성공적으로 업데이트되었습니다"
+
+#, fuzzy
+msgid "Catch-All is disabled"
+msgstr "Catch-All 이메일"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catch-All이 실패로 설정되었습니다"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All이 잘못된 주소를 무시하도록 설정되었습니다"
+
+msgid "Certificate"
+msgstr "인증서"
+
+msgid "Certificate and Key Saved."
+msgstr "인증서와 키가 저장되었습니다."
+
+msgid "Certificate is Invalid"
+msgstr "인증서가 유효하지 않습니다"
+
+msgid "Certificate is Self-Signed"
+msgstr "인증서가 자체 서명되었습니다"
+
+msgid "Change the password to unblock it."
+msgstr "비밀번호를 변경하여 차단을 해제하십시오."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "IP 변경: %s"
+
+msgid "Changes saved"
+msgstr "변경 사항이 저장되었습니다"
+
+msgid "Check"
+msgstr "확인"
+
+msgid "Check the error log for more information."
+msgstr "자세한 내용을 보려면 오류 로그를 확인하십시오."
+
+msgid "Check to see if the current software is valid"
+msgstr "현재 소프트웨어가 유효한지 확인하십시오"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "하위 %s 사용자가 삭제되었습니다"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"다음에서 선택하십시오: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "도시는 문자, 공백 및 마침표만 포함할 수 있습니다"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "전달자 정리"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "%s 정리 중"
+
+msgid "Clear Customization"
+msgstr "사용자 정의 설정 초기화"
+
+msgid "Clear Messages System"
+msgstr "메시지 시스템 초기화"
+
+msgid "Clear NS"
+msgstr "네임서버 초기화"
+
+msgid "Clear Search Filter"
+msgstr "검색 필터 초기화"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "%s여기를 클릭%s하여 돌아가기"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "%s여기를 클릭%s하여 돌아가기"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "%s여기를 클릭%s하여 메인 페이지로 이동"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "최신 백업을 다운로드하려면 여기를 클릭하세요"
+
+msgid "Click here to close this window"
+msgstr "이 창을 닫으려면 여기를 클릭하세요"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "도메인에서 SSL을 활성화하려면 여기를 클릭하세요"
+
+msgid "Clipboard"
+msgstr "클립보드"
+
+#, fuzzy
+msgid "Clipboard emptied"
+msgstr "클립보드"
+
+msgid "Close"
+msgstr "닫기"
+
+msgid "Closed"
+msgstr "닫힘"
+
+msgid "Closed+Confirm"
+msgstr "닫힘+확인"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "색상 %s (%s)이(가) 목록에 없습니다: %s"
+
+msgid "Color has been customized"
+msgstr "색상이 사용자 정의되었습니다"
+
+msgid "Column in"
+msgstr "열 위치"
+
+msgid "Command"
+msgstr "명령"
+
+msgid "Command Returned"
+msgstr "명령 응답"
+
+msgid "Comment"
+msgstr "댓글"
+
+msgid "Comments"
+msgstr "댓글"
+
+#, fuzzy
+msgid "Comments Saved"
+msgstr "댓글"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "회사 이름에는 문자, 숫자, 공백 및 마침표만 포함될 수 있습니다"
+
+msgid "Compressed File Created"
+msgstr "압축 파일이 생성되었습니다"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "%s 압축 중"
+
+msgid "Confirm"
+msgstr "확인"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "%sDirectAdmin 웹사이트%s에서 결과 확인"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "확인 코드가 유효하지 않거나 요청이 만료되었습니다"
+
+msgid "Continuing with the other files."
+msgstr "다른 파일을 계속 처리합니다."
+
+msgid "Copy"
+msgstr "복사"
+
+msgid "Copy Clipboard Files here"
+msgstr "클립보드 파일을 여기에 복사"
+
+msgid "Copy the packages export data"
+msgstr "패키지 내보내기 데이터 복사"
+
+msgid "Copying Admin Data"
+msgstr "관리자 데이터 복사 중"
+
+msgid "Copying Reseller Data"
+msgstr "리셀러 데이터 복사 중"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr "파일 복사가 filemanager_disable_features 옵션으로 인해 비활성화되었습니다"
+
+msgid "Copying unreadable data"
+msgstr "읽을 수 없는 데이터 복사 중"
+
+msgid "Could not excute your request"
+msgstr "요청을 실행할 수 없습니다"
+
+msgid "Could not execute your request"
+msgstr "요청을 실행할 수 없습니다"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr "%s에서 일치하는 백업 키를 찾을 수 없습니다"
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr "업로드 후 크기 확인을 위해 원격 파일 '%s'을(를) 찾을 수 없습니다"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "IP '%s'의 rDNS를 가져올 수 없습니다"
+
+msgid "Could not read tickets"
+msgstr "티켓을 읽을 수 없습니다"
+
+msgid "Could not write tickets"
+msgstr "티켓을 작성할 수 없습니다"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr "사용자에게 할당할 수 있는 IP가 없습니다 (요청된 IP=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr "%s의 데이터베이스 파일을 읽을 수 없습니다. ns1 및 ns2를 추가할 수 없습니다."
+
+msgid "Count"
+msgstr "개수"
+
+msgid "Counted"
+msgstr "계산됨"
+
+msgid "Country code must be 2 letters"
+msgstr "국가 코드는 2자리 문자여야 합니다"
+
+msgid "Created"
+msgstr "생성됨"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr "디렉터리 생성이 filemanager_disable_features 옵션으로 인해 비활성화되었습니다"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "%s을(를) 그렇게 많이 생성하면 제한 %s을(를) 초과하게 됩니다"
+
+msgid "Creator"
+msgstr "생성자"
+
+msgid "Creator Duplicate"
+msgstr "중복 생성자"
+
+msgid "Creators and their Users"
+msgstr "생성자 및 해당 사용자"
+
+msgid "Cron Created"
+msgstr "크론 작업 생성됨"
+
+msgid "Cron E-Mail set"
+msgstr "크론 이메일 설정됨"
+
+msgid "Cron Job(s) Deleted"
+msgstr "크론 작업 삭제됨"
+
+msgid "Cron Jobs"
+msgstr "크론 작업"
+
+msgid "Cron Jobs Deleted"
+msgstr "크론 작업이 삭제되었습니다"
+
+msgid "Cron Jobs Duplicated"
+msgstr "크론 작업이 중복되었습니다"
+
+msgid "Cron Jobs will run in the background"
+msgstr "크론 작업이 백그라운드에서 실행됩니다"
+
+msgid "Cron Modified"
+msgstr "크론 수정됨"
+
+msgid "Cron job has been created"
+msgstr "크론 작업이 생성되었습니다"
+
+msgid "Current"
+msgstr "현재"
+
+msgid "Current IPs"
+msgstr "현재 IP"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "%s에 할당된 현재 IP"
+
+msgid "Current Protected Directories"
+msgstr "현재 보호된 디렉터리"
+
+msgid "Current Usage"
+msgstr "현재 사용량"
+
+msgid "Custom"
+msgstr "사용자 정의"
+
+msgid "Custom Color"
+msgstr "사용자 정의 색상"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "사용자 정의 스킨 로고가 업로드되었습니다"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "사용자 정의 스킨 로고가 활성화되지 않았습니다"
+
+msgid "Custom logo deleted"
+msgstr "사용자 정의 로고 삭제됨"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr "사용자 정의 임계값은 유효한 숫자여야 합니다. 소수점 사용이 가능합니다."
+
+msgid "Customization Disabled"
+msgstr "사용자 정의 비활성화됨"
+
+msgid "Customization written"
+msgstr "사용자 정의가 저장되었습니다"
+
+msgid "Customize the skin"
+msgstr "스킨 사용자 정의"
+
+msgid "DKIM disabled"
+msgstr "DKIM 비활성화됨"
+
+msgid "DKIM enabled"
+msgstr "DKIM 활성화됨"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "DNS 제어"
+
+msgid "DNS Zone does not exist"
+msgstr "DNS 존이 존재하지 않습니다"
+
+msgid "DNSSEC Keys generated"
+msgstr "DNSSEC 키가 생성되었습니다"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC이 활성화되지 않았습니다"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSEC - DNS 보안"
+
+msgid "Database"
+msgstr "데이터베이스"
+
+msgid "Database Created"
+msgstr "데이터베이스 생성됨"
+
+msgid "Database Disk Usage"
+msgstr "데이터베이스 디스크 사용량"
+
+msgid "Database has been successfully Restored"
+msgstr "데이터베이스가 성공적으로 복원되었습니다"
+
+msgid "Database:"
+msgstr "데이터베이스:"
+
+msgid "Databases"
+msgstr "데이터베이스"
+
+msgid "Date"
+msgstr "날짜"
+
+msgid "Date Added"
+msgstr "추가된 날짜"
+
+msgid "Date Blocked"
+msgstr "차단된 날짜"
+
+msgid "Date Created"
+msgstr "생성된 날짜"
+
+msgid "Date Suspended"
+msgstr "정지된 날짜"
+
+msgid "Day"
+msgstr "일"
+
+msgid "Day of Month"
+msgstr "월별 일"
+
+msgid "Day of Week"
+msgstr "요일"
+
+msgid "Days must be a valid number."
+msgstr "일 수는 유효한 숫자여야 합니다."
+
+msgid "Debug Guide"
+msgstr "디버그 안내서"
+
+msgid "Dec"
+msgstr "12월"
+
+msgid "Decending"
+msgstr "내림차순"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "%s의 복호화에 실패했습니다"
+
+msgid "Default"
+msgstr "기본값"
+
+msgid "Default release schedule"
+msgstr "기본 릴리스 일정"
+
+msgid "Delayed release schedule"
+msgstr "지연된 릴리스 일정"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Delete Extension"
+msgstr "확장자 삭제"
+
+msgid "Delete Handler"
+msgstr "처리기 삭제"
+
+msgid "Delete MimeType"
+msgstr "MimeType 삭제"
+
+msgid "Delete Selected"
+msgstr "선택 항목 삭제"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "DNSSEC 키를 삭제하고 서명되지 않은 존을 사용합니다"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "다음 사용자를 삭제다음 사용자들을 삭제"
+
+msgid "Delete the following domains:"
+msgstr "다음 도메인 삭제:"
+
+msgid "Delete web data"
+msgstr "웹 데이터 삭제"
+
+msgid "Deleted"
+msgstr "삭제됨"
+
+msgid "Deleted User Bandwidth"
+msgstr "삭제된 사용자 대역폭"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "%s 삭제 중 ..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "파일/디렉터리 삭제가 filemanager_disable_features 옵션으로 비활성화되었습니다"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "이 NS 레코드를 삭제하면 0개가 남게 됩니다."
+
+msgid "Deny"
+msgstr "거부"
+
+msgid "Destination"
+msgstr "대상"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "대상 URL 오류: %s"
+
+msgid "Detail"
+msgstr "세부 정보"
+
+msgid "Details"
+msgstr "상세 정보"
+
+msgid "Digest Subscriber"
+msgstr "다이제스트 구독자"
+
+msgid "Digest Subscribers"
+msgstr "다이제스트 구독자 목록"
+
+msgid "DirectAdmin License"
+msgstr "DirectAdmin 라이선스"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin이 1분 후에 재시작됩니다"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin이 1분 이내에 재시작됩니다"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "디렉터리 보호 설정이 저장되었습니다."
+
+msgid "Directory created"
+msgstr "디렉터리 생성됨"
+
+msgid "Disable"
+msgstr "비활성화"
+
+msgid "Disable Auto-Renew"
+msgstr "자동 갱신 비활성화"
+
+msgid "Disabled"
+msgstr "비활성화됨"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr "비활성화된 리셀러 설정이 백그라운드에서 사용자 및 패키지에 적용됩니다."
+
+msgid "Disk Space"
+msgstr "디스크 공간"
+
+msgid "Disk Space (MB)"
+msgstr "디스크 공간 (MB)"
+
+msgid "Disk Usage"
+msgstr "디스크 사용량"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "부서는 문자, 숫자, 공백 및 마침표만 포함할 수 있습니다"
+
+msgid "Dns Provider reset."
+msgstr "DNS 제공자가 재설정되었습니다."
+
+msgid "Dns Provider saved."
+msgstr "DNS 제공자가 저장되었습니다."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "도메인 이름에서 대문자를 사용하지 마십시오."
+
+msgid "Do not use any spaces between the email names."
+msgstr "이메일 이름 사이에 공백을 사용하지 마십시오."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "%s 값에 공백을 사용하지 마십시오"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "기존 파일을 덮어쓰시겠습니까?"
+
+msgid "DocumentRoot"
+msgstr "문서 루트"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "설정과 일치하지 않음: %s"
+
+msgid "Domain"
+msgstr "도메인"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "도메인 %s 생성됨"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "도메인 %s은(는) %s 재정의 경로 %s을(를) 사용할 수 없습니다"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"도메인 %s이(가) 관리자에 의해 정지되었으며, 당신는 이 도메인에 대한 접근 "
+"권한이 없습니다. 도메인의 정지를 해제할 수 없습니다."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr "도메인 '%s'의 DNS 제공자가 초기화되었습니다."
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "도메인 '%s'이(가) php-fpm을 사용 중입니다."
+
+msgid "Domain AWstats"
+msgstr "도메인 AWstats"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "도메인 AWstats + Webalize"
+
+msgid "Domain Bandwidth"
+msgstr "도메인 대역폭"
+
+msgid "Domain Created"
+msgstr "도메인 생성됨"
+
+msgid "Domain Created Successfully"
+msgstr "도메인이 성공적으로 생성되었습니다"
+
+msgid "Domain Deletion Results"
+msgstr "도메인 삭제 결과"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "도메인 포인터"
+
+msgid "Domain Pointer Added"
+msgstr "도메인 포인터 추가됨"
+
+msgid "Domain Pointer on"
+msgstr "도메인 포인터 활성화됨"
+
+msgid "Domain Pointers"
+msgstr "도메인 포인터"
+
+#, fuzzy
+msgid "Domain Pointers Removed"
+msgstr "도메인 포인터 활성화됨"
+
+msgid "Domain Quota"
+msgstr "도메인 할당량"
+
+msgid "Domain Renaming is not enabled"
+msgstr "도메인 이름 변경이 활성화되지 않았습니다"
+
+msgid "Domain Webalizer Stats"
+msgstr "도메인 Webalizer 통계"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+"도메인에 UTF-8 문자가 포함되어 있습니다. Punycode 도메인을 제출하거나 "
+"convert_to_punycode를 활성화하세요."
+
+msgid "Domain does not belong to you"
+msgstr "도메인이 당신의 소유가 아닙니다"
+
+msgid "Domain does not belong to you."
+msgstr "도메인이 당신의 소유가 아닙니다."
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "도메인이 %s에 존재합니다"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr "도메인이 이미 SSL 요청을 처리 중입니다. 다른 변경을 하기 전에 처리가 완료될 "
+"때까지 기다려 주세요."
+
+msgid "Domain is forbidden"
+msgstr "도메인이 금지되었습니다"
+
+msgid "Domain is not in your list"
+msgstr "도메인이 당신의 목록에 없습니다"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr "도메인은 최상위 도메인 확장자가 될 수 없습니다"
+
+msgid "Domain name has been successfully changed"
+msgstr "도메인 이름이 성공적으로 변경되었습니다"
+
+msgid "Domain php.ini overrides"
+msgstr "도메인 php.ini 재정의"
+
+msgid "Domain(s)"
+msgstr "도메인"
+
+msgid "Domain(s) modified"
+msgstr "도메인이 수정되었습니다"
+
+msgid "Domains"
+msgstr "도메인"
+
+msgid "Domains directory created successfully"
+msgstr "도메인 디렉터리가 성공적으로 생성되었습니다"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "사용자 홈 디렉터리에 도메인 디렉터리가 성공적으로 생성되었습니다"
+
+msgid "Double click for main domain page"
+msgstr "메인 도메인 페이지로 이동하려면 두 번 클릭하세요"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "Dovecot 파일 '%s'에 데이터가 누락되었습니다. 'da build dovecot_conf'를 "
+"실행하세요"
+
+msgid "Download"
+msgstr "다운로드"
+
+msgid "Download Backup"
+msgstr "백업 다운로드"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "다운로드됨: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "새로운 Webalizer 바이너리 다운로드 중"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr "압축된 폴더 다운로드가 filemanager_disable_features 옵션으로 인해 "
+"비활성화되었습니다"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "파일 다운로드가 filemanager_disable_features 옵션으로 인해 비활성화되었습니다"
+
+msgid "Driver signals L1 up."
+msgstr "드라이버가 L1 업 신호를 보냅니다."
+
+msgid "Driver signals dormant."
+msgstr "드라이버가 유휴 상태 신호를 보냅니다."
+
+msgid "Duplicate"
+msgstr "중복"
+
+msgid "E-Mail"
+msgstr "이메일"
+
+msgid "E-Mail Accounts"
+msgstr "이메일 계정"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "이메일 계정이 삭제되었습니다"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "이메일 주소가 성공적으로 변경되었습니다"
+
+msgid "E-Mail Limit has been set"
+msgstr "이메일 제한이 설정되었습니다"
+
+msgid "E-Mail Update Failed"
+msgstr "이메일 업데이트 실패"
+
+msgid "E-Mail Updated"
+msgstr "이메일이 업데이트되었습니다"
+
+msgid "E-Mail account already exists"
+msgstr "이메일 계정이 이미 존재합니다"
+
+msgid "E-Mail has been changed"
+msgstr "이메일이 변경되었습니다"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "이메일이 %s(으)로 변경되었습니다"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "이메일 할당량은 %s을(를) 초과할 수 없습니다"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "전송된 패킷을 반향합니다."
+
+msgid "Edit"
+msgstr "편집"
+
+msgid "Edit the zone on the master server."
+msgstr "마스터 서버에서 존을 편집하세요."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"계정 생성자가 비밀번호를 변경하여 차단을 해제하도록 하거나, 로그인 "
+"페이지에서 '비밀번호 찾기' 기능을 사용하세요 (활성화된 경우)."
+
+msgid "Email"
+msgstr "이메일"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "이메일 '%s'이(가) 존재하지 않습니다"
+
+#, fuzzy
+msgid "Email Added to list"
+msgstr "이메일 '%s'이(가) 존재하지 않습니다"
+
+msgid "Email Deliveries (Sent)"
+msgstr "이메일 발송 내역"
+
+msgid "Email Disk Usage"
+msgstr "이메일 디스크 사용량"
+
+msgid "Email Forwarders"
+msgstr "이메일 전달자"
+
+msgid "Email Only"
+msgstr "이메일 전용"
+
+msgid "Email Sent"
+msgstr "이메일 전송됨"
+
+#, fuzzy
+msgid "Email Set"
+msgstr "이메일 전송됨"
+
+msgid "Email created but"
+msgstr "이메일이 생성되었지만"
+
+#, fuzzy
+msgid "Email removed"
+msgstr "이메일이 생성되었지만"
+
+msgid "Empty Clipboard"
+msgstr "클립보드 비우기"
+
+msgid "Empty path"
+msgstr "빈 경로"
+
+msgid "Enable"
+msgstr "활성화"
+
+msgid "Enabled"
+msgstr "활성화됨"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "%s의 암호화에 실패했습니다"
+
+msgid "End Time"
+msgstr "종료 시간"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "%lld 바이트를 %s에서 읽는 동안 파일 끝에 도달했습니다. filled=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "두 번째 키가 첫 번째 키와 일치하는지 확인하세요"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "리셀러의 ip.list에 사용 가능한 IP가 있는지 확인하세요."
+
+msgid "Ensuring stored domains are present"
+msgstr "저장된 도메인이 존재하는지 확인 중"
+
+#, fuzzy
+msgid "Error"
+msgstr "오류"
+
+msgid "Error Compressing the backup file"
+msgstr "백업 파일 압축 중 오류 발생"
+
+msgid "Error Creating Cron Job"
+msgstr "크론 작업 생성 중 오류 발생"
+
+msgid "Error Creating Domain"
+msgstr "도메인 생성 중 오류 발생"
+
+msgid "Error Creating Key"
+msgstr "키 생성 중 오류 발생"
+
+msgid "Error Creating User"
+msgstr "사용자 생성 중 오류 발생"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "%s 삭제 중 오류 발생"
+
+msgid "Error Executing Perl"
+msgstr "Perl 실행 중 오류 발생"
+
+msgid "Error Log"
+msgstr "오류 로그"
+
+msgid "Error Reading Message File"
+msgstr "메시지 파일 읽기 오류"
+
+msgid "Error Reading db file"
+msgstr "데이터베이스 파일 읽기 오류"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "사용자 %s 삭제 중 오류 발생"
+
+msgid "Error Resetting Zone"
+msgstr "존 재설정 중 오류 발생"
+
+msgid "Error Restoring database"
+msgstr "데이터베이스 복원 중 오류 발생"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "비밀번호 저장 중 오류 발생: %s"
+
+msgid "Error Unblocking paths"
+msgstr "경로 차단 해제 중 오류 발생"
+
+msgid "Error Updating User"
+msgstr "사용자 업데이트 중 오류 발생"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "%s 작성 중 오류 발생"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "%s의 사용자 %s 활성화 중 오류 발생: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "크론 작업 활성화 중 오류 발생: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "%s의 데이터 활성화 중 오류 발생: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "%s의 DS 레코드를 원격 상위 존에 추가하는 중 오류 발생: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "SSH 키 인증 중 오류 발생"
+
+msgid "Error changing password"
+msgstr "비밀번호 변경 중 오류 발생"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "LetsEncrypt 파일 삭제 중 오류 발생"
+
+msgid "Error converting file: "
+msgstr "파일 변환 중 오류 발생: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "%s을(를) %s(으)로 복사하는 중 오류 발생: %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "%s을(를) %s(으)로 복사하는 중 오류 발생: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "로고 파일 복사 중 오류 발생: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "%s 생성 중 오류 발생"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "%s 생성 중 오류 발생: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "자동 응답기 생성 중 오류 발생"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "NginxUnit 애플리케이션 '%s' 생성 중 오류 발생: %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "NginxUnit 경로 '%s' 생성 중 오류 발생: %s"
+
+msgid "Error creating SSH Key"
+msgstr "SSH 키 생성 중 오류 발생"
+
+msgid "Error creating User"
+msgstr "사용자 생성 중 오류 발생"
+
+msgid "Error creating Vacation Message"
+msgstr "부재중 메시지 생성 중 오류 발생"
+
+msgid "Error creating account"
+msgstr "계정 생성 중 오류 발생"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr "%s에서 기본 디렉터리 생성 중 오류 발생. 자세한 내용은 error.log를 참조하세요."
+
+msgid "Error creating forwarder"
+msgstr "전달자 생성 중 오류 발생"
+
+msgid "Error creating the database"
+msgstr "데이터베이스 생성 중 오류 발생"
+
+msgid "Error decoding the base 64 data"
+msgstr "Base64 데이터 디코딩 중 오류 발생"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "%s 삭제 중 오류 발생: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "SSH 키 삭제 중 오류 발생"
+
+msgid "Error deleting account(s)"
+msgstr "계정 삭제 중 오류 발생"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "자동 응답기 삭제 중 오류 발생"
+
+msgid "Error deleting filter(s)"
+msgstr "필터 삭제 중 오류 발생"
+
+msgid "Error deleting records"
+msgstr "레코드 삭제 중 오류 발생"
+
+msgid "Error determining username from "
+msgstr "사용자 이름 확인 중 오류 발생 "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "%s의 자동 인증서 갱신 중 오류 발생"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "하위 사용자 %s 삭제 중 오류 발생"
+
+msgid "Error during extraction"
+msgstr "압축 해제 중 오류 발생"
+
+msgid "Error executing your request"
+msgstr "요청 실행 중 오류 발생"
+
+msgid "Error generating zone keys"
+msgstr "존 키 생성 중 오류 발생"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Base64 인코딩된 패키지 가져오기 중 오류 발생"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "요청 오류. 도메인, 유형 및 값이 필요합니다."
+
+msgid "Error modifying SSH key"
+msgstr "SSH 키 수정 중 오류 발생"
+
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr "%s 경로 구문 분석 오류: 잘못된 유형"
+
+msgid "Error parsing 'routes'."
+msgstr "'routes' 구문 분석 오류."
+
+msgid "Error parsing json output"
+msgstr "JSON 출력 구문 분석 오류"
+
+msgid "Error purging archives"
+msgstr "아카이브 정리 중 오류 발생"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "%s 읽기 오류: %s"
+
+msgid "Error reading domain config file"
+msgstr "도메인 구성 파일 읽기 오류"
+
+msgid "Error reading domain config files"
+msgstr "도메인 구성 파일 읽기 오류"
+
+msgid "Error reading domainowners"
+msgstr "도메인 소유자 파일 읽기 오류"
+
+msgid "Error reading domainowners file"
+msgstr "도메인 소유자 파일 읽기 오류"
+
+msgid "Error reading named db file"
+msgstr "네임드 데이터베이스 파일 읽기 오류"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "DNSSEC 서명 전, 데이터베이스 파일에 기록한 후 읽기 오류"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "%s의 사용자 파일 읽기 오류, 계속 진행합니다."
+
+msgid "Error reading user_ip.list file"
+msgstr "user_ip.list 파일 읽기 오류"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "%s 삭제 중 오류 발생: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "%s에서 IP 삭제 중 오류 발생"
+
+msgid "Error removing file: "
+msgstr "파일 삭제 중 오류 발생: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "경로 %s 삭제 중 오류 발생: %s"
+
+msgid "Error removing subdomain"
+msgstr "서브도메인 삭제 중 오류 발생"
+
+msgid "Error removing subdomain(s)"
+msgstr "서브도메인 삭제 중 오류 발생"
+
+msgid "Error removing subdomains"
+msgstr "서브도메인 삭제 중 오류 발생"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "사용자 %s 삭제 중 오류 발생"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "%s을(를) %s(으)로 이름 변경 중 오류 발생: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "%s 복원 중 오류 발생: %s"
+
+msgid "Error restoring domain"
+msgstr "도메인 복원 중 오류 발생"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "'%s'의 PHP 설정 복원 중 오류 발생: %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "%s 재작성 중 오류 발생"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "%s 실행 중 오류 발생: %s"
+
+msgid "Error running rndc addzone."
+msgstr "rndc addzone 실행 중 오류가 발생했습니다."
+
+msgid "Error running rndc delzone."
+msgstr "rndc delzone 실행 중 오류가 발생했습니다."
+
+msgid "Error saving Cron E-Mail"
+msgstr "크론 이메일 저장 중 오류 발생"
+
+msgid "Error saving Nameservers"
+msgstr "네임서버 저장 중 오류 발생"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "%d에 신호 전송 중 오류 발생: %s"
+
+msgid "Error setting MX Template"
+msgstr "MX 템플릿 설정 중 오류 발생"
+
+msgid "Error setting MX template for pointer"
+msgstr "포인터의 MX 템플릿 설정 중 오류 발생"
+
+msgid "Error setting PHP versions"
+msgstr "PHP 버전 설정 중 오류 발생"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "%s의 cgroup 제한 설정 중 오류 발생: %s"
+
+msgid "Error setting clipboard files"
+msgstr "클립보드 파일 설정 중 오류 발생"
+
+msgid "Error setting global key"
+msgstr "전역 키 설정 중 오류 발생"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "%s의 권한 설정 중 오류 발생: %s"
+
+msgid "Error setting the filter"
+msgstr "필터 설정 중 오류 발생"
+
+msgid "Error setting the spam filter"
+msgstr "스팸 필터 설정 중 오류 발생"
+
+msgid "Error setting timezone"
+msgstr "시간대 설정 중 오류 발생"
+
+msgid "Error showing Email Acounts"
+msgstr "이메일 계정 표시 중 오류 발생"
+
+msgid "Error showing message ID info"
+msgstr "메시지 ID 정보 표시 중 오류 발생"
+
+msgid "Error showing smtp log info"
+msgstr "SMTP 로그 정보 표시 중 오류 발생"
+
+msgid "Error signing zone"
+msgstr "존 서명 중 오류 발생"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "%s의 사용자 %s 정지 중 오류 발생: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "크론 작업 정지 중 오류 발생: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "자동 응답기 업데이트 중 오류 발생"
+
+msgid "Error updating Catch-All value"
+msgstr "Catch-All 값 업데이트 중 오류 발생"
+
+msgid "Error updating Vacation Message"
+msgstr "부재중 메시지 업데이트 중 오류 발생"
+
+msgid "Error updating forwarder"
+msgstr "이메일 전달자 업데이트 중 오류 발생"
+
+msgid "Error while compressing file"
+msgstr "파일 압축 중 오류 발생"
+
+msgid "Error while creating User"
+msgstr "사용자 생성 중 오류 발생"
+
+msgid "Error while deleting Users"
+msgstr "사용자 삭제 중 오류 발생"
+
+msgid "Error while saving changes"
+msgstr "변경 사항 저장 중 오류 발생"
+
+msgid "Error while saving password"
+msgstr "비밀번호 저장 중 오류 발생"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "%s 작성 중 오류 발생"
+
+msgid "Error with LetsEncrypt request"
+msgstr "LetsEncrypt 요청 오류"
+
+msgid "Error with curl request"
+msgstr "cURL 요청 오류"
+
+msgid "Error with exigrep"
+msgstr "exigrep 오류"
+
+msgid "Error with fchownat"
+msgstr "fchownat 오류"
+
+msgid "Error with system Quotas"
+msgstr "시스템 할당량 오류"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr "백업 계획 오류(이름 변경 실패): %s에서 %s(으)로 복사도 실패함: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "%s 작성 중 오류 발생"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "%s 작성 중 오류 발생: %s"
+
+msgid "Error writing domain config file"
+msgstr "도메인 구성 파일 작성 중 오류 발생"
+
+msgid "Error writing pop cache"
+msgstr "POP 캐시 작성 중 오류 발생"
+
+msgid "Error writing the directadmin.conf"
+msgstr "directadmin.conf 작성 중 오류 발생"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "%s 작성 중 오류 발생: %s"
+
+msgid "Errors"
+msgstr "오류"
+
+msgid "Evening"
+msgstr "저녁"
+
+msgid "Expecting 0 or 1"
+msgstr "0 또는 1을 기대함"
+
+msgid "Expecting any integer"
+msgstr "정수를 기대함"
+
+msgid "Expecting any long long integer"
+msgstr "긴 정수를 기대함"
+
+msgid "Expired"
+msgstr "만료됨"
+
+msgid "Expiry"
+msgstr "만료"
+
+msgid "Export Selected"
+msgstr "선택 항목 내보내기"
+
+msgid "Extension"
+msgstr "확장자"
+
+msgid "Extensions"
+msgstr "확장자"
+
+msgid "Extract"
+msgstr "추출"
+
+msgid "Extract selected to directory"
+msgstr "선택 항목을 디렉터리로 추출"
+
+msgid "Extracting User Data"
+msgstr "사용자 데이터 추출 중"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "파일 추출이 filemanager_disable_features 옵션으로 인해 비활성화되었습니다"
+
+msgid "Extracting non-readable files"
+msgstr "읽을 수 없는 파일 추출 중"
+
+msgid "Extracting ~/domains directory"
+msgstr "~/domains 디렉터리 추출 중"
+
+msgid "Extracting ~/imap directory"
+msgstr "~/imap 디렉터리 추출 중"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "FTP 계정이 이미 존재합니다"
+
+msgid "FTP information invalid."
+msgstr "FTP 정보가 잘못되었습니다."
+
+msgid "FTP: default creation error"
+msgstr "FTP: 기본 생성 오류"
+
+msgid "Feature Disabled"
+msgstr "기능 비활성화됨"
+
+msgid "Feb"
+msgstr "2월"
+
+msgid "File"
+msgstr "파일"
+
+msgid "File %s already exists, file skipped."
+msgstr "파일 %s이(가) 이미 존재합니다. 파일을 건너뜁니다."
+
+msgid "File Extracted"
+msgstr "파일이 추출되었습니다"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "파일이 '%s'로 읽히는 중"
+
+msgid "File copied successfully"
+msgstr "파일이 성공적으로 복사되었습니다"
+
+msgid "File does not exist"
+msgstr "파일이 존재하지 않습니다"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "파일이 존재하지 않거나 접근 권한이 없습니다"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "파일이 추출되었습니다"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "파일 소유권 재설정됨"
+
+#, fuzzy
+msgid "File purged"
+msgstr "아카이브가 정리되었습니다"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "파일이 성공적으로 복원되었습니다"
+
+msgid "File restored successfully"
+msgstr "파일이 성공적으로 복원되었습니다"
+
+msgid "Filename"
+msgstr "파일 이름"
+
+msgid "Files added to clipboard"
+msgstr "파일이 클립보드에 추가되었습니다"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "파일이 추출되었습니다"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "키 삭제됨"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "파일 이름"
+
+msgid "Filter"
+msgstr "필터"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "필터"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP 삭제됨"
+
+msgid "Fingerprint"
+msgstr "지문"
+
+msgid "First"
+msgstr "첫 번째"
+
+msgid "First PHP"
+msgstr "첫 번째 PHP"
+
+msgid "First Page"
+msgstr "첫 페이지"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "'%s'의 플래그 값이 비어 있습니다"
+
+msgid "Flush from DNS"
+msgstr "DNS에서 플러시"
+
+msgid "For backwards compatibility"
+msgstr "이전 버전과의 호환성을 위해"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr "처리해야 할 도메인 수가 많아 시간 초과가 발생할 가능성이 있는 경우"
+
+msgid "Forwarder"
+msgstr "이메일 전달자"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "전달자 %s이(가) 자기 자신을 가리킬 수 없습니다"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "전달자 %s@%s이(가) 삭제되었습니다. 남아 있는 수신자가 없습니다."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "전달자 '%s'이(가) 이미 존재합니다."
+
+msgid "Forwarder already exists"
+msgstr "전달자가 이미 존재합니다"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr "전달자에 로컬 접미사 문자 '%s'이(가) 포함되어 있습니다. 이후 모든 내용이 "
+"무시되며 전달자가 일치하지 않습니다."
+
+msgid "Forwarder created"
+msgstr "전달자가 생성되었습니다"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "전달자 루프 발견됨: %s"
+
+msgid "Forwarder updated"
+msgstr "전달자가 업데이트되었습니다"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "전달자가 생성되었습니다"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "%s에서 파일 0개를 발견하였습니다. %s로 읽는 중"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr "%s에서 일치하는 키를 찾았습니다"
+
+msgid "Free - randomly selected"
+msgstr "무료 - 무작위 선택됨"
+
+msgid "Free Memory"
+msgstr "사용 가능한 메모리"
+
+msgid "Free Selected"
+msgstr "선택 항목 해제"
+
+msgid "Free Swap Memory"
+msgstr "사용 가능한 스왑 메모리"
+
+msgid "From"
+msgstr "발신"
+
+msgid "Ftp"
+msgstr "Ftp"
+
+msgid "Ftp Accounts"
+msgstr "FTP 계정"
+
+msgid "Ftp account changed"
+msgstr "FTP 계정이 변경되었습니다"
+
+msgid "Ftp settings saved"
+msgstr "FTP 설정이 저장되었습니다"
+
+msgid "Full Date"
+msgstr "전체 날짜"
+
+msgid "Full Name has been successfully changed"
+msgstr "전체 이름이 성공적으로 변경되었습니다"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "전체 형식 이름 '%s'이(가) 존 이름으로 끝나지 않습니다"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "키 생성"
+
+msgid "Git Repositories"
+msgstr "Git 저장소"
+
+msgid "Global"
+msgstr "전역"
+
+msgid "Global - randomly selected"
+msgstr "전역 - 무작위 선택됨"
+
+msgid "Global Key"
+msgstr "전역 키"
+
+msgid "Global Key set"
+msgstr "전역 키 설정됨"
+
+msgid "Global ssh keys not available to Users"
+msgstr "전역 SSH 키가 사용자에게 제공되지 않음"
+
+msgid "Go to %s"
+msgstr "%s(으)로 이동"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "그룹 %s이(가) 이미 존재합니다. 다른 사용자 이름을 선택하세요."
+
+msgid "Handler"
+msgstr "처리기"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "레코드 삭제됨"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "처리기"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"안녕하세요,\n"
+"\n"
+"당신의 계정 '|USERNAME|'이(가) 정지되었음을 알려드립니다.\n"
+"사유: |REASON|\n"
+"\n"
+"이 조치가 잘못되었다고 생각되시면, 호스팅 제공업체에 문의하여 자세한 정보를 "
+"확인하세요.\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "결과는 다음과 같습니다"
+
+msgid "Here are the results:"
+msgstr "결과 목록:"
+
+msgid "High"
+msgstr "높음"
+
+msgid "Highest"
+msgstr "최고"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "@ 또는 도메인 헤더 줄을 검색하는 동안 파일 끝에 도달함"
+
+msgid "Home Directory"
+msgstr "홈 디렉터리"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "홈 경로 '%s'이(가) 허용된 home_override_list에 없습니다"
+
+msgid "Host:"
+msgstr "호스트:"
+
+msgid "Hosts"
+msgstr "호스트"
+
+msgid "Hour"
+msgstr "시간"
+
+msgid "How to process the request"
+msgstr "요청을 처리하는 방법"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr "그러나 %s번 시도 후에도 유효한 2단계 인증 코드를 제공하지 못하여 접근이 "
+"거부되었습니다."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "그러나 서브도메인이 발견되었습니다. 해당 서브도메인으로 계속 진행합니다."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID가 당신의 것이 아닙니다"
+
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 또는 1234-1239"
+
+msgid "IO Read Bandwidth Max"
+msgstr "입출력 읽기 대역폭 최대값"
+
+msgid "IO Write Bandwidth Max"
+msgstr "입출력 쓰기 대역폭 최대값"
+
+msgid "IOPS Read Max"
+msgstr "IOPS 읽기 최대값"
+
+msgid "IOPS Write Max"
+msgstr "IOPS 쓰기 최대값"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP 추가됨"
+
+msgid "IP Info"
+msgstr "IP 정보"
+
+msgid "IP Link Added"
+msgstr "IP 링크 추가됨"
+
+msgid "IP Link(s) Removed"
+msgstr "IP 링크 삭제됨"
+
+msgid "IP List is empty"
+msgstr "IP 목록이 비어 있습니다"
+
+msgid "IP Netmask Set"
+msgstr "IP 넷마스크 설정됨"
+
+msgid "IP Type"
+msgstr "IP 유형"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "도메인 구성 파일(%s)에 있는 IP가 유효하지 않습니다."
+
+msgid "IP must be shared or free"
+msgstr "IP는 공유되거나 사용 가능해야 합니다"
+
+msgid "IP will be linked in the background"
+msgstr "IP가 백그라운드에서 연결됩니다"
+
+msgid "IP(s)"
+msgstr "IP"
+
+msgid "IP(s) removed"
+msgstr "IP 삭제됨"
+
+msgid "IP/User"
+msgstr "IP/사용자"
+
+msgid "IPs"
+msgstr "IP 목록"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr "필요한 경우, 서버 관리자에게 문의하여 존을 다시 생성하세요."
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr "입력한 사용자 이름이 정확하면, 곧 확인 이메일을 받게 됩니다."
+
+msgid "If this is not your IP, change your password."
+msgstr "이 IP가 당신의 것이 아니라면 비밀번호를 변경하세요."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr "현재 인증서를 덮어쓰지 않으려면 자동 갱신을 비활성화하세요"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr "계속 진행하면 이 사용자 계정뿐만 아니라 여기에 나열되지 않은 관련 웹사이트 "
+"및 이메일 내용도 모두 삭제됩니다."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr "이 값을 0으로 설정하면 기본 httpd 요청이 작동하지 않습니다. 로그인조차 "
+"불가능할 수 있습니다."
+
+msgid "Image filenames only have 1 dot"
+msgstr "이미지 파일 이름에는 점이 하나만 있어야 합니다"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "IMAP 폴더"
+
+msgid "Inactive"
+msgstr "비활성"
+
+msgid "Inbox"
+msgstr "받은 편지함"
+
+msgid "Include Domains"
+msgstr "도메인 포함"
+
+msgid "Info"
+msgstr "정보"
+
+msgid "Info for admins"
+msgstr "관리자 정보"
+
+msgid "Inherit"
+msgstr "상속"
+
+msgid "Inodes"
+msgstr "Inode 수"
+
+msgid "Installed"
+msgstr "설치됨"
+
+msgid "Installed Perl Modules"
+msgstr "설치된 Perl 모듈"
+
+msgid "Interface is a loopback interface."
+msgstr "인터페이스가 루프백 인터페이스입니다."
+
+msgid "Interface is a point-to-point link."
+msgstr "인터페이스가 점대점 링크입니다."
+
+msgid "Interface is in promiscuous mode."
+msgstr "인터페이스가 혼잡 모드입니다."
+
+msgid "Interface is running."
+msgstr "인터페이스가 실행 중입니다."
+
+msgid "Internal debugging flag."
+msgstr "내부 디버깅 플래그."
+
+msgid "Invalid "
+msgstr "잘못된 "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "잘못된 '%s'"
+
+msgid "Invalid CC email address"
+msgstr "잘못된 참조(CC) 이메일 주소"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr "스킨 이름에 유효하지 않은 문자가 포함되어 있습니다. a-zA-Z0-9._-[] 만 사용 "
+"가능하며 '.'으로 시작할 수 없습니다"
+
+msgid "Invalid Cron ID"
+msgstr "잘못된 크론 ID"
+
+msgid "Invalid DNS name"
+msgstr "잘못된 DNS 이름"
+
+msgid "Invalid DNS value"
+msgstr "잘못된 DNS 값"
+
+msgid "Invalid Domain"
+msgstr "잘못된 도메인"
+
+msgid "Invalid Domain Name"
+msgstr "잘못된 도메인 이름"
+
+msgid "Invalid E-Mail"
+msgstr "잘못된 이메일"
+
+msgid "Invalid E-Mail User"
+msgstr "잘못된 이메일 사용자"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr "잘못된 이메일 주소입니다. 여러 개 또는 DirectAdmin 로그인 사용자 이름, 빈 "
+"값도 허용됩니다"
+
+msgid "Invalid Email"
+msgstr "잘못된 이메일"
+
+msgid "Invalid Email Name"
+msgstr "잘못된 이메일 이름"
+
+msgid "Invalid Email limit"
+msgstr "잘못된 이메일 제한값"
+
+msgid "Invalid FTP account"
+msgstr "잘못된 FTP 계정"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "잘못된 IP(1.2.3.4) 또는 IP 범위(1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "FTP 연결을 위한 잘못된 IP/도메인"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "잘못된 로그 순환 값: %d"
+
+msgid "Invalid MX value"
+msgstr "잘못된 MX 값"
+
+msgid "Invalid Name"
+msgstr "잘못된 이름"
+
+msgid "Invalid Netmask"
+msgstr "잘못된 넷마스크"
+
+msgid "Invalid Password"
+msgstr "잘못된 비밀번호"
+
+msgid "Invalid RSA comment"
+msgstr "잘못된 RSA 설명"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "잘못된 RSA ID. 단순한 문자(a-zA-Z0-9)만 사용하세요"
+
+msgid "Invalid RSA key"
+msgstr "잘못된 RSA 키"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "잘못된 SecRuleRemoveById 값"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "잘못된 세션 시간 값: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "잘못된 서브도메인"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "잘못된 2단계 인증 코드"
+
+msgid "Invalid Two-Step Authentication code"
+msgstr "잘못된 2단계 인증 코드"
+
+msgid "Invalid URL"
+msgstr "잘못된 URL"
+
+msgid "Invalid Username"
+msgstr "잘못된 사용자 이름"
+
+msgid "Invalid Username or Password"
+msgstr "잘못된 사용자 이름 또는 비밀번호"
+
+msgid "Invalid characters in password"
+msgstr "비밀번호에 유효하지 않은 문자가 포함됨"
+
+msgid "Invalid characters in word"
+msgstr "단어에 유효하지 않은 문자가 포함됨"
+
+msgid "Invalid crypted passwd"
+msgstr "잘못된 암호화된 비밀번호"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr "잘못된 delete_messages_days 또는 delete_tickets_days 값. 너무 큽니다. 최대값 "
+"= "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr "잘못된 delete_messages_days 또는 delete_tickets_days 값. 0 또는 양의 "
+"정수여야 합니다."
+
+msgid "Invalid dnsprovider"
+msgstr "잘못된 DNS 제공업체"
+
+msgid "Invalid dnsprovider type"
+msgstr "잘못된 DNS 제공업체 유형"
+
+msgid "Invalid domain"
+msgstr "잘못된 도메인"
+
+msgid "Invalid email address"
+msgstr "잘못된 이메일 주소"
+
+msgid "Invalid email user"
+msgstr "잘못된 이메일 사용자"
+
+msgid "Invalid email username"
+msgstr "잘못된 이메일 사용자 이름"
+
+msgid "Invalid encryption password"
+msgstr "잘못된 암호화 비밀번호"
+
+msgid "Invalid file extension list"
+msgstr "잘못된 파일 확장자 목록"
+
+msgid "Invalid filename:"
+msgstr "잘못된 파일 이름:"
+
+msgid "Invalid filter type"
+msgstr "잘못된 필터 유형"
+
+msgid "Invalid fingerprint"
+msgstr "잘못된 지문"
+
+msgid "Invalid ftp password"
+msgstr "잘못된 FTP 비밀번호"
+
+msgid "Invalid ftp path"
+msgstr "잘못된 FTP 경로"
+
+msgid "Invalid ftp port"
+msgstr "잘못된 FTP 포트"
+
+msgid "Invalid ftp username"
+msgstr "잘못된 FTP 사용자 이름"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "잘못된 키 비트 길이: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "잘못된 키 옵션 이름 또는 값: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "잘못된 키 유형: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "잘못된 키 크기. 유효한 값: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "허용된 도메인 목록이 잘못됨"
+
+msgid "Invalid local path"
+msgstr "잘못된 로컬 경로"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "잘못된 로그인. 사용자 이름과 비밀번호를 확인하세요"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "잘못된 메시지 보관일. 양의 정수여야 합니다."
+
+msgid "Invalid message id"
+msgstr "잘못된 메시지 ID"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "잘못된 메시지 유형. 요청, 응답, 메시지만 허용됩니다"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "잘못된 메서드: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "잘못된 이름 또는 확장자"
+
+msgid "Invalid netmask type for IP type"
+msgstr "IP 유형에 대한 잘못된 넷마스크 유형"
+
+msgid "Invalid new user value"
+msgstr "잘못된 새 사용자 값"
+
+msgid "Invalid number"
+msgstr "잘못된 숫자"
+
+msgid "Invalid package name"
+msgstr "잘못된 패키지 이름"
+
+msgid "Invalid path"
+msgstr "잘못된 경로"
+
+msgid "Invalid path append value"
+msgstr "잘못된 경로 추가 값"
+
+msgid "Invalid redirect URL"
+msgstr "잘못된 리디렉션 URL"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "잘못된 세션 제한 시간 또는 최대 파일 크기 값"
+
+msgid "Invalid subdomain name"
+msgstr "잘못된 서브도메인 이름"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "잘못된 티켓 일 수. 양의 정수여야 합니다."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "잘못된 티켓 일 수. 너무 큽니다. 최대값 = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "잘못된 유형: '%s'의 값 '%s'"
+
+msgid "Invalid update channel"
+msgstr "잘못된 업데이트 채널"
+
+msgid "Invalid username"
+msgstr "잘못된 사용자 이름"
+
+msgid "Invalid values"
+msgstr "잘못된 값"
+
+msgid "Is able to select media type via ifmap."
+msgstr "ifmap을 통해 미디어 유형을 선택할 수 있습니다."
+
+msgid "Issue verifying license"
+msgstr "라이선스 검증 문제 발생"
+
+msgid "Issuer"
+msgstr "발급자"
+
+msgid "It already exists on the following system(s)"
+msgstr "다음 시스템에 이미 존재합니다"
+
+msgid "It has been disabled"
+msgstr "비활성화되었습니다"
+
+msgid "It must be a positive integer."
+msgstr "양의 정수여야 합니다."
+
+msgid "It must not be an IP"
+msgstr "IP여서는 안 됩니다"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "이미 %s와(과) 연결되어 있습니다"
+
+msgid "Items per page"
+msgstr "페이지당 항목 수"
+
+msgid "Jailed Home"
+msgstr "격리된 홈 디렉터리"
+
+msgid "Jan"
+msgstr "1월"
+
+msgid "Jul"
+msgstr "7월"
+
+msgid "Jun"
+msgstr "6월"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "나중에 참고할 수 있도록 보관하세요."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "숫자를 현실적인 값으로 유지하세요."
+
+msgid "Key"
+msgstr "키"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "키가 생성되었습니다. 값을 기록하고 안전하게 보관하세요."
+
+msgid "Key ID"
+msgstr "키 ID"
+
+msgid "Key Name"
+msgstr "키 이름"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "키 이름은 단순해야 합니다: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "지문 매칭을 통해 키가 이미 존재합니다"
+
+msgid "Key is Invalid"
+msgstr "잘못된 키"
+
+msgid "Key(s) deleted"
+msgstr "키 삭제됨"
+
+msgid "Keys"
+msgstr "키 목록"
+
+msgid "Keys listed below"
+msgstr "아래 나열된 키"
+
+msgid "Kill"
+msgstr "종료"
+
+msgid "Language"
+msgstr "언어"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "언어가 %s(으)로 변경되었습니다"
+
+msgid "Language has been successfully changed"
+msgstr "언어가 성공적으로 변경되었습니다"
+
+msgid "Last"
+msgstr "마지막"
+
+msgid "Last Accessed"
+msgstr "마지막 접근"
+
+msgid "Last Changed"
+msgstr "마지막 변경"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "마지막 로그인 IP: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "마지막 로그인: %s"
+
+msgid "Last Message"
+msgstr "마지막 메시지"
+
+msgid "Last Modified"
+msgstr "마지막 수정"
+
+msgid "Last Page"
+msgstr "마지막 페이지"
+
+msgid "Last Tally Completion"
+msgstr "마지막 합계 완료"
+
+msgid "Leave DNS"
+msgstr "DNS 유지"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "%s의 목록에 남아 있는 사용자"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Let's Encrypt 인증서 항목"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt가 활성화되지 않았습니다. 이 옵션을 사용할 수 없습니다."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "Let's Encrypt 파일이 삭제되었습니다"
+
+msgid "LetsEncrypt request successful"
+msgstr "Let's Encrypt 요청 성공"
+
+msgid "LetsEncrypt request successful for"
+msgstr "다음에 대한 Let's Encrypt 요청 성공"
+
+msgid "License file is no longer supported"
+msgstr "라이선스 파일이 더 이상 지원되지 않습니다"
+
+msgid "License file unchanged"
+msgstr "라이선스 파일 변경되지 않음"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "라이선스가 DirectAdmin 라이선싱 시스템을 통해 검증되었습니다"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr "라이선스는 최대 %d명의 관리자/리셀러로 제한되며, 현재 %d명이 있습니다"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "라이선스는 최대 %d개의 계정으로 제한되며, 현재 %d개가 있습니다"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "라이선스는 최대 %d개의 도메인으로 제한되며, 현재 %d개가 있습니다"
+
+msgid "License is not valid"
+msgstr "라이선스가 유효하지 않습니다"
+
+msgid "License limits exceeded"
+msgstr "라이선스 제한 초과"
+
+msgid "License verified"
+msgstr "라이선스 검증 완료"
+
+msgid "Limit Notice"
+msgstr "제한 알림"
+
+msgid "Limit is not a number"
+msgstr "제한 값이 숫자가 아닙니다"
+
+msgid "Link"
+msgstr "링크"
+
+msgid "Link in Background"
+msgstr "백그라운드에서 링크"
+
+msgid "Linked IPs"
+msgstr "연결된 IP"
+
+msgid "List"
+msgstr "목록"
+
+msgid "List Configurations Saved"
+msgstr "목록 설정 저장됨"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "목록 이름은 %d자 이하여야 합니다"
+
+msgid "Listname must be all lower case letters"
+msgstr "목록 이름은 모두 소문자여야 합니다"
+
+msgid "Load Average"
+msgstr "로드 평균"
+
+msgid "Local Data"
+msgstr "로컬 데이터"
+
+msgid "Local Default"
+msgstr "로컬 기본값"
+
+msgid "Local Mail"
+msgstr "로컬 메일"
+
+msgid "Local URL Path"
+msgstr "로컬 URL 경로"
+
+msgid "Log"
+msgstr "로그"
+
+msgid "Log Entry"
+msgstr "로그 항목"
+
+msgid "Log Usage"
+msgstr "로그 사용량"
+
+msgid "Login"
+msgstr "로그인"
+
+msgid "Login Failures"
+msgstr "로그인 실패"
+
+msgid "Login Keys"
+msgstr "로그인 키"
+
+#, c-format
+msgid "Login as %s"
+msgstr "%s로 로그인"
+
+msgid "Low"
+msgstr "낮음"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "MX 템플릿 설정됨"
+
+msgid "MX Templates are disabled"
+msgstr "MX 템플릿 비활성화됨"
+
+msgid "MX priority should be an positive number"
+msgstr "MX 우선순위는 양수여야 합니다"
+
+msgid "Mailing List"
+msgstr "메일링 리스트"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "메일링 리스트"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "메일링 리스트"
+
+msgid "Mailing Lists"
+msgstr "메일링 리스트"
+
+msgid "Main"
+msgstr "메인"
+
+msgid "Main Domain ..."
+msgstr "메인 도메인 ..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "심각한 오류: %s의 홈 디렉터리를 찾는 중 오류 발생"
+
+msgid "Make sure 'unit' is running"
+msgstr "'unit'이 실행 중인지 확인하세요"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "전달된 값이 해당 유형에 적합한지 확인하세요"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "%s에 의해 수동 처리됨"
+
+msgid "Mar"
+msgstr "3월"
+
+msgid "Mark as read"
+msgstr "읽음으로 표시"
+
+msgid "Master of a load balancing bundle."
+msgstr "로드 밸런싱 번들의 마스터."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "단위에서 생성할 수 있는 최대 작업 수"
+
+msgid "Max Usage (Meg)"
+msgstr "최대 사용량 (MB)"
+
+msgid "Max disk read operations per second."
+msgstr "초당 최대 디스크 읽기 작업 수."
+
+msgid "Max disk write operations per second."
+msgstr "초당 최대 디스크 쓰기 작업 수."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "사용자가 이메일당 설정할 수 있는 최대 제한"
+
+msgid "Max rate data can be read from a disk."
+msgstr "디스크에서 읽을 수 있는 최대 데이터 속도."
+
+msgid "Max rate data can be written to a disk."
+msgstr "디스크에 쓸 수 있는 최대 데이터 속도."
+
+msgid "Maximum Usage"
+msgstr "최대 사용량"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "최대값: %s=%s"
+
+msgid "May"
+msgstr "5월"
+
+msgid "Medium"
+msgstr "중간"
+
+msgid "Meg"
+msgstr "메가"
+
+msgid "Memory High"
+msgstr "메모리 사용량 높음"
+
+msgid "Memory Max"
+msgstr "최대 메모리 사용량"
+
+msgid "Memory Usage"
+msgstr "메모리 사용량"
+
+msgid "Message #"
+msgstr "메시지 #"
+
+msgid "Message Reset"
+msgstr "메시지 초기화"
+
+msgid "Message Type"
+msgstr "메시지 유형"
+
+msgid "Message is being sent"
+msgstr "메시지 전송 중"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "메시지 삭제됨"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "메시지 업데이트됨"
+
+msgid "Messages Updated"
+msgstr "메시지 업데이트됨"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "스킨이 삭제됨"
+
+#, fuzzy
+msgid "Mime-Type added"
+msgstr "Mime 유형"
+
+msgid "MimeType"
+msgstr "Mime 유형"
+
+msgid "Minute"
+msgstr "분"
+
+msgid "Missing closing bracket in zone line."
+msgstr "존 라인에서 닫는 대괄호가 누락되었습니다."
+
+msgid "Missing open bracket in zone line."
+msgstr "존 라인에서 여는 대괄호가 누락되었습니다."
+
+msgid "ModSecurity Flags"
+msgstr "ModSecurity 플래그"
+
+msgid "ModSecurity Rules Saved"
+msgstr "ModSecurity 규칙 저장됨"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "ModSecurity에서 건너뛴 규칙"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity가 활성화되지 않았습니다"
+
+msgid "Modify"
+msgstr "수정"
+
+msgid "Modify Password"
+msgstr "비밀번호 수정"
+
+msgid "Month"
+msgstr "월"
+
+msgid "More Info"
+msgstr "자세한 정보"
+
+msgid "Morning"
+msgstr "아침"
+
+msgid "Move Clipboard Files here"
+msgstr "클립보드 파일을 여기에 이동"
+
+msgid "Move to Trash"
+msgstr "휴지통으로 이동"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Mime 유형 또는 핸들러 이름과 단일 확장자를 제공해야 합니다. 예: \\\"text/"
+"html\\\" 또는 \\\"cgi-script\\\" 및 \\\"html\\\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "LetsEncrypt 항목을 하나 이상 선택해야 합니다."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr "옵션을 사용하려면 letsencrypt=1을 설정해야 합니다. 현재 letsencrypt=%d로 "
+"설정되어 있습니다."
+
+msgid "MySQL is not enabled on this server"
+msgstr "이 서버에서 MySQL이 활성화되지 않았습니다"
+
+msgid "NGINX Unit"
+msgstr "NGINX 유닛"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Name Server 1"
+msgstr "네임서버 1"
+
+msgid "Name Server 2"
+msgstr "네임서버 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "이름은 문자, 공백 및 마침표만 포함할 수 있습니다"
+
+msgid "Nameserver"
+msgstr "네임서버"
+
+msgid "Nameservers deleted"
+msgstr "네임서버 삭제됨"
+
+msgid "Nameservers have been changed"
+msgstr "네임서버 변경됨"
+
+msgid "Namesevers have been changed."
+msgstr "네임서버가 변경되었습니다."
+
+msgid "Netmask"
+msgstr "넷마스크"
+
+msgid "Never"
+msgstr "없음"
+
+msgid "New Secret Set: %s"
+msgstr "새로운 비밀 키 설정됨: %s"
+
+msgid "New password isn't different"
+msgstr "새 비밀번호가 이전 비밀번호와 다르지 않습니다"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "새로 설치된 키는 %s비트입니다"
+
+msgid "Next Retry"
+msgstr "다음 재시도"
+
+msgid "Nginx Template"
+msgstr "Nginx 템플릿"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx가 활성화되지 않았습니다"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit이 활성화되지 않았거나 실행되지 않고 있습니다"
+
+msgid "No"
+msgstr "아니요"
+
+msgid "No Awstats"
+msgstr "Awstats 없음"
+
+msgid "No Data to Show"
+msgstr "표시할 데이터 없음"
+
+msgid "No IPs selected"
+msgstr "선택된 IP 없음"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "경로 위치 %lld에서 컨테이너에 ListFile이 없음"
+
+msgid "No Send class set"
+msgstr "설정된 Send 클래스 없음"
+
+msgid "No User Data"
+msgstr "사용자 데이터 없음"
+
+msgid "No action"
+msgstr "동작 없음"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "ARP 프로토콜이 없고, L2 목적지 주소가 설정되지 않았습니다."
+
+msgid "No changes have been made"
+msgstr "변경 사항 없음"
+
+msgid "No changes were needed. Skipping write."
+msgstr "변경이 필요하지 않습니다. 쓰기를 건너뜁니다."
+
+msgid "No colors have been selected"
+msgstr "선택된 색상 없음"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "경로 위치 %lld에서 컨테이너 없음"
+
+msgid "No events for this period."
+msgstr "이 기간 동안 이벤트가 없습니다."
+
+msgid "No files have been selected for upload."
+msgstr "업로드할 파일이 선택되지 않았습니다."
+
+msgid "No free IPs found"
+msgstr "사용 가능한 IP 없음"
+
+msgid "No global IPs found"
+msgstr "글로벌 IP 없음"
+
+msgid "No keys selected"
+msgstr "선택된 키 없음"
+
+msgid "No passwd entries provided."
+msgstr "제공된 비밀번호 항목이 없습니다."
+
+msgid "No paths were provided."
+msgstr "제공된 경로가 없습니다."
+
+msgid "No shared IPs found"
+msgstr "공유된 IP 없음"
+
+msgid "No text provided"
+msgstr "제공된 텍스트 없음"
+
+msgid "No vacation message set"
+msgstr "설정된 부재중 메시지 없음"
+
+msgid "None"
+msgstr "없음"
+
+msgid "Not a valid IP Address"
+msgstr "유효한 IP 주소가 아닙니다"
+
+msgid "Not allowed for Resellers"
+msgstr "리셀러에게 허용되지 않음"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr "네임서버를 생성할 충분한 IP가 없습니다. 최소 %d개의 사용되지 않은 IP가 "
+"필요합니다."
+
+msgid "Not setting up Mail SNI."
+msgstr "Mail SNI 설정하지 않았습니다."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "'%c' 문자가 %d 위치에 있어서 유효하지 않음"
+
+msgid "Not yet generated"
+msgstr "아직 생성되지 않음"
+
+msgid "Not yet signed"
+msgstr "아직 서명되지 않음"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr "참고: 이전 Let's Encrypt 설정이 %d일 후 갱신되도록 설정되어 있습니다."
+
+msgid "Nothing"
+msgstr "없음"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "로그인 키 %s이(가) %s에 의해 성공적으로 생성됨"
+
+msgid "Notified"
+msgstr "알림 전송됨"
+
+msgid "Nov"
+msgstr "11월"
+
+msgid "Null values"
+msgstr "널 값"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "숫자 %s=%s가 범위를 벗어남 (필요한 범위: %d-%d)"
+
+msgid "Number of Users"
+msgstr "사용자 수"
+
+msgid "OK"
+msgstr "확인"
+
+msgid "Oct"
+msgstr "10월"
+
+msgid "Off"
+msgstr "꺼짐"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "이전 %s비트 키가 %s에 백업됨"
+
+msgid "Old password incorrect"
+msgstr "이전 비밀번호가 올바르지 않음"
+
+#, c-format
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "%d일보다 오래됨"
+
+msgid "On"
+msgstr "켜짐"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr "선택한 IP 중 하나 이상이 현재 목록에 없음"
+
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "One-Click 로그인 기능이 directadmin.conf에서 활성화되지 않음"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"One-Click 로그인이 webmail_link=%s을(를) 지원하지 않습니다. "
+"webmail_link=roundcube를 시도하세요."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "요청한 %d개의 글로벌 IP 중 %d개만 할당됨."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "이 방법을 사용하면 '추가' IP만 사용자의 목록에서 제거할 수 있습니다"
+
+msgid "Only API access is allowed"
+msgstr "API 액세스만 허용됨"
+
+msgid "Only Admin accounts can save settings"
+msgstr "관리자 계정만 설정을 저장할 수 있음"
+
+msgid "Only Admins can reset the usage count"
+msgstr "관리자만 사용량을 초기화할 수 있음"
+
+msgid "Only Admins may run this request"
+msgstr "이 요청은 관리자만 실행할 수 있음"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr "한 번에 하나의 확장자만 제공하세요. 예: \"jpg\" (X \"jpg jpeg jpe\")"
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "기본 도메인 '%s'만 PHP 설정을 변경할 수 있습니다."
+
+msgid "Only the location of the route can be renamed"
+msgstr "경로의 위치만 이름을 변경할 수 있음"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr "현재 정상적으로 작동하는 로컬 DNS가 있는 도메인에서만 와일드카드를 사용하세요"
+
+msgid "Open"
+msgstr "열기"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "선택한 도메인에서 Open Basedir 비활성화됨"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "선택한 도메인에서 Open Basedir 활성화됨"
+
+msgid "Open+Confirm"
+msgstr "열기+확인"
+
+msgid "Operation"
+msgstr "작업"
+
+msgid "Optimize"
+msgstr "최적화"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "옵션 '%s'이(가) 이미 설정됨"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "설정이 저장됨"
+
+msgid "Options"
+msgstr "옵션"
+
+msgid "Options changed successfully"
+msgstr "옵션이 성공적으로 변경됨"
+
+msgid "Order"
+msgstr "순서"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "정렬 값이 동일할 경우 순서"
+
+msgid "Original Package"
+msgstr "원본 패키지"
+
+msgid "Other"
+msgstr "기타"
+
+msgid "Other Disk Usage"
+msgstr "기타 디스크 사용량"
+
+msgid "Other Usage"
+msgstr "기타 사용량"
+
+msgid "Overview"
+msgstr "개요"
+
+msgid "Owner"
+msgstr "소유자"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "글로벌 IP의 소유자가 관리자 %s으로 변경됨"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "PHP 스크립트 이름"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "이 도메인에서는 PHP 설정을 변경할 수 없음"
+
+msgid "PHP Version Selector"
+msgstr "PHP 버전 선택기"
+
+msgid "PHP versions saved"
+msgstr "PHP 버전이 저장됨"
+
+msgid "PID"
+msgstr "프로세스 ID (PID)"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s'이(가) 숫자가 아님"
+
+msgid "POP Email Accounts"
+msgstr "POP 이메일 계정"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP 서버"
+
+msgid "Package"
+msgstr "패키지"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "패키지 '%s'이(가) 이미 존재함"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "패키지 '%s'이(가) 존재하지 않음"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "패키지 '%s'이(가) 목록에 없음"
+
+msgid "Package not found"
+msgstr "패키지를 찾을 수 없음"
+
+msgid "Page"
+msgstr "페이지"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "상위 디렉터리 %s이(가) 생성되었습니다."
+
+msgid "Parsing Error. Check logs"
+msgstr "구문 분석 오류. 로그 확인 필요"
+
+msgid "Password"
+msgstr "비밀번호"
+
+msgid "Password Changed"
+msgstr "비밀번호 변경됨"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "비밀번호 변경됨: %s"
+
+msgid "Password Not Changed"
+msgstr "비밀번호가 변경되지 않음"
+
+msgid "Password Saved!"
+msgstr "비밀번호 저장됨!"
+
+msgid "Password is not valid"
+msgstr "비밀번호가 유효하지 않음"
+
+msgid "Password is too long"
+msgstr "비밀번호가 너무 김"
+
+msgid "Password is too short"
+msgstr "비밀번호가 너무 짧음"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "비밀번호가 너무 짧음 (%d). 최소 %d자 이상 사용해야 합니다"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "비밀번호는 %d자 이상이어야 합니다"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "스킨이 성공적으로 변경됨"
+
+msgid "Password/Quota"
+msgstr "비밀번호/할당량"
+
+msgid "Password:"
+msgstr "비밀번호:"
+
+msgid "Passwords do not match"
+msgstr "비밀번호가 일치하지 않음"
+
+msgid "Passwords do not match or are invalid"
+msgstr "비밀번호가 일치하지 않거나 유효하지 않음"
+
+msgid "Path"
+msgstr "경로"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "경로 %s이(가) 존재하지 않거나 %s 사용자가 접근할 수 없습니다."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr "사용자 생성 전에 경로 '%s'이(가) 이미 존재합니다. 먼저 이 경로를 삭제하거나 "
+"이름을 변경하세요."
+
+msgid "Path does not exist"
+msgstr "경로가 존재하지 않음"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "경로는 슬래시 (/)로 시작해야 합니다"
+
+msgid "Paths Unblocked"
+msgstr "경로 차단 해제됨"
+
+msgid "Paths must be within your home directory"
+msgstr "경로는 홈 디렉터리 내에 있어야 합니다"
+
+msgid "Percent"
+msgstr "퍼센트"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "퍼센트 값은 % 문자로 끝나야 합니다"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "CPU 코어 사용률. 100% 초과 시 여러 코어 사용이 가능합니다."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "퍼센트 값은 %d에서 %d 사이여야 합니다"
+
+msgid "Perm."
+msgstr "권한."
+
+msgid "Permissions set"
+msgstr "권한이 설정됨"
+
+msgid "Php is not enabled"
+msgstr "PHP가 활성화되지 않음"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr "%s의 존을 확인하여 네임서버 A 레코드가 올바른지 확인하세요."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "DNSSEC 데이터를 삭제하시겠습니까"
+
+msgid "Please pick only one skin to apply"
+msgstr "적용할 스킨을 하나만 선택하세요"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "'%s'을(를) 제공하세요"
+
+msgid "Please provide at least one IP"
+msgstr "최소한 하나의 IP를 제공하세요"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "다음 URL을 확인하고 curl 종료 코드 '(%d)'를 확인하세요: %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "기본 도메인으로 사용할 도메인 하나를 선택하세요"
+
+msgid "Please select at least one User"
+msgstr "최소한 한 명의 사용자를 선택하세요"
+
+msgid "Please select at least one domains"
+msgstr "최소한 하나의 도메인을 선택하세요"
+
+msgid "Please select at least one file"
+msgstr "최소한 하나의 파일을 선택하세요"
+
+msgid "Please select at least one item"
+msgstr "최소한 하나의 항목을 선택하세요"
+
+msgid "Please select at least one package"
+msgstr "최소한 하나의 패키지를 선택하세요"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "압축 파일에서 추출할 파일을 하나 이상 선택하세요"
+
+msgid "Please select one or more Databases"
+msgstr "하나 이상의 데이터베이스를 선택하세요"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "편집할 크론 작업을 하나만 선택하세요"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "제한값을 1에서 %d 사이로 설정하세요"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "'%s'을(를) 삭제하기 전에 모든 IP 연결을 해제하세요."
+
+msgid "Please use all lower case characters in the username"
+msgstr "사용자 이름에 소문자만 사용하세요"
+
+msgid "Plugin Uploaded"
+msgstr "플러그인이 업로드됨"
+
+msgid "Plugin(s) Installed"
+msgstr "플러그인(들)이 설치됨"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "플러그인(들)이 제거됨"
+
+msgid "Plugin(s) Updated"
+msgstr "플러그인(들)이 업데이트됨"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "포인터 '%s'이(가) 당신의 것이 아닙니다."
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "포스트 스크립트"
+
+msgid "Post scripts"
+msgstr "포스트 스크립트"
+
+msgid "Pre-backup hard-link check"
+msgstr "백업 전 하드링크 검사"
+
+msgid "Preparing 'domains' data"
+msgstr "'도메인' 데이터를 준비 중"
+
+msgid "Preparing data (no 'domains')"
+msgstr "데이터 준비 중 ('도메인' 제외)"
+
+msgid "Present"
+msgstr "현재"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr "웹 데이터 보존은 /domains/domain.com에만 적용됩니다. 이메일 데이터 등의 다른 "
+"영역은 보존되지 않습니다."
+
+msgid "Priority"
+msgstr "우선순위"
+
+msgid "Privileges"
+msgstr "권한"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "프로세스 ID %d이(가) 'dataskq'가 아닙니다. 현재 '%s'입니다"
+
+msgid "Process is running"
+msgstr "프로세스 실행 중"
+
+msgid "Process is stopped"
+msgstr "프로세스 중지됨"
+
+msgid "Processor Name"
+msgstr "프로세서 이름"
+
+msgid "Processor Speed (MHz)"
+msgstr "프로세서 속도 (MHz)"
+
+msgid "Progress"
+msgstr "진행 상황"
+
+msgid "Protect"
+msgstr "보호"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "보호된 디렉터리 이름에 잘못된 문자가 포함되어 있습니다. 간단한 이름을 "
+"사용하세요"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "filemanager_disable_features 옵션으로 인해 디렉터리 보호가 비활성화되었습니다"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "IP, IP 범위, 도메인 또는 와일드카드 도메인 중 하나를 입력하세요."
+
+msgid "Provided password is not correct."
+msgstr "입력한 비밀번호가 올바르지 않습니다."
+
+msgid "Provided password is weak"
+msgstr "입력한 비밀번호가 취약합니다"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "입력한 값이 사용자 이름 또는 이메일 주소가 아닙니다"
+
+msgid "Provided value is not valid."
+msgstr "입력한 값이 유효하지 않습니다."
+
+msgid "Proxy socket address"
+msgstr "프록시 소켓 주소"
+
+msgid "Publish"
+msgstr "게시"
+
+msgid "Purge"
+msgstr "정리"
+
+msgid "Purge Archives"
+msgstr "아카이브 정리"
+
+msgid "Purge From"
+msgstr "다음으로부터 정리"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "%s 후 정리"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "httpd.conf 재작성 작업을 백그라운드에서 수행 중입니다."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "변경 사항이 저장되었습니다"
+
+msgid "Re-sign your zone."
+msgstr "존을 다시 서명하세요."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "%s을(를) 읽는 중 오류 발생: %s"
+
+msgid "Reason:"
+msgstr "이유:"
+
+msgid "Reboot"
+msgstr "재부팅"
+
+msgid "Receive all multicast packets."
+msgstr "모든 멀티캐스트 패킷이 수신되었습니다."
+
+msgid "Received"
+msgstr "수신됨"
+
+msgid "Received Emails"
+msgstr "수신된 이메일"
+
+msgid "Reconfiguration Error"
+msgstr "재구성 오류"
+
+msgid "Record Added"
+msgstr "레코드 추가됨"
+
+msgid "Record Edited"
+msgstr "레코드 수정됨"
+
+msgid "Records Deleted"
+msgstr "레코드 삭제됨"
+
+msgid "Recursive"
+msgstr "재귀적"
+
+msgid "Recursively"
+msgstr "재귀적으로"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr "파일 관리자 설정으로 인해 소유권 재설정이 비활성됨"
+
+msgid "Redirect Added"
+msgstr "리디렉션 추가됨"
+
+msgid "Redirect URL"
+msgstr "리디렉트 URL"
+
+msgid "Redirect(s) deleted"
+msgstr "리디렉션 삭제됨"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "새로고침"
+
+msgid "Regenerate Codes"
+msgstr "코드 재생성"
+
+msgid "Related"
+msgstr "관련 항목"
+
+msgid "Release Candidates"
+msgstr "릴리스 후보"
+
+msgid "Reload"
+msgstr "새로고침"
+
+msgid "Reload requested"
+msgstr "새로고침 요청됨"
+
+msgid "Remote Mail"
+msgstr "원격 메일"
+
+msgid "Remove"
+msgstr "삭제"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "IP에 대한 DNS 레코드 삭제"
+
+msgid "Remove DNSSEC"
+msgstr "DNSSEC 삭제"
+
+msgid "Remove Directory Contents"
+msgstr "디렉터리 내용 삭제"
+
+msgid "Remove From Skip List"
+msgstr "건너뛰기 목록에서 제거"
+
+msgid "Remove from reseller"
+msgstr "리셀러에서 제거"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "%s의 목록에서 사용자 제거됨"
+
+msgid "Rename"
+msgstr "이름 변경"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr "파일 관리자 설정으로 인해 파일 이름 변경이 비활성화됨"
+
+msgid "Repair"
+msgstr "복구"
+
+msgid "Replies"
+msgstr "답글"
+
+msgid "Reply"
+msgstr "답장"
+
+msgid "Reply Sent"
+msgstr "답장 전송됨"
+
+msgid "Request added to task.queue"
+msgstr "요청이 작업 대기열에 추가됨"
+
+msgid "Request will be processed in the background."
+msgstr "요청이 백그라운드에서 처리될 예정입니다."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "요청한 LetsEncrypt 값 '%s'이(가) 허용된 값이 아닙니다."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "요청한 파일 크기(%lld)가 최대 파일 크기(%lld)를 초과함"
+
+msgid "Requests Cancelled"
+msgstr "요청이 취소됨"
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "필수 항목: '%s' 또는 '%s'"
+
+msgid "Reseller"
+msgstr "리셀러"
+
+msgid "Reseller Bandwidth"
+msgstr "리셀러 대역폭"
+
+msgid "Reseller History"
+msgstr "리셀러 기록"
+
+msgid "Reseller Quota"
+msgstr "리셀러 할당량"
+
+msgid "Reseller created"
+msgstr "리셀러가 생성됨"
+
+msgid "Reseller deleted"
+msgstr "리셀러가 삭제됨"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr "리셀러에게 할당된 IP가 없습니다. IP 없이 도메인을 생성할 수 없습니다."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "리셀러는 %s개의 IP 중 %s개만 할당받았습니다."
+
+msgid "Reseller's IP"
+msgstr "리셀러의 IP"
+
+msgid "Reset"
+msgstr "초기화"
+
+msgid "Reset Owner"
+msgstr "소유자 초기화"
+
+msgid "Reset Ownership"
+msgstr "소유권 초기화"
+
+msgid "Reset Today"
+msgstr "오늘 초기화"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr "filemanager_disable_features 옵션이 활성화되어 파일 소유권을 재설정할 수 "
+"없습니다"
+
+msgid "Resources allocated."
+msgstr "자원이 할당됨."
+
+msgid "Restart"
+msgstr "재시작"
+
+msgid "Restore"
+msgstr "복원"
+
+msgid "Restore Complete!"
+msgstr "복원이 완료됨!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Nginx Unit 복원 오류: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr "계정 '%s'의 복원이 생성자 '%s'에게 거부되었습니다. 해당 계정은 이미 생성자 "
+"'%s'의 관리하에 존재합니다"
+
+msgid "Restore will run in the background"
+msgstr "복원이 백그라운드에서 실행됩니다"
+
+msgid "Restores added to Queue"
+msgstr "복원 작업이 대기열에 추가됨"
+
+msgid "Restoring Databases"
+msgstr "데이터베이스 복원 중"
+
+msgid "Restoring Domains Data"
+msgstr "도메인 데이터 복원 중"
+
+msgid "Restoring E-Mail Data"
+msgstr "이메일 데이터 복원 중"
+
+msgid "Restoring E-Mail Settings"
+msgstr "이메일 설정 복원 중"
+
+msgid "Restoring Extra Admin Data"
+msgstr "추가 관리자 데이터 복원 중"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "추가 리셀러 데이터 복원 중"
+
+msgid "Restoring Extra User Data"
+msgstr "추가 사용자 데이터 복원 중"
+
+msgid "Restoring FTP"
+msgstr "FTP 복원 중"
+
+msgid "Restoring extra E-Mail items"
+msgstr "추가 이메일 항목 복원 중"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "filemanager_disable_features 옵션이 활성화되어 파일을 복원할 수 없습니다"
+
+msgid "Result"
+msgstr "결과"
+
+msgid "Result of file copy"
+msgstr "파일 복사 결과"
+
+msgid "Result of file move"
+msgstr "파일 이동 결과"
+
+msgid "Results"
+msgstr "결과 목록"
+
+msgid "Retries"
+msgstr "재시도 횟수"
+
+msgid "Retry"
+msgstr "재시도"
+
+msgid "Retry counter has been cleared."
+msgstr "재시도 횟수가 초기화됨."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "리턴 코드 3XX(%d)에는 위치 값이 필요합니다"
+
+msgid "Return with httpd code"
+msgstr "httpd 코드로 반환"
+
+msgid "Rewrite Apache"
+msgstr "Apache 재작성"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr "RoundCube에 direct_login 옵션이 없습니다. RoundCube를 다시 설치하세요."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "'%s' 경로가 '%s'로 끝나지 않습니다"
+
+msgid "Rules Reset"
+msgstr "규칙 초기화"
+
+msgid "Run Now"
+msgstr "지금 실행"
+
+msgid "Running"
+msgstr "실행 중"
+
+msgid "SMTP Log"
+msgstr "SMTP 로그"
+
+msgid "SMTP Server"
+msgstr "SMTP 서버"
+
+msgid "SNI Host"
+msgstr "SNI 호스트"
+
+msgid "SNI is disabled for this domain"
+msgstr "이 도메인에 대해 SNI가 비활성화됨"
+
+msgid "SSH Key Modified"
+msgstr "SSH 키 수정됨"
+
+msgid "SSH Key authorized"
+msgstr "SSH 키가 승인됨"
+
+msgid "SSH Key created"
+msgstr "SSH 키가 생성됨"
+
+msgid "SSH Key deleted"
+msgstr "SSH 키가 삭제됨"
+
+msgid "SSH is not enabled"
+msgstr "SSH가 활성화되지 않음"
+
+msgid "SSL is not enabled for this domain"
+msgstr "이 도메인에 대해 SSL이 활성화되지 않음"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "선택한 도메인에서 안전 모드가 비활성화됨"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "선택한 도메인에서 안전 모드가 활성화됨"
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Save Awstats"
+msgstr "Awstats 저장"
+
+msgid "Save Comments"
+msgstr "댓글 저장"
+
+msgid "Save E-Mail"
+msgstr "이메일 저장"
+
+msgid "Save Increase"
+msgstr "저장 증가"
+
+msgid "Save Language"
+msgstr "언어 저장"
+
+msgid "Save Limit"
+msgstr "제한 저장"
+
+msgid "Save Limit Notice"
+msgstr "제한 저장 알림"
+
+msgid "Save Name"
+msgstr "이름 저장"
+
+msgid "Save Nameservers"
+msgstr "네임서버 저장"
+
+msgid "Save Skin"
+msgstr "스킨 저장"
+
+#, fuzzy
+msgid "Saved"
+msgstr "저장"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "filemanager_disable_features 옵션이 활성화되어 파일을 저장하거나 편집할 수 "
+"없습니다"
+
+msgid "Scratch Codes"
+msgstr "백업 코드"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "백업 코드"
+
+msgid "Script output"
+msgstr "스크립트 출력"
+
+msgid "Search"
+msgstr "검색"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRuleRemoveById ID가 비어 있습니다"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "보안 소켓 계층 (SSL)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "이 %s가이드%s를 참고하여 문제를 해결하세요."
+
+msgid "See Error log for more information."
+msgstr "자세한 내용을 보려면 오류 로그를 확인하세요."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "이 가이드를 확인하세요: %s"
+
+msgid "Select"
+msgstr "선택"
+
+msgid "Select MX Template"
+msgstr "MX 템플릿 선택"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "%s에 연결할 IP 선택"
+
+msgid "Selected Content-Type is not valid."
+msgstr "선택한 콘텐츠 유형이 유효하지 않습니다."
+
+msgid "Selected Data"
+msgstr "선택된 데이터"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "선택된 플러그인이 활성화됨"
+
+msgid "Selected Plugins De-Activated"
+msgstr "선택된 플러그인이 비활성화됨"
+
+msgid "Selected Plugins Deleted"
+msgstr "선택된 플러그인이 삭제됨"
+
+msgid "Selected Users"
+msgstr "선택된 사용자"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "선택한 문자 인코딩이 유효하지 않습니다."
+
+msgid "Send Count"
+msgstr "발송 횟수"
+
+msgid "Send Signal"
+msgstr "신호 보내기"
+
+msgid "Send a Message"
+msgstr "메시지 보내기"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "발송 제한은 유효한 숫자여야 하거나 비워둬야 합니다."
+
+msgid "Sender"
+msgstr "발신자"
+
+msgid "Sender Host"
+msgstr "발신자 호스트"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr "발신 도메인은 '%s' 도메인과 일치해야 하거나 '%s'을(를) 사용해야 합니다"
+
+msgid "Sent"
+msgstr "발송됨"
+
+msgid "Sent E-mails"
+msgstr "발송된 이메일"
+
+msgid "Sent Emails"
+msgstr "보낸 이메일"
+
+msgid "Sep"
+msgstr "9월"
+
+msgid "Server"
+msgstr "서버"
+
+msgid "Server History"
+msgstr "서버 기록"
+
+msgid "Server Path"
+msgstr "서버 경로"
+
+msgid "Service"
+msgstr "서비스"
+
+msgid "Set"
+msgstr "설정"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr "0으로 설정하면 무제한입니다. 기본값으로 재설정하려면 비워두세요."
+
+msgid "Set Global Shared"
+msgstr "전역 공유 설정"
+
+msgid "Set as Default"
+msgstr "기본값으로 설정"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "선택한 도메인을 공개적으로 볼 수 있도록 설정"
+
+msgid "Set selected to"
+msgstr "선택 항목을 다음으로 설정"
+
+msgid "Set to"
+msgstr "다음으로 설정"
+
+msgid "Setting"
+msgstr "설정"
+
+msgid "Setting changed"
+msgstr "설정이 변경됨"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr "filemanager_disable_features 옵션이 활성화되어 파일/디렉터리 권한을 설정할 "
+"수 없습니다"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Settings Saved"
+msgstr "설정이 저장됨"
+
+msgid "Share Selected"
+msgstr "선택한 항목 공유"
+
+msgid "Share a static path"
+msgstr "정적 경로 공유"
+
+msgid "Shared"
+msgstr "공유됨"
+
+msgid "Shared - randomly selected"
+msgstr "공유됨 - 무작위 선택"
+
+msgid "Shell Access (ssh)"
+msgstr "셸 액세스 (SSH)"
+
+msgid "Shell for Resellers's Users"
+msgstr "리셀러 사용자를 위한 셸"
+
+msgid "Show"
+msgstr "표시"
+
+msgid "Sign"
+msgstr "서명"
+
+msgid "Signed"
+msgstr "서명됨"
+
+msgid "Size"
+msgstr "크기"
+
+msgid "Size is not a number"
+msgstr "크기는 숫자가 아닙니다"
+
+msgid "Skin"
+msgstr "스킨"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "스킨 '%s'에는 설정할 사용자 지정 색상 변수가 없습니다"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "스킨이 삭제됨"
+
+msgid "Skin Installed"
+msgstr "스킨이 설치됨"
+
+msgid "Skin Name"
+msgstr "스킨 이름"
+
+msgid "Skin Owner"
+msgstr "스킨 소유자"
+
+msgid "Skin Set"
+msgstr "스킨 설정됨"
+
+msgid "Skin applied to all users"
+msgstr "모든 사용자에게 스킨이 적용됨"
+
+msgid "Skin has been customized"
+msgstr "스킨이 사용자 정의됨"
+
+msgid "Skin has been successfully changed"
+msgstr "스킨이 성공적으로 변경됨"
+
+msgid "Skins Deleted"
+msgstr "스킨이 삭제됨"
+
+msgid "Skip Suspended"
+msgstr "일시 정지된 항목 건너뛰기"
+
+msgid "Skipped rule added"
+msgstr "건너뛴 규칙 추가됨"
+
+msgid "Skipping system E-Mail account"
+msgstr "시스템 이메일 계정 건너뛰기"
+
+msgid "Slave of a load balancing bundle."
+msgstr "로드 밸런싱 번들의 종속 노드입니다."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "죄송합니다. 이 기능은 현재 도메인 포인터를 지원하지 않습니다"
+
+msgid "Sort"
+msgstr "정렬"
+
+msgid "Sort Selected Column in"
+msgstr "선택한 열을 다음 기준으로 정렬"
+
+msgid "Source Domain"
+msgstr "원본 도메인"
+
+msgid "Spam"
+msgstr "스팸"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "계정에서 SpamAssassin이 비활성화됨"
+
+msgid "SpamAssassin"
+msgstr "스팸어쌔신"
+
+msgid "Spamassassin disabled"
+msgstr "SpamAssassin 비활성화됨"
+
+msgid "Spambox"
+msgstr "스팸 보관함"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd가 시스템에서 실행되지 않고 있습니다."
+
+msgid "Splitting error for unix socket"
+msgstr "유닉스 소켓 분할 오류"
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr "안정됨"
+
+msgid "Start"
+msgstr "시작"
+
+msgid "Start Time"
+msgstr "시작 시간"
+
+msgid "Start Time must be before End Time."
+msgstr "시작 시간은 종료 시간보다 앞서야 합니다."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "주/도 이름에는 문자, 공백 및 마침표만 포함할 수 있습니다"
+
+msgid "Stats links created"
+msgstr "통계 링크 생성됨"
+
+msgid "Stats links removed"
+msgstr "통계 링크 제거됨"
+
+msgid "Status"
+msgstr "상태"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "상태"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "스티키 비트는 허용되지 않음: 777이 최대 허용 권한"
+
+msgid "Stop"
+msgstr "중지"
+
+msgid "Stopped"
+msgstr "중지됨"
+
+msgid "String contains an invalid email address"
+msgstr "문자열에 유효하지 않은 이메일 주소가 포함됨"
+
+msgid "Sub Domains"
+msgstr "하위 도메인"
+
+msgid "Sub Sort"
+msgstr "하위 정렬"
+
+msgid "Sub Sort Selected Column in"
+msgstr "선택한 열을 하위 정렬"
+
+msgid "Sub-domain is forbidden"
+msgstr "하위 도메인이 금지됨"
+
+msgid "SubDomain Name"
+msgstr "하위 도메인 이름"
+
+msgid "Subdomain Created"
+msgstr "하위 도메인 생성됨"
+
+msgid "Subdomain Removed"
+msgstr "하위 도메인 삭제됨"
+
+msgid "Subdomain Stats"
+msgstr "하위 도메인 통계"
+
+msgid "Subdomain already exists"
+msgstr "하위 도메인이 이미 존재함"
+
+msgid "Subdomain created"
+msgstr "하위 도메인 생성됨"
+
+msgid "Subdomain does not exist"
+msgstr "하위 도메인이 존재하지 않음"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "하위 도메인 이름이 너무 깁니다. 최대 %d자까지 가능합니다."
+
+msgid "Subdomains"
+msgstr "하위 도메인"
+
+msgid "Subdomains Removed"
+msgstr "하위 도메인 삭제됨"
+
+msgid "Subdomains deleted"
+msgstr "하위 도메인 삭제됨"
+
+msgid "Subject"
+msgstr "제목"
+
+msgid "Subject Contains"
+msgstr "제목 포함"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "제목 접두사에 잘못된 문자가 포함되어 있습니다. %s을(를) 사용"
+
+msgid "Subscriber"
+msgstr "구독자"
+
+msgid "Subscribers"
+msgstr "구독자 목록"
+
+msgid "Success"
+msgstr "성공"
+
+msgid "Supports multicast"
+msgstr "멀티캐스트 지원"
+
+msgid "Suspend"
+msgstr "정지"
+
+msgid "Suspend / Unsuspend"
+msgstr "정지 / 정지해제"
+
+msgid "Suspend Reason"
+msgstr "정지 사유"
+
+msgid "Suspend at Limit"
+msgstr "제한 초과 시 정지"
+
+msgid "Suspended"
+msgstr "정지됨"
+
+msgid "Syntax check has been disabled"
+msgstr "구문 검사가 비활성화됨"
+
+msgid "System Info"
+msgstr "시스템 정보"
+
+msgid "System Rebooting Now!"
+msgstr "시스템이 재부팅 중입니다!"
+
+msgid "System Uptime"
+msgstr "시스템 가동 시간"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr "시스템 계정은 존재하지만 사용자 %s의 데이터 파일을 읽을 수 없습니다"
+
+msgid "Systems Quotas are size 0."
+msgstr "시스템 할당량이 0입니다."
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL이 저장됨"
+
+msgid "Table"
+msgstr "테이블"
+
+msgid "Tail"
+msgstr "끝부분"
+
+msgid "Tasks Max"
+msgstr "최대 작업 수"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr "임시 파일 %s이(가) 디스크에 기록된 후 크기가 0바이트입니다. 이름을 변경하지 "
+"않습니다."
+
+msgid "Template does not exist"
+msgstr "템플릿이 존재하지 않음"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "임시 대역폭 증가"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr "임시 계정 작업 잠금이 설정되었습니다. 다른 프로세스가 계정에서 실행 중일 수 "
+"있습니다. 이 상태는 최대 %d분간 지속됩니다"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "임시 대역폭 증가가 설정됨"
+
+msgid "Text"
+msgstr "텍스트"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr "텍스트가 허용된 최대 길이인 4KB를 초과함"
+
+msgid "That ID is not of type 'admin'"
+msgstr "해당 ID는 '관리자' 유형이 아닙니다"
+
+msgid "That IP already exists on the domain"
+msgstr "해당 IP가 이미 도메인에 존재합니다"
+
+msgid "That IP does not exist"
+msgstr "해당 IP가 존재하지 않습니다"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "해당 IP가 사용자의 IP 목록에 없습니다"
+
+msgid "That IP does not exist in your list"
+msgstr "해당 IP가 목록에 존재하지 않습니다"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "해당 IP가 이미 추가 IP 목록에 존재합니다"
+
+msgid "That IP is already owned"
+msgstr "해당 IP는 이미 소유됨"
+
+msgid "That IP is not available for linking"
+msgstr "해당 IP를 연결할 수 없습니다"
+
+msgid "That User already exists on another server"
+msgstr "해당 사용자가 다른 서버에 이미 존재합니다"
+
+msgid "That database already exists"
+msgstr "해당 데이터베이스가 이미 존재합니다"
+
+msgid "That database does not belong to you"
+msgstr "해당 데이터베이스는 당신의 것이 아닙니다"
+
+msgid "That database does not exist"
+msgstr "해당 데이터베이스가 존재하지 않습니다"
+
+msgid "That domain already exists"
+msgstr "해당 도메인이 이미 존재합니다"
+
+msgid "That domain already exists on another server"
+msgstr "해당 도메인이 다른 서버에 이미 존재합니다"
+
+msgid "That domain does not belong to you"
+msgstr "해당 도메인은 당신의 것이 아닙니다"
+
+msgid "That domain does not exist"
+msgstr "해당 도메인이 존재하지 않습니다"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "해당 도메인이 정지되었습니다. 이름을 변경하기 전에 정지를 해제하세요"
+
+msgid "That email user does not exist"
+msgstr "해당 이메일 사용자가 존재하지 않습니다"
+
+msgid "That file was empty"
+msgstr "해당 파일이 비어 있습니다"
+
+msgid "That filter already exists"
+msgstr "해당 필터가 이미 존재합니다"
+
+msgid "That ftp_password file does not exist"
+msgstr "해당 ftp_password 파일이 존재하지 않습니다"
+
+msgid "That is an invalid email address / email list"
+msgstr "잘못된 이메일 주소 또는 이메일 목록입니다"
+
+msgid "That is an invalid filename"
+msgstr "잘못된 파일 이름입니다"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr "올바른 경로가 아닙니다. 홈 디렉터리에 없거나, 심볼릭 링크가 포함되어 있거나, "
+"잘못된 문자가 포함되어 있습니다"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr "유효하지 않은 경로입니다. 홈 디렉터리에 없거나, 존재하지 않거나, 심볼릭 "
+"링크를 포함하거나, 잘못된 문자를 포함하고 있습니다"
+
+msgid "That is not a valid quota"
+msgstr "올바른 할당량이 아닙니다"
+
+msgid "That is not a valid username"
+msgstr "올바른 사용자명이 아닙니다"
+
+msgid "That is not your domain"
+msgstr "해당 도메인은 당신의 것이 아닙니다"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr "해당 호스트 이름은 예약되어 있습니다. 호스트 이름을 변경하거나 다른 도메인을 "
+"사용하세요"
+
+msgid "That key does not exist"
+msgstr "해당 키가 존재하지 않습니다"
+
+msgid "That password is incorrect"
+msgstr "해당 비밀번호가 올바르지 않습니다"
+
+msgid "That path isn't protectable"
+msgstr "해당 경로는 보호할 수 없습니다"
+
+msgid "That pop account doesn't exist"
+msgstr "해당 POP 계정이 존재하지 않습니다"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "해당 스킨은 사용자 정의할 수 없습니다. skin.conf에서 %s을(를) 필요로 합니다"
+
+msgid "That skin does not exist"
+msgstr "해당 스킨이 존재하지 않습니다"
+
+msgid "That skin is not in your list"
+msgstr "해당 스킨이 목록에 없습니다"
+
+msgid "That skin name already exists"
+msgstr "해당 스킨 이름이 이미 존재합니다"
+
+msgid "That user already exists"
+msgstr "해당 사용자가 이미 존재합니다"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr "해당 사용자 이름에 FTP 구분자(%c)가 포함되어 있습니다. 사용자 이름에는 "
+"사용할 수 없습니다."
+
+msgid "That user does not belong to you"
+msgstr "해당 사용자는 당신의 계정에 속하지 않습니다"
+
+msgid "That user does not exist"
+msgstr "해당 사용자가 존재하지 않습니다"
+
+msgid "That user doesn't exist"
+msgstr "해당 사용자가 존재하지 않습니다"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "해당 사용자는 익명 계정에 예약되어 있습니다"
+
+msgid "That username already exists on the system"
+msgstr "해당 사용자 이름이 시스템에 이미 존재합니다"
+
+msgid "That username is a reserved system name"
+msgstr "해당 사용자 이름은 시스템에서 예약된 이름입니다"
+
+msgid "That zone already exists"
+msgstr "해당 존이 이미 존재합니다"
+
+msgid "Thats a reserved skin name."
+msgstr "해당 스킨 이름은 예약된 이름입니다."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "%s 백업이 %s에 생성되었습니다"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "전달된 'ttl' 값이 숫자가 아니거나 너무 큽니다"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "관리자가 사용자 백업 기능을 비활성화했습니다"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "CA 인증서는 사용되지 않습니다. 파일은 유지되지만 포함되지 않습니다."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr "입력한 CC 값이 무한 루프를 생성할 수 있습니다. 다른 CC 값을 사용하세요."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "이메일 '%s'에 잘못된 문자가 포함되어 있습니다"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP %s가 존재하지 않습니다. %s 사용자가 생성되지 않습니다"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP %s이(가) %s 계정에 올바른 비밀번호를 제공했습니다."
+
+msgid "The Ticket System is not enabled."
+msgstr "티켓 시스템이 활성화되지 않았습니다."
+
+msgid "The User backups have been uploaded to"
+msgstr "사용자 백업이 업로드되었습니다"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "사용자 파일이 %s에서 복원되었습니다"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "사용자 표시 캐시가 곧 업데이트됩니다."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "인터페이스가 다운되면 주소가 손실됩니다."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr "캐시가 업데이트 중입니다. 현재 값이 정확하지 않을 수 있습니다. 1분 후 "
+"페이지를 새로고침하세요."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr "인증서와 키가 일치하지 않습니다. 이 인증서에 올바른 키를 사용하고 있는지 "
+"확인하세요"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "파일 관리자에서 clipboard 기능이 비활성화되었습니다"
+
+msgid "The command cannot contain any newline characters"
+msgstr "명령어에 줄 바꿈 문자를 포함할 수 없습니다"
+
+msgid "The database '%s' does not belong to you"
+msgstr "데이터베이스 '%s'이(가) 당신의 것이 아닙니다"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "월의 날짜 값이 유효한 cron 값이 아닙니다 (1-31 사이여야 함)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "요일 값이 유효한 cron 값이 아닙니다 (0-7 사이여야 함)"
+
+msgid "The default has been set"
+msgstr "기본값이 설정되었습니다"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr "%s 디렉터리가 '아파치' 소유인 것 같습니다. '소유권 재설정' 옵션을 사용한 후 "
+"다시 시도하세요."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr "선택한 사용자의 디스크 사용량이 총 %dMB를 초과하여 백그라운드에서 제거됩니다."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "%s 도메인이 당신의 것이 아닙니다."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "%s 도메인이 당신의 것이 아닙니다. 하위 도메인이 생성되지 않습니다."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "입력한 도메인이 유효하지 않습니다. 'sourcedomain.com' 형식이어야 합니다"
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "기본값이 설정되었습니다"
+
+msgid "The domain must not match your hostname."
+msgstr "도메인은 호스트 이름과 일치하지 않아야 합니다."
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "변경 사항 없음"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "새 비밀번호가 포함된 이메일이 발송되었습니다."
+
+msgid "The email address provided is not a valid email address"
+msgstr "제공된 이메일 주소가 유효하지 않습니다"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "입력한 경로는 a-z, A-Z, 0-9 문자만 포함해야 합니다"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "%s 파일에 1개 이상의 하드 링크가 존재합니다"
+
+msgid "The file is generated when the account is reset."
+msgstr "해당 파일은 계정이 재설정될 때 생성됩니다."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "파일 형식은 'type.creator.username.tar.gz'이어야 합니다"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "파일 형식은 'username.tar.gz'이어야 합니다"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "'%s' 파일이 'username.tar.gz' 형식이 아닙니다"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "다음 파일을 찾을 수 없습니다. 재설정이 필요하지 않습니다"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "사용자 %s의 경로에서 다음 하드 링크가 발견되었습니다:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "FTP %s 사용자가 passwd 파일 %s에 존재하지 않습니다"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "입력한 전체 형식 이름이 존의 이름으로 끝나지 않습니다"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "로컬 URL 경로나 대상 URL이 유효하지 않습니다."
+
+msgid "The location has not changed"
+msgstr "위치가 변경되지 않았습니다"
+
+msgid "The max upload size cannot be 0"
+msgstr "최대 업로드 크기는 0이 될 수 없습니다"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "%s의 최대값은 %s입니다"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "최대값은 %d입니다"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "%s의 최소값은 %s입니다"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "월 값이 유효한 cron 값이 아닙니다 (1-12 사이여야 함)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "입력한 이름에 잘못된 문자가 포함되어 있습니다"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "새 키가 생성되었지만 인증 과정에서 문제가 발생했습니다"
+
+msgid "The new passwords do not match"
+msgstr "새 비밀번호가 일치하지 않습니다"
+
+msgid "The number and type of ticket is required"
+msgstr "티켓의 수와 유형이 필요합니다"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "%s의 소유자가 %s이(가) 아닙니다"
+
+msgid "The password changing feature has been disabled"
+msgstr "비밀번호 변경 기능이 비활성화되었습니다"
+
+msgid "The path %s already exists"
+msgstr "경로 %s이(가) 이미 존재합니다"
+
+msgid "The path already exists, but is not a directory"
+msgstr "경로가 이미 존재하지만 디렉터리가 아닙니다"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr "이 요청을 실행하기 위한 프로세스가 현재 사용 중이므로 곧 작업 대기열에서 "
+"실행될 것입니다."
+
+msgid "The provided IP is not valid"
+msgstr "제공된 IP가 유효하지 않습니다"
+
+msgid "The provided domain name matches your hostname."
+msgstr "제공된 도메인 이름이 호스트 이름과 일치합니다."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr "요청한 작업을 실행할 수 없습니다. 해당 작업이 당신의 권한 수준에 존재하지 "
+"않습니다"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "요청한 명령은 POST가 필요하지만 GET이 사용되었습니다"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr "스킨 패키지가 올바르게 설치되지 않았습니다. 일부 파일이 누락되었거나 권한이 "
+"잘못 설정되었습니다"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "서브도메인 '%s'이(가) 도메인 %s 아래에 이미 존재합니다"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr "시간 형식은 다음 중 하나여야 합니다. (예: 시간, 공백 없음)"
+
+msgid "The user %s does not belong to you"
+msgstr "%s 사용자가 당신의 계정에 속하지 않습니다"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr "사용자 이름이 유효하지 않습니다. 사용자 이름은 a-z로 시작해야 하며, 최소 3자 "
+"이상 %d자 이하이어야 합니다."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "사용자 이름이 유효하지 않습니다. 사용자 이름은 a-z 및 0-9만 사용할 수 "
+"있습니다"
+
+msgid "The value must be an IP address"
+msgstr "값은 IP 주소여야 합니다"
+
+msgid "The very last entry."
+msgstr "마지막 항목입니다."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "환영 이메일이 성공적으로 다시 전송되었습니다."
+
+msgid "There are no messages for that ticket"
+msgstr "해당 티켓에 대한 메시지가 없습니다"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "여전히 %d개의 경로에서 '%s'을(를) 사용하고 있습니다."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr "%s에 아직 사용자들이 있습니다. 먼저 해당 IP에서 제거한 후 '사용 가능' 상태로 "
+"설정하세요."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "%d번의 갱신 실패가 발생했으며, 더 이상 시도하지 않습니다.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "해당 이름의 CNAME 레코드가 이미 존재합니다"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "해당 이름의 메일링 리스트 별칭이 이미 존재합니다"
+
+msgid "There is already an A record with that name"
+msgstr "해당 이름의 A 레코드가 이미 존재합니다"
+
+msgid "There is already an account with that name"
+msgstr "해당 이름의 계정이 이미 존재합니다"
+
+msgid "There is already an autoresponder with that name"
+msgstr "해당 이름의 자동 응답기가 이미 존재합니다"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "%s에 %lld바이트의 데이터를 업로드할 충분한 공간이 없습니다"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "%s=%s에 대한 %s 레코드가 하나뿐이므로 삭제하지 않습니다"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "이 값들은 동적이며 날짜에 따라 변경됩니다."
+
+msgid "This Login Key is read-only"
+msgstr "이 로그인 키는 읽기 전용입니다"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr "이 운영 체제는 수명이 종료되었습니다. 향후 자동 업데이트가 실패할 수 "
+"있습니다."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr "이 리셀러 계정은 %s을(를) 무제한으로 할당할 수 없으며, 해당 양이 이미 "
+"할당되었습니다."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr "이 계정이 이미 시스템에 존재합니다. 복원하면 데이터가 덮어쓰이거나 병합될 수 "
+"있습니다."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "이 계정이 BlockCracking을 통해 차단되었습니다."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr "이 계정은 BlockCracking에 의해 차단되었습니다. 차단 해제가 비활성화되어 "
+"있습니다."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"이 도메인은 이제 임시로 공유 서버 인증서를 사용합니다. 백업 키를 복원하지 "
+"않는 한 계속 유지됩니다. (새 키를 백업하지 않으면 손실될 수 있습니다)"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr "이것은 Hash URL 로그인입니다. 삭제할 수는 있지만 수정할 수 없습니다"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr "이것은 해시 URL 로그인입니다. 삭제할 수는 있지만 수정할 수는 없습니다."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "이것은 서브도메인의 자리 표시자입니다"
+
+msgid "This may give unexpected results"
+msgstr "예기치 않은 결과를 초래할 수 있습니다"
+
+msgid "This may give unexpected results."
+msgstr "예기치 않은 결과가 발생할 수 있습니다."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr "DNS가 원격에서 관리되는 경우 이는 올바를 수 있습니다."
+
+msgid "This plugin has been disabled for your account"
+msgstr "이 플러그인은 당신의 계정에서 비활성화되었습니다"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr "이 작업은 로그가 존재한 후에만 발생합니다 (도메인이 정상적으로 연결되고 "
+"사용되어야 합니다)."
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr "이 작업을 수행하면 DNS 존을 제거하지 않고 그대로 유지합니다."
+
+msgid "Thread Count"
+msgstr "스레드 개수"
+
+msgid "Throttle Memory above this limit."
+msgstr "이 제한을 초과하는 메모리를 조절합니다."
+
+msgid "Ticket #"
+msgstr "티켓 번호"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "사용자의 시스템 할당량이 설정되었습니다"
+
+msgid "Tickets Updated"
+msgstr "티켓이 업데이트되었습니다"
+
+msgid "Time"
+msgstr "시간"
+
+msgid "Timeout during read"
+msgstr "읽기 시간 초과"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "%s에 연결을 시도하는 동안 시간이 초과되었습니다"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "'%s' 시간대가 시스템에 존재하지 않습니다"
+
+msgid "Timezone does not exist"
+msgstr "시간대가 존재하지 않습니다"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr "크론 작업을 추가하려면 분, 시간, 날짜, 월, 요일 및 명령어를 모두 입력해야 "
+"합니다"
+
+msgid "Today"
+msgstr "오늘"
+
+msgid "Today at"
+msgstr "오늘"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "사용자 %s의 오늘 이메일 발송 횟수가 초기화되었습니다"
+
+msgid "Too long"
+msgstr "너무 깁니다"
+
+msgid "Too short"
+msgstr "너무 짧습니다"
+
+msgid "Total"
+msgstr "총합"
+
+msgid "Total Disk Usage (MB)"
+msgstr "총 디스크 사용량 (MB)"
+
+msgid "Total Memory"
+msgstr "총 메모리"
+
+msgid "Total Size:"
+msgstr "총 크기:"
+
+msgid "Total Swap Memory"
+msgstr "총 스왑 메모리"
+
+msgid "Total Usage"
+msgstr "총 사용량"
+
+msgid "Two-Step Authentication code is missing."
+msgstr "이중 인증 코드가 없습니다."
+
+msgid "Type"
+msgstr "유형"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "'%s' 유형이 비활성화되었습니다"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "유형은 'paste' 또는 'id'여야 합니다"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL already exists"
+msgstr "URL이 이미 존재합니다"
+
+msgid "Un-Link"
+msgstr "연결 해제"
+
+msgid "Un-Set"
+msgstr "설정 해제"
+
+msgid "Unable To Execute Your Request"
+msgstr "요청을 실행할 수 없습니다"
+
+msgid "Unable to Execute Your Command"
+msgstr "명령을 실행할 수 없습니다"
+
+msgid "Unable to Locate that domain"
+msgstr "해당 도메인을 찾을 수 없습니다"
+
+msgid "Unable to add IP"
+msgstr "IP를 추가할 수 없습니다"
+
+msgid "Unable to add access host:"
+msgstr "액세스 호스트를 추가할 수 없습니다:"
+
+msgid "Unable to add domain pointer"
+msgstr "도메인 포인터를 추가할 수 없습니다"
+
+msgid "Unable to add user to ssh config file"
+msgstr "SSH 구성 파일에 사용자를 추가할 수 없습니다"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr "무제한 %s 할당이 불가능합니다. 이 계정은 해당 양을 생성할 권한이 없습니다."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr "리셀러에게 IP를 할당할 수 없습니다. 사용 가능한 미할당 IP가 있는지 "
+"확인하세요."
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "인증할 수 없습니다: 비밀번호 구문을 확인하세요"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "인증할 수 없습니다: 비밀번호가 잘못되었습니다"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "%s을(를) 변경할 수 없습니다"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "DirectAdmin 업데이트 채널을 변경할 수 없습니다"
+
+msgid "Unable to change password"
+msgstr "비밀번호를 변경할 수 없습니다"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "이메일 주소를 변경할 수 없습니다"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "메시지 시스템 이메일 주소를 변경할 수 없습니다"
+
+msgid "Unable to change the Name"
+msgstr "이름을 변경할 수 없습니다"
+
+msgid "Unable to change the limit"
+msgstr "제한을 변경할 수 없습니다"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "일시적인 대역폭 증가를 변경할 수 없습니다"
+
+msgid "Unable to check latest version"
+msgstr "최신 버전을 확인할 수 없습니다"
+
+msgid "Unable to connect to secure socket"
+msgstr "보안 소켓에 연결할 수 없습니다"
+
+msgid "Unable to connect to the database"
+msgstr "데이터베이스에 연결할 수 없습니다"
+
+msgid "Unable to create a Reseller"
+msgstr "리셀러를 생성할 수 없습니다"
+
+msgid "Unable to create a User"
+msgstr "사용자를 생성할 수 없습니다"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "백업 디렉터리를 생성할 수 없습니다 (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "디렉터리 %s을(를) 생성할 수 없습니다"
+
+msgid "Unable to create new file"
+msgstr "새 파일을 생성할 수 없습니다"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "역방향 IP 조회를 생성할 수 없습니다"
+
+msgid "Unable to create subdomain"
+msgstr "서브도메인을 생성할 수 없습니다"
+
+msgid "Unable to create user's data directory"
+msgstr "사용자의 데이터 디렉터리를 생성할 수 없습니다"
+
+msgid "Unable to create zone"
+msgstr "존(zone)을 생성할 수 없습니다"
+
+msgid "Unable to create zone."
+msgstr "존(zone)을 생성할 수 없습니다."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "%s을(를) 삭제할 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "디렉터리 %s을(를) 삭제할 수 없습니다: %s"
+
+msgid "Unable to delete files"
+msgstr "파일을 삭제할 수 없습니다"
+
+msgid "Unable to delete the main email account"
+msgstr "주 이메일 계정을 삭제할 수 없습니다"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "리셀러의 ip.list 파일을 삭제할 수 없습니다."
+
+msgid "Unable to delete users's domains directory"
+msgstr "사용자의 도메인 디렉터리를 삭제할 수 없습니다"
+
+msgid "Unable to edit file"
+msgstr "파일을 편집할 수 없습니다"
+
+msgid "Unable to execute script"
+msgstr "스크립트를 실행할 수 없습니다"
+
+msgid "Unable to execute your command"
+msgstr "명령을 실행할 수 없습니다"
+
+msgid "Unable to execute your request"
+msgstr "요청을 실행할 수 없습니다"
+
+msgid "Unable to export packages"
+msgstr "패키지를 내보낼 수 없습니다"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "%s에서 추출할 수 없습니다"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "user.conf, reseller.conf 또는 ip.list를 추출할 수 없습니다"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "%s을(를) 찾을 수 없습니다"
+
+msgid "Unable to find CA certificate"
+msgstr "CA 인증서를 찾을 수 없습니다"
+
+msgid "Unable to find certificate"
+msgstr "인증서를 찾을 수 없습니다"
+
+msgid "Unable to find key"
+msgstr "키를 찾을 수 없습니다"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "%s의 파일 상태 정보를 가져올 수 없습니다"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "%s의 잠금을 얻을 수 없습니다"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr "FTP 비밀번호 파일에서 사용자의 암호화된 비밀번호를 가져올 수 없습니다"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "%s 영역을 잠글 수 없습니다"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "%s을(를) 잠글 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "'%s' 계정의 작업을 잠글 수 없습니다"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "%s 사용자를 잠글 수 없습니다: %s"
+
+msgid "Unable to modify that domain"
+msgstr "해당 도메인을 수정할 수 없습니다"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "%s을(를) 추가 모드로 열 수 없습니다"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "%s을(를) 추가 모드로 열 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "%s을(를) 읽기 모드로 열 수 없습니다"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "%s을(를) 쓰기 모드로 열 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "%s을(를) 열 수 없습니다: %s"
+
+msgid "Unable to open a socket"
+msgstr "소켓을 열 수 없습니다"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "CA 인증서 파일(%s)을 열어 쓸 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "인증서 파일(%s)을 열어 쓸 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "%s '%s '(%s) 스크립트 출력에서 구문 분석할 수 없음:"
+
+msgid "Unable to parse form"
+msgstr "양식을 구문 분석할 수 없습니다"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "계정 %s으로 %s을(를) 읽을 수 없습니다"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "%s의 사용자 파일을 읽을 수 없습니다"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr "%s을(를) 읽을 수 없습니다. 이 파일은 합산 작업이 실행된 후에만 생성됩니다."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr "%s을(를) 읽을 수 없습니다. 이 파일은 이메일이 전달될 때만 생성됩니다."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "%s을(를) 읽을 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "DS %s 파일을 읽을 수 없습니다"
+
+msgid "Unable to read History File."
+msgstr "히스토리 파일을 읽을 수 없습니다."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "RoundCube 백업 스크립트를 읽을 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "RoundCube 복원 스크립트를 읽을 수 없습니다: %s"
+
+msgid "Unable to read data from %s"
+msgstr "%s에서 데이터를 읽을 수 없습니다"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "directadmin.conf를 읽을 수 없습니다"
+
+msgid "Unable to read domain configuration files"
+msgstr "도메인 설정 파일을 읽을 수 없습니다"
+
+msgid "Unable to read login history file"
+msgstr "로그인 기록 파일을 읽을 수 없습니다"
+
+msgid "Unable to read package"
+msgstr "패키지를 읽을 수 없습니다"
+
+msgid "Unable to read system uptime"
+msgstr "시스템 가동 시간을 읽을 수 없습니다"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr "사용자를 추가하기 위해 시스템 FTP 비밀번호 파일을 읽을 수 없습니다."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr "시스템 FTP 사용자를 제거하기 위해 시스템 FTP 비밀번호 파일을 읽을 수 없습니다"
+
+msgid "Unable to read the user's files"
+msgstr "사용자의 파일을 읽을 수 없습니다"
+
+msgid "Unable to read ticket config file"
+msgstr "티켓 구성 파일을 읽을 수 없습니다"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "시리얼 증가를 위해 존 파일을 읽을 수 없습니다"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "%s의 존 파일을 읽을 수 없습니다"
+
+msgid "Unable to reboot"
+msgstr "재부팅할 수 없습니다"
+
+msgid "Unable to remove IP(s)"
+msgstr "IP를 제거할 수 없습니다"
+
+msgid "Unable to remove Unix User."
+msgstr "유닉스 사용자를 제거할 수 없습니다."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "리셀러의 모든 사용자를 제거할 수 없습니다"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "%s을(를) %s으로 이름을 변경할 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "%s을(를) %s으로 복원할 수 없습니다: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr "'%s'을(를) 복원할 수 없습니다. 리셀러 또는 관리자 '%s'을(를) 찾을 수 "
+"없습니다. 필요하면 파일 이름을 변경하세요."
+
+msgid "Unable to restore database"
+msgstr "데이터베이스를 복원할 수 없습니다"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "DNS 존을 저장할 수 없습니다: named-checkzone이 반환한 오류:"
+
+msgid "Unable to save your changes"
+msgstr "변경 사항을 저장할 수 없습니다"
+
+msgid "Unable to set bandwidth"
+msgstr "대역폭을 설정할 수 없습니다"
+
+msgid "Unable to set file permissions"
+msgstr "파일 권한을 설정할 수 없습니다"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "%s IP를 네임서버로 설정할 수 없습니다. 계속 진행합니다."
+
+msgid "Unable to set password"
+msgstr "비밀번호를 설정할 수 없습니다"
+
+msgid "Unable to set quota"
+msgstr "할당량을 설정할 수 없습니다"
+
+msgid "Unable to set stats link"
+msgstr "통계 링크를 설정할 수 없습니다"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "이메일 제한을 설정할 수 없습니다"
+
+msgid "Unable to set the shell"
+msgstr "쉘을 설정할 수 없습니다"
+
+msgid "Unable to show Admin History"
+msgstr "관리자 기록을 표시할 수 없습니다"
+
+msgid "Unable to show Reseller History"
+msgstr "리셀러 기록을 표시할 수 없습니다"
+
+msgid "Unable to show User History"
+msgstr "사용자 기록을 표시할 수 없습니다"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "현재 이메일 사용량을 표시할 수 없습니다"
+
+msgid "Unable to show the system information"
+msgstr "시스템 정보를 표시할 수 없습니다"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "%s을(를) %s으로 이동할 수 없습니다: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "%s 사용자를 잠금 해제할 수 없습니다: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "DirectAdmin을 업데이트할 수 없습니다"
+
+msgid "Unable to update your Disk Usage"
+msgstr "디스크 사용량을 업데이트할 수 없습니다"
+
+msgid "Unable to use that new domain name"
+msgstr "해당 새 도메인 이름을 사용할 수 없습니다"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "%s의 사용자 파일을 쓸 수 없습니다"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "%s을(를) 쓸 수 없습니다: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "사용자의 httpd.conf를 쓸 수 없습니다"
+
+msgid "Unable to write reseller's IP list"
+msgstr "리셀러의 IP 목록을 쓸 수 없습니다"
+
+msgid "Unable to write the domain config file"
+msgstr "도메인 구성 파일을 쓸 수 없습니다"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr "주 FTP 비밀번호 파일을 쓸 수 없습니다. 변경 사항이 적용되지 않습니다."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr "할당량 파일을 쓸 수 없습니다. 관리자에게 %s이(가) 쓰기 불가능하다고 "
+"알리십시오."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr "시스템 FTP 사용자를 제거하기 위해 시스템 FTP 비밀번호 파일을 쓸 수 없습니다"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr "usage.cache 파일을 쓸 수 없습니다. 관리자에게 %s이(가) 쓰기 불가능하다고 "
+"알리십시오."
+
+msgid "Unable to write ticket config"
+msgstr "티켓 구성 파일을 쓸 수 없습니다"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr "비밀번호 파일을 쓸 수 없습니다. 관리자에게 %s이(가) 쓰기 불가능하다고 "
+"알리십시오."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr "사용자를 추가하기 위해 시스템 FTP 비밀번호 파일을 쓸 수 없습니다."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "시리얼 증가를 위해 존 파일을 쓸 수 없습니다"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "%s의 존 파일을 쓸 수 없습니다"
+
+msgid "Unblock"
+msgstr "차단 해제"
+
+msgid "Unblocking is disabled."
+msgstr "차단 해제가 비활성화되었습니다."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "선택을 해제하면 파일이 즉시 디스크에서 삭제되며 복구할 수 없습니다"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr "예기치 않은 오류가 발생했습니다. 서버 관리자에게 문의하세요"
+
+msgid "Unhandled exception name"
+msgstr "처리되지 않은 예외 이름"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "처리되지 않은 경로 %s 값 '%s'"
+
+msgid "Unix User created successfully"
+msgstr "유닉스 사용자 생성 완료"
+
+msgid "Unix User removed from the server"
+msgstr "유닉스 사용자가 서버에서 제거됨"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr "유닉스 프록시 IP/포트에는 경로, 쿼리 또는 해시가 없어야 합니다"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "알 수 없는 '%s'"
+
+msgid "Unknown action"
+msgstr "알 수 없는 작업"
+
+msgid "Unknown backup destination"
+msgstr "알 수 없는 백업 대상"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "알 수 없는 인증서 유형입니다. 서버, 생성 및 붙여넣기만 허용됩니다"
+
+msgid "Unknown ftp type"
+msgstr "알 수 없는 FTP 유형"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "알 수 없는 옵션 '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "%s에 대한 알 수 없는 값"
+
+msgid "Unlimited"
+msgstr "무제한"
+
+msgid "Unsuspend"
+msgstr "정지 해제"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr "캐시가 생성될 때까지 값이 정확하지 않을 수 있습니다. 1분 후 페이지를 새로 "
+"고치십시오."
+
+msgid "Up a Level"
+msgstr "한 단계 위로"
+
+msgid "Update"
+msgstr "업데이트"
+
+msgid "Update Successful"
+msgstr "업데이트 성공"
+
+msgid "Update channel has been successfully changed"
+msgstr "업데이트 채널이 성공적으로 변경되었습니다"
+
+msgid "Update not necessary"
+msgstr "업데이트가 필요하지 않음"
+
+msgid "Update queued"
+msgstr "업데이트 대기 중"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr "%s에 대한 업로드 확인 실패: 원격 바이트 %lld이(가) 로컬 바이트 %lld과(와) "
+"일치하지 않습니다."
+
+msgid "Upload successful"
+msgstr "업로드 성공"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "업로드된 파일은 복사할 수 없는 유효하지 않은 파일입니다"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "업로드됨: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "파일 업로드가 filemanager_disable_features 옵션에 의해 비활성화되었습니다"
+
+msgid "Usage (Meg)"
+msgstr "사용량 (MB)"
+
+msgid "Usage Log"
+msgstr "사용 기록"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "이 계정에 대한 사용 통계가 아직 수집되지 않았습니다"
+
+msgid "User"
+msgstr "사용자"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "사용자 %s 제거됨"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "%s 사용자가 이미 존재합니다. 다른 사용자 이름을 선택하십시오."
+
+#, c-format
+msgid "User %s created"
+msgstr "%s 사용자가 생성되었습니다"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "%s 사용자가 서버에 존재하지 않습니다. 목록에서 제거합니다."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "%s 사용자가 시스템에 존재하지 않습니다."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "%s 사용자가 시스템에 존재하지만 사용자 목록에 포함되지 않았습니다"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "%s 사용자가 데이터베이스에 추가되었습니다. 다음 값을 사용하십시오:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "%s 사용자가 백업되었습니다."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "%s 사용자가 복원되었습니다"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "%s 사용자가 업데이트되었습니다. 다음 값을 사용하십시오:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "사용자 %s의 경로에 하나 이상의 하드 링크가 있습니다:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "%s 사용자가 이미 정지되었습니다"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "%s 사용자가 이미 정지 해제되었습니다"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr "%s 사용자가 목록에 없습니다. 해당 사용자의 백업을 생성할 수 없습니다."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr "%s 사용자가 목록에 없습니다. 해당 사용자의 백업을 생성할 수 없습니다."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "%s 사용자를 삭제하지 못했습니다. 모든 관련 사용자를 삭제할 수 없습니다."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "%s 사용자는 당신이 생성한 사용자가 아닙니다 -> 삭제되지 않았습니다."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr "%s 사용자가 백업 내에서 정지된 상태였습니다. 계정이 정지되었습니다."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr "%s 사용자가 백업 내에서 정지된 상태였습니다. 계정 정지 중 오류 발생:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "'%s' 사용자가 존재하지 않습니다"
+
+msgid "User Acconts"
+msgstr "사용자 계정"
+
+msgid "User Accounts"
+msgstr "사용자 계정"
+
+msgid "User Bandwidth"
+msgstr "사용자 대역폭"
+
+msgid "User Comment Box"
+msgstr "사용자 댓글 박스"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "사용자 DNSSEC 제어가 비활성화되었습니다"
+
+msgid "User Disk Quota"
+msgstr "사용자 디스크 할당량"
+
+msgid "User History"
+msgstr "사용자 기록"
+
+msgid "User Modified"
+msgstr "사용자 수정됨"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "사용자 SMTP 로그가 활성화되지 않았습니다"
+
+msgid "User Updated"
+msgstr "사용자 업데이트됨"
+
+msgid "User account is disabled"
+msgstr "사용자 계정이 비활성화되었습니다"
+
+msgid "User added to SSH config file successfully"
+msgstr "사용자가 SSH 설정 파일에 성공적으로 추가되었습니다"
+
+msgid "User added to database"
+msgstr "사용자가 데이터베이스에 추가되었습니다"
+
+msgid "User added to named.conf file successfully"
+msgstr "사용자가 named.conf 파일에 성공적으로 추가되었습니다"
+
+msgid "User added to ssh config file."
+msgstr "사용자가 SSH 설정 파일에 추가되었습니다."
+
+msgid "User backups have been disabled."
+msgstr "사용자 백업이 비활성화되었습니다."
+
+msgid "User config file updated."
+msgstr "사용자 설정 파일이 업데이트되었습니다."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "사용자가 삭제되었습니다"
+
+msgid "User removed from SSH"
+msgstr "사용자가 SSH에서 제거되었습니다"
+
+msgid "User's System Quotas set"
+msgstr "사용자의 시스템 할당량이 설정되었습니다"
+
+msgid "User's config files deleted"
+msgstr "사용자의 설정 파일이 삭제되었습니다"
+
+msgid "User's data directory created successfully"
+msgstr "사용자의 데이터 디렉터리가 성공적으로 생성되었습니다"
+
+msgid "User's data directory removed."
+msgstr "사용자의 데이터 디렉터리가 제거되었습니다."
+
+msgid "User(s)"
+msgstr "사용자(들)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "사용자 디렉터리: %s"
+
+msgid "Username"
+msgstr "사용자 이름"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "사용자 이름 '%s'이(가) 너무 깁니다. 길이 %d > 최대 사용자 이름 길이=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "사용자 이름이 너무 짧습니다. 최소 2자 이상이어야 합니다."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr "사용자 이름은 영숫자(a-z, A-Z, 0-9)여야 하며, 첫 번째 문자는 반드시 문자여야 "
+"합니다"
+
+msgid "Username:"
+msgstr "사용자 이름:"
+
+msgid "Users"
+msgstr "사용자"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "사용자가 삭제되었습니다"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "사용자 %s 제거됨"
+
+msgid "Users will be deleted in the background."
+msgstr "사용자들이 백그라운드에서 삭제될 예정입니다."
+
+msgid "Users's domains directory removed."
+msgstr "사용자의 도메인 디렉터리가 제거되었습니다."
+
+msgid "Usertype"
+msgstr "사용자 유형"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "경로 %s 사용이 허용되지 않습니다."
+
+msgid "Vacation Account"
+msgstr "부재중 계정"
+
+msgid "Vacation Message Deleted"
+msgstr "부재중 메시지가 삭제되었습니다"
+
+msgid "Vacation Message set"
+msgstr "부재중 메시지가 설정되었습니다"
+
+msgid "Vacation Message updated"
+msgstr "부재중 메시지가 업데이트되었습니다"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "부재중 메시지가 삭제되었습니다"
+
+msgid "Valid"
+msgstr "유효함"
+
+msgid "Valid broadcast address set."
+msgstr "유효한 브로드캐스트 주소가 설정되었습니다."
+
+msgid "Value"
+msgstr "값"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "제출에서 'ip' 변수가 누락되었습니다"
+
+msgid "Vendor ID"
+msgstr "제조업체 ID"
+
+msgid "Verify"
+msgstr "확인"
+
+msgid "View"
+msgstr "보기"
+
+msgid "View Clipboard"
+msgstr "클립보드 보기"
+
+msgid "View previous sort"
+msgstr "이전 정렬 보기"
+
+msgid "Warning from named-checkzone:"
+msgstr "named-checkzone의 경고:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr "경고: %s 사용자는 %s에 대한 유효한 비밀번호를 가지고 있지만, 이중 인증 코드 "
+"입력에 %s회 실패하였습니다."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "경고: 할당량 제한에 도달했습니다. 파일이 비어 있을 수 있습니다."
+
+msgid "Warning: The system load average is"
+msgstr "경고: 시스템 부하 평균이"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "%lld바이트 파일 중 %lld바이트만 읽었습니다. (출처: %s)"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "웹메일"
+
+msgid "Webmail Attachments"
+msgstr "웹메일 첨부파일"
+
+msgid "Webmail SSO"
+msgstr "웹메일 SSO"
+
+msgid "Week of Month"
+msgstr "월의 주"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "주간 제한 %d에 도달했습니다: '%s'"
+
+msgid "What"
+msgstr "무엇을"
+
+msgid "When"
+msgstr "언제"
+
+msgid "Where"
+msgstr "어디서"
+
+msgid "Who"
+msgstr "누가"
+
+msgid "Wildcard"
+msgstr "와일드카드"
+
+msgid "With Selected"
+msgstr "선택된 항목과 함께"
+
+msgid "With selected"
+msgstr "선택된 항목과 함께"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr "허용된 도메인이 0개이므로, 핫링크 보호가 비활성화되었습니다."
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "%s의 계정을 활성화할 수 없습니다. 계정이 비활성화되었습니다"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "%s에 대한 쓰기 오류 발생: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "'%s' 요소의 개수가 잘못되었습니다. 허용값: 1개 또는 '%s'와 함께 2개"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "잘못된 'pass' 값 개수: %d ('%s'에서, 슬래시로 구분됨)"
+
+msgid "Year"
+msgstr "연도"
+
+msgid "Yes"
+msgstr "예"
+
+msgid "You already have the most recent version of the program"
+msgstr "이미 최신 버전의 프로그램을 사용하고 있습니다"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] "관리자 또는 리셀러 계정을 삭제하고 있으며, 해당 계정은 %d명의 사용자를 "
+"관리하고 있습니다."
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "익명 FTP를 활성화할 권한이 없습니다"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "SSL 설정을 변경할 권한이 없습니다"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "zst 파일을 복원하려 하고 있지만, 시스템에서 zstd가 활성화되지 않았습니다."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "해당 티켓을 수정할 권한이 없습니다"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr "아래 이메일을 클릭하면 %s 사용자로 즉시 로그인할 수 있으며, 비밀번호를 알 "
+"필요가 없습니다."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr "majordomo라는 목록을 만들 수 없습니다. 해당 이름은 예약된 별칭입니다"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "root 계정을 중지할 수 없습니다. 심각한 문제가 발생할 수 있습니다"
+
+msgid "You cannot add that extension"
+msgstr "해당 확장자를 추가할 수 없습니다"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "해당 도메인에 계정보다 더 많은 대역폭을 할당할 수 없습니다"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "해당 도메인에 계정보다 더 많은 할당량을 설정할 수 없습니다"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "허용된 도메인보다 더 많은 사용자를 생성할 수 없습니다."
+
+msgid "You cannot delete all of your IPs"
+msgstr "모든 IP를 삭제할 수 없습니다"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr "%s 계정을 삭제할 수 없습니다. 해당 계정은 시스템 계정과 연결되어 있습니다"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "자신의 계정(%s)을 삭제할 수 없습니다"
+
+msgid "You cannot execute that command"
+msgstr "해당 명령을 실행할 수 없습니다"
+
+msgid "You cannot modify yourself"
+msgstr "자신의 계정을 수정할 수 없습니다"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr "하나의 무료 IP에서 여러 사용자를 복원할 수 없습니다. 먼저 해당 IP를 공유해야 "
+"합니다."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "무제한 발송 제한을 설정할 수 없습니다."
+
+msgid "You cannot suspend yourself"
+msgstr "자신의 계정을 중지할 수 없습니다"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "자신의 계정을 중지하거나 중지 해제할 수 없습니다"
+
+msgid "You cannot unsuspend this account."
+msgstr "이 계정의 중지를 해제할 수 없습니다."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr "해당 도메인을 포인터로 사용할 수 없습니다. 이미 서버에 존재하는 도메인입니다"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "현재 %s명의 사용자가 있으며, 최대 %s개의 도메인을 사용할 수 있습니다."
+
+msgid "You did not select any domains to modify"
+msgstr "수정할 도메인을 선택하지 않았습니다"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "다른 IP를 선택하지 않았습니다. 변경 사항이 없습니다"
+
+msgid "You didn't select anyone to send it to"
+msgstr "보낼 대상을 선택하지 않았습니다"
+
+msgid "You do not have control over user"
+msgstr "해당 사용자에 대한 관리 권한이 없습니다"
+
+msgid "You do not own any IPs"
+msgstr "소유한 IP가 없습니다"
+
+msgid "You do not own that IP"
+msgstr "해당 IP를 소유하고 있지 않습니다"
+
+msgid "You do not own that domain"
+msgstr "해당 도메인을 소유하고 있지 않습니다"
+
+msgid "You do not own that ip"
+msgstr "해당 IP를 소유하고 있지 않습니다"
+
+msgid "You do not own that that cron ID"
+msgstr "해당 크론 ID를 소유하고 있지 않습니다"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "IP %s를 소유하고 있지 않습니다. 사용자 %s는 생성되지 않습니다"
+
+msgid "You don't have authority over that User"
+msgstr "해당 사용자에 대한 권한이 없습니다"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "해당 티켓에 응답할 권한이 없습니다"
+
+msgid "You don't have permission to restore user"
+msgstr "사용자를 복원할 권한이 없습니다"
+
+msgid "You don't have permission to view that ticket"
+msgstr "해당 티켓을 볼 권한이 없습니다"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "%d:%.2d 남았습니다."
+
+msgid "You have already reached your assigned limit"
+msgstr "이미 할당된 제한에 도달했습니다"
+
+msgid "You have not added any files to the clipboard."
+msgstr "클립보드에 아무 파일도 추가하지 않았습니다."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr "리셀러에게 할당된 IP가 없습니다. 할당된 IP 없이 도메인 또는 네임서버를 "
+"생성할 수 없습니다"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr "선택한 파일이 없습니다. 백업을 복원하기 전에 파일을 선택하십시오."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr "선택한 사용자가 없습니다. 백업을 생성하기 전에 사용자를 선택하십시오."
+
+msgid "You have not selected any domains"
+msgstr "선택한 도메인이 없습니다"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr "서버 재부팅 명령이 성공적으로 실행되었습니다. 시스템이 다시 부팅되고 "
+"활성화되기까지 몇 분이 소요될 수 있습니다."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr "디스크 사용량이 %d%%에 도달했으며, 허용된 임계값인 %d%%를 초과했습니다."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "로고를 다시 불러오려면 F5 키를 눌러야 할 수도 있습니다"
+
+msgid "You may not use an IP for a domain name"
+msgstr "도메인 이름으로 IP를 사용할 수 없습니다"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr "허용 목록 또는 차단 목록 중 하나만 제공해야 합니다. 둘 다 설정할 수 없습니다."
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "chmod 값을 입력해야 합니다. 예: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "폴더 '이름'을 입력해야 합니다. 예: images"
+
+msgid "You must enter both password"
+msgstr "비밀번호를 모두 입력해야 합니다"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "번호, 사용자, 제목, 우선순위, 상태 및 메시지를 입력해야 합니다"
+
+msgid "You must enter the password in both fields"
+msgstr "두 개의 필드에 비밀번호를 입력해야 합니다"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "사용자, 제목, 우선순위 및 메시지를 입력해야 합니다"
+
+msgid "You must first create some packages"
+msgstr "먼저 패키지를 생성해야 합니다"
+
+msgid "You must first own an IP"
+msgstr "먼저 IP를 소유해야 합니다"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "NS 레코드가 하나 이상 있어야 합니다. 그렇지 않으면 named가 시작되지 않을 수 "
+"있습니다."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"'required_hits'가 'custom'일 경우 'required_hits' 및 "
+"'required_hits_custom'을 제공해야 합니다"
+
+msgid "You must provide a list name"
+msgstr "목록 이름을 제공해야 합니다"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr "보호된 디렉터리의 비밀번호 프롬프트를 제공해야 합니다. 예: 회원 전용 영역"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "유효한 도메인, IP, ns1 및 ns2를 제공해야 합니다"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr "유효한 이메일 주소, 기존 비밀번호, 새 비밀번호(1) 및 새 비밀번호(2)를 "
+"제공해야 합니다"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr "유효한 FTP 주소, 기존 비밀번호, 새 비밀번호(1) 및 새 비밀번호(2)를 제공해야 "
+"합니다"
+
+msgid "You must provide a valid ip"
+msgstr "유효한 IP를 제공해야 합니다"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "유효한 이름을 제공해야 하며, 해당 이름이 존재해야 합니다."
+
+msgid "You must provide a valid name and value"
+msgstr "유효한 이름과 값을 제공해야 합니다"
+
+msgid "You must provide the passwd variable"
+msgstr "passwd 변수를 제공해야 합니다"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr "네임서버 IP 쌍(ns1.domain.com 및 ns2.domain.com)을 선택해야 합니다"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "삭제할 메일링 리스트를 하나 이상 선택해야 합니다"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "정리할 메일링 리스트를 하나 이상 선택해야 합니다"
+
+msgid "You must select exactly one key"
+msgstr "정확히 하나의 키를 선택해야 합니다"
+
+msgid "You must select something"
+msgstr "무언가를 선택해야 합니다"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"시간 값은 0-23 사이의 숫자로 입력해야 합니다. 크론 작업은 하루에 한 번만 "
+"실행할 수 있습니다. (여러 개의 크론 작업을 만들 수 있습니다.)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"분 값은 0-59 사이의 숫자로 입력해야 합니다. 크론 작업은 하루에 한 번만 "
+"실행할 수 있습니다. (여러 개의 크론 작업을 만들 수 있습니다.)"
+
+msgid "You must use a valid path"
+msgstr "유효한 경로를 사용해야 합니다"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "업데이트 사이에 최소 %d분을 기다려야 합니다."
+
+msgid "You must wait for the stats to be computed."
+msgstr "통계가 계산될 때까지 기다려야 합니다."
+
+msgid "You need to specify a domain"
+msgstr "도메인을 지정해야 합니다"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "도메인, 익명 설정(anon), 업로드 익명 설정(anonup) 및 메시지가 필요합니다"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "계정을 동기화하려면 도메인과 비밀번호 목록이 필요합니다"
+
+msgid "You require either the passwd or quota"
+msgstr "비밀번호 또는 할당량이 필요합니다"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr "소스 URL 경로(예: /redirect) 및 대상 URL(예: www.redirect.com)이 필요합니다"
+
+msgid "You require user and domain to change a pop account"
+msgstr "POP 계정을 변경하려면 사용자와 도메인이 필요합니다"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "POP 계정을 추가하려면 사용자, 도메인 및 비밀번호가 필요합니다"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "작업이 완료되면 메시지 시스템을 통해 알림을 받게 됩니다."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "프로세스가 완료되면 메시지 시스템을 통해 알림을 받게 됩니다"
+
+msgid "You will receive a message when it's complete."
+msgstr "작업이 완료되면 메시지를 받게 됩니다."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr "로그인-대신 옵션을 사용 중이므로 자신의 비밀번호를 사용해야 합니다. 사용자의 "
+"비밀번호를 입력하지 마십시오."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "해시 URL 로그인 '%s'이(가) 생성되었습니다"
+
+msgid "Your IP is blacklisted"
+msgstr "당신의 IP가 블랙리스트에 등록되었습니다"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "로그인 키 '%s'가 생성되었습니다"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "이름이 '%s' (으)로 변경되었습니다"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "사용자 파일이 %s에서 복원되었습니다"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "사용자 파일이 %s에서 복원되었습니다"
+
+msgid "Your account"
+msgstr "당신의 계정"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "당신의 계정 %s@%s 이(가) 설정되었습니다. 이메일 프로그램에서 다음을 "
+"사용하십시오"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "당신의 '|USERNAME|' 계정이 정지되었습니다. 사유: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "|domain| 도메인에 대한 계정이 이제 사용 가능합니다."
+
+msgid "Your backups are now ready"
+msgstr "백업이 완료되었습니다"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "데이터베이스가 설정되었습니다. 다음 값을 사용하십시오:"
+
+msgid "Your default domain has been set"
+msgstr "기본 도메인이 설정되었습니다"
+
+msgid "Your disk quota limit has been reached."
+msgstr "디스크 할당량 제한에 도달했습니다."
+
+msgid "Your disk usage has been updated"
+msgstr "디스크 사용량이 업데이트되었습니다"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr "기존 키는 덮어쓰이지 않았지만 새 인증서와 함께 사용할 수 없습니다."
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "메시지가 저장되었습니다"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "언어가 %s(으)로 변경되었습니다"
+
+msgid "Your message has been saved"
+msgstr "메시지가 저장되었습니다"
+
+msgid "Your message has been sent"
+msgstr "메시지가 전송되었습니다"
+
+msgid "Your message is being sent in the background"
+msgstr "메시지가 백그라운드에서 전송 중입니다"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr "메시지가 비어 있습니다. 사용자들은 내용을 알고 싶어 할 수 있습니다."
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "이름이 '%s' (으)로 변경되었습니다"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "새 키가 다음 위치에 백업되었습니다: %s"
+
+msgid "Your password"
+msgstr "당신의 비밀번호"
+
+msgid "Your password is invalid"
+msgstr "비밀번호가 유효하지 않습니다"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr "업데이트 요청이 1분 이내에 시작됩니다. 완료되면 메시지 시스템을 통해 알림을 "
+"받게 됩니다"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "요청이 1분 이내에 실행됩니다"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr "요청이 백그라운드에서 실행됩니다. 완료되면 메시지 시스템을 통해 알림을 받게 "
+"됩니다."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "리셀러 계정이 할당된 제한에 도달했습니다"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "리셀러가 할당된 제한에 도달했습니다"
+
+msgid "Your subject contains invalid characters."
+msgstr "제목에 잘못된 문자가 포함되어 있습니다."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "당신의 티켓 번호는 %s입니다."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "존 키가 존 서명보다 최신입니다."
+
+msgid "Zone Reset"
+msgstr "존 재설정"
+
+msgid "Zone Signing has expired."
+msgstr "존 서명의 유효 기간이 만료되었습니다."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "크론 작업 생성됨"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr "존이 아직 서명되지 않았습니다. 이 자동 서명 도구를 사용하기 전에 먼저 키를 "
+"생성하고 서명하십시오"
+
+msgid "Zone is of type DNSSEC."
+msgstr "존 유형은 DNSSEC입니다."
+
+msgid "Zone keys generated"
+msgstr "존 키가 생성되었습니다"
+
+msgid "Zone signed"
+msgstr "존이 서명되었습니다"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "메시지 삭제됨"
+
+msgid "account ..."
+msgstr "계정 ..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "그리고 %d명의 사용자"
+
+msgid "at least"
+msgstr "최소"
+
+msgid "at most"
+msgstr "최대"
+
+msgid "back"
+msgstr "뒤로"
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec이 활성화되지 않았습니다. 존을 서명할 수 없습니다."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "%s에서 fstatat를 수행할 수 없음: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "%s에서 unlinkat를 수행할 수 없음: %s"
+
+msgid "catch is required"
+msgstr "catch가 필요합니다"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "cgroup 오류: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup이 라이선스에서 활성화되지 않았습니다"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "directadmin.conf에서 cgroup이 비활성화되었습니다"
+
+msgid "change"
+msgstr "변경"
+
+msgid "click here if form does not include two-step code input"
+msgstr "양식에 2단계 코드 입력이 포함되지 않은 경우 여기를 클릭하십시오"
+
+msgid "contains"
+msgstr "포함"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "일"
+
+msgid "day(s)"
+msgstr "일"
+
+msgid "days"
+msgstr "일"
+
+msgid "default user"
+msgstr "기본 사용자"
+
+msgid "dns error"
+msgstr "DNS 오류"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "dnsprovider '%s' 옵션에 잘못된 문자가 포함되어 있습니다"
+
+msgid "does not belong to you"
+msgstr "당신에게 속하지 않습니다"
+
+msgid "emails have just been sent by"
+msgstr "이메일이 방금 전송되었습니다"
+
+msgid "equals"
+msgstr "같음"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "변경되었습니다."
+
+msgid "has been updated with the new ip"
+msgstr "새로운 IP로 업데이트되었습니다"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score는 1에서 99 사이여야 합니다"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "시간"
+
+msgid "hours"
+msgstr "시간"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr "httpd.conf는 나중에 task.queue를 사용하여 작성됩니다"
+
+msgid "invalid IP or range: %s"
+msgstr "잘못된 IP 또는 범위: %s"
+
+msgid "invalid code"
+msgstr "잘못된 코드"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "잘못된 이메일 주소입니다. %s 사용자는 생성되지 않습니다"
+
+msgid "is currently down"
+msgstr "현재 다운 상태입니다"
+
+msgid "is not a valid username"
+msgstr "유효한 사용자 이름이 아닙니다"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr "is_ip_in_mask_range:%s:%s: 범위 '%s'는 양의 정수여야 합니다"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr "is_ip_in_mask_range:%s:%s: 범위 '%s'는 1에서 128 사이여야 합니다"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: 범위에 '/'가 없습니다"
+
+msgid "json string"
+msgstr "JSON 문자열"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lstat 오류: %s"
+
+msgid "mail() line number"
+msgstr "mail() 줄 번호"
+
+msgid "message is empty. Please enter some text."
+msgstr "메시지가 비어 있습니다. 내용을 입력하십시오."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "'%s'의 MIME %s 유형은 'image/' 유형이 아닙니다"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "분"
+
+msgid "minutes"
+msgstr "분"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "mkdir(%s) 오류: %s"
+
+msgid "modify password"
+msgstr "비밀번호 변경"
+
+msgid "modify privileges"
+msgstr "권한 수정"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "개월"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain은 유효한 도메인이 아닙니다"
+
+msgid "newer than"
+msgstr "보다 최신"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 또는 ns2가 유효한 네임서버가 아닙니다"
+
+msgid "of"
+msgstr "의"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package 또는 new_package가 유효한 패키지 이름이 아닙니다"
+
+msgid "older than"
+msgstr "보다 오래됨"
+
+#, c-format
+msgid "older than %s days."
+msgstr "%s일보다 오래됨."
+
+msgid "or"
+msgstr "또는"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "또는 IPv6 (1:2:3:4:5:6:7:8) 또는 IPv6 범위 (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "또는 선택"
+
+msgid "php.ini override added"
+msgstr "php.ini 재정의 추가됨"
+
+#, c-format
+msgid "php1_select entry %d is not available"
+msgstr "php1_select 항목 %d을(를) 사용할 수 없습니다"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache가 활성화되지 않았습니다"
+
+msgid "port"
+msgstr "포트"
+
+#, fuzzy
+msgid "request created"
+msgstr "디렉터리 생성됨"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr "reseller_can_set_email_limit=0이 설정되어 있어 제한을 설정할 수 없습니다"
+
+msgid "retry"
+msgstr "재시도"
+
+msgid "routes must start with a [ character."
+msgstr "경로는 '[' 문자로 시작해야 합니다."
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "검색 길이가 범위를 초과했습니다: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "초"
+
+msgid "selected"
+msgstr "선택됨"
+
+msgid "selected overrides removed from php.ini"
+msgstr "php.ini에서 선택된 재정의가 제거되었습니다"
+
+msgid "selected skipped rules removed"
+msgstr "선택된 건너뛰기 규칙이 제거되었습니다"
+
+msgid "selecting none includes all domains"
+msgstr "아무것도 선택하지 않으면 모든 도메인이 포함됩니다"
+
+msgid "sent"
+msgstr "전송됨"
+
+msgid "set Permission"
+msgstr "권한 설정"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "show_blocked_ips.sh 출력:"
+
+msgid "starts with"
+msgstr "다음으로 시작"
+
+msgid "subject contains invalid characters."
+msgstr "제목에 잘못된 문자가 포함되어 있습니다."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr "subject_select != %d이지만, 제목이 설정되지 않았습니다. 이런 일이 발생하면 "
+"안 됩니다."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "해당 값은 서버의 호스트 이름이며 사용할 수 없습니다"
+
+msgid "the new domain name already exists on your system"
+msgstr "새 도메인 이름이 이미 시스템에 존재합니다"
+
+msgid "too many iterations"
+msgstr "너무 많은 반복 횟수"
+
+msgid "unable to load secret"
+msgstr "보안을 로드할 수 없습니다"
+
+msgid "unlimited"
+msgstr "제한 없음"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "user, passwd, passwd2 및 type이 필요합니다"
+
+msgid "user.conf override"
+msgstr "user.conf 재정의"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount가 비활성화되었습니다"
+
+msgid "user_modify_pre.sh error"
+msgstr "user_modify_pre.sh 오류"
+
+msgid "valid code"
+msgstr "유효한 코드"
+
+msgid "value is required"
+msgstr "값이 필요합니다"
+
+#, c-format
+msgid "value must be '%s' or '%s'"
+msgstr "값은 '%s' 또는 '%s'이어야 합니다"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder가 show_main_spambox=0을 통해 비활성화되었습니다"
+
+msgid "your new password is"
+msgstr "새 비밀번호는"
+
+msgid "your new quota is"
+msgstr "새 할당량은"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "새 전송 한도는: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr "~/domains가 없었지만, 다시 생성하는 동안 오류가 발생했습니다"
