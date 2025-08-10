@@ -1,0 +1,7717 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Vietnamese (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Vietnamese <https://translate.directadmin.com/projects/"
+"directadmin/internal/vi/>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " %d Tin nhắn mới bên trong"
+
+msgid " / Day"
+msgstr " / Ngày"
+
+msgid "# of Domains"
+msgstr "# của các Tên Miền"
+
+msgid "# of IPs"
+msgstr "# của các IP"
+
+msgid "# of MySQL DBs"
+msgstr "# của các CSDL MySQL"
+
+# Suggested in Weblate: Của tài khoản Đại lý
+msgid "# of Resellers"
+msgstr "# của các Reseller"
+
+msgid "# of SubDomains"
+msgstr "# Các tên miền con"
+
+msgid "# of Users"
+msgstr "# của các người dùng"
+
+msgid "# of free IPs"
+msgstr "# của các IP trống"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d Ngày, %d Giờ và %d Phút"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d of %d Tài khoản Admin hoặc tài khoản reseller đã tồn tại."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d of %d Tài khoản đã tồn tại. Vui lòng thử lại."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d of %d Tên miền đã tồn tại."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d đã cập nhật cài đặt"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s không tồn tại"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr ""
+"%s '%s' không thể khôi phục dưới '%s'.  Đang khôi phục dưới tệp mặc định: "
+"'%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - IP gần đây '%s' của người dùng"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr "%s Chắc chắn rằng tin nhắn chào mừng người dùng đã được đặt."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s tài khoản %s vừa được tạo"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s Đã tồn tại"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s đã tồn tại remote máy chủ."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s đã tồn tại trên máy chủ."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s đã tồn tại. Vui lòng đặt overwrite=yes để bắt buộc"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s đã xuất hiện liên kết. Đang hủy bỏ."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s bây giờ đã có thể được chia sẻ."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s chứa những kí tự nguy hiểm"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr "%s không thể gán, trước hết phải còn trống hoặc bỏ gán."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s không còn chỗ trống, trước hết là không có tên miền nào nếu nó được chia "
+"sẻ, hoặc nó phải được đặt trước."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s không thể xóa, trước hết bạn phải giải phóng nó."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s không thể chia sẻ, trước hết nó phải được giải phóng"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s đã xóa thành công."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s không tồn tại"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s không được cùng chủ sở hũu %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s đã bị xóa ra khỏi danh sách"
+
+msgid "%s has been saved as %s."
+msgstr "%s đã được lưu như %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s đã bị đình chỉ"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s đã xóa quyền bị đình chỉ"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s là thư mục, không thể xóa"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s là liên kết"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s là một liên kết chứa ký hiệu"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s đã mất hoặc không tìm thấy"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s là một thư mục"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s không phải là ổ cắm"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s không phải là một liên kết tượng trưng"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s không phải là IP hoặc phạm vi hợp lệ"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s không phải là một phạm vi IP hợp lệ. Sử dụng: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr ""
+"%s không được cho phép vào %s, đây có thể là nguyên nhân gây ra lỗi trích "
+"xuất"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s không được kích hoạt"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s không có trong danh sách IP của miền của bạn"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s không phải là một trong những loại chuyển hướng được liệt kê"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s không thuộc sở hữu của %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr ""
+"%s không được đặt thành 'miễn phí' hoặc vẫn được chỉ định cho người bán lại"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s hiện được điều khiển bởi %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s hiện đã miễn phí"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s hiện đã được bỏ gán."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s hiện là tên miền mặc định của bạn."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s nằm ngoài phạm vi"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s là bắt buộc đối với %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s không được là một liên kết tượng trưng"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s không còn Nhãn Máy chủ Tên nữa."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s chưa được triển khai"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s bản ghi bị vô hiệu hóa ở cấp độ này"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "Giá trị %s của '%s' không có trong home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "Các tập tin cấu hình của %s đã bị xóa"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: lỗi lstat trên giá trị liên kết '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: lỗi liên kết đọc: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' không phải là loại %s hợp lệ"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sNhấp vào đây%s để tìm hiểu cách bật nó"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sNhấp vào đây%s để xem dữ liệu vùng thô cục bộ"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' không tồn tại"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' không tồn tại\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' không bắt đầu bằng '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' đã được đặt thành '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' là tên gói bị cấm."
+
+msgid "'%s' is disabled"
+msgstr "'%s' bị vô hiệu hóa"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' không phải là màu hex css hợp lệ"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' không được gán cho tài khoản Đại lý của bạn."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' không được kích hoạt trong giấy phép của bạn"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' không được bật trên hệ thống."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' là bắt buộc"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' phải là '%s' hoặc '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import' dường như không được mã hóa theo cơ sở 64"
+
+msgid "'when' should be all, newer or older"
+msgstr "'khi' phải là tất cả, mới hơn hoặc cũ hơn"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) Các liên kết cứng sau đây đã được tìm thấy trong Người dùng %s:"
+
+msgid "* irretrievable *"
+msgstr "*không thể cứu vãn*"
+
+msgid "*** Stopped ***"
+msgstr "*** Đã dừng ***"
+
+msgid "-- None Available --"
+msgstr "-- Không có sẵn --"
+
+msgid "-- Reason:"
+msgstr "-- Lý do:"
+
+msgid "-- Select IP"
+msgstr "-- Chọn IP"
+
+msgid "-- Select Package"
+msgstr "-- Chọn gói"
+
+msgid "-- any time --"
+msgstr "-- bất cứ lúc nào --"
+
+msgid "-- anything --"
+msgstr "-- bất cứ điều gì --"
+
+#, fuzzy
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "%s=%s yêu cầu nginx_proxy=1 và %s Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "Đã có một bản ghi %s với tên đó"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "Một IP 'miễn phí' chỉ có thể được gán cho 1 Người dùng"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "Cần có Loại bản ghi: A, NS, MX, CNAME, PTR hoặc TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr ""
+"Người bán lại không thể kiểm soát các cấp tài khoản khác ngang bằng hoặc cao "
+"hơn"
+
+msgid "A file is required"
+msgstr "Một tập tin là cần thiết"
+
+msgid "A forwarder already exists with that name"
+msgstr "Đã có một bên chuyển tiếp với tên đó"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "Đã tồn tại một tên miền/vùng đầy đủ có tên này."
+
+msgid "A key with that name already exists"
+msgstr "Một khóa có tên đó đã tồn tại"
+
+msgid "A key with that value already exists"
+msgstr "Một khóa có giá trị đó đã tồn tại"
+
+msgid "A list alias already exists with that name"
+msgstr "Một danh sách bí danh đã tồn tại với tên đó"
+
+msgid "A message for that user already exists"
+msgstr "Đã có tin nhắn cho người dùng đó"
+
+msgid "A pop account already exists with that name"
+msgstr "Một tài khoản pop đã tồn tại với tên đó"
+
+msgid "A skin name is required"
+msgstr "Cần phải có tên skin"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr ""
+"Một tên miền phụ có cùng tên đã tồn tại trên hệ thống dưới một tên miền khác."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "Giới hạn bộ nhớ tuyệt đối. Kích hoạt Out-Of-Memory Killer."
+
+msgid "Abuse"
+msgstr "Lạm dụng"
+
+msgid "Access Hosts"
+msgstr "Truy cập máy chủ"
+
+msgid "Access host has been added"
+msgstr "Đã thêm máy chủ truy cập"
+
+msgid "Access hosts have been removed"
+msgstr "Máy chủ truy cập đã bị xóa"
+
+msgid "Account"
+msgstr "Tài khoản"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Tài khoản %s vừa tạo %s %s từ IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Tài khoản %s bị bỏ qua do bị đình chỉ"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr ""
+"Tài khoản %s đã bị Quản trị viên đình chỉ và bạn chỉ có quyền truy cập với "
+"tư cách Đại lý."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Tài khoản %s với tên miền %s có chứng chỉ caroot trống"
+
+msgid "Account created"
+msgstr "Tài khoản đã được tạo"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Tài khoản đã được bỏ chặn khỏi BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Tài khoản không phải là Người bán lại"
+
+msgid "Account is suspended"
+msgstr "Tài khoản bị đình chỉ"
+
+msgid "Account password changed"
+msgstr "Mật khẩu tài khoản đã thay đổi"
+
+#, fuzzy
+msgid "Account(s) Suspended"
+msgstr "Tài khoản bị đình chỉ"
+
+#, fuzzy
+msgid "Account(s) Unuspended"
+msgstr "Tài khoản bị đình chỉ"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Tài khoản được khôi phục vào phân vùng %s."
+
+msgid "Action"
+msgstr "Hoạt động"
+
+msgid "Activate"
+msgstr "Kích hoạt"
+
+msgid "Active"
+msgstr "Tích cực"
+
+#, c-format
+msgid "Add %s"
+msgstr "Thêm %s"
+
+msgid "Add Host"
+msgstr "Thêm máy chủ"
+
+msgid "Add Override"
+msgstr "Thêm ghi đè"
+
+msgid "Add the new NS records first."
+msgstr "Đầu tiên hãy thêm bản ghi NS mới."
+
+msgid "Add to Apache"
+msgstr "Thêm vào Apache"
+
+msgid "Add to Clipboard"
+msgstr "Thêm vào bảng tạm"
+
+msgid "Add to DNS"
+msgstr "Thêm vào DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "Đã thêm ns1 là %s và ns2 là %s"
+
+msgid "Additional"
+msgstr "Thêm vào"
+
+msgid "Admin"
+msgstr "Quản trị viên"
+
+msgid "Admin SSL"
+msgstr "Chứng chỉ SSL của Quản trị viên"
+
+msgid "Admin SSL is not enabled"
+msgstr "SSL quản trị không được bật"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "Tìm kiếm nâng cao"
+
+msgid "Afternoon"
+msgstr "Buổi chiều"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Biệt danh %s@%s -> %s đã được tạo"
+
+msgid "All"
+msgstr "Tất cả"
+
+msgid "All Data"
+msgstr "Tất cả dữ liệu"
+
+msgid "All E-Mail"
+msgstr "Tất cả E-Mail"
+
+msgid "All Months (cgi)"
+msgstr "Tất cả các tháng (cgi)"
+
+msgid "All Resellers"
+msgstr "Tất cả Reseller"
+
+msgid "All Users"
+msgstr "Tất cả người dùng"
+
+msgid "All Users Except Selected Users"
+msgstr "Tất cả người dùng trừ những người dùng đã chọn"
+
+msgid "All Users Except:"
+msgstr "Tất cả người dùng trừ:"
+
+msgid "All of Your Users"
+msgstr "Tất cả người dùng của bạn"
+
+msgid "All privileges have been set"
+msgstr "Tất cả các đặc quyền đã được thiết lập"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Tất cả các bước tuyến đường ngoại trừ bước cuối cùng đều phải có 'khớp'"
+
+msgid "All selected Users have been suspended"
+msgstr "Tất cả người dùng đã chọn đã bị đình chỉ"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Tất cả người dùng đã chọn đã được bỏ đình chỉ"
+
+msgid "All specified forwarders removed"
+msgstr "Đã xóa tất cả các bộ chuyển tiếp được chỉ định"
+
+msgid "Allocated"
+msgstr "Đã được phân bổ"
+
+msgid "Allow"
+msgstr "Cho phép"
+
+msgid "Allow Overselling"
+msgstr "Cho phép bán quá số lượng"
+
+#, fuzzy
+msgid "Allowance threshold is 0%"
+msgstr "Ngưỡng trợ cấp là 0%%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Cho phép nhiều %s như vậy sẽ khiến bạn vượt quá giới hạn %s của mình"
+
+msgid "Alpha"
+msgstr "Alpha"
+
+msgid "Already Exists"
+msgstr "Đã tồn tại"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"Mặc dù đã xảy ra lỗi sao lưu, việc tải lên các bản sao lưu hợp lệ vẫn sẽ "
+"được thực hiện"
+
+msgid "An Error Occurred"
+msgstr "Đã xảy ra lỗi"
+
+msgid "An Error has occurred"
+msgstr "Đã xảy ra lỗi"
+
+msgid "An auto responder already exists with that name"
+msgstr "Đã có một bộ trả lời tự động với tên đó"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Đã có một trình trả lời tự động với tên đó"
+
+msgid "An error has occurred"
+msgstr "Đã xảy ra lỗi"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Đã xảy ra lỗi khi viết lại cấu hình Nginx Unit"
+
+msgid "An error occured during extraction"
+msgstr "Đã xảy ra lỗi trong quá trình trích xuất"
+
+msgid "An error occured while creating the compressed file"
+msgstr "Đã xảy ra lỗi khi tạo tệp nén"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "Đã xảy ra lỗi khi đặt lại quyền sở hữu tệp"
+
+msgid "An error occurred during the backup"
+msgstr "Đã xảy ra lỗi trong quá trình sao lưu"
+
+#, fuzzy
+msgid "An error occurred during the restore"
+msgstr "Đã xảy ra lỗi trong quá trình sao lưu"
+
+msgid "An error occurred when unblocking the account"
+msgstr "Đã xảy ra lỗi khi bỏ chặn tài khoản"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "Đã xảy ra lỗi khi áp dụng cài đặt cho Người dùng của bạn"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "Đã xảy ra lỗi khi cố gắng sao chép tệp"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "Đã xảy ra lỗi khi cố gắng tạo thư mục"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "Đã xảy ra lỗi khi cố gắng bảo vệ thư mục"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "Đã xảy ra lỗi khi cố gắng đổi tên tệp"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "Đã xảy ra lỗi khi cố gắng khôi phục tệp"
+
+msgid "Anonymous Ftp"
+msgstr "Ftp ẩn danh"
+
+msgid "Apache"
+msgstr "Người Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Tệp cấu hình Apache được viết lại với ip mới"
+
+msgid "Apparent Size"
+msgstr "Kích thước biểu kiến"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Xuất hiện dưới dạng mục đầu tiên trong phần <Thư mục>."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Xuất hiện ở đầu mẫu, trước khi thiết lập các biến."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Xuất hiện trong TẤT CẢ các phần context{}, được sử dụng cho các thư mục được "
+"bảo vệ bằng mật khẩu."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Xuất hiện trong phần phpIniOverride{}."
+
+msgid "Appears in rewrite{} section."
+msgstr "Xuất hiện trong phần rewrite{}."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Xuất hiện trong phần scripthandler{}."
+
+msgid "Appears in vhssl{} section."
+msgstr "Xuất hiện trong phần vhssl{}."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Xuất hiện ngay trước phần <Directory>."
+
+msgid "Apply to All Users"
+msgstr "Áp dụng cho tất cả người dùng"
+
+msgid "Apply to Me"
+msgstr "Áp dụng cho tôi"
+
+msgid "Apply to existing Domains"
+msgstr "Áp dụng cho các tên miền hiện có"
+
+msgid "Apr"
+msgstr "Tháng tư"
+
+msgid "Archive Size"
+msgstr "Kích thước lưu trữ"
+
+msgid "Archives purged"
+msgstr "Lưu trữ đã được thanh lọc"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Bạn có chắc chắn muốn xóa các tài khoản đã chọn không?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Bạn có chắc chắn muốn xóa các cơ sở dữ liệu đã chọn không?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Bạn có chắc chắn muốn xóa các khóa đã chọn không?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Bạn có chắc chắn muốn xóa các vùng đã chọn không?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Bạn có chắc chắn muốn xóa những tập tin này không?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Bạn có chắc chắn muốn tắt những tiến trình này không?"
+
+msgid "Ascending"
+msgstr "Đang tăng dần"
+
+msgid "Assign to"
+msgstr "Giao cho"
+
+msgid "Assigned"
+msgstr "Đã giao"
+
+msgid "At least one crediential is required."
+msgstr "Cần có ít nhất một chứng chỉ."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Cố gắng sao chép %s vào chính nó, tệp bị bỏ qua."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Khi cố gắng di chuyển %s vào chính nó, tệp đã bị bỏ qua."
+
+msgid "Attempts"
+msgstr "Những nỗ lực"
+
+msgid "Aug"
+msgstr "Tháng tám"
+
+msgid "Authentication"
+msgstr "Xác thực"
+
+msgid "Authorize"
+msgstr "Ủy quyền"
+
+msgid "Auto"
+msgstr "Tự động"
+
+msgid "Auto media selection active."
+msgstr "Đang kích hoạt lựa chọn phương tiện tự động."
+
+msgid "Auto+Confirm"
+msgstr "Tự động+Xác nhận"
+
+msgid "AutoResponders"
+msgstr "Trả lời tự động"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "Việc gia hạn chứng chỉ tự động cho %s đã thành công"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "Tự động security.txt (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "Trả lời tự động"
+
+msgid "Autoresponder"
+msgstr "Trả lời tự động"
+
+#, fuzzy
+msgid "Autoresponder created"
+msgstr "Trả lời tự động đã được cập nhật"
+
+msgid "Autoresponder updated"
+msgstr "Trả lời tự động đã được cập nhật"
+
+#, fuzzy
+msgid "Autoresponder(s) removed"
+msgstr "Trả lời tự động"
+
+msgid "Avoid use of trailers."
+msgstr "Tránh sử dụng xe kéo."
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Số liệu thống kê ..."
+
+msgid "Awstats setting changed"
+msgstr "Cài đặt AWStats đã thay đổi"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Mặt sau"
+
+msgid "Backing up Databases"
+msgstr "Sao lưu cơ sở dữ liệu"
+
+msgid "Backing up E-Mail Data"
+msgstr "Sao lưu dữ liệu E-Mail"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Sao lưu cài đặt E-Mail"
+
+msgid "Backing up FTP"
+msgstr "Sao lưu FTP"
+
+msgid "Backing up User Configs"
+msgstr "Sao lưu cấu hình người dùng"
+
+msgid "Backing up User Data"
+msgstr "Sao lưu dữ liệu người dùng"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Sao lưu các mục E-Mail bổ sung"
+
+msgid "Backup"
+msgstr "Hỗ trợ"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Bản sao lưu %d hiện không chạy."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr ""
+"Hủy sao lưu (%d): Đã tìm thấy một liên kết cứng trong đường dẫn của Người "
+"dùng %s"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Lỗi sao lưu với Nginx Unit: %s"
+
+msgid "Backup Halted"
+msgstr "Sao lưu đã dừng lại"
+
+msgid "Backup ID"
+msgstr "ID sao lưu"
+
+msgid "Backup creation added to queue"
+msgstr "Đã thêm việc tạo bản sao lưu vào hàng đợi"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+"Sao lưu khóa trực tiếp tới %s đã không thành công. Nếu cần, vui lòng ghi chú "
+"khóa cũ:"
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Đường dẫn sao lưu %s đã được tạo."
+
+#, fuzzy
+msgid "Backup(s) Killed"
+msgstr "Sao lưu đã dừng lại"
+
+msgid "Backups added to Queue"
+msgstr "Sao lưu được thêm vào hàng đợi"
+
+msgid "Bandwidth"
+msgstr "Băng thông"
+
+msgid "Bandwidth (MB)"
+msgstr "Băng thông (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "Sử dụng băng thông"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr "Hãy nhớ quét lại mã QR vì mọi mã cũ đều không còn hiệu lực."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"Vì tập lệnh đáp ứng các tiêu chí bắt buộc nên nó đã bị vô hiệu hóa thông qua "
+"lệnh chmod thành 0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"Trước khi bỏ chặn, hãy đảm bảo rằng mọi tập lệnh bị xâm phạm đã được xóa "
+"hoặc sửa."
+
+msgid "Beta"
+msgstr "Phiên bản beta"
+
+msgid "Billing Issue"
+msgstr "Vấn đề thanh toán"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "Trống %s khi tìm kiếm tệp sao lưu đã chuyển đổi trong %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Giá trị trống: mặc định, giới hạn toàn cục là %d"
+
+msgid "Bleeding edge features"
+msgstr "Các tính năng tiên tiến nhất"
+
+msgid "Block Usage"
+msgstr "Sử dụng khối"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "Đường dẫn bị chặn của BlockCracker"
+
+msgid "Blocked"
+msgstr "Bị chặn"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "Cả DNS Control và TTL override đều phải được bật"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "Phát hiện tấn công Brute-Force trong nhật ký dịch vụ"
+
+msgid "CA Certificate is Invalid"
+msgstr "Chứng chỉ CA không hợp lệ"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr ""
+"Chứng chỉ CA là ổn. Trang web của bạn sẽ được bảo mật trong vòng vài phút."
+
+msgid "CC Address"
+msgstr "Địa chỉ CC"
+
+msgid "CGI-Bin"
+msgstr "Thùng CGI"
+
+msgid "CPU Quota"
+msgstr "Hạn ngạch CPU"
+
+msgid "Can use Server IP"
+msgstr "Có thể sử dụng IP máy chủ"
+
+msgid "Can't get file lock on"
+msgstr "Không thể khóa tập tin"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Không thể mở tệp %s để đọc"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Không thể mở lại tệp %s để thêm vào"
+
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+msgid "Cancel Request"
+msgstr "Hủy yêu cầu"
+
+msgid "Cannot Add A Record"
+msgstr "Không thể thêm bản ghi"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Không thể thêm bản ghi CNAME"
+
+msgid "Cannot Add Record"
+msgstr "Không thể thêm bản ghi"
+
+msgid "Cannot Create Account"
+msgstr "Không thể tạo tài khoản"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Không thể tạo một Autoresponder khác"
+
+msgid "Cannot Create Another Database"
+msgstr "Không thể tạo cơ sở dữ liệu khác"
+
+msgid "Cannot Create Another Domain"
+msgstr "Không thể tạo tên miền khác"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Không thể tạo một con trỏ miền khác"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Không thể tạo tài khoản FTP khác"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Không thể tạo một Forwarder khác"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Không thể tạo danh sách gửi thư khác"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Không thể tạo tài khoản POP khác"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Không thể tạo tên miền phụ khác"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Không thể tạo trả lời tự động"
+
+msgid "Cannot Create Domain"
+msgstr "Không thể tạo tên miền"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Không thể tạo tin nhắn nghỉ phép"
+
+msgid "Cannot Create a Message"
+msgstr "Không thể tạo tin nhắn"
+
+msgid "Cannot Execute Command"
+msgstr "Không thể thực hiện lệnh"
+
+msgid "Cannot Execute Your Request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+msgid "Cannot Modify Key"
+msgstr "Không thể sửa đổi khóa"
+
+msgid "Cannot Modify User"
+msgstr "Không thể sửa đổi người dùng"
+
+msgid "Cannot View Domain Settings"
+msgstr "Không thể xem cài đặt tên miền"
+
+msgid "Cannot be a list"
+msgstr "Không thể là một danh sách"
+
+msgid "Cannot be an object"
+msgstr "Không thể là một đối tượng"
+
+msgid "Cannot change the ip"
+msgstr "Không thể thay đổi ip"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Không thể thay đổi mật khẩu cho tài khoản hệ thống. Đăng nhập vào bảng điều "
+"khiển để thực hiện việc đó."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Không thể thay đổi mật khẩu cho tài khoản email này. Tài khoản hiện đang ở "
+"trên một tên miền bị đình chỉ."
+
+msgid "Cannot change your email"
+msgstr "Không thể thay đổi email của bạn"
+
+msgid "Cannot change your name"
+msgstr "Không thể thay đổi tên của bạn"
+
+msgid "Cannot change your password"
+msgstr "Không thể thay đổi mật khẩu của bạn"
+
+msgid "Cannot check domain existance"
+msgstr "Không thể kiểm tra sự tồn tại của tên miền"
+
+msgid "Cannot create User Backup"
+msgstr "Không thể tạo bản sao lưu người dùng"
+
+msgid "Cannot create domain"
+msgstr "Không thể tạo tên miền"
+
+msgid "Cannot create that domain"
+msgstr "Không thể tạo tên miền đó"
+
+msgid "Cannot create user using those settings"
+msgstr "Không thể tạo người dùng bằng các thiết lập đó"
+
+msgid "Cannot delete records"
+msgstr "Không thể xóa hồ sơ"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "Không thể xóa giao diện bạn đang sử dụng."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Không thể xác định chủ sở hữu của tên miền phụ '%s'"
+
+msgid "Cannot execute your request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Không tìm thấy %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "Không tìm thấy %s trong danh sách"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "Không tìm thấy %s trong tên"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Không tìm thấy %s, bỏ qua."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "Không tìm thấy %s. Đảm bảo tên miền tồn tại và không bị đình chỉ"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Không tìm thấy '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Không tìm thấy '%s' trong danh sách các giá trị được phép cho %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "Không tìm thấy '%s' trong mẫu"
+
+msgid "Cannot find IP"
+msgstr "Không tìm thấy IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Không tìm thấy Người dùng '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr ""
+"Không tìm thấy tên người dùng hệ thống hợp lệ trong tệp chủ sở hữu miền."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "Không tìm thấy bất kỳ giá trị SAN nào trong chứng chỉ."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "Không tìm thấy bất kỳ tar.gz nào sau khi chuyển đổi từ %s"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Không tìm thấy tên miền trong tệp chủ sở hữu tên miền"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Không tìm thấy tên miền trong chứng chỉ."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Không tìm thấy giá trị khóa trong %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Không tìm thấy tệp logo cho mã thông báo %s trong giao diện %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Không tìm thấy tệp logo cho mã thông báo %s=%s trong giao diện %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Không tìm thấy show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Không tìm thấy template_php_ini hoặc domain_php_ini trong json"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "Không tìm thấy tên miền đó trong tệp chủ sở hữu tên miền"
+
+msgid "Cannot find that key id"
+msgstr "Không tìm thấy id khóa đó"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "Không tìm thấy tài khoản hoặc người chuyển tiếp"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Không tìm thấy tập lệnh letsencrypt.sh"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "Không tìm thấy người dùng %s mà đáng lẽ phải tồn tại"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Không thể lấy được loại MIME cho %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Không thể có ký tự xuống dòng trong chủ đề"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Không thể có hạn ngạch E-Mail không giới hạn"
+
+msgid "Cannot manage zone"
+msgstr "Không thể quản lý vùng"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "Không thể di chuyển thư mục (%s) vào tệp hoặc thư mục hiện có (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "Không thể mở tệp mật khẩu để thêm người dùng"
+
+msgid "Cannot open the password file to change the password"
+msgstr "Không thể mở file mật khẩu để thay đổi mật khẩu"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Không thể mở tệp mật khẩu người dùng để đọc"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "Không thể đổi tên thư mục thành một tệp hoặc thư mục hiện có"
+
+msgid "Cannot resend welcome email"
+msgstr "Không thể gửi lại email chào mừng"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "Không thể khôi phục tài khoản ftp cho %s. Bạn đã đạt đến giới hạn (%s)."
+
+msgid "Cannot set TTL"
+msgstr "Không thể thiết lập TTL"
+
+msgid "Cannot set default domain"
+msgstr "Không thể thiết lập tên miền mặc định"
+
+#, fuzzy
+msgid "Cannot show page"
+msgstr "Không thể tải lang po"
+
+msgid "Cannot stat the source file"
+msgstr "Không thể thống kê tệp nguồn"
+
+msgid "Cannot use the main account username"
+msgstr "Không thể sử dụng tên người dùng tài khoản chính"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Bắt tất cả bây giờ được đặt thành %s"
+
+msgid "Catch-All Email"
+msgstr "Email tổng hợp"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "Email Catch-All đã bị vô hiệu hóa trên tài khoản này"
+
+msgid "Catch-All email updated successfully"
+msgstr "Đã cập nhật email Catch-All thành công"
+
+#, fuzzy
+msgid "Catch-All is disabled"
+msgstr "Email tổng hợp"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catch-All hiện đã được thiết lập để thất bại"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All hiện được thiết lập để bỏ qua các địa chỉ sai"
+
+msgid "Certificate"
+msgstr "Giấy chứng nhận"
+
+msgid "Certificate and Key Saved."
+msgstr "Đã lưu chứng chỉ và khóa."
+
+msgid "Certificate is Invalid"
+msgstr "Giấy chứng nhận không hợp lệ"
+
+msgid "Certificate is Self-Signed"
+msgstr "Giấy chứng nhận được tự ký"
+
+msgid "Change the password to unblock it."
+msgstr "Thay đổi mật khẩu để bỏ chặn."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Đã thay đổi bởi IP: %s"
+
+msgid "Changes saved"
+msgstr "Đã lưu thay đổi"
+
+msgid "Check"
+msgstr "Kiểm tra"
+
+msgid "Check the error log for more information."
+msgstr "Kiểm tra nhật ký lỗi để biết thêm thông tin."
+
+msgid "Check to see if the current software is valid"
+msgstr "Kiểm tra xem phần mềm hiện tại có hợp lệ không"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Người dùng trẻ em %s đã bị xóa"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Chọn từ: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "Thành phố chỉ được chứa các chữ cái, khoảng trắng và/hoặc dấu chấm"
+
+msgid "ClamAV"
+msgstr "Tiếng Việt"
+
+msgid "Clean Forwarders"
+msgstr "Người giao nhận sạch sẽ"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Vệ sinh %s"
+
+msgid "Clear Customization"
+msgstr "Xóa tùy chỉnh"
+
+msgid "Clear Messages System"
+msgstr "Hệ thống xóa tin nhắn"
+
+msgid "Clear NS"
+msgstr "Xóa NS"
+
+msgid "Clear Search Filter"
+msgstr "Xóa bộ lọc tìm kiếm"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Nhấp vào %sHERE%s để quay lại"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Nhấp vào %sHERE%s để quay lại"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Nhấp vào %sHERE%s để quay lại trang chính"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Nhấp vào đây để tải xuống bản sao lưu mới nhất"
+
+msgid "Click here to close this window"
+msgstr "Nhấp vào đây để đóng cửa sổ này"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Nhấp vào đây để bật SSL trên tên miền"
+
+msgid "Clipboard"
+msgstr "Bảng tạm"
+
+#, fuzzy
+msgid "Clipboard emptied"
+msgstr "Bảng tạm"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Closed"
+msgstr "Đã đóng"
+
+msgid "Closed+Confirm"
+msgstr "Đã đóng+Xác nhận"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "Màu %s (%s) không có trong danh sách: %s"
+
+msgid "Color has been customized"
+msgstr "Màu sắc đã được tùy chỉnh"
+
+msgid "Column in"
+msgstr "Cột trong"
+
+msgid "Command"
+msgstr "Yêu cầu"
+
+msgid "Command Returned"
+msgstr "Lệnh đã trả về"
+
+msgid "Comment"
+msgstr "Bình luận"
+
+msgid "Comments"
+msgstr "Bình luận"
+
+#, fuzzy
+msgid "Comments Saved"
+msgstr "Bình luận"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "Công ty chỉ được chứa các chữ cái, số, khoảng trắng và/hoặc dấu chấm"
+
+msgid "Compressed File Created"
+msgstr "Đã tạo tệp nén"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Đang nén %s"
+
+msgid "Confirm"
+msgstr "Xác nhận"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Xác nhận kết quả trên %sDirectAdmin Website%s"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "Mã xác nhận không hợp lệ hoặc yêu cầu đã hết hạn"
+
+msgid "Continuing with the other files."
+msgstr "Tiếp tục với các tập tin khác."
+
+msgid "Copy"
+msgstr "Sao chép"
+
+msgid "Copy Clipboard Files here"
+msgstr "Sao chép tập tin clipboard ở đây"
+
+msgid "Copy the packages export data"
+msgstr "Sao chép dữ liệu xuất gói"
+
+msgid "Copying Admin Data"
+msgstr "Sao chép dữ liệu quản trị"
+
+msgid "Copying Reseller Data"
+msgstr "Sao chép dữ liệu của đại lý"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Sao chép tệp đã bị vô hiệu hóa với tùy chọn filemanager_disable_features"
+
+msgid "Copying unreadable data"
+msgstr "Sao chép dữ liệu không thể đọc được"
+
+msgid "Could not excute your request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+msgid "Could not execute your request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr "Không tìm thấy bất kỳ khóa sao lưu nào phù hợp trong %s"
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr "Không tìm thấy tệp từ xa '%s' để xác thực kích thước sau khi tải lên"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Không thể lấy rDNS cho IP '%s'"
+
+msgid "Could not read tickets"
+msgstr "Không thể đọc được vé"
+
+msgid "Could not write tickets"
+msgstr "Không thể viết vé"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr ""
+"Không tìm thấy bất kỳ IP nào thuộc loại nào để cung cấp cho Người dùng (yêu "
+"cầu ip=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr "Không thể đọc tệp db cho %s. Không thể thêm ns1 và ns2 vào đó."
+
+msgid "Count"
+msgstr "Đếm"
+
+msgid "Counted"
+msgstr "Đã đếm"
+
+msgid "Country code must be 2 letters"
+msgstr "Mã quốc gia phải có 2 chữ cái"
+
+msgid "Created"
+msgstr "Tạo"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Việc tạo thư mục đã bị vô hiệu hóa với tùy chọn filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Việc tạo ra nhiều %s như vậy sẽ khiến bạn vượt quá giới hạn %s của mình"
+
+msgid "Creator"
+msgstr "Người sáng tạo"
+
+msgid "Creator Duplicate"
+msgstr "Người tạo bản sao"
+
+msgid "Creators and their Users"
+msgstr "Người sáng tạo và người dùng của họ"
+
+msgid "Cron Created"
+msgstr "Cron đã tạo"
+
+msgid "Cron E-Mail set"
+msgstr "Thiết lập Cron E-Mail"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Công việc Cron đã bị xóa"
+
+msgid "Cron Jobs"
+msgstr "Công việc Cron"
+
+msgid "Cron Jobs Deleted"
+msgstr "Công việc Cron đã bị xóa"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Công việc Cron bị trùng lặp"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Cron Jobs sẽ chạy ở chế độ nền"
+
+msgid "Cron Modified"
+msgstr "Cron đã sửa đổi"
+
+msgid "Cron job has been created"
+msgstr "Công việc Cron đã được tạo"
+
+msgid "Current"
+msgstr "Hiện hành"
+
+msgid "Current IPs"
+msgstr "IP hiện tại"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "IP hiện tại được gán cho %s"
+
+msgid "Current Protected Directories"
+msgstr "Thư mục được bảo vệ hiện tại"
+
+msgid "Current Usage"
+msgstr "Sử dụng hiện tại"
+
+msgid "Custom"
+msgstr "Phong tục"
+
+msgid "Custom Color"
+msgstr "Màu tùy chỉnh"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "Đã tải lên Logo Skin tùy chỉnh"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "Logo tùy chỉnh không được bật"
+
+msgid "Custom logo deleted"
+msgstr "Đã xóa logo tùy chỉnh"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr "Ngưỡng tùy chỉnh phải là một số hợp lệ. Cho phép số thập phân."
+
+msgid "Customization Disabled"
+msgstr "Tùy chỉnh bị vô hiệu hóa"
+
+msgid "Customization written"
+msgstr "Tùy chỉnh được viết"
+
+msgid "Customize the skin"
+msgstr "Tùy chỉnh giao diện"
+
+msgid "DKIM disabled"
+msgstr "DKIM đã bị vô hiệu hóa"
+
+msgid "DKIM enabled"
+msgstr "DKIM được bật"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "Kiểm soát DNS"
+
+msgid "DNS Zone does not exist"
+msgstr "Vùng DNS không tồn tại"
+
+msgid "DNSSEC Keys generated"
+msgstr "Khóa DNSSEC được tạo"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC không được bật"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSSEC - Bảo mật DNS"
+
+msgid "Database"
+msgstr "Cơ sở dữ liệu"
+
+msgid "Database Created"
+msgstr "Cơ sở dữ liệu đã được tạo"
+
+msgid "Database Disk Usage"
+msgstr "Sử dụng đĩa cơ sở dữ liệu"
+
+msgid "Database has been successfully Restored"
+msgstr "Cơ sở dữ liệu đã được khôi phục thành công"
+
+msgid "Database:"
+msgstr "Cơ sở dữ liệu:"
+
+msgid "Databases"
+msgstr "Cơ sở dữ liệu"
+
+msgid "Date"
+msgstr "Ngày"
+
+msgid "Date Added"
+msgstr "Ngày thêm"
+
+msgid "Date Blocked"
+msgstr "Ngày bị chặn"
+
+msgid "Date Created"
+msgstr "Ngày tạo"
+
+msgid "Date Suspended"
+msgstr "Ngày bị đình chỉ"
+
+msgid "Day"
+msgstr "Day"
+
+msgid "Day of Month"
+msgstr "Ngày trong tháng"
+
+msgid "Day of Week"
+msgstr "Ngày trong tuần"
+
+msgid "Days must be a valid number."
+msgstr "Ngày phải là số hợp lệ."
+
+msgid "Debug Guide"
+msgstr "Hướng dẫn gỡ lỗi"
+
+msgid "Dec"
+msgstr "Tháng mười hai"
+
+msgid "Decending"
+msgstr "Giảm dần"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "Giải mã %s đã thất bại"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "Default release schedule"
+msgstr "Lịch phát hành mặc định"
+
+msgid "Delayed release schedule"
+msgstr "Lịch phát hành bị trì hoãn"
+
+msgid "Delete"
+msgstr "Xóa bỏ"
+
+msgid "Delete Extension"
+msgstr "Xóa phần mở rộng"
+
+msgid "Delete Handler"
+msgstr "Xóa trình xử lý"
+
+msgid "Delete MimeType"
+msgstr "Xóa MimeType"
+
+msgid "Delete Selected"
+msgstr "Xoá các lựa chọn"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "Xóa khóa DNSSEC và sử dụng vùng không được ký"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Xóa người dùng sau"
+
+msgid "Delete the following domains:"
+msgstr "Xóa các miền sau:"
+
+msgid "Delete web data"
+msgstr "Xóa dữ liệu web"
+
+msgid "Deleted"
+msgstr "Đã xóa"
+
+msgid "Deleted User Bandwidth"
+msgstr "Băng thông người dùng đã xóa"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Đang xóa %s ..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Việc xóa các tập tin/thư mục đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Xóa các bản ghi NS này sẽ để lại cho bạn số 0."
+
+msgid "Deny"
+msgstr "Từ chối"
+
+msgid "Destination"
+msgstr "Điểm đến"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "Lỗi URL đích: %s"
+
+msgid "Detail"
+msgstr "Chi tiết"
+
+msgid "Details"
+msgstr "Chi tiết"
+
+msgid "Digest Subscriber"
+msgstr "Người đăng ký tóm tắt"
+
+msgid "Digest Subscribers"
+msgstr "Người đăng ký bản tóm tắt"
+
+msgid "DirectAdmin License"
+msgstr "Giấy phép DirectAdmin"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin sẽ được khởi động lại sau 1 phút"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin sẽ được khởi động lại trong vòng 1 phút"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Cài đặt bảo vệ thư mục đã được lưu."
+
+msgid "Directory created"
+msgstr "Thư mục đã được tạo"
+
+msgid "Disable"
+msgstr "Vô hiệu hóa"
+
+msgid "Disable Auto-Renew"
+msgstr "Tắt tính năng tự động gia hạn"
+
+msgid "Disabled"
+msgstr "Tàn tật"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"Cài đặt Đại lý bị vô hiệu hóa sẽ được áp dụng cho Người dùng và Gói ở chế độ "
+"nền."
+
+msgid "Disk Space"
+msgstr "Dung lượng đĩa"
+
+msgid "Disk Space (MB)"
+msgstr "Dung lượng đĩa (MB)"
+
+msgid "Disk Usage"
+msgstr "Sử dụng đĩa"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "Phép chia chỉ được chứa các chữ cái, số, khoảng trắng và/hoặc dấu chấm"
+
+msgid "Dns Provider reset."
+msgstr "Thiết lập lại nhà cung cấp DNS."
+
+msgid "Dns Provider saved."
+msgstr "Đã lưu Nhà cung cấp DNS."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Không sử dụng chữ HOA trong tên miền."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Không sử dụng khoảng trắng giữa các tên email."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "Không sử dụng khoảng trắng trong giá trị %s"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Bạn có muốn ghi đè lên bất kỳ tập tin hiện có nào không?"
+
+msgid "DocumentRoot"
+msgstr "Tài liệu gốc"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Không khớp với cài đặt: %s"
+
+msgid "Domain"
+msgstr "Lãnh địa"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Tên miền %s đã được tạo"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Miền %s không được sử dụng đường dẫn ghi đè %s của %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Tên miền %s đã bị Quản trị viên đình chỉ và bạn không có quyền truy cập này. "
+"Bạn không thể hủy đình chỉ tên miền này."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr "Tên miền '%s' đã được xóa DNSprovider."
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Tên miền '%s' đang sử dụng php-fpm."
+
+msgid "Domain AWstats"
+msgstr "AWStats miền"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "Tên miền AWStats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "Băng thông miền"
+
+msgid "Domain Created"
+msgstr "Tên miền đã tạo"
+
+msgid "Domain Created Successfully"
+msgstr "Tên miền đã được tạo thành công"
+
+msgid "Domain Deletion Results"
+msgstr "Kết quả xóa tên miền"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Con trỏ miền"
+
+msgid "Domain Pointer Added"
+msgstr "Đã thêm con trỏ miền"
+
+msgid "Domain Pointer on"
+msgstr "Con trỏ miền trên"
+
+msgid "Domain Pointers"
+msgstr "Con trỏ miền"
+
+#, fuzzy
+msgid "Domain Pointers Removed"
+msgstr "Con trỏ miền trên"
+
+msgid "Domain Quota"
+msgstr "Hạn ngạch tên miền"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Đổi tên miền không được kích hoạt"
+
+msgid "Domain Webalizer Stats"
+msgstr "Thống kê Domain Webalizer"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+"Tên miền chứa các ký tự UTF-8. Vui lòng gửi tên miền punycode hoặc bật "
+"convert_to_punycode."
+
+msgid "Domain does not belong to you"
+msgstr "Tên miền không thuộc về bạn"
+
+msgid "Domain does not belong to you."
+msgstr "Tên miền không thuộc về bạn."
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Tên miền tồn tại trên %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Tên miền đang xử lý yêu cầu SSL. Vui lòng cho phép nó hoàn tất trước khi "
+"thực hiện các thay đổi khác."
+
+msgid "Domain is forbidden"
+msgstr "Tên miền bị cấm"
+
+msgid "Domain is not in your list"
+msgstr "Tên miền không có trong danh sách của bạn"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr "Tên miền không được là phần mở rộng tên miền cấp cao nhất"
+
+msgid "Domain name has been successfully changed"
+msgstr "Tên miền đã được thay đổi thành công"
+
+msgid "Domain php.ini overrides"
+msgstr "Ghi đè miền php.ini"
+
+msgid "Domain(s)"
+msgstr "Tên miền"
+
+msgid "Domain(s) modified"
+msgstr "Tên miền đã sửa đổi"
+
+msgid "Domains"
+msgstr "Tên miền"
+
+msgid "Domains directory created successfully"
+msgstr "Thư mục tên miền đã được tạo thành công"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "Thư mục tên miền đã được tạo thành công trong trang chủ của người dùng"
+
+msgid "Double click for main domain page"
+msgstr "Nhấp đúp chuột vào trang tên miền chính"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "Tệp Dovecot '%s' bị thiếu dữ liệu. Chạy 'da build dovecot_conf'"
+
+msgid "Download"
+msgstr "Tải về"
+
+msgid "Download Backup"
+msgstr "Tải xuống bản sao lưu"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Đã tải xuống: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "Tải xuống một webalizer nhị phân mới"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Tải xuống các thư mục nén đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Tải xuống tệp đã bị vô hiệu hóa với tùy chọn filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr "Tài xế ra hiệu L1 lên."
+
+msgid "Driver signals dormant."
+msgstr "Đèn báo hiệu của tài xế không hoạt động."
+
+msgid "Duplicate"
+msgstr "Nhân bản"
+
+msgid "E-Mail"
+msgstr "E-mail"
+
+msgid "E-Mail Accounts"
+msgstr "Tài khoản E-Mail"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "Tài khoản E-mail đã bị xóa"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "Địa chỉ E-Mail đã được thay đổi thành công"
+
+msgid "E-Mail Limit has been set"
+msgstr "Giới hạn E-Mail đã được thiết lập"
+
+msgid "E-Mail Update Failed"
+msgstr "Cập nhật E-Mail không thành công"
+
+msgid "E-Mail Updated"
+msgstr "E-Mail đã cập nhật"
+
+msgid "E-Mail account already exists"
+msgstr "Tài khoản E-Mail đã tồn tại"
+
+msgid "E-Mail has been changed"
+msgstr "E-mail đã được thay đổi"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "E-Mail đã được thay đổi thành %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "Hạn ngạch email không được vượt quá %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo đã gửi các gói tin."
+
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+msgid "Edit the zone on the master server."
+msgstr "Chỉnh sửa vùng trên máy chủ chính."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Bạn có thể yêu cầu người tạo tài khoản thay đổi mật khẩu để bỏ chặn hoặc sử "
+"dụng tính năng Quên mật khẩu trên trang đăng nhập (nếu được bật)."
+
+msgid "Email"
+msgstr "E-mail"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "Email '%s' không tồn tại"
+
+#, fuzzy
+msgid "Email Added to list"
+msgstr "Email '%s' không tồn tại"
+
+msgid "Email Deliveries (Sent)"
+msgstr "Gửi Email (Đã gửi)"
+
+msgid "Email Disk Usage"
+msgstr "Sử dụng đĩa Email"
+
+msgid "Email Forwarders"
+msgstr "Chuyển tiếp email"
+
+msgid "Email Only"
+msgstr "Chỉ Email"
+
+msgid "Email Sent"
+msgstr "Email đã gửi"
+
+#, fuzzy
+msgid "Email Set"
+msgstr "Email đã gửi"
+
+msgid "Email created but"
+msgstr "Email đã được tạo nhưng"
+
+#, fuzzy
+msgid "Email removed"
+msgstr "Email đã được tạo nhưng"
+
+msgid "Empty Clipboard"
+msgstr "Bảng tạm trống"
+
+msgid "Empty path"
+msgstr "Đường dẫn trống"
+
+msgid "Enable"
+msgstr "Cho phép"
+
+msgid "Enabled"
+msgstr "Đã bật"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "Mã hóa %s đã thất bại"
+
+msgid "End Time"
+msgstr "Thời gian kết thúc"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "Đã kết thúc tệp khi cố gắng đọc %lld byte từ %s. đã đầy=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Đảm bảo khóa thứ 2 khớp với khóa đầu tiên"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "Đảm bảo ip.list của Đại lý có một số IP có thể sử dụng được."
+
+msgid "Ensuring stored domains are present"
+msgstr "Đảm bảo các miền được lưu trữ có mặt"
+
+#, fuzzy
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Error Compressing the backup file"
+msgstr "Lỗi khi nén tệp sao lưu"
+
+msgid "Error Creating Cron Job"
+msgstr "Lỗi khi tạo Cron Job"
+
+msgid "Error Creating Domain"
+msgstr "Lỗi khi tạo tên miền"
+
+msgid "Error Creating Key"
+msgstr "Lỗi khi tạo khóa"
+
+msgid "Error Creating User"
+msgstr "Lỗi khi tạo người dùng"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Lỗi khi xóa %s"
+
+msgid "Error Executing Perl"
+msgstr "Lỗi khi thực thi Perl"
+
+msgid "Error Log"
+msgstr "Nhật ký lỗi"
+
+msgid "Error Reading Message File"
+msgstr "Lỗi khi đọc tệp tin nhắn"
+
+msgid "Error Reading db file"
+msgstr "Lỗi khi đọc tệp db"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Lỗi khi xóa người dùng %s"
+
+msgid "Error Resetting Zone"
+msgstr "Lỗi khi thiết lập lại vùng"
+
+msgid "Error Restoring database"
+msgstr "Lỗi khi khôi phục cơ sở dữ liệu"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Lỗi khi lưu mật khẩu: %s"
+
+msgid "Error Unblocking paths"
+msgstr "Lỗi Bỏ chặn đường dẫn"
+
+msgid "Error Updating User"
+msgstr "Lỗi khi cập nhật người dùng"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Lỗi khi viết %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "Lỗi khi kích hoạt người dùng %s %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Lỗi khi kích hoạt cronjob: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Lỗi khi kích hoạt dữ liệu cho %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "Lỗi khi thêm bản ghi DS cho %s vào vùng cha mẹ từ xa: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "Lỗi khi cấp quyền cho Khóa SSH"
+
+msgid "Error changing password"
+msgstr "Lỗi khi thay đổi mật khẩu"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Lỗi khi xóa các tệp LetsEncrypt"
+
+msgid "Error converting file: "
+msgstr "Lỗi khi chuyển đổi tập tin: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Lỗi khi sao chép %s vào %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Lỗi khi sao chép %s vào %s: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Lỗi khi sao chép tệp logo: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Lỗi khi tạo %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Lỗi khi tạo %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Lỗi khi tạo Trả lời tự động"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Lỗi khi tạo ứng dụng NginxUnit '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Lỗi khi tạo tuyến NginxUnit '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "Lỗi khi tạo Khóa SSH"
+
+msgid "Error creating User"
+msgstr "Lỗi khi tạo Người dùng"
+
+msgid "Error creating Vacation Message"
+msgstr "Lỗi khi tạo tin nhắn nghỉ phép"
+
+msgid "Error creating account"
+msgstr "Lỗi khi tạo tài khoản"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Lỗi khi tạo thư mục mặc định trong %s. Xem error.log để biết thêm thông tin."
+
+msgid "Error creating forwarder"
+msgstr "Lỗi khi tạo bộ chuyển tiếp"
+
+msgid "Error creating the database"
+msgstr "Lỗi khi tạo cơ sở dữ liệu"
+
+msgid "Error decoding the base 64 data"
+msgstr "Lỗi giải mã dữ liệu cơ sở 64"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Lỗi khi xóa %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Lỗi khi xóa Khóa SSH"
+
+msgid "Error deleting account(s)"
+msgstr "Lỗi khi xóa tài khoản"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Lỗi khi xóa trả lời tự động"
+
+msgid "Error deleting filter(s)"
+msgstr "Lỗi khi xóa bộ lọc"
+
+msgid "Error deleting records"
+msgstr "Lỗi khi xóa bản ghi"
+
+msgid "Error determining username from "
+msgstr "Lỗi xác định tên người dùng từ "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Lỗi trong quá trình gia hạn chứng chỉ tự động cho %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Lỗi khi xóa người dùng con %s"
+
+msgid "Error during extraction"
+msgstr "Lỗi trong quá trình trích xuất"
+
+msgid "Error executing your request"
+msgstr "Lỗi khi thực hiện yêu cầu của bạn"
+
+msgid "Error generating zone keys"
+msgstr "Lỗi khi tạo khóa vùng"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Lỗi khi nhập các gói được mã hóa cơ sở 64"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Lỗi trong bài đăng. Yêu cầu tên miền, loại và giá trị."
+
+msgid "Error modifying SSH key"
+msgstr "Lỗi khi sửa đổi khóa SSH"
+
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr "Lỗi khi phân tích đường dẫn %s: sai loại"
+
+msgid "Error parsing 'routes'."
+msgstr "Lỗi khi phân tích cú pháp 'routes'."
+
+msgid "Error parsing json output"
+msgstr "Lỗi khi phân tích cú pháp đầu ra json"
+
+msgid "Error purging archives"
+msgstr "Lỗi khi xóa kho lưu trữ"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Lỗi khi đọc %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Lỗi khi đọc tệp cấu hình miền"
+
+msgid "Error reading domain config files"
+msgstr "Lỗi khi đọc tệp cấu hình miền"
+
+msgid "Error reading domainowners"
+msgstr "Lỗi khi đọc tên miền"
+
+msgid "Error reading domainowners file"
+msgstr "Lỗi khi đọc tệp chủ sở hữu tên miền"
+
+msgid "Error reading named db file"
+msgstr "Lỗi khi đọc tệp db có tên"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "Lỗi khi đọc tệp db sau khi ghi vào tệp đó, trước khi ký DNSSEC"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "Có lỗi khi đọc tệp người dùng cho %s, vẫn tiếp tục."
+
+msgid "Error reading user_ip.list file"
+msgstr "Lỗi khi đọc tệp user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Lỗi khi xóa %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Lỗi khi xóa IP khỏi %s"
+
+msgid "Error removing file: "
+msgstr "Lỗi khi xóa tệp: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Lỗi khi xóa đường dẫn %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Lỗi khi xóa tên miền phụ"
+
+msgid "Error removing subdomain(s)"
+msgstr "Lỗi khi xóa tên miền phụ"
+
+msgid "Error removing subdomains"
+msgstr "Lỗi khi xóa tên miền phụ"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Lỗi khi xóa người dùng %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Lỗi khi đổi tên %s thành %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Lỗi khi khôi phục %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Lỗi khôi phục tên miền"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Lỗi khi khôi phục cài đặt php cho '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Lỗi khi viết lại %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Lỗi khi chạy %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Lỗi khi chạy rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Lỗi khi chạy rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Lỗi khi lưu Cron E-Mail"
+
+msgid "Error saving Nameservers"
+msgstr "Lỗi khi lưu Nameservers"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Lỗi khi gửi tín hiệu đến %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Lỗi khi thiết lập Mẫu MX"
+
+msgid "Error setting MX template for pointer"
+msgstr "Lỗi khi thiết lập mẫu MX cho con trỏ"
+
+msgid "Error setting PHP versions"
+msgstr "Lỗi khi cài đặt phiên bản PHP"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Lỗi khi thiết lập giới hạn cgroup cho %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Lỗi khi cài đặt tệp clipboard"
+
+msgid "Error setting global key"
+msgstr "Lỗi khi thiết lập khóa toàn cục"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Lỗi khi thiết lập quyền trên %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Lỗi khi thiết lập bộ lọc"
+
+msgid "Error setting the spam filter"
+msgstr "Lỗi khi thiết lập bộ lọc thư rác"
+
+msgid "Error setting timezone"
+msgstr "Lỗi khi thiết lập múi giờ"
+
+msgid "Error showing Email Acounts"
+msgstr "Lỗi hiển thị Tài khoản Email"
+
+msgid "Error showing message ID info"
+msgstr "Lỗi hiển thị thông tin ID tin nhắn"
+
+msgid "Error showing smtp log info"
+msgstr "Lỗi hiển thị thông tin nhật ký smtp"
+
+msgid "Error signing zone"
+msgstr "Lỗi vùng ký"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "Lỗi khi tạm dừng người dùng %s %s: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Lỗi khi tạm dừng cronjob: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Lỗi khi cập nhật Trả lời tự động"
+
+msgid "Error updating Catch-All value"
+msgstr "Lỗi khi cập nhật giá trị Catch-All"
+
+msgid "Error updating Vacation Message"
+msgstr "Lỗi khi cập nhật tin nhắn nghỉ phép"
+
+msgid "Error updating forwarder"
+msgstr "Lỗi khi cập nhật chuyển tiếp"
+
+msgid "Error while compressing file"
+msgstr "Lỗi khi nén tập tin"
+
+msgid "Error while creating User"
+msgstr "Lỗi khi tạo Người dùng"
+
+msgid "Error while deleting Users"
+msgstr "Lỗi khi xóa Người dùng"
+
+msgid "Error while saving changes"
+msgstr "Lỗi khi lưu thay đổi"
+
+msgid "Error while saving password"
+msgstr "Lỗi khi lưu mật khẩu"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Lỗi khi viết %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Lỗi với yêu cầu LetsEncrypt"
+
+msgid "Error with curl request"
+msgstr "Lỗi với yêu cầu curl"
+
+msgid "Error with exigrep"
+msgstr "Lỗi với exigrep"
+
+msgid "Error with fchownat"
+msgstr "Lỗi với fchownat"
+
+msgid "Error with system Quotas"
+msgstr "Lỗi với hạn ngạch hệ thống"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Lỗi với kế hoạch sao lưu (đổi tên không thành công): bản sao của %s vào %s "
+"cũng không thành công: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Lỗi khi viết %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Lỗi khi viết %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "Lỗi khi ghi tệp cấu hình miền"
+
+msgid "Error writing pop cache"
+msgstr "Lỗi khi ghi bộ nhớ đệm pop"
+
+msgid "Error writing the directadmin.conf"
+msgstr "Lỗi khi ghi directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Lỗi khi ghi vào %s: %s"
+
+msgid "Errors"
+msgstr "Lỗi"
+
+msgid "Evening"
+msgstr "Buổi tối"
+
+msgid "Expecting 0 or 1"
+msgstr "Mong đợi 0 hoặc 1"
+
+msgid "Expecting any integer"
+msgstr "Mong đợi bất kỳ số nguyên nào"
+
+msgid "Expecting any long long integer"
+msgstr "Mong đợi bất kỳ số nguyên dài nào"
+
+msgid "Expired"
+msgstr "Hết hạn"
+
+msgid "Expiry"
+msgstr "Hết hạn"
+
+msgid "Export Selected"
+msgstr "Xuất khẩu đã chọn"
+
+msgid "Extension"
+msgstr "Sự mở rộng"
+
+msgid "Extensions"
+msgstr "Phần mở rộng"
+
+msgid "Extract"
+msgstr "Trích xuất"
+
+msgid "Extract selected to directory"
+msgstr "Trích xuất đã chọn vào thư mục"
+
+msgid "Extracting User Data"
+msgstr "Trích xuất dữ liệu người dùng"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Việc trích xuất tệp đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Extracting non-readable files"
+msgstr "Trích xuất các tập tin không thể đọc được"
+
+msgid "Extracting ~/domains directory"
+msgstr "Trích xuất thư mục ~/domains"
+
+msgid "Extracting ~/imap directory"
+msgstr "Trích xuất thư mục ~/imap"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "Tài khoản FTP đã tồn tại"
+
+msgid "FTP information invalid."
+msgstr "Thông tin FTP không hợp lệ."
+
+msgid "FTP: default creation error"
+msgstr "FTP: lỗi tạo mặc định"
+
+msgid "Feature Disabled"
+msgstr "Tính năng bị vô hiệu hóa"
+
+msgid "Feb"
+msgstr "Tháng Hai"
+
+msgid "File"
+msgstr "Tài liệu"
+
+msgid "File %s already exists, file skipped."
+msgstr "Tệp %s đã tồn tại, tệp đã bị bỏ qua."
+
+msgid "File Extracted"
+msgstr "Tập tin đã giải nén"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Tập tin đang được đọc là '%s'"
+
+msgid "File copied successfully"
+msgstr "Đã sao chép tập tin thành công"
+
+msgid "File does not exist"
+msgstr "Tập tin không tồn tại"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Tệp không tồn tại hoặc bạn không có quyền truy cập vào tệp"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "Tập tin đã giải nén"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "Đặt lại quyền sở hữu tập tin"
+
+#, fuzzy
+msgid "File purged"
+msgstr "Lưu trữ đã được thanh lọc"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "Tập tin đã được khôi phục thành công"
+
+msgid "File restored successfully"
+msgstr "Tập tin đã được khôi phục thành công"
+
+msgid "Filename"
+msgstr "Tên tập tin"
+
+msgid "Files added to clipboard"
+msgstr "Các tập tin đã thêm vào clipboard"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "Tập tin đã giải nén"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "Khóa đã xóa"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "%s Đã xóa"
+
+msgid "Filter"
+msgstr "Lọc"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "Lọc"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP đã bị xóa"
+
+msgid "Fingerprint"
+msgstr "Dấu vân tay"
+
+msgid "First"
+msgstr "Đầu tiên"
+
+msgid "First PHP"
+msgstr "PHP đầu tiên"
+
+msgid "First Page"
+msgstr "Trang đầu tiên"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Giá trị cờ cho '%s' là trống"
+
+msgid "Flush from DNS"
+msgstr "Xóa khỏi DNS"
+
+msgid "For backwards compatibility"
+msgstr "Để tương thích ngược"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"Đối với những trường hợp mà số lượng lớn miền cần xử lý có thể gây ra thời "
+"gian chờ"
+
+msgid "Forwarder"
+msgstr "Người chuyển tiếp"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Người chuyển tiếp %s không thể trỏ đến chính nó"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "Người chuyển tiếp %s@%s đã bị xóa vì không còn người nhận nào."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Bộ chuyển tiếp '%s' đã tồn tại."
+
+msgid "Forwarder already exists"
+msgstr "Người chuyển tiếp đã tồn tại"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Bộ chuyển tiếp chứa ký tự local_part_suffix: '%s' nghĩa là mọi thứ sau ký tự "
+"này sẽ bị bỏ qua và bộ chuyển tiếp sẽ không bao giờ khớp."
+
+msgid "Forwarder created"
+msgstr "Người chuyển tiếp đã tạo"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Đã tìm thấy vòng lặp chuyển tiếp: %s"
+
+msgid "Forwarder updated"
+msgstr "Người chuyển tiếp đã cập nhật"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "Người chuyển tiếp đã tạo"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Tìm thấy 0 tệp trong %s đọc là %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr "Đã tìm thấy khóa khớp từ %s"
+
+msgid "Free - randomly selected"
+msgstr "Miễn phí - được chọn ngẫu nhiên"
+
+msgid "Free Memory"
+msgstr "Bộ nhớ trống"
+
+msgid "Free Selected"
+msgstr "Miễn phí được chọn"
+
+msgid "Free Swap Memory"
+msgstr "Bộ nhớ hoán đổi miễn phí"
+
+msgid "From"
+msgstr "Từ"
+
+msgid "Ftp"
+msgstr "Ftp"
+
+msgid "Ftp Accounts"
+msgstr "Tài khoản Ftp"
+
+msgid "Ftp account changed"
+msgstr "Tài khoản Ftp đã thay đổi"
+
+msgid "Ftp settings saved"
+msgstr "Đã lưu cài đặt Ftp"
+
+msgid "Full Date"
+msgstr "Ngày đầy đủ"
+
+msgid "Full Name has been successfully changed"
+msgstr "Họ tên đầy đủ đã được thay đổi thành công"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "Tên định dạng đầy đủ '%s' không kết thúc bằng tên vùng"
+
+msgid "GB"
+msgstr "Anh"
+
+msgid "GID"
+msgstr "Số hiệu"
+
+msgid "Generate Keys"
+msgstr "Tạo khóa"
+
+msgid "Git Repositories"
+msgstr "Kho lưu trữ Git"
+
+msgid "Global"
+msgstr "Toàn cầu"
+
+msgid "Global - randomly selected"
+msgstr "Toàn cầu - được chọn ngẫu nhiên"
+
+msgid "Global Key"
+msgstr "Chìa khóa toàn cầu"
+
+msgid "Global Key set"
+msgstr "Bộ khóa toàn cầu"
+
+msgid "Global ssh keys not available to Users"
+msgstr "Khóa ssh toàn cầu không khả dụng cho Người dùng"
+
+msgid "Go to %s"
+msgstr "Đi tới %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Nhóm %s đã tồn tại. Vui lòng chọn tên người dùng khác."
+
+msgid "Handler"
+msgstr "Người xử lý"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "Hồ sơ đã xóa"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "Người xử lý"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"Xin chào,\n"
+"\n"
+"Tin nhắn này nhằm thông báo cho bạn rằng tài khoản '|USERNAME|' của bạn đã "
+"bị đình chỉ.\n"
+"Lý do: |REASON|\n"
+"\n"
+"Nếu bạn cảm thấy việc này được thực hiện do nhầm lẫn, vui lòng liên hệ với "
+"nhà cung cấp dịch vụ lưu trữ của bạn để biết thêm thông tin\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "Đây là kết quả"
+
+msgid "Here are the results:"
+msgstr "Sau đây là kết quả:"
+
+msgid "High"
+msgstr "Cao"
+
+msgid "Highest"
+msgstr "Cao nhất"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "Nhấn vào cuối tệp khi tìm kiếm @ hoặc dòng tiêu đề tên miền trong"
+
+msgid "Home Directory"
+msgstr "Trang chủ Thư mục"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "Đường dẫn về nhà '%s' không có trong home_override_list được phép"
+
+msgid "Host:"
+msgstr "Chủ nhà:"
+
+msgid "Hosts"
+msgstr "Chủ nhà"
+
+msgid "Hour"
+msgstr "Giờ"
+
+msgid "How to process the request"
+msgstr "Cách xử lý yêu cầu"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Tuy nhiên, sau %s lần thử, họ không thể cung cấp mã Xác thực hai bước hợp lệ "
+"nên không được cấp quyền truy cập."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr ""
+"Tuy nhiên, thay vào đó đã tìm thấy các tên miền phụ. Tiến hành với chúng."
+
+msgid "ID"
+msgstr "NHẬN DẠNG"
+
+msgid "ID does not belong to you"
+msgstr "ID không thuộc về bạn"
+
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 hoặc 1234-1239"
+
+msgid "IO Read Bandwidth Max"
+msgstr "Băng thông đọc IO tối đa"
+
+msgid "IO Write Bandwidth Max"
+msgstr "Băng thông ghi IO tối đa"
+
+msgid "IOPS Read Max"
+msgstr "IOPS Đọc Tối Đa"
+
+msgid "IOPS Write Max"
+msgstr "IOPS Ghi Tối Đa"
+
+msgid "IP"
+msgstr "Địa chỉ IP"
+
+msgid "IP Added"
+msgstr "Đã thêm IP"
+
+msgid "IP Info"
+msgstr "Thông tin IP"
+
+msgid "IP Link Added"
+msgstr "Đã thêm liên kết IP"
+
+msgid "IP Link(s) Removed"
+msgstr "Liên kết IP đã bị xóa"
+
+msgid "IP List is empty"
+msgstr "Danh sách IP đang trống"
+
+msgid "IP Netmask Set"
+msgstr "Bộ mặt nạ mạng IP"
+
+msgid "IP Type"
+msgstr "Loại IP"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP trong tệp cấu hình miền (%s) không hợp lệ."
+
+msgid "IP must be shared or free"
+msgstr "IP phải được chia sẻ hoặc miễn phí"
+
+msgid "IP will be linked in the background"
+msgstr "IP sẽ được liên kết ở chế độ nền"
+
+msgid "IP(s)"
+msgstr "IP(các)"
+
+msgid "IP(s) removed"
+msgstr "IP đã bị xóa"
+
+msgid "IP/User"
+msgstr "IP/Người dùng"
+
+msgid "IPs"
+msgstr "IP"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr "Nếu cần, hãy liên hệ với Quản trị viên máy chủ của bạn để tạo lại vùng."
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Nếu tên người dùng nhập vào là chính xác, bạn sẽ sớm nhận được email xác "
+"nhận."
+
+msgid "If this is not your IP, change your password."
+msgstr "Nếu đây không phải là IP của bạn, hãy đổi mật khẩu."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Nếu bạn không muốn ghi đè lên chứng chỉ hiện tại, vui lòng tắt tính năng tự "
+"động gia hạn"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"Nếu bạn tiếp tục, các tài khoản người dùng này cùng với TẤT CẢ các nội dung "
+"email và trang web liên quan không được liệt kê ở đây cũng sẽ bị xóa."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Nếu bạn đặt thành 0, không có yêu cầu httpd cơ bản nào hoạt động. Bạn thậm "
+"chí không thể đăng nhập."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Tên tệp hình ảnh chỉ có 1 dấu chấm"
+
+msgid "Imap"
+msgstr "Bản đồ"
+
+msgid "Imap Folders"
+msgstr "Thư mục Imap"
+
+msgid "Inactive"
+msgstr "Không hoạt động"
+
+msgid "Inbox"
+msgstr "Hộp thư đến"
+
+msgid "Include Domains"
+msgstr "Bao gồm tên miền"
+
+msgid "Info"
+msgstr "Thông tin"
+
+msgid "Info for admins"
+msgstr "Thông tin cho quản trị viên"
+
+msgid "Inherit"
+msgstr "Kế thừa"
+
+msgid "Inodes"
+msgstr "Inode"
+
+msgid "Installed"
+msgstr "Đã cài đặt"
+
+msgid "Installed Perl Modules"
+msgstr "Các mô-đun Perl đã cài đặt"
+
+msgid "Interface is a loopback interface."
+msgstr "Giao diện là giao diện vòng lặp."
+
+msgid "Interface is a point-to-point link."
+msgstr "Giao diện là liên kết điểm-điểm."
+
+msgid "Interface is in promiscuous mode."
+msgstr "Giao diện đang ở chế độ hỗn tạp."
+
+msgid "Interface is running."
+msgstr "Giao diện đang chạy."
+
+msgid "Internal debugging flag."
+msgstr "Cờ gỡ lỗi nội bộ."
+
+msgid "Invalid "
+msgstr "Không hợp lệ "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "'%s' không hợp lệ"
+
+msgid "Invalid CC email address"
+msgstr "Địa chỉ email CC không hợp lệ"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Ký tự không hợp lệ trong tên skin. Chỉ sử dụng a-zA-Z0-9._-[] Không được bắt "
+"đầu bằng '.'"
+
+msgid "Invalid Cron ID"
+msgstr "ID Cron không hợp lệ"
+
+msgid "Invalid DNS name"
+msgstr "Tên DNS không hợp lệ"
+
+msgid "Invalid DNS value"
+msgstr "Giá trị DNS không hợp lệ"
+
+msgid "Invalid Domain"
+msgstr "Tên miền không hợp lệ"
+
+msgid "Invalid Domain Name"
+msgstr "Tên miền không hợp lệ"
+
+msgid "Invalid E-Mail"
+msgstr "Email không hợp lệ"
+
+msgid "Invalid E-Mail User"
+msgstr "Người dùng E-mail không hợp lệ"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"Địa chỉ E-Mail không hợp lệ. Nhiều tên người dùng đăng nhập DirectAdmin hoặc "
+"để trống cũng được phép"
+
+msgid "Invalid Email"
+msgstr "Email không hợp lệ"
+
+msgid "Invalid Email Name"
+msgstr "Tên Email Không Hợp Lệ"
+
+msgid "Invalid Email limit"
+msgstr "Giới hạn Email không hợp lệ"
+
+msgid "Invalid FTP account"
+msgstr "Tài khoản FTP không hợp lệ"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "IP không hợp lệ (1.2.3.4) hoặc phạm vi IP (1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "IP/Tên miền không hợp lệ cho kết nối ftp"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Giá trị xoay vòng nhật ký không hợp lệ: %d"
+
+msgid "Invalid MX value"
+msgstr "Giá trị MX không hợp lệ"
+
+msgid "Invalid Name"
+msgstr "Tên không hợp lệ"
+
+msgid "Invalid Netmask"
+msgstr "Mặt nạ mạng không hợp lệ"
+
+msgid "Invalid Password"
+msgstr "Mật khẩu không hợp lệ"
+
+msgid "Invalid RSA comment"
+msgstr "Bình luận RSA không hợp lệ"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "ID RSA không hợp lệ. Sử dụng các ký tự đơn giản: a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "Khóa RSA không hợp lệ"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "Giá trị SecRuleRemoveById không hợp lệ"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Giá trị phút phiên họp không hợp lệ: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Tên miền phụ không hợp lệ"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Mã xác thực hai bước không hợp lệ"
+
+msgid "Invalid Two-Step Authentication code"
+msgstr "Mã xác thực hai bước không hợp lệ"
+
+msgid "Invalid URL"
+msgstr "URL không hợp lệ"
+
+msgid "Invalid Username"
+msgstr "Tên người dùng không hợp lệ"
+
+msgid "Invalid Username or Password"
+msgstr "Tên người dùng hoặc mật khẩu không hợp lệ"
+
+msgid "Invalid characters in password"
+msgstr "Ký tự không hợp lệ trong mật khẩu"
+
+msgid "Invalid characters in word"
+msgstr "Ký tự không hợp lệ trong từ"
+
+msgid "Invalid crypted passwd"
+msgstr "Mật khẩu được mã hóa không hợp lệ"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"delete_messages_days hoặc delete_tickets_days không hợp lệ. Quá lớn. Max = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"delete_messages_days hoặc delete_tickets_days không hợp lệ. Phải là 0 hoặc "
+"số nguyên dương."
+
+msgid "Invalid dnsprovider"
+msgstr "DNSprovider không hợp lệ"
+
+msgid "Invalid dnsprovider type"
+msgstr "Loại DNSprovider không hợp lệ"
+
+msgid "Invalid domain"
+msgstr "Tên miền không hợp lệ"
+
+msgid "Invalid email address"
+msgstr "Địa chỉ email không hợp lệ"
+
+msgid "Invalid email user"
+msgstr "Người dùng email không hợp lệ"
+
+msgid "Invalid email username"
+msgstr "Tên người dùng email không hợp lệ"
+
+msgid "Invalid encryption password"
+msgstr "Mật khẩu mã hóa không hợp lệ"
+
+msgid "Invalid file extension list"
+msgstr "Danh sách phần mở rộng tập tin không hợp lệ"
+
+msgid "Invalid filename:"
+msgstr "Tên tệp không hợp lệ:"
+
+msgid "Invalid filter type"
+msgstr "Loại bộ lọc không hợp lệ"
+
+msgid "Invalid fingerprint"
+msgstr "Dấu vân tay không hợp lệ"
+
+msgid "Invalid ftp password"
+msgstr "Mật khẩu ftp không hợp lệ"
+
+msgid "Invalid ftp path"
+msgstr "Đường dẫn ftp không hợp lệ"
+
+msgid "Invalid ftp port"
+msgstr "Cổng ftp không hợp lệ"
+
+msgid "Invalid ftp username"
+msgstr "Tên người dùng ftp không hợp lệ"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "Độ dài bit khóa không hợp lệ: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "Tên hoặc giá trị tùy chọn khóa không hợp lệ: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "Kiểu khóa không hợp lệ: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Kích thước khóa không hợp lệ. Giá trị hợp lệ: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Danh sách tên miền được phép không hợp lệ"
+
+msgid "Invalid local path"
+msgstr "Đường dẫn cục bộ không hợp lệ"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr ""
+"Đăng nhập không hợp lệ. Vui lòng xác minh Tên người dùng và Mật khẩu của bạn"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Số ngày tin nhắn không hợp lệ. Phải là số nguyên dương."
+
+msgid "Invalid message id"
+msgstr "ID tin nhắn không hợp lệ"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "Kiểu tin nhắn không hợp lệ. Chỉ được phép yêu cầu, trả lời và tin nhắn"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "Phương pháp không hợp lệ: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "Tên hoặc phần mở rộng không hợp lệ"
+
+msgid "Invalid netmask type for IP type"
+msgstr "Loại mặt nạ mạng không hợp lệ cho loại IP"
+
+msgid "Invalid new user value"
+msgstr "Giá trị người dùng mới không hợp lệ"
+
+msgid "Invalid number"
+msgstr "Số không hợp lệ"
+
+msgid "Invalid package name"
+msgstr "Tên gói không hợp lệ"
+
+msgid "Invalid path"
+msgstr "Đường dẫn không hợp lệ"
+
+msgid "Invalid path append value"
+msgstr "Giá trị thêm đường dẫn không hợp lệ"
+
+msgid "Invalid redirect URL"
+msgstr "URL chuyển hướng không hợp lệ"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "Thời gian chờ phiên không hợp lệ hoặc giá trị kích thước tệp tối đa"
+
+msgid "Invalid subdomain name"
+msgstr "Tên miền phụ không hợp lệ"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "Ngày vé không hợp lệ. Phải là số nguyên dương."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "Ngày vé không hợp lệ. Quá lớn. Tối đa = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "Kiểu không hợp lệ cho '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "Kênh cập nhật không hợp lệ"
+
+msgid "Invalid username"
+msgstr "Tên người dùng không hợp lệ"
+
+msgid "Invalid values"
+msgstr "Giá trị không hợp lệ"
+
+msgid "Is able to select media type via ifmap."
+msgstr "Có thể chọn loại phương tiện thông qua ifmap."
+
+msgid "Issue verifying license"
+msgstr "Vấn đề xác minh giấy phép"
+
+msgid "Issuer"
+msgstr "Người phát hành"
+
+msgid "It already exists on the following system(s)"
+msgstr "Nó đã tồn tại trên các hệ thống sau"
+
+msgid "It has been disabled"
+msgstr "Nó đã bị vô hiệu hóa"
+
+msgid "It must be a positive integer."
+msgstr "Nó phải là một số nguyên dương."
+
+msgid "It must not be an IP"
+msgstr "Nó không phải là IP"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "Nó đã được liên kết với %s"
+
+msgid "Items per page"
+msgstr "Số mục trên mỗi trang"
+
+msgid "Jailed Home"
+msgstr "Nhà tù"
+
+msgid "Jan"
+msgstr "Tháng một"
+
+msgid "Jul"
+msgstr "Tháng bảy"
+
+msgid "Jun"
+msgstr "Tháng sáu"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "Giữ lại để tham khảo sau này."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Vui lòng giữ số liệu ở mức thực tế."
+
+msgid "Key"
+msgstr "Chìa khóa"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "Đã tạo khóa. Ghi nhớ giá trị của khóa và giữ khóa an toàn."
+
+msgid "Key ID"
+msgstr "ID khóa"
+
+msgid "Key Name"
+msgstr "Tên khóa"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Tên khóa phải đơn giản: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "Khóa đã tồn tại thông qua việc khớp dấu vân tay"
+
+msgid "Key is Invalid"
+msgstr "Khóa không hợp lệ"
+
+msgid "Key(s) deleted"
+msgstr "Khóa đã xóa"
+
+msgid "Keys"
+msgstr "Chìa khóa"
+
+msgid "Keys listed below"
+msgstr "Các phím được liệt kê bên dưới"
+
+msgid "Kill"
+msgstr "Giết"
+
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Ngôn ngữ đã được thay đổi thành %s"
+
+msgid "Language has been successfully changed"
+msgstr "Ngôn ngữ đã được thay đổi thành công"
+
+msgid "Last"
+msgstr "Cuối cùng"
+
+msgid "Last Accessed"
+msgstr "Lần truy cập cuối cùng"
+
+msgid "Last Changed"
+msgstr "Lần thay đổi cuối cùng"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "IP đăng nhập lần cuối: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Đăng nhập lần cuối: %s"
+
+msgid "Last Message"
+msgstr "Tin nhắn cuối cùng"
+
+msgid "Last Modified"
+msgstr "Lần sửa đổi cuối cùng"
+
+msgid "Last Page"
+msgstr "Trang cuối"
+
+msgid "Last Tally Completion"
+msgstr "Hoàn thành kiểm đếm cuối cùng"
+
+msgid "Leave DNS"
+msgstr "Rời khỏi DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Người dùng bên trái trong danh sách của %s"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Hãy mã hóa các mục nhập chứng chỉ"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt không được bật. Bạn không thể sử dụng tùy chọn này."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "Các tập tin LetsEncrypt đã được xóa"
+
+msgid "LetsEncrypt request successful"
+msgstr "Yêu cầu LetsEncrypt thành công"
+
+msgid "LetsEncrypt request successful for"
+msgstr "Yêu cầu LetsEncrypt thành công cho"
+
+msgid "License file is no longer supported"
+msgstr "Tệp giấy phép không còn được hỗ trợ"
+
+msgid "License file unchanged"
+msgstr "Tệp giấy phép không thay đổi"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "Giấy phép đã được xác minh thông qua hệ thống cấp phép DirectAdmin"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr ""
+"Giấy phép chỉ giới hạn cho %d Quản trị viên/Người bán lại và hiện tại bạn có "
+"%d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "Giấy phép bị giới hạn cho %d tài khoản và hiện tại bạn có %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Giấy phép bị giới hạn ở %d miền và hiện tại bạn có %d"
+
+msgid "License is not valid"
+msgstr "Giấy phép không hợp lệ"
+
+msgid "License limits exceeded"
+msgstr "Vượt quá giới hạn giấy phép"
+
+msgid "License verified"
+msgstr "Giấy phép đã được xác minh"
+
+msgid "Limit Notice"
+msgstr "Thông báo giới hạn"
+
+msgid "Limit is not a number"
+msgstr "Giới hạn không phải là một con số"
+
+msgid "Link"
+msgstr "Liên kết"
+
+msgid "Link in Background"
+msgstr "Liên kết trong nền"
+
+msgid "Linked IPs"
+msgstr "IP được liên kết"
+
+msgid "List"
+msgstr "Danh sách"
+
+msgid "List Configurations Saved"
+msgstr "Danh sách Cấu hình Đã lưu"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Listname phải có %d ký tự hoặc ít hơn"
+
+msgid "Listname must be all lower case letters"
+msgstr "Tên danh sách phải toàn bộ là chữ thường"
+
+msgid "Load Average"
+msgstr "Tải trọng trung bình"
+
+msgid "Local Data"
+msgstr "Dữ liệu cục bộ"
+
+msgid "Local Default"
+msgstr "Mặc định cục bộ"
+
+msgid "Local Mail"
+msgstr "Thư địa phương"
+
+msgid "Local URL Path"
+msgstr "Đường dẫn URL cục bộ"
+
+msgid "Log"
+msgstr "Nhật ký"
+
+msgid "Log Entry"
+msgstr "Nhật ký nhập"
+
+msgid "Log Usage"
+msgstr "Sử dụng Nhật ký"
+
+msgid "Login"
+msgstr "Đăng nhập"
+
+msgid "Login Failures"
+msgstr "Lỗi đăng nhập"
+
+msgid "Login Keys"
+msgstr "Khóa đăng nhập"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Đăng nhập với tư cách %s"
+
+msgid "Low"
+msgstr "Thấp"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "Bộ mẫu MX"
+
+msgid "MX Templates are disabled"
+msgstr "Mẫu MX đã bị vô hiệu hóa"
+
+msgid "MX priority should be an positive number"
+msgstr "Ưu tiên MX phải là một số dương"
+
+msgid "Mailing List"
+msgstr "Danh sách gửi thư"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "Danh sách gửi thư"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "Danh sách gửi thư"
+
+msgid "Mailing Lists"
+msgstr "Danh sách gửi thư"
+
+msgid "Main"
+msgstr "Chủ yếu"
+
+msgid "Main Domain ..."
+msgstr "Tên miền chính ..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "Lỗi nghiêm trọng: Lỗi khi tìm trang chủ cho %s"
+
+msgid "Make sure 'unit' is running"
+msgstr "Đảm bảo 'đơn vị' đang chạy"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Đảm bảo rằng các giá trị được truyền là hợp lệ cho loại của chúng"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "Thủ công bởi %s"
+
+msgid "Mar"
+msgstr "Tháng Ba"
+
+msgid "Mark as read"
+msgstr "Đánh dấu là đã đọc"
+
+msgid "Master of a load balancing bundle."
+msgstr "Người quản lý gói cân bằng tải."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "Nhiệm vụ tối đa có thể được tạo trong đơn vị"
+
+msgid "Max Usage (Meg)"
+msgstr "Sử dụng tối đa (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr "Số thao tác đọc đĩa tối đa mỗi giây."
+
+msgid "Max disk write operations per second."
+msgstr "Số thao tác ghi đĩa tối đa mỗi giây."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "Giới hạn tối đa Người dùng có thể thiết lập cho mỗi E-Mail"
+
+msgid "Max rate data can be read from a disk."
+msgstr "Tốc độ dữ liệu tối đa có thể được đọc từ đĩa."
+
+msgid "Max rate data can be written to a disk."
+msgstr "Tốc độ dữ liệu tối đa có thể được ghi vào đĩa."
+
+msgid "Maximum Usage"
+msgstr "Sử dụng tối đa"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "Giá trị lớn nhất: %s=%s"
+
+msgid "May"
+msgstr "Có thể"
+
+msgid "Medium"
+msgstr "Trung bình"
+
+msgid "Meg"
+msgstr "Meg"
+
+msgid "Memory High"
+msgstr "Bộ nhớ cao"
+
+msgid "Memory Max"
+msgstr "Bộ nhớ tối đa"
+
+msgid "Memory Usage"
+msgstr "Sử dụng bộ nhớ"
+
+msgid "Message #"
+msgstr "Tin nhắn #"
+
+msgid "Message Reset"
+msgstr "Đặt lại tin nhắn"
+
+msgid "Message Type"
+msgstr "Loại tin nhắn"
+
+msgid "Message is being sent"
+msgstr "Tin nhắn đang được gửi"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "Tin nhắn đã xóa"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "Tin nhắn đã cập nhật"
+
+msgid "Messages Updated"
+msgstr "Tin nhắn đã cập nhật"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Các loại kịch câm"
+
+#, fuzzy
+msgid "Mime-Type added"
+msgstr "Loại Mime"
+
+msgid "MimeType"
+msgstr "Loại Mime"
+
+msgid "Minute"
+msgstr "Phút"
+
+msgid "Missing closing bracket in zone line."
+msgstr "Thiếu dấu ngoặc đóng trong dòng vùng."
+
+msgid "Missing open bracket in zone line."
+msgstr "Thiếu dấu ngoặc mở trong dòng vùng."
+
+msgid "ModSecurity Flags"
+msgstr "Cờ ModSecurity"
+
+msgid "ModSecurity Rules Saved"
+msgstr "Quy tắc ModSecurity đã lưu"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "Quy tắc bỏ qua của ModSecurity"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity không được bật"
+
+msgid "Modify"
+msgstr "Biến đổi"
+
+msgid "Modify Password"
+msgstr "Sửa đổi mật khẩu"
+
+msgid "Month"
+msgstr "Tháng"
+
+msgid "More Info"
+msgstr "Thông tin thêm"
+
+msgid "Morning"
+msgstr "Buổi sáng"
+
+msgid "Move Clipboard Files here"
+msgstr "Di chuyển Tệp Clipboard ở đây"
+
+msgid "Move to Trash"
+msgstr "Di chuyển đến Thùng rác"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Phải cung cấp loại MIME hoặc tên trình xử lý và một phần mở rộng duy nhất. "
+"Ví dụ: \"text/html\" hoặc \"cgi-script\" và \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Phải chọn nhiều hơn 0 mục LetsEncrypt."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Phải sử dụng letsencrypt=1 cho các tùy chọn. letsencrypt=%d hiện đang được "
+"đặt."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL không được kích hoạt trên máy chủ này"
+
+msgid "NGINX Unit"
+msgstr "Đơn vị NGINX"
+
+msgid "Name"
+msgstr "Tên"
+
+msgid "Name Server 1"
+msgstr "Máy chủ tên 1"
+
+msgid "Name Server 2"
+msgstr "Máy chủ tên 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Tên chỉ được chứa các chữ cái, khoảng trắng và/hoặc dấu chấm"
+
+msgid "Nameserver"
+msgstr "Máy chủ tên"
+
+msgid "Nameservers deleted"
+msgstr "Máy chủ tên đã bị xóa"
+
+msgid "Nameservers have been changed"
+msgstr "Máy chủ tên đã được thay đổi"
+
+msgid "Namesevers have been changed."
+msgstr "Tên máy chủ đã được thay đổi."
+
+msgid "Netmask"
+msgstr "Mặt nạ lưới"
+
+msgid "Never"
+msgstr "Không bao giờ"
+
+msgid "New Secret Set: %s"
+msgstr "Bộ bí mật mới: %s"
+
+msgid "New password isn't different"
+msgstr "Mật khẩu mới không khác biệt"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Khóa mới cài đặt là %s-bit"
+
+msgid "Next Retry"
+msgstr "Lần thử lại tiếp theo"
+
+msgid "Nginx Template"
+msgstr "Mẫu Nginx"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx không được kích hoạt"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit không được bật hoặc không chạy"
+
+msgid "No"
+msgstr "KHÔNG"
+
+msgid "No Awstats"
+msgstr "Không có Awstats"
+
+msgid "No Data to Show"
+msgstr "Không có dữ liệu để hiển thị"
+
+msgid "No IPs selected"
+msgstr "Không có IP nào được chọn"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "Không có ListFile trong container tại vị trí tuyến đường %lld"
+
+msgid "No Send class set"
+msgstr "Không có lớp Gửi thiết lập"
+
+msgid "No User Data"
+msgstr "Không có dữ liệu người dùng"
+
+msgid "No action"
+msgstr "Không có hành động"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "Không có giao thức arp, địa chỉ đích L2 chưa được thiết lập."
+
+msgid "No changes have been made"
+msgstr "Không có thay đổi nào được thực hiện"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Không cần thay đổi gì cả. Bỏ qua việc ghi."
+
+msgid "No colors have been selected"
+msgstr "Không có màu nào được chọn"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "Không có container tại vị trí tuyến đường %lld"
+
+msgid "No events for this period."
+msgstr "Không có sự kiện nào trong thời gian này."
+
+msgid "No files have been selected for upload."
+msgstr "Chưa có tập tin nào được chọn để tải lên."
+
+msgid "No free IPs found"
+msgstr "Không tìm thấy IP miễn phí"
+
+msgid "No global IPs found"
+msgstr "Không tìm thấy IP toàn cầu"
+
+msgid "No keys selected"
+msgstr "Không có phím nào được chọn"
+
+msgid "No passwd entries provided."
+msgstr "Không cung cấp mục nhập mật khẩu."
+
+msgid "No paths were provided."
+msgstr "Không có đường dẫn nào được cung cấp."
+
+msgid "No shared IPs found"
+msgstr "Không tìm thấy IP được chia sẻ"
+
+msgid "No text provided"
+msgstr "Không có văn bản nào được cung cấp"
+
+msgid "No vacation message set"
+msgstr "Không có tin nhắn nghỉ phép được thiết lập"
+
+msgid "None"
+msgstr "Không có"
+
+msgid "Not a valid IP Address"
+msgstr "Không phải là một địa chỉ IP hợp lệ"
+
+msgid "Not allowed for Resellers"
+msgstr "Không được phép đối với Người bán lại"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr "Không đủ IP để tạo máy chủ tên. Cần ít nhất %d IP trống, chưa được gán."
+
+msgid "Not setting up Mail SNI."
+msgstr "Không thiết lập Mail SNI."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "Không hợp lệ do ký tự '%c' ở chỉ mục %d"
+
+msgid "Not yet generated"
+msgstr "Chưa tạo ra"
+
+msgid "Not yet signed"
+msgstr "Chưa ký"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Lưu ý: cấu hình Let's Encrypt trước đó vẫn được thiết lập để gia hạn sau %d "
+"ngày."
+
+msgid "Nothing"
+msgstr "Không có gì"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "Thông báo rằng Khóa đăng nhập %s đã được tạo thành công bởi %s"
+
+msgid "Notified"
+msgstr "Đã thông báo"
+
+msgid "Nov"
+msgstr "Tháng 11"
+
+msgid "Null values"
+msgstr "Giá trị Null"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "Số %s=%s nằm ngoài phạm vi (bắt buộc: %d-%d)"
+
+msgid "Number of Users"
+msgstr "Số lượng người dùng"
+
+msgid "OK"
+msgstr "ĐƯỢC RỒI"
+
+msgid "Oct"
+msgstr "Tháng Mười"
+
+msgid "Off"
+msgstr "Tắt"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Khóa %s-bit cũ đã được sao lưu vào %s"
+
+msgid "Old password incorrect"
+msgstr "Mật khẩu cũ không đúng"
+
+#, c-format
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "Cũ hơn %d ngày"
+
+msgid "On"
+msgstr "TRÊN"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr ""
+"Một (hoặc nhiều) địa chỉ IP đã chọn hiện không có trong danh sách của bạn"
+
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "Đăng nhập bằng một cú nhấp chuột không được bật trong directadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"Yêu cầu đăng nhập bằng một cú nhấp chuột không hỗ trợ webmail_link=%s. Hãy "
+"thử webmail_link=roundcube."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "Chỉ có %d trong số %d IP toàn cầu được yêu cầu được chỉ định."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "Chỉ có thể xóa các IP 'Bổ sung' khỏi Người dùng bằng phương pháp này"
+
+msgid "Only API access is allowed"
+msgstr "Chỉ cho phép truy cập API"
+
+msgid "Only Admin accounts can save settings"
+msgstr "Chỉ có tài khoản Quản trị viên mới có thể lưu cài đặt"
+
+msgid "Only Admins can reset the usage count"
+msgstr "Chỉ có Quản trị viên mới có thể thiết lập lại số lượng sử dụng"
+
+msgid "Only Admins may run this request"
+msgstr "Chỉ có Quản trị viên mới có thể chạy yêu cầu này"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+"Chỉ cung cấp một phần mở rộng tại một thời điểm. Ví dụ: \"jpg\" và KHÔNG "
+"cung cấp \"jpg jpeg jpe\""
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "Chỉ có miền mặc định '%s' mới có thể kiểm soát cài đặt php."
+
+msgid "Only the location of the route can be renamed"
+msgstr "Chỉ có thể đổi tên vị trí của tuyến đường"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr ""
+"Chỉ sử dụng ký tự đại diện trên các miền hiện có DNS cục bộ đang hoạt động"
+
+msgid "Open"
+msgstr "Mở"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Mở Basedir bị vô hiệu hóa trên các miền đã chọn"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir được bật trên các miền đã chọn"
+
+msgid "Open+Confirm"
+msgstr "Mở+Xác nhận"
+
+msgid "Operation"
+msgstr "Hoạt động"
+
+msgid "Optimize"
+msgstr "Tối ưu hóa"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "Tùy chọn '%s' đã được thiết lập"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "Cài đặt đã lưu"
+
+msgid "Options"
+msgstr "Tùy chọn"
+
+msgid "Options changed successfully"
+msgstr "Tùy chọn đã thay đổi thành công"
+
+msgid "Order"
+msgstr "Đặt hàng"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "Thứ tự (khi các giá trị sắp xếp đầu tiên bằng nhau)"
+
+msgid "Original Package"
+msgstr "Gói ban đầu"
+
+msgid "Other"
+msgstr "Khác"
+
+msgid "Other Disk Usage"
+msgstr "Sử dụng đĩa khác"
+
+msgid "Other Usage"
+msgstr "Sử dụng khác"
+
+msgid "Overview"
+msgstr "Tổng quan"
+
+msgid "Owner"
+msgstr "Người sở hữu"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "Chủ sở hữu IP toàn cầu đã được chuyển sang Quản trị viên %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "Tên tập lệnh PHP"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "Cài đặt PHP không thể được kiểm soát trong miền này"
+
+msgid "PHP Version Selector"
+msgstr "Bộ chọn phiên bản PHP"
+
+msgid "PHP versions saved"
+msgstr "Phiên bản PHP đã lưu"
+
+msgid "PID"
+msgstr "Mã số thuế"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' không phải là một số"
+
+msgid "POP Email Accounts"
+msgstr "Tài khoản Email POP"
+
+msgid "POP/IMAP Server"
+msgstr "Máy chủ POP/IMAP"
+
+msgid "Package"
+msgstr "Bưu kiện"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Gói '%s' đã tồn tại"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Gói '%s' không tồn tại"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Gói '%s' không có trong danh sách của bạn"
+
+msgid "Package not found"
+msgstr "Không tìm thấy gói"
+
+msgid "Page"
+msgstr "Trang"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Thư mục cha %s đã được tạo."
+
+msgid "Parsing Error. Check logs"
+msgstr "Lỗi phân tích cú pháp. Kiểm tra nhật ký"
+
+msgid "Password"
+msgstr "Mật khẩu"
+
+msgid "Password Changed"
+msgstr "Mật khẩu đã thay đổi"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Mật khẩu đã thay đổi: %s"
+
+msgid "Password Not Changed"
+msgstr "Mật khẩu không thay đổi"
+
+msgid "Password Saved!"
+msgstr "Đã lưu mật khẩu!"
+
+msgid "Password is not valid"
+msgstr "Mật khẩu không hợp lệ"
+
+msgid "Password is too long"
+msgstr "Mật khẩu quá dài"
+
+msgid "Password is too short"
+msgstr "Mật khẩu quá ngắn"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "Mật khẩu quá ngắn (%d). Sử dụng ít nhất %d ký tự"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Mật khẩu phải dài hơn %d ký tự"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "Da đã được thay đổi thành công"
+
+msgid "Password/Quota"
+msgstr "Mật khẩu/Hạn ngạch"
+
+msgid "Password:"
+msgstr "Mật khẩu:"
+
+msgid "Passwords do not match"
+msgstr "Mật khẩu không khớp"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Mật khẩu không khớp hoặc không hợp lệ"
+
+msgid "Path"
+msgstr "Con đường"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Đường dẫn %s không tồn tại hoặc người dùng %s không thể truy cập."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Đường dẫn '%s' đã tồn tại trước khi tạo Người dùng. Vui lòng xóa/đổi tên "
+"đường dẫn này trước."
+
+msgid "Path does not exist"
+msgstr "Đường dẫn không tồn tại"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Đường dẫn phải bắt đầu bằng dấu gạch chéo (/)"
+
+msgid "Paths Unblocked"
+msgstr "Đường dẫn không bị chặn"
+
+msgid "Paths must be within your home directory"
+msgstr "Đường dẫn phải nằm trong thư mục gốc của bạn"
+
+msgid "Percent"
+msgstr "Phần trăm"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "Phần trăm phải kết thúc bằng ký tự %"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "Phần trăm lõi CPU. >100% cần thêm nhiều lõi hơn."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "Phần trăm phải nằm trong khoảng từ %d đến %d, bao gồm"
+
+msgid "Perm."
+msgstr "Perm."
+
+msgid "Permissions set"
+msgstr "Quyền được thiết lập"
+
+msgid "Php is not enabled"
+msgstr "Php không được kích hoạt"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr ""
+"Vui lòng kiểm tra vùng %s để đảm bảo bản ghi máy chủ tên A là chính xác."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Vui lòng xác nhận bạn muốn xóa dữ liệu DNSSEC của mình"
+
+msgid "Please pick only one skin to apply"
+msgstr "Vui lòng chỉ chọn một loại da để áp dụng"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "Vui lòng cung cấp '%s'"
+
+msgid "Please provide at least one IP"
+msgstr "Vui lòng cung cấp ít nhất một IP"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "Vui lòng xem URL này và kiểm tra mã thoát curl '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Vui lòng chọn 1 tên miền làm tên miền mặc định của bạn"
+
+msgid "Please select at least one User"
+msgstr "Vui lòng chọn ít nhất một Người dùng"
+
+msgid "Please select at least one domains"
+msgstr "Vui lòng chọn ít nhất một tên miền"
+
+msgid "Please select at least one file"
+msgstr "Vui lòng chọn ít nhất một tập tin"
+
+msgid "Please select at least one item"
+msgstr "Vui lòng chọn ít nhất một mục"
+
+msgid "Please select at least one package"
+msgstr "Vui lòng chọn ít nhất một gói"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "Vui lòng chọn nhiều hơn 0 tệp để trích xuất từ kho lưu trữ"
+
+msgid "Please select one or more Databases"
+msgstr "Vui lòng chọn một hoặc nhiều Cơ sở dữ liệu"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Vui lòng chỉ chọn 1 cronjob để chỉnh sửa"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Vui lòng đặt giới hạn giữa 1 và %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "Vui lòng hủy liên kết tất cả IP khỏi '%s' trước khi xóa nó."
+
+msgid "Please use all lower case characters in the username"
+msgstr "Vui lòng sử dụng tất cả các ký tự chữ thường trong tên người dùng"
+
+msgid "Plugin Uploaded"
+msgstr "Plugin đã được tải lên"
+
+msgid "Plugin(s) Installed"
+msgstr "Plugin đã cài đặt"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Plugin(s) chưa được cài đặt"
+
+msgid "Plugin(s) Updated"
+msgstr "Plugin đã được cập nhật"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Con trỏ '%s' không thuộc về bạn."
+
+msgid "Pop"
+msgstr "Nhạc pop"
+
+msgid "Post Scripts"
+msgstr "Bài viết sau"
+
+msgid "Post scripts"
+msgstr "Bài viết sau"
+
+msgid "Pre-backup hard-link check"
+msgstr "Kiểm tra liên kết cứng trước khi sao lưu"
+
+msgid "Preparing 'domains' data"
+msgstr "Chuẩn bị dữ liệu 'miền'"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Chuẩn bị dữ liệu (không có 'miền')"
+
+msgid "Present"
+msgstr "Hiện tại"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Việc bảo quản dữ liệu web chỉ áp dụng cho /domains/domain.com. Các khu vực "
+"khác như dữ liệu E-Mail sẽ không được bảo quản."
+
+msgid "Priority"
+msgstr "Sự ưu tiên"
+
+msgid "Privileges"
+msgstr "Quyền lợi"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "ID tiến trình %d không phải là 'dataskq'. Mà là '%s'"
+
+msgid "Process is running"
+msgstr "Tiến trình đang chạy"
+
+msgid "Process is stopped"
+msgstr "Quá trình đã dừng lại"
+
+msgid "Processor Name"
+msgstr "Tên bộ xử lý"
+
+msgid "Processor Speed (MHz)"
+msgstr "Tốc độ bộ xử lý (MHz)"
+
+msgid "Progress"
+msgstr "Tiến triển"
+
+msgid "Protect"
+msgstr "Bảo vệ"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "Tên thư mục được bảo vệ chứa các ký tự không hợp lệ. Giữ cho đơn giản"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Việc bảo vệ thư mục đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "Cung cấp IP, dải IP, tên miền hoặc tên miền đại diện."
+
+msgid "Provided password is not correct."
+msgstr "Mật khẩu đã cung cấp không đúng."
+
+msgid "Provided password is weak"
+msgstr "Mật khẩu được cung cấp là yếu"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "Giá trị được cung cấp không phải là Tên người dùng hoặc Địa chỉ email"
+
+msgid "Provided value is not valid."
+msgstr "Giá trị được cung cấp không hợp lệ."
+
+msgid "Proxy socket address"
+msgstr "Địa chỉ ổ cắm proxy"
+
+msgid "Publish"
+msgstr "Xuất bản"
+
+msgid "Purge"
+msgstr "thanh lọc"
+
+msgid "Purge Archives"
+msgstr "Thanh lọc lưu trữ"
+
+msgid "Purge From"
+msgstr "Thanh lọc từ"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "Thanh lọc trong %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "Đẩy lệnh ghi lại httpd.conf vào tác vụ nền."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "Đã lưu thay đổi"
+
+msgid "Re-sign your zone."
+msgstr "Ký lại vùng của bạn."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Lỗi đọc với %s: %s"
+
+msgid "Reason:"
+msgstr "Lý do:"
+
+msgid "Reboot"
+msgstr "Khởi động lại"
+
+msgid "Receive all multicast packets."
+msgstr "Nhận tất cả các gói tin đa hướng."
+
+msgid "Received"
+msgstr "Đã nhận"
+
+msgid "Received Emails"
+msgstr "Email đã nhận"
+
+msgid "Reconfiguration Error"
+msgstr "Lỗi cấu hình lại"
+
+msgid "Record Added"
+msgstr "Đã thêm bản ghi"
+
+msgid "Record Edited"
+msgstr "Bản ghi đã chỉnh sửa"
+
+msgid "Records Deleted"
+msgstr "Hồ sơ đã xóa"
+
+msgid "Recursive"
+msgstr "Đệ quy"
+
+msgid "Recursively"
+msgstr "Đệ quy"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Việc đặt lại quyền sở hữu theo cách đệ quy đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Redirect Added"
+msgstr "Đã thêm chuyển hướng"
+
+msgid "Redirect URL"
+msgstr "Chuyển hướng URL"
+
+msgid "Redirect(s) deleted"
+msgstr "Đã xóa chuyển hướng"
+
+msgid "Redis"
+msgstr "Đỏ lại"
+
+msgid "Refresh"
+msgstr "Làm cho khỏe lại"
+
+msgid "Regenerate Codes"
+msgstr "Tạo lại mã"
+
+msgid "Related"
+msgstr "Có liên quan"
+
+msgid "Release Candidates"
+msgstr "Ứng viên phát hành"
+
+msgid "Reload"
+msgstr "Tải lại"
+
+msgid "Reload requested"
+msgstr "Yêu cầu tải lại"
+
+msgid "Remote Mail"
+msgstr "Thư từ xa"
+
+msgid "Remove"
+msgstr "Di dời"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Xóa bản ghi DNS cho IP(s)"
+
+msgid "Remove DNSSEC"
+msgstr "Xóa DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Xóa Nội dung Thư mục"
+
+msgid "Remove From Skip List"
+msgstr "Xóa khỏi danh sách bỏ qua"
+
+msgid "Remove from reseller"
+msgstr "Xóa khỏi đại lý"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Đã xóa người dùng khỏi danh sách của %s"
+
+msgid "Rename"
+msgstr "Đổi tên"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr "Đổi tên tệp đã bị vô hiệu hóa với tùy chọn filemanager_disable_features"
+
+msgid "Repair"
+msgstr "Sửa"
+
+msgid "Replies"
+msgstr "Trả lời"
+
+msgid "Reply"
+msgstr "Hồi đáp"
+
+msgid "Reply Sent"
+msgstr "Trả lời đã gửi"
+
+msgid "Request added to task.queue"
+msgstr "Yêu cầu đã được thêm vào task.queue"
+
+msgid "Request will be processed in the background."
+msgstr "Yêu cầu sẽ được xử lý ở chế độ nền."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr ""
+"Giá trị LetsEncrypt được yêu cầu của '%s' không phải là giá trị được phép."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "Kích thước tệp được yêu cầu (%lld) vượt quá giá trị maxfilesize (%lld)"
+
+msgid "Requests Cancelled"
+msgstr "Yêu cầu đã bị hủy"
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Bắt buộc: '%s' hoặc '%s'"
+
+msgid "Reseller"
+msgstr "Người bán lại"
+
+msgid "Reseller Bandwidth"
+msgstr "Băng thông đại lý"
+
+msgid "Reseller History"
+msgstr "Lịch sử đại lý"
+
+msgid "Reseller Quota"
+msgstr "Hạn ngạch đại lý"
+
+msgid "Reseller created"
+msgstr "Người bán lại đã tạo"
+
+msgid "Reseller deleted"
+msgstr "Người bán lại đã xóa"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr ""
+"Người bán lại được cấp không có IP. Không thể tạo tên miền nếu không có IP."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "Người bán lại chỉ nhận được %s trong số %s địa chỉ IP của họ."
+
+msgid "Reseller's IP"
+msgstr "IP của người bán lại"
+
+msgid "Reset"
+msgstr "Cài lại"
+
+msgid "Reset Owner"
+msgstr "Đặt lại chủ sở hữu"
+
+msgid "Reset Ownership"
+msgstr "Đặt lại quyền sở hữu"
+
+msgid "Reset Today"
+msgstr "Đặt lại hôm nay"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Việc đặt lại quyền sở hữu tệp đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Resources allocated."
+msgstr "Nguồn lực được phân bổ."
+
+msgid "Restart"
+msgstr "Khởi động lại"
+
+msgid "Restore"
+msgstr "Khôi phục"
+
+msgid "Restore Complete!"
+msgstr "Khôi phục hoàn tất!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Khôi phục lỗi với Nginx Unit: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"Việc khôi phục tài khoản '%s' cho người tạo '%s' đã bị từ chối vì tài khoản "
+"này đã tồn tại dưới sự kiểm soát của người tạo '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Khôi phục sẽ chạy ở chế độ nền"
+
+msgid "Restores added to Queue"
+msgstr "Đã thêm khôi phục vào Hàng đợi"
+
+msgid "Restoring Databases"
+msgstr "Khôi phục cơ sở dữ liệu"
+
+msgid "Restoring Domains Data"
+msgstr "Khôi phục dữ liệu tên miền"
+
+msgid "Restoring E-Mail Data"
+msgstr "Khôi phục dữ liệu E-Mail"
+
+msgid "Restoring E-Mail Settings"
+msgstr "Khôi phục cài đặt E-Mail"
+
+msgid "Restoring Extra Admin Data"
+msgstr "Khôi phục dữ liệu quản trị bổ sung"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "Khôi phục dữ liệu đại lý bổ sung"
+
+msgid "Restoring Extra User Data"
+msgstr "Khôi phục dữ liệu người dùng bổ sung"
+
+msgid "Restoring FTP"
+msgstr "Khôi phục FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "Khôi phục các mục E-Mail bổ sung"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Việc khôi phục các tập tin đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Result"
+msgstr "Kết quả"
+
+msgid "Result of file copy"
+msgstr "Kết quả sao chép tập tin"
+
+msgid "Result of file move"
+msgstr "Kết quả di chuyển tập tin"
+
+msgid "Results"
+msgstr "Kết quả"
+
+msgid "Retries"
+msgstr "Thử lại"
+
+msgid "Retry"
+msgstr "Thử lại"
+
+msgid "Retry counter has been cleared."
+msgstr "Bộ đếm thử lại đã được xóa."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "Mã trả về 3XX(%d) yêu cầu một vị trí"
+
+msgid "Return with httpd code"
+msgstr "Trở về với mã httpd"
+
+msgid "Rewrite Apache"
+msgstr "Viết lại Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr "RoundCube thiếu tùy chọn direct_login. Vui lòng cài đặt lại RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "Tuyến đường '%s' không kết thúc bằng '%s'"
+
+msgid "Rules Reset"
+msgstr "Thiết lập lại quy tắc"
+
+msgid "Run Now"
+msgstr "Chạy ngay bây giờ"
+
+msgid "Running"
+msgstr "Đang chạy"
+
+msgid "SMTP Log"
+msgstr "Nhật ký SMTP"
+
+msgid "SMTP Server"
+msgstr "Máy chủ SMTP"
+
+msgid "SNI Host"
+msgstr "Máy chủ SNI"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI bị vô hiệu hóa cho tên miền này"
+
+msgid "SSH Key Modified"
+msgstr "Khóa SSH đã được sửa đổi"
+
+msgid "SSH Key authorized"
+msgstr "Khóa SSH đã được ủy quyền"
+
+msgid "SSH Key created"
+msgstr "Khóa SSH đã được tạo"
+
+msgid "SSH Key deleted"
+msgstr "Khóa SSH đã bị xóa"
+
+msgid "SSH is not enabled"
+msgstr "SSH không được kích hoạt"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL không được bật cho tên miền này"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Chế độ an toàn bị vô hiệu hóa trên các miền đã chọn"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Chế độ an toàn được bật trên các miền đã chọn"
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Save Awstats"
+msgstr "Lưu AWStats"
+
+msgid "Save Comments"
+msgstr "Lưu ý"
+
+msgid "Save E-Mail"
+msgstr "Lưu E-Mail"
+
+msgid "Save Increase"
+msgstr "Lưu Tăng"
+
+msgid "Save Language"
+msgstr "Lưu Ngôn ngữ"
+
+msgid "Save Limit"
+msgstr "Lưu Giới Hạn"
+
+msgid "Save Limit Notice"
+msgstr "Lưu Thông báo giới hạn"
+
+msgid "Save Name"
+msgstr "Lưu Tên"
+
+msgid "Save Nameservers"
+msgstr "Lưu Nameservers"
+
+msgid "Save Skin"
+msgstr "Lưu Skin"
+
+#, fuzzy
+msgid "Saved"
+msgstr "Lưu"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Việc lưu/Chỉnh sửa tệp đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Scratch Codes"
+msgstr "Mã cào"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Mã cào"
+
+msgid "Script output"
+msgstr "Đầu ra tập lệnh"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRuleRemoveById id trống"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "Lớp ổ cắm bảo mật (ssl)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "Xem %shướng dẫn này%s để khắc phục."
+
+msgid "See Error log for more information."
+msgstr "Xem Nhật ký lỗi để biết thêm thông tin."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "Xem hướng dẫn này: %s"
+
+msgid "Select"
+msgstr "Lựa chọn"
+
+msgid "Select MX Template"
+msgstr "Chọn mẫu MX"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Chọn một IP để liên kết tới %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Loại nội dung đã chọn không hợp lệ."
+
+msgid "Selected Data"
+msgstr "Dữ liệu đã chọn"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "Các plugin đã chọn được kích hoạt"
+
+msgid "Selected Plugins De-Activated"
+msgstr "Các plugin đã chọn bị hủy kích hoạt"
+
+msgid "Selected Plugins Deleted"
+msgstr "Các plugin đã chọn đã xóa"
+
+msgid "Selected Users"
+msgstr "Người dùng được chọn"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "Bộ mã hóa ký tự đã chọn không hợp lệ."
+
+msgid "Send Count"
+msgstr "Gửi Đếm"
+
+msgid "Send Signal"
+msgstr "Gửi tín hiệu"
+
+msgid "Send a Message"
+msgstr "Gửi tin nhắn"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Giới hạn gửi phải là một số hợp lệ hoặc để trống."
+
+msgid "Sender"
+msgstr "Người gửi"
+
+msgid "Sender Host"
+msgstr "Người gửi máy chủ"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr ""
+"Tên miền người gửi phải khớp với tên miền danh sách '%s' hoặc sử dụng '%s'"
+
+msgid "Sent"
+msgstr "Đã gửi"
+
+msgid "Sent E-mails"
+msgstr "Đã gửi E-mail"
+
+msgid "Sent Emails"
+msgstr "Email đã gửi"
+
+msgid "Sep"
+msgstr "Tháng chín"
+
+msgid "Server"
+msgstr "Máy chủ"
+
+msgid "Server History"
+msgstr "Lịch sử máy chủ"
+
+msgid "Server Path"
+msgstr "Đường dẫn máy chủ"
+
+msgid "Service"
+msgstr "Dịch vụ"
+
+msgid "Set"
+msgstr "Bộ"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr "Đặt 0 để không giới hạn. Đặt giá trị trống để đặt lại về mặc định."
+
+msgid "Set Global Shared"
+msgstr "Thiết lập chia sẻ toàn cầu"
+
+msgid "Set as Default"
+msgstr "Đặt làm Mặc định"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Đặt các tên miền đã chọn để có thể xem công khai từ"
+
+msgid "Set selected to"
+msgstr "Đặt đã chọn thành"
+
+msgid "Set to"
+msgstr "Đặt thành"
+
+msgid "Setting"
+msgstr "Cài đặt"
+
+msgid "Setting changed"
+msgstr "Cài đặt đã thay đổi"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Thiết lập quyền cho tệp/thư mục đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "Settings Saved"
+msgstr "Cài đặt đã lưu"
+
+msgid "Share Selected"
+msgstr "Chia sẻ đã chọn"
+
+msgid "Share a static path"
+msgstr "Chia sẻ đường dẫn tĩnh"
+
+msgid "Shared"
+msgstr "Chia sẻ"
+
+msgid "Shared - randomly selected"
+msgstr "Chia sẻ - được chọn ngẫu nhiên"
+
+msgid "Shell Access (ssh)"
+msgstr "Truy cập Shell (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "Shell dành cho người dùng của đại lý bán lại"
+
+msgid "Show"
+msgstr "Trình diễn"
+
+msgid "Sign"
+msgstr "Dấu hiệu"
+
+msgid "Signed"
+msgstr "Đã ký"
+
+msgid "Size"
+msgstr "Kích cỡ"
+
+msgid "Size is not a number"
+msgstr "Kích thước không phải là một con số"
+
+msgid "Skin"
+msgstr "Da"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "Da '%s' không có bất kỳ biến màu tùy chỉnh nào để thiết lập"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "Skin đã xóa"
+
+msgid "Skin Installed"
+msgstr "Đã cài đặt Skin"
+
+msgid "Skin Name"
+msgstr "Tên da"
+
+msgid "Skin Owner"
+msgstr "Chủ sở hữu da"
+
+msgid "Skin Set"
+msgstr "Bộ da"
+
+msgid "Skin applied to all users"
+msgstr "Skin áp dụng cho tất cả người dùng"
+
+msgid "Skin has been customized"
+msgstr "Da đã được tùy chỉnh"
+
+msgid "Skin has been successfully changed"
+msgstr "Da đã được thay đổi thành công"
+
+msgid "Skins Deleted"
+msgstr "Skin đã xóa"
+
+msgid "Skip Suspended"
+msgstr "Bỏ qua Đã tạm dừng"
+
+msgid "Skipped rule added"
+msgstr "Đã thêm quy tắc bỏ qua"
+
+msgid "Skipping system E-Mail account"
+msgstr "Hệ thống bỏ qua Tài khoản E-Mail"
+
+msgid "Slave of a load balancing bundle."
+msgstr "Nô lệ của một gói cân bằng tải."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "Xin lỗi, chức năng này hiện không hỗ trợ con trỏ miền"
+
+msgid "Sort"
+msgstr "Loại"
+
+msgid "Sort Selected Column in"
+msgstr "Sắp xếp cột đã chọn trong"
+
+msgid "Source Domain"
+msgstr "Miền nguồn"
+
+msgid "Spam"
+msgstr "Thư rác"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAassassin đã bị vô hiệu hóa trên tài khoản của bạn"
+
+msgid "SpamAssassin"
+msgstr "Kẻ phá hoại SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "Spamassassin bị vô hiệu hóa"
+
+msgid "Spambox"
+msgstr "Hộp thư rác"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd không chạy trên hệ thống của bạn."
+
+msgid "Splitting error for unix socket"
+msgstr "Lỗi chia tách cho socket unix"
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr "Ổn định"
+
+msgid "Start"
+msgstr "Bắt đầu"
+
+msgid "Start Time"
+msgstr "Thời gian bắt đầu"
+
+msgid "Start Time must be before End Time."
+msgstr "Thời gian bắt đầu phải trước thời gian kết thúc."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "Tiểu bang/Tỉnh chỉ được chứa các chữ cái, khoảng cách và/hoặc dấu chấm"
+
+msgid "Stats links created"
+msgstr "Liên kết thống kê được tạo"
+
+msgid "Stats links removed"
+msgstr "Liên kết thống kê đã bị xóa"
+
+msgid "Status"
+msgstr "Trạng thái"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "Trạng thái"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "Không được phép sử dụng bit dính: 777 là mức quyền tối đa được phép"
+
+msgid "Stop"
+msgstr "Dừng lại"
+
+msgid "Stopped"
+msgstr "Đã dừng lại"
+
+msgid "String contains an invalid email address"
+msgstr "Chuỗi chứa địa chỉ email không hợp lệ"
+
+msgid "Sub Domains"
+msgstr "Tên miền phụ"
+
+msgid "Sub Sort"
+msgstr "Sắp xếp phụ"
+
+msgid "Sub Sort Selected Column in"
+msgstr "Sắp xếp phụ cột đã chọn trong"
+
+msgid "Sub-domain is forbidden"
+msgstr "Tên miền phụ bị cấm"
+
+msgid "SubDomain Name"
+msgstr "Tên miền phụ"
+
+msgid "Subdomain Created"
+msgstr "Đã tạo tên miền phụ"
+
+msgid "Subdomain Removed"
+msgstr "Đã xóa tên miền phụ"
+
+msgid "Subdomain Stats"
+msgstr "Thống kê tên miền phụ"
+
+msgid "Subdomain already exists"
+msgstr "Tên miền phụ đã tồn tại"
+
+msgid "Subdomain created"
+msgstr "Đã tạo tên miền phụ"
+
+msgid "Subdomain does not exist"
+msgstr "Tên miền phụ không tồn tại"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Tên miền phụ quá dài. Tối đa %d ký tự."
+
+msgid "Subdomains"
+msgstr "Tên miền phụ"
+
+msgid "Subdomains Removed"
+msgstr "Đã xóa tên miền phụ"
+
+msgid "Subdomains deleted"
+msgstr "Tên miền phụ đã xóa"
+
+msgid "Subject"
+msgstr "Chủ thể"
+
+msgid "Subject Contains"
+msgstr "Chủ đề chứa"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Tiền tố chủ đề chứa các ký tự không hợp lệ. Sử dụng %s"
+
+msgid "Subscriber"
+msgstr "Người đăng ký"
+
+msgid "Subscribers"
+msgstr "Người đăng ký"
+
+msgid "Success"
+msgstr "Thành công"
+
+msgid "Supports multicast"
+msgstr "Hỗ trợ đa hướng"
+
+msgid "Suspend"
+msgstr "Đình chỉ"
+
+msgid "Suspend / Unsuspend"
+msgstr "Tạm dừng / Bỏ tạm dừng"
+
+msgid "Suspend Reason"
+msgstr "Lý do tạm dừng"
+
+msgid "Suspend at Limit"
+msgstr "Tạm dừng ở mức giới hạn"
+
+msgid "Suspended"
+msgstr "Cấm"
+
+msgid "Syntax check has been disabled"
+msgstr "Kiểm tra cú pháp đã bị vô hiệu hóa"
+
+msgid "System Info"
+msgstr "Thông tin hệ thống"
+
+msgid "System Rebooting Now!"
+msgstr "Hệ thống đang khởi động lại ngay bây giờ!"
+
+msgid "System Uptime"
+msgstr "Thời gian hoạt động của hệ thống"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+"Tài khoản hệ thống tồn tại, nhưng không thể đọc tệp dữ liệu Người dùng cho "
+"người dùng %s"
+
+msgid "Systems Quotas are size 0."
+msgstr "Hệ thống hạn ngạch có kích thước là 0."
+
+msgid "TB"
+msgstr "Bệnh lao"
+
+msgid "TTL has been saved"
+msgstr "TTL đã được lưu"
+
+msgid "Table"
+msgstr "Bàn"
+
+msgid "Tail"
+msgstr "Đuôi"
+
+msgid "Tasks Max"
+msgstr "Nhiệm vụ tối đa"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"Tệp tạm thời %s có 0 byte sau khi ghi vào đĩa. Sẽ không đổi tên tệp này."
+
+msgid "Template does not exist"
+msgstr "Mẫu không tồn tại"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "Tăng băng thông tạm thời"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+"Khóa hành động tài khoản tạm thời tại chỗ. Có thể có một số quy trình khác "
+"đang hoạt động trên tài khoản. Điều này sẽ kéo dài không quá %d phút"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "Đã thiết lập tăng băng thông tạm thời"
+
+msgid "Text"
+msgstr "Chữ"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "ID đó không phải là loại 'admin'"
+
+msgid "That IP already exists on the domain"
+msgstr "IP đó đã tồn tại trên miền"
+
+msgid "That IP does not exist"
+msgstr "IP đó không tồn tại"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "Địa chỉ IP đó không tồn tại trong danh sách IP của Người dùng của bạn"
+
+msgid "That IP does not exist in your list"
+msgstr "Địa chỉ IP đó không tồn tại trong danh sách của bạn"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "Địa chỉ IP đó đã có trong danh sách Địa chỉ IP bổ sung của bạn"
+
+msgid "That IP is already owned"
+msgstr "IP đó đã có chủ sở hữu rồi"
+
+msgid "That IP is not available for linking"
+msgstr "IP đó không có sẵn để liên kết"
+
+msgid "That User already exists on another server"
+msgstr "Người dùng đó đã tồn tại trên một máy chủ khác"
+
+msgid "That database already exists"
+msgstr "Cơ sở dữ liệu đó đã tồn tại"
+
+msgid "That database does not belong to you"
+msgstr "Cơ sở dữ liệu đó không thuộc về bạn"
+
+msgid "That database does not exist"
+msgstr "Cơ sở dữ liệu đó không tồn tại"
+
+msgid "That domain already exists"
+msgstr "Tên miền đó đã tồn tại"
+
+msgid "That domain already exists on another server"
+msgstr "Tên miền đó đã tồn tại trên một máy chủ khác"
+
+msgid "That domain does not belong to you"
+msgstr "Tên miền đó không thuộc về bạn"
+
+msgid "That domain does not exist"
+msgstr "Tên miền đó không tồn tại"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "Tên miền đó đã bị đình chỉ. Hãy hủy đình chỉ trước khi đổi tên"
+
+msgid "That email user does not exist"
+msgstr "Người dùng email đó không tồn tại"
+
+msgid "That file was empty"
+msgstr "Tập tin đó trống rỗng"
+
+msgid "That filter already exists"
+msgstr "Bộ lọc đó đã tồn tại"
+
+msgid "That ftp_password file does not exist"
+msgstr "Tệp ftp_password đó không tồn tại"
+
+msgid "That is an invalid email address / email list"
+msgstr "Đó là địa chỉ email / danh sách email không hợp lệ"
+
+msgid "That is an invalid filename"
+msgstr "Đó là một tên tập tin không hợp lệ"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Đó không phải là đường dẫn hợp lệ. Hoặc là nó không nằm trong thư mục gốc "
+"của bạn, nó chứa các liên kết tượng trưng hoặc nó chứa các ký tự không hợp lệ"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Đó không phải là đường dẫn hợp lệ. Hoặc là nó không có trong thư mục gốc của "
+"bạn, nó không tồn tại, nó chứa các liên kết tượng trưng hoặc nó chứa các ký "
+"tự không hợp lệ"
+
+msgid "That is not a valid quota"
+msgstr "Đó không phải là hạn ngạch hợp lệ"
+
+msgid "That is not a valid username"
+msgstr "Đó không phải là tên người dùng hợp lệ"
+
+msgid "That is not your domain"
+msgstr "Đó không phải là lĩnh vực của bạn"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Đó là tên máy chủ được giữ lại. Hoặc thay đổi tên máy chủ, hoặc sử dụng một "
+"tên miền khác"
+
+msgid "That key does not exist"
+msgstr "Chìa khóa đó không tồn tại"
+
+msgid "That password is incorrect"
+msgstr "Mật khẩu đó không đúng"
+
+msgid "That path isn't protectable"
+msgstr "Con đường đó không thể bảo vệ được"
+
+msgid "That pop account doesn't exist"
+msgstr "Tài khoản pop đó không tồn tại"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Skin đó không thể tùy chỉnh được. Skin.conf của nó yêu cầu %s"
+
+msgid "That skin does not exist"
+msgstr "Làn da đó không tồn tại"
+
+msgid "That skin is not in your list"
+msgstr "Da đó không có trong danh sách của bạn"
+
+msgid "That skin name already exists"
+msgstr "Tên skin đó đã tồn tại"
+
+msgid "That user already exists"
+msgstr "Người dùng đó đã tồn tại"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+"Người dùng đó chứa ký tự phân cách ftp (%c) không thể có trong tên người "
+"dùng."
+
+msgid "That user does not belong to you"
+msgstr "Người dùng đó không thuộc về bạn"
+
+msgid "That user does not exist"
+msgstr "Người dùng đó không tồn tại"
+
+msgid "That user doesn't exist"
+msgstr "Người dùng đó không tồn tại"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Người dùng đó được dành riêng cho tài khoản ẩn danh"
+
+msgid "That username already exists on the system"
+msgstr "Tên người dùng đó đã tồn tại trên hệ thống"
+
+msgid "That username is a reserved system name"
+msgstr "Tên người dùng đó là tên hệ thống được dành riêng"
+
+msgid "That zone already exists"
+msgstr "Khu vực đó đã tồn tại"
+
+msgid "Thats a reserved skin name."
+msgstr "Đó là tên skin được giữ riêng."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "Các bản sao lưu %s đã được tạo trong %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "Giá trị 'ttl' được truyền không phải là số hoặc quá lớn"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "Người quản trị đã vô hiệu hóa chức năng sao lưu người dùng"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr ""
+"Chứng chỉ CA sẽ không được sử dụng. Tệp sẽ vẫn còn nhưng sẽ không được bao "
+"gồm."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"Giá trị CC được nhập sẽ tạo ra một vòng lặp vô hạn. Vui lòng sử dụng một giá "
+"trị CC khác."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "E-Mail '%s' chứa các ký tự không hợp lệ"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP %s không tồn tại. Người dùng %s sẽ không được tạo"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "Địa chỉ IP %s đã cung cấp mật khẩu chính xác cho tài khoản %s."
+
+msgid "The Ticket System is not enabled."
+msgstr "Hệ thống vé không được kích hoạt."
+
+msgid "The User backups have been uploaded to"
+msgstr "Các bản sao lưu của người dùng đã được tải lên"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "Các tập tin người dùng đã được khôi phục từ %s"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "Bộ nhớ đệm hiển thị của Người dùng sẽ được cập nhật ngay lập tức."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "Các địa chỉ sẽ bị mất khi giao diện ngừng hoạt động."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Bộ nhớ đệm đang được cập nhật, giá trị hiện tại có thể không chính xác. Vui "
+"lòng làm mới trang sau 1 phút."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Chứng chỉ và khóa không khớp. Vui lòng đảm bảo bạn đang sử dụng đúng khóa "
+"với chứng chỉ này"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "Bảng tạm đã bị vô hiệu hóa với tùy chọn filemanager_disable_features"
+
+msgid "The command cannot contain any newline characters"
+msgstr "Lệnh không thể chứa bất kỳ ký tự xuống dòng nào"
+
+msgid "The database '%s' does not belong to you"
+msgstr "Cơ sở dữ liệu '%s' không thuộc về bạn"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "Ngày trong tháng không phải là giá trị cron hợp lệ (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "Ngày trong tuần không phải là giá trị cron hợp lệ (0-7)"
+
+msgid "The default has been set"
+msgstr "Mặc định đã được thiết lập"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"Thư mục %s có vẻ như thuộc sở hữu của 'apache'. Hãy thử sử dụng tùy chọn "
+"'Đặt lại chủ sở hữu', sau đó thử lại."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+"Tổng dung lượng đĩa được sử dụng cho Người dùng được chọn lớn hơn %d MB, do "
+"đó sẽ bị xóa ở chế độ nền."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Tên miền %s không thuộc về bạn."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "Tên miền %s không thuộc về bạn. Tên miền phụ sẽ không được tạo."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "Tên miền đã nhập không hợp lệ. Tên miền phải có dạng 'sourcedomain.com'"
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "Mặc định đã được thiết lập"
+
+msgid "The domain must not match your hostname."
+msgstr "Tên miền không được trùng với tên máy chủ của bạn."
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "Không có thay đổi nào được thực hiện"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "Email có chứa mật khẩu mới của bạn đã được gửi."
+
+msgid "The email address provided is not a valid email address"
+msgstr "Địa chỉ email được cung cấp không phải là địa chỉ email hợp lệ"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Đường dẫn nhập vào phải là a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "Tệp %s có nhiều hơn 1 liên kết cứng"
+
+msgid "The file is generated when the account is reset."
+msgstr "Tệp này được tạo khi tài khoản được thiết lập lại."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Tệp phải có dạng: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Tệp phải có dạng: username.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "Tệp: '%s' không có dạng username.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Không tìm thấy tệp sau. Không cần thiết lập lại"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Các liên kết cứng sau đây đã được tìm thấy trong Người dùng %s:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "Người dùng ftp %s không tồn tại trong tệp passwd %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "Tên định dạng đầy đủ được nhập không kết thúc bằng tên của vùng"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "Đường dẫn url cục bộ hoặc url đích không hợp lệ."
+
+msgid "The location has not changed"
+msgstr "Vị trí không thay đổi"
+
+msgid "The max upload size cannot be 0"
+msgstr "Kích thước tải lên tối đa không thể là 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "Giá trị tối đa cho %s là %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "Giá trị lớn nhất là %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "Tối thiểu cho %s là %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "Tháng không phải là giá trị cron hợp lệ (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "Tên bạn đã nhập chứa các ký tự không hợp lệ"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "Khóa mới đã được tạo, nhưng có sự cố trong quá trình cấp phép"
+
+msgid "The new passwords do not match"
+msgstr "Mật khẩu mới không khớp"
+
+msgid "The number and type of ticket is required"
+msgstr "Số lượng và loại vé cần thiết"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "Chủ sở hữu của %s không phải là %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "Tính năng thay đổi mật khẩu đã bị vô hiệu hóa"
+
+msgid "The path %s already exists"
+msgstr "Đường dẫn %s đã tồn tại"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Đường dẫn đã tồn tại nhưng không phải là thư mục"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"Tiến trình hiện đang được sử dụng để thực hiện yêu cầu này nên nó sẽ sớm "
+"được Hàng đợi tác vụ thực hiện."
+
+msgid "The provided IP is not valid"
+msgstr "Địa chỉ IP được cung cấp không hợp lệ"
+
+msgid "The provided domain name matches your hostname."
+msgstr "Tên miền được cung cấp trùng khớp với tên máy chủ của bạn."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+"Yêu cầu bạn đã thực hiện không thể được thực hiện vì nó không tồn tại trong "
+"cấp độ thẩm quyền của bạn"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "Lệnh được yêu cầu yêu cầu POST nhưng GET đã được sử dụng"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"Gói skin không được cài đặt đúng cách. Hoặc là thiếu file, hoặc quyền của "
+"chúng không được thiết lập đúng"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Tên miền phụ '%s' đã tồn tại trong tên miền %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"Thời gian phải được định dạng theo một trong những định dạng sau (ví dụ: "
+"giờ, không có khoảng trắng)"
+
+msgid "The user %s does not belong to you"
+msgstr "Người dùng %s không thuộc về bạn"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Tên người dùng không hợp lệ. Tên người dùng phải bắt đầu bằng a-z, chứa >= 3 "
+"ký tự và <= %d."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "Tên người dùng không hợp lệ. Tên người dùng phải sử dụng a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Giá trị phải là địa chỉ IP"
+
+msgid "The very last entry."
+msgstr "Mục nhập cuối cùng."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Email chào mừng đã được gửi lại thành công."
+
+msgid "There are no messages for that ticket"
+msgstr "Không có tin nhắn nào cho vé đó"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "Vẫn còn %d tuyến đường sử dụng '%s'."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+"Vẫn còn Người dùng trên %s. Trước tiên hãy xóa họ khỏi IP và đặt thành 'miễn "
+"phí'."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr ""
+"Đã có %d lần gia hạn không thành công, do đó sẽ không có lần thử nào nữa.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Đã có một bản ghi CNAME với tên đó"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "Đã có một danh sách bí danh gửi thư với tên đó"
+
+msgid "There is already an A record with that name"
+msgstr "Đã có một bản ghi A có tên đó"
+
+msgid "There is already an account with that name"
+msgstr "Đã có một tài khoản có tên đó"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Đã có một trình trả lời tự động có tên đó"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "Không đủ dung lượng trên %s để tải lên %lld byte dữ liệu"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "Chỉ có 1 bản ghi %s cho %s=%s, không xóa nó"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Đây là những giá trị động. Chúng thay đổi theo ngày."
+
+msgid "This Login Key is read-only"
+msgstr "Khóa đăng nhập này chỉ có thể đọc"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Hệ điều hành này hiện đã kết thúc vòng đời. Các bản cập nhật tự động trong "
+"tương lai có thể không thành công."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"Tài khoản Đại lý này không thể phân bổ %s không giới hạn, tuy nhiên số lượng "
+"đó đã được phân bổ."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"Tài khoản này đã tồn tại trên hệ thống. Nếu bạn khôi phục, nó sẽ ghi đè và/"
+"hoặc hợp nhất dữ liệu."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "Tài khoản này bị chặn thông qua BlockCracking."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr ""
+"Tài khoản này bị chặn thông qua BlockCracking. Việc bỏ chặn đã bị vô hiệu "
+"hóa."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"Tên miền này hiện sẽ tạm thời sử dụng Chứng chỉ máy chủ chia sẻ, trừ khi bạn "
+"khôi phục khóa sao lưu (nhưng hãy sao lưu khóa mới trước nếu không khóa sẽ "
+"bị mất)"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+"Đây là một URL Hash đăng nhập. Bạn có thể xóa nó, nhưng bạn không thể sửa "
+"đổi nó"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+"Đây là URL đăng nhập Hash. Bạn có thể xóa nó nhưng không thể sửa đổi nó."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "Đây là một trình giữ chỗ cho tên miền phụ"
+
+msgid "This may give unexpected results"
+msgstr "Điều này có thể mang lại kết quả bất ngờ"
+
+msgid "This may give unexpected results."
+msgstr "Điều này có thể mang lại kết quả không mong muốn."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr "Điều này có thể đúng nếu DNS được điều khiển từ xa."
+
+msgid "This plugin has been disabled for your account"
+msgstr "Plugin này đã bị vô hiệu hóa cho tài khoản của bạn"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+"Điều này chỉ xảy ra *sau khi* nhật ký tồn tại (tên miền phải được giải quyết "
+"và sử dụng)."
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr "Thao tác này sẽ bỏ qua việc xóa vùng DNS và giữ nguyên vùng đó."
+
+msgid "Thread Count"
+msgstr "Số lượng sợi"
+
+msgid "Throttle Memory above this limit."
+msgstr "Bộ nhớ bị giới hạn quá mức này."
+
+msgid "Ticket #"
+msgstr "Vé #"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "Bộ hạn ngạch hệ thống của người dùng"
+
+msgid "Tickets Updated"
+msgstr "Vé đã cập nhật"
+
+msgid "Time"
+msgstr "Thời gian"
+
+msgid "Timeout during read"
+msgstr "Hết thời gian chờ trong khi đọc"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "Hết thời gian chờ khi cố gắng kết nối tới %s"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "Múi giờ '%s' không tồn tại trên hệ thống"
+
+msgid "Timezone does not exist"
+msgstr "Múi giờ không tồn tại"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"Để thêm một công việc cron, bạn cần tất cả những điều sau: phút, giờ, "
+"ngàytrongtháng, tháng, ngàytrongtuần và lệnh"
+
+msgid "Today"
+msgstr "Hôm nay"
+
+msgid "Today at"
+msgstr "Hôm nay tại"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Số lượng E-Mail hôm nay đã được thiết lập lại cho Người dùng %s"
+
+msgid "Too long"
+msgstr "Quá dài"
+
+msgid "Too short"
+msgstr "Quá ngắn"
+
+msgid "Total"
+msgstr "Tổng cộng"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Tổng dung lượng đĩa sử dụng (MB)"
+
+msgid "Total Memory"
+msgstr "Tổng bộ nhớ"
+
+msgid "Total Size:"
+msgstr "Tổng kích thước:"
+
+msgid "Total Swap Memory"
+msgstr "Tổng bộ nhớ hoán đổi"
+
+msgid "Total Usage"
+msgstr "Tổng số sử dụng"
+
+msgid "Two-Step Authentication code is missing."
+msgstr "Mã xác thực hai bước bị thiếu."
+
+msgid "Type"
+msgstr "Kiểu"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Loại '%s' bị vô hiệu hóa"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "Kiểu phải là 'dán' hoặc 'id'"
+
+msgid "UID"
+msgstr "Mã số nhận dạng"
+
+msgid "URL"
+msgstr "Địa chỉ URL"
+
+msgid "URL already exists"
+msgstr "URL đã tồn tại"
+
+msgid "Un-Link"
+msgstr "Hủy liên kết"
+
+msgid "Un-Set"
+msgstr "Bỏ cài đặt"
+
+msgid "Unable To Execute Your Request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+msgid "Unable to Execute Your Command"
+msgstr "Không thể thực hiện lệnh của bạn"
+
+msgid "Unable to Locate that domain"
+msgstr "Không thể xác định được tên miền đó"
+
+msgid "Unable to add IP"
+msgstr "Không thể thêm IP"
+
+msgid "Unable to add access host:"
+msgstr "Không thể thêm máy chủ truy cập:"
+
+msgid "Unable to add domain pointer"
+msgstr "Không thể thêm con trỏ miền"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Không thể thêm người dùng vào tệp cấu hình ssh"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Không thể phân bổ %s không giới hạn. Tài khoản này không được phép tạo số "
+"lượng đó."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+"Không thể chỉ định bất kỳ IP nào cho Người bán lại. Hãy đảm bảo có IP trống, "
+"chưa chỉ định."
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "Không thể xác thực: Kiểm tra cú pháp mật khẩu của bạn"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Không thể xác thực: Mật khẩu không hợp lệ"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "Không thể thay đổi %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "Không thể thay đổi kênh cập nhật Directadmin"
+
+msgid "Unable to change password"
+msgstr "Không thể thay đổi mật khẩu"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Không thể thay đổi Địa chỉ E-Mail"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Không thể thay đổi Địa chỉ E-Mail của Hệ thống Tin nhắn"
+
+msgid "Unable to change the Name"
+msgstr "Không thể thay đổi Tên"
+
+msgid "Unable to change the limit"
+msgstr "Không thể thay đổi giới hạn"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "Không thể thay đổi mức tăng băng thông tạm thời"
+
+msgid "Unable to check latest version"
+msgstr "Không thể kiểm tra phiên bản mới nhất"
+
+msgid "Unable to connect to secure socket"
+msgstr "Không thể kết nối với ổ cắm an toàn"
+
+msgid "Unable to connect to the database"
+msgstr "Không thể kết nối với cơ sở dữ liệu"
+
+msgid "Unable to create a Reseller"
+msgstr "Không thể tạo Người bán lại"
+
+msgid "Unable to create a User"
+msgstr "Không thể tạo Người dùng"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "Không thể tạo thư mục sao lưu (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Không thể tạo thư mục %s"
+
+msgid "Unable to create new file"
+msgstr "Không thể tạo tập tin mới"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Không thể tạo tra cứu IP ngược"
+
+msgid "Unable to create subdomain"
+msgstr "Không thể tạo tên miền phụ"
+
+msgid "Unable to create user's data directory"
+msgstr "Không thể tạo thư mục dữ liệu của người dùng"
+
+msgid "Unable to create zone"
+msgstr "Không thể tạo vùng"
+
+msgid "Unable to create zone."
+msgstr "Không thể tạo vùng."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Không thể xóa %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Không thể xóa thư mục %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Không thể xóa tập tin"
+
+msgid "Unable to delete the main email account"
+msgstr "Không thể xóa tài khoản email chính"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "Không thể xóa tệp ip.list của đại lý."
+
+msgid "Unable to delete users's domains directory"
+msgstr "Không thể xóa thư mục tên miền của người dùng"
+
+msgid "Unable to edit file"
+msgstr "Không thể chỉnh sửa tập tin"
+
+msgid "Unable to execute script"
+msgstr "Không thể thực thi tập lệnh"
+
+msgid "Unable to execute your command"
+msgstr "Không thể thực hiện lệnh của bạn"
+
+msgid "Unable to execute your request"
+msgstr "Không thể thực hiện yêu cầu của bạn"
+
+msgid "Unable to export packages"
+msgstr "Không thể xuất gói"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Không thể trích xuất %s từ"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Không thể trích xuất user.conf, reseller.conf hoặc ip.list từ"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Không tìm thấy %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Không tìm thấy chứng chỉ CA"
+
+msgid "Unable to find certificate"
+msgstr "Không tìm thấy chứng chỉ"
+
+msgid "Unable to find key"
+msgstr "Không tìm thấy chìa khóa"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "Không thể lấy số liệu thống kê tệp trên %s"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Không thể khóa được %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr "Không thể lấy được mật khẩu đã mã hóa của người dùng cho tệp ftp passwd"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "Không thể khóa khu vực %s"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "Không thể khóa %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Không thể khóa các hành động của tài khoản '%s'"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Không thể khóa người dùng %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr "Không thể sửa đổi tên miền đó"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "Không thể mở %s để thêm vào"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "Không thể mở %s để thêm: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "Không thể mở %s để đọc"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "Không thể mở %s để ghi: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "Không thể mở %s: %s"
+
+msgid "Unable to open a socket"
+msgstr "Không thể mở ổ cắm"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "Không thể mở tệp chứng chỉ ca (%s) để ghi vào: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "Không thể mở tệp chứng chỉ (%s) để ghi vào: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "Không thể phân tích cú pháp %s từ đầu ra của tập lệnh '%s '(%s):"
+
+msgid "Unable to parse form"
+msgstr "Không thể phân tích biểu mẫu"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "Không thể đọc %s như tài khoản %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Không thể đọc các tập tin người dùng của %s"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr "Không thể đọc %s. Tệp này chỉ được tạo sau khi chạy kiểm đếm."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr "Không thể đọc %s. Tệp này chỉ được tạo khi email được gửi."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Không thể đọc %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Không thể đọc tệp DS %s"
+
+msgid "Unable to read History File."
+msgstr "Không thể đọc Tệp Lịch sử."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Không thể đọc tập lệnh sao lưu RoundCube: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Không thể đọc tập lệnh khôi phục RoundCube: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Không thể đọc dữ liệu từ %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "Không thể đọc directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "Không thể đọc các tập tin cấu hình miền"
+
+msgid "Unable to read login history file"
+msgstr "Không thể đọc tệp lịch sử đăng nhập"
+
+msgid "Unable to read package"
+msgstr "Không thể đọc được gói"
+
+msgid "Unable to read system uptime"
+msgstr "Không thể đọc thời gian hoạt động của hệ thống"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr "Không thể đọc tệp mật khẩu ftp của hệ thống để thêm người dùng vào đó."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr "Không thể đọc tệp mật khẩu ftp hệ thống để xóa người dùng ftp hệ thống"
+
+msgid "Unable to read the user's files"
+msgstr "Không thể đọc được các tập tin của người dùng"
+
+msgid "Unable to read ticket config file"
+msgstr "Không thể đọc tệp cấu hình ticket"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "Không thể đọc tệp vùng để tăng số sê-ri"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "Không thể đọc zonefile cho %s"
+
+msgid "Unable to reboot"
+msgstr "Không thể khởi động lại"
+
+msgid "Unable to remove IP(s)"
+msgstr "Không thể xóa IP(s)"
+
+msgid "Unable to remove Unix User."
+msgstr "Không thể xóa Người dùng Unix."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "Không thể xóa tất cả người dùng của đại lý"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Không thể đổi tên %s thành %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "Không thể khôi phục %s thành %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Không thể khôi phục '%s' vì không tìm thấy Reseller hoặc Admin '%s'. Đổi tên "
+"tệp nếu cần."
+
+msgid "Unable to restore database"
+msgstr "Không thể khôi phục cơ sở dữ liệu"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "Không thể lưu vùng DNS: named-checkzone trả về:"
+
+msgid "Unable to save your changes"
+msgstr "Không thể lưu thay đổi của bạn"
+
+msgid "Unable to set bandwidth"
+msgstr "Không thể thiết lập băng thông"
+
+msgid "Unable to set file permissions"
+msgstr "Không thể thiết lập quyền cho tệp"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "Không thể thiết lập ip %s làm máy chủ tên. Vẫn tiếp tục."
+
+msgid "Unable to set password"
+msgstr "Không thể thiết lập mật khẩu"
+
+msgid "Unable to set quota"
+msgstr "Không thể thiết lập hạn ngạch"
+
+msgid "Unable to set stats link"
+msgstr "Không thể thiết lập liên kết thống kê"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Không thể thiết lập Giới hạn E-Mail"
+
+msgid "Unable to set the shell"
+msgstr "Không thể thiết lập shell"
+
+msgid "Unable to show Admin History"
+msgstr "Không thể hiển thị Lịch sử quản trị"
+
+msgid "Unable to show Reseller History"
+msgstr "Không thể hiển thị Lịch sử đại lý"
+
+msgid "Unable to show User History"
+msgstr "Không thể hiển thị Lịch sử người dùng"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Không thể hiển thị mức sử dụng E-Mail hiện tại"
+
+msgid "Unable to show the system information"
+msgstr "Không thể hiển thị thông tin hệ thống"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "Không thể chuyển %s thành %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Không thể mở khóa người dùng %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Không thể cập nhật Directadmin"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Không thể cập nhật mức sử dụng đĩa của bạn"
+
+msgid "Unable to use that new domain name"
+msgstr "Không thể sử dụng tên miền mới đó"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Không thể ghi các tập tin người dùng của %s"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Không thể ghi %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "Không thể ghi httpd.conf của Người dùng"
+
+msgid "Unable to write reseller's IP list"
+msgstr "Không thể ghi danh sách IP của đại lý"
+
+msgid "Unable to write the domain config file"
+msgstr "Không thể ghi tệp cấu hình miền"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+"Không thể ghi tệp mật khẩu ftp chính. Những thay đổi của bạn sẽ không có "
+"hiệu lực."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Không thể ghi tệp hạn ngạch. Hãy cho người quản trị của bạn biết rằng %s "
+"không thể ghi được."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr "Không thể ghi tệp mật khẩu ftp hệ thống để xóa người dùng ftp hệ thống"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Không thể ghi tệp usage.cache. Hãy cho người quản trị của bạn biết rằng %s "
+"không thể ghi được."
+
+msgid "Unable to write ticket config"
+msgstr "Không thể viết cấu hình ticket"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"Không thể ghi vào tệp mật khẩu. Hãy cho quản trị viên của bạn biết rằng %s "
+"không thể ghi được."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+"Không thể ghi vào tệp mật khẩu ftp của hệ thống để thêm người dùng vào đó."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "Không thể ghi tệp vùng để tăng số sê-ri"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "Không thể ghi zonefile cho %s"
+
+msgid "Unblock"
+msgstr "Bỏ chặn"
+
+msgid "Unblocking is disabled."
+msgstr "Tính năng bỏ chặn đã bị vô hiệu hóa."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "Bỏ chọn sẽ xóa ngay lập tức tệp khỏi đĩa và không thể khôi phục được"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr "Lỗi không mong muốn, vui lòng liên hệ với quản trị viên máy chủ"
+
+msgid "Unhandled exception name"
+msgstr "Tên ngoại lệ chưa được xử lý"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "Tuyến đường chưa được xử lý %s giá trị '%s'"
+
+msgid "Unix User created successfully"
+msgstr "Người dùng Unix đã được tạo thành công"
+
+msgid "Unix User removed from the server"
+msgstr "Người dùng Unix đã bị xóa khỏi máy chủ"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr ""
+"Địa chỉ IP/cổng proxy Unix không được có bất kỳ đường dẫn, truy vấn hoặc băm "
+"nào"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "Không rõ '%s'"
+
+msgid "Unknown action"
+msgstr "Hành động không xác định"
+
+msgid "Unknown backup destination"
+msgstr "Điểm đến sao lưu không xác định"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "Loại chứng chỉ không xác định. Chỉ cho phép máy chủ, tạo và dán"
+
+msgid "Unknown ftp type"
+msgstr "Loại ftp không xác định"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "Tùy chọn không xác định '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "Giá trị không xác định cho %s"
+
+msgid "Unlimited"
+msgstr "Không giới hạn"
+
+msgid "Unsuspend"
+msgstr "Bỏ tạm dừng"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+"Cho đến khi bộ nhớ đệm được tạo, các giá trị có thể không chính xác. Làm mới "
+"trang sau 1 phút."
+
+msgid "Up a Level"
+msgstr "Lên một cấp độ"
+
+msgid "Update"
+msgstr "Cập nhật"
+
+msgid "Update Successful"
+msgstr "Cập nhật thành công"
+
+msgid "Update channel has been successfully changed"
+msgstr "Cập nhật kênh đã được thay đổi thành công"
+
+msgid "Update not necessary"
+msgstr "Không cần cập nhật"
+
+msgid "Update queued"
+msgstr "Cập nhật hàng đợi"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+"Xác nhận tải lên không thành công đối với %s: byte từ xa %lld không khớp với "
+"byte cục bộ %lld."
+
+msgid "Upload successful"
+msgstr "Tải lên thành công"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "Tệp đã tải lên không hợp lệ để sao chép"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "Đã tải lên: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Việc tải lên các tập tin đã bị vô hiệu hóa với tùy chọn "
+"filemanager_disable_features"
+
+msgid "Usage (Meg)"
+msgstr "Sử dụng (Meg)"
+
+msgid "Usage Log"
+msgstr "Nhật ký sử dụng"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "Số liệu thống kê sử dụng vẫn chưa được thu thập cho tài khoản này"
+
+msgid "User"
+msgstr "Người sử dụng"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "Người dùng %s đã bị xóa"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "Người dùng %s đã tồn tại. Vui lòng chọn tên người dùng khác."
+
+#, c-format
+msgid "User %s created"
+msgstr "Người dùng %s đã được tạo"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr ""
+"Người dùng %s không tồn tại trên máy chủ. Đang xóa người dùng này khỏi danh "
+"sách của bạn."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "Người dùng %s không tồn tại trên hệ thống."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr ""
+"Người dùng %s tồn tại trên hệ thống nhưng không có trong danh sách Người "
+"dùng của bạn"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr ""
+"Người dùng %s đã được thêm vào cơ sở dữ liệu của bạn. Sử dụng các giá trị "
+"sau:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "Người dùng %s đã được sao lưu."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Người dùng %s đã được khôi phục"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Người dùng %s đã được cập nhật. Sử dụng các giá trị sau:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "Người dùng %s có một hoặc nhiều liên kết cứng trong đường dẫn của họ:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "Người dùng %s đã bị đình chỉ"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "Người dùng %s đã được bỏ lệnh đình chỉ"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr ""
+"Người dùng %s không có trong danh sách của bạn. Bạn không thể sao lưu cho "
+"người dùng đó."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+"Người dùng %s không có trong danh sách của bạn. Bạn không thể sao lưu cho họ."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "Người dùng %s không bị xóa. Không thể xóa tất cả người dùng của họ."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "Người dùng %s không phải do bạn tạo-> Chưa xóa."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr ""
+"Người dùng %s đã bị đình chỉ trong bản sao lưu. Tài khoản đã bị đình chỉ."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr ""
+"Người dùng %s đã bị đình chỉ trong bản sao lưu. Lỗi khi đình chỉ tài khoản:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "Người dùng '%s' không tồn tại"
+
+msgid "User Acconts"
+msgstr "Tài khoản người dùng"
+
+msgid "User Accounts"
+msgstr "Tài khoản người dùng"
+
+msgid "User Bandwidth"
+msgstr "Băng thông người dùng"
+
+msgid "User Comment Box"
+msgstr "Hộp bình luận của người dùng"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Kiểm soát DNSSEC của người dùng đã bị vô hiệu hóa"
+
+msgid "User Disk Quota"
+msgstr "Hạn ngạch đĩa của người dùng"
+
+msgid "User History"
+msgstr "Lịch sử người dùng"
+
+msgid "User Modified"
+msgstr "Người dùng đã sửa đổi"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "Nhật ký SMTP của người dùng không được bật"
+
+msgid "User Updated"
+msgstr "Người dùng đã cập nhật"
+
+msgid "User account is disabled"
+msgstr "Tài khoản người dùng đã bị vô hiệu hóa"
+
+msgid "User added to SSH config file successfully"
+msgstr "Người dùng đã được thêm vào tệp cấu hình SSH thành công"
+
+msgid "User added to database"
+msgstr "Người dùng đã được thêm vào cơ sở dữ liệu"
+
+msgid "User added to named.conf file successfully"
+msgstr "Người dùng đã được thêm vào tệp named.conf thành công"
+
+msgid "User added to ssh config file."
+msgstr "Người dùng đã được thêm vào tệp cấu hình ssh."
+
+msgid "User backups have been disabled."
+msgstr "Sao lưu người dùng đã bị vô hiệu hóa."
+
+msgid "User config file updated."
+msgstr "Đã cập nhật tệp cấu hình người dùng."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "Người dùng đã xóa"
+
+msgid "User removed from SSH"
+msgstr "Người dùng đã bị xóa khỏi SSH"
+
+msgid "User's System Quotas set"
+msgstr "Bộ hạn ngạch hệ thống của người dùng"
+
+msgid "User's config files deleted"
+msgstr "Đã xóa các tập tin cấu hình của người dùng"
+
+msgid "User's data directory created successfully"
+msgstr "Thư mục dữ liệu của người dùng đã được tạo thành công"
+
+msgid "User's data directory removed."
+msgstr "Thư mục dữ liệu của người dùng đã bị xóa."
+
+msgid "User(s)"
+msgstr "Người dùng"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "Thư mục người dùng: %s"
+
+msgid "Username"
+msgstr "Tên đăng nhập"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "Tên người dùng '%s' quá dài. Chiều dài %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "Tên người dùng quá ngắn. Tên người dùng phải dài ít nhất 2 ký tự."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"Tên người dùng phải là chữ cái và số (a-z, A-Z, 0-9), với ký tự đầu tiên là "
+"một chữ cái"
+
+msgid "Username:"
+msgstr "Tên người dùng:"
+
+msgid "Users"
+msgstr "Người sử dụng"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "Người dùng đã xóa"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "Người dùng %s đã bị xóa"
+
+msgid "Users will be deleted in the background."
+msgstr "Người dùng sẽ bị xóa trong nền."
+
+msgid "Users's domains directory removed."
+msgstr "Thư mục tên miền của người dùng đã bị xóa."
+
+msgid "Usertype"
+msgstr "Loại người dùng"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Không được phép sử dụng đường dẫn %s."
+
+msgid "Vacation Account"
+msgstr "Tài khoản nghỉ phép"
+
+msgid "Vacation Message Deleted"
+msgstr "Tin nhắn nghỉ phép đã xóa"
+
+msgid "Vacation Message set"
+msgstr "Tin nhắn nghỉ phép đã đặt"
+
+msgid "Vacation Message updated"
+msgstr "Tin nhắn nghỉ phép đã cập nhật"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "Tin nhắn nghỉ phép đã xóa"
+
+msgid "Valid"
+msgstr "Có hiệu lực"
+
+msgid "Valid broadcast address set."
+msgstr "Đã đặt địa chỉ phát sóng hợp lệ."
+
+msgid "Value"
+msgstr "Giá trị"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "Biến 'ip' bị thiếu trong bài nộp"
+
+msgid "Vendor ID"
+msgstr "ID nhà cung cấp"
+
+msgid "Verify"
+msgstr "Xác minh"
+
+msgid "View"
+msgstr "Xem"
+
+msgid "View Clipboard"
+msgstr "Xem Bảng tạm"
+
+msgid "View previous sort"
+msgstr "Xem sắp xếp trước đó"
+
+msgid "Warning from named-checkzone:"
+msgstr "Cảnh báo từ named-checkzone:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"Cảnh báo: %s có mật khẩu hợp lệ cho %s nhưng không nhập được mã Xác thực hai "
+"bước %s lần."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "Cảnh báo: Đã đạt đến giới hạn dung lượng. Tệp có thể trống."
+
+msgid "Warning: The system load average is"
+msgstr "Cảnh báo: Tải trọng trung bình của hệ thống là"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "Chúng tôi chỉ đọc %lld của tệp byte %lld từ %s"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "Thư điện tử"
+
+msgid "Webmail Attachments"
+msgstr "Tệp đính kèm Webmail"
+
+msgid "Webmail SSO"
+msgstr "SSO của Webmail"
+
+msgid "Week of Month"
+msgstr "Tuần của tháng"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "Giới hạn tỷ lệ hàng tuần %d cho '%s' đã đạt đến"
+
+msgid "What"
+msgstr "Cái gì"
+
+msgid "When"
+msgstr "Khi"
+
+msgid "Where"
+msgstr "Ở đâu"
+
+msgid "Who"
+msgstr "Ai"
+
+msgid "Wildcard"
+msgstr "Ký tự đại diện"
+
+msgid "With Selected"
+msgstr "Với Đã Chọn"
+
+msgid "With selected"
+msgstr "Với lựa chọn"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+"Với số lượng tên miền được phép bằng 0, Hotlink Protection đã bị vô hiệu hóa."
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Không kích hoạt được tài khoản của %s vì nó đã tắt"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Lỗi ghi với %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "Số lượng phần tử '%s' không đúng. Cho phép: 1 hoặc 2 với '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr ""
+"Số lượng giá trị 'pass' không đúng: %d trong '%s' (phân tách bằng dấu gạch "
+"chéo)"
+
+msgid "Year"
+msgstr "Năm"
+
+msgid "Yes"
+msgstr "Đúng"
+
+msgid "You already have the most recent version of the program"
+msgstr "Bạn đã có phiên bản mới nhất của chương trình"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+"Bạn đang xóa tài khoản Quản trị viên hoặc Đại lý có %d Người dùng nằm trong "
+"quyền kiểm soát của họ."
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Bạn không được phép bật ftp ẩn danh"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Bạn không được phép sửa đổi cài đặt ssl của mình"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr ""
+"Bạn đang cố gắng khôi phục tệp zst, nhưng zstd không được bật trên hệ thống."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "Bạn không được phép sửa đổi vé đó"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"Bạn có thể nhấp vào E-Mail bên dưới để đăng nhập ngay vào %s với tư cách là "
+"Người dùng này mà không cần biết mật khẩu."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"Bạn không thể tạo danh sách có tên là majordomo vì đó là bí danh được bảo lưu"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Bạn không thể tạm dừng root. Điều đó sẽ TỆ"
+
+msgid "You cannot add that extension"
+msgstr "Bạn không thể thêm phần mở rộng đó"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr ""
+"Bạn không thể chỉ định cho tên miền nhiều băng thông hơn tài khoản của bạn"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr ""
+"Bạn không thể chỉ định cho tên miền nhiều hạn ngạch hơn tài khoản của bạn"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "Bạn không thể tạo nhiều Người dùng hơn số miền được phép."
+
+msgid "You cannot delete all of your IPs"
+msgstr "Bạn không thể xóa tất cả IP của mình"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr ""
+"Bạn không thể xóa tài khoản %s vì nó được liên kết với tài khoản hệ thống "
+"của bạn"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Bạn không thể xóa chính mình (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Bạn không thể thực hiện lệnh đó"
+
+msgid "You cannot modify yourself"
+msgstr "Bạn không thể thay đổi chính mình"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"Bạn không thể khôi phục nhiều Người dùng trên một IP miễn phí. Trước tiên, "
+"IP phải được chia sẻ."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Bạn không thể đặt giới hạn gửi không giới hạn."
+
+msgid "You cannot suspend yourself"
+msgstr "Bạn không thể tự đình chỉ mình"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "Bạn không thể tạm dừng/hủy tạm dừng bản thân"
+
+msgid "You cannot unsuspend this account."
+msgstr "Bạn không thể hủy tạm ngừng tài khoản này."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr ""
+"Bạn không thể sử dụng tên miền đó như một con trỏ. Nó đã tồn tại trên máy chủ"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "Hiện tại bạn có %s Người dùng và tối đa %s tên miền."
+
+msgid "You did not select any domains to modify"
+msgstr "Bạn không chọn bất kỳ tên miền nào để sửa đổi"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "Bạn không chọn một IP khác, không có thay đổi nào được thực hiện"
+
+msgid "You didn't select anyone to send it to"
+msgstr "Bạn không chọn ai để gửi nó tới"
+
+msgid "You do not have control over user"
+msgstr "Bạn không có quyền kiểm soát người dùng"
+
+msgid "You do not own any IPs"
+msgstr "Bạn không sở hữu bất kỳ IP nào"
+
+msgid "You do not own that IP"
+msgstr "Bạn không sở hữu IP đó"
+
+msgid "You do not own that domain"
+msgstr "Bạn không sở hữu tên miền đó"
+
+msgid "You do not own that ip"
+msgstr "Bạn không sở hữu địa chỉ IP đó"
+
+msgid "You do not own that that cron ID"
+msgstr "Bạn không sở hữu ID cron đó"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "Bạn không sở hữu IP %s. Người dùng %s sẽ không được tạo"
+
+msgid "You don't have authority over that User"
+msgstr "Bạn không có thẩm quyền đối với Người dùng đó"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "Bạn không có quyền trả lời phiếu đó"
+
+msgid "You don't have permission to restore user"
+msgstr "Bạn không có quyền khôi phục người dùng"
+
+msgid "You don't have permission to view that ticket"
+msgstr "Bạn không có quyền xem vé đó"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "Bạn còn lại %d:%.2d."
+
+msgid "You have already reached your assigned limit"
+msgstr "Bạn đã đạt đến giới hạn được giao"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Bạn chưa thêm bất kỳ tập tin nào vào clipboard."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"Bạn chưa cung cấp cho người bán lại bất kỳ IP nào. Không thể tạo tên miền IP "
+"được chỉ định hoặc bất kỳ máy chủ tên nào mà không có bất kỳ"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Bạn chưa chọn bất kỳ Tệp nào. Vui lòng quay lại và chọn một số trước khi "
+"khôi phục bản sao lưu."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Bạn chưa chọn bất kỳ Người dùng nào. Vui lòng quay lại và chọn một số trước "
+"khi tạo bản sao lưu."
+
+msgid "You have not selected any domains"
+msgstr "Bạn chưa chọn bất kỳ tên miền nào"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"Bạn đã phát lệnh khởi động lại máy chủ thành công. Có thể mất vài phút để hệ "
+"thống khởi động và hoạt động trở lại."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr "Bạn đã sử dụng %d%% dung lượng đĩa, vượt quá ngưỡng cho phép là %d%%."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "Bạn có thể cần nhấn F5 để tải lại logo"
+
+msgid "You may not use an IP for a domain name"
+msgstr "Bạn không được sử dụng IP cho tên miền"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+"Bạn chỉ có thể cung cấp danh sách cho phép hoặc danh sách từ chối, không "
+"được cung cấp cả hai."
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Bạn phải nhập giá trị chmod. Ví dụ: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Bạn phải nhập một thư mục 'tên'. Ví dụ: hình ảnh"
+
+msgid "You must enter both password"
+msgstr "Bạn phải nhập cả hai mật khẩu"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "Bạn phải nhập số, người dùng, chủ đề, ưu tiên, trạng thái và tin nhắn"
+
+msgid "You must enter the password in both fields"
+msgstr "Bạn phải nhập mật khẩu vào cả hai trường"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Bạn phải nhập người dùng, chủ đề, ưu tiên và tin nhắn"
+
+msgid "You must first create some packages"
+msgstr "Trước tiên bạn phải tạo một số gói"
+
+msgid "You must first own an IP"
+msgstr "Trước tiên bạn phải sở hữu một IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr ""
+"Bạn phải có nhiều hơn 0 bản ghi NS, nếu không thì named có thể không khởi "
+"động được."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"Bạn phải cung cấp 'required_hits' và 'required_hits_custom' nếu "
+"'required_hits' là 'custom'"
+
+msgid "You must provide a list name"
+msgstr "Bạn phải cung cấp tên danh sách"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+"Bạn phải cung cấp lời nhắc nhập mật khẩu thư mục được bảo vệ. Ví dụ: Khu vực "
+"thành viên"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Bạn phải cung cấp tên miền, ip, ns1 và ns2 hợp lệ"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+"Bạn phải cung cấp địa chỉ email hợp lệ, oldpassword, password1 và password2"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr ""
+"Bạn phải cung cấp địa chỉ ftp hợp lệ, oldpassword, password1 và password2"
+
+msgid "You must provide a valid ip"
+msgstr "Bạn phải cung cấp một địa chỉ IP hợp lệ"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Bạn phải cung cấp tên hợp lệ và tên này phải tồn tại."
+
+msgid "You must provide a valid name and value"
+msgstr "Bạn phải cung cấp tên và giá trị hợp lệ"
+
+msgid "You must provide the passwd variable"
+msgstr "Bạn phải cung cấp biến passwd"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr "Bạn phải chọn một cặp IP máy chủ tên (ns1.domain.com và ns2.domain.com)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Bạn phải chọn ít nhất một danh sách gửi thư để xóa"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Bạn phải chọn ít nhất một danh sách gửi thư để xóa"
+
+msgid "You must select exactly one key"
+msgstr "Bạn phải chọn chính xác một phím"
+
+msgid "You must select something"
+msgstr "Bạn phải chọn một cái gì đó"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Bạn phải sử dụng một số cho giờ (0-23). Bạn chỉ có thể chạy cron một lần mỗi "
+"ngày. (Bạn có thể tạo nhiều hơn một cron)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Bạn phải sử dụng một số cho phút (0-59). Bạn chỉ có thể chạy cron một lần "
+"mỗi ngày. (Bạn có thể tạo nhiều hơn một cron)"
+
+msgid "You must use a valid path"
+msgstr "Bạn phải sử dụng một đường dẫn hợp lệ"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "Bạn phải đợi ít nhất %d phút giữa các lần cập nhật."
+
+msgid "You must wait for the stats to be computed."
+msgstr "Bạn phải đợi số liệu thống kê được tính toán."
+
+msgid "You need to specify a domain"
+msgstr "Bạn cần phải chỉ định một miền"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Bạn cần một tên miền, anon, anonup và một tin nhắn"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "Bạn cần danh sách tên miền và mật khẩu để đồng bộ hóa các tài khoản"
+
+msgid "You require either the passwd or quota"
+msgstr "Bạn cần passwd hoặc quota"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"Bạn cần đường dẫn url nguồn (ví dụ: /redirect) và url đích (ví dụ: www."
+"redirect.com)"
+
+msgid "You require user and domain to change a pop account"
+msgstr "Bạn cần người dùng và tên miền để thay đổi tài khoản pop"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "Bạn cần người dùng, tên miền và mật khẩu để thêm tài khoản pop"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "Bạn sẽ được thông báo qua Hệ thống tin nhắn khi hoàn tất."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "Bạn sẽ được thông báo qua Hệ thống tin nhắn khi quá trình hoàn tất"
+
+msgid "You will receive a message when it's complete."
+msgstr "Bạn sẽ nhận được tin nhắn khi hoàn tất."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"Bạn đang sử dụng tùy chọn đăng nhập bằng tên người dùng, vì vậy hãy sử dụng "
+"mật khẩu của riêng bạn. Không phải mật khẩu của Người dùng."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "URL Hash của bạn Đăng nhập '%s' đã được tạo"
+
+msgid "Your IP is blacklisted"
+msgstr "IP của bạn đã bị đưa vào danh sách đen"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "Khóa đăng nhập '%s' của bạn đã được tạo"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Tên của bạn đã được đổi thành %s"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "Các tập tin người dùng đã được khôi phục từ %s"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "Các tập tin người dùng đã được khôi phục từ %s"
+
+msgid "Your account"
+msgstr "Tài khoản của bạn"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr ""
+"Tài khoản %s@%s của bạn đã được thiết lập. Trong chương trình email của bạn, "
+"hãy sử dụng"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "Tài khoản '|USERNAME|' của bạn đã bị đình chỉ. Lý do: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Tài khoản |domain| của bạn hiện đã sẵn sàng để sử dụng."
+
+msgid "Your backups are now ready"
+msgstr "Bản sao lưu của bạn đã sẵn sàng"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Cơ sở dữ liệu của bạn đã được thiết lập. Sử dụng các giá trị sau:"
+
+msgid "Your default domain has been set"
+msgstr "Tên miền mặc định của bạn đã được thiết lập"
+
+msgid "Your disk quota limit has been reached."
+msgstr "Dung lượng đĩa của bạn đã đạt đến giới hạn."
+
+msgid "Your disk usage has been updated"
+msgstr "Việc sử dụng đĩa của bạn đã được cập nhật"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+"Khóa hiện tại của bạn chưa bị ghi đè, nhưng không thể sử dụng với chứng chỉ "
+"mới."
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "Tin nhắn của bạn đã được lưu"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "Ngôn ngữ đã được thay đổi thành %s"
+
+msgid "Your message has been saved"
+msgstr "Tin nhắn của bạn đã được lưu"
+
+msgid "Your message has been sent"
+msgstr "Tin nhắn của bạn đã được gửi"
+
+msgid "Your message is being sent in the background"
+msgstr "Tin nhắn của bạn đang được gửi ở chế độ nền"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr "Tin nhắn của bạn trống. Người dùng có thể muốn biết họ sẽ nhận được gì."
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "Tên của bạn đã được đổi thành %s"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "Khóa mới của bạn đã được sao lưu vào vị trí sau: %s"
+
+msgid "Your password"
+msgstr "Mật khẩu của bạn"
+
+msgid "Your password is invalid"
+msgstr "Mật khẩu của bạn không hợp lệ"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+"Yêu cầu cập nhật của bạn sẽ bắt đầu trong vòng chưa đầy một phút. Bạn sẽ "
+"được thông báo qua hệ thống Tin nhắn khi hoàn tất"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "Yêu cầu của bạn sẽ được thực hiện trong vòng 1 phút"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"Yêu cầu của bạn sẽ chạy ở chế độ nền. Khi hoàn tất, bạn sẽ được thông báo "
+"trong Hệ thống tin nhắn."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "Tài khoản đại lý của bạn đã đạt đến giới hạn được chỉ định"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "Đại lý của bạn đã đạt đến giới hạn được chỉ định"
+
+msgid "Your subject contains invalid characters."
+msgstr "Tiêu đề của bạn chứa ký tự không hợp lệ."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "Số vé của bạn là %s."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "Zone Keys mới hơn Zone Signing."
+
+msgid "Zone Reset"
+msgstr "Đặt lại vùng"
+
+msgid "Zone Signing has expired."
+msgstr "Thời hạn ký vùng đã hết hạn."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "Cron đã tạo"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+"Khu vực vẫn chưa được ký. Đảm bảo bạn tạo khóa trước và ký một khóa trước "
+"khi sử dụng công cụ ký tự động này"
+
+msgid "Zone is of type DNSSEC."
+msgstr "Vùng này thuộc loại DNSSEC."
+
+msgid "Zone keys generated"
+msgstr "Khóa vùng được tạo ra"
+
+msgid "Zone signed"
+msgstr "Vùng đã ký"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "Tin nhắn đã xóa"
+
+msgid "account ..."
+msgstr "tài khoản ..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "và %d Người dùng"
+
+msgid "at least"
+msgstr "ít nhất"
+
+msgid "at most"
+msgstr "nhiều nhất"
+
+msgid "back"
+msgstr "mặt sau"
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec không được bật. Không thể ký vùng."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "không thể fstatat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "không thể hủy liên kết tại %s: %s"
+
+msgid "catch is required"
+msgstr "bắt là cần thiết"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "lỗi cgroup: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup không được kích hoạt trong giấy phép của bạn"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup đã bị tắt trong directadmin.conf"
+
+msgid "change"
+msgstr "thay đổi"
+
+msgid "click here if form does not include two-step code input"
+msgstr "nhấp vào đây nếu biểu mẫu không bao gồm mã nhập hai bước"
+
+msgid "contains"
+msgstr "chứa"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "ngày"
+
+msgid "day(s)"
+msgstr "ngày(s)"
+
+msgid "days"
+msgstr "ngày"
+
+msgid "default user"
+msgstr "người dùng mặc định"
+
+msgid "dns error"
+msgstr "lỗi DNS"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "tùy chọn dnsprovider '%s' chứa các ký tự không hợp lệ"
+
+msgid "does not belong to you"
+msgstr "không thuộc về bạn"
+
+msgid "emails have just been sent by"
+msgstr "email vừa được gửi bởi"
+
+msgid "equals"
+msgstr "bằng nhau"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "đã được thay đổi."
+
+msgid "has been updated with the new ip"
+msgstr "đã được cập nhật với ip mới"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score phải nằm trong phạm vi từ 1 đến 99"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "giờ"
+
+msgid "hours"
+msgstr "giờ"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr "httpd.conf sẽ được viết sau bằng cách sử dụng task.queue"
+
+msgid "invalid IP or range: %s"
+msgstr "IP hoặc phạm vi không hợp lệ: %s"
+
+msgid "invalid code"
+msgstr "mã không hợp lệ"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "là một địa chỉ email không hợp lệ. Người dùng %s sẽ không được tạo"
+
+msgid "is currently down"
+msgstr "hiện đang xuống"
+
+msgid "is not a valid username"
+msgstr "không phải là tên người dùng hợp lệ"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr "is_ip_in_mask_range:%s:%s: phạm vi '%s' phải là số nguyên dương"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr ""
+"is_ip_in_mask_range:%s:%s: phạm vi '%s' phải nằm trong khoảng từ 1 đến 128, "
+"bao gồm"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: phạm vi không có /"
+
+msgid "json string"
+msgstr "chuỗi json"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lỗi lstat: %s"
+
+msgid "mail() line number"
+msgstr "số dòng mail()"
+
+msgid "message is empty. Please enter some text."
+msgstr "tin nhắn trống. Vui lòng nhập một số văn bản."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "loại mime (%s) cho '%s' không phải là loại 'image/'"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "phút"
+
+msgid "minutes"
+msgstr "phút"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "lỗi mkdir(%s): %s"
+
+msgid "modify password"
+msgstr "sửa đổi mật khẩu"
+
+msgid "modify privileges"
+msgstr "sửa đổi quyền hạn"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "tháng"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain không phải là một tên miền hợp lệ"
+
+msgid "newer than"
+msgstr "mới hơn"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 hoặc ns2 không phải là máy chủ tên hợp lệ"
+
+msgid "of"
+msgstr "của"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package hoặc new_package không phải là tên gói hợp lệ"
+
+msgid "older than"
+msgstr "cũ hơn"
+
+#, c-format
+msgid "older than %s days."
+msgstr "cũ hơn %s ngày."
+
+msgid "or"
+msgstr "hoặc"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "hoặc IPv6 (1:2:3:4:5:6:7:8) hoặc phạm vi IPv6 (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "hoặc chọn từ"
+
+msgid "php.ini override added"
+msgstr "php.ini ghi đè đã được thêm vào"
+
+#, c-format
+msgid "php1_select entry %d is not available"
+msgstr "mục php1_select %d không khả dụng"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache không được bật"
+
+msgid "port"
+msgstr "cảng"
+
+#, fuzzy
+msgid "request created"
+msgstr "Thư mục đã được tạo"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+"reseller_can_set_email_limit=0 được thiết lập, do đó bạn không thể thiết lập "
+"giới hạn"
+
+msgid "retry"
+msgstr "thử lại"
+
+msgid "routes must start with a [ character."
+msgstr "tuyến đường phải bắt đầu bằng ký tự [."
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "tìm kiếm độ dài vượt quá giới hạn: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "thứ hai"
+
+msgid "selected"
+msgstr "đã chọn"
+
+msgid "selected overrides removed from php.ini"
+msgstr "ghi đè đã chọn đã xóa khỏi php.ini"
+
+msgid "selected skipped rules removed"
+msgstr "đã chọn bỏ qua các quy tắc đã xóa"
+
+msgid "selecting none includes all domains"
+msgstr "chọn không bao gồm tất cả các miền"
+
+msgid "sent"
+msgstr "đã gửi"
+
+msgid "set Permission"
+msgstr "thiết lập Quyền"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "đầu ra của show_blocked_ips.sh:"
+
+msgid "starts with"
+msgstr "bắt đầu với"
+
+msgid "subject contains invalid characters."
+msgstr "chủ đề chứa ký tự không hợp lệ."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr ""
+"subject_select != %d, nhưng chủ đề chưa được thiết lập. Điều này không nên "
+"xảy ra."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "đó là tên máy chủ của máy chủ và bạn không thể sử dụng nó"
+
+msgid "the new domain name already exists on your system"
+msgstr "tên miền mới đã tồn tại trên hệ thống của bạn"
+
+msgid "too many iterations"
+msgstr "quá nhiều lần lặp lại"
+
+msgid "unable to load secret"
+msgstr "không thể tải bí mật"
+
+msgid "unlimited"
+msgstr "không giới hạn"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "user, passwd, passwd2 và type là bắt buộc"
+
+msgid "user.conf override"
+msgstr "ghi đè user.conf"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount bị vô hiệu hóa"
+
+msgid "user_modify_pre.sh error"
+msgstr "lỗi user_modify_pre.sh"
+
+msgid "valid code"
+msgstr "mã hợp lệ"
+
+msgid "value is required"
+msgstr "giá trị là bắt buộc"
+
+#, c-format
+msgid "value must be '%s' or '%s'"
+msgstr "giá trị phải là '%s' hoặc '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder đã bị vô hiệu hóa thông qua show_main_spambox=0"
+
+msgid "your new password is"
+msgstr "mật khẩu mới của bạn là"
+
+msgid "your new quota is"
+msgstr "hạn ngạch mới của bạn là"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "giới hạn gửi mới của bạn là: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr "~/domains bị thiếu, nhưng chúng tôi đã gặp lỗi khi cố gắng tạo lại nó"
