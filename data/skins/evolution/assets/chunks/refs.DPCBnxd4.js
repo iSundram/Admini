@@ -1,0 +1,1 @@
+import{gi as o,n as s}from"../index.DtGSrwJ3.js";const{domain:a}=o(),r=s([]),t=s({branches:[],deploy_branch:"",deploy_dir:"",keyfile:"",name:"",remote:"",url:"",uuid:"",valid:!1,webhook_url:""}),i=s({commits:[],more_newer:!1,more_older:!1}),n=s(""),m=s(0),c=s({commit:{author:{name:"",email:""},hash:"",message:"",time:""},diff:[]});export{i as a,n as b,c,a as d,t as g,r,m as s};
