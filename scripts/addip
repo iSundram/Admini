@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#find the eth0:# and add the ip to the system
+
+addIPv6() {
+	if echo "$2" | grep -q '/'; then
+		MASK="$2"
+	else
+		MASK="/64"
+	fi
+
+	if ! ip addr add "${1}${MASK}" dev "${ETH_DEV}" preferred_lft 0 >/dev/null 2>&1; then
+		exit 1
+	fi
+
+	exit 0
+}
+
+netmaskToPrefixIPv4() {
+	NM1=$(echo "${NETMASK}" | cut -d. -f1)
+	NM2=$(echo "${NETMASK}" | cut -d. -f2)
+	NM3=$(echo "${NETMASK}" | cut -d. -f3)
+	NM4=$(echo "${NETMASK}" | cut -d. -f4)
+
+	NM1BIN=$(perl -e "printf \"%b\n\",${NM1}")
+	NM2BIN=$(perl -e "printf \"%b\n\",${NM2}")
+	NM3BIN=$(perl -e "printf \"%b\n\",${NM3}")
+	NM4BIN=$(perl -e "printf \"%b\n\",${NM4}")
+
+	echo "${NM1BIN}${NM2BIN}${NM3BIN}${NM4BIN}" | grep -o '1' | wc -l
+}
+
+DIRECTADMIN_BIN=/usr/local/directadmin/directadmin
+DIRECTADMIN_CONF=/usr/local/directadmin/conf/directadmin.conf
+
+if [ $# -lt 1 ]; then # we need at least ip
+	echo "Usage: $0 <ip> (<netmask> (<eth dev>))";
+	echo "example: $0 1.2.3.4 255.255.255.0 eth0";
+	exit 1
+fi
+
+#echo "have device: $3";
+if [ $# -gt "2" ]; then
+    ETH_DEV="$3"
+else
+	if [ -s "${DIRECTADMIN_CONF}" ] && [ -x "${DIRECTADMIN_BIN}" ]; then
+			ETH_DEV=$("${DIRECTADMIN_BIN}" config | grep "^ethernet_dev=" | cut -d= -f2)
+	fi
+	if [ -z "${ETH_DEV}" ]; then
+			ETH_DEV=$(ip route show | awk '/^default/ && NR==1 {print $5}')
+	fi
+fi
+
+IP_FILE="/usr/local/directadmin/data/admin/ips/$1"
+if [ -s "${IP_FILE}" ] && grep -q "add_to_device=no" "${IP_FILE}"; then
+	echo "IP $1 has add_to_device=no set. Skipping"
+	exit 0
+fi
+
+#check to make sure it isn't already running
+if ip a | grep -q " $1/"; then
+	echo "IP $1 already exists"
+	exit 1
+fi
+
+if echo "$1" | grep -q ':'; then
+	addIPv6 "$1" "$2"
+fi
+
+if [ $# -gt "1" ]; then
+	#echo "have netmask: $2";
+	NETMASK="$2"
+	if ! echo "${NETMASK}" | grep -q '/'; then
+		PREFIX="/$(netmaskToPrefixIPv4 "${NETMASK}")"
+	else
+		PREFIX="${NETMASK}"
+		NETMASK=
+	fi
+else
+	NETMASK=255.255.255.0
+	PREFIX=/24
+fi
+
+if ! ip addr add "${1}${PREFIX}" dev "${ETH_DEV}" >/dev/null 2>&1 && [ -n "${NETMASK}" ]; then 
+	exit 1
+fi
+
+exit 0
