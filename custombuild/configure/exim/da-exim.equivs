@@ -1,0 +1,8 @@
+Package: da-exim
+Version: 1.0
+Architecture: all
+Multi-Arch: foreign
+Maintainer: JBMC Software <no-reply@directadmin.com>
+Provides: mail-transport-agent
+Replaces: mail-transport-agent, exim4-base
+Description: Dummy package to replace dependencies
