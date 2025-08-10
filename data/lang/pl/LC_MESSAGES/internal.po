@@ -1,0 +1,7666 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Polish (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Polish <https://translate.directadmin.com/projects/"
+"directadmin/internal/pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d Nowa wiadomość Wewnętrzna"
+msgstr[1] " - %d Nowe wiadomości Wewnętrzne"
+msgstr[2] " - %d Nowe wiadomości Wewnętrzne"
+
+msgid " / Day"
+msgstr " / Dzień"
+
+msgid "# of Domains"
+msgstr "# Domeny"
+
+msgid "# of IPs"
+msgstr "# adresów IP"
+
+msgid "# of MySQL DBs"
+msgstr "# bazy danych MySQL"
+
+msgid "# of Resellers"
+msgstr "# Resellerzy"
+
+msgid "# of SubDomains"
+msgstr "# Liczba SubDomen"
+
+msgid "# of Users"
+msgstr "# Użytkownicy"
+
+msgid "# of free IPs"
+msgstr "# wolnych adresów IP"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d Dni, %d Godzin i %d Minut"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d z %d Administratorów/Resellerów obecnie istnieje."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d z %d Kont obecnie istnieje."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d z %d domen obecnie istnieje."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d ustawienia uaktualnione"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s nie istnieje"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr ""
+"%s '%s' nie można przywrócić w '%s'. Przywracanie plików w domyślnym: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - user's '%s' Obecny adres IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr ""
+"%s Edytuj wiadomość powitalną użytkowników aby upewnić się, że temat i "
+"wiadomość została ustawiona."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s konto %s zostało utworzone"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s już istnieje"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s już istnieje na zdalnym serwerze."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s już istnieje na serwerze."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s już istnieje. naciśnij nadpisz=tak aby wymusić"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s Wygląda na link. Przerywam."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s może być współdzielony."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s zawiera niebezpieczne znaki"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr ""
+"%s nie może zostać przydzielony, najpierw musi być zwolniony i nieprzypisany."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s nie może być uwolniony, najpierw nie może mieć przypisanych żadnych "
+"domen, jeśli jest współdzielony albo musi mieć status zarezerwowany."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s nie może zostać usunięty, musi zostać najpierw uwolniony."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s nie może być współdzielony, najpierw musi być uwolniony"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s usunięty pomyślnie."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s nie istnieje"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s nie ma takich samych praw własności jak %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s został usunięty z listy"
+
+msgid "%s has been saved as %s."
+msgstr "%s został zapisany jako %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s został zawieszony"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s został odwieszony"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s to katalog, nie zostanie usunięty"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s to link"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s jest twardym lub symbolicznym dowiązaniem"
+
+#, c-format
+msgid "%s is missing"
+msgstr "Brak %s"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s nie jest katalogiem"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s nie jest socketem"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s nie jest dowiązaniem symbolicznym"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s nie jest poprawnym adresem IP lub zakresem adresów IP"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s nie jest właściwym zakresem adresów IP.  Użyj: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr ""
+"%s nie należy do %s co jest najprawdopodobniej przyczyną problemów z "
+"rozpakowaniem"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s nie jest włączone"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s nie znajduje się na Twojej liście adresów IP domeny"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s nie jest jednym z podanych typów przekierowań"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s nie należy do %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr ""
+"%s nie jest ustawiony jako wolny albo wciąż jest przypisany do resellera"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%sjest teraz kontrolowany przez %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s jest teraz wolny"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s jest teraz nieprzypisany."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s jest teraz Twoją domyślną domeną."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s jest poza zakresem"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s jest wymagany dla %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s musi być dowiązaniem symbolicznym"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s nie ma już Etykiety Serwera Nazw."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s nie zaimplementowany"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s rekordy wyłączone na tym poziomie"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s wartość dla '%s' nie występuje w home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s pliki konfiguracyjne zostały usunięte"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: błąd lstat dla wartości linku '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: Błąd readlinke: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' nie jest prawidłowym typem %s"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sKliknij tutaj%s aby dowiedzieć się jak włączyć"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sKliknij tutaj%s aby zobaczyć lokalne surowe dane strefy"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' nie istnieje"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' nie istnieje\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' nie zaczyna się od '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' został ustawiony na '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s'jest niedozwoloną nazwą pakietu."
+
+msgid "'%s' is disabled"
+msgstr "'%s' jest wyłączony"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s'nie jest prawidłowym kodem hex koloru w css"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' nie jest przypisane do Twojego konta Reseller."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' nie jest włączony w Twojej licencji"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' nie jest włączone w systemie."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' jest wymagany"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' musi być '%s'lub '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import' nie wygląda na zakodowany w base 64"
+
+msgid "'when' should be all, newer or older"
+msgstr "'kiedy' powinno być wszystko, nowsze lub starsze"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) Poniższe twarde linki zostały znalezione u użytkownika %s:"
+
+msgid "* irretrievable *"
+msgstr "* nieodwracalne *"
+
+msgid "*** Stopped ***"
+msgstr "*** Zatrzymana ***"
+
+msgid "-- None Available --"
+msgstr "-- Brak Dostępnych --"
+
+msgid "-- Reason:"
+msgstr "-- Powód:"
+
+msgid "-- Select IP"
+msgstr "-- Wybierz IP"
+
+msgid "-- Select Package"
+msgstr "-- Wybierz Pakiet"
+
+msgid "-- any time --"
+msgstr "-- dowolny czas --"
+
+msgid "-- anything --"
+msgstr "-- cokolwiek --"
+
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "=1 wymaga nginx_proxy=1 i DirectAdmin Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "%s rekord istnieje już o takiej nazwie"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "Wolny IP może zostać przypisany tylko do 1 użytkownika"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "Typ rekordu jest wymagany: A, NS, MX, CNAME, PTR, or TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "Reseller nie może kontrolować innych równych lub wyższych poziomów kont"
+
+msgid "A file is required"
+msgstr "Plik jest wymagany"
+
+msgid "A forwarder already exists with that name"
+msgstr "Przekierowanie o takiej nazwie już istnieje"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "Pełna domena/strefa o takiej nazwie już istnieje."
+
+msgid "A key with that name already exists"
+msgstr "Klucz o takiej nazwie już istnieje"
+
+msgid "A key with that value already exists"
+msgstr "Klucz z taką wartością już istnieje"
+
+msgid "A list alias already exists with that name"
+msgstr "Lista aliasów o takiej nazwie już istnieje"
+
+msgid "A message for that user already exists"
+msgstr "Wiadomość dla tego użytkownika już istnieje"
+
+msgid "A pop account already exists with that name"
+msgstr "konto pop o takiej nazwie już istnieje"
+
+msgid "A skin name is required"
+msgstr "Nazwa skórki jest wymagana"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr ""
+"Subdomena o podanej nazwie już istnieje już w systemie dla innej domeny."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "Bezwzględny limit pamięci. Wyzwala zabójcę braku pamięci."
+
+msgid "Abuse"
+msgstr "Nadużycie"
+
+msgid "Access Hosts"
+msgstr "Hosty Dostępu"
+
+msgid "Access host has been added"
+msgstr "Host dostępu został dodany"
+
+msgid "Access hosts have been removed"
+msgstr "Hosty dostępu zostały usunięte"
+
+msgid "Account"
+msgstr "Konto"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Konto %s zostało utworzone %s %s z adresu IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Konto %s zostało pominięte ze względu na zawieszenie"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr ""
+"Konto %s zostało zawieszone przez admina a Ty masz tylko dostęp resellera."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Konto %s z domeną %s ma pusty certyfikat caroot"
+
+msgid "Account created"
+msgstr "Konto utworzone"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Konto zostało odblokowane z BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Konto nie jest Resellerem"
+
+msgid "Account is suspended"
+msgstr "Konto jest zawieszone"
+
+msgid "Account password changed"
+msgstr "Hasło do konta zmienione"
+
+msgid "Account(s) Suspended"
+msgstr "Konta zostały zawieszone"
+
+msgid "Account(s) Unuspended"
+msgstr "Konta zostały odblokowane"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Konto przywrócone na partycję %s ."
+
+msgid "Action"
+msgstr "Akcja"
+
+msgid "Activate"
+msgstr "Aktywuj"
+
+msgid "Active"
+msgstr "Aktywne"
+
+#, c-format
+msgid "Add %s"
+msgstr "Dodaj %s"
+
+msgid "Add Host"
+msgstr "Dodaj host"
+
+msgid "Add Override"
+msgstr "Dodaj Nadpisanie"
+
+msgid "Add the new NS records first."
+msgstr "Najpierw dodaj nowe rekordy NS."
+
+msgid "Add to Apache"
+msgstr "Dodaj do Apache"
+
+msgid "Add to Clipboard"
+msgstr "Dodaj do schowka"
+
+msgid "Add to DNS"
+msgstr "Dodaj do DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "dodano ns1 jako %s i ns2 jako %s"
+
+msgid "Additional"
+msgstr "Dodatkowe"
+
+msgid "Admin"
+msgstr "Admininstrator"
+
+msgid "Admin SSL"
+msgstr "Administrator SSL"
+
+msgid "Admin SSL is not enabled"
+msgstr "Admin SSL nie jest włączony"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "Zaawansowane Wyszukiwanie"
+
+msgid "Afternoon"
+msgstr "Popołudnie"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Alias %s@%s -> %s został utworzony"
+
+msgid "All"
+msgstr "Wszystkie"
+
+msgid "All Data"
+msgstr "Wszystkie dane"
+
+msgid "All E-Mail"
+msgstr "Wszystkie E-Mail"
+
+msgid "All Months (cgi)"
+msgstr "Wszystkie Metody (cgi)"
+
+msgid "All Resellers"
+msgstr "Wszyscy Resellerzy"
+
+msgid "All Users"
+msgstr "Wszyscy Użytkownicy"
+
+msgid "All Users Except Selected Users"
+msgstr "Wszyscy Użytkownicy z Wyjątkiem Wybranych Użytkowników"
+
+msgid "All Users Except:"
+msgstr "Wszyscy Użytkownicy Oprócz:"
+
+msgid "All of Your Users"
+msgstr "Wszyscy Twoi Użytkownicy"
+
+msgid "All privileges have been set"
+msgstr "Wszystkie przywileje zostały ustawione"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Wszystkie kroki oprócz ostatniego są wymagane aby dopasować"
+
+msgid "All selected Users have been suspended"
+msgstr "Wszyscy wybrani użytkownicy zostali zawieszeni"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Wszyscy wybrani użytkownicy zostali odwieszeni"
+
+msgid "All specified forwarders removed"
+msgstr "Usunięto wszystkie zaznaczone przekierowania"
+
+msgid "Allocated"
+msgstr "Przydzielone"
+
+msgid "Allow"
+msgstr "Zezwól"
+
+msgid "Allow Overselling"
+msgstr "Zezwalaj na overselling"
+
+msgid "Allowance threshold is 0%"
+msgstr "Próg przydziału wynosi 0%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Zezwolenie na wartość %s spowoduje przekroczenie limitu wynoszącego %s"
+
+msgid "Alpha"
+msgstr "Alfa"
+
+msgid "Already Exists"
+msgstr "Już istnieje"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"Chociaż wystąpił błąd kopii zapasowej, nadal próbowano przesłać prawidłowe "
+"kopie zapasowe do"
+
+msgid "An Error Occurred"
+msgstr "Wystąpił błąd"
+
+msgid "An Error has occurred"
+msgstr "Wystąpił błąd"
+
+msgid "An auto responder already exists with that name"
+msgstr "Automatyczna odpowiedź (autoresponder) o tej nazwie już istnieje"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Automatyczna odpowiedź (autoresponder) o tej nazwie już istnieje"
+
+msgid "An error has occurred"
+msgstr "Wystąpił błąd"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Wystąpił błąd podczas przepisywania konfiguracji Nginx Unit"
+
+msgid "An error occured during extraction"
+msgstr "Wystąpił błąd podczas wypakowywania"
+
+msgid "An error occured while creating the compressed file"
+msgstr "Wystąpił błąd podczas tworzenia skompresowanego pliku"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "Wystąpił błąd podczas ponownego ustanowienia praw do pliku"
+
+msgid "An error occurred during the backup"
+msgstr "Wystąpił błąd podczas tworzenia kopii zapasowej"
+
+msgid "An error occurred during the restore"
+msgstr "Wystąpił błąd podczas przywracania kopii zapasowej"
+
+msgid "An error occurred when unblocking the account"
+msgstr "Wystąpił błąd podczas zdejmowania blokady konta"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "Wystąpił błąd podczas stosowania ustawień Twoich użytkowników"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "Wystąpił błąd podczas próby skopiowania pliku"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "Wystąpił błąd przy próbie utworzenia folderu"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "Wystąpił błąd przy próbie zabezpieczenia folderu"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "Wystąpił błąd przy próbie zmiany nazwy pliku"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "Wystąpił błąd przy próbie odtworzenia pliku"
+
+msgid "Anonymous Ftp"
+msgstr "Anonimowe FTP"
+
+msgid "Apache"
+msgstr "Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Plik konfiguracyjny Apache przepisany z nowym IP"
+
+msgid "Apparent Size"
+msgstr "Pozorny rozmiar"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Pojawia się jako pierwszy element w sekcji <Directory>."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Pojawia się na samej górze szablonu, przed ustawieniem zmiennych."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Pojawia się we WSZYSTKICH sekcjach context{}, używanych do katalogów "
+"chronionych hasłem."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Pojawia się w sekcji phpIniOverride{}."
+
+msgid "Appears in rewrite{} section."
+msgstr "Pojawia się w sekcji rewrite{}."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Pojawia się w sekcji scripthandler{}."
+
+msgid "Appears in vhssl{} section."
+msgstr "Pojawia się w sekcji vhssl {}."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Pojawia się tuż przed sekcją <Directory>."
+
+msgid "Apply to All Users"
+msgstr "Zastosuj dla wszystkich użytkowników"
+
+msgid "Apply to Me"
+msgstr "Zastosuj dla mnie"
+
+msgid "Apply to existing Domains"
+msgstr "Zastosuj dla istniejących Domen"
+
+msgid "Apr"
+msgstr "Kwi"
+
+msgid "Archive Size"
+msgstr "Rozmiar archiwum"
+
+msgid "Archives purged"
+msgstr "Archiwa wyczyszczone"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone konta?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone bazy danych?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone klucze?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone strefy?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Czy na pewno chcesz usunąć zaznaczone pliki?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Czy na pewno chcesz zabić te procesy?"
+
+msgid "Ascending"
+msgstr "Rosnąca"
+
+msgid "Assign to"
+msgstr "Przypisz do"
+
+msgid "Assigned"
+msgstr "Przydzielony"
+
+msgid "At least one crediential is required."
+msgstr "Wymagane jest co najmniej jedno poświadczenie."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Próba skopiowania %s na siebie, plik został pominięty."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Próba przeniesienia %s na siebie, plik został pominięty."
+
+msgid "Attempts"
+msgstr "Próby"
+
+msgid "Aug"
+msgstr "Sie"
+
+msgid "Authentication"
+msgstr "Uwierzytelnienie"
+
+msgid "Authorize"
+msgstr "Autoryzuj"
+
+msgid "Auto"
+msgstr "Automatyczny"
+
+msgid "Auto media selection active."
+msgstr "Aktywny automatyczny wybór mediów."
+
+msgid "Auto+Confirm"
+msgstr "Automatycznie+potwierdź"
+
+msgid "AutoResponders"
+msgstr "AutoRespondery"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr ""
+"Automatyczne odnowienie certyfikatu dla domeny %s zakończone powodzeniem"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "Automatyczne security.txt (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "Automatyczna odpowiedź"
+
+msgid "Autoresponder"
+msgstr "Auto-odpowiedź"
+
+msgid "Autoresponder created"
+msgstr "Autoresponder został utworzony"
+
+msgid "Autoresponder updated"
+msgstr "Zaktualizowano Autoresponder"
+
+msgid "Autoresponder(s) removed"
+msgstr "Autorespondery zostały usunięte"
+
+msgid "Avoid use of trailers."
+msgstr "Unikaj używania przyczep."
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "Ustawienia Awstats zostały zmienione"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Wstecz"
+
+msgid "Backing up Databases"
+msgstr "Wykonywanie kopii zapasowych baz danych"
+
+msgid "Backing up E-Mail Data"
+msgstr "Wykonywanie kopii zapasowej danych E-Mail"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Wykonywanie kopii zapasowej ustawień E-Mail"
+
+msgid "Backing up FTP"
+msgstr "Wykonywanie kopii zapasowej FTP"
+
+msgid "Backing up User Configs"
+msgstr "Wykonywanie kopii zapasowej ustawień użytkownika"
+
+msgid "Backing up User Data"
+msgstr "Wykonywanie kopii zapasowej danych użytkownika"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Wykonywanie kopii zapasowej dodatkowych danych E-Mail"
+
+msgid "Backup"
+msgstr "Kopia zapasowa"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Kopia zapasowa %d nie jest obecnie wykonywana."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr ""
+"Kopia Zapasowa przerwana (%d): Znaleziono twarde dowiązanie na koncie w "
+"lokalizacji %s"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Błąd kopii zapasowej w jednostce Nginx: %s"
+
+msgid "Backup Halted"
+msgstr "Kopia zapasowa wstrzymana"
+
+msgid "Backup ID"
+msgstr "ID kopii zapasowej"
+
+msgid "Backup creation added to queue"
+msgstr "Tworzenie kopii zapasowej dodane do kolejki"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Utworzono folder Kopii Zapasowej %s."
+
+msgid "Backup(s) Killed"
+msgstr "Kopie zapasowe zostały przerwane"
+
+msgid "Backups added to Queue"
+msgstr "Kopie zapasowe dodane do kolejki"
+
+msgid "Bandwidth"
+msgstr "Transfer"
+
+msgid "Bandwidth (MB)"
+msgstr "Transfer (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "Wykorzystanie Transferu"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr ""
+"Pamiętaj, aby ponownie zeskanować kod QR, ponieważ wszystkie stare kody "
+"tracą ważność."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"Ponieważ skrypt spełnia wymagane kryteria, został wyłączony przez chmod do 0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"Przed odblokowaniem upewnij się, że wszystkie zhakowane skrypty zostały "
+"usunięte lub naprawione."
+
+msgid "Beta"
+msgstr "beta"
+
+msgid "Billing Issue"
+msgstr "Problem z płatnością"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr ""
+"Puste %s podczas poszukiwania przekonwertowanego pliku kopii zapasowej w %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Pusta wartość: domyślna, globalny limit %d"
+
+msgid "Bleeding edge features"
+msgstr "Bardzo wczesne fukncjonalności"
+
+msgid "Block Usage"
+msgstr "Zablokuj wykorzystanie"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "Zablokowane ścieżki BlockCrackera"
+
+msgid "Blocked"
+msgstr "Zablokowane"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "Zarówno kontrola DNS, jak i nadpisywanie ttl muszą być włączone"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "Brute-Force Atak wykryty w dzienniku usługi"
+
+msgid "CA Certificate is Invalid"
+msgstr "Certyfikat CA jest nieprawidłowy"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr ""
+"Certyfikat CA jest w porządku. Twoja witryna powinna być bezpieczna w ciągu "
+"kilku minut."
+
+msgid "CC Address"
+msgstr "Adres CC"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "Limit procesora"
+
+msgid "Can use Server IP"
+msgstr "Może używać adresu IP serwera"
+
+msgid "Can't get file lock on"
+msgstr "Nie można włączyć blokady pliku"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Nie można otworzyć pliku %s do odczytu"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Nie można ponownie otworzyć pliku %s w celu dołączenia"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Cancel Request"
+msgstr "Anulować żądanie"
+
+msgid "Cannot Add A Record"
+msgstr "Nie można dodać rekordu A"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Nie można dodać rekordu CNAME"
+
+msgid "Cannot Add Record"
+msgstr "Nie można dodać rekordu"
+
+msgid "Cannot Create Account"
+msgstr "Nie można utworzyć konta"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Nie można utworzyć nowego Autorespondera"
+
+msgid "Cannot Create Another Database"
+msgstr "Nie można utworzyć kolejnej bazy danych"
+
+msgid "Cannot Create Another Domain"
+msgstr "Nie można dodać kolejnej domeny"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Nie można dodać kolejnego wskaźnika domen"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Nie można stworzyć kolejnego konta FTP"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Nie można utworzyć nowego Przekierowania"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Nie można utworzyć nowej Listy mailingowej"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Nie można utworzyć nowego Konta email"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Nie można utworzyć nowej Subdomeny"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Nie można utworzyć nowej Automatycznej odpowiedzi"
+
+msgid "Cannot Create Domain"
+msgstr "Nie można utworzyć domeny"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Nie można utworzyć Wiadomości Urlopowej"
+
+msgid "Cannot Create a Message"
+msgstr "Nie można utworzyć Wiadomości"
+
+msgid "Cannot Execute Command"
+msgstr "Nie można wykonać polecenia"
+
+msgid "Cannot Execute Your Request"
+msgstr "Nie można wykonać Twojego żądania"
+
+msgid "Cannot Modify Key"
+msgstr "Nie można modyfikować klucza"
+
+msgid "Cannot Modify User"
+msgstr "Nie można modyfikować użytkownika"
+
+msgid "Cannot View Domain Settings"
+msgstr "Nie można wyświetlić ustawień domeny"
+
+msgid "Cannot be a list"
+msgstr "Nie może być listą"
+
+msgid "Cannot be an object"
+msgstr "Nie może być obiektem"
+
+msgid "Cannot change the ip"
+msgstr "Nie można zmienić tego ip"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Nie można zmienić hasła do konta systemowego. Zaloguj się do panelu "
+"sterowania, aby to zrobić."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Nie można zmienić hasła do tego konta e-mail. Konto znajduje się obecnie w "
+"zawieszonej domenie."
+
+msgid "Cannot change your email"
+msgstr "Nie możesz zmienić adresu e-mail"
+
+msgid "Cannot change your name"
+msgstr "Nie możesz zmienić nazwy"
+
+msgid "Cannot change your password"
+msgstr "Nie możesz zmienić hasła"
+
+msgid "Cannot check domain existance"
+msgstr "Nie można sprawdzić istnienia domeny"
+
+msgid "Cannot create User Backup"
+msgstr "Nie można utworzyć kopii zapasowej użytkownika"
+
+msgid "Cannot create domain"
+msgstr "Nie można utworzyć domeny"
+
+msgid "Cannot create that domain"
+msgstr "Nie można utworzyć tej domeny"
+
+msgid "Cannot create user using those settings"
+msgstr "Nie można utworzyć użytkownika przy użyciu tych ustawień"
+
+msgid "Cannot delete records"
+msgstr "Nie można usunąć rekordów"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "Nie można usunąć aktualnie używanej skórki."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Nie można określić właściciela subdomeny '%s'"
+
+msgid "Cannot execute your request"
+msgstr "Nie można wykonać Twojego żądania"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Nie można znaleźć %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "Nie można znaleźć %s na liście"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "Nie można znaleźć %s w nazwie"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Nie można znaleźć %s, pomijam."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr ""
+"Nie można znaleźć %s. Upewnij się, że domena istnieje i nie jest zawieszona"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Nie można znaleźć '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Nie można znaleźć '%s' na liście dozwolonych wartości dla %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "Nie można znaleźć '%s' w szablonie"
+
+msgid "Cannot find IP"
+msgstr "Nie można znaleźć adresu IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Nie można znaleźć użytkownika '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr ""
+"Nie można znaleźć prawidłowej systemowej nazwy użytkownika w pliku "
+"właścicieli domen."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "Nie można znaleźć żadnych wartości SAN w certyfikacie."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "Nie można znaleźć pliku tar.gz po konwersji z %s"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Nie można znaleźć domeny w pliku domain owners"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Nie można znaleźć domeny w certyfikacie."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Nie można znaleźć wartości klucza w %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Nie można znaleźć pliku logo dla tokena %s w szablonie %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Nie można znaleźć pliku logo dla tokena %s=%s w szablonie %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Nie można znaleźć pliku show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Nie można znaleźć template_php_ini oraz domain_php_ini w json"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "Nie można znaleźć tej domeny w pliku domainowners"
+
+msgid "Cannot find that key id"
+msgstr "Nie można znaleźć identyfikatora tego klucza"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "Nie można znaleźć konta ani spedytora"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Nie można znaleźć skryptu letsencrypt.sh"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "Nie można znaleźć użytkownika %s, który powinien już istnieć"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Nie można uzyskać typu MIME dla %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Nie może zawierać znaków nowej linii w temacie"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Nie można mieć nieograniczonych limitów poczty e-mail"
+
+msgid "Cannot manage zone"
+msgstr "Nie można zarządzać strefą"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr ""
+"Nie można przenieść katalogu (%s) do istniejącego pliku lub katalogu (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "Nie można otworzyć pliku hasła, aby dodać użytkownika"
+
+msgid "Cannot open the password file to change the password"
+msgstr "Nie można otworzyć pliku hasła, aby zmienić hasło"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Nie można otworzyć pliku hasła użytkownika do odczytu"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "Nie można zmienić nazwy katalogu na istniejący plik lub katalog"
+
+msgid "Cannot resend welcome email"
+msgstr "Nie można ponownie wysłać powitalnego e-maila"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "Nie można przywrócić konta FTP dla %s. Osiągnąłeś swój limit (%s)."
+
+msgid "Cannot set TTL"
+msgstr "Nie można ustawić TTL"
+
+msgid "Cannot set default domain"
+msgstr "Nie można ustawić domeny domyślnej"
+
+msgid "Cannot show page"
+msgstr "Nie można załadować strony"
+
+msgid "Cannot stat the source file"
+msgstr "Nie można sprawdzić pliku źródłowego"
+
+msgid "Cannot use the main account username"
+msgstr "Nie można użyć nazwy użytkownika konta głównego"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Złap wszystko jest teraz ustawione na %s"
+
+msgid "Catch-All Email"
+msgstr "E-mail typu catch-all"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "Catch-All Email został wyłączony na tym koncie"
+
+msgid "Catch-All email updated successfully"
+msgstr "Pomyślnie zaktualizowano e-mail Catch-All"
+
+msgid "Catch-All is disabled"
+msgstr "Catch-all jest wyłączony"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catch-All jest teraz ustawiony na niepowodzenie"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All jest teraz ustawiony na ignorowanie błędnych adresów"
+
+msgid "Certificate"
+msgstr "Certyfikat"
+
+msgid "Certificate and Key Saved."
+msgstr "Certyfikat i klucz został zapisany."
+
+msgid "Certificate is Invalid"
+msgstr "Certyfikat jest nieważny"
+
+msgid "Certificate is Self-Signed"
+msgstr "Certyfikat jest samopodpisany"
+
+msgid "Change the password to unblock it."
+msgstr "Zmień hasło, aby odblokować."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Zmienione przez IP: %s"
+
+msgid "Changes saved"
+msgstr "Zmiany zostały zapisane"
+
+msgid "Check"
+msgstr "Sprawdź"
+
+msgid "Check the error log for more information."
+msgstr "Sprawdź dziennik błędów, aby uzyskać więcej informacji."
+
+msgid "Check to see if the current software is valid"
+msgstr "Sprawdź i zobacz czy oprogramowanie jest aktualne"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Dodatkowy user %s został usunięty"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Wybierz z listy: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "Miasto może zawierać tylko litery, spacje i/lub kropki"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "Usuń przekierowania"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Usuwanie %s"
+
+msgid "Clear Customization"
+msgstr "Wyczyść Personalizowane"
+
+msgid "Clear Messages System"
+msgstr "Usuń wiadomości systemowe"
+
+msgid "Clear NS"
+msgstr "Usuń NS"
+
+msgid "Clear Search Filter"
+msgstr "Wyczyść filtr wyszukiwania"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Kliknij %sTUTAJ%s żeby wrócić"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Kliknij %sTUTAJ%s żeby wrocić"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Kliknij %sTUTAJ%s żeby wrócić do głównej strony"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Kliknij Tutaj, aby pobrać najnowszą Kopię Zapasową"
+
+msgid "Click here to close this window"
+msgstr "Kliknij tutaj, aby zamknąć to okno"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Kliknij tutaj, aby włączyć SSL na domenie"
+
+msgid "Clipboard"
+msgstr "Schowek"
+
+msgid "Clipboard emptied"
+msgstr "Schowek opróżniony"
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Closed"
+msgstr "Zamknięte"
+
+msgid "Closed+Confirm"
+msgstr "Zamknij+Potwierdź"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "Kolor %s (%s) nie jest z listy: %s"
+
+msgid "Color has been customized"
+msgstr "Kolor został dostosowany"
+
+msgid "Column in"
+msgstr "Kolumna w"
+
+msgid "Command"
+msgstr "Komenda"
+
+msgid "Command Returned"
+msgstr "Komenda zwróciła"
+
+msgid "Comment"
+msgstr "Komentarz"
+
+msgid "Comments"
+msgstr "Komentarze"
+
+msgid "Comments Saved"
+msgstr "Komentarze zapisane"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "Firma musi zawierać tylko litery, cyfry, spacje i/lub kropki"
+
+msgid "Compressed File Created"
+msgstr "Utworzono Skompresowany Plik"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Kompresja %s"
+
+msgid "Confirm"
+msgstr "Potwierdź"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Potwierdzenie wyników na stronie %sDirectAdmin%s"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "Kod potwierdzający jest nieprawidłowy lub żądanie wygasło"
+
+msgid "Continuing with the other files."
+msgstr "Kontynuując, w pozostałych plikach."
+
+msgid "Copy"
+msgstr "Skopiuj"
+
+msgid "Copy Clipboard Files here"
+msgstr "Skopiuj pliki ze Schowka tutaj"
+
+msgid "Copy the packages export data"
+msgstr "Skopiuj dane eksportowe pakietów"
+
+msgid "Copying Admin Data"
+msgstr "Kopiowanie Danych Administratora"
+
+msgid "Copying Reseller Data"
+msgstr "Kopiowanie Danych Resellera"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Kopiowanie plików zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+msgid "Copying unreadable data"
+msgstr "Kopiowanie nieczytelnych danych"
+
+msgid "Could not excute your request"
+msgstr "Nie udało się zrealizować twojego żądania"
+
+msgid "Could not execute your request"
+msgstr "Nie udało się wykonać Twojego żądania"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr ""
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr ""
+"Nie można znaleźć zdalnego pliku '%s', aby sprawdzić jego rozmiar po "
+"przesłaniu"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Nie można odczytać rDNS dla IP '%s'"
+
+msgid "Could not read tickets"
+msgstr "Nie można odczytać zgłoszeń"
+
+msgid "Could not write tickets"
+msgstr "Nie można zapisać zgłoszeń"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr "Nie udało się znaleźć wolnego IP, aby przypisać Użytkownikowi (ip=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr ""
+"Nie udało się odczytać pliku db dla %s. Nie można dodać do niego ns1 i ns2."
+
+msgid "Count"
+msgstr "Ilość"
+
+msgid "Counted"
+msgstr "Policzone"
+
+msgid "Country code must be 2 letters"
+msgstr "Kod kraju musi składać się z dwóch liter"
+
+msgid "Created"
+msgstr "Utworzone"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Tworzenie katalogów zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Utworzenie tak wielu %s spowodowałoby przekroczenie limitu %s"
+
+msgid "Creator"
+msgstr "Twórca"
+
+msgid "Creator Duplicate"
+msgstr "Twórca Kopia"
+
+msgid "Creators and their Users"
+msgstr "Twórcy i ich użytkownicy"
+
+msgid "Cron Created"
+msgstr "Cron Utworzony"
+
+msgid "Cron E-Mail set"
+msgstr "Cron E-Mail ustawiony"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Usunięto zadanie(a) Cron"
+
+msgid "Cron Jobs"
+msgstr "Zadania Cron"
+
+msgid "Cron Jobs Deleted"
+msgstr "Usunięto zadania Cron"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Zduplikowane zadania Cron"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Zadania Cron będą wykonywane w tle"
+
+msgid "Cron Modified"
+msgstr "Cron Zmodyfikowany"
+
+msgid "Cron job has been created"
+msgstr "Zadanie Cron zostało utworzone"
+
+msgid "Current"
+msgstr "Aktualnie"
+
+msgid "Current IPs"
+msgstr "Aktualne IP"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "Aktualne IP przypisane do %s"
+
+msgid "Current Protected Directories"
+msgstr "Aktualne Chronione Katalogi"
+
+msgid "Current Usage"
+msgstr "Aktualne Zużycie"
+
+msgid "Custom"
+msgstr "Niestandardowy"
+
+msgid "Custom Color"
+msgstr "Niestandardowy Kolor"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "Niestandardowe Logo Skórki wgrane"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "Niestandardowe Logo w Skórce nie jest włączone"
+
+msgid "Custom logo deleted"
+msgstr "Niestandardowego Logo usunięte"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr ""
+"Niestandardowy próg musi być poprawną liczbą. Dozwolona jest liczba "
+"dziesiętna."
+
+msgid "Customization Disabled"
+msgstr "Personalizacja Wyłączona"
+
+msgid "Customization written"
+msgstr "Personalizacja zapisana"
+
+msgid "Customize the skin"
+msgstr "Personalizacja szablonu"
+
+msgid "DKIM disabled"
+msgstr "DKIM wyłączony"
+
+msgid "DKIM enabled"
+msgstr "DKIM włączony"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "Kontrola DNS"
+
+msgid "DNS Zone does not exist"
+msgstr "Strefa DNS nie istnieje"
+
+msgid "DNSSEC Keys generated"
+msgstr "Klucz DNSSEC wygenerowany"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC nie jest włączony"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSSEC - Ochrona DNS"
+
+msgid "Database"
+msgstr "Baza danych"
+
+msgid "Database Created"
+msgstr "Baza danych Utworzona"
+
+msgid "Database Disk Usage"
+msgstr "Baza danych Użycie Dysku"
+
+msgid "Database has been successfully Restored"
+msgstr "Baza danych została pomyślnie Przywrócona"
+
+msgid "Database:"
+msgstr "Baza danych:"
+
+msgid "Databases"
+msgstr "Bazy danych"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Date Added"
+msgstr "Data Dodania"
+
+msgid "Date Blocked"
+msgstr "Data Zablokowana"
+
+msgid "Date Created"
+msgstr "Data Utworzenia"
+
+msgid "Date Suspended"
+msgstr "Data Zawieszenie"
+
+msgid "Day"
+msgstr "Dzień"
+
+msgid "Day of Month"
+msgstr "Dzień miesiąca"
+
+msgid "Day of Week"
+msgstr "Dzień tygodnia"
+
+msgid "Days must be a valid number."
+msgstr "Dni muszą być poprawną liczbą."
+
+msgid "Debug Guide"
+msgstr "Podręcznik Debugowania"
+
+msgid "Dec"
+msgstr "Gru"
+
+msgid "Decending"
+msgstr "Malejący"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "Deszyfrowanie %s nie powiodło się"
+
+msgid "Default"
+msgstr "Domyślnie"
+
+msgid "Default release schedule"
+msgstr "Domyślny harmonogram wydań"
+
+msgid "Delayed release schedule"
+msgstr "Opóźniony harmonogram wydań"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Delete Extension"
+msgstr "Usuń Rozszerzenie"
+
+msgid "Delete Handler"
+msgstr "Usuń Handler"
+
+msgid "Delete MimeType"
+msgstr "Usuń MimeType"
+
+msgid "Delete Selected"
+msgstr "Usuń Wybrane"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "Usuń klucze DNSSEC i użyj niepodpisanej strefy"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Usuń następującego Użytkownika"
+msgstr[1] "Usuń następujących Użytkowników"
+msgstr[2] "Usuń następujących Użytkowników"
+
+msgid "Delete the following domains:"
+msgstr "Usuń następujące domeny:"
+
+msgid "Delete web data"
+msgstr "Usuń zawartość strony"
+
+msgid "Deleted"
+msgstr "Usunięty"
+
+msgid "Deleted User Bandwidth"
+msgstr "Usunięty transfer użytkownika"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Usuwanie %s ..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Usuwanie plików/katalogów zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Usunięcie tych rekordów NS pozostawi cię z 0."
+
+msgid "Deny"
+msgstr "Odrzucić"
+
+msgid "Destination"
+msgstr "Przeznaczenie"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "Błąd docelowego adresu URL: %s"
+
+msgid "Detail"
+msgstr "Szczegóły"
+
+msgid "Details"
+msgstr "Szczegóły"
+
+msgid "Digest Subscriber"
+msgstr "Subskrybcja Digest"
+
+msgid "Digest Subscribers"
+msgstr "Subskrypcje Digest"
+
+msgid "DirectAdmin License"
+msgstr "Licencja DirectAdmin"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin zostanie zrestartowany za 1 minutę"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin zostanie zrestartowany w ciągu 1 minuty"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Ustawienia Ochrony Katalogu zostały zapisane."
+
+msgid "Directory created"
+msgstr "Utworzono Katalog"
+
+msgid "Disable"
+msgstr "Wyłącz"
+
+msgid "Disable Auto-Renew"
+msgstr "Wyłącz Auto-odnawianie"
+
+msgid "Disabled"
+msgstr "Wyłączone"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"Wyłączone ustawienia Resellera zostaną zastosowane do Użytkowników i "
+"Pakietów w tle."
+
+msgid "Disk Space"
+msgstr "Przestrzeń Dyskowa"
+
+msgid "Disk Space (MB)"
+msgstr "Przestrzeń Dyskowa (MB)"
+
+msgid "Disk Usage"
+msgstr "Użycie dysku"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "Dział może zawierać tylko litery, cyfry, spacje i/lub kropki"
+
+msgid "Dns Provider reset."
+msgstr "Reset dostawcy Dns."
+
+msgid "Dns Provider saved."
+msgstr "Dns Provider zapisany."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Nie należy używać CAPS w nazwie domeny."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Nie używaj spacji pomiędzy nazwami e-maili."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "W wartości %s nie należy używać spacji"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Czy chcesz nadpisać jakieś istniejące pliki?"
+
+msgid "DocumentRoot"
+msgstr "DocumentRoot (Katalog strony)"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Nie pasuje do ustawienia: %s"
+
+msgid "Domain"
+msgstr "Domena"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Domena %s Utworzona"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Domena %s nie może korzystać z %s nadpisując %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Domena %s została zawieszona przez administratora i nie masz do niej "
+"dostępu. Nie możesz odblokować tej domeny."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr ""
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Domena '%s' używa php-fpm."
+
+msgid "Domain AWstats"
+msgstr "Domena AWstats"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "Domena AWstats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "Domena Transfer"
+
+msgid "Domain Created"
+msgstr "Utworzono domenę"
+
+msgid "Domain Created Successfully"
+msgstr "Domena Utworzona z powodzeniem"
+
+msgid "Domain Deletion Results"
+msgstr "Wyniki usuwania domeny"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Wskaźnik domeny"
+msgstr[1] "Wskaźniki domeny"
+msgstr[2] "Wskaźników domen"
+
+msgid "Domain Pointer Added"
+msgstr "Dodano Wskaźnik domeny"
+
+msgid "Domain Pointer on"
+msgstr "Wskaźnik domeny do"
+
+msgid "Domain Pointers"
+msgstr "Wskaźniki domeny"
+
+msgid "Domain Pointers Removed"
+msgstr "Wskaźniki domeny zostały usunięte"
+
+msgid "Domain Quota"
+msgstr "Domena Limity"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Zmiana nazwy domeny nie jest włączona"
+
+msgid "Domain Webalizer Stats"
+msgstr "Domena Statystyki Webalizera"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+
+msgid "Domain does not belong to you"
+msgstr "Domena nie należy do Ciebie"
+
+msgid "Domain does not belong to you."
+msgstr "Domena nie należy do Ciebie."
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Domena istnieje w %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Domena już przetwarza żądanie SSL.  Proszę poczekać na jego zakończenie "
+"przed wprowadzeniem innych zmian."
+
+msgid "Domain is forbidden"
+msgstr "Domena zastrzeżona"
+
+msgid "Domain is not in your list"
+msgstr "Domena nie jest na twojej liście"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr ""
+
+msgid "Domain name has been successfully changed"
+msgstr "Nazwa domeny została zmieniona pomyślnie"
+
+msgid "Domain php.ini overrides"
+msgstr "Domena php.ini ustawienia"
+
+msgid "Domain(s)"
+msgstr "Domena(y)"
+
+msgid "Domain(s) modified"
+msgstr "Domena(y) zmodyfikowana"
+
+msgid "Domains"
+msgstr "Domeny"
+
+msgid "Domains directory created successfully"
+msgstr "Katalog domen utworzony pomyślnie"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "Katalog domen został pomyślnie utworzony w katalogu użytkownika"
+
+msgid "Double click for main domain page"
+msgstr "Kliknij dwukrotnie i wróć na stronę główną domeny"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "W Dovecot '%s' brakuje danych. Uruchom 'da dovecot_conf'"
+
+msgid "Download"
+msgstr "Ściągnij"
+
+msgid "Download Backup"
+msgstr "Ściągnij Kopię Zapasową"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Pobrano: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "Pobieranie nowej binarki webalizera"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Pobieranie skompresowanych folderów zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Pobieranie plików zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr ""
+
+msgid "Driver signals dormant."
+msgstr ""
+
+msgid "Duplicate"
+msgstr "Duplikat"
+
+msgid "E-Mail"
+msgstr "Konto E-mail"
+
+msgid "E-Mail Accounts"
+msgstr "Konta E-Mail"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "Usunięto Konta E-Mail"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "Adres E-Mail został zmieniony pomyślnie"
+
+msgid "E-Mail Limit has been set"
+msgstr "Limit wiadomości e-mail został ustawiony"
+
+msgid "E-Mail Update Failed"
+msgstr "Nie udało się zaktualizować adresu E-Mail"
+
+msgid "E-Mail Updated"
+msgstr "E-Mail Zaktualizowano"
+
+msgid "E-Mail account already exists"
+msgstr "E-Mail już istnieje"
+
+msgid "E-Mail has been changed"
+msgstr "E-Mail został zmieniony"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "E-Mail został zmieniony na %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "Limit pojemności E-Mail nie może przekraczać %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Wysłane pakiety Echo."
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Edit the zone on the master server."
+msgstr "Edycja strefy na serwerze głównym."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Poproś twórcę konta o zmianę hasła, aby je odblokować, albo skorzystaj z "
+"funkcji zagubionego hasła na stronie logowania (jeśli jest włączona)."
+
+msgid "Email"
+msgstr "Adres E-mail"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "Email \"%s\" nie istnieje"
+
+msgid "Email Added to list"
+msgstr "E-mail dodany do listy"
+
+msgid "Email Deliveries (Sent)"
+msgstr "Wiadomości dostarczone (Wysłane)"
+
+msgid "Email Disk Usage"
+msgstr "Email Użycie dysku"
+
+msgid "Email Forwarders"
+msgstr "Email Przekierowania"
+
+msgid "Email Only"
+msgstr "Tylko e-mail"
+
+msgid "Email Sent"
+msgstr "Wyślij na Email"
+
+msgid "Email Set"
+msgstr "E-mail zaktualizowany"
+
+msgid "Email created but"
+msgstr "Email stworzony, ale"
+
+msgid "Email removed"
+msgstr "E-mail usunięty"
+
+msgid "Empty Clipboard"
+msgstr "Pusty schowek"
+
+msgid "Empty path"
+msgstr "Pusta ścieżka"
+
+msgid "Enable"
+msgstr "Włącz"
+
+msgid "Enabled"
+msgstr "Włączone"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "Szyfrowanie %s nie powiodło się"
+
+msgid "End Time"
+msgstr "Czas Zakończenia"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr ""
+"Osiągnięto koniec pliku podczas próby wczytania %lld bajtów z %s. filled=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Upewnij się, że drugi klucz pasuje do pierwszego"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "Upewnij się, że w ip.list resellera są jakieś użyteczne IP."
+
+msgid "Ensuring stored domains are present"
+msgstr ""
+
+msgid "Error"
+msgstr "Błąd"
+
+msgid "Error Compressing the backup file"
+msgstr "Błąd Kompresja pliku kopii zapasowej"
+
+msgid "Error Creating Cron Job"
+msgstr "Błąd tworzenia zadania Cron"
+
+msgid "Error Creating Domain"
+msgstr "Błąd przy dodawaniu Domeny"
+
+msgid "Error Creating Key"
+msgstr "Błąd przy tworzeniu klucza"
+
+msgid "Error Creating User"
+msgstr "Błąd przy dodawaniu Użytkownika"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Błąd przy Usuwaniu %s"
+
+msgid "Error Executing Perl"
+msgstr "Błąd podczas wykonywania Perla"
+
+msgid "Error Log"
+msgstr "Dziennik błędów (Error Log)"
+
+msgid "Error Reading Message File"
+msgstr "Błąd odczytu pliku z wiadomościami"
+
+msgid "Error Reading db file"
+msgstr "Błąd odczytu pliku db"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Błąd przy usuwaniu użytkownika %s"
+
+msgid "Error Resetting Zone"
+msgstr "Błąd Resetowanie Strefy"
+
+msgid "Error Restoring database"
+msgstr "Błąd Przywracanie bazy danych"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Błąd przy zapisywaniu hasła: %s"
+
+msgid "Error Unblocking paths"
+msgstr "Błąd Odblokowywanie ścieżek"
+
+msgid "Error Updating User"
+msgstr "Błąd przy aktualizacji Użytkownika"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Błąd zapisu %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "Błąd aktywacji %s użytkownika %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Błąd przy aktywacji cronjobs: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Błąd przy aktywacji danych dla %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "Błąd dodawania rekordów DS dla %s do zdalnej strefy nadrzędnej: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "Błąd autoryzacji Klucza SSH"
+
+msgid "Error changing password"
+msgstr "Błąd przy zmianie hasła"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Błąd usuwania plików LetsEncrypt"
+
+msgid "Error converting file: "
+msgstr "Błąd konwersji pliku: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Błąd kopiowania %s do %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Błąd kopiowania %s do %s: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Błąd kopiowania pliku logo: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Błąd przy tworzeniu %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Błąd przy tworzeniu %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Błąd tworzenia Autorespondera"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Błąd tworzenia aplikacji NginxUnit '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Błąd tworzenia trasy NginxUnit '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "Błąd tworzenia Klucza SSH"
+
+msgid "Error creating User"
+msgstr "Błąd tworzenia Użytkownika"
+
+msgid "Error creating Vacation Message"
+msgstr "Błąd tworzenia wiadomości Urlopowej"
+
+msgid "Error creating account"
+msgstr "Błąd przy dodaniu konta"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Błąd tworzenia domyślnych katalogów w %s.  Zobacz error.log aby uzyskać "
+"więcej informacji."
+
+msgid "Error creating forwarder"
+msgstr "Błąd przy tworzeniu przekierowania"
+
+msgid "Error creating the database"
+msgstr "Błąd przy tworzeniu bazy danych"
+
+msgid "Error decoding the base 64 data"
+msgstr "Błąd dekodowania danych base64"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Błąd przy usuwaniu %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Błąd przy usuwaniu Klucza SSH"
+
+msgid "Error deleting account(s)"
+msgstr "Błąd przy usuwaniu konta (kont)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Błąd przy usuwaniu autorespondera(ów)"
+
+msgid "Error deleting filter(s)"
+msgstr "Błąd przy usuwaniu filtra(ów)"
+
+msgid "Error deleting records"
+msgstr "Błąd przy usuwaniu rekordów"
+
+msgid "Error determining username from "
+msgstr "Błąd określenia nazwy użytkownika z "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Błąd podczas automatycznego odnawiania certyfikatu dla %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Błąd podczas usuwania child user %s"
+
+msgid "Error during extraction"
+msgstr "Błąd podczas dekompresji"
+
+msgid "Error executing your request"
+msgstr "Błąd przy wykonywaniu żądania"
+
+msgid "Error generating zone keys"
+msgstr "Błąd generowania kluczy strefy"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Błąd przy importowaniu pakietów zakodowanych w base64"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Błąd żądania.  Wymagana jest domena, typ i wartość."
+
+msgid "Error modifying SSH key"
+msgstr "Błąd modyfikacji Klucza SSH"
+
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr "Błąd parsowania ścieżki %s: nieprawidłowy typ"
+
+msgid "Error parsing 'routes'."
+msgstr "Błąd przetwarzania 'routes'."
+
+msgid "Error parsing json output"
+msgstr "Błąd parsowania danych wyjściowych json"
+
+msgid "Error purging archives"
+msgstr "Błąd przy oczyszczaniu archiwów"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Błąd odczytu %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Błąd odczytu pliku konfiguracyjnego domeny"
+
+msgid "Error reading domain config files"
+msgstr "Błąd odczytu plików konfiguracyjnych domeny"
+
+msgid "Error reading domainowners"
+msgstr "Błąd odczytu domainowners"
+
+msgid "Error reading domainowners file"
+msgstr "Błąd odczytu pliku domainowners"
+
+msgid "Error reading named db file"
+msgstr "Błąd odczytu pliku named db"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "Błąd odczytu pliku db po zapisie do niego, przed podpisaniem DNSSEC"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "Błąd odczytu plików użytkownika dla %s, mimo wszystko kontynuacja."
+
+msgid "Error reading user_ip.list file"
+msgstr "Błąd odczytu pliku user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Błąd usuwania %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Błąd podczas usuwania IP z %s"
+
+msgid "Error removing file: "
+msgstr "Błąd przy usuwaniu pliku: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Błąd przy usuwaniu ścieżki %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Błąd przy usuwaniu subdomeny"
+
+msgid "Error removing subdomain(s)"
+msgstr "Błąd przy usuwaniu subdomeny (subdomen)"
+
+msgid "Error removing subdomains"
+msgstr "Błąd przy usuwaniu subdomen"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Błąd przy usuwaniu użytkownika %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Błąd przy zmianie nazwy %s na %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Błąd przywracania %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Błąd przywracania domeny"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Błąd przywracania ustawień php dla '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Błąd przy ponownym zapisie %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Błąd przy uruchamianiu %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Błąd przy uruchamianiu rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Błąd przy uruchamianiu rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Błąd zapisu Cron E-Mail"
+
+msgid "Error saving Nameservers"
+msgstr "Błąd zapisu serwerów nazw"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Błąd wysyłania sygnału do %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Błąd ustawienia szablonu MX"
+
+msgid "Error setting MX template for pointer"
+msgstr "Błąd ustawiania szablonu MX dla wskaźnika"
+
+msgid "Error setting PHP versions"
+msgstr "Błąd przy zmianie wersji PHP"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Błąd ustawienia limitów cgroup dla %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Błąd ustawienia plików schowka"
+
+msgid "Error setting global key"
+msgstr "Błąd ustawienia klucza globalnego"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Błąd ustawienia uprawnień na %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Błąd ustawienia filtra"
+
+msgid "Error setting the spam filter"
+msgstr "Błąd ustawienia filtra spamu"
+
+msgid "Error setting timezone"
+msgstr "Błąd ustawienia strefy czasowej"
+
+msgid "Error showing Email Acounts"
+msgstr "Błąd przy wyświetlaniu Kont Email"
+
+msgid "Error showing message ID info"
+msgstr "Błąd wyświetlania informacji o ID wiadomości"
+
+msgid "Error showing smtp log info"
+msgstr "Błąd wyświetlania informacji o logu smtp"
+
+msgid "Error signing zone"
+msgstr "Błąd podpisywania strefy"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "Błąd przy zawieszaniu %s użytkownika %s: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Błąd przy zawieszaniu cronjobs: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Błąd aktualizacji Autorespondera"
+
+msgid "Error updating Catch-All value"
+msgstr "Błąd aktualizacji wartości Catch-All"
+
+msgid "Error updating Vacation Message"
+msgstr "Błąd aktualizacji Wiadomości Urlopowej"
+
+msgid "Error updating forwarder"
+msgstr "Błąd aktualizacji forwardera"
+
+msgid "Error while compressing file"
+msgstr "Błąd podczas kompresji pliku"
+
+msgid "Error while creating User"
+msgstr "Błąd podczas tworzenia Użytkownika"
+
+msgid "Error while deleting Users"
+msgstr "Błąd podczas usuwania Użytkowników"
+
+msgid "Error while saving changes"
+msgstr "Błąd podczas zapisywania zmian"
+
+msgid "Error while saving password"
+msgstr "Błąd podczas zapisywania hasła"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Błąd podczas zapisu %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Błąd przy żądaniu LetsEncrypt"
+
+msgid "Error with curl request"
+msgstr "Błąd przy żądaniu curl"
+
+msgid "Error with exigrep"
+msgstr "Błąd z exigrep"
+
+msgid "Error with fchownat"
+msgstr "Błąd z fchownat"
+
+msgid "Error with system Quotas"
+msgstr "Błąd w systemie Limitów"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Błąd w planie tworzenia kopii zapasowych (zmiana nazwy nie powiodła się): "
+"kopia %s do %s również nie powiodła się: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Błąd zapisu %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Błąd zapisu %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "Błąd zapisu pliku konfiguracyjnego domeny"
+
+msgid "Error writing pop cache"
+msgstr "Błąd zapisu pop cache"
+
+msgid "Error writing the directadmin.conf"
+msgstr "Błąd zapisu pliku directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Błąd zapisu do %s: %s"
+
+msgid "Errors"
+msgstr "Błędy"
+
+msgid "Evening"
+msgstr "Wieczorem"
+
+msgid "Expecting 0 or 1"
+msgstr "Oczekuje się 0 lub 1"
+
+msgid "Expecting any integer"
+msgstr "Oczekiwanie dowolnej liczby całkowitej"
+
+msgid "Expecting any long long integer"
+msgstr "Oczekiwanie dowolnej długiej liczby całkowitej"
+
+msgid "Expired"
+msgstr "Wygasłe"
+
+msgid "Expiry"
+msgstr "Termin ważności"
+
+msgid "Export Selected"
+msgstr "Eksportuj Wybrane"
+
+msgid "Extension"
+msgstr "Rozszerzenie"
+
+msgid "Extensions"
+msgstr "Rozszerzenia"
+
+msgid "Extract"
+msgstr "Rozpakuj"
+
+msgid "Extract selected to directory"
+msgstr "Wyodrębnij wybrane do katalogu"
+
+msgid "Extracting User Data"
+msgstr "Wyodrębnianie Danych Użytkownika"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Wyodrębnienie plików zostało wyłączone za pomocą opcji "
+"filemanager_disable_features"
+
+msgid "Extracting non-readable files"
+msgstr "Wyodrębnienie plików nie do odczytania"
+
+msgid "Extracting ~/domains directory"
+msgstr "Wyodrębnienie katalogu ~/domains"
+
+msgid "Extracting ~/imap directory"
+msgstr "Wyodrębnienie katalogu ~/imap"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "Konto FTP już istnieje"
+
+msgid "FTP information invalid."
+msgstr "Informacja FTP jest nieprawidłowa."
+
+msgid "FTP: default creation error"
+msgstr "FTP: Błąd tworzenia domyślnych ustawień"
+
+msgid "Feature Disabled"
+msgstr "Funkcja Wyłączona"
+
+msgid "Feb"
+msgstr "Lut"
+
+msgid "File"
+msgstr "Plik"
+
+msgid "File %s already exists, file skipped."
+msgstr "Plik %s już istnieje, plik pominięty."
+
+msgid "File Extracted"
+msgstr "Wyodrębniony plik"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Plik odczytywany jako \"%s"
+
+msgid "File copied successfully"
+msgstr "Plik skopiowany pomyślnie"
+
+msgid "File does not exist"
+msgstr "Plik nie istnieje"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Plik nie istnieje lub nie masz dostępu do pliku"
+
+msgid "File emptied"
+msgstr "Plik wyzerowany"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "Resetowanie właściciela pliku"
+
+msgid "File purged"
+msgstr "Plik oczyszczony"
+
+msgid "File renamed successfully"
+msgstr "Nazwa pliku została pomyślnie zmieniona"
+
+msgid "File restored successfully"
+msgstr "Plik przywrócony pomyślnie"
+
+msgid "Filename"
+msgstr "Nazwa pliku"
+
+msgid "Files added to clipboard"
+msgstr "Pliki dodane do schowka"
+
+msgid "Files copied"
+msgstr "Pliki skopiowane"
+
+msgid "Files deleted"
+msgstr "Pliki usunięte"
+
+msgid "Files moved"
+msgstr "Pliki przeniesione"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Filter set"
+msgstr "Filtr ustawiony"
+
+msgid "Filter(s) removed"
+msgstr "Filtry usunięte"
+
+msgid "Fingerprint"
+msgstr "Odcisk palca (Fingerprint)"
+
+msgid "First"
+msgstr "Początek"
+
+msgid "First PHP"
+msgstr "Pierwsze PHP"
+
+msgid "First Page"
+msgstr "Początek strony"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Wartość flagi dla \"%s\" jest pusta"
+
+msgid "Flush from DNS"
+msgstr "Wyczyść z DNS"
+
+msgid "For backwards compatibility"
+msgstr "W celu zapewnienia kompatybilności wstecznej"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr "Zbyt duża liczba domen do przetworzenia może spowodować timeout"
+
+msgid "Forwarder"
+msgstr "Przekierowanie"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Przekierowanie %s nie może wskazać na siebie"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr ""
+"Przekierowanie %s@%s zostało usunięte, ponieważ pozostało w nim zero "
+"odbiorców."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Przekierowywanie '%s' już istnieje."
+
+msgid "Forwarder already exists"
+msgstr "Przekierowanie już istnieje"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Przekierowanie zawiera znak local_part_suffix: '%s', co oznacza, że wszystko "
+"po nim zostanie zignorowane, a przekierowanie nigdy nie będzie pasowało."
+
+msgid "Forwarder created"
+msgstr "Dodano Przekierowanie"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Znaleziono pętlę przekierowania: %s"
+
+msgid "Forwarder updated"
+msgstr "Przekierowanie Zaktualizowano"
+
+msgid "Forwarders deleted"
+msgstr "Przekierowania zostały usunięte"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Znaleziono 0 plików w %s odczytanych jako %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr ""
+
+msgid "Free - randomly selected"
+msgstr "Bezpłatny - wybierany losowo"
+
+msgid "Free Memory"
+msgstr "Wolna Pamięć"
+
+msgid "Free Selected"
+msgstr "Zwolnij zaznaczone"
+
+msgid "Free Swap Memory"
+msgstr "Wolna pamięć wymiany"
+
+msgid "From"
+msgstr "Od"
+
+msgid "Ftp"
+msgstr "Ftp"
+
+msgid "Ftp Accounts"
+msgstr "Konta Ftp"
+
+msgid "Ftp account changed"
+msgstr "Konto ftp zostało zmienione"
+
+msgid "Ftp settings saved"
+msgstr "Ustawienia Ftp zapisane"
+
+msgid "Full Date"
+msgstr "Pełna data"
+
+msgid "Full Name has been successfully changed"
+msgstr "Pełna nazwa została pomyślnie zmieniona"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "Nazwa w pełnym formacie \"%s\" nie kończy się na nazwie strefy"
+
+msgid "GB"
+msgstr ""
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "Wygeneruj Klucze"
+
+msgid "Git Repositories"
+msgstr "Repozytoria Git"
+
+msgid "Global"
+msgstr "Globalny"
+
+msgid "Global - randomly selected"
+msgstr "Globalny - wybrany losowo"
+
+msgid "Global Key"
+msgstr "Klucz globalny"
+
+msgid "Global Key set"
+msgstr "Klucz Globalny ustawienia"
+
+msgid "Global ssh keys not available to Users"
+msgstr "Globalne klucze ssh nie są dostępne dla użytkowników"
+
+msgid "Go to %s"
+msgstr "Przejdź do %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Grupa %s już istnieje. Proszę wybrać inną nazwę użytkownika."
+
+msgid "Handler"
+msgstr "Handler (Uchwyt)"
+
+msgid "Handler Deleted"
+msgstr "Handler usunięty"
+
+msgid "Handler added"
+msgstr "Handler dodany"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"Witam,\n"
+"\n"
+"Ta wiadomość ma na celu powiadomienie Cię, że Twoje konto '|USERNAME|' "
+"zostało zawieszone.\n"
+"Powód: |REASON|\n"
+"\n"
+"Jeśli uważasz, że zostało to zrobione przez pomyłkę, prosimy o kontakt z "
+"dostawcą usług hostingowych w celu uzyskania dodatkowych informacji.\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "Oto wyniki"
+
+msgid "Here are the results:"
+msgstr "Oto wyniki:"
+
+msgid "High"
+msgstr "Wysoki"
+
+msgid "Highest"
+msgstr "Najwyższy"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr ""
+"Wystąpił błąd końca pliku podczas poszukiwania linii nagłówka @ lub domeny w"
+
+msgid "Home Directory"
+msgstr "Katalog główny"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr ""
+"Ścieżka katalogu głównego '%s' nie znajduje się na liście dozwolonych "
+"home_override_list"
+
+msgid "Host:"
+msgstr "Host:"
+
+msgid "Hosts"
+msgstr "Hosty"
+
+msgid "Hour"
+msgstr "Godzina"
+
+msgid "How to process the request"
+msgstr "Jak przetworzyć żądanie"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Jednakże, po %s próbach, nie udało się podać prawidłowego kodu autoryzacji "
+"dwuetapowej, więc dostęp nie został udzielony."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "Jednak zamiast tego znaleziono subdomeny.  Kontynuując z nimi."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID nie należy do Ciebie"
+
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 lub 1234-1239"
+
+msgid "IO Read Bandwidth Max"
+msgstr "Przepustowość odczytu IO Max"
+
+msgid "IO Write Bandwidth Max"
+msgstr "Przepustowość zapisu IO Max"
+
+msgid "IOPS Read Max"
+msgstr "IOPS Odczyt Max"
+
+msgid "IOPS Write Max"
+msgstr "IOPS Zapis Max"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP Dodano"
+
+msgid "IP Info"
+msgstr "IP Info"
+
+msgid "IP Link Added"
+msgstr "Dodano połączenie adresu IP"
+
+msgid "IP Link(s) Removed"
+msgstr "Usunięto połączenie(a) adresu IP"
+
+msgid "IP List is empty"
+msgstr "Lista adresów IP jest pusta"
+
+msgid "IP Netmask Set"
+msgstr "Ustaw maskę adresu IP"
+
+msgid "IP Type"
+msgstr "Typ IP"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "Adres IP w pliku konfiguracyjnym domeny (%s) nie jest poprawny."
+
+msgid "IP must be shared or free"
+msgstr "Adres IP musi być udostępniony lub wolny"
+
+msgid "IP will be linked in the background"
+msgstr "Adres IP zostanie połączony w tle"
+
+msgid "IP(s)"
+msgstr "IP"
+
+msgid "IP(s) removed"
+msgstr "IP usunięte"
+
+msgid "IP/User"
+msgstr "IP/Użytkownik"
+
+msgid "IPs"
+msgstr "IP"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Jeśli wprowadzona nazwa użytkownika jest poprawna, otrzymasz wkrótce email z "
+"potwierdzeniem."
+
+msgid "If this is not your IP, change your password."
+msgstr "Jeśli to nie jest Twoje IP, zmień hasło."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Jeśli nie chcesz nadpisać bieżącego certyfikatu, wyłącz automatyczne "
+"odnawianie"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Jeżeli ustawisz 0 to nie będzie działać podstawowe żądanie httpd. Nie "
+"będziesz mógł się nawet zalogować."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Nazwy plików graficznych mają tylko jedną kropkę"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "Foldery Imap"
+
+msgid "Inactive"
+msgstr "Nieaktywny"
+
+msgid "Inbox"
+msgstr "Skrzynka odbiorcza"
+
+msgid "Include Domains"
+msgstr "Uwzględnij domeny"
+
+msgid "Info"
+msgstr "Informacje"
+
+msgid "Info for admins"
+msgstr ""
+
+msgid "Inherit"
+msgstr ""
+
+msgid "Inodes"
+msgstr "I-węzły"
+
+msgid "Installed"
+msgstr "Zainstalowane"
+
+msgid "Installed Perl Modules"
+msgstr "Zainstalowane moduły Perl"
+
+msgid "Interface is a loopback interface."
+msgstr ""
+
+msgid "Interface is a point-to-point link."
+msgstr ""
+
+msgid "Interface is in promiscuous mode."
+msgstr ""
+
+msgid "Interface is running."
+msgstr ""
+
+msgid "Internal debugging flag."
+msgstr ""
+
+msgid "Invalid "
+msgstr ""
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr ""
+
+msgid "Invalid CC email address"
+msgstr ""
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Nieprawidłowe znaki w nazwie szablonu. Dozwolone znaki to a-zA-Z0-9._-[] a "
+"nazwa nie może się rozpoczynać od znaku '.'"
+
+msgid "Invalid Cron ID"
+msgstr "Błędny ID zadania terminarza zadań"
+
+msgid "Invalid DNS name"
+msgstr "Nieprawidłowa nazwa DNS"
+
+msgid "Invalid DNS value"
+msgstr "Nieprawidłowa wartość DNS"
+
+msgid "Invalid Domain"
+msgstr "Nieprawidłowa domena"
+
+msgid "Invalid Domain Name"
+msgstr "Niepoprawna nazwa domeny"
+
+msgid "Invalid E-Mail"
+msgstr "Niepoprawny adres e-mail"
+
+msgid "Invalid E-Mail User"
+msgstr ""
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"Niepoprawny adres e-mail. Można również użyć nazwy użytkownika DirectAdmin."
+
+msgid "Invalid Email"
+msgstr "Niepoprawny adres E-Mail"
+
+msgid "Invalid Email Name"
+msgstr "Nieprawidłowa nazwa e-mail"
+
+msgid "Invalid Email limit"
+msgstr "Błędny limit listów e-mail"
+
+msgid "Invalid FTP account"
+msgstr "Niepoprawne konto FTP"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "Niepoprawny adres IP (1.2.3.4) lub zakres adresów IP (1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "Błędne IP lub domena dla połączenia ftp"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Nieprawidłowa wartość rotacji logów: %d"
+
+msgid "Invalid MX value"
+msgstr "Nieprawidłowa wartość rekordu MX"
+
+msgid "Invalid Name"
+msgstr "Błędna nazwa"
+
+msgid "Invalid Netmask"
+msgstr "Niepoprawna maska"
+
+msgid "Invalid Password"
+msgstr "Niepoprawne hasło"
+
+msgid "Invalid RSA comment"
+msgstr "Nieprawidłowy komentarz RSA"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr ""
+
+msgid "Invalid RSA key"
+msgstr ""
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr ""
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Nieprawidłowa wartość minut dla sesji: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Nieprawidłowa subdomena"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Niepoprawny kod dwustopniowego uwierzytelnienia"
+
+msgid "Invalid Two-Step Authentication code"
+msgstr "Nieprawidłowy kod uwierzytelniania dwuetapowego"
+
+msgid "Invalid URL"
+msgstr ""
+
+msgid "Invalid Username"
+msgstr "Niepoprawna nazwa użytkownika"
+
+msgid "Invalid Username or Password"
+msgstr ""
+
+msgid "Invalid characters in password"
+msgstr "Hasło zawiera nieprawidłowe znaki"
+
+msgid "Invalid characters in word"
+msgstr "Niepoprawne znaki w słowie"
+
+msgid "Invalid crypted passwd"
+msgstr ""
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"Niepoprawne delete_messages_days lub delete_tickets_days. Jest za duże.  Max "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"Niepoprawne delete_messages_days lub delete_tickets_days. Powinno wynosić 0 "
+"lub być dodatnią liczbą całkowitą."
+
+msgid "Invalid dnsprovider"
+msgstr ""
+
+msgid "Invalid dnsprovider type"
+msgstr "Niepoprawny typ dnsprovider"
+
+msgid "Invalid domain"
+msgstr "Niepoprawna domena"
+
+msgid "Invalid email address"
+msgstr "Błędny adres e-Mail"
+
+msgid "Invalid email user"
+msgstr ""
+
+msgid "Invalid email username"
+msgstr ""
+"Podana nazwa użytkownika nie jest poprawną nazwą użytkownika adresy e-mail."
+
+msgid "Invalid encryption password"
+msgstr "Nieprawidłowe hasło szyfrowania"
+
+msgid "Invalid file extension list"
+msgstr "Nieprawidłowa lista rozszerzeń plików"
+
+msgid "Invalid filename:"
+msgstr "Błędna nazwa pliku:"
+
+msgid "Invalid filter type"
+msgstr "Niepoprawny typ filtra"
+
+msgid "Invalid fingerprint"
+msgstr ""
+
+msgid "Invalid ftp password"
+msgstr "Błędne hasło ftp"
+
+msgid "Invalid ftp path"
+msgstr "Błędna ścieżka ftp"
+
+msgid "Invalid ftp port"
+msgstr "Błędny port ftp"
+
+msgid "Invalid ftp username"
+msgstr "Błędna nazwa użytkownika ftp"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr ""
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr ""
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr ""
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Nieprawidłowy rozmiar klucza. Prawidłowa wartość to: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Nieprawidłowa lista dozwolonych domen"
+
+msgid "Invalid local path"
+msgstr "Błędna ścieżka lokalna"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr ""
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Niepoprawna liczba dni: %s. Powinna być dodatnią liczbą całkowitą."
+
+msgid "Invalid message id"
+msgstr ""
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr ""
+"Błędny typ wiadomości. Dozwolone są tylko: prośby, odpowiedzi i wiadomości"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr ""
+
+msgid "Invalid name or extension"
+msgstr "Niepoprawna nazwa lub rozszerzenie"
+
+msgid "Invalid netmask type for IP type"
+msgstr ""
+
+msgid "Invalid new user value"
+msgstr "Błędna nowa nazwa użytkownika"
+
+msgid "Invalid number"
+msgstr "Nieprawidłowa liczba"
+
+msgid "Invalid package name"
+msgstr ""
+
+msgid "Invalid path"
+msgstr ""
+
+msgid "Invalid path append value"
+msgstr "Nieprawidłowa ścieżka"
+
+msgid "Invalid redirect URL"
+msgstr "Nieprawidłowy adres URL przekierowania"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "Niepoprawna wartość timeout sesji lub maksymalnej wielkości pliku"
+
+msgid "Invalid subdomain name"
+msgstr "Błędna nazwa subdomeny"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr ""
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr ""
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr ""
+
+msgid "Invalid update channel"
+msgstr ""
+
+msgid "Invalid username"
+msgstr "Nieprawidłowa nazwa użytkownika"
+
+msgid "Invalid values"
+msgstr "Nieprawidłowa wartość"
+
+msgid "Is able to select media type via ifmap."
+msgstr ""
+
+msgid "Issue verifying license"
+msgstr ""
+
+msgid "Issuer"
+msgstr "Wydawca"
+
+msgid "It already exists on the following system(s)"
+msgstr ""
+
+msgid "It has been disabled"
+msgstr "To zostało wyłączone"
+
+msgid "It must be a positive integer."
+msgstr "Musi być dodatnią liczbą całkowitą."
+
+msgid "It must not be an IP"
+msgstr "Nie może być IP"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr ""
+
+msgid "Items per page"
+msgstr "Wyników na stronę"
+
+msgid "Jailed Home"
+msgstr "Jailed Home"
+
+msgid "Jan"
+msgstr "Sty"
+
+msgid "Jul"
+msgstr "Lip"
+
+msgid "Jun"
+msgstr "Cze"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "Zachowaj go na przyszłość."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Proszę podać realną wartość."
+
+msgid "Key"
+msgstr "Klucz"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr ""
+"Utworzono klucz. Należy go zanotować i przechowywać w bezpiecznym miejscu."
+
+msgid "Key ID"
+msgstr "Identyfikator Klucza"
+
+msgid "Key Name"
+msgstr "Nazwa klucza"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Nazwa klucza może zawierać tylko znaki: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr ""
+
+msgid "Key is Invalid"
+msgstr "Klucz jest niepoprawny"
+
+msgid "Key(s) deleted"
+msgstr "Usunięto klucz(e)"
+
+msgid "Keys"
+msgstr "Klucze"
+
+msgid "Keys listed below"
+msgstr ""
+
+msgid "Kill"
+msgstr "Ubij (Kill)"
+
+msgid "Language"
+msgstr "Język"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Język został zmieniony na %s"
+
+msgid "Language has been successfully changed"
+msgstr "Język został zmieniony"
+
+msgid "Last"
+msgstr "Ostatni"
+
+msgid "Last Accessed"
+msgstr "Ostatni dostęp"
+
+msgid "Last Changed"
+msgstr "Ostatnia zmiana"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "Adres IP ostatniego logowania: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Ostatnie logowanie: %s"
+
+msgid "Last Message"
+msgstr "Ostatnia Wiadomość"
+
+msgid "Last Modified"
+msgstr "Ostatnia modyfikacja"
+
+msgid "Last Page"
+msgstr "Ostatnia"
+
+msgid "Last Tally Completion"
+msgstr "Ostatnio zakończone zestawienie"
+
+msgid "Leave DNS"
+msgstr "Zostaw DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Użytkownik pozostał na liście %s"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Pozycje certyfikatu Let's Encrypt"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt nie jest włączony. Nie możesz użyć tej opcji."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "Pliki LetsEncrypt zostały wyczyszczone"
+
+msgid "LetsEncrypt request successful"
+msgstr ""
+
+msgid "LetsEncrypt request successful for"
+msgstr ""
+
+msgid "License file is no longer supported"
+msgstr ""
+
+msgid "License file unchanged"
+msgstr ""
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr ""
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr ""
+"Licencja jest ograniczona do %d Administratorów/Resellerów, a obecnie masz %d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "Licencja jest ograniczona do %d kont, a obecnie masz %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Licencja jest ograniczona do %d domen, a obecnie masz %d"
+
+msgid "License is not valid"
+msgstr ""
+
+msgid "License limits exceeded"
+msgstr "Przekroczono limity licencji"
+
+msgid "License verified"
+msgstr ""
+
+msgid "Limit Notice"
+msgstr "Powiadomienia dotyczące limitu"
+
+msgid "Limit is not a number"
+msgstr "Limit nie jest liczbą"
+
+msgid "Link"
+msgstr "Podłącz"
+
+msgid "Link in Background"
+msgstr "Link zadania w tle"
+
+msgid "Linked IPs"
+msgstr "Podłączone adresy IP"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "List Configurations Saved"
+msgstr "Konfiguracja listy została zapisana"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Nazwa listy może mieć maksymalnie %d znaków"
+
+msgid "Listname must be all lower case letters"
+msgstr "Nazwa listy może zawierać tylko małe litery"
+
+msgid "Load Average"
+msgstr "Średnie obciążenie (Load Average)"
+
+msgid "Local Data"
+msgstr ""
+
+msgid "Local Default"
+msgstr "Przywróć domyślne ustawienia lokalne"
+
+msgid "Local Mail"
+msgstr "Poczta lokalna"
+
+msgid "Local URL Path"
+msgstr "Ścieżka lokalna URL"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Log Entry"
+msgstr "Wpis loga"
+
+msgid "Log Usage"
+msgstr "Zajętość loga"
+
+msgid "Login"
+msgstr ""
+
+msgid "Login Failures"
+msgstr "Ilość niepoprawnych logowań"
+
+msgid "Login Keys"
+msgstr "Klucze logowania"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Zaloguj się jako %s"
+
+msgid "Low"
+msgstr "Niski"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr ""
+
+msgid "MX Template set"
+msgstr "Ustaw szablon rekordu MX"
+
+msgid "MX Templates are disabled"
+msgstr "Szablony rekordu MX są wyłączone"
+
+msgid "MX priority should be an positive number"
+msgstr "Priorytet rekordu MX powinien być liczbą dodatnią"
+
+msgid "Mailing List"
+msgstr ""
+
+msgid "Mailing List Created"
+msgstr "Lista wysyłkowa utworzona"
+
+msgid "Mailing List(s) Deleted"
+msgstr "Lista wysyłkowa usunięta"
+
+msgid "Mailing Lists"
+msgstr "List wysyłkowych"
+
+msgid "Main"
+msgstr "Główny"
+
+msgid "Main Domain ..."
+msgstr ""
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr ""
+
+msgid "Make sure 'unit' is running"
+msgstr ""
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Upewnij się, że wartości są poprawne dla danego typu"
+
+#, c-format
+msgid "Manually by %s"
+msgstr ""
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Mark as read"
+msgstr "Zaznacz jako przeczytane"
+
+msgid "Master of a load balancing bundle."
+msgstr ""
+
+msgid "Max Tasks that may be created in the unit"
+msgstr ""
+
+msgid "Max Usage (Meg)"
+msgstr ""
+
+msgid "Max disk read operations per second."
+msgstr "Maksymalna liczba operacji odczytu dysku na sekundę."
+
+msgid "Max disk write operations per second."
+msgstr "Maksymalna liczba operacji zapisu na dysku na sekundę."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "Maksymalny limit jaki może ustawić Użytkownik na konto E-Mail"
+
+msgid "Max rate data can be read from a disk."
+msgstr "Dane o maksymalnej szybkości można odczytać z dysku."
+
+msgid "Max rate data can be written to a disk."
+msgstr "Dane o maksymalnej szybkości można zapisać na dysku."
+
+msgid "Maximum Usage"
+msgstr "Maksymalne zużycie"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr ""
+
+msgid "May"
+msgstr "Maj"
+
+msgid "Medium"
+msgstr "Średni"
+
+msgid "Meg"
+msgstr ""
+
+msgid "Memory High"
+msgstr ""
+
+msgid "Memory Max"
+msgstr ""
+
+msgid "Memory Usage"
+msgstr "Użycie pamięci"
+
+msgid "Message #"
+msgstr "Wiadomość #"
+
+msgid "Message Reset"
+msgstr "Wyczyść wiadomość"
+
+msgid "Message Type"
+msgstr "Typ Wiadomości"
+
+msgid "Message is being sent"
+msgstr "Wiadomość jest wysyłana"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "Wiadomość usunięta"
+msgstr[1] "Wiadomości usunięte"
+msgstr[2] "Wiadomości usunięte"
+
+msgid "Messages Cleared"
+msgstr "Wiadomości wyczyszczone"
+
+msgid "Messages Updated"
+msgstr "Wiadomości zaktualizowane"
+
+msgid "Mime Types Deleted"
+msgstr "Typy mime zostały usunięte"
+
+msgid "Mime-Type added"
+msgstr "Typ mime został dodany"
+
+msgid "MimeType"
+msgstr "Typ mime"
+
+msgid "Minute"
+msgstr "Minuta"
+
+msgid "Missing closing bracket in zone line."
+msgstr "Brak nawiasu zamykającego w linii strefy."
+
+msgid "Missing open bracket in zone line."
+msgstr "Brakuje otwartego nawiasu w linii strefy."
+
+msgid "ModSecurity Flags"
+msgstr ""
+
+msgid "ModSecurity Rules Saved"
+msgstr ""
+
+msgid "ModSecurity Skipped Rules"
+msgstr ""
+
+msgid "ModSecurity is not enabled"
+msgstr ""
+
+msgid "Modify"
+msgstr "Zmień"
+
+msgid "Modify Password"
+msgstr "Zmień hasło"
+
+msgid "Month"
+msgstr "Miesiąc"
+
+msgid "More Info"
+msgstr ""
+
+msgid "Morning"
+msgstr "Rano"
+
+msgid "Move Clipboard Files here"
+msgstr "Przenieś pliki ze schowka tutaj"
+
+msgid "Move to Trash"
+msgstr "Przenieś do kosza"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Musi być wybrana co najmniej jedna pozycja Let's Encrypt."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Musisz ustawić w opcjach letsencrypt=1. Aktualna wartość to letsencrypt=%d."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL nie jest włączony na tym serwerze"
+
+msgid "NGINX Unit"
+msgstr ""
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Name Server 1"
+msgstr "Serwer nazw 1"
+
+msgid "Name Server 2"
+msgstr "Serwer nazw 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Nazwa zwyczajowa musi zawierać tylko litery, spacje i/lub kropki"
+
+msgid "Nameserver"
+msgstr "Serwer nazw"
+
+msgid "Nameservers deleted"
+msgstr "Serwery nazw zostały usunięte"
+
+msgid "Nameservers have been changed"
+msgstr "Serwery nazw zostały zapisane"
+
+msgid "Namesevers have been changed."
+msgstr "Serwer nazw został zmieniony."
+
+msgid "Netmask"
+msgstr "Maska"
+
+msgid "Never"
+msgstr "Nigdy"
+
+msgid "New Secret Set: %s"
+msgstr ""
+
+msgid "New password isn't different"
+msgstr "Nowe hasło nie jest inne od starego"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Nowo zainstalowany klucz ma %s-bitów"
+
+msgid "Next Retry"
+msgstr "Następna próba"
+
+msgid "Nginx Template"
+msgstr ""
+
+msgid "Nginx is not enabled"
+msgstr "Nginx nie jest włączony"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr ""
+
+msgid "No"
+msgstr "Nie"
+
+msgid "No Awstats"
+msgstr "Brak Awstats"
+
+msgid "No Data to Show"
+msgstr "Brak danych do wyświetlenia"
+
+msgid "No IPs selected"
+msgstr "Nie wybrano IP"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr ""
+
+msgid "No Send class set"
+msgstr ""
+
+msgid "No User Data"
+msgstr "Brak danych użytkownika"
+
+msgid "No action"
+msgstr "Brak działań"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr ""
+
+msgid "No changes have been made"
+msgstr "Nie dokonano żadnych zmian"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Zmiany nie były potrzebne. Pominięto zapis."
+
+msgid "No colors have been selected"
+msgstr "Żaden kolor nie został wybrany"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr ""
+
+msgid "No events for this period."
+msgstr ""
+
+msgid "No files have been selected for upload."
+msgstr "Żadne pliki nie zostały wybrane do przesłania."
+
+msgid "No free IPs found"
+msgstr ""
+
+msgid "No global IPs found"
+msgstr ""
+
+msgid "No keys selected"
+msgstr ""
+
+msgid "No passwd entries provided."
+msgstr ""
+
+msgid "No paths were provided."
+msgstr "Nie przekazano ścieżek."
+
+msgid "No shared IPs found"
+msgstr ""
+
+msgid "No text provided"
+msgstr "Nie dostarczono tekstu"
+
+msgid "No vacation message set"
+msgstr "Błędne hasło"
+
+msgid "None"
+msgstr ""
+
+msgid "Not a valid IP Address"
+msgstr "Nie jest poprawnym adresem IP"
+
+msgid "Not allowed for Resellers"
+msgstr "Niedozwolone dla Resellerów"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+
+msgid "Not setting up Mail SNI."
+msgstr "Nie ustawiaj Mail SNI."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr ""
+
+msgid "Not yet generated"
+msgstr "Nie wygenerowany jeszcze"
+
+msgid "Not yet signed"
+msgstr "Nie podpisane jeszcze"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Uwaga: poprzednia konfiguracja Let's Encrypt jest wciąż ustawiona na "
+"odnowienie za %d dni."
+
+msgid "Nothing"
+msgstr "Nic"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr ""
+"Powiadomienie, że klucz logowania %s został pomyślnie utworzony przez %s"
+
+msgid "Notified"
+msgstr "Powiadomiono"
+
+msgid "Nov"
+msgstr "Lis"
+
+msgid "Null values"
+msgstr ""
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr ""
+
+msgid "Number of Users"
+msgstr "Liczba użytkowników"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Oct"
+msgstr "Paź"
+
+msgid "Off"
+msgstr "Wyłączone"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Twój stary %s-bitowy klucz został zapisany w %s"
+
+msgid "Old password incorrect"
+msgstr "Stare hasło jest nieprawidłowe"
+
+#, c-format
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "starsze niż %d dzień"
+msgstr[1] "starsze niż %d dni"
+msgstr[2] "starsze niż %d dni"
+
+msgid "On"
+msgstr "Włączone"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr ""
+"Jeden (lub więcej) z wybranych adresów IP nie znajduje się na Twojej liście"
+
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "Logowanie jednym kliknięciem nie jest włączone w pliku directadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"Logowanie jednym kliknięciem nie obsługuje webmail_link =%s. Spróbuj "
+"webmail_link=roundcube."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr ""
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "Tylko 'dodatkowe' IP mogą być usuwane tą metodą"
+
+msgid "Only API access is allowed"
+msgstr ""
+
+msgid "Only Admin accounts can save settings"
+msgstr ""
+
+msgid "Only Admins can reset the usage count"
+msgstr "Tylko Administratorzy mogą zerować licznik zużycia"
+
+msgid "Only Admins may run this request"
+msgstr ""
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr ""
+
+msgid "Only the location of the route can be renamed"
+msgstr ""
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr ""
+"Używaj wildcard tylko na domenach, które obecnie mają funkcjonalny lokalny "
+"DNS"
+
+msgid "Open"
+msgstr "Otwórz"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir zostało wyłączone dla wybranych domen"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir zostało włączone dla wybranych domen"
+
+msgid "Open+Confirm"
+msgstr "Otwórz+Zatwierdź"
+
+msgid "Operation"
+msgstr "Operacja"
+
+msgid "Optimize"
+msgstr ""
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr ""
+
+msgid "Option Saved"
+msgstr "Opcja zapisana"
+
+msgid "Options"
+msgstr "Opcje"
+
+msgid "Options changed successfully"
+msgstr "Opcje zostały pomyślnie zmienione"
+
+msgid "Order"
+msgstr "kolejności"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "kolejności (kiedy pierwsze sortowane wartości będą takie same)"
+
+msgid "Original Package"
+msgstr "Oryginalny pakiet"
+
+msgid "Other"
+msgstr "Inne"
+
+msgid "Other Disk Usage"
+msgstr ""
+
+msgid "Other Usage"
+msgstr ""
+
+msgid "Overview"
+msgstr "Podgląd"
+
+msgid "Owner"
+msgstr "Właściciel"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr ""
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "Nazwa skryptu PHP"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "W tej domenie nie można kontrolować ustawień PHP"
+
+msgid "PHP Version Selector"
+msgstr "Wybór wersji PHP"
+
+msgid "PHP versions saved"
+msgstr "Zapisane wersje PHP"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' nie jest liczbą"
+
+msgid "POP Email Accounts"
+msgstr "Konta e-mail POP"
+
+msgid "POP/IMAP Server"
+msgstr "Serwer POP/IMAP"
+
+msgid "Package"
+msgstr "Pakiet"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Pakiet '%s' już istnieje"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Pakiet '%s' nie istnieje"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Pakietu '%s' nie ma na Twojej liście"
+
+msgid "Package not found"
+msgstr "Nie znaleziono pakietu"
+
+msgid "Page"
+msgstr "Strona"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Utworzono katalog nadrzędny %s."
+
+msgid "Parsing Error. Check logs"
+msgstr "Błąd przetwarzania. Sprawdź logi"
+
+msgid "Password"
+msgstr "Hasło"
+
+msgid "Password Changed"
+msgstr "Hasło zostało zmienione"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Zmieniono hasło: %s"
+
+msgid "Password Not Changed"
+msgstr "Hasło nie zostało zmienione"
+
+msgid "Password Saved!"
+msgstr "Hasło zapisane!"
+
+msgid "Password is not valid"
+msgstr "Hasło jest nieprawidłowe"
+
+msgid "Password is too long"
+msgstr "Hasło jest zbyt długie"
+
+msgid "Password is too short"
+msgstr "Hasło jest za krótkie"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr ""
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Hasło musi mieć więcej niż %d znaków"
+
+msgid "Password successfully changed"
+msgstr "Hasło zostało pomyślnie zmienione"
+
+msgid "Password/Quota"
+msgstr ""
+
+msgid "Password:"
+msgstr "Hasło:"
+
+msgid "Passwords do not match"
+msgstr "Hasła nie pasują do siebie"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Hasła nie pasują lub są nieprawidłowe"
+
+msgid "Path"
+msgstr "Ścieżka"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Ścieżka %s nie istnieje lub brak uprawnień dostępu dla Użytkownika %s."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Ścieżka %s już istnieje przed utworzeniem użytkownika. Proszę najpierw "
+"usunąć tę ścieżkę."
+
+msgid "Path does not exist"
+msgstr "Ścieżka nie istnieje"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Ścieżka musi zaczynać się od ukośnika (/)"
+
+msgid "Paths Unblocked"
+msgstr "Ścieżka została odblokowana"
+
+msgid "Paths must be within your home directory"
+msgstr "Ścieżki muszą się znajdować w katalogu domowym"
+
+msgid "Percent"
+msgstr "Procent"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr ""
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr ""
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr ""
+
+msgid "Perm."
+msgstr ""
+
+msgid "Permissions set"
+msgstr ""
+
+msgid "Php is not enabled"
+msgstr ""
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr "Proszę sprawdzić strefę dla %s czy rekord A serwera nazw jest poprawny."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Potwierdź, że chcesz usunąć swoje dane DNSSEC"
+
+msgid "Please pick only one skin to apply"
+msgstr "Proszę wybrać tylko jeden szablon"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr ""
+
+msgid "Please provide at least one IP"
+msgstr ""
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "Zobacz ten adres URL żeby sprawdzić kod wyjścia curl '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Proszę wybierz jedną domenę żeby ustawić ją jako domyślną"
+
+msgid "Please select at least one User"
+msgstr ""
+
+msgid "Please select at least one domains"
+msgstr ""
+
+msgid "Please select at least one file"
+msgstr "Wybierz co najmniej jeden plik"
+
+msgid "Please select at least one item"
+msgstr ""
+
+msgid "Please select at least one package"
+msgstr ""
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr ""
+
+msgid "Please select one or more Databases"
+msgstr "Proszę zaznaczyć jedną lub więcej baz danych"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Wybierz tylko jedno zadanie do zmiany"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Limit powinien się zawierać w przedziale od 1 do %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr ""
+
+msgid "Please use all lower case characters in the username"
+msgstr "Użyj tylko małych liter jako nazwa użytkownika"
+
+msgid "Plugin Uploaded"
+msgstr "Plugin wgrany"
+
+msgid "Plugin(s) Installed"
+msgstr "Plugin(y) zainstalowane"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Plugin(y) odinstalowane"
+
+msgid "Plugin(s) Updated"
+msgstr "Zaktualizowano wtyczki"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Wskaźnik '%s' nie należy do ciebie."
+
+msgid "Pop"
+msgstr "POP"
+
+msgid "Post Scripts"
+msgstr ""
+
+msgid "Post scripts"
+msgstr "Skrypty po"
+
+msgid "Pre-backup hard-link check"
+msgstr ""
+"Sprawdzenie twardych dowiązań (hard link) przed wykonaniem kopii zapasowej"
+
+msgid "Preparing 'domains' data"
+msgstr "Przygotowanie danych katalogu 'domains'"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Przygotowanie danych (dane spoza katalogu 'domains')"
+
+msgid "Present"
+msgstr "Obecny"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Zachowanie danych strony dotyczy tylko /domeny/domena.pl. Inne obszary, "
+"takie jak dane e-mail, nie zostaną zachowane"
+
+msgid "Priority"
+msgstr "Priorytet"
+
+msgid "Privileges"
+msgstr "Przywileje"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "ID procesu %d nie jest 'dataskq'. On jest '%s'"
+
+msgid "Process is running"
+msgstr "Proces został uruchomiony"
+
+msgid "Process is stopped"
+msgstr "Proces został zatrzymany"
+
+msgid "Processor Name"
+msgstr "Nazwa procesora"
+
+msgid "Processor Speed (MHz)"
+msgstr "Prędkość procesora (MHz)"
+
+msgid "Progress"
+msgstr "Postęp"
+
+msgid "Protect"
+msgstr "Chroń"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "Komunikat chronionego katalogu zawiera nieprawidłowe znaki."
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr ""
+
+msgid "Provided password is not correct."
+msgstr "Podane hasło jest niepoprawne."
+
+msgid "Provided password is weak"
+msgstr "Podane hasło jest słabe"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "Wprowadzona wartość nie jest nazwą użytkownika lub adresem E-mail"
+
+msgid "Provided value is not valid."
+msgstr ""
+
+msgid "Proxy socket address"
+msgstr ""
+
+msgid "Publish"
+msgstr "Opublikuj"
+
+msgid "Purge"
+msgstr "Oczyść"
+
+msgid "Purge Archives"
+msgstr "Usuń archiwa"
+
+msgid "Purge From"
+msgstr ""
+
+#, c-format
+msgid "Purge in %s"
+msgstr ""
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr ""
+
+msgid "Raw zone saved"
+msgstr "Czysta strefa zapisana"
+
+msgid "Re-sign your zone."
+msgstr ""
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Błąd podczas odczytu %s: %s"
+
+msgid "Reason:"
+msgstr "Powód:"
+
+msgid "Reboot"
+msgstr "Restartuj"
+
+msgid "Receive all multicast packets."
+msgstr ""
+
+msgid "Received"
+msgstr "Odebrana"
+
+msgid "Received Emails"
+msgstr "Odebranych listów e-mail"
+
+msgid "Reconfiguration Error"
+msgstr "Błąd ponownej konfiguracji"
+
+msgid "Record Added"
+msgstr "Rekord został dodany"
+
+msgid "Record Edited"
+msgstr "Rekord zapisany"
+
+msgid "Records Deleted"
+msgstr "Rekordy zostały usunięte"
+
+msgid "Recursive"
+msgstr "Rekurencyjnie"
+
+msgid "Recursively"
+msgstr "Rekurencyjnie"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+
+msgid "Redirect Added"
+msgstr "Dodano przekierowanie"
+
+msgid "Redirect URL"
+msgstr "Adres przekierowania"
+
+msgid "Redirect(s) deleted"
+msgstr "Przekierowanie(a) zostały usunięte"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "Odśwież"
+
+msgid "Regenerate Codes"
+msgstr "Wygeneruj kody ponownie"
+
+msgid "Related"
+msgstr ""
+
+msgid "Release Candidates"
+msgstr ""
+
+msgid "Reload"
+msgstr "Przeładuj"
+
+msgid "Reload requested"
+msgstr "Załadowano ponownie"
+
+msgid "Remote Mail"
+msgstr "Zdalna poczta"
+
+msgid "Remove"
+msgstr "Usuń"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Usuń rekordy DNS dla IP"
+
+msgid "Remove DNSSEC"
+msgstr "Usuń DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Usuń zawartość katalogu"
+
+msgid "Remove From Skip List"
+msgstr "Usuń z listy pominiętych"
+
+msgid "Remove from reseller"
+msgstr "Usuń z Resellera"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Usunięto użytkownika z listy %s"
+
+msgid "Rename"
+msgstr "Zmień nazwę"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr ""
+
+msgid "Repair"
+msgstr "Napraw"
+
+msgid "Replies"
+msgstr "Odpowiedzi"
+
+msgid "Reply"
+msgstr "Odpowiedz"
+
+msgid "Reply Sent"
+msgstr "Wyślij odpowiedź"
+
+msgid "Request added to task.queue"
+msgstr ""
+
+msgid "Request will be processed in the background."
+msgstr ""
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "Wartość '%s' żądania Let's Encrypt jest niedozwolona."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr ""
+
+msgid "Requests Cancelled"
+msgstr ""
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Wymagane: '%s' lub '%s'"
+
+msgid "Reseller"
+msgstr "Reseller"
+
+msgid "Reseller Bandwidth"
+msgstr "Transfer Resellera"
+
+msgid "Reseller History"
+msgstr "Historia Resellera"
+
+msgid "Reseller Quota"
+msgstr "Quota Resellera"
+
+msgid "Reseller created"
+msgstr "Reseller został utworzony"
+
+msgid "Reseller deleted"
+msgstr "Reseller został usunięty"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr ""
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "Reseller's IP"
+msgstr "Adres IP Resellera"
+
+msgid "Reset"
+msgstr "Przywróć"
+
+msgid "Reset Owner"
+msgstr "Przywróć właściciela"
+
+msgid "Reset Ownership"
+msgstr "Resetuj właściciela"
+
+msgid "Reset Today"
+msgstr "Wyzeruj dzisiejsze"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+
+msgid "Resources allocated."
+msgstr ""
+
+msgid "Restart"
+msgstr "Restartuj"
+
+msgid "Restore"
+msgstr "Przywracanie"
+
+msgid "Restore Complete!"
+msgstr "Przywracanie zakończone!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"Odrzucono przywracanie konta '%s' do właściciela '%s' ponieważ konto to już "
+"istnieje pod kontrolą właściciela '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Przywracanie będzie uruchomione w tle"
+
+msgid "Restores added to Queue"
+msgstr "Przywracanie zostało dodanie do kolejki"
+
+msgid "Restoring Databases"
+msgstr "Przywracanie baz danych"
+
+msgid "Restoring Domains Data"
+msgstr ""
+
+msgid "Restoring E-Mail Data"
+msgstr ""
+
+msgid "Restoring E-Mail Settings"
+msgstr ""
+
+msgid "Restoring Extra Admin Data"
+msgstr ""
+
+msgid "Restoring Extra Reseller Data"
+msgstr ""
+
+msgid "Restoring Extra User Data"
+msgstr ""
+
+msgid "Restoring FTP"
+msgstr ""
+
+msgid "Restoring extra E-Mail items"
+msgstr ""
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+
+msgid "Result"
+msgstr ""
+
+msgid "Result of file copy"
+msgstr "Wynik kopiowania pliku"
+
+msgid "Result of file move"
+msgstr "Wynik przesuwania pliku"
+
+msgid "Results"
+msgstr "Wyniki"
+
+msgid "Retries"
+msgstr "Ponowne próby"
+
+msgid "Retry"
+msgstr "Ponów"
+
+msgid "Retry counter has been cleared."
+msgstr "Licznik ponownych prób został wyczyszczony."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr ""
+
+msgid "Return with httpd code"
+msgstr ""
+
+msgid "Rewrite Apache"
+msgstr "Usuń z Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr ""
+"W RoundCube brakuje opcji direct_login. Proszę zainstaluj ponownie RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr ""
+
+msgid "Rules Reset"
+msgstr ""
+
+msgid "Run Now"
+msgstr "Uruchom Teraz"
+
+msgid "Running"
+msgstr "Uruchomione"
+
+msgid "SMTP Log"
+msgstr "Logi SMTP"
+
+msgid "SMTP Server"
+msgstr "Serwer poczty wychodzącej (SMTP)"
+
+msgid "SNI Host"
+msgstr "Host SNI"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI jest wyłączone dla tej domeny"
+
+msgid "SSH Key Modified"
+msgstr "Zmieniono klucz SSH"
+
+msgid "SSH Key authorized"
+msgstr "Autoryzowano klucz SSH"
+
+msgid "SSH Key created"
+msgstr "Utworzono klucz SSH"
+
+msgid "SSH Key deleted"
+msgstr "Usunięto klucz SSH"
+
+msgid "SSH is not enabled"
+msgstr "SSH nie jest włączone"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL nie jest włączone dla tej domeny"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Safe Mode zostało wyłączone dla wybranych domen"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Safe Mode zostało włączone dla wybranych domen"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Save Awstats"
+msgstr ""
+
+msgid "Save Comments"
+msgstr "Zapisz komentarz"
+
+msgid "Save E-Mail"
+msgstr "Zapisz adres E-mail"
+
+msgid "Save Increase"
+msgstr ""
+
+msgid "Save Language"
+msgstr ""
+
+msgid "Save Limit"
+msgstr "Zapisz limit"
+
+msgid "Save Limit Notice"
+msgstr "Zapisz powiadomieniu o limicie"
+
+msgid "Save Name"
+msgstr ""
+
+msgid "Save Nameservers"
+msgstr ""
+
+msgid "Save Skin"
+msgstr ""
+
+msgid "Saved"
+msgstr "Zapisane"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+
+msgid "Scratch Codes"
+msgstr "Kody zdrapki"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Kody zdrapki"
+
+msgid "Script output"
+msgstr "Wyjście skryptu"
+
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr ""
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "Secure Socket Layer (ssl)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr ""
+
+msgid "See Error log for more information."
+msgstr ""
+
+#, c-format
+msgid "See this guide: %s"
+msgstr ""
+
+msgid "Select"
+msgstr "Wybierz"
+
+msgid "Select MX Template"
+msgstr "Wybierz szablon rekordu MX"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Wybierz adres IP do podłączenia go do adresu IP %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Wybrany nagłówek Content-Type jest niepoprawny."
+
+msgid "Selected Data"
+msgstr "Zaznaczone dane"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "Aktywuj zaznaczone pluginy"
+
+msgid "Selected Plugins De-Activated"
+msgstr "De-aktywuj zaznaczone pluginy"
+
+msgid "Selected Plugins Deleted"
+msgstr "Usuń zaznaczone pluginy"
+
+msgid "Selected Users"
+msgstr "Wybrani użytkownicy"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "Wybrane kodowanie znaków jest niepoprawne."
+
+msgid "Send Count"
+msgstr "Liczba wysyłek"
+
+msgid "Send Signal"
+msgstr "Wyślij sygnał"
+
+msgid "Send a Message"
+msgstr "Wyślij wiadomość"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Limit musi być poprawną liczbą lub może być pustym polem."
+
+msgid "Sender"
+msgstr "Nadawca"
+
+msgid "Sender Host"
+msgstr "Host nadawcy"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr ""
+
+msgid "Sent"
+msgstr "Wysłane"
+
+msgid "Sent E-mails"
+msgstr "Wysłane wiadomości e-mail"
+
+msgid "Sent Emails"
+msgstr "Wysłanych listów e-mail"
+
+msgid "Sep"
+msgstr "Wrz"
+
+msgid "Server"
+msgstr "Serwer"
+
+msgid "Server History"
+msgstr "Historia serwera"
+
+msgid "Server Path"
+msgstr "ścieżka na serwerze"
+
+msgid "Service"
+msgstr "Usługa"
+
+msgid "Set"
+msgstr "Ustaw"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+"Jeżeli ma być bez limitu wpisz 0 lub pozostaw puste pole żeby ustawić "
+"wartość domyślą."
+
+msgid "Set Global Shared"
+msgstr "Ustaw globalnie udostępnione"
+
+msgid "Set as Default"
+msgstr "Ustaw jako domyślną"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Ustaw zaznaczone domeny, które mają być publicznie dostępne"
+
+msgid "Set selected to"
+msgstr "Ustaw wybrane na"
+
+msgid "Set to"
+msgstr "Ustaw na"
+
+msgid "Setting"
+msgstr "Parametr"
+
+msgid "Setting changed"
+msgstr "Zmieniono ustawienia"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Settings Saved"
+msgstr "Zapisano ustawienia"
+
+msgid "Share Selected"
+msgstr "Dziel zaznaczone"
+
+msgid "Share a static path"
+msgstr ""
+
+msgid "Shared"
+msgstr "Współdzielony"
+
+msgid "Shared - randomly selected"
+msgstr "Współdzielone - losowo wybrane"
+
+msgid "Shell Access (ssh)"
+msgstr "Dostęp do powłoki (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "Dostęp do powłoki dla użytkowników"
+
+msgid "Show"
+msgstr "Pokaż"
+
+msgid "Sign"
+msgstr "Podpisz"
+
+msgid "Signed"
+msgstr "Podpisano"
+
+msgid "Size"
+msgstr "Rozmiar"
+
+msgid "Size is not a number"
+msgstr "Wielkość nie jest liczbą"
+
+msgid "Skin"
+msgstr "Szablon"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "Szablon '%s' nie ma żadnych własnych kolorów do ustawienia"
+
+msgid "Skin Applied"
+msgstr "Skórka została zaaplikowana"
+
+msgid "Skin Installed"
+msgstr "Szablon został zainstalowany"
+
+msgid "Skin Name"
+msgstr ""
+
+msgid "Skin Owner"
+msgstr "Właściciel szablonu"
+
+msgid "Skin Set"
+msgstr "Szablon został ustawiony"
+
+msgid "Skin applied to all users"
+msgstr "Szablon został przypisany do wszystkich użytkowników"
+
+msgid "Skin has been customized"
+msgstr "Szablon został zmodyfikowany"
+
+msgid "Skin has been successfully changed"
+msgstr "Szablon został zmieniony"
+
+msgid "Skins Deleted"
+msgstr "Szablon został usunięty"
+
+msgid "Skip Suspended"
+msgstr "Pomiń zawieszone"
+
+msgid "Skipped rule added"
+msgstr ""
+
+msgid "Skipping system E-Mail account"
+msgstr "Pominięto konto systemowe"
+
+msgid "Slave of a load balancing bundle."
+msgstr ""
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr ""
+"Przepraszamy ale ta funkcja nie jest jeszcze wspierana dla wskaźników domen"
+
+msgid "Sort"
+msgstr "Sortuj"
+
+msgid "Sort Selected Column in"
+msgstr "Sortuj zaznaczona kolumnę w"
+
+msgid "Source Domain"
+msgstr "Domena źródłowa"
+
+msgid "Spam"
+msgstr "Spam"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAassassin jest aktualnie wyłączony dla Twojego konta"
+
+msgid "SpamAssassin"
+msgstr "SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "Spamassassin wyłączony"
+
+msgid "Spambox"
+msgstr ""
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd nie jest uruchomiony w systemie."
+
+msgid "Splitting error for unix socket"
+msgstr ""
+
+msgid "Ssl"
+msgstr ""
+
+msgid "Stable"
+msgstr ""
+
+msgid "Start"
+msgstr "Uruchom"
+
+msgid "Start Time"
+msgstr "Czas rozpoczęcia"
+
+msgid "Start Time must be before End Time."
+msgstr "Czas rozpoczęcia musi być wcześniejszy niż czas zakończenia."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "Stan/Województwo musi zawierać tylko litery, spacje i/lub kropki"
+
+msgid "Stats links created"
+msgstr "Dowiązanie do statystyk zostało utworzone"
+
+msgid "Stats links removed"
+msgstr "Usunięto link do statystyk"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Status Set"
+msgstr "Status ustawiony"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "Bit Sticky nie jest dozwolony: maksymalne uprawnienia to 777"
+
+msgid "Stop"
+msgstr "Zatrzymaj"
+
+msgid "Stopped"
+msgstr "Zatrzymana"
+
+msgid "String contains an invalid email address"
+msgstr "zawiera nieprawidłowy adres e-mail"
+
+msgid "Sub Domains"
+msgstr "Subdomeny"
+
+msgid "Sub Sort"
+msgstr ""
+
+msgid "Sub Sort Selected Column in"
+msgstr "Dodatkowo sortuj zaznaczoną kolumnę w"
+
+msgid "Sub-domain is forbidden"
+msgstr ""
+
+msgid "SubDomain Name"
+msgstr "Nazwa subdomeny"
+
+msgid "Subdomain Created"
+msgstr "Subdomena została utworzona"
+
+msgid "Subdomain Removed"
+msgstr "Subdomena usunięta"
+
+msgid "Subdomain Stats"
+msgstr "Statystyki subdomeny"
+
+msgid "Subdomain already exists"
+msgstr "Subdomena już istnieje"
+
+msgid "Subdomain created"
+msgstr "Utworzono subdomenę"
+
+msgid "Subdomain does not exist"
+msgstr ""
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Nazwa subdomeny jest za długa. Maksymalna długość %d znaków."
+
+msgid "Subdomains"
+msgstr "Subdomeny"
+
+msgid "Subdomains Removed"
+msgstr "Subdomeny usunięte"
+
+msgid "Subdomains deleted"
+msgstr "Usunięto subdomeny"
+
+msgid "Subject"
+msgstr "Temat"
+
+msgid "Subject Contains"
+msgstr "Temat zawiera"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Prefiks tematu zawiera niedozwolone znaki. Użyj %s"
+
+msgid "Subscriber"
+msgstr "Subskrybent"
+
+msgid "Subscribers"
+msgstr "Subskrybenci"
+
+msgid "Success"
+msgstr "Powodzenie"
+
+msgid "Supports multicast"
+msgstr ""
+
+msgid "Suspend"
+msgstr "Zawieś"
+
+msgid "Suspend / Unsuspend"
+msgstr "Zawieś / Odwieś"
+
+msgid "Suspend Reason"
+msgstr "Powód zawieszenia"
+
+msgid "Suspend at Limit"
+msgstr "Zawieś po przekroczeniu limitu"
+
+msgid "Suspended"
+msgstr "Zawieszony"
+
+msgid "Syntax check has been disabled"
+msgstr ""
+
+msgid "System Info"
+msgstr "Informacje o systemie"
+
+msgid "System Rebooting Now!"
+msgstr "Uruchom teraz ponownie system!"
+
+msgid "System Uptime"
+msgstr "Czas działania systemu (uptime)"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+
+msgid "Systems Quotas are size 0."
+msgstr ""
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL został zapisany"
+
+msgid "Table"
+msgstr ""
+
+msgid "Tail"
+msgstr "Ostatnie"
+
+msgid "Tasks Max"
+msgstr ""
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+
+msgid "Template does not exist"
+msgstr "Szablon nie istnieje"
+
+msgid "Temporary Bandwidth Increase"
+msgstr ""
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "Tymczasowe zwiększenie transferu zostało ustawione"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "Ten ID nie jest typu 'admin'"
+
+msgid "That IP already exists on the domain"
+msgstr "Ten adres IP jest już przypisany dla domeny"
+
+msgid "That IP does not exist"
+msgstr "Adres IP nie istnieje"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr ""
+"Ten adres IP nie znajduje się na liście adresów IP dla Twojego użytkownika"
+
+msgid "That IP does not exist in your list"
+msgstr "Ten adres IP nie istnieje na twojej liście"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "To IP już jest na liście dodatkowych IP"
+
+msgid "That IP is already owned"
+msgstr "Ten adres IP jest już w posiadaniu"
+
+msgid "That IP is not available for linking"
+msgstr "Wybrany adres IP nie jest dostępny do podłączenia"
+
+msgid "That User already exists on another server"
+msgstr "Użytkownik już istnieje na innym serwerze"
+
+msgid "That database already exists"
+msgstr "Podana baza danych już istnieje"
+
+msgid "That database does not belong to you"
+msgstr "Baza danych nie należy do Ciebie"
+
+msgid "That database does not exist"
+msgstr ""
+
+msgid "That domain already exists"
+msgstr "Podana domena już istnieje"
+
+msgid "That domain already exists on another server"
+msgstr "Podane domena już istnieje na innym serwerze"
+
+msgid "That domain does not belong to you"
+msgstr ""
+
+msgid "That domain does not exist"
+msgstr ""
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr ""
+"Domena jest zawieszona. Jeżeli chcesz zmienić nazwę domeny najpierw ją odwieś"
+
+msgid "That email user does not exist"
+msgstr ""
+
+msgid "That file was empty"
+msgstr "Plik jest pusty"
+
+msgid "That filter already exists"
+msgstr "Filtr już istnieje"
+
+msgid "That ftp_password file does not exist"
+msgstr ""
+
+msgid "That is an invalid email address / email list"
+msgstr "To jest nieprawidłowy adres e-mail / listy e-mailowej"
+
+msgid "That is an invalid filename"
+msgstr "Nieprawidłowa nazwa pliku"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"To nie jest poprawna ścieżka. ścieżka nie jest w katalogu domowym lub nie "
+"istnieje lub zawiera dowiązania symboliczne lub zawiera niedozwolone znaki"
+
+msgid "That is not a valid quota"
+msgstr ""
+
+msgid "That is not a valid username"
+msgstr ""
+
+msgid "That is not your domain"
+msgstr "To nie jest twoja domena"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Podana nazwa hosta jest zarezerwowana. Zmień nazwę hosta lub użyj innej "
+"domeny"
+
+msgid "That key does not exist"
+msgstr "Taki klucz nie istnieje"
+
+msgid "That password is incorrect"
+msgstr "To hasło jest nieprawidłowe"
+
+msgid "That path isn't protectable"
+msgstr "Podana ścieżka nie może być chroniona"
+
+msgid "That pop account doesn't exist"
+msgstr "Konto pocztowe nie istnieje"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Ten szablon nie może być modyfikowany. Plik skin.conf wymaga %s"
+
+msgid "That skin does not exist"
+msgstr "Ten szablon nie istnieje"
+
+msgid "That skin is not in your list"
+msgstr "Ten szablon nie jest na Twojej liście"
+
+msgid "That skin name already exists"
+msgstr "Ta nazwa skórki już istnieje"
+
+msgid "That user already exists"
+msgstr "Użytkownik o podanej nazwie już istnieje"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+"Użytkownik zawiera separator ftp (%c), które nie może występować w nazwie "
+"użytkownika."
+
+msgid "That user does not belong to you"
+msgstr "Użytkownik nie należy do Ciebie"
+
+msgid "That user does not exist"
+msgstr "Użytkownik nie istnieje"
+
+msgid "That user doesn't exist"
+msgstr "Użytkownik nie istnieje"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Taki użytkownik jest zarezerwowany dla konta anonimowego"
+
+msgid "That username already exists on the system"
+msgstr "Podana nazwa użytkownika już istnieje w systemie"
+
+msgid "That username is a reserved system name"
+msgstr "Nazwa użytkownika jest zarezerwowana przez system"
+
+msgid "That zone already exists"
+msgstr "Podana strefa już istnieje"
+
+msgid "Thats a reserved skin name."
+msgstr "Ta nazwa dla szablonu jest zastrzeżona."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "Kopia zapasowa %s została utworzona w %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "Podana wartość 'ttl' nie jest liczbą"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr ""
+"Administrator wyłączył funkcję kopii bezpieczeństwa (backupu) użytkownika"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "Certyfikat CA nie będzie użyty. Plik zostanie ale nie będzie dołączony."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"Podana wartość kopii CC utworzy nieskończoną pętlę. Proszę użyć innej "
+"wartości CC."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "Wiadomość e-mail '%s' zawiera nieprawidłowe znaki"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "Adres IP %s nie istnieje. Użytkownik %s nie zostanie utworzony"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr ""
+
+msgid "The Ticket System is not enabled."
+msgstr "System zgłoszeń jest nieaktywny."
+
+msgid "The User backups have been uploaded to"
+msgstr "Kopia zapasowa Użytkownika została przesłana do"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr ""
+
+msgid "The Users display cache will be updated momentarily."
+msgstr ""
+"Pamięć podręczna wyświetlania użytkowników zostanie chwilowo zaktualizowana."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr ""
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Pamięć podręczna jest aktualizowana, bieżące wartości mogą być "
+"nieprawidłowe. Odśwież stronę za 1 minutę."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Certyfikat i Klucz nie pasują do siebie. Upewnij się, że używany jest "
+"odpowiedni Klucz z tego certyfikatu"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr ""
+
+msgid "The command cannot contain any newline characters"
+msgstr "Komenda nie może zawierać znaków nowego wiersza"
+
+msgid "The database '%s' does not belong to you"
+msgstr ""
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr ""
+"Dzień miesiąca nie jest poprawną wartością dla zadania cron. Poprawne "
+"wartości to liczby z zakresy (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr ""
+"Dzień tygodnia nie jest poprawną wartością dla zadania cron. Poprawne "
+"wartości to liczby z zakresy (0-7)"
+
+msgid "The default has been set"
+msgstr "Domyślnie jest ustawiony"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"Właścicielem katalogu %s jest 'apache'.  Użyj funkcji 'Resetuj właściciela' "
+"i spróbuj ponownie."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Domena %s nie należy do Ciebie."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr ""
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "Podana domena jest nieprawidłowa. Musi być w postaci \"domena.pl\""
+
+msgid "The domain has been modified"
+msgstr "Domena została zaktualizowana"
+
+msgid "The domain must not match your hostname."
+msgstr ""
+
+msgid "The domains have been modified"
+msgstr "Domeny zostały zaktualizowane"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "Wiadomość e-mail zawierająca Twoje nowe hasło została wysłana."
+
+msgid "The email address provided is not a valid email address"
+msgstr ""
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Podana ścieżka może zawierać tylko a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "Plik %s ma co najmniej jedno twarde dowiązanie"
+
+msgid "The file is generated when the account is reset."
+msgstr ""
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Plik musi mieć postać: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Plik mus mieć postać: username.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "Plik: '%s' nie ma postaci username.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Następujący plik nie został znaleziony, zerowanie nie jest wymagane."
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Następujące twarde linki zostały znalezione dla użytkownika %s:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "Użytkownik ftp %s nie istnieje w pliku passwd %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "Podana pełna nazwa nie kończy się na nazwie strefy"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "Błędna lokalna ścieżka lub adres docelowy."
+
+msgid "The location has not changed"
+msgstr ""
+
+msgid "The max upload size cannot be 0"
+msgstr "Maksymalny rozmiar wgrywanego pliku nie może być 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr ""
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr ""
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr ""
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr ""
+"Miesiąc nie jest poprawną wartością dla zadania cron. Poprawne wartości to "
+"liczby z zakresy (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr ""
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr ""
+
+msgid "The new passwords do not match"
+msgstr "Zużycie (Meg)"
+
+msgid "The number and type of ticket is required"
+msgstr "Numer i typ zgłoszenie jest wymagany"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "Właścicielem %s nie jest %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "Login"
+
+msgid "The path %s already exists"
+msgstr "Nazwa pliku %s już istnieje"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Ścieżka już istnieje, ale nie jest katalogiem"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"Proces jest obecnie używany do wykonania tego żądania, więc wkrótce zostanie "
+"ono wykonane przez kolejkę zadań."
+
+msgid "The provided IP is not valid"
+msgstr "Podany adres IP jest niepoprawny"
+
+msgid "The provided domain name matches your hostname."
+msgstr ""
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+"Polecenie nie może być wykonane ponieważ nie jest dostępne na Twoim poziomie "
+"dostępu"
+
+msgid "The requested command requires POST but GET was used"
+msgstr ""
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"Szablon nie został prawidłowo zainstalowany. Brakuje plików lub ich "
+"uprawnienia zostały nieprawidłowo ustawione"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Subdomena '%s' jest już utworzona w domenie %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+
+msgid "The user %s does not belong to you"
+msgstr ""
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Nazwa użytkownika jest niepoprawna. Nazwa użytkownika musi zaczynać się na a-"
+"z, liczba znaków musi być >= 3 i <= %d."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr ""
+"Nazwa użytkownika jest niepoprawna. Używaj tylko znaków z zakresu a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Wartość musi być adresem IP"
+
+msgid "The very last entry."
+msgstr "Ostatni wpis."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Wiadomość powitalna została ponownie wysłana."
+
+msgid "There are no messages for that ticket"
+msgstr "Nie ma wiadomości w tym zgłoszeniu"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr ""
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+"Nadal są przypisani użytkownicy do %s. W pierwszej kolejności usuń adresy IP "
+"a potem ustaw na 'wolne'."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "Nie powiodło się odnowienie %d więc nie będzie więcej prób.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Istnieje już rekord CNAME o podanej nazwie"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "Istnieje już alias listy dyskusyjnej o tej nazwie"
+
+msgid "There is already an A record with that name"
+msgstr "Istnieje już rekord A o podanej nazwie"
+
+msgid "There is already an account with that name"
+msgstr "Istnieje już konto o podanej nazwie użytkownika"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Istnieje już autoresponder o podanej nazwie"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr ""
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "Istnieje tylko 1 %s rekord dla %s=%s, nie można go usunąć"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Wartości dynamiczne, które zmieniają się wraz z datą"
+
+msgid "This Login Key is read-only"
+msgstr ""
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Ten system operacyjny został wycofany z eksploatacji. Przyszłe automatyczne "
+"aktualizacje mogą się nie powieść."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"Konto tego resellera nie umożliwia przydzielić %s jako bez limitu, ale taka "
+"ilość została juz przydzielona."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"To konto już istnieje w systemie. Przywrócenie spowoduje zastąpienie i/lub "
+"scalenie danych."
+
+msgid "This account is blocked via BlockCracking."
+msgstr ""
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr ""
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"Ta domena będzie tymczasowo korzystać z Shared Server Certificate, chyba że "
+"przywrócisz klucz z kopii zapasowej (ale najpierw zapisz nowy klucz lub "
+"zostanie on utracony)"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+"To jest hash URL do logowania. Możesz go usunąć, ale nie możesz go "
+"zmodyfikować"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+"To jest Hash URL do logowania. Możesz go usunąć, ale nie możesz go "
+"zmodyfikować."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "Jest to symbol zastępczy subdomeny"
+
+msgid "This may give unexpected results"
+msgstr ""
+
+msgid "This may give unexpected results."
+msgstr ""
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr ""
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr ""
+
+msgid "Thread Count"
+msgstr "Ilość wątków"
+
+msgid "Throttle Memory above this limit."
+msgstr ""
+
+msgid "Ticket #"
+msgstr ""
+
+msgid "Ticket system status set"
+msgstr "Status systemu zgłoszeń został ustawiony"
+
+msgid "Tickets Updated"
+msgstr "Zaktualizowano zgłoszenia"
+
+msgid "Time"
+msgstr ""
+
+msgid "Timeout during read"
+msgstr ""
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr ""
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr ""
+
+msgid "Timezone does not exist"
+msgstr "Strefa czasowa nie istnieje"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"W celu dodania zadania należy wypełnić wszystkie dane: minuta, godzina, "
+"dzień miesiąca, miesiąc, dzień tygodnia i komenda"
+
+msgid "Today"
+msgstr ""
+
+msgid "Today at"
+msgstr "Dzisiaj o"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Licznik dzisiejszych e-maili został wyzerowany dla użytkownika %s"
+
+msgid "Too long"
+msgstr "Podana wartość jest za długa"
+
+msgid "Too short"
+msgstr "Podana wartość jest za krótka"
+
+msgid "Total"
+msgstr "Łącznie"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Całkowite zużycie dysku (MB)"
+
+msgid "Total Memory"
+msgstr "Całkowita wielkość pamięci"
+
+msgid "Total Size:"
+msgstr "Rozmiar całkowity:"
+
+msgid "Total Swap Memory"
+msgstr "Całkowita wielkość pamięci SWAP"
+
+msgid "Total Usage"
+msgstr ""
+
+msgid "Two-Step Authentication code is missing."
+msgstr "Brak kodu uwierzytelniania dwuetapowego."
+
+msgid "Type"
+msgstr "Typ"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Typ '%s' jest nieaktywny"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr ""
+
+msgid "UID"
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL already exists"
+msgstr "URL już istnieje"
+
+msgid "Un-Link"
+msgstr "Odłącz"
+
+msgid "Un-Set"
+msgstr "Usuń"
+
+msgid "Unable To Execute Your Request"
+msgstr ""
+
+msgid "Unable to Execute Your Command"
+msgstr ""
+
+msgid "Unable to Locate that domain"
+msgstr "Nie można znaleźć tej domeny"
+
+msgid "Unable to add IP"
+msgstr "Nie można dodać IP"
+
+msgid "Unable to add access host:"
+msgstr "Nie można dodać hosta:"
+
+msgid "Unable to add domain pointer"
+msgstr "Nie można dodać uchwytu domeny"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Nie można dodać użytkownika do pliku konfiguracyjnego ssh"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Nie można przydzielić %s jako bez limitu. To konto nie umożliwia tworzenia "
+"takiej ilości."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr ""
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Nie można uwierzytelnić: Błędne hasło"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr ""
+
+msgid "Unable to change Directadmin update channel"
+msgstr ""
+
+msgid "Unable to change password"
+msgstr ""
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Nie można zmienić adresu e-mail"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Nie można zmienić adresu e-mail systemu wiadomości"
+
+msgid "Unable to change the Name"
+msgstr "Nie można zmienić nazwy"
+
+msgid "Unable to change the limit"
+msgstr ""
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "Nie można zmienić tymczasowego zwiększenia transferu"
+
+msgid "Unable to check latest version"
+msgstr "Nie można sprawdzić najnowszej wersji"
+
+msgid "Unable to connect to secure socket"
+msgstr "Nie można połączyć się z bezpiecznym gniazdem"
+
+msgid "Unable to connect to the database"
+msgstr "Nie można połączyć z bazą danych"
+
+msgid "Unable to create a Reseller"
+msgstr "Nie można utworzyć Resellera"
+
+msgid "Unable to create a User"
+msgstr "Nie można utworzyć użytkownika"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr ""
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Nie można utworzyć katalogu %s"
+
+msgid "Unable to create new file"
+msgstr "Nie można utworzyć nowego pliku"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Nie można utworzyć reverse IP lookup"
+
+msgid "Unable to create subdomain"
+msgstr "Nie można utworzyć subdomeny"
+
+msgid "Unable to create user's data directory"
+msgstr "Nie można utworzyć katalogu danych użytkownika"
+
+msgid "Unable to create zone"
+msgstr "Nie można utworzyć strefy"
+
+msgid "Unable to create zone."
+msgstr ""
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Nie można usunąć %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Nie można usunąć katalogu %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Nie można usunąć plików"
+
+msgid "Unable to delete the main email account"
+msgstr "Nie można usunąć głównego konta e-mail"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr ""
+
+msgid "Unable to delete users's domains directory"
+msgstr "Nie można usunąć podkatalogu domen użytkownika"
+
+msgid "Unable to edit file"
+msgstr "Nie można edytować pliku"
+
+msgid "Unable to execute script"
+msgstr "Nie można wykonać skryptu"
+
+msgid "Unable to execute your command"
+msgstr ""
+
+msgid "Unable to execute your request"
+msgstr ""
+
+msgid "Unable to export packages"
+msgstr ""
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Nie można wyodrębnić %s z"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Nie można wyodrębnić user.conf, reseller.conf lub ip.list z"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Nie mogę znaleźć %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Nie można odnaleźć certyfikatu CA"
+
+msgid "Unable to find certificate"
+msgstr "Nie można odnaleźć certyfikatu"
+
+msgid "Unable to find key"
+msgstr "Nie można znaleźć Klucza"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Nie można uzyskać blokady na %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr ""
+"Nie można pobrać zakodowanego hasła użytkownika z systemowego pliku ftp "
+"passwd"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr ""
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Nie można zablokować akcji konta '%s'"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Nie można zablokować użytkownika %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr ""
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr ""
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr ""
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr ""
+
+msgid "Unable to open a socket"
+msgstr ""
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "Nie można otworzyć pliku certyfikatu CA (%s) do zapisu w: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "Nie można otworzyć pliku certyfikatu (%s) do zapisu w: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr ""
+
+msgid "Unable to parse form"
+msgstr "Nie można przetworzyć formularza"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Nie można oczytać plików użytkownika %s"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr ""
+"Nie można odczytać %s. Ten plik jest tworzony tylko po wykonaniu zadania "
+"tally."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr ""
+"Nie można odczytać %s. Ten plik jest tworzony tylko wtedy gdy list został "
+"dostarczony."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Nie można odczytać %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Nie można odczytać pliku DS %s"
+
+msgid "Unable to read History File."
+msgstr ""
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Nie można odczytać skryptu kopii zapasowej RoundCube: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Nie można odczytać skryptu przywrócenia kopii zapasowej RoundCube: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Nie można odczytać danych z %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr ""
+
+msgid "Unable to read domain configuration files"
+msgstr "Nie można odczytać plików konfiguracyjnych domeny"
+
+msgid "Unable to read login history file"
+msgstr "Nie można odczytać pliku historii logowania"
+
+msgid "Unable to read package"
+msgstr ""
+
+msgid "Unable to read system uptime"
+msgstr "Nie można odczytać czasu działania systemu (uptime)"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr ""
+"Nie można odczytać z systemowego pliku ftp passwd w celu dodania użytkownika "
+"ftp."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Nie można odczytać do systemowego pliku ftp passwd w celu usunięcia "
+"użytkownika ftp"
+
+msgid "Unable to read the user's files"
+msgstr "Nie można odczytać plików użytkownika"
+
+msgid "Unable to read ticket config file"
+msgstr "Nie można odczytać pliku konfiguracji Systemu Wiadomości"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "Nie można odczytać pliku strefy w celu zwiększenia numeru seryjnego"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "Nie można odczytać pliku strefy dla %s"
+
+msgid "Unable to reboot"
+msgstr "Nie można ponownie uruchomić"
+
+msgid "Unable to remove IP(s)"
+msgstr "Nie można usunąć IP"
+
+msgid "Unable to remove Unix User."
+msgstr ""
+"<b>Nie można usunąć użytkownika z systemu Unix</b>. Kontynuuję z innymi "
+"plikami."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr ""
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Nie można zmienić nazwy %s na %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr ""
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Nie można przywrócić '%s' ponieważ nie istnieje Reseller lub Administrator "
+"'%s'. Zmień nazwę pliku, jeśli to potrzebne."
+
+msgid "Unable to restore database"
+msgstr "Nie można przywrócić bazy danych"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "Nie można zapisać pliku strefy: named-zonecheck zwrócił:"
+
+msgid "Unable to save your changes"
+msgstr "Nie można zapisać zmian"
+
+msgid "Unable to set bandwidth"
+msgstr "Nie można ustawić transferu"
+
+msgid "Unable to set file permissions"
+msgstr "Nie można ustawić uprawnienia do plików"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr ""
+
+msgid "Unable to set password"
+msgstr "Nie można zmienić hasła"
+
+msgid "Unable to set quota"
+msgstr "Nie można ustawić quoty"
+
+msgid "Unable to set stats link"
+msgstr "Nie można utworzyć dowiązania do statystyk"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Nie można ustawić limitu wysłanych listów e-mail"
+
+msgid "Unable to set the shell"
+msgstr ""
+
+msgid "Unable to show Admin History"
+msgstr "Nie można pokazać historii Administratora"
+
+msgid "Unable to show Reseller History"
+msgstr "Nie można pokazać historii Resellera"
+
+msgid "Unable to show User History"
+msgstr "Nie można pokazać historii użytkownika"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Nie można pokazać aktualnego zużycia poczty użytkownika"
+
+msgid "Unable to show the system information"
+msgstr "Nie można pokazać informacji o systemie"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr ""
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Nie można odblokować użytkownika %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Nie można zaktualizować Directadmina"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Nie można zaktualizować wykorzystania dysku"
+
+msgid "Unable to use that new domain name"
+msgstr "Nie można użyć nowej nazwy domeny"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Nie można zapisać plików użytkownika %s"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Nie można zapisać %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr ""
+
+msgid "Unable to write reseller's IP list"
+msgstr ""
+
+msgid "Unable to write the domain config file"
+msgstr "Nie można zapisać do pliku konfiguracyjnego domeny"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+"Nie można zapisywać do głównego pliku z hasłami ftp. Zmiana nie przyniesie "
+"efektu."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Nie można zapisać do pliku quoty. Spytaj swojego administratora dlaczego %s "
+"jest niezapisywalny."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Nie można zapisywać do systemowego pliku ftp passwd w celu usunięcia "
+"użytkownika ftp"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Nie można zapisać pliku usage.cache. Spytaj swojego administratora dlaczego "
+"%s jest niezapisywalny."
+
+msgid "Unable to write ticket config"
+msgstr "Nie można zapisać konfiguracji Systemu Wiadomości"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"Nie można zapisać do pliku z hasłem. Spytaj swojego administratora dlaczego "
+"%s jest niezapisywalny."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+"Nie można zapisywać do systemowego pliku ftp passwd w celu dodania "
+"użytkownika ftp."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "Nie można zapisać pliku strefy w celu zwiększenia numeru seryjnego"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "Nie można zapisać pliku strefy dla %s"
+
+msgid "Unblock"
+msgstr "Odblokuj"
+
+msgid "Unblocking is disabled."
+msgstr "Odblokowanie jest wyłączone."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr ""
+"Odznaczenie spowoduje natychmiastowe usunięcie pliku z dysku i nie będzie "
+"można go odzyskać"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr ""
+
+msgid "Unhandled exception name"
+msgstr ""
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr ""
+
+msgid "Unix User created successfully"
+msgstr "Użytkownik sytemu Unix został utworzony"
+
+msgid "Unix User removed from the server"
+msgstr "Użytkownik sytemu Unix został usunięty z serwera"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr ""
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr ""
+
+msgid "Unknown action"
+msgstr ""
+
+msgid "Unknown backup destination"
+msgstr "Nieznane miejsce docelowe kopii zapasowej"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "Nieznany typ certyfikatu. Dozwolone typy to: server, create i paste"
+
+msgid "Unknown ftp type"
+msgstr "Nieznany typ konta ftp"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr ""
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr ""
+
+msgid "Unlimited"
+msgstr ""
+
+msgid "Unsuspend"
+msgstr "Odwieś"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+
+msgid "Up a Level"
+msgstr "Poziom wyżej"
+
+msgid "Update"
+msgstr "Aktualizuj"
+
+msgid "Update Successful"
+msgstr "Aktualizacja zakończona powodzeniem"
+
+msgid "Update channel has been successfully changed"
+msgstr ""
+
+msgid "Update not necessary"
+msgstr ""
+
+msgid "Update queued"
+msgstr "Aktualizacja w kolejce"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+
+msgid "Upload successful"
+msgstr "Wgranie powiodło się"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "Przesłany plik nie jest prawidłowy"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "Wysłano: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+
+msgid "Usage (Meg)"
+msgstr ""
+
+msgid "Usage Log"
+msgstr "Log użycia"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr ""
+
+msgid "User"
+msgstr "Użytkownik"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "Użytkownik %s został usunięty"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "Użytkownik %s istnieje. Proszę wybrać inną nazwę użytkownika."
+
+#, c-format
+msgid "User %s created"
+msgstr "Użytkownik %s został utworzony"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "Brak użytkownika %s na serwerze. Usunięcie go z Twojej listy."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "Użytkownik %s nie istnieje."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "Użytkownik %s istnieje ale nie jest na Twojej liście Użytkowników"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr ""
+"Użytkownik %s został dodany do Twojej bazy danych. Użyj poniższych ustawień:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "Została wykonana kopia zapasowa dla użytkownika %s ."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Użytkownik %s został przywrócony z kopii zapasowej"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Użytkownik %s został zaktualizowany. Użyj następujących danych:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "Użytkownik %s ma jeden lub więcej twardych linków do ścieżki:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr ""
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr ""
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr ""
+"Użytkownik %s nie należy do Ciebie. Nie możesz wykonać jego kopii zapasowej."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr ""
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr ""
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr ""
+"Użytkownik %s został zawieszony w kopii zapasowej. Konto zostało zawieszone."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr ""
+"Użytkownik %s został zawieszony w kopii zapasowej. Błąd podczas zawieszani "
+"konta:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr ""
+
+msgid "User Acconts"
+msgstr "Konta użytkownika"
+
+msgid "User Accounts"
+msgstr "Konta użytkownika"
+
+msgid "User Bandwidth"
+msgstr "Transfer Użytkownika"
+
+msgid "User Comment Box"
+msgstr "Komentarz"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Kontrolowanie DNSSEC przez użytkownika jest wyłączone"
+
+msgid "User Disk Quota"
+msgstr ""
+
+msgid "User History"
+msgstr "Historia użytkownika"
+
+msgid "User Modified"
+msgstr "Zmiany zostały zapisane"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr ""
+
+msgid "User Updated"
+msgstr "Użytkownik zaktualizowany"
+
+msgid "User account is disabled"
+msgstr "Konto użytkownika jest wyłączone"
+
+msgid "User added to SSH config file successfully"
+msgstr ""
+
+msgid "User added to database"
+msgstr "Dodano użytkownika do bazy danych"
+
+msgid "User added to named.conf file successfully"
+msgstr "Dodano użytkownika do pliku named.conf"
+
+msgid "User added to ssh config file."
+msgstr "Użytkownik dodany do pliku konfiguracyjnego ssh."
+
+msgid "User backups have been disabled."
+msgstr "Kopie zapasowe (backup) użytkownika zostały wyłączone."
+
+msgid "User config file updated."
+msgstr "Zaktualizowano plik konfiguracyjny użytkownika."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "User removed from SSH"
+msgstr "Użytkownik usunięty z dostępu przez SSH"
+
+msgid "User's System Quotas set"
+msgstr "Quota użytkownika została ustawiona"
+
+msgid "User's config files deleted"
+msgstr "Pliki konfiguracyjne użytkownika zostały usunięte"
+
+msgid "User's data directory created successfully"
+msgstr "Katalog danych użytkownika został utworzony"
+
+msgid "User's data directory removed."
+msgstr "Katalog danych użytkownika został usunięty."
+
+msgid "User(s)"
+msgstr "Użytkownik(cy)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "Katalog użytkownika: %s"
+
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr ""
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr ""
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+
+msgid "Username:"
+msgstr "Nazwa użytkownika:"
+
+msgid "Users"
+msgstr "Użytkownicy"
+
+msgid "Users Deleted"
+msgstr "Użytkownicy zostali usunięci"
+
+msgid "Users moved"
+msgstr "Użytkownicy zostali przeniesieni"
+
+msgid "Users will be deleted in the background."
+msgstr "Użytkownicy zostaną usunięci w tle."
+
+msgid "Users's domains directory removed."
+msgstr "Podkatalog domen użytkownika został usunięty."
+
+msgid "Usertype"
+msgstr "Typ użytkownika"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Użycie ścieżki %s nie jest dozwolone."
+
+msgid "Vacation Account"
+msgstr ""
+
+msgid "Vacation Message Deleted"
+msgstr "Potrzebujesz hasła lub quoty"
+
+msgid "Vacation Message set"
+msgstr ""
+
+msgid "Vacation Message updated"
+msgstr "Zaktualizowano wiadomość urlopową"
+
+msgid "Vacation Messages Deleted"
+msgstr "Wiadomości urlopowe zostały usunięte"
+
+msgid "Valid"
+msgstr "Ważny"
+
+msgid "Valid broadcast address set."
+msgstr ""
+
+msgid "Value"
+msgstr "Wartość"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "Brakuje zmiennej 'ip'"
+
+msgid "Vendor ID"
+msgstr "Kod sprzedaży"
+
+msgid "Verify"
+msgstr ""
+
+msgid "View"
+msgstr "Pokaż"
+
+msgid "View Clipboard"
+msgstr "Pokaż schowek"
+
+msgid "View previous sort"
+msgstr "Zobacz poprzednie sortowanie"
+
+msgid "Warning from named-checkzone:"
+msgstr "Ostrzeżenia wygenerowane przez named-zonecheck:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "Ostrzeżenie: Quota została osiągnięta. Plik(i) mogą być puste."
+
+msgid "Warning: The system load average is"
+msgstr ""
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr ""
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr ""
+
+msgid "Webmail Attachments"
+msgstr ""
+
+msgid "Webmail SSO"
+msgstr ""
+
+msgid "Week of Month"
+msgstr "Tydzień w miesiącu"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr ""
+
+msgid "What"
+msgstr "Co"
+
+msgid "When"
+msgstr "Kiedy"
+
+msgid "Where"
+msgstr "Gdzie"
+
+msgid "Who"
+msgstr "Kto"
+
+msgid "Wildcard"
+msgstr ""
+
+msgid "With Selected"
+msgstr "zaznaczone"
+
+msgid "With selected"
+msgstr "Zaznaczone"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr "Zero dozwolonych domen, ochrona hotlink została wyłączona."
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Nie można aktywować konta %s ponieważ jest wyłączone"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Błąd podczas zapisu %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr ""
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "You already have the most recent version of the program"
+msgstr ""
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Nie możesz włączyć dostępu anonimowego do ftp"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Nie masz uprawnień do zmian ustawień SSL"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr ""
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "Nie możesz zmienić tego zgłoszenia"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"Możesz kliknąć poniższy e-mail, aby natychmiast zalogować się do %s jako ten "
+"użytkownik, bez znajomości jego hasła."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"Nie można utworzyć listy nazwie majordomo ponieważ jest to nazwa zastrzeżona"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Nie możesz zawiesić użytkownika root. To jest bardzo zły pomysł"
+
+msgid "You cannot add that extension"
+msgstr "Nie można dodać rozszerzenia"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "Nie można przypisać do domeny transferu większego niż transfer konta"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "Nie można przypisać do domeny qouty większej niż quota konta"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "Nie można utworzyć więcej użytkowników od liczby dozwolonych domen."
+
+msgid "You cannot delete all of your IPs"
+msgstr "Nie możesz usunąć wszystkich swoich adresów IP"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr ""
+"Nie można usunąć konta %s ponieważ jest ono połączone z kontem systemowym"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Nie można usunąć siebie (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Nie możesz wykonać tego polecenia"
+
+msgid "You cannot modify yourself"
+msgstr "Nie możesz zmieniać samego siebie"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"Nie można przywrócić wielu Użytkowników na jednym wolnym adresie IP. Adres "
+"IP musi najpierw zostać udostępniony."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Nie można ustawić limitu na wartość bez limitu."
+
+msgid "You cannot suspend yourself"
+msgstr "Nie można zawiesić samego siebie"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "Nie możesz zawiesić/odwiesić samego siebie"
+
+msgid "You cannot unsuspend this account."
+msgstr ""
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr ""
+"Nie można używać tej domeny jako wskaźnik ponieważ już istnieje na serwerze"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr ""
+"Aktualnie posiadasz %s użytkowników, a maksymalna ilość domen wynosi %s."
+
+msgid "You did not select any domains to modify"
+msgstr "Nie wybrano żadnych domen zmiany"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "Nie wybrano innego adresu IP, nie dokonano zmiany"
+
+msgid "You didn't select anyone to send it to"
+msgstr "Nie wybrano odbiorcy"
+
+msgid "You do not have control over user"
+msgstr "Nie masz kontroli nad tym użytkownikiem"
+
+msgid "You do not own any IPs"
+msgstr "Nie posiadasz żadnych adresów IP"
+
+msgid "You do not own that IP"
+msgstr "Nie jesteś właścicielem adresu IP"
+
+msgid "You do not own that domain"
+msgstr "Ta domena nie jest Twoją własnością"
+
+msgid "You do not own that ip"
+msgstr ""
+
+msgid "You do not own that that cron ID"
+msgstr "Nie jesteś właścicielem zadania o podanym ID"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr ""
+"Nie jesteś właścicielem adresu IP %s. Użytkownik %s nie zostanie utworzony"
+
+msgid "You don't have authority over that User"
+msgstr ""
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "Nie masz uprawnień żeby odpowiedzieć na to zgłoszenie"
+
+msgid "You don't have permission to restore user"
+msgstr "Nie masz uprawnień, aby przywrócić użytkownika"
+
+msgid "You don't have permission to view that ticket"
+msgstr "Nie masz uprawnień żeby obejrzeć to zgłoszenie"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr ""
+
+msgid "You have already reached your assigned limit"
+msgstr "Osiągnąłeś już przydzielony limit"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Nie dodano żadnych plików do schowka."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"Nie przydzieliłeś temu resellerowi żadnych adresów IP. Nie można utworzyć "
+"domeny przypisanej danemu adresowi IP ani też serwerów nazw bez przypisania "
+"adresów IP."
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Nie wybrano żadnych plików. Proszę wrócić i wybrać plik przed przywróceniem "
+"kopii zapasowej."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Nie wybrałeś żadnych użytkowników. Proszę wrócić i wybrać użytkownika/ów "
+"przed utworzeniem kopii zapasowej."
+
+msgid "You have not selected any domains"
+msgstr "Nie wybrano żadnych domen"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"Pomyślnie wydano polecenie ponownego uruchomienia systemu. Ponowne "
+"uruchomienie oraz przywrócenie pełnej funkcjonalności może zająć nawet kilka "
+"minut."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+"Ty zużywasz %d%% z Twojej pojemności, która jest większa od dozwolonego "
+"progu %d%%."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "By przeładować logo należy wcisnąć klawisz F5"
+
+msgid "You may not use an IP for a domain name"
+msgstr "Nie możesz użyć IP dla nazwy domeny"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Musisz podać wartość uprawnień chmod. np: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Musisz podać nazwę katalogu. np.: obrazy"
+
+msgid "You must enter both password"
+msgstr "Hasło z obu polach jest wymagane"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "Musisz podać numer, użytkownika, temat, priorytet, status i wiadomość"
+
+msgid "You must enter the password in both fields"
+msgstr "Musisz podać hasło w obu polach"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Musisz podać użytkownika, temat, priorytet i wiadomość"
+
+msgid "You must first create some packages"
+msgstr "Musisz najpierw utworzyć jakiś pakiet"
+
+msgid "You must first own an IP"
+msgstr "Musisz mieć najpierw własne IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr ""
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+
+msgid "You must provide a list name"
+msgstr "Należy podać prawidłową nazwę listy"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+"Należy podać nazwę zapytania o dostęp do chronionego katalogu. np: Obszar "
+"użytkownika"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Musisz podać prawidłową domenę, IP, ns1 i ns2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr "Konf. Outlooka"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr "Max zużycie (Meg)"
+
+msgid "You must provide a valid ip"
+msgstr "Musisz podać prawidłowy adres IP"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Należy podać prawidłową nazwę i musi ona istnieć."
+
+msgid "You must provide a valid name and value"
+msgstr "Musisz podać prawidłową nazwę i wartość"
+
+msgid "You must provide the passwd variable"
+msgstr "Musisz podać zmienną passwd"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr "Musisz wybrać parę serwerów nazw (ns1.domain.com and ns2.domain.com)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Musisz wybrać co najmniej jedną listę dyskusyjną, aby ją usunąć"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Należy wybrać co najmniej jedną listę mailingową, aby usunąć archiwa"
+
+msgid "You must select exactly one key"
+msgstr ""
+
+msgid "You must select something"
+msgstr "Należy coś wybrać"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Dla godzin musisz użyć liczby z zakresu (0-23). Zadanie może być uruchamiane "
+"tylko raz dziennie. (Można wprowadzić więcej niż jeden zadanie cron)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Dla minut musisz użyć liczby z zakresu (0-59). Zadanie może być uruchamiane "
+"tylko raz dziennie. (Można wprowadzić więcej niż jeden zadanie cron)"
+
+msgid "You must use a valid path"
+msgstr ""
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "Musisz odczekać co najmniej %d minutę między aktualizacjami."
+msgstr[1] "Musisz odczekać co najmniej %d minuty między aktualizacjami."
+msgstr[2] "Musisz odczekać co najmniej %d minut między aktualizacjami."
+
+msgid "You must wait for the stats to be computed."
+msgstr "Musisz zaczekać, aż statystyki zostaną obliczone."
+
+msgid "You need to specify a domain"
+msgstr "Musisz podać domenę"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Potrzebujesz domeny, anon, anonup i wiadomości"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "Do synchronizacji kont potrzebujesz domeny i listy haseł"
+
+msgid "You require either the passwd or quota"
+msgstr ""
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"Wymagane jest podanie źródłowej ścieżki (np: /przekierowanie) i adresu "
+"docelowego (np: www.przekierowanie.pl)"
+
+msgid "You require user and domain to change a pop account"
+msgstr ""
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr ""
+"Do utworzenia konta pocztowego wymagane jest podanie nazwy, domenu oraz hasła"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr ""
+"Po zakończeniu zostaniesz o tym powiadomiony za pośrednictwem Systemu "
+"Wiadomości."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr ""
+"Po zakończeniu procesu zostaniesz powiadomiony za pośrednictwem systemu "
+"wiadomości"
+
+msgid "You will receive a message when it's complete."
+msgstr "Po zakończeniu otrzymasz wiadomość."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"Korzystasz z opcji \"logowania jako\", więc użyj własnego hasła. Nie hasła "
+"Użytkownika."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "Twój Hash URL Login '%s' został utworzony"
+
+msgid "Your IP is blacklisted"
+msgstr "Twój adres IP jest na czarnej liście"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "Twój klucz logowania '%s' został utworzony"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Twoja nazwa została zmieniona na %s"
+
+msgid "Your User files have been restored"
+msgstr "Pliki użytkownika zostały przywrócone z kopii zapasowej"
+
+msgid "Your User files have been restored *WARNING*"
+msgstr "Pliki użytkownika zostały przywrócone z kopii zapasowej *UWAGA*"
+
+msgid "Your account"
+msgstr "Twoje konto"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "Twoje konto %s@%s zostało utworzone. W swoim programie pocztowym użyj"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "Twoje konto '|USERNAME|' zostało zawieszone. Powód: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Twoje konto dla |domain| jest teraz gotowe do użycia."
+
+msgid "Your backups are now ready"
+msgstr "Twoje kopie zapasowe są gotowe"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Twoja baza danych została utworzona. Użyj poniższych danych:"
+
+msgid "Your default domain has been set"
+msgstr "Twoja domena domyślna została ustawiona"
+
+msgid "Your disk quota limit has been reached."
+msgstr "Limit pojemności dysku został osiągnięty."
+
+msgid "Your disk usage has been updated"
+msgstr "Zaktualizowano wykorzystanie dysku"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+
+msgid "Your file has been saved"
+msgstr "Twój plik został zapisany"
+
+msgid "Your language has been changed"
+msgstr "Twój język został zmieniony"
+
+msgid "Your message has been saved"
+msgstr "Twoja wiadomość została zapisana"
+
+msgid "Your message has been sent"
+msgstr "Twoja wiadomość została wysyłana"
+
+msgid "Your message is being sent in the background"
+msgstr "Twoja wiadomość jest wysyłana w tle"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr ""
+"Twoja wiadomość jest pusta. Użytkownicy docenią informację za co zapłacili."
+
+msgid "Your name has been changed"
+msgstr "Twoja nazwa została zmieniona"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr ""
+
+msgid "Your password"
+msgstr "Twoje hasło"
+
+msgid "Your password is invalid"
+msgstr "Twoje hasło jest niepoprawne"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+"Twoja prośba o aktualizację rozpocznie się za niecałą minutę. Zostaniesz "
+"powiadomiony przez system wiadomości, po zakończeniu"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "Twoje żądanie zostanie wykonane w ciągu minuty"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"Twoje żądanie będzie wykonywane w tle. Po zakończeniu otrzymasz "
+"powiadomienie w systemie wiadomości."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "Twoje konto Resellera osiągnęło przydzielony limit"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "Twój Reseller osiągnął przydzielony limit"
+
+msgid "Your subject contains invalid characters."
+msgstr "Twój temat zawiera nieprawidłowe znaki."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr ""
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr ""
+
+msgid "Zone Reset"
+msgstr "Przywróć strefę do wartości domyślnych"
+
+msgid "Zone Signing has expired."
+msgstr ""
+
+msgid "Zone created"
+msgstr "Strefa utworzona"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+
+msgid "Zone is of type DNSSEC."
+msgstr ""
+
+msgid "Zone keys generated"
+msgstr "Strefa kluczy została wygenerowana"
+
+msgid "Zone signed"
+msgstr "Strefa została podpisana"
+
+msgid "Zones removed"
+msgstr "Strefa usunięta"
+
+msgid "account ..."
+msgstr "konto ..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "i %d Użytkownk"
+msgstr[1] "i %d Użytkowników"
+msgstr[2] "i %d Użytkowników"
+
+msgid "at least"
+msgstr ""
+
+msgid "at most"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr ""
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr ""
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr ""
+
+msgid "catch is required"
+msgstr "catch jest wymagane"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr ""
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup nie jest włączone dla Twojej licencji"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr ""
+
+msgid "change"
+msgstr "Zmień"
+
+msgid "click here if form does not include two-step code input"
+msgstr ""
+
+msgid "contains"
+msgstr ""
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "day(s)"
+msgstr "dzień/dni"
+
+msgid "days"
+msgstr "dni"
+
+msgid "default user"
+msgstr "użytkownik domyślny"
+
+msgid "dns error"
+msgstr ""
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr ""
+
+msgid "does not belong to you"
+msgstr "nie należy do Ciebie"
+
+msgid "emails have just been sent by"
+msgstr ""
+
+msgid "equals"
+msgstr ""
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "zostało zaktualizowane."
+
+msgid "has been updated with the new ip"
+msgstr "został zaktualizowany o nowy ip"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score musi być z zakresu od 1 do 99"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "hours"
+msgstr "godzin"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr ""
+
+msgid "invalid IP or range: %s"
+msgstr "nieprawidłowy IP lub zakres: %s"
+
+msgid "invalid code"
+msgstr "niepoprawny kod"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "nie jest poprawnym adresem email.  Użytkownik %s nie zostanie utworzony"
+
+msgid "is currently down"
+msgstr ""
+
+msgid "is not a valid username"
+msgstr "nie jest poprawną nazwą użytkownik"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr ""
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr ""
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr ""
+
+msgid "json string"
+msgstr ""
+
+#, c-format
+msgid "lstat error: %s"
+msgstr ""
+
+msgid "mail() line number"
+msgstr "Liczba linii z funkcją mail()"
+
+msgid "message is empty. Please enter some text."
+msgstr ""
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "Typ mime (%s) dla '%s' nie jest typem 'image/'"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "minutes"
+msgstr "minut"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr ""
+
+msgid "modify password"
+msgstr "zmień hasło"
+
+msgid "modify privileges"
+msgstr "zmień przywileje"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain nie jest poprawną nazwą domeny"
+
+msgid "newer than"
+msgstr "nowsze niż"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 lub ns2 nie jest poprawnym serwerem nazw"
+
+msgid "of"
+msgstr "z"
+
+msgid "old_package or new_package are not valid package names"
+msgstr ""
+
+msgid "older than"
+msgstr "starsze niż"
+
+#, c-format
+msgid "older than %s days."
+msgstr "starsze niż %s dni."
+
+msgid "or"
+msgstr "lub"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr ""
+"lub adres IPv6 (1:2:3:4:5:6:7:8) lub zakres adresów IPv6 (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "lub wybierz z"
+
+msgid "php.ini override added"
+msgstr ""
+
+#, c-format
+msgid "php1_select entry %d is not available"
+msgstr ""
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr ""
+
+msgid "port"
+msgstr "port"
+
+msgid "request created"
+msgstr "utworzono zapytanie"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr "w opcjach jest ustawione reseller_can_set_email_limit"
+
+msgid "retry"
+msgstr "próba wysyłki"
+
+msgid "routes must start with a [ character."
+msgstr ""
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr ""
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "selected"
+msgstr ""
+
+msgid "selected overrides removed from php.ini"
+msgstr ""
+
+msgid "selected skipped rules removed"
+msgstr ""
+
+msgid "selecting none includes all domains"
+msgstr ""
+
+msgid "sent"
+msgstr "wyślij"
+
+msgid "set Permission"
+msgstr ""
+
+msgid "show_blocked_ips.sh output:"
+msgstr "Wyjście skryptu show_blocked_ips.sh:"
+
+msgid "starts with"
+msgstr ""
+
+msgid "subject contains invalid characters."
+msgstr ""
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr ""
+"subject_select != %d, ale temat nie jest ustawiony. To nie powinno się "
+"wydarzyć."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr ""
+
+msgid "the new domain name already exists on your system"
+msgstr ""
+
+msgid "too many iterations"
+msgstr ""
+
+msgid "unable to load secret"
+msgstr "nie można załadować sekretu"
+
+msgid "unlimited"
+msgstr "bez limitu"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "Użytkownik, hasło, hasło2 i typ są wymagane"
+
+msgid "user.conf override"
+msgstr ""
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount jest wyłączone"
+
+msgid "user_modify_pre.sh error"
+msgstr "Błąd user_modify_pre.sh"
+
+msgid "valid code"
+msgstr "poprawny kod"
+
+msgid "value is required"
+msgstr "wartość jest wymagana"
+
+#, c-format
+msgid "value must be '%s' or '%s'"
+msgstr "wartość musi być '%s'lub '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr ""
+
+msgid "your new password is"
+msgstr "Twoje nowe hasło to"
+
+msgid "your new quota is"
+msgstr "Twoja nowa powierzchnia to"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "Twój nowy limit wysłanych wiadomości wynosi: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr ""
