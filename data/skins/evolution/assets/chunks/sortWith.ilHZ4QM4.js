@@ -1,0 +1,1 @@
+import{bf as s}from"../index.DtGSrwJ3.js";var u=s(function(o,e){return Array.prototype.slice.call(e,0).sort(function(i,a){for(var r=0,t=0;r===0&&t<o.length;)r=o[t](i,a),t+=1;return r})});export{u as s};
