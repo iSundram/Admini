@@ -1,0 +1,135 @@
+|?TREE=&raquo; <a class=tree href="/CMD_FILE_MANAGER">`LANG_FILEMANAGER`</a> &raquo; <a class=tree href="/CMD_FILE_MANAGER`path`">`path`</a>|
+|?HELP_SECTION=`USER_HELPER`/filemanager.html#upload|
+|HTM_HEADER_FULL|
+
+<script type="text/javascript">
+
+// Default page structure
+window.addEventListener("DOMContentLoaded", () => uploadMultipleFiles(8));
+
+const path = "|path|";
+
+function is_a_number(num)
+{
+	var checker = /^([0-9])+$/;
+	if (checker.test(num)) return 1;
+	else return 0;
+}
+
+function uploadMultipleFiles(num) {
+    if (num.length == 0) return;
+
+    if (!is_a_number(num)) {
+        alert('|LANG_NOT_A_NUMBER|');
+		return;
+    }
+
+	const table = document.getElementById("files");
+
+	// New page containing specificed amount of file inputs
+	let newPage = "";
+
+	let half = Math.ceil(num / 2);
+
+    for (let i = 1; i <= half; i++) {
+        newPage += `<tr><td class=list colspan=2>${i}: <input type="file" name="file${i}" size="40"></td>`;
+
+        if (i + half <= num) {
+            newPage += `<td class=list colspan=2>${i + half}: <input type="file" name="file${i + half}" size="40"></td>`;
+        }
+
+        newPage += `</tr>`;
+    }
+
+	newPage += `<tr><td class=listtitle colspan=4 align=center>`
+	newPage += `<input type=button value="|LANG_UP_FILES|" onClick="uploadFiles()">`
+	newPage += `<input type=button value="|LANG_UP_MORE|" onClick="uploadMultipleFiles(prompt('|LANG_HOW_MANY|', '10'));">`
+	newPage += `</td></tr>`;
+
+	table.innerHTML = newPage;
+}
+
+function uploadFiles() {
+    const inputs = document.querySelectorAll('input[type="file"]');
+
+	let uploadedFiles = [];
+	let errors = [];
+
+	let uploads = [];
+
+    inputs.forEach(input => {
+		if (input && input.files.length <= 0) {
+            return;
+        }
+
+		const file = input.files[0] 
+
+		const data = new FormData();
+		data.append("dir", path)
+		data.append("overwrite", "true")
+		data.append("file", file)
+		
+		let upload = fetch("/api/filemanager-actions/upload", {
+			method: "POST",
+			body: data
+		})
+		.then(response => {
+			if (response.ok) {
+				uploadedFiles.push(`${file.name} has been saved.`)
+				return;
+			}
+
+			return response.json().then(errorData => {
+				throw new Error(errorData.reason ?? JSON.stringify(errorData));
+			});
+		})
+		.catch(error => {
+			errors.push(`Uploading ${file.name}: ${error}`)
+		});
+
+		uploads.push(upload);
+    });
+
+	// Wait for all uploads to finish before showing the result
+    Promise.all(uploads).then(() => {
+        showResult(uploadedFiles, errors);
+    });
+}
+
+function showResult(uploaded, errors) {
+	const table = document.getElementById("files");
+	
+	// Result response shown to the user
+    let response = "";
+
+	let resultStatus = "Upload successful";
+	let results = uploaded;
+
+	if (errors.length > 0) {
+        resultStatus = "An Error Occurred";
+		results = errors;
+    }
+
+	response += `<tr><td colspan="4" style="text-align:center;">${resultStatus}</td></tr>`;
+	response += `<tr><td colspan="4"><hr></td></tr>`;
+	response += `<tr><td colspan="4" style="text-align:center;">Details</td></tr>`;
+
+	results.forEach(result => {
+		const td = document.createElement("td");
+		td.colSpan = 4;
+		td.style.textAlign = "center";
+		td.innerText = result;
+		response += `<tr>${td.outerHTML}</tr>`;
+	});
+
+    response += `<tr><td colspan="4" style="text-align:center;"><br>Click <a href="/CMD_FILE_MANAGER${path}">HERE</a> to go back</td></tr>`;
+
+    table.innerHTML = response;
+}
+
+</script>
+
+<table id="files" class=list cellpadding=3 cellspacing=1>
+</table>
+
+|HTM_FOOTER_FULL|
