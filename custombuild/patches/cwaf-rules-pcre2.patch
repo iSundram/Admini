@@ -1,0 +1,12 @@
+diff -Naur a/30_Apps_OtherApps.conf b/30_Apps_OtherApps.conf
+--- a/30_Apps_OtherApps.conf	2020-09-22 22:37:22.000000000 +0300
++++ b/30_Apps_OtherApps.conf	2024-08-15 21:12:02.410833894 +0300
+@@ -6040,7 +6040,7 @@
+ 	"id:240590,chain,msg:'COMODO WAF: SQL injection vulnerability in LimeSurvey 2.06+ (CVE-2015-5078)||%{tx.domain}|%{tx.mode}|2',phase:2,deny,status:403,log,t:none,t:urlDecodeUni,t:lowercase,t:normalizePath,rev:1,severity:2,tag:'CWAF',tag:'OtherApps'"
+ SecRule ARGS_POST:subaction "@streq insert" \
+ 	"chain,t:none,t:lowercase"
+-SecRule ARGS_POST:closedate "!@rx ^[\d-:]+$" \
++SecRule ARGS_POST:closedate "!@rx ^[\d\-:]+$" \
+ 	"t:none,t:removeWhitespace"
+ 
+ SecRule ARGS_GET:time "!@rx ^[\d\.]+$" \
