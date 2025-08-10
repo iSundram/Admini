@@ -1,0 +1,11 @@
+#!/bin/bash
+# This is an if-up.d type startup script for DirectAdmin
+# startips script gets executed after a network change.
+
+DA_IFACE=$(da config-get ethernet_dev)
+
+if [ "${IFACE}" == "${DA_IFACE}" ] && systemctl is-enabled startips; then
+	if [ "${ADDRFAM}" == "inet" ] || [ "${ADDRFAM}" == "inet6" ]; then
+		/usr/local/directadmin/scripts/startips "${ADDRFAM}"
+	fi
+fi
