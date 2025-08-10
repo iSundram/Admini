@@ -1,0 +1,1 @@
+import{_ as o,r,o as n,f as t}from"../index.DtGSrwJ3.js";const a={};function c(s,_){const e=r("RouterView");return n(),t(e,{id:"fm-layout",class:"quasar-area"})}const i=o(a,[["render",c],["__file","index.vue"]]);export{i as default};
