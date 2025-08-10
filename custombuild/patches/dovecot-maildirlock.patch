@@ -1,0 +1,31 @@
+--- a/src/util/maildirlock.c	2023-09-14 13:17:47.000000000 +0000
++++ b/src/util/maildirlock.c	2024-06-17 13:24:25.670490630 +0000
+@@ -34,6 +34,11 @@
+ 	return file_dotlock_create(&dotlock_settings, path, 0, dotlock_r);
+ }
+ 
++static void dummy_read(int *fd ATTR_UNUSED)
++{
++	/* this should never be reached anyways */
++}
++
+ int main(int argc, const char *argv[])
+ {
+ 	struct dotlock *dotlock;
+@@ -91,12 +96,16 @@
+ 	if (maildir_lock(argv[1], timeout, &dotlock) <= 0)
+ 		return 1;
+ 
++	struct io *io = io_add(fd[0], IO_READ, dummy_read, fd);
++
+ 	/* locked - send a byte */
+ 	if (write_full(fd[1], "", 1) < 0)
+ 		i_fatal("write(pipe) failed: %m");
+ 
+ 	io_loop_run(ioloop);
+ 
++	io_remove(&io);
++
+ 	file_dotlock_delete(&dotlock);
+ 	lib_signals_deinit();
+ 
