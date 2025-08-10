@@ -1,0 +1,39 @@
+diff -Naur a/wwwroot/cgi-bin/awstats.pl b/wwwroot/cgi-bin/awstats.pl
+--- a/wwwroot/cgi-bin/awstats.pl	2023-01-16 19:35:03.000000000 +0200
++++ b/wwwroot/cgi-bin/awstats.pl	2024-06-28 14:14:43.540084370 +0300
+@@ -36,7 +36,7 @@
+ # Defines
+ #------------------------------------------------------------------------------
+ use vars qw/ $REVISION $VERSION /;
+-$REVISION = '20230108';
++$REVISION = '20230109';
+ $VERSION  = "7.9 (build $REVISION)";
+ 
+ # ----- Constants -----
+@@ -8366,7 +8366,7 @@
+ 		}
+ 		return;
+ 	}
+-	if ( $val{$keyval} ) {    # Val is already in tree
++	if ( exists($val{$keyval}) ) {    # Val is already in tree
+ 		if ($Debug) { debug( "  val is already in tree", 4 ); }
+ 		$egal{$keytoadd} = $val{$keyval};
+ 		$val{$keyval}    = $keytoadd;
+@@ -8413,7 +8413,7 @@
+ 	while ( $nextval{$valcursor} && ( $nextval{$valcursor} < $keyval ) ) {
+ 		$valcursor = $nextval{$valcursor};
+ 	}
+-	if ( $nextval{$valcursor} )
++	if ( exists($nextval{$valcursor}) )
+ 	{    # keyval is between valcursor and nextval{valcursor}
+ 		$nextval{$keyval} = $nextval{$valcursor};
+ 	}
+@@ -8441,7 +8441,7 @@
+ 	if ($Debug) {
+ 		debug( "   remove for lowerval=$lowerval: key=$keytoremove", 4 );
+ 	}
+-	if ( $egal{$keytoremove} ) {
++	if ( exists($egal{$keytoremove}) ) {
+ 		$val{$lowerval} = $egal{$keytoremove};
+ 		delete $egal{$keytoremove};
+ 	}
