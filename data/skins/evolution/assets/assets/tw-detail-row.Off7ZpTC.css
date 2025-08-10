@@ -1,0 +1,1 @@
+@layer elements{.DetailValue{font-family:Montserrat,sans-serif;font-size:1.4rem;line-height:1.25;--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.DetailValue:is([data-mode=dark] *){--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}}
