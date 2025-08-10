@@ -1,0 +1,1 @@
+const i=t=>{if(t.inputType.startsWith("deleteContent")){const a=t.target;(a==null?void 0:a.value)==="0"&&t.preventDefault()}if(t.inputType.startsWith("insertText")){const a=Number(t.data||"");isNaN(a)&&t.preventDefault()}};export{i as v};
