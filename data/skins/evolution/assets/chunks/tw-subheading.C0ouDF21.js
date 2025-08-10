@@ -1,0 +1,1 @@
+import{d as t,o as a,f as s,w as o,m as n,t as r,bq as p,_ as i}from"../index.DtGSrwJ3.js";const _=t({__name:"tw-subheading",props:{text:{default:""},tag:{default:"p"}},setup(c){return(e,u)=>(a(),s(p(e.tag),{class:"tw-subheading"},{default:o(()=>[n(r(e.text),1)]),_:1}))}}),f=i(_,[["__file","tw-subheading.vue"]]);export{f as T};
