@@ -1,0 +1,11 @@
+--- a/extra/yassl/include/lock.hpp	2023-05-03 04:32:44.000000000 +0000
++++ b/extra/yassl/include/lock.hpp	2025-03-20 08:22:46.490647122 +0000
+@@ -30,6 +30,8 @@
+ #ifdef MULTI_THREADED
+ #ifdef _WIN32
+ #include <windows.h>
++#else
++#include <pthread.h>
+ #endif
+ #endif
+ 
