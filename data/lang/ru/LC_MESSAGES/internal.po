@@ -1,0 +1,7867 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Russian (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Russian <https://translate.directadmin.com/projects/"
+"directadmin/internal/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " Новое сообщение - %d"
+msgstr[1] " Новых сообщений - %d"
+msgstr[2] " Новых сообщений - %d"
+
+msgid " / Day"
+msgstr " /День"
+
+msgid "# of Domains"
+msgstr "# Доменов"
+
+msgid "# of IPs"
+msgstr "Кол-во IP"
+
+msgid "# of MySQL DBs"
+msgstr "Кол-во БД MySQL"
+
+msgid "# of Resellers"
+msgstr "Кол-во реселлеров"
+
+msgid "# of SubDomains"
+msgstr "# Поддоменов"
+
+msgid "# of Users"
+msgstr "Кол-во пользователей"
+
+msgid "# of free IPs"
+msgstr "# Бесплатных IP-адресов"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d дней, %d часов и %d минут"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "Есть %d из %d аккаунтов администраторов/реселлеров."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "Есть %d из %d аккаунтов."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "Есть %d из %d доменов."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d Настроек изменено"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "Не имеется %s %s %s"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr ""
+"%s '%s' невозможно восстановить в папке '%s'. Восстановление по умолчанию "
+"для файла: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - пользователей '%s' текущий IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr ""
+"%s Измените приветствие пользователя, чтобы убедиться, что тема и сообщение "
+"настроены."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s аккаунт %s только что был создан"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s уже есть"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s уже есть на удаленном сервере."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s уже есть на сервере."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s уже есть. Передайте overwrite=yes, чтобы заставить"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s является ссылкой. Прерывание."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s теперь можно поделиться."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s содержит опасные символы"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr ""
+"%s не может быть присвоен, сначала он должен быть свободным и не присвоенным."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s не может быть освобожден, если он является общим, он должен сначала иметь "
+"нулевой домен, или должен быть зарезервирован."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s не может быть удалён, сначала необходимо освободить его."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s не может быть разделен, сначала он должен быть свободным"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s успешно удалён."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s не существует"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s не имеет того же владельца, что и %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s был удален из списка"
+
+msgid "%s has been saved as %s."
+msgstr "%s сохранено как %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s был заблокирован"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s был разблокирован"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s является директорией, пропускаем удаление"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s является ссылкой"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s это жесткая или символическая ссылка"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s пропущен"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s не является директорией"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s не является сокетом"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s не является симлинком"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s не является правильным IP или диапазоном"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s неверный диапазон IP. Используйте формат: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr "владелец %s не изменен на %s, возможно из-а неверной распаковки архива"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s не подключен"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s отсутствует среди доступных вам IP"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s не указан в предоставленном списке типов редиректов"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s не принадлежит %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s IP все еще не освобожден или закреплен за реселлером"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s не управляется %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s освобожден"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s теперь никому не принадлежит."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s установлен как домен по-умолчанию."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s за пределами диапазона"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s требуется для %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s не может быть симлинком"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s больше не содержит название Name Server-а."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s не разработано"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s записей отключено на текущем уровне"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s значение '%s' не указано в home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "файл настроек для %s был удален"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: lstat вернула ошибку при назначении ссылки '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: команда readlink вернула ошибку: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' является недействительным %s типом"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sНажмите тут%s чтобы изучить как это включить"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sНажмите здесь%s чтобы просмотреть данные ДНС-зоны в исходном виде"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' не существует"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' не существует\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' начинается без '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' был выставлен как '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' не является разрешенным названием для тарифа."
+
+msgid "'%s' is disabled"
+msgstr "'%s' отключен"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' не является верным кодом CSS HEX"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' не назначен вашему аккаунту реселлера."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' не входит в вашу лицензию"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' не включено на системном уровне."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' необходим"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' должен быть '%s' или '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import' не закодирован в формате base64"
+
+msgid "'when' should be all, newer or older"
+msgstr "'when' должно быть либо Все, либо Никогда либо Старше"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) Следующие жесткие ссылки были найдены за пользователем %s:"
+
+msgid "* irretrievable *"
+msgstr "* непоправимый *"
+
+msgid "*** Stopped ***"
+msgstr "*** Остановлен ***"
+
+msgid "-- None Available --"
+msgstr "-- Нет доступных объектов --"
+
+msgid "-- Reason:"
+msgstr "-- Причина:"
+
+msgid "-- Select IP"
+msgstr "-- Выберите IP"
+
+msgid "-- Select Package"
+msgstr "-- Выберите тариф"
+
+msgid "-- any time --"
+msgstr "-- любое время --"
+
+msgid "-- anything --"
+msgstr "-- любое --"
+
+#, fuzzy
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "%s=%s требует nginx_proxy=1 и %s Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "%s запись с таким именем уже существует"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "'Свободный' IP может быть назначен только одному пользователю"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "Тип записи должен быть: A, NS, MX, CNAME, PTR или TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "Реселлер не может управлять другими реселлерами или уровнем выше"
+
+msgid "A file is required"
+msgstr "Нужен файл"
+
+msgid "A forwarder already exists with that name"
+msgstr "Forwarder c таким же названием уже существует"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "Домен или DNS-зона с идентичным названием уже существуют."
+
+msgid "A key with that name already exists"
+msgstr "Ключ с идентичным названием уже существует"
+
+#, fuzzy
+msgid "A key with that value already exists"
+msgstr "Ключ с идентичным названием уже существует"
+
+msgid "A list alias already exists with that name"
+msgstr "Alias c идентичным названием уже существует"
+
+msgid "A message for that user already exists"
+msgstr "Сообщение для пользователя уже существует"
+
+msgid "A pop account already exists with that name"
+msgstr "учетная запись POP с данным именем уже существует"
+
+msgid "A skin name is required"
+msgstr "Требуется название темы"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr "Поддомен с идентичным именем уже существует как отдельный домен."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr ""
+"Полное ограничение по памяти, вызывает остановку процесса из-за данного "
+"ограничения."
+
+msgid "Abuse"
+msgstr "Ругательство (Abuse)"
+
+msgid "Access Hosts"
+msgstr "Хосты доступа"
+
+msgid "Access host has been added"
+msgstr "Хост доступа добавлен"
+
+msgid "Access hosts have been removed"
+msgstr "Хост доступа удален"
+
+msgid "Account"
+msgstr "Учетная запись"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Учетная запись %s была создана %s %s с IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Учетка %s пропущена из-за приостановки работы"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr ""
+"Учетка %s была отключена Администратором и у вас нет доступа (вы Реселлер)."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Учетная запись %s с доменом %s содержит пустой сертификат caroot"
+
+msgid "Account created"
+msgstr "Учетка создана"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Учетная запись разблокирована через BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Учетная запись не является Реселлером"
+
+msgid "Account is suspended"
+msgstr "Учетная запись приостановлена"
+
+msgid "Account password changed"
+msgstr "Пароль учетной записи изменен"
+
+#, fuzzy
+msgid "Account(s) Suspended"
+msgstr "Учетная запись приостановлена"
+
+#, fuzzy
+msgid "Account(s) Unuspended"
+msgstr "Учетная запись приостановлена"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Учетные записи восстановлены на диск %s."
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Activate"
+msgstr "Активировать"
+
+msgid "Active"
+msgstr "Активно"
+
+#, c-format
+msgid "Add %s"
+msgstr "Добавить %s"
+
+msgid "Add Host"
+msgstr "Добавить хост"
+
+msgid "Add Override"
+msgstr "Добавить перезапись"
+
+msgid "Add the new NS records first."
+msgstr "Сначала добавьте новые NS-записи."
+
+msgid "Add to Apache"
+msgstr "Добавить к Apache"
+
+msgid "Add to Clipboard"
+msgstr "Добавить в буфер обмена"
+
+msgid "Add to DNS"
+msgstr "добавить в DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "ns1 добавлен как %s и ns2 как %s"
+
+msgid "Additional"
+msgstr "Дополнительно"
+
+msgid "Admin"
+msgstr "Админ"
+
+msgid "Admin SSL"
+msgstr "Настройки SSL"
+
+msgid "Admin SSL is not enabled"
+msgstr "Настройки SSL не подключены"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "Расширенный поиск"
+
+msgid "Afternoon"
+msgstr "По полудня"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Алиас %s@%s -> %s был создан"
+
+msgid "All"
+msgstr "Все"
+
+msgid "All Data"
+msgstr "Все данные"
+
+msgid "All E-Mail"
+msgstr "Все E-Mail"
+
+msgid "All Months (cgi)"
+msgstr "Все месяцы (cgi)"
+
+msgid "All Resellers"
+msgstr "Все реселлеры"
+
+msgid "All Users"
+msgstr "Все пользователи"
+
+msgid "All Users Except Selected Users"
+msgstr "Все пользователи за исключением выбранных"
+
+msgid "All Users Except:"
+msgstr "Все пользователи кроме:"
+
+msgid "All of Your Users"
+msgstr "Все ваши пользователи"
+
+msgid "All privileges have been set"
+msgstr "Все привилегии выставлены"
+
+# Suggested in Weblate: Все этапы маршрута, кроме последнего, должны иметь
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Все шаги маршрута, кроме последнего, должны иметь 'совпадение'"
+
+msgid "All selected Users have been suspended"
+msgstr "Все выбранные пользователи были заблокированы"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Все выбранные пользователи были разблокированы"
+
+msgid "All specified forwarders removed"
+msgstr "Все указанные пересылки удалены"
+
+msgid "Allocated"
+msgstr "Занято"
+
+msgid "Allow"
+msgstr "Разрешить"
+
+msgid "Allow Overselling"
+msgstr "Разрешить Overselling"
+
+#, fuzzy
+msgid "Allowance threshold is 0%"
+msgstr "Разрешенный порог на 0%%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Разрешение на столько %s приведет вас к превышению вашего лимита в %s"
+
+msgid "Alpha"
+msgstr "Альфа"
+
+msgid "Already Exists"
+msgstr "Уже существует"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"Во время создания резервных копий возникла ошибка, процесс загрузки успешных "
+"копий будет продолжен"
+
+msgid "An Error Occurred"
+msgstr "Возникла ошибка"
+
+msgid "An Error has occurred"
+msgstr "Возникла ошибка"
+
+msgid "An auto responder already exists with that name"
+msgstr "Автоответчик с идентичным названием уже существует"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Автоответчик с идентичным названием уже существует"
+
+msgid "An error has occurred"
+msgstr "Возникла ошибка"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Возникла ошибка при составлении конфига Nginx Unit"
+
+msgid "An error occured during extraction"
+msgstr "При распаковке возникла ошибка"
+
+msgid "An error occured while creating the compressed file"
+msgstr "При создании архива возникла ошибка"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "При сбросе владельца файла возникла ошибка"
+
+msgid "An error occurred during the backup"
+msgstr "При создании резервной копии возникла ошибка"
+
+#, fuzzy
+msgid "An error occurred during the restore"
+msgstr "При создании резервной копии возникла ошибка"
+
+msgid "An error occurred when unblocking the account"
+msgstr "При разблокировки учетной записи возникла ошибка"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "В процессе применения настроек к вашим пользователям возникла ошибка"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "При попытке копирования файла возникла ошибка"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "При создании директории возникла ошибка"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "При попытке ограничения доступа к директории возникла ошибка"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "При попытке переименовать файл возникла ошибка"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "При попытке восстановить файл возникла ошибка"
+
+msgid "Anonymous Ftp"
+msgstr "Анонимный FTP"
+
+msgid "Apache"
+msgstr "Веб-сервер Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Конфиг Apache переписан с новым IP"
+
+msgid "Apparent Size"
+msgstr "Размер"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Представлен как первая запись в разделе <Directory>."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Указано в самом начале шаблона, до обозначения переменных."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Указано во ВСЕХ context{} разделах, используется для защищенных паролем "
+"директорий."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Указано в секции phpIniOverride{}."
+
+msgid "Appears in rewrite{} section."
+msgstr "Присутствует в секции rewrite{}."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Присутствует в секции scripthandler{}."
+
+msgid "Appears in vhssl{} section."
+msgstr "Присутствует в секции vhssl{}."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Присутствует перед секцией <Directory>."
+
+msgid "Apply to All Users"
+msgstr "Применить ко всем пользователям"
+
+msgid "Apply to Me"
+msgstr "Применить"
+
+msgid "Apply to existing Domains"
+msgstr "Применить к существующим доменам"
+
+msgid "Apr"
+msgstr "Апрель"
+
+msgid "Archive Size"
+msgstr "Размер архива"
+
+msgid "Archives purged"
+msgstr "Архивы очищены"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Вы действительно хотите Удалить выбранных пользователей?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Вы действительно хотите Удалить выбранные базы данных?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Вы действительно хотите удалить выбранные ключи?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Вы действительно хотите удалить выбранные ДНС-зоны?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Вы действительно хотите удалить эти файлы?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Вы действительно хотите остановить эти процессы?"
+
+msgid "Ascending"
+msgstr "По возрастанию"
+
+msgid "Assign to"
+msgstr "Назначить к"
+
+msgid "Assigned"
+msgstr "Назначен"
+
+msgid "At least one crediential is required."
+msgstr "Требуется хотя бы одна проверка."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Попытка скопировать %s в самого себя, файл пропущен."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Попытка переименовать %s в самого себя, файл пропущен."
+
+msgid "Attempts"
+msgstr "Попытки"
+
+#, fuzzy
+msgid "Aug"
+msgstr "Август"
+
+msgid "Authentication"
+msgstr "Аутентификация"
+
+msgid "Authorize"
+msgstr "Авторизация"
+
+msgid "Auto"
+msgstr "Авто"
+
+msgid "Auto media selection active."
+msgstr "Режим автоматического выбора медиа активен."
+
+msgid "Auto+Confirm"
+msgstr "Авто+подтверждение"
+
+msgid "AutoResponders"
+msgstr "Автоответчики"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "Автоматическое продление сертификата для %s прошло успешно"
+
+# Suggested in Weblate: Автоматический security.txt (RFC 9116)
+msgid "Automatic security.txt (RFC 9116)"
+msgstr ""
+
+msgid "Autoreply"
+msgstr "Автоматический ответ"
+
+msgid "Autoresponder"
+msgstr "Автоответчик"
+
+#, fuzzy
+msgid "Autoresponder created"
+msgstr "Автоответчик обновлен"
+
+msgid "Autoresponder updated"
+msgstr "Автоответчик обновлен"
+
+#, fuzzy
+msgid "Autoresponder(s) removed"
+msgstr "Автоответчики"
+
+# Suggested in Weblate: Избегайте использования прицепов.
+msgid "Avoid use of trailers."
+msgstr ""
+
+msgid "Awstats"
+msgstr "Статистика Awstats"
+
+msgid "Awstats ..."
+msgstr "Статистика Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "Настройки Awstats изменены"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Backing up Databases"
+msgstr "Снятие резервной копии баз данных"
+
+msgid "Backing up E-Mail Data"
+msgstr "Снятие резервной копии данных E-Mail"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Снятие резервной копии настроек E-Mail"
+
+msgid "Backing up FTP"
+msgstr "Снятие резервной копии FTP"
+
+msgid "Backing up User Configs"
+msgstr "Снятие резервной копии конфигурации пользователя"
+
+msgid "Backing up User Data"
+msgstr "Снятие резервной копии пользовательских данных"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Снятие резервной копии дополнительных данных E-Mail"
+
+msgid "Backup"
+msgstr "Бэкап"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Backup %d в данное время не запущен."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr ""
+"Остановка бекапа (%d): в процессе была найдена жесткая ссылка с путем "
+"пользователя %s"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Ошибка снятия резервной копии Nginx Unit: %s"
+
+msgid "Backup Halted"
+msgstr "Создание резервной копии прекращено"
+
+msgid "Backup ID"
+msgstr "ID бэкапа"
+
+msgid "Backup creation added to queue"
+msgstr "Создание резервной копии поставлено в очередь"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Путь для резервной копии %s создан."
+
+#, fuzzy
+msgid "Backup(s) Killed"
+msgstr "Создание резервной копии прекращено"
+
+msgid "Backups added to Queue"
+msgstr "Снятие резервных копий поставлено в очередь"
+
+msgid "Bandwidth"
+msgstr "Трафик"
+
+msgid "Bandwidth (MB)"
+msgstr "Трафик (Мб)"
+
+msgid "Bandwidth Usage"
+msgstr "Данные по трафику"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr ""
+"Обязательно повторите сканирование QR-кода, так как все старые коды станут "
+"недействительными."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"Так как скрипт отвечает необходимым критериям, он был отключен через chmod в "
+"0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"До снятия блока убедитесь что все скомпрометированные скрипты были удалены "
+"либо исправлены."
+
+msgid "Beta"
+msgstr "Бета"
+
+msgid "Billing Issue"
+msgstr "Сложности с оплатой"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "Пустой %s при поиске сконвертированных резервных копий в %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Не указано значение: по-умолчанию, глобальный лимит %d"
+
+msgid "Bleeding edge features"
+msgstr "Передовые функции"
+
+msgid "Block Usage"
+msgstr "Использование блокировок"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker заблокировал пути"
+
+msgid "Blocked"
+msgstr "Заблокировано"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "Оба \"Управление DNS\" и \"Переопределение TTL\" должны быть включены"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "Атака на подбор пароля была обнаружена в журнале служб"
+
+msgid "CA Certificate is Invalid"
+msgstr "сертификат CA неверный"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr "сертификат CA в порядке. Ваш сайт будет защищен через несколько минут."
+
+msgid "CC Address"
+msgstr "СС адрес"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "Лимит СPU"
+
+msgid "Can use Server IP"
+msgstr "Можно использовать IP сервера"
+
+msgid "Can't get file lock on"
+msgstr "Не получается заблокировать файл"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Невозможно открыть для чтения файл %s"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Невозможно открыть файл %s для добавления данных"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+#, fuzzy
+msgid "Cancel Request"
+msgstr "Невозможно выполнить ваш запрос"
+
+msgid "Cannot Add A Record"
+msgstr "Невозможно добавить А-запись"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Невозможно добавить запись CNAME"
+
+msgid "Cannot Add Record"
+msgstr "Невозможно добавить запись"
+
+msgid "Cannot Create Account"
+msgstr "Невозможно создать пользователя"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Невозможно создать Автоответчик"
+
+msgid "Cannot Create Another Database"
+msgstr "Невозможно создать базу данных"
+
+msgid "Cannot Create Another Domain"
+msgstr "Невозможно создать домен"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Невозможно создать Указатель домена"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Невозможно создать FTP-пользователя"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Невозможно создать Forwarder"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Невозможно создать Список рассылки"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Невозможно создать учетную запись POP"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Невозможно создать поддомен"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Невозможно создать автоответчик"
+
+msgid "Cannot Create Domain"
+msgstr "Невозможно создать домен"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Невозможно создать сообщение об отсутствии"
+
+msgid "Cannot Create a Message"
+msgstr "Невозможно создать сообщение"
+
+msgid "Cannot Execute Command"
+msgstr "Невозможно выполнить команду"
+
+msgid "Cannot Execute Your Request"
+msgstr "Невозможно выполнить ваш запрос"
+
+msgid "Cannot Modify Key"
+msgstr "Невозможно изменить ключ"
+
+msgid "Cannot Modify User"
+msgstr "Невозможно изменить пользователя"
+
+msgid "Cannot View Domain Settings"
+msgstr "Просмотр настроек домена невозможен"
+
+msgid "Cannot be a list"
+msgstr "Не может быть списком"
+
+msgid "Cannot be an object"
+msgstr "Не может быть объектом"
+
+msgid "Cannot change the ip"
+msgstr "Не получилось изменить IP"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Изменение пароля для системного аккаунта невозможно. Войдите в контрольную "
+"панель чтобы это сделать."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Смена пароля для этого email- аккаунта невозможна, так как почта относится к "
+"заблокированному домену."
+
+msgid "Cannot change your email"
+msgstr "Не могу сменить ваш email"
+
+msgid "Cannot change your name"
+msgstr "Не могу изменить ваше имя"
+
+msgid "Cannot change your password"
+msgstr "Не могу изменить ваш пароль"
+
+msgid "Cannot check domain existance"
+msgstr "Проверить существование домена невозможно"
+
+msgid "Cannot create User Backup"
+msgstr "Не могу создать резервную копию пользователя"
+
+msgid "Cannot create domain"
+msgstr "Не могу создать домен"
+
+msgid "Cannot create that domain"
+msgstr "Не могу создать этот домен"
+
+msgid "Cannot create user using those settings"
+msgstr "Невозможно создать пользователя с указанными настройками"
+
+msgid "Cannot delete records"
+msgstr "Невозможно удалить записи"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr ""
+"Невозможно удалить скин оформления который вы используете в данный момент."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Невозможно определить владельца поддомена '%s'"
+
+msgid "Cannot execute your request"
+msgstr "Невозможно выполнить ваш запрос"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Не могу найти %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "Не могу найти %s в списке"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "Не могу найти %s в названии"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Не могу найти %s, пропускаем."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "Не могу найти %s. Убедитесь что домен присутствует и не отключен"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Не могу найти '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Не найден '%s' в списке разрешенных значений для %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "'%s' в шаблоне не найдено"
+
+msgid "Cannot find IP"
+msgstr "IP не найден"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Не удается найти пользователя '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr ""
+"Не удается найти действительное системное имя пользователя в файле "
+"domainowners."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "Не удается найти значения SAN в сертификате."
+
+# Suggested in Weblate: Не удается найти ни одного файл tar.gz после преобразования из %s
+# Suggested in Weblate: Не удается найти файлы tar.gz после преобразования из %s
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr ""
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Не удается найти домен в файле владельцев доменов"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Не удается найти домен в сертификате."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Не удается найти значение ключа в %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Не удается найти файл логотипа для токена %s в скине %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Не удается найти файл логотипа для токена %s=%s в скине %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Не удается найти show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Не удается найти template_php_ini или domain_php_ini в json"
+
+# Suggested in Weblate: Не удается найти этот домен в файле владельцев доменов
+msgid "Cannot find that domain in the domainowners file"
+msgstr ""
+
+msgid "Cannot find that key id"
+msgstr "Не удается найти этот id ключа"
+
+# Suggested in Weblate: Не удается найти учетную запись и переадресатора
+msgid "Cannot find the account nor the forwarder"
+msgstr ""
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Не удается найти скрипт letsencrypt.sh"
+
+# Suggested in Weblate: Не удается найти пользователя %s, который должен уже существовать
+msgid "Cannot find the user %s which should already exist"
+msgstr ""
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Не удается получить mime-type для %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Нельзя использовать символы новой строки в теме"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Нельзя устанавливать неограниченные квоты для электронной почты"
+
+# Suggested in Weblate: Невозможно управлять зоной
+msgid "Cannot manage zone"
+msgstr ""
+
+# Suggested in Weblate: Нельзя переместить директорию (%s) поверх существующего файла или директорию (%s)
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr ""
+
+msgid "Cannot open the password file to add the user"
+msgstr "Невозможно открыть файл с паролями для добавления пользователя"
+
+msgid "Cannot open the password file to change the password"
+msgstr "Невозможно открыть файл с паролями для изменения пароля"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Невозможно открыть файл с паролями пользователя для чтения"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "Невозможно переименовать директорию в существующий файл или директорию"
+
+# Suggested in Weblate: Не удается повторно отправить приветственный e-mail
+msgid "Cannot resend welcome email"
+msgstr ""
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr ""
+"Невозможно восстановить учетную запись FTP для %s.  Вы достигли своего "
+"лимита (%s)."
+
+msgid "Cannot set TTL"
+msgstr "Не удается установить TTL"
+
+msgid "Cannot set default domain"
+msgstr "Не удается установить домен по умолчанию"
+
+#, fuzzy
+msgid "Cannot show page"
+msgstr "Не могу изменить ваше имя"
+
+# Suggested in Weblate: Невозможно указать исходный файл
+msgid "Cannot stat the source file"
+msgstr ""
+
+msgid "Cannot use the main account username"
+msgstr "Невозможно использовать имя пользователя основной учетной записи"
+
+# Suggested in Weblate: Catch all теперь установлен на %s
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr ""
+
+msgid "Catch-All Email"
+msgstr ""
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "Универсальная электронная почта отключена в этом аккаунте"
+
+msgid "Catch-All email updated successfully"
+msgstr "Универсальное электронное письмо успешно обновлено"
+
+#, fuzzy
+msgid "Catch-All is disabled"
+msgstr "Catch-All теперь обречен на провал"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catch-All теперь обречен на провал"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All теперь настроен на игнорирование неправильных адресов"
+
+msgid "Certificate"
+msgstr "Сертификат"
+
+msgid "Certificate and Key Saved."
+msgstr "Сертификат и Ключ сохранены."
+
+msgid "Certificate is Invalid"
+msgstr "Сертификат недействителен"
+
+# Suggested in Weblate: Сертификат является самоподписанным
+msgid "Certificate is Self-Signed"
+msgstr "Самоподписной сертификат"
+
+msgid "Change the password to unblock it."
+msgstr "Измените пароль, чтобы разблокировать его."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Изменено по IP: %s"
+
+msgid "Changes saved"
+msgstr "Изменения сохранены"
+
+msgid "Check"
+msgstr "Проверить"
+
+msgid "Check the error log for more information."
+msgstr "Проверьте журнал ошибок для получения дополнительной информации."
+
+msgid "Check to see if the current software is valid"
+msgstr "Проверьте, есть ли валидное существующее ПО"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Дочерний пользователь %s удален"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Выберите из: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+# Suggested in Weblate: Город должен содержать только буквы, пробелы и/или точки
+msgid "City must only contain letters, spaces and/or periods"
+msgstr ""
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "Очистить перенаправления"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Очистка %s"
+
+# Suggested in Weblate: Очистить настройку
+msgid "Clear Customization"
+msgstr ""
+
+# Suggested in Weblate: Очистить систему сообщений
+msgid "Clear Messages System"
+msgstr ""
+
+msgid "Clear NS"
+msgstr "Очистить NS"
+
+msgid "Clear Search Filter"
+msgstr "Очистить фильтр поиска"
+
+# Suggested in Weblate: Нажмите %sСЮДА%s, чтобы вернуться назад
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Нажмите %sЗДЕСЬ%s, чтобы вернуться назад"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Нажмите %sЗДЕСЬ%s, чтобы вернуться"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Нажмите %sЗДЕСЬ%s, чтобы вернуться на главную страницу"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Нажмите здесь, чтобы загрузить последнюю резервную копию"
+
+msgid "Click here to close this window"
+msgstr "Нажмите здесь, чтобы закрыть это окно"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Нажмите здесь, чтобы включить SSL в домене"
+
+msgid "Clipboard"
+msgstr "Буфер обмена"
+
+#, fuzzy
+msgid "Clipboard emptied"
+msgstr "Буфер обмена"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Closed"
+msgstr "Закрыто"
+
+msgid "Closed+Confirm"
+msgstr ""
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr ""
+
+msgid "Color has been customized"
+msgstr ""
+
+msgid "Column in"
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "Command Returned"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+#, fuzzy
+msgid "Comments Saved"
+msgstr "Настройки сохранены"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr ""
+
+msgid "Compressed File Created"
+msgstr ""
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Сжатие %s"
+
+msgid "Confirm"
+msgstr "Подтвердить"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Подтвердите результаты на %sсайте DirectAdmin%s"
+
+#, fuzzy
+msgid "Confirmation code is invalid or request have expired"
+msgstr ""
+"В списке запросов такого имени пользователя нет. Возможно, срок действия "
+"вашего запроса истек."
+
+# Suggested in Weblate: Продолжаем работу с другими файлами.
+msgid "Continuing with the other files."
+msgstr ""
+
+msgid "Copy"
+msgstr "Копировать"
+
+# Suggested in Weblate: Скопировать файлы буфера обмена сюда
+msgid "Copy Clipboard Files here"
+msgstr ""
+
+# Suggested in Weblate: Скопировать данные экспорта пакетов
+msgid "Copy the packages export data"
+msgstr ""
+
+# Suggested in Weblate: Копирование административных данных
+msgid "Copying Admin Data"
+msgstr ""
+
+# Suggested in Weblate: Копирование данных реселлера
+msgid "Copying Reseller Data"
+msgstr ""
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Копирование файлов отключено с помощью опции filemanager_disable_features"
+
+# Suggested in Weblate: Копирование нечитаемых данных
+msgid "Copying unreadable data"
+msgstr ""
+
+msgid "Could not excute your request"
+msgstr "Не удалось выполнить ваш запрос"
+
+msgid "Could not execute your request"
+msgstr "Не удалось выполнить ваш запрос"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr ""
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr ""
+"Не удалось найти удаленный файл '%s' для проверки размера после загрузки"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Не удалось получить rDNS для IP '%s'"
+
+msgid "Could not read tickets"
+msgstr "Не удалось прочитать тикеты"
+
+msgid "Could not write tickets"
+msgstr "Не удалось выписать тикеты"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr ""
+"Не удалось найти IP-адреса любого типа, которые можно было бы предоставить "
+"пользователю (запрошенный ip=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr ""
+"Не удалось прочитать файл базы данных для %s. Невозможно добавить к нему ns1 "
+"и ns2."
+
+msgid "Count"
+msgstr ""
+
+msgid "Counted"
+msgstr ""
+
+msgid "Country code must be 2 letters"
+msgstr "Код страны должен состоять из двух букв"
+
+msgid "Created"
+msgstr "Создано"
+
+# Suggested in Weblate: Создание каталогов отключено с помощью параметра filemanager_disable_features.
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Создание директорий отключено с помощью параметра "
+"filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Создание такого количества %s приведет к превышению лимита в %s"
+
+msgid "Creator"
+msgstr "Создатель"
+
+msgid "Creator Duplicate"
+msgstr "Дублировать создателя"
+
+msgid "Creators and their Users"
+msgstr "Создатели и их пользователи"
+
+msgid "Cron Created"
+msgstr "Cron создан"
+
+msgid "Cron E-Mail set"
+msgstr "Электронная почта Cron установлена"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Задание(я) Cron удалено(ы)"
+
+# Suggested in Weblate: Задания Cron
+msgid "Cron Jobs"
+msgstr "Cron задания"
+
+# Suggested in Weblate: Задания Cron удалены
+msgid "Cron Jobs Deleted"
+msgstr "задания Cron удалены"
+
+# Suggested in Weblate: Задания Cron продублированы
+msgid "Cron Jobs Duplicated"
+msgstr "Задания Cron дублированы"
+
+# Suggested in Weblate: Задания Cron будут работать в фоновом режиме
+msgid "Cron Jobs will run in the background"
+msgstr ""
+
+# Suggested in Weblate: Cron изменен
+msgid "Cron Modified"
+msgstr ""
+
+# Suggested in Weblate: Задание Cron было создано
+msgid "Cron job has been created"
+msgstr ""
+
+msgid "Current"
+msgstr "Текущий"
+
+msgid "Current IPs"
+msgstr "Текущие IP-адреса"
+
+# Suggested in Weblate: Текущие IP-адреса, назначенные %s
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr ""
+
+# Suggested in Weblate: Текущие защищенные директории
+msgid "Current Protected Directories"
+msgstr ""
+
+msgid "Current Usage"
+msgstr "Текущее использование"
+
+msgid "Custom"
+msgstr "Собственный"
+
+msgid "Custom Color"
+msgstr "Пользовательский цвет"
+
+# Suggested in Weblate: Пользовательский логотип скина загружен
+msgid "Custom Skin Logo uploaded"
+msgstr ""
+
+# Suggested in Weblate: Пользовательские логотипы скинов не включены.
+msgid "Custom Skin Logos are not enabled"
+msgstr ""
+
+msgid "Custom logo deleted"
+msgstr "Пользовательский логотип удален"
+
+# Suggested in Weblate: Пользовательский порог должен быть допустимым числом. Допускается десятичная дробь.
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr ""
+
+# Suggested in Weblate: Персонализация отключена
+msgid "Customization Disabled"
+msgstr ""
+
+msgid "Customization written"
+msgstr ""
+
+# Suggested in Weblate: Настройка скина
+msgid "Customize the skin"
+msgstr ""
+
+msgid "DKIM disabled"
+msgstr "DKIM отключен"
+
+msgid "DKIM enabled"
+msgstr "DKIM включен"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "Управление DNS"
+
+#, fuzzy
+msgid "DNS Zone does not exist"
+msgstr "Часовой пояс не существует"
+
+msgid "DNSSEC Keys generated"
+msgstr "Созданы ключи DNSSEC"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC не включен"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSEC - Безопасность DNS"
+
+msgid "Database"
+msgstr "База данных"
+
+msgid "Database Created"
+msgstr "База данных создана"
+
+# Suggested in Weblate: Использование диска базой данных
+msgid "Database Disk Usage"
+msgstr ""
+
+msgid "Database has been successfully Restored"
+msgstr "База данных успешно восстановлена"
+
+msgid "Database:"
+msgstr "База данных:"
+
+msgid "Databases"
+msgstr "Базы данных"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Date Added"
+msgstr "Дата добавления"
+
+msgid "Date Blocked"
+msgstr "Дата блокировки"
+
+msgid "Date Created"
+msgstr "Дата создания"
+
+msgid "Date Suspended"
+msgstr "Дата приостановки"
+
+#, fuzzy
+msgid "Day"
+msgstr "Май"
+
+msgid "Day of Month"
+msgstr "День месяца"
+
+msgid "Day of Week"
+msgstr "день недели"
+
+msgid "Days must be a valid number."
+msgstr "Дни должны быть действительным числом."
+
+msgid "Debug Guide"
+msgstr "Руководство по отладке"
+
+msgid "Dec"
+msgstr "Дек"
+
+# Suggested in Weblate: Убывающий
+msgid "Decending"
+msgstr "По убыванию"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "Расшифровка %s не удалась"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+# Suggested in Weblate: График выпуска по умолчанию
+msgid "Default release schedule"
+msgstr ""
+
+# Suggested in Weblate: График отложенного выпуска
+msgid "Delayed release schedule"
+msgstr ""
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Extension"
+msgstr "Удалить расширение"
+
+msgid "Delete Handler"
+msgstr "Удалить обработчик"
+
+msgid "Delete MimeType"
+msgstr "Удалить MimeType"
+
+msgid "Delete Selected"
+msgstr "Удалить выделенное"
+
+# Suggested in Weblate: Удалите ключи DNSSEC и используйте неподписанную зону
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr ""
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Удалить следующего пользователя"
+msgstr[1] "Удалить следующих пользователей"
+msgstr[2] "Удалить следующих пользователей"
+
+msgid "Delete the following domains:"
+msgstr "Удалить следующие домены:"
+
+msgid "Delete web data"
+msgstr "Удалить веб-данные"
+
+msgid "Deleted"
+msgstr "Удалено"
+
+msgid "Deleted User Bandwidth"
+msgstr ""
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Удаление %s..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Удаление файлов/директорий отключено с помощью опции "
+"filemanager_disable_features"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Удаление этих NS-записей оставит вас с 0."
+
+msgid "Deny"
+msgstr "Отклонить"
+
+# Suggested in Weblate: Место назначения
+msgid "Destination"
+msgstr ""
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr ""
+
+# Suggested in Weblate: Деталь
+msgid "Detail"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Digest Subscriber"
+msgstr ""
+
+msgid "Digest Subscribers"
+msgstr ""
+
+msgid "DirectAdmin License"
+msgstr ""
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin будет перезапущен через 1 минуту"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin будет перезапущен в течение 1 минуты"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Настройки защиты директории были сохранены."
+
+msgid "Directory created"
+msgstr "Директория создана"
+
+msgid "Disable"
+msgstr "Отключить"
+
+msgid "Disable Auto-Renew"
+msgstr "Отключить автопродление"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+
+msgid "Disk Space"
+msgstr "Дисковое пространство"
+
+msgid "Disk Space (MB)"
+msgstr "Дисковое пространство (МБ)"
+
+msgid "Disk Usage"
+msgstr "Использование диска"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr ""
+
+msgid "Dns Provider reset."
+msgstr "Сброс DNS-провайдера."
+
+msgid "Dns Provider saved."
+msgstr "DNS-провайдер сохранен."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Не используйте ЗАГЛАВНЫЕ буквы в имени домена."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Не используйте пробелы между именами электронной почты."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "Не используйте пробелы в значении %s"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Хотите перезаписать существующие файлы?"
+
+msgid "DocumentRoot"
+msgstr ""
+
+# Suggested in Weblate: Не соответствует настройке: %s
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Не соответствует настройкам: %s"
+
+msgid "Domain"
+msgstr "Домен"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Домен %s создан"
+
+# Suggested in Weblate: Домен %s не может использовать путь переопределения %s для %s.
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Домен %s не может использовать путь переопределения %s для %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Домен %s был приостановлен администратором, и у вас нет доступа к его "
+"разблокировке. Вы не можете разблокировать этот домен."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr ""
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Домен '%s' испоьзует php-fpm."
+
+msgid "Domain AWstats"
+msgstr "AWstats домена"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "AWstats + Webalizer домена"
+
+# Suggested in Weblate: Пропускная способность домена
+msgid "Domain Bandwidth"
+msgstr ""
+
+msgid "Domain Created"
+msgstr "Домен создан"
+
+msgid "Domain Created Successfully"
+msgstr "Домен создан успешно"
+
+msgid "Domain Deletion Results"
+msgstr "Результаты удаления домена"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Указатель домена"
+msgstr[1] "Указателя домена"
+msgstr[2] "Указателей домена"
+
+msgid "Domain Pointer Added"
+msgstr "Доменный указатель добавлен"
+
+msgid "Domain Pointer on"
+msgstr "Указатель домена включен"
+
+msgid "Domain Pointers"
+msgstr "Указатели домена"
+
+#, fuzzy
+msgid "Domain Pointers Removed"
+msgstr "Указатель домена включен"
+
+msgid "Domain Quota"
+msgstr "Квота домена"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Переименование домена не включено"
+
+# Suggested in Weblate: Статистика Webalizer для домена
+msgid "Domain Webalizer Stats"
+msgstr "Статистика Webalizer домена"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+
+msgid "Domain does not belong to you"
+msgstr "Домен не принадлежит вам"
+
+#, fuzzy
+msgid "Domain does not belong to you."
+msgstr "Домен не принадлежит вам"
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Домен существует на %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Домен уже обрабатывает запрос SSL. Пожалуйста, дайте ему завершить процесс, "
+"прежде чем вносить другие изменения."
+
+# Suggested in Weblate: Доступ к домену запрещен
+msgid "Domain is forbidden"
+msgstr "Домен запрещен"
+
+msgid "Domain is not in your list"
+msgstr "Домен отсутствует в вашем списке"
+
+# Suggested in Weblate: Домен не должен быть расширением верхнего уровня
+msgid "Domain must not be a top-level domain extension"
+msgstr "Домен не должен быть расширением домена верхнего уровня"
+
+msgid "Domain name has been successfully changed"
+msgstr "Имя домена успешно изменено"
+
+# Suggested in Weblate: Переопределения домена php.ini
+msgid "Domain php.ini overrides"
+msgstr ""
+
+msgid "Domain(s)"
+msgstr "Домен(ы)"
+
+msgid "Domain(s) modified"
+msgstr "Домен(ы) изменены"
+
+msgid "Domains"
+msgstr "Домены"
+
+msgid "Domains directory created successfully"
+msgstr "Директория доменов успешно создаа"
+
+# Suggested in Weblate: Каталог доменов успешно создан в домашней директории пользователя
+msgid "Domains directory created successfully in user's home"
+msgstr "Директория доменов успешно создан в домашней директории пользователя"
+
+msgid "Double click for main domain page"
+msgstr "Кликните дважды для перехода на главную страницу домена"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr ""
+"В файле Dovecot '%s' отсутствуют данные. Запустите 'da build dovecot_conf'"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "Download Backup"
+msgstr "Загрузить резервную копию"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Загружено: %s"
+
+# Suggested in Weblate: Загрузка нового бинарного файла Webalizer
+msgid "Downloading a new webalizer binary"
+msgstr "Загрузка нового двоичного файла webalizer"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Загрузка сжатых папок отключена с помощью опции filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "Загрузка файлов отключена с помощью опции filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr ""
+
+msgid "Driver signals dormant."
+msgstr ""
+
+msgid "Duplicate"
+msgstr "Дублировать"
+
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgid "E-Mail Accounts"
+msgstr "E-Mail аккаунты"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "E-Mail аккаунты удалены"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "E-mail адрес успешно изменен"
+
+msgid "E-Mail Limit has been set"
+msgstr "E-mail лимит установлен"
+
+msgid "E-Mail Update Failed"
+msgstr "Не удалось обновить E-mail"
+
+msgid "E-Mail Updated"
+msgstr "E-mail обновлен"
+
+msgid "E-Mail account already exists"
+msgstr "E-mail аккаунт уже существует"
+
+msgid "E-Mail has been changed"
+msgstr "E-mail был изменен"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "E-mail был изменен на %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "Квота E-mail не должна превышать %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr ""
+
+msgid "Edit"
+msgstr "Редактировать"
+
+# Suggested in Weblate: Редактировать зону на главном сервере
+msgid "Edit the zone on the master server."
+msgstr "Редактировать зону на master-сервере."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Либо попросите создателя вашей учетной записи изменить ваш пароль, чтобы "
+"разблокировать его, либо воспользуйтесь функцией «Забыли пароль?» на "
+"странице входа в систему (если она включена)."
+
+msgid "Email"
+msgstr "EMail"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "Email '%s' не существует"
+
+#, fuzzy
+msgid "Email Added to list"
+msgstr "Email '%s' не существует"
+
+msgid "Email Deliveries (Sent)"
+msgstr ""
+
+msgid "Email Disk Usage"
+msgstr "Использование диска Email"
+
+# Suggested in Weblate: Переадресаторы электронной почты
+msgid "Email Forwarders"
+msgstr "Email переадресаторы"
+
+# Suggested in Weblate: Только электронная почта
+msgid "Email Only"
+msgstr "Только Email"
+
+# Suggested in Weblate: Письмо отправлено
+msgid "Email Sent"
+msgstr "Email отправлено"
+
+#, fuzzy
+msgid "Email Set"
+msgstr "Email отправлено"
+
+# Suggested in Weblate: Электронная почта создана, но
+msgid "Email created but"
+msgstr "Email создано, но"
+
+#, fuzzy
+msgid "Email removed"
+msgstr "Email создано, но"
+
+msgid "Empty Clipboard"
+msgstr "Очистить буфер обмена"
+
+msgid "Empty path"
+msgstr ""
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Enabled"
+msgstr "Включено"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "Шифрование %s не удалось"
+
+msgid "End Time"
+msgstr "Время окончания"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr ""
+"Достигнут конец файла при попытке чтения %lld байтов из %s. заполнено=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Убедитесь, что второй ключ совпадает с первым"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr ""
+"Убедитесь, что в списке ip.list реселлера есть несколько пригодных для "
+"использования IP-адресов."
+
+msgid "Ensuring stored domains are present"
+msgstr "Обеспечение присутствия сохраненных доменов"
+
+#, fuzzy
+msgid "Error"
+msgstr "Ошибки"
+
+msgid "Error Compressing the backup file"
+msgstr "Ошибка сжатия файла резервной копии"
+
+msgid "Error Creating Cron Job"
+msgstr "Ошибка создания задания Cron"
+
+msgid "Error Creating Domain"
+msgstr "Ошибка создания домена"
+
+msgid "Error Creating Key"
+msgstr "Ошибка создания ключа"
+
+msgid "Error Creating User"
+msgstr "Ошибка создания пользователя"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Ошибка удаления %s"
+
+msgid "Error Executing Perl"
+msgstr "Ошибка запуска Perl"
+
+msgid "Error Log"
+msgstr "Журнал ошибок"
+
+msgid "Error Reading Message File"
+msgstr "Ошибка чтения файла сообщения"
+
+msgid "Error Reading db file"
+msgstr "Ошибка чтения файла БД"
+
+# Suggested in Weblate: Ошибка При Удалении Пользователя %s
+# Suggested in Weblate: Ошбика При Удалении Пользователя %s
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Ошибка удаления пользователя %s"
+
+msgid "Error Resetting Zone"
+msgstr "Ошибка Сброса Зоны"
+
+msgid "Error Restoring database"
+msgstr "Ошибка Восстановления базы данных"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Ошибка Сохранения Пароля: %s"
+
+# Suggested in Weblate: Ошибка Разблокировки путей
+msgid "Error Unblocking paths"
+msgstr "Ошибка разблокировки путей"
+
+msgid "Error Updating User"
+msgstr "Ошибка Обновления Пользователя"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Ошибка Записи %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr ""
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Ошибка активации cronjobs: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Ошибка активации данных для %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "Ошибка добавления DS записей для %s в удаленную родительскую зону: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "Ошибка авторизации SSH ключа"
+
+msgid "Error changing password"
+msgstr "Ошибка изменения пароля"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Ошибка очистки файлов LetsEncrypt"
+
+# Suggested in Weblate: Ошибка конвертации файла:
+msgid "Error converting file: "
+msgstr "Ошибка конвертации файла: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Ошибка копирования %s в %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Ошибка копирования %s в %s : %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Ошибка копирования файла логотипа: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Ошибка создания %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Ошибка создания %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Ошибка создания автоответчика"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Ошибка создания приложения NginxUnit '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Ошибка создания маршрута NginxUnit '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "Ошибка создания SSH ключа"
+
+msgid "Error creating User"
+msgstr "Ошибка создания пользователя"
+
+msgid "Error creating Vacation Message"
+msgstr ""
+
+msgid "Error creating account"
+msgstr "Ошибка создания аккаунта"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Ошибка создания стандартных директорий в %s.   Смотрите error.log для "
+"получения дополнительной информации."
+
+msgid "Error creating forwarder"
+msgstr "Ошибка создания переадресации"
+
+msgid "Error creating the database"
+msgstr "Ошибка создания базы данных"
+
+msgid "Error decoding the base 64 data"
+msgstr "Ошибка декодирования данных в формате base 64"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Ошибка удаления %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Ошибка удаления SSH ключа"
+
+msgid "Error deleting account(s)"
+msgstr "Ошибка удаления аккаунта(-ов)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Ошибка удаления автоответчика(-ов)"
+
+msgid "Error deleting filter(s)"
+msgstr "Ошибка удаления фильтра(-ов)"
+
+msgid "Error deleting records"
+msgstr "Ошибка удаления записей"
+
+msgid "Error determining username from "
+msgstr "Ошибка определения имени пользователя из "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Ошибка во время автоматического обновления сертификата для %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Ошибка при удалении дочернего пользователя %s"
+
+msgid "Error during extraction"
+msgstr "Ошибка во время извлечения"
+
+msgid "Error executing your request"
+msgstr "Ошибка выполнения вашего запроса"
+
+msgid "Error generating zone keys"
+msgstr "Ошибка генерации ключей зоны"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Ошибка импорта пакетов в формате base 64"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Ошибка в сообщении.   Требуется указать домен, тип и значение."
+
+msgid "Error modifying SSH key"
+msgstr "Ошибка изменения SSH ключа"
+
+# Suggested in Weblate: Ошибка разбора пути %s: неверный тип
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr ""
+
+# Suggested in Weblate: Ошибка разбора 'routes'.
+msgid "Error parsing 'routes'."
+msgstr ""
+
+# Suggested in Weblate: Ошибка разбора JSON-вывода
+msgid "Error parsing json output"
+msgstr ""
+
+msgid "Error purging archives"
+msgstr "Ошибка очистки архивов"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Ошибка чтения %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Ошибка чтения файла конфигурации домена"
+
+msgid "Error reading domain config files"
+msgstr "Ошибка чтения файлов конфигурации домена"
+
+msgid "Error reading domainowners"
+msgstr "Ошибка чтения владельцев домена"
+
+msgid "Error reading domainowners file"
+msgstr "Ошибка чтения файла владельцев домена"
+
+msgid "Error reading named db file"
+msgstr "Ошибка чтения именованного файла базы данных"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr "Ошибка чтения файла базы данных после записи в него до подписи DNSSEC"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr ""
+"Ошибка чтения файлов пользователя для %s, продолжаем работу независимо от "
+"этого."
+
+msgid "Error reading user_ip.list file"
+msgstr "Ошибка чтения файла user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Ошибка удаления %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Ошибка удаления IP-адреса(-ов) из %s"
+
+msgid "Error removing file: "
+msgstr "Ошибка удаления файла: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Ошибка удаления пути %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Ошибка удаления поддомена"
+
+msgid "Error removing subdomain(s)"
+msgstr "Ошибка удаления поддомена(-ов)"
+
+msgid "Error removing subdomains"
+msgstr "Ошибка удаления поддоменов"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Ошибка удаления пользователя %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Ошибка переименования %s в %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Ошибка восстановления %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Ошибка восстановления домена"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Ошибка восстановления настроек PHP для '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Ошибка перезаписи %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Ошибка выполнения %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Ошибка выполнения команды rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Ошибка выполнения команды rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Ошибка сохранения Cron E-Mail"
+
+# Suggested in Weblate: Ошибка сохранения имён серверов (Nameservers)
+msgid "Error saving Nameservers"
+msgstr ""
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Ошибка отправки сигнала %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Ошибка установки шаблона MX"
+
+msgid "Error setting MX template for pointer"
+msgstr "Ошибка установки шаблона MX для указателя"
+
+msgid "Error setting PHP versions"
+msgstr "Ошибка установки версий PHP"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Ошибка установки лимитов cgroup для %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Ошибка установки файлов в буфер обмена"
+
+msgid "Error setting global key"
+msgstr "Ошибка установки глобального ключа"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Ошибка установки прав на %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Ошибка установки фильтра"
+
+msgid "Error setting the spam filter"
+msgstr "Ошибка установки спам-фильтра"
+
+msgid "Error setting timezone"
+msgstr "Ошибка установки часового пояса"
+
+msgid "Error showing Email Acounts"
+msgstr "Ошибка отображения почтовых аккаунтов"
+
+# Suggested in Weblate: Ошибка отображения информации об идентификаторе сообщения (message ID)
+msgid "Error showing message ID info"
+msgstr ""
+
+msgid "Error showing smtp log info"
+msgstr "Ошибка отображения информации журнала SMTP"
+
+msgid "Error signing zone"
+msgstr "Ошибка подписи зоны"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr ""
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Ошибка при приостановке cron-заданий: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Ошибка обновления автоответчика"
+
+msgid "Error updating Catch-All value"
+msgstr "Ошибка обновления значения Catch-All"
+
+msgid "Error updating Vacation Message"
+msgstr ""
+
+msgid "Error updating forwarder"
+msgstr "Ошибка обновления переадресации"
+
+msgid "Error while compressing file"
+msgstr "Ошибка при сжатии файла"
+
+msgid "Error while creating User"
+msgstr "Ошибка при создании Пользователя"
+
+msgid "Error while deleting Users"
+msgstr "Ошибка при удалении Пользователей"
+
+msgid "Error while saving changes"
+msgstr "Ошибка при сохранении изменений"
+
+msgid "Error while saving password"
+msgstr "Ошибка при сохранении пароля"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Ошибка при записи %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Ошибка при запросе LetsEncrypt"
+
+msgid "Error with curl request"
+msgstr "Ошибка при выполнении запроса curl"
+
+msgid "Error with exigrep"
+msgstr "Ошибка при использовании команды exigrep"
+
+msgid "Error with fchownat"
+msgstr "Ошибка при использовании команды fchownat"
+
+# Suggested in Weblate: Ошибка с квотами системы
+msgid "Error with system Quotas"
+msgstr "Ошибка с системными квотами"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Ошибка в плане резервного копирования (не удалось переименовать): "
+"копирование %s в %s также завершилось ошибкой: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Ошибка записи %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Ошибка записи %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "Ошибка записи файла конфигурации домена"
+
+# Suggested in Weblate: Ошибка записи поп-кэша
+msgid "Error writing pop cache"
+msgstr ""
+
+msgid "Error writing the directadmin.conf"
+msgstr "Ошибка записи файла Directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Ошибка записи в %s: %s"
+
+msgid "Errors"
+msgstr "Ошибки"
+
+msgid "Evening"
+msgstr "Вечер"
+
+msgid "Expecting 0 or 1"
+msgstr "Ожидается 0 или 1"
+
+msgid "Expecting any integer"
+msgstr "Ожидается любое целое число"
+
+# Suggested in Weblate: Ожидается любое длинное целое число
+msgid "Expecting any long long integer"
+msgstr ""
+
+# Suggested in Weblate: Просрочено
+# Suggested in Weblate: Истекший
+msgid "Expired"
+msgstr ""
+
+msgid "Expiry"
+msgstr "Срок действия"
+
+msgid "Export Selected"
+msgstr "Экспортировать Выбранное"
+
+msgid "Extension"
+msgstr "Расширение"
+
+msgid "Extensions"
+msgstr "Расширения"
+
+msgid "Extract"
+msgstr "Распаковать"
+
+msgid "Extract selected to directory"
+msgstr "Извлечь выбранные в директорию"
+
+msgid "Extracting User Data"
+msgstr "Извлечение Данных Пользователя"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Извлечение файлов отключено с помощью опции filemanager_disable_features"
+
+msgid "Extracting non-readable files"
+msgstr "Извлечение непрочитываемых файлов"
+
+msgid "Extracting ~/domains directory"
+msgstr "Извлечение директории ~/domains"
+
+msgid "Extracting ~/imap directory"
+msgstr "Извлечение директории ~/imap"
+
+msgid "FTP"
+msgstr ""
+
+msgid "FTP account already exists"
+msgstr "FTP аккаунт уже существует"
+
+msgid "FTP information invalid."
+msgstr "Недействительная информация для FTP."
+
+msgid "FTP: default creation error"
+msgstr "FTP: ошибка создания по умолчанию"
+
+msgid "Feature Disabled"
+msgstr "Функция Отключена"
+
+msgid "Feb"
+msgstr "Фев"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "File %s already exists, file skipped."
+msgstr "Файл %s уже существует, файл пропущен."
+
+msgid "File Extracted"
+msgstr "Файл Извлечен"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Файл считывается как '%s'"
+
+msgid "File copied successfully"
+msgstr "Файл успешно скопирован"
+
+msgid "File does not exist"
+msgstr "Файл не существует"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Файл не существует или у вас нет доступа к файлу"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "Файл Извлечен"
+
+msgid "File exists check"
+msgstr ""
+
+# Suggested in Weblate: Сброс владельца файла
+msgid "File ownership reset"
+msgstr ""
+
+#, fuzzy
+msgid "File purged"
+msgstr "Архивы очищены"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "Файл успешно восстановлен"
+
+msgid "File restored successfully"
+msgstr "Файл успешно восстановлен"
+
+msgid "Filename"
+msgstr "Имя файла"
+
+msgid "Files added to clipboard"
+msgstr "Файлы добавлены в буфер обмена"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "Файл Извлечен"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "Ключ(и) удалены"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "%s Удалено"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "Фильтр"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP-адрес(-а) удален(-ы)"
+
+# Suggested in Weblate: Отпечаток
+msgid "Fingerprint"
+msgstr "Отпечаток пальца"
+
+msgid "First"
+msgstr "Первый"
+
+msgid "First PHP"
+msgstr ""
+
+msgid "First Page"
+msgstr ""
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Значение флага для '%s' пустое"
+
+msgid "Flush from DNS"
+msgstr "Очистить из DNS"
+
+msgid "For backwards compatibility"
+msgstr "Для обратной совместимости"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"Для случаев, когда большое количество доменов для обработки может вызвать "
+"тайм-аут"
+
+msgid "Forwarder"
+msgstr "Переадресатор"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Переадресатор %s не может указывать на самого себя"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "Переадресатор %s@%s удален, так как у него не осталось получателей."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Переадресатор '%s' уже существует."
+
+msgid "Forwarder already exists"
+msgstr "Переадресатор уже существует"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Переадресатор содержит символ local_part_suffix: '%s', что означает, что всё "
+"после него будет проигнорировано, и переадресатор никогда не будет "
+"соответствовать."
+
+msgid "Forwarder created"
+msgstr "Переадресатор создан"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Обнаружена петля переадресации: %s"
+
+msgid "Forwarder updated"
+msgstr "Переадресатор обновлен"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "Переадресатор создан"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Найдено 0 файлов в %s, читаемых как %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr ""
+
+msgid "Free - randomly selected"
+msgstr "Бесплатно - случайно выбранный"
+
+msgid "Free Memory"
+msgstr "Свободная Память"
+
+msgid "Free Selected"
+msgstr ""
+
+msgid "Free Swap Memory"
+msgstr ""
+
+msgid "From"
+msgstr "От"
+
+msgid "Ftp"
+msgstr "ФТП"
+
+msgid "Ftp Accounts"
+msgstr "Ftp Аккаунты"
+
+msgid "Ftp account changed"
+msgstr ""
+
+msgid "Ftp settings saved"
+msgstr ""
+
+msgid "Full Date"
+msgstr "Полная Дата"
+
+# Suggested in Weblate: Имя успешно изменено
+msgid "Full Name has been successfully changed"
+msgstr ""
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr ""
+
+msgid "GB"
+msgstr ""
+
+msgid "GID"
+msgstr ""
+
+msgid "Generate Keys"
+msgstr ""
+
+msgid "Git Repositories"
+msgstr "Git Репозитории"
+
+msgid "Global"
+msgstr ""
+
+msgid "Global - randomly selected"
+msgstr ""
+
+msgid "Global Key"
+msgstr ""
+
+msgid "Global Key set"
+msgstr ""
+
+msgid "Global ssh keys not available to Users"
+msgstr ""
+
+msgid "Go to %s"
+msgstr "Перейти к %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Группа %s уже существует. Пожалуйста, выберите другое имя пользователя."
+
+msgid "Handler"
+msgstr ""
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "Запись удалена"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "Дата добавления"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+
+msgid "Here are the results"
+msgstr "Вот результаты"
+
+msgid "Here are the results:"
+msgstr "Вот результаты:"
+
+msgid "High"
+msgstr ""
+
+msgid "Highest"
+msgstr "Наибольший"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "Достигнут конец файла при поиске @ или строки заголовка домена в"
+
+msgid "Home Directory"
+msgstr "Домашняя Директория"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "Домашний путь '%s' не входит в разрешенный home_override_list"
+
+msgid "Host:"
+msgstr "Хост:"
+
+msgid "Hosts"
+msgstr "Хосты"
+
+msgid "Hour"
+msgstr "Час"
+
+msgid "How to process the request"
+msgstr "Как обработать запрос"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Однако после %s попыток им не удалось предоставить действительный код "
+"двухэтапной аутентификации, поэтому доступ не был предоставлен."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr ""
+"Однако вместо этого были обнаружены поддомены. Продолжаем работу с ними."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID не принадлежит вам"
+
+#, fuzzy
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 или \"1234-1239\""
+
+msgid "IO Read Bandwidth Max"
+msgstr ""
+
+msgid "IO Write Bandwidth Max"
+msgstr ""
+
+msgid "IOPS Read Max"
+msgstr ""
+
+msgid "IOPS Write Max"
+msgstr ""
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP-адрес добавлен"
+
+msgid "IP Info"
+msgstr "Информация о IP-адресе"
+
+msgid "IP Link Added"
+msgstr "IP-ссылка добавлена"
+
+msgid "IP Link(s) Removed"
+msgstr "IP-ссылка(-и) удалена(-ы)"
+
+msgid "IP List is empty"
+msgstr "Список IP-адресов пуст"
+
+msgid "IP Netmask Set"
+msgstr "Установлено сетевое маскирование IP"
+
+msgid "IP Type"
+msgstr "Тип IP"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP-адрес в файле конфигурации домена (%s) недействителен."
+
+msgid "IP must be shared or free"
+msgstr "IP должен быть общим или бесплатным"
+
+msgid "IP will be linked in the background"
+msgstr "IP-адрес будет связан в фоновом режиме"
+
+msgid "IP(s)"
+msgstr "IP-адрес(-а)"
+
+msgid "IP(s) removed"
+msgstr "IP-адрес(-а) удален(-ы)"
+
+msgid "IP/User"
+msgstr "IP/Пользователь"
+
+msgid "IPs"
+msgstr "IPs"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Если введено правильное имя пользователя, вы получите подтверждение по "
+"электронной почте в ближайшее время."
+
+msgid "If this is not your IP, change your password."
+msgstr "Если это не ваш IP-адрес, измените пароль."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Если вы не хотите перезаписывать текущий сертификат, отключите "
+"автоматическое обновление"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"Если вы продолжите, эти учетные записи пользователей, а также ВСЕ связанные "
+"с ними содержимое веб-сайтов и электронной почты, которые не указаны здесь, "
+"также будут удалены."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Если установить значение 0, ни один базовый запрос HTTP не будет работать. "
+"Вы не сможете даже войти в систему."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Имена файлов изображений имеют только одну точку"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "Папки Imap"
+
+msgid "Inactive"
+msgstr "Неактивный"
+
+msgid "Inbox"
+msgstr "Входящие"
+
+msgid "Include Domains"
+msgstr "Включить Домены"
+
+msgid "Info"
+msgstr "Информация"
+
+msgid "Info for admins"
+msgstr "Информация для администраторов"
+
+msgid "Inherit"
+msgstr "Наследовать"
+
+msgid "Inodes"
+msgstr "Inodes"
+
+msgid "Installed"
+msgstr "Установлено"
+
+msgid "Installed Perl Modules"
+msgstr "Модули Perl"
+
+msgid "Interface is a loopback interface."
+msgstr "Интерфейс представляет собой интерфейс обратной связи."
+
+msgid "Interface is a point-to-point link."
+msgstr "Интерфейс представляет собой ссылку «точка-точка»."
+
+msgid "Interface is in promiscuous mode."
+msgstr ""
+
+msgid "Interface is running."
+msgstr ""
+
+msgid "Internal debugging flag."
+msgstr ""
+
+msgid "Invalid "
+msgstr "Неправильный "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "Неправильный '%s'"
+
+msgid "Invalid CC email address"
+msgstr "Недействительный адрес электронной почты CC"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Недопустимые символы в имени скина. Используйте только a-zA-Z0-9._-[]. Не "
+"должно начинаться с '.'"
+
+msgid "Invalid Cron ID"
+msgstr "Неправильный Cron ID"
+
+msgid "Invalid DNS name"
+msgstr "Недействительное DNS-имя"
+
+msgid "Invalid DNS value"
+msgstr "Недействительное DNS-значение"
+
+msgid "Invalid Domain"
+msgstr "Недействительный домен"
+
+msgid "Invalid Domain Name"
+msgstr "Недопустимое имя домена"
+
+msgid "Invalid E-Mail"
+msgstr "неправильный E-Mail"
+
+msgid "Invalid E-Mail User"
+msgstr "Недействительное имя пользователя электронной почты"
+
+# Suggested in Weblate: Недействительный адрес электронной почты. Допустимо использовать несколько имен пользователей для входа в DirectAdmin, а также пустое значение
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+
+msgid "Invalid Email"
+msgstr "Неправильный Email"
+
+msgid "Invalid Email Name"
+msgstr "Недействительное имя пользователя электронной почты"
+
+msgid "Invalid Email limit"
+msgstr "Недействительный лимит электронной почты"
+
+msgid "Invalid FTP account"
+msgstr "Неправильный FTP аккаунт"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr ""
+
+# Suggested in Weblate: Неверный IP/домен для FTP-соединения
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr ""
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Неверное значение ротации журнала: %d"
+
+msgid "Invalid MX value"
+msgstr "Недопустимое значение MX"
+
+msgid "Invalid Name"
+msgstr "Неверное имя"
+
+msgid "Invalid Netmask"
+msgstr ""
+
+msgid "Invalid Password"
+msgstr "Неправильный пароль"
+
+msgid "Invalid RSA comment"
+msgstr ""
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr ""
+
+msgid "Invalid RSA key"
+msgstr "Неверный ключ RSA"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "Недопустимое значение SecRuleRemoveById"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Неверное значение минут сессии: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Недействительный поддомен"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Недействительный код двухэтапной аутентификации"
+
+#, fuzzy
+msgid "Invalid Two-Step Authentication code"
+msgstr "Недействительный код двухэтапной аутентификации"
+
+msgid "Invalid URL"
+msgstr "Неверный URL"
+
+msgid "Invalid Username"
+msgstr "Недействительное Имя Пользователя"
+
+msgid "Invalid Username or Password"
+msgstr "Недействительное имя пользователя или пароль"
+
+msgid "Invalid characters in password"
+msgstr "Недопустимые символы в пароле"
+
+msgid "Invalid characters in word"
+msgstr "Недопустимые символы в слове"
+
+msgid "Invalid crypted passwd"
+msgstr "Неверный зашифрованный passwd"
+
+# Suggested in Weblate: Недопустимое значение delete_messages_days или delete_tickets_days. Слишком большое. Макс = 
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"Недопустимое значение delete_messages_days или delete_tickets_days.  Слишком "
+"большое значение.  Max = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"Недопустимое значение delete_messages_days или delete_tickets_days. Должно "
+"быть 0 или положительное целое число."
+
+msgid "Invalid dnsprovider"
+msgstr "Неверный DNS-провайдер"
+
+#, fuzzy
+msgid "Invalid dnsprovider type"
+msgstr "Неверный DNS-провайдер"
+
+msgid "Invalid domain"
+msgstr "Неверный домен"
+
+msgid "Invalid email address"
+msgstr "Неверный адрес электронной почты"
+
+msgid "Invalid email user"
+msgstr "Неверный адрес электронной почты пользователя"
+
+msgid "Invalid email username"
+msgstr ""
+
+msgid "Invalid encryption password"
+msgstr "Неверный пароль шифрования"
+
+msgid "Invalid file extension list"
+msgstr "Неверный список расширений файлов"
+
+msgid "Invalid filename:"
+msgstr "Неверное имя файла:"
+
+msgid "Invalid filter type"
+msgstr "Неверный тип фильтра"
+
+msgid "Invalid fingerprint"
+msgstr "Неверный отпечаток пальца"
+
+msgid "Invalid ftp password"
+msgstr "Неверный пароль FTP"
+
+# Suggested in Weblate: Неверный путь FTP
+msgid "Invalid ftp path"
+msgstr ""
+
+msgid "Invalid ftp port"
+msgstr "Неверный ftp-порт"
+
+msgid "Invalid ftp username"
+msgstr "Неверное имя пользователя FTP"
+
+# Suggested in Weblate: Неверная длина ключа: «%s»
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "Неверная длина ключа: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "Неверное имя или значение параметра ключа: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "Неверный тип ключа: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Неверный размер ключа. Допустимые значения: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Неверный список разрешенных доменов"
+
+msgid "Invalid local path"
+msgstr "Неверный локальный путь"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "Неверный логин. Пожалуйста, подтвердите свое имя пользователя и пароль"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Неверные дни сообщения. Должно быть положительным целым числом."
+
+msgid "Invalid message id"
+msgstr "Неверный ID сообщения"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "Неверный тип сообщения. Разрешены только запрос, ответ и сообщение"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "Неверный метод: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "Неверное имя или расширение"
+
+# Suggested in Weblate: Неверный тип сетевой маски для типа IP.
+msgid "Invalid netmask type for IP type"
+msgstr ""
+
+msgid "Invalid new user value"
+msgstr "Недопустимое новое значение пользователя"
+
+msgid "Invalid number"
+msgstr "Неправильный номер"
+
+msgid "Invalid package name"
+msgstr "Неверное имя пакета"
+
+msgid "Invalid path"
+msgstr "Неверный путь"
+
+msgid "Invalid path append value"
+msgstr "Неверный путь добавления значения"
+
+msgid "Invalid redirect URL"
+msgstr "Неверный URL-адрес перенаправления"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr ""
+"Недопустимое время ожидания сеанса или максимальное значение размера файла"
+
+msgid "Invalid subdomain name"
+msgstr "Неверное название поддомена"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "Недействительные дни билета. Должно быть положительным целым числом."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "Недействительные дни билета. Слишком большое значение. Макс = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "Неверный тип для '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "Неверный канал обновления"
+
+msgid "Invalid username"
+msgstr "Неверное имя пользователя"
+
+msgid "Invalid values"
+msgstr "Неверные значения"
+
+msgid "Is able to select media type via ifmap."
+msgstr ""
+
+msgid "Issue verifying license"
+msgstr "Проблема с проверкой лицензии"
+
+msgid "Issuer"
+msgstr "Издатель"
+
+msgid "It already exists on the following system(s)"
+msgstr "Уже существует в следующих системах"
+
+msgid "It has been disabled"
+msgstr "Он был отключен"
+
+msgid "It must be a positive integer."
+msgstr "Это должно быть целое положительное число."
+
+msgid "It must not be an IP"
+msgstr "Не должно быть IP-адресом"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "Уже связан с %s"
+
+msgid "Items per page"
+msgstr "Объектов на странице"
+
+msgid "Jailed Home"
+msgstr "Jailed домашнаяя директория"
+
+msgid "Jan"
+msgstr "Янв"
+
+msgid "Jul"
+msgstr "Июл"
+
+msgid "Jun"
+msgstr "Июн"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "КБ"
+
+msgid "Keep it for future reference."
+msgstr "Сохраните его для дальнейшего использования."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Пожалуйста, используйте реалистичные значения."
+
+msgid "Key"
+msgstr "Ключ"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "Ключ создан. Обратите внимание на его значение и сохраните его."
+
+msgid "Key ID"
+msgstr "ИД ключа"
+
+msgid "Key Name"
+msgstr "Имя ключа"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Имя ключа должно быть простым: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "Ключ уже существует благодаря сопоставлению отпечатков пальцев"
+
+msgid "Key is Invalid"
+msgstr "Ключ недействителен"
+
+msgid "Key(s) deleted"
+msgstr "Ключ(и) удалены"
+
+msgid "Keys"
+msgstr "Ключи"
+
+msgid "Keys listed below"
+msgstr "Ключи перечислены ниже"
+
+msgid "Kill"
+msgstr "Прервать"
+
+msgid "Language"
+msgstr "Язык"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Язык изменен на %s"
+
+msgid "Language has been successfully changed"
+msgstr "Язык успешно изменен"
+
+msgid "Last"
+msgstr "Последний"
+
+msgid "Last Accessed"
+msgstr "Последний доступ"
+
+msgid "Last Changed"
+msgstr "Последнее изменение"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "IP-адрес последнего входа: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Последний вход: %s"
+
+msgid "Last Message"
+msgstr "Последнее сообщение"
+
+msgid "Last Modified"
+msgstr "Последнее изменение"
+
+msgid "Last Page"
+msgstr "Последняя страница"
+
+msgid "Last Tally Completion"
+msgstr "Последний переучет"
+
+msgid "Leave DNS"
+msgstr "Выйти из DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Пользователь остался в списке %s"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Записи сертификата Let's Encrypt"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt не включен. Вы не можете использовать эту опцию."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "Файлы LetsEncrypt удалены"
+
+# Suggested in Weblate: Запрос Let'sEncrypt успешен
+msgid "LetsEncrypt request successful"
+msgstr "Запрос LetsEncrypt успешен"
+
+msgid "LetsEncrypt request successful for"
+msgstr "Запрос LetsEncrypt успешен для"
+
+msgid "License file is no longer supported"
+msgstr "Файл лицензии больше не поддерживается"
+
+msgid "License file unchanged"
+msgstr "Файл лицензии не изменен"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "Лицензия проверена через систему лицензирования DirectAdmin"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr ""
+"Лицензия ограничена %d администраторами/реселлерами, и в настоящее время у "
+"вас есть %d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr ""
+"Лицензия ограничена %d учетными записями, и в настоящее время у вас есть %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Лицензия ограничена %d доменами, и в настоящее время у вас есть %d"
+
+msgid "License is not valid"
+msgstr "Лицензия недействительна"
+
+msgid "License limits exceeded"
+msgstr "Превышены лимиты лицензий"
+
+msgid "License verified"
+msgstr "Лицензия проверена"
+
+msgid "Limit Notice"
+msgstr "Уведомление об ограничении"
+
+msgid "Limit is not a number"
+msgstr "Лимит не является числом"
+
+msgid "Link"
+msgstr "Ссылка"
+
+msgid "Link in Background"
+msgstr "Ссылка в фоновом режиме"
+
+msgid "Linked IPs"
+msgstr "Связанные IP-адреса"
+
+msgid "List"
+msgstr "Список"
+
+msgid "List Configurations Saved"
+msgstr "Список конфигураций сохранен"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Имя списка должно содержать %d символов или меньше"
+
+msgid "Listname must be all lower case letters"
+msgstr "Имя списка должно состоять из строчных букв"
+
+msgid "Load Average"
+msgstr "Средняя нагрузка"
+
+msgid "Local Data"
+msgstr "Локальные данные"
+
+msgid "Local Default"
+msgstr "Локальное значение по умолчанию"
+
+msgid "Local Mail"
+msgstr "Локальная почта"
+
+msgid "Local URL Path"
+msgstr "Локальный URL-путь"
+
+msgid "Log"
+msgstr ""
+
+msgid "Log Entry"
+msgstr "Запись в журнале"
+
+msgid "Log Usage"
+msgstr "Журнал использования"
+
+msgid "Login"
+msgstr ""
+
+msgid "Login Failures"
+msgstr ""
+
+msgid "Login Keys"
+msgstr "Ключи входа"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Войти как %s"
+
+msgid "Low"
+msgstr "Низкий"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr ""
+
+msgid "MX Template set"
+msgstr "Шаблон MX установлен"
+
+msgid "MX Templates are disabled"
+msgstr "Шаблоны MX отключены"
+
+msgid "MX priority should be an positive number"
+msgstr "Приоритет MX должен быть положительным числом"
+
+msgid "Mailing List"
+msgstr "Список рассылки"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "Список рассылки"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "Списки рассылок"
+
+msgid "Mailing Lists"
+msgstr "Списки рассылок"
+
+msgid "Main"
+msgstr ""
+
+msgid "Main Domain ..."
+msgstr "Основной домен..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr ""
+
+msgid "Make sure 'unit' is running"
+msgstr "Убедитесь, что 'unit' работает"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Убедитесь, что переданные значения действительны для своего типа"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "Вручную %s"
+
+msgid "Mar"
+msgstr "Мар"
+
+msgid "Mark as read"
+msgstr "Отметить, как прочитанное"
+
+msgid "Master of a load balancing bundle."
+msgstr ""
+
+msgid "Max Tasks that may be created in the unit"
+msgstr ""
+
+msgid "Max Usage (Meg)"
+msgstr "Максимальное использование (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr ""
+
+msgid "Max disk write operations per second."
+msgstr ""
+
+msgid "Max limit User can set per E-Mail"
+msgstr ""
+
+msgid "Max rate data can be read from a disk."
+msgstr ""
+
+msgid "Max rate data can be written to a disk."
+msgstr ""
+
+msgid "Maximum Usage"
+msgstr "Максимальное использование"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr ""
+
+msgid "May"
+msgstr "Май"
+
+msgid "Medium"
+msgstr "Средний"
+
+msgid "Meg"
+msgstr ""
+
+msgid "Memory High"
+msgstr ""
+
+msgid "Memory Max"
+msgstr ""
+
+msgid "Memory Usage"
+msgstr "Использование памяти"
+
+msgid "Message #"
+msgstr "Сообщение #"
+
+msgid "Message Reset"
+msgstr "Сброс сообщения"
+
+msgid "Message Type"
+msgstr "Тип сообщения"
+
+msgid "Message is being sent"
+msgstr "Сообщение отправляется"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "Сообщения обновлены"
+
+msgid "Messages Updated"
+msgstr "Сообщения обновлены"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Скины удалены"
+
+msgid "Mime-Type added"
+msgstr ""
+
+msgid "MimeType"
+msgstr ""
+
+msgid "Minute"
+msgstr "Минута"
+
+msgid "Missing closing bracket in zone line."
+msgstr "В строке зоны отсутствует закрывающая скобка."
+
+msgid "Missing open bracket in zone line."
+msgstr "Отсутствует открывающая скобка в строке зоны."
+
+msgid "ModSecurity Flags"
+msgstr "Флаги ModSecurity"
+
+msgid "ModSecurity Rules Saved"
+msgstr "Правила ModSecurity сохранены"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "Пропущенные правила ModSecurity"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity не включен"
+
+msgid "Modify"
+msgstr "Изменить"
+
+msgid "Modify Password"
+msgstr "Изменить пароль"
+
+msgid "Month"
+msgstr "Месяц"
+
+# Suggested in Weblate: Больше информации
+msgid "More Info"
+msgstr ""
+
+msgid "Morning"
+msgstr "Утро"
+
+msgid "Move Clipboard Files here"
+msgstr "Переместите сюда файлы буфера обмена"
+
+msgid "Move to Trash"
+msgstr "Переместить в корзину"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Необходимо указать тип MIME или имя обработчика и одно расширение. например: "
+"\"text/html\" или \"cgi-script\"и \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Необходимо выбрать более нуля записей LetsEncrypt."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Необходимо использовать letsencrypt=1 для параметров. letsencrypt=%d в "
+"данный момент установлен."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL не включен на этом сервере"
+
+msgid "NGINX Unit"
+msgstr ""
+
+# Suggested in Weblate: Название
+msgid "Name"
+msgstr ""
+
+msgid "Name Server 1"
+msgstr ""
+
+msgid "Name Server 2"
+msgstr ""
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Название должно содержать только буквы, пробелы и/или точки"
+
+msgid "Nameserver"
+msgstr "Именной сервер"
+
+msgid "Nameservers deleted"
+msgstr ""
+
+msgid "Nameservers have been changed"
+msgstr ""
+
+msgid "Namesevers have been changed."
+msgstr ""
+
+msgid "Netmask"
+msgstr ""
+
+msgid "Never"
+msgstr ""
+
+msgid "New Secret Set: %s"
+msgstr ""
+
+msgid "New password isn't different"
+msgstr "Новый пароль идентичен"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Недавно установленный ключ — %s-бит"
+
+msgid "Next Retry"
+msgstr "Следующая попытка"
+
+msgid "Nginx Template"
+msgstr "Шаблон Nginx"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx не включен"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit не включен или не запущен"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "No Awstats"
+msgstr "Нет Awstats"
+
+msgid "No Data to Show"
+msgstr "Нет данных для отображения"
+
+msgid "No IPs selected"
+msgstr "IP-адреса не выбраны"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "Нет ListFile в контейнере в позиции маршрута %lld"
+
+msgid "No Send class set"
+msgstr "Нет набора классов отправки"
+
+msgid "No User Data"
+msgstr "Нет пользовательских данных"
+
+msgid "No action"
+msgstr "Бездействие"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "Нет протокола arp, адрес назначения L2 не установлен."
+
+msgid "No changes have been made"
+msgstr "Никаких изменений не было внесено"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Никаких изменений не потребовалось. Пропуск записи."
+
+msgid "No colors have been selected"
+msgstr "Цвета не выбраны"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "Нет контейнера в позиции маршрута %lld"
+
+msgid "No events for this period."
+msgstr "Нет событий за этот период."
+
+msgid "No files have been selected for upload."
+msgstr "Ни один файл не выбран для загрузки."
+
+msgid "No free IPs found"
+msgstr "Свободных IP-адресов не найдено"
+
+msgid "No global IPs found"
+msgstr "Глобальные IP-адреса не найдены"
+
+msgid "No keys selected"
+msgstr "Ключи не выбраны"
+
+msgid "No passwd entries provided."
+msgstr "Записи passwd не предоставлены."
+
+msgid "No paths were provided."
+msgstr "Никаких путей не предоставлено."
+
+msgid "No shared IPs found"
+msgstr "Общие IP-адреса не найдены"
+
+msgid "No text provided"
+msgstr "Текст не предоставлен"
+
+# Suggested in Weblate: Сообщение об отпуске не установлено
+msgid "No vacation message set"
+msgstr "Не установлено сообщение об отсутствии"
+
+msgid "None"
+msgstr ""
+
+msgid "Not a valid IP Address"
+msgstr "Недействительный IP-адрес"
+
+msgid "Not allowed for Resellers"
+msgstr "Не разрешено для реселлеров"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+"Недостаточно IP-адресов для создания неймсерверов. Требуется как минимум %d "
+"свободных неназначенных IP-адресов."
+
+msgid "Not setting up Mail SNI."
+msgstr "Почтовый SNI не настроен."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "Недопустимо из-за символа «%c» в индексе %d"
+
+msgid "Not yet generated"
+msgstr "Еще не создано"
+
+msgid "Not yet signed"
+msgstr "Еще не подписано"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Примечание: предыдущая конфигурация Let's Encrypt по-прежнему будет "
+"обновляться через %d дней."
+
+msgid "Nothing"
+msgstr "Ничего"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "Уведомление о том, что ключ входа %s был успешно создан %s"
+
+msgid "Notified"
+msgstr "Уведомлено"
+
+msgid "Nov"
+msgstr "Ноя"
+
+msgid "Null values"
+msgstr "Null значения"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "Число %s=%s выходит за пределы диапазона (обязательно: %d-%d)"
+
+msgid "Number of Users"
+msgstr "Количество пользователей"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Oct"
+msgstr "Окт"
+
+msgid "Off"
+msgstr "Выключено"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Старый битовый ключ %s зарезервирован в %s"
+
+msgid "Old password incorrect"
+msgstr "Старый пароль неверен"
+
+#, c-format, fuzzy
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "Старее, чем"
+msgstr[1] "Старее, чем"
+msgstr[2] "Старее, чем"
+
+msgid "On"
+msgstr "Включено"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr ""
+"Одного (или нескольких) из выбранных IP-адресов в настоящее время нет в "
+"вашем списке"
+
+#, fuzzy
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "Ошибка записи файла Directadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"Требуется вход в один клик, не поддерживает webmail_link=%s.   Попробуйте "
+"webmail_link=roundcube."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "Было назначено только %d из запрошенных %d глобальных IP-адресов."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr ""
+"С помощью этого метода у пользователя можно удалить только «дополнительные» "
+"IP-адреса"
+
+msgid "Only API access is allowed"
+msgstr ""
+
+msgid "Only Admin accounts can save settings"
+msgstr "Только учетные записи администратора могут сохранять настройки"
+
+msgid "Only Admins can reset the usage count"
+msgstr "Только администраторы могут сбрасывать счетчик использования"
+
+msgid "Only Admins may run this request"
+msgstr "Только администраторы могут выполнить этот запрос"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+"Предоставляйте только одно расширение за раз. например: «jpg», а НЕ «jpg "
+"jpeg jpe»"
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "Только домен по умолчанию «%s» может управлять настройками PHP."
+
+msgid "Only the location of the route can be renamed"
+msgstr "Переименовать можно только местоположение маршрута"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr ""
+"Используйте wildcard только в доменах, у которых в настоящее время есть "
+"работоспособный локальный DNS"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir отключен на выбранных доменах"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir включен на выбранных доменах"
+
+msgid "Open+Confirm"
+msgstr "Открыть+Подтвердить"
+
+msgid "Operation"
+msgstr "Операция"
+
+msgid "Optimize"
+msgstr "Оптимизировать"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "Опция '%s' уже установлена"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "Настройки сохранены"
+
+msgid "Options"
+msgstr "Параметры"
+
+msgid "Options changed successfully"
+msgstr "Параметры успешно изменены"
+
+msgid "Order"
+msgstr "Порядок"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "Порядок (когда значения первой сортировки равны)"
+
+msgid "Original Package"
+msgstr "Оригинальный пакет"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "Other Disk Usage"
+msgstr "Использование диска другими данными"
+
+# Suggested in Weblate: Другое использование
+msgid "Other Usage"
+msgstr ""
+
+msgid "Overview"
+msgstr "Обзор"
+
+msgid "Owner"
+msgstr "Владелец"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "Владелец глобального IP заменен администратором %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "Имя PHP-скрипта"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "Настройки PHP не могут контролироваться в этом домене"
+
+msgid "PHP Version Selector"
+msgstr "Выбор версии PHP"
+
+msgid "PHP versions saved"
+msgstr "Версии PHP сохранены"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' не является числом"
+
+msgid "POP Email Accounts"
+msgstr "POP Email аккаунты"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP сервер"
+
+msgid "Package"
+msgstr "Пакет"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Пакет '%s' уже существует"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Пакет '%s' не существует"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Пакета '%s' нет в вашем списке"
+
+msgid "Package not found"
+msgstr "Пакет не найден"
+
+msgid "Page"
+msgstr "Страница"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Родительская директория %s создана."
+
+# Suggested in Weblate: Ошибка разбора. Проверьте журналы
+msgid "Parsing Error. Check logs"
+msgstr "Ошибка анализа. Проверить журналы"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password Changed"
+msgstr "Пароль изменен"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Пароль изменен: %s"
+
+msgid "Password Not Changed"
+msgstr "Пароль не изменен"
+
+msgid "Password Saved!"
+msgstr "Пароль сохранен!"
+
+msgid "Password is not valid"
+msgstr "Пароль недействителен"
+
+msgid "Password is too long"
+msgstr "Пароль слишком длинный"
+
+msgid "Password is too short"
+msgstr "Пароль слишком короткий"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "Пароль слишком короткий (%d). Используйте не менее %d символов"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Пароль должен содержать более %d символов"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "Скин успешно изменен"
+
+msgid "Password/Quota"
+msgstr "Пароль/Квота"
+
+msgid "Password:"
+msgstr "Пароль:"
+
+msgid "Passwords do not match"
+msgstr "Пароли не совпадают"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Пароли не совпадают или недействительны"
+
+msgid "Path"
+msgstr "Путь"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Путь %s не существует или недоступен пользователю %s."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Путь '%s' уже существовал до создания пользователя. Пожалуйста, сначала "
+"удалите/переименуйте этот путь."
+
+msgid "Path does not exist"
+msgstr "Путь не существует"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Путь должен начинаться с косой черты (/)"
+
+msgid "Paths Unblocked"
+msgstr "Пути разблокированы"
+
+msgid "Paths must be within your home directory"
+msgstr "Пути должны находиться в вашей домашней директории"
+
+msgid "Percent"
+msgstr "Процент"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "Процент должен заканчиваться символом %"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "Процент ядра CPU. >100% для большего количества ядер."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "Процент должен находиться в диапазоне от %d до %d включительно"
+
+msgid "Perm."
+msgstr "Разр."
+
+msgid "Permissions set"
+msgstr "Разрешения установлены"
+
+msgid "Php is not enabled"
+msgstr "PHP не включен"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr ""
+"Проверьте зону на наличие %s, чтобы убедиться в правильности A-записей "
+"сервера."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Пожалуйста, подтвердите, что вы хотите удалить свои данные DNSSEC"
+
+msgid "Please pick only one skin to apply"
+msgstr "Пожалуйста, выберите только один скин для применения"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "Пожалуйста, укажите '%s'"
+
+msgid "Please provide at least one IP"
+msgstr "Пожалуйста, укажите хотя бы один IP-адрес"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr ""
+"Пожалуйста, просмотрите этот URL-адрес и проверьте код выхода Curl '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Пожалуйста, выберите 1 домен в качестве домена по умолчанию"
+
+msgid "Please select at least one User"
+msgstr "Пожалуйста, выберите хотя бы одного пользователя"
+
+msgid "Please select at least one domains"
+msgstr "Пожалуйста, выберите хотя бы один домен"
+
+msgid "Please select at least one file"
+msgstr "Пожалуйста, выберите хотя бы один файл"
+
+msgid "Please select at least one item"
+msgstr "Пожалуйста, выберите хотя бы один элемент"
+
+msgid "Please select at least one package"
+msgstr "Пожалуйста, выберите хотя бы один пакет"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "Пожалуйста, выберите более нуля файлов для извлечения из архива"
+
+msgid "Please select one or more Databases"
+msgstr "Пожалуйста, выберите одну или несколько баз данных"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Пожалуйста, выберите только 1 задание cron для редактирования"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Пожалуйста, установите лимит от 1 до %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "Пожалуйста, отключите все IP-адреса от «%s» перед его удалением."
+
+msgid "Please use all lower case characters in the username"
+msgstr "Пожалуйста, используйте нижний регистр в имени пользователя"
+
+msgid "Plugin Uploaded"
+msgstr "Плагин загружен"
+
+msgid "Plugin(s) Installed"
+msgstr "Плагин(ы) установлен(ы)"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Плагин(ы) удален(ы)"
+
+msgid "Plugin(s) Updated"
+msgstr "Плагин(ы) обновлен(ы)"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Указатель '%s' вам не принадлежит."
+
+msgid "Pop"
+msgstr "POP"
+
+msgid "Post Scripts"
+msgstr "Post -скрипты"
+
+msgid "Post scripts"
+msgstr "Post-скрипты"
+
+msgid "Pre-backup hard-link check"
+msgstr "Проверка жесткой ссылки перед резервным копированием"
+
+msgid "Preparing 'domains' data"
+msgstr "Подготовка данных «доменов»"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Подготовка данных (без доменов)"
+
+msgid "Present"
+msgstr "Текущий"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Сохранение веб-данных применимо только к /domains/domain.com. Другие "
+"области, такие как данные электронной почты, не будут сохранены."
+
+msgid "Priority"
+msgstr "Приоритет"
+
+msgid "Privileges"
+msgstr "Привилегии"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "Идентификатор процесса %d не является 'dataskq'. Это '%s'"
+
+msgid "Process is running"
+msgstr "Процесс запущен"
+
+msgid "Process is stopped"
+msgstr "Процесс остановлен"
+
+msgid "Processor Name"
+msgstr "Имя процессора"
+
+msgid "Processor Speed (MHz)"
+msgstr "Скорость процессора (МГц)"
+
+msgid "Progress"
+msgstr "Прогресс"
+
+msgid "Protect"
+msgstr "Защитить"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "Имя защищенной директории содержит недопустимые символы. Не усложняйте"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Защита директорий отключена с помощью параметра filemanager_disable_features"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "Укажите IP-адрес, диапазон IP-адресов, домен или wildcard домен."
+
+msgid "Provided password is not correct."
+msgstr "Указанный пароль неверен."
+
+#, fuzzy
+msgid "Provided password is weak"
+msgstr "Указанный пароль неверен."
+
+msgid "Provided value is not a Username or Email address"
+msgstr ""
+"Указанное значение не является именем пользователя или адресом электронной "
+"почты"
+
+msgid "Provided value is not valid."
+msgstr "Указанное значение недействительно."
+
+# Suggested in Weblate: Адрес сокета прокси
+msgid "Proxy socket address"
+msgstr "Адрес прокси-сокета"
+
+msgid "Publish"
+msgstr "Опубликовать"
+
+msgid "Purge"
+msgstr "Очистить"
+
+msgid "Purge Archives"
+msgstr "Очистить архивы"
+
+msgid "Purge From"
+msgstr "Очистить из"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "Очистить в %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "Перенос перезаписи httpd.conf фоновую задачу."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "Изменения сохранены"
+
+msgid "Re-sign your zone."
+msgstr "Переподпишите свою зону."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Ошибка чтения с %s: %s"
+
+msgid "Reason:"
+msgstr "Причина:"
+
+msgid "Reboot"
+msgstr "Перезагрузить"
+
+msgid "Receive all multicast packets."
+msgstr "Получите все multicast пакеты."
+
+msgid "Received"
+msgstr "Получено"
+
+msgid "Received Emails"
+msgstr "Полученные электронные письма"
+
+msgid "Reconfiguration Error"
+msgstr "Ошибка реконфигурации"
+
+msgid "Record Added"
+msgstr "Запись добавлена"
+
+msgid "Record Edited"
+msgstr "Запись изменена"
+
+msgid "Records Deleted"
+msgstr "Запись удалена"
+
+msgid "Recursive"
+msgstr "Рекурсивный"
+
+msgid "Recursively"
+msgstr "Рекурсивно"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Рекурсивный сброс владения отключен с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Redirect Added"
+msgstr "Перенаправление добавлено"
+
+msgid "Redirect URL"
+msgstr "URL-адрес перенаправления"
+
+msgid "Redirect(s) deleted"
+msgstr "Перенаправления удалены"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "Обновить"
+
+#, fuzzy
+msgid "Regenerate Codes"
+msgstr "Скретч-коды"
+
+# Suggested in Weblate: Связанный
+msgid "Related"
+msgstr ""
+
+msgid "Release Candidates"
+msgstr ""
+
+msgid "Reload"
+msgstr "Перезагрузить"
+
+msgid "Reload requested"
+msgstr "Перезагруза запрошена"
+
+msgid "Remote Mail"
+msgstr "Удаленная почта"
+
+msgid "Remove"
+msgstr "Удалять"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Удалить DNS-записи для IP-адреса(ов)"
+
+msgid "Remove DNSSEC"
+msgstr "Удалить DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Удалить содержимое директории"
+
+msgid "Remove From Skip List"
+msgstr "Удалить из списка пропуска"
+
+msgid "Remove from reseller"
+msgstr "Удалить у реселлера"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Пользователь удален из списка %s"
+
+msgid "Rename"
+msgstr "Переименовать"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Переименование файлов отключено с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Repair"
+msgstr "Починить"
+
+msgid "Replies"
+msgstr "Ответы"
+
+msgid "Reply"
+msgstr "Ответить"
+
+msgid "Reply Sent"
+msgstr "Ответ отправлен"
+
+msgid "Request added to task.queue"
+msgstr "Запрос добавлен в Task.queue"
+
+msgid "Request will be processed in the background."
+msgstr "Запрос будет обработан в фоновом режиме."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "Запрошенное значение LetsEncrypt '%s' не является допустимым значением."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "Запрошенный размер файла (%lld) превышает значение maxfilesize (%lld)"
+
+msgid "Requests Cancelled"
+msgstr ""
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Обязательно: '%s' или '%s'"
+
+msgid "Reseller"
+msgstr "Реселлер"
+
+msgid "Reseller Bandwidth"
+msgstr "Трафик реселлера"
+
+msgid "Reseller History"
+msgstr "История реселлера"
+
+msgid "Reseller Quota"
+msgstr "Квота реселлера"
+
+msgid "Reseller created"
+msgstr "Реселлер создан"
+
+msgid "Reseller deleted"
+msgstr "Реселлер удален"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr ""
+"Реселлеру не присваивается нулевой IP-адрес. Невозможно создать домен без ip."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "Reseller's IP"
+msgstr "IP реселлера"
+
+msgid "Reset"
+msgstr "Сбросить"
+
+msgid "Reset Owner"
+msgstr "Сбросить владельца"
+
+msgid "Reset Ownership"
+msgstr "Сбросить право владения"
+
+msgid "Reset Today"
+msgstr "Сбросить сегодня"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Сброс владения файлом отключен с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Resources allocated."
+msgstr "Ресурсы выделены."
+
+msgid "Restart"
+msgstr "Перезапуск"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Restore Complete!"
+msgstr "Восстановление завершено!"
+
+# Suggested in Weblate: Ошибка восстановления с модулем Nginx: %s
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Ошибка восстановления с помощью Nginx: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"В восстановлении учетной записи '%s' создателю '%s' отказано, поскольку эта "
+"учетная запись уже существует под контролем создателя '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Восстановление будет работать в фоновом режиме"
+
+msgid "Restores added to Queue"
+msgstr "Восстановления добавлены в очередь"
+
+msgid "Restoring Databases"
+msgstr "Восстановление баз данных"
+
+msgid "Restoring Domains Data"
+msgstr "Восстановление данных доменов"
+
+msgid "Restoring E-Mail Data"
+msgstr "Восстановление данных электронной почты"
+
+msgid "Restoring E-Mail Settings"
+msgstr "Восстановление настроек электронной почты"
+
+msgid "Restoring Extra Admin Data"
+msgstr "Восстановление дополнительных административных данных"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "Восстановление дополнительных данных реселлера"
+
+msgid "Restoring Extra User Data"
+msgstr "Восстановление дополнительных пользовательских данных"
+
+msgid "Restoring FTP"
+msgstr "Восстановление FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "Восстановление дополнительных элементов электронной почты"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Восстановление файлов отключено с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "Result of file copy"
+msgstr "Результат копирования файла"
+
+msgid "Result of file move"
+msgstr "Результат перемещения файла"
+
+msgid "Results"
+msgstr "Результаты"
+
+msgid "Retries"
+msgstr "Повторные попытки"
+
+msgid "Retry"
+msgstr "Повторить попытку"
+
+msgid "Retry counter has been cleared."
+msgstr "Счетчик повторов очищен."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "Для кода возврата 3XX(%d) требуется местоположение"
+
+msgid "Return with httpd code"
+msgstr "Возврат с httpd-кодом"
+
+msgid "Rewrite Apache"
+msgstr "Переписать Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr ""
+"В RoundCube отсутствует опция Direct_login. Пожалуйста, переустановите "
+"RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "Маршрут '%s' не заканчивается на '%s'"
+
+msgid "Rules Reset"
+msgstr "Сброс правил"
+
+msgid "Run Now"
+msgstr "Запустить сейчас"
+
+msgid "Running"
+msgstr "Работает"
+
+msgid "SMTP Log"
+msgstr "Журнал SMTP"
+
+msgid "SMTP Server"
+msgstr "SMTP-сервер"
+
+msgid "SNI Host"
+msgstr "SNI-хост"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI отключен для этого домена"
+
+msgid "SSH Key Modified"
+msgstr "Ключ SSH изменен"
+
+msgid "SSH Key authorized"
+msgstr "SSH-ключ авторизован"
+
+msgid "SSH Key created"
+msgstr "SSH-ключ создан"
+
+msgid "SSH Key deleted"
+msgstr "SSH-ключ удален"
+
+msgid "SSH is not enabled"
+msgstr "SSH не включен"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL не включен для этого домена"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Безопасный режим отключен на выбранных доменах"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Безопасный режим включен на выбранных доменах"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save Awstats"
+msgstr "Сохранить Awstats"
+
+msgid "Save Comments"
+msgstr "Сохранить комментарии"
+
+msgid "Save E-Mail"
+msgstr "Сохранить электронную почту"
+
+msgid "Save Increase"
+msgstr "Сохранить увеличение"
+
+msgid "Save Language"
+msgstr "Сохранить язык"
+
+msgid "Save Limit"
+msgstr "Сохранить лимит"
+
+msgid "Save Limit Notice"
+msgstr ""
+
+msgid "Save Name"
+msgstr "Сохранить имя"
+
+msgid "Save Nameservers"
+msgstr "Сохранить неймсерверы"
+
+msgid "Save Skin"
+msgstr "Сохранить скин"
+
+#, fuzzy
+msgid "Saved"
+msgstr "Сохранить"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Сохранение/редактирование файлов отключено с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Scratch Codes"
+msgstr "Скретч-коды"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Скретч-коды"
+
+msgid "Script output"
+msgstr "Вывод скрипта"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "ID SecRuleRemoveById пуст"
+
+# Suggested in Weblate: Уровень защищенных сокетов (ssl)
+msgid "Secure Socket Layer (ssl)"
+msgstr "Secure-Socket-Layer (SSL)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "См. %sэто руководство%s, чтобы исправить это."
+
+msgid "See Error log for more information."
+msgstr "Дополнительную информацию см. в журнале ошибок."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "См. это руководство: %s"
+
+msgid "Select"
+msgstr "Выбор"
+
+msgid "Select MX Template"
+msgstr "Выберите шаблон MX"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Выберите IP-адрес для связи с %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Выбранный Content-Type недействителен."
+
+msgid "Selected Data"
+msgstr "Выбранные данные"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "Выбранные плагины активированы"
+
+msgid "Selected Plugins De-Activated"
+msgstr "Выбранные плагины деактивированы"
+
+msgid "Selected Plugins Deleted"
+msgstr "Выбранные плагины удалены"
+
+msgid "Selected Users"
+msgstr "Выбранные пользователи"
+
+# Suggested in Weblate: Выбранная кодировка набора символов недействительна.
+msgid "Selected character-set encoding is not valid."
+msgstr ""
+
+msgid "Send Count"
+msgstr ""
+
+msgid "Send Signal"
+msgstr "Отправить сигнал"
+
+msgid "Send a Message"
+msgstr "Отправить сообщение"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Лимит отправки должен быть действительным числом или пустым."
+
+msgid "Sender"
+msgstr "Отправитель"
+
+msgid "Sender Host"
+msgstr "Хост отправителя"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr ""
+"Домен отправителя должен соответствовать домену списка '%s', или "
+"использовать '%s'"
+
+msgid "Sent"
+msgstr "Отправлено"
+
+msgid "Sent E-mails"
+msgstr "Отправленные электронные письма"
+
+msgid "Sent Emails"
+msgstr "Отправленные электронные письма"
+
+msgid "Sep"
+msgstr "Сен"
+
+msgid "Server"
+msgstr "Сервер"
+
+msgid "Server History"
+msgstr "История сервера"
+
+msgid "Server Path"
+msgstr "Путь к серверу"
+
+msgid "Service"
+msgstr "Сервис"
+
+msgid "Set"
+msgstr "Установить"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+"Установите 0 для неограниченного доступа.   Установите пустое значение для "
+"сброса к значению по умолчанию."
+
+msgid "Set Global Shared"
+msgstr "Установить глобальный общий доступ"
+
+msgid "Set as Default"
+msgstr "Установить по умолчанию"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Сделать выбранные домены общедоступными для просмотра с"
+
+msgid "Set selected to"
+msgstr "Установить выбранное на"
+
+msgid "Set to"
+msgstr "Установить на"
+
+msgid "Setting"
+msgstr "Настройка"
+
+msgid "Setting changed"
+msgstr "Настройка изменена"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Установка разрешений для файлов/директорий отключена с помощью параметра "
+"filemanager_disable_features"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Settings Saved"
+msgstr "Настройки сохранены"
+
+msgid "Share Selected"
+msgstr "Поделиться выбранным"
+
+msgid "Share a static path"
+msgstr "Поделиться статическим путем"
+
+# Suggested in Weblate: Общее
+msgid "Shared"
+msgstr ""
+
+msgid "Shared - randomly selected"
+msgstr ""
+
+msgid "Shell Access (ssh)"
+msgstr "Доступ к shell (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "Shell для пользователей реселлеров"
+
+msgid "Show"
+msgstr "Показать"
+
+msgid "Sign"
+msgstr "Подписать"
+
+msgid "Signed"
+msgstr "Подписано"
+
+msgid "Size"
+msgstr "Размер"
+
+msgid "Size is not a number"
+msgstr "Размер не является числом"
+
+msgid "Skin"
+msgstr "Скин"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr ""
+"Скин '%s' не имеет каких-либо пользовательских цветовых переменных для "
+"установки"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "Скины удалены"
+
+msgid "Skin Installed"
+msgstr "Скин установлен"
+
+msgid "Skin Name"
+msgstr ""
+
+msgid "Skin Owner"
+msgstr ""
+
+msgid "Skin Set"
+msgstr ""
+
+msgid "Skin applied to all users"
+msgstr "Скин применен ко всем пользователям"
+
+msgid "Skin has been customized"
+msgstr "Скин был настроен"
+
+msgid "Skin has been successfully changed"
+msgstr "Скин успешно изменен"
+
+msgid "Skins Deleted"
+msgstr "Скины удалены"
+
+msgid "Skip Suspended"
+msgstr ""
+
+msgid "Skipped rule added"
+msgstr ""
+
+msgid "Skipping system E-Mail account"
+msgstr ""
+
+msgid "Slave of a load balancing bundle."
+msgstr ""
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr ""
+"К сожалению, в настоящее время эта функция не поддерживает указатели доменов"
+
+msgid "Sort"
+msgstr "Сортировать"
+
+msgid "Sort Selected Column in"
+msgstr "Сортировать выбранный столбец в"
+
+msgid "Source Domain"
+msgstr "Исходный домен"
+
+msgid "Spam"
+msgstr "Спам"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAassassin отключен в вашем аккаунте"
+
+msgid "SpamAssassin"
+msgstr "SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "SpamAassassin отключен"
+
+msgid "Spambox"
+msgstr "Spambox"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd не запущен в вашей системе."
+
+msgid "Splitting error for unix socket"
+msgstr "Ошибка разделения для Unix-сокета"
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr "Стабильный"
+
+msgid "Start"
+msgstr "Запуск"
+
+msgid "Start Time"
+msgstr "Время запуска"
+
+msgid "Start Time must be before End Time."
+msgstr "Время запсука должно быть раньше времени окончания."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "Штат/провинция должен содержать только буквы, пробелы и/или точки"
+
+msgid "Stats links created"
+msgstr "Ссылки на статистику созданы"
+
+msgid "Stats links removed"
+msgstr "Ссылки на статистику удалены"
+
+msgid "Status"
+msgstr "Статус"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "Статус"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr ""
+"Использование Sticky-bit запрещено: 777 — максимально допустимое разрешение"
+
+msgid "Stop"
+msgstr "Остановить"
+
+msgid "Stopped"
+msgstr "Остановлено"
+
+msgid "String contains an invalid email address"
+msgstr "Строка содержит неверный адрес электронной почты"
+
+msgid "Sub Domains"
+msgstr "Поддомены"
+
+msgid "Sub Sort"
+msgstr "Подсортировка"
+
+msgid "Sub Sort Selected Column in"
+msgstr "Подсортировка выбранного столбца в"
+
+msgid "Sub-domain is forbidden"
+msgstr "Субдомен запрещен"
+
+msgid "SubDomain Name"
+msgstr "Имя поддомена"
+
+msgid "Subdomain Created"
+msgstr "Поддомен создан"
+
+msgid "Subdomain Removed"
+msgstr "Поддомен удален"
+
+msgid "Subdomain Stats"
+msgstr "Статистика поддомена"
+
+msgid "Subdomain already exists"
+msgstr "Поддомен уже существует"
+
+msgid "Subdomain created"
+msgstr "Поддомен создан"
+
+msgid "Subdomain does not exist"
+msgstr "Поддомена не существует"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Имя поддомен слишком длинное. Максимум %d символов."
+
+msgid "Subdomains"
+msgstr "Поддомены"
+
+msgid "Subdomains Removed"
+msgstr "Поддомены удалены"
+
+msgid "Subdomains deleted"
+msgstr "Поддомены удалены"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Subject Contains"
+msgstr "Тема содержит"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Префикс темы содержит недопустимые символы. Используйте %s"
+
+msgid "Subscriber"
+msgstr "Подписчик"
+
+msgid "Subscribers"
+msgstr "Подписчики"
+
+msgid "Success"
+msgstr "Успешно"
+
+msgid "Supports multicast"
+msgstr "Поддерживает multicast"
+
+msgid "Suspend"
+msgstr "Приостановить"
+
+# Suggested in Weblate: Приостановить/Возобновить
+msgid "Suspend / Unsuspend"
+msgstr ""
+
+msgid "Suspend Reason"
+msgstr "Причина приостановки"
+
+msgid "Suspend at Limit"
+msgstr "Заблокировать при превышении ограничения"
+
+msgid "Suspended"
+msgstr "Приостановленный"
+
+msgid "Syntax check has been disabled"
+msgstr "Проверка синтаксиса отключена"
+
+msgid "System Info"
+msgstr "Системная информация"
+
+msgid "System Rebooting Now!"
+msgstr "Система перезагружается!"
+
+msgid "System Uptime"
+msgstr "Время работы системы"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+"Системная учетная запись существует, но не может прочитать файлы данных "
+"пользователя для пользователя %s"
+
+msgid "Systems Quotas are size 0."
+msgstr "Системные квоты имеют размер 0."
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL сохранен"
+
+msgid "Table"
+msgstr "Таблица"
+
+msgid "Tail"
+msgstr "Tail"
+
+msgid "Tasks Max"
+msgstr "Максимум задач"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"Размер временного файла %s после записи на диск составляет 0 байт. Он не "
+"будет переименован."
+
+msgid "Template does not exist"
+msgstr "Шаблон не существует"
+
+msgid "Temporary Bandwidth Increase"
+msgstr ""
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+"Действует временная блокировка учетной записи. Возможно, с учетной записью "
+"работает какой-то другой процесс. Это должно длиться не более %d минут"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "Установлено временное увеличение трафика"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "Этот ID не относится к типу «admin»"
+
+msgid "That IP already exists on the domain"
+msgstr "Этот IP-адрес уже существует в домене"
+
+msgid "That IP does not exist"
+msgstr "такого IP не существует"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "Этот IP-адрес не существует в списке IP-адресов вашего пользователя"
+
+msgid "That IP does not exist in your list"
+msgstr "Этот IP-адрес не существует в вашем списке"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "Этот IP-адрес уже есть в вашем списке дополнительных IP-адресов"
+
+msgid "That IP is already owned"
+msgstr "Этот IP уже принадлежит"
+
+msgid "That IP is not available for linking"
+msgstr "Этот IP недоступен для привязки"
+
+msgid "That User already exists on another server"
+msgstr "Этот пользователь уже существует на другом сервере"
+
+msgid "That database already exists"
+msgstr "Эта база данных уже существует"
+
+msgid "That database does not belong to you"
+msgstr "Эта база данных вам не принадлежит"
+
+msgid "That database does not exist"
+msgstr "Эта база данных не существует"
+
+msgid "That domain already exists"
+msgstr "Этот домен уже существует"
+
+msgid "That domain already exists on another server"
+msgstr "Этот домен уже существует на другом сервере"
+
+msgid "That domain does not belong to you"
+msgstr "Этот домен вам не принадлежит"
+
+msgid "That domain does not exist"
+msgstr "Этот домен не существует"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "Этот домен заблокирован.  Разблокируйте его, прежде чем менять его имя"
+
+msgid "That email user does not exist"
+msgstr "Этот пользователь электронной почты не существует"
+
+msgid "That file was empty"
+msgstr "Этот файл был пуст"
+
+msgid "That filter already exists"
+msgstr "Этот фильтр уже существует"
+
+msgid "That ftp_password file does not exist"
+msgstr "Этот файл ftp_password не существует"
+
+msgid "That is an invalid email address / email list"
+msgstr "Это неверный адрес электронной почты/список адресов электронной почты"
+
+msgid "That is an invalid filename"
+msgstr "Это неверное имя файла"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Это неверный путь.  Либо его нет в вашей домашней директории, либо он "
+"содержит символические ссылки, либо он содержит недопустимые символы"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Это неверный путь.  Либо его нет в вашей домашней жиректории, либо он не "
+"существует, либо он содержит символические ссылки, либо содержит "
+"недопустимые символы"
+
+msgid "That is not a valid quota"
+msgstr "Это недействительная квота"
+
+msgid "That is not a valid username"
+msgstr "Это недействительное имя пользователя"
+
+msgid "That is not your domain"
+msgstr "Это не ваш домен"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Это имя хоста, которое зарезервировано. Либо измените имя хоста, либо "
+"используйте другой домен"
+
+msgid "That key does not exist"
+msgstr "такого ключа не существует"
+
+msgid "That password is incorrect"
+msgstr "Этот пароль неверен"
+
+msgid "That path isn't protectable"
+msgstr "Этот путь не подлежит защите"
+
+msgid "That pop account doesn't exist"
+msgstr "Этого pop-аккаунта не существует"
+
+# Suggested in Weblate: Этот скин нельзя настроить. Этот файл Skin.conf требует %s
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Этот скин нельзя настроить. Этот файл skin.conf требует %s"
+
+msgid "That skin does not exist"
+msgstr "Такого скина не существует"
+
+msgid "That skin is not in your list"
+msgstr "Этого скина нет в вашем списке"
+
+#, fuzzy
+msgid "That skin name already exists"
+msgstr "Эта зона уже существует"
+
+msgid "That user already exists"
+msgstr "Этот пользователь уже существует"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+"Этот пользователь содержит разделитель FTP (%c), который не может быть в "
+"имени пользователя."
+
+msgid "That user does not belong to you"
+msgstr "Этот пользователь не принадлежит вам"
+
+msgid "That user does not exist"
+msgstr "Этот пользователь не существует"
+
+msgid "That user doesn't exist"
+msgstr "Этот пользователь не существует"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Этот пользователь зарезервирован для анонимной учетной записи"
+
+msgid "That username already exists on the system"
+msgstr "Это имя пользователя уже существует в системе"
+
+msgid "That username is a reserved system name"
+msgstr "Это имя пользователя является зарезервированным системным именем"
+
+msgid "That zone already exists"
+msgstr "Эта зона уже существует"
+
+msgid "Thats a reserved skin name."
+msgstr "Это зарезервированное имя скина."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "Резервные копии %s созданы в %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "Переданное значение 'ttl' не является числом или слишком велико"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "Администратор отключил функцию резервного копирования пользователя"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr ""
+"Сертификат CA не будет использоваться. Файл останется, но не будет включен."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"Введенное значение CC создаст бесконечный цикл. Пожалуйста, используйте "
+"другое значение CC."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "Электронная почта '%s' содержит недопустимые символы"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP-адрес %s не существует. Пользователь %s не будет создан"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP-адрес %s предоставил правильный пароль для учетной записи %s."
+
+# Suggested in Weblate: Тикетная система не включена.
+msgid "The Ticket System is not enabled."
+msgstr ""
+
+msgid "The User backups have been uploaded to"
+msgstr "Резервные копии пользователя были загружены в"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "Файлы пользователя восстановлены из %s"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "Кэш отображения пользователей будет обновлен мгновенно."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "Адреса теряются при выходе из строя интерфейса."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Кэш обновляется, текущие значения могут быть неверными. Пожалуйста, обновите "
+"страницу через 1 минуту."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Сертификат и ключ не совпадают. Убедитесь, что вы используете правильный "
+"ключ с этим сертификатом"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "Буфер обмена отключен с помощью параметра filemanager_disable_features"
+
+msgid "The command cannot contain any newline characters"
+msgstr "Команда не может содержать символы новой строки"
+
+msgid "The database '%s' does not belong to you"
+msgstr "База данных '%s' не принадлежит вам"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "День месяца не является допустимым значением cron (1–31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "День недели не является допустимым значением cron (0–7)"
+
+msgid "The default has been set"
+msgstr "Установлено значение по умолчанию"
+
+# Suggested in Weblate: Похоже, что директория %s принадлежит 'apache'. Попробуйте использовать опцию «Сбросить владельца», а затем повторите попытку.
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"Похоже, что директория %s принадлежит 'apache'.  Попробуйте использовать "
+"опцию «Сбросить владельца», а затем повторите попытку."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+"Использование диска выбранными пользователями превышает %d МБ, поэтому будет "
+"удалено в фоновом режиме."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Домен %s не принадлежит вам."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "Домен %s не принадлежит вам. Поддомен не будет создан."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr ""
+"Введенный домен недействителен. Он должен иметь форму 'sourcedomain.com'"
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "Установлено значение по умолчанию"
+
+msgid "The domain must not match your hostname."
+msgstr "Домен не должен совпадать с вашим именем хоста."
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "Никаких изменений не было внесено"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "Электронное письмо с новым паролем было отправлено."
+
+msgid "The email address provided is not a valid email address"
+msgstr ""
+"Указанный адрес электронной почты не является действительным адресом "
+"электронной почты"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Введенный путь должен состоять из a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "Файл %s имеет более 1 жесткой ссылки"
+
+msgid "The file is generated when the account is reset."
+msgstr "Файл создается при сбросе учетной записи."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Файл должен иметь вид: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Файл должен иметь вид: имя_пользователя.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "Файл: '%s' не имеет формы имя_пользователя.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Следующий файл не найден.   Сброс не требуется"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Под пользователем %s обнаружены следующие жесткие ссылки:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "FTP-пользователь %s не существует в файле паролей %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "Введенное полное имя формата не заканчивается на имя зоны"
+
+# Suggested in Weblate: Недопустимый локальный URL-адрес или целевой URL-адрес.
+msgid "The local url path or the destination url is invalid."
+msgstr "Недопустимый локальный URL-путь или целевой URL-адрес."
+
+msgid "The location has not changed"
+msgstr "Местоположение не изменилось"
+
+msgid "The max upload size cannot be 0"
+msgstr "Максимальный размер загрузки не может быть равен 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "Максимум для %s — %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "Максимальное значение – %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "Минимальное значение для %s — %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "Месяц не является допустимым значением cron (1–12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "Введенное вами имя содержит недопустимые символы"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "Новый ключ создан, но при авторизации возникла проблема"
+
+msgid "The new passwords do not match"
+msgstr "Новые пароли не совпадают"
+
+msgid "The number and type of ticket is required"
+msgstr "Укажите количество и тип билета"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "Владелец %s не %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "Функция смены пароля отключена"
+
+msgid "The path %s already exists"
+msgstr "Путь %s уже существует"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Путь уже существует, но не является директорией"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"В настоящее время процесс используется для выполнения этого запроса, поэтому "
+"вскоре он будет выполнен Очередью Задач."
+
+msgid "The provided IP is not valid"
+msgstr "Указанный IP-адрес недействителен"
+
+msgid "The provided domain name matches your hostname."
+msgstr "Предоставленное доменное имя соответствует вашему имени хоста."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+"Сделанный вами запрос не может быть выполнен, поскольку он не существует на "
+"вашем уровне полномочий"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "Запрошенная команда требует POST, но использовался GET"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"Пакет скинов не установился должным образом.  Либо файлы отсутствуют, либо у "
+"них были неправильно установлены права доступа"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Поддомен '%s' уже существует в домене %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"Время должно иметь один из следующих форматов (например, час, без пробелов)"
+
+msgid "The user %s does not belong to you"
+msgstr "Пользователь %s не принадлежит вам"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Имя пользователя недействительно. Имена пользователей должны начинаться с "
+"букв A–Z, содержать >= 3 символа и <= %d."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr ""
+"Имя пользователя недействительно. Имена пользователей должны использовать "
+"символы a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Значение должно быть IP-адресом"
+
+msgid "The very last entry."
+msgstr "Самая последняя запись."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Приветственное письмо(а) были успешно отправлены повторно."
+
+msgid "There are no messages for that ticket"
+msgstr "Для этого билета нет сообщений"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "Еще есть %d маршрутов, использующих '%s'."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "Произошло %d ошибок при продлении, поэтому попыток больше не будет.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Запись CNAME с таким именем уже существует"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "Алиас списка рассылки с таким именем уже существует"
+
+msgid "There is already an A record with that name"
+msgstr "Запись A с таким именем уже существут"
+
+msgid "There is already an account with that name"
+msgstr "Учетная запись с таким именем уже существует"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Автоответчик с таким именем уже существует"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "На %s недостаточно местадля загрузки %lld байт данных"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "Существует только 1 запись %s для %s=%s, она не удалена"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Это динамические значения. Они меняются вместе с датой."
+
+msgid "This Login Key is read-only"
+msgstr "Этот ключ входа доступен только для чтения"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Срок службы этой ОС истек. Будущие автоматические обновления могут дать сбой."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"Эта учетная запись реселлера не может выделить неограниченное количество %s, "
+"однако эта сумма уже выделена."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"Эта учетная запись уже существует в системе. При восстановлении данные будут "
+"перезаписаны и/или объединены."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "Эта учетная запись заблокирована через BlockCracking."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr ""
+"Эта учетная запись заблокирована через BlockCracking. Разблокировка "
+"отключена."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+
+#, fuzzy
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+"Это вход с использованием Hash-URL. Вы можете удалить его, но не можете "
+"изменить."
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+"Это вход с использованием Hash-URL. Вы можете удалить его, но не можете "
+"изменить."
+
+msgid "This is a placeholder for the subdomain"
+msgstr ""
+
+msgid "This may give unexpected results"
+msgstr "Могут возникнуть неожиданные результаты"
+
+msgid "This may give unexpected results."
+msgstr "Могут возникнуть неожиданные результаты."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr "Этот плагин отключен для вашего аккаунта"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr "Это позволит пропустить удаление зоны DNS и оставить ее как есть."
+
+msgid "Thread Count"
+msgstr ""
+
+msgid "Throttle Memory above this limit."
+msgstr ""
+
+msgid "Ticket #"
+msgstr ""
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "Системная квота пользователя установлена"
+
+msgid "Tickets Updated"
+msgstr ""
+
+msgid "Time"
+msgstr "Время"
+
+msgid "Timeout during read"
+msgstr "Тайм-аут во время чтения"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "Время ожидания истекло при попытке подключения к %s"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "Часовой пояс '%s' не существует в системе"
+
+msgid "Timezone does not exist"
+msgstr "Часовой пояс не существует"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"Чтобы добавить задание cron, вам потребуются все следующие данные: минута, "
+"час, день месяца, месяц, день недели и команда"
+
+msgid "Today"
+msgstr "Сегодня"
+
+msgid "Today at"
+msgstr "Сегодня в"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Счетчик электронной почты за сегодня был сброшен для пользователя %s"
+
+msgid "Too long"
+msgstr "Слишком долго"
+
+msgid "Too short"
+msgstr "Слишком коротко"
+
+msgid "Total"
+msgstr "Всего"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Общее использование диска (МБ)"
+
+msgid "Total Memory"
+msgstr "Общая память"
+
+msgid "Total Size:"
+msgstr "Общий размер:"
+
+msgid "Total Swap Memory"
+msgstr ""
+
+msgid "Total Usage"
+msgstr "Общее использование"
+
+#, fuzzy
+msgid "Two-Step Authentication code is missing."
+msgstr "Двухэтапная аутентификация отключена"
+
+msgid "Type"
+msgstr "Тип"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Тип '%s' отключен"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "Тип должен быть либо 'paste', либо 'id'"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgid "URL already exists"
+msgstr "%s уже есть"
+
+msgid "Un-Link"
+msgstr "Убрать привязку"
+
+msgid "Un-Set"
+msgstr "Не задано"
+
+msgid "Unable To Execute Your Request"
+msgstr "Невозможно выполнить ваш запрос"
+
+msgid "Unable to Execute Your Command"
+msgstr "Невозможно выполнить вашу команду"
+
+msgid "Unable to Locate that domain"
+msgstr "Невозможно найти этот домен"
+
+msgid "Unable to add IP"
+msgstr "Невозможно добавить IP"
+
+msgid "Unable to add access host:"
+msgstr "Невозможно добавить хост доступа:"
+
+msgid "Unable to add domain pointer"
+msgstr "Невозможно добавить указатель домена"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Невозможно добавить пользователя в файл конфигурации SSH"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Невозможно выделить неограниченное количество %s. Этот аккаунт не имеет "
+"права создавать такую сумму."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "Невозможно пройти аутентификацию: проверьте корректность вашего пароля"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Невозможно пройти аутентификацию: неверный пароль"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "Невозможно изменить %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "Невозможно изменить канал обновления Directadmin"
+
+msgid "Unable to change password"
+msgstr "Не удалось сменить пароль"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Не удалось изменить адрес электронной почты"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Невозможно изменить адрес электронной почты системы сообщений"
+
+msgid "Unable to change the Name"
+msgstr "Невозможно изменить имя"
+
+msgid "Unable to change the limit"
+msgstr "Невозможно изменить лимит"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr ""
+
+msgid "Unable to check latest version"
+msgstr "Невозможно проверить последнюю версию"
+
+msgid "Unable to connect to secure socket"
+msgstr "Невозможно подключиться к защищенному сокету"
+
+msgid "Unable to connect to the database"
+msgstr "Невозможно подключиться к базе данных"
+
+msgid "Unable to create a Reseller"
+msgstr "Невозможно создать реселлера"
+
+msgid "Unable to create a User"
+msgstr "Невозможно создать пользователя"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "Невозможно создать директорию резервной копии (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Невозможно создать директорию %s"
+
+msgid "Unable to create new file"
+msgstr "Невозможно создать новый файл"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Невозможно создать обратный поиск IP-адреса"
+
+msgid "Unable to create subdomain"
+msgstr "Невозможно создать поддомен"
+
+msgid "Unable to create user's data directory"
+msgstr "Невозможно создать директорию данных пользователя"
+
+msgid "Unable to create zone"
+msgstr "Невозможно создать зону"
+
+msgid "Unable to create zone."
+msgstr "Не удалось создать зону."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Невозможно удалить %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Невозможно удалить директорию %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Невозможно удалить файлы"
+
+msgid "Unable to delete the main email account"
+msgstr "Невозможно удалить основную учетную запись электронной почты"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "Невозможно удалить файл ip.list реселлера."
+
+msgid "Unable to delete users's domains directory"
+msgstr "Невозможно удалить директорию доменов пользователей"
+
+msgid "Unable to edit file"
+msgstr "Невозможно редактировать файл"
+
+msgid "Unable to execute script"
+msgstr "Невозможно выполнить скрипт"
+
+msgid "Unable to execute your command"
+msgstr "Невозможно выполнить вашу команду"
+
+msgid "Unable to execute your request"
+msgstr "Невозможно выполнить ваш запрос"
+
+msgid "Unable to export packages"
+msgstr "Невозможно экспортировать пакеты"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Невозможно извлечь %s из"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Невозможно извлечь user.conf, reseller.conf или ip.list из"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Не удалось найти %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Не удалось найти сертификат CA"
+
+msgid "Unable to find certificate"
+msgstr "Не удалось найти сертификат"
+
+msgid "Unable to find key"
+msgstr "Не удалось найти ключ"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "Невозможно получить статистику файла на %s"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Невозможно заблокировать %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr ""
+"Невозможно получить зашифрованный пароль пользователя для файла ftp passwd"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "Невозможно заблокировать область %s"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "Невозможно заблокировать %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Невозможно заблокировать действия учетной записи «%s»"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Невозможно заблокировать пользователя %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr "Невозможно изменить этот домен"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "Невозможно открыть %s для добавления"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "Невозможно открыть %s для добавления: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "Невозможно открыть %s для чтения"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "Невозможно открыть %s для записи: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "Невозможно открыть %s: %s"
+
+msgid "Unable to open a socket"
+msgstr "Невозможно открыть сокет"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "Невозможно открыть файл сертификата CA (%s) для записи: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "Невозможно открыть файл сертификата (%s) для записи: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "Невозможно разобрать %s из вывода скрипта '%s '(%s):"
+
+msgid "Unable to parse form"
+msgstr "Невозможно разобрать форму"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "Невозможно прочитать %s как учетную запись %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Невозможно прочитать файлы пользователя %s"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr ""
+"Невозможно прочитать %s.  Этот файл создается только после проведения "
+"подсчета."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr ""
+"Невозможно прочитать %s.  Этот файл создается только при доставке "
+"электронных писем."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Невозможно прочитать %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Невозможно прочитать файл DS %s"
+
+msgid "Unable to read History File."
+msgstr "Невозможно прочитать файл истории."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Невозможно прочитать скрипт резервного копирования RoundCube: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Невозможно прочитать скрипт восстановления RoundCube: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Невозможно прочитать данные из %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "Невозможно прочитать файл Directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "Невозможно прочитать файлы конфигурации домена"
+
+msgid "Unable to read login history file"
+msgstr "Невозможно прочитать файл истории входов"
+
+msgid "Unable to read package"
+msgstr "Невозможно прочитать пакет"
+
+# Suggested in Weblate: Невозможно прочитать время безотказной работы системы
+msgid "Unable to read system uptime"
+msgstr ""
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr ""
+"Невозможно прочитать системный файл паролей ftp, чтобы добавить в него "
+"пользователя."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Невозможно прочитать системный файл паролей ftp для удаления системного "
+"пользователя ftp"
+
+msgid "Unable to read the user's files"
+msgstr "Невозможно прочитать файлы пользователя"
+
+msgid "Unable to read ticket config file"
+msgstr "Невозможно прочитать файл конфигурации билета"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "Невозможно прочитать файл зоны для увеличения серийного номера"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "Невозможно прочитать файл зоны для %s"
+
+msgid "Unable to reboot"
+msgstr "Невозможно перезагрузить"
+
+msgid "Unable to remove IP(s)"
+msgstr "Невозможно удалить IP-адрес(а)"
+
+msgid "Unable to remove Unix User."
+msgstr "Невозможно удалить пользователя Unix."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "Невозможно удалить всех пользователей реселлера"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Невозможно переименовать %s в %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "Невозможно восстановить %s в %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Невозможно восстановить «%s», поскольку не найден реселлер или администратор "
+"«%s». При необходимости переименуйте файл."
+
+msgid "Unable to restore database"
+msgstr "Невозможно восстановить базу данных"
+
+# Suggested in Weblate: Невозможно сохранить зону DNS: возвращен named-checkzone:
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr ""
+
+msgid "Unable to save your changes"
+msgstr "Не удалось сохранить изменения"
+
+msgid "Unable to set bandwidth"
+msgstr ""
+
+msgid "Unable to set file permissions"
+msgstr "Невозможно установить права доступа к файлу"
+
+# Suggested in Weblate: Невозможно установить IP %s в качестве неймсервера. Продолжаем в любом случае.
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr ""
+
+msgid "Unable to set password"
+msgstr "Невозможно установить пароль"
+
+msgid "Unable to set quota"
+msgstr "Невозможно установить квоту"
+
+msgid "Unable to set stats link"
+msgstr "Невозможно установить ссылку на статистику"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Невозможно установить лимит электронной почты"
+
+# Suggested in Weblate: Невозможно установить shell
+msgid "Unable to set the shell"
+msgstr ""
+
+msgid "Unable to show Admin History"
+msgstr "Невозможно показать историю администратора"
+
+msgid "Unable to show Reseller History"
+msgstr "Невозможно показать историю реселлера"
+
+msgid "Unable to show User History"
+msgstr "Невозможно показать историю пользователя"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Невозможно показать текущее использование электронной почты"
+
+msgid "Unable to show the system information"
+msgstr "Невозможно отобразить системную информацию"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "Невозможно удалить %s в %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Невозможно разблокировать пользователя %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Не удалось обновить Directadmin"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Не удалось обновить данные об использовании диска"
+
+msgid "Unable to use that new domain name"
+msgstr "Невозможно использовать это новое доменное имя"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Невозможно записать пользовательские файлы %s"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Невозможно написать %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "Невозможно записать httpd.conf пользователя"
+
+msgid "Unable to write reseller's IP list"
+msgstr "Невозможно записать список IP-адресов реселлера"
+
+msgid "Unable to write the domain config file"
+msgstr "Невозможно записать файл конфигурации домена"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+"Невозможно записать основной файл паролей FTP. Ваши изменения не вступят в "
+"силу."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Невозможно записать файл квоты. Сообщите администратору, что %s недоступен "
+"для записи."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Невозможно записать системный файл паролей ftp для удаления системного "
+"пользователя ftp"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Невозможно записать файл use.cache. Сообщите своему администратору, что %s "
+"недоступен для записи."
+
+msgid "Unable to write ticket config"
+msgstr ""
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"Невозможно записать файл паролей. Сообщите администратору, что %s недоступен "
+"для записи."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+"Невозможно записать в системный файл ftp passwd, чтобы добавить в него "
+"пользователя."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "Невозможно записать файл зоны для увеличения серийного номера"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "Невозможно записать файл зоны для %s"
+
+msgid "Unblock"
+msgstr "Разблокировать"
+
+msgid "Unblocking is disabled."
+msgstr "Разблокировка отключена."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr ""
+"Если снять флажок, файл будет немедленно удален с диска, и его невозможно "
+"будет восстановить"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr ""
+
+msgid "Unhandled exception name"
+msgstr "Имя необработанного исключения"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "Необработанное значение маршрута %s '%s'"
+
+msgid "Unix User created successfully"
+msgstr "Пользователь Unix успешно создан"
+
+msgid "Unix User removed from the server"
+msgstr "Пользователь Unix удален с сервера"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr ""
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr ""
+
+msgid "Unknown action"
+msgstr ""
+
+msgid "Unknown backup destination"
+msgstr ""
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr ""
+
+msgid "Unknown ftp type"
+msgstr ""
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr ""
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr ""
+
+msgid "Unlimited"
+msgstr "Неограничено"
+
+msgid "Unsuspend"
+msgstr ""
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+
+msgid "Up a Level"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Update Successful"
+msgstr ""
+
+msgid "Update channel has been successfully changed"
+msgstr ""
+
+msgid "Update not necessary"
+msgstr ""
+
+msgid "Update queued"
+msgstr ""
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+
+msgid "Upload successful"
+msgstr ""
+
+msgid "Uploaded file is not valid for copy"
+msgstr ""
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr ""
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+
+msgid "Usage (Meg)"
+msgstr ""
+
+msgid "Usage Log"
+msgstr ""
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+#, c-format
+msgid "User %s Removed"
+msgstr ""
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr ""
+
+#, c-format
+msgid "User %s created"
+msgstr ""
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr ""
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr ""
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr ""
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr ""
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr ""
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Пользователь %s восстановлен"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Пользователь %s обновлен.  Используйте следующие значения:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "Пользователь %s имеет на своем пути одну или несколько жестких ссылок:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "Пользователь %s уже заблокирован"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "Пользователь %s уже разблокирован"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr ""
+"Пользователя %s нет в вашем списке.  Вы не можете сделать для него резервную "
+"копию."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+"Пользователя %s нет в вашем списке.  Вы не можете сделать для него резервную "
+"копию."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "Пользователь %s не удален. Не всех его пользователей можно удалить."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "Пользователь %s не был создан вами -> Не удален."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr ""
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr ""
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "Пользователь '%s' не существует"
+
+msgid "User Acconts"
+msgstr "Аккаунты пользователя"
+
+msgid "User Accounts"
+msgstr "Аккаунты пользователя"
+
+msgid "User Bandwidth"
+msgstr ""
+
+msgid "User Comment Box"
+msgstr "Поле комментариев пользователя"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Управление DNSSEC пользователя отключено"
+
+msgid "User Disk Quota"
+msgstr "Квота пользовательского хранилища"
+
+msgid "User History"
+msgstr "История пользователя"
+
+msgid "User Modified"
+msgstr "Пользователь изменен"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "Журналы SMTP пользователя не включены"
+
+msgid "User Updated"
+msgstr "Пользователь обновлен"
+
+#, fuzzy
+msgid "User account is disabled"
+msgstr "Управление DNSSEC пользователя отключено"
+
+msgid "User added to SSH config file successfully"
+msgstr "Пользователь успешно добавлен в файл конфигурации SSH"
+
+msgid "User added to database"
+msgstr "Пользователь добавлен в базу данных"
+
+msgid "User added to named.conf file successfully"
+msgstr "Пользователь успешно добавлен в файл named.conf"
+
+msgid "User added to ssh config file."
+msgstr "Пользователь добавлен в файл конфигурации SSH."
+
+msgid "User backups have been disabled."
+msgstr "Резервное копирование пользователей отключено."
+
+msgid "User config file updated."
+msgstr "Файл конфигурации пользователя обновлен."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "Пользователь удален"
+msgstr[1] "Пользователя удалены"
+msgstr[2] "Пользователей удалены"
+
+msgid "User removed from SSH"
+msgstr "Пользователь удален из SSH"
+
+msgid "User's System Quotas set"
+msgstr "Системная квота пользователя установлена"
+
+msgid "User's config files deleted"
+msgstr "Конфигурационные файлы пользователя удалены"
+
+msgid "User's data directory created successfully"
+msgstr "Каталог данных пользователя успешно создан"
+
+msgid "User's data directory removed."
+msgstr "Каталог данных пользователя удален."
+
+msgid "User(s)"
+msgstr "Пользователь(и)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "UserDir: %s"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr ""
+"Имя пользователя '%s' слишком длинное. Длина %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr ""
+"Имя пользователя слишком короткое. Оно должно быть длиной не менее 2 "
+"символов."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"Имя пользователя должно быть буквенно-цифровым (a-z, A-Z, 0-9), а первый "
+"символ должен быть буквой"
+
+msgid "Username:"
+msgstr "Имя пользователя:"
+
+msgid "Users"
+msgstr "Пользователи"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "Пользователь удален"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "%s Удалено"
+
+msgid "Users will be deleted in the background."
+msgstr "Пользователи будут удалены в фоновом режиме."
+
+msgid "Users's domains directory removed."
+msgstr "Директория доменов пользователей удалена."
+
+msgid "Usertype"
+msgstr ""
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Использование пути %s не разрешено."
+
+msgid "Vacation Account"
+msgstr "Аккаунт на время отсуствия"
+
+msgid "Vacation Message Deleted"
+msgstr ""
+
+msgid "Vacation Message set"
+msgstr ""
+
+msgid "Vacation Message updated"
+msgstr ""
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "Не установлено сообщение об отсутствии"
+
+msgid "Valid"
+msgstr "Действительный"
+
+msgid "Valid broadcast address set."
+msgstr ""
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "В отправленных данных отсутствует переменная «ip»"
+
+msgid "Vendor ID"
+msgstr "ID вендора"
+
+msgid "Verify"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "View Clipboard"
+msgstr "Посмотреть буфер обмена"
+
+msgid "View previous sort"
+msgstr "Посмотреть предыдущую сортировку"
+
+msgid "Warning from named-checkzone:"
+msgstr ""
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"Предупреждение: %s имеет действительный пароль для %s, но код двухэтапной "
+"аутентификации не прошел %s раз."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "Предупреждение: достигнут предел квоты. Файл(ы) могут быть пустыми."
+
+# Suggested in Weblate: Предупреждение. Средняя загрузка системы составляет
+msgid "Warning: The system load average is"
+msgstr "Предупреждение: Средняя загрузка системы составляет"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "Мы прочитали только %lld байтового файла %lld из %s"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "Webmail"
+
+msgid "Webmail Attachments"
+msgstr "Webmail вложения"
+
+msgid "Webmail SSO"
+msgstr "Webmail SSO"
+
+msgid "Week of Month"
+msgstr "Неделя месяца"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "Достигнут предел еженедельной ставки %d для '%s'"
+
+msgid "What"
+msgstr "Что"
+
+msgid "When"
+msgstr "Когда"
+
+msgid "Where"
+msgstr "Где"
+
+msgid "Who"
+msgstr "Кто"
+
+msgid "Wildcard"
+msgstr "Wildcard"
+
+msgid "With Selected"
+msgstr "С выбранным"
+
+msgid "With selected"
+msgstr "С выбранными"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Не активирую учетную запись %s, потому что она отключена"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Ошибка записи с %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "Неверное количество элементов '%s'. Разрешено: 1 или 2 с '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "Неверное количество значений 'pass': %d в '%s' (разделены / )"
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "You already have the most recent version of the program"
+msgstr "У вас уже установлена самая последняя версия программы"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Вам не разрешено включать анонимный ftp"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Вам не разрешено изменять настройки SSL"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "Вы пытаетесь восстановить файл zst, но zstd не включен в системе."
+
+# Suggested in Weblate: Вам не разрешено изменять этот билет.
+msgid "You aren't allowed to modify that ticket"
+msgstr ""
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"Вы можете нажать на адрес электронной почты ниже, чтобы немедленно войти в "
+"систему %s как этот пользователь, не зная его пароля."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"Вы не можете создать список с именем majordomo, поскольку это "
+"зарезервированный алиас"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Вы не можете приостановить root. Это было бы ПЛОХО"
+
+msgid "You cannot add that extension"
+msgstr "Вы не можете добавить это расширение"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr ""
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr ""
+
+# Suggested in Weblate: Вы не можете создать больше пользователей, чем вам разрешено в доменах.
+msgid "You cannot create more Users than you are allowed domains."
+msgstr ""
+
+msgid "You cannot delete all of your IPs"
+msgstr "Вы не можете удалить все свои IP-адреса"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr ""
+"Вы не можете удалить учетную запись %s, поскольку она связана с вашей "
+"системной учетной записью"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Вы не можете удалить себя (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Вы не можете выполнить эту команду"
+
+msgid "You cannot modify yourself"
+msgstr "Вы не можете редактировать себя"
+
+# Suggested in Weblate: Вы не можете восстановить несколько Пользователей на один свободный IP IP-адрес должен быть сначала передан.
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Вы не можете установить неограниченный лимит отправки."
+
+msgid "You cannot suspend yourself"
+msgstr "Вы не можете заблокировать себя"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "Вы не можете заблокировать/разблокировать себя"
+
+msgid "You cannot unsuspend this account."
+msgstr "Вы не можете разблокировать этот аккаунт."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr ""
+"Вы не можете использовать этот домен в качестве указателя. Он уже существует "
+"на сервере"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "В настоящее время у вас есть %s пользователей и максимум %s доменов."
+
+msgid "You did not select any domains to modify"
+msgstr "Вы не выбрали ни одного домена для изменения"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "Вы не выбрали другой IP, никаких изменений не было"
+
+msgid "You didn't select anyone to send it to"
+msgstr "Вы не выбрали никого, кому отправить это сообщение"
+
+msgid "You do not have control over user"
+msgstr "Вы не имеете контроля над пользователем"
+
+msgid "You do not own any IPs"
+msgstr "У вас нет IP-адресов"
+
+msgid "You do not own that IP"
+msgstr "Вы не являетесь владельцем этого IP"
+
+msgid "You do not own that domain"
+msgstr "Вы не являетесь владельцем этого домена"
+
+msgid "You do not own that ip"
+msgstr "Вы не являетесь владельцем этого IP"
+
+msgid "You do not own that that cron ID"
+msgstr "Вы не являетесь владельцем этого cron ID"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "Вы не являетесь владельцем IP %s. Пользователь %s не будет создан"
+
+msgid "You don't have authority over that User"
+msgstr "У вас нет полномочий над этим пользователем"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr ""
+
+msgid "You don't have permission to restore user"
+msgstr "У вас недостаточно прав для восстановления пользователя"
+
+msgid "You don't have permission to view that ticket"
+msgstr ""
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "У вас осталось %d:%.2d."
+
+msgid "You have already reached your assigned limit"
+msgstr "Вы уже достигли назначенного лимита"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Вы не добавили ни одного файла в буфер обмена."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"Вы не предоставили реселлеру IP-адреса. Невозможно создать назначенный IP-"
+"домен или неймсерверы без какого-либо IP"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Вы не выбрали ни одного файла.  Пожалуйста, вернитесь и выберите некоторые "
+"из них, прежде чем восстанавливать резервную копию."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Вы не выбрали ни одного пользователя.  Пожалуйста, вернитесь и выберите "
+"некоторые из них, прежде чем создавать резервную копию."
+
+msgid "You have not selected any domains"
+msgstr "Вы не выбрали ни одного домена"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"Вы успешно выполнили команду перезагрузки сервера..  Загрузка системы и ее "
+"возобновление работы может занять несколько минут."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+"Вы использовали %d%% использования вашего диска, что превышает допустимый "
+"порог %d%%."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "Возможно, вам придется нажать F5, чтобы перезагрузить логотип"
+
+msgid "You may not use an IP for a domain name"
+msgstr "Вы не можете использовать IP для доменного имени"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Вы должны ввести значение chmod. например: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Вы должны ввести имя папки. например: «images»"
+
+msgid "You must enter both password"
+msgstr "Вы должны ввести оба пароля"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr ""
+"Вы должны ввести номер, пользователя, тему, приоритет, статус и сообщение"
+
+msgid "You must enter the password in both fields"
+msgstr "Вы должны ввести пароль в оба поля"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Вы должны ввести пользователя, тему, приоритет и сообщение"
+
+msgid "You must first create some packages"
+msgstr "Сначала вы должны создать несколько пакетов"
+
+msgid "You must first own an IP"
+msgstr "Сначала вы должны иметь IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "У вас должно быть более 0 записей NS, иначе имя может не запуститься."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"Вы должны указать «required_hits» и «required_hits_custom», если "
+"«required_hits» имеет значение «custom»"
+
+msgid "You must provide a list name"
+msgstr "Вы должны указать название списка"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Вы должны предоставить действительный домен, IP, ns1 и ns2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr ""
+
+msgid "You must provide a valid ip"
+msgstr "Вы должны предоставить действительный IP"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Вы должны указать допустимое имя, и оно должно существовать."
+
+msgid "You must provide a valid name and value"
+msgstr "Вы должны указать допустимое имя и значение"
+
+msgid "You must provide the passwd variable"
+msgstr "Вы должны указать переменную oasswd"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr ""
+"Вы должны выбрать IP-пару неймсвервера (ns1.domain.com и ns2.domain.com)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Вы должны выбрать хотя бы один список рассылки для удаления"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Вы должны выбрать хотя бы один список рассылки для очистки"
+
+msgid "You must select exactly one key"
+msgstr "Вы должны выбрать ровно один ключ"
+
+msgid "You must select something"
+msgstr "Вы должны выбрать что-то"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Вы должны использовать число для часа (0-23). Вы можете запускать cron "
+"только один раз в день. (Вы можете создать более одного cron)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Вы должны использовать число минут (0-59). Вы можете запускать cron только "
+"один раз в день. (Вы можете создать более одного cron)"
+
+msgid "You must use a valid path"
+msgstr "Вы должны использовать действительный путь"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "Между обновлениями необходимо подождать не менее %d минуты."
+msgstr[1] "Между обновлениями необходимо подождать не менее %d минут."
+msgstr[2] "Между обновлениями необходимо подождать не менее %d минут."
+
+msgid "You must wait for the stats to be computed."
+msgstr "Вам придется дождаться расчета статистики."
+
+msgid "You need to specify a domain"
+msgstr "Вам необходимо указать домен"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Вам нужен домен, anon, anonup и сообщение"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr ""
+
+msgid "You require either the passwd or quota"
+msgstr ""
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+
+msgid "You require user and domain to change a pop account"
+msgstr ""
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr ""
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "После завершения вы будете уведомлены через систему сообщений."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr ""
+"Вы будете уведомлены через систему сообщений, когда процесс будет завершен"
+
+msgid "You will receive a message when it's complete."
+msgstr "Вы получите сообщение, когда оно будет завершено."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"Вы используете опцию \"войти в систему как\", поэтому используйте свой "
+"собственный пароль. Не пароль пользователя."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "Ваш Hash URL-адрес для входа '%s' создан"
+
+msgid "Your IP is blacklisted"
+msgstr "Ваш IP занесен в черный список"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "Ваш ключ входа '%s' создан"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Ваше имя изменено на %s"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "Файлы пользователя восстановлены из %s"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "Файлы пользователя восстановлены из %s"
+
+msgid "Your account"
+msgstr "Ваш аккаунт"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr ""
+"Ваша учетная запись %s@%s настроена. В своей почтовой программе используйте"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr ""
+"Ваша учетная запись '|ИМЯ ПОЛЬЗОВАТЕЛЯ|' был приостановлен. Причина: "
+"'|ПРИЧИНА|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Ваша учетная запись для |домена| теперь готов к использованию."
+
+msgid "Your backups are now ready"
+msgstr "Ваши резервные копии готовы"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Ваша база данных настроена. Используйте следующие значения:"
+
+msgid "Your default domain has been set"
+msgstr ""
+
+msgid "Your disk quota limit has been reached."
+msgstr ""
+
+msgid "Your disk usage has been updated"
+msgstr ""
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "Файлы пользователя восстановлены из %s"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "Язык изменен на %s"
+
+msgid "Your message has been saved"
+msgstr ""
+
+msgid "Your message has been sent"
+msgstr ""
+
+msgid "Your message is being sent in the background"
+msgstr ""
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr ""
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "Ваше имя изменено на %s"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr ""
+
+msgid "Your password"
+msgstr ""
+
+msgid "Your password is invalid"
+msgstr ""
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+
+msgid "Your request will be executed within 1 minute"
+msgstr ""
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr ""
+
+msgid "Your reseller has reached their assigned limit"
+msgstr ""
+
+msgid "Your subject contains invalid characters."
+msgstr ""
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr ""
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "Ключи зоны новее подписи зоны."
+
+msgid "Zone Reset"
+msgstr ""
+
+msgid "Zone Signing has expired."
+msgstr "Срок действия подписи зоны истек."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "Cron создан"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+"Зона еще не подписана.  Прежде чем использовать этот инструмент "
+"автоматической подписи, убедитесь, что вы сначала сгенерировали ключи и "
+"подписали их"
+
+msgid "Zone is of type DNSSEC."
+msgstr "Зона имеет тип DNSSEC."
+
+msgid "Zone keys generated"
+msgstr "Ключи зоны сгенерированы"
+
+msgid "Zone signed"
+msgstr "Зона подписана"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "%s Удалено"
+
+msgid "account ..."
+msgstr "frrfeyn ..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "и %d пользователь"
+msgstr[1] "и %d пользователя"
+msgstr[2] "и %d пользователей"
+
+msgid "at least"
+msgstr "по меньшей мере"
+
+msgid "at most"
+msgstr "не больше чем"
+
+msgid "back"
+msgstr ""
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec не включен. Невозможно подписать зону."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr ""
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr ""
+
+msgid "catch is required"
+msgstr ""
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr ""
+
+msgid "cgroup is not enabled in your license"
+msgstr ""
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr ""
+
+msgid "change"
+msgstr ""
+
+msgid "click here if form does not include two-step code input"
+msgstr ""
+
+msgid "contains"
+msgstr ""
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "day(s)"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "default user"
+msgstr ""
+
+msgid "dns error"
+msgstr ""
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr ""
+
+msgid "does not belong to you"
+msgstr ""
+
+msgid "emails have just been sent by"
+msgstr ""
+
+msgid "equals"
+msgstr ""
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr ""
+
+msgid "has been updated with the new ip"
+msgstr ""
+
+msgid "high_score must be in the range 1 to 99"
+msgstr ""
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "hours"
+msgstr ""
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr ""
+
+#, fuzzy
+msgid "invalid IP or range: %s"
+msgstr "%s не является правильным IP или диапазоном"
+
+#, fuzzy
+msgid "invalid code"
+msgstr "Неверный код"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr ""
+
+msgid "is currently down"
+msgstr ""
+
+msgid "is not a valid username"
+msgstr ""
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr ""
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr ""
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr ""
+
+msgid "json string"
+msgstr ""
+
+#, c-format
+msgid "lstat error: %s"
+msgstr ""
+
+msgid "mail() line number"
+msgstr ""
+
+msgid "message is empty. Please enter some text."
+msgstr ""
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr ""
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "minutes"
+msgstr ""
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr ""
+
+msgid "modify password"
+msgstr ""
+
+msgid "modify privileges"
+msgstr ""
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "new_domain is not a valid domain"
+msgstr ""
+
+msgid "newer than"
+msgstr ""
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "old_package or new_package are not valid package names"
+msgstr ""
+
+msgid "older than"
+msgstr ""
+
+#, c-format
+msgid "older than %s days."
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr ""
+
+msgid "or select from"
+msgstr ""
+
+msgid "php.ini override added"
+msgstr ""
+
+#, c-format, fuzzy
+msgid "php1_select entry %d is not available"
+msgstr "Виджет '%s' недоступен"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr ""
+
+msgid "port"
+msgstr ""
+
+#, fuzzy
+msgid "request created"
+msgstr "Директория создана"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+
+msgid "retry"
+msgstr ""
+
+msgid "routes must start with a [ character."
+msgstr ""
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr ""
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "selected"
+msgstr ""
+
+msgid "selected overrides removed from php.ini"
+msgstr ""
+
+msgid "selected skipped rules removed"
+msgstr ""
+
+msgid "selecting none includes all domains"
+msgstr ""
+
+msgid "sent"
+msgstr ""
+
+msgid "set Permission"
+msgstr ""
+
+msgid "show_blocked_ips.sh output:"
+msgstr ""
+
+msgid "starts with"
+msgstr ""
+
+msgid "subject contains invalid characters."
+msgstr ""
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr ""
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr ""
+
+msgid "the new domain name already exists on your system"
+msgstr ""
+
+msgid "too many iterations"
+msgstr ""
+
+#, fuzzy
+msgid "unable to load secret"
+msgstr "Невозможно открыть сокет"
+
+msgid "unlimited"
+msgstr ""
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr ""
+
+msgid "user.conf override"
+msgstr ""
+
+msgid "user_brutecount disabled"
+msgstr ""
+
+msgid "user_modify_pre.sh error"
+msgstr ""
+
+#, fuzzy
+msgid "valid code"
+msgstr "Неверный код"
+
+msgid "value is required"
+msgstr ""
+
+#, c-format, fuzzy
+msgid "value must be '%s' or '%s'"
+msgstr "'%s' должен быть '%s' или '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr ""
+
+msgid "your new password is"
+msgstr ""
+
+msgid "your new quota is"
+msgstr ""
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr ""
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr ""
