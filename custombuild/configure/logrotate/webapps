@@ -1,0 +1,4 @@
+/var/www/html/roundcube/logs/*.log /var/www/html/squirrelmail/data/squirrelmail_access_log /var/www/html/phpMyAdmin/log/auth.log {
+	missingok
+	su webapps webapps
+}
