@@ -1,0 +1,1 @@
+const c=(o,t)=>{const d=new Blob([o],{type:"text/plain",endings:"native"}),e=document.createElement("a"),n=URL.createObjectURL(d);Object.assign(e,{style:{display:"none"},href:n,download:t}),document.body.appendChild(e),e.click(),document.body.removeChild(e),URL.revokeObjectURL(n)};export{c as d};
