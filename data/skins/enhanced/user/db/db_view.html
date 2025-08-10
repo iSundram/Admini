@@ -1,0 +1,32 @@
+|LF_DB|
+|*if SESSION_SELECTED_DOMAIN=""|
+|?TREE=&raquo; <a class=tree href="/HTM_INDEX_USER">`LANG_HOME`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`name`">`LANG_VIEW` `name`</a>|
+|*else|
+|?TREE=&raquo; <a class=tree href="/CMD_SHOW_DOMAIN?domain=`SESSION_SELECTED_DOMAIN`">`SESSION_SELECTED_DOMAIN`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a> &raquo; <a class=tree href="/CMD_DB_VIEW?name=`name`">`LANG_VIEW` `name`</a>|
+|*endif|
+|?HELP_SECTION=`USER_HELPER`/mysql.html|
+|HTM_USER_TOP|
+
+<a href="CMD_DB_USER_CREATE?name=|name|">|LANG_CREATE_DB_USER|</a><br>
+
+|*if HAVE_ONE_CLICK_PMA_LOGIN="yes"|
+<br>
+<script>
+function pma_login(event) {
+	event.preventDefault();
+	fetch('/api/phpmyadmin-sso/database-access/|name|', {method: 'POST'})
+		.then((res) => res.json())
+		.then((data) => window.open(data.url, '_blank').focus())
+		.catch((err) => console.error(err));
+}
+</script>
+<form onsubmit='pma_login(event)'>
+	<input type="submit" value="|LANG_PMA_SSO|"> |LANG_PMA_NO_PASS|
+</form>
+|*endif|
+
+|DATABASEUSERS|
+
+|ACCESSHOSTS|
+
+|HTM_USER_BOTTOM|
