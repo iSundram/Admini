@@ -1,0 +1,4 @@
+#!/bin/bash
+CONFIG=$(da default-email-config) || exit 1
+
+exec /usr/bin/msmtp -C <(echo "${CONFIG}") "$@"
