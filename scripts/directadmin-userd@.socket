@@ -1,0 +1,7 @@
+[Unit]
+Description=Directadmin userd service socket for UID %i
+After=syslog.target
+
+[Socket]
+ListenStream=/var/run/directadmin/userd-%i.sock
+SocketMode=640
