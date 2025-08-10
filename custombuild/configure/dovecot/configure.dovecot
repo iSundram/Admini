@@ -1,0 +1,8 @@
+#!/bin/sh
+./configure \
+    --with-ldap=yes \
+    --with-pam=yes \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --without-icu
