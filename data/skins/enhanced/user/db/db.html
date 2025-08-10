@@ -1,0 +1,51 @@
+|*if SESSION_SELECTED_DOMAIN=""|
+|?TREE=&raquo; <a class=tree href="/HTM_INDEX_USER">`LANG_HOME`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a>|
+|*else|
+|?TREE=&raquo; <a class=tree href="/CMD_SHOW_DOMAIN?domain=`SESSION_SELECTED_DOMAIN`">`SESSION_SELECTED_DOMAIN`</a> &raquo; <a class=tree href="/CMD_DB">`LANG_MYSQL_SETUP`</a>|
+|*endif|
+|?HELP_SECTION=`USER_HELPER`/mysql.html|
+|HTM_USER_TOP|
+
+<a href="CMD_DB_CREATE">|LANG_CREATE_DB|</a><br>
+
+|?PMA_URL=`HTTP`://`HOSTNAME`/phpmyadmin|
+|?PMA_HREF=<a target="_blank" href="`PMA_URL`">`LANG_PHPMYADMIN`</a><br><br>|
+|*if PHPMYADMIN_PUBLIC="no"|
+|?PMA_HREF=|
+|*endif|
+|*if HAVE_PHPMYADMIN="no"|
+|?PMA_HREF=<br>|
+|*endif|
+
+|*if HAVE_ONE_CLICK_PMA_LOGIN="yes"|
+|?PMA_HREF=|
+<br>
+<script>
+function pma_login(event) {
+	event.preventDefault();
+	fetch('/api/phpmyadmin-sso/account-access', {method: 'POST'})
+		.then((res) => res.json())
+		.then((data) => window.open(data.url, '_blank').focus())
+		.catch((err) => console.error(err));
+}
+</script>
+<form onsubmit='pma_login(event)'>
+	<input type="submit" value="|LANG_PMA_SSO|"> |LANG_PMA_NO_PASS|
+</form>
+|*endif|
+|PMA_HREF|
+
+|DATABASES|
+
+<form name=backupform action="/CMD_DB" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="|MAX_FILE_SIZE|">
+<input type=hidden name=action value="restore">
+<table class=list cellpadding=3 cellspacing=1>
+<tr><td class=listtitle align=center colspan=2>|LANG_UPLOAD_DB|</td></tr>
+<tr><td class=list align=right style="width: 50%">|LANG_SELECT_DB|</td><td class=list>|DATABASESELECT|</td></tr>
+<tr><td class=list2 align=center colspan=2><input type=file name="file1" size=40></td></tr>
+<tr><td class=listtitle align=right colspan=2><input type=submit value="|LANG_UPLOAD|"></td></tr>
+</table>
+</form>
+
+|HTM_USER_BOTTOM|
