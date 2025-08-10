@@ -1,0 +1,1 @@
+body[data-root=app] .table-elem .filter-left{float:left}@media not all and (min-width: 1024px){body[data-root=app] .table-elem .application-search input{width:66%}body[data-root=app] .table-elem .td-word-break{word-break:break-all}}
