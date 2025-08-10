@@ -1,0 +1,1 @@
+import{a8 as a}from"../index.DtGSrwJ3.js";const r=a.post({url:"/CMD_USER_PASSWD",params:{action:"create",referer:"CMD_API_USER_PASSWD"},schema:{username:a.REQUIRED_STRING,passwd:a.REQUIRED_STRING},before:({passwd:s})=>({passwd2:s})});export{r as c};
