@@ -1,0 +1,292 @@
+|LF_STANDARD|
+|*if DOMAIN|
+|?TREE=&raquo; <a class=tree href="/CMD_SHOW_DOMAIN?domain=`DOMAIN`">`DOMAIN`</a> &raquo; <a class=tree href="/CMD_SSL?DOMAIN=`DOMAIN`">`LANG_SSL`</a> &raquo; <a class=tree href="/CMD_SSL?DOMAIN=`DOMAIN`&action=dnsprovider&type=`TYPE`">`LANG_DNS_PROVIDER`</a>|
+|*else|
+|?TREE=&raquo; <a class=tree href="/CMD_SSL?action=dnsprovider&type=`TYPE`">`LANG_DNS_PROVIDER`</a>|
+|*endif|
+|?HELP_SECTION=`USER_HELPER`/ssl.html|
+|HTM_USER_TOP|
+<script src="/assets/jquery.min.js"></script>
+
+<b>|RESULT|</b><br>
+
+<form name=info id='dnsprovider_form' action="CMD_SSL" method="POST">
+	<table id='dnsprovider_table' class=list_alt cellpadding=3 cellspacing=1>
+		<tr><th colspan=2>|LANG_DNS_PROVIDER_FOR_SSL|</th></tr>
+
+		
+		|*if DOMAIN|
+			<input type=hidden name=domain value="|DOMAIN|">
+		|*endif|
+			<input type=hidden name=action value="dnsprovider">
+
+		<tr>
+			<td>|LANG_SAVE_TO|</td>
+			<td title='|LANG_SAVE_TO_INFO|'>
+				|TYPES_SELECT|
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				|LANG_SELECT_PROVIDER|
+			</td>
+			<td>
+				|DNSPROVIDERS_SELECT|
+			</td>
+		</tr>
+
+		|*if TYPE!="domain"|
+		<tr id='domain_restrictions_checkbox_tr' title='|LANG_RESTRICTIONS_TITLE1|
+|LANG_RESTRICTIONS_TITLE2|
+|LANG_RESTRICTIONS_TITLE3|
+|LANG_RESTRICTIONS_TITLE4|'>
+			<td>
+				|LANG_DOMAIN_RESTRICTIONS|
+			</td>
+			<td>
+				<input type='checkbox' id='domain_restrictions'>
+
+				<span id='restriction_mode_span' class='hidden'>
+					<input type='radio' name='mode' value='allow'> |LANG_ALLOW|
+					<input type='radio' name='mode' value='deny'> |LANG_DENY|
+				</span>
+			</td>
+		</tr>
+		|*endif|
+
+		<tr><th colspan=2 align=right>
+			<input type=submit name=submit value="|LANG_SAVE|">
+		</th></tr>
+	</table>
+</form>
+
+<script type="text/javascript">
+
+	var provider_slct = $('select[name=dnsprovider]');
+	var type_slct = $('select[name=type]');
+	var domain_restrictions_chkbx = $('#domain_restrictions');
+	var tbl = '#dnsprovider_table';
+	var restriction_mode_id = '#restriction_mode_span'
+	var json = null;
+	var dnsprovider = null;
+	var domains = null;
+	var domains_allow = null;
+	var domains_deny = null;
+
+	function dns_error(str) {
+		console.log("Error: "+str);
+	}
+
+	function clear_credentials() {
+		$(tbl+' .dynamic_tr').remove();
+	}
+
+	function add_th_row(th_str) {
+		$(tbl+' tr:last').before("<tr class='dynamic_tr'><th colspan=2 center>"+th_str+"</th></tr>");
+	}
+
+	function add_credentials(credentials) {
+		var row = '';
+		var value = '';
+		$.each(credentials, function( key, val ) {
+			value = '';
+			if (dnsprovider != null) {
+				if (dnsprovider.hasOwnProperty(key)) {
+					if (dnsprovider[key] != '') {
+						value = dnsprovider[key];
+					}
+				}
+			}
+			row = "<td>" + key + "</td><td><input type='text' name='"+key+"' value='"+value+"'></td>";
+			$(tbl+' tr:last').before("<tr class='dynamic_tr'>"+row+"</tr>");
+		});
+	}
+
+	function num_elements(obj) {
+		return Object.keys(obj).length;
+	}
+
+	function load_credentials(key, data) {
+		clear_credentials();
+		if (data === undefined)
+			return;
+
+		if (num_elements(data.credentials) > 0) {
+			add_th_row("|LANG_ENTER_CREDENTIALS| "+data.name);
+			add_credentials(data.credentials);
+		}
+		if (data.hasOwnProperty('additional_configuration') &&
+			num_elements(data.additional_configuration) > 0) {
+			add_th_row("|LANG_ADDITIONAL_CONFIG|");
+			add_credentials(data.additional_configuration);
+		}
+	}
+
+	function add_li(ul, name, value, text, checkbox_class, domains_list=null) {
+
+		var set_checked = false;
+		if (domains_list!=null) {
+			if (jQuery.isArray(domains_list)) {
+				if (jQuery.inArray(value, domains_list) !== -1) {
+					set_checked = true;
+				}
+			} else {
+				//not an array.
+				if (domains_list == value) {
+					set_checked = true;
+				}
+			}
+		} else {
+			//domains_list is null
+			if (value == 'clear')
+				set_checked = true;
+		}
+
+		ul.append($('<li>').append(
+			$("<input type='checkbox' class='"+checkbox_class+"' name='"+name+"[]' value='"+value+"'>").prop('checked', set_checked),
+			$('<span>').text(text)
+		));
+	}
+
+	function set_count(count_span, name) {
+		var num = $('#'+name+' .glob:checked, #'+name+' .multi_select:checked').length;
+		count_span.text('('+num+')');
+	}
+	function fill_domains(name, domains_list) {
+		if (domains == null) return dns_error('fill_domains: the domains variable is null.');
+
+		var domain_ul = $('#'+name);
+		var size = num_elements(domains)+2;
+		if (size > 10) { size = 10; }
+		var pixels = size * 20;
+
+		var count_span = domain_ul.parent().parent().find('.count');
+
+		domain_ul.css('overflow-y', 'scroll');
+		domain_ul.css('height', pixels+'px');
+
+		add_li(domain_ul, name, 'clear', '|LANG_CLEAR_SELECTION|', 'glob', domains_list);
+
+		$.each(domains, function(i, domain) {
+			add_li(domain_ul, name, domain, domain, 'multi_select', domains_list);
+		});
+
+		set_count(count_span, name);
+
+		$('#'+name+' .glob').on('change', function(e) {
+			var this_state = $(this).prop('checked');
+			$('#'+name+' .multi_select, #'+name+' .glob').prop('checked', false);
+			$(this).prop('checked', this_state);
+			set_count(count_span, name);
+		});
+		$('#'+name+' .multi_select').on('change', function(e) {
+			$('#'+name+' .glob').prop('checked', false);
+			set_count(count_span, name);
+		});
+	}
+
+	function set_restriction_radio(radio_id) {
+		if (domains_deny != null) {
+			$("input[name=mode][value='deny']").prop("checked",true);
+		} else {
+			$("input[name=mode][value='allow']").prop("checked",true);
+		}
+	}
+
+	function load_domain_restrictions(set_domain_restrictions_checkbox) {
+		if (domains == null) return;
+		if (domain_restrictions_chkbx.length == 0) return;
+
+		if (set_domain_restrictions_checkbox) {
+			if (domains_allow!=null || domains_deny!=null)
+				domain_restrictions_chkbx.prop('checked', true);
+		}
+
+		$(tbl+' .domain_restrictions_tr').remove();
+
+		if (domain_restrictions_chkbx.prop('checked')) {
+			$(restriction_mode_id).removeClass('hidden');
+			if (set_domain_restrictions_checkbox) {
+				set_restriction_radio(restriction_mode_id);
+			}
+
+			if ($("input[name=mode][value='deny']").prop("checked")) {
+				row = "<td>|LANG_DENY_DOMAINS| <span class='count'></td><td><ul id='domains_deny' style='list-style-type:none'></ul></td>";
+				$('#domain_restrictions_checkbox_tr').after("<tr class='domain_restrictions_tr'>"+row+"</tr>");
+				fill_domains('domains_deny', domains_deny);
+			}
+
+			if ($("input[name=mode][value='allow']").prop("checked")) {
+				row = "<td>|LANG_ALLOW_DOMAINS| <span class='count'></span></td><td><ul id='domains_allow' style='list-style-type:none'></ul></td>";
+				$('#domain_restrictions_checkbox_tr').after("<tr class='domain_restrictions_tr'>"+row+"</tr>");
+				fill_domains('domains_allow', domains_allow);
+			}
+		} else {
+			$(restriction_mode_id).addClass('hidden');
+		}
+	}
+
+	var dnsproviders_json_url = "CMD_SSL?action=dnsprovider&type=|TYPE|&domains=yes&json=yes";
+	|*if DOMAIN|
+	dnsproviders_json_url = dnsproviders_json_url+"&domain=|DOMAIN|";
+	|*endif|
+
+	$.getJSON(dnsproviders_json_url, function(data) {
+		json = data;
+		if (json.hasOwnProperty('dnsproviders') &&
+			json.dnsproviders.hasOwnProperty('dnsprovider')) {
+			dnsprovider = json.dnsproviders.dnsprovider;
+			if (dnsprovider != null &&
+				dnsprovider.hasOwnProperty('dnsprovider') &&
+				dnsprovider.dnsprovider != '') {
+				var provider = dnsprovider.dnsprovider;
+				load_credentials(provider, json.dnsproviders.data[provider]);
+
+				if (dnsprovider.hasOwnProperty('domains_allow'))
+					domains_allow = dnsprovider.domains_allow;
+				if (dnsprovider.hasOwnProperty('domains_deny'))
+					domains_deny = dnsprovider.domains_deny;
+			}
+		}
+		if (json.hasOwnProperty('domains'))
+			domains = json.domains;
+
+		load_domain_restrictions(true);
+	});
+
+	$(document).ready(function() {
+		provider_slct.on('change', function() {
+			var provider = provider_slct.val();
+			if (provider == 'none') return clear_credentials();
+			if (json == null) return dns_error('json is null');
+			if (!json.hasOwnProperty('dnsproviders')) return dns_error('json is missing dnsproviders');
+			if (!json.dnsproviders.hasOwnProperty('data')) return dns_error('json.dnsproviders is missing data');
+			if (!json.dnsproviders.data[provider]) return dns_error('cannot find "'+provider+'" in the list of dnsproviders.');
+			if (!json.dnsproviders.data[provider].hasOwnProperty('credentials')) return dns_error('cannot find credentials in the "'+provider+'" dnsprovides.');
+			if (!json.dnsproviders.data[provider].hasOwnProperty('name')) return dns_error('cannot find a name in the "'+provider+'" dnsprovides.');
+
+			load_credentials(provider, json.dnsproviders.data[provider]);
+		});
+
+		type_slct.on('change', function() {
+			var type = type_slct.val();
+			|*if DOMAIN|
+			location.href = 'CMD_SSL?DOMAIN=|DOMAIN|&action=dnsprovider&type='+type;
+			|*else|
+			location.href = 'CMD_SSL?action=dnsprovider&type='+type;
+			|*endif|
+		});
+
+		domain_restrictions_chkbx.on('change', function() {
+			load_domain_restrictions(false);
+		});
+
+		$("input[name=mode]").on('change', function() {
+			load_domain_restrictions(false);
+		});
+
+	});
+</script>
+
+|HTM_USER_BOTTOM|
