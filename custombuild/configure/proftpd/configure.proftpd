@@ -1,0 +1,18 @@
+#!/bin/sh
+
+export CFLAGS="${CFLAGS} -fstack-protector-strong -D_FORTIFY_SOURCE=2 -O1"
+export LDFLAGS="${LDFLAGS} -Wl,-z,relro,-z,now"
+
+[ -e ./contrib/mod_clamav.c ] && extra_modules=':mod_clamav' || extra_modules=''
+
+install_user=ftp install_group=ftp ./configure \
+	--prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var/run \
+	--mandir=/usr/share/man \
+	--enable-strip \
+	--without-pam \
+	--disable-auth-pam \
+	--enable-nls \
+	--enable-dso \
+	--with-modules="mod_ratio:mod_readme:mod_tls${extra_modules}"
