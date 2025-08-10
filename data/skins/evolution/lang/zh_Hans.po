@@ -1,0 +1,10931 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chinese (Simplified) (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-24 01:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Simplified) <https://translate.directadmin.com/"
+"projects/directadmin/evolution-skin/zh_Hans/>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.16.2\n"
+
+#, vue-format
+msgid " %s of the month"
+msgstr " 本月 %s 日"
+
+#, vue-format
+msgid " Select IP address used for restore."
+msgstr " 选择恢复备份所使用的IP地址。"
+
+#, vue-format
+msgid ", %s days before the last day of the month"
+msgstr ", 每月倒数第 %s 天"
+
+#, vue-format
+msgid ", %s through %s"
+msgstr ", %s 到 %s"
+
+#, vue-format
+msgid ", and on %s"
+msgstr "，并且在 %s"
+
+#, vue-format
+msgid ", between day %s and %s of the month"
+msgstr "，在该月的第 %s 天和第 %s 天之间"
+
+#, vue-format
+msgid ", every %s days"
+msgstr ", 每 %s 天"
+
+#, vue-format
+msgid ", every %s days of the week"
+msgstr ", 每周 %s 天"
+
+#, vue-format
+msgid ", every %s months"
+msgstr ", 每 %s 个月"
+
+#, vue-format
+msgid ", every %s years"
+msgstr "，每 %s 年"
+
+#, vue-format
+msgid ", every day"
+msgstr "，每天"
+
+#, vue-format
+msgid ", every hour"
+msgstr "，每隔一小时"
+
+#, vue-format
+msgid ", on day %s of the month"
+msgstr "，在该月的第 %s 天"
+
+#, vue-format
+msgid ", on the "
+msgstr "，在 "
+
+#, vue-format
+msgid ", on the %s of the month"
+msgstr "，在该月的 %s 日"
+
+#, vue-format
+msgid ", on the last %s of the month"
+msgstr ", 在本月的最后 %s 天"
+
+#, vue-format
+msgid ", on the last day of the month"
+msgstr "，在该月的最后一天"
+
+#, vue-format
+msgid ", on the last weekday of the month"
+msgstr ", 在该月的最后一个工作日"
+
+#, vue-format
+msgid ", only in %s"
+msgstr "，仅在 %s"
+
+#, vue-format
+msgid ", only on %s"
+msgstr "，仅在 %s"
+
+#, vue-format
+msgid ", starting %s"
+msgstr "，从 5 日开始"
+
+#, vue-format
+msgid ": original subject"
+msgstr "：初始主题"
+
+#, vue-format
+msgid "..."
+msgstr "..."
+
+#, vue-format
+msgid "( Today: %{ sent } )"
+msgstr "( 今日: %{ sent } )"
+
+#, vue-format
+msgid "(%{databaseCount} / %{databaseLimit} databases used)"
+msgstr "(%{databaseCount} / %{databaseLimit} 已使用数据库)"
+
+#, vue-format
+msgid "(pointers)"
+msgstr "(域名指向)"
+
+#, vue-format
+msgid "(skip suspended)"
+msgstr "跳过暂停"
+
+#, vue-format
+msgid "(VPS Only)"
+msgstr "仅 VPS"
+
+#, vue-format
+msgid ""
+"* Note: Making modifications to the MX records can potentially disable all "
+"of your email accounts from receiving mail."
+msgstr "*注意：对 MX 记录进行修改可能会禁止您的所有电子邮件帐户接收邮件."
+
+#, vue-format
+msgid "/ Day"
+msgstr "/天"
+
+#, vue-format
+msgid "# of DBs"
+msgstr "数据库数量"
+
+#, vue-format
+msgid "# of domains"
+msgstr "域名数量"
+
+#, vue-format
+msgid "# of Domains"
+msgstr "域名数量"
+
+#, vue-format
+msgid "# of free IPs"
+msgstr "可用IP数量"
+
+#, vue-format
+msgid "# of IPs"
+msgstr "IP数量"
+
+#, vue-format
+msgid "# of MySQL DBs"
+msgstr "MySQL数据库数量"
+
+#, vue-format
+msgid "# of Resellers"
+msgstr "分销者数量"
+
+#, vue-format
+msgid "# of Subdomains"
+msgstr "子域名数量"
+
+#, vue-format
+msgid "# of Users"
+msgstr "用户数量"
+
+#, vue-format
+msgid "% Disk Usage to create Backups."
+msgstr "% 磁盘用来创建备份。"
+
+#, vue-format
+msgid "% of partition usage"
+msgstr "%分区使用"
+
+#, vue-format
+msgid "%{ filename } customization for %{ domain }"
+msgstr "%{ filename } 定制 %{ domain }"
+
+#, vue-format
+msgid "%{ limit } / Day"
+msgstr "%{ limit } / 天"
+
+#, vue-format
+msgid "%{ log } is %{ size }"
+msgstr "%{ log } 为 %{ size }"
+
+#, vue-format
+msgid "%{ n } new ticket created"
+msgid_plural "%{ n } new tickets created"
+msgstr[0] "创建了 %{ n } 个新工单"
+
+#, vue-format
+msgid "%{ name } and %{nusers } user"
+msgid_plural "%{ name } and %{nusers } users"
+msgstr[0] "%{ name } 和 %{nusers } 用户"
+
+#, vue-format
+msgid "%{ sent } (Today: %{ today } / %{ limit })"
+msgstr "%{ sent } (今天: %{ today } / %{ limit })"
+
+#, vue-format
+msgid "%{ version } (build %{ commit })"
+msgstr "%{ version } (build %{ commit })"
+
+#, vue-format
+msgid "%{domains} and %{n} more domain"
+msgid_plural "%{domains} and %{n} more domains"
+msgstr[0] "%{domains} 和另外 %{n} 个域名"
+
+#, vue-format
+msgid "%{freeIPs} Free IP"
+msgid_plural "%{freeIPs} Free IPs."
+msgstr[0] "%{freeIPs} 个空闲IP"
+
+#, vue-format
+msgid "%{n} addition and"
+msgid_plural "%{n} additions and"
+msgstr[0] "%{n} 附加及"
+
+#, vue-format
+msgid "%{n} changed file with"
+msgid_plural "%{n} changed files with"
+msgstr[0] "%{n} 更改的文件"
+
+#, vue-format
+msgid "%{n} deletion."
+msgid_plural "%{n} deletions."
+msgstr[0] "%{n} 个已删除。"
+
+#, vue-format
+msgid "%{n} file"
+msgid_plural "%{n} files"
+msgstr[0] "%{n} 个文件"
+
+#, vue-format
+msgid "%{n} files did not pass file size limit (%{ limit })"
+msgstr "%{n} 个文件未通过文件大小限制 (%{ limit })"
+
+#, vue-format
+msgid "%{n} folder"
+msgid_plural "%{n} folders"
+msgstr[0] "%{n} 个文件夹"
+
+#, vue-format
+msgid "%{n} new message"
+msgid_plural "%{n} new messages"
+msgstr[0] "%{n} 条新消息"
+
+#, vue-format
+msgid "%{name}-digest"
+msgstr "%{name}-摘要"
+
+#, vue-format
+msgid "%{root} + %{n} more target"
+msgid_plural "%{root} + %{n} more targets"
+msgstr[0] "%{root} + %{n} 更多目标"
+
+#, vue-format
+msgid "%{user } limit hits"
+msgstr "%{user } 限制数"
+
+#, vue-format
+msgid "© %{ year } JBMC Software"
+msgstr "© %{ year } JBMC Software"
+
+#, vue-format
+msgid "∞"
+msgstr "∞"
+
+#, vue-format
+msgid "0 = never"
+msgstr "0 = 从不"
+
+#, vue-format
+msgid "0 = off, 100 = always on"
+msgstr "0 = 关闭, 100 = 始终开启"
+
+#, vue-format
+msgid "0-23"
+msgstr "0-23"
+
+#, vue-format
+msgid "0-59"
+msgstr "0-59"
+
+#, vue-format
+msgid "0-7. 0,7 - Sunday"
+msgstr "0-7；0和7均可用作星期日"
+
+#, vue-format
+msgid "0–7; 0, 7 = Sunday"
+msgstr "0-7；0和7均可用作星期日"
+
+#, vue-format
+msgid "0–7; 0,7 = Sunday"
+msgstr "0-7；0和7均可用作星期日"
+
+#, vue-format
+msgid "1 Day"
+msgstr "1天"
+
+#, vue-format
+msgid "1 minute"
+msgstr "1 分钟"
+
+#, vue-format
+msgid "1 Month"
+msgstr "1个月"
+
+#, vue-format
+msgid "1 Week"
+msgstr "1周"
+
+#, vue-format
+msgid "1-12"
+msgstr "1-12"
+
+#, vue-format
+msgid "1-31"
+msgstr "1-31"
+
+#, vue-format
+msgid "10 seconds"
+msgstr "10秒"
+
+#, vue-format
+msgid "10s"
+msgstr "10秒"
+
+#, vue-format
+msgid "12 Months"
+msgstr "12个月"
+
+#, vue-format
+msgid "15 minutes"
+msgstr "15 分钟"
+
+#, vue-format
+msgid "1m"
+msgstr "1 分钟"
+
+#, vue-format
+msgid "2 Days"
+msgstr "2 天数"
+
+#, vue-format
+msgid "2 minutes"
+msgstr "2 分钟"
+
+#, vue-format
+msgid "2 Weeks"
+msgstr "2周"
+
+#, vue-format
+msgid "24H"
+msgstr "24时制"
+
+#, vue-format
+msgid "30 seconds"
+msgstr "30 秒"
+
+#, vue-format
+msgid "301 — Permanent"
+msgstr "301 — 永久重定向"
+
+#, vue-format
+msgid "302 — Temporary"
+msgstr "302 — 暂时重定向"
+
+#, vue-format
+msgid "303 — Replaced"
+msgstr "303 — 已替换"
+
+#, vue-format
+msgid "401 Unauthorized"
+msgstr "401 未授权"
+
+#, vue-format
+msgid "403 Forbidden"
+msgstr "403 内容禁止"
+
+#, vue-format
+msgid "404 Error"
+msgstr "404 错误"
+
+#, vue-format
+msgid "404 Not Found"
+msgstr "404 未找到"
+
+#, vue-format
+msgid "5 minutes"
+msgstr "5 分钟"
+
+#, vue-format
+msgid "500 Internal Server Error"
+msgstr "500 内部服务器错误"
+
+#, vue-format
+msgid "5m"
+msgstr "5 分钟"
+
+#, vue-format
+msgid "6 Months"
+msgstr "6个月"
+
+#, vue-format
+msgid ""
+"A higher threshold will let more spam through, but is less likely to tag "
+"legitimate mail."
+msgstr "较高的阈值会让更多的垃圾邮件通过, 但能减少正常邮件被标记为垃圾邮件的机率。"
+
+#, vue-format
+msgid "A label to manage the keys. This is not the login username. (a-zA-Z0-9)"
+msgstr "用于管理密钥的标签。这不是登录用户名。 (a-zA-Z0-9)"
+
+#, vue-format
+msgid ""
+"A lower threshold will block more spam, but can potentially tag legitimate "
+"mail."
+msgstr "较低的阈值会拦截更多的垃圾邮件, 但会增加正常邮件被标记为垃圾邮件的机率。"
+
+#, vue-format
+msgid "Abort"
+msgstr "中止"
+
+#, vue-format
+msgid "Abort Upload"
+msgstr "中止上传"
+
+#, vue-format
+msgid "Abuse"
+msgstr "滥用"
+
+#, vue-format
+msgid "Accepted type:"
+msgid_plural "Accepted types:"
+msgstr[0] "接受类型："
+
+#, vue-format
+msgid "Access"
+msgstr "訪問"
+
+#, vue-format
+msgid "Access Denied"
+msgstr "拒绝访问"
+
+#, vue-format
+msgid "Access host"
+msgid_plural "Access hosts"
+msgstr[0] "授权访问的主机"
+
+#, vue-format
+msgid "Access Host"
+msgstr "授权访问的主机"
+
+#, vue-format
+msgid "Access Hosts"
+msgstr "授权访问的主机"
+
+#, vue-format
+msgid "Access Level"
+msgstr "访问级别"
+
+#, vue-format
+msgid "Access Level:"
+msgstr "访问级别："
+
+#, vue-format
+msgid "Accessed"
+msgstr "已访问"
+
+#, vue-format
+msgid "Accessed:"
+msgstr "已访问:"
+
+#, vue-format
+msgid "account"
+msgid_plural "accounts"
+msgstr[0] "账号"
+
+#, vue-format
+msgid "Account"
+msgstr "账号"
+
+#, vue-format
+msgid "Account Configuration"
+msgstr "帐号设置"
+
+#, vue-format
+msgid "Account Info"
+msgstr "帐号信息"
+
+#, vue-format
+msgid "Account Manager"
+msgstr "账号管理"
+
+#, vue-format
+msgid "Account modified"
+msgstr "修改账号"
+
+#, vue-format
+msgid "Account not found"
+msgstr "找不到账户"
+
+#, vue-format
+msgid "Account role mismatch"
+msgstr "账号不匹配"
+
+#, vue-format
+msgid "Account was successfully deleted"
+msgid_plural "Accounts was successfully deleted"
+msgstr[0] "账号已成功删除"
+
+#, vue-format
+msgid "Account was successfully suspended"
+msgid_plural "Accounts was successfully suspended"
+msgstr[0] "账号已成功暂停"
+
+#, vue-format
+msgid "Account was successfully unsuspended"
+msgid_plural "Accounts was successfully unsuspended"
+msgstr[0] "账号已成功取消暂停"
+
+#, vue-format
+msgid "Accounts"
+msgstr "账号"
+
+#, vue-format
+msgid "Accounts and usage information"
+msgstr "账户用量信息"
+
+#, vue-format
+msgid "Accounts to import"
+msgstr "要导入的帐户"
+
+#, vue-format
+msgid "ACME in use. Auto Renewal in %{n} Days."
+msgstr "ACME 正在使用中. %{n} 天后自动续订."
+
+#, vue-format
+msgid "ACME Provider"
+msgstr "ACME 提供商"
+
+#, vue-format
+msgid "Action for filter matches:"
+msgstr "筛选器匹配的操作："
+
+#, vue-format
+msgid "Actions"
+msgstr "操作"
+
+#, vue-format
+msgid "Activate"
+msgstr "启用"
+
+#, vue-format
+msgid "Activated"
+msgstr "已启用"
+
+#, vue-format
+msgid "Active"
+msgstr "启用"
+
+#, vue-format
+msgid "Active databases"
+msgstr "启用的数据库"
+
+#, vue-format
+msgid "Active Since"
+msgstr "账号创建于"
+
+#, vue-format
+msgid "Activity"
+msgstr "活动"
+
+#, vue-format
+msgid "Adapt the look of the skin to your own needs."
+msgstr "根据自己的需要调整皮肤的外观。"
+
+#, vue-format
+msgid "Add"
+msgstr "添加"
+
+#, vue-format
+msgid "Add Additional IP"
+msgstr "添加附加IP"
+
+#, vue-format
+msgid "Add an E-mail Address to the list"
+msgstr "添加一个电子邮件地址到列表"
+
+#, vue-format
+msgid "Add Another IP"
+msgstr "添加另一个IP"
+
+#, vue-format
+msgid ""
+"Add any other server hostname that may deliver or relay mail for this domain"
+msgstr "添加可能为此域传递或中继邮件的任何其他服务器主机名"
+
+#, vue-format
+msgid "Add Codes"
+msgstr "添加代码"
+
+#, vue-format
+msgid "Add Destination"
+msgstr "添加目标"
+
+#, vue-format
+msgid "Add DNS records for this IP"
+msgstr "为此 IP 添加 DNS 记录"
+
+#, vue-format
+msgid "Add DNS Zone"
+msgstr "添加DNS Zone"
+
+#, vue-format
+msgid "Add domain"
+msgstr "添加域名"
+
+#, vue-format
+msgid "Add Existing User"
+msgstr "添加现有用户"
+
+#, vue-format
+msgid "Add file to queue"
+msgstr "添加文件到队列"
+
+#, vue-format
+msgid "Add IP"
+msgstr "添加IP"
+
+#, vue-format
+msgid "Add IP Address"
+msgstr "添加IP地址"
+
+#, vue-format
+msgid "Add Mime Type"
+msgstr "添加Mime类型"
+
+#, vue-format
+msgid "Add My Domains"
+msgstr "添加域名"
+
+#, vue-format
+msgid "Add New"
+msgstr "新增"
+
+#, vue-format
+msgid "Add New Apache Handler"
+msgstr "添加新的Apache处理器"
+
+#, vue-format
+msgid "Add New Domain Pointer"
+msgstr "添加新的域名指向"
+
+#, vue-format
+msgid "Add New IP"
+msgstr "添加新的IP"
+
+#, vue-format
+msgid "Add New Mime Type"
+msgstr "添加新的Mime类型"
+
+#, vue-format
+msgid "Add New Override"
+msgstr "添加新覆盖"
+
+#, vue-format
+msgid "Add New Redirect"
+msgstr "添加新的域名重定向"
+
+#, vue-format
+msgid "Add New Server"
+msgstr "添加服务器"
+
+#, vue-format
+msgid "Add New Subdomain"
+msgstr "添加新的子域名"
+
+#, vue-format
+msgid "Add new User"
+msgstr "添加新用户"
+
+#, vue-format
+msgid "Add New User"
+msgstr "添加新用户"
+
+#, vue-format
+msgid "Add New Widget"
+msgstr "添加新的组件"
+
+#, vue-format
+msgid "Add Option"
+msgstr "添加选项"
+
+#, vue-format
+msgid "Add or remove widgets from dashboard for selected users"
+msgstr "为选定的用户添加或删除仪表板上的小部件"
+
+#, vue-format
+msgid "Add Package"
+msgstr "添加套餐"
+
+#, vue-format
+msgid "Add Plugin"
+msgstr "添加插件"
+
+#, vue-format
+msgid "Add Protected Directory"
+msgstr "添加受保护的目录"
+
+#, vue-format
+msgid "Add Record"
+msgstr "添加记录"
+
+#, vue-format
+msgid "Add Scratch Codes"
+msgstr "添加Scratch Code"
+
+#, vue-format
+msgid "Add Search Filter"
+msgstr "添加搜索筛选器"
+
+#, vue-format
+msgid "Add Subdomain"
+msgstr "添加子域名"
+
+#, vue-format
+msgid "Add Subscriber"
+msgstr "添加订阅者"
+
+#, vue-format
+msgid "Add Template"
+msgstr "添加模板"
+
+#, vue-format
+msgid "Add the code to be inserted into the CUSTOM tokens."
+msgstr "添加要插入CUSTOM标记的代码。"
+
+#, vue-format
+msgid "Add to"
+msgstr "添加到"
+
+#, vue-format
+msgid "Add to Apache"
+msgstr "添加到Apache"
+
+#, vue-format
+msgid "Add to archive"
+msgstr "添加到压缩文件"
+
+#, vue-format
+msgid "Add to blacklist"
+msgstr "添加到黑名单"
+
+#, vue-format
+msgid "Add to Blacklist"
+msgstr "添加到黑名单"
+
+#, vue-format
+msgid "Add to device"
+msgstr "添加到设备"
+
+#, vue-format
+msgid "Add to DNS"
+msgstr "添加到DNS"
+
+#, vue-format
+msgid "Add to skip list"
+msgstr "添加到跳过列表"
+
+#, vue-format
+msgid "Add to Skip List"
+msgstr "添加到跳过列表"
+
+#, vue-format
+msgid "Add to:"
+msgstr "添加到:"
+
+#, vue-format
+msgid "Add User"
+msgstr "添加用户"
+
+#, vue-format
+msgid "Add user home directories to directory list"
+msgstr "将用户主目录添加到目录列表"
+
+#, vue-format
+msgid "Add Widget"
+msgstr "添加组件"
+
+#, vue-format
+msgid "Added to Apache"
+msgstr "已添加到Apache"
+
+#, vue-format
+msgid "Added to DNS"
+msgstr "已添加到DNS"
+
+#, vue-format
+msgid "Additional Bandwidth"
+msgstr "额外流量"
+
+#, vue-format
+msgid "Additional Bandwidth: %{ amount }"
+msgstr "额外流量：％{amount}"
+
+#, vue-format
+msgid "Additional CUSTOM tokens"
+msgstr "其他自定义令牌"
+
+#, vue-format
+msgid "Address"
+msgstr "地址"
+
+#, vue-format
+msgid "Address:"
+msgstr "地址："
+
+#, vue-format
+msgid "Admin"
+msgstr "管理员"
+
+#, vue-format
+msgid "Admin Account Name"
+msgstr "管理员帐户名"
+
+#, vue-format
+msgid "Admin Backup/Transfer"
+msgstr "管理员备份/传输"
+
+#, vue-format
+msgid "Admin Backups"
+msgstr "管理备份"
+
+#, vue-format
+msgid "Admin Email"
+msgstr "管理员电子邮件"
+
+#, vue-format
+msgid "Admin History"
+msgstr "管理员历史"
+
+#, vue-format
+msgid "Admin Password"
+msgstr "管理员密码"
+
+#, vue-format
+msgid "Admin Plugins"
+msgstr "管理员插件"
+
+#, vue-format
+msgid "Admin Settings"
+msgstr "管理员设置"
+
+#, vue-format
+msgid "Admin SSL"
+msgstr "管理员 SSL"
+
+#, vue-format
+msgid "Admin Stats"
+msgstr "管理员统计"
+
+#, vue-format
+msgid "Admin Tools"
+msgstr "管理员工具"
+
+#, vue-format
+msgid "Admin: %{ username }"
+msgstr "管理员：%{ username }"
+
+#, vue-format
+msgid "Admin: %{ username } and %{ nusers } user"
+msgid_plural "Admin: %{ username } and %{ nusers } users"
+msgstr[0] "管理员: %{ username } 和 %{ nusers } 用户"
+
+#, vue-format
+msgid "Administrator Settings"
+msgstr "管理员设置"
+
+#, vue-format
+msgid "Administrivia"
+msgstr "行政区"
+
+#, vue-format
+msgid "Admins"
+msgstr "管理员"
+
+#, vue-format
+msgid "Admins Count"
+msgstr "管理员数量"
+
+#, vue-format
+msgid "Adult Filter:"
+msgstr "过滤成人内容："
+
+#, vue-format
+msgid "Advanced"
+msgstr "高级设置"
+
+#, vue-format
+msgid "Advanced Features"
+msgstr "高级功能"
+
+#, vue-format
+msgid "Advanced Options"
+msgstr "高级设置"
+
+#, vue-format
+msgid "Affect Pointers"
+msgstr "影响指向"
+
+#, vue-format
+msgid "after"
+msgstr "后"
+
+#, vue-format
+msgid "Aggregate Email (RUA)"
+msgstr "聚合电子邮件（RUA）"
+
+#, vue-format
+msgid "Alias"
+msgstr "别名"
+
+#, vue-format
+msgid "Alignment mode for DKIM"
+msgstr "DKIM Alignment 模式"
+
+#, vue-format
+msgid "Alignment mode for SPF"
+msgstr "SPF Alignment 模式"
+
+#, vue-format
+msgid "All"
+msgstr "全部"
+
+#, vue-format
+msgid "All Accounts on the Server"
+msgstr "服务器上的所有帐户"
+
+#, vue-format
+msgid "All Data"
+msgstr "所有数据"
+
+#, vue-format
+msgid "All Domains"
+msgstr "所有域名"
+
+#, vue-format
+msgid "All domains selected"
+msgstr "所有已选择域名"
+
+#, vue-format
+msgid "All Email Accounts"
+msgstr "所有邮件账号"
+
+#, vue-format
+msgid "All Logs"
+msgstr "所有日志"
+
+#, vue-format
+msgid "All Month(cgi)"
+msgstr "所有月份(cgi)"
+
+#, vue-format
+msgid "All of Your Users"
+msgstr "当前账号下的所有用户"
+
+#, vue-format
+msgid "All Resellers"
+msgstr "所有经销商"
+
+#, vue-format
+msgid "All User Cron Jobs"
+msgstr "所有用户Cron作业"
+
+#, vue-format
+msgid "all users"
+msgstr "所有用户"
+
+#, vue-format
+msgid "All Users"
+msgstr "所有用户"
+
+#, vue-format
+msgid "All users except selected"
+msgstr "除选中以外的所有用户"
+
+#, vue-format
+msgid "All Users Except Selected"
+msgstr "除选中以外的所有用户"
+
+#, vue-format
+msgid "All Users Except Selected Users"
+msgstr "除选中用户外的所有用户"
+
+#, vue-format
+msgid "All Users Except:"
+msgstr "所有除以下用户的用户："
+
+#, vue-format
+msgid "Allocated"
+msgstr "分配"
+
+#, vue-format
+msgid "Allow"
+msgstr "允许"
+
+#, vue-format
+msgid ""
+"Allow a Reseller to Backup/Restore their Users(Separate from User Backup/"
+"Restore)"
+msgstr "允许分销者备份及还原其用户数据（独立于用户备份/还原）"
+
+#, vue-format
+msgid "Allow All"
+msgstr "允许全部"
+
+#, vue-format
+msgid "Allow any hostname ending in %{ domain } to send email for this domain"
+msgstr "允许任何以 %{ domain } 结尾的域名来为这个域名发送邮件"
+
+#, vue-format
+msgid ""
+"Allow API logins with the current User/password. Login Keys and Session Keys "
+"are always allowed."
+msgstr "允许使用当前用户/密码登陆API。这个设置不会影响登陆Key和会话Key的登陆。"
+
+#, vue-format
+msgid "Allow Blank Referrer"
+msgstr "允许空白来源"
+
+#, vue-format
+msgid "Allow current IP address of the domain to send email for this domain"
+msgstr "允许域名当前IP地址为此域名发送电子邮件"
+
+#, vue-format
+msgid "Allow HTM:"
+msgstr "允许 HTM:"
+
+#, vue-format
+msgid "Allow Login:"
+msgstr "允许登录："
+
+#, vue-format
+msgid "Allow Overselling"
+msgstr "允许超售"
+
+#, vue-format
+msgid "Allow Reseller to create sites with server IP"
+msgstr "允许经销商使用服务器IP创建网站"
+
+#, vue-format
+msgid "Allow Selected"
+msgstr "允许选中项目"
+
+#, vue-format
+msgid "Allow servers listed as MX to send email for this domain"
+msgstr "允许列为MX的服务器为此域名发送电子邮件"
+
+#, vue-format
+msgid ""
+"Allow the latest version of DirectAdmin to be pushed to this server, as "
+"needed."
+msgstr "根据需要，允许将最新版本的 DirectAdmin 推送到该服务器。"
+
+#, vue-format
+msgid "Allow Users with less than"
+msgstr "允许用户有少于"
+
+#, vue-format
+msgid "Allow:"
+msgstr "允许："
+
+#, vue-format
+msgid "Allowed IPs:"
+msgstr "允许的IP："
+
+#, vue-format
+msgid "Already exists"
+msgstr "已存在"
+
+#, vue-format
+msgid "Amount"
+msgstr "数量"
+
+#, vue-format
+msgid "Amount / Size"
+msgstr "数量 / 大小"
+
+#, vue-format
+msgid ""
+"An error occured when generating the expression description.  Check the cron "
+"expression syntax."
+msgstr "生成表达式描述时出错，请检查 cron 表达式语法。"
+
+#, vue-format
+msgid "and"
+msgstr "和"
+
+#, vue-format
+msgid "Anonymous FTP"
+msgstr "匿名 FTP"
+
+#, vue-format
+msgid "Anonymous FTP Accounts"
+msgstr "匿名 FTP 账号"
+
+#, vue-format
+msgid "Anonymous FTP Settings"
+msgstr "匿名 FTP 设置"
+
+#, vue-format
+msgid "Any domain that will be searched for a match"
+msgstr "将搜索匹配项的任何域名"
+
+#, vue-format
+msgid "Anything"
+msgstr "任何"
+
+#, vue-format
+msgid "Apache"
+msgstr "Apache"
+
+#, vue-format
+msgid "Apache Handlers"
+msgstr "Apache 处理程序"
+
+#, vue-format
+msgid "API Documentation"
+msgstr "API 文档"
+
+#, vue-format
+msgid "App"
+msgstr "APP"
+
+#, vue-format
+msgid "Apparent Usage:"
+msgstr "显性占用："
+
+#, vue-format
+msgid "Appears at the end of the virtualHost."
+msgstr "出现在虚拟主机末尾。"
+
+#, vue-format
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "添加在模板的最顶部，变量定义之前."
+
+#, vue-format
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr "放在所有context{} section里以用于密码保护目录."
+
+#, vue-format
+msgid "Appears in ALL location / sections. Use the LOCATION token."
+msgstr "出现在所有位置/部分中，使用位置令牌。"
+
+#, vue-format
+msgid "Appears in phpIniOverride{} section."
+msgstr "放在phpIniOverride{} section里."
+
+#, vue-format
+msgid "Appears in rewrite{} section."
+msgstr "在 rewrite{} 部分显示."
+
+#, vue-format
+msgid "Appears in scripthandler{} section."
+msgstr "放在scripthandler{} section里."
+
+#, vue-format
+msgid "Appears in vhssl{} section."
+msgstr "放在vhssl{} section里."
+
+#, vue-format
+msgid "Appears just before the <Directory> section."
+msgstr "在 <Directory> section 上方."
+
+#, vue-format
+msgid "Appears just before the webapps include."
+msgstr "显示在 webapps include 上方。"
+
+#, vue-format
+msgid "Append"
+msgstr "追加"
+
+#, vue-format
+msgid "Application"
+msgstr "应用"
+
+#, vue-format
+msgid "Application Options"
+msgstr "应用程序选项"
+
+#, vue-format
+msgid "Applications"
+msgstr "应用"
+
+#, vue-format
+msgid "Apply Template"
+msgstr "应用模板"
+
+#, vue-format
+msgid "Apply To"
+msgstr "应用于"
+
+#, vue-format
+msgid "Apply to all users"
+msgstr "应用到所有用户上"
+
+#, vue-format
+msgid "Apply to All Users"
+msgstr "应用到所有用户"
+
+#, vue-format
+msgid "Apply to existing domains"
+msgstr "应用于现有的域名"
+
+#, vue-format
+msgid "Apply to me"
+msgstr "应用到当前账号"
+
+#, vue-format
+msgid "Apply to Me"
+msgstr "应用到当前账号"
+
+#, vue-format
+msgid "Approve Password"
+msgstr "批准密码"
+
+#, vue-format
+msgid "April"
+msgstr "4月"
+
+#, vue-format
+msgid "Archive Size"
+msgstr "存档大小"
+
+#, vue-format
+msgid "Are you sure you want to activate \"%{ name }\" plugin?"
+msgstr "你确定要启用 \"%{ name }\" 插件吗？"
+
+#, vue-format
+msgid "Are you sure you want to add selected IP to skip list?"
+msgid_plural "Are you sure you want to add selected IPs to skip list?"
+msgstr[0] "确定要添加选定的IP到跳过列表吗？"
+
+#, vue-format
+msgid "Are you sure you want to add selected user to skip list?"
+msgid_plural "Are you sure you want to add selected users to skip list?"
+msgstr[0] "确定要添加选定的用户到跳过列表吗？"
+
+#, vue-format
+msgid "Are you sure you want to block selected %{ subject }?"
+msgstr "确定要屏蔽所选的%{ subject } 吗？"
+
+#, vue-format
+msgid "Are you sure you want to deactivate \"%{ name }\" plugin?"
+msgstr "确实要停用 \"%{ name }\" 插件吗？"
+
+#, vue-format
+msgid "Are you sure you want to delete \"%{ name }\" plugin?"
+msgstr "确定要删除 \"%{ name }\" 插件吗？"
+
+#, vue-format
+msgid "Are you sure you want to delete %{user} and their %{n} user?"
+msgid_plural "Are you sure you want to delete %{user} and their %{n} users?"
+msgstr[0] "确定要删除 %{user} 及其他 %{n} 个用户吗?"
+
+#, vue-format
+msgid "Are you sure you want to delete selected %{subject}"
+msgstr "确定要删除选中的 %{subject} 吗"
+
+#, vue-format
+msgid "Are you sure you want to delete user %{user}?"
+msgstr "确定要删除用户%{user}吗?"
+
+#, vue-format
+msgid "Are you sure you want to disable protection for %{path}?"
+msgstr "确定要关闭%{path}的保护吗?"
+
+#, vue-format
+msgid "Are you sure you want to disable this feature?"
+msgstr "确实要停用此功能吗？"
+
+#, vue-format
+msgid "Are you sure you want to install \"%{ name }\" plugin?"
+msgstr "你确定要安装 \"%{ name }\" 插件吗？"
+
+#, vue-format
+msgid "Are you sure you want to permanently delete selected WordPress website?"
+msgstr "您确定要永久删除所选 WordPress 网站吗？"
+
+#, vue-format
+msgid "Are you sure you want to reboot server?"
+msgstr "确实要重新启动服务器吗？"
+
+#, vue-format
+msgid "Are you sure you want to stop migration from %{ from } to %{ to }?"
+msgstr "确定要停止从 %{from} 到 %{to} 的迁移吗？"
+
+#, vue-format
+msgid "Are you sure you want to unblock selected IP?"
+msgid_plural "Are you sure you want to unblock selected IPs?"
+msgstr[0] "确实要取消拦截选中的IP吗？"
+
+#, vue-format
+msgid "Are you sure you want to uninstall \"%{ name }\" plugin?"
+msgstr "确定要卸载 \"%{name}\" 插件吗？"
+
+#, vue-format
+msgid "Are you sure you want to unlink selected IP?"
+msgid_plural "Are you sure you want to unlink selected IPs?"
+msgstr[0] "确实要 Unlink 选定 IP 的吗？"
+
+#, vue-format
+msgid "Are you sure you want to update \"%{ name }\" plugin?"
+msgstr "确定要更新 \"%{ name }\" 插件吗？"
+
+#, vue-format
+msgid "Arguments"
+msgstr "参数"
+
+#, vue-format
+msgid "Ascending"
+msgstr "升序"
+
+#, vue-format
+msgid "Assign"
+msgstr "分配"
+
+#, vue-format
+msgid "Assign Existing User to %{database}"
+msgstr "分配现有用户到 %{database}"
+
+#, vue-format
+msgid "Assign IP"
+msgid_plural "Assign IPs"
+msgstr[0] "分配IP"
+
+#, vue-format
+msgid "Assign IP to:"
+msgid_plural "Assign IPs to:"
+msgstr[0] "分配IP到:"
+
+#, vue-format
+msgid "Assign to Reseller"
+msgstr "分配给经销商"
+
+#, vue-format
+msgid "Assigned IP"
+msgid_plural "Assigned IPs"
+msgstr[0] "已分配的IP"
+
+#, vue-format
+msgid "Assigned IPs"
+msgstr "已分配的IP"
+
+#, vue-format
+msgid "Associated Directory"
+msgstr "关联目录"
+
+#, vue-format
+msgid "At"
+msgstr "在"
+
+#, vue-format
+msgid "at %s"
+msgstr "在 %s"
+
+#, vue-format
+msgid "at %s minutes past the hour"
+msgstr "整点 %s 分"
+
+#, vue-format
+msgid "at %s seconds past the minute"
+msgstr "在 %s 秒后"
+
+#, vue-format
+msgid "Attach"
+msgstr "附属"
+
+#, vue-format
+msgid "Attempts"
+msgstr "尝试次数"
+
+#, vue-format
+msgid "August"
+msgstr "8月"
+
+#, vue-format
+msgid "Authenticate"
+msgstr "验证"
+
+#, vue-format
+msgid "Authenticate to send signals"
+msgstr "验证发送信号"
+
+#, vue-format
+msgid "Authentication"
+msgstr "验证"
+
+#, vue-format
+msgid "Authentication Failure Reporting Format"
+msgstr "验证失败报告格式"
+
+#, vue-format
+msgid "Author"
+msgstr "作者"
+
+#, vue-format
+msgid "Authorize"
+msgstr "授权"
+
+#, vue-format
+msgid "Authorized Keys"
+msgstr "授权密钥"
+
+#, vue-format
+msgid "Auto"
+msgstr "自动"
+
+#, vue-format
+msgid "Auto + Confirm"
+msgstr "自动 + 确认"
+
+#, vue-format
+msgid "Auto SSL"
+msgstr "自动 SSL"
+
+#, vue-format
+msgid "Auto Update"
+msgstr "自动更新"
+
+#, vue-format
+msgid "Auto-responders"
+msgstr "自动回复"
+
+#, vue-format
+msgid "Auto-Responders"
+msgstr "自动回复"
+
+#, vue-format
+msgid "Automated SSL Certificates Information"
+msgstr "自动 SSL 证书信息"
+
+#, vue-format
+msgid "Automatically delete messages"
+msgstr "自动删除邮件"
+
+#, vue-format
+msgid "Automatically delete the key once the key expires"
+msgstr "密钥过期后自动删除密钥"
+
+#, vue-format
+msgid "Automatically delete the key once the key expires."
+msgstr "密钥过期后自动删除密钥。"
+
+#, vue-format
+msgid "Automatically delete tickets"
+msgstr "自动删除工单"
+
+#, vue-format
+msgid "autoresponder"
+msgid_plural "autoresponders"
+msgstr[0] "自动回复"
+
+#, vue-format
+msgid "Autoresponder"
+msgstr "自动回复"
+
+#, vue-format
+msgid "Autoresponders"
+msgstr "自动回复"
+
+#, vue-format
+msgid "Autoresponders: Includes all autoresponders and messages."
+msgstr "自动回复: 包括所有自动回复和消息。"
+
+#, vue-format
+msgid "Available"
+msgstr "可用"
+
+#, vue-format
+msgid "Available Tokens"
+msgstr "可用的Tokens"
+
+#, vue-format
+msgid "Available Update"
+msgstr "可用更新"
+
+#, vue-format
+msgid "Available Version"
+msgstr "可用版本"
+
+#, vue-format
+msgid ""
+"Avoid using the Ignore option unless you know what you are doing. Spammers "
+"will be sending you e-mails to random addresses, and this option will accept "
+"those e-mails. You will not know it because the accepted e-mails would be "
+"discarded. This greatly increases the server load unnecessarily. If you do "
+"not want the catch-all to be on, then use the Fail option instead."
+msgstr ""
+"除非您知道自己在做什么，否则避免使用忽略选项。 "
+"垃圾邮件将发送到随机地址，此选项将接受这些电子邮件。 "
+"你不会知道它，因为接受的电子邮件会被丢弃。这会不必要地增加服务器负荷。 "
+"如果你不想打开抓取器，则使用故障选项。"
+
+#, vue-format
+msgid "AWstats"
+msgstr "AWstats（日志分析统计）"
+
+#, vue-format
+msgid "AWStats"
+msgstr "AWstats（日志分析统计）"
+
+#, vue-format
+msgid "Back"
+msgstr "返回"
+
+#, vue-format
+msgid "Back to Homepage"
+msgstr "返回首页"
+
+#, vue-format
+msgid "Back to limit hits table..."
+msgstr "返回限制命中表..."
+
+#, vue-format
+msgid "Backed up Web Logs"
+msgstr "已备份的Web 日志"
+
+#, vue-format
+msgid "Backup"
+msgstr "备份"
+
+#, vue-format
+msgid "Backup Decryption"
+msgstr "备份解密"
+
+#, vue-format
+msgid "Backup Encryption"
+msgstr "备份加密"
+
+#, vue-format
+msgid "Backup ID"
+msgstr "备份ID"
+
+#, vue-format
+msgid "Backup Path"
+msgstr "备份路径"
+
+#, vue-format
+msgid "Backup/Restore Settings"
+msgstr "备份/恢复设置"
+
+#, vue-format
+msgid "Bad Request: %{ message }"
+msgstr "错误请求：%{ message }"
+
+#, vue-format
+msgid "Bandwidth"
+msgstr "流量"
+
+#, vue-format
+msgid "Bandwidth (MB)"
+msgstr "流量 (MB)"
+
+#, vue-format
+msgid "Bandwidth / Disk Usage"
+msgstr "带宽/磁盘使用量"
+
+#, vue-format
+msgid "Bandwidth Breakdown"
+msgstr "流量细分"
+
+#, vue-format
+msgid "Bandwidth Breakdown for %{month} %{year}"
+msgstr "%{year} 年 %{month}% 月的流量细分"
+
+#, vue-format
+msgid "Bandwidth Breakdown for %{user}: %{year} %{month}"
+msgstr "%{user}的%{year} 年 %{month}% 月流量细分"
+
+#, vue-format
+msgid "Basic Configuration"
+msgstr "基本配置"
+
+#, vue-format
+msgid ""
+"Be sure to copy and backup the \"RSA PRIVATE KEY\" along with the request. "
+"You will need it when installing the certificate. Because you're an admin, "
+"you will be saving to the \"shared server certificate\" and the key is not "
+"saved anywhere until you paste it with the certificate."
+msgstr ""
+"请务必复制并备份\"RSA PRIVATE Key\"和请求"
+"。您在安装证书时将需要它。因为你是管理员， 您将保存到“共享服务器证书”并且密钥"
+"不会在任何地方保存，直到您将其粘贴到证书上。"
+
+#, vue-format
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr "请务必重新扫描新的二维码，旧的二维码将全部失效。"
+
+#, vue-format
+msgid "between %s and %s"
+msgstr "在 %s 和 %s 之间"
+
+#, vue-format
+msgid "Billing Issue"
+msgstr "账单问题"
+
+#, vue-format
+msgid "bl_auth"
+msgstr "bl_auth"
+
+#, vue-format
+msgid "bl_script"
+msgstr "bl_script"
+
+#, vue-format
+msgid "bl_smtp"
+msgstr "bl_smtp"
+
+#, vue-format
+msgid "bl_usernames"
+msgstr "bl_usernames"
+
+#, vue-format
+msgid "Blackhole"
+msgstr "Blackhole"
+
+#, vue-format
+msgid "Blacklist IPs for excessive DA login attempts"
+msgstr "将DA登陆失败次数过多的IP地址拉入黑名单"
+
+#, vue-format
+msgid "Blacklist Usernames"
+msgstr "黑名单用户名"
+
+#, vue-format
+msgid "Blank will default to %{ limit }"
+msgstr "空白将默认为%{ limit }"
+
+#, vue-format
+msgid "Blank will default to unlimited"
+msgstr "空白将默认为无限制"
+
+#, vue-format
+msgid "Block"
+msgstr "拦截"
+
+#, vue-format
+msgid "Block %{ subject }"
+msgstr "拦截 %{ subject }"
+
+#, vue-format
+msgid "Block a specific E-mail address"
+msgstr "拦截一个特定的邮箱地址"
+
+#, vue-format
+msgid "Block all e-mails containing stop words"
+msgstr "拦截包含停止词的所有电子邮件"
+
+#, vue-format
+msgid "Block all e-mails larger than (KB)"
+msgstr "拦截所有大于此尺寸（KB）的电子邮件"
+
+#, vue-format
+msgid "Block By"
+msgstr "拦截条件"
+
+#, vue-format
+msgid "Block IP"
+msgstr "拦截IP"
+
+#, vue-format
+msgid "Block List"
+msgstr "拦截名单"
+
+#, vue-format
+msgid "Block mail from an entire domain"
+msgstr "屏蔽来自这一域名的所有邮件"
+
+#, vue-format
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker 拦截的路径"
+
+#, vue-format
+msgid "BlockCracking Blocked Paths"
+msgstr "BlockCracking 拦截的路径"
+
+#, vue-format
+msgid "BlockCracking Disabled"
+msgstr "BlockCracking 已停用"
+
+#, vue-format
+msgid "Blocked"
+msgstr "已拦截"
+
+#, vue-format
+msgid "Blocked Permanently"
+msgstr "永久拦截"
+
+#, vue-format
+msgid "Blocks out common adult phrases, words, an addresses"
+msgstr "阻止常用的成人短语，单词，地址"
+
+#, vue-format
+msgid "Both"
+msgstr "不限"
+
+#, vue-format
+msgid "Bounce"
+msgstr "退信"
+
+#, vue-format
+msgid "Branch"
+msgstr "分支"
+
+#, vue-format
+msgid "Branches"
+msgstr "分支"
+
+#, vue-format
+msgid "Branding"
+msgstr "品牌推广"
+
+#, vue-format
+msgid "Brute Force Monitor"
+msgstr "暴力破解监控"
+
+#, vue-format
+msgid "Brute Force Monitor: Block List"
+msgstr "暴力破解检测器：拦截名单"
+
+#, vue-format
+msgid "Brute Force Monitor: IP List"
+msgstr "暴力破解检测器：IP列表"
+
+#, vue-format
+msgid "Brute Force Monitor: Skip List"
+msgstr "暴力破解检测器：跳过列表"
+
+#, vue-format
+msgid "Brute Force Monitor: User List"
+msgstr "暴力破解检测器：用户列表"
+
+#, vue-format
+msgid "By"
+msgstr "由"
+
+#, vue-format
+msgid "CA Root Certificate"
+msgstr "CA Root证书"
+
+#, vue-format
+msgid "Callable"
+msgstr "可调用"
+
+#, vue-format
+msgid "Can Update"
+msgstr "可更新"
+
+#, vue-format
+msgid "Can use Server IP"
+msgstr "可以使用服务器IP"
+
+#, vue-format
+msgid "Cancel"
+msgstr "取消"
+
+#, vue-format
+msgid "Cancel Process"
+msgstr "取消进程"
+
+#, vue-format
+msgid "Cannot execute your request"
+msgstr "无法执行请求"
+
+#, vue-format
+msgid "Cannot Execute Your Request"
+msgstr "无法执行请求"
+
+#, vue-format
+msgid "Catch-All E-mail"
+msgstr "捕获所有电子邮件"
+
+#, vue-format
+msgid "Category"
+msgstr "分类"
+
+#, vue-format
+msgid "Category Icons (used in standard layout)"
+msgstr "类别图标（用于标准布局）"
+
+#, vue-format
+msgid "CC Address"
+msgstr "CC地址"
+
+#, vue-format
+msgid "CC should not be equal to Autoresponder address"
+msgstr "CC 不应等于自动回复地址"
+
+#, vue-format
+msgid "Certificate"
+msgstr "证书"
+
+#, vue-format
+msgid "Certificate Authority SSL Certificate"
+msgstr "证书颁发机构SSL证书"
+
+#, vue-format
+msgid "Certificate Entries"
+msgstr "证书数目"
+
+#, vue-format
+msgid "Certificate Expiry"
+msgstr "证书到期日期"
+
+#, vue-format
+msgid "Certificate Hosts"
+msgstr "证书主机"
+
+#, vue-format
+msgid "Certificate Key"
+msgstr "证书Key"
+
+#, vue-format
+msgid "Certificate Request"
+msgstr "证书请求"
+
+#, vue-format
+msgid "Certificate Request copied to clipboard"
+msgstr "证书请求已复制到剪贴板"
+
+#, vue-format
+msgid "Certificate Type"
+msgstr "证书类型"
+
+#, vue-format
+msgid "Certificates"
+msgstr "证书"
+
+#, vue-format
+msgid "CGI"
+msgstr "CGI"
+
+#, vue-format
+msgid "CGI Access"
+msgstr "CGI 访问"
+
+#, vue-format
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+#, vue-format
+msgid "Change"
+msgstr "更改"
+
+#, vue-format
+msgid "Change %{ username }'s password"
+msgstr "修改%{ username }的密码"
+
+#, vue-format
+msgid "Change Daily Limit"
+msgstr "更改每日限制"
+
+#, vue-format
+msgid "Change domain options"
+msgstr "更改域名选项"
+
+#, vue-format
+msgid "Change filename / path"
+msgstr "更改文件名/路径"
+
+#, vue-format
+msgid "Change IP"
+msgstr "更改IP"
+
+#, vue-format
+msgid "Change Limit/Quota"
+msgstr "更改限制/Quota"
+
+#, vue-format
+msgid "Change Limits"
+msgstr "更改限制"
+
+#, vue-format
+msgid "Change Package"
+msgstr "更改套餐"
+
+#, vue-format
+msgid "Change Package for User %{user}"
+msgstr "更改用户%{user}的套餐"
+
+#, vue-format
+msgid "Change password"
+msgstr "更改密码"
+
+#, vue-format
+msgid "Change Password"
+msgstr "更改密码"
+
+#, vue-format
+msgid "Change Password/Username"
+msgstr "更改密码/用户名"
+
+#, vue-format
+msgid "Change Passwords"
+msgstr "更改密码"
+
+#, vue-format
+msgid "Change position"
+msgstr "修改位置"
+
+#, vue-format
+msgid "Change privileges"
+msgstr "修改权限"
+
+#, vue-format
+msgid "Change sent emails daily limit"
+msgstr "更改每日限制发送邮件数量"
+
+#, vue-format
+msgid "Change the look and branding of login page"
+msgstr "更改登录页面的外观和品牌"
+
+#, vue-format
+msgid "Change the User's IP"
+msgstr "修改用户的IP"
+
+#, vue-format
+msgid "Changelog"
+msgstr "变更日志"
+
+#, vue-format
+msgid "Chart"
+msgstr "图表"
+
+#, vue-format
+msgid "Check"
+msgstr "检查"
+
+#, vue-format
+msgid "Check all"
+msgstr "选择所有"
+
+#, vue-format
+msgid "Check domain owner for Subdomain creation"
+msgstr "创建子域名时检查是否为域名所有者"
+
+#, vue-format
+msgid "Check url"
+msgstr "检查网址"
+
+#, vue-format
+msgid "Check usage every"
+msgstr "检查使用情况的周期"
+
+#, vue-format
+msgid "Children Count"
+msgstr "子计数"
+
+#, vue-format
+msgid "Chmod"
+msgstr "权限"
+
+#, vue-format
+msgid "Choose a new look"
+msgstr "选择一个新外观"
+
+#, vue-format
+msgid "Choose directories to backup"
+msgstr "选择要备份的目录"
+
+#, vue-format
+msgid "Choose files to backup"
+msgstr "选择要备份的文件"
+
+#, vue-format
+msgid "Choose one of possible container modes"
+msgstr "选择一种可能的容器模式"
+
+#, vue-format
+msgid "City"
+msgstr "城市"
+
+#, ignore-same, vue-format
+msgid "ClamAV"
+msgstr "ClamAV"
+
+#, vue-format
+msgid "ClamAV path was not found"
+msgstr "找不到 ClamAV 路径"
+
+#, vue-format
+msgid "ClamAV process does not exist anymore"
+msgstr "ClamAV 进程不存在"
+
+#, vue-format
+msgid "Class Path"
+msgstr "类路径"
+
+#, vue-format
+msgid "Clean Forwarders"
+msgstr "清除转发器"
+
+#, vue-format
+msgid "Clear"
+msgstr "清除"
+
+#, vue-format
+msgid "Clear All"
+msgstr "全部清除"
+
+#, vue-format
+msgid "Clear failed login attempts from log"
+msgstr "清除日志中的失败登录尝试"
+
+#, vue-format
+msgid "Clear Filter"
+msgstr "清除过滤器"
+
+#, vue-format
+msgid "Clear Key:"
+msgstr "清除密钥："
+
+#, vue-format
+msgid "Clear Message System"
+msgstr "清空消息系统"
+
+#, vue-format
+msgid "Clear NS"
+msgstr "清除NS"
+
+#, vue-format
+msgid "Clear Search"
+msgstr "清除搜索"
+
+#, vue-format
+msgid "Clear selection"
+msgstr "取消选定"
+
+#, vue-format
+msgid "Clear Selection"
+msgstr "取消选定"
+
+#, vue-format
+msgid "Clear Sorting"
+msgstr "清除排序"
+
+#, vue-format
+msgid "Clear Trash Bin"
+msgstr "清理回收站"
+
+#, vue-format
+msgid "Clear Zone"
+msgstr "清除区域"
+
+#, vue-format
+msgid "Click for details"
+msgstr "点击查看详情"
+
+#, vue-format
+msgid "Click for more info"
+msgstr "点击查看更多信息"
+
+#, vue-format
+msgid "Client IP"
+msgstr "客户端IP"
+
+#, vue-format
+msgid "Close"
+msgstr "关闭"
+
+#, vue-format
+msgid "Close Editor"
+msgstr "关闭编辑器"
+
+#, vue-format
+msgid "Closed"
+msgstr "已关闭"
+
+#, vue-format
+msgid "Closed + Confirm"
+msgstr "已关闭 + 确认"
+
+#, vue-format
+msgid "Codebase"
+msgstr "基准代码"
+
+#, vue-format
+msgid "Color"
+msgstr "颜色"
+
+#, vue-format
+msgid "Colors"
+msgstr "配色"
+
+#, vue-format
+msgid "Column"
+msgstr "列"
+
+#, vue-format
+msgid "Column Size"
+msgstr "列表大小"
+
+#, vue-format
+msgid "Columns"
+msgstr "栏目"
+
+#, vue-format
+msgid "Command"
+msgstr "命令"
+
+#, vue-format
+msgid "Commands:"
+msgstr "命令："
+
+#, vue-format
+msgid "Comment"
+msgstr "注释"
+
+#, vue-format
+msgid "Comments"
+msgstr "评论"
+
+#, vue-format
+msgid "Commit"
+msgstr "提交"
+
+#, vue-format
+msgid "Commit Differences"
+msgstr "提交差异"
+
+#, vue-format
+msgid "Commit: %{commit}..."
+msgstr "提交： %{commit}..."
+
+#, vue-format
+msgid "Common Name"
+msgstr "公用名(Common Name)"
+
+#, vue-format
+msgid "Company"
+msgstr "公司"
+
+#, vue-format
+msgid "Company Division"
+msgstr "公司部门"
+
+#, vue-format
+msgid "Complete Usage Statistics"
+msgstr "完整的使用统计"
+
+#, vue-format
+msgid "Component Colors"
+msgstr "组件颜色"
+
+#, vue-format
+msgid "Compress"
+msgstr "压缩"
+
+#, vue-format
+msgid "Compress and download"
+msgstr "压缩并下载"
+
+#, vue-format
+msgid "Compress Files"
+msgstr "压缩文件"
+
+#, vue-format
+msgid "Compressing folder..."
+msgstr "压缩文件夹中..."
+
+#, vue-format
+msgid "Conf. Files"
+msgstr "配置文件"
+
+#, vue-format
+msgid "Configuration"
+msgstr "配置"
+
+#, vue-format
+msgid "Configuration Check"
+msgstr "配置检查"
+
+#, vue-format
+msgid "Configure archive file"
+msgstr "配置归档文件"
+
+#, vue-format
+msgid "Configure Auto Update"
+msgstr "配置自动更新"
+
+#, vue-format
+msgid "Configure date and time formats used by defaults"
+msgstr "配置默认使用的日期和时间格式"
+
+#, vue-format
+msgid "Configure full system Backup"
+msgstr "配置完整系统备份"
+
+#, vue-format
+msgid "Configure Remote Transfer option"
+msgstr "配置远程传输选项"
+
+#, vue-format
+msgid "Configure skin options, colors & branding"
+msgstr "配置模板选项、颜色和品牌"
+
+#, vue-format
+msgid "Configure your own color schema"
+msgstr "配置您自己的颜色模式"
+
+#, vue-format
+msgid "Confirm"
+msgstr "确认"
+
+#, vue-format
+msgid "Confirm closing"
+msgstr "确认关闭"
+
+#, vue-format
+msgid "Confirm edit"
+msgstr "确认编辑"
+
+#, vue-format
+msgid "Confirmation"
+msgstr "确认"
+
+#, vue-format
+msgid "Connect"
+msgstr "连接"
+
+#, vue-format
+msgid "Connecting..."
+msgstr "连接中……"
+
+#, vue-format
+msgid "Connection Error"
+msgstr "连接错误"
+
+#, vue-format
+msgid "Connection Method"
+msgstr "连接方法"
+
+#, vue-format
+msgid "Contains"
+msgstr "包含"
+
+#, vue-format
+msgid "Content-Type"
+msgstr "Content-Type"
+
+#, vue-format
+msgid "Contents of the %{ filename } file for %{ domain }"
+msgstr "%{ domain }的%{ filename }文件内容"
+
+#, vue-format
+msgid "Control Panel"
+msgstr "控制面板"
+
+#, vue-format
+msgid "Convert"
+msgstr "转换"
+
+#, vue-format
+msgid "Copy"
+msgstr "复制"
+
+#, vue-format
+msgid "Copy Package"
+msgstr "复制包"
+
+#, vue-format
+msgid "Copy to %{directory}"
+msgstr "复制到 %{directory}"
+
+#, vue-format
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#, vue-format
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#, vue-format
+msgid "Copy/Move"
+msgstr "复制/移动"
+
+#, vue-format
+msgid "Copy/Move to..."
+msgstr "复制/移动..."
+
+#, vue-format
+msgid "Copy/Move..."
+msgstr "复制/移动..."
+
+#, vue-format
+msgid "Core Functions"
+msgstr "核心功能"
+
+#, vue-format
+msgid ""
+"Core functions are needed for the skin to work. Disable it for API only."
+msgstr "皮肤需要核心功能才能工作。 仅针对 API 禁用它。"
+
+#, vue-format
+msgid "Corrupted Plugin"
+msgstr "损坏的插件"
+
+#, vue-format
+msgid "Could not connect to remote host"
+msgstr "无法连接到远程主机"
+
+#, vue-format
+msgid "Count"
+msgstr "数量"
+
+#, vue-format
+msgid "Country"
+msgstr "国家"
+
+#, vue-format
+msgid "cPanel Import"
+msgstr "cPanel 导入"
+
+#, vue-format
+msgid "CPU"
+msgstr "CPU"
+
+#, vue-format
+msgid "CPU Pressure"
+msgstr "CPU负载"
+
+#, vue-format
+msgid "CPU(s):"
+msgstr "CPU数量:"
+
+#, vue-format
+msgid "CPUs count"
+msgstr "CPU数量"
+
+#, vue-format
+msgid "CPUs Information"
+msgstr "CPU信息"
+
+#, vue-format
+msgid "Create"
+msgstr "创建"
+
+#, vue-format
+msgid "Create A Certificate Request"
+msgstr "创建一个证书签名请求"
+
+#, vue-format
+msgid "Create a new Application"
+msgstr "创建一个新的应用程序"
+
+#, vue-format
+msgid "Create a new secret to begin."
+msgstr "创建一个新密钥以继续。"
+
+#, vue-format
+msgid "Create Account"
+msgstr "创建帐号"
+
+#, vue-format
+msgid "Create Admin"
+msgstr "创建管理员"
+
+#, vue-format
+msgid "Create Administrator"
+msgstr "创建管理员"
+
+#, vue-format
+msgid "Create Application"
+msgstr "创建应用程序"
+
+#, vue-format
+msgid "Create as an Alias"
+msgstr "创建为别名"
+
+#, vue-format
+msgid "Create Autoresponder"
+msgstr "创建自动回复"
+
+#, vue-format
+msgid "Create Backup"
+msgstr "创建备份"
+
+#, vue-format
+msgid "Create Cron Job"
+msgstr "创建定时任务"
+
+#, vue-format
+msgid "Create Database"
+msgstr "创建数据库"
+
+#, vue-format
+msgid "Create Domain"
+msgstr "创建域名"
+
+#, vue-format
+msgid "Create Domain Pointer"
+msgstr "创建域名指向"
+
+#, vue-format
+msgid "Create E-mail Forwarder"
+msgstr "创建邮件转发器"
+
+#, vue-format
+msgid "Create File"
+msgstr "创建文件"
+
+#, vue-format
+msgid "Create Folder"
+msgstr "创建文件夹"
+
+#, vue-format
+msgid "Create Forwarder"
+msgstr "创建转发器"
+
+#, vue-format
+msgid "Create Forwarders"
+msgstr "创建转发器"
+
+#, vue-format
+msgid "Create forwarders from raw data"
+msgstr "从原始数据创建转发器"
+
+#, vue-format
+msgid "Create FTP Account"
+msgstr "创建FTP账号"
+
+#, vue-format
+msgid "Create Handler"
+msgstr "新建Handler"
+
+#, vue-format
+msgid "Create Key"
+msgstr "创建Key"
+
+#, vue-format
+msgid "Create Login Key"
+msgstr "创建登陆Key"
+
+#, vue-format
+msgid "Create Mail Account"
+msgstr "创建Email账号"
+
+#, vue-format
+msgid "Create Mailing List"
+msgstr "新建邮件列表"
+
+#, vue-format
+msgid "Create Name Servers"
+msgstr "创建DNS服务器"
+
+#, vue-format
+msgid "Create new"
+msgstr "新建"
+
+#, vue-format
+msgid "Create new Database"
+msgstr "创建新数据库"
+
+#, vue-format
+msgid "Create New Database"
+msgstr "创建新数据库"
+
+#, vue-format
+msgid "Create new folder"
+msgstr "创建文件夹"
+
+#, vue-format
+msgid "Create New Package"
+msgstr "创建新套餐"
+
+#, vue-format
+msgid "Create New Redirect"
+msgstr "创建新的重定向"
+
+#, vue-format
+msgid "Create New User"
+msgstr "创建新用户"
+
+#, vue-format
+msgid "Create New User for %{database}"
+msgstr "为数据库%{database}创建新用户"
+
+#, vue-format
+msgid "Create Package"
+msgstr "创建套餐"
+
+#, vue-format
+msgid "Create repository"
+msgstr "创建版本库"
+
+#, vue-format
+msgid "Create Repository"
+msgstr "创建版本库"
+
+#, vue-format
+msgid "Create Reseller"
+msgstr "添加分销者"
+
+#, vue-format
+msgid "Create Reseller Package"
+msgstr "添加分销者套餐"
+
+#, vue-format
+msgid "Create Reverse IP Lookup"
+msgstr "创建反向IP查询"
+
+#, vue-format
+msgid "Create Route"
+msgstr "创建 Route"
+
+#, vue-format
+msgid "Create SSH Key"
+msgstr "创建 SSH Key"
+
+#, vue-format
+msgid "Create text file"
+msgstr "创建文本文件"
+
+#, vue-format
+msgid "Create Ticket"
+msgstr "创建工单"
+
+#, vue-format
+msgid "Create User"
+msgstr "创建用户"
+
+#, vue-format
+msgid "Create User Package"
+msgstr "创建用户套餐"
+
+#, vue-format
+msgid "Create Vacation Message"
+msgstr "创建假期自动回复消息"
+
+#, vue-format
+msgid "Create Wordpress Installation"
+msgstr "创建 Wordpress 安装"
+
+#, vue-format
+msgid "Create your own self signed certificate"
+msgstr "创建自签证书"
+
+#, vue-format
+msgid "Create Zone"
+msgstr "创建Zone"
+
+#, vue-format
+msgid "Create/Restore Backups"
+msgstr "创建/还原备份"
+
+#, vue-format
+msgid "Created"
+msgstr "已创建"
+
+#, vue-format
+msgid "Created:"
+msgstr "已创建："
+
+#, vue-format
+msgid "Creation in Progress"
+msgstr "创建中"
+
+#, vue-format
+msgid "Creator"
+msgstr "创建人"
+
+#, vue-format
+msgid "Cron"
+msgstr "定时任务"
+
+#, vue-format
+msgid "Cron job"
+msgid_plural "Cron jobs"
+msgstr[0] "定时任务"
+
+#, vue-format
+msgid "Cron Jobs"
+msgstr "Cron任务"
+
+#, vue-format
+msgid "Cron Schedule"
+msgstr "定时任务计划"
+
+#, vue-format
+msgid "Cron Settings"
+msgstr "定时任务设置"
+
+#, vue-format
+msgid "CSS"
+msgstr "CSS"
+
+#, vue-format
+msgid "CSS Styles"
+msgstr "CSS 样式"
+
+#, vue-format
+msgid "Ctrl+Enter to post reply"
+msgstr "按Ctrl + Enter发布回复"
+
+#, vue-format
+msgid "Current"
+msgstr "当前"
+
+#, vue-format
+msgid "Current IPs"
+msgstr "当前IP地址"
+
+#, vue-format
+msgid "Current Password:"
+msgstr "当前密码："
+
+#, vue-format
+msgid "Current Protected Directories"
+msgstr "当前受保护的目录"
+
+#, vue-format
+msgid "Current Time"
+msgstr "当前时间"
+
+#, vue-format
+msgid "Current Usage"
+msgstr "当前使用量"
+
+#, vue-format
+msgid "Custom"
+msgstr "自定义"
+
+#, vue-format
+msgid "Custom - Scan the desired path."
+msgstr "自定义 - 扫描所需的路径。"
+
+#, vue-format
+msgid "Custom Directories & Files"
+msgstr "自定义目录和文件"
+
+#, vue-format
+msgid "Custom Error Pages"
+msgstr "自定义错误页面"
+
+#, vue-format
+msgid "Custom HTTPD Configurations"
+msgstr "自定义 HTTPD 配置"
+
+#, vue-format
+msgid "Custom Items"
+msgstr "自定义项目"
+
+#, vue-format
+msgid "Custom number of bytes from the end of the file"
+msgstr "自定义文件末尾的字节数"
+
+#, vue-format
+msgid "Custom Path"
+msgstr "自定义路径"
+
+#, vue-format
+msgid "Custom username & password"
+msgstr "自定义用户名和密码"
+
+#, vue-format
+msgid "Customize"
+msgstr "定制"
+
+#, vue-format
+msgid "Customize application language"
+msgstr "自定义应用程序语言"
+
+#, vue-format
+msgid "Customize configuration"
+msgstr "自定义配置"
+
+#, vue-format
+msgid "Customize Evolution Skin"
+msgstr "自定义Evolution 皮肤"
+
+#, vue-format
+msgid "Customize Skin"
+msgstr "自定义皮肤"
+
+#, vue-format
+msgid "Customize your menu"
+msgstr "自定义菜单"
+
+#, vue-format
+msgid "DA build for OS"
+msgstr "DA build for OS"
+
+#, vue-format
+msgid "Daily E-mail limit per DirectAdmin User"
+msgstr "每个 DirectAdmin 用户的每日电子邮件限制"
+
+#, vue-format
+msgid "Daily limit per E-mail Account"
+msgstr "每个电子邮件帐户的每日限制"
+
+#, vue-format
+msgid "Danger"
+msgstr "危险"
+
+#, vue-format
+msgid "Dark"
+msgstr "黑暗"
+
+#, vue-format
+msgid "Dark Mode"
+msgstr "黑暗模式"
+
+#, vue-format
+msgid "Dashboard"
+msgstr "控制面板"
+
+#, vue-format
+msgid "database"
+msgid_plural "databases"
+msgstr[0] "数据库"
+
+#, vue-format
+msgid "Database"
+msgstr "数据库"
+
+#, vue-format
+msgid "Database Configuration"
+msgstr "数据库配置"
+
+#, vue-format
+msgid "Database Count"
+msgstr "数据库数量"
+
+#, vue-format
+msgid "Database Data"
+msgstr "数据库数据"
+
+#, vue-format
+msgid "Database Disk Usage"
+msgstr "数据库磁盘使用情况"
+
+#, vue-format
+msgid "Database Name"
+msgstr "数据库名称"
+
+#, vue-format
+msgid "Database Name:"
+msgstr "数据库名称："
+
+#, vue-format
+msgid "Database Password:"
+msgstr "数据库密码:"
+
+#, vue-format
+msgid "Database Settings"
+msgstr "数据库设置"
+
+#, vue-format
+msgid "Database Settings: Backs up all DB Users and DB Settings"
+msgstr "数据库设置：备份所有数据库用户和数据库设置"
+
+#, vue-format
+msgid "Database User Name"
+msgstr "数据库用户名"
+
+#, vue-format
+msgid "Database User Password"
+msgstr "数据库密码"
+
+#, vue-format
+msgid "Database User:"
+msgstr "数据库用户："
+
+#, vue-format
+msgid "Databases"
+msgstr "数据库"
+
+#, vue-format
+msgid "Date"
+msgstr "日期"
+
+#, vue-format
+msgid "Date & Time Format"
+msgstr "日期＆时间格式"
+
+#, vue-format
+msgid "Date Added"
+msgstr "已添加日期"
+
+#, vue-format
+msgid "Date Blocked"
+msgstr "已屏蔽日期"
+
+#, vue-format
+msgid "Date Created"
+msgstr "日期已创建"
+
+#, vue-format
+msgid "Date Format"
+msgstr "日期格式"
+
+#, vue-format
+msgid "Date Formats"
+msgstr "日期格式"
+
+#, vue-format
+msgid "Date Range"
+msgstr "日期范围"
+
+#, vue-format
+msgid "Day"
+msgid_plural "Days"
+msgstr[0] "天数"
+
+#, vue-format
+msgid "Day of Month"
+msgstr "月份的天"
+
+#, vue-format
+msgid "Day of Month: %{dayofmonth}"
+msgstr "日：%{dayofmonth}"
+
+#, vue-format
+msgid "Day of Week"
+msgstr "一周的天"
+
+#, vue-format
+msgid "Day of Week: %{dayofweek}"
+msgstr "星期几：%{dayofweek}"
+
+#, vue-format
+msgid "days"
+msgstr "天数"
+
+#, vue-format
+msgid "Days"
+msgstr "天数"
+
+#, vue-format
+msgid "Days after entry was made."
+msgstr "条目创建后天数。"
+
+#, vue-format
+msgid "Days."
+msgstr "天。"
+
+#, vue-format
+msgid "DB Entries"
+msgstr "数据库条目"
+
+#, vue-format
+msgid "DB Name is too long"
+msgstr "数据库名过长"
+
+#, vue-format
+msgid "Deactivate"
+msgstr "停用"
+
+#, vue-format
+msgid "December"
+msgstr "12月"
+
+#, vue-format
+msgid "Default"
+msgstr "默认"
+
+#, vue-format
+msgid "Default (Off)"
+msgstr "默认（关闭）"
+
+#, vue-format
+msgid "Default (On)"
+msgstr "默认（开启）"
+
+#, vue-format
+msgid "Default Domain"
+msgstr "默认域名"
+
+#, vue-format
+msgid "Default Layout"
+msgstr "默认布局"
+
+#, vue-format
+msgid "Defaults for new domains"
+msgstr "新域名默认"
+
+#, vue-format
+msgid "Deferred"
+msgstr "延期"
+
+#, vue-format
+msgid "Delete"
+msgstr "删除"
+
+#, vue-format
+msgid "Delete %{subject}"
+msgstr "删除 %{subject}"
+
+#, vue-format
+msgid "Delete Admin"
+msgid_plural "Delete Admins"
+msgstr[0] "删除管理员"
+
+#, vue-format
+msgid "Delete Extension"
+msgstr "删除扩展"
+
+#, vue-format
+msgid "Delete Handler"
+msgstr "删除处理程序"
+
+#, vue-format
+msgid "Delete IP from Reseller"
+msgstr "从经销商中删除IP"
+
+#, vue-format
+msgid "Delete Mime Type"
+msgstr "删除MIME类型"
+
+#, vue-format
+msgid "Delete Reseller"
+msgid_plural "Delete Resellers"
+msgstr[0] "删除经销商"
+
+#, vue-format
+msgid "Delete Selected"
+msgstr "删除选中项目"
+
+#, vue-format
+msgid "Delete the local backup after remote transfer"
+msgstr "远程传输后删除本地备份"
+
+#, vue-format
+msgid "Delete web data"
+msgstr "删除 web 数据"
+
+#, vue-format
+msgid "Delete WordPress"
+msgstr "删除 WordPress"
+
+#, vue-format
+msgid "Deleted"
+msgstr "已删除"
+
+#, vue-format
+msgid "Deleted Trash Data"
+msgstr "删除垃圾数据"
+
+#, vue-format
+msgid "Deleted User Bandwidth"
+msgstr "已删除用户带宽"
+
+#, vue-format
+msgid "Deletes local file before creating the next one"
+msgstr "在创建下一个之前先删除本地的文件"
+
+#, vue-format
+msgid ""
+"Deleting WordPress will remove all files and database tables used by this "
+"installation."
+msgstr "删除 WordPress 将删除此安装使用的所有文件和数据库表。"
+
+#, vue-format
+msgid "Delivered"
+msgstr "交付"
+
+#, vue-format
+msgid "Deny"
+msgstr "拒绝"
+
+#, vue-format
+msgid "Deny Selected"
+msgstr "拒绝选择"
+
+#, vue-format
+msgid "Deploy"
+msgstr "部署"
+
+#, vue-format
+msgid "Deploy Branch"
+msgstr "部署分支"
+
+#, vue-format
+msgid "Deploy Directory"
+msgstr "部署目录"
+
+#, vue-format
+msgid "Deployment completed"
+msgstr "部署已完成"
+
+#, vue-format
+msgid "Descending"
+msgstr "降序"
+
+#, vue-format
+msgid "Description"
+msgstr "描述"
+
+#, vue-format
+msgid "Descriptor for the Key"
+msgstr "Key描述"
+
+#, vue-format
+msgid "Destination"
+msgstr "目标"
+
+#, vue-format
+msgid "Destination already in list"
+msgstr "目标已在列表中"
+
+#, vue-format
+msgid "Destination Email"
+msgstr "目标电子邮件"
+
+#, vue-format
+msgid ""
+"Destination email is currently being used for migration by another process"
+msgstr "目标电子邮件当前正被另一个进程用于迁移"
+
+#, vue-format
+msgid "Destination Server"
+msgstr "目标服务器"
+
+#, vue-format
+msgid "Destination URL"
+msgstr "目标URL"
+
+#, vue-format
+msgid "Detach"
+msgstr "分离"
+
+#, vue-format
+msgid "Details"
+msgstr "详情"
+
+#, vue-format
+msgid "Details for %{ip}"
+msgstr "%{ip}的详细信息"
+
+#, vue-format
+msgid "Details for user \"%{username}\""
+msgstr "用户\"%{username}\"的详情"
+
+#, vue-format
+msgid "Details:"
+msgstr "详细信息:"
+
+#, vue-format
+msgid "Detected build for OS"
+msgstr "Detected build for OS"
+
+#, vue-format
+msgid "Detected server OS"
+msgstr "检测到的服务器操作系统"
+
+#, vue-format
+msgid "DEV Playground"
+msgstr "DEV Playground"
+
+#, vue-format
+msgid "Device"
+msgstr "设备"
+
+#, vue-format
+msgid "Device: %{ device }"
+msgstr "设备: %{ device }"
+
+#, vue-format
+msgid "Devices"
+msgstr "设备"
+
+#, vue-format
+msgid "Difficult Password Enforcement"
+msgstr "高强度密码强制要求"
+
+#, vue-format
+msgid "Digest Issue"
+msgstr "摘要问题"
+
+#, vue-format
+msgid "Digest MaxDays"
+msgstr "摘要最大天数"
+
+#, vue-format
+msgid "Digest MaxLines"
+msgstr "摘要最大行数"
+
+#, vue-format
+msgid "digest subscriber"
+msgid_plural "digest subscribers"
+msgstr[0] "Digest订阅者"
+
+#, vue-format
+msgid "Digest Subscribers"
+msgstr "摘要订阅者"
+
+#, vue-format
+msgid "Digest Volume"
+msgstr "摘要卷"
+
+#, vue-format
+msgid "Direct Admin"
+msgstr "Direct Admin"
+
+#, vue-format
+msgid "DirectAdmin"
+msgstr "DirectAdmin"
+
+#, vue-format
+msgid "DirectAdmin Account"
+msgstr "DirectAdmin帐号"
+
+#, vue-format
+msgid "DirectAdmin legacy"
+msgstr "DirectAdmin 旧版"
+
+#, vue-format
+msgid "DirectAdmin version and updates"
+msgstr "DirectAdmin 版本和更新"
+
+#, vue-format
+msgid "DirectAdmin Web Control Panel © %{ year } JBMC Software"
+msgstr "DirectAdmin Web Control Panel © %{ year } JBMC Software"
+
+#, vue-format
+msgid "directadmin.conf values"
+msgstr "directadmin.conf内容"
+
+#, vue-format
+msgid "Direction"
+msgstr "方向"
+
+#, vue-format
+msgid "Direction:"
+msgstr "方向:"
+
+#, vue-format
+msgid "Directories"
+msgstr "目录"
+
+#, vue-format
+msgid "Directory"
+msgstr "目录"
+
+#, vue-format
+msgid "Directory %{ path } already protected."
+msgstr "目录%{ path }已被保护."
+
+#, vue-format
+msgid "Directory scan process canceled"
+msgstr "目录扫描进程已取消"
+
+#, vue-format
+msgid "Directory scan process started"
+msgstr "目录扫描进程已启动"
+
+#, vue-format
+msgid "Directory:"
+msgstr "目录："
+
+#, vue-format
+msgid "Dirs"
+msgstr "目录"
+
+#, vue-format
+msgid "Disable"
+msgstr "禁用"
+
+#, vue-format
+msgid "Disable Auto Reload"
+msgstr "禁用自动重新加载"
+
+#, vue-format
+msgid "Disable Auto-Renew"
+msgstr "禁用自动续订"
+
+#, vue-format
+msgid "Disable auto-renew after certificate request failure"
+msgstr "证书请求失败后禁用自动续订"
+
+#, vue-format
+msgid "Disable DKIM"
+msgstr "停用DKIM"
+
+#, vue-format
+msgid "Disable Hotlinks Protection"
+msgstr "停用防盗链保护"
+
+#, vue-format
+msgid "Disable Open Basedir"
+msgstr "停用Open Basedir"
+
+#, vue-format
+msgid "Disable Rule"
+msgstr "禁用规则"
+
+#, vue-format
+msgid "Disable SpamAssassin"
+msgstr "停用SpamAssassin"
+
+#, vue-format
+msgid "Disable SSL"
+msgstr "停用SSL"
+
+#, vue-format
+msgid "Disabled"
+msgstr "禁用"
+
+#, vue-format
+msgid "Disabled Rules"
+msgstr "禁用规则"
+
+#, vue-format
+msgid "Discard unsaved changes?"
+msgstr "是否放弃未保存的更改？"
+
+#, vue-format
+msgid "Disconnect"
+msgstr "断开"
+
+#, vue-format
+msgid "Disk Space"
+msgstr "磁盘空间"
+
+#, vue-format
+msgid "Disk Space (MB)"
+msgstr "磁盘空间 (MB)"
+
+#, vue-format
+msgid "Disk Usage"
+msgstr "磁盘使用量"
+
+#, vue-format
+msgid "Display as grid"
+msgstr "显示为网格"
+
+#, vue-format
+msgid "Display as Grid"
+msgstr "显示为网格"
+
+#, vue-format
+msgid "Display as list"
+msgstr "显示为列表"
+
+#, vue-format
+msgid "Display as List"
+msgstr "显示为列表"
+
+#, vue-format
+msgid "Display Mode: Grid"
+msgstr "显示模式: 网格"
+
+#, vue-format
+msgid "Display Mode: Table"
+msgstr "显示为表格"
+
+#, vue-format
+msgid "DLV Record"
+msgstr "DLV记录"
+
+#, vue-format
+msgid "DNS"
+msgstr "DNS"
+
+#, vue-format
+msgid "DNS Administration"
+msgstr "DNS管理"
+
+#, vue-format
+msgid "DNS Control"
+msgstr "DNS 控制"
+
+#, vue-format
+msgid ""
+"DNS Control is disabled for this User. You can edit the zone because your "
+"master account has DNS Control."
+msgstr "该用户的 DNS 控制被禁用。 您可以编辑区域，因为您的主账户具有 DNS 控制。"
+
+#, vue-format
+msgid "DNS data"
+msgstr "DNS数据"
+
+#, vue-format
+msgid "DNS Management"
+msgstr "DNS 管理"
+
+#, vue-format
+msgid "DNS Only"
+msgstr "仅 DNS"
+
+#, vue-format
+msgid "DNS Provider"
+msgstr "DNS 提供商"
+
+#, vue-format
+msgid "DNS Provider Configuration"
+msgstr "DNS 提供商配置"
+
+#, vue-format
+msgid "DNS record"
+msgid_plural "DNS Records"
+msgstr[0] "DNS记录"
+
+#, vue-format
+msgid "DNSSEC"
+msgstr "DNSSEC"
+
+#, vue-format
+msgid "Do not add a whole <Virtualhost>..</VirtualHost>"
+msgstr "不要添加完整的 <Virtualhost>..</VirtualHost>"
+
+#, vue-format
+msgid "Do not add a whole server { ... } entry."
+msgstr "不要添加整个 server { ... } 条目。"
+
+#, vue-format
+msgid "Do not add a whole virtualHost { ... } entry."
+msgstr "不要添加整个 virtualHost { ... } 条目。"
+
+#, vue-format
+msgid "Do not remove DNS zones of domains owned by the user."
+msgstr "不要移除有用户的域名的DNS Zone。"
+
+#, vue-format
+msgid "Do not use CAPS, www, or http:// in your domain name"
+msgstr "不要在域名中使用大写字母，也不要包含www，或http://"
+
+#, vue-format
+msgid "Do you want to edit non text type file?"
+msgstr "你确定要编辑非文本类型的文件吗？"
+
+#, vue-format
+msgid "Do you wish to rewrite the subject of a spam e-mail?"
+msgstr "您是否希望重写垃圾电子邮件的主题？"
+
+#, vue-format
+msgid "Docroot"
+msgstr "文档根目录"
+
+#, vue-format
+msgid "Document Root to Demo Skin"
+msgstr "Demo皮肤的根目录"
+
+#, vue-format
+msgid "Does not exist"
+msgstr "不存在"
+
+#, vue-format
+msgid "domain"
+msgid_plural "domains"
+msgstr[0] "域名"
+
+#, vue-format
+msgid "Domain"
+msgstr "域名"
+
+#, vue-format
+msgid "Domain Check"
+msgstr "域名检查"
+
+#, vue-format
+msgid "Domain Directory"
+msgstr "域名目录"
+
+#, vue-format
+msgid "Domain IPs"
+msgstr "域名IP"
+
+#, vue-format
+msgid ""
+"Domain name has been automatically converted to punycode format. Punycode is "
+"used to encode internationalized domain names (IDN) by converting Unicode "
+"characters to ASCII."
+msgstr "域名已自动转换为 punycode 格式。Punycode 用于通过将 Unicode 字符转换为 ASCII "
+"来编码国际化域名 (IDN)。"
+
+#, vue-format
+msgid "Domain name punycoded"
+msgstr "已转化为punycode的域名"
+
+#, vue-format
+msgid "Domain Name:"
+msgstr "域名:"
+
+#, vue-format
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "域名指向"
+
+#, vue-format
+msgid "Domain Pointers"
+msgstr "域名指向"
+
+#, vue-format
+msgid "Domain policy type"
+msgstr "域名策略类型"
+
+#, vue-format
+msgid "Domain Setup"
+msgstr "域名设置"
+
+#, vue-format
+msgid "Domain Statistics"
+msgstr "域名统计"
+
+#, vue-format
+msgid "Domain:"
+msgstr "域名："
+
+#, vue-format
+msgid "Domain: %{ domain }"
+msgstr "域名: %{ domain }"
+
+#, vue-format
+msgid "Domain(s)"
+msgstr "域名"
+
+#, vue-format
+msgid "Domains"
+msgstr "域名"
+
+#, vue-format
+msgid "Domains - Scan the domains directory."
+msgstr "域名 - 扫描域名目录。"
+
+#, vue-format
+msgid "Domains Directory"
+msgstr "域名目录"
+
+#, vue-format
+msgid "Domains Directory: Backs up all user files for all domains"
+msgstr "域名目录: 备份所有域名的所有用户文件"
+
+#, vue-format
+msgid "Domains filter"
+msgstr "域名过滤"
+
+#, vue-format
+msgid "Done"
+msgstr "完成"
+
+#, vue-format
+msgid "Dowload"
+msgstr "下载"
+
+#, vue-format
+msgid "Download"
+msgstr "下载"
+
+#, vue-format
+msgid "Download as GZ"
+msgstr "下载为GZ"
+
+#, vue-format
+msgid "Download as SQL"
+msgstr "下载为SQL"
+
+#, vue-format
+msgid "Download Backup"
+msgstr "下载备份"
+
+#, vue-format
+msgid "Downloading %{name}"
+msgstr "正在下载 %{name}"
+
+#, vue-format
+msgid "Drop E-mail"
+msgstr "删除Email"
+
+#, vue-format
+msgid "Drop file here or click to upload"
+msgid_plural "Drop files here or click to upload"
+msgstr[0] "拖拽文件至此区域或点击进行上传"
+
+#, vue-format
+msgid "Drop here to upload"
+msgstr "拖拽到此处上传"
+
+#, vue-format
+msgid "DS Record"
+msgstr "DS 记录"
+
+#, vue-format
+msgid "Due to advanced SPF record syntax, text-mode is used for SPF changes."
+msgstr "由于高级SPF记录语法，文本模式用于SPF更改。"
+
+#, vue-format
+msgid "Duplicate"
+msgstr "副本"
+
+#, vue-format
+msgid "Duplicate to pointers"
+msgstr "复制到指向"
+
+#, vue-format
+msgid "Duration"
+msgstr "期间"
+
+#, vue-format
+msgid "Dynamic"
+msgstr "动态"
+
+#, vue-format
+msgid "E-mail"
+msgstr "电子邮件"
+
+#, vue-format
+msgid "E-Mail"
+msgstr "电子邮件"
+
+#, vue-format
+msgid "E-mail a copy of all messages"
+msgstr "通过邮件发送一份全部消息的副本"
+
+#, vue-format
+msgid "E-mail accounts"
+msgstr "邮箱账号"
+
+#, vue-format
+msgid "E-mail Accounts"
+msgstr "邮箱账号"
+
+#, vue-format
+msgid "E-mail Accounts List for all domains (names and passwords)"
+msgstr "所有域名的邮箱账号列表（名字及密码）"
+
+#, vue-format
+msgid "E-mail Address:"
+msgstr "邮件地址:"
+
+#, vue-format
+msgid "E-mail Body Chunk"
+msgstr "电子邮件正文"
+
+#, vue-format
+msgid "E-mail Daily Limit"
+msgstr "电子邮件每日限制"
+
+#, vue-format
+msgid "E-mail Data"
+msgstr "邮箱数据"
+
+#, vue-format
+msgid ""
+"E-mail Data: Includes the messages from the Inbox, IMAP Folders, and webmail "
+"data."
+msgstr "邮箱数据: 包括来自收件箱、IMAP 文件夹和 webmail 数据的消息。"
+
+#, vue-format
+msgid "E-mail Disk Usage"
+msgstr "邮箱磁盘使用情况"
+
+#, vue-format
+msgid "E-mail Filters"
+msgstr "邮件筛选器"
+
+#, vue-format
+msgid "E-mail Forwarders"
+msgstr "邮件转发器"
+
+#, vue-format
+msgid "E-mail Headers"
+msgstr "邮件页头"
+
+#, vue-format
+msgid "E-mail Manager"
+msgstr "邮件管理器"
+
+#, vue-format
+msgid "E-mail Only"
+msgstr "仅限电子邮件"
+
+#, vue-format
+msgid "E-mail pending delivery"
+msgstr "待发送邮件"
+
+#, vue-format
+msgid "E-mail Quota (MB)"
+msgstr "邮件配额（MB）"
+
+#, vue-format
+msgid "E-mail Settings"
+msgstr "邮箱设置"
+
+#, vue-format
+msgid "E-mail Settings: Includes the filters and the catchall address."
+msgstr "邮箱设置: 包括筛选器和Catch-All地址。"
+
+#, vue-format
+msgid "E-mail Summary"
+msgstr "电子邮件摘要"
+
+#, vue-format
+msgid "E-mail Tracking"
+msgstr "电子邮件跟踪"
+
+#, vue-format
+msgid "E-mail Usage"
+msgstr "邮箱用量"
+
+#, vue-format
+msgid "E-mails"
+msgstr "电子邮件"
+
+#, vue-format
+msgid "E-Mails"
+msgstr "电子邮件"
+
+#, vue-format
+msgid "E-mails (Incoming / Outgoing)"
+msgstr "邮件（收件/发送）"
+
+#, vue-format
+msgid "e.g. \"/redirect\", \"/\""
+msgstr "例子：\"/redirect\", \"/\""
+
+#, vue-format
+msgid "e.g. \"http://www.redirected.com\""
+msgstr "例子：\"http://www.redirected.com\""
+
+#, vue-format
+msgid "e.g. Member's Area"
+msgstr "例子：成员专区"
+
+#, vue-format
+msgid "Edit"
+msgstr "编辑"
+
+#, vue-format
+msgid "Edit Account Configuration"
+msgstr "编辑帐户配置"
+
+#, vue-format
+msgid "Edit Admin Message"
+msgstr "编辑管理员备注"
+
+#, vue-format
+msgid "Edit Apache Error Pages"
+msgstr "编辑 Apache 错误页"
+
+#, vue-format
+msgid "Edit Category"
+msgstr "编辑分类"
+
+#, vue-format
+msgid "Edit Cron Job"
+msgstr "编辑定时任务"
+
+#, vue-format
+msgid "Edit DNS Records for %{ domain }"
+msgstr "编辑 %{ domain } 的DNS记录"
+
+#, vue-format
+msgid "Edit Domain"
+msgstr "编辑域名"
+
+#, vue-format
+msgid "Edit E-mail Message"
+msgstr "编辑邮件信息"
+
+#, vue-format
+msgid "Edit in new tab"
+msgstr "在新标签页中编辑"
+
+#, vue-format
+msgid "Edit Manually"
+msgstr "手动编辑"
+
+#, vue-format
+msgid "Edit Package"
+msgstr "编辑套餐"
+
+#, vue-format
+msgid "Edit Protection"
+msgstr "编辑保护"
+
+#, vue-format
+msgid "Edit Record"
+msgstr "编辑记录"
+
+#, vue-format
+msgid "Edit Reseller Message"
+msgstr "编辑分销者信息"
+
+#, vue-format
+msgid "Edit Route"
+msgstr "编辑路由"
+
+#, vue-format
+msgid "Edit SSH Key"
+msgstr "编辑SSH Key"
+
+#, vue-format
+msgid "Edit User Message"
+msgstr "编辑用户消息"
+
+#, vue-format
+msgid "eg. Member's Area"
+msgstr "例子：成员专区"
+
+#, vue-format
+msgid "eg. sourcedomain.com"
+msgstr "例子：sourcedomain.com"
+
+#, vue-format
+msgid "Elements filter"
+msgstr "元素过滤"
+
+#, vue-format
+msgid "Email"
+msgstr "电子邮件"
+
+#, vue-format
+msgid "Email Accounts"
+msgstr "邮件账号"
+
+#, vue-format
+msgid "Embedded Styles"
+msgstr "嵌入样式"
+
+#, vue-format
+msgid "Empty pipes are not allowed"
+msgstr "不允许使用空管道"
+
+#, vue-format
+msgid "Enable"
+msgstr "启用"
+
+#, vue-format
+msgid "Enable Automatic Lost Password Recovery"
+msgstr "启用自动找回密码功能"
+
+#, vue-format
+msgid "Enable DKIM"
+msgstr "启用DKIM"
+
+#, vue-format
+msgid "Enable Hotlinks Protection"
+msgstr "编辑防盗链保护"
+
+#, vue-format
+msgid "Enable Open Basedir"
+msgstr "启用 Open Basedir 保护"
+
+#, vue-format
+msgid "Enable SpamAssassin"
+msgstr "启用 SpamAssassin"
+
+#, vue-format
+msgid "Enable SSL"
+msgstr "启用SSL"
+
+#, vue-format
+msgid "Enabled"
+msgstr "已启用"
+
+#, vue-format
+msgid "Encrypted"
+msgstr "加密的"
+
+#, vue-format
+msgid "End Time"
+msgstr "结束时间"
+
+#, vue-format
+msgid "Endpoint Not Found"
+msgstr "未找到端点"
+
+#, vue-format
+msgid "Enter Password"
+msgstr "输入密码"
+
+#, vue-format
+msgid "Enter Password:"
+msgstr "输入密码:"
+
+#, vue-format
+msgid "Entries already included in the System Quotas"
+msgstr "条目已包含在System Quotas内"
+
+#, vue-format
+msgid "Environment"
+msgstr "环境"
+
+#, vue-format
+msgid "Equal"
+msgstr "等于"
+
+#, vue-format
+msgid "Equals"
+msgstr "等于"
+
+#, vue-format
+msgid "Error"
+msgstr "错误"
+
+#, vue-format
+msgid "Error 404: File Not Found"
+msgstr "错误404: 未找到文件"
+
+#, vue-format
+msgid "Error getting backup details"
+msgstr "获取备份详细信息时出错"
+
+#, vue-format
+msgid "Error Loading Data"
+msgstr "加载数据错误"
+
+#, vue-format
+msgid "Error Log"
+msgstr "错误日志"
+
+#, vue-format
+msgid "Error reading file"
+msgstr "读取文件时出错"
+
+#, vue-format
+msgid "Error reading File"
+msgstr "读取文件时出错"
+
+#, vue-format
+msgid "Error Reading File"
+msgstr "读取文件时出错"
+
+#, vue-format
+msgid "every %s hours"
+msgstr "每 %s 小时"
+
+#, vue-format
+msgid "every %s minutes"
+msgstr "每 %s 分钟"
+
+#, vue-format
+msgid "every %s seconds"
+msgstr "每 %s 秒"
+
+#, vue-format
+msgid "every hour"
+msgstr "每隔一小时"
+
+#, vue-format
+msgid "every minute"
+msgstr "每一分钟"
+
+#, vue-format
+msgid "Every minute between %s and %s"
+msgstr "%s 和 %s 之间的每一分钟"
+
+#, vue-format
+msgid "every second"
+msgstr "每秒"
+
+#, vue-format
+msgid "Except Selected Users"
+msgstr "除选中用户外"
+
+#, vue-format
+msgid "Execute"
+msgstr "执行"
+
+#, vue-format
+msgid "Expires"
+msgstr "过期时间"
+
+#, vue-format
+msgid "Expires On"
+msgstr "过期时间"
+
+#, vue-format
+msgid "Expiry"
+msgstr "到期"
+
+#, vue-format
+msgid "Export"
+msgstr "导出"
+
+#, vue-format
+msgid "Export e-mails"
+msgstr "导出电子邮件"
+
+#, vue-format
+msgid "Extension"
+msgstr "扩展"
+
+#, vue-format
+msgid "Extensions"
+msgstr "扩展"
+
+#, vue-format
+msgid "External"
+msgstr "外部"
+
+#, vue-format
+msgid "External CSS URL"
+msgstr "外部CSS URL"
+
+#, vue-format
+msgid "External Styles URL"
+msgstr "外部样式 URL"
+
+#, vue-format
+msgid "Extra Features"
+msgstr "附加功能"
+
+#, vue-format
+msgid "Extra Small"
+msgstr "超小"
+
+#, vue-format
+msgid "Extract"
+msgstr "解压"
+
+#, vue-format
+msgid "Extract \"%{name}\""
+msgstr "解压 \"%{name}\""
+
+#, vue-format
+msgid "Extract to %{ target }"
+msgstr "解压缩到 %{ target }"
+
+#, vue-format
+msgid "Fail"
+msgstr "失败"
+
+#, vue-format
+msgid "Fail:"
+msgstr "失败："
+
+#, vue-format
+msgid "Failed"
+msgstr "失败"
+
+#, vue-format
+msgid "Failed Logins"
+msgstr "失败的登录"
+
+#, vue-format
+msgid "Failed Logins: IP list"
+msgstr "失败的登录: IP 列表"
+
+#, vue-format
+msgid "Failed logins: Usernames List"
+msgstr "失败的登录: 用户名列表"
+
+#, vue-format
+msgid "Failed to load %{subject}!"
+msgstr "未能加载%｛subject｝！"
+
+#, vue-format
+msgid "Failed to reach returned JSON"
+msgstr "读取返回的JSON失败"
+
+#, vue-format
+msgid "Favicon"
+msgstr "图标"
+
+#, vue-format
+msgid "Feature Disabled"
+msgstr "功能已禁用"
+
+#, vue-format
+msgid "Feature Set"
+msgstr "功能设置"
+
+#, vue-format
+msgid "Feature Sets"
+msgstr "功能设置"
+
+#, vue-format
+msgid "Features"
+msgstr "功能"
+
+#, vue-format
+msgid "February"
+msgstr "2月"
+
+#, vue-format
+msgid "Fetch"
+msgstr "获取"
+
+#, vue-format
+msgid "Fetch completed"
+msgstr "获取完成"
+
+#, vue-format
+msgid "Field is required"
+msgstr "必填字段"
+
+#, vue-format
+msgid "Field too long"
+msgstr "字段太长"
+
+#, vue-format
+msgid "Field too short"
+msgstr "字段太短"
+
+#, vue-format
+msgid "fifth"
+msgstr "第五"
+
+#, vue-format
+msgid "File"
+msgstr "文件"
+
+#, vue-format
+msgid "File %{file} does not exist"
+msgstr "文件 %{file} 不存在"
+
+#, vue-format
+msgid "File Editor"
+msgstr "文件编辑器"
+
+#, vue-format
+msgid "File is too big"
+msgid_plural "Files are too big"
+msgstr[0] "文件太大"
+
+#, vue-format
+msgid "File Manager"
+msgstr "文件管理器"
+
+#, vue-format
+msgid "File Name"
+msgstr "文件名"
+
+#, vue-format
+msgid "File Path"
+msgstr "文件路径"
+
+#, vue-format
+msgid "File was not added due to max file size limit"
+msgstr "文件因超过大小限制，未被添加"
+
+#, vue-format
+msgid "Filemanager Redirect"
+msgstr "文件管理器重定向"
+
+#, vue-format
+msgid "Filename has not been changed"
+msgstr "文件名未更改"
+
+#, vue-format
+msgid "Filename of the new key"
+msgstr "新Key的文件名"
+
+#, vue-format
+msgid "Files"
+msgstr "文件"
+
+#, vue-format
+msgid "Filesystem"
+msgstr "文件系统"
+
+#, vue-format
+msgid "filter"
+msgid_plural "filters"
+msgstr[0] "过滤器"
+
+#, vue-format
+msgid "Filter"
+msgstr "筛选器"
+
+#, vue-format
+msgid "Filter Accounts"
+msgstr "过滤帐户"
+
+#, vue-format
+msgid "Filter files..."
+msgstr "筛选文件..."
+
+#, vue-format
+msgid "Filter forwarders"
+msgstr "过滤转发器"
+
+#, vue-format
+msgid "Filter icons"
+msgstr "过滤图标"
+
+#, vue-format
+msgid "Filter IP"
+msgstr "过滤IP"
+
+#, vue-format
+msgid "Filter IPs"
+msgstr "过滤IP"
+
+#, vue-format
+msgid "Filter Tokens"
+msgstr "过滤器 Token"
+
+#, vue-format
+msgid "Filter Type"
+msgstr "筛选类型"
+
+#, vue-format
+msgid "Filter users"
+msgstr "筛选用户"
+
+#, vue-format
+msgid "Filter Value"
+msgstr "筛选值"
+
+#, vue-format
+msgid "Fingerprint"
+msgstr "指纹"
+
+#, vue-format
+msgid "first"
+msgstr "第一个"
+
+#, vue-format
+msgid "First"
+msgstr "第一个"
+
+#, vue-format
+msgid "first weekday"
+msgstr "第一个工作日"
+
+#, vue-format
+msgid "Flush from DNS"
+msgstr "从 DNS 刷新"
+
+#, vue-format
+msgid "Folder"
+msgstr "文件夹"
+
+#, vue-format
+msgid "Folder Name"
+msgstr "文件夹名称"
+
+#, vue-format
+msgid "Folder Sizes"
+msgstr "文件夹大小"
+
+#, vue-format
+msgid "Folder:"
+msgstr "文件夹："
+
+#, vue-format
+msgid "Folders Tree"
+msgstr "文件夹树"
+
+#, vue-format
+msgid "For dark mode & sidebar layout"
+msgstr "黑色模式和侧边栏布局"
+
+#, vue-format
+msgid "For IPv6 IPs, use a /mask, eg: /64"
+msgstr "对于IPv6 IP，请使用/mask，例如:/64"
+
+#, vue-format
+msgid "Forbid users changing the skin layout on user level"
+msgstr "禁止用户在用户级别更改外观布局"
+
+#, vue-format
+msgid "Forbidden"
+msgstr "禁止"
+
+#, vue-format
+msgid "Force Load"
+msgstr "强制加载"
+
+#, vue-format
+msgid "Force redirect"
+msgstr "强制重定向"
+
+#, vue-format
+msgid "Force SSL with https redirect"
+msgstr "强制SSL进行https重定向"
+
+#, vue-format
+msgid "Force white background for sidebar header"
+msgstr "强制边栏header使用白色背景"
+
+#, vue-format
+msgid "Forced"
+msgstr "强制"
+
+#, vue-format
+msgid "Forensic Email (RUF)"
+msgstr "取证电子邮件 (RUF)"
+
+#, vue-format
+msgid "forwarder"
+msgid_plural "forwarders"
+msgstr[0] "转发器"
+
+#, vue-format
+msgid "Forwarder"
+msgstr "转发器"
+
+#, vue-format
+msgid "Forwarder Name"
+msgstr "转发器名称"
+
+#, vue-format
+msgid "Forwarders"
+msgstr "转发器"
+
+#, vue-format
+msgid "Forwarders: Includes all forwarding addresses."
+msgstr "转发器：包括所有转发地址。"
+
+#, vue-format
+msgid "fourth"
+msgstr "第四"
+
+#, vue-format
+msgid "Free"
+msgstr "释放"
+
+#, vue-format
+msgid "Freeze"
+msgstr "冻结"
+
+#, vue-format
+msgid "Friday"
+msgstr "星期五"
+
+#, vue-format
+msgid "From"
+msgstr "从"
+
+#, vue-format
+msgid "from the list"
+msgstr "从列表中"
+
+#, vue-format
+msgid "Frozen"
+msgstr "冻结"
+
+#, vue-format
+msgid "FTP"
+msgstr "FTP"
+
+#, vue-format
+msgid "FTP account created"
+msgstr "FTP帐号已创建"
+
+#, vue-format
+msgid ""
+"FTP account with the root directory as the user name in the public_html "
+"directory"
+msgstr "以在public_html中和用户名相同的目录作为根目录的FTP账号"
+
+#, vue-format
+msgid ""
+"FTP account with the root directory as the users name in the public_html "
+"directory"
+msgstr "以在public_html中和用户名相同的目录作为根目录的FTP账号"
+
+#, vue-format
+msgid ""
+"FTP account with the root directory in the domains home directory (one up "
+"from the public_html)"
+msgstr "以在域名根目录（public_html对上的一个目录）作为根目录的FTP账号"
+
+#, vue-format
+msgid "FTP account with the root directory in the domains public_ftp directory"
+msgstr "以在域名目录里的public_ftp作为根目录的FTP账号"
+
+#, vue-format
+msgid "FTP accounts"
+msgstr "FTP账号"
+
+#, vue-format
+msgid "FTP Accounts"
+msgstr "FTP账号"
+
+#, vue-format
+msgid "FTP Accounts for %{ domain }"
+msgstr "%{ domain }的 FTP 帐账号"
+
+#, vue-format
+msgid "FTP Management"
+msgstr "FTP管理"
+
+#, vue-format
+msgid "FTP Settings"
+msgstr "FTP设置"
+
+#, vue-format
+msgid "FTP Username"
+msgstr "ftp 用户名"
+
+#, vue-format
+msgid "FTP Username:"
+msgstr "FTP 用户名:"
+
+#, vue-format
+msgid "Full Log"
+msgstr "完整日志"
+
+#, vue-format
+msgid "Full reload will be performed in %{ seconds } seconds"
+msgstr "完全重新加载将在 %{ seconds } 秒内执行"
+
+#, vue-format
+msgid "Full Server Statistics"
+msgstr "完整的服务器统计信息"
+
+#, vue-format
+msgid "Generate Keys"
+msgstr "生成密钥"
+
+#, vue-format
+msgid "Generate Random Password"
+msgstr "生成随机密码"
+
+#, vue-format
+msgid "Generate Secret"
+msgstr "生成密钥"
+
+#, vue-format
+msgid "Get Access"
+msgstr "获取访问权限"
+
+#, vue-format
+msgid "Get automatic certificate from ACME Provider"
+msgstr "从 ACME Provider 自动获取证书"
+
+#, vue-format
+msgid "Git"
+msgstr "Git"
+
+#, vue-format
+msgid "Git Deploy"
+msgstr "Git部署"
+
+#, vue-format
+msgid "Git deploy branch is not set"
+msgstr "未设置Git部署分支"
+
+#, vue-format
+msgid "Git deploy directory is not set"
+msgstr "未设置Git部署目录"
+
+#, vue-format
+msgid "Git Fetch"
+msgstr "Git 获取"
+
+#, vue-format
+msgid "Git Modify"
+msgstr "Git 修改"
+
+#, vue-format
+msgid "Global"
+msgstr "全球"
+
+#, vue-format
+msgid ""
+"Global custom tokens apply to all php version, but only for this User. "
+"Global is added before per-php tokens."
+msgstr "全局自定义标记适用于所有php版本，但仅适用于此用户。在per-"
+"php令牌之前添加Global。"
+
+#, vue-format
+msgid "Global Default"
+msgstr "全局默认"
+
+#, vue-format
+msgid "Global Key"
+msgstr "全局密钥"
+
+#, vue-format
+msgid "Global Key Options"
+msgstr "全局Key选项"
+
+#, vue-format
+msgid "Global Limit"
+msgstr "全局限制"
+
+#, vue-format
+msgid "Go back to Log view"
+msgstr "返回日志视图"
+
+#, vue-format
+msgid "Grep"
+msgstr "Grep"
+
+#, vue-format
+msgid "Grep:"
+msgstr "查找:"
+
+#, vue-format
+msgid "Grid"
+msgstr "网格"
+
+#, vue-format
+msgid "Grid Icons"
+msgstr "网格图标"
+
+#, vue-format
+msgid "Group"
+msgstr "组"
+
+#, vue-format
+msgid "half a minute"
+msgstr "半分钟"
+
+#, vue-format
+msgid "handler"
+msgid_plural "handlers"
+msgstr[0] "Handler"
+
+#, vue-format
+msgid "Handler"
+msgstr "Handler"
+
+#, vue-format
+msgid "Handler for such extension already exists"
+msgstr "此类扩展的Handler已存在"
+
+#, vue-format
+msgid "Hardware details"
+msgstr "硬件详细信息"
+
+#, vue-format
+msgid "Hello,"
+msgstr "你好，"
+
+#, vue-format
+msgid "Help"
+msgstr "帮助"
+
+#, vue-format
+msgid "Here is your SSL Certificate Request."
+msgstr "这是您的SSL证书申请。"
+
+#, vue-format
+msgid "Hi, %{username} 👋"
+msgstr "你好, %{username} 👋"
+
+#, vue-format
+msgid "Hide"
+msgstr "隐藏"
+
+#, vue-format
+msgid "Hide Empty"
+msgstr "隐藏空值"
+
+#, vue-format
+msgid "Hide entries which use 0 bytes"
+msgstr "隐藏使用了0 bytes的记录"
+
+#, vue-format
+msgid "Hide folders tree"
+msgstr "隐藏文件夹树"
+
+#, vue-format
+msgid "High"
+msgstr "高"
+
+#, vue-format
+msgid "High severity"
+msgstr "高严重性"
+
+#, vue-format
+msgid "Highest"
+msgstr "最高"
+
+#, vue-format
+msgid "Hold"
+msgstr "保持"
+
+#, vue-format
+msgid "Hold ⌘ or control key to copy"
+msgstr "按住⌘ 或Ctrl键进行复制"
+
+#, vue-format
+msgid "Hold Shift key to remove completely"
+msgstr "按住Shift键可将其完全移除"
+
+#, vue-format
+msgid "Home"
+msgstr "主页"
+
+#, vue-format
+msgid "Home - Scan the home directory."
+msgstr "Home - 扫描主目录。"
+
+#, vue-format
+msgid "Home Directory"
+msgstr "主目录"
+
+#, vue-format
+msgid "Horizontal"
+msgstr "水平"
+
+#, vue-format
+msgid "Host"
+msgstr "主机"
+
+#, vue-format
+msgid "Host connection failure"
+msgstr "主机连接失败"
+
+#, vue-format
+msgid "Hosts"
+msgstr "主机"
+
+#, vue-format
+msgid "Hotlink Protection"
+msgstr "防盗链保护"
+
+#, vue-format
+msgid "Hotlinks Protection"
+msgstr "防盗链保护"
+
+#, vue-format
+msgid "Hour"
+msgstr "小时"
+
+#, vue-format
+msgid "Hour should be a number between 0 and 23 or *"
+msgstr "小时必须是0到23之间的数字或是 *"
+
+#, vue-format
+msgid "Hour: %{hour}"
+msgstr "小时: %{hour}"
+
+#, vue-format
+msgid "hours after last attempt."
+msgstr "小时自最后一次尝试。"
+
+#, vue-format
+msgid "How should the spam be delivered?"
+msgstr "如何发送垃圾邮件？"
+
+#, vue-format
+msgid ""
+"However, these passwords have attributes, such as the ability to expire and "
+"can be limited to certain functions."
+msgstr "但是，这些密码具有属性，例如可以过期，并且可以限制为某些功能。"
+
+#, vue-format
+msgid "HTTPD data"
+msgstr "HTTPD 数据"
+
+#, vue-format
+msgid "Huge icons"
+msgstr "Huge icons"
+
+#, vue-format
+msgid "Hybrid"
+msgstr "混合"
+
+#, vue-format
+msgid "Icon"
+msgstr "图标"
+
+#, vue-format
+msgid "Icon ID"
+msgstr "图标 ID"
+
+#, vue-format
+msgid "Icon id could include only lowercase letters, digits and dashes"
+msgstr "图标 ID 只能包含小写字母、数字和破折号"
+
+#, vue-format
+msgid "Icon Size"
+msgstr "图标大小"
+
+#, vue-format
+msgid "Icons"
+msgstr "图标"
+
+#, vue-format
+msgid "Icons for icons grid navigation"
+msgstr "网格导航的图标"
+
+#, vue-format
+msgid "Icons for refreshed layout menu navigation"
+msgstr "用于刷新布局菜单导航的图标"
+
+#, vue-format
+msgid "Icons Grid"
+msgstr "图标网格"
+
+#, vue-format
+msgid "ID"
+msgstr "ID"
+
+#, vue-format
+msgid "ID Info"
+msgstr "ID信息"
+
+#, vue-format
+msgid "Idle Timeout"
+msgstr "空闲超时"
+
+#, vue-format
+msgid "If no commands are checked (allow and deny), all commands are allowed."
+msgstr "如果未选中任何命令(允许或拒绝)，则允许所有命令。"
+
+#, vue-format
+msgid ""
+"If script is set, all requests to the application are handled by the script "
+"you provide."
+msgstr "如果设置了脚本，则对应用程序的所有请求都由提供的脚本处理。"
+
+#, vue-format
+msgid ""
+"If SMTP authentication is used, this will show the login name used. Scripts "
+"will show the owner of the script. Can be considered accurate."
+msgstr "如果使用SMTP身份验证，这将显示使用的登录名，脚本将显示脚本的所有者，可以认为"
+"是准确的。"
+
+#, vue-format
+msgid ""
+"If the email was generated from a script, the path value will show the "
+"working directory the script was in. An email in the spool will have a path "
+"value of \"retry\" for each attempt."
+msgstr "如果电子邮件是由脚本生成的，路径值将显示脚本所在的工作目录。 "
+"每次尝试中的电子邮件都有路径值“重试”。"
+
+#, vue-format
+msgid "If the user already exists, this setting will have no effect."
+msgstr "如果用户已经存在, 此设置将不起作用。"
+
+#, vue-format
+msgid ""
+"If this is set, it will show the IP that connect to the server. If no IP is "
+"set, then the email was sent vie a local script."
+msgstr "如果设置，它将显示连接到服务器的IP。 "
+"如果没有设置IP，则通过本地脚本发送电子邮件。"
+
+#, vue-format
+msgid ""
+"If using the IPs from within the backup, any IPs that don't exist on this "
+"system will not be included. If there no IPs to be used, a Reseller or Admin "
+"will be restored to the server IP."
+msgstr ""
+"如果使用备份中的IP地址的话，所有使用这个系统不存在的IP的备份将不会被恢复。如"
+"果备份中没有指明IP地址的话，分销者或者管理员会被恢复到服务器IP地址。"
+
+#, vue-format
+msgid "Ignore Case"
+msgstr "大小写不敏感"
+
+#, vue-format
+msgid "Ignore convert errors"
+msgstr "忽略转换错误"
+
+#, vue-format
+msgid "Ignore Errors"
+msgstr "忽略错误"
+
+#, vue-format
+msgid "Ignore:"
+msgstr "忽略："
+
+#, vue-format
+msgid "Image preview"
+msgstr "图像预览"
+
+#, vue-format
+msgid "Images"
+msgstr "图像"
+
+#, vue-format
+msgid "IMAP"
+msgstr "IMAP"
+
+#, vue-format
+msgid "IMAP:"
+msgstr "IMAP:"
+
+#, vue-format
+msgid "ImapSync authentication failure"
+msgstr "ImapSync 身份验证失败"
+
+#, vue-format
+msgid "ImapSync connection failure"
+msgstr "ImapSync 连接失败"
+
+#, vue-format
+msgid "ImapSync host destination connection failure"
+msgstr "ImapSync 主机目标连接失败"
+
+#, vue-format
+msgid "ImapSync host source connection failure"
+msgstr "ImapSync 主机源连接失败"
+
+#, vue-format
+msgid "IMAPSync Manager"
+msgstr "IMAPSync 管理器"
+
+#, vue-format
+msgid "IMAPSync Migrations"
+msgstr "IMAPSync 迁移"
+
+#, vue-format
+msgid "ImapSync user destination authentication failure"
+msgstr "ImapSync 用户目标身份验证失败"
+
+#, vue-format
+msgid "ImapSync user source authentication failure"
+msgstr "ImapSync 用户源身份验证失败"
+
+#, vue-format
+msgid "Import"
+msgstr "导入"
+
+#, vue-format
+msgid "Import e-mails"
+msgstr "导入电子邮件"
+
+#, vue-format
+msgid "Import packages"
+msgstr "导入套餐"
+
+#, vue-format
+msgid "Import Packages"
+msgstr "导入套餐"
+
+#, vue-format
+msgid "In"
+msgstr "在"
+
+#, vue-format
+msgid "In progress"
+msgstr "进行中"
+
+#, vue-format
+msgid "In Progress"
+msgstr "进行中"
+
+#, vue-format
+msgid "Inactive"
+msgstr "不活跃"
+
+#, vue-format
+msgid "Inbound"
+msgstr "入站"
+
+#, vue-format
+msgid "Incident Object Description Exchange Format"
+msgstr "事件对象描述交换格式"
+
+#, vue-format
+msgid "Include"
+msgstr "包含"
+
+#, vue-format
+msgid "Include Domain"
+msgstr "包含域名"
+
+#, vue-format
+msgid "Incoming"
+msgstr "传入"
+
+#, vue-format
+msgid "Increase Bandwidth"
+msgstr "增加流量"
+
+#, vue-format
+msgid "Incremental file-by-file backup"
+msgstr "增量文件备份"
+
+#, vue-format
+msgid "Index Access"
+msgstr "索引访问"
+
+#, vue-format
+msgid "Info"
+msgstr "信息"
+
+#, vue-format
+msgid "Info Access"
+msgstr "信息访问"
+
+#, vue-format
+msgid "Information"
+msgstr "信息"
+
+#, vue-format
+msgid "Initialize Repository"
+msgstr "初始化存储库"
+
+#, vue-format
+msgid "Inode"
+msgstr "索引节点"
+
+#, vue-format
+msgid "Inodes"
+msgstr "索引节点"
+
+#, vue-format
+msgid "Inodes Count"
+msgstr "Inodes 数量"
+
+#, vue-format
+msgid "Install"
+msgstr "安装"
+
+#, vue-format
+msgid "Install after upload"
+msgstr "上传后安装"
+
+#, vue-format
+msgid "Install WordPress"
+msgstr "安装 WordPress"
+
+#, vue-format
+msgid "Installation deleted"
+msgstr "安装已删除"
+
+#, vue-format
+msgid "Installation successful"
+msgstr "安装成功"
+
+#, vue-format
+msgid "Installed"
+msgstr "已安装"
+
+#, vue-format
+msgid "Installed Perl Modules"
+msgstr "已安装的Perl模块"
+
+#, vue-format
+msgid "Internal sign-in"
+msgstr "内部登录"
+
+#, vue-format
+msgid "Intro Access"
+msgstr "Intro Access"
+
+#, vue-format
+msgid "Invalid date format"
+msgstr "无效的日期格式"
+
+#, vue-format
+msgid "Invalid Domain"
+msgstr "无效域名"
+
+#, vue-format
+msgid "Invalid JSON"
+msgstr "无效的JSON"
+
+#, vue-format
+msgid "Invalid Subject"
+msgstr "无效主题"
+
+#, vue-format
+msgid "Invalid username"
+msgstr "用户名无效"
+
+#, vue-format
+msgid "Invert"
+msgstr "倒置"
+
+#, vue-format
+msgid "IO"
+msgstr "IO"
+
+#, vue-format
+msgid "IO Pressure"
+msgstr "IO 负载"
+
+#, vue-format
+msgid "IO Read"
+msgstr "IO 读取"
+
+#, vue-format
+msgid "IO Write"
+msgstr "IO 写入"
+
+#, vue-format
+msgid "IOPS"
+msgstr "IOPS"
+
+#, vue-format
+msgid "IP"
+msgid_plural "IPs"
+msgstr[0] "IP"
+
+#, vue-format
+msgid "IP / Range / Domain / E-mail"
+msgstr "IP / 范围 / 域名 / E-mail"
+
+#, vue-format
+msgid "IP / User"
+msgstr "IP / 用户"
+
+#, vue-format
+msgid "IP Address"
+msgid_plural "IP Addresses"
+msgstr[0] "IP地址"
+
+#, vue-format
+msgid "IP Address:"
+msgstr "IP地址："
+
+#, vue-format
+msgid "IP Addresses"
+msgstr "IP地址"
+
+#, vue-format
+msgid "IP Addresses in CIDR format that deliver or relay mail for this domain"
+msgstr "用于传递或中继此域邮件的CIDR格式的IP地址"
+
+#, vue-format
+msgid "IP Details"
+msgstr "IP 的详细信息"
+
+#, vue-format
+msgid "IP Info"
+msgstr "IP 信息"
+
+#, vue-format
+msgid "IP Info: %{ ip }"
+msgstr "IP 信息: %{ ip }"
+
+#, vue-format
+msgid "IP Management"
+msgstr "IP管理"
+
+#, vue-format
+msgid "IP Manager"
+msgstr "IP管理器"
+
+#, vue-format
+msgid "IP of Domain"
+msgstr "域名数量"
+
+#, vue-format
+msgid "IP(s)"
+msgstr "IP"
+
+#, vue-format
+msgid "IPs"
+msgstr "IP"
+
+#, vue-format
+msgid "Issuer"
+msgstr "发行人"
+
+#, vue-format
+msgid ""
+"It will free up some space, but will reset any learned progress SpamAssassin "
+"has previously made."
+msgstr "这能释放一些空间，但将重置 SpamAssassin 以前所取得的任何学习进展。"
+
+#, vue-format
+msgid "Jailed"
+msgstr "封禁"
+
+#, vue-format
+msgid "January"
+msgstr "1月"
+
+#, vue-format
+msgid "Java"
+msgstr "Java"
+
+#, vue-format
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#, vue-format
+msgid "JSON"
+msgstr "JSON"
+
+#, vue-format
+msgid "July"
+msgstr "7月"
+
+#, vue-format
+msgid "June"
+msgstr "6月"
+
+#, vue-format
+msgid "Keep Number of Apache Log Backups"
+msgstr "Apache Log 备份存放数量"
+
+#, vue-format
+msgid "Key"
+msgstr "密钥"
+
+#, vue-format
+msgid "Key Data"
+msgstr "Key 数据"
+
+#, vue-format
+msgid "Key file"
+msgstr "密钥文件"
+
+#, vue-format
+msgid "Key ID"
+msgstr "Key ID"
+
+#, vue-format
+msgid "Key Name"
+msgstr "密钥名称"
+
+#, vue-format
+msgid "Key Name:"
+msgstr "Key 名称:"
+
+#, vue-format
+msgid "Key Options"
+msgstr "Key 选项"
+
+#, vue-format
+msgid "Key size"
+msgstr "Key 大小"
+
+#, vue-format
+msgid "Key Size (bits)"
+msgstr "Key 大小 （bits）"
+
+#, vue-format
+msgid "Key Value:"
+msgstr "Key 值："
+
+#, vue-format
+msgid "Key-Signing Key"
+msgstr "Key-签名密钥"
+
+#, vue-format
+msgid "Keyfile"
+msgstr "密钥文件"
+
+#, vue-format
+msgid "Keys not yet generated."
+msgstr "Key尚未生成。"
+
+#, vue-format
+msgid "KiB Mem:"
+msgstr "KiB 内存："
+
+#, vue-format
+msgid "KiB Swap:"
+msgstr "KiB Swap："
+
+#, vue-format
+msgid "Kill"
+msgstr "终止"
+
+#, vue-format
+msgid "Language"
+msgstr "语言"
+
+#, vue-format
+msgid "Large"
+msgstr "大"
+
+#, vue-format
+msgid "Large icons"
+msgstr "大图标"
+
+#, vue-format
+msgid "Last"
+msgstr "最后一个"
+
+#, vue-format
+msgid "Last Message"
+msgstr "最后一条消息"
+
+#, vue-format
+msgid "Last Password Change:"
+msgstr "上次密码更改："
+
+#, vue-format
+msgid "Last PID:"
+msgstr "最后的PID:"
+
+#, vue-format
+msgid "Last Tally Completion"
+msgstr "上次统计完成"
+
+#, vue-format
+msgid "Layout"
+msgstr "布局"
+
+#, vue-format
+msgid "Layout Options"
+msgstr "布局选项"
+
+#, vue-format
+msgid "Learn More"
+msgstr "了解更多"
+
+#, vue-format
+msgid "Leave DNS"
+msgstr "退出DNS"
+
+#, vue-format
+msgid "Legacy"
+msgstr "历史"
+
+#, vue-format
+msgid "Level"
+msgstr "用户等级"
+
+#, vue-format
+msgid "License"
+msgstr "许可证"
+
+#, vue-format
+msgid "License checks cannot be performed"
+msgstr "无法执行许可证检查"
+
+#, vue-format
+msgid "License ID (LID)"
+msgstr "许可证编号(LID)"
+
+#, vue-format
+msgid "License Info"
+msgstr "许可证信息"
+
+#, vue-format
+msgid "License or License session doesn't exist"
+msgstr "许可证或许可证会话不存在"
+
+#, vue-format
+msgid "License owner (UID)"
+msgstr "许可证所有者 (UID)"
+
+#, vue-format
+msgid "License Proof"
+msgstr "许可证证明"
+
+#, vue-format
+msgid "License session not being connected"
+msgstr "许可证会话未连接"
+
+#, vue-format
+msgid "License: %{name}"
+msgstr "许可证：%{name}"
+
+#, vue-format
+msgid "Licensing"
+msgstr "许可"
+
+#, vue-format
+msgid "Limit"
+msgstr "限制"
+
+#, vue-format
+msgid "Limit can't be larger than %{ limit }"
+msgstr "限制不能大于%{ limit }"
+
+#, vue-format
+msgid "Limit Hits"
+msgstr "点击限制"
+
+#, vue-format
+msgid "Limit Notice"
+msgstr "限制通知"
+
+#, vue-format
+msgid "Limit of 10 domain lookups reached"
+msgstr "已达到 10 个域查找的限制"
+
+#, vue-format
+msgid "Limit should be larger than 0"
+msgstr "限制应大于0"
+
+#, vue-format
+msgid "Line"
+msgstr "行"
+
+#, vue-format
+msgid "Line Numbers"
+msgstr "行号"
+
+#, vue-format
+msgid "Line Wrap"
+msgstr "换行"
+
+#, vue-format
+msgid "Lines Count"
+msgstr "行数"
+
+#, vue-format
+msgid "Lines:"
+msgstr "行："
+
+#, vue-format
+msgid "Link"
+msgstr "链接"
+
+#, vue-format
+msgid "Link an IP to %{ip}"
+msgstr "将 IP Link 到"
+
+#, vue-format
+msgid "Link in background"
+msgstr "后台链接"
+
+#, vue-format
+msgid "Link IP"
+msgstr "Link IP"
+
+#, vue-format
+msgid "Link to: %{ path }"
+msgstr "链接到: %{ path }"
+
+#, vue-format
+msgid "Linked IP(s)"
+msgstr "已Link的IP"
+
+#, vue-format
+msgid ""
+"Linking an IP with apache will add the linked IP into the VirtualHost with "
+"the current IP."
+msgstr "Link一个IP到Apache会将这个IP额外添加到VitrualHost。"
+
+#, vue-format
+msgid ""
+"Linking an IP with DNS will duplicate the A/AAAA records for the current IP "
+"with the linked IP."
+msgstr "将IP与DNS链接将使当前IP的A/AAAA记录与链接的IP重复。"
+
+#, vue-format
+msgid "List"
+msgstr "列表"
+
+#, vue-format
+msgid "List Administrators"
+msgstr "列出管理员"
+
+#, vue-format
+msgid "List filtered by IP: %{ ip }"
+msgstr "按 IP 筛选的列表: %{ ip }"
+
+#, vue-format
+msgid "List filtered by User: %{ user } "
+msgstr "按用户筛选的列表: %{ user } "
+
+#, vue-format
+msgid "List Information"
+msgstr "列表信息"
+
+#, vue-format
+msgid "List Name:"
+msgstr "列表名称："
+
+#, vue-format
+msgid "List of currently active scans."
+msgstr "当前活动扫描的列表。"
+
+#, vue-format
+msgid "List Resellers"
+msgstr "显示分销商"
+
+#, vue-format
+msgid "List Users"
+msgstr "显示用户"
+
+#, vue-format
+msgid "Live API Documentation"
+msgstr "实时 API 文档"
+
+#, vue-format
+msgid "Live Usage"
+msgstr "实时使用"
+
+#, vue-format
+msgid "Load"
+msgstr "负载"
+
+#, vue-format
+msgid "Load Accounts"
+msgstr "加载帐户"
+
+#, vue-format
+msgid "Load all %{n} files in current folder"
+msgstr "加载当前文件夹中的所有%{n}个文件"
+
+#, vue-format
+msgid "Load Average"
+msgstr "平均负载"
+
+#, vue-format
+msgid "Load Average:"
+msgstr "平均负载："
+
+#, vue-format
+msgid "Load Hits"
+msgstr "加载点击数"
+
+#, vue-format
+msgid "Load in new tab"
+msgstr "在新选项卡中加载"
+
+#, vue-format
+msgid "Load Log"
+msgstr "加载日志"
+
+#, vue-format
+msgid "Load Usage"
+msgstr "负载使用量"
+
+#, vue-format
+msgid "Loading"
+msgstr "载入中"
+
+#, vue-format
+msgid ""
+"Loading was aborted due to %{ time }s timeout. <br/>%{returned} lines was "
+"returned of %{ requested } requested"
+msgstr "由于超时了 %{ time }秒，加载被中止。 <br/>%{returned} 行返回了 %{ requested }"
+" 个请求"
+
+#, vue-format
+msgid "Loading widget data..."
+msgstr "正在加载组件数据..."
+
+#, vue-format
+msgid "Local"
+msgstr "本地"
+
+#, vue-format
+msgid "Local Data"
+msgstr "本地数据"
+
+#, vue-format
+msgid "Local Mail"
+msgstr "本地邮件"
+
+#, vue-format
+msgid "Local path"
+msgstr "本地路径"
+
+#, vue-format
+msgid "Local URL Path"
+msgstr "本地URL路径"
+
+#, vue-format
+msgid "Local: %{ location }"
+msgstr "本地位置: %{ location }"
+
+#, vue-format
+msgid "Location"
+msgstr "位置"
+
+#, vue-format
+msgid "Locations without WordPress"
+msgstr "没有 WordPress 的位置"
+
+#, vue-format
+msgid "Log"
+msgstr "日志"
+
+#, vue-format
+msgid "Log Entry"
+msgstr "日志条目"
+
+#, vue-format
+msgid "Log Usage"
+msgstr "日志使用情况"
+
+#, vue-format
+msgid "Log View Options"
+msgstr "日志视图选项"
+
+#, vue-format
+msgid "Log Viewer"
+msgstr "日志查看器"
+
+#, vue-format
+msgid "Logged in as"
+msgstr "已登录为"
+
+#, vue-format
+msgid "Login"
+msgstr "登录"
+
+#, vue-format
+msgid "Login anyway"
+msgstr "强制登录"
+
+#, vue-format
+msgid "Login as %{ username }"
+msgstr "以 %{ username } 身份登录"
+
+#, vue-format
+msgid "login attempts"
+msgstr "登录尝试"
+
+#, vue-format
+msgid "Login Customization"
+msgstr "登录自定义"
+
+#, vue-format
+msgid "Login Failures"
+msgstr "登录失败"
+
+#, vue-format
+msgid "login failures from any IP."
+msgstr "来自所有IP的登录失败尝试。"
+
+#, vue-format
+msgid "login failures on any account."
+msgstr "所有账号的登录失败记录。"
+
+#, vue-format
+msgid "Login History"
+msgstr "登录历史"
+
+#, vue-format
+msgid "Login key created. Take note of it's value and keep it safe."
+msgstr "已创建登录密钥，请记下它的值并保存到安全的地方。"
+
+#, vue-format
+msgid "Login Keys"
+msgstr "登录密钥"
+
+#, vue-format
+msgid "Login keys allow you to create extra passwords for your account."
+msgstr "登录Key允许您为您的帐户创建额外的密码。"
+
+#, vue-format
+msgid "Login Page"
+msgstr "登录页面"
+
+#, vue-format
+msgid "Login to phpMyAdmin"
+msgstr "登入phpMyAdmin"
+
+#, vue-format
+msgid "Login: %{ login }"
+msgstr "登录: %{ login }"
+
+#, vue-format
+msgid "Logo"
+msgstr "Logo"
+
+#, vue-format
+msgid "Logo Dark"
+msgstr "深色Logo"
+
+#, vue-format
+msgid "Logo Light"
+msgstr "亮色Logo"
+
+#, vue-format
+msgid "Logout"
+msgstr "注销"
+
+#, vue-format
+msgid "Logs"
+msgstr "日志"
+
+#, vue-format
+msgid "Low"
+msgstr "低"
+
+#, vue-format
+msgid "Low severity"
+msgstr "低严重性"
+
+#, vue-format
+msgid "Machine ID"
+msgstr "机器ID"
+
+#, vue-format
+msgid "Mail - Scan all mail directories."
+msgstr "邮件 - 扫描所有邮件目录。"
+
+#, vue-format
+msgid "Mail Queue"
+msgstr "邮件队列"
+
+#, vue-format
+msgid "Mail Queue Administration"
+msgstr "邮件队列管理"
+
+#, vue-format
+msgid "mail() Line Number"
+msgstr "mail() 行号"
+
+#, vue-format
+msgid "Mailbox"
+msgstr "邮箱"
+
+#, vue-format
+msgid "mailing list"
+msgid_plural "mailing lists"
+msgstr[0] "邮件列表"
+
+#, vue-format
+msgid "Mailing List"
+msgstr "邮件列表"
+
+#, vue-format
+msgid "Mailing Lists"
+msgstr "邮件列表"
+
+#, vue-format
+msgid "Mailing Lists: Includes all mailing lists."
+msgstr "邮件列表：包括所有邮件列表。"
+
+#, vue-format
+msgid "Mailing Lists: Includes the list, digest-list and archives."
+msgstr "邮件列表: 包括列表、Digest列表和存档。"
+
+#, vue-format
+msgid "Main Database Account"
+msgstr "主数据库账号"
+
+#, vue-format
+msgid "Main Domain..."
+msgstr "主域名..."
+
+#, vue-format
+msgid "Main FTP Account"
+msgstr "主FTP账号"
+
+#, vue-format
+msgid "Maintenance"
+msgstr "维护"
+
+#, vue-format
+msgid "Maintenance Tasks"
+msgstr "维护任务"
+
+#, vue-format
+msgid "Make Request"
+msgstr "请求"
+
+#, vue-format
+msgid "Make statistics publicly viewable"
+msgstr "公开统计数据"
+
+#, vue-format
+msgid "Manage"
+msgstr "管理"
+
+#, vue-format
+msgid "Manage Database Configuration"
+msgstr "管理数据库设置"
+
+#, vue-format
+msgid "Manage IPs"
+msgstr "管理 IP"
+
+#, vue-format
+msgid "Manage Reseller Packages"
+msgstr "管理分销商软件包"
+
+#, vue-format
+msgid "Manage Server IPs"
+msgstr "管理服务器 IP"
+
+#, vue-format
+msgid "Manage Tickets"
+msgstr "管理工单"
+
+#, vue-format
+msgid "Manage user accounts"
+msgstr "管理用户帐户"
+
+#, vue-format
+msgid "Manage User Backups"
+msgstr "管理用户备份"
+
+#, vue-format
+msgid "Manage User Packages"
+msgstr "管理用户软件包"
+
+#, vue-format
+msgid "Manual"
+msgstr "手动"
+
+#, vue-format
+msgid "Manual Trigger"
+msgstr "手动触发"
+
+#, vue-format
+msgid "Manually Change Settings"
+msgstr "手动更改设置"
+
+#, vue-format
+msgid "March"
+msgstr "3月"
+
+#, vue-format
+msgid "Mark as read"
+msgstr "标记为已读"
+
+#, vue-format
+msgid "Markdown"
+msgstr "Markdown"
+
+#, vue-format
+msgid "Max"
+msgstr "最大值"
+
+#, vue-format
+msgid "Max limit User can set per E-mail"
+msgstr "每封电子邮件用户可以设置的最大限制"
+
+#, vue-format
+msgid "Max limit user can set per email"
+msgstr "每封电子邮件用户可以设置的最大限制"
+
+#, vue-format
+msgid "Max Request / Upload Size"
+msgstr "每个请求或上传请求的大小上限"
+
+#, vue-format
+msgid "Max Time"
+msgstr "最长时间"
+
+#, vue-format
+msgid "Max Username Length"
+msgstr "最大用户名长度"
+
+#, vue-format
+msgid "Max Username length could not be higher than 30 characters"
+msgstr "最大用户名长度不能超过 30 个字符"
+
+#, vue-format
+msgid "Max Username length could not be lower than 8 characters"
+msgstr "最大用户名长度不能低于 8 个字符"
+
+#, vue-format
+msgid "Maximize"
+msgstr "最大化"
+
+#, vue-format
+msgid "Maximum requests per week: %{n}"
+msgstr "每周最大请求数: %{n}"
+
+#, vue-format
+msgid "MaxLength"
+msgstr "最大长度"
+
+#, vue-format
+msgid "May"
+msgstr "5月"
+
+#, vue-format
+msgid "Medium"
+msgstr "中"
+
+#, vue-format
+msgid "Medium severity"
+msgstr "中等严重性"
+
+#, vue-format
+msgid "MEM"
+msgstr "内存"
+
+#, vue-format
+msgid "MEM Pressure"
+msgstr "内存负载"
+
+#, vue-format
+msgid "Mem:"
+msgstr "内存:"
+
+#, vue-format
+msgid "Memory"
+msgstr "内存"
+
+#, vue-format
+msgid "Memory Pressure"
+msgstr "内存负载"
+
+#, vue-format
+msgid "Memory Usage"
+msgstr "内存使用情况"
+
+#, vue-format
+msgid "Menu"
+msgstr "菜单"
+
+#, vue-format
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "信息"
+
+#, vue-format
+msgid "Message"
+msgstr "信息"
+
+#, vue-format
+msgid "Message All Users"
+msgstr "向所有用户留言"
+
+#, vue-format
+msgid "Message Area"
+msgstr "留言区"
+
+#, vue-format
+msgid "Message Details"
+msgstr "消息详细信息"
+
+#, vue-format
+msgid "Message Footer"
+msgstr "消息页脚"
+
+#, vue-format
+msgid "Message Fronter"
+msgstr "消息 Fronter"
+
+#, vue-format
+msgid "Message Headers"
+msgstr "消息头部"
+
+#, vue-format
+msgid "Message sent successfully."
+msgstr "消息发送成功."
+
+#, vue-format
+msgid ""
+"Message will be delivered to all User/Reseller accounts that were selected "
+"plus all E-Mail accounts that exist under domains for selected User accounts."
+msgstr "邮件将发送到所选的所有用户/经销商帐户以及存在于所选用户帐户的域下的所有电子邮"
+"件帐户。"
+
+#, vue-format
+msgid "Message:"
+msgstr "信息："
+
+#, vue-format
+msgid "Messages"
+msgstr "消息"
+
+#, vue-format
+msgid "Method Not Allowed"
+msgstr "不允许的方法"
+
+#, vue-format
+msgid "Migration canceled"
+msgstr "迁移已取消"
+
+#, vue-format
+msgid "Migration started"
+msgstr "迁移开始"
+
+#, vue-format
+msgid "Mime Type"
+msgid_plural "Mime Types"
+msgstr[0] "Mime类型"
+
+#, vue-format
+msgid "Mime Types"
+msgstr "Mime 类型"
+
+#, vue-format
+msgid "Minimize"
+msgstr "最小化"
+
+#, vue-format
+msgid "Minimum disk space required for backup (MB)"
+msgstr "备份所需的最小磁盘空间(MB)"
+
+#, vue-format
+msgid ""
+"Minimum number of idle processes to reserve for an app. When the app is "
+"started, spare idle processes are launched; server assigns incoming requests "
+"to existing idle processes, forking new idles to maintain the spare level if "
+"max allows. As processes complete requests and turn idle, server terminates "
+"extra ones after idle_timeout"
+msgstr ""
+"为应用程序保留的最小空闲进程数。启动应用程序时，启动备用空闲进程；服务器将传"
+"入的请求分配给现有的空闲进程，如果max允许，则分叉新的空闲进程以保持空闲级别。"
+"当进程完成请求并变为空闲时，服务器会在空闲超时后终止额外的请求"
+
+#, vue-format
+msgid "Minimum time before a repeated reply"
+msgstr "重复回复前的最短时间"
+
+#, vue-format
+msgid "Minor only"
+msgstr "仅限次要"
+
+#, vue-format
+msgid "Minute"
+msgstr "分钟"
+
+#, vue-format
+msgid "Minute should be a number between 0 and 59 or *"
+msgstr "分钟数必须是0到59之间的数字或是 *"
+
+#, vue-format
+msgid "Minute: %{minute}"
+msgstr "分：%{minute}"
+
+#, vue-format
+msgid "minutes"
+msgstr "分钟"
+
+#, vue-format
+msgid "minutes %s through %s past the hour"
+msgstr "小时后的第 %s 到 %s 分钟"
+
+#, vue-format
+msgid "Mode"
+msgstr "模式"
+
+#, vue-format
+msgid "Mode:"
+msgstr "模式："
+
+#, vue-format
+msgid "Moderate"
+msgstr "中度"
+
+#, vue-format
+msgid "Moderator"
+msgstr "Moderator"
+
+#, vue-format
+msgid "Modified"
+msgstr "已修改"
+
+#, vue-format
+msgid "Modify"
+msgstr "修改"
+
+#, vue-format
+msgid "Modify %{domain}"
+msgstr "修改 %{domain}"
+
+#, vue-format
+msgid "Modify App"
+msgstr "修改应用程序"
+
+#, vue-format
+msgid "Modify Autoresponder"
+msgstr "修改自动回复"
+
+#, vue-format
+msgid "Modify Backup"
+msgstr "修改备份"
+
+#, vue-format
+msgid "Modify Backup Schedule"
+msgstr "修改备份计划"
+
+#, vue-format
+msgid "Modify Domain"
+msgstr "修改域名"
+
+#, vue-format
+msgid "Modify Forwarder"
+msgstr "修改转发器"
+
+#, vue-format
+msgid "Modify FTP Account"
+msgstr "修改FTP账号"
+
+#, vue-format
+msgid "Modify Key"
+msgstr "修改密钥"
+
+#, vue-format
+msgid "Modify Login Key"
+msgstr "修改登录密钥"
+
+#, vue-format
+msgid "Modify Mailing List"
+msgstr "修改邮件列表"
+
+#, vue-format
+msgid "Modify Mailing List: %{list}"
+msgstr "修改邮件列表:％{list}"
+
+#, vue-format
+msgid "Modify MX Records"
+msgstr "修改MX记录"
+
+#, vue-format
+msgid "Modify Package"
+msgstr "修改套餐"
+
+#, vue-format
+msgid "Modify Privileges"
+msgstr "修改权限"
+
+#, vue-format
+msgid "Modify Repository %{ name }"
+msgstr "修改版本库 %{ name }"
+
+#, vue-format
+msgid "Modify Reseller Package"
+msgstr "修改分销者套餐"
+
+#, vue-format
+msgid "Modify Vacation Message"
+msgstr "修改假期信息"
+
+#, vue-format
+msgid "Modify Your Own User data"
+msgstr "修改您自己的用户数据"
+
+#, vue-format
+msgid "Modify Your Own User Data"
+msgstr "修改您自己的用户数据"
+
+#, vue-format
+msgid "ModSecurity"
+msgstr "ModSecurity"
+
+#, vue-format
+msgid "ModSecurity Disabled Rules"
+msgstr "ModSecurity禁用规则"
+
+#, vue-format
+msgid "ModSecurity Status"
+msgstr "ModSecurity 状态"
+
+#, vue-format
+msgid "Modsecurity: %{ domain }"
+msgstr "Modsecurity: %{ domain }"
+
+#, vue-format
+msgid "Module"
+msgstr "模块"
+
+#, vue-format
+msgid "Monday"
+msgstr "星期一"
+
+#, vue-format
+msgid "Monitor all services"
+msgstr "监控所有服务"
+
+#, vue-format
+msgid "Monitor Backup: %{ id }"
+msgstr "监视器备份: %{id}"
+
+#, vue-format
+msgid "Month"
+msgstr "月"
+
+#, vue-format
+msgid "Month: %{month}"
+msgstr "月份: %{month}"
+
+#, vue-format
+msgid "More..."
+msgstr "更多..."
+
+#, vue-format
+msgid "Mounted on"
+msgstr "挂载于"
+
+#, vue-format
+msgid "Move"
+msgstr "移动"
+
+#, vue-format
+msgid "Move File"
+msgid_plural "Move Files"
+msgstr[0] "移动文件"
+
+#, vue-format
+msgid "Move to %{directory}"
+msgstr "移动到 %{directory}"
+
+#, vue-format
+msgid "Move Users"
+msgstr "移动用户"
+
+#, vue-format
+msgid "Move Users between Resellers"
+msgstr "在分销商之间移动用户"
+
+#, vue-format
+msgid "Move Users Between Resellers"
+msgstr "修改用户归属分销者"
+
+#, vue-format
+msgid "Multi Server is currently turned OFF"
+msgstr "集群功能已关闭"
+
+#, vue-format
+msgid "Multi Server Setup"
+msgstr "集群设置"
+
+#, vue-format
+msgid "Multiple Targets"
+msgstr "多个目标"
+
+#, vue-format
+msgid "Mungedomain"
+msgstr "Mungedomain"
+
+#, vue-format
+msgid "MX Records"
+msgstr "MX 记录"
+
+#, vue-format
+msgid "MX Template"
+msgstr "MX 模板"
+
+#, vue-format
+msgid "My Files"
+msgstr "我的文件"
+
+#, vue-format
+msgid "My Messages"
+msgstr "我的消息"
+
+#, vue-format
+msgid "My Users"
+msgstr "我的用户"
+
+#, vue-format
+msgid "MySQL Databases"
+msgstr "MySQL数据库"
+
+#, vue-format
+msgid "Name"
+msgstr "名称"
+
+#, vue-format
+msgid "Name already in list"
+msgstr "名称已经在列表中"
+
+#, vue-format
+msgid "Name in License"
+msgstr "License中的名称"
+
+#, vue-format
+msgid "Name Server"
+msgstr "NS服务器"
+
+#, vue-format
+msgid "Name Server 1"
+msgstr "域名服务器1"
+
+#, vue-format
+msgid "Name Server 1:"
+msgstr "NS服务器1："
+
+#, vue-format
+msgid "Name Server 2"
+msgstr "域名服务器2"
+
+#, vue-format
+msgid "Name Server 2:"
+msgstr "NS服务器2："
+
+#, vue-format
+msgid "Name Servers"
+msgstr "域名服务器"
+
+#, vue-format
+msgid "Name:"
+msgstr "名称："
+
+#, vue-format
+msgid "Nameserver"
+msgstr "域名服务器"
+
+#, vue-format
+msgid "Navigate to WordPress Page"
+msgstr "导航到 WordPress 页面"
+
+#, vue-format
+msgid "Navigation"
+msgstr "导航栏"
+
+#, vue-format
+msgid "Navigation filter"
+msgstr "导航过滤"
+
+#, vue-format
+msgid "Navigation Filter"
+msgstr "导航过滤"
+
+#, vue-format
+msgid "Netdata server metrics"
+msgstr "Netdata 服务器指标"
+
+#, vue-format
+msgid "Netmask"
+msgstr "网络掩码"
+
+#, vue-format
+msgid "Neutral"
+msgstr "中性"
+
+#, vue-format
+msgid "Never"
+msgstr "从不使用"
+
+#, vue-format
+msgid "New Domain"
+msgstr "新域名"
+
+#, vue-format
+msgid "New File"
+msgstr "新建文件"
+
+#, vue-format
+msgid "New Folder"
+msgstr "新文件夹"
+
+#, vue-format
+msgid "New Forwarder Name"
+msgstr "新建转发器名称"
+
+#, vue-format
+msgid "New Import"
+msgstr "新建导入"
+
+#, vue-format
+msgid "New Messages"
+msgstr "新消息"
+
+#, vue-format
+msgid "New Name"
+msgstr "新名称"
+
+#, vue-format
+msgid "New Package Name"
+msgstr "新软件包名称"
+
+#, vue-format
+msgid "New Password"
+msgstr "新密码"
+
+#, vue-format
+msgid "New Path"
+msgstr "新路径"
+
+#, vue-format
+msgid "New Path (Optional)"
+msgstr "新路径(可选)"
+
+#, vue-format
+msgid "New Random Password"
+msgstr "新随机密码"
+
+#, vue-format
+msgid "New Secret Set:"
+msgstr "新建密钥集："
+
+#, vue-format
+msgid "New sub-folder"
+msgstr "新建子文件夹"
+
+#, vue-format
+msgid "Newer"
+msgstr "较新"
+
+#, vue-format
+msgid "Newer Than:"
+msgstr "日期之后的:"
+
+#, vue-format
+msgid "Newest Message"
+msgstr "最新消息"
+
+#, vue-format
+msgid "Next"
+msgstr "下一页"
+
+#, vue-format
+msgid "Next Retries"
+msgstr "下次重试"
+
+#, vue-format
+msgid "Next Retry"
+msgstr "下次重试"
+
+#, vue-format
+msgid "Next Step"
+msgstr "下一步"
+
+#, vue-format
+msgid "Nginx Templates"
+msgstr "Nginx 模板"
+
+#, vue-format
+msgid "Nginx Unit"
+msgstr "Nginx 单元"
+
+#, vue-format
+msgid "Nginx URL Rewrites"
+msgstr "Nginx URL 重写"
+
+#, vue-format
+msgid "No"
+msgstr "否"
+
+#, vue-format
+msgid "No backups available"
+msgstr "没有可用的备份"
+
+#, vue-format
+msgid "No commands matching this filter..."
+msgstr "没有与此过滤器匹配的命令..."
+
+#, vue-format
+msgid "No data to show"
+msgstr "无数据显示"
+
+#, vue-format
+msgid "No Data to Show"
+msgstr "没有要显示的数据"
+
+#, vue-format
+msgid "No default domain"
+msgstr "无默认域名"
+
+#, vue-format
+msgid "No Domains"
+msgstr "无域名"
+
+#, vue-format
+msgid "No elements matching the search criteria."
+msgstr "没有符合搜索条件的元素。"
+
+#, vue-format
+msgid "No icons found"
+msgstr "找不到图标"
+
+#, vue-format
+msgid "No Installed Widgets"
+msgstr "无已安装的组件"
+
+#, vue-format
+msgid "No items to show"
+msgstr "没有要显示的项目"
+
+#, vue-format
+msgid "No maintenance tasks available"
+msgstr "没有可用的维护任务"
+
+#, vue-format
+msgid "No new messages"
+msgstr "没有新消息"
+
+#, vue-format
+msgid "No pages that match the search criteria..."
+msgstr "没有符合搜索条件的页面..."
+
+#, vue-format
+msgid "No pointer"
+msgstr "没有指向"
+
+#, vue-format
+msgid "No redirection"
+msgstr "无重定向"
+
+#, vue-format
+msgid "No Redirection"
+msgstr "无重定向"
+
+#, vue-format
+msgid "No results"
+msgstr "无结果"
+
+#, vue-format
+msgid "No Results"
+msgstr "无结果"
+
+#, vue-format
+msgid "No search results match given criteria"
+msgstr "没有符合给定条件的搜索结果"
+
+#, vue-format
+msgid "No widget selected"
+msgstr "无选中的组件"
+
+#, vue-format
+msgid "Node.js"
+msgstr "Node.js"
+
+#, vue-format
+msgid "None"
+msgstr "无"
+
+#, vue-format
+msgid "Normal"
+msgstr "正常"
+
+#, vue-format
+msgid "Normal icons"
+msgstr "正常图标"
+
+#, vue-format
+msgid "Not After"
+msgstr "不晚于"
+
+#, vue-format
+msgid "Not Before"
+msgstr "不早于"
+
+#, vue-format
+msgid "Not defined"
+msgstr "未定义"
+
+#, vue-format
+msgid ""
+"Note that the Login Keys are one-way encrypted, just like passwords. They "
+"cannot be retrieved if you forget them."
+msgstr "请注意登陆Key是和密码一样是单向加密的。如果忘记了的话就无法取回的了。"
+
+#, vue-format
+msgid "Note that there are no spaces"
+msgstr "请注意, 没有空格"
+
+#, vue-format
+msgid ""
+"Note that you must set the IP to be shared if you want to add multiple users "
+"to it. If you select a non-shared IP, you can only restore 1 user to it."
+msgstr "请注意如果希望让多个用户共享一个IP的话，那个IP必须设置为共享的。如果选择了一"
+"个非共享的IP，则只能有1个用户还原到这个IP。"
+
+#, vue-format
+msgid ""
+"Note: Database instance and database user account will not be deleted, "
+"because it might be shared with other websites or services."
+msgstr "注意：不会删除数据库实例和数据库用户帐户，因为它可能与其他网站或服务共享。"
+
+#, vue-format
+msgid ""
+"Note: For older exim.pl files before version 13, each delivery attempt is "
+"counted, including retries."
+msgstr "注意：对于版本13之前的旧的 exim.pl 文件，每次发送尝试都被计数，包括检索。"
+
+#, vue-format
+msgid "Note: selected database will be cleared"
+msgstr "注意：选择的数据库将被清除"
+
+#, vue-format
+msgid ""
+"Note: the word filter matches partial words. For example, if you block the "
+"word \"put\" and the email contains \"computer\", then the email will be "
+"blocked. If you expect it to be its own word, then block \" put \", with "
+"spaces beside it to avoid partial matching."
+msgstr ""
+"注意: 单词过滤器匹配部分单词。例如，如果您屏蔽了“put”一词，电子邮件包含了“电"
+"脑”，那么电子邮件就会被阻止如果你期望它是自己的单词，然后将\"块放在\", "
+"并将空格放在之外避免部分匹配。"
+
+#, vue-format
+msgid "Notified"
+msgstr "已通知"
+
+#, vue-format
+msgid "Notify"
+msgstr "通知"
+
+#, vue-format
+msgid "Notify administrator account on certificate request failures"
+msgstr "在证书请求失败时通知管理员帐户"
+
+#, vue-format
+msgid "Notify Admins after a User has"
+msgstr "在客户发生以下情况时通知管理员"
+
+#, vue-format
+msgid "Notify Admins after an IP has"
+msgstr "在IP发生以下情况时通知管理员"
+
+#, vue-format
+msgid ""
+"Notify all admins whenever a service goes down using the messaging/ticket "
+"system."
+msgstr "在服务离线时使用消息/工单系统通知所有管理员。"
+
+#, vue-format
+msgid ""
+"Notify me on all incorrect codes entries. Disabling this option will still "
+"notify you after 5 failed attempts."
+msgstr "通知我所有不正确的代码条目。禁用此选项仍将在5次尝试失败后通知您。"
+
+#, vue-format
+msgid "Notify user on certificate request success"
+msgstr "通知用户证书申请成功"
+
+#, vue-format
+msgid "Notify users on certificate request failures"
+msgstr "在证书请求失败时通知用户"
+
+#, vue-format
+msgid "November"
+msgstr "11月"
+
+#, vue-format
+msgid "Now"
+msgstr "现在"
+
+#, vue-format
+msgid "NS1"
+msgstr "NS1"
+
+#, vue-format
+msgid "NS2"
+msgstr "NS2"
+
+#, vue-format
+msgid "Number of auto-renew certificate request failures before disabling it"
+msgstr "禁用前自动续订证书请求失败的次数"
+
+#, vue-format
+msgid "Number of lines from the end"
+msgstr "从尾部开始的行数"
+
+#, vue-format
+msgid "Number of lines to show"
+msgstr "显示行数"
+
+#, vue-format
+msgid "Number of user domains shown"
+msgstr "显示的用户域名数"
+
+#, vue-format
+msgid "Number of Users"
+msgstr "用户数"
+
+#, vue-format
+msgid "October"
+msgstr "10月"
+
+#, vue-format
+msgid "of %{ total }"
+msgstr "/ %{ total }"
+
+#, vue-format
+msgid "Off"
+msgstr "关闭"
+
+#, vue-format
+msgid "Old Domain"
+msgstr "旧域名"
+
+#, vue-format
+msgid "Old Package Name"
+msgstr "旧软件包名称"
+
+#, vue-format
+msgid "Old Password"
+msgstr "旧密码"
+
+#, vue-format
+msgid "Older"
+msgstr "较旧"
+
+#, vue-format
+msgid "Older than"
+msgstr "日期之前"
+
+#, vue-format
+msgid "On"
+msgstr "开启"
+
+#, vue-format
+msgid "on %{ date } from %{ ip }"
+msgstr "于%{ date }从%{ ip }登录"
+
+#, vue-format
+msgid "on partition"
+msgstr "在分区上"
+
+#, vue-format
+msgid ""
+"On restore, check for domain conflict in domainowners file, rather than the "
+"named.conf, or remote named.conf files."
+msgstr "恢复时，不要用named.conf或者远程的named."
+"conf文件作为冲突检查。请查看domainowners文件。"
+
+#, vue-format
+msgid "On Schedule"
+msgstr "按计划进行"
+
+#, vue-format
+msgid ""
+"One-Click login requires does not support webmail_link=%{ webmail_link }. "
+"Try webmail_link=roundcube"
+msgstr "单击登录需要不支持 webmail_link=%{ webmail_link "
+"}。请尝试webmail_link=roundcube"
+
+#, vue-format
+msgid "One-Time Login URL Created"
+msgstr "一次性登录URL已创建"
+
+#, vue-format
+msgid "Only add the few lines of the server code you need to insert."
+msgstr "只添加需要插入的几行服务器代码。"
+
+#, vue-format
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr "仅在当前具有功能本地 DNS 的域名上使用通配符"
+
+#, vue-format
+msgid "Only use wildcards for locally controlled dns zones."
+msgstr "仅在本地控制的dns区域使用通配符。"
+
+#, vue-format
+msgid "Oops... something went wrong. Please, try load in new tab"
+msgstr "糟糕……出错了，请尝试在新标签中加载"
+
+#, vue-format
+msgid "Open"
+msgstr "打开"
+
+#, vue-format
+msgid "Open + Confirm"
+msgstr "打开 + 确认"
+
+#, vue-format
+msgid "Open Basedir"
+msgstr "打开基础目录"
+
+#, vue-format
+msgid "Open BaseDir"
+msgstr "Open BaseDir"
+
+#, vue-format
+msgid "Open documentation"
+msgstr "打开文档"
+
+#, vue-format
+msgid "Open in new tab"
+msgstr "在新标签页中打开"
+
+#, vue-format
+msgid "Optimize"
+msgstr "优化"
+
+#, vue-format
+msgid "Optional"
+msgstr "可选"
+
+#, vue-format
+msgid "Options"
+msgstr "选项"
+
+#, vue-format
+msgid "or"
+msgstr "或者"
+
+#, vue-format
+msgid "Order"
+msgstr "顺序"
+
+#, vue-format
+msgid "Original Package"
+msgstr "原始软件包"
+
+#, vue-format
+msgid "OS kernel info"
+msgstr "操作系统内核信息"
+
+#, vue-format
+msgid "Other"
+msgstr "其他"
+
+#, vue-format
+msgid "Other..."
+msgstr "其他..."
+
+#, vue-format
+msgid "Out"
+msgstr "退出"
+
+#, vue-format
+msgid "Outbound"
+msgstr "出站"
+
+#, vue-format
+msgid "Outgoing"
+msgstr "传出"
+
+#, vue-format
+msgid "Override Shade"
+msgstr "覆盖阴影"
+
+#, vue-format
+msgid "Override Suspension Message"
+msgstr "覆盖暂停消息"
+
+#, vue-format
+msgid "Override TTL"
+msgstr "覆盖 TTL"
+
+#, vue-format
+msgid "Override TTL Value"
+msgstr "覆盖 TTL 值"
+
+#, vue-format
+msgid "Oversell"
+msgstr "超售"
+
+#, vue-format
+msgid ""
+"Overselling: Allow Resellers to sell More features than they are allowed."
+msgstr "超售: 允许分销销售超过允许的资源数量。"
+
+#, vue-format
+msgid "Overusage highlight"
+msgstr "更加明亮"
+
+#, vue-format
+msgid "Overview:"
+msgstr "概览："
+
+#, vue-format
+msgid "Overwrite"
+msgstr "覆盖"
+
+#, vue-format
+msgid "Owner"
+msgstr "所有者"
+
+#, vue-format
+msgid "package"
+msgid_plural "packages"
+msgstr[0] "套餐"
+
+#, vue-format
+msgid "Package"
+msgstr "软件包"
+
+#, vue-format
+msgid "Package already exists"
+msgstr "同名套餐已存在"
+
+#, vue-format
+msgid "Package Name"
+msgstr "套餐名称"
+
+#, vue-format
+msgid "Package Name should not contain any special symbols"
+msgstr "套餐名不应包含任何特殊符号"
+
+#, vue-format
+msgid "Package name should not contain special characters"
+msgstr "套餐名不应包含任何特殊字母"
+
+#, vue-format
+msgid "Parse service logs for brute force attacks"
+msgstr "分析暴力破解攻击的记录日志"
+
+#, vue-format
+msgid "Partition Usage Threshold should be number between 0 and 100"
+msgstr "分区使用阈值应为0到100之间"
+
+#, vue-format
+msgid "Password"
+msgstr "密码"
+
+#, vue-format
+msgid "Password Management"
+msgstr "密码管理"
+
+#, vue-format
+msgid "Password Protected Directories"
+msgstr "密码保护目录"
+
+#, vue-format
+msgid "Password:"
+msgstr "密码："
+
+#, vue-format
+msgid "Paste a pre-generated certificate and key"
+msgstr "粘贴预生成的证书和密钥"
+
+#, vue-format
+msgid "Paste Authorized Key"
+msgstr "粘贴Authorized Key"
+
+#, vue-format
+msgid "Paste Key"
+msgstr "粘贴Key"
+
+#, vue-format
+msgid "Path"
+msgstr "路径"
+
+#, vue-format
+msgid "Path to redis socket file"
+msgstr "Redis socket文件路径"
+
+#, vue-format
+msgid "Path:"
+msgstr "路径："
+
+#, vue-format
+msgid "Pending"
+msgstr "待办"
+
+#, vue-format
+msgid "Percent"
+msgstr "百分比"
+
+#, vue-format
+msgid "Percentage"
+msgstr "百分比"
+
+#, vue-format
+msgid "Period:"
+msgstr "周期："
+
+#, vue-format
+msgid "Perl"
+msgstr "Perl"
+
+#, vue-format
+msgid "Perl Modules"
+msgstr "Perl 模块"
+
+#, vue-format
+msgid "Permissions"
+msgstr "权限"
+
+#, vue-format
+msgid "Personal DNS's"
+msgstr "个人的DNS"
+
+#, vue-format
+msgid "PHP"
+msgstr "PHP"
+
+#, vue-format
+msgid "PHP 7.3"
+msgstr "PHP 7.3"
+
+#, vue-format
+msgid "PHP Access"
+msgstr "使用PHP的权限"
+
+#, vue-format
+msgid "PHP Configuration"
+msgstr "PHP 配置"
+
+#, vue-format
+msgid "PHP Script Name"
+msgstr "PHP 脚本名称"
+
+#, vue-format
+msgid "PHP Scripts"
+msgstr "PHP脚本"
+
+#, vue-format
+msgid "PHP Settings"
+msgstr "PHP设置"
+
+#, vue-format
+msgid "PHP Version"
+msgstr "PHP版本"
+
+#, vue-format
+msgid "PHP Version selector"
+msgstr "PHP版本选择"
+
+#, vue-format
+msgid "PHP Version Selector"
+msgstr "PHP 版本选择器"
+
+#, vue-format
+msgid "PHP-FPM config customization for %{ user } php-fpm %{ version }"
+msgstr "自定义用户 %{ user } 的PHP-FPM配置, 版本%{ version }"
+
+#, vue-format
+msgid "PHP-FPM Configuration"
+msgstr "PHP-FPM配置"
+
+#, vue-format
+msgid "php-fpm Global |CUSTOM1|"
+msgstr "php-fpm Global |CUSTOM1|"
+
+#, vue-format
+msgid "php-fpm Global |CUSTOM2|"
+msgstr "php-fpm Global |CUSTOM2|"
+
+#, vue-format
+msgid "phpMyAdmin"
+msgstr "phpMyAdmin"
+
+#, vue-format
+msgid "PID"
+msgstr "PID"
+
+#, vue-format
+msgid "PID(s)"
+msgstr "PID"
+
+#, vue-format
+msgid "Pipe"
+msgstr "管道"
+
+#, vue-format
+msgid "Plain"
+msgstr "纯文本"
+
+#, vue-format
+msgid "Plain Text"
+msgstr "纯文本"
+
+#, vue-format
+msgid "Plan"
+msgstr "计划"
+
+#, vue-format
+msgid "Play"
+msgstr "播放"
+
+#, vue-format
+msgid ""
+"Please add a period symbol at the end of the domain name if domain should "
+"not be auto-appended."
+msgstr "如果域名不应自动添加，请在域名末尾添加一个周期符号。"
+
+#, vue-format
+msgid "Please confirm your request"
+msgstr "请确认您的请求"
+
+#, vue-format
+msgid "Please enter username/domain to search"
+msgstr "请输入要搜索的用户名/域名"
+
+#, vue-format
+msgid "Please enter your search criteria"
+msgstr "请输入搜索条件"
+
+#, vue-format
+msgid "Please keep this is mind when chosing a key's privileges."
+msgstr "在选择密钥权限时，请记住这一点。"
+
+#, vue-format
+msgid ""
+"Please make sure you specify different database IDs for your applications, "
+"so that there would be no key conflicts."
+msgstr "请确保您为您的应用程序指定不同的数据库ID，以免发生关键冲突。"
+
+#, vue-format
+msgid ""
+"Please Note that if a key is allowed to access ALL_USER, CMD_LOGIN_KEYS, or "
+"CMD_API_LOGIN_KEYS, that key will have sufficient privileges to create "
+"another key of higher privilege."
+msgstr ""
+"请注意，如果允许密钥访问 ALL_USER、CMD_LOGIN_KEYS 或 "
+"CMD_API_LOGIN_KEYS，则该密钥将具有足够的权限来创建另一个更高权限的密钥。"
+
+#, vue-format
+msgid "Please provide custom directory in the field below"
+msgstr "请在下面的字段中提供自定义目录"
+
+#, vue-format
+msgid "Plugin"
+msgstr "插件"
+
+#, vue-format
+msgid "Plugin Manager"
+msgstr "插件管理器"
+
+#, vue-format
+msgid "Plugins"
+msgstr "插件"
+
+#, vue-format
+msgid "Plugins Allow/Deny"
+msgstr "插件 允许/拒绝"
+
+#, vue-format
+msgid "Plugins Category"
+msgstr "插件类别"
+
+#, vue-format
+msgid "Pointer"
+msgstr "域名指向"
+
+#, vue-format
+msgid "Pointer:"
+msgstr "域名指向:"
+
+#, vue-format
+msgid "Pointers"
+msgstr "域名指向"
+
+#, vue-format
+msgid "Policy"
+msgstr "策略"
+
+#, vue-format
+msgid "POP"
+msgstr "POP"
+
+#, vue-format
+msgid "Port"
+msgstr "端口"
+
+#, vue-format
+msgid "Post reply"
+msgstr "发表回复"
+
+#, vue-format
+msgid "Post Reply"
+msgstr "发表回复"
+
+#, vue-format
+msgid "Precedence"
+msgstr "优先级"
+
+#, vue-format
+msgid "Preferences"
+msgstr "首选项"
+
+#, vue-format
+msgid "Preferred Archive Type"
+msgstr "首选归档类型"
+
+#, vue-format
+msgid "Present"
+msgstr "展示"
+
+#, vue-format
+msgid "Preserve owner"
+msgstr "保留所有者"
+
+#, vue-format
+msgid "Prevent 127.0.0.1 from being Blacklisted"
+msgstr "防止127.0.0.1 被列入黑名单"
+
+#, vue-format
+msgid "Prevent E-mail"
+msgstr "阻止电子邮件"
+
+#, vue-format
+msgid "Previous"
+msgstr "上一页"
+
+#, vue-format
+msgid "Previous Page"
+msgstr "上一页"
+
+#, vue-format
+msgid "Previous Step"
+msgstr "上一步"
+
+#, vue-format
+msgid "Primary"
+msgstr "主要"
+
+#, vue-format
+msgid "Print"
+msgstr "打印"
+
+#, vue-format
+msgid "Priority"
+msgstr "优先级"
+
+#, vue-format
+msgid "Priority:"
+msgstr "优先级："
+
+#, vue-format
+msgid "Privileges"
+msgstr "权限"
+
+#, vue-format
+msgid "Privileges:"
+msgstr "权限:"
+
+#, vue-format
+msgid "Pro Pack"
+msgstr "Pro Pack"
+
+#, vue-format
+msgid "Process Info"
+msgstr "进程信息"
+
+#, vue-format
+msgid "Process list"
+msgstr "进程列表"
+
+#, vue-format
+msgid "Process Monitor"
+msgstr "进程监视器"
+
+#, vue-format
+msgid "Processes"
+msgstr "进程数"
+
+#, vue-format
+msgid "Processes:"
+msgstr "进程数:"
+
+#, vue-format
+msgid "Profile Setup"
+msgstr "配置文件设置"
+
+#, vue-format
+msgid "Progress"
+msgstr "进度"
+
+#, vue-format
+msgid "Proof is expired"
+msgstr "证明已过期"
+
+#, vue-format
+msgid "Proof is invalid"
+msgstr "证明无效"
+
+#, vue-format
+msgid "Proof License"
+msgstr "许可证证明"
+
+#, vue-format
+msgid "Proof value"
+msgstr "证明值"
+
+#, vue-format
+msgid "Protect"
+msgstr "保护"
+
+#, vue-format
+msgid "Protect Directory"
+msgstr "保护目录"
+
+#, vue-format
+msgid "Protected Directories"
+msgstr "受保护的目录"
+
+#, vue-format
+msgid "Protected Directory Prompt"
+msgstr "受保护的目录提示"
+
+#, vue-format
+msgid "Protected file types"
+msgstr "受保护的文件类型"
+
+#, vue-format
+msgid "Public"
+msgstr "公开"
+
+#, vue-format
+msgid "Public Keys"
+msgstr "公钥"
+
+#, vue-format
+msgid "Published"
+msgstr "已发布"
+
+#, vue-format
+msgid "Purge"
+msgstr "清除"
+
+#, vue-format
+msgid "Purge Archives"
+msgstr "清除归档"
+
+#, vue-format
+msgid "Purge Archives older than"
+msgstr "清除早于日期的档案"
+
+#, vue-format
+msgid "Purge Folder"
+msgstr "清除文件夹"
+
+#, vue-format
+msgid "Purge Received"
+msgstr "收到清除"
+
+#, vue-format
+msgid "Purge Spambox / Trash data after (days)"
+msgstr "清除垃圾箱/垃圾箱数据后(天)"
+
+#, vue-format
+msgid "Python"
+msgstr "Python"
+
+#, vue-format
+msgid "QR Code"
+msgstr "二维码"
+
+#, vue-format
+msgid "Quarantine"
+msgstr "隔离"
+
+#, vue-format
+msgid ""
+"Queue size (%{ queue_size }) is larger than the maximum value (%{ "
+"max_load_size}) and may timeout."
+msgstr "队列大小 (%{ queue_size }) 大于最大值 (%{ max_load_size}) 并且可能超时。"
+
+#, vue-format
+msgid "Quick Link:"
+msgstr "快速链接："
+
+#, vue-format
+msgid "Quick Navigation (Ctrl + Q)"
+msgstr "快速导航 (Ctrl + Q)"
+
+#, vue-format
+msgid "Quota can't be larger than 100TB"
+msgstr "Quota不能大于100TB"
+
+#, vue-format
+msgid "Range"
+msgstr "范围"
+
+#, vue-format
+msgid "Range end should be larger than start"
+msgstr "结束范围应该大于开始范围"
+
+#, vue-format
+msgid "Rates"
+msgstr "比率"
+
+#, vue-format
+msgid "raw"
+msgstr "raw"
+
+#, vue-format
+msgid "Re-sign your zone"
+msgstr "重置您的解析"
+
+#, vue-format
+msgid "Read"
+msgstr "读取"
+
+#, vue-format
+msgid "Read finished migration reports in the"
+msgstr "阅读已完成的迁移报告"
+
+#, vue-format
+msgid "Read finished scan reports in the"
+msgstr "阅读完成的扫描报告"
+
+#, vue-format
+msgid "Read Message"
+msgstr "阅读消息"
+
+#, vue-format
+msgid "Read Ticket"
+msgstr "读取工单"
+
+#, vue-format
+msgid "Reading from tracker stream..."
+msgstr "正在从 Tracker 流读取..."
+
+#, vue-format
+msgid "Reason"
+msgstr "原因"
+
+#, vue-format
+msgid "Reason:"
+msgstr "原因："
+
+#, vue-format
+msgid "Reboot"
+msgstr "重启"
+
+#, vue-format
+msgid "Reboot Server"
+msgstr "重新启动服务器"
+
+#, vue-format
+msgid "Received"
+msgstr "已接收"
+
+#, vue-format
+msgid "Received E-mails"
+msgstr "收到的电子邮件"
+
+#, vue-format
+msgid "Recipient(s)"
+msgstr "收件人"
+
+#, vue-format
+msgid "record"
+msgid_plural "records"
+msgstr[0] "记录"
+
+#, vue-format
+msgid "Record Type"
+msgstr "记录类型"
+
+#, vue-format
+msgid "Redirect"
+msgid_plural "Redirects"
+msgstr[0] "重定向"
+
+#, vue-format
+msgid "Redirect Domain"
+msgstr "重定向域名"
+
+#, vue-format
+msgid "Redirect it to the catch-all spam folder in your main IMAP account"
+msgstr "将其重定向到您主要的 IMAP 帐户中的 cat-all 垃圾邮件文件夹"
+
+#, vue-format
+msgid "Redirect Now"
+msgstr "立即重定向"
+
+#, vue-format
+msgid "Redirect to"
+msgstr "重定向至"
+
+#, vue-format
+msgid "Redirect Type"
+msgstr "重定向类型"
+
+#, vue-format
+msgid "Redirect URL"
+msgstr "重定向网址"
+
+#, vue-format
+msgid "Redirect URL:"
+msgstr "重定向网址："
+
+#, vue-format
+msgid "Redirecting to"
+msgstr "重定向至"
+
+#, vue-format
+msgid "Redirection for domain, pointers, and sub-domains."
+msgstr "域名、指向和子域名的重定向。"
+
+#, vue-format
+msgid "Redis"
+msgstr "Redis"
+
+#, vue-format
+msgid "Refreshed"
+msgstr "已刷新"
+
+#, vue-format
+msgid "Registered"
+msgstr "已注册"
+
+#, vue-format
+msgid "Reinstall WordPress"
+msgstr "重新安装 WordPress"
+
+#, vue-format
+msgid "Reject"
+msgstr "拒绝"
+
+#, vue-format
+msgid "Related Pages"
+msgstr "相关页面"
+
+#, vue-format
+msgid "Relaxed"
+msgstr "Relaxed"
+
+#, vue-format
+msgid "Reload"
+msgstr "重新加载"
+
+#, vue-format
+msgid "Reload every"
+msgstr "重新加载间隔"
+
+#, vue-format
+msgid "Reload file"
+msgstr "重新加载文件"
+
+#, vue-format
+msgid "Reload Files"
+msgstr "重新加载文件"
+
+#, vue-format
+msgid "Reload files..."
+msgstr "重新加载文件..."
+
+#, vue-format
+msgid "Reload in %{s} seconds"
+msgstr "在 %{n} 秒后重新加载"
+
+#, vue-format
+msgid "Reload Log"
+msgstr "重新加载日志"
+
+#, vue-format
+msgid "Reload Now"
+msgstr "立即重载"
+
+#, vue-format
+msgid "Reload Table"
+msgstr "重载表格"
+
+#, vue-format
+msgid "Reloading in %{n} second"
+msgid_plural "Reloading in %{n} seconds"
+msgstr[0] "在 %{n} 秒后重新加载"
+
+#, vue-format
+msgid "Remote"
+msgstr "远程"
+
+#, vue-format
+msgid "Remote cPanel server credentials"
+msgstr "远程 cPanel 服务器凭据"
+
+#, vue-format
+msgid "Remote Host"
+msgstr "远程主机"
+
+#, vue-format
+msgid "Remote is not set"
+msgstr "未设置远程主机"
+
+#, vue-format
+msgid "Remote Password"
+msgstr "远程密码"
+
+#, vue-format
+msgid "Remote Path"
+msgstr "远程路径"
+
+#, vue-format
+msgid "Remote Server"
+msgstr "远程服务器"
+
+#, vue-format
+msgid "Remote Transfer"
+msgstr "远程传输"
+
+#, vue-format
+msgid "Remote transfer method"
+msgstr "远程传输方法"
+
+#, vue-format
+msgid "Remote User"
+msgstr "远程用户"
+
+#, vue-format
+msgid "Remove"
+msgstr "删除"
+
+#, vue-format
+msgid "Remove %{n} file"
+msgid_plural "Remove %{n} files"
+msgstr[0] "删除 %{n} 个文件"
+
+#, vue-format
+msgid "Remove an IP from the BF blacklist after"
+msgstr "从BF黑名单中删除IP"
+
+#, vue-format
+msgid "Remove an IP from the blacklist after"
+msgstr "IP黑名单保留天数"
+
+#, vue-format
+msgid "Remove Authentication"
+msgstr "移除认证"
+
+#, vue-format
+msgid "Remove completely"
+msgstr "彻底删除"
+
+#, vue-format
+msgid "Remove Destination"
+msgstr "移除目标"
+
+#, vue-format
+msgid "Remove Directory Content"
+msgstr "删除目录内容"
+
+#, vue-format
+msgid "Remove DNS records for IP"
+msgid_plural "Remove DNS records for IPs"
+msgstr[0] "从此IP移除DNS记录"
+
+#, vue-format
+msgid "Remove file"
+msgstr "删除文件"
+
+#, vue-format
+msgid "Remove File"
+msgid_plural "Remove Files"
+msgstr[0] "删除文件"
+
+#, vue-format
+msgid "Remove Files"
+msgid_plural "Remove File"
+msgstr[0] "删除文件"
+
+#, vue-format
+msgid "Remove Filter"
+msgstr "删除过滤器"
+
+#, vue-format
+msgid "Remove folder"
+msgstr "移除文件夹"
+
+#, vue-format
+msgid "Remove Folder"
+msgid_plural "Remove Folders"
+msgstr[0] "移除文件夹"
+
+#, vue-format
+msgid "Remove Forwarder"
+msgstr "移除转发器"
+
+#, vue-format
+msgid "Remove from"
+msgstr "移除"
+
+#, vue-format
+msgid "Remove from blacklist"
+msgstr "从黑名单中移除"
+
+#, vue-format
+msgid "Remove from pointers"
+msgstr "从域名指向中移除"
+
+#, vue-format
+msgid "Remove from queue"
+msgstr "从队列中移除"
+
+#, vue-format
+msgid "Remove from reseller"
+msgstr "从分销商中删除"
+
+#, vue-format
+msgid "Remove from Skip List"
+msgstr "从列表中移除"
+
+#, vue-format
+msgid "Remove IP"
+msgstr "移除IP"
+
+#, vue-format
+msgid "Remove Protection"
+msgstr "移除保护"
+
+#, vue-format
+msgid "Remove public stats"
+msgstr "移除公共统计数据"
+
+#, vue-format
+msgid "Remove uploaded files"
+msgstr "移除已上传文件"
+
+#, vue-format
+msgid "Remove widget"
+msgstr "移除组件"
+
+#, vue-format
+msgid "Remove Widget"
+msgstr "移除组件"
+
+#, vue-format
+msgid "Rename"
+msgstr "重命名"
+
+#, vue-format
+msgid "Rename domain"
+msgstr "重命名域名"
+
+#, vue-format
+msgid "Rename Domain"
+msgstr "重命名域名"
+
+#, vue-format
+msgid "Rename Package"
+msgstr "重命名软件包"
+
+#, vue-format
+msgid "Renew certificates on suspended domains"
+msgstr "在暂停的域名上更新证书"
+
+#, vue-format
+msgid "Repair"
+msgstr "修复"
+
+#, vue-format
+msgid "Replace existing user"
+msgstr "替换现有用户"
+
+#, vue-format
+msgid "Replace expired/invalid certificates with the ones provided by ACME"
+msgstr "使用 ACME 提供证书替换过期/无效的证书"
+
+#, vue-format
+msgid "Replace Users"
+msgstr "替换用户"
+
+#, vue-format
+msgid "Replies"
+msgstr "回复"
+
+#, vue-format
+msgid "Reply Frequency"
+msgstr "回复频率"
+
+#, vue-format
+msgid "Reply To"
+msgstr "答复"
+
+#, vue-format
+msgid "Report Format"
+msgstr "报告格式"
+
+#, vue-format
+msgid "Reporting Interval"
+msgstr "报告间隔"
+
+#, vue-format
+msgid "Repository created"
+msgstr "版本库已创建"
+
+#, vue-format
+msgid "Repository deleted"
+msgstr "版本库已删除"
+
+#, vue-format
+msgid "Repository Info"
+msgstr "版本库信息"
+
+#, vue-format
+msgid "Repository is not valid"
+msgstr "版本库无效"
+
+#, vue-format
+msgid "Repository Logs"
+msgstr "版本库日志"
+
+#, vue-format
+msgid "Repository modified"
+msgstr "版本库已修改"
+
+#, vue-format
+msgid "Repository: %{name}"
+msgstr "版本库：%{name}"
+
+#, vue-format
+msgid ""
+"Request and display folder sizes; noticeably increases data loading time "
+"when enabled."
+msgstr "请求并显示文件夹大小；启用时显著增加数据加载时间。"
+
+#, vue-format
+msgid "Request Line"
+msgstr "请求行"
+
+#, vue-format
+msgid "Requested page doesn't belong to your authority level"
+msgstr "请求的页面不属于您的权限级别"
+
+#, vue-format
+msgid "Requests"
+msgstr "请求"
+
+#, vue-format
+msgid "Require valid Two-Step Authentication Code to login to this account."
+msgstr "需要有效的两步验证代码才能登录到此账号。"
+
+#, vue-format
+msgid "Required field"
+msgstr "必填字段"
+
+#, vue-format
+msgid "Reseller"
+msgstr "分销商"
+
+#, vue-format
+msgid "Reseller Bandwidth"
+msgstr "分销者带宽"
+
+#, vue-format
+msgid "Reseller History"
+msgstr "分销商历史"
+
+#, vue-format
+msgid "Reseller package with such name exists already and will be overwritten."
+msgstr "具有此名称的分销套餐已存在, 将被覆盖。"
+
+#, vue-format
+msgid "Reseller Plugins"
+msgstr "分销商插件"
+
+#, vue-format
+msgid "Reseller Quota"
+msgstr "分销商限额"
+
+#, vue-format
+msgid "Reseller Skin owned by %{ owner }"
+msgstr "由 %{ owner } 拥有的分销者界面皮肤"
+
+#, vue-format
+msgid "Reseller Statistics"
+msgstr "分销商统计"
+
+#, vue-format
+msgid "Reseller Stats"
+msgstr "分销者统计"
+
+#, vue-format
+msgid "Reseller Tools"
+msgstr "分销者工具"
+
+#, vue-format
+msgid "Reseller: %{ creator }"
+msgstr "分销者: %{ creator }"
+
+#, vue-format
+msgid "Reseller: %{ username } and %{ nusers } user"
+msgid_plural "Reseller: %{ username } and %{ nusers } users"
+msgstr[0] "销售商: %{ username } 和 %{ nusers } 个用户"
+
+#, vue-format
+msgid "Reseller(s)"
+msgstr "经销商"
+
+#, vue-format
+msgid "Resellers"
+msgstr "分销者"
+
+#, vue-format
+msgid "Resellers Count"
+msgstr "经销商数量"
+
+#, vue-format
+msgid "Resend"
+msgstr "重新发送"
+
+#, vue-format
+msgid "Resend Welcome E-mail"
+msgstr "重新发送欢迎电子邮件"
+
+#, vue-format
+msgid "Resend welcome email"
+msgstr "重新发送欢迎电子邮件"
+
+#, vue-format
+msgid "Reset"
+msgstr "重置"
+
+#, vue-format
+msgid "Reset all"
+msgstr "重置全部"
+
+#, vue-format
+msgid "Reset All"
+msgstr "重置全部"
+
+#, vue-format
+msgid "Reset count of IP/User failed attempts"
+msgstr "重置IP/用户尝试失败计数"
+
+#, vue-format
+msgid "Reset Defaults"
+msgstr "复位默认值"
+
+#, vue-format
+msgid "Reset Owner"
+msgstr "重置所有者"
+
+#, vue-format
+msgid "Reset Owner Recursive"
+msgstr "重置所有者"
+
+#, vue-format
+msgid "Reset to default"
+msgstr "重置为默认值"
+
+#, vue-format
+msgid "Reset to defaults"
+msgstr "重置为默认值"
+
+#, vue-format
+msgid "Reset Today"
+msgstr "今日重置"
+
+#, vue-format
+msgid "Resetting the defaults will wipe any custom entries you have made."
+msgstr "重置为默认值将会清除所有自定义项目。"
+
+#, vue-format
+msgid "Resource Limits"
+msgstr "资源限制"
+
+#, vue-format
+msgid "Responder Address:"
+msgstr "自动回复地址："
+
+#, vue-format
+msgid "Responder Message:"
+msgstr "自动回复信息："
+
+#, vue-format
+msgid "Restart"
+msgstr "重新启动"
+
+#, vue-format
+msgid "Restart Application"
+msgstr "重启应用程序"
+
+#, vue-format
+msgid "Restart DirectAdmin"
+msgstr "重启DirectAdmin"
+
+#, vue-format
+msgid "Restarting now..."
+msgstr "正在重启..."
+
+#, vue-format
+msgid "Restore"
+msgstr "还原"
+
+#, vue-format
+msgid "Restore Backup"
+msgstr "恢复备份"
+
+#, vue-format
+msgid "Restore Options"
+msgstr "还原选项"
+
+#, vue-format
+msgid "Restore to partition"
+msgstr "还原到分区"
+
+#, vue-format
+msgid "Restore with local NameServers."
+msgstr "使用本地NameServer恢复。"
+
+#, vue-format
+msgid "Restore with SPF values from backup."
+msgstr "使用备份中的SPF参数恢复。"
+
+#, vue-format
+msgid "Restrict Post"
+msgstr "限制 Post"
+
+#, vue-format
+msgid "Result: %{ name }"
+msgstr "结果：%{ name }"
+
+#, vue-format
+msgid "Retries"
+msgstr "重试"
+
+#, vue-format
+msgid "Retry"
+msgstr "重试"
+
+#, vue-format
+msgid "Retry Now"
+msgstr "现在重试"
+
+#, vue-format
+msgid "Rewrite Apache"
+msgstr "重写 Apache"
+
+#, vue-format
+msgid "Roles"
+msgstr "角色"
+
+#, vue-format
+msgid "Root"
+msgstr "根目录"
+
+#, vue-format
+msgid "Route"
+msgstr "路由"
+
+#, vue-format
+msgid "Routes"
+msgstr "路由"
+
+#, vue-format
+msgid "Rows:"
+msgstr "行:"
+
+#, vue-format
+msgid "Rspamd spam filtering system"
+msgstr "垃圾邮件过滤系统"
+
+#, vue-format
+msgid "Ruby"
+msgstr "Ruby"
+
+#, vue-format
+msgid "Rule ID"
+msgstr "规则 ID"
+
+#, vue-format
+msgid "Run import"
+msgstr "运行导入"
+
+#, vue-format
+msgid "Run Now"
+msgstr "立即运行"
+
+#, vue-format
+msgid "Run on @reboot"
+msgstr "在 @reboot 时运行"
+
+#, vue-format
+msgid "Run System Backup"
+msgstr "运行系统备份"
+
+#, vue-format
+msgid "Running"
+msgstr "正在运行"
+
+#, vue-format
+msgid "Safe"
+msgstr "安全"
+
+#, vue-format
+msgid "Safe Mode"
+msgstr "安全模式"
+
+#, vue-format
+msgid "Same as database name"
+msgstr "与数据库名称相同"
+
+#, vue-format
+msgid "Same as domain"
+msgstr "与域名相同"
+
+#, vue-format
+msgid "Same as Main account"
+msgstr "与主帐号相同"
+
+#, vue-format
+msgid "Sample Cron commands:"
+msgstr "定时任务命令样本："
+
+#, vue-format
+msgid "Saturday"
+msgstr "星期六"
+
+#, vue-format
+msgid "Save"
+msgstr "保存"
+
+#, vue-format
+msgid "Save changes"
+msgstr "保存更改"
+
+#, vue-format
+msgid "Save Comments"
+msgstr "保存注释"
+
+#, vue-format
+msgid "Save E-mail"
+msgstr "保存电子邮件"
+
+#, vue-format
+msgid "Save File"
+msgstr "保存文件"
+
+#, vue-format
+msgid "Save File As..."
+msgstr "保存文件为..."
+
+#, vue-format
+msgid "Save for all PHP versions"
+msgstr "保存所有PHP版本"
+
+#, vue-format
+msgid "Save Limit Notice"
+msgstr "保存限制通知"
+
+#, vue-format
+msgid "Save Name"
+msgstr "保存名称"
+
+#, vue-format
+msgid "Save Name Servers"
+msgstr "保存NS服务器"
+
+#, vue-format
+msgid "Scan directory to detect malware and other malicious threats."
+msgstr "扫描目录以检测恶意软件和其他恶意威胁。"
+
+#, vue-format
+msgid "Scan for WordPress attacks"
+msgstr "扫描 WordPress 攻击"
+
+#, vue-format
+msgid "Scan Path"
+msgstr "扫描路径"
+
+#, vue-format
+msgid "Schedule"
+msgstr "计划"
+
+#, vue-format
+msgid "Schedule Backup"
+msgstr "计划备份"
+
+#, vue-format
+msgid "Scheduled Backups"
+msgstr "已计划的备份"
+
+#, vue-format
+msgid "Scratch Code"
+msgstr "临时代码"
+
+#, vue-format
+msgid "Scratch Codes"
+msgstr "Scratch 代码"
+
+#, vue-format
+msgid ""
+"Scratch Codes are one-time use codes in case you don't have your phone, so "
+"keep them safe."
+msgstr ""
+"如果手机不在身边，可以使用一次性的Scratch Code来代替Authenticator "
+"App生成的号码。请妥善保管Scratch Code。"
+
+#, vue-format
+msgid "Script"
+msgstr "脚本"
+
+#, vue-format
+msgid "Search"
+msgstr "搜索"
+
+#, vue-format
+msgid "Search criteria in here…"
+msgstr "在这里输入搜索…"
+
+#, vue-format
+msgid "Search domain name"
+msgstr "搜索子域名"
+
+#, vue-format
+msgid "Search menu entries..."
+msgstr "搜索菜单项..."
+
+#, vue-format
+msgid "Search Results"
+msgstr "搜索结果"
+
+#, vue-format
+msgid "Search settings"
+msgstr "搜索设置"
+
+#, vue-format
+msgid "second"
+msgstr "秒"
+
+#, vue-format
+msgid "seconds"
+msgstr "秒"
+
+#, vue-format
+msgid "seconds %s through %s past the minute"
+msgstr "分钟后 %s 到 %s 秒"
+
+#, vue-format
+msgid "seconds after the last attempt"
+msgstr "秒自最后一次尝试"
+
+#, vue-format
+msgid "Secret"
+msgstr "密钥"
+
+#, vue-format
+msgid "SecRuleEngine"
+msgstr "SecRuleEngine"
+
+#, vue-format
+msgid "Secure FTP"
+msgstr "安全FTP"
+
+#, vue-format
+msgid "Secure Socket Layer (SSL)"
+msgstr "安全套接字层（SSL）"
+
+#, vue-format
+msgid "Secure SSL"
+msgstr "安全SSL"
+
+#, vue-format
+msgid "Security Question"
+msgstr "安全问题"
+
+#, vue-format
+msgid "Security Questions"
+msgstr "安全问题"
+
+#, vue-format
+msgid "Security Settings"
+msgstr "安全设置"
+
+#, vue-format
+msgid "Seek should be smaller than %{ size }"
+msgstr "寻找应该小于 %{ size }"
+
+#, vue-format
+msgid "Select"
+msgstr "选择"
+
+#, vue-format
+msgid "Select All"
+msgstr "全选"
+
+#, vue-format
+msgid "Select All Domains"
+msgstr "选择全部域名"
+
+#, vue-format
+msgid "Select all files"
+msgstr "选择所有文件"
+
+#, vue-format
+msgid "Select all rows"
+msgstr "选择全部行"
+
+#, vue-format
+msgid "Select at least one file to remove"
+msgstr "至少选择一个要删除的文件"
+
+#, vue-format
+msgid "Select backup files to restore."
+msgstr "选择要恢复的备份文件。"
+
+#, vue-format
+msgid "Select category for plugins"
+msgstr "选择插件的类别"
+
+#, vue-format
+msgid "Select color scheme"
+msgstr "选择配色方案"
+
+#, vue-format
+msgid "Select data you would like to backup."
+msgstr "选择要备份的数据。"
+
+#, vue-format
+msgid "Select Database"
+msgstr "选择数据库"
+
+#, vue-format
+msgid "Select directory for backups."
+msgstr "选择用于备份的目录。"
+
+#, vue-format
+msgid "Select directory for restore."
+msgstr "选择要恢复的目录。"
+
+#, vue-format
+msgid "Select domains to backup"
+msgstr "选择要备份的域名"
+
+#, vue-format
+msgid "Select file to upload"
+msgid_plural "Select files to upload"
+msgstr[0] "选择要上传的文件"
+
+#, vue-format
+msgid "Select files to archive"
+msgstr "选择存档文件"
+
+#, vue-format
+msgid "Select files to extract..."
+msgstr "选择要解压的文件..."
+
+#, vue-format
+msgid "Select IP address or User to filter results"
+msgstr "选择IP或者用户来进行筛选"
+
+#, vue-format
+msgid "Select IP address used for restore."
+msgstr "选择用于恢复的IP地址。"
+
+#, vue-format
+msgid "Select IP to Add"
+msgstr "选择要添加的IP"
+
+#, vue-format
+msgid "Select IP to filter results"
+msgstr "选择IP以筛选结果"
+
+#, vue-format
+msgid "Select language mode"
+msgstr "选择语言模式"
+
+#, vue-format
+msgid "Select log file"
+msgstr "选择日志文件"
+
+#, vue-format
+msgid "Select log file to view"
+msgstr "选择要查看的日志文件"
+
+#, vue-format
+msgid "Select None"
+msgstr "全部不选"
+
+#, vue-format
+msgid "Select Path"
+msgstr "选择路径"
+
+#, vue-format
+msgid "Select Plugins Category"
+msgstr "选择插件类别"
+
+#, vue-format
+msgid "Select Reseller"
+msgstr "选择分销者"
+
+#, vue-format
+msgid "Select the domain to change and enter its new value"
+msgstr "选择要修改的域名并输入新的值"
+
+#, vue-format
+msgid "Select time period for backup."
+msgstr "选择备份的时间段。"
+
+#, vue-format
+msgid "Select username to filter results"
+msgstr "选择用户名以筛选结果"
+
+#, vue-format
+msgid "Select Users"
+msgstr "选择用户"
+
+#, vue-format
+msgid "Select users you would like to backup."
+msgstr "选择需要备份的用户。"
+
+#, vue-format
+msgid "Select Virtual Environment Path"
+msgstr "选择虚拟环境路径"
+
+#, vue-format
+msgid "Select your searching criteria:"
+msgstr "选择您的搜索条件:"
+
+#, vue-format
+msgid "Selected creators and their users"
+msgstr "选定的创建者及其用户"
+
+#, vue-format
+msgid "Selected Creators and their users"
+msgstr "选定的创建者及其用户"
+
+#, vue-format
+msgid "Selected Creators and their Users"
+msgstr "选定的创建者及其用户"
+
+#, vue-format
+msgid "Selected Data"
+msgstr "所选数据"
+
+#, vue-format
+msgid "Selected Domains"
+msgstr "选定域名"
+
+#, vue-format
+msgid "Selected entries count: %{n}"
+msgstr "所选条目数: %{n}"
+
+#, vue-format
+msgid "selected skin"
+msgid_plural "selected skins"
+msgstr[0] "选中的皮肤"
+
+#, vue-format
+msgid "selected users"
+msgstr "选中的用户"
+
+#, vue-format
+msgid "Selected users"
+msgstr "选中的用户"
+
+#, vue-format
+msgid "Selected Users"
+msgstr "所选用户"
+
+#, vue-format
+msgid "Selected Users:"
+msgstr "选中的用户："
+
+#, vue-format
+msgid "Selected:"
+msgstr "已选择："
+
+#, vue-format
+msgid "Selection"
+msgstr "选择"
+
+#, vue-format
+msgid "Send"
+msgstr "发送"
+
+#, vue-format
+msgid "Send a CC to:"
+msgstr "转寄至："
+
+#, vue-format
+msgid "Send a message"
+msgstr "发送消息"
+
+#, vue-format
+msgid "Send a Message"
+msgstr "发送消息"
+
+#, vue-format
+msgid "Send a message when a backup has finished."
+msgstr "备份完成后发送消息。"
+
+#, vue-format
+msgid "Send all Cron output to e-mail"
+msgstr "将所有 cron 输出发送到邮箱"
+
+#, vue-format
+msgid "Send another message"
+msgstr "发送另一条消息"
+
+#, vue-format
+msgid "Send Count"
+msgstr "发送次数"
+
+#, vue-format
+msgid "Send E-mail Notification"
+msgstr "发送邮件通知"
+
+#, vue-format
+msgid "Send the spam to the user's spam folder"
+msgstr "将垃圾邮件发送到用户的垃圾邮件文件夹"
+
+#, vue-format
+msgid "Send to spambox"
+msgstr "发送到垃圾邮件框"
+
+#, vue-format
+msgid "Send To:"
+msgstr "发送至:"
+
+#, vue-format
+msgid "Sender"
+msgstr "发件人"
+
+#, vue-format
+msgid "Sender Host"
+msgstr "发件人主机"
+
+#, vue-format
+msgid "Sends"
+msgstr "发送"
+
+#, vue-format
+msgid "Sent"
+msgstr "已发送"
+
+#, vue-format
+msgid "Sent E-mails"
+msgstr "已发送邮件"
+
+#, vue-format
+msgid "September"
+msgstr "9月"
+
+#, vue-format
+msgid "Server Error: %{ message }"
+msgstr "服务器错误：%{ message }"
+
+#, vue-format
+msgid "Server History"
+msgstr "服务器历史"
+
+#, vue-format
+msgid "Server Manager"
+msgstr "服务器管理"
+
+#, vue-format
+msgid "Server Path"
+msgstr "服务器路径"
+
+#, vue-format
+msgid "Server Settings"
+msgstr "服务器设置"
+
+#, vue-format
+msgid "Server Statistics"
+msgstr "服务器统计"
+
+#, vue-format
+msgid "Server wide"
+msgstr "全服务器"
+
+#, vue-format
+msgid "Server's Hostname"
+msgstr "服务器主机名"
+
+#, vue-format
+msgid "Service"
+msgstr "服务"
+
+#, vue-format
+msgid "Service Monitor"
+msgstr "服务监测"
+
+#, vue-format
+msgid "Service was reloaded successfully"
+msgstr "服务已成功重新加载"
+
+#, vue-format
+msgid "Service was restarted successfully"
+msgstr "服务已成功重新启动"
+
+#, vue-format
+msgid "Service was started successfully"
+msgstr "服务已成功启动"
+
+#, vue-format
+msgid "Service was stopped successfully"
+msgstr "服务已停止"
+
+#, vue-format
+msgid "Services"
+msgstr "服务"
+
+#, vue-format
+msgid "Session Timeout (minutes)"
+msgstr "会话超时（分钟）"
+
+#, vue-format
+msgid "Set as default"
+msgstr "设为默认"
+
+#, vue-format
+msgid "Set Catch All E-mail"
+msgstr "设置抓取所有电子邮件"
+
+#, vue-format
+msgid "Set Category"
+msgstr "设置分类"
+
+#, vue-format
+msgid "Set default default layout and configure layout options"
+msgstr "设置默认布局和配置布局选项"
+
+#, vue-format
+msgid "Set E-mail"
+msgstr "设置电子邮件"
+
+#, vue-format
+msgid "Set Global"
+msgstr "全局设置"
+
+#, vue-format
+msgid "Set IP To"
+msgstr "将IP设置为"
+
+#, vue-format
+msgid "Set Language"
+msgstr "设置语言"
+
+#, vue-format
+msgid "Set limit"
+msgstr "设置上限"
+
+#, vue-format
+msgid "Set Limit"
+msgstr "设置上限"
+
+#, vue-format
+msgid "Set Local Mail"
+msgstr "设置本地邮件"
+
+#, vue-format
+msgid "Set maximum values reseller could set for his users."
+msgstr "设置分销商可以为其用户设置的最大值。"
+
+#, vue-format
+msgid "Set Package to"
+msgstr "变更套餐为"
+
+#, vue-format
+msgid "Set Password (optional)"
+msgstr "设置密码（可选）"
+
+#, vue-format
+msgid "Set Permissions"
+msgstr "设置权限"
+
+#, vue-format
+msgid "Set Remote Mail"
+msgstr "设置远程邮件"
+
+#, vue-format
+msgid "Set selected domain to be publicly viewable."
+msgid_plural "Set selected domains to be publicly viewable"
+msgstr[0] "将选定域名设置为公开可见。"
+
+#, vue-format
+msgid "Set the Name servers that will be assigned to new users"
+msgstr "设置将分配给新用户的名称服务器"
+
+#, vue-format
+msgid "Set up your own CSS styles for Evolution"
+msgstr "为 Evolution 设置自己的 CSS 样式"
+
+#, vue-format
+msgid "Set Vacation Message"
+msgstr "设置假期消息"
+
+#, vue-format
+msgid "Set/Update User"
+msgstr "设置/更新用户"
+
+#, vue-format
+msgid "Setting"
+msgstr "设置"
+
+#, vue-format
+msgid "Settings"
+msgstr "设置"
+
+#, vue-format
+msgid "Setup your Databases"
+msgstr "设置数据库"
+
+#, vue-format
+msgid "Shade"
+msgstr "阴影"
+
+#, vue-format
+msgid "Shades"
+msgstr "阴影"
+
+#, vue-format
+msgid "Share"
+msgstr "共享"
+
+#, vue-format
+msgid "Share Server IP"
+msgstr "使用服务器共享IP"
+
+#, vue-format
+msgid "Shared"
+msgstr "共享"
+
+#, vue-format
+msgid "Shared CSS"
+msgstr "共享 CSS"
+
+#, vue-format
+msgid "Shared CSS Styles (would be applied to all layouts)"
+msgstr "共享 CSS 样式（将应用于所有布局）"
+
+#, vue-format
+msgid "Shell Access (SSH)"
+msgstr "Shell 权限 (SSH)"
+
+#, vue-format
+msgid "Should be a valid IP Address"
+msgstr "应为有效IP地址"
+
+#, vue-format
+msgid "Should be a valid port number"
+msgstr "应为有效端口号码"
+
+#, vue-format
+msgid "Should be larger than zero"
+msgstr "应大于0"
+
+#, vue-format
+msgid "Should be valid domain"
+msgstr "应为有效域名"
+
+#, vue-format
+msgid "Should be valid domain name"
+msgstr "应为有效域名"
+
+#, vue-format
+msgid "Should be valid email"
+msgstr "应为有效邮箱"
+
+#, vue-format
+msgid "Should be valid email address"
+msgstr "应为有效邮箱地址"
+
+#, vue-format
+msgid "Should be valid IP Address"
+msgstr "应为有效IP地址"
+
+#, vue-format
+msgid "Should be valid netmask"
+msgstr "应为有效掩码"
+
+#, vue-format
+msgid "Should be valid URL"
+msgstr "应为有效URL"
+
+#, vue-format
+msgid "Should not contain spaces"
+msgstr "不应包含空格"
+
+#, vue-format
+msgid "Should not contain special characters"
+msgstr "不应包含特殊字符"
+
+#, vue-format
+msgid "Show"
+msgstr "显示"
+
+#, vue-format
+msgid "Show %{ count } Results"
+msgstr "显示 %{ count } 个结果"
+
+#, vue-format
+msgid "Show %{ linesCount } lines"
+msgstr "显示 %{ linesCount } 行"
+
+#, vue-format
+msgid "Show Activity widget"
+msgstr "显示活动小部件"
+
+#, vue-format
+msgid "Show additional configuration"
+msgstr "显示附加配置"
+
+#, vue-format
+msgid "Show Additional Info"
+msgstr "显示附加信息"
+
+#, vue-format
+msgid "Show all accounts"
+msgstr "显示所有帐号"
+
+#, vue-format
+msgid "Show All Users"
+msgstr "显示所有用户"
+
+#, vue-format
+msgid "show all..."
+msgstr "显示详细信息..."
+
+#, vue-format
+msgid "Show as:"
+msgstr "显示为："
+
+#, vue-format
+msgid "Show As:"
+msgstr "显示为："
+
+#, vue-format
+msgid "Show closed"
+msgstr "显示关闭"
+
+#, vue-format
+msgid "Show Details"
+msgstr "显示详细信息"
+
+#, vue-format
+msgid "Show domains that"
+msgstr "显示符合如下条件的域名"
+
+#, vue-format
+msgid "Show Domains that"
+msgstr "显示符合如下条件的域名"
+
+#, vue-format
+msgid "Show Empty"
+msgstr "显示空"
+
+#, vue-format
+msgid "Show entire file"
+msgstr "显示整个文件"
+
+#, vue-format
+msgid "Show files as..."
+msgstr "显示文件为..."
+
+#, vue-format
+msgid "Show folders tree"
+msgstr "显示文件夹树"
+
+#, vue-format
+msgid "Show folders tree for faster navigation."
+msgstr "显示文件夹树以加快导航速度。"
+
+#, vue-format
+msgid "Show Info"
+msgstr "显示信息"
+
+#, vue-format
+msgid "Show Search"
+msgstr "显示搜索"
+
+#, vue-format
+msgid "Show search dialog (Ctrl + F)"
+msgstr "显示搜索对话框 (Ctrl + F)"
+
+#, vue-format
+msgid "Show Services"
+msgstr "显示服务"
+
+#, vue-format
+msgid "Show settings"
+msgstr "显示设置"
+
+#, vue-format
+msgid "Show Settings"
+msgstr "显示设置"
+
+#, vue-format
+msgid "Show Usage From:"
+msgstr "显示以下来源的用量:"
+
+#, vue-format
+msgid "Show Users"
+msgstr "显示用户"
+
+#, vue-format
+msgid "Show whole file"
+msgstr "显示整个文件"
+
+#, vue-format
+msgid "Showing"
+msgstr "显示"
+
+#, vue-format
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#, vue-format
+msgid "Sign In as user"
+msgstr "以用户身份登录"
+
+#, vue-format
+msgid "Sign In to Webmail"
+msgstr "登录到 Webmail"
+
+#, vue-format
+msgid "Sign your Zone"
+msgstr "签名你的区域"
+
+#, vue-format
+msgid "Signed"
+msgstr "已签名"
+
+#, vue-format
+msgid "Single Target"
+msgstr "单个目标"
+
+#, vue-format
+msgid "Site Backup"
+msgstr "站点备份"
+
+#, vue-format
+msgid "Site Redirection"
+msgstr "网站重定向"
+
+#, vue-format
+msgid "Site Redirects"
+msgstr "网站重定向"
+
+#, vue-format
+msgid "Site Summary / Statistics / Logs"
+msgstr "站点摘要 / 统计 / 日志"
+
+#, vue-format
+msgid "Site URL"
+msgstr "网站URL"
+
+#, vue-format
+msgid "Size"
+msgstr "大小"
+
+#, vue-format
+msgid "Skin"
+msgstr "风格"
+
+#, vue-format
+msgid "Skin has been updated"
+msgstr "皮肤已更新"
+
+#, vue-format
+msgid "Skin Manager"
+msgstr "皮肤管理"
+
+#, vue-format
+msgid "Skin Name"
+msgstr "皮肤名称"
+
+#, vue-format
+msgid "Skin Options"
+msgstr "皮肤选项"
+
+#, vue-format
+msgid "Skin Owner"
+msgstr "皮肤所有者"
+
+#, vue-format
+msgid "Skins"
+msgstr "皮肤"
+
+#, vue-format
+msgid "Skip"
+msgstr "跳过"
+
+#, vue-format
+msgid "Skip IP"
+msgstr "跳过IP"
+
+#, vue-format
+msgid "Skip List"
+msgstr "跳过列表"
+
+#, vue-format
+msgid "Skip Rule"
+msgstr "跳过规则"
+
+#, vue-format
+msgid "Skip Rule: %{ rule }"
+msgstr "跳过规则: %{ rule }"
+
+#, vue-format
+msgid "Skip Suspended"
+msgstr "跳过暂停"
+
+#, vue-format
+msgid "Skipped IPs / Users"
+msgstr "跳过的IP/用户"
+
+#, vue-format
+msgid "Small"
+msgstr "小"
+
+#, vue-format
+msgid "Small icons"
+msgstr "小图标"
+
+#, vue-format
+msgid "SMTP Log"
+msgstr "SMTP 日志"
+
+#, vue-format
+msgid "SNI Host"
+msgstr "SNI 主机"
+
+#, vue-format
+msgid "SNI Hosts"
+msgstr "SNI 主机"
+
+#, vue-format
+msgid "SoftFail"
+msgstr "软故障"
+
+#, vue-format
+msgid "Some files was not added due to max files size limit"
+msgstr "一些文件因超过大小限制，未被添加"
+
+#, vue-format
+msgid "Sorry, but the page you are looking for can't be found."
+msgstr "对不起，无法找到您正查阅的网页。"
+
+#, vue-format
+msgid ""
+"Sorry, it seems that there are no backups created yet. Would you like to "
+"create one?"
+msgstr "对不起, 似乎还没有创建备份。需要创建一个吗？"
+
+#, vue-format
+msgid ""
+"Sorry, it seems that there are no reseller packages created yet. Would you "
+"like to create one?"
+msgstr "对不起，似乎还没有创建分销者套餐。 需要创建一个吗？"
+
+#, vue-format
+msgid ""
+"Sorry, it seems that there are no user packages created yet. Would you like "
+"to create one?"
+msgstr "对不起，似乎还没有用户套餐。需要创建一个吗？"
+
+#, vue-format
+msgid "Sort"
+msgstr "排序"
+
+#, vue-format
+msgid "Sort this column ascending"
+msgstr "按升序对此列进行排序"
+
+#, vue-format
+msgid "Sort this column descending"
+msgstr "按降序对此列进行排序"
+
+#, vue-format
+msgid "Source"
+msgstr "来源"
+
+#, vue-format
+msgid "Source Domain"
+msgstr "源域名"
+
+#, vue-format
+msgid ""
+"Source domain name has been automatically converted to punycode format. "
+"Punycode is used to encode internationalized domain names (IDN) by "
+"converting Unicode characters to ASCII."
+msgstr ""
+"源域名已自动转换为 punycode 格式。Punycode 用于通过将 Unicode 字符转换为 "
+"ASCII 来编码国际化域名 (IDN)。"
+
+#, vue-format
+msgid "Source domain name punycoded"
+msgstr "源域名 (punycode转码过的格式)"
+
+#, vue-format
+msgid "Source Email"
+msgstr "源电子邮件"
+
+#, vue-format
+msgid "Source Server"
+msgstr "源服务器"
+
+#, vue-format
+msgid "Spam"
+msgstr "垃圾箱"
+
+#, vue-format
+msgid "SPAM Filters"
+msgstr "垃圾邮件过滤器"
+
+#, vue-format
+msgid "SpamAssassin"
+msgstr "垃圾邮件过滤器"
+
+#, vue-format
+msgid "Spamassassin Setup"
+msgstr "SpamAssassin配置"
+
+#, vue-format
+msgid "SpamAssassin Setup"
+msgstr "SpamAssassin配置"
+
+#, vue-format
+msgid "Spare"
+msgstr "空间"
+
+#, vue-format
+msgid "SSH"
+msgstr "SSH"
+
+#, vue-format
+msgid "SSH Access"
+msgstr "SSH 权限"
+
+#, vue-format
+msgid "SSH Access for Users"
+msgstr "用户的SSH权限"
+
+#, vue-format
+msgid "SSH Keys"
+msgstr "SSH 密钥"
+
+#, vue-format
+msgid "SSH server is not cPanel server"
+msgstr "SSH 服务器不是 cPanel 服务器"
+
+#, vue-format
+msgid "SSL"
+msgstr "SSL"
+
+#, vue-format
+msgid "SSL Access"
+msgstr "SSL权限"
+
+#, vue-format
+msgid "SSL CA Certificate"
+msgstr "SSL CA 证书"
+
+#, vue-format
+msgid "SSL Certificates"
+msgstr "SSL 证书"
+
+#, vue-format
+msgid "SSL Connection"
+msgstr "SSL连接"
+
+#, vue-format
+msgid "SSL is currently disabled for this domain"
+msgstr "此域名的SSL已被停用"
+
+#, vue-format
+msgid "SSL Management"
+msgstr "SSL管理"
+
+#, vue-format
+msgid "Stage"
+msgstr "阶段"
+
+#, vue-format
+msgid "Standalone Nginx"
+msgstr "独立 Nginx"
+
+#, vue-format
+msgid "Standard"
+msgstr "标准"
+
+#, vue-format
+msgid "Standard layout default menu type"
+msgstr "标准布局默认菜单类型"
+
+#, vue-format
+msgid "Start"
+msgstr "开始"
+
+#, vue-format
+msgid "Start Export Migration"
+msgstr "开始导出迁移"
+
+#, vue-format
+msgid "Start Import Migration"
+msgstr "开始导入迁移"
+
+#, vue-format
+msgid "Start migration"
+msgstr "开始迁移"
+
+#, vue-format
+msgid "Start time"
+msgstr "开始时间"
+
+#, vue-format
+msgid "Start Time"
+msgstr "开始时间"
+
+#, vue-format
+msgid "Started"
+msgstr "已启动"
+
+#, vue-format
+msgid "Started At"
+msgstr "开始于"
+
+#, vue-format
+msgid "Starts With"
+msgstr "开头为"
+
+#, vue-format
+msgid "State"
+msgstr "状态"
+
+#, vue-format
+msgid "State/Province"
+msgstr "州份/省份"
+
+#, vue-format
+msgid "Static Content Path"
+msgstr "静态内容路径"
+
+#, vue-format
+msgid "Statistics for your Account"
+msgstr "当前账户统计信息"
+
+#, vue-format
+msgid "Stats"
+msgstr "统计"
+
+#, vue-format
+msgid "Status"
+msgstr "状态"
+
+#, vue-format
+msgid "Status & Disabled Rules"
+msgstr "状态和已禁用规则"
+
+#, vue-format
+msgid "Status:"
+msgstr "状态："
+
+#, vue-format
+msgid "Step 1: From Where"
+msgstr "第1步：选择备份"
+
+#, vue-format
+msgid "Step 1: Who"
+msgstr "第1步：选择用户"
+
+#, vue-format
+msgid "Step 2: Select IP"
+msgstr "第2步：选择IP"
+
+#, vue-format
+msgid "Step 2: When"
+msgstr "第2步：时间计划"
+
+#, vue-format
+msgid "Step 3: Select File(s)"
+msgstr "第3步：选择文件"
+
+#, vue-format
+msgid "Step 3: Where"
+msgstr "第3步：备份目标"
+
+#, vue-format
+msgid "Step 4: What"
+msgstr "第4步：备份内容"
+
+#, vue-format
+msgid "Stop"
+msgstr "停止"
+
+#, vue-format
+msgid "Stop Migration"
+msgstr "停止迁移"
+
+#, vue-format
+msgid "Stop Task"
+msgstr "停止任务"
+
+#, vue-format
+msgid "Stop word"
+msgstr "停止词"
+
+#, vue-format
+msgid "Stopped"
+msgstr "已停止"
+
+#, vue-format
+msgid "stored in the backup"
+msgstr "存于备份中"
+
+#, vue-format
+msgid "Strict"
+msgstr "严格"
+
+#, vue-format
+msgid "Strip"
+msgstr "柱状图"
+
+#, vue-format
+msgid "Styles"
+msgstr "样式"
+
+#, vue-format
+msgid "Sub-Domains"
+msgstr "子域名"
+
+#, vue-format
+msgid "Sub-Domains Setup"
+msgstr "子域名设置"
+
+#, vue-format
+msgid "subdomain"
+msgid_plural "subdomains"
+msgstr[0] "子域名"
+
+#, vue-format
+msgid "Subdomain"
+msgstr "子域名"
+
+#, vue-format
+msgid "Subdomain Lists"
+msgstr "子域名列表"
+
+#, vue-format
+msgid "Subdomain Management"
+msgstr "子域名管理"
+
+#, vue-format
+msgid "Subdomain Name"
+msgstr "子域名名称"
+
+#, vue-format
+msgid ""
+"Subdomain name has been automatically converted to punycode format. Punycode "
+"is used to encode internationalized domain names (IDN) by converting Unicode "
+"characters to ASCII."
+msgstr "域名已自动转换为 punycode 格式。Punycode 用于通过将 Unicode 字符转换为 ASCII "
+"来编码国际化域名 (IDN)。"
+
+#, vue-format
+msgid "Subdomain name punycoded"
+msgstr "已转化为punycode的子域名"
+
+#, vue-format
+msgid "Subdomain policy type"
+msgstr "子域策略类型"
+
+#, vue-format
+msgid "Subdomains"
+msgstr "子域名"
+
+#, vue-format
+msgid "SubDomains"
+msgstr "子域名"
+
+#, vue-format
+msgid "Subdomains Lists: Backs up the list of subdomains for each domain"
+msgstr "子域列表: 备份每个域名的子域名列表"
+
+#, vue-format
+msgid "Subject"
+msgstr "主题"
+
+#, vue-format
+msgid "Subject Contains"
+msgstr "主题包含"
+
+#, vue-format
+msgid "Subject Prefix"
+msgstr "主题前缀"
+
+#, vue-format
+msgid "Subject:"
+msgstr "主题："
+
+#, vue-format
+msgid "Submit"
+msgstr "提交"
+
+#, vue-format
+msgid "Subscribe Policy"
+msgstr "订阅策略"
+
+#, vue-format
+msgid "subscriber"
+msgid_plural "subscribers"
+msgstr[0] "订阅者"
+
+#, vue-format
+msgid "Subscriber"
+msgstr "订阅者"
+
+#, vue-format
+msgid "Subscribers"
+msgstr "订阅者"
+
+#, vue-format
+msgid "Success"
+msgstr "成功"
+
+#, vue-format
+msgid "Sunday"
+msgstr "星期日"
+
+#, vue-format
+msgid "Support & Help"
+msgstr "支持和帮助"
+
+#, vue-format
+msgid "Support Center"
+msgstr "帮助中心"
+
+#, vue-format
+msgid "Suspend"
+msgstr "暂停"
+
+#, vue-format
+msgid "Suspend / Unsuspend"
+msgstr "暂停 / 取消暂停"
+
+#, vue-format
+msgid ""
+"Suspend a Reseller and their Users when the Reseller goes over their "
+"Bandwidth limit."
+msgstr "当分销者超过其带宽限制时, 暂停分销者及其用户。"
+
+#, vue-format
+msgid "Suspend at Limit"
+msgstr "暂停限制"
+
+#, vue-format
+msgid "Suspend user"
+msgstr "暂停用户"
+
+#, vue-format
+msgid "Suspended"
+msgstr "已暂停"
+
+#, vue-format
+msgid "Suspended on:"
+msgstr "暂停于："
+
+#, vue-format
+msgid "Suspended: %{ reason }"
+msgstr "已挂起: %{ reason }"
+
+#, vue-format
+msgid "Suspension Message"
+msgstr "暂停信息"
+
+#, vue-format
+msgid "Swap"
+msgstr "交换区"
+
+#, vue-format
+msgid "Swap:"
+msgstr "交换区:"
+
+#, vue-format
+msgid "Switch to Reseller Level Backups"
+msgstr "切换到转销商级别备份"
+
+#, vue-format
+msgid "Symbol"
+msgstr "符号"
+
+#, vue-format
+msgid "Symbol for dark mode"
+msgstr "黑暗模式符号"
+
+#, vue-format
+msgid "Syntax Error"
+msgstr "语法错误"
+
+#, vue-format
+msgid "System Apache Handlers"
+msgstr "系统Apache Handlers"
+
+#, vue-format
+msgid "System Backup"
+msgstr "系统备份"
+
+#, vue-format
+msgid "System Info"
+msgstr "系统信息"
+
+#, vue-format
+msgid "System Info & Files"
+msgstr "系统信息和文件"
+
+#, vue-format
+msgid "System Information"
+msgstr "系统信息"
+
+#, vue-format
+msgid "System Mime Types"
+msgstr "系统Mime类型"
+
+#, vue-format
+msgid "System Quotas"
+msgstr "系统配额"
+
+#, vue-format
+msgid "Tab for suggestion, Enter to change current path"
+msgstr "用于建议的选项卡，输入以更改当前路径"
+
+#, vue-format
+msgid "Table Prefix"
+msgstr "表前缀"
+
+#, vue-format
+msgid "Tables"
+msgstr "表"
+
+#, vue-format
+msgid "Taboo Body"
+msgstr "Taboo Body"
+
+#, vue-format
+msgid "Taboo Headers"
+msgstr "Taboo Headers"
+
+#, vue-format
+msgid "Tail"
+msgstr "故障"
+
+#, vue-format
+msgid "Target"
+msgstr "目标"
+
+#, vue-format
+msgid "Target Domain"
+msgstr "目标域名"
+
+#, vue-format
+msgid "Targets"
+msgstr "目标"
+
+#, vue-format
+msgid "Tasks"
+msgstr "任务列表"
+
+#, vue-format
+msgid "Tasks:"
+msgstr "任务："
+
+#, vue-format
+msgid "Template"
+msgstr "模板"
+
+#, vue-format
+msgid "Template Diff"
+msgstr "模板差异"
+
+#, vue-format
+msgid "Template Diff: %{ name }"
+msgstr "模板差异： %{ name }"
+
+#, vue-format
+msgid "Template Tokens"
+msgstr "模板令牌"
+
+#, vue-format
+msgid "Templates"
+msgstr "模板"
+
+#, vue-format
+msgid "Temporary Bandwidth Increase"
+msgstr "临时带宽增加"
+
+#, vue-format
+msgid "Terminal"
+msgstr "终端"
+
+#, vue-format
+msgid "Test Code"
+msgstr "测试代码"
+
+#, vue-format
+msgid "Test Connection"
+msgstr "测试连接"
+
+#, vue-format
+msgid "Test your phone's code"
+msgstr "测试您的手机的代码"
+
+#, vue-format
+msgid "Text Wrap"
+msgstr "文本换行"
+
+#, vue-format
+msgid "Thaw"
+msgstr "解冻"
+
+#, vue-format
+msgid ""
+"The \"Apply to existing Domains\" option will trigger the httpd.conf "
+"rewrites and insert A/AAAA records into the local DNS zones. Disabling this "
+"checkbox won't touch the DNS or httpd.conf files, but future httpd.cont "
+"rewrites will have the linked IP added."
+msgstr ""
+"\"应用于现有域名\"选项将触发httpd.conf 重写并将A/AAAA记录插入本地的DNS区域。 "
+"禁用此复选框不会触摸DNS或 httpd.conf 文件，但将来的 httpd.conf "
+"重写将添加链接IP。"
+
+#, vue-format
+msgid ""
+"The \"From\" value set in the email header. This value should not be "
+"considered as accurate, as a sender can specify any value they wish."
+msgstr "邮件头中设置的“From”值。此值不应被认为是准确的，因为发件人可以指定他们想要的"
+"任何值。"
+
+#, vue-format
+msgid ""
+"The ALL_USER type commands are replaced with all commands the User is "
+"allowed, at that level."
+msgstr "ALL_USER类型命令被用户允许的所有命令所替换。"
+
+#, vue-format
+msgid "The App will show you a code, which you'll use to Login to DirectAdmin."
+msgstr "该应用程序将向您显示一个代码，您将使用该代码登录DirectAdmin。"
+
+#, vue-format
+msgid "The e-mail is dropped and completely ignored"
+msgstr "邮件被丢弃并完全忽略"
+
+#, vue-format
+msgid ""
+"The email limit is %{ limit }, but the User limit is %{override}, hence it "
+"is limited to %{override}."
+msgstr "电子邮件限制为 %{ limit }，但用户限制为 %{override}，所以它限制为 "
+"%{override}。"
+
+#, vue-format
+msgid "the last day"
+msgstr "最后一天"
+
+#, vue-format
+msgid "The login username used will still be your normal DA username."
+msgstr "使用Key登陆时，登陆用户名与当前DA用户名相同。"
+
+#, vue-format
+msgid "The priorities for allow and deny are"
+msgstr "允许和拒绝的优先级是"
+
+#, vue-format
+msgid "The raw forwarders create action does not support multiple lines."
+msgstr "原始转发器创建操作不支持多行。"
+
+#, vue-format
+msgid ""
+"The send limit for %{ username } is %{limit} which overrides per-email limits"
+msgstr "%{ username } 的发送限制是 %{limit} ，它覆盖了每个电子邮件的限制"
+
+#, vue-format
+msgid "The sender is notified that the address doesn't exist"
+msgstr "发送者已收到地址不存在的通知"
+
+#, vue-format
+msgid "The SPF record for this domain replaces the current record."
+msgstr "此域名的SPF记录取代当前记录。"
+
+#, vue-format
+msgid ""
+"The SPF record has designated the host as NOT being allowed to send (reject)"
+msgstr "SPF 记录指定主机为不允许发送 (拒绝)"
+
+#, vue-format
+msgid ""
+"The SPF record has designated the host as NOT being allowed to send but is "
+"in transition (accept but mark)"
+msgstr "SPF 记录指定主机为不允许发送，但是正处于过渡期(接受但标记)"
+
+#, vue-format
+msgid ""
+"The SPF record specifies explicitly that nothing can be said about validity "
+"(accept)"
+msgstr "SPF记录明确规定，不能对有效性进行任何说明（接受）"
+
+#, vue-format
+msgid "The subdomains will be ignored if a wildcard is used."
+msgstr "如果使用通配符，子域名将被忽略。"
+
+#, vue-format
+msgid ""
+"The table lists the number of hits (failures) that occurred until that time. "
+"If you compare it to the previous hit, you'd get a total number of hits "
+"between these time periods. CPU column is an exception, it shows the "
+"percentage of total/throttled events."
+msgstr ""
+"该表列出了在此之前发生的命中（失败）次数。如果您将其与上一次点击进行比较，您"
+"将得到这些时间段之间的总点击数。CPU列是一个例外，它显示总/限制事件的百分比。"
+
+#, vue-format
+msgid "The very last entry."
+msgstr "最后一个条目."
+
+#, vue-format
+msgid "Theme Colors"
+msgstr "主题颜色"
+
+#, vue-format
+msgid "There are no statistics for the domain yet"
+msgstr "此域名暂无统计信息"
+
+#, vue-format
+msgid "There is no default domain; you should start with creating one first"
+msgstr "无默认域名，请先创建一个"
+
+#, vue-format
+msgid "third"
+msgstr "第三"
+
+#, vue-format
+msgid ""
+"This action could cause domain resolution problems and cannot be undone. Are "
+"you sure you want to proceed?"
+msgstr "此操作可能导致域解析问题，无法撤消。您确定要继续吗？"
+
+#, vue-format
+msgid ""
+"This assumes your code is valid across all php versions. This will also "
+"overwrite any other custom code for other versions."
+msgstr "这假设您的代码在所有php版本中都有效。这也将覆盖其他版本的任何其他自定义代码。"
+
+#, vue-format
+msgid "This button will remove data learned by SpamAssassin."
+msgstr "此按钮将会移除SpamAssassin学习了的数据。"
+
+#, vue-format
+msgid "This could replace paid EV certificates"
+msgstr "这可以取代付费EV证书"
+
+#, vue-format
+msgid "This domain is controlled by the main domain for this User."
+msgstr "此域名由此用户的主域名控制。"
+
+#, vue-format
+msgid ""
+"This e-mail address will catch all improperly addressed mail (i.e. to a user "
+"that doesn't exist) to your site. This address may be your defaultusername@"
+"yourdomain.com, or any other email account you have created."
+msgstr ""
+"此电子邮件地址将捕获所有错误发送的邮件(即给不存在的用户)到您的网站。 "
+"此地址可能是您的默认用户名@yourdomain.com，或您创建的其他电子邮件账户。"
+
+#, vue-format
+msgid "This feature has been disabled. Please, contact your administrator."
+msgstr "此功能已被禁用。请与管理员联系。"
+
+#, vue-format
+msgid "This feature is not turned on."
+msgstr "此功能未启用。"
+
+#, vue-format
+msgid "This file is tagged as secure. Root password required to edit"
+msgstr "此文件被标记为 \"最高安全级\"。要编辑此文件需要提供Root密码"
+
+#, vue-format
+msgid "This folder is empty."
+msgstr "文件夹为空。"
+
+#, vue-format
+msgid "This is a Trial License of DirectAdmin"
+msgstr "这是DirectAdmin的试用许可证"
+
+#, vue-format
+msgid ""
+"This is the recommended option for the catch-all setting. Catch-all's will "
+"increase the server load due to spam, so having them disable is highly "
+"recommended unless you absolutely need the feature on."
+msgstr "这是通配设置的推荐选项。 全面加载会因垃圾邮件而增加服务器负载，因此强烈建议禁"
+"用它们，除非您绝对需要该功能。"
+
+#, vue-format
+msgid "This Month"
+msgstr "本月"
+
+#, vue-format
+msgid "This Month (excluding today)"
+msgstr "本月 (不包括今天)"
+
+#, vue-format
+msgid ""
+"This page lists all active mailbox migrations started with IMAPSync tool. "
+"New migration can be started with the action button."
+msgstr "此页列出了使用 IMAPSync "
+"邮箱迁移工具启动的所有活动邮箱。可以通过“操作”按钮开始新的迁移。"
+
+#, vue-format
+msgid "This path is already being scanned by ClamAV"
+msgstr "ClamAV 已经在扫描此路径"
+
+#, vue-format
+msgid "Thursday"
+msgstr "星期四"
+
+#, vue-format
+msgid "Ticket #"
+msgstr "工单 #"
+
+#, vue-format
+msgid "Ticket System Enabled"
+msgstr "已启用工单系统"
+
+#, vue-format
+msgid "Ticket System Settings"
+msgstr "工单系统设置"
+
+#, vue-format
+msgid "Tickets"
+msgstr "工单"
+
+#, vue-format
+msgid "Time"
+msgstr "时间"
+
+#, vue-format
+msgid "Time before failed login count resets"
+msgstr "到登录失败计数重置的时间"
+
+#, vue-format
+msgid "Timeout"
+msgstr "超时"
+
+#, vue-format
+msgid "Timeout (seconds)"
+msgstr "超时 (秒)"
+
+#, vue-format
+msgid "Timezone"
+msgstr "时区"
+
+#, vue-format
+msgid "Tiny icons"
+msgstr "小图标"
+
+#, vue-format
+msgid "Tips & Tricks"
+msgstr "提示与技巧"
+
+#, vue-format
+msgid "Title"
+msgstr "标题"
+
+#, vue-format
+msgid "To"
+msgstr "至"
+
+#, vue-format
+msgid "To access a specific URL periodically use a command like:"
+msgstr "要定期访问特定 URL，请使用以下命令："
+
+#, vue-format
+msgid "To Trash"
+msgstr "到回收站"
+
+#, vue-format
+msgid ""
+"To use it, paste the Signed Certificate on \"Paste a pre-generated "
+"certificate and key\" tab and click \"Save\"."
+msgstr "若要使用它，请将签名证书粘贴到\"粘贴预生成的证书和密钥\"选项卡上，"
+"然后点击\"保存\"。"
+
+#, vue-format
+msgid ""
+"To use this feature, download the Google Authenticator App for your phone ("
+"or equivalent), and scan in the QR code."
+msgstr "若要使用此功能，请下载谷歌身份验证器应用程序用于您的手机，然后扫描二维码。"
+
+#, vue-format
+msgid "To:"
+msgstr "至："
+
+#, vue-format
+msgid "Today"
+msgstr "今天"
+
+#, vue-format
+msgid "Token"
+msgstr "Token"
+
+#, vue-format
+msgid "Toolbar placement"
+msgstr "工具栏放置"
+
+#, vue-format
+msgid "Top:"
+msgstr "顶部："
+
+#, vue-format
+msgid "Total"
+msgstr "总计"
+
+#, vue-format
+msgid "Total Disk Usage"
+msgstr "总磁盘使用率"
+
+#, vue-format
+msgid "Total Usage"
+msgstr "总使用量"
+
+#, vue-format
+msgid "Tracker stream was closed!"
+msgstr "跟踪器流已关闭！"
+
+#, vue-format
+msgid "Transmitted"
+msgstr "传输完成"
+
+#, vue-format
+msgid "Trash"
+msgstr "回收站"
+
+#, vue-format
+msgid "Trash Bin"
+msgstr "回收站"
+
+#, vue-format
+msgid "Trigger Retry for this Domain"
+msgstr "触发此域名重试"
+
+#, vue-format
+msgid "TTL"
+msgstr "TTL"
+
+#, vue-format
+msgid "TTL is overriden globally. Changing this setting will have no effect."
+msgstr "TTL已全局override。修改这个设置将不会有效果。"
+
+#, vue-format
+msgid "TTL Value"
+msgstr "TTL值"
+
+#, vue-format
+msgid "Tuesday"
+msgstr "星期二"
+
+#, vue-format
+msgid "Turn Off"
+msgstr "关闭"
+
+#, vue-format
+msgid "Turn On"
+msgstr "打开"
+
+#, vue-format
+msgid "Two-Step Authentication"
+msgstr "两步验证"
+
+#, vue-format
+msgid "TXT Record Type"
+msgstr "TXT记录类型"
+
+#, vue-format
+msgid "Type"
+msgstr "类型"
+
+#, vue-format
+msgid "Type your reply here..."
+msgstr "在此处输入您的回复..."
+
+#, vue-format
+msgid "UID/GID"
+msgstr "UID/GID"
+
+#, vue-format
+msgid "Un-Install"
+msgstr "卸载"
+
+#, vue-format
+msgid "Un-Link"
+msgstr "取消链接"
+
+#, vue-format
+msgid "Un-Link IP Address"
+msgid_plural "Un-Link IP Addresses"
+msgstr[0] "取消链接 IP 地址"
+
+#, vue-format
+msgid "Un-Set Global"
+msgstr "取消全局设置"
+
+#, vue-format
+msgid "Unable to reach network. Please check your internet connection."
+msgstr "无法访问网络。请检查您的互联网连接。"
+
+#, vue-format
+msgid "Unauthorized"
+msgstr "未经授权"
+
+#, vue-format
+msgid "unauthorized connections"
+msgstr "未经授权的连接"
+
+#, vue-format
+msgid "Unblock"
+msgstr "解除屏蔽"
+
+#, vue-format
+msgid "Unblock IP"
+msgid_plural "Unblock IPs"
+msgstr[0] "取消拦截IP"
+
+#, vue-format
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "取消选中将立即从磁盘上删除该文件，无法恢复"
+
+#, vue-format
+msgid "Undo changes"
+msgstr "撤销更改"
+
+#, vue-format
+msgid "Unexpected database error"
+msgstr "意外的数据库错误"
+
+#, vue-format
+msgid "Unexpected error"
+msgstr "意外错误"
+
+#, vue-format
+msgid "Unicode Tokens"
+msgstr "Unicode Tokens"
+
+#, vue-format
+msgid "Unit Applications"
+msgstr "单元应用程序"
+
+#, vue-format
+msgid "Unknown"
+msgstr "未知"
+
+#, vue-format
+msgid "Unknown Error"
+msgstr "未知错误"
+
+#, vue-format
+msgid "Unlimited"
+msgstr "无限制"
+
+#, vue-format
+msgid "Unset publicly viewable statistics"
+msgstr "重置公开可见的统计信息"
+
+#, vue-format
+msgid "Unsubscribe Policy"
+msgstr "退订政策"
+
+#, vue-format
+msgid "Unsuspend"
+msgstr "取消暂停"
+
+#, vue-format
+msgid "Update"
+msgstr "更新"
+
+#, vue-format
+msgid "Update Channel"
+msgstr "更新频道"
+
+#, vue-format
+msgid "Update DirectAdmin"
+msgstr "更新DirectAdmin"
+
+#, vue-format
+msgid "Update disk usage"
+msgstr "更新磁盘使用情况"
+
+#, vue-format
+msgid "Update is scheduled"
+msgstr "已计划更新"
+
+#, vue-format
+msgid "Update Services List"
+msgstr "更新Services列表"
+
+#, vue-format
+msgid "Update Version"
+msgstr "更新版本"
+
+#, vue-format
+msgid "Update Wordpress automatically when new version is detected"
+msgstr "检测到新版本时自动更新 Wordpress"
+
+#, vue-format
+msgid ""
+"Update Wordpress automatically, but only to minor releases (when major "
+"version does not change)"
+msgstr "自动更新 Wordpress，但仅限于次要版本（主要版本不变时）"
+
+#, vue-format
+msgid "Update Wordpress manually"
+msgstr "手动更新 Wordpress"
+
+#, vue-format
+msgid "Updated"
+msgstr "已更新"
+
+#, vue-format
+msgid "Updated:"
+msgstr "已更新："
+
+#, vue-format
+msgid "Updates"
+msgstr "更新"
+
+#, vue-format
+msgid "Updating now..."
+msgstr "正在更新中..."
+
+#, vue-format
+msgid "Upload"
+msgstr "上传"
+
+#, vue-format
+msgid "Upload Backup"
+msgstr "上传备份"
+
+#, vue-format
+msgid "Upload completed. Processing uploaded file"
+msgstr "上传完成。正在处理上传的文件"
+
+#, vue-format
+msgid "Upload files"
+msgstr "上传文件"
+
+#, vue-format
+msgid "Upload Files"
+msgstr "上传文件"
+
+#, vue-format
+msgid "Upload Icon"
+msgstr "上传图标"
+
+#, vue-format
+msgid "Upload In Progress"
+msgstr "上传进行中"
+
+#, vue-format
+msgid "Upload Method:"
+msgstr "上传方式:"
+
+#, vue-format
+msgid "Upload Skin"
+msgstr "上传皮肤"
+
+#, vue-format
+msgid "Upload your own icons for Evolution"
+msgstr "上传您自己的 Evolution 图标"
+
+#, vue-format
+msgid "Upload your own logos / symbols"
+msgstr "上传你自己的LOGO/符号"
+
+#, vue-format
+msgid "Uploaded %{ progress } of %{ size }"
+msgstr "已上传 %{ progress } 中的 %{ size }"
+
+#, vue-format
+msgid "Uploading: %{ uploaded } of %{ total }"
+msgstr "正在上传: %{ uploaded } / %{ total }"
+
+#, vue-format
+msgid "Uptime"
+msgstr "运行时间"
+
+#, vue-format
+msgid "Url"
+msgstr "Url"
+
+#, vue-format
+msgid "URL"
+msgstr "URL"
+
+#, vue-format
+msgid "Usage"
+msgstr "用量"
+
+#, vue-format
+msgid "Usage log"
+msgstr "用量日志"
+
+#, vue-format
+msgid "Usage Log"
+msgstr "使用日志"
+
+#, vue-format
+msgid "Usage Statistics"
+msgstr "用量统计"
+
+#, vue-format
+msgid "Usage Statistics for %{device}"
+msgstr "%{device}的使用率统计信息"
+
+#, vue-format
+msgid "Usage, logs and statistics"
+msgstr "使用情况、日志和统计信息"
+
+#, vue-format
+msgid "Use a CA Cert"
+msgstr "使用 CA 证书"
+
+#, vue-format
+msgid "Use existing"
+msgstr "使用现有的"
+
+#, vue-format
+msgid "Use local SPF values."
+msgstr "使用本地 SPF 值。"
+
+#, vue-format
+msgid "Use NS values from backup."
+msgstr "使用备份中的NS值。"
+
+#, vue-format
+msgid "Use RBL Blocking"
+msgstr "使用 RBL 阻断"
+
+#, vue-format
+msgid "Use Remote Transfer"
+msgstr "使用远程传输"
+
+#, vue-format
+msgid "Use the | charter for separation."
+msgstr "使用 | 作为分隔符。"
+
+#, vue-format
+msgid "Use the best match certificate"
+msgstr "使用最佳匹配证书"
+
+#, vue-format
+msgid "Use the IP"
+msgstr "使用IP"
+
+#, vue-format
+msgid "Use the IP stored in the backup"
+msgstr "使用在备份文件中指定的 IP"
+
+#, vue-format
+msgid ""
+"Use the server\\'s shared signed certificate. With this setting, DirectAdmin "
+"will automatically manage your certificates."
+msgstr "使用服务器\\共享签名证书。通过此设置，DirectAdmin将自动管理您的证书。"
+
+#, vue-format
+msgid ""
+"Use this server to handle my e-mails. If not, change the MX records and "
+"uncheck this option."
+msgstr "使用此服务器来处理我的电子邮件。如果没有，更改MX记录并取消选中此选项。"
+
+#, vue-format
+msgid "Used"
+msgstr "已使用"
+
+#, vue-format
+msgid ""
+"Used to trigger the auto-creation of certificate on a pre-existent host."
+msgstr "用于在预先存在的主机上触发自动创建证书。"
+
+#, vue-format
+msgid "Useful Links"
+msgstr "实用链接"
+
+#, vue-format
+msgid "user"
+msgid_plural "users"
+msgstr[0] "用户"
+
+#, vue-format
+msgid "User"
+msgstr "用户"
+
+#, vue-format
+msgid "User Accounts"
+msgstr "用户帐户"
+
+#, vue-format
+msgid "User already exists"
+msgstr "用户已存在"
+
+#, vue-format
+msgid "User authentication failure"
+msgstr "用户身份验证失败"
+
+#, vue-format
+msgid "User Bandwidth"
+msgstr "用户带宽"
+
+#, vue-format
+msgid "User can set limit per E-mail"
+msgstr "用户可以设置每个邮箱的限制"
+
+#, vue-format
+msgid "User Check"
+msgstr "用户检测"
+
+#, vue-format
+msgid "User does not exist"
+msgstr "用户不存在"
+
+#, vue-format
+msgid "User History"
+msgstr "用户历史"
+
+#, vue-format
+msgid "User Home"
+msgstr "用户主目录"
+
+#, vue-format
+msgid "User Level"
+msgstr "用户等级"
+
+#, vue-format
+msgid "User Limit"
+msgstr "用户限制"
+
+#, vue-format
+msgid "User list & Password Reset"
+msgstr "用户列表和密码重置"
+
+#, vue-format
+msgid "user package"
+msgid_plural "user packages"
+msgstr[0] "用户套餐"
+
+#, vue-format
+msgid "User Package"
+msgstr "用户套餐"
+
+#, vue-format
+msgid "User Plugins"
+msgstr "用户插件"
+
+#, vue-format
+msgid "User Quota"
+msgstr "用户配额"
+
+#, vue-format
+msgid "User SSH"
+msgstr "用户 SSH"
+
+#, vue-format
+msgid "User Statistics"
+msgstr "用户统计"
+
+#, vue-format
+msgid "User Suspended"
+msgstr "用户已暂停"
+
+#, vue-format
+msgid "User Type"
+msgstr "用户类型"
+
+#, vue-format
+msgid "User(s)"
+msgstr "用户"
+
+#, vue-format
+msgid "Username"
+msgstr "用户名"
+
+#, vue-format
+msgid "Username / E-Mail"
+msgstr "用户名 / 电子邮件"
+
+#, vue-format
+msgid ""
+"Username has been automatically converted to punycode format. Punycode is "
+"used to encode internationalized domain names (IDN) by converting Unicode "
+"characters to ASCII."
+msgstr ""
+"用户名已自动转换为 punycode 格式。Punycode 用于通过将 Unicode 字符转换为 "
+"ASCII 来编码国际化域名 (IDN)。"
+
+#, vue-format
+msgid "Username is too long"
+msgstr "用户名过长"
+
+#, vue-format
+msgid "Username or password is incorrect"
+msgstr "用户名或密码不正确"
+
+#, vue-format
+msgid "Username punycoded"
+msgstr "用户名 (已经punycode转码)"
+
+#, vue-format
+msgid "Username:"
+msgstr "用户名:"
+
+#, vue-format
+msgid "Username/Email"
+msgstr "用户名/电子邮件"
+
+#, vue-format
+msgid "Users"
+msgstr "用户"
+
+#, vue-format
+msgid "Users under your control"
+msgstr "此账户下的用户"
+
+#, vue-format
+msgid "Users:"
+msgstr "用户："
+
+#, vue-format
+msgid "Uses 2 IP's, domain uses one of them"
+msgstr "给用户分配 2 个IP, 域名使用其中之一"
+
+#, vue-format
+msgid "Uses 3 IP's, domain gets own IP"
+msgstr "给用户分配 3 个IP, 域名独立使用其中之一"
+
+#, vue-format
+msgid "Vacation Account"
+msgstr "休假账户"
+
+#, vue-format
+msgid "Vacation Account:"
+msgstr "假期账户:"
+
+#, vue-format
+msgid "Vacation Message:"
+msgstr "假期消息:"
+
+#, vue-format
+msgid "Vacation Messages"
+msgstr "休假消息"
+
+#, vue-format
+msgid "Vacation Messages: Includes all vacation messages and times."
+msgstr "假期信息：包括所有假期信息和时间。"
+
+#, vue-format
+msgid "Valid"
+msgstr "有效"
+
+#, vue-format
+msgid "Valid Cron time values are the numbers indicated and *."
+msgstr "有效的 Cron 时间值是表示的数字和 *。"
+
+#, vue-format
+msgid "Valid until"
+msgstr "有效期至"
+
+#, vue-format
+msgid ""
+"Valid values are an E-mail address, your DA username: admin, or a blank "
+"field to prevent any e-mail."
+msgstr "有效值是一个电子邮件地址，您的 DA "
+"用户名：admin，或空白字段以防止任何电子邮件。"
+
+#, vue-format
+msgid "Value"
+msgstr "值"
+
+#, vue-format
+msgid "Version"
+msgstr "版本"
+
+#, vue-format
+msgid "Version: %{version}"
+msgstr "版本：%{版本}"
+
+#, vue-format
+msgid "Vertical"
+msgstr "垂直"
+
+#, vue-format
+msgid "View / Delete Blocked IPs"
+msgstr "查看/删除被拦截的IP"
+
+#, vue-format
+msgid "View All"
+msgstr "查看全部"
+
+#, vue-format
+msgid "View All Available Tokens"
+msgstr "查看所有可用的Tokens"
+
+#, vue-format
+msgid "View As..."
+msgstr "查看..."
+
+#, vue-format
+msgid "View current backups"
+msgstr "查看当前备份"
+
+#, vue-format
+msgid "View Database"
+msgstr "查看数据库"
+
+#, vue-format
+msgid "View Domain Configuration"
+msgstr "查看域名配置"
+
+#, vue-format
+msgid "View Error Log for %{ domain }"
+msgstr "查看 %{ domain } 的错误日志"
+
+#, vue-format
+msgid "View Last Backup Log"
+msgstr "查看最近一次的备份日志"
+
+#, vue-format
+msgid "View Log"
+msgstr "查看日志"
+
+#, vue-format
+msgid "View Log Item"
+msgstr "查看日志项目"
+
+#, vue-format
+msgid "View Log: %{ log }"
+msgstr "查看日志: %{ log }"
+
+#, vue-format
+msgid "View Mailing List"
+msgstr "查看邮件列表"
+
+#, vue-format
+msgid "View more"
+msgstr "查看详情"
+
+#, vue-format
+msgid "View Options"
+msgstr "查看选项"
+
+#, vue-format
+msgid "View Processes"
+msgstr "查看进程"
+
+#, vue-format
+msgid "View Protected Directory"
+msgstr "查看受保护的目录"
+
+#, vue-format
+msgid "View Queue Item"
+msgstr "查看队列项目"
+
+#, vue-format
+msgid "View RAW"
+msgstr "查看 RAW"
+
+#, vue-format
+msgid "View Reseller"
+msgstr "查看分销者"
+
+#, vue-format
+msgid "View Reseller: %{ user }"
+msgstr "查看分销者：%{ user }"
+
+#, vue-format
+msgid "View Statistic Reports"
+msgstr "查看统计日志"
+
+#, vue-format
+msgid "View Sub-Domain Log"
+msgstr "查看子域名日志"
+
+#, vue-format
+msgid "View Sub-Domain Stats"
+msgstr "查看子域名统计信息"
+
+#, vue-format
+msgid "View Subdomain Log"
+msgstr "查看子域名日志"
+
+#, vue-format
+msgid "View Ticket: #%{ ticket }"
+msgstr "查看工单: #%{ ticket }"
+
+#, vue-format
+msgid "View Usage Log for %{ domain }"
+msgstr "查看 %{ domain } 的使用率日志"
+
+#, vue-format
+msgid "View User"
+msgstr "查看用户"
+
+#, vue-format
+msgid "Virtual"
+msgstr "虚拟"
+
+#, vue-format
+msgid "Virtual Environment Path (Optional)"
+msgstr "虚拟环境路径(可选)"
+
+#, vue-format
+msgid "VPS Only"
+msgstr "仅 VPS"
+
+#, vue-format
+msgid "Warn Admin's at"
+msgstr "在以下情况通知管理员"
+
+#, vue-format
+msgid "Warning"
+msgstr "警告"
+
+#, vue-format
+msgid "Webalizer"
+msgstr "Webalizer"
+
+#, vue-format
+msgid "Webapp"
+msgstr "Webapp"
+
+#, vue-format
+msgid "Webhook URL"
+msgstr "Webhook URL"
+
+#, vue-format
+msgid "Webmail:"
+msgstr "Webmail："
+
+#, vue-format
+msgid "Webmail: Roundcube"
+msgstr "Webmail：Roundcube"
+
+#, vue-format
+msgid "Webmail: Squirrelmail"
+msgstr "Webmail：Squirrelmail"
+
+#, vue-format
+msgid "Webmail: UebiMiau"
+msgstr "Webmail：UebiMiau"
+
+#, vue-format
+msgid "Website Data"
+msgstr "网站数据"
+
+#, vue-format
+msgid "Wednesday"
+msgstr "星期三"
+
+#, vue-format
+msgid "Week Start"
+msgstr "一周始于"
+
+#, vue-format
+msgid "weekday nearest day %s"
+msgstr "工作日最近的第 %s 天"
+
+#, vue-format
+msgid "Weight"
+msgstr "权重"
+
+#, vue-format
+msgid "Welcome"
+msgstr "欢迎"
+
+#, vue-format
+msgid "Welcome Message"
+msgstr "欢迎信息"
+
+#, vue-format
+msgid "What score threshold do you wish to use?"
+msgstr "您想使用什么分数阈值？"
+
+#, vue-format
+msgid "What:"
+msgstr "什么："
+
+#, vue-format
+msgid "When"
+msgstr "当"
+
+#, vue-format
+msgid "When enabled, this IP can be used by multiple Resellers"
+msgstr "启用时，此IP可以由多个销售商使用"
+
+#, vue-format
+msgid ""
+"When restoring a Reseller or Admin, if you select an IP from the list, that "
+"Reseller will only receive the single IP. You would need to add extra IPs to "
+"that accounts IP list after he's created."
+msgstr "在还原分销或管理员时, 如果从列表中选择IP, 则该转销商将只获得单个IP。创建后, "
+"您需要在该帐户IP列表中添加额外的IP。"
+
+#, vue-format
+msgid ""
+"When this is set, the add link task is processed in the background via "
+"task.queue. It may take up to 1 minute before the processing starts, and an "
+"unknown amount of time, depending on the number of websites present."
+msgstr "设置后，添加链接任务将通过任务队列在后台处理。 "
+"处理开始前可能需要1分钟，时间不详，视网站数量而定。"
+
+#, vue-format
+msgid "Where"
+msgstr "在哪里"
+
+#, vue-format
+msgid "Where:"
+msgstr "在哪里："
+
+#, vue-format
+msgid "Which Access"
+msgstr "哪个访问"
+
+#, vue-format
+msgid "Who"
+msgstr "谁"
+
+#, vue-format
+msgid "Who Access"
+msgstr "谁访问"
+
+#, vue-format
+msgid "Who:"
+msgstr "谁："
+
+#, vue-format
+msgid "Widget ID"
+msgstr "Widget ID"
+
+#, vue-format
+msgid "Widgets"
+msgstr "组件"
+
+#, vue-format
+msgid "Widgets Disabled"
+msgstr "部件已禁用"
+
+#, vue-format
+msgid "Wildcard"
+msgstr "通配符"
+
+#, vue-format
+msgid ""
+"Wildcard failure will automatically attempt an http based fallback request "
+"for all sub-hosts."
+msgstr "通配符失败将自动尝试所有子主机基于 http 的回退请求。"
+
+#, vue-format
+msgid "Wildcard:"
+msgstr "通配符:"
+
+#, vue-format
+msgid "Will be used for fast compression and downloads"
+msgstr "将用于快速压缩和下载"
+
+#, vue-format
+msgid "With Selected"
+msgstr "已选中"
+
+#, vue-format
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, vue-format
+msgid "WordPress Dashboard"
+msgstr "WordPress 仪表板"
+
+#, vue-format
+msgid "WordPress Database Modified successfully"
+msgstr "WordPress 数据库已成功修改"
+
+#, vue-format
+msgid ""
+"WordPress installation might overwrite existing files. Do you want to "
+"proceed?"
+msgstr "WordPress 安装可能会覆盖现有文件。你想继续吗？"
+
+#, vue-format
+msgid "WordPress installations"
+msgstr "WordPress 安装"
+
+#, vue-format
+msgid "WordPress installations with issues"
+msgstr "WordPress 安装有问题"
+
+#, vue-format
+msgid "Wordpress Manager"
+msgstr "Wordpress 管理器"
+
+#, vue-format
+msgid "WordPress Manager"
+msgstr "WordPress 管理器"
+
+#, vue-format
+msgid "Wordpress Users"
+msgstr "WordPress 用户"
+
+#, vue-format
+msgid "Working directory"
+msgstr "工作目录"
+
+#, vue-format
+msgid "Would you like to delete high scoring spam?"
+msgstr "您想要删除高分垃圾邮件吗？"
+
+#, vue-format
+msgid "Write"
+msgstr "写"
+
+#, vue-format
+msgid "Wrong format for a domain"
+msgstr "域名格式错误"
+
+#, vue-format
+msgid "Wrong format for a nameserver"
+msgstr "DNS服务器格式错误"
+
+#, vue-format
+msgid "Wrong IP format"
+msgstr "IP格式错误"
+
+#, vue-format
+msgid "Wrong username format"
+msgstr "用户名格式错误"
+
+#, vue-format
+msgid "Year:"
+msgstr "年："
+
+#, vue-format
+msgid "Yes"
+msgstr "是"
+
+#, vue-format
+msgid "You already have this IP on your system."
+msgstr "此IP已在系统内。"
+
+#, vue-format
+msgid "You are about to add the following widgets to your dashboard:"
+msgstr "将向面板中添加以下组件:"
+
+#, vue-format
+msgid ""
+"You are deleting admin that have users under control. If you proceed, these "
+"user accounts, along with ALL the associated website and email contents, "
+"which are not listed here, will also be removed."
+msgstr "您正在删除受用户控制的管理员。如果继续，这些用户帐户以及所有相关网站和电子邮"
+"件内容（此处未列出）也将被删除。"
+
+#, vue-format
+msgid ""
+"You are deleting reseller that have users under control. If you proceed, "
+"these user accounts, along with ALL the associated website and email "
+"contents, which are not listed here, will also be removed."
+msgid_plural ""
+"You are deleting resellers that have users under control. If you proceed, "
+"these user accounts, along with ALL the associated website and email "
+"contents, which are not listed here, will also be removed."
+msgstr[0] "您正在删除拥有用户控制的经销商，如果您继续，那么这些用户帐户以及所有相关的网"
+"站和电子邮件内容， 此处未列出的也将被删除。"
+
+#, vue-format
+msgid ""
+"You can combine them to create a more precise schedule. e.g. 1,5,11-15,30-59/"
+"2 (minutes 1, 5, 11 to 15 and every 2nd minute between 30 and 59)"
+msgstr "组合多条规则以创建更精确的计划，如：1,5,11-15,30-59/"
+"2（分钟数为：1，5，11到15之间的整数，30到59之间的双数）"
+
+#, vue-format
+msgid ""
+"You can specify exact times using commas to separate them. e.g. 1,2,3 ("
+"minutes 1,2 and 3)"
+msgstr "多条规则可用英语（半角）逗号分隔，如：1,2,3 （分钟数为：1，2，3）"
+
+#, vue-format
+msgid ""
+"You can specify intervals using a star and a forward slash. e.g. */2 (every "
+"2nd minute)"
+msgstr "时间间隔可用通配符和斜杠表示，如：*/2 （每2分钟）"
+
+#, vue-format
+msgid "You can specify spans using a dash. e.g. 5-7 (minutes 5 to 7)"
+msgstr "时间段可用横杠表示，如：5-7（分钟数为5-7之间的整数）"
+
+#, vue-format
+msgid ""
+"You deleted all of your domains. You should create one for full "
+"functionality."
+msgstr "您删除了您所有的域名。您应该为完整功能创建一个域名。"
+
+#, vue-format
+msgid "You have %{ n } unread ticket"
+msgid_plural "You have %{ n } unread tickets"
+msgstr[0] "您有%{ n }个未读工单"
+
+#, vue-format
+msgid "You have visited this page %{n} time"
+msgid_plural "You have visited this page %{n} times"
+msgstr[0] "您已经访问了 %{n} 页"
+
+#, vue-format
+msgid ""
+"You must wait for the stats to be computed. This will only happen *after* "
+"logs exist (domain must resolve and be used)."
+msgstr "您必须等待统计数据被计算出来， "
+"这只会在日志存在后才会发生（必须解析并使用域名）。"
+
+#, vue-format
+msgid ""
+"You will send this text to a Certificate Authority and they will give you a "
+"Signed Certificate."
+msgstr "您将把这个文本发送给证书管理局，他们会给您签名的证书。"
+
+#, vue-format
+msgid "Your Account"
+msgstr "我的账号"
+
+#, vue-format
+msgid "Your account has been active since %{date}."
+msgstr "您的帐户自 %{date} 以来一直处于活动状态。"
+
+#, vue-format
+msgid "Your current login information"
+msgstr "当前的登录信息"
+
+#, vue-format
+msgid "Your domain is pointing to %{ip}."
+msgstr "您的域名指向 %{ip}。"
+
+#, vue-format
+msgid "Zone Keys"
+msgstr "区域密钥"
+
+#, vue-format
+msgid "Zone keys are newer than the Zone Signing."
+msgstr "区域密钥比区域签名更新。"
+
+#, vue-format
+msgid "Zone Signing"
+msgstr "区域签名"
+
+#, vue-format
+msgid "Zone Transfer"
+msgstr "区域传输"
+
+#, vue-format
+msgid "Zone-Signing Key"
+msgstr "Zone-签名密钥"
+
+#, vue-format
+msgctxt "custombuild"
+msgid "File Size"
+msgstr "文件尺寸"
+
+#, vue-format
+msgctxt "custombuild"
+msgid "Override software compilation configuration."
+msgstr "覆盖软件编译配置。"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Authenticate"
+msgstr "验证"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Back to the login page"
+msgstr "返回登录页面"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Code"
+msgstr "代码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Code from E-mail"
+msgstr "来自电子邮件的代码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Dark Mode"
+msgstr "黑暗模式"
+
+#, vue-format
+msgctxt "login-page"
+msgid ""
+"Enter your Username and a confirmation link will be sent to your email "
+"account."
+msgstr "输入您的用户名，将发送确认链接到您的电子邮件帐户。"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Follow system mode"
+msgstr "跟随系统模式"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Forgot Password?"
+msgstr "忘记密码？"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Get the code from your phone's app, or use a backup scratch code."
+msgstr "从手机的应用程序中获取代码，或使用备份暂存代码。"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Given key is suitable for API calls only"
+msgstr "指定密钥仅适用于API调用"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Hmm, login details do not seem to be correct. Please try again."
+msgstr "嗯，登录详细信息似乎不正确。请重试。"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Licensing error"
+msgstr "许可证错误"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Light Mode"
+msgstr "亮色模式"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Log In using your username and code from E-mail"
+msgstr "使用您的用户名和电子邮件中的代码登录"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Logged in.."
+msgstr "已登录.."
+
+#, vue-format
+msgctxt "login-page"
+msgid "Password"
+msgstr "密码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Please enter username"
+msgstr "请输入用户名"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Please enter your password"
+msgstr "请输入密码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Request New Password"
+msgstr "重设新密码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Send me a Link"
+msgstr "给我发个链接"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Sign in"
+msgstr "登录"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Submit Answer"
+msgstr "提交答案"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Trial License"
+msgstr "试用许可证"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Trust this device for %{ days } days"
+msgstr "信任此设备 %{ days } 天"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Two Step Authentication"
+msgstr "两步验证"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Username"
+msgstr "用户名"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Wrong answer to security question"
+msgstr "错误的安全问题答案"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Wrong two factor authentication code"
+msgstr "错误的双因素身份验证代码"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Your account is disabled"
+msgstr "帐户已禁用"
+
+#, vue-format
+msgctxt "login-page"
+msgid "Your IP is blacklisted"
+msgstr "您的IP被列入黑名单"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Alter"
+msgstr "修改"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Alter Routine"
+msgstr "改变常规"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Create"
+msgstr "创建"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Create Routine"
+msgstr "创建 Routine"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Create tmp tables"
+msgstr "创建tmp表"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Create View"
+msgstr "创建视图"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Delete"
+msgstr "删除"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Drop"
+msgstr "删除"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Event"
+msgstr "事件"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Execute"
+msgstr "执行"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Grant"
+msgstr "授予"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Index"
+msgstr "索引"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Insert"
+msgstr "插入"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Lock Tables"
+msgstr "锁定表"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Reference"
+msgstr "参考"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Select"
+msgstr "选择"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Show View"
+msgstr "显示视图"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Trigger"
+msgstr "触发"
+
+#, vue-format
+msgctxt "mysql_privs"
+msgid "Update"
+msgstr "更新"
