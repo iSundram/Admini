@@ -1,0 +1,1 @@
+import{d as t,o as a,f as n,w as o,m as s,t as _,bq as r,_ as p}from"../index.DtGSrwJ3.js";const c=t({__name:"tw-heading",props:{text:{},tag:{default:"h2"}},setup(i){return(e,d)=>(a(),n(r(e.tag),{class:"tw-heading dark:text-gray-200"},{default:o(()=>[s(_(e.text),1)]),_:1}))}}),m=p(c,[["__file","tw-heading.vue"]]);export{m as _};
