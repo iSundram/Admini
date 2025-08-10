@@ -1,0 +1,44 @@
+diff -Naur a/TSRM/threads.m4 b/TSRM/threads.m4
+--- a/TSRM/threads.m4	2019-01-09 09:54:13.000000000 +0000
++++ b/TSRM/threads.m4	2024-08-21 12:18:06.167679585 +0000
+@@ -135,24 +135,24 @@
+       fi
+     done
+   fi
+-fi
+-])
++  ])
+ 
+-AC_CACHE_CHECK(for pthreads_lib, ac_cv_pthreads_lib,[
+-ac_cv_pthreads_lib=
+-if test "$pthreads_working" != "yes"; then
+-  for lib in pthread pthreads c_r; do
+-    ac_save=$LIBS
+-    LIBS="$LIBS -l$lib"
+-    PTHREADS_CHECK_COMPILE
+-    LIBS=$ac_save
+-    if test "$pthreads_working" = "yes"; then
+-      ac_cv_pthreads_lib=$lib
+-      break
+-    fi
+-  done
++  AC_CACHE_CHECK(for pthreads_lib, ac_cv_pthreads_lib,[
++  ac_cv_pthreads_lib=
++  if test "$pthreads_working" != "yes"; then
++    for lib in pthread pthreads c_r; do
++      ac_save=$LIBS
++      LIBS="$LIBS -l$lib"
++      PTHREADS_CHECK_COMPILE
++      LIBS=$ac_save
++      if test "$pthreads_working" = "yes"; then
++        ac_cv_pthreads_lib=$lib
++        break
++      fi
++    done
++  fi
++  ])
+ fi
+-])
+ 
+ if test "$pthreads_working" = "yes"; then
+   threads_result="POSIX-Threads found"
