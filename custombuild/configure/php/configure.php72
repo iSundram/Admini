@@ -1,0 +1,49 @@
+#!/bin/sh
+
+# Add stack canaries
+export CFLAGS="${CFLAGS} -fstack-protector-strong"
+
+# Fortify core stdlib functions
+export CFLAGS="${CFLAGS} -D_FORTIFY_SOURCE=1 -O1"
+
+# ignore gcc-14 issues
+export CFLAGS="${CFLAGS} -fpermissive"
+
+./configure \
+	--with-pic \
+	--enable-embed \
+	--prefix=/usr/local/php72 \
+	--enable-fpm \
+	--with-fpm-systemd \
+	--with-litespeed \
+	--with-config-file-scan-dir=/usr/local/php72/lib/php.conf.d \
+	--with-curl \
+	--with-gd \
+	--with-gettext \
+	--with-jpeg-dir=/usr \
+	--with-freetype-dir=/usr \
+	--with-libxml-dir=/usr \
+	--with-kerberos \
+	--with-openssl \
+	--with-mysql-sock=/var/lib/mysql/mysql.sock \
+	--with-mysqli=mysqlnd \
+	--with-pdo-mysql=mysqlnd \
+	--with-pear \
+	--with-png-dir=/usr \
+	--with-sodium=/usr \
+	--with-webp-dir=/usr \
+	--with-xsl \
+	--with-zlib \
+	--enable-zip \
+	--enable-bcmath \
+	--enable-calendar \
+	--enable-exif \
+	--enable-ftp \
+	--enable-shmop \
+	--enable-sysvshm \
+	--enable-sysvmsg \
+	--enable-sysvsem \
+	--enable-sockets \
+	--enable-soap \
+	--enable-mbstring \
+	--enable-intl
