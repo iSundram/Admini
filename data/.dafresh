@@ -1,0 +1,3 @@
+This file marks that DirectAdmin was just installed or updated and has
+not been started yet. File existence determines whether first launch
+tasks are run when DirectAdmin server is started.
