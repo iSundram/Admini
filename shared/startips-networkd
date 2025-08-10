@@ -1,0 +1,11 @@
+#!/bin/bash
+# This is a systemd-network script for DirectAdmin
+# startips script gets executed after a network change.
+
+DA_IFACE=$(da config-get ethernet_dev)
+
+if [ "${IFACE}" == "${DA_IFACE}" ] && [ "${STATE}" == "routable" ]; then
+	if systemctl is-enabled startips; then
+		/usr/local/directadmin/scripts/startips
+	fi
+fi
