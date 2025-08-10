@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./configure \
+	--with-pcre2
