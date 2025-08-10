@@ -1,0 +1,69 @@
+|?TREE=&raquo; <a class=tree href="/CMD_LICENSE">`LANG_LICE_UP`</a>|
+|?HELP_SECTION=`ADMIN_HELPER`/license.html|
+|HTM_ADMIN_TOP|
+
+<table cellspacing=1 cellpadding=3 class=list>
+<tr><td class=listtitle colspan=2>|LANG_LICE_VALS|</a></td></tr>
+<tr><td class=list_alt>|LANG_LICE_NAME|</td><td class=list_alt>|name|</td></tr>
+<tr><td class=list_alt>|LANG_LID|</td><td class=list_alt>|lid|</td></tr>
+<tr><td class=list_alt>|LANG_CID|</td><td class=list_alt>|uid|</td></tr>
+|*if nusers>"0"|
+<tr><td class=list_alt>|LANG_ACCOUNT_LIMIT|</td><td class=list_alt>|CURRENT_ACCOUNTS| / |nusers|</td></tr>
+|*endif|
+|*if vdomains>"0"|
+<tr><td class=list_alt>|LANG_DOMAIN_LIMIT|</td><td class=list_alt>|CURRENT_DOMAINS| / |vdomains|</td></tr>
+|*endif|
+|*if internal="Y"|
+<tr><td class=list_alt>|LANG_LTYPE|</td><td class=list_alt style='white-space: normal;'>|LANG_INTERNAL|</td></tr>
+|*endif|
+|*if internal="N"|
+<tr><td class=list_alt>|LANG_LTYPE|</td><td class=list_alt style='white-space: normal;'>|LANG_EXTERNAL|</td></tr>
+|*endif|
+<tr><td class=list_alt>|LANG_DA_LICENSE|</td><td class=list_alt><input type=button onclick="location.href='CMD_LICENSE_VERIFY'" value='|LANG_VERIFY|'> |LANG_CHECK_IF_SOFTWARE_VALID|</td></tr>
+
+<tr><td class=list_alt>|LANG_VALID_AFTER|</td><td class=list_alt>|start_string|</td></tr>
+<tr><td class=list_alt>|LANG_VALID_UNTIL|</td><td class=list_alt>|expiry_string|</td></tr>
+|*if portioned="Y"|
+<tr><td class=list_alt>|LANG_PORTIONED_LICENSE|</td><td class=list_alt style='white-space: normal;'>|LANG_PORTIONED_EXPLANATION| |true_expiry_string|</td></tr>
+|*endif|
+
+<tr><td class=list_alt>|LANG_CURRENT_TIME|</td><td class=list_alt>|TIME|</td></tr>
+<tr><td class=list_alt>|LANG_TIME_REM|</td><td class=list_alt>|remaining|</td></tr>
+|*if da_needs_restart="yes"|
+	<tr><td class=list_alt align=center colspan=2>*** <b>|LANG_DA_NOT_RESTARTED|</b> ***<br>
+	<form class='inline' action='CMD_SERVICE' method='POST'>
+		<input type='hidden' name='service' value='directadmin'>
+		<input type='hidden' name='action' value='restart'>
+		<input type='submit' value='|LANG_RESTART_DA|'>
+	</form>
+|*endif|
+
+<tr><td class=listtitle colspan=2>|LANG_DA_VALS|</a></td></tr>
+<tr><td class=list_alt>|LANG_COMPILED_FOR|</td><td class=list_alt>|OS_NAME|</td></tr>
+|*if eol|
+<tr><td class=list_alt><b>|LANG_END_OF_LIFE|</b></td><td class=list_alt><b>|eol|</b></td></tr>
+|*endif|
+<tr><td class=list_alt>|LANG_COMPILE_DATE|</td><td class=list_alt>|compile_time|</td></tr>
+<tr><td class=list_alt>|LANG_SERVER_VER|</td><td class=list_alt>|version|</td></tr>
+<tr><td class=list_alt>|LANG_CURRENT_VER|</td><td class=list_alt>|current_version|</td></tr>
+<form action='?' method='POST'>
+	<input type='hidden' name='action' value='set_update_channel'>
+	<tr><td class=list_alt>|LANG_UPDATE_CHANNEL|</td><td class=list_alt>
+		|UPDATE_CHANNEL_SELECT|
+		<input type='submit' value='|LANG_SAVE|'>
+		</td></tr>
+</form>
+<tr><td class=list_alt>|LANG_COMMIT_SHA|</td><td class=list_alt>|commit_sha|</td></tr>
+|*if latest_commit_sha|
+<tr><td class=list_alt>|LANG_LATEST_COMMIT_SHA|</td><td class=list_alt>|latest_commit_sha|</td></tr>
+|*endif|
+<tr><td class=list_alt>|LANG_LAST_UP|</td><td class=list_alt>|software_change|</td></tr>
+<tr><td class=list_alt>|LANG_LAST_RESTART|</td><td class=list_alt>|startup_time|</td></tr>
+<tr><td class=list_alt align=center colspan=2>
+<form method='POST'>
+	<input type='hidden' name='update' value='program'>
+	<input type='submit' value='|LANG_UPDATE_DA|'>
+</form>
+</td></tr>
+</table>
+|HTM_ADMIN_BOTTOM|
