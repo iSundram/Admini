@@ -1,0 +1,14 @@
+#!/bin/bash
+# This is a NetworkManager dispatcher script for DirectAdmin
+# startips script gets executed after a network change.
+
+IFACE=$1
+ACTION=$2
+
+DA_IFACE=$(da config-get ethernet_dev)
+
+if [ "${IFACE}" == "${DA_IFACE}" ] && [ "${ACTION}" == "up" ]; then
+	if systemctl is-enabled startips; then
+		/usr/local/directadmin/scripts/startips
+	fi
+fi
