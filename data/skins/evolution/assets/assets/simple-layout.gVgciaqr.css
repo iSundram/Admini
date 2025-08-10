@@ -1,0 +1,1 @@
+body[data-layout=standard] .main-menu-entries-dropdown{--max-column-count: 2;--break-around: 4;--columns-count: clamp(1, calc(var(--entries-count) / var(--break-around)), var(--max-column-count))}
