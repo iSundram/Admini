@@ -1,0 +1,7680 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Czech (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Czech <https://translate.directadmin.com/projects/directadmin/"
+"internal/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " - %d nová zpráva uvnitř"
+msgstr[1] " - %d nové zprávy uvnitř"
+msgstr[2] " - %d nových zpráv uvnitř"
+
+msgid " / Day"
+msgstr " / den"
+
+msgid "# of Domains"
+msgstr "# domén"
+
+msgid "# of IPs"
+msgstr "# IP adres"
+
+msgid "# of MySQL DBs"
+msgstr "# MySQL databází"
+
+msgid "# of Resellers"
+msgstr "# resellerů"
+
+msgid "# of SubDomains"
+msgstr "# subdomén"
+
+msgid "# of Users"
+msgstr "# uživatelů"
+
+msgid "# of free IPs"
+msgstr "# volných IP adres"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d dnů, %d hodin a %d minut"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d z %d účtů správce/resellera existuje."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d z %d účtů již existuje."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d z %d domén již existuje."
+
+#, c-format
+msgid "%d settings updated"
+msgstr "%d nastavení aktualizováno"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s neexistovalo"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr ""
+"%s '%s' nemůže být obnoveno pod '%s'.  Obnovení pod výchozím souborem: '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - uživatelova '%s' aktuální IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr "%s Upravte Uvítací zprávu uživatele nastavením předmětu a zprávy."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s účet %s byl právě vytvořen"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s již existuje"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s již existuje na vzdáleném serveru."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s již existuje na serveru."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s již existuje. Zadejte parametr overwrite=yes pro vynucení"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s se zdá být odkazem. Zastavuji."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s může být nyní sdílen."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s obsahuje nebezpečné znaky"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr "%s nemůže být přiřazena, musí být nejprve nevyužitá a nepřiřazená."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s nemohla být uvolněna, buď nesmí být přiřazena k doménám a nebo nesmí být "
+"rezervovaná."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s nemůže být odebrána, nejprve ji musíte uvolnit."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s nemohla být sdílena, nejprve musí být volná"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s v pořádku odstraněno."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s neexistuje"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s nemá stejného vlastníka jako %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s byla odebrána ze seznamu"
+
+msgid "%s has been saved as %s."
+msgstr "%s byla uložena jako %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s byl deaktivován"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s byl aktivován"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s je složkou, nebude smazána"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s je odkazem"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s je hard nebo symbolic odkazem"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s chybí"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s není složkou"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s není socketem"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s není symlinkem"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s není platnou IP adresou nebo rozsahem adres"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s není platným rozsahem IP adres.  Použijte: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr ""
+"%s nebylo nastaveno vlastnictví - chown na %s což je pravděpodobně příčinou "
+"selhání rozbalování"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s není zapnuto"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s není ve vašem seznamu doménových IP adres"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s není typem přesměrování ze seznamu"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s nevlastní %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s není nastavena jako 'volná' nebo je stále přiřazena resellerovi"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s kontroluje nyní %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s je teď volná"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s je nyní nepřiřazená."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s je nyní vaší výchozí doménou."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s je mimo rozsah"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s je požadováno pro %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s nesmí být symlink"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s již nemá označení Jmenný server."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s není implementováno"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s záznamů vypnuto na této úrovni"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s hodnota '%s' není v seznamu home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s konfigurační soubory byly odebrány"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: lstat chyba na linnk hodnota '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: readlinke chyba: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' není platný typ %s"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sKlikněte zde%s pro informace jak to zapnout"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sKlikněte zde%s pro zobrazení prostých lokálních dat zóny"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' neexistuje"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' neexistuje\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' nezačíná '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' bylo nastaveno na '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' je zakázaný název balíčku."
+
+msgid "'%s' is disabled"
+msgstr "'%s' je vypnuto"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' není platnou css hex barvou"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' není přiřazeno k vašemu reseller účtu."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' není zapnuto ve vaší licenci"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' není zapnuto na vašem systému."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' je požadováno"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' musí být '%s' nebo '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'import' se nezdá být base 64 kódovaný"
+
+msgid "'when' should be all, newer or older"
+msgstr "'kdy' by mělo být vše, novější nebo starší"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) Následující hard linky byly nalezeny pod uživatelem %s:"
+
+msgid "* irretrievable *"
+msgstr "* nelze získat *"
+
+msgid "*** Stopped ***"
+msgstr "*** Zastaveno ***"
+
+msgid "-- None Available --"
+msgstr "-- Nic k dispozici --"
+
+msgid "-- Reason:"
+msgstr "-- Důvod:"
+
+msgid "-- Select IP"
+msgstr "-- Vyberte IP"
+
+msgid "-- Select Package"
+msgstr "-- Vyberte balíček"
+
+msgid "-- any time --"
+msgstr "-- kdykoli --"
+
+msgid "-- anything --"
+msgstr "-- cokoli --"
+
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "=1 vyžaduje nginx_proxy=1 a DirectAdmin Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "%s záznam s tímto názvem již existuje"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "'volná' IP může být přiřazena jen 1 uživateli"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "Typ záznamu je vyžadován: A, NS, MX, CNAME, PTR, nebo TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "Reseller nemůže ovládat jiné účty se shodnou nebo vyšší úrovní"
+
+msgid "A file is required"
+msgstr "Soubor je požadován"
+
+msgid "A forwarder already exists with that name"
+msgstr "Přeposílač s tímto názvem již existuje"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "Celá doména/zóna s tímto názvem již existuje."
+
+msgid "A key with that name already exists"
+msgstr "Klíč s tímto názvem již existuje"
+
+msgid "A key with that value already exists"
+msgstr "Klíč s takovou hodnotou již existuje"
+
+msgid "A list alias already exists with that name"
+msgstr "Alias seznamu s tímto názvem již existuje"
+
+msgid "A message for that user already exists"
+msgstr "Zpráva pro toho uživatele již existuje"
+
+msgid "A pop account already exists with that name"
+msgstr "Pop účet s tímto názvem již existuje"
+
+msgid "A skin name is required"
+msgstr "Jméno vzhledu je požadováno"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr "Subdoména se stejným názvem již existuje v systému pod jinou doménou."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "Absolutní limit paměti. Spustí Out-Of-Memory Killer."
+
+msgid "Abuse"
+msgstr "Zneužití služby"
+
+msgid "Access Hosts"
+msgstr "Přistupující hosté"
+
+msgid "Access host has been added"
+msgstr "Přistupující host byl přidán"
+
+msgid "Access hosts have been removed"
+msgstr "Přistupující hosté byli odebráni"
+
+msgid "Account"
+msgstr "Účet"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Účet %s právě vytvořil %s %s z IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Účet %s vynechán protože je deaktivován"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr "Účet %s byl deaktivován správcem a vy máte jen reseller přístup."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Účet %s s doménou %s má prázdný caroot cert"
+
+msgid "Account created"
+msgstr "Účet vytvořen"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Účet byl odblokován z BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Účet není typu reseller"
+
+msgid "Account is suspended"
+msgstr "Účet je deaktivován"
+
+msgid "Account password changed"
+msgstr "Heslo účtu změněno"
+
+msgid "Account(s) Suspended"
+msgstr "Účet(y) deaktivován(y)"
+
+msgid "Account(s) Unuspended"
+msgstr "Účet(y) aktivován(y)"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Účty obnoveny na oddíl %s."
+
+msgid "Action"
+msgstr "Akce"
+
+msgid "Activate"
+msgstr "Aktivovat"
+
+msgid "Active"
+msgstr "Aktivní"
+
+#, c-format
+msgid "Add %s"
+msgstr "Přidat %s"
+
+msgid "Add Host"
+msgstr "Přidat hosta"
+
+msgid "Add Override"
+msgstr "Přidat záměnu-potlačení"
+
+msgid "Add the new NS records first."
+msgstr "Přidejte nejprve nové NS záznamy."
+
+msgid "Add to Apache"
+msgstr "Přidat do Apache"
+
+msgid "Add to Clipboard"
+msgstr "Přidat do schránky"
+
+msgid "Add to DNS"
+msgstr "Přidat do DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "Přidány ns1 jako %s a ns2 jako %s"
+
+msgid "Additional"
+msgstr "dodatečný"
+
+msgid "Admin"
+msgstr "správce"
+
+msgid "Admin SSL"
+msgstr "SSL správce"
+
+msgid "Admin SSL is not enabled"
+msgstr "SSL správce není zapnuto"
+
+msgid "Adult filter set"
+msgstr "Nastaven rodičovský filtr"
+
+msgid "Advanced Search"
+msgstr "Pokročilé hledání"
+
+msgid "Afternoon"
+msgstr "Odpoledne"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Alias %s@%s -> %s byl vytvořen"
+
+msgid "All"
+msgstr "Vše"
+
+msgid "All Data"
+msgstr "Všechna data"
+
+msgid "All E-Mail"
+msgstr "Všechny e-maily"
+
+msgid "All Months (cgi)"
+msgstr "Všechny měsíce(cgi)"
+
+msgid "All Resellers"
+msgstr "Všichni resellers"
+
+msgid "All Users"
+msgstr "Všichni uživatelé"
+
+msgid "All Users Except Selected Users"
+msgstr "Všichni uživatelé mimo vybraných uživatelů"
+
+msgid "All Users Except:"
+msgstr "Všichni uživatelé mimo:"
+
+msgid "All of Your Users"
+msgstr "Všichni moji uživatelé"
+
+msgid "All privileges have been set"
+msgstr "Všechna oprávnění byla nastavena"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Všechny kroky trasy kromě posledního by měly mít 'match'"
+
+msgid "All selected Users have been suspended"
+msgstr "Všichni vybraní uživatelé byli deaktivováni"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Všichni vybraní uživatelé byli aktivováni"
+
+msgid "All specified forwarders removed"
+msgstr "Všechny uvedené přeposílače odebrány"
+
+msgid "Allocated"
+msgstr "Přiděleno"
+
+msgid "Allow"
+msgstr "Povolit"
+
+msgid "Allow Overselling"
+msgstr "Povolit překročení limitů (overselling)"
+
+msgid "Allowance threshold is 0%"
+msgstr "Tolerance prahové hodnoty je 0%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Umožnění tolika %s by vám překročilo limit %s"
+
+msgid "Alpha"
+msgstr "Alpha"
+
+msgid "Already Exists"
+msgstr "Již existuje"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr "I když došlo k chybě zálohování, proběhl pokus o nahrání platných záloh"
+
+msgid "An Error Occurred"
+msgstr "Došlo k chybě"
+
+msgid "An Error has occurred"
+msgstr "Došlo k chybě"
+
+msgid "An auto responder already exists with that name"
+msgstr "Automatický odpovídač s tímto názvem již existuje"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Automatický odpovídač s tímto názvem již existuje"
+
+msgid "An error has occurred"
+msgstr "Došlo k chybě"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Došlo k chybě při přepisování konfigurace Nginx Unit"
+
+msgid "An error occured during extraction"
+msgstr "Došlo k chybě při rozbalování"
+
+msgid "An error occured while creating the compressed file"
+msgstr "Došlo k chybě při vytváření komprimovaného souboru"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "Došlo k chybě při resetování vlastnictví souboru"
+
+msgid "An error occurred during the backup"
+msgstr "Došlo k chybě při zálohování"
+
+msgid "An error occurred during the restore"
+msgstr "Došlo k chybě při obnově"
+
+msgid "An error occurred when unblocking the account"
+msgstr "Došlo k chybě při odblokování účtu"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "Došlo k chybě při použití nastavení na vaše uživatele"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "Došlo k chybě při pokusu o kopírování souboru"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "Došlo k chybě při pokusu o vytvoření složky"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "Došlo k chybě při pokusu o chránění složky"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "Došlo k chybě při pokusu o přejmenování souboru"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "Došlo k chybě při pokusu o obnovení souboru"
+
+msgid "Anonymous Ftp"
+msgstr "Anonymní Ftp"
+
+msgid "Apache"
+msgstr "Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Konfigurační soubor Apache přepsán za použití nové IP"
+
+msgid "Apparent Size"
+msgstr "Zjevná velikost"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Zobrazuje se jako první položka v sekci <Directory>."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Zobrazuje se úplně nahoře v šabloně, před nastavením proměnných."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Zobrazuje se ve VŠECH context{} sekcích, používá se pro složky chráněné "
+"heslem."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Zobrazuje se v phpIniOverride{} sekci."
+
+msgid "Appears in rewrite{} section."
+msgstr "Zobrazuje se v rewrite{} sekci."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Zobrazuje se v scripthandler{} sekci."
+
+msgid "Appears in vhssl{} section."
+msgstr "Zobrazuje se v vhssl{} sekci."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Zobrazuje se hned před <Directory> sekcí."
+
+msgid "Apply to All Users"
+msgstr "Použít na všechny uživatele"
+
+msgid "Apply to Me"
+msgstr "Použít na mě"
+
+msgid "Apply to existing Domains"
+msgstr "Použít na existující domény"
+
+msgid "Apr"
+msgstr "Dub"
+
+msgid "Archive Size"
+msgstr "Velikost archivu"
+
+msgid "Archives purged"
+msgstr "Archivy pročištěny"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Jste si jisti, že chcete smazat vybrané účty?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Jste si jisti, že chcete smazat vybrané databáze?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Jste si jisti, že chcete smazat vybrané klíče?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Jste si jisti, že chcete smazat vybrané zóny?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Jste si jisti, že chcete smazat tyto soubory?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Jste si jisti, že chcete zabít tyto procesy?"
+
+msgid "Ascending"
+msgstr "Vzestupně"
+
+msgid "Assign to"
+msgstr "Přiřadit k"
+
+msgid "Assigned"
+msgstr "Přiřazeno"
+
+msgid "At least one crediential is required."
+msgstr "Je vyžadován alespoň jeden údaj."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Pokus o kopírování %s do sebe sama, soubor vynechán."
+
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Pokus o přesun %s do sebe sama, soubor vynechán"
+
+msgid "Attempts"
+msgstr "Pokusy"
+
+msgid "Aug"
+msgstr "Srp"
+
+msgid "Authentication"
+msgstr "Autentizace"
+
+msgid "Authorize"
+msgstr "Autorizovat"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Auto media selection active."
+msgstr "Automatický výběr média je aktivní."
+
+msgid "Auto+Confirm"
+msgstr "Auto+Potvrzení"
+
+msgid "AutoResponders"
+msgstr "AutomatickéOdpovídače"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "Automatické obnovení certifikátu pro %s bylo úspěšné"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr "Automatický security.txt (RFC 9116)"
+
+msgid "Autoreply"
+msgstr "Automatická odpověď"
+
+msgid "Autoresponder"
+msgstr "Automatický odpovídač"
+
+msgid "Autoresponder created"
+msgstr "Automatický odpovídač vytvořen"
+
+msgid "Autoresponder updated"
+msgstr "Automatický odpovídač aktualizován"
+
+msgid "Autoresponder(s) removed"
+msgstr "Automatick(é/ý) odpovídač(e) odebrán(y)"
+
+msgid "Avoid use of trailers."
+msgstr "Předejděte použití přívěsů."
+
+msgid "Awstats"
+msgstr "AWstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "AWstats nastavení změněno"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Zpět"
+
+msgid "Backing up Databases"
+msgstr "Zálohování databází"
+
+msgid "Backing up E-Mail Data"
+msgstr "Zálohování e-mailových dat"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Zálohování e-mailových nastavení"
+
+msgid "Backing up FTP"
+msgstr "Zálohování FTP"
+
+msgid "Backing up User Configs"
+msgstr "Zálohování uživatelských konfigurací"
+
+msgid "Backing up User Data"
+msgstr "Zálohování uživatelských dat User Data"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Zálohování extra položek e-mailů"
+
+msgid "Backup"
+msgstr "Záloha"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Zálohování %d momentálně neběží."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr "Zálohování zastaveno (%d): Byl nalezen Hard link na cestě uživatele %s"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Chyba zálohování s Nginx Unit: %s"
+
+msgid "Backup Halted"
+msgstr "Zálohování zastaveno"
+
+msgid "Backup ID"
+msgstr "ID zálohy"
+
+msgid "Backup creation added to queue"
+msgstr "Vytváření zálohy přidáno do fronty"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+"Selhalo zálohování živého klíče do %s. Pokud je to potřeba, poznamenejte si "
+"starý klíč:"
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Cesta zálohování %s byla vytvořena."
+
+msgid "Backup(s) Killed"
+msgstr "Záloh(a/y) zabit(a/y)"
+
+msgid "Backups added to Queue"
+msgstr "Zálohy byly přidány do fronty"
+
+msgid "Bandwidth"
+msgstr "Datový přenos"
+
+msgid "Bandwidth (MB)"
+msgstr "Datový přenos (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "Využití datového přenosu"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr ""
+"Ujistěte se, že znovu oskenujete QR kód, protože staré kódy jsou zneplatněny."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr "Protože skript splňuje požadavky, byl vypnut pomocí chmod na 0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"Před odblokováním se ujistěte, že jakékoli zkompromitované skripty byly "
+"odebrány nebo opraveny."
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "Billing Issue"
+msgstr "Platební problém"
+
+# What is behind %s ?
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "Prázdná %s při hledání převedeného souboru zálohy v %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Prázdná hodnota: výchozí, globální limit %d"
+
+msgid "Bleeding edge features"
+msgstr "Nejnovější funkce"
+
+msgid "Block Usage"
+msgstr "Využití bloků"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker blokované cesty"
+
+msgid "Blocked"
+msgstr "Blokováno"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "DNS ovládání a ttl záměna-potlačení musí být zapnuty"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "V logu služby byl rozpoznán útok hrubou silou"
+
+msgid "CA Certificate is Invalid"
+msgstr "Certifikát CA je neplatný"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr ""
+"Certifikát CA je v pořádku. Vaše stránka by měla být zabezpečena během "
+"několika minut."
+
+msgid "CC Address"
+msgstr "CC adresa"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "CPU kvóta"
+
+msgid "Can use Server IP"
+msgstr "Může použít IP serveru"
+
+msgid "Can't get file lock on"
+msgstr "Není možné zajistit lock souboru u"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Není možné otevřít soubor %s pro čtení"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Není možné znovu otevřít soubor %s pro doplnění"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Cancel Request"
+msgstr "Zrušit požadavek"
+
+msgid "Cannot Add A Record"
+msgstr "Není možné přidat záznam typu A"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Není možné přidat záznam typu CNAME"
+
+msgid "Cannot Add Record"
+msgstr "Není možné přidat záznam"
+
+msgid "Cannot Create Account"
+msgstr "Není možné vytvořit účet"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Nepodařilo se vytvořit další automatický odpovídač"
+
+msgid "Cannot Create Another Database"
+msgstr "Není možné vytvořit další databázi"
+
+msgid "Cannot Create Another Domain"
+msgstr "Není možné vytvořit další doménu"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Není možné vytvořit další doménový ukazatel"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Není možné vytvořit další FTP účet"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Není možné vytvořit další přeposílač"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Nemohl být vytvořen další e-mailový seznam"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Není možné vytvořit další POP účet"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Není možné vytvořit další subdoménu"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Nepodařilo se vytvořit automatický odpovídač"
+
+msgid "Cannot Create Domain"
+msgstr "Není možné vytvořit doménu"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Není možné vytvořit zprávu režimu Na dovolené"
+
+msgid "Cannot Create a Message"
+msgstr "Není možné vytvořit zprávu"
+
+msgid "Cannot Execute Command"
+msgstr "Není možné spustit příkaz"
+
+msgid "Cannot Execute Your Request"
+msgstr "Není možné spustit váš požadavek"
+
+msgid "Cannot Modify Key"
+msgstr "Není možné upravit klíč"
+
+msgid "Cannot Modify User"
+msgstr "Není možné upravit uživatele"
+
+msgid "Cannot View Domain Settings"
+msgstr "Není možné zobrazit nastavení domény"
+
+msgid "Cannot be a list"
+msgstr "Nemůže jít o seznam"
+
+msgid "Cannot be an object"
+msgstr "Nemůže jít o objekt"
+
+msgid "Cannot change the ip"
+msgstr "Není možné změnit IP"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Není možné změnit heslo systémového účtu.  Přihlaste se kvůli tomu do "
+"ovládacího panelu."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Není možné změnit heslo tohoto e-mailového účtu.  Účet je momentálně na "
+"deaktivované doméně."
+
+msgid "Cannot change your email"
+msgstr "Není možné změnit váš e-mail"
+
+msgid "Cannot change your name"
+msgstr "Není možné změnit vaše jméno"
+
+msgid "Cannot change your password"
+msgstr "Není možné změnit vaše heslo"
+
+msgid "Cannot check domain existance"
+msgstr "Není možné zkontrolovat existenci domény"
+
+msgid "Cannot create User Backup"
+msgstr "Není možné vytvořit zálohu uživatele"
+
+msgid "Cannot create domain"
+msgstr "Není možné vytvořit doménu"
+
+msgid "Cannot create that domain"
+msgstr "Není možné vytvořit tuto doménu"
+
+msgid "Cannot create user using those settings"
+msgstr "Není možné vytvořit uživatele pomocí tohoto nastavení"
+
+msgid "Cannot delete records"
+msgstr "Není možné smazat záznamy"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "Není možné smazat vzhled, který momentálně používáte."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Není možné zjistit vlastníka subdomény '%s'"
+
+msgid "Cannot execute your request"
+msgstr "Není možné spustit váš požadavek"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Není možné najít %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "V seznamu není možné najít %s"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "V názvu není možné najít %s"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Není možné najít %s, vynechávám."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr ""
+"Není možné najít %s.  Ujistěte se, že doména existuje a není deaktivovaná"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Není možné najít '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Není možné najít '%s' v seznamu povolených hodnot %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "V šabloně není možné najít '%s'"
+
+msgid "Cannot find IP"
+msgstr "Není možné najít IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Není možné najít uživatele '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr ""
+"Není možné najít platné systémové uživatelské jméno v souboru vlastníků "
+"domén domainowners."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "V certifikátu není možné najít žádné hodnoty SAN."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "Není možné najít žádné tar.gz po převodu z %s"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Není možné najít doménu v souboru doménových vlastníků"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Není možné najít doménu v certifikátu."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Není možné najít hodnotu klíče v %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Není možné najít soubor loga pro token %s ve vzhledu %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Není možné najít soubor loga pro token %s=%s ve vzhledu %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Není možné najít show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Není možné najít template_php_ini nebo domain_php_ini v json"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "Tuto doménu není možné najít v souboru vlastníků domén domainowners"
+
+msgid "Cannot find that key id"
+msgstr "Není možné najít toto id klíče"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "Není možné najít účet ani přeposílač"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Není možné najít skript letsencrypt.sh"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "Není možné najít uživatele %s který by již měl existovat"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Není možné získat mime-typ %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Není možné mít znaky nového řádku v předmětu"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Není možné mít neomezené e-mailové kvóty"
+
+msgid "Cannot manage zone"
+msgstr "Není možné spravovat zónu"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr "Není možné přesunout složku (%s) na existující soubor nebo složku (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "Není možné otevřít soubor hesel pro přidání uživatele"
+
+msgid "Cannot open the password file to change the password"
+msgstr "Není možné otevřít soubor hesel pro změnu hesla"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Není možné otevřít soubor hesel uživatele pro čtení"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr "Není možné přejmenovat složku na existující soubor nebo složku"
+
+msgid "Cannot resend welcome email"
+msgstr "Není možné znovu odeslat uvítací e-mail"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "Není možné obnovit ftp účet %s.  Dosáhli jste svého limitu (%s)."
+
+msgid "Cannot set TTL"
+msgstr "Není možné nastavit TTL"
+
+msgid "Cannot set default domain"
+msgstr "Není možné nastavit výchozí doménu"
+
+msgid "Cannot show page"
+msgstr "Není možné zobrazit stránku"
+
+msgid "Cannot stat the source file"
+msgstr "Není možné provést stat zdrojového souboru"
+
+msgid "Cannot use the main account username"
+msgstr "Není možné použít hlavní uživatelské jméno účtu"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Doménový koš je nyní nastaven na %s"
+
+msgid "Catch-All Email"
+msgstr "E-mail doménového koše"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "E-mail doménového koše byl na tomto účtu vypnut"
+
+msgid "Catch-All email updated successfully"
+msgstr "E-mail doménového koše úspěšně aktualizován"
+
+msgid "Catch-All is disabled"
+msgstr "Doménový koš je vypnut"
+
+msgid "Catch-All is now set to fail"
+msgstr "Doménový koš je nyní nastaven na selhat/fail"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Doménový koš je nyní nastaven na ignorování chybných adres"
+
+msgid "Certificate"
+msgstr "Certifikát"
+
+msgid "Certificate and Key Saved."
+msgstr "Certifikát a klíč uložen."
+
+msgid "Certificate is Invalid"
+msgstr "Certifikát je neplatný"
+
+msgid "Certificate is Self-Signed"
+msgstr "Certifikát je podepsán pouze vlastnoručně"
+
+msgid "Change the password to unblock it."
+msgstr "Změňte heslo pro odblokování."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Změněno IP: %s"
+
+msgid "Changes saved"
+msgstr "Změny uloženy"
+
+msgid "Check"
+msgstr "Kontrola"
+
+msgid "Check the error log for more information."
+msgstr "Zkontrolujte log chyb pro další informace."
+
+msgid "Check to see if the current software is valid"
+msgstr "Zkontrolujte abyste viděli, zda je současný software platný"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Podřízený uživatel %s smazán"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Vyberte z: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "Město musí obsahovat jen písmena, mezery a/nebo tečky"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "Vyčistit přeposílače"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Čištění %s"
+
+msgid "Clear Customization"
+msgstr "Vyčistit přizpůsobení"
+
+msgid "Clear Messages System"
+msgstr "Vyčistit systém zpráv"
+
+msgid "Clear NS"
+msgstr "Vyčistit NS"
+
+msgid "Clear Search Filter"
+msgstr "Vyčistit filtr hledání"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Klikněte %sZDE%s pro návrat"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Klikněte %sZDE%s pro návrat"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Klikněte %sZDE%s pro návrat na hlavní stránku"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Klikněte zde pro stažení poslední zálohy"
+
+msgid "Click here to close this window"
+msgstr "Klikněte zde pro zavření tohoto okna"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Klikněte zde pro zapnutí SSL na doméně"
+
+msgid "Clipboard"
+msgstr "Schránka"
+
+msgid "Clipboard emptied"
+msgstr "Schránka vyprázdněna"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Closed"
+msgstr "Zavřeno"
+
+msgid "Closed+Confirm"
+msgstr "Zavřeno+Potvrzení"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "Barva %s (%s) není ze seznamu: %s"
+
+msgid "Color has been customized"
+msgstr "Barva byla přizpůsobena"
+
+msgid "Column in"
+msgstr "Kolonka v"
+
+msgid "Command"
+msgstr "Příkaz"
+
+msgid "Command Returned"
+msgstr "Příkaz vrátil"
+
+msgid "Comment"
+msgstr "Komentář"
+
+msgid "Comments"
+msgstr "Komentáře"
+
+msgid "Comments Saved"
+msgstr "Komentáře uloženy"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr "Společnost musí obsahovat pouze písmena, čísla, mezery a/nebo tečky"
+
+msgid "Compressed File Created"
+msgstr "Komprimovaný soubor vytvořen"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Komprimování %s"
+
+msgid "Confirm"
+msgstr "Potvrdit"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Potvrzení výsledků na %sstránce DirectAdmin%s"
+
+msgid "Confirmation code is invalid or request have expired"
+msgstr "Potvrzovací kód je neplatný nebo vypršela platnost požadavku"
+
+msgid "Continuing with the other files."
+msgstr "Pokračování s dalšími soubory."
+
+msgid "Copy"
+msgstr "Kopírovat"
+
+msgid "Copy Clipboard Files here"
+msgstr "Kopírovat sem soubory ze schránky"
+
+msgid "Copy the packages export data"
+msgstr "Kopírovat data exportu balíčků"
+
+msgid "Copying Admin Data"
+msgstr "Kopírování dat správce"
+
+msgid "Copying Reseller Data"
+msgstr "Kopírování dar resellerů"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Kopírování souborů bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Copying unreadable data"
+msgstr "Kopírování nečitelných dat"
+
+msgid "Could not excute your request"
+msgstr "Nebylo možné spustit váš požadavek"
+
+msgid "Could not execute your request"
+msgstr "Nebylo možné spustit váš požadavek"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr "Nepodařilo se najít žádné odpovídající záložní klíče v %s"
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr "Nepodařilo se najít vzdálený soubor '%s' k ověření velikosti po nahrání"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Nepodařilo se získat rDNS pro IP '%s'"
+
+msgid "Could not read tickets"
+msgstr "Nepodařilo se přečíst požadavky"
+
+msgid "Could not write tickets"
+msgstr "Nepodařilo se zapsat požadavky"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr ""
+"Nepodařilo se najít IP jakéhokoli typu k přidání uživateli (požadovaná "
+"ip=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr ""
+"Nepodařilo se číst soubor databáze pro %s. Není možné do něho přidat ns1 a "
+"ns2."
+
+msgid "Count"
+msgstr "Počet"
+
+# Context would be handy to use correct translation.
+msgid "Counted"
+msgstr "Spočítáno"
+
+msgid "Country code must be 2 letters"
+msgstr "Kód země musí mít 2 znaky"
+
+msgid "Created"
+msgstr "Vytvořeno"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr "Vytváření složek bylo vypnuto pomocí volby filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Vytvoření tolika %s by způsobilo překročení vašeho limitu %s"
+
+msgid "Creator"
+msgstr "Tvůrce"
+
+msgid "Creator Duplicate"
+msgstr "Tvůrce duplicitní"
+
+msgid "Creators and their Users"
+msgstr "Tvůrci a jejich uživatelé"
+
+msgid "Cron Created"
+msgstr "Naplánovaná úloha vytvořena"
+
+msgid "Cron E-Mail set"
+msgstr "Nastaven e-mail naplánované úlohy"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Smazána naplánovaná úloh(a/y)"
+
+msgid "Cron Jobs"
+msgstr "Naplánované úlohy"
+
+msgid "Cron Jobs Deleted"
+msgstr "Naplánované úlohy smazány"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Naplánované úlohy duplikovány"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Naplánované úlohy budou běžet na pozadí"
+
+msgid "Cron Modified"
+msgstr "Naplánovaná úloha upravena"
+
+msgid "Cron job has been created"
+msgstr "Naplánovaná úloha byla vytvořena"
+
+msgid "Current"
+msgstr "Aktuální"
+
+msgid "Current IPs"
+msgstr "Aktuální IP"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "Současně přiřazené IP k %s"
+
+msgid "Current Protected Directories"
+msgstr "Aktuálně chráněné složky"
+
+msgid "Current Usage"
+msgstr "Aktuální využití"
+
+msgid "Custom"
+msgstr "Vlastní"
+
+msgid "Custom Color"
+msgstr "Vlastní barva"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "Aktualizováno logo vlastního vzhledu"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "Loga vlastního vzhledu nejsou zapnuta"
+
+msgid "Custom logo deleted"
+msgstr "Vlastní logo smazáno"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr ""
+"Vlastní prahová hodnota musí být platné číslo. Znak pro desetiny je povolen."
+
+msgid "Customization Disabled"
+msgstr "Přizpůsobení je vypnuto"
+
+msgid "Customization written"
+msgstr "Přizpůsobení zapsáno"
+
+msgid "Customize the skin"
+msgstr "Přizpůsobit vzhled"
+
+msgid "DKIM disabled"
+msgstr "DKIM vypnuto"
+
+msgid "DKIM enabled"
+msgstr "DKIM zapnuto"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "DNS ovládání"
+
+msgid "DNS Zone does not exist"
+msgstr "DNS zóna neexistuje"
+
+msgid "DNSSEC Keys generated"
+msgstr "DNSSEC klíče vygenerovány"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC není zapnuto"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSSEC - DNS zabezpečení"
+
+msgid "Database"
+msgstr "Databáze"
+
+msgid "Database Created"
+msgstr "Databáze vytvořena"
+
+msgid "Database Disk Usage"
+msgstr "Využití disku databázemi"
+
+msgid "Database has been successfully Restored"
+msgstr "Databáze byla úspěšně obnovena"
+
+msgid "Database:"
+msgstr "Databáze:"
+
+msgid "Databases"
+msgstr "Databáze"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Date Added"
+msgstr "Datum přidání"
+
+msgid "Date Blocked"
+msgstr "Datum zablokování"
+
+msgid "Date Created"
+msgstr "Datum vytvoření"
+
+msgid "Date Suspended"
+msgstr "Datum deaktivace"
+
+msgid "Day"
+msgstr "Den"
+
+msgid "Day of Month"
+msgstr "Den měsíce"
+
+msgid "Day of Week"
+msgstr "Den týdne"
+
+msgid "Days must be a valid number."
+msgstr "Dny musí být platné číslo."
+
+msgid "Debug Guide"
+msgstr "Průvodce řešení chyby"
+
+msgid "Dec"
+msgstr "Pro"
+
+msgid "Decending"
+msgstr "Sestupně"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "Dešifrování %s selhalo"
+
+msgid "Default"
+msgstr "Výchozí"
+
+msgid "Default release schedule"
+msgstr "Výchozí plán vydání"
+
+msgid "Delayed release schedule"
+msgstr "Zpožděný plán vydání"
+
+msgid "Delete"
+msgstr "smazat"
+
+msgid "Delete Extension"
+msgstr "Smazat koncovku"
+
+msgid "Delete Handler"
+msgstr "Smazat Handler"
+
+msgid "Delete MimeType"
+msgstr "Smazat MimeTyp"
+
+msgid "Delete Selected"
+msgstr "Smazat vybrané"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "Smazat DNSSEC klíče a použít nepodepsanou zónu"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Smazat následujícího uživatele"
+msgstr[1] "Smazat následující uživatele"
+msgstr[2] "Smazat následující uživatele"
+
+msgid "Delete the following domains:"
+msgstr "Smazat následující domény:"
+
+msgid "Delete web data"
+msgstr "Smazat web data"
+
+msgid "Deleted"
+msgstr "Smazáno"
+
+msgid "Deleted User Bandwidth"
+msgstr "Datový přenos smazaných uživatelů"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Smazání %s ..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Smazání souborů/složek bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Smazáním těchto NS záznamů vám jich zůstane 0."
+
+msgid "Deny"
+msgstr "Zamítnout"
+
+msgid "Destination"
+msgstr "Cíl"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "Chyba cílové URL: %s"
+
+msgid "Detail"
+msgstr "Detaily"
+
+msgid "Details"
+msgstr "Detaily"
+
+msgid "Digest Subscriber"
+msgstr "Digest odběratel"
+
+msgid "Digest Subscribers"
+msgstr "Digest odběratelé"
+
+msgid "DirectAdmin License"
+msgstr "DirectAdmin licence"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin bude restartován během minuty"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin bude restartován během minuty"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Nastavení ochrany složky byla uložena."
+
+msgid "Directory created"
+msgstr "Složka vytvořena"
+
+msgid "Disable"
+msgstr "Vypnout"
+
+msgid "Disable Auto-Renew"
+msgstr "Vypnout automatické obnovení"
+
+msgid "Disabled"
+msgstr "Vypnuto"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"Vypnuté nastavení resellera bude použito na uživatele a balíčky na pozadí."
+
+msgid "Disk Space"
+msgstr "Prostor na disku"
+
+msgid "Disk Space (MB)"
+msgstr "Prostor na disku (MB)"
+
+msgid "Disk Usage"
+msgstr "Využití disku"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr "Divize musí obsahovat jen písmena, číslice, mezery a/nebo tečky"
+
+msgid "Dns Provider reset."
+msgstr "Reset DNS poskytovatele."
+
+msgid "Dns Provider saved."
+msgstr "DNS poskytovatel uložen."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Nepoužívejte velká písmena - kapitálky v názvu domény."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Nepoužívejte mezery mezi e-mailovými jmény."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "Nepoužívejte mezery v hodnotě %s"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Chcete přepsat jakékoli existující soubory?"
+
+# Is it wise to translate this? If so, the translation should contain no spaces and no diacritics? I guess it may be translated as a Website'sRootDirectory.
+msgid "DocumentRoot"
+msgstr "DocumentRoot"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Neodpovídá nastavení: %s"
+
+msgid "Domain"
+msgstr "Doména"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Vytvořena doména %s"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Doména %s nemusí využívat cestu záměny-potlačení %s pro %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Doména %s byla deaktivována správcem a vy nemáte tento přístup. Nemůžete "
+"aktivovat tuto doménu."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr "Doméně '%s' byl odstraněn dnsprovider."
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Doména '%s' používá php-fpm."
+
+msgid "Domain AWstats"
+msgstr "AWStats domény"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "AWStats + Webalizer domény"
+
+msgid "Domain Bandwidth"
+msgstr "Datový přenos domény"
+
+msgid "Domain Created"
+msgstr "Doména vytvořena"
+
+msgid "Domain Created Successfully"
+msgstr "Doména úspěšně vytvořena"
+
+msgid "Domain Deletion Results"
+msgstr "Výsledky smazání domény"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Doménový ukazatel"
+msgstr[1] "Doménové ukazatele"
+msgstr[2] "Doménové ukazatele"
+
+msgid "Domain Pointer Added"
+msgstr "Doménový ukazatel přidán"
+
+# "on" does not mean Enabled, but that it points to something, right?
+msgid "Domain Pointer on"
+msgstr "Doménový ukazatel na"
+
+msgid "Domain Pointers"
+msgstr "Doménové ukazatele"
+
+msgid "Domain Pointers Removed"
+msgstr "Doménové ukazatele odebrány"
+
+msgid "Domain Quota"
+msgstr "Kvóta domény"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Přejmenování domény není zapnuto"
+
+msgid "Domain Webalizer Stats"
+msgstr "Webalizer statistiky domény"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+"Doména obsahuje znaky UTF-8. Zadejte prosím doménu v punycode nebo zapněte "
+"funkci převodu do punycode convert_to_punycode."
+
+msgid "Domain does not belong to you"
+msgstr "Doména vám nepatří"
+
+msgid "Domain does not belong to you."
+msgstr "Doména vám nepatří."
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Doména existuje na %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Doména již zpracovává požadavek na SSL.  Prosím počkejte až bude dokončen a "
+"potom provádějte jiné změny."
+
+msgid "Domain is forbidden"
+msgstr "Doména je zakázána"
+
+msgid "Domain is not in your list"
+msgstr "Doména není na vašem seznamu"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr "Doména nesmí být koncovkou domény prvního řádu"
+
+msgid "Domain name has been successfully changed"
+msgstr "Doménové jméno bylo úspěšně změněno"
+
+msgid "Domain php.ini overrides"
+msgstr "Doménová php.ini překonání-potlačení"
+
+msgid "Domain(s)"
+msgstr "Domény"
+
+msgid "Domain(s) modified"
+msgstr "Doména upravena"
+
+msgid "Domains"
+msgstr "Domény"
+
+msgid "Domains directory created successfully"
+msgstr "Složka domény úspěšně vytvořena"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "Složka domény úspěšně vytvořena v domovské složce uživatele"
+
+msgid "Double click for main domain page"
+msgstr "Dvojitý klik pro hlavní stránku domény"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "V Dovecot souboru '%s' chybí data. Spusťte 'da build dovecot_conf'"
+
+msgid "Download"
+msgstr "Stáhnout"
+
+msgid "Download Backup"
+msgstr "Stáhnout zálohu"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Staženo: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "Stahování nového binárního souboru Webalizeru"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Stahování komprimovaných souborů bylo vypnuto pomocí volby "
+"filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Stahování souborů bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr "Ovladač signalizuje L1 up (navýšení o úroveň)."
+
+msgid "Driver signals dormant."
+msgstr "Ovladač signalizuje nečinnost."
+
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+msgid "E-Mail"
+msgstr "E-mail"
+
+msgid "E-Mail Accounts"
+msgstr "E-mailové účty"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "E-mailové účty smazány"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "E-mailové adresy byly úspěšně změněny"
+
+msgid "E-Mail Limit has been set"
+msgstr "E-mailový limit byl nastaven"
+
+msgid "E-Mail Update Failed"
+msgstr "Aktualizace e-mailu selhala"
+
+msgid "E-Mail Updated"
+msgstr "E-mail aktualizován"
+
+msgid "E-Mail account already exists"
+msgstr "E-mailový účet již existuje"
+
+msgid "E-Mail has been changed"
+msgstr "E-mail byl změněn"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "E-mail byl změněn na %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "E-mailová kvóta nesmí překročit %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo odeslalo pakety."
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Edit the zone on the master server."
+msgstr "Upravit zónu na hlavním serveru."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Buď požádejte tvůrce vašeho účtu o změnu hesla pro odblokování, nebo "
+"použijte funkci Ztracené heslo na přihlašovací stránce (pokud je zapnuta)."
+
+msgid "Email"
+msgstr "E-mail"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "E-mail '%s' neexistuje"
+
+msgid "Email Added to list"
+msgstr "E-mail přidán na seznam"
+
+msgid "Email Deliveries (Sent)"
+msgstr "E-mailová doručení (Odesláno)"
+
+msgid "Email Disk Usage"
+msgstr "Využití disku e-maily"
+
+msgid "Email Forwarders"
+msgstr "E-mailové přeposílače"
+
+msgid "Email Only"
+msgstr "Jen e-mail"
+
+msgid "Email Sent"
+msgstr "E-mail odeslán"
+
+msgid "Email Set"
+msgstr "E-mail nastaven"
+
+msgid "Email created but"
+msgstr "E-mail vytvořen ale"
+
+msgid "Email removed"
+msgstr "E-mail odebrán"
+
+msgid "Empty Clipboard"
+msgstr "Prázdná schránka"
+
+msgid "Empty path"
+msgstr "Prázdná cesta"
+
+msgid "Enable"
+msgstr "Zapnout"
+
+msgid "Enabled"
+msgstr "Zapnuto"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "Šifrování %s selhalo"
+
+msgid "End Time"
+msgstr "Čas konce"
+
+# "filled" should be translated?
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr "Dosažen konec souboru při pokusu o čtení %lld bajtů z %s. vyplněno=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Ujistěte se, že druhý klíč je shodný s prvním"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "Ujistěte se, že resellerův ip.list obsahuje použitelné IP."
+
+# There may be handy to know the context in order to use best translation.
+msgid "Ensuring stored domains are present"
+msgstr "Ujištěním se, že uložené domény jsou dostupné"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid "Error Compressing the backup file"
+msgstr "Chyba komprimování souboru zálohy"
+
+msgid "Error Creating Cron Job"
+msgstr "Chyba při tvorbě naplánované úlohy"
+
+msgid "Error Creating Domain"
+msgstr "Chyba vytváření domény"
+
+msgid "Error Creating Key"
+msgstr "Chyba vytváření klíče"
+
+msgid "Error Creating User"
+msgstr "Chyba vytváření uživatele"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Chyba smazání %s"
+
+msgid "Error Executing Perl"
+msgstr "Chyba spuštění Perl"
+
+msgid "Error Log"
+msgstr "Log chyb"
+
+msgid "Error Reading Message File"
+msgstr "Chyba čtení souboru zprávy"
+
+msgid "Error Reading db file"
+msgstr "Chyba čtení souboru databáze"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Chyba odebrání uživatele %s"
+
+msgid "Error Resetting Zone"
+msgstr "Chyba resetování zóny"
+
+msgid "Error Restoring database"
+msgstr "Chyba obnovy databáze"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Chyba uložení hesla: %s"
+
+msgid "Error Unblocking paths"
+msgstr "Chyba odblokování cest"
+
+msgid "Error Updating User"
+msgstr "Chyba aktualizace uživatele"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Chyba zápisu %s"
+
+# This needs context, example phrase, please.
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "Chyba aktivace %s uživatele %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Chyba při aktivaci naplánovaných úloh: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Chyba aktivace dat pro %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr "Chyba přidání DS záznamů pro %s do vzdálené nadřazené zóny: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "Chyba autorizace SSH klíče"
+
+msgid "Error changing password"
+msgstr "Chyba při změně hesla"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Chyba vyčištění souborů LetsEncrypt"
+
+msgid "Error converting file: "
+msgstr "Chyba převodu souboru: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Chyba kopírování %s do %s : %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Chyba kopírování %s do %s: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Chyba kopírování souboru loga: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Chyba vytváření %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Chyba vytváření %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Chyba při vytváření automatického odpovídače"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Chyba vytváření aplikace NginxUnit '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Chyba vytváření trasy NginxUnit '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "Chyba vytváření SSH klíče"
+
+msgid "Error creating User"
+msgstr "Chyba vytváření uživatele"
+
+msgid "Error creating Vacation Message"
+msgstr "Chyba vytváření zprávy režimu Na dovolené"
+
+msgid "Error creating account"
+msgstr "Chyba vytváření účtu"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Chyba vytváření výchozích složek v %s.  Podívejte se do error.log pro další "
+"informace."
+
+msgid "Error creating forwarder"
+msgstr "Chyba vytváření přeposílače"
+
+msgid "Error creating the database"
+msgstr "Chyba vytváření databáze"
+
+msgid "Error decoding the base 64 data"
+msgstr "Chyba dekódování dat base64"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Chyba smazání %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Chyba smazání SSH klíče"
+
+msgid "Error deleting account(s)"
+msgstr "Chyba smazání účt(u/ů)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Chyba při mazání automatických odpovídačů"
+
+msgid "Error deleting filter(s)"
+msgstr "Chyba smazání filtr(u/ů)"
+
+msgid "Error deleting records"
+msgstr "Chyba smazání záznamů"
+
+msgid "Error determining username from "
+msgstr "Chyba zjištění uživatelského jména z "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Chyba během automatické obnovy certifikátu %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Chyba během smazání podřízeného uživatele %s"
+
+msgid "Error during extraction"
+msgstr "Chyba během rozbalování"
+
+msgid "Error executing your request"
+msgstr "Chyba spuštění vašeho požadavku"
+
+msgid "Error generating zone keys"
+msgstr "Chyba vygenerování klíčů zóny"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Chyba importu balíčků zakódovaných pomocí base64"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Chyba odeslání.  Je vyžadována doména, typ a hodnota."
+
+msgid "Error modifying SSH key"
+msgstr "Chyba úpravy SSH klíče"
+
+#, c-format
+msgid "Error parsing %s path: wrong type"
+msgstr "Chyba zpracování cesty %s: chybný typ"
+
+msgid "Error parsing 'routes'."
+msgstr "Chyba zpracování 'trasy'."
+
+msgid "Error parsing json output"
+msgstr "Chyba zpracování výstupu json"
+
+msgid "Error purging archives"
+msgstr "Chyba pročištění archivů"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Chyba čtení %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Chyba čtení konfiguračního souboru domény"
+
+msgid "Error reading domain config files"
+msgstr "Chyba čtení konfiguračních souborů domény"
+
+msgid "Error reading domainowners"
+msgstr "Chyba čtení domainowners"
+
+msgid "Error reading domainowners file"
+msgstr "Chyba čtení souboru domainowners (vlastníci domén)"
+
+msgid "Error reading named db file"
+msgstr "Chyba čtení named databázového souboru"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr ""
+"Chyba čtení databázového souboru po zapisování do něho, před podepisováním "
+"DNSSEC"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "Chyba čtení uživatelských souborů pro %s, přes to pokračuji."
+
+msgid "Error reading user_ip.list file"
+msgstr "Chyba čtení souboru user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Chyba odebrání %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Chyba odebrání IP(s) z %s"
+
+msgid "Error removing file: "
+msgstr "Chyba odebrání souboru: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Chyba odebrání cesty %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Chyba odebrání subdomény"
+
+msgid "Error removing subdomain(s)"
+msgstr "Chyba odebrání subdomén(y)"
+
+msgid "Error removing subdomains"
+msgstr "Chyba odebrání subdomén"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Chyba odebrání uživatele %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Chyba přejmenování %s na %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Chyba při obnově %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Chyba při obnově domény"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Chyba při obnově php nastavení pro '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Chyba přepsání %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Chyba spuštění %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Chyba spuštění rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Chyba spuštění rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Chyba při uložení e-mailu naplánovaných úloh"
+
+msgid "Error saving Nameservers"
+msgstr "Chyba uložení nameserverů"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Chyba odeslání signálu do %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Chyba nastavení MX šablony"
+
+msgid "Error setting MX template for pointer"
+msgstr "Chyba nastavení MX šablony pro ukazatele"
+
+msgid "Error setting PHP versions"
+msgstr "Chyba nastavení PHP verzí"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Chyba nastavení cgroup limitu pro %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Chyba nastavení souborů schránky"
+
+msgid "Error setting global key"
+msgstr "Chyba nastavení globálního klíče"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Chyba nastavení práv u %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Chyba nastavení filtru"
+
+msgid "Error setting the spam filter"
+msgstr "Chyba nastavení spam filtru"
+
+msgid "Error setting timezone"
+msgstr "Chyba nastavení časového pásma"
+
+msgid "Error showing Email Acounts"
+msgstr "Chyba zobrazení e-mailových účtů"
+
+msgid "Error showing message ID info"
+msgstr "Chyba zobrazení informace o ID zprávy"
+
+msgid "Error showing smtp log info"
+msgstr "Chyba zobrazení informace smtp logu"
+
+msgid "Error signing zone"
+msgstr "Chyba podepsání zóny"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "Chyba deaktivace %s uživatele %s: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Chyba deaktivace naplánovaných úloh: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Chyba při aktualizaci automatického odpovídače"
+
+msgid "Error updating Catch-All value"
+msgstr "Chyba aktualizace hodnoty doménového koše"
+
+msgid "Error updating Vacation Message"
+msgstr "Chyba aktualizace zprávy režimu Na dovolené"
+
+msgid "Error updating forwarder"
+msgstr "Chyba aktualizace přeposílače"
+
+msgid "Error while compressing file"
+msgstr "Chyba při komprimaci souboru"
+
+msgid "Error while creating User"
+msgstr "Chyba při vytváření uživatele"
+
+msgid "Error while deleting Users"
+msgstr "Chyba při smazání uživatelů"
+
+msgid "Error while saving changes"
+msgstr "Chyba při uložení změn"
+
+msgid "Error while saving password"
+msgstr "Chyba při uložení hesla"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Chyba při zapisování %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Chyba při požadavku LetsEncrypt"
+
+msgid "Error with curl request"
+msgstr "Chyba při požadavku curl"
+
+msgid "Error with exigrep"
+msgstr "Chyba u exigrep"
+
+msgid "Error with fchownat"
+msgstr "Chyba s fchownat"
+
+msgid "Error with system Quotas"
+msgstr "Chyba se systémovými kvótami"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Chyba plánu zálohování (přejmenování selhalo): kopírování %s do %s také "
+"selhalo: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Chyba zapisování %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Chyba zapisování %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "Chyba zapisování konfiguračního souboru domény"
+
+msgid "Error writing pop cache"
+msgstr "Chyba zapisování pop mezipaměti"
+
+msgid "Error writing the directadmin.conf"
+msgstr "Chyba zapisování directadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Chyba zapisování do %s: %s"
+
+msgid "Errors"
+msgstr "Chyby"
+
+msgid "Evening"
+msgstr "Večer"
+
+msgid "Expecting 0 or 1"
+msgstr "Očekává se 0 nebo 1"
+
+msgid "Expecting any integer"
+msgstr "Očekává se jakékoli celé číslo"
+
+msgid "Expecting any long long integer"
+msgstr "Očekává se jakékoli dlouhé celé číslo"
+
+msgid "Expired"
+msgstr "Vypršelo"
+
+msgid "Expiry"
+msgstr "Expirace"
+
+msgid "Export Selected"
+msgstr "Export vybrán"
+
+msgid "Extension"
+msgstr "Koncovka"
+
+msgid "Extensions"
+msgstr "Koncovky"
+
+msgid "Extract"
+msgstr "Rozbalit"
+
+msgid "Extract selected to directory"
+msgstr "Rozbalit vybrané do složky"
+
+msgid "Extracting User Data"
+msgstr "Rozbalování uživatelských dat User Data"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Rozbalování souborů bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Extracting non-readable files"
+msgstr "Rozbalování nečitelných souborů"
+
+msgid "Extracting ~/domains directory"
+msgstr "Rozbalování složky ~/domains"
+
+msgid "Extracting ~/imap directory"
+msgstr "Rozbalování složky ~/imap"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "FTP účet již existuje"
+
+msgid "FTP information invalid."
+msgstr "FTP informace neplatná."
+
+msgid "FTP: default creation error"
+msgstr "FTP: výchozí chyba vytváření"
+
+msgid "Feature Disabled"
+msgstr "Funkce vypnuta"
+
+msgid "Feb"
+msgstr "Úno"
+
+msgid "File"
+msgstr "Soubor"
+
+msgid "File %s already exists, file skipped."
+msgstr "Soubor %s již existuje, soubor vynechán."
+
+msgid "File Extracted"
+msgstr "Soubor rozbalen"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Soubor je čten jako '%s'"
+
+msgid "File copied successfully"
+msgstr "Soubor úspěšně zkopírován"
+
+msgid "File does not exist"
+msgstr "Soubor neexistuje"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Soubor neexistuje a nebo k němu nemáte přístup"
+
+msgid "File emptied"
+msgstr "Soubor vyprázdněn"
+
+msgid "File exists check"
+msgstr "Kontrola existence souboru"
+
+msgid "File ownership reset"
+msgstr "Reset vlastnictví souboru"
+
+msgid "File purged"
+msgstr "Soubor pročištěn"
+
+msgid "File renamed successfully"
+msgstr "Soubor úspěšně přejmenován"
+
+msgid "File restored successfully"
+msgstr "Soubor úspěšně obnoven"
+
+msgid "Filename"
+msgstr "Jméno souboru"
+
+msgid "Files added to clipboard"
+msgstr "Soubory přidány do schránky"
+
+msgid "Files copied"
+msgstr "Soubor zkopírován"
+
+msgid "Files deleted"
+msgstr "Soubory smazány"
+
+msgid "Files moved"
+msgstr "Soubory přesunuty"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Filter set"
+msgstr "Filtr nastaven"
+
+msgid "Filter(s) removed"
+msgstr "Filtr(y) odebrá(n/y)"
+
+msgid "Fingerprint"
+msgstr "Otisk prstu"
+
+msgid "First"
+msgstr "První"
+
+msgid "First PHP"
+msgstr "První PHP"
+
+msgid "First Page"
+msgstr "První strana"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Hodnota označení '%s' je prázdná"
+
+msgid "Flush from DNS"
+msgstr "Vymazat z DNS"
+
+msgid "For backwards compatibility"
+msgstr "Pro zpětnou kompatibilitu"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"Pro případy, kde vysoký počet domén ke zpracování, může způsobit vypršení "
+"platnosti"
+
+msgid "Forwarder"
+msgstr "Přeposílač"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Přeposílač %s nemůže ukazovat na sebe sama"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr "Přeposílač %s@%s smazán protože měl nula zbývajících příjemců."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Přeposílač '%s' již existuje."
+
+msgid "Forwarder already exists"
+msgstr "Přeposílač již existuje"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Přeposílač obsahuje znak local_part_suffix: '%s' znamenající, že vše po něm "
+"bude ignorováno a přeposílač nikdy nebude mít shodu."
+
+msgid "Forwarder created"
+msgstr "Přeposílač vytvořen"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Smyčka přeposílače nalezena: %s"
+
+msgid "Forwarder updated"
+msgstr "Přeposílač aktualizován"
+
+msgid "Forwarders deleted"
+msgstr "Přeposílače smazány"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Nalezeno 0 souborů v %s čtení jako %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr "Nalezen odpovídající klíč z %s"
+
+# What is free in this context? Correct translation depends on knowing that.
+msgid "Free - randomly selected"
+msgstr "Volné - náhodně vybráno"
+
+msgid "Free Memory"
+msgstr "Volná paměť"
+
+msgid "Free Selected"
+msgstr "Uvolnit vybrané"
+
+msgid "Free Swap Memory"
+msgstr "Volná Swap paměť"
+
+msgid "From"
+msgstr "Od"
+
+msgid "Ftp"
+msgstr "FTP"
+
+msgid "Ftp Accounts"
+msgstr "FTP účty"
+
+msgid "Ftp account changed"
+msgstr "FTP účet změněn"
+
+msgid "Ftp settings saved"
+msgstr "FTP nastavení uloženo"
+
+msgid "Full Date"
+msgstr "Celý datum"
+
+msgid "Full Name has been successfully changed"
+msgstr "Celé jméno bylo úspěšně změněno"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "Název úplného formátu '%s' nekončí názvem zóny"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "Vygenerovat klíče"
+
+msgid "Git Repositories"
+msgstr "Git repozitáře"
+
+msgid "Global"
+msgstr "Globální"
+
+msgid "Global - randomly selected"
+msgstr "Globální - náhodně vybráno"
+
+msgid "Global Key"
+msgstr "Globální klíč"
+
+msgid "Global Key set"
+msgstr "Globální set klíčů"
+
+msgid "Global ssh keys not available to Users"
+msgstr "Globální klíče SSH nejsou dostupné uživatelům"
+
+msgid "Go to %s"
+msgstr "Jít na %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Skupina %s již existuje. Prosím vyberte jiné uživatelské jméno."
+
+msgid "Handler"
+msgstr "Handler"
+
+msgid "Handler Deleted"
+msgstr "Handler smazán"
+
+msgid "Handler added"
+msgstr "Handler přidán"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"tato zpráva slouží jako upozornění, že Váš účet '|USERNAME|' byl deaktivován."
+"\n"
+"Důvod: |REASON|\n"
+"\n"
+"Pokud si myslíte, že k deaktivaci došlo omylem, prosím kontaktujte svého "
+"poskytovatele hostingu pro další informace\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "Zde jsou výsledky"
+
+msgid "Here are the results:"
+msgstr "Zde jsou výsledky:"
+
+msgid "High"
+msgstr "Vysoká"
+
+msgid "Highest"
+msgstr "Nejvyšší"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "Dosažen konec souboru při hledání @ nebo linky hlavičky domény v"
+
+msgid "Home Directory"
+msgstr "Domovská složka"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "Domovská cesta '%s' není v povoleném home_override_list"
+
+msgid "Host:"
+msgstr "Host:"
+
+msgid "Hosts"
+msgstr "Hosté"
+
+msgid "Hour"
+msgstr "Hodina"
+
+msgid "How to process the request"
+msgstr "Jak zpracovat požadavek"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Nicméně po %s pokusech neposkytli platný kód dvoufázového ověření, takže "
+"nebyl udělen přístup."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "Nicméně subdomény byly nalezeny.  Pokračujte s nimi."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID vám nepatří"
+
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 nebo 1234-1239"
+
+msgid "IO Read Bandwidth Max"
+msgstr "Max. přenos IO čtení"
+
+msgid "IO Write Bandwidth Max"
+msgstr "Max. přenos IO zápisu"
+
+msgid "IOPS Read Max"
+msgstr "Max. IOPS čtení"
+
+msgid "IOPS Write Max"
+msgstr "Max. IOPS zápisu"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP přidána"
+
+msgid "IP Info"
+msgstr "IP info"
+
+msgid "IP Link Added"
+msgstr "IP odkaz přidán"
+
+msgid "IP Link(s) Removed"
+msgstr "IP odkaz(y) odebrán(y)"
+
+msgid "IP List is empty"
+msgstr "Seznam IP je prázdný"
+
+msgid "IP Netmask Set"
+msgstr "Maska sítě IP nastavena"
+
+msgid "IP Type"
+msgstr "Typ IP"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP v konfiguračním souboru domény (%s) není platná."
+
+msgid "IP must be shared or free"
+msgstr "IP musí být sdílená a nebo volná"
+
+msgid "IP will be linked in the background"
+msgstr "IP bude odkazována na pozadí"
+
+msgid "IP(s)"
+msgstr "IP"
+
+msgid "IP(s) removed"
+msgstr "IP odebrán(a/y)"
+
+msgid "IP/User"
+msgstr "IP/uživatel"
+
+msgid "IPs"
+msgstr "IP"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+"Pokud je potřeba, kontaktujte správce serveru pro opětovné vytvoření zóny."
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Pokud je zadané uživatelské jméno správné, dostanete za krátkou dobu "
+"potvrzovací e-mail."
+
+msgid "If this is not your IP, change your password."
+msgstr "Pokud toto není vaše IP, změňte heslo."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Pokud si nepřejete přepsat současný certifikát, prosím vypněte automatické "
+"obnovování"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"Pokud budete pokračovat, tyto uživatelské účty spolu se všemi přidruženými "
+"webovými stránkami a e-mailovým obsahem, který zde není uveden, budou "
+"smazány."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Pokud to nastavíte na 0, žádné základní požadavky httpd nebudou fungovat.  "
+"Nebudete se moci ani přihlásit."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Jména obrázkových souborů mají jen jednu tečku"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "Imap složky"
+
+msgid "Inactive"
+msgstr "Neaktivní"
+
+msgid "Inbox"
+msgstr "Doručená pošta"
+
+msgid "Include Domains"
+msgstr "Zahrnuté domény"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Info for admins"
+msgstr "Info pro správce"
+
+msgid "Inherit"
+msgstr "Zdědit"
+
+msgid "Inodes"
+msgstr "Inody"
+
+msgid "Installed"
+msgstr "Instalováno"
+
+msgid "Installed Perl Modules"
+msgstr "Instalované Perl moduly"
+
+msgid "Interface is a loopback interface."
+msgstr "Rozhraní je typu loopback."
+
+msgid "Interface is a point-to-point link."
+msgstr "Rozhraní je odkazem typu point-to-point."
+
+msgid "Interface is in promiscuous mode."
+msgstr "Rozhraní je v promiskuitním režimu."
+
+msgid "Interface is running."
+msgstr "Rozhraní běží."
+
+msgid "Internal debugging flag."
+msgstr "Interní označení pro řešení chyb."
+
+msgid "Invalid "
+msgstr "Neplatné "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "Neplatné '%s'"
+
+msgid "Invalid CC email address"
+msgstr "Neplatná CC e-mailová adresa"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Neplatné znaky ve jménu vzhledu.  Použijte pouze a-zA-Z0-9._-[] Nesmí "
+"začínat '.'"
+
+msgid "Invalid Cron ID"
+msgstr "Neplatné ID naplánované úlohy"
+
+msgid "Invalid DNS name"
+msgstr "Neplatný název DNS"
+
+msgid "Invalid DNS value"
+msgstr "Neplatná hodnota DNS"
+
+msgid "Invalid Domain"
+msgstr "Neplatná doména"
+
+msgid "Invalid Domain Name"
+msgstr "Neplatné doménové jméno"
+
+msgid "Invalid E-Mail"
+msgstr "Neplatný e-mail"
+
+msgid "Invalid E-Mail User"
+msgstr "Neplatný e-mailový uživatel"
+
+# Multiple is meant like it is allowed to enter multiple email addresses?
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"Neplatná e-mailová adresa. Několik a přihlašovací uživatelské jméno "
+"DirectAdmin nebo prázdné je také povoleno"
+
+msgid "Invalid Email"
+msgstr "Neplatný e-mail"
+
+msgid "Invalid Email Name"
+msgstr "Neplatné e-mailové jméno"
+
+msgid "Invalid Email limit"
+msgstr "Neplatný limit e-mailu"
+
+msgid "Invalid FTP account"
+msgstr "Neplatný FTP účet"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "Neplatná IP (1.2.3.4) nebo IP rozsah (1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "Neplatná IP/doména pro FTP připojení"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Naplatná hodnota log rotate: %d"
+
+msgid "Invalid MX value"
+msgstr "Neplatná hodnota MX"
+
+msgid "Invalid Name"
+msgstr "Neplatný název"
+
+msgid "Invalid Netmask"
+msgstr "Neplatná maska sítě"
+
+msgid "Invalid Password"
+msgstr "Neplatné heslo"
+
+msgid "Invalid RSA comment"
+msgstr "Neplatný komentář RSA"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "Neplatné ID RSA. Použijte jednoduché znaky: a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "Neplatný klíč RSA"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "Neplatná hodnota SecRuleRemoveById"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Neplatná hodnota minut relace: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Neplatná subdoména"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Neplatný kód dvoufázového ověření"
+
+msgid "Invalid Two-Step Authentication code"
+msgstr "Neplatný kód dvoufázové autentizace"
+
+msgid "Invalid URL"
+msgstr "Neplatná URL"
+
+msgid "Invalid Username"
+msgstr "Neplatné uživatelské jméno"
+
+msgid "Invalid Username or Password"
+msgstr "Neplatné uživatelské jméno nebo heslo"
+
+msgid "Invalid characters in password"
+msgstr "Neplatné znaky v hesle"
+
+msgid "Invalid characters in word"
+msgstr "Neplatné znaky ve slově"
+
+msgid "Invalid crypted passwd"
+msgstr "Neplatné šifrované passwd"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"Neplatné delete_messages_days nebo delete_tickets_days.  Příliš velké.  Max "
+"= "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"Neplatné delete_messages_days nebo delete_tickets_days. Mělo by být 0 nebo "
+"kladné celé číslo."
+
+msgid "Invalid dnsprovider"
+msgstr "Neplatný dnsprovider"
+
+msgid "Invalid dnsprovider type"
+msgstr "Neplatný typ poskytovatele DNS"
+
+msgid "Invalid domain"
+msgstr "Neplatná doména"
+
+msgid "Invalid email address"
+msgstr "Neplatná e-mailová adresa"
+
+msgid "Invalid email user"
+msgstr "Neplatný e-mailový uživatel"
+
+msgid "Invalid email username"
+msgstr "Neplatné uživatelské jméno e-mailu"
+
+msgid "Invalid encryption password"
+msgstr "Neplatné heslo šifrování"
+
+msgid "Invalid file extension list"
+msgstr "Neplatný seznam koncovek souborů"
+
+msgid "Invalid filename:"
+msgstr "Neplatné jméno souboru:"
+
+msgid "Invalid filter type"
+msgstr "Neplatný typ filtru"
+
+msgid "Invalid fingerprint"
+msgstr "Neplatný otisk"
+
+msgid "Invalid ftp password"
+msgstr "Neplatné heslo FTP"
+
+msgid "Invalid ftp path"
+msgstr "Neplatná cesta FTP"
+
+msgid "Invalid ftp port"
+msgstr "Neplatný port FTP"
+
+msgid "Invalid ftp username"
+msgstr "Neplatné uživatelské jméno FTP"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "Neplatná bitová délka klíče: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "Neplatné jméno a nebo hodnota možnosti klíče: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "Neplatný typ klíče: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Neplatná keysize. Platné hodnoty: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Neplatný seznam povolených domén"
+
+msgid "Invalid local path"
+msgstr "Neplatná místní cesta"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "Neplatné přihlášení. Prosím zkontrolujte své uživatelské jméno a heslo"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Neplatné dny zprávy. Mělo by jít o kladné celé číslo."
+
+msgid "Invalid message id"
+msgstr "Neplatné ID zprávy"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "Neplatný typ zprávy. Je povolen pouze požadavek, odpověď a zpráva"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "Neplatná metoda: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "Neplatné jméno nebo koncovka"
+
+msgid "Invalid netmask type for IP type"
+msgstr "Neplatný typ masky sítě k typu IP"
+
+msgid "Invalid new user value"
+msgstr "Neplatná hodnota nového uživatele"
+
+msgid "Invalid number"
+msgstr "Neplatné číslo"
+
+msgid "Invalid package name"
+msgstr "Neplatný název balíčku"
+
+msgid "Invalid path"
+msgstr "Neplatná cesta"
+
+msgid "Invalid path append value"
+msgstr "Neplatná hodnota doplnění cesty"
+
+msgid "Invalid redirect URL"
+msgstr "Neplatná URL přesměrování"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr ""
+"Neplatné vypršení relace nebo hodnoty maximální velikosti souborů filesize"
+
+msgid "Invalid subdomain name"
+msgstr "Neplatné jméno subdomény"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "Neplatné dny požadavku. Mělo by jít o kladné celé číslo."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "Neplatné dny požadavku. Příliš velké. Max. = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "Neplatný typ '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "Neplatný kanál aktualizace"
+
+msgid "Invalid username"
+msgstr "Neplatné uživatelské jméno"
+
+msgid "Invalid values"
+msgstr "Neplatné hodnoty"
+
+msgid "Is able to select media type via ifmap."
+msgstr "Může vybrat typ média pomocí ifmap."
+
+msgid "Issue verifying license"
+msgstr "Potíže s ověřením licence"
+
+msgid "Issuer"
+msgstr "Vydavatel"
+
+msgid "It already exists on the following system(s)"
+msgstr "Již existuje na následujících systémech"
+
+msgid "It has been disabled"
+msgstr "Bylo to vypnuto"
+
+msgid "It must be a positive integer."
+msgstr "Musí jít o kladné celé číslo."
+
+msgid "It must not be an IP"
+msgstr "Nesmí jít o IP adresu"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "Již je to spojeno s %s"
+
+msgid "Items per page"
+msgstr "Položek na stránku"
+
+msgid "Jailed Home"
+msgstr "Jailed domovská složka"
+
+msgid "Jan"
+msgstr "Led"
+
+msgid "Jul"
+msgstr "Červ."
+
+msgid "Jun"
+msgstr "Čvn"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "Uchovejte pro budoucí potřeby."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Prosím nastavte čísla na realistické hodnoty."
+
+msgid "Key"
+msgstr "Klíč"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "Klíč vytvořen. Zaznamenejte a bezpečně uložte jeho hodnotu."
+
+msgid "Key ID"
+msgstr "ID klíče"
+
+msgid "Key Name"
+msgstr "Název klíče"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Název klíče musí být jednoduchý: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "Klíč již existuje podle porovnání otisku"
+
+msgid "Key is Invalid"
+msgstr "Klíč je neplatný"
+
+msgid "Key(s) deleted"
+msgstr "Klíč(e) smazán(y)"
+
+msgid "Keys"
+msgstr "Klíče"
+
+msgid "Keys listed below"
+msgstr "Klíče zobrazeny níže"
+
+msgid "Kill"
+msgstr "Zabít"
+
+msgid "Language"
+msgstr "Jazyk"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Jazyk byl změněn na %s"
+
+msgid "Language has been successfully changed"
+msgstr "Jazyk byl úspěšně změněn"
+
+msgid "Last"
+msgstr "Poslední"
+
+msgid "Last Accessed"
+msgstr "Poslední přístup"
+
+msgid "Last Changed"
+msgstr "Poslední změna"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "Poslední přihlášená IP: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Poslední přihlášení: %s"
+
+msgid "Last Message"
+msgstr "Poslední zpráva"
+
+msgid "Last Modified"
+msgstr "Poslední úprava"
+
+msgid "Last Page"
+msgstr "Poslední strana"
+
+msgid "Last Tally Completion"
+msgstr "Poslední dokončení Tally"
+
+msgid "Leave DNS"
+msgstr "Opustit DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Zbývající uživatelé na seznamu %s"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Záznamy certifikátu Let's Encrypt"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr "Let's Encrypt není zapnuto.  Tuto možnost nemůžete použít."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "LetsEncrypt soubory byly vyčištěny"
+
+msgid "LetsEncrypt request successful"
+msgstr "LetsEncrypt požadavek byl úspěšný"
+
+msgid "LetsEncrypt request successful for"
+msgstr "LetsEncrypt požadavek byl úspěšný pro"
+
+msgid "License file is no longer supported"
+msgstr "Licenční soubor již není podporován"
+
+msgid "License file unchanged"
+msgstr "Soubor licence nezměněn"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "Licence byla ověřena licenčním systémem DirectAdmin"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr "Licence je omezena na %d správce/resellery a vy momentálně máte %d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "Licence je omezena na účty %d a vy máte momentálně %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Licence je omezena na domény %d a vy máte momentálně %d"
+
+msgid "License is not valid"
+msgstr "Licence není platná"
+
+msgid "License limits exceeded"
+msgstr "Limity licence překročeny"
+
+msgid "License verified"
+msgstr "Licence ověřena"
+
+msgid "Limit Notice"
+msgstr "Upozornění na limit"
+
+msgid "Limit is not a number"
+msgstr "Limit není číslem"
+
+msgid "Link"
+msgstr "Odkázat"
+
+msgid "Link in Background"
+msgstr "Odkázat na pozadí"
+
+msgid "Linked IPs"
+msgstr "Odkazované IP"
+
+msgid "List"
+msgstr "Seznam"
+
+msgid "List Configurations Saved"
+msgstr "Zobrazit uložené konfigurace"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Listname musí mít délku %d znaků a nebo méně"
+
+msgid "Listname must be all lower case letters"
+msgstr "Listname musí být jen malými písmeny"
+
+msgid "Load Average"
+msgstr "Vytížení průměr"
+
+msgid "Local Data"
+msgstr "Místní data"
+
+msgid "Local Default"
+msgstr "Místní výchozí"
+
+msgid "Local Mail"
+msgstr "Místní mail"
+
+msgid "Local URL Path"
+msgstr "Místní URL cesta"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Log Entry"
+msgstr "Záznam logu"
+
+msgid "Log Usage"
+msgstr "Využití logu"
+
+msgid "Login"
+msgstr "Uživatel"
+
+msgid "Login Failures"
+msgstr "Počet selhání"
+
+msgid "Login Keys"
+msgstr "Přihlašovací klíče"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Přihlásit se jako %s"
+
+msgid "Low"
+msgstr "Nízká"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "Set MX šablon"
+
+msgid "MX Templates are disabled"
+msgstr "MX šablony jsou vypnuty"
+
+msgid "MX priority should be an positive number"
+msgstr "MX priorita by měla být kladným číslem"
+
+msgid "Mailing List"
+msgstr "E-mailový seznam"
+
+msgid "Mailing List Created"
+msgstr "E-mailový seznam vytvořen"
+
+msgid "Mailing List(s) Deleted"
+msgstr "E-mailové seznamy smazány"
+
+msgid "Mailing Lists"
+msgstr "E-mailové seznamy"
+
+msgid "Main"
+msgstr "Hlavní"
+
+msgid "Main Domain ..."
+msgstr "Hlavní doména ..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "Zásadní chyba: Chyba při hledání domovské složky %s"
+
+msgid "Make sure 'unit' is running"
+msgstr "Ujistěte se že 'unit' neběží"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Ujistěte se, že hodnoty jsou platné s ohledem na jejich typ"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "Manuálně: %s"
+
+msgid "Mar"
+msgstr "Bře"
+
+msgid "Mark as read"
+msgstr "Označit jako přečtené"
+
+msgid "Master of a load balancing bundle."
+msgstr "Hlavní (master) člen skupiny pro vyvažování zátěže."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "Maximum úloh, které může být vytvořeno v unit"
+
+msgid "Max Usage (Meg)"
+msgstr "Max. využití (Meg.)"
+
+msgid "Max disk read operations per second."
+msgstr "Max. diskových operací čtení za sekundu."
+
+msgid "Max disk write operations per second."
+msgstr "Max. diskových operací zápisu za sekundu."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "Max. limit nastavitelný uživatelem na jeden e-mail"
+
+msgid "Max rate data can be read from a disk."
+msgstr "Max. povolená rychlost čtení dat z disku."
+
+msgid "Max rate data can be written to a disk."
+msgstr "Max. povolená rychlost zápisu dat na disk."
+
+msgid "Maximum Usage"
+msgstr "Maximální využití"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "Maximální hodnota: %s=%s"
+
+msgid "May"
+msgstr "Květen"
+
+msgid "Medium"
+msgstr "Střední"
+
+msgid "Meg"
+msgstr "Meg."
+
+msgid "Memory High"
+msgstr "Vysoké využití paměti"
+
+msgid "Memory Max"
+msgstr "Max. využití paměti"
+
+msgid "Memory Usage"
+msgstr "Paměť využití"
+
+msgid "Message #"
+msgstr "Zpráva #"
+
+msgid "Message Reset"
+msgstr "Reset zprávy"
+
+msgid "Message Type"
+msgstr "Typ zprávy"
+
+msgid "Message is being sent"
+msgstr "Zpráva je odesílána"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "Zpráva odebrána"
+msgstr[1] "Zprávy odebrány"
+msgstr[2] "Zprávy odebrány"
+
+msgid "Messages Cleared"
+msgstr "Zprávy vyčištěny"
+
+msgid "Messages Updated"
+msgstr "Zprávy aktualizovány"
+
+msgid "Mime Types Deleted"
+msgstr "Mime Typy smazány"
+
+msgid "Mime-Type added"
+msgstr "Mime-Typ přidán"
+
+msgid "MimeType"
+msgstr "MimeTyp"
+
+msgid "Minute"
+msgstr "Minuta"
+
+msgid "Missing closing bracket in zone line."
+msgstr "Chybějící koncová závorka na lince zóny."
+
+msgid "Missing open bracket in zone line."
+msgstr "Chybějící úvodní závorka na lince zóny."
+
+msgid "ModSecurity Flags"
+msgstr "ModSecurity značky"
+
+msgid "ModSecurity Rules Saved"
+msgstr "ModSecurity pravidla uložena"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "ModSecurity vynechaná pravidla"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity není zapnuto"
+
+msgid "Modify"
+msgstr "Upravit"
+
+msgid "Modify Password"
+msgstr "Změnit heslo"
+
+msgid "Month"
+msgstr "Měsíc"
+
+msgid "More Info"
+msgstr "Více info"
+
+msgid "Morning"
+msgstr "Ráno"
+
+msgid "Move Clipboard Files here"
+msgstr "Přesunout sem soubory ze schránky"
+
+msgid "Move to Trash"
+msgstr "Přesunout do koše"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Je nutné poskytnout mime typ nebo jméno handleru a jednu koncovku. Např. "
+"\"text/html\" nebo \"cgi-script\" a \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Je nutné vybrat více než nula položek LetsEncrypt."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Je nutné použít letsencrypt=1 pro možnosti.  letsencrypt=%d je momentálně "
+"nastaveno."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL není zapnuta na tomto serveru"
+
+msgid "NGINX Unit"
+msgstr "NGINX Unit"
+
+msgid "Name"
+msgstr "Název"
+
+msgid "Name Server 1"
+msgstr "Jmenný server 1"
+
+msgid "Name Server 2"
+msgstr "Jmenný server 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Jméno musí obsahovat jen písmena, mezery a/nebo tečky"
+
+msgid "Nameserver"
+msgstr "Nameserver"
+
+msgid "Nameservers deleted"
+msgstr "Nameservery smazány"
+
+msgid "Nameservers have been changed"
+msgstr "Nameservery byly změněny"
+
+msgid "Namesevers have been changed."
+msgstr "Nameservery byly změněny."
+
+msgid "Netmask"
+msgstr "Maska sítě"
+
+msgid "Never"
+msgstr "Nikdy"
+
+msgid "New Secret Set: %s"
+msgstr "Nový tajný set: %s"
+
+msgid "New password isn't different"
+msgstr "Nové heslo není rozdílné"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Nově nainstalovaný klíč je %s-bitový"
+
+msgid "Next Retry"
+msgstr "Další pokus"
+
+msgid "Nginx Template"
+msgstr "Nginx šablona"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx není zapnut"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit není zapnuta a nebo neběží"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "No Awstats"
+msgstr "Žádné AWstats"
+
+msgid "No Data to Show"
+msgstr "Žádná data k zobrazení"
+
+msgid "No IPs selected"
+msgstr "Nevybrány IP"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "Žádné ListFile v kontejneru na pozici trasy %lld"
+
+msgid "No Send class set"
+msgstr "Nenastavena třída Send"
+
+msgid "No User Data"
+msgstr "Žádná uživatelská data User Data"
+
+msgid "No action"
+msgstr "Žádná akce"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "Žádný protokol arp, L2 cílová adresa nenastavena."
+
+msgid "No changes have been made"
+msgstr "Nebyly provedeny žádné změny"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Nebyly potřebné žádné změny. Vynechávám zápis."
+
+msgid "No colors have been selected"
+msgstr "Nebyly vybrány žádné barvy"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "Žádný kontejner na pozici trasy %lld"
+
+msgid "No events for this period."
+msgstr "Žádné události v tomto období."
+
+msgid "No files have been selected for upload."
+msgstr "Nebyly vybrány žádné soubory pro nahrání."
+
+msgid "No free IPs found"
+msgstr "Nenalezeny volné IP"
+
+msgid "No global IPs found"
+msgstr "Nenalezeny globální IP"
+
+msgid "No keys selected"
+msgstr "Nevybrány klíče"
+
+msgid "No passwd entries provided."
+msgstr "Neposkytnuty žádné záznamy passwd."
+
+msgid "No paths were provided."
+msgstr "Neposkytnuty žádné cesty."
+
+msgid "No shared IPs found"
+msgstr "Nenalezeny žádné sdílené IP"
+
+msgid "No text provided"
+msgstr "Neposkytnut žádný text"
+
+msgid "No vacation message set"
+msgstr "Nenastavena žádná zpráva režimu Na dovolené"
+
+msgid "None"
+msgstr "Žádné"
+
+msgid "Not a valid IP Address"
+msgstr "Nejde o platnou IP adresu"
+
+msgid "Not allowed for Resellers"
+msgstr "Není dovoleno resellerům"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+"Nedostatek IP pro vytvoření nameserverů. Je požadováno alespoň %d volných, "
+"nepřiřazených IP."
+
+msgid "Not setting up Mail SNI."
+msgstr "Mail SNI není nastavováno."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "Neplatné kvůli znaku '%c' na indexu %d"
+
+msgid "Not yet generated"
+msgstr "Nebylo zatím vygenerováno"
+
+msgid "Not yet signed"
+msgstr "Nebylo zatím podepsáno"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Poznámka: předchozí konfigurace Let's Encrypt je stále nastavena na obnovu "
+"za %d dnů."
+
+msgid "Nothing"
+msgstr "Nic"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "Upozornění že přihlašovací klíč %s byl úspěšně vytvořen %s"
+
+msgid "Notified"
+msgstr "Upozorněno"
+
+msgid "Nov"
+msgstr "Lis."
+
+msgid "Null values"
+msgstr "Prázdné hodnoty"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "Číslo %s=%s je mimo rozsah (požadováno: %d-%d)"
+
+msgid "Number of Users"
+msgstr "Počet uživatelů"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Oct"
+msgstr "Říj."
+
+msgid "Off"
+msgstr "Vypnuto"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Starý %s-bitový klíč byl zálohován do %s"
+
+msgid "Old password incorrect"
+msgstr "Staré heslo je nesprávné"
+
+#, c-format
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "Starší než %d den"
+msgstr[1] "Starší než %d dny"
+msgstr[2] "Starší než %d dnů"
+
+msgid "On"
+msgstr "Zapnuto"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr "Jedna (nebo více) vybraných IP nejsou momentálně na vašem seznamu"
+
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "Přihlášení jedním kliknutím není zapnuto v directadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"Přihlášení jedním kliknutím nepodporuje webmail_link=%s.   Zkuste "
+"webmail_link=roundcube."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "Pouze %d z požadovaných %d globálních IP bylo přiřazeno."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr "Pouze 'Dodatečné' IP mohou být odebrány uživateli pomocí této metody"
+
+msgid "Only API access is allowed"
+msgstr "Je povolen přístup pouze přes API"
+
+msgid "Only Admin accounts can save settings"
+msgstr "Pouze účty správců mohou uložit nastavení"
+
+msgid "Only Admins can reset the usage count"
+msgstr "Pouze správci mohou resetovat počet využití"
+
+msgid "Only Admins may run this request"
+msgstr "Pouze správci mohou spustit tento požadavek"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr "Poskytněte pouze jednu koncovku. Např.: \"jpg\" místo \"jpg jpeg jpe\""
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "Pouze výchozí doména '%s' může ovládat nastavení php."
+
+msgid "Only the location of the route can be renamed"
+msgstr "Může být přejmenováno pouze umístění trasy"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr "Použijte wildcard pouze pro domény, které nyní mají funkční lokální DNS"
+
+msgid "Open"
+msgstr "Otevřít"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir vypnut na vybraných doménách"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Open Basedir zapnut na vybraných doménách"
+
+msgid "Open+Confirm"
+msgstr "Otevřít+Potvrdit"
+
+msgid "Operation"
+msgstr "Operace"
+
+msgid "Optimize"
+msgstr "Optimalizovat"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "Volba '%s' byla již nastavena"
+
+msgid "Option Saved"
+msgstr "Nastavení uloženo"
+
+msgid "Options"
+msgstr "Možnosti"
+
+msgid "Options changed successfully"
+msgstr "Možnosti úspěšně změněny"
+
+msgid "Order"
+msgstr "Řazení"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "Řazení (kdy jsou první hodnoty řazení shodné)"
+
+msgid "Original Package"
+msgstr "Původní balíček"
+
+msgid "Other"
+msgstr "Jiné"
+
+msgid "Other Disk Usage"
+msgstr "Jiné využití disku"
+
+msgid "Other Usage"
+msgstr "Jiné využití"
+
+msgid "Overview"
+msgstr "Přehled"
+
+msgid "Owner"
+msgstr "Vlastník"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "Vlastník globální IP vyměněn na správce %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "PHP název skriptu"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "PHP nastavení nemůže být ovládáno pod touto doménou"
+
+msgid "PHP Version Selector"
+msgstr "Výběr verze PHP"
+
+msgid "PHP versions saved"
+msgstr "PHP verze uloženy"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' není číslem"
+
+msgid "POP Email Accounts"
+msgstr "POP e-mailové účty"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP server"
+
+msgid "Package"
+msgstr "Balíček"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Balíček '%s' již existuje"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Balíček '%s' neexistuje"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Balíček '%s' není ve vašem seznamu"
+
+msgid "Package not found"
+msgstr "Balíček nenalezen"
+
+msgid "Page"
+msgstr "Strana"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Nadřazená složka %s byla vytvořena."
+
+msgid "Parsing Error. Check logs"
+msgstr "Chyba zpracování. Zkontrolujte logy"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Password Changed"
+msgstr "Heslo změněno"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Heslo změněno: %s"
+
+msgid "Password Not Changed"
+msgstr "Heslo nebylo změněno"
+
+msgid "Password Saved!"
+msgstr "Heslo uloženo!"
+
+msgid "Password is not valid"
+msgstr "Heslo není platné"
+
+msgid "Password is too long"
+msgstr "Heslo je příliš dlouhé"
+
+msgid "Password is too short"
+msgstr "Heslo je příliš krátké"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "Heslo je příliš krátké (%d).  Použijte alespoň %d znaků"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Heslo musí mít délku více než %d znaků"
+
+msgid "Password successfully changed"
+msgstr "Heslo úspěšně změněno"
+
+msgid "Password/Quota"
+msgstr "Heslo/kvóta"
+
+msgid "Password:"
+msgstr "Heslo:"
+
+msgid "Passwords do not match"
+msgstr "Hesla se neshodují"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Hesla se neshodují nebo jsou neplatná"
+
+msgid "Path"
+msgstr "Cesta"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Cesta %s neexistuje nebo není přístupná uživateli %s."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Cesta '%s' již existuje před vytvářením uživatele. Prosím nejprve odeberte/"
+"přejmenujte tuto cestu."
+
+msgid "Path does not exist"
+msgstr "Cesta neexistuje"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Cesta musí začínat lomítkem (/)"
+
+msgid "Paths Unblocked"
+msgstr "Cesty odblokovány"
+
+msgid "Paths must be within your home directory"
+msgstr "Cesty musí být v rámci vaší domovské složky"
+
+msgid "Percent"
+msgstr "Procent"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "Procento musí končit znakem %"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "Procento jádra CPU. >100% pro více jader."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "Procento musí být mezi %d a %d, včetně"
+
+# @tim.tampouris next phrase in the translation "q=state%3Aempty&sort_by=-priority%2Cposition" is "permissions set", so i would guess it is about it.
+msgid "Perm."
+msgstr "Práv."
+
+msgid "Permissions set"
+msgstr "Sada práv"
+
+msgid "Php is not enabled"
+msgstr "PHP není zapnuto"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr ""
+"Prosím zkontrolujte zónu na %s pro ověření, že nameserver záznamy typu A "
+"jsou správné."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Prosím, potvrďte že si přejete smazat vaše data DNSSEC"
+
+msgid "Please pick only one skin to apply"
+msgstr "Prosím vyberte jen jeden vzhled pro použití"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "Prosím poskytněte '%s'"
+
+msgid "Please provide at least one IP"
+msgstr "Prosím poskytněte alespoň jednu IP"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr ""
+"Prosím podívejte se na tuto URL a zkontrolujete curl exit kód '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Prosím vyberte 1 doménu, která se stane vaší výchozí doménou"
+
+msgid "Please select at least one User"
+msgstr "Prosím vyberte alespoň jednoho uživatele"
+
+msgid "Please select at least one domains"
+msgstr "Prosím vyberte alespoň jednu doménu"
+
+msgid "Please select at least one file"
+msgstr "Prosím vyberte alespoň jeden soubor"
+
+msgid "Please select at least one item"
+msgstr "Prosím vyberte alespoň jednu položku"
+
+msgid "Please select at least one package"
+msgstr "Prosím vyberte alespoň jeden balíček"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "Prosím vyberte více než nula souborů pro rozbalení z archivu"
+
+msgid "Please select one or more Databases"
+msgstr "Prosím vyberte jednu nebo více databází"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Prosím vyberte jen 1 naplánovanou úlohu k upravení"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Prosím nastavte limit mezi 1 a %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "Prosím zrušte odkázání všech IP z '%s' před smazáním."
+
+msgid "Please use all lower case characters in the username"
+msgstr "Prosím použijte malá písmena v uživatelském jménu"
+
+msgid "Plugin Uploaded"
+msgstr "Plugin nahrán"
+
+msgid "Plugin(s) Installed"
+msgstr "Plugin(y) nainstalován(y)"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Plugin(y) odinstalován(y)"
+
+msgid "Plugin(s) Updated"
+msgstr "Plugin(y) aktualizován(y)"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Ukazatel '%s' nepatří vám."
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "Post skripty"
+
+msgid "Post scripts"
+msgstr "Post skripty"
+
+msgid "Pre-backup hard-link check"
+msgstr "Předzálohová kontrola hard linků"
+
+msgid "Preparing 'domains' data"
+msgstr "Příprava dat 'domains'"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Příprava dat (žádné 'domains')"
+
+msgid "Present"
+msgstr "Současnost"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Zachování webových dat platí jen na /domains/domena.cz. Jiné oblasti, jako "
+"jsou e-mailová data, nebudou zachována."
+
+msgid "Priority"
+msgstr "Priorita"
+
+msgid "Privileges"
+msgstr "Oprávnění"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "ID procesu %d není 'dataskq'. Je '%s'"
+
+msgid "Process is running"
+msgstr "Proces běží"
+
+msgid "Process is stopped"
+msgstr "Proces je zastaven"
+
+msgid "Processor Name"
+msgstr "Jméno procesoru"
+
+msgid "Processor Speed (MHz)"
+msgstr "Rychlost procesoru (MHz)"
+
+msgid "Progress"
+msgstr "Průběh"
+
+msgid "Protect"
+msgstr "Chránit"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr ""
+"Jméno chráněné složky obsahuje neplatné znaky. Použijte jednoduché jméno"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr "Ochrana složek byla vypnuta pomocí volby filemanager_disable_features"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "Poskytněte buď IP a nebo rozsah IP, doménu a nebo wildcard doménu."
+
+msgid "Provided password is not correct."
+msgstr "Zadané heslo není správné."
+
+msgid "Provided password is weak"
+msgstr "Zadané heslo je slabé"
+
+msgid "Provided value is not a Username or Email address"
+msgstr "Zadaná hodnota není uživatelským jménem nebo e-mailem"
+
+msgid "Provided value is not valid."
+msgstr "Zadaná hodnota není platná."
+
+msgid "Proxy socket address"
+msgstr "Adresa proxy socketu"
+
+msgid "Publish"
+msgstr "Zveřejnit"
+
+msgid "Purge"
+msgstr "Pročistit"
+
+msgid "Purge Archives"
+msgstr "Pročistit archivy"
+
+msgid "Purge From"
+msgstr "Pročistit Od"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "Pročistit v %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "Převádění httpd.conf rewrite do úlohy na pozadí."
+
+msgid "Raw zone saved"
+msgstr "Raw zóna uložena"
+
+msgid "Re-sign your zone."
+msgstr "Znovu podepište svou zónu."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Chyba čtení %s: %s"
+
+msgid "Reason:"
+msgstr "Důvod:"
+
+msgid "Reboot"
+msgstr "Restart"
+
+msgid "Receive all multicast packets."
+msgstr "Obdržet všechny pakety multicast."
+
+msgid "Received"
+msgstr "Obdrženo"
+
+msgid "Received Emails"
+msgstr "Obdržené e-maily"
+
+msgid "Reconfiguration Error"
+msgstr "Chyba rekonfigurace"
+
+msgid "Record Added"
+msgstr "Záznam přidán"
+
+msgid "Record Edited"
+msgstr "Záznam upraven"
+
+msgid "Records Deleted"
+msgstr "Záznamy smazány"
+
+msgid "Recursive"
+msgstr "Rekurzivní"
+
+msgid "Recursively"
+msgstr "Rekurzivně"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Rekurzivní resetování vlastnictví bylo vypnuto pomocí volby "
+"filemanager_disable_features"
+
+msgid "Redirect Added"
+msgstr "Přesměrování přidáno"
+
+msgid "Redirect URL"
+msgstr "Adresa přesměrování"
+
+msgid "Redirect(s) deleted"
+msgstr "Přesměrování smazáno"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "Obnovit"
+
+msgid "Regenerate Codes"
+msgstr "Znovu vygenerovat kódy"
+
+msgid "Related"
+msgstr "Související"
+
+msgid "Release Candidates"
+msgstr "Kandidáti na vydání"
+
+msgid "Reload"
+msgstr "Obnovení"
+
+msgid "Reload requested"
+msgstr "Obnovení vyžádáno"
+
+msgid "Remote Mail"
+msgstr "Vzdálený e-mail"
+
+msgid "Remove"
+msgstr "Odebrat"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Odebrat DNS záznamy pro IP"
+
+msgid "Remove DNSSEC"
+msgstr "Odebrat DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Odebrat obsah složky"
+
+msgid "Remove From Skip List"
+msgstr "Odebrat ze seznamu vynechaných"
+
+msgid "Remove from reseller"
+msgstr "Odebrat resellerovi"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Odebrán uživatel ze seznamu %s"
+
+msgid "Rename"
+msgstr "Přejmenovat"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Přejmenování souborů bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Repair"
+msgstr "Opravit"
+
+msgid "Replies"
+msgstr "Odpovědi"
+
+msgid "Reply"
+msgstr "Odpovědět"
+
+msgid "Reply Sent"
+msgstr "Odpověď odeslána"
+
+msgid "Request added to task.queue"
+msgstr "Požadavek přidán do task.queue"
+
+msgid "Request will be processed in the background."
+msgstr "Požadavek bude zpracován na pozadí."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "Požadovaná hodnota LetsEncrypt '%s' není povolenou hodnotou."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr ""
+"Požadovaná velikost filesize (%lld) překračuje hodnotu maxfilesize (%lld)"
+
+msgid "Requests Cancelled"
+msgstr "Požadavky zrušeny"
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Požadováno: '%s' nebo '%s'"
+
+msgid "Reseller"
+msgstr "Reseller"
+
+msgid "Reseller Bandwidth"
+msgstr "Datový přenos resellera"
+
+msgid "Reseller History"
+msgstr "Historie resellera"
+
+msgid "Reseller Quota"
+msgstr "Kvóta resellera"
+
+msgid "Reseller created"
+msgstr "Reseller vytvořen"
+
+msgid "Reseller deleted"
+msgstr "Reseller smazán"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr "Reseller má přiřazeno nula IP. Není možné vytvořit doménu bez IP."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "Reseller má jen %s ze svých %s IP."
+msgstr[1] "Reseller má jen %s ze svých %s IP."
+msgstr[2] "Reseller má jen %s ze svých %s IP."
+
+msgid "Reseller's IP"
+msgstr "Resellerova IP"
+
+msgid "Reset"
+msgstr "Resetovat"
+
+msgid "Reset Owner"
+msgstr "Resetovat vlastníka"
+
+msgid "Reset Ownership"
+msgstr "Resetovat vlastnictví"
+
+msgid "Reset Today"
+msgstr "Resetovat dnes"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Resetování vlastnictví souboru bylo vypnuto pomocí volby "
+"filemanager_disable_features"
+
+msgid "Resources allocated."
+msgstr "Zdroje přiděleny."
+
+msgid "Restart"
+msgstr "Restart"
+
+msgid "Restore"
+msgstr "Obnovit"
+
+msgid "Restore Complete!"
+msgstr "Obnova dokončena!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Chyba zálohování s Nginx Unit: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"Obnova účtu '%s' tvůrci '%s' byla odmítnuta, protože tento účet již existuje "
+"pod kontrolou '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Obnova poběží na pozadí"
+
+msgid "Restores added to Queue"
+msgstr "Obnovování přidáno do fronty"
+
+msgid "Restoring Databases"
+msgstr "Obnova databází"
+
+msgid "Restoring Domains Data"
+msgstr "Obnova dat domén"
+
+msgid "Restoring E-Mail Data"
+msgstr "Obnova dat e-mailů"
+
+msgid "Restoring E-Mail Settings"
+msgstr "Obnova nastavení e-mailů"
+
+msgid "Restoring Extra Admin Data"
+msgstr "Obnova dodatečných dat správců"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "Obnova dodatečných dat resellerů"
+
+msgid "Restoring Extra User Data"
+msgstr "Obnovování extra uživatelských dat User Data"
+
+msgid "Restoring FTP"
+msgstr "Obnova FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "Obnova dodatečných položek e-mailů"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr "Obnova souborů byla vypnuta pomocí volby filemanager_disable_features"
+
+msgid "Result"
+msgstr "Výsledek"
+
+msgid "Result of file copy"
+msgstr "Výsledek kopírování souboru"
+
+msgid "Result of file move"
+msgstr "Výsledek přesunu souboru"
+
+msgid "Results"
+msgstr "Výsledky"
+
+msgid "Retries"
+msgstr "Opakování"
+
+msgid "Retry"
+msgstr "Opakovat"
+
+msgid "Retry counter has been cleared."
+msgstr "Počítadlo pokusů bylo vyčištěno."
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "Kód odpovědi 3XX(%d) vyžaduje umístění"
+
+msgid "Return with httpd code"
+msgstr "Odpovědět httpd kódem"
+
+msgid "Rewrite Apache"
+msgstr "Přepsat v Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr "RoundCube chybí volba direct_login. Prosím přeinstalujte RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "Trasa '%s' nekončí '%s'"
+
+msgid "Rules Reset"
+msgstr "Reset pravidel"
+
+msgid "Run Now"
+msgstr "Spustit nyní"
+
+msgid "Running"
+msgstr "Běží"
+
+msgid "SMTP Log"
+msgstr "SMTP Log"
+
+msgid "SMTP Server"
+msgstr "SMTP server"
+
+msgid "SNI Host"
+msgstr "SNI Hosté"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI je vypnuto pro tuto doménu"
+
+msgid "SSH Key Modified"
+msgstr "SSH klíč upraven"
+
+msgid "SSH Key authorized"
+msgstr "SSH klíč autorizován"
+
+msgid "SSH Key created"
+msgstr "SSH klíč vytvořen"
+
+msgid "SSH Key deleted"
+msgstr "SSH klíč smazán"
+
+msgid "SSH is not enabled"
+msgstr "SSH není zapnuto"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL není zapnuto pro tuto doménu"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Safe Mode vypnut na vybraných doménách"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Safe Mode zapnut na vybraných doménách"
+
+msgid "Save"
+msgstr "uložit"
+
+msgid "Save Awstats"
+msgstr "Uložit AWstats"
+
+msgid "Save Comments"
+msgstr "Uložit komentáře"
+
+msgid "Save E-Mail"
+msgstr "Uložit e-mail"
+
+msgid "Save Increase"
+msgstr "Uložit navýšení"
+
+msgid "Save Language"
+msgstr "Uložit jazyk"
+
+msgid "Save Limit"
+msgstr "Uložit limit"
+
+msgid "Save Limit Notice"
+msgstr "Uložit upozornění"
+
+msgid "Save Name"
+msgstr "Uložit jméno"
+
+msgid "Save Nameservers"
+msgstr "Uložit nameservery"
+
+msgid "Save Skin"
+msgstr "Uložit vzhled"
+
+msgid "Saved"
+msgstr "Uloženo"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Ukládání/úpravy souborů byly vypnuty pomocí volby "
+"filemanager_disable_features"
+
+msgid "Scratch Codes"
+msgstr "Scratch kódy"
+
+msgid "Scratch codes created"
+msgstr "Scratch kódy vytvořeny"
+
+msgid "Script output"
+msgstr "Výstup skriptu"
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRuleRemoveById id je prázdné"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "Secure Socket Layer (SSL)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "Přečtěte si %stohoto průvodce%s pro opravu."
+
+msgid "See Error log for more information."
+msgstr "Podívejte se na log chyb pro více informací."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "Přečtěte si tohoto průvodce: %s"
+
+msgid "Select"
+msgstr "Vyberte"
+
+msgid "Select MX Template"
+msgstr "Vyberte MX šablonu"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Vyberte IP pro odkazování na %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Vybraný Content-Type není platný."
+
+msgid "Selected Data"
+msgstr "Vybraná data"
+
+msgid "Selected IP address is not Global"
+msgstr "Vybraná IP adresa není globální"
+
+msgid "Selected Plugins Activated"
+msgstr "Vybrané pluginy aktivovány"
+
+msgid "Selected Plugins De-Activated"
+msgstr "Vybrané pluginy deaktivovány"
+
+msgid "Selected Plugins Deleted"
+msgstr "Vybrané pluginy smazány"
+
+msgid "Selected Users"
+msgstr "Vybraní uživatelé"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "Kódování vybrané znakové sady není platné."
+
+msgid "Send Count"
+msgstr "Počet odeslání"
+
+msgid "Send Signal"
+msgstr "Poslat signál"
+
+msgid "Send a Message"
+msgstr "Odeslat zprávu"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Limit odesílání musí být platným číslem a nebo prázdný."
+
+msgid "Sender"
+msgstr "Odesilatel"
+
+msgid "Sender Host"
+msgstr "Odesílající hostitel"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr ""
+"Doména odesílatele se musí shodovat s doménou seznamu '%s', nebo použijte "
+"'%s'"
+
+msgid "Sent"
+msgstr "Odesláno"
+
+msgid "Sent E-mails"
+msgstr "Odeslané e-maily"
+
+msgid "Sent Emails"
+msgstr "Odeslané e-maily"
+
+msgid "Sep"
+msgstr "Zář."
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Server History"
+msgstr "Historie serveru"
+
+msgid "Server Path"
+msgstr "Serverová cesta"
+
+msgid "Service"
+msgstr "Služba"
+
+# I think that this is "to set something" since next string in the translation is about setting something.
+msgid "Set"
+msgstr "Nastavit"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+"Nastavte 0 pro neomezeně.  Nastavte prázdnou hodnotu pro reset na výchozí."
+
+# I think that this is about setting an IP as a global, shared.
+msgid "Set Global Shared"
+msgstr "Nastavit jako globální sdílená"
+
+msgid "Set as Default"
+msgstr "Nastavit jako výchozí"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Nastavit vybrané domény jako veřejně zobrazitelné od"
+
+msgid "Set selected to"
+msgstr "Nastavit vybrané na"
+
+msgid "Set to"
+msgstr "Nastavit na"
+
+msgid "Setting"
+msgstr "Hodnota"
+
+msgid "Setting changed"
+msgstr "Nastavení změněno"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Nastavování práv k souborům/složkám bylo vypnuto pomocí volby "
+"filemanager_disable_features"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Settings Saved"
+msgstr "Nastavení uloženo"
+
+msgid "Share Selected"
+msgstr "Sdílet vybrané"
+
+msgid "Share a static path"
+msgstr "Sdílet statickou cestu"
+
+msgid "Shared"
+msgstr "Sdíleno"
+
+# I guess this is about shared IP right...
+msgid "Shared - randomly selected"
+msgstr "Sdílená - náhodně vybrána"
+
+msgid "Shell Access (ssh)"
+msgstr "Shell přístup (SSH)"
+
+msgid "Shell for Resellers's Users"
+msgstr "Shell pro resellerovy uživatele"
+
+msgid "Show"
+msgstr "ukázat"
+
+msgid "Sign"
+msgstr "Podepsat"
+
+msgid "Signed"
+msgstr "Podepsáno"
+
+msgid "Size"
+msgstr "Velikost"
+
+msgid "Size is not a number"
+msgstr "Velikost není číslem"
+
+msgid "Skin"
+msgstr "Vzhled"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "Vzhled '%s' nemá k nastavení žádné proměnné pro vlastní barvu"
+
+msgid "Skin Applied"
+msgstr "Vzhled použit"
+
+msgid "Skin Installed"
+msgstr "Vzhled nainstalován"
+
+msgid "Skin Name"
+msgstr "Jméno vzhledu"
+
+msgid "Skin Owner"
+msgstr "Vlastník vzhledu"
+
+msgid "Skin Set"
+msgstr "Vzhled nastaven"
+
+msgid "Skin applied to all users"
+msgstr "Vzhled použit na všechny uživatele"
+
+msgid "Skin has been customized"
+msgstr "Vzhled byl přizpůsoben"
+
+msgid "Skin has been successfully changed"
+msgstr "Vzhled byl úspěšně změněn"
+
+msgid "Skins Deleted"
+msgstr "Vzhledy smazány"
+
+msgid "Skip Suspended"
+msgstr "Vynechat deaktivované"
+
+msgid "Skipped rule added"
+msgstr "Pravidlo vynechání přidáno"
+
+msgid "Skipping system E-Mail account"
+msgstr "Vynechávám systémový e-mailový účet"
+
+msgid "Slave of a load balancing bundle."
+msgstr "Podřízený (slave) člen skupiny pro vyvažování zátěže."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "Omlouváme se, tato funkce v současnosti nepodporuje doménové ukazatele"
+
+msgid "Sort"
+msgstr "Řazení"
+
+# How the sentence continues?
+msgid "Sort Selected Column in"
+msgstr "Řadit vybranou kolonku v"
+
+msgid "Source Domain"
+msgstr "Zdrojová doména"
+
+msgid "Spam"
+msgstr "Spam"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAssassin je vypnut na vašem účtu"
+
+msgid "SpamAssassin"
+msgstr "SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "SpamAssassin vypnut"
+
+msgid "Spambox"
+msgstr "Spamová schránka"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd neběží na vašem systému."
+
+msgid "Splitting error for unix socket"
+msgstr "Chyba dělení pro unix socket"
+
+msgid "Ssl"
+msgstr "SSL"
+
+msgid "Stable"
+msgstr "Stabilní"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Start Time"
+msgstr "Čas startu"
+
+msgid "Start Time must be before End Time."
+msgstr "Čas začátku musí být před časem konce."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr "Stát/Provincie musí obsahovat jen písmena, mezery a/nebo tečky"
+
+# Is this about statistics please?
+msgid "Stats links created"
+msgstr "Stats odkazy vytvořeny"
+
+msgid "Stats links removed"
+msgstr "Stats odkazy odebrány"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Status Set"
+msgstr "Stav nastaven"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "Připnutý bit není povolen: 777 je maximální možné oprávnění"
+
+msgid "Stop"
+msgstr "Zastavit"
+
+msgid "Stopped"
+msgstr "Zastaveno"
+
+msgid "String contains an invalid email address"
+msgstr "Řetězec obsahuje neplatnou e-mailovou adresu"
+
+msgid "Sub Domains"
+msgstr "Sub domény"
+
+msgid "Sub Sort"
+msgstr "Sub řazení"
+
+msgid "Sub Sort Selected Column in"
+msgstr "Sub řazení vybrána kolonka v"
+
+msgid "Sub-domain is forbidden"
+msgstr "Subdoména je zakázána"
+
+msgid "SubDomain Name"
+msgstr "Jméno subdomény"
+
+msgid "Subdomain Created"
+msgstr "Subdoména vytvořena"
+
+msgid "Subdomain Removed"
+msgstr "Subdoména odebrána"
+
+msgid "Subdomain Stats"
+msgstr "Statistiky subdomény"
+
+msgid "Subdomain already exists"
+msgstr "Subdoména již existuje"
+
+msgid "Subdomain created"
+msgstr "Subdoména vytvořena"
+
+msgid "Subdomain does not exist"
+msgstr "Subdoména neexistuje"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Jméno subdomény je příliš dlouhé. Maximální délka %d znaků."
+
+msgid "Subdomains"
+msgstr "Subdomény"
+
+msgid "Subdomains Removed"
+msgstr "Subdomény odebrány"
+
+msgid "Subdomains deleted"
+msgstr "Subdomény smazány"
+
+msgid "Subject"
+msgstr "Předmět"
+
+msgid "Subject Contains"
+msgstr "Předmět obsahuje"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Předpona předmětu obsahuje neplatné znaky. Použijte %s"
+
+msgid "Subscriber"
+msgstr "Odběratel"
+
+msgid "Subscribers"
+msgstr "Odběratelé"
+
+msgid "Success"
+msgstr "Úspěch"
+
+msgid "Supports multicast"
+msgstr "Podporuje multicast"
+
+msgid "Suspend"
+msgstr "Deaktivovat"
+
+msgid "Suspend / Unsuspend"
+msgstr "Deaktivovat / Aktivovat"
+
+msgid "Suspend Reason"
+msgstr "Důvod deaktivace"
+
+msgid "Suspend at Limit"
+msgstr "Deaktivovat po dosažení limitu"
+
+msgid "Suspended"
+msgstr "Deaktivován"
+
+msgid "Syntax check has been disabled"
+msgstr "Kontrola syntaxe byla vypnuta"
+
+msgid "System Info"
+msgstr "Systémové informace"
+
+msgid "System Rebooting Now!"
+msgstr "Systém je nyní restartován!"
+
+msgid "System Uptime"
+msgstr "Dostupnost systému"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+"Systémový účet existuje, ale nemůže číst uživatelská data User Data soubory "
+"uživatele %s"
+
+msgid "Systems Quotas are size 0."
+msgstr "Systémové kvóty mají velikost 0."
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL byl uložen"
+
+msgid "Table"
+msgstr "Tabulka"
+
+msgid "Tail"
+msgstr "Konec"
+
+msgid "Tasks Max"
+msgstr "Max. úloh"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"Dočasný soubor %s má velikost 0 bajtů po zápisu na disk.    Nebude "
+"přejmenován."
+
+msgid "Template does not exist"
+msgstr "Šablona neexistuje"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "Dočasné zvýšení datového přenosu"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+"Je aktivní dočasné uzamčení akcí účtu.  Možná, že běží jiný proces, který "
+"teď s účtem pracuje.  Toto by mělo trvat ne více než %d minut"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "Bylo nastaveno dočasné navýšení datového přenosu"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr "Text překračuje maximální povolenou délku 4KB"
+
+msgid "That ID is not of type 'admin'"
+msgstr "Toto ID není typu 'správce'"
+
+msgid "That IP already exists on the domain"
+msgstr "Tato IP již existuje na doméně"
+
+msgid "That IP does not exist"
+msgstr "Tato IP neexistuje"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "Tato IP neexistuje ve vašem seznamu uživatelských IP"
+
+msgid "That IP does not exist in your list"
+msgstr "Tato IP neexistuje ve vašem seznamu"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "Tato IP je již ve vašem seznamu dodatečných IP"
+
+msgid "That IP is already owned"
+msgstr "Tato IP je již vlastněna"
+
+msgid "That IP is not available for linking"
+msgstr "Tato IP není dostupná pro odkazování"
+
+msgid "That User already exists on another server"
+msgstr "Tento uživatel již existuje na jiném serveru"
+
+msgid "That database already exists"
+msgstr "Tato databáze již existuje"
+
+msgid "That database does not belong to you"
+msgstr "Tato databáze vám nepatří"
+
+msgid "That database does not exist"
+msgstr "Tato databáze neexistuje"
+
+msgid "That domain already exists"
+msgstr "Tato doména již existuje"
+
+msgid "That domain already exists on another server"
+msgstr "Tato doména již existuje na jiném serveru"
+
+msgid "That domain does not belong to you"
+msgstr "Tato doména vám nepatří"
+
+msgid "That domain does not exist"
+msgstr "Tato doména neexistuje"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "Tato doména byla deaktivována  Aktivujte ji před změnou jejího jména"
+
+msgid "That email user does not exist"
+msgstr "Tento e-mailový uživatel neexistuje"
+
+msgid "That file was empty"
+msgstr "Tento soubor byl prázdný"
+
+msgid "That filter already exists"
+msgstr "Tento filtr již existuje"
+
+msgid "That ftp_password file does not exist"
+msgstr "Tento soubor ftp_password neexistuje"
+
+msgid "That is an invalid email address / email list"
+msgstr "Tato e-mailová adresa / e-mailový seznam není platný"
+
+msgid "That is an invalid filename"
+msgstr "Toto je neplatné jméno souboru"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Toto není platná cesta.  Buď není ve vaší domovské složce, obsahuje "
+"symbolické odkazy a nebo obsahuje neplatné znaky"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Toto není platná cesta.  Buď není ve vaší domovské složce, neexistuje, "
+"obsahuje symbolické odkazy a nebo obsahuje neplatné znaky"
+
+msgid "That is not a valid quota"
+msgstr "Toto není platná kvóta"
+
+msgid "That is not a valid username"
+msgstr "Toto není platné uživatelské jméno"
+
+msgid "That is not your domain"
+msgstr "Toto není vaše doména"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Toto je rezervované hostname. Buď změňte hostname a nebo použijte jinou "
+"doménu"
+
+msgid "That key does not exist"
+msgstr "Tento klíč neexistuje"
+
+msgid "That password is incorrect"
+msgstr "Toto heslo je nesprávné"
+
+msgid "That path isn't protectable"
+msgstr "Tato cesta není chránitelná"
+
+msgid "That pop account doesn't exist"
+msgstr "Tento POP účet neexistuje"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Tento vzhled nemůže být přizpůsoben. Jeho skin.conf vyžaduje %s"
+
+msgid "That skin does not exist"
+msgstr "Tento vzhled neexistuje"
+
+msgid "That skin is not in your list"
+msgstr "Tento vzhled není ve vašem seznamu"
+
+msgid "That skin name already exists"
+msgstr "Název tohoto vzhledu již existuje"
+
+msgid "That user already exists"
+msgstr "Tento uživatel již existuje"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+"Tento uživatel obsahuje FTP oddělovač (%c), který nemůže být v uživatelském "
+"jménu."
+
+msgid "That user does not belong to you"
+msgstr "Tento uživatel vám nepatří"
+
+msgid "That user does not exist"
+msgstr "Tento uživatel neexistuje"
+
+msgid "That user doesn't exist"
+msgstr "Tento uživatel neexistuje"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Tento uživatel je rezervován pro anonymní účet"
+
+msgid "That username already exists on the system"
+msgstr "Toto uživatelské jméno již existuje v systému"
+
+msgid "That username is a reserved system name"
+msgstr "Toto uživatelské jméno je rezervovaným jménem systému"
+
+msgid "That zone already exists"
+msgstr "Tato zóna již existuje"
+
+msgid "Thats a reserved skin name."
+msgstr "Toto je rezervované jméno vzhledu."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "%s zálohy byly vytvořeny v %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "Uvedená 'TTL' hodnota není číslem a nebo je příliš vysoká"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr "Správce vypnul funkci zálohování uživatelů"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr "CA certifikát nebude použit.  Soubor zůstane ale nebude zahrnut."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"Zadaná CC hodnota vytvoří zacyklování.  Prosím použijte jinou CC hodnotu."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "E-Mail '%s' obsahuje neplatné znaky"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP %s neexistuje. Uživatel %s nebude vytvořen"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP %s poskytla správné heslo k účtu %s."
+
+msgid "The Ticket System is not enabled."
+msgstr "Systém požadavků není zapnut."
+
+msgid "The User backups have been uploaded to"
+msgstr "Uživatelské zálohy byly nahrány na"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "Uživatelské soubory byly obnoveny z %s"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "Uživatelská mezipaměť zobrazení bude za chvíli aktualizována."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "Adresy jsou ztraceny jakmile je rozhraní vypnuto."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Mezipaměť je nyní aktualizována, současné hodnoty nemusí být správné. Prosím "
+"obnovte stránku za 1 minutu."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Certifikát a klíč se neshoduje.  Prosím ujistěte se, že používáte správný "
+"klíč s tímto certifikátem"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "Schránka byla vypnuta pomocí volby filemanager_disable_features"
+
+msgid "The command cannot contain any newline characters"
+msgstr "Příkaz nemůže obsahovat jakékoli znaky nového řádku"
+
+msgid "The database '%s' does not belong to you"
+msgstr "Databáze '%s' vám nepatří"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "Den měsíce nemá platnou hodnotu naplánované úlohy (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "Den týdne nemá platnou hodnotu naplánované úlohy (0-7)"
+
+msgid "The default has been set"
+msgstr "Výchozí bylo nastaveno"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"Zdá se, že složku %s vlastní 'apache'.  Zkuste použít možnost 'Resetovat "
+"vlastníka' a akci opakujte."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+"Využití disku vybranými uživateli je více než %d MB, takže bude odebráno na "
+"pozadí."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Doména %s vám nepatří."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "Doména %s vám nepatří. Subdoména nebude vytvořena."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr "Zadaná doména je neplatná.  Musí mít formu 'zdrojovadomena.cz'"
+
+msgid "The domain has been modified"
+msgstr "Doména byla upravena"
+
+msgid "The domain must not match your hostname."
+msgstr "Doména se nesmí shodovat s vaším hostname."
+
+msgid "The domains have been modified"
+msgstr "Domény byly upraveny"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "E-mail obsahující vaše nové heslo byl odeslán."
+
+msgid "The email address provided is not a valid email address"
+msgstr "Zadaná e-mailová adresa není platnou e-mailovou adresou"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Zadaná cesta musí být a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "Soubor %s má více než 1 hard link"
+
+msgid "The file is generated when the account is reset."
+msgstr "Soubor je vygenerován při resetu účtu."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Soubor musí mít podobu: typ.tvurce.uzivatelskejmeno.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Soubor musí mít podobu: uzivatelskejmeno.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "Soubor: '%s' nemá podobu uzivatelskejmeno.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Následující soubor se nedaří najít.  Reset není vyžadován"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Následující hard linky byly nalezeny pod uživatelem %s:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "FTP uživatel %s neexistuje v souboru passwd %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "Název úplného formátu nekončí názvem zóny"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "Místní cesta URL nebo cílová URL je neplatná."
+
+msgid "The location has not changed"
+msgstr "Umístění se nezměnilo"
+
+msgid "The max upload size cannot be 0"
+msgstr "Maximální velikost nahrání nemůže být 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "Maximum pro %s je %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "Maximální hodnota je %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "Minimum pro %s je %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "Měsíc nemá platnou hodnotu naplánované úlohy (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "Zadané jméno obsahuje neplatné znaky"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr "Nový klíč byl vytvořen, ale došlo k problému při autorizaci"
+
+msgid "The new passwords do not match"
+msgstr "Nová hesla se neshodují"
+
+msgid "The number and type of ticket is required"
+msgstr "Je vyžadováno číslo a typ požadavku"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "Vlastník %s není %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "Funkce pro změnu hesla byla vypnuta"
+
+msgid "The path %s already exists"
+msgstr "Cesta %s již existuje"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Cesta již existuje ale není složkou"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"Proces je momentálně využíván ke spuštění tohoto požadavku, takže bude "
+"spuštěn krátce frontou úloh."
+
+msgid "The provided IP is not valid"
+msgstr "Zadaná IP není platná"
+
+msgid "The provided domain name matches your hostname."
+msgstr "Zadané jméno domény je stejné jako vaše hostname."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+"Požadavek, který jste zadali, nelze spustit, protože neexistuje na úrovni "
+"vašich pravomocí"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "Požadovaný příkaz vyžaduje POST ale bylo použito GET"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"Balíček vzhledu nebyl správně nainstalován.  Buď chyběly soubory a nebo u "
+"nich byla nastavena nevhodná práva"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Subdoména '%s' již existuje pod doménou %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"Časy musí mít formát jako jeden z následujících (např. hodina, bez mezer)"
+
+msgid "The user %s does not belong to you"
+msgstr "Uživatel %s vám nepatří"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Uživatelské jméno je neplatné. Uživatelská jména musí začínat a-z, obsahovat "
+">= 3 znaky a <= %d."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "Uživatelské jméno je neplatné. Uživatelská jména musí obsahovat a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Hodnota musí být IP adresou"
+
+msgid "The very last entry."
+msgstr "Úplně poslední záznam."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Uvítací e-mail(y) byl(y) úspěšně znovu odeslán(y)."
+
+msgid "There are no messages for that ticket"
+msgstr "Nejsou zde žádné zprávy tohoto požadavku"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "Jsou zde stále %d trasy používající '%s'."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+"Na %s jsou stále uživatelé.  Odeberte je nejprve z IP adresy a pak ji "
+"nastavte na 'volná'."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr "Nastalo %d selhání obnovení, takže nedojde k dalším pokusům.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Již existuje záznam CNAME s tímto názvem"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "Již existuje e-mailový seznam s tímto názvem"
+
+msgid "There is already an A record with that name"
+msgstr "Již existuje záznam typu A s tímto názvem"
+
+msgid "There is already an account with that name"
+msgstr "Již existuje účet s tímto názvem"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Již existuje automatický odpovídač s tímto názvem"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr "Na %s není dostatek místa pro nahrání %lld bajtů dat"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "Je zde jen 1 %s záznam pro %s=%s, neodebírám ho"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Toto jsou proměnné hodnoty. Mění se při změně data."
+
+msgid "This Login Key is read-only"
+msgstr "Tento přihlašovací klíč je jen pro čtení"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Tento operační systém je nyní na konci životnosti. Budoucí automatické "
+"aktualizace mohou selhat."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"Tento reseller účet nemůže přidělit neomezené %s, přes to bylo toto množství "
+"již přiděleno."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"Tento účet již existuje v systému. Pokud provedete obnovu, dojde k přepsání "
+"a/nebo spojení dat."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "Tento účet je blokován pomocí BlockCracking."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr "Tento účet je blokován pomocí BlockCracking. Odblokování je vypnuto."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"Tato doména bude nyní dočasně používat sdílený certifikát serveru, když "
+"neobnovíte zálohu klíče (nejprve nový klíč zálohujte aby nebyl ztracen)"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr "Toto je přihlášení hash URL. Můžete je smazat ale ne upravit"
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr "Toto je přihlášení hash URL. Můžete je smazat ale ne upravit."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "Toto je zástupce subdomény"
+
+msgid "This may give unexpected results"
+msgstr "Toto může způsobit nečekané výsledky"
+
+msgid "This may give unexpected results."
+msgstr "Toto může způsobit nečekané výsledky."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr "Toto může být správné, pokud je DNS ovládána vzdáleně."
+
+msgid "This plugin has been disabled for your account"
+msgstr "Tento plugin byl vypnut na vašem účtu"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+"Toto se stane pouze *po* tom, co vaše logy existují (doména musí být "
+"nasměrována na server a být používána)."
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr "Toto vynechá odebrání DNS zóny a ponechá ji na místě."
+
+msgid "Thread Count"
+msgstr "Počet vláken"
+
+msgid "Throttle Memory above this limit."
+msgstr "Omezit paměť nad tímto limitem."
+
+msgid "Ticket #"
+msgstr "Požadavek #"
+
+msgid "Ticket system status set"
+msgstr "Stav systému požadavků byl nastaven"
+
+msgid "Tickets Updated"
+msgstr "Požadavky aktualizovány"
+
+msgid "Time"
+msgstr "Čas"
+
+msgid "Timeout during read"
+msgstr "Vypršení času během čtení"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "Vypršení času při pokusu o připojení k %s"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "Časové pásmo '%s' neexistuje v systému"
+
+msgid "Timezone does not exist"
+msgstr "Časové pásmo neexistuje"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"Pro přidání naplánované úlohy je potřeba zadat vše následující: minuta, "
+"hodina, denměsíce, měsíc, dentýdne a příkaz"
+
+msgid "Today"
+msgstr "Dnes"
+
+msgid "Today at"
+msgstr "Dnes v"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Dnešní počet e-mailů uživatele %s byl resetován"
+
+msgid "Too long"
+msgstr "Příliš dlouhé"
+
+msgid "Too short"
+msgstr "Příliš krátké"
+
+msgid "Total"
+msgstr "Celkem"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Celkové využití disku (MB)"
+
+msgid "Total Memory"
+msgstr "Celková paměť"
+
+msgid "Total Size:"
+msgstr "Celková velikost:"
+
+msgid "Total Swap Memory"
+msgstr "Celková mezipaměť"
+
+msgid "Total Usage"
+msgstr "Celkové využití"
+
+msgid "Two-Step Authentication code is missing."
+msgstr "Kód dvoufázové autentizace chybí."
+
+msgid "Type"
+msgstr "Typ"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Typ '%s' je vypnut"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "Typ musí být buď 'paste' nebo 'id'"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL already exists"
+msgstr "URL již existuje"
+
+msgid "Un-Link"
+msgstr "Odpojit"
+
+msgid "Un-Set"
+msgstr "Odnastavit"
+
+msgid "Unable To Execute Your Request"
+msgstr "Nebylo možné spustit váš požadavek"
+
+msgid "Unable to Execute Your Command"
+msgstr "Nebylo možné spustit váš příkaz"
+
+msgid "Unable to Locate that domain"
+msgstr "Není možné najít tuto doménu"
+
+msgid "Unable to add IP"
+msgstr "Není možné přidat IP"
+
+msgid "Unable to add access host:"
+msgstr "Není možné přidat přistupujícího hosta:"
+
+msgid "Unable to add domain pointer"
+msgstr "Není možné přidat doménový ukazatel"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Není možné přidat uživatele do konfiguračního souboru SSH"
+
+# What is behind %s in this case? Important for choosing correct form of the word.
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Není možné přidělit neomezeně %s. Tento účet nemá povoleno vytvořit toto "
+"množství."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+"Není možné resellerovi přidělit jakoukoli IP. Ujistěte se, že máte volné, "
+"nepřiřazené IP."
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "Autorizace není možná: Zkontrolujte syntaxi svého hesla"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Autorizace není možná: Neplatné heslo"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "Není možné změnit %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "Není možné změnit kanál aktualizace DirectAdmin"
+
+msgid "Unable to change password"
+msgstr "Není možné změnit heslo"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Není možné změnit e-mailovou adresu"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Není možné změnit e-mailovou adresu systému zpráv"
+
+msgid "Unable to change the Name"
+msgstr "Není možné změnit jméno"
+
+msgid "Unable to change the limit"
+msgstr "Není možné změnit limit"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "Není možné změnit dočasné navýšení datového přenosu"
+
+msgid "Unable to check latest version"
+msgstr "Není možné zkontrolovat poslední verzi"
+
+msgid "Unable to connect to secure socket"
+msgstr "Není možné se připojit k bezpečnému secketu"
+
+msgid "Unable to connect to the database"
+msgstr "Není možné se připojit k databázi"
+
+msgid "Unable to create a Reseller"
+msgstr "Není možné vytvořit resellera"
+
+msgid "Unable to create a User"
+msgstr "Není možné vytvořit uživatele"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "Není možné vytvořit složku zálohy (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Není možné vytvořit složku %s"
+
+msgid "Unable to create new file"
+msgstr "Není možné vytvořit nový soubor"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Není možné vytvořit reverzní hledání IP"
+
+msgid "Unable to create subdomain"
+msgstr "Není možné vytvořit subdoménu"
+
+msgid "Unable to create user's data directory"
+msgstr "Není možné vytvořit datovou složku uživatele"
+
+msgid "Unable to create zone"
+msgstr "Není možné vytvořit zónu"
+
+msgid "Unable to create zone."
+msgstr "Není možné vytvořit zónu."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Není možné smazat %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Není možné smazat složku %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Není možné smazat soubory"
+
+msgid "Unable to delete the main email account"
+msgstr "Není možné smazat hlavní e-mailový účet"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "Není možné smazat resellerův soubor ip.list."
+
+msgid "Unable to delete users's domains directory"
+msgstr "Není možné smazat uživatelovu složku domén"
+
+msgid "Unable to edit file"
+msgstr "Není možné upravit soubor"
+
+msgid "Unable to execute script"
+msgstr "Nebylo možné spustit kript"
+
+msgid "Unable to execute your command"
+msgstr "Nebylo možné spustit váš příkaz"
+
+msgid "Unable to execute your request"
+msgstr "Nebylo možné spustit váš požadavek"
+
+msgid "Unable to export packages"
+msgstr "Není možné exportovat balíčky"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Není možné rozbalit %s z"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Není možné rozbalit user.conf, reseller.conf nebo ip.list z"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Není možné najít %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Není možné najít CA certifikát"
+
+msgid "Unable to find certificate"
+msgstr "Není možné najít certifikát"
+
+msgid "Unable to find key"
+msgstr "Není možné najít klíč"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "Není možné získat statistiky souboru na %s"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Není možné zajistit uzamčení %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr "Není možné získat uživatelovo šifrované heslo pro soubor ftp passwd"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "Není možné zamknout oblast %s"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "Není možné zamknout %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Není možné zamknout akce účtu '%s'"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Není možné zamknout uživatele %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr "Není možné upravit tuto doménu"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "Nebylo možné otevřít %s pro doplnění"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "Nebylo možné otevřít %s pro doplnění: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "Není možné otevřít %s pro čtení"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "Nebylo možné otevřít %s pro zápis: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "Není možné otevřít %s: %s"
+
+msgid "Unable to open a socket"
+msgstr "Není možné otevřít socket"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "Není možné otevřít soubor CA certifikátu (%s) pro zápis do: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "Není možné otevřít soubor certifikátu (%s) pro zápis do: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "Není možné parsovat %s ze skriptu '%s '(%s) výstup:"
+
+msgid "Unable to parse form"
+msgstr "Není možné parsovat z"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "Není možné číst %s jako účet %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Není možné číst uživatelské soubory %s"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr "Není možné číst %s.  Tento soubor je vytvořen jen po spuštění tally."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr "Není možné číst %s.  Tento soubor je vytvořen jen při doručení e-mailů."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Není možné číst %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Není možné číst DS soubor %s"
+
+msgid "Unable to read History File."
+msgstr "Není možné číst soubor historie."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Není možné číst zálohovací skript RoundCube: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Není možné číst obnovovací skript RoundCube: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Není možné číst data z %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "Není možné číst directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "Není možné číst konfigurační soubory domény"
+
+msgid "Unable to read login history file"
+msgstr "Není možné číst soubor historie přihlášení"
+
+msgid "Unable to read package"
+msgstr "Není možné číst balíček"
+
+msgid "Unable to read system uptime"
+msgstr "Není možné číst dostupnost systému"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr ""
+"Není možné číst systémový soubor FTP passwd kvůli přidání uživatele do "
+"tohoto souboru."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Není možné číst systémový soubor FTP passwd kvůli odebrání systémového "
+"uživatele FTP z tohoto souboru"
+
+msgid "Unable to read the user's files"
+msgstr "Není možné číst uživatelské soubory"
+
+msgid "Unable to read ticket config file"
+msgstr "Není možné číst soubor konfigurace požadavků"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "Není možné číst soubor zóny kvůli navýšení sériového čísla"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "Není možné číst soubor zóny pro %s"
+
+msgid "Unable to reboot"
+msgstr "Není možné restartovat"
+
+msgid "Unable to remove IP(s)"
+msgstr "Není možné odebrat IP"
+
+msgid "Unable to remove Unix User."
+msgstr "Není možné odebrat Unix uživatele."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "Není možné odebrat všechny uživatele resellera"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Není možné přejmenovat %s na %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "Není možné obnovit %s do %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Není možné obnovit '%s' protože reseller nebo správce '%s' nebyl nalezen. "
+"Přejmenujte soubor, pokud je to potřebné."
+
+msgid "Unable to restore database"
+msgstr "Není možné obnovit databázi"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "Není možné uložit DNS zónu: named-checkzone vrátila:"
+
+msgid "Unable to save your changes"
+msgstr "Není možné uložit vaše změny"
+
+msgid "Unable to set bandwidth"
+msgstr "Není možné nastavit datový přenos"
+
+msgid "Unable to set file permissions"
+msgstr "Není možné nastavit práva"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr "Není možné nastavit IP %s jako nameserver. Přesto pokračuji."
+
+msgid "Unable to set password"
+msgstr "Není možné nastavit heslo"
+
+msgid "Unable to set quota"
+msgstr "Není možné nastavit kvótu"
+
+# What is stats and what is a "stats link"?
+msgid "Unable to set stats link"
+msgstr "Není možné nastavit odkaz stats"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Není možné nastavit e-mailový limit"
+
+msgid "Unable to set the shell"
+msgstr "Není možné nastavit shell"
+
+msgid "Unable to show Admin History"
+msgstr "Není možné ukázat historii správce"
+
+msgid "Unable to show Reseller History"
+msgstr "Není možné ukázat historii resellera"
+
+msgid "Unable to show User History"
+msgstr "Není možné ukázat historii uživatele"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Není možné ukázat současné využití e-mailu"
+
+msgid "Unable to show the system information"
+msgstr "Není možné ukázat systémové informace"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "Není možné vyhodit %s do %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Není možné odemknout uživatele %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Není možné aktualizovat DirectAdmin"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Není možné aktualizovat vaše využití disku"
+
+msgid "Unable to use that new domain name"
+msgstr "Není možné použít toto nové doménové jméno"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Není možné zapsat uživatelské soubory %s"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Není možné zapisovat %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "Není možné zapisovat do uživatelova httpd.conf"
+
+msgid "Unable to write reseller's IP list"
+msgstr "Není možné zapisovat resellerův seznam IP"
+
+msgid "Unable to write the domain config file"
+msgstr "Není možné zapisovat konfigurační soubor domény"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+"Není možné zapisovat hlavní soubor FTP hesel.  Vaše změny nebudou uvedeny v "
+"platnost."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Není možné zapisovat do souboru kvót. Upozorněte správce, že %s není "
+"zapisovatelný."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Není možné zapisovat do systémového souboru FTP passwd aby mohl být odebrán "
+"systémový uživatel FTP"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Není možné zapisovat soubor usage.cache. Upozorněte správce, že %s není "
+"zapisovatelný."
+
+msgid "Unable to write ticket config"
+msgstr "Není možné zapisovat konfiguraci požadavků"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"Není možné zapisovat do souboru hesel. Upozorněte správce, že %s není "
+"zapisovatelný."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+"Není možné zapisovat do systémového souboru FTP passwd kvůli přidání "
+"uživatele do tohoto souboru."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "Není možné zapisovat do souboru zóny kvůli navýšení sériového čísla"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "Není možné zapisovat soubor zóny pro %s"
+
+msgid "Unblock"
+msgstr "Odblokovat"
+
+msgid "Unblocking is disabled."
+msgstr "Odblokování je vypnuto."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr "Odškrtnutí okamžitě smaže soubor z disku a již nepůjde obnovit"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr "Neočekávaná chyba, prosím kontaktujte správce serveru"
+
+msgid "Unhandled exception name"
+msgstr "Název nevypořádané výjimky"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "Nevypořádaná trasa %s hodnota '%s'"
+
+msgid "Unix User created successfully"
+msgstr "Unix uživatel úspěšně vytvořen"
+
+msgid "Unix User removed from the server"
+msgstr "Unix uživatel odebrán ze serveru"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr "Unix proxy IP/port by neměl mít jakékoli cesty, query nebo hashe"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "Neznámá '%s'"
+
+msgid "Unknown action"
+msgstr "Neznámá akce"
+
+msgid "Unknown backup destination"
+msgstr "Neznámý cíl zálohy"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "Neznámý typ certifikátu. Jen server, vytvoření a vložení je povoleno"
+
+msgid "Unknown ftp type"
+msgstr "Neznámý typ FTP"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "Neznámá možnost '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "Neznámá hodnota pro %s"
+
+msgid "Unlimited"
+msgstr "Neomezeně"
+
+msgid "Unsuspend"
+msgstr "Aktivovat"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+"Dokud není vytvořena mezipaměť, hodnoty nemusí být správné. Obnovte stránku "
+"za 1 minutu."
+
+msgid "Up a Level"
+msgstr "O úroveň výše"
+
+msgid "Update"
+msgstr "Aktualizovat"
+
+msgid "Update Successful"
+msgstr "Aktualizace úspěšná"
+
+msgid "Update channel has been successfully changed"
+msgstr "Kanál aktualizace byl úspěšně změněn"
+
+msgid "Update not necessary"
+msgstr "Aktualizace není nezbytná"
+
+msgid "Update queued"
+msgstr "Aktualizace ve frontě"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+"Potvrzení nahrání selhalo pro %s: vzdálené bajty %lld se neshodují s "
+"místními bajty %lld."
+
+msgid "Upload successful"
+msgstr "Nahráno úspěšně"
+
+# What is the meaning of this sentence? I would understand if a file is not a valid copy but "valid for copy"? Is meant valid for copying?
+msgid "Uploaded file is not valid for copy"
+msgstr "Nahraný soubor není platný pro kopírování"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "Nahráno: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Nahrávání souborů bylo vypnuto pomocí volby filemanager_disable_features"
+
+msgid "Usage (Meg)"
+msgstr "Využití (Meg)"
+
+msgid "Usage Log"
+msgstr "Log přístupů"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "Statistiky využití ještě nebyly posbírány pro tento účet"
+
+msgid "User"
+msgstr "Uživatel"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "Uživatel %s odebrán"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "Uživatel %s již existuje.  Prosím vyberte jiné uživatelské jméno."
+
+#, c-format
+msgid "User %s created"
+msgstr "Uživatel %s vytvořen"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "Uživatel %s neexistoval na serveru.  Odebírám ho z vašeho seznamu."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "Uživatel %s neexistuje v systému."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "Uživatel %s existuje v systému ale není ve vašem seznamu uživatelů"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "Uživatel %s byl přidán k vaší databázi.  Použijte následující hodnoty:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "Uživatel %s byl zálohován."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Uživatel %s byl obnoven"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Uživatel %s byl aktualizován.  Použijte následující hodnoty:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "Uživatel %s má jeden nebo více hard linků na své cestě:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "Uživatel %s je již deaktivován"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "Uživatel %s je již aktivní"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr "Uživatel %s není na vašem seznamu.  Nemůžete pro něho vytvořit zálohu."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr "Uživatel %s není na vašem seznamu.  Nemůžete pro něho vytvořit zálohu."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr "Uživatel %s není smazán. Není možné smazat všechny jejich uživatele."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "Uživatel %s nebyl vytvořen vámi -> není smazán."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr "Uživatel %s byl v záloze deaktivován.  Účet deaktivován."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr "Uživatel %s byl v záloze deaktivován.  Chyba při deaktivaci účtu:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "Uživatel '%s' neexistuje"
+
+msgid "User Acconts"
+msgstr "Uživatelské účty"
+
+msgid "User Accounts"
+msgstr "Uživatelské účty"
+
+msgid "User Bandwidth"
+msgstr "Datový přenos uživatele"
+
+msgid "User Comment Box"
+msgstr "Pole pro komentář uživatele"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Uživatelské DNSSEC ovládání je vypnuto"
+
+msgid "User Disk Quota"
+msgstr "Disková kvóta uživatele"
+
+msgid "User History"
+msgstr "Historie uživatele"
+
+msgid "User Modified"
+msgstr "Uživatel upraven"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "Uživatelské logy SMTP nejsou zapnuty"
+
+msgid "User Updated"
+msgstr "Uživatel aktualizován"
+
+msgid "User account is disabled"
+msgstr "Uživatelský účet je vypnut"
+
+msgid "User added to SSH config file successfully"
+msgstr "Uživatel úspěšně přidán do konfiguračního souboru SSH"
+
+msgid "User added to database"
+msgstr "Uživatel přidán k databázi"
+
+msgid "User added to named.conf file successfully"
+msgstr "Uživatel úspěšně přidán do souboru named.conf"
+
+msgid "User added to ssh config file."
+msgstr "Uživatel přidán do konfiguračního souboru SSH."
+
+msgid "User backups have been disabled."
+msgstr "Zálohování uživatelů bylo vypnuto."
+
+msgid "User config file updated."
+msgstr "Konfigurační soubor uživatele byl aktualizován."
+
+# Is this phrase used in context (prefix/suffix) with a number (of users)?
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "Uživatel smazán"
+msgstr[1] "Uživatelé smazáni"
+msgstr[2] "Uživatelé smazáni"
+
+msgid "User removed from SSH"
+msgstr "Uživatel odebrán ze SSH"
+
+msgid "User's System Quotas set"
+msgstr "Uživatelské systémové kvóty nastaveny"
+
+msgid "User's config files deleted"
+msgstr "Uživatelské konfigurační soubory smazány"
+
+msgid "User's data directory created successfully"
+msgstr "Datová složka uživatele byla úspěšně vytvořena"
+
+msgid "User's data directory removed."
+msgstr "Datová složka uživatele byla odebrána."
+
+msgid "User(s)"
+msgstr "Uživatel(é)"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "UserDir: %s"
+
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr ""
+"Uživatelské jméno '%s' je příliš dlouhé. Délka %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "Uživatelské jméno je příliš krátké. Musí mít délku alespoň 2 znaky."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"Uživatelské jméno musí obsahovat jen písmena a čísla (a-z, A-Z, 0-9), první "
+"znak musí být písmeno"
+
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+msgid "Users"
+msgstr "Uživatelé"
+
+msgid "Users Deleted"
+msgstr "Uživatelé smazáni"
+
+msgid "Users moved"
+msgstr "Uživatelé přesunuti"
+
+msgid "Users will be deleted in the background."
+msgstr "Uživatelé budou smazáni na pozadí."
+
+msgid "Users's domains directory removed."
+msgstr "Uživatelova složka domains byla odebrána."
+
+# Translation not needed?
+msgid "Usertype"
+msgstr "Usertype"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Použití cesty %s není povoleno."
+
+msgid "Vacation Account"
+msgstr "Účet pro režim Na dovolené"
+
+msgid "Vacation Message Deleted"
+msgstr "Smazána zpráva režimu Na dovolené"
+
+msgid "Vacation Message set"
+msgstr "Nastavena zpráva režimu Na dovolené"
+
+msgid "Vacation Message updated"
+msgstr "Aktualizována zpráva režimu Na dovolené"
+
+msgid "Vacation Messages Deleted"
+msgstr "Smazány zprávy režimu Na dovolené"
+
+msgid "Valid"
+msgstr "Platné"
+
+msgid "Valid broadcast address set."
+msgstr "Nastavena platná adresa vysílání."
+
+msgid "Value"
+msgstr "Hodnota"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "Proměnná 'IP' chybí v odeslání"
+
+msgid "Vendor ID"
+msgstr "ID prodejce"
+
+msgid "Verify"
+msgstr "Ověřit"
+
+msgid "View"
+msgstr "Zobrazit"
+
+msgid "View Clipboard"
+msgstr "Zobrazit schránku"
+
+# What is the meaning of this, especially "sort"? Is it about restoring previous order/sorting?
+msgid "View previous sort"
+msgstr "Zobrazit předchozí řazení"
+
+msgid "Warning from named-checkzone:"
+msgstr "Varování od named-checkzone:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"Varování: %s má platné heslo pro %s ale %s selhal při autorizaci kódem "
+"dvoufázové autentizace."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "Varování: Dosaženo limitu kvóty. Soubor(y) mohou být prázdné."
+
+msgid "Warning: The system load average is"
+msgstr "Varování: Průměrné vytížení systému je"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "Přečetli jsme jen %lld ze %lld bajtového souboru z %s"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "Webový e-mail"
+
+msgid "Webmail Attachments"
+msgstr "Přílohy webového e-mailu"
+
+msgid "Webmail SSO"
+msgstr "SSO webového e-mailu"
+
+msgid "Week of Month"
+msgstr "Týden měsíce"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "Týdenní limit frekvence %d pro '%s' byl dosažen"
+
+# Context is important for the correct translation.
+msgid "What"
+msgstr "Jaké"
+
+msgid "When"
+msgstr "Kdy"
+
+msgid "Where"
+msgstr "Kde"
+
+msgid "Who"
+msgstr "Kdo"
+
+msgid "Wildcard"
+msgstr "Wildcard"
+
+msgid "With Selected"
+msgstr "U vybraných"
+
+msgid "With selected"
+msgstr "S vybranými"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr "S nulou povolených domén byla vypnuta Ochrana proti hotlinkům."
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Účet %s nebude aktivován, protože je vypnutý"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Chyba zápisu s %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "Chybný počet '%s' prvků.  Povoleno: 1, nebo 2 s '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "Chybný počet hodnot 'pass': %d v '%s' (lomítko odděleno)"
+
+msgid "Year"
+msgstr "Rok"
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "You already have the most recent version of the program"
+msgstr "Již máte nejnovější verzi programu"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+"Chystáte se smazat účty správce nebo resellera, které pod sebou mají %d "
+"uživatele."
+msgstr[1] ""
+"Chystáte se smazat účty správce nebo resellera, které pod sebou mají %d "
+"uživatele."
+msgstr[2] ""
+"Chystáte se smazat účty správce nebo resellera, které pod sebou mají %d "
+"uživatelů."
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Nemáte povoleno zapnout anonymní FTP"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Nemáte povoleno upravit své SSL nastavení"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr "Pokoušíte se o obnovu souboru zst, ale zstd není zapnuto na systému."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "Nemáte povolení upravovat tento požadavek"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"Můžete kliknout na e-mail níže pro okamžité přihlášení do %s jako tento "
+"uživatel, bez nutnosti znát jeho heslo."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"Nemůžete vytvořit seznam pojmenovaný majordomo, protože jde o rezervovaný "
+"alias"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Nemůžete deaktivovat root.  To by bylo ŠPATNÉ"
+
+msgid "You cannot add that extension"
+msgstr "Nemůžete přidat tuto koncovku"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "Nemůžete přiřadit doméně více datového přenosu než má váš účet"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "Nemůžete přiřadit doméně větší kvótu, než má váš účet"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "Nemůžete vytvořit více uživatelů, než je povoleno domén."
+
+msgid "You cannot delete all of your IPs"
+msgstr "Nemůžete smazat všechny vaše IP"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr "Nemůžete smazat účet %s protože je spojen s vaším systémovým účtem"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Nemůžete smazat sebe (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Nemůžete spustit tento příkaz"
+
+msgid "You cannot modify yourself"
+msgstr "Nemůžete upravit sebe"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"Nemůžete obnovit několik uživatelů na jedinou volnou IP.  IP musí být "
+"nejprve nastavena jako sdílená."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Nemůžete nastavit neomezené odesílání."
+
+msgid "You cannot suspend yourself"
+msgstr "Nemůžete deaktivovat sebe"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "Nemůžete deaktivovat/aktivovat sebe"
+
+msgid "You cannot unsuspend this account."
+msgstr "Nemůžete aktivovat tento účet."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr "Nemůžete použít tuto doménu jako ukazatel. Již existuje na serveru"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "Nyní máte %s uživatelů a maximum %s domén."
+
+msgid "You did not select any domains to modify"
+msgstr "Nevybrali jste žádné domény k upravení"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "Nevybrali jste jinou IP, změny nebyly provedeny"
+
+msgid "You didn't select anyone to send it to"
+msgstr "Nevybrali jste nikoho jako příjemce"
+
+msgid "You do not have control over user"
+msgstr "Nemáte kontrolu nad uživatelem"
+
+msgid "You do not own any IPs"
+msgstr "Nevlastníte žádné IP"
+
+msgid "You do not own that IP"
+msgstr "Nevlastníte tuto IP"
+
+msgid "You do not own that domain"
+msgstr "Nevlastníte tuto doménu"
+
+msgid "You do not own that ip"
+msgstr "Nevlastníte tuto IP"
+
+msgid "You do not own that that cron ID"
+msgstr "Nevlastníte toto ID naplánované úlohy"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "Nevlastníte IP %s. Uživatel %s nebude vytvořen"
+
+msgid "You don't have authority over that User"
+msgstr "Nemáte autoritu nad tímto uživatelem"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "Nemáte oprávnění odpovědět na tento požadavek"
+
+msgid "You don't have permission to restore user"
+msgstr "Nemáte oprávnění obnovit uživatele"
+
+msgid "You don't have permission to view that ticket"
+msgstr "Nemáte oprávnění zobrazit tento požadavek"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "Máte %d:%.2d zbývá."
+
+msgid "You have already reached your assigned limit"
+msgstr "Již jste dosáhli přiděleného limitu"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Nepřidali jste soubory do schránky."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"Nepřiřadili jste resellerovi žádné IP.  Není možné vytvořit doménu s "
+"přiřazenou IP nebo jakékoli nameservery bez"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Nevybrali jste žádné soubory.  Prosím vraťte se zpět a vyberte některé "
+"soubory před spuštěním obnovy."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Nevybrali jste žádné uživatele.  Před vytvořením zálohy se vraťte a některé "
+"z nich vyberte."
+
+msgid "You have not selected any domains"
+msgstr "Nevybrali jste žádné domény"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"Úspěšně jste zadali příkaz k restartu serveru.  Může trvat několik minut, "
+"než bude systém znovu spuštěn a začne být dostupný."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+"Využili jste %d%% vašeho diskového prostoru, což je více než povolená "
+"prahová hodnota %d%%."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "Může být potřeba zmáčknout klávesu F5 pro obnovení loga"
+
+msgid "You may not use an IP for a domain name"
+msgstr "Možná nebudete moci použít IP pro doménové jméno"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr "Můžete poskytnout jen seznam povolených nebo zakázaných, ne oba."
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Musíte zadat hodnotu chmod. Např. 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Musíte zadat 'jméno' složky. Např. obrazky"
+
+msgid "You must enter both password"
+msgstr "Musíte zadat obě hesla"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "Musíte zadat číslo, uživatele, předmět, prioritu, stav a zprávu"
+
+msgid "You must enter the password in both fields"
+msgstr "Musíte zadat heslo do obou polí"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Musíte zadat uživatele, předmět, prioritu a zprávu"
+
+msgid "You must first create some packages"
+msgstr "Musíte nejprve vytvořit nějaké balíčky"
+
+msgid "You must first own an IP"
+msgstr "Musíte nejprve vlastnit IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "Musíte mít více než 0 NS záznamů, jinak se named nespustí."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"Musíte poskytnout 'required_hits' a 'required_hits_custom' pokud "
+"'required_hits' je 'vlastní' (custom)"
+
+msgid "You must provide a list name"
+msgstr "Musíte poskytnout jméno seznamu"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+"Musíte poskytnout výzvu k zadání hesla chráněné složky. Např. Členská sekce /"
+" Member's Area"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Musíte poskytnout platnou doménu, IP, NS1 a NS2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+"Musíte poskytnout platnou e-mailovou adresu, stareheslo, heslo1 a heslo2"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr "Musíte poskytnout platnou adresu FTP, stareheslo, heslo1 a heslo2"
+
+msgid "You must provide a valid ip"
+msgstr "Musíte poskytnout platnou IP"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Musíte poskytnout platné jméno a musí existovat."
+
+msgid "You must provide a valid name and value"
+msgstr "Musíte poskytnout platné jméno a hodnotu"
+
+msgid "You must provide the passwd variable"
+msgstr "Musíte poskytnout proměnnou passwd"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr "Musíte vybrat pár nameserverů IP (ns1.domena.cz a ns2.domena.cz)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Musíte vybrat alespoň jeden e-mailový seznam ke smazání"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Musíte vybrat alespoň jeden e-mailový seznam k pročištění"
+
+msgid "You must select exactly one key"
+msgstr "Musíte vybrat přesně jeden klíč"
+
+msgid "You must select something"
+msgstr "Musíte něco vybrat"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Musíte použít číslo hodiny (0-23). Naplánovanou úlohu můžete spustit jen "
+"jednou denně. (Můžete mít více naplánovaných úloh)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Musíte použít číslo minuty (0-59). Naplánovanou úlohu můžete spustit jen "
+"jednou denně. (Můžete mít více naplánovaných úloh)"
+
+msgid "You must use a valid path"
+msgstr "Musíte použít platnou cestu"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "Musíte počkat nejméně %d minutu mezi aktualizacemi."
+msgstr[1] "Musíte počkat nejméně %d minuty mezi aktualizacemi."
+msgstr[2] "Musíte počkat nejméně %d minut mezi aktualizacemi."
+
+msgid "You must wait for the stats to be computed."
+msgstr "Musíte počkat až se spočítají statistiky."
+
+msgid "You need to specify a domain"
+msgstr "Je potřeba uvést doménu"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Požadujete doménu, anon, anonup a zprávu"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "Požadujete doménu a passwd seznam pro synchronizaci účtů"
+
+msgid "You require either the passwd or quota"
+msgstr "Požadujete buď passwd nebo kvótu"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"Požadujete zdrojovou URL cestu (např.: /presmerovani) a cílovou URL (např.: "
+"www.presmerovani.cz)"
+
+msgid "You require user and domain to change a pop account"
+msgstr "Požadujete uživatele a doménu pro změnu POP účtu"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "Požadujete uživatele, doménu a passwd pro přidání POP účtu"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "Po dokončení budete upozorněni prostřednictvím systému zpráv."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "Po dokončení procesu budete upozorněni prostřednictvím systému zpráv"
+
+msgid "You will receive a message when it's complete."
+msgstr "Dostanete zprávu jakmile to bude dokončeno."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"Používáte možnost přihlásit-jako, proto použijte své heslo, ne heslo "
+"uživatele."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "Vaše přihlášení hash URL '%s' bylo vytvořeno"
+
+msgid "Your IP is blacklisted"
+msgstr "Vaše IP je na blacklistu"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "Váš přihlašovací klíč '%s' byl vytvořen"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Vaše jméno bylo změněno na %s"
+
+msgid "Your User files have been restored"
+msgstr "Vaše uživatelské soubory byly obnoveny"
+
+msgid "Your User files have been restored *WARNING*"
+msgstr "Vaše uživatelské soubory byly obnoveny *VAROVÁNÍ*"
+
+msgid "Your account"
+msgstr "Váš účet"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "Váš účet %s@%s byl nastaven. Ve vašem e-mailovém programu použijte"
+
+# Do i need to translate |USERNAME| and |REASON|?
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "Váš účet '|USERNAME|' byl deaktivován. Důvod: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Váš účet pro |domain| je nyní připraven k používání."
+
+msgid "Your backups are now ready"
+msgstr "Vaše zálohy jsou nyní připraveny"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Vaše databáze byla nastavena.  Použijte následující hodnoty:"
+
+msgid "Your default domain has been set"
+msgstr "Vaše výchozí doména byla nastavena"
+
+msgid "Your disk quota limit has been reached."
+msgstr "Byl dosažen limit vaší diskové kvóty."
+
+msgid "Your disk usage has been updated"
+msgstr "Vaše využití disku bylo aktualizováno"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+"Váš existující klíč nebyl přepsán, ale nemůže být použit s novým "
+"certifikátem."
+
+msgid "Your file has been saved"
+msgstr "Váš soubor byl uložen"
+
+msgid "Your language has been changed"
+msgstr "Váš jazyk byl změněn"
+
+msgid "Your message has been saved"
+msgstr "Vaše zpráva byla uložena"
+
+msgid "Your message has been sent"
+msgstr "Vaše zpráva byla odeslána"
+
+msgid "Your message is being sent in the background"
+msgstr "Vaše zpráva je odesílána na pozadí"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr ""
+"Vaše zpráva je prázdná. Uživatelé mohou ocenit, když popíšete to, co jim "
+"posíláte."
+
+msgid "Your name has been changed"
+msgstr "Vaše jméno bylo změněno"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "Váš nový klíč byl zálohován do následujícího umístění: %s"
+
+msgid "Your password"
+msgstr "Vaše heslo"
+
+msgid "Your password is invalid"
+msgstr "Vaše heslo je neplatné"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+"Váš požadavek na aktualizaci bude vykonán během minuty. Po dokončení byste "
+"měli být upozorněni prostřednictvím systému zpráv"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "Váš požadavek bude spuštěn během 1 minuty"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"Váš požadavek poběží na pozadí. Po dokončení budete upozorněni "
+"prostřednictvím systému zpráv."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "Váš reseller účet dosáhl svého přiděleného limitu"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "Váš reseller dosáhl svého přiděleného limitu"
+
+msgid "Your subject contains invalid characters."
+msgstr "Váš předmět obsahuje neplatné znaky."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "Číslo vašeho požadavku je %s."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "Klíče zóny jsou novější, než podepsání zóny."
+
+msgid "Zone Reset"
+msgstr "Reset zóny"
+
+msgid "Zone Signing has expired."
+msgstr "Podepsání zóny vypršelo."
+
+msgid "Zone created"
+msgstr "Zóna vytvořena"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+"Zóna ještě nebyla podepsána.  Ujistěte se, že nejprve vygenerujete klíče a "
+"provedete podepsání před tím, než použijete tento automatický nástroj pro "
+"podepisování"
+
+msgid "Zone is of type DNSSEC."
+msgstr "Zóna je typu DNSSEC."
+
+msgid "Zone keys generated"
+msgstr "Klíče zóny vygenerovány"
+
+msgid "Zone signed"
+msgstr "Zóna podepsána"
+
+msgid "Zones removed"
+msgstr "Zóny odebrány"
+
+msgid "account ..."
+msgstr "účet ..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "a %d uživatel"
+msgstr[1] "a %d uživatelé"
+msgstr[2] "a %d uživatelů"
+
+msgid "at least"
+msgstr "nejméně"
+
+msgid "at most"
+msgstr "nejvíce"
+
+msgid "back"
+msgstr "zpět"
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec není zapnuto. Není možné podepsat zónu."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "Není možné fstatat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "Není možné unlinkat %s: %s"
+
+msgid "catch is required"
+msgstr "zachycení (catch) je požadováno"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "cgroup chyba: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup není zapnutá u vaší licence"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup je vypnutá v directadmin.conf"
+
+msgid "change"
+msgstr "změnit"
+
+msgid "click here if form does not include two-step code input"
+msgstr "klikněte zde pokud formulář neobsahuje kód dvoufázové zadání"
+
+msgid "contains"
+msgstr "obsahuje"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "den"
+msgstr[1] "dny"
+msgstr[2] "dnů"
+
+msgid "day(s)"
+msgstr "dnů"
+
+msgid "days"
+msgstr "dnů"
+
+msgid "default user"
+msgstr "výchozí uživatel"
+
+msgid "dns error"
+msgstr "dns chyba"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "dnsprovider možnost '%s' obsahuje neplatné znaky"
+
+msgid "does not belong to you"
+msgstr "nepatří vám"
+
+msgid "emails have just been sent by"
+msgstr "e-maily byly právě odeslány díky"
+
+msgid "equals"
+msgstr "odpovídá"
+
+msgid "filter action saved"
+msgstr "akce filtru uložena"
+
+# It is important to know what has been changed in order to use correct translation.
+msgid "has been changed."
+msgstr "změněno."
+
+msgid "has been updated with the new ip"
+msgstr "aktualizováno na novou IP"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score musí být v rozmezí 1 až 99"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hodina"
+msgstr[1] "hodiny"
+msgstr[2] "hodin"
+
+msgid "hours"
+msgstr "hodin"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr "httpd.conf bude zapsán později pomocí task.queue"
+
+msgid "invalid IP or range: %s"
+msgstr "neplatná IP nebo rozsah: %s"
+
+msgid "invalid code"
+msgstr "neplatný kód"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "je neplatná e-mailová adresa.  Uživatel %s nebude vytvořen"
+
+msgid "is currently down"
+msgstr "momentálně neběží"
+
+msgid "is not a valid username"
+msgstr "není platným uživatelským jménem"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr "is_ip_in_mask_range:%s:%s: rozmezí '%s' musí být kladné celé číslo"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr "is_ip_in_mask_range:%s:%s: rozmezí '%s' musí být mezi 1 a 128, včetně"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: rozmezí nemá /"
+
+msgid "json string"
+msgstr "řetězec json"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lstat chyba: %s"
+
+msgid "mail() line number"
+msgstr "číslo řádku mail()"
+
+msgid "message is empty. Please enter some text."
+msgstr "zpráva je prázdná. Prosím zadejte nějaký text."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "mime typ (%s) pro '%s' není typu 'image/' (obrázek)"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuta"
+msgstr[1] "minuty"
+msgstr[2] "minut"
+
+msgid "minutes"
+msgstr "minut"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "mkdir(%s) chyba: %s"
+
+msgid "modify password"
+msgstr "upravit heslo"
+
+msgid "modify privileges"
+msgstr "upravit oprávnění"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "měsíc"
+msgstr[1] "měsíce"
+msgstr[2] "měsíců"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain není platnou doménou"
+
+msgid "newer than"
+msgstr "novější než"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 nebo ns2 nejsou platnými nameservery"
+
+msgid "of"
+msgstr "z"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package nebo new_package nejsou platnými názvy balíčků"
+
+msgid "older than"
+msgstr "starší než"
+
+#, c-format
+msgid "older than %s days."
+msgstr "starší než %s dnů."
+
+msgid "or"
+msgstr "nebo"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "nebo IPv6 (1:2:3:4:5:6:7:8) nebo IPv6 rozsah (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "nebo vyberte z"
+
+msgid "php.ini override added"
+msgstr "php.ini překonání-potlačení přidáno"
+
+#, c-format
+msgid "php1_select entry %d is not available"
+msgstr "php1_select záznam %d není dostupný"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache není zapnuta"
+
+msgid "port"
+msgstr "port"
+
+msgid "request created"
+msgstr "požadavek vytvořen"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+"reseller_can_set_email_limit=0 je nastaveno, takže nemůžete nastavit limit"
+
+msgid "retry"
+msgstr "znovu"
+
+msgid "routes must start with a [ character."
+msgstr "trasy musí začínat znakem [."
+
+msgid "saved"
+msgstr "uloženo"
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "délka hledání je mimo hranice: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "sekunda"
+msgstr[1] "sekundy"
+msgstr[2] "sekund"
+
+msgid "selected"
+msgstr "vybráno"
+
+msgid "selected overrides removed from php.ini"
+msgstr "vybraná překonání-potlačení odebrána z php.ini"
+
+msgid "selected skipped rules removed"
+msgstr "odebrána vybraná vynechaná pravidla"
+
+msgid "selecting none includes all domains"
+msgstr "pokud není vybráno, zahrne všechny domény"
+
+msgid "sent"
+msgstr "odesláno"
+
+msgid "set Permission"
+msgstr "nastavit práva"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "výstup show_blocked_ips.sh:"
+
+msgid "starts with"
+msgstr "začíná"
+
+msgid "subject contains invalid characters."
+msgstr "předmět obsahuje neplatné znaky."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr ""
+"subject_select != %d, ale předmět není nastaven. Toto by se nemělo stát."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "toto je hostname serveru a nemůžete ho použít"
+
+msgid "the new domain name already exists on your system"
+msgstr "nové doménové jméno již existuje ve vašem systému"
+
+msgid "too many iterations"
+msgstr "příliš mnoho iterací"
+
+msgid "unable to load secret"
+msgstr "není možné načíst tajemství"
+
+msgid "unlimited"
+msgstr "neomezeně"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "je vyžadován uživatel, passwd, passwd2 a typ"
+
+msgid "user.conf override"
+msgstr "user.conf překonání-potlačení"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount vypnuto"
+
+msgid "user_modify_pre.sh error"
+msgstr "chyba user_modify_pre.sh"
+
+msgid "valid code"
+msgstr "platný kód"
+
+msgid "value is required"
+msgstr "hodnota je požadována"
+
+#, c-format
+msgid "value must be '%s' or '%s'"
+msgstr "hodnota musí být '%s' nebo '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder bylo vypnuto pomocí show_main_spambox=0"
+
+msgid "your new password is"
+msgstr "vaše nové heslo je"
+
+msgid "your new quota is"
+msgstr "vaše nová kvóta je"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "váš nový limit odesílání je: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr "~/domains chybělo a došlo k chybě při pokusu o opětovné vytvoření"
