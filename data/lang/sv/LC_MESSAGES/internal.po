@@ -1,0 +1,7786 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Swedish (DirectAdmin)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-16 01:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Swedish <https://translate.directadmin.com/projects/"
+"directadmin/internal/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7\n"
+
+#, c-format
+msgid " - %d New Message Inside"
+msgid_plural " - %d New Messages Inside"
+msgstr[0] " %d Nytt meddelande"
+msgstr[1] " %d Nya medlande"
+
+msgid " / Day"
+msgstr " Dag"
+
+msgid "# of Domains"
+msgstr "# domäner"
+
+msgid "# of IPs"
+msgstr "# ip"
+
+msgid "# of MySQL DBs"
+msgstr "# av MySQL DBs"
+
+msgid "# of Resellers"
+msgstr "# av återförsäljare"
+
+msgid "# of SubDomains"
+msgstr "# Subdomäner"
+
+msgid "# of Users"
+msgstr "# användare"
+
+msgid "# of free IPs"
+msgstr "# av fria IPs"
+
+#. / %1$d - day count  / %2$d - hour count  /  %3$d minute count
+#, c-format
+msgid "%d Days, %d Hours and %d Minutes"
+msgstr "%d dagar, %d timmar och %d minuter"
+
+#, c-format
+msgid "%d of %d Admin/Reseller accounts currently exist."
+msgstr "%d av %d Admin/återförsäljare konto existerar."
+
+#, c-format
+msgid "%d of %d accounts currently exist."
+msgstr "%d av %d konton existerar."
+
+#, c-format
+msgid "%d of %d domains currently exist."
+msgstr "%d av %d domäner existerar."
+
+# Suggested in Weblate: Ftp-inställningar sparade
+#, c-format, fuzzy
+msgid "%d settings updated"
+msgstr "Ftp%d inställningar uppdaterade"
+
+#, c-format
+msgid "%s %s %s did not exist"
+msgstr "%s %s %s existerar inte"
+
+#, c-format
+msgid ""
+"%s '%s' cannot be restored under '%s'.  Restoring under the file's default: "
+"'%s'"
+msgstr ""
+"%s '%s' kan inte bli återställd under '%s'. återställer från standard '%s'"
+
+#. /# %1$s - IP address
+#. /# %2$s - Username
+#, c-format
+msgid "%s - user's '%s' current IP"
+msgstr "%s - användarens '%s' nuvarande IP"
+
+#, c-format
+msgid ""
+"%s Edit the User Welcome Message to ensure the subject and message are set."
+msgstr ""
+"%s Editera användarens ankomstmeddelande för att säkerställa att ämnet och "
+"meddelandet är sparat."
+
+#, c-format
+msgid "%s account %s has just been created"
+msgstr "%s konto %s har blivit skapat"
+
+#, c-format
+msgid "%s already exists"
+msgstr "%s finns redan"
+
+#, c-format
+msgid "%s already exists on a remote server."
+msgstr "%s finns redan på servern."
+
+#, c-format
+msgid "%s already exists on the server."
+msgstr "%s finns redan på servern."
+
+#, c-format
+msgid "%s already exists. Pass overwrite=yes to force"
+msgstr "%s existerar redan, Lägg till overwrite=yes för att tvinga"
+
+#, c-format
+msgid "%s appears to be a link. Aborting."
+msgstr "%s är en länk. Avbryter."
+
+#, c-format
+msgid "%s can now be shared."
+msgstr "%s går nu att dela."
+
+#, c-format
+msgid "%s contains dangerous characters"
+msgstr "%s innehåller dåliga tecken"
+
+#, c-format
+msgid "%s could not be assigned, it must first be free and unassigned."
+msgstr "%s kunde inte kopplas, den måste vara ledig."
+
+#, c-format
+msgid ""
+"%s could not be freed, it must first have zero domain if it is shared, or "
+"must be reserved."
+msgstr ""
+"%s inte kunde frigöras, kan inte vara kopplad till någon domän förts om den "
+"delas, eller måste reserveras."
+
+#, c-format
+msgid "%s could not be removed, you must free it first."
+msgstr "%s kunde inte tas bort, du måste låsa upp den först."
+
+#, c-format
+msgid "%s could not be shared, it must first be free"
+msgstr "%s kunde inte delas, den måste vara ledig"
+
+#, c-format
+msgid "%s deleted successfully."
+msgstr "%s raderad korrekt."
+
+#, c-format
+msgid "%s does not exist"
+msgstr "%s existerar inte"
+
+#, c-format
+msgid "%s does not have same ownership as %s"
+msgstr "%s har inte samma ägare som %s"
+
+#, c-format
+msgid "%s has been removed from the list"
+msgstr "%s har tagits bort från listan"
+
+msgid "%s has been saved as %s."
+msgstr "%s har sparats som %s."
+
+#, c-format
+msgid "%s has been suspended"
+msgstr "%s har blivit låst"
+
+#, c-format
+msgid "%s has been unsuspended"
+msgstr "%s har blivit upplåst"
+
+#, c-format
+msgid "%s is a directory, will not delete"
+msgstr "%s är en katalog, kommer inte raderas"
+
+#, c-format
+msgid "%s is a link"
+msgstr "%s är en länk"
+
+#, c-format
+msgid "%s is hard or symbolic link"
+msgstr "%s är en hård eller symlänk"
+
+#, c-format
+msgid "%s is missing"
+msgstr "%s saknas"
+
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s är inte en katalog"
+
+#, c-format
+msgid "%s is not a socket"
+msgstr "%s är inte en socket"
+
+#, c-format
+msgid "%s is not a symlink"
+msgstr "%s är inte en symlänk"
+
+#, c-format
+msgid "%s is not a valid IP or range"
+msgstr "%s är inte en godkänd IP adress"
+
+#, c-format
+msgid "%s is not a valid ip range.  Use: 1.2.3.4-10"
+msgstr "%s är inte en godkänd ip range.  använd: 1.2.3.4-10"
+
+#, c-format
+msgid "%s is not chowned to %s which is a likely cause for extraction failure"
+msgstr "%s visas inte för %s vilket är en trolig orsak till extraction fel"
+
+#, c-format
+msgid "%s is not enabled"
+msgstr "%s är inte aktiverat"
+
+#, c-format
+msgid "%s is not on your domain's IP list"
+msgstr "%s är inte i din domäns IP lista"
+
+#, c-format
+msgid "%s is not one of the listed redirect types"
+msgstr "%s är inte en av det listade redirect typerna"
+
+#, c-format
+msgid "%s is not owned by %s"
+msgstr "%s är inte ägd av %s"
+
+#, c-format
+msgid "%s is not set to 'free' or is still assigned to a reseller"
+msgstr "%s är inte fri eller fortfarande låst till återförsäljaren"
+
+#, c-format
+msgid "%s is now controlled by %s"
+msgstr "%s är nu kontrollerad av %s"
+
+#, c-format
+msgid "%s is now free"
+msgstr "%s är nu ledig"
+
+#, c-format
+msgid "%s is now unassigned."
+msgstr "%s är nu upplåst."
+
+#, c-format
+msgid "%s is now your default domain."
+msgstr "%s är nu din huvud domän."
+
+#, c-format
+msgid "%s is out of range"
+msgstr "%s är utanför räckhåll"
+
+#, c-format
+msgid "%s is required for %s"
+msgstr "%s är nödvändigt för %s"
+
+#, c-format
+msgid "%s must not be a symlink"
+msgstr "%s måste inte vara en symlänk"
+
+#, c-format
+msgid "%s no longer has a Name Server Label."
+msgstr "%s har inte längre en namnserveretikett."
+
+#, c-format
+msgid "%s not implemented"
+msgstr "%s ej implementerad"
+
+#, c-format
+msgid "%s records disabled at this level"
+msgstr "%s poster inaktiverade på denna nivå"
+
+#, c-format
+msgid "%s value of '%s' is not in the home_override_list"
+msgstr "%s värdet av '%s' är inte i the home_override_list"
+
+#, c-format
+msgid "%s's config files have been removed"
+msgstr "%s's config filer är raderade"
+
+#, c-format
+msgid "%s: lstat error on linnk value '%s': %s"
+msgstr "%s: lstat error på linnk value '%s': %s"
+
+#, c-format
+msgid "%s: readlinke error: %s"
+msgstr "%s: readlinke fel: %s"
+
+#. /# %1$s - CPUQuota
+#. /# %1$s - 200%
+#. /# %1$s - percent
+#, c-format
+msgid "%s='%s' is not a valid %s type"
+msgstr "%s='%s' är inte en godkänd %s typ"
+
+#, c-format
+msgid "%sClick Here%s to learn how to enable it"
+msgstr "%sTryck här%s för att lära dig hur du aktiverar det"
+
+#, c-format
+msgid "%sClick Here%s to view the local raw zone data"
+msgstr "%sTryck här%s för att visa den lokala raw zondata"
+
+#, c-format
+msgid "'%s' does not exist"
+msgstr "'%s' existerar inte"
+
+#, c-format
+msgid "'%s' does not exist\n"
+msgstr "'%s' existerar inte\n"
+
+#, c-format
+msgid "'%s' does not start with '%s'\n"
+msgstr "'%s' startar inte med '%s'\n"
+
+#, c-format
+msgid "'%s' has been set to '%s'"
+msgstr "'%s' är satt till '%s'"
+
+#, c-format
+msgid "'%s' is a forbidden package name."
+msgstr "'%s' är ett förbjudet paketnamn."
+
+msgid "'%s' is disabled"
+msgstr "'%s' är ur funktion"
+
+#, c-format
+msgid "'%s' is not a valid css hex color"
+msgstr "'%s' är inte en godkänd css hex color"
+
+#, c-format
+msgid "'%s' is not assigned to your Reseller account."
+msgstr "'%s' är inte tilldelad ditt Reseller konto."
+
+#, c-format
+msgid "'%s' is not enabled in your license"
+msgstr "'%s' är inte aktiverat i din license"
+
+#, c-format
+msgid "'%s' is not enabled on the system."
+msgstr "'%s' är inte aktiverat i systemet."
+
+#, c-format
+msgid "'%s' is required"
+msgstr "'%s' är nödvändigt"
+
+#, c-format
+msgid "'%s' must be '%s' or '%s'"
+msgstr "'%s' måste vara '%s' eller '%s'"
+
+msgid "'import' does not appear to be base 64 encoded"
+msgstr "'importen' verkar inte vara base 64 encoded"
+
+msgid "'when' should be all, newer or older"
+msgstr "'när' ska vara alla, nyare eller äldre"
+
+#, c-format
+msgid "(%d) The following hard links have been found under User %s:"
+msgstr "(%d) följande hard links har hittats under användare %s:"
+
+msgid "* irretrievable *"
+msgstr "* oersättlig *"
+
+msgid "*** Stopped ***"
+msgstr "*** Stoppad ***"
+
+msgid "-- None Available --"
+msgstr "-- Ingen tillgänglig --"
+
+msgid "-- Reason:"
+msgstr "-- Orsak:"
+
+msgid "-- Select IP"
+msgstr "-- Välj IP"
+
+msgid "-- Select Package"
+msgstr "-- Välj Paket"
+
+msgid "-- any time --"
+msgstr "-- vilken tid --"
+
+msgid "-- anything --"
+msgstr "-- något --"
+
+#, fuzzy
+msgid "=1 requires nginx_proxy=1 and the DirectAdmin Pro-Pack"
+msgstr "%s=%s kräver nginx_proxy=1 och %s Pro-Pack"
+
+#, c-format
+msgid "A %s record already exists with that name"
+msgstr "En %s Post finns redan i det namnet"
+
+msgid "A 'free' IP can only be assigned to 1 User"
+msgstr "En 'fri' IP kan endast kopplas till 1 användare"
+
+msgid "A Record Type is required: A, NS, MX, CNAME, PTR, or TXT"
+msgstr "En posttyp är nödvändig: A, NS, MX, CNAME, PTR, or TXT"
+
+msgid "A Reseller cannot control other equal or higher account levels"
+msgstr "En återförsäljare kan inte kontrollera samma eller högre nivåer"
+
+msgid "A file is required"
+msgstr "En fil är nödvändig"
+
+msgid "A forwarder already exists with that name"
+msgstr "En vidarebefordring finns redan i det namnet"
+
+msgid "A full domain/zone with this name already exists."
+msgstr "En domän/zon finns redan med det namnet."
+
+msgid "A key with that name already exists"
+msgstr "En Nyckel med det namnet finns redan"
+
+#, fuzzy
+msgid "A key with that value already exists"
+msgstr "En Nyckel med det namnet finns redan"
+
+msgid "A list alias already exists with that name"
+msgstr "En alias lista finns redan med det namnet"
+
+msgid "A message for that user already exists"
+msgstr "Ett meddelande för den användaren finns redan"
+
+msgid "A pop account already exists with that name"
+msgstr "Ett pop-konto finns redan med det namnet"
+
+msgid "A skin name is required"
+msgstr "Ett skin namn är nödvändigt"
+
+msgid ""
+"A subdomain with the same name already exists on the system under another "
+"domain."
+msgstr ""
+"En subbdomän med samma namn finns redan i systemet under en annan domän."
+
+msgid "Absolute Memory limit. Triggers Out-Of-Memory Killer."
+msgstr "Absolut gräns för minnesanvändning. Utlöser Out-Of-Memory Killer."
+
+msgid "Abuse"
+msgstr "Missbruk"
+
+msgid "Access Hosts"
+msgstr "åtkomstvärd"
+
+msgid "Access host has been added"
+msgstr "Åtkomstvärd har lagts till"
+
+msgid "Access hosts have been removed"
+msgstr "Åtkomstvärd har raderats"
+
+msgid "Account"
+msgstr "Konto"
+
+#, c-format
+msgid "Account %s has just created %s %s from IP %s"
+msgstr "Konto %s har skapats %s %s från IP %s"
+
+#, c-format
+msgid "Account %s skipped due to suspension"
+msgstr "Konto %s hoppades över pga låst"
+
+#, c-format
+msgid "Account %s was suspended by an Admin and you only have Reseller access."
+msgstr "Konto %s var låst av Admin och du har endast återförsäljaraccess."
+
+#, c-format
+msgid "Account %s with domain %s has an empty caroot cert"
+msgstr "Konto %s med domänen %s har ett tomt caroot cert"
+
+msgid "Account created"
+msgstr "Konto skapat"
+
+msgid "Account has been unblocked from BlockCracking"
+msgstr "Kontot har blivit avblockerat från BlockCracking"
+
+msgid "Account is not a Reseller"
+msgstr "Kontot är inte en återförsäljare"
+
+msgid "Account is suspended"
+msgstr "Kontot är låst"
+
+msgid "Account password changed"
+msgstr "Kontot lösenord är bytt"
+
+#, fuzzy
+msgid "Account(s) Suspended"
+msgstr "Kontot är låst"
+
+#, fuzzy
+msgid "Account(s) Unuspended"
+msgstr "Kontot är låst"
+
+#, c-format
+msgid "Accounts restored to %s partition."
+msgstr "Kontot återställt till %s partition."
+
+msgid "Action"
+msgstr "Handling"
+
+msgid "Activate"
+msgstr "Aktivera"
+
+msgid "Active"
+msgstr "Aktiv"
+
+#, c-format
+msgid "Add %s"
+msgstr "Lägg till %s"
+
+msgid "Add Host"
+msgstr "Lägg till host"
+
+msgid "Add Override"
+msgstr "Lägg till Override"
+
+msgid "Add the new NS records first."
+msgstr "Lägg till nya NS poster först."
+
+msgid "Add to Apache"
+msgstr "Lägg till i Apache"
+
+msgid "Add to Clipboard"
+msgstr "Lägg till i Urklipp"
+
+msgid "Add to DNS"
+msgstr "Lägg till i DNS"
+
+#, c-format
+msgid "Added ns1 as %s and ns2 as %s"
+msgstr "ns1 inlagd som %s och ns2 som %s"
+
+msgid "Additional"
+msgstr "Ytterligare"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Admin SSL"
+msgstr "Admin ssl"
+
+msgid "Admin SSL is not enabled"
+msgstr "Admin SSL är inte aktiverat"
+
+msgid "Adult filter set"
+msgstr ""
+
+msgid "Advanced Search"
+msgstr "Avancerad sökning"
+
+msgid "Afternoon"
+msgstr "Eftermiddag"
+
+#, c-format
+msgid "Alias %s@%s -> %s has been created"
+msgstr "Alias %s@%s -> %s har blivit skapat"
+
+msgid "All"
+msgstr "Allt"
+
+msgid "All Data"
+msgstr "All data"
+
+msgid "All E-Mail"
+msgstr "All e-post"
+
+msgid "All Months (cgi)"
+msgstr "Alla månader (cgi)"
+
+msgid "All Resellers"
+msgstr "Alla återförsäljare"
+
+msgid "All Users"
+msgstr "Alla användare"
+
+msgid "All Users Except Selected Users"
+msgstr "Alla användare förutom valda användare"
+
+msgid "All Users Except:"
+msgstr "Alla Användare förutom:"
+
+msgid "All of Your Users"
+msgstr "Alla av dina användare"
+
+msgid "All privileges have been set"
+msgstr "Alla privilegier har satts"
+
+msgid "All route steps except the last are required to have a 'match'"
+msgstr "Alla route steg förutom den sista måste matcha"
+
+msgid "All selected Users have been suspended"
+msgstr "Alla valda användare har blivit låsta"
+
+msgid "All selected Users have been unsuspended"
+msgstr "Alla valda användare har blivit upplåsta"
+
+msgid "All specified forwarders removed"
+msgstr "Alla specificerade vidarbefodringar raderade"
+
+msgid "Allocated"
+msgstr "Tilldelad"
+
+msgid "Allow"
+msgstr "Tillåta"
+
+msgid "Allow Overselling"
+msgstr "Tillåt överförsäljning"
+
+#, fuzzy
+msgid "Allowance threshold is 0%"
+msgstr "Godkänd threshold is 0%%"
+
+#, c-format
+msgid "Allowing that much %s would put you over your limit of %s"
+msgstr "Godkänna det %s skulle gå över gränsen av %s"
+
+msgid "Alpha"
+msgstr "Alpha"
+
+msgid "Already Exists"
+msgstr "Finns redan"
+
+msgid ""
+"Although a backup error has occurred, the upload of valid backups would have "
+"still been attempted to"
+msgstr ""
+"Även om ett säkerhetskopieringsfel har inträffat, skulle uppladdningen av "
+"giltiga säkerhetskopior fortfarande ha gjorts"
+
+msgid "An Error Occurred"
+msgstr "Ett fel uppstod"
+
+msgid "An Error has occurred"
+msgstr "Ett fel har uppstått"
+
+msgid "An auto responder already exists with that name"
+msgstr "Ett autosvar med det namnet finns redan"
+
+msgid "An autoresponder with that name already exists"
+msgstr "Ett autosvar med det namnet finns redan"
+
+msgid "An error has occurred"
+msgstr "Ett fel har uppståt"
+
+msgid "An error has occurred while rewriting the Nginx Unit config"
+msgstr "Ett fel har uppstått medans Nginx Unit-konfigurationen skrivits som"
+
+msgid "An error occured during extraction"
+msgstr "Ett fel uppstod under extrahering"
+
+msgid "An error occured while creating the compressed file"
+msgstr "Ett fel uppstod när den komprimerade filen skapades"
+
+msgid "An error occured while resetting the file ownership"
+msgstr "Ett fel uppstod när ägarskapet återställdes"
+
+msgid "An error occurred during the backup"
+msgstr "Ett fel uppstod under backupen"
+
+#, fuzzy
+msgid "An error occurred during the restore"
+msgstr "Ett fel uppstod under backupen"
+
+msgid "An error occurred when unblocking the account"
+msgstr "Ett fel uppstod när kontot skulle låsas upp"
+
+msgid "An error occurred while applying settings to your Users"
+msgstr "Ett fel uppstod vid ändring av inställningarna för användaren"
+
+msgid "An error occurred while attempting to copy the file"
+msgstr "Ett fel uppstod vid försök att kopiera filerna"
+
+msgid "An error occurred while attempting to create the directory"
+msgstr "Ett fel uppstod när filen skulle skapas"
+
+msgid "An error occurred while attempting to protect the directory"
+msgstr "Ett fel uppstod vid försök att skydda katalog"
+
+msgid "An error occurred while attempting to rename the file"
+msgstr "Ett fel uppstod vid försök att byta namn på filen"
+
+msgid "An error occurred while attempting to restore the file"
+msgstr "Ett fel uppstod vid försök att återställa filen"
+
+msgid "Anonymous Ftp"
+msgstr "Anonym Ftp"
+
+msgid "Apache"
+msgstr "Apache"
+
+msgid "Apache config file re-written with new ip"
+msgstr "Apache config fil ändrat med ny Ip"
+
+msgid "Apparent Size"
+msgstr "Synbar storlek"
+
+msgid "Appears as the first item within the <Directory> section."
+msgstr "Visas som första sak i <Katalog> delen."
+
+msgid "Appears at the very top of the template, before setting the variables."
+msgstr "Visas högst upp i mallen innan du ställer in variablerna."
+
+msgid ""
+"Appears in ALL context{} sections, used for password protected directories."
+msgstr ""
+"Visas i ALLA sammanhang{} sektioner, används för lösenordsskyddade kataloger."
+
+msgid "Appears in phpIniOverride{} section."
+msgstr "Visas i avsnittet phpIniOverride{}."
+
+msgid "Appears in rewrite{} section."
+msgstr "Visas i avsnittet omskrivning{}."
+
+msgid "Appears in scripthandler{} section."
+msgstr "Visas i avsnittet scripthanterare{}."
+
+msgid "Appears in vhssl{} section."
+msgstr "Visas i avsnittet vhssl{}."
+
+msgid "Appears just before the <Directory> section."
+msgstr "Visas precis före avsnittet <Katalog>."
+
+msgid "Apply to All Users"
+msgstr "Tillämpa på alla användare"
+
+msgid "Apply to Me"
+msgstr "Tillämpa till mig"
+
+msgid "Apply to existing Domains"
+msgstr "Applicera på befintliga domäner"
+
+msgid "Apr"
+msgstr "April"
+
+msgid "Archive Size"
+msgstr "Arkivstorlek"
+
+msgid "Archives purged"
+msgstr "Arkiv rensat"
+
+msgid "Are you sure you want to Delete the selected accounts?"
+msgstr "Är du säker på att du vill radera de valda kontona?"
+
+msgid "Are you sure you want to Delete the selected databases?"
+msgstr "Är du säker på att du vill radera de valda databaserna?"
+
+msgid "Are you sure you want to Delete the selected keys?"
+msgstr "Är du säker på att du vill radera de valda nycklarna?"
+
+msgid "Are you sure you want to delete the selected zones?"
+msgstr "Är du säker på att du vill radera de markerade zonerna?"
+
+msgid "Are you sure you want to delete these files?"
+msgstr "Är du säker på att du vill radera dessa filer?"
+
+msgid "Are you sure you want to kill these processes?"
+msgstr "Är du säker på att du vill döda dessa processer?"
+
+msgid "Ascending"
+msgstr "Stigande"
+
+msgid "Assign to"
+msgstr "Tilldelad"
+
+msgid "Assigned"
+msgstr "Tilldelad"
+
+msgid "At least one crediential is required."
+msgstr "Minst ett tecken krävs."
+
+msgid "Attempting to copy %s onto itself, file skipped."
+msgstr "Försök att kopiera %s till sig självt, hoppar över filen."
+
+#, fuzzy
+msgid "Attempting to move %s onto itself, file skipped"
+msgstr "Försök att flytta %s till sig själv, hoppar över filen."
+
+msgid "Attempts"
+msgstr "Försök"
+
+msgid "Aug"
+msgstr "augusti"
+
+msgid "Authentication"
+msgstr "Autentisering"
+
+msgid "Authorize"
+msgstr "Godkänna"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Auto media selection active."
+msgstr "Auto media val aktivt."
+
+msgid "Auto+Confirm"
+msgstr "Auto+Godkännande"
+
+msgid "AutoResponders"
+msgstr "Autosvar"
+
+#, c-format
+msgid "Automated certificate renewal for %s has succeeded"
+msgstr "Automatisk certifikatförnyelse för %s har lyckats"
+
+msgid "Automatic security.txt (RFC 9116)"
+msgstr ""
+
+msgid "Autoreply"
+msgstr "Auto svar"
+
+msgid "Autoresponder"
+msgstr "Autosvarare"
+
+#, fuzzy
+msgid "Autoresponder created"
+msgstr "Autosvar uppdaterad"
+
+msgid "Autoresponder updated"
+msgstr "Autosvar uppdaterad"
+
+#, fuzzy
+msgid "Autoresponder(s) removed"
+msgstr "Autosvar"
+
+msgid "Avoid use of trailers."
+msgstr "Undvik användning av trailers."
+
+msgid "Awstats"
+msgstr "Awstats"
+
+msgid "Awstats ..."
+msgstr "Awstats ..."
+
+msgid "Awstats setting changed"
+msgstr "Awstats inställning har ändrats"
+
+msgctxt "readable size"
+msgid "B"
+msgstr "B"
+
+msgid "Back"
+msgstr "Tillbaka"
+
+msgid "Backing up Databases"
+msgstr "Säkerhetskopiera databaser"
+
+msgid "Backing up E-Mail Data"
+msgstr "Säkerhetskopiera e-postdata"
+
+msgid "Backing up E-Mail Settings"
+msgstr "Säkerhetskopiera e-postinställningar"
+
+msgid "Backing up FTP"
+msgstr "Säkerhetskopierar FTP"
+
+msgid "Backing up User Configs"
+msgstr "Säkerhetskopiera användarkonfigurationer"
+
+msgid "Backing up User Data"
+msgstr "Säkerhetskopiera användardata"
+
+msgid "Backing up extra E-Mail items"
+msgstr "Säkerhetskopiera extra e-postobjekt"
+
+msgid "Backup"
+msgstr "Säkerhetskopiering"
+
+#, c-format
+msgid "Backup %d is not currently running."
+msgstr "Säkerhetskopiering %d körs inte för närvarande."
+
+#, c-format
+msgid "Backup Abort (%d): A hard link was found under User %s's path"
+msgstr ""
+"Avbryt säkerhetskopiering (%d): En hard link hittades under användaren %s s "
+"sökväg"
+
+#, c-format
+msgid "Backup Error with Nginx Unit: %s"
+msgstr "Säkerhetskopieringsfel med Nginx-enhet: %s"
+
+msgid "Backup Halted"
+msgstr "Backup stoppad"
+
+msgid "Backup ID"
+msgstr "Backup ID"
+
+msgid "Backup creation added to queue"
+msgstr "Säkerhetskopiering har lagts till i kön"
+
+#, c-format
+msgid ""
+"Backup of the live key to %s has failed. If needed, please take note of the "
+"old key:"
+msgstr ""
+
+#, c-format
+msgid "Backup path %s has been created."
+msgstr "Säkerhetskopieringsväg %s har skapats."
+
+#, fuzzy
+msgid "Backup(s) Killed"
+msgstr "Backup stoppad"
+
+msgid "Backups added to Queue"
+msgstr "Säkerhetskopieringar har lagts till i kö"
+
+msgid "Bandwidth"
+msgstr "Bandbredd"
+
+msgid "Bandwidth (MB)"
+msgstr "Bandbredd (MB)"
+
+msgid "Bandwidth Usage"
+msgstr "Banbredd användning"
+
+msgid "Be sure to re-scan the QR code, as all old codes become invalid."
+msgstr "Se till att skanna QR-koden igen, eftersom gamla koder blir ogiltiga."
+
+msgid ""
+"Because the script meets the required criteria, it has been disabled via "
+"chmod to 0."
+msgstr ""
+"Eftersom skriptet uppfyller de obligatoriska kriterierna har det "
+"inaktiverats via chmod till 0."
+
+msgid ""
+"Before Unblocking, ensure that any compromised scripts have been removed or "
+"fixed."
+msgstr ""
+"Innan du avblockerar, se till att alla komprometterade skript har tagits "
+"bort eller åtgärdats."
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "Billing Issue"
+msgstr "Faktureringsproblem"
+
+#, c-format
+msgid "Blank %s when hunting for converted backup file in %s"
+msgstr "Tom %s när jag letar efter konverterad säkerhetskopia i %s"
+
+#, c-format
+msgid "Blank value: default, global limit of %d"
+msgstr "Tomt värde: standard, global gräns på %d"
+
+msgid "Bleeding edge features"
+msgstr "Trasiga kantfunktioner"
+
+msgid "Block Usage"
+msgstr "Blockera användning"
+
+msgid "BlockCracker Blocked Paths"
+msgstr "BlockCracker blockerade vägar"
+
+msgid "Blocked"
+msgstr "Blockerad"
+
+msgid "Both DNS Control and ttl override must be enabled"
+msgstr "Både DNS Control och ttl override måste vara aktiverade"
+
+msgid "Brute-Force Attack detected in service log"
+msgstr "Brute-Force Attack upptäckt i serviceloggen"
+
+msgid "CA Certificate is Invalid"
+msgstr "CA-certifikatet är ogiltigt"
+
+msgid "CA Certificate is ok. Your site should be secure within a few minutes."
+msgstr "CA-certifikat är ok. Din webbplats bör vara säker inom några minuter."
+
+msgid "CC Address"
+msgstr "CC Address"
+
+msgid "CGI-Bin"
+msgstr "CGI-Bin"
+
+msgid "CPU Quota"
+msgstr "CPU Kvot"
+
+msgid "Can use Server IP"
+msgstr "Kan använda Server IP"
+
+msgid "Can't get file lock on"
+msgstr "Det går inte att aktivera fillåset"
+
+#, c-format
+msgid "Can't open file %s for reading"
+msgstr "Kan inte öppna filen %s för läsning"
+
+#, c-format
+msgid "Can't reopen file %s for appending"
+msgstr "Det går inte att öppna filen %s igen för att läggas till"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+#, fuzzy
+msgid "Cancel Request"
+msgstr "Kan inte utföra din begäran"
+
+msgid "Cannot Add A Record"
+msgstr "Kan inte lägga till en post"
+
+msgid "Cannot Add CNAME Record"
+msgstr "Kan inte lägga till CNAME-post"
+
+msgid "Cannot Add Record"
+msgstr "Kan inte lägga till post"
+
+msgid "Cannot Create Account"
+msgstr "Kan inte skapa konto"
+
+msgid "Cannot Create Another Autoresponder"
+msgstr "Kan inte skapa en annan autosvarare"
+
+msgid "Cannot Create Another Database"
+msgstr "Kan inte skapa en annan databas"
+
+msgid "Cannot Create Another Domain"
+msgstr "Kan inte skapa en annan domän"
+
+msgid "Cannot Create Another Domain Pointer"
+msgstr "Kan inte skapa en annan domänpekare"
+
+msgid "Cannot Create Another FTP Account"
+msgstr "Kan inte skapa ett annat FTP-konto"
+
+msgid "Cannot Create Another Forwarder"
+msgstr "Kan inte skapa en annan vidarebefordring"
+
+msgid "Cannot Create Another Mailing List"
+msgstr "Kan inte skapa en annan e-postlista"
+
+msgid "Cannot Create Another POP Account"
+msgstr "Kan inte skapa ett annat POP-konto"
+
+msgid "Cannot Create Another Subdomain"
+msgstr "Kan inte skapa en annan underdomän"
+
+msgid "Cannot Create Autoresponder"
+msgstr "Kan inte skapa autosvar"
+
+msgid "Cannot Create Domain"
+msgstr "Kan inte skapa domän"
+
+msgid "Cannot Create Vacation Message"
+msgstr "Kan inte skapa semestermeddelande"
+
+msgid "Cannot Create a Message"
+msgstr "Kan inte skapa ett meddelande"
+
+msgid "Cannot Execute Command"
+msgstr "Kan inte köra kommandot"
+
+msgid "Cannot Execute Your Request"
+msgstr "Kan inte utföra din begäran"
+
+msgid "Cannot Modify Key"
+msgstr "Kan inte ändra nyckel"
+
+msgid "Cannot Modify User"
+msgstr "Kan inte ändra användare"
+
+msgid "Cannot View Domain Settings"
+msgstr "Kan inte visa domäninställningar"
+
+msgid "Cannot be a list"
+msgstr "Kan inte vara ett objekt"
+
+msgid "Cannot be an object"
+msgstr "Kan inte vara ett objekt"
+
+msgid "Cannot change the ip"
+msgstr "Kan inte ändra ip"
+
+msgid ""
+"Cannot change the password for a system account.  Login to the control panel "
+"to do that."
+msgstr ""
+"Det går inte att ändra lösenordet för ett systemkonto. Logga in på "
+"kontrollpanelen för att göra det."
+
+msgid ""
+"Cannot change the password for this email account.  The account is currently "
+"on a suspended domain."
+msgstr ""
+"Det går inte att ändra lösenordet för detta e-postkonto. Kontot är för "
+"närvarande på en avstängd domän."
+
+msgid "Cannot change your email"
+msgstr "Kan inte ändra din e-post"
+
+msgid "Cannot change your name"
+msgstr "Kan inte ändra ditt namn"
+
+msgid "Cannot change your password"
+msgstr "Kan inte ändra ditt lösenord"
+
+msgid "Cannot check domain existance"
+msgstr "Kunde inte kontrollera om domänen finns"
+
+msgid "Cannot create User Backup"
+msgstr "Det går inte att skapa användarsäkerhetskopia"
+
+msgid "Cannot create domain"
+msgstr "Det går inte att skapa domän"
+
+msgid "Cannot create that domain"
+msgstr "Det går inte att skapa den domänen"
+
+msgid "Cannot create user using those settings"
+msgstr "Det går inte att skapa användare med dessa inställningar"
+
+msgid "Cannot delete records"
+msgstr "Kan inte radera poster"
+
+msgid "Cannot delete the skin you're currently using."
+msgstr "Det går inte att ta bort skalet du använder för närvarande."
+
+#, c-format
+msgid "Cannot determine owner of subdomain '%s'"
+msgstr "Kan inte bestämma ägare till underdomän \"%s\""
+
+msgid "Cannot execute your request"
+msgstr "Kan inte utföra din begäran"
+
+#, c-format
+msgid "Cannot find %s"
+msgstr "Kan inte hitta %s"
+
+#, c-format
+msgid "Cannot find %s in list"
+msgstr "Kan inte hitta %s i listan"
+
+#, c-format
+msgid "Cannot find %s in name"
+msgstr "Kan inte hitta %s i namnet"
+
+#, c-format
+msgid "Cannot find %s, skipping."
+msgstr "Kan inte hitta %s, hoppar över."
+
+#, c-format
+msgid "Cannot find %s.  Ensure the domain exists and is not suspended"
+msgstr "Kan inte hitta %s. Se till att domänen finns och inte är avstängd"
+
+#, c-format
+msgid "Cannot find '%s'"
+msgstr "Kan inte hitta '%s'"
+
+#, c-format
+msgid "Cannot find '%s' in the list of allowed values for %s"
+msgstr "Kan inte hitta '%s' i listan över tillåtna värden för %s"
+
+#, c-format
+msgid "Cannot find '%s' in the template"
+msgstr "Kan inte hitta '%s' i mallen"
+
+msgid "Cannot find IP"
+msgstr "Kan inte hitta IP"
+
+#, c-format
+msgid "Cannot find User '%s'"
+msgstr "Kan inte hitta användaren '%s'"
+
+msgid "Cannot find a valid system username in the domainowners file."
+msgstr "Kan inte hitta ett giltigt systemanvändarnamn i domänägarfilen."
+
+msgid "Cannot find any SAN values in the certificate."
+msgstr "Kan inte hitta några SAN-värden i certifikatet."
+
+#, c-format
+msgid "Cannot find any tar.gz after converting from %s"
+msgstr "Kan inte hitta någon tar.gz efter konvertering från %s"
+
+msgid "Cannot find domain in domain owners file"
+msgstr "Kan inte hitta domänen i domänägarfilen"
+
+msgid "Cannot find domain in the certificate."
+msgstr "Kan inte hitta domänen i certifikatet."
+
+#, c-format
+msgid "Cannot find key value in %s"
+msgstr "Kan inte hitta nyckelvärdet i %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s in skin %s"
+msgstr "Kan inte hitta logotypfil för token %s i skin %s"
+
+#, c-format
+msgid "Cannot find logo file for token %s=%s in skin %s"
+msgstr "Kan inte hitta logotypfilen för token %s=%s i skin %s"
+
+msgid "Cannot find show_blocked_ips.sh"
+msgstr "Kan inte hitta show_blocked_ips.sh"
+
+msgid "Cannot find template_php_ini or domain_php_ini in json"
+msgstr "Kan inte hitta template_php_ini eller domain_php_ini i json"
+
+msgid "Cannot find that domain in the domainowners file"
+msgstr "Kan inte hitta den domänen i domänägarfilen"
+
+msgid "Cannot find that key id"
+msgstr "Kan inte hitta det nyckel-id:t"
+
+msgid "Cannot find the account nor the forwarder"
+msgstr "Kan inte hitta kontot eller vidarbeforingen"
+
+msgid "Cannot find the letsencrypt.sh script"
+msgstr "Kan inte hitta letsencrypt.sh-skriptet"
+
+msgid "Cannot find the user %s which should already exist"
+msgstr "Kan inte hitta användaren %s som redan borde finnas"
+
+#, c-format
+msgid "Cannot get mime-type for %s"
+msgstr "Kan inte hämta mime-typ för %s"
+
+msgid "Cannot have newline characters in subject"
+msgstr "Kan inte ha ny radstecken i ämnet"
+
+msgid "Cannot have unlimited E-Mail quotas"
+msgstr "Kan inte ha obegränsade e-postminne"
+
+msgid "Cannot manage zone"
+msgstr "Kan inte hantera zon"
+
+msgid "Cannot move a directory (%s) onto an existing file or directory (%s)"
+msgstr ""
+"Kan inte flytta en katalog (%s) till en befintlig fil eller katalog (%s)"
+
+msgid "Cannot open the password file to add the user"
+msgstr "Det går inte att öppna lösenordsfilen för att lägga till användaren"
+
+msgid "Cannot open the password file to change the password"
+msgstr "Det går inte att öppna lösenordsfilen för att ändra lösenordet"
+
+msgid "Cannot open the user password file for reading"
+msgstr "Kan inte öppna användarlösenordsfilen för läsning"
+
+msgid "Cannot rename a directory onto an existing file or directory"
+msgstr ""
+"Det går inte att byta namn på en katalog till en befintlig fil eller katalog"
+
+msgid "Cannot resend welcome email"
+msgstr "Kan inte skicka välkomstmail igen"
+
+#, c-format
+msgid ""
+"Cannot restore the ftp account for %s.  You have reached your limit (%s)."
+msgstr "Kan inte återställa ftp-kontot för %s. Du har nått din gräns (%s)."
+
+msgid "Cannot set TTL"
+msgstr "Kan inte ställa in TTL"
+
+msgid "Cannot set default domain"
+msgstr "Det går inte att ange standarddomän"
+
+#, fuzzy
+msgid "Cannot show page"
+msgstr "Kan inte ladda lang po"
+
+msgid "Cannot stat the source file"
+msgstr "Kan inte ange källfilen"
+
+msgid "Cannot use the main account username"
+msgstr "Kan inte använda huvudkontots användarnamn"
+
+#, c-format
+msgid "Catch all is now set to %s"
+msgstr "Catch all är nu satt till %s"
+
+msgid "Catch-All Email"
+msgstr "Catch-All e-post"
+
+msgid "Catch-All Email has been disabled on this account"
+msgstr "Catch-All e-post har inaktiverats på det här kontot"
+
+msgid "Catch-All email updated successfully"
+msgstr "Catch-All e-post har uppdaterats"
+
+#, fuzzy
+msgid "Catch-All is disabled"
+msgstr "Catch-All e-post"
+
+msgid "Catch-All is now set to fail"
+msgstr "Catch-All är nu inställd på att misslyckas"
+
+msgid "Catch-All is now set to ignore wrong addresses"
+msgstr "Catch-All är nu inställd på att ignorera fel adresser"
+
+msgid "Certificate"
+msgstr "Certifikat"
+
+msgid "Certificate and Key Saved."
+msgstr "Certifikat och nyckel har sparats."
+
+msgid "Certificate is Invalid"
+msgstr "Certifikatet är ogiltigt"
+
+msgid "Certificate is Self-Signed"
+msgstr "Certifikatet är självsignerat"
+
+msgid "Change the password to unblock it."
+msgstr "Ändra lösenordet för att avblockera det."
+
+#, c-format
+msgid "Changed by IP: %s"
+msgstr "Ändrad av IP: %s"
+
+msgid "Changes saved"
+msgstr "ändringar sparade"
+
+msgid "Check"
+msgstr "Kontrollera"
+
+msgid "Check the error log for more information."
+msgstr "Kontrollera felloggen för mer information."
+
+msgid "Check to see if the current software is valid"
+msgstr "Kontrollera om den aktuella programvaran är giltig"
+
+#, c-format
+msgid "Child user %s deleted"
+msgstr "Barnanvändaren %s raderad"
+
+msgid ""
+"Choose from: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+msgstr ""
+"Välj mellan: blacklist_usernames, blacklist_smtp_usernames, "
+"blacklist_script_usernames"
+
+msgid "City must only contain letters, spaces and/or periods"
+msgstr "Stad får endast innehålla bokstäver, mellanslag och/eller punkter"
+
+msgid "ClamAV"
+msgstr "ClamAV"
+
+msgid "Clean Forwarders"
+msgstr "Rensa vidarebefordringar"
+
+#, c-format
+msgid "Cleaning %s"
+msgstr "Rensa %s"
+
+msgid "Clear Customization"
+msgstr "Tydlig anpassning"
+
+msgid "Clear Messages System"
+msgstr "Rensa meddelandesystem"
+
+msgid "Clear NS"
+msgstr "Rensa NS"
+
+msgid "Clear Search Filter"
+msgstr "Rensa sökfilter"
+
+#, c-format
+msgid "Click %sHERE%s to go back"
+msgstr "Klicka på %sHÄR%s för att gå tillbaka"
+
+#, c-format
+msgid "Click %sHERE%s to return"
+msgstr "Klicka på %sHÄR%s för att återvända"
+
+#, c-format
+msgid "Click %sHERE%s to return to main page"
+msgstr "Klicka på %sHÄR%s för att återgå till huvudsidan"
+
+msgid "Click Here to Download the Latest Backup"
+msgstr "Klicka här för att ladda ner den senaste säkerhetskopian"
+
+msgid "Click here to close this window"
+msgstr "Klicka här för att stänga detta fönster"
+
+msgid "Click here to enable SSL on the domain"
+msgstr "Klicka här för att aktivera SSL på domänen"
+
+msgid "Clipboard"
+msgstr "Urklipp"
+
+#, fuzzy
+msgid "Clipboard emptied"
+msgstr "Urklipp"
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Closed"
+msgstr "stängd"
+
+msgid "Closed+Confirm"
+msgstr "Stängd+Bekräfta"
+
+#, c-format
+msgid "Color %s (%s) is not from the list: %s"
+msgstr "Färg %s (%s) är inte från listan: %s"
+
+msgid "Color has been customized"
+msgstr "Färgen har anpassats"
+
+msgid "Column in"
+msgstr "Kolumn in"
+
+msgid "Command"
+msgstr "Kommando"
+
+msgid "Command Returned"
+msgstr "Kommandot returneras"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Comments"
+msgstr "Kommentar"
+
+#, fuzzy
+msgid "Comments Saved"
+msgstr "Kommentar"
+
+msgid "Company must only contain letters, numbers, spaces, and/or periods"
+msgstr ""
+"Företaget får endast innehålla bokstäver, siffror, mellanslag och/eller "
+"punkter"
+
+msgid "Compressed File Created"
+msgstr "Komprimerad fil skapad"
+
+#, c-format
+msgid "Compressing %s"
+msgstr "Komprimerar %s"
+
+msgid "Confirm"
+msgstr "Bekräfta"
+
+msgid "Confirm results on the %sDirectAdmin Website%s"
+msgstr "Bekräfta resultatet på %sDirectAdmin-hemsidan%s"
+
+#, fuzzy
+msgid "Confirmation code is invalid or request have expired"
+msgstr ""
+"Inget sådant användarnamn i begärandelistan. Din begäran kan ha löpt ut."
+
+msgid "Continuing with the other files."
+msgstr "Fortsätter med de andra filerna."
+
+msgid "Copy"
+msgstr "Kopiera"
+
+msgid "Copy Clipboard Files here"
+msgstr "Kopiera urklippsfiler här"
+
+msgid "Copy the packages export data"
+msgstr "Kopiera paketexportdata"
+
+msgid "Copying Admin Data"
+msgstr "Kopiera admindata"
+
+msgid "Copying Reseller Data"
+msgstr "Kopiera återförsäljardata"
+
+msgid ""
+"Copying files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Kopiering av filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Copying unreadable data"
+msgstr "Kopierar oläsbar data"
+
+msgid "Could not excute your request"
+msgstr "Det gick inte att utföra din begäran"
+
+msgid "Could not execute your request"
+msgstr "Det gick inte att utföra din begäran"
+
+#, c-format
+msgid "Could not find any matching backup keys in %s"
+msgstr ""
+
+#, c-format
+msgid "Could not find remote file '%s' to validate size after upload"
+msgstr ""
+"Kunde inte hitta fjärrfilen '%s' för att verifiera filstorleken efter "
+"uppladdningen"
+
+#, c-format
+msgid "Could not get rDNS for IP '%s'"
+msgstr "Kunde inte hämta rDNS för IP '%s'"
+
+msgid "Could not read tickets"
+msgstr "Kunde inte läsa supportärendena"
+
+msgid "Could not write tickets"
+msgstr "Kunde inte skriva supportärendena"
+
+#, c-format
+msgid "Couldn't find any IPs of any type to give User (requested ip=%s)."
+msgstr ""
+"Kunde inte hitta några IP-adresser av någon typ att ge användaren (begärd "
+"ip=%s)."
+
+#, c-format
+msgid "Couldn't read db file for %s. Unable to add ns1 and ns2 to it."
+msgstr ""
+"Kunde inte läsa db-fil för %s. Det går inte att lägga till ns1 och ns2 till "
+"den."
+
+msgid "Count"
+msgstr "Räkna"
+
+msgid "Counted"
+msgstr "Räknat"
+
+msgid "Country code must be 2 letters"
+msgstr "Landskoden måste vara två bokstäver"
+
+msgid "Created"
+msgstr "Skapad"
+
+msgid ""
+"Creating directories has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Skapandet av kataloger har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+#, c-format
+msgid "Creating that many %s would put you over your limit of %s"
+msgstr "Om du skapar så många %s skulle du överskrida din gräns på %s"
+
+msgid "Creator"
+msgstr "Skapare"
+
+msgid "Creator Duplicate"
+msgstr "Duplikat av skapare"
+
+msgid "Creators and their Users"
+msgstr "Creators och deras användare"
+
+msgid "Cron Created"
+msgstr "Cron skapad"
+
+msgid "Cron E-Mail set"
+msgstr "Cron E-post set"
+
+msgid "Cron Job(s) Deleted"
+msgstr "Cron Job(s) raderade"
+
+msgid "Cron Jobs"
+msgstr "Cron jobb"
+
+msgid "Cron Jobs Deleted"
+msgstr "Cron jobb raderade"
+
+msgid "Cron Jobs Duplicated"
+msgstr "Cron Jobs Duplicerade"
+
+msgid "Cron Jobs will run in the background"
+msgstr "Cron Jobs kommer att köras i bakgrunden"
+
+msgid "Cron Modified"
+msgstr "Cron Modifierad"
+
+msgid "Cron job has been created"
+msgstr "Cron jobb har skapats"
+
+msgid "Current"
+msgstr "Nuvarande"
+
+msgid "Current IPs"
+msgstr "Aktuella IP-adresser"
+
+#, c-format
+msgid "Current IPs Assigned to %s"
+msgstr "Aktuella IP-adresser tilldelade till %s"
+
+msgid "Current Protected Directories"
+msgstr "Aktuella skyddade kataloger"
+
+msgid "Current Usage"
+msgstr "Aktuell användning"
+
+msgid "Custom"
+msgstr "Beställnings"
+
+msgid "Custom Color"
+msgstr "Anpassad färg"
+
+msgid "Custom Skin Logo uploaded"
+msgstr "Anpassad skin logotyp laddad upp"
+
+msgid "Custom Skin Logos are not enabled"
+msgstr "Anpassade skinlogotyper är inte aktiverade"
+
+msgid "Custom logo deleted"
+msgstr "Anpassad logotyp raderad"
+
+msgid "Custom threshold must be a valid number. A decimal is allowed."
+msgstr "Anpassad tröskel måste vara ett giltigt nummer. En decimal är tillåten."
+
+msgid "Customization Disabled"
+msgstr "Anpassning inaktiverad"
+
+msgid "Customization written"
+msgstr "Anpassning skriven"
+
+msgid "Customize the skin"
+msgstr "Anpassa skin"
+
+msgid "DKIM disabled"
+msgstr "DKIM inaktiverad"
+
+msgid "DKIM enabled"
+msgstr "DKIM aktiverat"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DNS Control"
+msgstr "DNS-kontroll"
+
+#, fuzzy
+msgid "DNS Zone does not exist"
+msgstr "Tidszon finns inte"
+
+msgid "DNSSEC Keys generated"
+msgstr "DNSSEC-nycklar genererade"
+
+msgid "DNSSEC is not enabled"
+msgstr "DNSSEC är inte aktiverat"
+
+msgid "DNSSSEC - DNS Security"
+msgstr "DNSSEC - DNS-säkerhet"
+
+msgid "Database"
+msgstr "Databas"
+
+msgid "Database Created"
+msgstr "Databas skapad"
+
+msgid "Database Disk Usage"
+msgstr "Databasdiskanvändning"
+
+msgid "Database has been successfully Restored"
+msgstr "Databasen har återställts"
+
+msgid "Database:"
+msgstr "Databas:"
+
+msgid "Databases"
+msgstr "Databaser"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Date Added"
+msgstr "datum tillagt"
+
+msgid "Date Blocked"
+msgstr "Datum blockerad"
+
+msgid "Date Created"
+msgstr "Skapat datum"
+
+msgid "Date Suspended"
+msgstr "Datum avstängt"
+
+#, fuzzy
+msgid "Day"
+msgstr "Maj"
+
+msgid "Day of Month"
+msgstr "Dag i månaden"
+
+msgid "Day of Week"
+msgstr "Dag i veckan"
+
+msgid "Days must be a valid number."
+msgstr "Dagar måste vara ett giltigt antal."
+
+msgid "Debug Guide"
+msgstr "Felsökningsguide"
+
+msgid "Dec"
+msgstr "dec"
+
+msgid "Decending"
+msgstr "Nedåtgående"
+
+#, c-format
+msgid "Decryption of %s has failed"
+msgstr "Dekrypteringen av %s misslyckades"
+
+msgid "Default"
+msgstr "Standard"
+
+msgid "Default release schedule"
+msgstr "Standardutgivningsschema"
+
+msgid "Delayed release schedule"
+msgstr "Försenat releaseschema"
+
+msgid "Delete"
+msgstr "Radera"
+
+msgid "Delete Extension"
+msgstr "Ta bort tillägg"
+
+msgid "Delete Handler"
+msgstr "Ta bort hanterare"
+
+msgid "Delete MimeType"
+msgstr "Ta bort MimeType"
+
+msgid "Delete Selected"
+msgstr "Radera valda"
+
+msgid "Delete the DNSSEC keys and use a non-signed zone"
+msgstr "Ta bort DNSSEC-nycklarna och använd en icke-signerad zon"
+
+msgid "Delete the following User"
+msgid_plural "Delete the following Users"
+msgstr[0] "Ta bort följande användare"
+msgstr[1] "Ta bort följande användare"
+
+msgid "Delete the following domains:"
+msgstr "Ta bort följande domäner:"
+
+msgid "Delete web data"
+msgstr "Ta bort webbdata"
+
+msgid "Deleted"
+msgstr "raderade"
+
+msgid "Deleted User Bandwidth"
+msgstr "Raderad användarbandbredd"
+
+#, c-format
+msgid "Deleting %s ..."
+msgstr "Tar bort %s ..."
+
+msgid ""
+"Deleting files/directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Att ta bort filer/kataloger har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Deleting these NS records will leave you with 0."
+msgstr "Om du raderar dessa NS-poster får du 0."
+
+msgid "Deny"
+msgstr "Förneka"
+
+msgid "Destination"
+msgstr "Destination"
+
+#, c-format
+msgid "Destination URL error: %s"
+msgstr "Destination URL fel: %s"
+
+msgid "Detail"
+msgstr "Detalj"
+
+msgid "Details"
+msgstr "Detaljer"
+
+msgid "Digest Subscriber"
+msgstr "Digest Prenumerant"
+
+msgid "Digest Subscribers"
+msgstr "Sammanfattning av prenumeranter"
+
+#, fuzzy
+msgid "DirectAdmin License"
+msgstr "Provlicens"
+
+msgid "DirectAdmin will be restarted in 1 minute"
+msgstr "DirectAdmin kommer att startas om 1 minut"
+
+msgid "DirectAdmin will be restarted within 1 minute"
+msgstr "DirectAdmin kommer att startas om inom 1 minut"
+
+msgid "Directory Protection Settings have been saved."
+msgstr "Katalogskyddsinställningar har sparats."
+
+msgid "Directory created"
+msgstr "Katalog skapad"
+
+msgid "Disable"
+msgstr "Inaktivera"
+
+msgid "Disable Auto-Renew"
+msgstr "Inaktivera automatisk förnyelse"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid ""
+"Disabled Reseller settings will be applied to Users and Packages in the "
+"background."
+msgstr ""
+"Inaktiverade återförsäljarinställningar kommer att tillämpas på användare "
+"och paket i bakgrunden."
+
+msgid "Disk Space"
+msgstr "Diskutrymme"
+
+msgid "Disk Space (MB)"
+msgstr "Diskutrymme (MB)"
+
+msgid "Disk Usage"
+msgstr "Diskanvändning"
+
+msgid "Division must only contain letters, numbers, spaces, and/or periods"
+msgstr ""
+"Division får endast innehålla bokstäver, siffror, mellanslag och/eller "
+"punkter"
+
+msgid "Dns Provider reset."
+msgstr "Dns-leverantör återställd."
+
+msgid "Dns Provider saved."
+msgstr "Dns-leverantören har sparats."
+
+msgid "Do not use CAPS in the domain name."
+msgstr "Använd inte CAPS i domännamnet."
+
+msgid "Do not use any spaces between the email names."
+msgstr "Använd inga mellanslag mellan e-postnamnen."
+
+#, c-format
+msgid "Do not use spaces in the %s value"
+msgstr "Använd inte mellanslag i %s-värdet"
+
+msgid "Do you want to overwrite any existing files?"
+msgstr "Vill du skriva över befintliga filer?"
+
+msgid "DocumentRoot"
+msgstr "DocumentRoot"
+
+#, c-format
+msgid "Does not match setting: %s"
+msgstr "Matchar inte inställningen: %s"
+
+msgid "Domain"
+msgstr "Domän"
+
+#, c-format
+msgid "Domain %s Created"
+msgstr "Domän %s skapad"
+
+#, c-format
+msgid "Domain %s may not use a %s override path of %s"
+msgstr "Domänen %s får inte använda en %s åsidosättande sökväg för %s"
+
+#, c-format
+msgid ""
+"Domain %s was suspended by an Admin and you not have this access. You cannot "
+"unsuspend this domain."
+msgstr ""
+"Domänen %s stängdes av, av en administratör och du har inte denna åtkomst. "
+"Du kan inte låsa upp denna domän."
+
+#, c-format
+msgid "Domain '%s' has had it's dnsprovider cleared."
+msgstr ""
+
+#, c-format
+msgid "Domain '%s' is using php-fpm."
+msgstr "Domänen '%s' använder php-fpm."
+
+msgid "Domain AWstats"
+msgstr "Domän AWstats"
+
+msgid "Domain AWstats + Webalizer"
+msgstr "Domän AWstats + Webalizer"
+
+msgid "Domain Bandwidth"
+msgstr "Domänbandbredd"
+
+msgid "Domain Created"
+msgstr "Domän skapad"
+
+msgid "Domain Created Successfully"
+msgstr "Domän skapad framgångsrikt"
+
+msgid "Domain Deletion Results"
+msgstr "Resultat för borttagning av domän"
+
+msgid "Domain Pointer"
+msgid_plural "Domain Pointers"
+msgstr[0] "Domänpekare"
+msgstr[1] "Domänpekare"
+
+msgid "Domain Pointer Added"
+msgstr "Domänpekare tillagd"
+
+msgid "Domain Pointer on"
+msgstr "Domänpekare på"
+
+msgid "Domain Pointers"
+msgstr "Domänpekare"
+
+#, fuzzy
+msgid "Domain Pointers Removed"
+msgstr "Domänpekare på"
+
+msgid "Domain Quota"
+msgstr "Domänkvot"
+
+msgid "Domain Renaming is not enabled"
+msgstr "Domänbyte är inte aktiverat"
+
+msgid "Domain Webalizer Stats"
+msgstr "Domain Webalizer-statistik"
+
+msgid ""
+"Domain contains UTF-8 characters. Please submit a punycode domain or enable "
+"convert_to_punycode."
+msgstr ""
+
+msgid "Domain does not belong to you"
+msgstr "Domänen tillhör inte dig"
+
+#, fuzzy
+msgid "Domain does not belong to you."
+msgstr "Domänen tillhör inte dig"
+
+#, c-format
+msgid "Domain exists on %s"
+msgstr "Domänen finns på %s"
+
+msgid ""
+"Domain is already processing an SSL request.  Please allow it to finish "
+"before making other changes."
+msgstr ""
+"Domänen behandlar redan en SSL-förfrågan. Låt det avslutas innan du gör "
+"andra ändringar."
+
+msgid "Domain is forbidden"
+msgstr "Domän är förbjuden"
+
+msgid "Domain is not in your list"
+msgstr "Domän finns inte i din lista"
+
+msgid "Domain must not be a top-level domain extension"
+msgstr ""
+
+msgid "Domain name has been successfully changed"
+msgstr "Domännamnet har ändrats"
+
+msgid "Domain php.ini overrides"
+msgstr "Domän php.ini åsidosätter"
+
+msgid "Domain(s)"
+msgstr "Domän(er)"
+
+msgid "Domain(s) modified"
+msgstr "Domän(er) har ändrats"
+
+msgid "Domains"
+msgstr "Domäner"
+
+msgid "Domains directory created successfully"
+msgstr "Domänkatalogen har skapats"
+
+msgid "Domains directory created successfully in user's home"
+msgstr "Domänkatalog skapad framgångsrikt i användarens hem"
+
+msgid "Double click for main domain page"
+msgstr "Dubbelklicka för huvuddomänsidan"
+
+#, c-format
+msgid "Dovecot file '%s' is missing data. Run 'da build dovecot_conf'"
+msgstr "Dovecot-filen '%s' saknar data. Kör './build dovecot_conf'"
+
+msgid "Download"
+msgstr "Ladda ner"
+
+msgid "Download Backup"
+msgstr "Ladda ner säkerhetskopia"
+
+#, c-format
+msgid "Downloaded: %s"
+msgstr "Nedladdat: %s"
+
+msgid "Downloading a new webalizer binary"
+msgstr "Laddar ner en ny binär webalizer"
+
+msgid ""
+"Downloading compress folders has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Nedladdning av komprimeringsmappar har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid ""
+"Downloading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Nedladdning av filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Driver signals L1 up."
+msgstr "Föraren signalerar L1 upp."
+
+msgid "Driver signals dormant."
+msgstr "Föraren signalerar vilande."
+
+msgid "Duplicate"
+msgstr "Duplicera"
+
+msgid "E-Mail"
+msgstr "E-post"
+
+msgid "E-Mail Accounts"
+msgstr "E-postkonton"
+
+msgid "E-Mail Accounts Deleted"
+msgstr "E-postkonton raderade"
+
+msgid "E-Mail Address has been successfully changed"
+msgstr "E-postadressen har ändrats"
+
+msgid "E-Mail Limit has been set"
+msgstr "E-postgräns har ställts in"
+
+#, fuzzy
+msgid "E-Mail Update Failed"
+msgstr "E-post uppdaterad"
+
+msgid "E-Mail Updated"
+msgstr "E-post uppdaterad"
+
+msgid "E-Mail account already exists"
+msgstr "E-postkonto finns redan"
+
+msgid "E-Mail has been changed"
+msgstr "E-post har ändrats"
+
+#, c-format
+msgid "E-Mail has been changed to %s"
+msgstr "E-post har ändrats till %s"
+
+#, c-format
+msgid "E-Mail quota must not exceed %s"
+msgstr "E-postkvoten får inte överstiga %s"
+
+msgid "EC-256"
+msgstr "EC-256"
+
+msgid "EC-384"
+msgstr "EC-384"
+
+msgid "Echo sent packets."
+msgstr "Echo skickade paket."
+
+msgid "Edit"
+msgstr "Redigera"
+
+msgid "Edit the zone on the master server."
+msgstr "Redigera zonen på huvudservern."
+
+msgid ""
+"Either have your account creator change your password to unblock it, or use "
+"the Lost Password feature on the login page (if enabled)."
+msgstr ""
+"Be din kontoskapare att ändra ditt lösenord för att avblockera det, eller "
+"använd funktionen Förlorat lösenord på inloggningssidan (om aktiverad)."
+
+msgid "Email"
+msgstr "Epost"
+
+#, c-format
+msgid "Email '%s' does not exist"
+msgstr "E-post '%s' finns inte"
+
+#, fuzzy
+msgid "Email Added to list"
+msgstr "E-post '%s' finns inte"
+
+msgid "Email Deliveries (Sent)"
+msgstr "E-postleveranser (skickat)"
+
+msgid "Email Disk Usage"
+msgstr "E-postdiskanvändning"
+
+msgid "Email Forwarders"
+msgstr "E-postbefordrare"
+
+msgid "Email Only"
+msgstr "Endast e-post"
+
+msgid "Email Sent"
+msgstr "Email skickat"
+
+#, fuzzy
+msgid "Email Set"
+msgstr "Email skickat"
+
+msgid "Email created but"
+msgstr "E-post skapat men"
+
+#, fuzzy
+msgid "Email removed"
+msgstr "E-post skapat men"
+
+msgid "Empty Clipboard"
+msgstr "Tom Urklipp"
+
+msgid "Empty path"
+msgstr "Tom sökväg"
+
+msgid "Enable"
+msgstr "Gör det möjligt"
+
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#, c-format
+msgid "Encryption of %s has failed"
+msgstr "Kryptering av %s misslyckades"
+
+msgid "End Time"
+msgstr "Sluttid"
+
+#, c-format
+msgid ""
+"End of file reached while trying reading in %lld bytes from %s. filled=%lld"
+msgstr ""
+"Slutet på filen nåddes när du försökte läsa i %lld byte från %s. filled=%lld"
+
+msgid "Ensure the 2nd key matches the first"
+msgstr "Se till att den andra nyckeln matchar den första"
+
+msgid "Ensure the Reseller's ip.list has some usable IPs."
+msgstr "Se till att återförsäljarens ip.list har några användbara IP-adresser."
+
+msgid "Ensuring stored domains are present"
+msgstr "Se till att lagrade domäner finns"
+
+#, fuzzy
+msgid "Error"
+msgstr "Fel"
+
+msgid "Error Compressing the backup file"
+msgstr "Fel vid komprimering av säkerhetskopian"
+
+msgid "Error Creating Cron Job"
+msgstr "Fel när Cron Job skapades"
+
+msgid "Error Creating Domain"
+msgstr "Fel vid skapande av domän"
+
+msgid "Error Creating Key"
+msgstr "Fel vid skapande av nyckel"
+
+msgid "Error Creating User"
+msgstr "Fel vid skapande av användare"
+
+#, c-format
+msgid "Error Deleting %s"
+msgstr "Fel vid borttagning av %s"
+
+msgid "Error Executing Perl"
+msgstr "Fel vid exekvering av Perl"
+
+msgid "Error Log"
+msgstr "Felloggen"
+
+msgid "Error Reading Message File"
+msgstr "Fel vid läsning av meddelandefil"
+
+msgid "Error Reading db file"
+msgstr "Fel vid läsning av db-fil"
+
+#, c-format
+msgid "Error Removing User %s"
+msgstr "Fel vid borttagning av användaren %s"
+
+msgid "Error Resetting Zone"
+msgstr "Fel vid återställning av zon"
+
+msgid "Error Restoring database"
+msgstr "Fel vid återställning av databasen"
+
+#, c-format
+msgid "Error Saving Password: %s"
+msgstr "Fel när lösenordet skulle sparas: %s"
+
+msgid "Error Unblocking paths"
+msgstr "Fel vid avblockering av sökvägar"
+
+msgid "Error Updating User"
+msgstr "Fel vid uppdatering av användare"
+
+#, c-format
+msgid "Error Writing %s"
+msgstr "Fel vid skrivning av %s"
+
+#, c-format
+msgid "Error activating %s's user %s: %s"
+msgstr "Fel vid aktivering av %ss användare %s: %s"
+
+#, c-format
+msgid "Error activating cronjobs: %s"
+msgstr "Fel vid aktivering av cronjobs: %s"
+
+#, c-format
+msgid "Error activating data for %s: %s"
+msgstr "Fel vid aktivering av data för %s: %s"
+
+#, c-format
+msgid "Error adding DS records for %s to remote parent zone: %s"
+msgstr ""
+"Det gick inte att lägga till DS-poster för %s till den fjärranslutna "
+"föräldrazonen: %s"
+
+msgid "Error authorizing SSH Key"
+msgstr "Fel vid auktorisering av SSH-nyckel"
+
+msgid "Error changing password"
+msgstr "Fel vid byte av lösenord"
+
+msgid "Error clearing LetsEncrypt files"
+msgstr "Det gick inte att rensa LetsEncrypt-filer"
+
+msgid "Error converting file: "
+msgstr "Fel vid konvertering av fil: "
+
+#, c-format
+msgid "Error copying %s to %s : %s"
+msgstr "Fel vid kopiering av %s till %s: %s"
+
+#, c-format
+msgid "Error copying %s to %s: %s"
+msgstr "Fel vid kopiering av %s till %s: %s"
+
+#, c-format
+msgid "Error copying logo file: %s"
+msgstr "Fel vid kopiering av logotypfil: %s"
+
+#, c-format
+msgid "Error creating %s"
+msgstr "Det gick inte att skapa %s"
+
+#, c-format
+msgid "Error creating %s: %s"
+msgstr "Det gick inte att skapa %s: %s"
+
+msgid "Error creating Autoresponder"
+msgstr "Det gick inte att skapa autosvarare"
+
+#, c-format
+msgid "Error creating NginxUnit application '%s': %s"
+msgstr "Det gick inte att skapa NginxUnit-applikationen '%s': %s"
+
+#, c-format
+msgid "Error creating NginxUnit route '%s': %s"
+msgstr "Fel vid skapande av NginxUnit-rutt '%s': %s"
+
+msgid "Error creating SSH Key"
+msgstr "Det gick inte att skapa SSH-nyckel"
+
+msgid "Error creating User"
+msgstr "Det gick inte att skapa användare"
+
+msgid "Error creating Vacation Message"
+msgstr "Det gick inte att skapa semestermeddelande"
+
+msgid "Error creating account"
+msgstr "Det gick inte att skapa konto"
+
+#, c-format
+msgid ""
+"Error creating default directories in %s.  See error.log for more "
+"information."
+msgstr ""
+"Det gick inte att skapa standardkataloger i %s. Se error.log för mer "
+"information."
+
+msgid "Error creating forwarder"
+msgstr "Det gick inte att skapa speditören"
+
+msgid "Error creating the database"
+msgstr "Det gick inte att skapa databasen"
+
+msgid "Error decoding the base 64 data"
+msgstr "Fel vid avkodning av bas 64-data"
+
+#, c-format
+msgid "Error deleting %s: %s"
+msgstr "Fel vid borttagning av %s: %s"
+
+msgid "Error deleting SSH Key"
+msgstr "Fel vid borttagning av SSH-nyckel"
+
+msgid "Error deleting account(s)"
+msgstr "Det gick inte att ta bort konto(n)"
+
+msgid "Error deleting autoresponder(s)"
+msgstr "Fel vid borttagning av autosvarare"
+
+msgid "Error deleting filter(s)"
+msgstr "Det gick inte att ta bort filter"
+
+msgid "Error deleting records"
+msgstr "Det gick inte att ta bort poster"
+
+msgid "Error determining username from "
+msgstr "Fel vid fastställande av användarnamn från "
+
+#, c-format
+msgid "Error during automated certificate renewal for %s"
+msgstr "Fel under automatisk certifikatförnyelse för %s"
+
+#, c-format
+msgid "Error during deletion of child user %s"
+msgstr "Fel under borttagning av underordnad användare %s"
+
+msgid "Error during extraction"
+msgstr "Fel under extraktion"
+
+msgid "Error executing your request"
+msgstr "Det gick inte att utföra din begäran"
+
+msgid "Error generating zone keys"
+msgstr "Fel vid generering av zonnycklar"
+
+msgid "Error importing base 64 encoded packages"
+msgstr "Fel vid import av bas 64-kodade paket"
+
+msgid "Error in post.  Requires domain, type and value."
+msgstr "Fel i inlägget. Kräver domän, typ och värde."
+
+msgid "Error modifying SSH key"
+msgstr "Fel vid ändring av SSH-nyckel"
+
+#, c-format, fuzzy
+msgid "Error parsing %s path: wrong type"
+msgstr "Fel vid analys av json-utdata"
+
+msgid "Error parsing 'routes'."
+msgstr "Fel vid analys av \"rutter\"."
+
+msgid "Error parsing json output"
+msgstr "Fel vid analys av json-utdata"
+
+msgid "Error purging archives"
+msgstr "Det gick inte att rensa arkiv"
+
+#, c-format
+msgid "Error reading %s: %s"
+msgstr "Fel vid läsning av %s: %s"
+
+msgid "Error reading domain config file"
+msgstr "Fel vid läsning av domänkonfigurationsfil"
+
+msgid "Error reading domain config files"
+msgstr "Fel vid läsning av domänkonfigurationsfiler"
+
+msgid "Error reading domainowners"
+msgstr "Det gick inte att läsa domänägare"
+
+msgid "Error reading domainowners file"
+msgstr "Det gick inte att läsa domänägarfilen"
+
+msgid "Error reading named db file"
+msgstr "Fel vid läsning av namngiven db-fil"
+
+msgid "Error reading the db file after writing to it, before DNSSEC signing"
+msgstr ""
+"Fel vid läsning av db-filen efter att ha skrivit till den, innan DNSSEC-"
+"signering"
+
+#, c-format
+msgid "Error reading user files for %s, continuing anyway."
+msgstr "Fel vid läsning av användarfiler för %s, fortsätter ändå."
+
+msgid "Error reading user_ip.list file"
+msgstr "Det gick inte att läsa filen user_ip.list"
+
+#, c-format
+msgid "Error removing %s: %s"
+msgstr "Fel vid borttagning av %s: %s"
+
+#, c-format
+msgid "Error removing IP(s) from %s"
+msgstr "Fel vid borttagning av IP-adresser från %s"
+
+msgid "Error removing file: "
+msgstr "Fel vid borttagning av filen: "
+
+#, c-format
+msgid "Error removing path %s: %s"
+msgstr "Fel vid borttagning av sökväg %s: %s"
+
+msgid "Error removing subdomain"
+msgstr "Fel vid borttagning av underdomän"
+
+msgid "Error removing subdomain(s)"
+msgstr "Det gick inte att ta bort underdomän(er)"
+
+msgid "Error removing subdomains"
+msgstr "Det gick inte att ta bort underdomäner"
+
+#, c-format
+msgid "Error removing user %s"
+msgstr "Det gick inte att ta bort användaren %s"
+
+#, c-format
+msgid "Error renaming %s to %s: %s"
+msgstr "Det gick inte att byta namn på %s till %s: %s"
+
+#, c-format
+msgid "Error restoring %s: %s"
+msgstr "Fel vid återställning av %s: %s"
+
+msgid "Error restoring domain"
+msgstr "Fel: kunde inte återställa domänen"
+
+#, c-format
+msgid "Error restoring php settings for '%s': %s"
+msgstr "Fel vid återställning av php-inställningar för '%s': %s"
+
+#, c-format
+msgid "Error rewriting %s"
+msgstr "Fel vid omskrivning av %s"
+
+#, c-format
+msgid "Error running %s: %s"
+msgstr "Fel vid körning av %s: %s"
+
+msgid "Error running rndc addzone."
+msgstr "Fel vid körning av rndc addzone."
+
+msgid "Error running rndc delzone."
+msgstr "Fel vid körning av rndc delzone."
+
+msgid "Error saving Cron E-Mail"
+msgstr "Fel när Cron E-post skulle sparas"
+
+msgid "Error saving Nameservers"
+msgstr "Det gick inte att spara namnservrar"
+
+#, c-format
+msgid "Error sending signal to %d: %s"
+msgstr "Fel när signalen skickades till %d: %s"
+
+msgid "Error setting MX Template"
+msgstr "Fel vid inställning av MX-mall"
+
+msgid "Error setting MX template for pointer"
+msgstr "Fel vid inställning av MX-mall för pekare"
+
+msgid "Error setting PHP versions"
+msgstr "Fel vid inställning av PHP-versioner"
+
+#, c-format
+msgid "Error setting cgroup limits for %s: %s"
+msgstr "Fel vid inställning av cgroup-gränser för %s: %s"
+
+msgid "Error setting clipboard files"
+msgstr "Fel vid inställning av urklippsfiler"
+
+msgid "Error setting global key"
+msgstr "Fel vid inställning av global nyckel"
+
+#, c-format
+msgid "Error setting permission on %s: %s"
+msgstr "Fel vid inställning av behörighet för %s: %s"
+
+msgid "Error setting the filter"
+msgstr "Fel vid inställning av filtret"
+
+msgid "Error setting the spam filter"
+msgstr "Fel vid inställning av skräppostfiltret"
+
+msgid "Error setting timezone"
+msgstr "Fel vid inställning av tidszon"
+
+msgid "Error showing Email Acounts"
+msgstr "Fel vid visning av e-postkonton"
+
+msgid "Error showing message ID info"
+msgstr "Fel vid visning av meddelande-ID-information"
+
+msgid "Error showing smtp log info"
+msgstr "Fel vid visning av smtp-logginformation"
+
+msgid "Error signing zone"
+msgstr "Fel vid signering av zon"
+
+#, c-format
+msgid "Error suspending %s's user %s: %s"
+msgstr "Det gick inte att stänga av %ss användare %s: %s"
+
+#, c-format
+msgid "Error suspending cronjobs: %s"
+msgstr "Det gick inte att stänga av cronjobs: %s"
+
+msgid "Error updating Autoresponder"
+msgstr "Fel vid uppdatering av autosvar"
+
+msgid "Error updating Catch-All value"
+msgstr "Fel vid uppdatering av Catch-All-värdet"
+
+msgid "Error updating Vacation Message"
+msgstr "Fel vid uppdatering av semestermeddelande"
+
+msgid "Error updating forwarder"
+msgstr "Fel vid uppdatering av speditören"
+
+msgid "Error while compressing file"
+msgstr "Fel vid komprimering av filen"
+
+msgid "Error while creating User"
+msgstr "Fel när användaren skapades"
+
+msgid "Error while deleting Users"
+msgstr "Fel vid borttagning av användare"
+
+msgid "Error while saving changes"
+msgstr "Fel när ändringarna skulle sparas"
+
+msgid "Error while saving password"
+msgstr "Fel när lösenordet skulle sparas"
+
+#, c-format
+msgid "Error while writing %s"
+msgstr "Fel vid skrivning av %s"
+
+msgid "Error with LetsEncrypt request"
+msgstr "Fel med LetsEncrypt-begäran"
+
+msgid "Error with curl request"
+msgstr "Fel med curl-begäran"
+
+msgid "Error with exigrep"
+msgstr "Fel med exigrep"
+
+msgid "Error with fchownat"
+msgstr "Fel med fchownat"
+
+msgid "Error with system Quotas"
+msgstr "Fel med systemkvoter"
+
+#, c-format
+msgid ""
+"Error with the backup plan (rename failed): the copy of %s to %s has also "
+"failed: %s"
+msgstr ""
+"Fel med säkerhetskopieringsplanen (byta namn misslyckades): kopian av %s "
+"till %s har också misslyckats: %s"
+
+#, c-format
+msgid "Error writing %s"
+msgstr "Det gick inte att skriva %s"
+
+#, c-format
+msgid "Error writing %s: %s"
+msgstr "Fel vid skrivning av %s: %s"
+
+msgid "Error writing domain config file"
+msgstr "Fel vid skrivning av domänkonfigurationsfil"
+
+msgid "Error writing pop cache"
+msgstr "Det gick inte att skriva popcache"
+
+msgid "Error writing the directadmin.conf"
+msgstr "Det gick inte att skriva direktadmin.conf"
+
+#, c-format
+msgid "Error writing to %s: %s"
+msgstr "Fel vid skrivning till %s: %s"
+
+msgid "Errors"
+msgstr "Fel"
+
+msgid "Evening"
+msgstr "Kväll"
+
+msgid "Expecting 0 or 1"
+msgstr "Förväntar 0 eller 1"
+
+msgid "Expecting any integer"
+msgstr "Förväntar något heltal"
+
+msgid "Expecting any long long integer"
+msgstr "Förväntar något långt heltal"
+
+msgid "Expired"
+msgstr "Utgånget"
+
+msgid "Expiry"
+msgstr "Upphörande"
+
+msgid "Export Selected"
+msgstr "Exportera vald"
+
+msgid "Extension"
+msgstr "Förlängning"
+
+msgid "Extensions"
+msgstr "Förlängning"
+
+msgid "Extract"
+msgstr "Extrahera"
+
+msgid "Extract selected to directory"
+msgstr "Extrahera vald till katalog"
+
+msgid "Extracting User Data"
+msgstr "Extrahera användardata"
+
+msgid ""
+"Extracting files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Att extrahera filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Extracting non-readable files"
+msgstr "Extraherar icke-läsbara filer"
+
+msgid "Extracting ~/domains directory"
+msgstr "Extraherar ~/domains-katalogen"
+
+msgid "Extracting ~/imap directory"
+msgstr "Extraherar ~/imap-katalogen"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "FTP account already exists"
+msgstr "FTP-konto finns redan"
+
+msgid "FTP information invalid."
+msgstr "Ogiltig FTP-information."
+
+msgid "FTP: default creation error"
+msgstr "FTP: standardfel vid skapande"
+
+msgid "Feature Disabled"
+msgstr "Funktion inaktiverad"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "File"
+msgstr "Fil"
+
+msgid "File %s already exists, file skipped."
+msgstr "Filen %s finns redan, filen hoppades över."
+
+msgid "File Extracted"
+msgstr "Fil extraherad"
+
+#, c-format
+msgid "File being read as '%s'"
+msgstr "Filen läses som '%s'"
+
+msgid "File copied successfully"
+msgstr "Filen har kopierats"
+
+msgid "File does not exist"
+msgstr "Fil existerar inte"
+
+msgid "File does not exist or you don't have access to file"
+msgstr "Filen finns inte eller så har du inte tillgång till filen"
+
+#, fuzzy
+msgid "File emptied"
+msgstr "Fil extraherad"
+
+msgid "File exists check"
+msgstr ""
+
+msgid "File ownership reset"
+msgstr "Filägande återställs"
+
+#, fuzzy
+msgid "File purged"
+msgstr "Arkiv rensat"
+
+#, fuzzy
+msgid "File renamed successfully"
+msgstr "Filen har återställts"
+
+msgid "File restored successfully"
+msgstr "Filen har återställts"
+
+msgid "Filename"
+msgstr "Filnamn"
+
+msgid "Files added to clipboard"
+msgstr "Filer har lagts till i urklipp"
+
+#, fuzzy
+msgid "Files copied"
+msgstr "Fil extraherad"
+
+#, fuzzy
+msgid "Files deleted"
+msgstr "Nyckel(r) raderade"
+
+#, fuzzy
+msgid "Files moved"
+msgstr "%s borttagen"
+
+msgid "Filter"
+msgstr "filter"
+
+#, fuzzy
+msgid "Filter set"
+msgstr "filter"
+
+#, fuzzy
+msgid "Filter(s) removed"
+msgstr "IP(n) har tagits bort"
+
+msgid "Fingerprint"
+msgstr "Fingeravtryck"
+
+msgid "First"
+msgstr "Först"
+
+msgid "First PHP"
+msgstr "Första PHP"
+
+msgid "First Page"
+msgstr "Första sidan"
+
+#, c-format
+msgid "Flag value for '%s' is blank"
+msgstr "Flaggvärdet för '%s' är tomt"
+
+msgid "Flush from DNS"
+msgstr "Spola från DNS"
+
+msgid "For backwards compatibility"
+msgstr "För bakåtkompatibilitet"
+
+msgid ""
+"For cases where the large number of domains to process may cause a timeout"
+msgstr ""
+"För fall där det stora antalet domäner som ska bearbetas kan orsaka en "
+"timeout"
+
+msgid "Forwarder"
+msgstr "Vidarebefordring"
+
+#, c-format
+msgid "Forwarder %s cannot point to itself"
+msgstr "Vidarebefordringen %s kan inte peka på sig själv"
+
+#, c-format
+msgid "Forwarder %s@%s deleted as it had zero recipients remaining."
+msgstr ""
+"Vidarebefodringen %s@%s raderades eftersom den hade noll mottagare kvar."
+
+#, c-format
+msgid "Forwarder '%s' already exists."
+msgstr "Vidarebefordran '%s' finns redan."
+
+msgid "Forwarder already exists"
+msgstr "Forwarder finns redan"
+
+#, c-format
+msgid ""
+"Forwarder contains a local_part_suffix character: '%s' meaning everything "
+"after it will be ignored and the forwarder will never match."
+msgstr ""
+"Forwarder innehåller ett local_part_suffix-tecken: '%s' vilket betyder att "
+"allt efter det kommer att ignoreras och vidarebefordran kommer aldrig att "
+"matcha."
+
+msgid "Forwarder created"
+msgstr "Vidarebefordring skapad"
+
+#, c-format
+msgid "Forwarder loop found: %s"
+msgstr "Forwarder loop hittad: %s"
+
+msgid "Forwarder updated"
+msgstr "Vidarebefordringen uppdaterad"
+
+#, fuzzy
+msgid "Forwarders deleted"
+msgstr "Vidarebefordring skapad"
+
+#, c-format
+msgid "Found 0 files in %s reading as %s"
+msgstr "Hittade 0 filer i %s som lästes som %s"
+
+#, c-format
+msgid "Found matching key from %s"
+msgstr ""
+
+msgid "Free - randomly selected"
+msgstr "Gratis - slumpmässigt vald"
+
+msgid "Free Memory"
+msgstr "Ledigt minne"
+
+msgid "Free Selected"
+msgstr "Fri vald"
+
+msgid "Free Swap Memory"
+msgstr "Byt minne gratis"
+
+msgid "From"
+msgstr "Från"
+
+msgid "Ftp"
+msgstr "FTP"
+
+msgid "Ftp Accounts"
+msgstr "Ftp-konton"
+
+msgid "Ftp account changed"
+msgstr "Ftp-konto ändrat"
+
+msgid "Ftp settings saved"
+msgstr "Ftp-inställningar sparade"
+
+msgid "Full Date"
+msgstr "Fullständigt datum"
+
+msgid "Full Name has been successfully changed"
+msgstr "Fullständigt namn har ändrats"
+
+#, c-format
+msgid "Full format name '%s' does not end with zone name"
+msgstr "Fullformatnamnet '%s' slutar inte med zonnamn"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "GID"
+msgstr "GID"
+
+msgid "Generate Keys"
+msgstr "Generera nycklar"
+
+msgid "Git Repositories"
+msgstr "Git repositories"
+
+msgid "Global"
+msgstr "Global"
+
+msgid "Global - randomly selected"
+msgstr "Global - slumpmässigt utvald"
+
+msgid "Global Key"
+msgstr "Global nyckel"
+
+msgid "Global Key set"
+msgstr "Global nyckeluppsättning"
+
+msgid "Global ssh keys not available to Users"
+msgstr "Globala ssh-nycklar är inte tillgängliga för användare"
+
+msgid "Go to %s"
+msgstr "Gå till %s"
+
+#, c-format
+msgid "Group %s already exists. Please chose a different username."
+msgstr "Gruppen %s finns redan. Vänligen välj ett annat användarnamn."
+
+msgid "Handler"
+msgstr "Hanterare"
+
+#, fuzzy
+msgid "Handler Deleted"
+msgstr "Record redigerad"
+
+#, fuzzy
+msgid "Handler added"
+msgstr "Hanterare"
+
+msgid ""
+"Hello,\n"
+"\n"
+"This message is to notify you that your account '|USERNAME|' has been "
+"suspended.\n"
+"Reason: |REASON|\n"
+"\n"
+"If you feel this has been done in error, please contact your hosting "
+"provider for more information\n"
+"\n"
+"|MSG_FOOTER|\n"
+msgstr ""
+"Hej,\n"
+"\n"
+"Detta meddelande är för att meddela dig att ditt konto '|USERNAME|' har "
+"blivit avstängd.\n"
+"Orsak: |REASON|\n"
+"\n"
+"Om du anser att detta har gjorts av misstag, kontakta din värdleverantör för "
+"mer information\n"
+"\n"
+"|MSG_FOOTER|\n"
+
+msgid "Here are the results"
+msgstr "Här är resultaten"
+
+msgid "Here are the results:"
+msgstr "Här är resultaten:"
+
+msgid "High"
+msgstr "Hög"
+
+msgid "Highest"
+msgstr "Högsta"
+
+msgid "Hit end-of-file while searching for @ or domain header line in"
+msgstr "Tryck på slutet av filen när du söker efter @ eller domänhuvudet in"
+
+msgid "Home Directory"
+msgstr "Hemkatalog"
+
+#, c-format
+msgid "Home path '%s' is not in the allowed home_override_list"
+msgstr "Hemsökväg '%s' finns inte i den tillåtna home_override_list"
+
+msgid "Host:"
+msgstr "Host:"
+
+msgid "Hosts"
+msgstr "Värdar"
+
+msgid "Hour"
+msgstr "Timme"
+
+msgid "How to process the request"
+msgstr "Hur man behandlar förfrågan"
+
+msgid ""
+"However, after %s attempts, they were not able to provide a valid Two-Step "
+"Authentication code, so no access was granted."
+msgstr ""
+"Efter %s försök kunde de dock inte tillhandahålla en giltig "
+"tvåstegsautentiseringskod, så ingen åtkomst beviljades."
+
+msgid "However, subdomains have been found instead.  Proceeding with them."
+msgstr "Däremot har man hittat underdomäner istället. Fortsätter med dem."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "ID does not belong to you"
+msgstr "ID tillhör inte dig"
+
+#, fuzzy
+msgid "ID: 1234 or 1234-1239"
+msgstr "ID: 1234 eller \"1234-1239\""
+
+msgid "IO Read Bandwidth Max"
+msgstr "IO-läsbandbredd Max"
+
+msgid "IO Write Bandwidth Max"
+msgstr "IO-skrivbandbredd Max"
+
+msgid "IOPS Read Max"
+msgstr "IOPS Läs Max"
+
+msgid "IOPS Write Max"
+msgstr "IOPS Skriv Max"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Added"
+msgstr "IP tillagd"
+
+msgid "IP Info"
+msgstr "IP info"
+
+msgid "IP Link Added"
+msgstr "IP-länk har lagts till"
+
+msgid "IP Link(s) Removed"
+msgstr "IP-länk(ar) har tagits bort"
+
+msgid "IP List is empty"
+msgstr "IP-listan är tom"
+
+msgid "IP Netmask Set"
+msgstr "IP-nätmaskuppsättning"
+
+msgid "IP Type"
+msgstr "IP-typ"
+
+#, c-format
+msgid "IP in domain config file (%s) is not valid."
+msgstr "IP-adressen i domänkonfigurationsfilen (%s) är inte giltig."
+
+msgid "IP must be shared or free"
+msgstr "IP måste vara delad eller gratis"
+
+msgid "IP will be linked in the background"
+msgstr "IP kommer att länkas i bakgrunden"
+
+msgid "IP(s)"
+msgstr "IP(n)"
+
+msgid "IP(s) removed"
+msgstr "IP(n) har tagits bort"
+
+msgid "IP/User"
+msgstr "IP/användare"
+
+msgid "IPs"
+msgstr "IP:er"
+
+msgid "If needed, contact your Server Administrator to recreate the zone."
+msgstr ""
+
+msgid ""
+"If the username entered is correct, you will receive a confirmation email "
+"shortly."
+msgstr ""
+"Om det angivna användarnamnet är korrekt kommer du att få ett "
+"bekräftelsemail inom kort."
+
+msgid "If this is not your IP, change your password."
+msgstr "Om detta inte är din IP, ändra ditt lösenord."
+
+msgid ""
+"If you do not wish to overwrite the current certificate, please disable the "
+"auto-renewal"
+msgstr ""
+"Om du inte vill skriva över det aktuella certifikatet, vänligen inaktivera "
+"den automatiska förnyelsen"
+
+msgid ""
+"If you proceed, these User accounts, along with ALL the associated website "
+"and email contents, which are not listed here, will also be removed."
+msgstr ""
+"Om du fortsätter kommer dessa användarkonton, tillsammans med ALLT "
+"associerat webbplats- och e-postinnehåll, som inte är listat här, också att "
+"tas bort."
+
+msgid ""
+"If you set it to 0, no basic httpd request will work.  You wont even be able "
+"to login."
+msgstr ""
+"Om du ställer in den till 0 kommer ingen grundläggande http-förfrågan att "
+"fungera. Du kommer inte ens kunna logga in."
+
+msgid "Image filenames only have 1 dot"
+msgstr "Bildfilnamn har bara 1 prick"
+
+msgid "Imap"
+msgstr "Imap"
+
+msgid "Imap Folders"
+msgstr "Imap-mappar"
+
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgid "Inbox"
+msgstr "Inkorg"
+
+msgid "Include Domains"
+msgstr "Inkludera domäner"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Info for admins"
+msgstr "Info för administratörer"
+
+msgid "Inherit"
+msgstr "Ärva"
+
+msgid "Inodes"
+msgstr "Inoder"
+
+msgid "Installed"
+msgstr "Installerad"
+
+msgid "Installed Perl Modules"
+msgstr "Installerade Perl-moduler"
+
+msgid "Interface is a loopback interface."
+msgstr "Interface är ett loopback-gränssnitt."
+
+msgid "Interface is a point-to-point link."
+msgstr "Gränssnittet är en punkt-till-punkt-länk."
+
+msgid "Interface is in promiscuous mode."
+msgstr "Gränssnittet är i promiskuöst läge."
+
+msgid "Interface is running."
+msgstr "Gränssnittet körs."
+
+msgid "Internal debugging flag."
+msgstr "Intern felsökningsflagga."
+
+msgid "Invalid "
+msgstr "Ogiltig "
+
+#, c-format
+msgid "Invalid '%s'"
+msgstr "Ogiltig '%s'"
+
+msgid "Invalid CC email address"
+msgstr "Ogiltig CC-e-postadress"
+
+msgid ""
+"Invalid Characters in the skin name.  Only use a-zA-Z0-9._-[] Must not start "
+"with '.'"
+msgstr ""
+"Ogiltiga tecken i skalnamnet. Använd endast a-zA-Z0-9._-[] Får inte börja "
+"med '.'"
+
+msgid "Invalid Cron ID"
+msgstr "Ogiltigt Cron ID"
+
+msgid "Invalid DNS name"
+msgstr "Ogiltigt DNS-namn"
+
+msgid "Invalid DNS value"
+msgstr "Ogiltigt DNS-värde"
+
+msgid "Invalid Domain"
+msgstr "Ogiltig domän"
+
+msgid "Invalid Domain Name"
+msgstr "Ogiltigt domännamn"
+
+msgid "Invalid E-Mail"
+msgstr "Ogiltig e-postadress"
+
+msgid "Invalid E-Mail User"
+msgstr "Ogiltig e-postanvändare"
+
+msgid ""
+"Invalid E-Mail address. Multiple and DirectAdmin login username, or blank "
+"also allowed"
+msgstr ""
+"Ogiltig e-postadress. Användarnamn för flera och DirectAdmin-inloggning, "
+"eller tomt är också tillåtet"
+
+msgid "Invalid Email"
+msgstr "Ogiltig e-postadress"
+
+msgid "Invalid Email Name"
+msgstr "Ogiltigt e-postnamn"
+
+msgid "Invalid Email limit"
+msgstr "Ogiltig e-postgräns"
+
+msgid "Invalid FTP account"
+msgstr "Ogiltigt FTP-konto"
+
+msgid "Invalid IP (1.2.3.4) or IP range (1.2.3.4-5)"
+msgstr "Ogiltig IP (1.2.3.4) eller IP-intervall (1.2.3.4-5)"
+
+msgid "Invalid IP/Domain for the ftp connection"
+msgstr "Ogiltig IP/domän för ftp-anslutningen"
+
+#, c-format
+msgid "Invalid Log Rotate Value: %d"
+msgstr "Ogiltigt loggroteringsvärde: %d"
+
+msgid "Invalid MX value"
+msgstr "Ogiltigt MX-värde"
+
+msgid "Invalid Name"
+msgstr "Ogiltigt namn"
+
+msgid "Invalid Netmask"
+msgstr "Ogiltig nätmask"
+
+msgid "Invalid Password"
+msgstr "felaktigt lösenord"
+
+msgid "Invalid RSA comment"
+msgstr "Ogiltig RSA-kommentar"
+
+msgid "Invalid RSA id. Use simple characters: a-zA-Z0-9"
+msgstr "Ogiltigt RSA-id. Använd enkla tecken: a-zA-Z0-9"
+
+msgid "Invalid RSA key"
+msgstr "Ogiltig RSA-nyckel"
+
+msgid "Invalid SecRuleRemoveById value"
+msgstr "Ogiltigt SecRuleRemoveById-värde"
+
+#, c-format
+msgid "Invalid Session Minutes value: %lld"
+msgstr "Ogiltigt värde för sessionsminuter: %lld"
+
+msgid "Invalid Subdomain"
+msgstr "Ogiltig underdomän"
+
+msgid "Invalid Two-Step Auth code"
+msgstr "Ogiltig tvåstegsautentiseringskod"
+
+#, fuzzy
+msgid "Invalid Two-Step Authentication code"
+msgstr "Ogiltig tvåstegsautentiseringskod"
+
+msgid "Invalid URL"
+msgstr "Ogiltig URL"
+
+msgid "Invalid Username"
+msgstr "Ogiltigt användarnamn"
+
+msgid "Invalid Username or Password"
+msgstr "Ogiltigt användarnamn eller lösenord"
+
+msgid "Invalid characters in password"
+msgstr "Ogiltiga tecken i lösenordet"
+
+msgid "Invalid characters in word"
+msgstr "Ogiltiga tecken i word"
+
+msgid "Invalid crypted passwd"
+msgstr "Ogiltigt krypterat lösenord"
+
+msgid "Invalid delete_messages_days or delete_tickets_days.  Too big.  Max = "
+msgstr ""
+"Ogiltiga delete_messages_days eller delete_tickets_days. För stor. Max = "
+
+msgid ""
+"Invalid delete_messages_days or delete_tickets_days. Should be 0 or a "
+"positive integer."
+msgstr ""
+"Ogiltiga delete_messages_days eller delete_tickets_days. Bör vara 0 eller "
+"ett positivt heltal."
+
+msgid "Invalid dnsprovider"
+msgstr "Ogiltig dnprovider"
+
+#, fuzzy
+msgid "Invalid dnsprovider type"
+msgstr "Ogiltig dnprovider"
+
+msgid "Invalid domain"
+msgstr "Ogiltig domän"
+
+msgid "Invalid email address"
+msgstr "Ogiltig e-postadress"
+
+msgid "Invalid email user"
+msgstr "Ogiltig e-postanvändare"
+
+msgid "Invalid email username"
+msgstr "Ogiltigt användarnamn för e-post"
+
+msgid "Invalid encryption password"
+msgstr "Ogiltigt krypteringslösenord"
+
+msgid "Invalid file extension list"
+msgstr "Ogiltig filtilläggslista"
+
+msgid "Invalid filename:"
+msgstr "Ogiltigt filnamn:"
+
+msgid "Invalid filter type"
+msgstr "Ogiltig filtertyp"
+
+msgid "Invalid fingerprint"
+msgstr "Ogiltigt fingeravtryck"
+
+msgid "Invalid ftp password"
+msgstr "Ogiltigt ftp-lösenord"
+
+msgid "Invalid ftp path"
+msgstr "Ogiltig ftp-sökväg"
+
+msgid "Invalid ftp port"
+msgstr "Ogiltig ftp-port"
+
+msgid "Invalid ftp username"
+msgstr "Ogiltigt ftp-användarnamn"
+
+#, c-format
+msgid "Invalid key bit length: '%s'"
+msgstr "Ogiltig nyckelbitlängd: '%s'"
+
+#, c-format
+msgid "Invalid key option name or value: %s=%s"
+msgstr "Ogiltigt namn eller värde för nyckelalternativ: %s=%s"
+
+#, c-format
+msgid "Invalid key type: '%s'"
+msgstr "Ogiltig nyckeltyp: '%s'"
+
+#, c-format
+msgid "Invalid keysize. Valid values: %s"
+msgstr "Ogiltig nyckelstorlek. Giltiga värden: %s"
+
+msgid "Invalid list of allowed domains"
+msgstr "Ogiltig lista över tillåtna domäner"
+
+msgid "Invalid local path"
+msgstr "Ogiltig lokal sökväg"
+
+msgid "Invalid login. Please verify your Username and Password"
+msgstr "Ogiltig inloggning. Vänligen verifiera ditt användarnamn och lösenord"
+
+msgid "Invalid message days. Should be a positive integer."
+msgstr "Ogiltiga meddelandedagar. Bör vara ett positivt heltal."
+
+msgid "Invalid message id"
+msgstr "Ogiltigt meddelande-id"
+
+msgid "Invalid message type. Only request, reply and message are allowed"
+msgstr "Ogiltig meddelandetyp. Endast begäran, svar och meddelande är tillåtna"
+
+#, c-format
+msgid "Invalid method: '%s'"
+msgstr "Ogiltig metod: '%s'"
+
+msgid "Invalid name or extension"
+msgstr "Ogiltigt namn eller tillägg"
+
+msgid "Invalid netmask type for IP type"
+msgstr "Ogiltig nätmasktyp för IP-typ"
+
+msgid "Invalid new user value"
+msgstr "Ogiltigt nytt användarvärde"
+
+msgid "Invalid number"
+msgstr "Ogiltigt nummer"
+
+msgid "Invalid package name"
+msgstr "Ogiltigt paketnamn"
+
+msgid "Invalid path"
+msgstr "Ogiltig sökväg"
+
+msgid "Invalid path append value"
+msgstr "Ogiltigt tilläggsvärde för sökväg"
+
+msgid "Invalid redirect URL"
+msgstr "Ogiltig omdirigeringsadress"
+
+msgid "Invalid session timeout or max filesize values"
+msgstr "Ogiltig tidsgräns för session eller maxvärden för filstorlek"
+
+msgid "Invalid subdomain name"
+msgstr "Ogiltigt underdomännamn"
+
+msgid "Invalid ticket days. Should be a positive integer."
+msgstr "Ogiltiga ärendedagar. Bör vara ett positivt heltal."
+
+#, c-format
+msgid "Invalid ticket days. Too big. Max = %s"
+msgstr "Ogiltiga ärendedagar. För stor. Max = %s"
+
+#, c-format
+msgid "Invalid type for '%s': '%s'"
+msgstr "Ogiltig typ för '%s': '%s'"
+
+msgid "Invalid update channel"
+msgstr "Ogiltig uppdateringskanal"
+
+msgid "Invalid username"
+msgstr "Ogiltigt användarnamn"
+
+msgid "Invalid values"
+msgstr "Ogiltiga värden"
+
+msgid "Is able to select media type via ifmap."
+msgstr "Kan välja mediatyp via ifmap."
+
+msgid "Issue verifying license"
+msgstr "Utfärda verifieringslicens"
+
+msgid "Issuer"
+msgstr "Emittent"
+
+msgid "It already exists on the following system(s)"
+msgstr "Det finns redan på följande system"
+
+msgid "It has been disabled"
+msgstr "Den har inaktiverats"
+
+msgid "It must be a positive integer."
+msgstr "Det måste vara ett positivt heltal."
+
+msgid "It must not be an IP"
+msgstr "Det får inte vara en IP"
+
+#, c-format
+msgid "It's already associated with %s"
+msgstr "Den är redan kopplad till %s"
+
+msgid "Items per page"
+msgstr "Objekt per sida"
+
+msgid "Jailed Home"
+msgstr "Fängslat hem"
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgctxt "readable size"
+msgid "KB"
+msgstr "KB"
+
+msgid "Keep it for future reference."
+msgstr "Spara den för framtida referens."
+
+msgid "Keep the numbers to a realistic value please."
+msgstr "Håll siffrorna till ett realistiskt värde."
+
+msgid "Key"
+msgstr "Nyckel"
+
+msgid "Key Created. Take note of it's value and keep it safe."
+msgstr "Nyckel skapad. Lägg märke till dess värde och förvara det säkert."
+
+msgid "Key ID"
+msgstr "Nyckel ID"
+
+msgid "Key Name"
+msgstr "Nyckel namn"
+
+msgid "Key Name must be simple: a-zA-Z0-9"
+msgstr "Nyckelnamn måste vara enkelt: a-zA-Z0-9"
+
+msgid "Key already exists via fingerprint matching"
+msgstr "Nyckeln finns redan via fingeravtrycksmatchning"
+
+msgid "Key is Invalid"
+msgstr "Nyckeln är ogiltig"
+
+msgid "Key(s) deleted"
+msgstr "Nyckel(r) raderade"
+
+msgid "Keys"
+msgstr "Nycklar"
+
+msgid "Keys listed below"
+msgstr "Nycklar listade nedan"
+
+msgid "Kill"
+msgstr "Döda"
+
+msgid "Language"
+msgstr "Språk"
+
+#, c-format
+msgid "Language has been changed to %s"
+msgstr "Språket har ändrats till %s"
+
+msgid "Language has been successfully changed"
+msgstr "Språket har ändrats"
+
+msgid "Last"
+msgstr "Sista"
+
+msgid "Last Accessed"
+msgstr "Senast åtkomst"
+
+msgid "Last Changed"
+msgstr "Senast ändrad"
+
+#, c-format
+msgid "Last Login IP: %s"
+msgstr "Senaste inloggnings-IP: %s"
+
+#, c-format
+msgid "Last Login: %s"
+msgstr "Senaste inloggning: %s"
+
+msgid "Last Message"
+msgstr "Senaste meddelandet"
+
+msgid "Last Modified"
+msgstr "Senast ändrad"
+
+msgid "Last Page"
+msgstr "Sista sidan"
+
+msgid "Last Tally Completion"
+msgstr "Senaste sammanställningen"
+
+msgid "Leave DNS"
+msgstr "Lämna DNS"
+
+#, c-format
+msgid "Left user on %s's list"
+msgstr "Lämnade användare på %ss lista"
+
+msgid "Let's Encrypt Certificate Entries"
+msgstr "Let's Encrypt Certificate inlägg"
+
+msgid "Let's Encrypt is not enabled.  You cannot use this option."
+msgstr ""
+"Let's Encrypt är inte aktiverat. Du kan inte använda det här alternativet."
+
+msgid "LetsEncrypt files have been cleared"
+msgstr "LetsEncrypt-filer har rensats"
+
+msgid "LetsEncrypt request successful"
+msgstr "LetsEncrypt-förfrågan lyckades"
+
+msgid "LetsEncrypt request successful for"
+msgstr "LetsEncrypt begäran lyckades för"
+
+msgid "License file is no longer supported"
+msgstr "Licensfilen stöds inte längre"
+
+msgid "License file unchanged"
+msgstr "Licensfilen oförändrad"
+
+msgid "License has been verified through the DirectAdmin licensing system"
+msgstr "Licensen har verifierats via DirectAdmins licensieringssystem"
+
+#, c-format
+msgid "License is limited to %d Admins/Resellers, and you currently have %d"
+msgstr ""
+"Licensen är begränsad till %d administratörer/återförsäljare, och du har för "
+"närvarande %d"
+
+#, c-format
+msgid "License is limited to %d accounts, and you currently have %d"
+msgstr "Licensen är begränsad till %d konton och du har för närvarande %d"
+
+#, c-format
+msgid "License is limited to %d domains, and you currently have %d"
+msgstr "Licensen är begränsad till %d domäner och du har för närvarande %d"
+
+msgid "License is not valid"
+msgstr "Licensen är inte giltig"
+
+msgid "License limits exceeded"
+msgstr "Licensgränserna har överskridits"
+
+msgid "License verified"
+msgstr "Licens verifierad"
+
+msgid "Limit Notice"
+msgstr "Begränsningsmeddelande"
+
+msgid "Limit is not a number"
+msgstr "Limit är inte ett nummer"
+
+msgid "Link"
+msgstr "Länk"
+
+msgid "Link in Background"
+msgstr "Länk i bakgrunden"
+
+msgid "Linked IPs"
+msgstr "Länkade IP:er"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "List Configurations Saved"
+msgstr "Listkonfigurationer sparade"
+
+#, c-format
+msgid "Listname must be %d characters or less"
+msgstr "Listnamnet måste vara %d tecken eller mindre"
+
+msgid "Listname must be all lower case letters"
+msgstr "Listnamn måste bestå av små bokstäver"
+
+msgid "Load Average"
+msgstr "Belastningsgenomsnitt"
+
+msgid "Local Data"
+msgstr "Lokala data"
+
+msgid "Local Default"
+msgstr "Lokal standard"
+
+msgid "Local Mail"
+msgstr "Lokal post"
+
+msgid "Local URL Path"
+msgstr "Lokal URL-sökväg"
+
+msgid "Log"
+msgstr "Logga"
+
+msgid "Log Entry"
+msgstr "Logginmatning"
+
+msgid "Log Usage"
+msgstr "Logganvändning"
+
+msgid "Login"
+msgstr "Logga in"
+
+msgid "Login Failures"
+msgstr "Inloggningsfel"
+
+msgid "Login Keys"
+msgstr "Inloggningsnycklar"
+
+#, c-format
+msgid "Login as %s"
+msgstr "Logga in som %s"
+
+msgid "Low"
+msgstr "Låg"
+
+msgctxt "readable size"
+msgid "MB"
+msgstr "MB"
+
+msgid "MX Template set"
+msgstr "MX-malluppsättning"
+
+msgid "MX Templates are disabled"
+msgstr "MX-mallar är inaktiverade"
+
+msgid "MX priority should be an positive number"
+msgstr "MX-prioritet ska vara ett positivt tal"
+
+msgid "Mailing List"
+msgstr "E-postlista"
+
+#, fuzzy
+msgid "Mailing List Created"
+msgstr "E-postlista"
+
+#, fuzzy
+msgid "Mailing List(s) Deleted"
+msgstr "E-postlistor"
+
+msgid "Mailing Lists"
+msgstr "E-postlistor"
+
+msgid "Main"
+msgstr "Main"
+
+msgid "Main Domain ..."
+msgstr "Huvuddomän..."
+
+#, c-format
+msgid "Major Error: Error finding home for %s"
+msgstr "Stort fel: Det gick inte att hitta hem för %s"
+
+msgid "Make sure 'unit' is running"
+msgstr "Se till att \"enhet\" är igång"
+
+msgid "Make sure that the values passed are valid for their type"
+msgstr "Se till att värdena som skickas är giltiga för deras typ"
+
+#, c-format
+msgid "Manually by %s"
+msgstr "Manuellt av %s"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Mark as read"
+msgstr "markera som läst"
+
+msgid "Master of a load balancing bundle."
+msgstr "Mästaren på ett lastbalanseringspaket."
+
+msgid "Max Tasks that may be created in the unit"
+msgstr "Max uppgifter som kan skapas i enheten"
+
+msgid "Max Usage (Meg)"
+msgstr "Max användning (Meg)"
+
+msgid "Max disk read operations per second."
+msgstr "Max disk läs operationer per sekund."
+
+msgid "Max disk write operations per second."
+msgstr "Max diskskrivningsoperationer per sekund."
+
+msgid "Max limit User can set per E-Mail"
+msgstr "Maxgräns Användaren kan ställa in per e-post"
+
+msgid "Max rate data can be read from a disk."
+msgstr "Maxhastighetsdata kan läsas från en disk."
+
+msgid "Max rate data can be written to a disk."
+msgstr "Maxhastighetsdata kan skrivas till en disk."
+
+msgid "Maximum Usage"
+msgstr "Maximal användning"
+
+#, c-format
+msgid "Maximum value: %s=%s"
+msgstr "Maximalt värde: %s=%s"
+
+msgid "May"
+msgstr "Maj"
+
+msgid "Medium"
+msgstr "Medium"
+
+msgid "Meg"
+msgstr "Meg"
+
+msgid "Memory High"
+msgstr "Minne hög"
+
+msgid "Memory Max"
+msgstr "Max minnesanvändning"
+
+msgid "Memory Usage"
+msgstr "Minnesanvändning"
+
+msgid "Message #"
+msgstr "Meddelande #"
+
+msgid "Message Reset"
+msgstr "Meddelande Återställ"
+
+msgid "Message Type"
+msgstr "Meddelandetyp"
+
+msgid "Message is being sent"
+msgstr "Meddelandet skickas"
+
+msgid "Message removed"
+msgid_plural "Messages removed"
+msgstr[0] "Meddelandet har tagits bort"
+msgstr[1] "Meddelanden har tagits bort"
+
+#, fuzzy
+msgid "Messages Cleared"
+msgstr "Meddelanden uppdaterade"
+
+msgid "Messages Updated"
+msgstr "Meddelanden uppdaterade"
+
+#, fuzzy
+msgid "Mime Types Deleted"
+msgstr "Mime typer"
+
+#, fuzzy
+msgid "Mime-Type added"
+msgstr "MimeType"
+
+msgid "MimeType"
+msgstr "MimeType"
+
+msgid "Minute"
+msgstr "Minut"
+
+msgid "Missing closing bracket in zone line."
+msgstr "Saknar stängningsfäste i zonlinje."
+
+msgid "Missing open bracket in zone line."
+msgstr "Saknar öppet fäste i zonlinjen."
+
+msgid "ModSecurity Flags"
+msgstr "ModSecurity Flaggor"
+
+msgid "ModSecurity Rules Saved"
+msgstr "ModSecurity Regler sparade"
+
+msgid "ModSecurity Skipped Rules"
+msgstr "ModSecurity överhoppade regler"
+
+msgid "ModSecurity is not enabled"
+msgstr "ModSecurity är inte aktiverat"
+
+msgid "Modify"
+msgstr "Ändra"
+
+msgid "Modify Password"
+msgstr "Ändra lösenord"
+
+msgid "Month"
+msgstr "Månad"
+
+msgid "More Info"
+msgstr "Mer information"
+
+msgid "Morning"
+msgstr "Morgon"
+
+msgid "Move Clipboard Files here"
+msgstr "Flytta urklippsfiler här"
+
+msgid "Move to Trash"
+msgstr "Flytta till papperskorgen"
+
+msgid ""
+"Must provide a mime type or handler name and a single extention. eg: \"text/"
+"html\" or \"cgi-script\" and \"html\""
+msgstr ""
+"Måste ange en mimetyp eller hanterarnamn och en enda extension. t.ex. \"text/"
+"html\" eller \"cgi-script\" och \"html\""
+
+msgid "Must select more than zero LetsEncrypt entries."
+msgstr "Måste välja fler än noll LetsEncrypt-poster."
+
+#, c-format
+msgid "Must use letsencrypt=1 for options.  letsencrypt=%d is currently set."
+msgstr ""
+"Måste använda letsencrypt=1 för alternativ. letsencrypt=%d är för närvarande "
+"inställd."
+
+msgid "MySQL is not enabled on this server"
+msgstr "MySQL är inte aktiverat på denna server"
+
+msgid "NGINX Unit"
+msgstr "NGINX Enhet"
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Name Server 1"
+msgstr "Namnserver 1"
+
+msgid "Name Server 2"
+msgstr "Namnserver 2"
+
+msgid "Name must only contain letters, spaces and/or periods"
+msgstr "Namnet får endast innehålla bokstäver, mellanslag och/eller punkter"
+
+msgid "Nameserver"
+msgstr "Namnserver"
+
+msgid "Nameservers deleted"
+msgstr "Namnservrar raderade"
+
+msgid "Nameservers have been changed"
+msgstr "Namnservrar har ändrats"
+
+msgid "Namesevers have been changed."
+msgstr "Namngivarna har ändrats."
+
+msgid "Netmask"
+msgstr "Nätmask"
+
+msgid "Never"
+msgstr "Aldrig"
+
+msgid "New Secret Set: %s"
+msgstr "Ny hemlig uppsättning: %s"
+
+msgid "New password isn't different"
+msgstr "Nytt lösenord är inte annorlunda"
+
+#, c-format
+msgid "Newly installed key is %s-bit"
+msgstr "Nyinstallerad nyckel är %s-bit"
+
+msgid "Next Retry"
+msgstr "Nästa Försök igen"
+
+msgid "Nginx Template"
+msgstr "Nginx mall"
+
+msgid "Nginx is not enabled"
+msgstr "Nginx är inte aktiverat"
+
+msgid "NginxUnit is not enabled or not running"
+msgstr "NginxUnit är inte aktiverat eller körs inte"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "No Awstats"
+msgstr "Inga Awstats"
+
+msgid "No Data to Show"
+msgstr "Inga data att visa"
+
+msgid "No IPs selected"
+msgstr "Inga IP-adresser har valts"
+
+#, c-format
+msgid "No ListFile in container at route position %lld"
+msgstr "Ingen listfil i behållaren vid ruttposition %lld"
+
+msgid "No Send class set"
+msgstr "Ingen Skicka klassuppsättning"
+
+msgid "No User Data"
+msgstr "Inga användardata"
+
+msgid "No action"
+msgstr "Ingen åtgärd"
+
+msgid "No arp protocol, L2 destination address not set."
+msgstr "Inget arp-protokoll, L2-destinationsadress inte inställd."
+
+msgid "No changes have been made"
+msgstr "Inga ändringar har gjorts"
+
+msgid "No changes were needed. Skipping write."
+msgstr "Inga ändringar behövdes. Hoppa över skrivandet."
+
+msgid "No colors have been selected"
+msgstr "Inga färger har valts"
+
+#, c-format
+msgid "No container at route position %lld"
+msgstr "Ingen container vid ruttposition %lld"
+
+msgid "No events for this period."
+msgstr "Inga evenemang för denna period."
+
+msgid "No files have been selected for upload."
+msgstr "Inga filer har valts för uppladdning."
+
+msgid "No free IPs found"
+msgstr "Inga gratis IP-adresser hittades"
+
+msgid "No global IPs found"
+msgstr "Inga globala IP-adresser hittades"
+
+msgid "No keys selected"
+msgstr "Inga Nycklar har valts"
+
+msgid "No passwd entries provided."
+msgstr "Inga passwd-poster tillhandahålls."
+
+msgid "No paths were provided."
+msgstr "Inga stigar tillhandahölls."
+
+msgid "No shared IPs found"
+msgstr "Inga delade IP-adresser hittades"
+
+msgid "No text provided"
+msgstr "Ingen text tillhandahålls"
+
+msgid "No vacation message set"
+msgstr "Inget semestermeddelande inställt"
+
+msgid "None"
+msgstr ""
+
+msgid "Not a valid IP Address"
+msgstr "Inte en giltig IP-adress"
+
+msgid "Not allowed for Resellers"
+msgstr "Tillåts ej för återförsäljare"
+
+#, c-format
+msgid ""
+"Not enough IP's to create nameservers. It requires at least %d free, un-"
+"assigned ips."
+msgstr ""
+"Inte tillräckligt med IP-adresser för att skapa namnservrar. Det kräver "
+"minst %d gratis, icke-tilldelade ips."
+
+msgid "Not setting up Mail SNI."
+msgstr "Konfigurerar inte Mail SNI."
+
+#, c-format
+msgid "Not valid due to the character '%c' at index %d"
+msgstr "Ej giltig på grund av tecknet '%c' vid index %d"
+
+msgid "Not yet generated"
+msgstr "Inte genererat ännu"
+
+msgid "Not yet signed"
+msgstr "Ännu inte undertecknad"
+
+#, c-format
+msgid ""
+"Note: the previous Let's Encrypt config is still set to renew in %d days."
+msgstr ""
+"Obs: den tidigare Let's Encrypt-konfigurationen är fortfarande inställd på "
+"att förnyas om %d dagar."
+
+msgid "Nothing"
+msgstr "Ingenting"
+
+msgid "Notification that Login Key %s has been successfully created by %s"
+msgstr "Meddelande om att inloggningsnyckel %s har skapats av %s"
+
+msgid "Notified"
+msgstr "Aviserat"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Null values"
+msgstr "Nullvärden"
+
+#, c-format
+msgid "Number %s=%s is out of range (required: %d-%d)"
+msgstr "Antal %s=%s är utanför intervallet (krävs: %d-%d)"
+
+msgid "Number of Users"
+msgstr "Antal användare"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Off"
+msgstr "Av"
+
+#, c-format
+msgid "Old %s-bit key has been backed up to %s"
+msgstr "Gammal %s-bit nyckel har säkerhetskopierats till %s"
+
+msgid "Old password incorrect"
+msgstr "Det gamla lösenordet är felaktigt"
+
+#, c-format, fuzzy
+msgid "Older than %d day"
+msgid_plural "Older than %d days"
+msgstr[0] "äldre än %s dagar."
+msgstr[1] "äldre än %s dagar."
+
+msgid "On"
+msgstr "På"
+
+msgid "One (or more) of the selected IPs are not currently in your list"
+msgstr ""
+"En (eller flera) av de valda IP-adresserna finns för närvarande inte i din "
+"lista"
+
+#, fuzzy
+msgid "One-Click login is not enabled in the directadmin.conf"
+msgstr "cgroup är avstängd i direktadmin.conf"
+
+#, c-format
+msgid ""
+"One-Click login requires does not support webmail_link=%s.  Try "
+"webmail_link=roundcube."
+msgstr ""
+"One-Click-inloggning kräver stöder inte webmail_link=%s. Försök med "
+"webmail_link=roundcube."
+
+#, c-format
+msgid "Only %d of the requested %d global IPs were assigned."
+msgstr "Endast %d av de begärda %d globala IP-adresserna tilldelades."
+
+msgid "Only 'Additional' IPs can be removed from a User using this method"
+msgstr ""
+"Endast \"Ytterligare\" IP-adresser kan tas bort från en användare med denna "
+"metod"
+
+msgid "Only API access is allowed"
+msgstr ""
+
+msgid "Only Admin accounts can save settings"
+msgstr "Endast administratörskonton kan spara inställningar"
+
+msgid "Only Admins can reset the usage count"
+msgstr "Endast administratörer kan återställa användningsräkningen"
+
+msgid "Only Admins may run this request"
+msgstr "Endast administratörer får köra denna begäran"
+
+msgid ""
+"Only provide one extension at a time. eg: \"jpg\" and NOT \"jpg jpeg jpe\""
+msgstr ""
+"Ange bara en förlängning åt gången. t.ex.: \"jpg\" och INTE \"jpg jpeg jpe\""
+
+#, c-format
+msgid "Only the default '%s' domain is able to control the php settings."
+msgstr "Endast standarddomänen '%s' kan styra php-inställningarna."
+
+msgid "Only the location of the route can be renamed"
+msgstr "Endast ruttens plats kan bytas om"
+
+msgid "Only use wildcard on domains who currently have functional local DNS"
+msgstr ""
+"Använd endast jokertecken på domäner som för närvarande har fungerande lokal "
+"DNS"
+
+msgid "Open"
+msgstr "Öppna"
+
+msgid "Open Basedir disabled on selected domains"
+msgstr "Open Basedir inaktiverad på valda domäner"
+
+msgid "Open Basedir enabled on selected domains"
+msgstr "Öppna Basedir aktiverat på valda domäner"
+
+msgid "Open+Confirm"
+msgstr "Öppna+Bekräfta"
+
+msgid "Operation"
+msgstr "Drift"
+
+msgid "Optimize"
+msgstr "Optimera"
+
+#, c-format
+msgid "Option '%s' has already been set"
+msgstr "Alternativet '%s' har redan ställts in"
+
+#, fuzzy
+msgid "Option Saved"
+msgstr "Inställningar Sparade"
+
+msgid "Options"
+msgstr "alternativ"
+
+msgid "Options changed successfully"
+msgstr "Alternativen har ändrats"
+
+msgid "Order"
+msgstr "Beställa"
+
+msgid "Order (when the first sort values are equal)"
+msgstr "Order (när de första sorteringsvärdena är lika)"
+
+msgid "Original Package"
+msgstr "Originalpaket"
+
+msgid "Other"
+msgstr "Övrig"
+
+msgid "Other Disk Usage"
+msgstr "Annan diskanvändning"
+
+msgid "Other Usage"
+msgstr "Annan användning"
+
+msgid "Overview"
+msgstr "Översikt"
+
+msgid "Owner"
+msgstr "Ägare"
+
+#, c-format
+msgid "Owner of global IP swapped to Admin %s"
+msgstr "Ägare av global IP bytte till Admin %s"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "PHP Script Name"
+msgstr "PHP-skriptnamn"
+
+msgid "PHP Settings cannot be controlled under this domain"
+msgstr "PHP-inställningar kan inte kontrolleras under denna domän"
+
+msgid "PHP Version Selector"
+msgstr "PHP-versionsväljare"
+
+msgid "PHP versions saved"
+msgstr "PHP-versioner sparade"
+
+msgid "PID"
+msgstr "PID"
+
+#, c-format
+msgid "PID '%s' is not a number"
+msgstr "PID '%s' är inte ett nummer"
+
+msgid "POP Email Accounts"
+msgstr "POP e-postkonton"
+
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP-server"
+
+msgid "Package"
+msgstr "Paket"
+
+#, c-format
+msgid "Package '%s' already exists"
+msgstr "Paketet '%s' finns redan"
+
+#, c-format
+msgid "Package '%s' does not exist"
+msgstr "Paketet '%s' finns inte"
+
+#, c-format
+msgid "Package '%s' is not in your list"
+msgstr "Paketet '%s' finns inte i din lista"
+
+msgid "Package not found"
+msgstr "Paketet hittades inte"
+
+msgid "Page"
+msgstr "Sida"
+
+#, c-format
+msgid "Parent directory %s was created."
+msgstr "Överordnad katalog %s skapades."
+
+msgid "Parsing Error. Check logs"
+msgstr "Parsningsfel. Kontrollera loggar"
+
+msgid "Password"
+msgstr "Lösenord"
+
+msgid "Password Changed"
+msgstr "Lösenordet ändrat"
+
+#, c-format
+msgid "Password Changed: %s"
+msgstr "Lösenord ändrat: %s"
+
+msgid "Password Not Changed"
+msgstr "Lösenordet inte ändrat"
+
+msgid "Password Saved!"
+msgstr "Lösenord sparat!"
+
+msgid "Password is not valid"
+msgstr "Lösenordet är inte giltigt"
+
+msgid "Password is too long"
+msgstr "Lösenordet är för långt"
+
+msgid "Password is too short"
+msgstr "Lösenordet är för kort"
+
+#, c-format
+msgid "Password is too short (%d).  Use at least %d characters"
+msgstr "Lösenordet är för kort (%d). Använd minst %d tecken"
+
+#, c-format
+msgid "Password must be more than %d characters"
+msgstr "Lösenordet måste vara mer än %d tecken"
+
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "Skin har framgångsrikt förändrats"
+
+msgid "Password/Quota"
+msgstr "Lösenord/kvot"
+
+msgid "Password:"
+msgstr "Lösenord:"
+
+msgid "Passwords do not match"
+msgstr "Lösenorden matchar inte"
+
+msgid "Passwords do not match or are invalid"
+msgstr "Lösenord stämmer inte överens eller är ogiltiga"
+
+msgid "Path"
+msgstr "Väg"
+
+#, c-format
+msgid "Path %s does not exist or is not accessible by the %s user."
+msgstr "Sökvägen %s finns inte eller är inte tillgänglig för %s-användaren."
+
+#, c-format
+msgid ""
+"Path '%s' already exists before User creation. Please remove/rename this "
+"path first."
+msgstr ""
+"Sökvägen '%s' finns redan innan användaren skapades. Ta bort/byt namn på "
+"denna sökväg först."
+
+msgid "Path does not exist"
+msgstr "Vägen finns inte"
+
+msgid "Path must start with a forward slash (/)"
+msgstr "Sökvägen måste börja med ett snedstreck (/)"
+
+msgid "Paths Unblocked"
+msgstr "Banor avblockerade"
+
+msgid "Paths must be within your home directory"
+msgstr "Sökvägar måste finnas i din hemkatalog"
+
+msgid "Percent"
+msgstr "Procent"
+
+#, c-format
+msgid "Percent must end with a % character"
+msgstr "Procent måste sluta med ett % c-tecken"
+
+#, c-format
+msgid "Percent of CPU Core. >100% for more cores."
+msgstr "Procent av CPU-kärnan. >100 % för fler kärnor."
+
+#, c-format
+msgid "Percentage must be between %d and %d, inclusive"
+msgstr "Procentandelen måste vara mellan %d och %d inklusive"
+
+msgid "Perm."
+msgstr "Perm."
+
+msgid "Permissions set"
+msgstr "Behörigheter inställda"
+
+msgid "Php is not enabled"
+msgstr "Php är inte aktiverat"
+
+#, c-format
+msgid ""
+"Please check the zone for %s to ensure the nameserver A records are correct."
+msgstr ""
+"Kontrollera zonen för %s för att säkerställa att namnserverns A-poster är "
+"korrekta."
+
+msgid "Please confirm you wish to delete your DNSSEC data"
+msgstr "Vänligen bekräfta att du vill radera dina DNSSEC-data"
+
+msgid "Please pick only one skin to apply"
+msgstr "Välj bara ett skinn att applicera"
+
+#, c-format
+msgid "Please provide an '%s'"
+msgstr "Vänligen ange en \"%s\""
+
+msgid "Please provide at least one IP"
+msgstr "Ange minst en IP-adress"
+
+#, c-format
+msgid "Please see this URL and check for curl exit code '(%d)': %s"
+msgstr "Se den här webbadressen och leta efter curl exit-koden '(%d)': %s"
+
+msgid "Please select 1 domain to be your default domain"
+msgstr "Vänligen välj 1 domän som din standarddomän"
+
+msgid "Please select at least one User"
+msgstr "Välj minst en användare"
+
+msgid "Please select at least one domains"
+msgstr "Välj minst en domän"
+
+msgid "Please select at least one file"
+msgstr "Välj minst en fil"
+
+msgid "Please select at least one item"
+msgstr "Välj minst ett objekt"
+
+msgid "Please select at least one package"
+msgstr "Välj minst ett paket"
+
+msgid "Please select more than zero files to extract from the archive"
+msgstr "Välj fler än noll filer att extrahera från arkivet"
+
+msgid "Please select one or more Databases"
+msgstr "Välj en eller flera databaser"
+
+msgid "Please select only 1 cronjob to edit"
+msgstr "Välj endast 1 cronjob att redigera"
+
+#, c-format
+msgid "Please set a limit between 1 and %d"
+msgstr "Ange en gräns mellan 1 och %d"
+
+#, c-format
+msgid "Please unlink all IPs from '%s' prior to deleting it."
+msgstr "Ta bort länken till alla IP-adresser från '%s' innan du raderar den."
+
+msgid "Please use all lower case characters in the username"
+msgstr "Vänligen använd alla gemener i användarnamnet"
+
+msgid "Plugin Uploaded"
+msgstr "Plugin uppladdad"
+
+msgid "Plugin(s) Installed"
+msgstr "Plugin(s) installerade"
+
+msgid "Plugin(s) Un-Installed"
+msgstr "Plugin(s) avinstallerade"
+
+msgid "Plugin(s) Updated"
+msgstr "Plugin(s) uppdaterad"
+
+#, c-format
+msgid "Pointer '%s' does not belong to you."
+msgstr "Pekaren '%s' tillhör inte dig."
+
+msgid "Pop"
+msgstr "Pop"
+
+msgid "Post Scripts"
+msgstr "Postskript"
+
+msgid "Post scripts"
+msgstr "Post skript"
+
+msgid "Pre-backup hard-link check"
+msgstr "Kontrollera hårdlänk före säkerhetskopiering"
+
+msgid "Preparing 'domains' data"
+msgstr "Förbereder 'domändata'"
+
+msgid "Preparing data (no 'domains')"
+msgstr "Förbereder data (inga 'domäner')"
+
+msgid "Present"
+msgstr "Närvarande"
+
+msgid ""
+"Preserving the web data only applies to /domains/domain.com. Other areas "
+"like E-Mail data will not be preserved."
+msgstr ""
+"Att bevara webbdatan gäller endast /domains/domain.com. Andra områden som e-"
+"postdata kommer inte att bevaras."
+
+msgid "Priority"
+msgstr "Prioritet"
+
+msgid "Privileges"
+msgstr "Privilegier"
+
+#, c-format
+msgid "Process ID %d is not 'dataskq'. It's '%s'"
+msgstr "Process-ID %d är inte 'dataskq'. Det är '%s'"
+
+msgid "Process is running"
+msgstr "Processen körs"
+
+msgid "Process is stopped"
+msgstr "Processen stoppas"
+
+msgid "Processor Name"
+msgstr "Processorns namn"
+
+msgid "Processor Speed (MHz)"
+msgstr "Processorhastighet (MHz)"
+
+msgid "Progress"
+msgstr "Framsteg"
+
+msgid "Protect"
+msgstr "Skydda"
+
+msgid "Protected directory name contains invalid characters. Keep it simple"
+msgstr "Det skyddade katalognamnet innehåller ogiltiga tecken. Håll det enkelt"
+
+msgid ""
+"Protecting directories has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Att skydda kataloger har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Provide either an IP, an IP range, domain, or wildcard domain."
+msgstr "Ange antingen en IP-, ett IP-intervall, domän eller jokerteckendomän."
+
+msgid "Provided password is not correct."
+msgstr "Det angivna lösenordet är inte korrekt."
+
+#, fuzzy
+msgid "Provided password is weak"
+msgstr "Det angivna lösenordet är inte korrekt."
+
+msgid "Provided value is not a Username or Email address"
+msgstr "Det angivna värdet är inte ett användarnamn eller e-postadress"
+
+msgid "Provided value is not valid."
+msgstr "Det angivna värdet är inte giltigt."
+
+msgid "Proxy socket address"
+msgstr "Adress för proxyuttag"
+
+msgid "Publish"
+msgstr "Publicera"
+
+msgid "Purge"
+msgstr "Rena"
+
+msgid "Purge Archives"
+msgstr "Rensa arkiv"
+
+msgid "Purge From"
+msgstr "Rensa från"
+
+#, c-format
+msgid "Purge in %s"
+msgstr "Rensa i %s"
+
+msgid "Pushing httpd.conf rewrite to background task."
+msgstr "Trycker httpd.conf omskrivning till bakgrundsuppgift."
+
+#, fuzzy
+msgid "Raw zone saved"
+msgstr "ändringar sparade"
+
+msgid "Re-sign your zone."
+msgstr "Signera om din zon."
+
+#, c-format
+msgid "Read error with %s: %s"
+msgstr "Läsfel med %s: %s"
+
+msgid "Reason:"
+msgstr "Anledning:"
+
+msgid "Reboot"
+msgstr "Starta om"
+
+msgid "Receive all multicast packets."
+msgstr "Ta emot alla multicast-paket."
+
+msgid "Received"
+msgstr "Mottagen"
+
+msgid "Received Emails"
+msgstr "Mottagna e-postmeddelanden"
+
+msgid "Reconfiguration Error"
+msgstr "Omkonfigureringsfel"
+
+msgid "Record Added"
+msgstr "Rekord tillagd"
+
+msgid "Record Edited"
+msgstr "Record redigerad"
+
+msgid "Records Deleted"
+msgstr "Record redigerad"
+
+msgid "Recursive"
+msgstr "Rekursiv"
+
+msgid "Recursively"
+msgstr "Rekursivt"
+
+msgid ""
+"Recursively resetting ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Rekursiv återställning av äganderätten har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Redirect Added"
+msgstr "Omdirigering tillagd"
+
+msgid "Redirect URL"
+msgstr "Omdirigera URL"
+
+msgid "Redirect(s) deleted"
+msgstr "Omdirigering(er) raderade"
+
+msgid "Redis"
+msgstr "Redis"
+
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#, fuzzy
+msgid "Regenerate Codes"
+msgstr "Generera nycklar"
+
+msgid "Related"
+msgstr "Relaterad"
+
+msgid "Release Candidates"
+msgstr "Släpp kandidater"
+
+msgid "Reload"
+msgstr "Ladda om"
+
+msgid "Reload requested"
+msgstr "Omladdning begärd"
+
+msgid "Remote Mail"
+msgstr "Fjärrpost"
+
+msgid "Remove"
+msgstr "Avlägsna"
+
+msgid "Remove DNS records for IP(s)"
+msgstr "Ta bort DNS-poster för IP-adresser"
+
+msgid "Remove DNSSEC"
+msgstr "Ta bort DNSSEC"
+
+msgid "Remove Directory Contents"
+msgstr "Ta bort kataloginnehåll"
+
+msgid "Remove From Skip List"
+msgstr "Ta bort från överhoppningslistan"
+
+msgid "Remove from reseller"
+msgstr "Ta bort från återförsäljaren"
+
+#, c-format
+msgid "Removed user from %s's list"
+msgstr "Tog bort användare från %ss lista"
+
+msgid "Rename"
+msgstr "Byt namn"
+
+msgid ""
+"Renaming files has been disabled with the filemanager_disable_features option"
+msgstr ""
+"Byta namn på filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Repair"
+msgstr "Reparera"
+
+msgid "Replies"
+msgstr "Svar"
+
+msgid "Reply"
+msgstr "Svar"
+
+msgid "Reply Sent"
+msgstr "Svar skickat"
+
+msgid "Request added to task.queue"
+msgstr "Begäran har lagts till i task.queue"
+
+msgid "Request will be processed in the background."
+msgstr "Begäran kommer att behandlas i bakgrunden."
+
+#, c-format
+msgid "Requested LetsEncrypt value of '%s' is not an allowed value."
+msgstr "Det begärda LetsEncrypt-värdet för '%s' är inte ett tillåtet värde."
+
+#, c-format
+msgid "Requested filesize (%lld) exceeds the maxfilesize value (%lld)"
+msgstr "Begärd filstorlek (%lld) överskrider maxfilesize-värdet (%lld)"
+
+msgid "Requests Cancelled"
+msgstr ""
+
+#, c-format
+msgid "Required: '%s' or '%s'"
+msgstr "Obligatoriskt: '%s' eller '%s'"
+
+msgid "Reseller"
+msgstr "Återförsäljare"
+
+msgid "Reseller Bandwidth"
+msgstr "Återförsäljares bandbredd"
+
+msgid "Reseller History"
+msgstr "Återförsäljarhistorik"
+
+msgid "Reseller Quota"
+msgstr "Återförsäljarkvot"
+
+msgid "Reseller created"
+msgstr "Återförsäljare skapad"
+
+msgid "Reseller deleted"
+msgstr "Återförsäljare raderad"
+
+msgid "Reseller is assigned zero IP's. Cannot create a domain without an ip."
+msgstr ""
+"Återförsäljare tilldelas noll IP-adresser. Det går inte att skapa en domän "
+"utan en ip."
+
+#, c-format
+msgid "Reseller only got %s of their %s ip."
+msgid_plural "Reseller only got %s of their %s ips."
+msgstr[0] "Återförsäljare fick bara %s av sin %s ip."
+msgstr[1] "Återförsäljare fick bara %s av sina %s ips."
+
+msgid "Reseller's IP"
+msgstr "Återförsäljarens IP"
+
+msgid "Reset"
+msgstr "Återställa"
+
+msgid "Reset Owner"
+msgstr "Återställ ägare"
+
+msgid "Reset Ownership"
+msgstr "Återställ ägande"
+
+msgid "Reset Today"
+msgstr "Återställ idag"
+
+msgid ""
+"Resetting file ownership has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Återställning av filägande har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Resources allocated."
+msgstr "Resurser tilldelade."
+
+msgid "Restart"
+msgstr "Omstart"
+
+msgid "Restore"
+msgstr "Återställ"
+
+msgid "Restore Complete!"
+msgstr "Återställningen är klar!"
+
+#, c-format
+msgid "Restore Error with Nginx Unit: %s"
+msgstr "Återställnings fel med Nginx-enhet: %s"
+
+#, c-format
+msgid ""
+"Restore of account '%s' to creator '%s' has been denied, as this account "
+"already exists under the control of creator '%s'"
+msgstr ""
+"Återställning av kontot '%s' till skaparen '%s' har nekats, eftersom detta "
+"konto redan finns under kontroll av skaparen '%s'"
+
+msgid "Restore will run in the background"
+msgstr "Återställning kommer att köras i bakgrunden"
+
+msgid "Restores added to Queue"
+msgstr "Återställer tillagda i kö"
+
+msgid "Restoring Databases"
+msgstr "Återställa databaser"
+
+msgid "Restoring Domains Data"
+msgstr "Återställa domändata"
+
+msgid "Restoring E-Mail Data"
+msgstr "Återställa e-postdata"
+
+msgid "Restoring E-Mail Settings"
+msgstr "Återställa e-postinställningar"
+
+msgid "Restoring Extra Admin Data"
+msgstr "Återställer extra admindata"
+
+msgid "Restoring Extra Reseller Data"
+msgstr "Återställa extra återförsäljardata"
+
+msgid "Restoring Extra User Data"
+msgstr "Återställer extra användardata"
+
+msgid "Restoring FTP"
+msgstr "Återställer FTP"
+
+msgid "Restoring extra E-Mail items"
+msgstr "Återställa extra e-postobjekt"
+
+msgid ""
+"Restoring files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Återställning av filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Result"
+msgstr "Resultat"
+
+msgid "Result of file copy"
+msgstr "Resultat av filkopiering"
+
+msgid "Result of file move"
+msgstr "Resultat av filflyttning"
+
+msgid "Results"
+msgstr "Resultat"
+
+msgid "Retries"
+msgstr "Försöker igen"
+
+msgid "Retry"
+msgstr "Försök igen"
+
+#, fuzzy
+msgid "Retry counter has been cleared."
+msgstr "Trust-cookien har rensats"
+
+#, c-format
+msgid "Return code 3XX(%d) requires a location"
+msgstr "Returkod 3XX(%d) kräver en plats"
+
+msgid "Return with httpd code"
+msgstr "Återgå med http-kod"
+
+msgid "Rewrite Apache"
+msgstr "Skriv om Apache"
+
+msgid "RoundCube missing direct_login option. Please re-install RoundCube."
+msgstr "RoundCube saknar direkt_inloggningsalternativ. Installera om RoundCube."
+
+#, c-format
+msgid "Route '%s' does not end with '%s'"
+msgstr "Rutten '%s' slutar inte med '%s'"
+
+msgid "Rules Reset"
+msgstr "Återställ regler"
+
+msgid "Run Now"
+msgstr "Spring nu"
+
+msgid "Running"
+msgstr "Kör"
+
+msgid "SMTP Log"
+msgstr "SMTP-logg"
+
+msgid "SMTP Server"
+msgstr "SMTP Server"
+
+msgid "SNI Host"
+msgstr "SNI-värd"
+
+msgid "SNI is disabled for this domain"
+msgstr "SNI är inaktiverat för den här domänen"
+
+msgid "SSH Key Modified"
+msgstr "SSH-nyckel har ändrats"
+
+msgid "SSH Key authorized"
+msgstr "SSH-nyckel godkänd"
+
+msgid "SSH Key created"
+msgstr "SSH-nyckel skapad"
+
+msgid "SSH Key deleted"
+msgstr "SSH-nyckel raderad"
+
+msgid "SSH is not enabled"
+msgstr "SSH är inte aktiverat"
+
+msgid "SSL is not enabled for this domain"
+msgstr "SSL är inte aktiverat för den här domänen"
+
+msgid "Safe Mode Disabled on selected domains"
+msgstr "Säkert läge inaktiverat på valda domäner"
+
+msgid "Safe Mode Enabled on selected domains"
+msgstr "Säkert läge aktiverat på valda domäner"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Save Awstats"
+msgstr "Spara Awstats"
+
+msgid "Save Comments"
+msgstr "Spara kommentarer"
+
+msgid "Save E-Mail"
+msgstr "Spara e-post"
+
+msgid "Save Increase"
+msgstr "Spara Öka"
+
+msgid "Save Language"
+msgstr "Spara språk"
+
+msgid "Save Limit"
+msgstr "Spara gräns"
+
+msgid "Save Limit Notice"
+msgstr "Spara gränsmeddelande"
+
+msgid "Save Name"
+msgstr "Spara namn"
+
+msgid "Save Nameservers"
+msgstr "Spara namnservrar"
+
+msgid "Save Skin"
+msgstr "Spara skin"
+
+#, fuzzy
+msgid "Saved"
+msgstr "Spara"
+
+msgid ""
+"Saving/Editing files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Spara/redigera filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Scratch Codes"
+msgstr "Skrapkoder"
+
+#, fuzzy
+msgid "Scratch codes created"
+msgstr "Skrapkoder"
+
+msgid "Script output"
+msgstr "Skriptutgång"
+
+msgid "Search"
+msgstr "Sök"
+
+msgid "SecRuleRemoveById id is blank"
+msgstr "SecRuleRemoveById id är tomt"
+
+msgid "Secure Socket Layer (ssl)"
+msgstr "Secure Socket Layer (ssl)"
+
+#, c-format
+msgid "See %sthis guide%s to fix it."
+msgstr "Se %sden här guiden%s för att fixa det."
+
+msgid "See Error log for more information."
+msgstr "Kontrollera felloggen för mer information."
+
+#, c-format
+msgid "See this guide: %s"
+msgstr "Se guide: %s"
+
+msgid "Select"
+msgstr "Välj"
+
+msgid "Select MX Template"
+msgstr "Välj MX-mall"
+
+#, c-format
+msgid "Select an IP to Link to %s"
+msgstr "Välj en IP att länka till %s"
+
+msgid "Selected Content-Type is not valid."
+msgstr "Den valda innehållstypen är inte giltig."
+
+msgid "Selected Data"
+msgstr "Valda data"
+
+msgid "Selected IP address is not Global"
+msgstr ""
+
+msgid "Selected Plugins Activated"
+msgstr "Valda plugins aktiverade"
+
+msgid "Selected Plugins De-Activated"
+msgstr "Valda plugins avaktiverade"
+
+msgid "Selected Plugins Deleted"
+msgstr "Valda plugins raderade"
+
+msgid "Selected Users"
+msgstr "Utvalda användare"
+
+msgid "Selected character-set encoding is not valid."
+msgstr "Den valda teckenuppsättningens kodning är inte giltig."
+
+msgid "Send Count"
+msgstr "Skicka Count"
+
+msgid "Send Signal"
+msgstr "Skicka signal"
+
+msgid "Send a Message"
+msgstr "Skicka ett meddelande"
+
+msgid "Send limit must be a valid number, or blank."
+msgstr "Sändgränsen måste vara ett giltigt nummer eller tom."
+
+msgid "Sender"
+msgstr "Avsändare"
+
+msgid "Sender Host"
+msgstr "Avsändarvärd"
+
+#, c-format
+msgid "Sender domain must match the list domain '%s', or use '%s'"
+msgstr "Avsändardomänen måste matcha listdomänen '%s' eller använda '%s'"
+
+msgid "Sent"
+msgstr "Skickat"
+
+msgid "Sent E-mails"
+msgstr "Skickade e-post"
+
+msgid "Sent Emails"
+msgstr "Skickade mejl"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Server History"
+msgstr "Serverhistorik"
+
+msgid "Server Path"
+msgstr "Serverväg"
+
+msgid "Service"
+msgstr "Service"
+
+msgid "Set"
+msgstr "Uppsättning"
+
+msgid "Set 0 for unlimited.  Set a blank value to reset to default."
+msgstr ""
+"Ställ in 0 för obegränsat. Ställ in ett tomt värde för att återställa till "
+"standard."
+
+msgid "Set Global Shared"
+msgstr "Ställ in Global Shared"
+
+msgid "Set as Default"
+msgstr "Ange som standard"
+
+msgid "Set selected domains to be publicly viewable from"
+msgstr "Ställ in valda domäner så att de kan visas offentligt från"
+
+msgid "Set selected to"
+msgstr "Ställ in vald till"
+
+msgid "Set to"
+msgstr "Satt till"
+
+msgid "Setting"
+msgstr "Miljö"
+
+msgid "Setting changed"
+msgstr "Inställningen ändrad"
+
+msgid ""
+"Setting file/directory permissions has been disabled with the "
+"filemanager_disable_features option"
+msgstr ""
+"Inställning av fil-/katalogbehörigheter har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Settings"
+msgstr "Inställningar"
+
+msgid "Settings Saved"
+msgstr "Inställningar Sparade"
+
+msgid "Share Selected"
+msgstr "Dela valt"
+
+msgid "Share a static path"
+msgstr "Dela en statisk väg"
+
+msgid "Shared"
+msgstr "Delad"
+
+msgid "Shared - randomly selected"
+msgstr "Delad - slumpmässigt vald"
+
+msgid "Shell Access (ssh)"
+msgstr "Shell Access (ssh)"
+
+msgid "Shell for Resellers's Users"
+msgstr "Skal för återförsäljares användare"
+
+msgid "Show"
+msgstr "Visa"
+
+msgid "Sign"
+msgstr "Skylt"
+
+msgid "Signed"
+msgstr "Signerad"
+
+msgid "Size"
+msgstr "Storlek"
+
+msgid "Size is not a number"
+msgstr "Storlek är inte en siffra"
+
+msgid "Skin"
+msgstr "skin"
+
+#, c-format
+msgid "Skin '%s' does not have any custom color variables to set"
+msgstr "Skalet '%s' har inga anpassade färgvariabler att ställa in"
+
+#, fuzzy
+msgid "Skin Applied"
+msgstr "Skin raderad"
+
+msgid "Skin Installed"
+msgstr "Skin installerad"
+
+msgid "Skin Name"
+msgstr "Utseende-namn"
+
+msgid "Skin Owner"
+msgstr "Utseende-ägare"
+
+msgid "Skin Set"
+msgstr "Huduppsättning"
+
+msgid "Skin applied to all users"
+msgstr "Skin appliceras på alla användare"
+
+msgid "Skin has been customized"
+msgstr "skin har anpassats"
+
+msgid "Skin has been successfully changed"
+msgstr "Skin har framgångsrikt förändrats"
+
+msgid "Skins Deleted"
+msgstr "Skin raderad"
+
+msgid "Skip Suspended"
+msgstr "Hoppa över avstängd"
+
+msgid "Skipped rule added"
+msgstr "Den överhoppade regeln har lagts till"
+
+msgid "Skipping system E-Mail account"
+msgstr "Hoppa över systemets e-postkonto"
+
+msgid "Slave of a load balancing bundle."
+msgstr "Slav av en lastbalanserande bunt."
+
+msgid "Sorry, this function does not support domain pointers at this time"
+msgstr "Den här funktionen stöder tyvärr inte domänpekare för närvarande"
+
+msgid "Sort"
+msgstr "Sortera"
+
+msgid "Sort Selected Column in"
+msgstr "Sortera vald kolumn i"
+
+msgid "Source Domain"
+msgstr "Källdomän"
+
+msgid "Spam"
+msgstr "Spam"
+
+msgid "SpamAassassin is disabled on your account"
+msgstr "SpamAassassin är inaktiverat på ditt konto"
+
+msgid "SpamAssassin"
+msgstr "SpamAssassin"
+
+msgid "Spamassassin disabled"
+msgstr "Spamassassin inaktiverad"
+
+msgid "Spambox"
+msgstr "Spambox"
+
+msgid "Spamd is not running on your system."
+msgstr "Spamd körs inte på ditt system."
+
+msgid "Splitting error for unix socket"
+msgstr "Uppdelningsfel för unix-socket"
+
+msgid "Ssl"
+msgstr "Ssl"
+
+msgid "Stable"
+msgstr "Stabil"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Start Time"
+msgstr "Starttid"
+
+msgid "Start Time must be before End Time."
+msgstr "Starttiden måste vara före Sluttiden."
+
+msgid "State/Province must only contain letters, spaces and/or periods"
+msgstr ""
+"Stat/provins får endast innehålla bokstäver, mellanslag och/eller punkter"
+
+msgid "Stats links created"
+msgstr "Statistiklänkar skapade"
+
+msgid "Stats links removed"
+msgstr "Statistiklänkar har tagits bort"
+
+msgid "Status"
+msgstr "Status"
+
+#, fuzzy
+msgid "Status Set"
+msgstr "Status"
+
+msgid "Sticky bit's not allowed: 777 is the max allowed permission"
+msgstr "Sticky bits är inte tillåtet: 777 är den högsta tillåtna behörigheten"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Stopped"
+msgstr "Slutade"
+
+msgid "String contains an invalid email address"
+msgstr "Strängen innehåller en ogiltig e-postadress"
+
+msgid "Sub Domains"
+msgstr "Underdomäner"
+
+msgid "Sub Sort"
+msgstr "Undersortering"
+
+msgid "Sub Sort Selected Column in"
+msgstr "Undersortera vald kolumn i"
+
+msgid "Sub-domain is forbidden"
+msgstr "Underdomän är förbjuden"
+
+msgid "SubDomain Name"
+msgstr "Subdomännamn"
+
+msgid "Subdomain Created"
+msgstr "Underdomän skapad"
+
+msgid "Subdomain Removed"
+msgstr "Underdomän borttagen"
+
+msgid "Subdomain Stats"
+msgstr "Underdomänstatistik"
+
+msgid "Subdomain already exists"
+msgstr "Underdomänen finns redan"
+
+msgid "Subdomain created"
+msgstr "Underdomän skapad"
+
+msgid "Subdomain does not exist"
+msgstr "Underdomän finns inte"
+
+#, c-format
+msgid "Subdomain name too long. Maximum %d characters."
+msgstr "Underdomännamnet är för långt. Max %d tecken."
+
+msgid "Subdomains"
+msgstr "Underdomäner"
+
+msgid "Subdomains Removed"
+msgstr "Underdomäner har tagits bort"
+
+msgid "Subdomains deleted"
+msgstr "Underdomäner raderade"
+
+msgid "Subject"
+msgstr "Ämne"
+
+msgid "Subject Contains"
+msgstr "Ämnet innehåller"
+
+#, c-format
+msgid "Subject prefix contains invalid characters. Use %s"
+msgstr "Ämnesprefixet innehåller ogiltiga tecken. Använd %s"
+
+msgid "Subscriber"
+msgstr "abonnent"
+
+msgid "Subscribers"
+msgstr "abonnenter"
+
+msgid "Success"
+msgstr "Framgång"
+
+msgid "Supports multicast"
+msgstr "Stöder multicast"
+
+msgid "Suspend"
+msgstr "Låst"
+
+msgid "Suspend / Unsuspend"
+msgstr "Låst/Upplåst"
+
+msgid "Suspend Reason"
+msgstr "Anledning till avstängning"
+
+msgid "Suspend at Limit"
+msgstr "Stäng av vid gräns"
+
+msgid "Suspended"
+msgstr "låst"
+
+msgid "Syntax check has been disabled"
+msgstr "Syntaxkontroll har inaktiverats"
+
+msgid "System Info"
+msgstr "System information"
+
+msgid "System Rebooting Now!"
+msgstr "Systemet startar om nu!"
+
+msgid "System Uptime"
+msgstr "Systemets upptid"
+
+#, c-format
+msgid ""
+"System account exists, but unable to read the User data files for user %s"
+msgstr ""
+"Systemkontot finns, men det går inte att läsa användardatafilerna för "
+"användaren %s"
+
+msgid "Systems Quotas are size 0."
+msgstr "Systemkvoter är storlek 0."
+
+msgid "TB"
+msgstr "TB"
+
+msgid "TTL has been saved"
+msgstr "TTL har sparats"
+
+msgid "Table"
+msgstr "Tabell"
+
+msgid "Tail"
+msgstr "Tail"
+
+msgid "Tasks Max"
+msgstr "Arbetsuppgifter Max"
+
+#, c-format
+msgid "Temp file %s is 0 bytes after writing to disk.  Will not rename it."
+msgstr ""
+"Temp-filen %s är 0 byte efter skrivning till disk. Kommer inte att byta namn "
+"på den."
+
+msgid "Template does not exist"
+msgstr "Mallen finns inte"
+
+msgid "Temporary Bandwidth Increase"
+msgstr "Tillfällig bandbreddsökning"
+
+#, c-format
+msgid ""
+"Temporary account action lock in place.  There might be some other process "
+"working on the account.  This should last no more than %d minutes"
+msgstr ""
+"Tillfälligt kontoåtgärdslås på plats. Det kan finnas någon annan process som "
+"fungerar på kontot. Detta bör inte ta mer än %d minuter"
+
+msgid "Temporary bandwidth increase has been set"
+msgstr "En tillfällig ökning av bandbredden har ställts in"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Text exceeds the maximum allowed length of 4KB"
+msgstr ""
+
+msgid "That ID is not of type 'admin'"
+msgstr "Detta ID är inte av typen \"admin\""
+
+msgid "That IP already exists on the domain"
+msgstr "Den IP-adressen finns redan på domänen"
+
+msgid "That IP does not exist"
+msgstr "Den IP-adressen finns inte"
+
+msgid "That IP does not exist in your User's IP list"
+msgstr "Den IP-adressen finns inte i din användares IP-lista"
+
+msgid "That IP does not exist in your list"
+msgstr "Den IP-adressen finns inte i din lista"
+
+msgid "That IP is already in your list of Additional IPs"
+msgstr "Den IP-adressen finns redan i din lista över ytterligare IP-adresser"
+
+msgid "That IP is already owned"
+msgstr "Den IP-adressen ägs redan"
+
+msgid "That IP is not available for linking"
+msgstr "Den IP-adressen är inte tillgänglig för länkning"
+
+msgid "That User already exists on another server"
+msgstr "Den användaren finns redan på en annan server"
+
+msgid "That database already exists"
+msgstr "Den databasen finns redan"
+
+msgid "That database does not belong to you"
+msgstr "Den databasen tillhör inte dig"
+
+msgid "That database does not exist"
+msgstr "Den databasen finns inte"
+
+msgid "That domain already exists"
+msgstr "Den domänen finns redan"
+
+msgid "That domain already exists on another server"
+msgstr "Den domänen finns redan på en annan server"
+
+msgid "That domain does not belong to you"
+msgstr "Den domänen tillhör inte dig"
+
+msgid "That domain does not exist"
+msgstr "Den domänen finns inte"
+
+msgid "That domain is suspended.  Unsuspend it before changing it's name"
+msgstr "Den domänen är avstängd. Ta bort avstängningen innan du byter namn"
+
+msgid "That email user does not exist"
+msgstr "Den e-postanvändaren finns inte"
+
+msgid "That file was empty"
+msgstr "Den filen var tom"
+
+msgid "That filter already exists"
+msgstr "Det filtret finns redan"
+
+msgid "That ftp_password file does not exist"
+msgstr "Den ftp_password-filen finns inte"
+
+msgid "That is an invalid email address / email list"
+msgstr "Det är en ogiltig e-postadress/e-postlista"
+
+msgid "That is an invalid filename"
+msgstr "Det är ett ogiltigt filnamn"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Det är inte en giltig väg. Antingen finns den inte i din hemkatalog, den "
+"innehåller symboliska länkar eller så innehåller den ogiltiga tecken"
+
+msgid ""
+"That is not a valid path.  Either it is not in your home directory, it "
+"doesn't exist, it contains symbolic links, or it contains invalid characters"
+msgstr ""
+"Det är inte en giltig väg. Antingen finns det inte i din hemkatalog, det "
+"finns inte, det innehåller symboliska länkar eller så innehåller det "
+"ogiltiga tecken"
+
+msgid "That is not a valid quota"
+msgstr "Det är inte en giltig kvot"
+
+msgid "That is not a valid username"
+msgstr "Det är inte ett giltigt användarnamn"
+
+msgid "That is not your domain"
+msgstr "Det är inte din domän"
+
+msgid ""
+"That is the hostname which is reserved. Either change the hostname, or use a "
+"different domain"
+msgstr ""
+"Det är värdnamnet som är reserverat. Ändra värdnamnet eller använd en annan "
+"domän"
+
+msgid "That key does not exist"
+msgstr "Den nyckeln finns inte"
+
+msgid "That password is incorrect"
+msgstr "Det lösenordet är felaktigt"
+
+msgid "That path isn't protectable"
+msgstr "Den vägen är inte skyddsbar"
+
+msgid "That pop account doesn't exist"
+msgstr "Det där popkontot finns inte"
+
+#, c-format
+msgid "That skin cannot be customized. It's skin.conf requires %s"
+msgstr "Den huden kan inte anpassas. Det är skin.conf kräver %s"
+
+msgid "That skin does not exist"
+msgstr "Det skinnet finns inte"
+
+msgid "That skin is not in your list"
+msgstr "Det skinnet finns inte på din lista"
+
+#, fuzzy
+msgid "That skin name already exists"
+msgstr "Den zonen finns redan"
+
+msgid "That user already exists"
+msgstr "Den användaren finns redan"
+
+#, c-format
+msgid ""
+"That user contains the ftp separator (%c) which cannot be in the username."
+msgstr ""
+"Den användaren innehåller ftp-separatorn (%c) som inte kan finnas i "
+"användarnamnet."
+
+msgid "That user does not belong to you"
+msgstr "Den användaren tillhör inte dig"
+
+msgid "That user does not exist"
+msgstr "Den användaren finns inte"
+
+msgid "That user doesn't exist"
+msgstr "Den användaren finns inte"
+
+msgid "That user is reserved for the anonymous account"
+msgstr "Den användaren är reserverad för det anonyma kontot"
+
+msgid "That username already exists on the system"
+msgstr "Det användarnamnet finns redan i systemet"
+
+msgid "That username is a reserved system name"
+msgstr "Det användarnamnet är ett reserverat systemnamn"
+
+msgid "That zone already exists"
+msgstr "Den zonen finns redan"
+
+msgid "Thats a reserved skin name."
+msgstr "Det är ett reserverat skinnnamn."
+
+#, c-format
+msgid "The %s backups have been created in %s"
+msgstr "%s säkerhetskopiorna har skapats i %s"
+
+msgid "The 'ttl' value passed is not a number or is too large"
+msgstr "'ttl'-värdet som skickas är inte ett tal eller är för stort"
+
+msgid "The Administrator has disabled the User Backup Function"
+msgstr ""
+"Administratören har inaktiverat funktionen för användarsäkerhetskopiering"
+
+msgid ""
+"The CA Certificate will not be used.  The file will remain, but will not be "
+"included."
+msgstr ""
+"CA-certifikatet kommer inte att användas. Filen kommer att finnas kvar, men "
+"kommer inte att inkluderas."
+
+msgid ""
+"The CC value entered will create an infinite loop.  Please use a different "
+"CC value."
+msgstr ""
+"Det angivna CC-värdet kommer att skapa en oändlig loop. Använd ett annat CC-"
+"värde."
+
+#, c-format
+msgid "The E-Mail '%s' contains invalid characters"
+msgstr "E-postmeddelandet '%s' innehåller ogiltiga tecken"
+
+#, c-format
+msgid "The IP %s does not exist. User %s will not be created"
+msgstr "IP:n %s finns inte. Användaren %s kommer inte att skapas"
+
+msgid "The IP %s has provided the correct password for the %s account."
+msgstr "IP:n %s har angett rätt lösenord för %s-kontot."
+
+msgid "The Ticket System is not enabled."
+msgstr "Ticket System är inte aktiverat."
+
+msgid "The User backups have been uploaded to"
+msgstr "Användarsäkerhetskopiorna har laddats upp till"
+
+#, c-format
+msgid "The User files have been restored from %s"
+msgstr "Användarfilerna har återställts från %s"
+
+msgid "The Users display cache will be updated momentarily."
+msgstr "Användarnas visningscache kommer att uppdateras tillfälligt."
+
+msgid "The addresses are lost when the interface goes down."
+msgstr "Adresserna går förlorade när gränssnittet går ner."
+
+msgid ""
+"The cache is being updated, the current values may not be correct. Please "
+"refresh the page in 1 minute."
+msgstr ""
+"Cachen uppdateras, de aktuella värdena kanske inte är korrekta. Uppdatera "
+"sidan om 1 minut."
+
+msgid ""
+"The certificate and key do not match.  Please ensure you are using the "
+"correct key with this certificate"
+msgstr ""
+"Certifikatet och nyckeln stämmer inte överens. Se till att du använder rätt "
+"nyckel med detta certifikat"
+
+msgid ""
+"The clipboard has been disabled with the filemanager_disable_features option"
+msgstr "Urklipp har inaktiverats med alternativet filemanager_disable_features"
+
+msgid "The command cannot contain any newline characters"
+msgstr "Kommandot får inte innehålla några nyradstecken"
+
+msgid "The database '%s' does not belong to you"
+msgstr "Databasen '%s' tillhör inte dig"
+
+msgid "The day of month is not a valid cron value (1-31)"
+msgstr "Dagen i månaden är inte ett giltigt kronvärde (1-31)"
+
+msgid "The day of week is not a valid cron value (0-7)"
+msgstr "Veckodagen är inte ett giltigt kronvärde (0-7)"
+
+msgid "The default has been set"
+msgstr "Standardinställningen har ställts in"
+
+#, c-format
+msgid ""
+"The directory %s seems to be owned by 'apache'.  Try using the 'Reset Owner' "
+"option, then try again."
+msgstr ""
+"Katalogen %s verkar ägas av 'apache'. Försök att använda alternativet "
+"\"Återställ ägare\" och försök sedan igen."
+
+#, c-format
+msgid ""
+"The disk usage for the selected Users totals more than %d MB, thus will be "
+"removed in the background."
+msgstr ""
+"Diskanvändningen för de valda användarna uppgår till mer än %d MB, och "
+"kommer därför att tas bort i bakgrunden."
+
+#, c-format
+msgid "The domain %s does not belong to you."
+msgstr "Domänen %s tillhör inte dig."
+
+#, c-format
+msgid ""
+"The domain %s does not belong to you. The subdomain will not be created."
+msgstr "Domänen %s tillhör inte dig. Underdomänen kommer inte att skapas."
+
+msgid ""
+"The domain entered is invalid.  It must be of the form 'sourcedomain.com'"
+msgstr ""
+"Den angivna domänen är ogiltig. Det måste ha formen \"sourcedomain.com\""
+
+#, fuzzy
+msgid "The domain has been modified"
+msgstr "Standardinställningen har ställts in"
+
+msgid "The domain must not match your hostname."
+msgstr "Domänen får inte matcha ditt värdnamn."
+
+#, fuzzy
+msgid "The domains have been modified"
+msgstr "Inga ändringar har gjorts"
+
+msgid "The e-mail containing your new password has been sent."
+msgstr "E-postmeddelandet med ditt nya lösenord har skickats."
+
+msgid "The email address provided is not a valid email address"
+msgstr "Den angivna e-postadressen är inte en giltig e-postadress"
+
+msgid "The entered path must be a-zA-Z0-9"
+msgstr "Den angivna sökvägen måste vara a-zA-Z0-9"
+
+#, c-format
+msgid "The file %s has more than 1 hard link"
+msgstr "Filen %s har mer än 1 hårdlänk"
+
+msgid "The file is generated when the account is reset."
+msgstr "Filen skapas när kontot återställs."
+
+msgid "The file must be of the form: type.creator.username.tar.gz"
+msgstr "Filen måste ha formatet: type.creator.username.tar.gz"
+
+msgid "The file must be of the form: username.tar.gz"
+msgstr "Filen måste ha formatet: användarnamn.tar.gz"
+
+#, c-format
+msgid "The file: '%s' is not in the form username.tar.gz"
+msgstr "Filen: '%s' har inte formatet användarnamn.tar.gz"
+
+msgid "The following file could not be found.  No reset required"
+msgstr "Följande fil kunde inte hittas. Ingen återställning krävs"
+
+#, c-format
+msgid "The following hard links have been found under User %s:"
+msgstr "Följande hårda länkar har hittats under Användare %s:"
+
+#, c-format
+msgid "The ftp user %s does not exist in passwd file %s"
+msgstr "FTP-användaren %s finns inte i passwd-filen %s"
+
+msgid "The full format name entered does not end with the name of the zone"
+msgstr "Det angivna fullständiga formatnamnet slutar inte med namnet på zonen"
+
+msgid "The local url path or the destination url is invalid."
+msgstr "Den lokala webbadressen eller destinationsadressen är ogiltig."
+
+msgid "The location has not changed"
+msgstr "Platsen har inte ändrats"
+
+msgid "The max upload size cannot be 0"
+msgstr "Den maximala uppladdningsstorleken kan inte vara 0"
+
+#, c-format
+msgid "The maximum for %s is %s"
+msgstr "Maximum för %s är %s"
+
+#, c-format
+msgid "The maximum value is %d"
+msgstr "Maxvärdet är %d"
+
+#, c-format
+msgid "The minimum for %s is %s"
+msgstr "Minimum för %s är %s"
+
+msgid "The month is not a valid cron value (1-12)"
+msgstr "Månaden är inte ett giltigt kronvärde (1-12)"
+
+msgid "The name you've entered contains invalid characters"
+msgstr "Namnet du har angett innehåller ogiltiga tecken"
+
+msgid "The new key was created, but there was an issue during authorization"
+msgstr ""
+"Den nya nyckeln skapades, men det uppstod ett problem under auktoriseringen"
+
+msgid "The new passwords do not match"
+msgstr "De nya lösenorden stämmer inte överens"
+
+msgid "The number and type of ticket is required"
+msgstr "Antal och typ av ärende krävs"
+
+#, c-format
+msgid "The owner of %s is not %s"
+msgstr "Ägaren till %s är inte %s"
+
+msgid "The password changing feature has been disabled"
+msgstr "Funktionen för lösenordsändring har inaktiverats"
+
+msgid "The path %s already exists"
+msgstr "Sökvägen %s finns redan"
+
+msgid "The path already exists, but is not a directory"
+msgstr "Sökvägen finns redan, men är inte en katalog"
+
+msgid ""
+"The process is currently being used to execute this request so it will be "
+"executed shortly by the Task Queue."
+msgstr ""
+"Processen används för närvarande för att utföra denna begäran så den kommer "
+"att köras inom kort av uppgiftskön."
+
+msgid "The provided IP is not valid"
+msgstr "Den angivna IP-adressen är inte giltig"
+
+msgid "The provided domain name matches your hostname."
+msgstr "Det angivna domännamnet matchar ditt värdnamn."
+
+msgid ""
+"The request you've made cannot be executed because it does not exist in your "
+"authority level"
+msgstr ""
+"Begäran du har gjort kan inte utföras eftersom den inte finns på din "
+"behörighetsnivå"
+
+msgid "The requested command requires POST but GET was used"
+msgstr "Det begärda kommandot kräver POST men GET användes"
+
+msgid ""
+"The skin package did not install properly.  Either there were files missing, "
+"or their permissions were incorrectly set"
+msgstr ""
+"Skinpaketet installerades inte korrekt. Antingen saknades det filer eller så "
+"var deras behörigheter felaktigt inställda"
+
+#, c-format
+msgid "The subdomain '%s' already exists under the %s domain"
+msgstr "Underdomänen '%s' finns redan under domänen %s"
+
+msgid ""
+"The times must formatted like one of the following (eg. hour, no spaces)"
+msgstr ""
+"Tiderna måste formateras som något av följande (t.ex. timme, inga mellanslag)"
+
+msgid "The user %s does not belong to you"
+msgstr "Användaren %s tillhör inte dig"
+
+#, c-format
+msgid ""
+"The username is invalid. Usernames must start with a-z, contain >= 3 "
+"characters and <= %d."
+msgstr ""
+"Användarnamnet är ogiltigt. Användarnamn måste börja med a-z, innehålla >= 3 "
+"tecken och <= %d."
+
+msgid "The username is invalid. Usernames must use a-z0-9"
+msgstr "Användarnamnet är ogiltigt. Användarnamn måste använda a-z0-9"
+
+msgid "The value must be an IP address"
+msgstr "Värdet måste vara en IP-adress"
+
+msgid "The very last entry."
+msgstr "Den allra sista posten."
+
+msgid "The welcome email(s) has successfully been resent."
+msgstr "Välkomstmailen har skickats om."
+
+msgid "There are no messages for that ticket"
+msgstr "Det finns inga meddelanden för det här ärendet"
+
+#, c-format
+msgid "There are still %d routes using '%s'."
+msgstr "Det finns fortfarande %d rutter som använder '%s'."
+
+#, c-format
+msgid ""
+"There are still Users on %s.  Remove them from the IP first and set it to "
+"'free'."
+msgstr ""
+"Det finns fortfarande användare på %s. Ta först bort dem från IP:n och ställ "
+"in den på \"gratis\"."
+
+#, c-format
+msgid ""
+"There have been %d renew failures, thus no more attempts will be made.%s"
+msgstr ""
+"Det har inträffat %d förnyelsefel, så inga fler försök kommer att göras.%s"
+
+msgid "There is already a CNAME record with that name"
+msgstr "Det finns redan en CNAME-post med det namnet"
+
+msgid "There is already a mailing list alias with that name"
+msgstr "Det finns redan en e-postlista med det namnet"
+
+msgid "There is already an A record with that name"
+msgstr "Det finns redan en A-post med det namnet"
+
+msgid "There is already an account with that name"
+msgstr "Det finns redan ett konto med det namnet"
+
+msgid "There is already an autoresponder with that name"
+msgstr "Det finns redan en autosvarare med det namnet"
+
+#, c-format
+msgid "There is not sufficient space on %s to upload %lld bytes of data"
+msgstr ""
+"Det finns inte tillräckligt med utrymme på %s för att ladda upp %lld byte "
+"med data"
+
+#, c-format
+msgid "There is only 1 %s record for %s=%s, not removing it"
+msgstr "Det finns bara 1 %s post för %s=%s, tar inte bort den"
+
+msgid "These are dynamic values. They change with the date."
+msgstr "Dessa är dynamiska värden. De ändras med datumet."
+
+msgid "This Login Key is read-only"
+msgstr "Denna inloggningsnyckel är skrivskyddad"
+
+msgid "This OS is now end-of-life. Future automated updates may fail."
+msgstr ""
+"Detta operativsystem är nu uttjänat. Framtida automatiserade uppdateringar "
+"kan misslyckas."
+
+#, c-format
+msgid ""
+"This Reseller account is unable to allocate unlimited %s, yet that amount "
+"has alredy been allocated."
+msgstr ""
+"Det här återförsäljarkontot kan inte tilldela obegränsat %s, men det "
+"beloppet har redan tilldelats."
+
+msgid ""
+"This account already exists on the system. If you restore, it will overwrite "
+"and/or merge the data."
+msgstr ""
+"Detta konto finns redan i systemet. Om du återställer kommer den att skriva "
+"över och/eller slå samman data."
+
+msgid "This account is blocked via BlockCracking."
+msgstr "Detta konto är blockerat via BlockCracking."
+
+msgid "This account is blocked via BlockCracking. Unblocking is disabled."
+msgstr ""
+"Detta konto är blockerat via BlockCracking. Avblockering är inaktiverat."
+
+msgid ""
+"This domain will now temporarily use the Shared Server Certificate, unless "
+"you restore the backup key (but backup the new key first or it will become "
+"lost)"
+msgstr ""
+"Den här domänen kommer nu tillfälligt att använda det delade "
+"servercertifikatet, såvida du inte återställer reservnyckeln (men "
+"säkerhetskopierar den nya nyckeln först, annars försvinner den)"
+
+#, fuzzy
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it"
+msgstr ""
+"Detta är en Hash URL-inloggning. Du kan ta bort den, men du kan inte ändra "
+"den."
+
+msgid "This is a Hash URL login. You can delete it, but you cannot modify it."
+msgstr ""
+"Detta är en Hash URL-inloggning. Du kan ta bort den, men du kan inte ändra "
+"den."
+
+msgid "This is a placeholder for the subdomain"
+msgstr "Detta är en platshållare för underdomänen"
+
+msgid "This may give unexpected results"
+msgstr "Detta kan ge oväntade resultat"
+
+msgid "This may give unexpected results."
+msgstr "Detta kan ge oväntade resultat."
+
+msgid "This might be correct if DNS is controlled remotely."
+msgstr ""
+
+msgid "This plugin has been disabled for your account"
+msgstr "Denna plugin har inaktiverats för ditt konto"
+
+msgid ""
+"This will only happen *after* logs exist (domain must resolve and be used)."
+msgstr ""
+"Detta kommer bara att hända *efter* att det finns loggar (domänen måste "
+"lösas och användas)."
+
+msgid "This will skip the removal of the dns zone, leaving it in place."
+msgstr ""
+"Detta kommer att hoppa över borttagningen av dns-zonen och lämna den på "
+"plats."
+
+msgid "Thread Count"
+msgstr "Trådtäthet"
+
+msgid "Throttle Memory above this limit."
+msgstr "Throttle Memory över denna gräns."
+
+msgid "Ticket #"
+msgstr "Ärende #"
+
+#, fuzzy
+msgid "Ticket system status set"
+msgstr "Användarens systemkvoter inställda"
+
+msgid "Tickets Updated"
+msgstr "Supportärenden uppdaterade"
+
+msgid "Time"
+msgstr "Tid"
+
+msgid "Timeout during read"
+msgstr "Timeout under läsning"
+
+#, c-format
+msgid "Timeout while trying to connect to %s"
+msgstr "Timeout vid försök att ansluta till %s"
+
+#, c-format
+msgid "Timezone '%s' does not exist on the system"
+msgstr "Tidszon '%s' finns inte i systemet"
+
+msgid "Timezone does not exist"
+msgstr "Tidszon finns inte"
+
+msgid ""
+"To add a cron job, you require all of the following: minute, hour, "
+"dayofmonth, month, dayofweek and command"
+msgstr ""
+"För att lägga till ett cron-jobb behöver du allt av följande: minut, timme, "
+"dag i månaden, månad, veckodag och kommando"
+
+msgid "Today"
+msgstr "Idag"
+
+msgid "Today at"
+msgstr "Idag kl"
+
+#, c-format
+msgid "Today's E-Mail count has been reset for User %s"
+msgstr "Dagens e-postantal har återställts för användare %s"
+
+msgid "Too long"
+msgstr "För länge"
+
+msgid "Too short"
+msgstr "För kort"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Total Disk Usage (MB)"
+msgstr "Total diskanvändning (MB)"
+
+msgid "Total Memory"
+msgstr "Totalt minne"
+
+msgid "Total Size:"
+msgstr "Total storlek:"
+
+msgid "Total Swap Memory"
+msgstr "Totalt utbytesminne"
+
+msgid "Total Usage"
+msgstr "Total användning"
+
+#, fuzzy
+msgid "Two-Step Authentication code is missing."
+msgstr "Tvåstegsautentisering är inaktiverad"
+
+msgid "Type"
+msgstr "Typ"
+
+#, c-format
+msgid "Type '%s' is disabled"
+msgstr "Typ '%s' är inaktiverad"
+
+msgid "Type must be either 'paste' or 'id'"
+msgstr "Typen måste vara antingen \"klistra in\" eller \"id\""
+
+msgid "UID"
+msgstr "UID"
+
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgid "URL already exists"
+msgstr "%s finns redan"
+
+msgid "Un-Link"
+msgstr "Ta bort länken"
+
+msgid "Un-Set"
+msgstr "Avaktiverad"
+
+msgid "Unable To Execute Your Request"
+msgstr "Det går inte att utföra din begäran"
+
+msgid "Unable to Execute Your Command"
+msgstr "Det går inte att utföra ditt kommando"
+
+msgid "Unable to Locate that domain"
+msgstr "Det gick inte att hitta den domänen"
+
+msgid "Unable to add IP"
+msgstr "Det går inte att lägga till IP"
+
+msgid "Unable to add access host:"
+msgstr "Det går inte att lägga till åtkomstvärd:"
+
+msgid "Unable to add domain pointer"
+msgstr "Det gick inte att lägga till domänpekare"
+
+msgid "Unable to add user to ssh config file"
+msgstr "Det går inte att lägga till användare till ssh-konfigurationsfilen"
+
+#, c-format
+msgid ""
+"Unable to allocate unlimited %s. This account is not allowed to create that "
+"amount."
+msgstr ""
+"Det går inte att allokera obegränsat %s. Detta konto får inte skapa det "
+"beloppet."
+
+msgid ""
+"Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned "
+"ips."
+msgstr ""
+"Det går inte att tilldela återförsäljaren NÅGON IPS. Se till att ha gratis, "
+"otilldelade IP-adresser."
+
+msgid "Unable to authenticate: Check your password for syntax"
+msgstr "Det går inte att autentisera: Kontrollera ditt lösenord för syntax"
+
+msgid "Unable to authenticate: Invalid password"
+msgstr "Kan inte autentisera: Ogiltigt lösenord"
+
+#, c-format
+msgid "Unable to change %s"
+msgstr "Det gick inte att ändra %s"
+
+msgid "Unable to change Directadmin update channel"
+msgstr "Kunde inte ändra kanal för uppdateringar av DirectAdmin"
+
+msgid "Unable to change password"
+msgstr "Det går inte att ändra lösenord"
+
+msgid "Unable to change the E-Mail Address"
+msgstr "Det går inte att ändra e-postadressen"
+
+msgid "Unable to change the Message System E-Mail Address"
+msgstr "Det går inte att ändra meddelandesystemets e-postadress"
+
+msgid "Unable to change the Name"
+msgstr "Det går inte att ändra namnet"
+
+msgid "Unable to change the limit"
+msgstr "Det går inte att ändra gränsen"
+
+msgid "Unable to change the temporary bandwidth increase"
+msgstr "Det går inte att ändra den tillfälliga bandbreddsökningen"
+
+msgid "Unable to check latest version"
+msgstr "Kunde inte kontrollera senaste versionen"
+
+msgid "Unable to connect to secure socket"
+msgstr "Det går inte att ansluta till ett säkert uttag"
+
+msgid "Unable to connect to the database"
+msgstr "Det går inte att ansluta till databasen"
+
+msgid "Unable to create a Reseller"
+msgstr "Det går inte att skapa en återförsäljare"
+
+msgid "Unable to create a User"
+msgstr "Det går inte att skapa en användare"
+
+#, c-format
+msgid "Unable to create backup directory (uid=%s)"
+msgstr "Det gick inte att skapa backupkatalog (uid=%s)"
+
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Det gick inte att skapa katalogen %s"
+
+msgid "Unable to create new file"
+msgstr "Det gick inte att skapa ny fil"
+
+msgid "Unable to create reverse IP lookup"
+msgstr "Det gick inte att skapa omvänd IP-sökning"
+
+msgid "Unable to create subdomain"
+msgstr "Det gick inte att skapa underdomän"
+
+msgid "Unable to create user's data directory"
+msgstr "Det gick inte att skapa användarens datakatalog"
+
+msgid "Unable to create zone"
+msgstr "Det går inte att skapa zon"
+
+msgid "Unable to create zone."
+msgstr "Det går inte att skapa zon."
+
+#, c-format
+msgid "Unable to delete %s: %s"
+msgstr "Det gick inte att ta bort %s: %s"
+
+#, c-format
+msgid "Unable to delete directory %s: %s"
+msgstr "Det gick inte att ta bort katalogen %s: %s"
+
+msgid "Unable to delete files"
+msgstr "Det går inte att ta bort filer"
+
+msgid "Unable to delete the main email account"
+msgstr "Det gick inte att ta bort huvude-postkontot"
+
+msgid "Unable to delete the reseller's ip.list file."
+msgstr "Det gick inte att ta bort återförsäljarens ip.list-fil."
+
+msgid "Unable to delete users's domains directory"
+msgstr "Det gick inte att ta bort användarnas domänkatalog"
+
+msgid "Unable to edit file"
+msgstr "Det gick inte att redigera filen"
+
+msgid "Unable to execute script"
+msgstr "Det går inte att köra skriptet"
+
+msgid "Unable to execute your command"
+msgstr "Det går inte att utföra ditt kommando"
+
+msgid "Unable to execute your request"
+msgstr "Det gick inte att utföra din begäran"
+
+msgid "Unable to export packages"
+msgstr "Det går inte att exportera paket"
+
+#, c-format
+msgid "Unable to extract %s from"
+msgstr "Det gick inte att extrahera %s från"
+
+msgid "Unable to extract user.conf, reseller.conf or ip.list from"
+msgstr "Det går inte att extrahera user.conf, reseller.conf eller ip.list från"
+
+#, c-format
+msgid "Unable to find %s"
+msgstr "Det gick inte att hitta %s"
+
+msgid "Unable to find CA certificate"
+msgstr "Det gick inte att hitta CA-certifikat"
+
+msgid "Unable to find certificate"
+msgstr "Det gick inte att hitta certifikatet"
+
+msgid "Unable to find key"
+msgstr "Det gick inte att hitta nyckeln"
+
+#, c-format
+msgid "Unable to get file stats on %s"
+msgstr "Det gick inte att hämta filstatistik på %s"
+
+#, c-format
+msgid "Unable to get lock on %s"
+msgstr "Det gick inte att få lås på %s"
+
+msgid "Unable to get the user's crypted password for the ftp passwd file"
+msgstr ""
+"Det går inte att få användarens krypterade lösenord för ftp passwd-filen"
+
+#, c-format
+msgid "Unable to lock %s area"
+msgstr "Det gick inte att låsa %s-området"
+
+#, c-format
+msgid "Unable to lock %s: %s"
+msgstr "Det gick inte att låsa %s: %s"
+
+#, c-format
+msgid "Unable to lock the '%s' account actions"
+msgstr "Det gick inte att låsa kontoåtgärderna för '%s'"
+
+#, c-format
+msgid "Unable to lock user %s: %s"
+msgstr "Det gick inte att låsa användaren %s: %s"
+
+msgid "Unable to modify that domain"
+msgstr "Det går inte att ändra den domänen"
+
+#, c-format
+msgid "Unable to open %s for appending"
+msgstr "Det gick inte att öppna %s för att lägga till"
+
+#, c-format
+msgid "Unable to open %s for appending: %s"
+msgstr "Det gick inte att öppna %s för att lägga till: %s"
+
+#, c-format
+msgid "Unable to open %s for reading"
+msgstr "Det gick inte att öppna %s för läsning"
+
+#, c-format
+msgid "Unable to open %s for writing: %s"
+msgstr "Det gick inte att öppna %s för att skriva: %s"
+
+#, c-format
+msgid "Unable to open %s: %s"
+msgstr "Det gick inte att öppna %s: %s"
+
+msgid "Unable to open a socket"
+msgstr "Det går inte att öppna ett uttag"
+
+#, c-format
+msgid "Unable to open ca certificate file (%s) to write to: %s"
+msgstr "Det gick inte att öppna ca certifikatfil (%s) att skriva till: %s"
+
+#, c-format
+msgid "Unable to open certificate file (%s) to write to: %s"
+msgstr "Det gick inte att öppna certifikatfilen (%s) att skriva till: %s"
+
+#, c-format
+msgid "Unable to parse %s from script '%s '(%s) output:"
+msgstr "Det gick inte att tolka %s från skriptet '%s '(%s) utdata:"
+
+msgid "Unable to parse form"
+msgstr "Kunde inte analysera formulärdata"
+
+#, c-format
+msgid "Unable to read %s as account %s"
+msgstr "Det gick inte att läsa %s som konto %s"
+
+#, c-format
+msgid "Unable to read %s's user files"
+msgstr "Det gick inte att läsa %s användarfiler"
+
+#, c-format
+msgid "Unable to read %s.  This file is only created after a tally is run."
+msgstr ""
+"Kan inte läsa %s. Den här filen skapas bara efter att en sammanställning har "
+"körts."
+
+#, c-format
+msgid ""
+"Unable to read %s.  This file is only created when emails are delivered."
+msgstr ""
+"Kan inte läsa %s. Den här filen skapas bara när e-postmeddelanden levereras."
+
+#, c-format
+msgid "Unable to read %s: %s"
+msgstr "Kan inte läsa %s: %s"
+
+#, c-format
+msgid "Unable to read DS file %s"
+msgstr "Det gick inte att läsa DS-filen %s"
+
+msgid "Unable to read History File."
+msgstr "Det går inte att läsa historikfilen."
+
+#, c-format
+msgid "Unable to read RoundCube backup script: %s"
+msgstr "Det gick inte att läsa RoundCube backup script: %s"
+
+#, c-format
+msgid "Unable to read RoundCube restore script: %s"
+msgstr "Det gick inte att läsa RoundCube återställningsskript: %s"
+
+msgid "Unable to read data from %s"
+msgstr "Det gick inte att läsa data från %s"
+
+msgid "Unable to read directatdmin.conf"
+msgstr "Det går inte att läsa directatdmin.conf"
+
+msgid "Unable to read domain configuration files"
+msgstr "Det går inte att läsa domänkonfigurationsfiler"
+
+#, fuzzy
+msgid "Unable to read login history file"
+msgstr "Det går inte att läsa historikfilen."
+
+msgid "Unable to read package"
+msgstr "Det går inte att läsa paketet"
+
+msgid "Unable to read system uptime"
+msgstr "Det gick inte att läsa systemets drifttid"
+
+msgid "Unable to read the system ftp passwd file to add the user to it."
+msgstr ""
+"Det går inte att läsa systemets ftp passwd-fil för att lägga till användaren "
+"i den."
+
+msgid "Unable to read the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Det går inte att läsa systemets ftp passwd-fil för att ta bort systemets ftp-"
+"användare"
+
+msgid "Unable to read the user's files"
+msgstr "Det går inte att läsa användarens filer"
+
+msgid "Unable to read ticket config file"
+msgstr "Det gick inte att läsa ärendekonfigurationsfilen"
+
+msgid "Unable to read zone file to increase serial"
+msgstr "Det går inte att läsa zonfil för att öka seriell"
+
+#, c-format
+msgid "Unable to read zonefile for %s"
+msgstr "Det går inte att läsa zonfil för %s"
+
+msgid "Unable to reboot"
+msgstr "Det gick inte att starta om"
+
+msgid "Unable to remove IP(s)"
+msgstr "Det går inte att ta bort IP-adresser"
+
+msgid "Unable to remove Unix User."
+msgstr "Det gick inte att ta bort Unix-användare."
+
+msgid "Unable to remove all the of the reseller's users"
+msgstr "Det går inte att ta bort alla återförsäljarens användare"
+
+#, c-format
+msgid "Unable to rename %s to %s: %s"
+msgstr "Det gick inte att byta namn på %s till %s: %s"
+
+#, c-format
+msgid "Unable to restore %s to %s: %s"
+msgstr "Det gick inte att återställa %s till %s: %s"
+
+#, c-format
+msgid ""
+"Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. "
+"Rename the file if needed."
+msgstr ""
+"Det gick inte att återställa '%s' eftersom återförsäljaren eller "
+"administratören '%s' inte kan hittas. Byt namn på filen om det behövs."
+
+msgid "Unable to restore database"
+msgstr "Det gick inte att återställa databasen"
+
+msgid "Unable to save dns zone: named-checkzone returned:"
+msgstr "Det gick inte att spara dns-zon: named-checkzone returnerade:"
+
+msgid "Unable to save your changes"
+msgstr "Det gick inte att spara dina ändringar"
+
+msgid "Unable to set bandwidth"
+msgstr "Det gick inte att ställa in bandbredd"
+
+msgid "Unable to set file permissions"
+msgstr "Det gick inte att ställa in filbehörigheter"
+
+#, c-format
+msgid "Unable to set ip %s to be nameserver. Continuing anyway."
+msgstr ""
+"Det gick inte att ställa in ip %s som namnserver. Fortsätter i alla fall."
+
+msgid "Unable to set password"
+msgstr "Det gick inte att ställa in lösenord"
+
+msgid "Unable to set quota"
+msgstr "Det gick inte att ange kvot"
+
+msgid "Unable to set stats link"
+msgstr "Det gick inte att ställa in statistiklänk"
+
+msgid "Unable to set the E-Mail Limit"
+msgstr "Det går inte att ställa in e-postgränsen"
+
+msgid "Unable to set the shell"
+msgstr "Det går inte att ställa in skalet"
+
+msgid "Unable to show Admin History"
+msgstr "Det går inte att visa administratörshistorik"
+
+msgid "Unable to show Reseller History"
+msgstr "Det går inte att visa återförsäljarhistorik"
+
+msgid "Unable to show User History"
+msgstr "Det går inte att visa användarhistorik"
+
+msgid "Unable to show current E-Mail usage"
+msgstr "Det går inte att visa aktuell e-postanvändning"
+
+msgid "Unable to show the system information"
+msgstr "Det går inte att visa systeminformationen"
+
+#, c-format
+msgid "Unable to trash %s to %s: %s"
+msgstr "Det gick inte att slänga %s till %s: %s"
+
+#, c-format
+msgid "Unable to unlock user %s: %s"
+msgstr "Det gick inte att låsa upp användaren %s: %s"
+
+msgid "Unable to update Directadmin"
+msgstr "Kunde inte uppdatera directatdmin.conf"
+
+msgid "Unable to update your Disk Usage"
+msgstr "Det går inte att uppdatera din diskanvändning"
+
+msgid "Unable to use that new domain name"
+msgstr "Det går inte att använda det nya domännamnet"
+
+#, c-format
+msgid "Unable to write %s's user files"
+msgstr "Det går inte att skriva %s användarfiler"
+
+#, c-format
+msgid "Unable to write %s: %s"
+msgstr "Det gick inte att skriva %s: %s"
+
+msgid "Unable to write User's httpd.conf"
+msgstr "Det går inte att skriva användarens httpd.conf"
+
+msgid "Unable to write reseller's IP list"
+msgstr "Det går inte att skriva återförsäljarens IP-lista"
+
+msgid "Unable to write the domain config file"
+msgstr "Det går inte att skriva domänkonfigurationsfilen"
+
+msgid ""
+"Unable to write the main ftp password file.  Your changes will not take "
+"effect."
+msgstr ""
+"Det går inte att skriva ftp-lösenordsfilen. Dina ändringar kommer inte att "
+"träda i kraft."
+
+#, c-format
+msgid ""
+"Unable to write the quota file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Det gick inte att skriva kvotfilen. Låt administratören veta att %s är "
+"oskrivbar."
+
+msgid ""
+"Unable to write the system ftp passwd file to remove the system ftp user"
+msgstr ""
+"Det går inte att skriva systemets ftp passwd-fil för att ta bort systemets "
+"ftp-användare"
+
+#, c-format
+msgid ""
+"Unable to write the usage.cache file. Let your administartor know that %s is "
+"unwriteable."
+msgstr ""
+"Det går inte att skriva usage.cache-filen. Låt administratören veta att %s "
+"är oskrivbar."
+
+msgid "Unable to write ticket config"
+msgstr "Det går inte att skriva ärende-konfigurationen"
+
+#, c-format
+msgid ""
+"Unable to write to the password file. Let your administrator know that %s is "
+"unwritable."
+msgstr ""
+"Det går inte att skriva till lösenordsfilen. Låt administratören veta att %s "
+"är oskrivbar."
+
+msgid "Unable to write to the system ftp passwd file to add the user to it."
+msgstr ""
+"Det går inte att skriva till systemets ftp passwd-fil för att lägga till "
+"användaren i den."
+
+msgid "Unable to write zone file to increase serial"
+msgstr "Det går inte att skriva zonfil för att öka seriell"
+
+#, c-format
+msgid "Unable to write zonefile for %s"
+msgstr "Det går inte att skriva zonfil för %s"
+
+msgid "Unblock"
+msgstr "Avblockera"
+
+msgid "Unblocking is disabled."
+msgstr "Avblockering är inaktiverat."
+
+msgid ""
+"Unchecking will immediately delete the file from disk and cannot be recovered"
+msgstr ""
+"Avmarkering raderar omedelbart filen från disken och kan inte återställas"
+
+msgid "Unexpected error, please contact server administrator"
+msgstr ""
+
+msgid "Unhandled exception name"
+msgstr "Ohanterat undantagsnamn"
+
+#, c-format
+msgid "Unhandled route %s value '%s'"
+msgstr "Ohanterad rutt %s värde '%s'"
+
+msgid "Unix User created successfully"
+msgstr "Unix-användare skapades framgångsrikt"
+
+msgid "Unix User removed from the server"
+msgstr "Unix-användare togs bort från servern"
+
+msgid "Unix proxy IP/port should not have any of path, query or hash"
+msgstr "Unix proxy IP/port bör inte ha någon av sökväg, fråga eller hash"
+
+#, c-format
+msgid "Unknown '%s'"
+msgstr "Okänd '%s'"
+
+msgid "Unknown action"
+msgstr "Okänd åtgärd"
+
+msgid "Unknown backup destination"
+msgstr "Okänd backupdestination"
+
+msgid "Unknown certificate type. Only server, create and paste are allowed"
+msgstr "Okänd certifikattyp. Endast server, skapa och klistra är tillåtna"
+
+msgid "Unknown ftp type"
+msgstr "Okänd ftp-typ"
+
+#, c-format
+msgid "Unknown option '%s'"
+msgstr "Okänt alternativ '%s'"
+
+#, c-format
+msgid "Unknown value for %s"
+msgstr "Okänt värde för %s"
+
+msgid "Unlimited"
+msgstr "Obegränsat"
+
+msgid "Unsuspend"
+msgstr "Låsa upp"
+
+msgid ""
+"Until the cache is created, the values may not be correct. Refresh the page "
+"in 1 minute."
+msgstr ""
+"Tills cachen har skapats kanske värdena inte är korrekta. Uppdatera sidan på "
+"1 minut."
+
+msgid "Up a Level"
+msgstr "Upp en nivå"
+
+msgid "Update"
+msgstr "Uppdatera"
+
+msgid "Update Successful"
+msgstr "Uppdatering lyckades"
+
+msgid "Update channel has been successfully changed"
+msgstr "Kanal för uppdateringar har ändrats"
+
+msgid "Update not necessary"
+msgstr "Uppdatering behövs ej"
+
+msgid "Update queued"
+msgstr "Uppdatering i kö"
+
+#, c-format
+msgid ""
+"Upload confirmation failed for %s: remote bytes %lld do not match local "
+"bytes %lld."
+msgstr ""
+"Uppladdningen kunde inte verifieras för %s: Filstorlek på servern %lld "
+"matchar inte filstorlek loalt: %lld."
+
+msgid "Upload successful"
+msgstr "Uppladdningen lyckades"
+
+msgid "Uploaded file is not valid for copy"
+msgstr "Uppladdad fil är inte giltig för kopiering"
+
+#, c-format
+msgid "Uploaded: %s"
+msgstr "Uppladdat: %s"
+
+msgid ""
+"Uploading files has been disabled with the filemanager_disable_features "
+"option"
+msgstr ""
+"Överföring av filer har inaktiverats med alternativet "
+"filemanager_disable_features"
+
+msgid "Usage (Meg)"
+msgstr "Användning (Meg)"
+
+msgid "Usage Log"
+msgstr "Användningslogg"
+
+msgid "Usage statistics have not yet been collected for this account"
+msgstr "Användningsstatistik har ännu inte samlats in för detta konto"
+
+msgid "User"
+msgstr "Användare"
+
+#, c-format
+msgid "User %s Removed"
+msgstr "Användaren %s har tagits bort"
+
+#, c-format
+msgid "User %s already exists.  Please chose a different username."
+msgstr "Användaren %s finns redan. Vänligen välj ett annat användarnamn."
+
+#, c-format
+msgid "User %s created"
+msgstr "Användaren %s skapad"
+
+#, c-format
+msgid "User %s did not exist on the server.  Removing it from your list."
+msgstr "Användaren %s fanns inte på servern. Tar bort det från din lista."
+
+#, c-format
+msgid "User %s does not exist on the system."
+msgstr "Användaren %s finns inte på systemet."
+
+#, c-format
+msgid "User %s exists on the system but is not in your User list"
+msgstr "Användaren %s finns i systemet men finns inte i din användarlista"
+
+msgid "User %s has been added to your database.  Use the following values:"
+msgstr "Användaren %s har lagts till i din databas. Använd följande värden:"
+
+#, c-format
+msgid "User %s has been backed up."
+msgstr "Användaren %s har säkerhetskopierats."
+
+#, c-format
+msgid "User %s has been restored"
+msgstr "Användaren %s har återställts"
+
+msgid "User %s has been updated.  Use the following values:"
+msgstr "Användaren %s har uppdaterats. Använd följande värden:"
+
+#, c-format
+msgid "User %s has one or more hard links in their path:"
+msgstr "Användaren %s har en eller flera hårda länkar i sin väg:"
+
+#, c-format
+msgid "User %s is already suspended"
+msgstr "Användaren %s är redan avstängd"
+
+#, c-format
+msgid "User %s is already unsuspended"
+msgstr "Användaren %s är redan avstängd"
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for him."
+msgstr ""
+"Användaren %s finns inte på din lista. Du kan inte göra en säkerhetskopia åt "
+"honom."
+
+#, c-format
+msgid "User %s is not on your list.  You cannot make a backup for them."
+msgstr ""
+"Användaren %s finns inte på din lista. Du kan inte göra en säkerhetskopia "
+"för dem."
+
+#, c-format
+msgid "User %s not deleted. Unable to delete all of their users."
+msgstr ""
+"Användaren %s har inte tagits bort. Det går inte att ta bort alla deras "
+"användare."
+
+#, c-format
+msgid "User %s was not created by you-> Not Deleted."
+msgstr "Användaren %s skapades inte av dig-> Inte raderad."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Account suspended."
+msgstr "Användaren %s stängdes av i säkerhetskopian. Kontot har stängts av."
+
+#, c-format
+msgid "User %s was suspended in the backup.  Error suspending the account:"
+msgstr ""
+"Användaren %s stängdes av i säkerhetskopian. Det gick inte att stänga av "
+"kontot:"
+
+#, c-format
+msgid "User '%s' does not exist"
+msgstr "Användaren '%s' existerar inte"
+
+msgid "User Acconts"
+msgstr "Användarkonton"
+
+msgid "User Accounts"
+msgstr "Användarkonton"
+
+msgid "User Bandwidth"
+msgstr "Användarbandbredd"
+
+msgid "User Comment Box"
+msgstr "Användarkommentarruta"
+
+msgid "User DNSSEC Control is disabled"
+msgstr "Användar-DNSSEC-kontroll är inaktiverad"
+
+msgid "User Disk Quota"
+msgstr "Användardiskkvot"
+
+msgid "User History"
+msgstr "Användarhistorik"
+
+msgid "User Modified"
+msgstr "Användaren har ändrats"
+
+msgid "User SMTP Logs are are not enabled"
+msgstr "Användar-SMTP-loggar är inte aktiverade"
+
+msgid "User Updated"
+msgstr "Användare uppdaterad"
+
+#, fuzzy
+msgid "User account is disabled"
+msgstr "Användar-DNSSEC-kontroll är inaktiverad"
+
+msgid "User added to SSH config file successfully"
+msgstr "Användaren har lagts till i SSH-konfigurationsfilen"
+
+msgid "User added to database"
+msgstr "Användare har lagts till i databasen"
+
+msgid "User added to named.conf file successfully"
+msgstr "Användaren har lagts till i filen named.conf"
+
+msgid "User added to ssh config file."
+msgstr "Användaren har lagts till i ssh-konfigurationsfilen."
+
+msgid "User backups have been disabled."
+msgstr "Användarsäkerhetskopior har inaktiverats."
+
+msgid "User config file updated."
+msgstr "Användarkonfigurationsfil uppdaterad."
+
+msgid "User deleted"
+msgid_plural "Users deleted"
+msgstr[0] "Användaren raderades"
+msgstr[1] "Användarna raderades"
+
+msgid "User removed from SSH"
+msgstr "Användaren har tagits bort från SSH"
+
+msgid "User's System Quotas set"
+msgstr "Användarens systemkvoter inställda"
+
+msgid "User's config files deleted"
+msgstr "Användarens konfigurationsfiler raderade"
+
+msgid "User's data directory created successfully"
+msgstr "Användarens datakatalog skapades framgångsrikt"
+
+msgid "User's data directory removed."
+msgstr "Användarens datakatalog har tagits bort."
+
+msgid "User(s)"
+msgstr "Användare"
+
+#, c-format
+msgid "UserDir: %s"
+msgstr "UserDir: %s"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+#, c-format
+msgid "Username '%s' is too long. Length %d > max_username_length=%d"
+msgstr "Användarnamnet '%s' är för långt. Längd %d > max_username_length=%d"
+
+msgid "Username is too short. It must be at least 2 characters long."
+msgstr "Användarnamnet är för kort. Den måste vara minst 2 tecken lång."
+
+msgid ""
+"Username must be Alphanumeric (a-z, A-Z, 0-9), with the first character "
+"being a letter"
+msgstr ""
+"Användarnamn måste vara alfanumeriskt (a-z, A-Z, 0-9), där det första "
+"tecknet är en bokstav"
+
+msgid "Username:"
+msgstr "Användarnamn:"
+
+msgid "Users"
+msgstr "Användare"
+
+#, fuzzy
+msgid "Users Deleted"
+msgstr "Användaren raderades"
+
+#, fuzzy
+msgid "Users moved"
+msgstr "Användaren %s har tagits bort"
+
+msgid "Users will be deleted in the background."
+msgstr "Användare kommer att raderas i bakgrunden."
+
+msgid "Users's domains directory removed."
+msgstr "Användarnas domänkatalog har tagits bort."
+
+msgid "Usertype"
+msgstr "Användartyp"
+
+#, c-format
+msgid "Using path %s is not allowed."
+msgstr "Det är inte tillåtet att använda sökväg %s."
+
+msgid "Vacation Account"
+msgstr "Semesterkonto"
+
+msgid "Vacation Message Deleted"
+msgstr "Semestermeddelande raderat"
+
+msgid "Vacation Message set"
+msgstr "Semestermeddelande set"
+
+msgid "Vacation Message updated"
+msgstr "Semestermeddelande uppdaterat"
+
+#, fuzzy
+msgid "Vacation Messages Deleted"
+msgstr "Semestermeddelande raderat"
+
+msgid "Valid"
+msgstr "Giltig"
+
+msgid "Valid broadcast address set."
+msgstr "Giltig sändningsadress inställd."
+
+msgid "Value"
+msgstr "Värde"
+
+msgid "Variable 'ip' is missing from the submission"
+msgstr "Variabel 'ip' saknas i inlämningen"
+
+msgid "Vendor ID"
+msgstr "Leverantörs-ID"
+
+msgid "Verify"
+msgstr "Kontrollera"
+
+msgid "View"
+msgstr "Se"
+
+msgid "View Clipboard"
+msgstr "Visa Urklipp"
+
+msgid "View previous sort"
+msgstr "Visa tidigare sortering"
+
+msgid "Warning from named-checkzone:"
+msgstr "Varning från named-checkzone:"
+
+msgid ""
+"Warning: %s has a valid password for %s but failed the Two-Step "
+"Authentication code %s times."
+msgstr ""
+"Varning: %s har ett giltigt lösenord för %s men misslyckades med "
+"tvåstegsautentiseringskoden %s gånger."
+
+msgid "Warning: Quota limit reached. File(s) may be empty."
+msgstr "Varning: Kvotgränsen uppnådd. Fil(er) kan vara tomma."
+
+msgid "Warning: The system load average is"
+msgstr "Varning: Genomsnittet för systemets belastning är"
+
+#, c-format
+msgid "We've only read %lld of the %lld byte file from %s"
+msgstr "Vi har bara läst %lld av %lld-bytefilen från %s"
+
+msgid "Webalizer"
+msgstr "Webalizer"
+
+msgid "Webmail"
+msgstr "Webbmail"
+
+msgid "Webmail Attachments"
+msgstr "Bilagor till webbmail"
+
+msgid "Webmail SSO"
+msgstr "Webmail SSO"
+
+msgid "Week of Month"
+msgstr "Månadens vecka"
+
+#, c-format
+msgid "Weekly Rate limit of %d for '%s' has been reached"
+msgstr "Veckoprisgränsen på %d för '%s' har nåtts"
+
+msgid "What"
+msgstr "Vad"
+
+msgid "When"
+msgstr "När"
+
+msgid "Where"
+msgstr "Var"
+
+msgid "Who"
+msgstr "vem"
+
+msgid "Wildcard"
+msgstr "Wildcard"
+
+msgid "With Selected"
+msgstr "Med Selected"
+
+msgid "With selected"
+msgstr "Med valt"
+
+msgid "With zero allowed domains, the Hotlink Protection has been disabled."
+msgstr ""
+
+#, c-format
+msgid "Won't activate %s's account because its off"
+msgstr "Kommer inte att aktivera %s konto eftersom det är avstängt"
+
+msgid "Wordpress"
+msgstr "WordPress"
+
+#, c-format
+msgid "Write error with %s: %s"
+msgstr "Skrivfel med %s: %s"
+
+#, c-format
+msgid "Wrong number of '%s' elements.  Allowed: 1, or 2 with '%s')"
+msgstr "Fel antal '%s' element. Tillåtet: 1 eller 2 med '%s')"
+
+#, c-format
+msgid "Wrong number of 'pass' values: %d in '%s' (slash separated)"
+msgstr "Fel antal \"pass\"-värden: %d i \"%s\" (separerad snedstreck)"
+
+msgid "Year"
+msgstr ""
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You already have the most recent version of the program"
+msgstr "Du har redan senaste versionen av programmet"
+
+#, c-format
+msgid ""
+"You are deleting Admin or Reseller accounts that have %d User under their "
+"control."
+msgid_plural ""
+"You are deleting Admin or Reseller accounts that have %d Users under their "
+"control."
+msgstr[0] ""
+"Du tar bort administratörs- eller återförsäljarkonton som har %d användare "
+"under deras kontroll."
+msgstr[1] ""
+"Du tar bort administratörs- eller återförsäljarkonton som har %d användare "
+"under sin kontroll."
+
+msgid "You are not allowed to enable anonymous ftp"
+msgstr "Du får inte aktivera anonym ftp"
+
+msgid "You are not allowed to modify your ssl settings"
+msgstr "Du får inte ändra dina ssl-inställningar"
+
+msgid ""
+"You are trying to restore a zst file, but zstd is not enabled on the system."
+msgstr ""
+"Du försöker återställa en zst-fil, men zstd är inte aktiverat i systemet."
+
+msgid "You aren't allowed to modify that ticket"
+msgstr "Du får inte ändra det här supportärendet"
+
+#, c-format
+msgid ""
+"You can click the E-Mail below to be immediately logged into %s as this "
+"User, without knowing their password."
+msgstr ""
+"Du kan klicka på e-postmeddelandet nedan för att omedelbart loggas in på %s "
+"som denna användare, utan att känna till deras lösenord."
+
+msgid "You can't make a list named majordomo as its a reserved alias"
+msgstr ""
+"Du kan inte skapa en lista som heter majordomo eftersom det är ett "
+"reserverat alias"
+
+msgid "You can't suspend root.  That would be BAD"
+msgstr "Du kan inte suspendera root. Det vore DÅLIGT"
+
+msgid "You cannot add that extension"
+msgstr "Du kan inte lägga till den förlängningen"
+
+msgid "You cannot assign the domain more bandwidth than your account"
+msgstr "Du kan inte tilldela domänen mer bandbredd än ditt konto"
+
+msgid "You cannot assign the domain more quota than your account"
+msgstr "Du kan inte tilldela domänen mer kvot än ditt konto"
+
+msgid "You cannot create more Users than you are allowed domains."
+msgstr "Du kan inte skapa fler användare än vad du är tillåtna domäner."
+
+msgid "You cannot delete all of your IPs"
+msgstr "Du kan inte ta bort alla dina IP-adresser"
+
+#, c-format
+msgid ""
+"You cannot delete the account %s because it is linked to your system account"
+msgstr ""
+"Du kan inte ta bort kontot %s eftersom det är länkat till ditt systemkonto"
+
+#, c-format
+msgid "You cannot delete yourself (%s)"
+msgstr "Du kan inte ta bort dig själv (%s)"
+
+msgid "You cannot execute that command"
+msgstr "Du kan inte utföra det kommandot"
+
+msgid "You cannot modify yourself"
+msgstr "Du kan inte ändra dig själv"
+
+msgid ""
+"You cannot restore multiple Users on one free IP.  The IP must first be "
+"shared."
+msgstr ""
+"Du kan inte återställa flera användare på en gratis IP-adress. IP-adressen "
+"måste först vara delad."
+
+msgid "You cannot set an unlimited send limit."
+msgstr "Du kan inte ställa in en obegränsad sändningsgräns."
+
+msgid "You cannot suspend yourself"
+msgstr "Du kan inte låsa dig själv"
+
+msgid "You cannot suspend/unsuspend yourself"
+msgstr "Du kan inte stänga av/låsa upp dig själv"
+
+msgid "You cannot unsuspend this account."
+msgstr "Du kan inte låsa upp detta konto."
+
+msgid ""
+"You cannot use that domain as a pointer. It already exists on the server"
+msgstr ""
+"Du kan inte använda den domänen som en pekare. Det finns redan på servern"
+
+#, c-format
+msgid "You currently have %s Users and a maximum of %s domains."
+msgstr "Du har för närvarande %s användare och maximalt %s domäner."
+
+msgid "You did not select any domains to modify"
+msgstr "Du har inte valt några domäner att ändra"
+
+msgid "You didn't chose a different ip, no changes have been made"
+msgstr "Du har inte valt en annan ip, inga ändringar har gjorts"
+
+msgid "You didn't select anyone to send it to"
+msgstr "Du har inte valt någon att skicka den till"
+
+msgid "You do not have control over user"
+msgstr "Du har inte kontroll över användaren"
+
+msgid "You do not own any IPs"
+msgstr "Du äger inga IP-adresser"
+
+msgid "You do not own that IP"
+msgstr "Du äger inte den IP:n"
+
+msgid "You do not own that domain"
+msgstr "Du äger inte den domänen"
+
+msgid "You do not own that ip"
+msgstr "Du äger inte den ip:n"
+
+msgid "You do not own that that cron ID"
+msgstr "Du äger inte det där cron-ID:t"
+
+#, c-format
+msgid "You do not own the IP %s. User %s will not be created"
+msgstr "Du äger inte IP:n %s. Användaren %s kommer inte att skapas"
+
+msgid "You don't have authority over that User"
+msgstr "Du har inte auktoritet över den användaren"
+
+msgid "You don't have permission to respond to that ticket"
+msgstr "Du har inte behörighet att svara på det supportärendet"
+
+msgid "You don't have permission to restore user"
+msgstr "Du har inte behörighet att återställa användare"
+
+msgid "You don't have permission to view that ticket"
+msgstr "Du har inte behörighet att visa det supportärendet"
+
+#, c-format
+msgid "You have %d:%.2d left."
+msgstr "Du har %d:%.2d kvar."
+
+msgid "You have already reached your assigned limit"
+msgstr "Du har redan nått din tilldelade gräns"
+
+msgid "You have not added any files to the clipboard."
+msgstr "Du har inte lagt till några filer i urklippet."
+
+msgid ""
+"You have not given the reseller any IP's.  Unable to create an assigned IP "
+"domain or any nameservers without any"
+msgstr ""
+"Du har inte gett återförsäljaren några IP:er. Det går inte att skapa en "
+"tilldelad IP-domän eller några namnservrar utan någon"
+
+msgid ""
+"You have not selected any Files.  Please go back and select some before "
+"restoring the backup."
+msgstr ""
+"Du har inte valt några filer. Gå tillbaka och välj några innan du "
+"återställer säkerhetskopian."
+
+msgid ""
+"You have not selected any Users.  Please go back and select some before "
+"creating the backup."
+msgstr ""
+"Du har inte valt några användare. Gå tillbaka och välj några innan du skapar "
+"säkerhetskopian."
+
+msgid "You have not selected any domains"
+msgstr "Du har inte valt några domäner"
+
+msgid ""
+"You have successfully issued a server reboot command.  It may take a few "
+"minutes for the system boot up and become live again."
+msgstr ""
+"Du har utfärdat ett serveromstartskommando. Det kan ta några minuter innan "
+"systemet startar upp och blir live igen."
+
+#, c-format
+msgid ""
+"You have used %d%% of your disk usage, which is more than the allowed "
+"threshold of %d%%."
+msgstr ""
+"Du har använt %d%% av din diskanvändning, vilket är mer än det tillåtna "
+"tröskelvärdet på %d%%."
+
+msgid "You may need to press F5 to reload the logo"
+msgstr "Du kan behöva trycka på F5 för att ladda om logotypen"
+
+msgid "You may not use an IP for a domain name"
+msgstr "Du får inte använda en IP för ett domännamn"
+
+msgid "You may only provide an allow list or a deny list, not both."
+msgstr ""
+
+msgid "You must enter a chmod value. eg: 755"
+msgstr "Du måste ange ett chmod-värde. ex: 755"
+
+msgid "You must enter a folder 'name'. eg: images"
+msgstr "Du måste ange en mapp \"namn\". ex: bilder"
+
+msgid "You must enter both password"
+msgstr "Du måste ange båda lösenorden"
+
+msgid "You must enter number, user, subject, priority, status and message"
+msgstr "Du måste ange nummer, användare, ämne, prioritet, status och meddelande"
+
+msgid "You must enter the password in both fields"
+msgstr "Du måste ange lösenordet i båda fälten"
+
+msgid "You must enter user, subject, priority and message"
+msgstr "Du måste ange användare, ämne, prioritet och meddelande"
+
+msgid "You must first create some packages"
+msgstr "Du måste först skapa några paket"
+
+msgid "You must first own an IP"
+msgstr "Du måste först äga en IP"
+
+msgid "You must have more than 0 NS records or named may not start."
+msgstr "Du måste ha fler än 0 NS-poster eller namngivna kanske inte startar."
+
+msgid ""
+"You must provide 'required_hits' and 'required_hits_custom' if "
+"'required_hits' is 'custom'"
+msgstr ""
+"Du måste ange \"required_hits\" och \"required_hits_custom\" om "
+"\"required_hits\" är \"custom\""
+
+msgid "You must provide a list name"
+msgstr "Du måste ange ett listnamn"
+
+msgid ""
+"You must provide a protected directory password prompt. eg: Member's Area"
+msgstr ""
+"Du måste ange en prompt för skyddad kataloglösenord. t.ex.: Medlemsområde"
+
+msgid "You must provide a valid domain, ip, ns1 and ns2"
+msgstr "Du måste ange en giltig domän, ip, ns1 och ns2"
+
+msgid ""
+"You must provide a valid email address, oldpassword, password1 and password2"
+msgstr ""
+"Du måste ange en giltig e-postadress, gammalt lösenord, lösenord1 och "
+"lösenord2"
+
+msgid ""
+"You must provide a valid ftp address, oldpassword, password1 and password2"
+msgstr ""
+"Du måste ange en giltig ftp-adress, gammalt lösenord, lösenord1 och lösenord2"
+
+msgid "You must provide a valid ip"
+msgstr "Du måste ange en giltig ip"
+
+msgid "You must provide a valid name and it must exist."
+msgstr "Du måste ange ett giltigt namn och det måste finnas."
+
+msgid "You must provide a valid name and value"
+msgstr "Du måste ange ett giltigt namn och värde"
+
+msgid "You must provide the passwd variable"
+msgstr "Du måste ange passwd-variabeln"
+
+msgid ""
+"You must select a nameserver ip pair (ns1.domain.com and ns2.domain.com)"
+msgstr ""
+"Du måste välja ett namnserver-ip-par (ns1.domain.com och ns2.domain.com)"
+
+msgid "You must select at least one mailing list to delete"
+msgstr "Du måste välja minst en e-postlista för att radera"
+
+msgid "You must select at least one mailing list to purge"
+msgstr "Du måste välja minst en e-postlista för att rensa"
+
+msgid "You must select exactly one key"
+msgstr "Du måste välja exakt en nyckel"
+
+msgid "You must select something"
+msgstr "Du måste välja något"
+
+msgid ""
+"You must use a number for the hour (0-23). You can only have a cron run once "
+"per day. (You can make more than one cron)"
+msgstr ""
+"Du måste använda ett nummer för timmen (0-23). Du kan bara köra cron en gång "
+"om dagen. (Du kan göra mer än en cron)"
+
+msgid ""
+"You must use a number for the minute (0-59). You can only have a cron run "
+"once per day. (You can make more than one cron)"
+msgstr ""
+"Du måste använda ett nummer för minuten (0-59). Du kan bara köra cron en "
+"gång om dagen. (Du kan göra mer än en cron)"
+
+msgid "You must use a valid path"
+msgstr "Du måste använda en giltig sökväg"
+
+#, c-format
+msgid "You must wait at least %d minute between updates."
+msgid_plural "You must wait at least %d minutes between updates."
+msgstr[0] "Du måste vänta minst %d minut mellan uppdateringarna."
+msgstr[1] "Du måste vänta minst %d minuter mellan uppdateringarna."
+
+msgid "You must wait for the stats to be computed."
+msgstr "Du måste vänta på att statistiken ska beräknas."
+
+msgid "You need to specify a domain"
+msgstr "Du måste ange en domän"
+
+msgid "You require a domain, anon, anonup and a message"
+msgstr "Du behöver en domän, anon, anonup och ett meddelande"
+
+msgid "You require domain and passwd list to sync the accounts"
+msgstr "Du behöver domän och lösenordslista för att synkronisera kontona"
+
+msgid "You require either the passwd or quota"
+msgstr "Du behöver antingen passwd eller kvot"
+
+msgid ""
+"You require the source url path (eg: /redirect) and the destination url (eg: "
+"www.redirect.com)"
+msgstr ""
+"Du behöver käll-url-sökvägen (t.ex.: /redirect) och destinations-url (t.ex.: "
+"www.redirect.com)"
+
+msgid "You require user and domain to change a pop account"
+msgstr "Du behöver användare och domän för att ändra ett popkonto"
+
+msgid "You require user, domain and passwd to add a pop account"
+msgstr "Du behöver användare, domän och passwd för att lägga till ett popkonto"
+
+msgid "You will be notified via the Message System upon completion."
+msgstr "Du kommer att meddelas via meddelandesystemet när det är klart."
+
+msgid ""
+"You will be notified via the Message System when the process is complete"
+msgstr "Du kommer att meddelas via meddelandesystemet när processen är klar"
+
+msgid "You will receive a message when it's complete."
+msgstr "Du kommer att få ett meddelande när det är klart."
+
+msgid ""
+"You're using the login-as option, so use your own password. Not the User's "
+"password."
+msgstr ""
+"Du använder inloggningsalternativet, så använd ditt eget lösenord. Inte "
+"användarens lösenord."
+
+msgid "Your Hash URL Login '%s' has been created"
+msgstr "Din Hash URL-inloggning '%s' har skapats"
+
+msgid "Your IP is blacklisted"
+msgstr "Din IP är svartlistad"
+
+msgid "Your Login Key '%s' has been created"
+msgstr "Din inloggningsnyckel '%s' har skapats"
+
+#, c-format
+msgid "Your Name has been changed to %s"
+msgstr "Ditt namn har ändrats till %s"
+
+#, fuzzy
+msgid "Your User files have been restored"
+msgstr "Användarfilerna har återställts från %s"
+
+#, fuzzy
+msgid "Your User files have been restored *WARNING*"
+msgstr "Användarfilerna har återställts från %s"
+
+msgid "Your account"
+msgstr "Ditt konto"
+
+#, c-format
+msgid "Your account %s@%s has been setup. In your e-mail program, use"
+msgstr "Ditt konto %s@%s har konfigurerats. I ditt e-postprogram, använd"
+
+msgid "Your account '|USERNAME|' has been suspended. Reason: '|REASON|'"
+msgstr "Ditt konto '|USERNAME|' har blivit avstängd. Anledning: '|REASON|'"
+
+msgid "Your account for |domain| is now ready for use."
+msgstr "Ditt konto för |domän| är nu redo att användas."
+
+msgid "Your backups are now ready"
+msgstr "Dina säkerhetskopior är nu klara"
+
+msgid "Your database has been setup.  Use the following values:"
+msgstr "Din databas har konfigurerats. Använd följande värden:"
+
+msgid "Your default domain has been set"
+msgstr "Din standarddomän har ställts in"
+
+msgid "Your disk quota limit has been reached."
+msgstr "Du har uppnått din övre gräns för diskanvändning."
+
+msgid "Your disk usage has been updated"
+msgstr "Din diskanvändning har uppdaterats"
+
+msgid ""
+"Your existing key has not been overwritten, but cannot be used with the new "
+"certificate."
+msgstr ""
+"Din befintliga nyckel har inte skrivits över, men kan inte användas med det "
+"nya certifikatet."
+
+#, fuzzy
+msgid "Your file has been saved"
+msgstr "Ditt meddelande har sparats"
+
+#, fuzzy
+msgid "Your language has been changed"
+msgstr "Språket har ändrats till %s"
+
+msgid "Your message has been saved"
+msgstr "Ditt meddelande har sparats"
+
+msgid "Your message has been sent"
+msgstr "ditt meddelande har skickats"
+
+msgid "Your message is being sent in the background"
+msgstr "Ditt meddelande skickas i bakgrunden"
+
+msgid ""
+"Your message is empty. Users might appreciate knowing what they're getting."
+msgstr ""
+"Ditt meddelande är tomt. Användare kanske uppskattar att veta vad de får."
+
+#, fuzzy
+msgid "Your name has been changed"
+msgstr "Ditt namn har ändrats till %s"
+
+#, c-format
+msgid "Your new key has been backed up to the following location: %s"
+msgstr "Din nya nyckel har säkerhetskopierats till följande plats: %s"
+
+msgid "Your password"
+msgstr "Ditt lösneord"
+
+msgid "Your password is invalid"
+msgstr "Ditt lösenord är ogiltigt"
+
+msgid ""
+"Your request for an update will begin in under a minute. You should be "
+"notified via the Message system when it is complete"
+msgstr ""
+"Din begäran om uppdatering börjar om mindre än en minut. Du bör meddelas via "
+"meddelandesystemet när det är klart"
+
+msgid "Your request will be executed within 1 minute"
+msgstr "Din begäran kommer att verkställas inom 1 minut"
+
+msgid ""
+"Your request will run in the background. Once completed, you'll be notified "
+"in the Message System."
+msgstr ""
+"Din begäran kommer att köras i bakgrunden. När det är klart kommer du att "
+"meddelas i meddelandesystemet."
+
+msgid "Your reseller account has reached its assigned limit"
+msgstr "Ditt återförsäljarkonto har nått sin tilldelade gräns"
+
+msgid "Your reseller has reached their assigned limit"
+msgstr "Din återförsäljare har nått sin tilldelade gräns"
+
+msgid "Your subject contains invalid characters."
+msgstr "Ditt ämne innehåller ogiltiga tecken."
+
+#, c-format
+msgid "Your ticket number is %s."
+msgstr "Ditt ärendenummer är %s."
+
+msgid "Zone Keys are newer than the Zone Signinging."
+msgstr "Zonnycklar är nyare än zonsignering."
+
+msgid "Zone Reset"
+msgstr "Zonåterställning"
+
+msgid "Zone Signing has expired."
+msgstr "Zonsignering har löpt ut."
+
+#, fuzzy
+msgid "Zone created"
+msgstr "Cron skapad"
+
+msgid ""
+"Zone has not yet been signed.  Ensure you first generate the keys and sign "
+"it one before using this automated sign tool"
+msgstr ""
+"Zonen har ännu inte undertecknats. Se till att du först genererar nycklarna "
+"och signerar dem innan du använder detta automatiska signeringsverktyg"
+
+msgid "Zone is of type DNSSEC."
+msgstr "Zonen är av typen DNSSEC."
+
+msgid "Zone keys generated"
+msgstr "Zonnycklar genererade"
+
+msgid "Zone signed"
+msgstr "Zon undertecknad"
+
+#, fuzzy
+msgid "Zones removed"
+msgstr "Meddelandet har tagits bort"
+
+msgid "account ..."
+msgstr "Konto..."
+
+#, c-format
+msgid "and %d User"
+msgid_plural "and %d Users"
+msgstr[0] "och %d användare"
+msgstr[1] "och %d användare"
+
+msgid "at least"
+msgstr "åtminstone"
+
+msgid "at most"
+msgstr "som mest"
+
+msgid "back"
+msgstr ""
+
+msgid "can_dnssec is not enabled. Cannot sign the zone."
+msgstr "can_dnssec är inte aktiverat. Kan inte signera zonen."
+
+#, c-format
+msgid "cannot fstatat %s: %s"
+msgstr "kan inte fstatat %s: %s"
+
+#, c-format
+msgid "cannot unlinkat %s: %s"
+msgstr "kan inte ta bort länken till %s: %s"
+
+msgid "catch is required"
+msgstr "fångst krävs"
+
+#, c-format
+msgid "cgroup error: %s"
+msgstr "cgroup fel: %s"
+
+msgid "cgroup is not enabled in your license"
+msgstr "cgroup är inte aktiverat i din licens"
+
+msgid "cgroup is turned off in the directadmin.conf"
+msgstr "cgroup är avstängd i direktadmin.conf"
+
+msgid "change"
+msgstr "Ändra"
+
+msgid "click here if form does not include two-step code input"
+msgstr ""
+
+msgid "contains"
+msgstr "innehåller"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "Dag"
+msgstr[1] "Dagar"
+
+msgid "day(s)"
+msgstr "Dagar"
+
+msgid "days"
+msgstr "dagar"
+
+msgid "default user"
+msgstr "standardanvändare"
+
+msgid "dns error"
+msgstr "dns-fel"
+
+#, c-format
+msgid "dnsprovider option '%s' contains invalid characters"
+msgstr "dnprovider-alternativet '%s' innehåller ogiltiga tecken"
+
+msgid "does not belong to you"
+msgstr "tillhör inte dig"
+
+msgid "emails have just been sent by"
+msgstr "mejl har precis skickats av"
+
+msgid "equals"
+msgstr "Samma"
+
+msgid "filter action saved"
+msgstr ""
+
+msgid "has been changed."
+msgstr "har ändrats."
+
+msgid "has been updated with the new ip"
+msgstr "har uppdaterats med den nya ip"
+
+msgid "high_score must be in the range 1 to 99"
+msgstr "high_score måste vara i intervallet 1 till 99"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "Timme"
+msgstr[1] "Timmar"
+
+msgid "hours"
+msgstr "timmar"
+
+msgid "httpd.conf will be written later using the task.queue"
+msgstr ""
+
+#, fuzzy
+msgid "invalid IP or range: %s"
+msgstr "%s är inte en godkänd IP adress"
+
+#, fuzzy
+msgid "invalid code"
+msgstr "Ogiltig kod"
+
+#, c-format
+msgid "is an invalid email address.  User %s will not be created"
+msgstr "är en ogiltig e-postadress. Användaren %s kommer inte att skapas"
+
+msgid "is currently down"
+msgstr "är för närvarande nere"
+
+msgid "is not a valid username"
+msgstr "är inte ett giltigt användarnamn"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range '%s' must be a positive integer"
+msgstr ""
+"is_ip_in_mask_range:%s:%s: intervallet '%s' måste vara ett positivt heltal"
+
+#, c-format
+msgid ""
+"is_ip_in_mask_range:%s:%s: range '%s' must be between 1 and 128, inclusive"
+msgstr ""
+"is_ip_in_mask_range:%s:%s: intervallet '%s' måste vara mellan 1 och 128 "
+"inklusive"
+
+#, c-format
+msgid "is_ip_in_mask_range:%s:%s: range does not have /"
+msgstr "is_ip_in_mask_range:%s:%s: range har inte /"
+
+msgid "json string"
+msgstr "json sträng"
+
+#, c-format
+msgid "lstat error: %s"
+msgstr "lstat-fel: %s"
+
+msgid "mail() line number"
+msgstr "mail() radnummer"
+
+msgid "message is empty. Please enter some text."
+msgstr "meddelandet är tomt. Vänligen ange lite text."
+
+#, c-format
+msgid "mime type (%s) for '%s' is not of type 'image/'"
+msgstr "mimetyp (%s) för '%s' är inte av typen 'image/'"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Minut"
+msgstr[1] "Minuter"
+
+msgid "minutes"
+msgstr "minuter"
+
+#, c-format
+msgid "mkdir(%s) error: %s"
+msgstr "mkdir(%s) fel: %s"
+
+msgid "modify password"
+msgstr "Ändra lösenord"
+
+msgid "modify privileges"
+msgstr "ändra privilegier"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "månad"
+msgstr[1] "månader"
+
+msgid "new_domain is not a valid domain"
+msgstr "new_domain är inte en giltig domän"
+
+msgid "newer than"
+msgstr "nyare än"
+
+msgid "ns1 or ns2 are not valid nameservers"
+msgstr "ns1 eller ns2 är inte giltiga namnservrar"
+
+msgid "of"
+msgstr "av"
+
+msgid "old_package or new_package are not valid package names"
+msgstr "old_package eller new_package är inte giltiga paketnamn"
+
+msgid "older than"
+msgstr "äldre än"
+
+#, c-format
+msgid "older than %s days."
+msgstr "äldre än %s dagar."
+
+msgid "or"
+msgstr "eller"
+
+msgid "or IPv6 (1:2:3:4:5:6:7:8) or IPv6 range (1:2:3:4:5:6:7:8-9)"
+msgstr "eller IPv6 (1:2:3:4:5:6:7:8) eller IPv6-intervall (1:2:3:4:5:6:7:8-9)"
+
+msgid "or select from"
+msgstr "eller välj från"
+
+msgid "php.ini override added"
+msgstr "php.ini åsidosättning tillagd"
+
+#, c-format, fuzzy
+msgid "php1_select entry %d is not available"
+msgstr "Widget '%s' är inte tillgänglig"
+
+msgid "pop_disk_usage_cache is not enabled"
+msgstr "pop_disk_usage_cache är inte aktiverat"
+
+msgid "port"
+msgstr "port"
+
+#, fuzzy
+msgid "request created"
+msgstr "Katalog skapad"
+
+msgid "reseller_can_set_email_limit=0 is set, thus you cannot set a limit"
+msgstr ""
+"reseller_can_set_email_limit=0 är inställd, så du kan inte sätta en gräns"
+
+msgid "retry"
+msgstr "Försök igen"
+
+msgid "routes must start with a [ character."
+msgstr "rutter måste börja med ett [ tecken."
+
+msgid "saved"
+msgstr ""
+
+#, c-format
+msgid "search length out of bounds: 2 <= '%zd' <= 128"
+msgstr "söklängd utanför gränserna: 2 <= '%zd' <= 128"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "sekund"
+msgstr[1] "sekunder"
+
+msgid "selected"
+msgstr "valt"
+
+msgid "selected overrides removed from php.ini"
+msgstr "valda åsidosättningar har tagits bort från php.ini"
+
+msgid "selected skipped rules removed"
+msgstr "valda överhoppade regler har tagits bort"
+
+msgid "selecting none includes all domains"
+msgstr "att välja ingen inkluderar alla domäner"
+
+msgid "sent"
+msgstr "skickat"
+
+msgid "set Permission"
+msgstr "ange tillstånd"
+
+msgid "show_blocked_ips.sh output:"
+msgstr "show_blocked_ips.sh utdata:"
+
+msgid "starts with"
+msgstr "börjar med"
+
+msgid "subject contains invalid characters."
+msgstr "ämnet innehåller ogiltiga tecken."
+
+#, c-format
+msgid "subject_select != %d, but subject is not set. This shouldn't happen."
+msgstr ""
+"subject_select != %d, men ämnet är inte angivet. Det här borde inte hända."
+
+msgid "that is the server's hostname and you cannot use it"
+msgstr "det är serverns värdnamn och du kan inte använda det"
+
+msgid "the new domain name already exists on your system"
+msgstr "det nya domännamnet finns redan på ditt system"
+
+msgid "too many iterations"
+msgstr "för många iterationer"
+
+#, fuzzy
+msgid "unable to load secret"
+msgstr "Det går inte att öppna ett uttag"
+
+msgid "unlimited"
+msgstr "obegränsat"
+
+msgid "user, passwd, passwd2 and type are required"
+msgstr "user, passwd, passwd2 och typ krävs"
+
+msgid "user.conf override"
+msgstr "user.conf skriver över"
+
+msgid "user_brutecount disabled"
+msgstr "user_brutecount inaktiverat"
+
+msgid "user_modify_pre.sh error"
+msgstr "user_modify_pre.sh-fel"
+
+#, fuzzy
+msgid "valid code"
+msgstr "Ogiltig kod"
+
+msgid "value is required"
+msgstr "värde behövs"
+
+#, c-format, fuzzy
+msgid "value must be '%s' or '%s'"
+msgstr "'%s' måste vara '%s' eller '%s'"
+
+msgid "where=spamfolder has been disabled via show_main_spambox=0"
+msgstr "where=spamfolder har inaktiverats via show_main_spambox=0"
+
+msgid "your new password is"
+msgstr "ditt nya lösenord är"
+
+msgid "your new quota is"
+msgstr "din nya kvot är"
+
+#, c-format
+msgid "your new send limit is: %s"
+msgstr "din nya sändningsgräns är: %s"
+
+msgid ""
+"~/domains was missing, but we ran into an error while trying to re-create it"
+msgstr ""
+"~/domains saknades, men vi stötte på ett fel när vi försökte återskapa det"
