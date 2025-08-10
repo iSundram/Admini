@@ -1,0 +1,1 @@
+import{I as a}from"./input-wrap.B3RMhaoG.js";import{u as e}from"./useId.CRALI6rI.js";import{bL as m,bw as n}from"../index.DtGSrwJ3.js";const l=(t,s)=>{const o=m(),r=s.id||e(t);return(p,u)=>n(a,{...s,id:r},{...o,default:u.slots.default})};export{l as u};
