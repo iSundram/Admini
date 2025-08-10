@@ -1,0 +1,119 @@
+|?TREE=&raquo; <a class=tree href="/CMD_TWOSTEP_AUTH">`LANG_TWOSTEP_AUTH`</a>|
+|HTM_HEADER_FULL|
+
+<b>|LANG_TWOSTEP_AUTH|</b><br>
+
+<br>|LANG_TWOSTEP_AUTH_INFO|<br>
+
+|?SQ_BOLD_OPEN=|
+|?SQ_BOLD_CLOSE=|
+|*if TWOSTEP_AUTH_CHECKED=""|
+<br><b>|LANG_FEATURE_OFF|</b><br>
+|LANG_CREATE_A_SECRET|
+|?SQ_BOLD_OPEN=<b>|
+|?SQ_BOLD_CLOSE=</b>|
+|*endif|
+
+
+<br>
+
+<table class='list table-highlight' cellpadding=3 cellspacing=1>
+<form action='CMD_TWOSTEP_AUTH' method='POST'>
+<input type='hidden' name="action" value="new_secret" />
+<tr>
+	<td colspan=2 class=listtitle><b>|LANG_SETTINGS|</b></td >
+</tr>
+<tr>
+	<td class=list>|LANG_SECRET|</td>
+	<td class=list><span class=code_edit>|SECRET|</span> &nbsp;&nbsp;&nbsp; <input type=submit value='|LANG_NEW_SECRET|'>
+		<br>
+		|LANG_NEW_SECRET_NOTE|
+	</td>
+</tr>
+</form>
+
+|*if OTPAUTH!=""|
+<form onsubmit="check_twostep_auth_code(); return false;">
+<tr>
+	<td class=list2>QR Code</td>
+	<td class=list2>
+					<div id='qrcode' style="width:200px; height:200px;" title="|OTPAUTH|"><img src="|QR_URL|"></div>
+					<div style='display: inline-block; vertical-align: top;'>
+						|LANG_SCAN_TO_PHONE|
+						<br>
+						<br>
+<script type="text/javascript">
+function check_twostep_auth_code()
+{
+	if (document.getElementById('code').value == "")
+	{
+		document.getElementById('code_test_result').innerHTML = 'Empty Code';
+		return;
+	}
+
+	document.getElementById('code_test_result').innerHTML = '';
+
+	var formData = new URLSearchParams({
+		action:"test",
+		code:document.getElementById('code').value,
+	});
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'CMD_TWOSTEP_AUTH?json=yes', true);
+
+
+
+	xhr.onload = function () {
+		try {
+			const result=JSON.parse(xhr.responseText)
+			if (result.success){
+				document.getElementById('code_test_result').innerHTML = `<div class='good_twostep_auth_code'>${result.success}</div>`;
+			}else if(result.error){
+				var e=result.error;
+				if (result.result){
+					e+="<br>"+result.result
+				}
+				document.getElementById('code_test_result').innerHTML = `<div class='bad_twostep_auth_code'>${e}</div>`;
+			}
+		}catch(e){
+			console.error(e)
+			alert('An error occurred! ' + xhr.responseText);
+		}
+	};
+
+	xhr.send(formData);
+}
+</script>
+						|LANG_CHECK_BEFORE_LOGOUT|:<br>
+						<input id=code name=code placeholder='6 digit code' maxlength=8 onchange="this.value=this.value.replace(/\s+/g, '');"> <input type=submit value='|LANG_TEST_CODE|'><br>
+						<span id=code_test_result></span>
+					</div>
+	</td>
+</tr>
+</form>
+|*endif|
+
+<form action='CMD_TWOSTEP_AUTH' method='POST'>
+<input type='hidden' name="action" value="settings" />
+<input type='hidden' name="version" value="1" />
+<tr>
+	<td class=list2 align=center><input type=checkbox name="twostep_auth" value="yes" |TWOSTEP_AUTH_CHECKED| |TWOSTEP_AUTH_DISABLED|></td>
+	<td class=list2>|SQ_BOLD_OPEN||LANG_REQUIRE_AUTH_CODE||SQ_BOLD_CLOSE|</td>
+</tr>
+<tr>
+	<td class=list2 align=center><input type=checkbox name="notify_on_all_twostep_auth_failures" value="yes" |NOTIFY_ON_ALL_FAILURES_CHECKED|></td>
+	<td class=list2>|LANG_NOTIFY_ON_FAILURES|</td>
+</tr>
+<tr>
+	<td colspan=2 class=listtitle align=right><input type=submit name=save value="|LANG_SAVE|"></td>
+</tr>
+</form>
+</table>
+
+
+
+<br>
+|SCRATCH_CODES|
+
+<br>
+|HTM_FOOTER_FULL|
