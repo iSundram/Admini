@@ -1,0 +1,1 @@
+const o=()=>({dateToTimestamp:e=>{const t=e.getTime();return String(Math.floor(t/1e3))},getPressure:e=>typeof e=="undefined"||typeof e.some=="undefined"?[0,0,0]:[e.some.avg10,e.some.avg60,e.some.avg300].map(Number)});export{o as u};
