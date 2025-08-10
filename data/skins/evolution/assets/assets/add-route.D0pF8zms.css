@@ -1,0 +1,1 @@
+.fm-tree-header>.fm-tree-header-expand{min-width:16px}.fm-tree-header>.fm-tree-header-expand>.icon{transition:transform ease .3s}.fm-tree-header>.fm-tree-header-expand>.icon.--expanded{transform:rotate(90deg)}.fm-tree-body{margin-left:26px}.fm-tree{max-height:400px;min-height:400px;overflow-y:auto;border:.7px solid #dce2ea}
