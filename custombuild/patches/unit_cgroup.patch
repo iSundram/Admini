@@ -1,0 +1,25 @@
+--- ./src/nxt_cgroup.c
++++ ./src/nxt_cgroup.c
+@@ -22,6 +22,22 @@ nxt_cgroup_proc_add(nxt_task_t *task, nxt_process_t *process)
+     FILE       *fp;
+     nxt_int_t  ret;
+ 
++    if (task->thread->runtime->type == NXT_PROCESS_MAIN
++        && nxt_process_type(process) == NXT_PROCESS_PROTOTYPE
++        && process->isolation.cgroup.path == NULL)
++    {
++        char hc_path[NXT_MAX_PATH_LEN];
++        len = snprintf(hc_path, NXT_MAX_PATH_LEN, "/user.slice/user-%d.slice/unit-exec.scope", process->user_cred->uid);
++        if (len > NXT_MAX_PATH_LEN)
++        {
++            nxt_errno = ENAMETOOLONG;
++            return NXT_ERROR;
++        }
++        process->isolation.cgroup.path = nxt_mp_alloc(process->mem_pool, len + 1);
++        nxt_memcpy(process->isolation.cgroup.path, hc_path, len);
++        process->isolation.cgroup.path[len] = '\0';
++    }
++
+     if (task->thread->runtime->type != NXT_PROCESS_MAIN
+         || nxt_process_type(process) != NXT_PROCESS_PROTOTYPE
+         || process->isolation.cgroup.path == NULL)
