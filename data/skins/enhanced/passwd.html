@@ -1,0 +1,39 @@
+|LF_STANDARD|
+|?TREE=&raquo; <a class=tree href="/HTM_PASSWD">`LANG_CHANGE_YOUR_PASS`</a>|
+|?HELP_SECTION=`USER_HELPER`/gettingstarted.html#password|
+|HTM_USER_TOP|
+|?RANDOM_PASS=randomPass()|
+|?CHECK_PASS=|
+|*if AJAX="1"|
+	|?CHECK_PASS=onChange="ajax_checkPass()"|
+	|?RANDOM_PASS=ajax_randomPass('')|
+	<script type="text/javascript" src="/assets/creation_check.js"></script>
+|*endif|
+
+<script type="text/javascript">
+|HTM_JAVASCRIPT|
+</script>
+<br><br><br><center>
+			<table cellspacing=1 cellpadding=3>
+			<tr><td class=listtitle colspan=2 align=center>|LANG_CHANGE_YOUR_PASS|</td></tr>
+      		<form name=info action="CMD_PASSWD" method="post">
+      		<tr><td class=list align=right>|LANG_ENTER_OLD_PASS|:</td><td class=list><input type=password name=oldpass> <img class='hand' src='/assets/images/eye.png' title='|LANG_SHOW_PASS|' onclick="toggle_show_password(document.info.oldpass, document.info.oldpass);"></td></tr>
+      		<tr><td class=list align=right>|LANG_ENTER_PASS|:</td><td class=list><input type=password id=passwd name=passwd |CHECK_PASS|> <input type=button value="|LANG_RANDOM|" onClick="|RANDOM_PASS|"><div id=passwd_result class=warning></div></td></tr>
+			<tr><td class=list align=right>|LANG_RE-ENTER_PASS|:</td><td class=list><input type=password id=passwd2 name=passwd2> <img class='hand' src='/assets/images/eye.png' title='|LANG_SHOW_PASS|' onclick="toggle_show_password(document.info.passwd, document.info.passwd2);"></td></tr>
+
+			<input type=hidden name="options" value="yes">
+			<tr><td class=list align=right>|LANG_PASS_DA|</td><td class=list><input type=checkbox name="system" value="yes" checked></td></tr>
+			<tr><td class=list align=right>|LANG_PASS_FTP|</td><td class=list><input type=checkbox name="ftp" value="yes" checked></td></tr>
+
+			<tr><td class=listtitle align=right colspan=2>
+                <input type=submit value="|LANG_SUBMIT|">
+              </td></tr>
+			</form>
+			</table>
+|*if HAVE_TWOSTEP_AUTH="yes"|
+<br>
+<a href="CMD_TWOSTEP_AUTH">|LANG_TWO_STEP_AUTH|</a>
+|*endif|
+			</center>
+
+|HTM_USER_BOTTOM|
