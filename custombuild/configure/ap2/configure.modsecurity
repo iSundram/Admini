@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./configure \
+	--with-yajl \
+	--with-pcre2
