@@ -1,0 +1,1 @@
+import{bf as s}from"../index.DtGSrwJ3.js";import{_ as t}from"./_isNumber.DRgbAj-F.js";var o=s(function(e,n){if(!(t(e)&&t(n)))throw new TypeError("Both arguments to range must be numbers");for(var a=[],r=e;r<n;)a.push(r),r+=1;return a});const g=o;export{g as r};
