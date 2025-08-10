@@ -1,0 +1,55 @@
+|?TREE=&raquo; <a class=tree href="/CMD_ADMIN_SSL">`LANG_ADMIN_SSL`</a>|
+|?HELP_SECTION=`ADMIN_HELPER`|
+|HTM_HEADER_FULL|
+
+|SSL_DOMAINS|
+
+<br><br>
+<table class='list_alt' style='width:auto'>
+	<form action='?' method='GET'>
+		<tr><th colspan=2>|LANG_SEARCH_CERTS|</th></tr>
+
+		<input type='hidden' name='comparison4' value='atmost'>
+		<input type='hidden' name='sort1dir' value='-1'>
+		<input type='hidden' name='sort1' value='4'>
+		|?USE_TIMESTAMP=`TIMESTAMP`|
+		|*if USED_TIMESTAMP|
+			|?USE_TIMESTAMP=`USED_TIMESTAMP`|
+		|*endif|
+		<input type='hidden' name='USED_TIMESTAMP' value='|USE_TIMESTAMP|'>
+		<tr><td>|LANG_WILL_EXPIRE|</td>
+			<td><select id='exiry_time' name='value4'></select>
+				<script>
+					function add_expiry_option(seconds, text, select, is_default=false) {
+						var opt = document.createElement('option');
+						var expiry = seconds + |USE_TIMESTAMP|;
+						opt.value = expiry;
+						opt.innerHTML = text;
+						if (expiry == '|value4|' ||
+							('|value4|' == 'none' && is_default))
+							opt.setAttribute ("selected", true);
+						select.appendChild(opt);
+					}
+					s = document.getElementById('exiry_time');
+					add_expiry_option(86400,  '1 |LANG_DAY|', s);
+					add_expiry_option(345600, '4 LANG_DAYS', s);
+					add_expiry_option(604800, '1 |LANG_WEEK|', s, true);
+					add_expiry_option(1209600, '2 |LANG_WEEKS|', s);
+					add_expiry_option(2629800,'1 |LANG_MONTH', s);
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td align=right>
+				<input type='checkbox' name='comparison5' value='equals' |*if comparison5="equals"|checked|*endif|>
+				<input type='hidden' name='value5' value='no'>
+			</td><td>
+				|LANG_HIDE_EXPIRED|
+			</td>
+		</tr>
+
+		<tr><th colspan=2 align=right><input type='submit' value='|LANG_SEARCH|'></th></tr>
+	</form>
+</table>
+
+|HTM_FOOTER_FULL|
