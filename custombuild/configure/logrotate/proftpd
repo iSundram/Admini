@@ -1,0 +1,7 @@
+/var/log/proftpd/access.log /var/log/proftpd/auth.log /var/log/proftpd/xferlog.legacy /var/log/proftpd/proftpd.tls.log /var/log/proftpd/sftp.log {
+	missingok
+	notifempty
+	postrotate
+		systemctl -q is-active proftpd && systemctl kill --signal=SIGHUP proftpd || true
+	endscript
+}
