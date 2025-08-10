@@ -1,0 +1,24 @@
+DOVECOT_CONFIG ?= /usr/lib/dovecot/dovecot-config
+
+MAILDIRLOCK_SRC ?= /usr/local/directadmin/custombuild/configure/maildirlock/
+
+include $(DOVECOT_CONFIG)
+
+E :=
+S := $E $E
+DOVECOT_CFLAGS := $(subst ^,$S,$(patsubst "%",%,$(subst $S,^,$(DOVECOT_CFLAGS))))
+DOVECOT_BINARY_CFLAGS := $(subst ^,$S,$(patsubst "%",%,$(subst $S,^,$(DOVECOT_BINARY_CFLAGS))))
+DOVECOT_BINARY_LDFLAGS := $(subst ^,$S,$(patsubst "%",%,$(subst $S,^,$(DOVECOT_BINARY_LDFLAGS))))
+LIBDOVECOT := $(subst ^,$S,$(patsubst '%',%,$(subst $S,^,$(LIBDOVECOT))))
+LIBDOVECOT_STORAGE := $(subst ^,$S,$(patsubst '%',%,$(subst $S,^,$(LIBDOVECOT_STORAGE))))
+
+maildirlock: $(MAILDIRLOCK_SRC)/maildirlock.c
+	libtool --tag CC --mode link $(CC) $(DOVECOT_CFLAGS) $(DOVECOT_BINARY_CFLAGS) $(DOVECOT_BINARY_LDFLAGS) \
+		$(LIBDOVECOT) $(LIBDOVECOT_STORAGE) $(LIBDOVECOT_INCLUDE) -o $@ $<
+
+.PHONY: all clean
+
+all: maildirlock
+
+clean:
+	rm -f maildirlock
