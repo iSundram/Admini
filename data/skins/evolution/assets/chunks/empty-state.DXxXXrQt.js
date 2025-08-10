@@ -1,0 +1,1 @@
+import{d as t,o as s,b as a,t as o,_ as n}from"../index.DtGSrwJ3.js";const r={class:"grid place-items-center h-40 font-medium font-xs font-sans dark:text-gray-200"},p=t({__name:"empty-state",props:{message:{}},setup(m){return(e,_)=>(s(),a("div",r,o(e.message),1))}}),i=n(p,[["__file","empty-state.vue"]]);export{i as E};
