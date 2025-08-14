@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"directadmin/pkg/server"
+	"admini/pkg/server"
 	"github.com/spf13/cobra"
 )
 
@@ -20,8 +20,8 @@ var (
 var serverCmd = &cobra.Command{
 	Use:     "server",
 	Aliases: []string{"d", "s"},
-	Short:   "Run DirectAdmin web server",
-	Long:    "Run DirectAdmin web server daemon",
+	Short:   "Run Admini web server",
+	Long:    "Run Admini web server daemon",
 	Run: func(cmd *cobra.Command, args []string) {
 		runServer()
 	},
@@ -34,9 +34,9 @@ func init() {
 
 func runServer() {
 	if syslog {
-		log.Println("Starting DirectAdmin server with syslog enabled")
+		log.Println("Starting Admini server with syslog enabled")
 	} else {
-		log.Println("Starting DirectAdmin server")
+		log.Println("Starting Admini server")
 	}
 
 	// Initialize the web server
@@ -48,11 +48,11 @@ func runServer() {
 	
 	go func() {
 		<-c
-		log.Println("Shutting down DirectAdmin server...")
+		log.Println("Shutting down Admini server...")
 		os.Exit(0)
 	}()
 
-	log.Printf("DirectAdmin server starting on port %d", port)
+	log.Printf("Admini server starting on port %d", port)
 	if err := http.ListenAndServe(fmt.Sprintf(":%d", port), srv); err != nil {
 		log.Fatalf("Server failed to start: %v", err)
 	}

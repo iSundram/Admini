@@ -26,7 +26,7 @@ func Suspend(username string) error {
 	}
 	
 	// Create suspension marker
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	suspensionFile := filepath.Join(userPath, "user.suspended")
 	
 	file, err := os.Create(suspensionFile)
@@ -46,7 +46,7 @@ func Unsuspend(username string) error {
 	}
 	
 	// Remove suspension marker
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	suspensionFile := filepath.Join(userPath, "user.suspended")
 	
 	if err := os.Remove(suspensionFile); err != nil && !os.IsNotExist(err) {
@@ -64,7 +64,7 @@ func Create(username, password, email string, quota int64) error {
 	}
 	
 	// Create user directory structure
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	if err := os.MkdirAll(userPath, 0755); err != nil {
 		return fmt.Errorf("failed to create user directory: %v", err)
 	}
@@ -88,7 +88,7 @@ func Delete(username string) error {
 	}
 	
 	// Remove user directory
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	if err := os.RemoveAll(userPath); err != nil {
 		return fmt.Errorf("failed to remove user directory: %v", err)
 	}
@@ -102,7 +102,7 @@ func Get(username string) (*User, error) {
 		return nil, fmt.Errorf("username cannot be empty")
 	}
 	
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	if _, err := os.Stat(userPath); os.IsNotExist(err) {
 		return nil, fmt.Errorf("user %s does not exist", username)
 	}
@@ -122,7 +122,7 @@ func Get(username string) (*User, error) {
 
 // List returns all users in the system
 func List() ([]User, error) {
-	usersPath := "/usr/local/directadmin/data/users"
+	usersPath := "/usr/local/admini/data/users"
 	entries, err := os.ReadDir(usersPath)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read users directory: %v", err)
@@ -168,7 +168,7 @@ func ChangePassword(username, newPassword string) error {
 }
 
 func createUserConfig(username, email string, quota int64) error {
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	configFile := filepath.Join(userPath, "user.conf")
 	
 	configContent := fmt.Sprintf(`username=%s
@@ -184,7 +184,7 @@ created=%s
 }
 
 func updateUserConfig(username, key, value string) error {
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	configFile := filepath.Join(userPath, "user.conf")
 	
 	// Read current config
@@ -222,14 +222,14 @@ func getUserLevel(username string) string {
 }
 
 func isUserSuspended(username string) bool {
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	suspensionFile := filepath.Join(userPath, "user.suspended")
 	_, err := os.Stat(suspensionFile)
 	return err == nil
 }
 
 func getUserEmail(username string) string {
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	configFile := filepath.Join(userPath, "user.conf")
 	
 	data, err := os.ReadFile(configFile)
@@ -248,7 +248,7 @@ func getUserEmail(username string) string {
 }
 
 func getUserQuota(username string) int64 {
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	configFile := filepath.Join(userPath, "user.conf")
 	
 	data, err := os.ReadFile(configFile)
@@ -274,7 +274,7 @@ func getUserBandwidth(username string) int64 {
 }
 
 func getUserDomains(username string) []string {
-	domainsPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains")
+	domainsPath := filepath.Join("/usr/local/admini/data/users", username, "domains")
 	entries, err := os.ReadDir(domainsPath)
 	if err != nil {
 		return []string{}

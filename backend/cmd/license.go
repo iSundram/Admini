@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"directadmin/pkg/license"
+	"admini/pkg/license"
 	"github.com/spf13/cobra"
 )
 
@@ -11,7 +11,7 @@ var licenseCmd = &cobra.Command{
 	Use:     "license",
 	Aliases: []string{"l"},
 	Short:   "Print license info",
-	Long:    "Print DirectAdmin license information",
+	Long:    "Print Admini license information",
 	Run: func(cmd *cobra.Command, args []string) {
 		lic := license.GetLicense()
 		lic.Print()
@@ -21,7 +21,7 @@ var licenseCmd = &cobra.Command{
 var licenseSetCmd = &cobra.Command{
 	Use:   "license-set [license-key]",
 	Short: "Change license key",
-	Long:  "Change the DirectAdmin license key",
+	Long:  "Change the Admini license key",
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		err := license.SetLicense(args[0])

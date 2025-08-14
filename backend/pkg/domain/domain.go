@@ -22,7 +22,7 @@ func Suspend(domainName string) error {
 	}
 	
 	// Create suspended directory if it doesn't exist
-	suspendedDir := "/usr/local/directadmin/data/templates/suspended"
+	suspendedDir := "/usr/local/admini/data/templates/suspended"
 	if err := os.MkdirAll(suspendedDir, 0755); err != nil {
 		return fmt.Errorf("failed to create suspended directory: %v", err)
 	}
@@ -46,7 +46,7 @@ func Unsuspend(domainName string) error {
 	}
 	
 	// Remove suspension marker file
-	suspensionFile := filepath.Join("/usr/local/directadmin/data/templates/suspended", domainName+".suspended")
+	suspensionFile := filepath.Join("/usr/local/admini/data/templates/suspended", domainName+".suspended")
 	if err := os.Remove(suspensionFile); err != nil && !os.IsNotExist(err) {
 		return fmt.Errorf("failed to remove suspension file: %v", err)
 	}
@@ -62,7 +62,7 @@ func Create(domainName, username string) error {
 	}
 	
 	// Create domain directory structure
-	domainPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains", domainName)
+	domainPath := filepath.Join("/usr/local/admini/data/users", username, "domains", domainName)
 	publicHTMLPath := filepath.Join(domainPath, "public_html")
 	
 	if err := os.MkdirAll(publicHTMLPath, 0755); err != nil {
@@ -97,7 +97,7 @@ func Delete(domainName, username string) error {
 	}
 	
 	// Remove domain directory
-	domainPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains", domainName)
+	domainPath := filepath.Join("/usr/local/admini/data/users", username, "domains", domainName)
 	if err := os.RemoveAll(domainPath); err != nil {
 		return fmt.Errorf("failed to remove domain directory: %v", err)
 	}
@@ -112,7 +112,7 @@ func List(username string) ([]Domain, error) {
 		return nil, fmt.Errorf("username cannot be empty")
 	}
 	
-	domainsPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains")
+	domainsPath := filepath.Join("/usr/local/admini/data/users", username, "domains")
 	entries, err := os.ReadDir(domainsPath)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read domains directory: %v", err)
@@ -137,7 +137,7 @@ func List(username string) ([]Domain, error) {
 
 // GetAllDomains returns all domains in the system
 func GetAllDomains() ([]Domain, error) {
-	usersPath := "/usr/local/directadmin/data/users"
+	usersPath := "/usr/local/admini/data/users"
 	entries, err := os.ReadDir(usersPath)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read users directory: %v", err)
@@ -159,14 +159,14 @@ func GetAllDomains() ([]Domain, error) {
 
 func updateDomainConfig(domainName string, suspended bool) error {
 	// In a real implementation, this would update Apache/Nginx configuration
-	configPath := filepath.Join("/usr/local/directadmin/data/users", "*/domains", domainName, "domain.conf")
+	configPath := filepath.Join("/usr/local/admini/data/users", "*/domains", domainName, "domain.conf")
 	fmt.Printf("Updating domain config for %s (suspended: %v) at %s\n", domainName, suspended, configPath)
 	return nil
 }
 
 func createDomainConfig(domainName, username string) error {
 	// Create domain configuration file
-	configPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains", domainName, "domain.conf")
+	configPath := filepath.Join("/usr/local/admini/data/users", username, "domains", domainName, "domain.conf")
 	configDir := filepath.Dir(configPath)
 	
 	if err := os.MkdirAll(configDir, 0755); err != nil {
@@ -175,7 +175,7 @@ func createDomainConfig(domainName, username string) error {
 	
 	configContent := fmt.Sprintf(`domain=%s
 user=%s
-DocumentRoot=/usr/local/directadmin/data/users/%s/domains/%s/public_html
+DocumentRoot=/usr/local/admini/data/users/%s/domains/%s/public_html
 suspended=no
 ssl=no
 `, domainName, username, username, domainName)
@@ -184,19 +184,19 @@ ssl=no
 }
 
 func removeDomainConfig(domainName, username string) error {
-	configPath := filepath.Join("/usr/local/directadmin/data/users", username, "domains", domainName, "domain.conf")
+	configPath := filepath.Join("/usr/local/admini/data/users", username, "domains", domainName, "domain.conf")
 	return os.Remove(configPath)
 }
 
 func isDomainSuspended(domainName string) bool {
-	suspensionFile := filepath.Join("/usr/local/directadmin/data/templates/suspended", domainName+".suspended")
+	suspensionFile := filepath.Join("/usr/local/admini/data/templates/suspended", domainName+".suspended")
 	_, err := os.Stat(suspensionFile)
 	return err == nil
 }
 
 func hasSSL(domainName string) bool {
 	// Check if SSL certificate exists
-	sslPath := filepath.Join("/usr/local/directadmin/data/users/*/domains", domainName, "*.cert")
+	sslPath := filepath.Join("/usr/local/admini/data/users/*/domains", domainName, "*.cert")
 	fmt.Printf("Checking SSL for domain %s at %s\n", domainName, sslPath)
 	return false // Simplified for this implementation
 }

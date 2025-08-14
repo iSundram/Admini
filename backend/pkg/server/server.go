@@ -3,11 +3,11 @@ package server
 import (
 	"net/http"
 
-	"directadmin/pkg/config"
-	"directadmin/pkg/constants"
-	"directadmin/pkg/email"
-	"directadmin/pkg/filemanager"
-	"directadmin/pkg/database"
+	"admini/pkg/config"
+	"admini/pkg/constants"
+	"admini/pkg/email"
+	"admini/pkg/filemanager"
+	"admini/pkg/database"
 	"github.com/gin-gonic/gin"
 )
 
@@ -30,9 +30,9 @@ func NewServer() *Server {
 	s := &Server{
 		router:          router,
 		config:          cfg,
-		emailManager:    email.NewEmailManager("/usr/local/directadmin/data"),
+		emailManager:    email.NewEmailManager("/usr/local/admini/data"),
 		fileManager:     filemanager.NewFileManager("/home", "admin"), // Default user
-		databaseManager: database.NewDatabaseManager("", "/usr/local/directadmin/data"),
+		databaseManager: database.NewDatabaseManager("", "/usr/local/admini/data"),
 	}
 	
 	s.setupRoutes()
@@ -304,14 +304,14 @@ func (s *Server) setupAPIRoutes() {
 
 func (s *Server) handleIndex(c *gin.Context) {
 	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title":   "DirectAdmin Login",
+		"title":   "Admini Login",
 		"version": "1.680",
 	})
 }
 
 func (s *Server) handleLogin(c *gin.Context) {
 	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title": "DirectAdmin Login",
+		"title": "Admini Login",
 	})
 }
 
@@ -347,7 +347,7 @@ func (s *Server) handleAPILoginKey(c *gin.Context) {
 
 func (s *Server) handleAdminIndex(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"title": "DirectAdmin - Administration",
+		"title": "AdminiCore - Administration",
 		"user":  "admin",
 		"level": "admin",
 	})
@@ -418,7 +418,7 @@ func (s *Server) handleDeleteUser(c *gin.Context) {
 
 func (s *Server) handleUserIndex(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"title": "DirectAdmin - User Panel",
+		"title": "AdminiPanel - User Panel",
 	})
 }
 

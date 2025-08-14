@@ -24,7 +24,7 @@ func CreateUserBackup(username string, options BackupOptions) (string, error) {
 	}
 
 	// Create backup directory
-	backupDir := "/usr/local/directadmin/data/admin/admin_backups"
+	backupDir := "/usr/local/admini/data/admin/admin_backups"
 	if err := os.MkdirAll(backupDir, 0755); err != nil {
 		return "", fmt.Errorf("failed to create backup directory: %v", err)
 	}
@@ -39,7 +39,7 @@ func CreateUserBackup(username string, options BackupOptions) (string, error) {
 	}
 
 	// Prepare backup paths
-	userPath := filepath.Join("/usr/local/directadmin/data/users", username)
+	userPath := filepath.Join("/usr/local/admini/data/users", username)
 	var backupPaths []string
 
 	// Always include user configuration
@@ -91,7 +91,7 @@ func RestoreUserBackup(backupFile, username string) error {
 	}
 
 	// Create restore directory
-	restoreDir := filepath.Join("/usr/local/directadmin/data/users", username)
+	restoreDir := filepath.Join("/usr/local/admini/data/users", username)
 	if err := os.MkdirAll(restoreDir, 0755); err != nil {
 		return fmt.Errorf("failed to create restore directory: %v", err)
 	}
@@ -113,7 +113,7 @@ func RestoreUserBackup(backupFile, username string) error {
 
 // ListBackups returns available backups
 func ListBackups() ([]map[string]string, error) {
-	backupDir := "/usr/local/directadmin/data/admin/admin_backups"
+	backupDir := "/usr/local/admini/data/admin/admin_backups"
 	entries, err := os.ReadDir(backupDir)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read backup directory: %v", err)
@@ -146,7 +146,7 @@ func DeleteBackup(backupName string) error {
 		return fmt.Errorf("backup name cannot be empty")
 	}
 
-	backupDir := "/usr/local/directadmin/data/admin/admin_backups"
+	backupDir := "/usr/local/admini/data/admin/admin_backups"
 	backupPath := filepath.Join(backupDir, backupName)
 
 	if err := os.Remove(backupPath); err != nil {

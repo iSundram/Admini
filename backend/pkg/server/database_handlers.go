@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
@@ -359,7 +359,7 @@ func (s *Server) handleSquirrelMail(c *gin.Context) {
 
 func (s *Server) handleResellerIndex(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"title": "Reseller Panel",
+		"title": "AdminiReseller - Reseller Panel",
 		"level": "reseller",
 	})
 }

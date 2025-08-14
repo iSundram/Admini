@@ -3,15 +3,15 @@ package cmd
 import (
 	"fmt"
 
-	"directadmin/pkg/config"
+	"admini/pkg/config"
 	"github.com/spf13/cobra"
 )
 
 var configCmd = &cobra.Command{
 	Use:     "config",
 	Aliases: []string{"c"},
-	Short:   "Print DirectAdmin config",
-	Long:    "Print DirectAdmin configuration",
+	Short:   "Print Admini config",
+	Long:    "Print Admini configuration",
 	Run: func(cmd *cobra.Command, args []string) {
 		cfg := config.GetConfig()
 		cfg.PrintAll()
@@ -20,8 +20,8 @@ var configCmd = &cobra.Command{
 
 var configGetCmd = &cobra.Command{
 	Use:   "config-get [key]",
-	Short: "Get DirectAdmin config value",
-	Long:  "Get a specific DirectAdmin configuration value",
+	Short: "Get Admini config value",
+	Long:  "Get a specific Admini configuration value",
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		cfg := config.GetConfig()
@@ -36,8 +36,8 @@ var configGetCmd = &cobra.Command{
 
 var configSetCmd = &cobra.Command{
 	Use:   "config-set [key] [value]",
-	Short: "Set DirectAdmin config value",
-	Long:  "Set a DirectAdmin configuration value",
+	Short: "Set Admini config value",
+	Long:  "Set a Admini configuration value",
 	Args:  cobra.ExactArgs(2),
 	Run: func(cmd *cobra.Command, args []string) {
 		cfg := config.GetConfig()

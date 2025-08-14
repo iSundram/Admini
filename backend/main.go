@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"directadmin/cmd"
+	"admini/cmd"
 )
 
 // Version information - matches the original binary

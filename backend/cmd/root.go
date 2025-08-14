@@ -5,9 +5,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "directadmin",
-	Short: "DirectAdmin Web Control Panel",
-	Long:  "DirectAdmin Web Control Panel - A comprehensive web hosting control panel",
+	Use:   "admini",
+	Short: "Admini Web Control Panel",
+	Long:  "Admini Web Control Panel - A comprehensive web hosting control panel",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {
 			cmd.Help()

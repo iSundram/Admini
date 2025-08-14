@@ -9,7 +9,7 @@ import (
 	"strings"
 	"syscall"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 )
 
 // FileManager handles all file management operations

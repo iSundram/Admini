@@ -18,8 +18,8 @@ type Task struct {
 }
 
 const (
-	taskQueueFile = "/usr/local/directadmin/data/task.queue"
-	taskQueueDir  = "/usr/local/directadmin/data"
+	taskQueueFile = "/usr/local/admini/data/task.queue"
+	taskQueueDir  = "/usr/local/admini/data"
 )
 
 // Run starts the task queue processor
@@ -173,7 +173,7 @@ func processTallyTask(value string) error {
 	// Tally bandwidth and disk usage
 	if value == "all" {
 		// Process all users
-		usersDir := "/usr/local/directadmin/data/users"
+		usersDir := "/usr/local/admini/data/users"
 		entries, err := os.ReadDir(usersDir)
 		if err != nil {
 			return err
@@ -212,7 +212,7 @@ func processBackupTask(value string) error {
 	log.Printf("Processing backup task for: %s", value)
 	
 	// Create backup
-	backupDir := "/usr/local/directadmin/data/admin/admin_backups"
+	backupDir := "/usr/local/admini/data/admin/admin_backups"
 	timestamp := time.Now().Format("20060102_150405")
 	backupFile := fmt.Sprintf("%s/backup_%s_%s.tar.gz", backupDir, value, timestamp)
 	

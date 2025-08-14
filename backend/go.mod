@@ -1,4 +1,4 @@
-module directadmin
+module admini
 
 go 1.21
 

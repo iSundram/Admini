@@ -64,8 +64,8 @@ func (c *Config) loadDefaults() {
 }
 
 func (c *Config) loadFromFile() {
-	// Try to load from /usr/local/directadmin/conf/directadmin.conf
-	configFile := "/usr/local/directadmin/conf/directadmin.conf"
+	// Try to load from /usr/local/admini/conf/directadmin.conf
+	configFile := "/usr/local/admini/conf/directadmin.conf"
 	if _, err := os.Stat(configFile); err == nil {
 		viper.SetConfigFile(configFile)
 		viper.SetConfigType("env")
@@ -93,7 +93,7 @@ func (c *Config) Set(key, value string) error {
 }
 
 func (c *Config) saveToFile() error {
-	configDir := "/usr/local/directadmin/conf"
+	configDir := "/usr/local/admini/conf"
 	configFile := filepath.Join(configDir, "directadmin.conf")
 	
 	// Create directory if it doesn't exist

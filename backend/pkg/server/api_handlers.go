@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
