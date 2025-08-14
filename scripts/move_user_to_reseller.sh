@@ -21,8 +21,8 @@ fi
 OLD_RESELLER=$2
 NEW_RESELLER=$3
 
-RESELLER_OLD=/usr/local/directadmin/data/users/$2/users.list
-RESELLER_NEW=/usr/local/directadmin/data/users/$3/users.list
+RESELLER_OLD=/home/runner/work/Admini/Admini/backend/data/users/$2/users.list
+RESELLER_NEW=/home/runner/work/Admini/Admini/backend/data/users/$3/users.list
 
 USERN=$1
 
@@ -49,7 +49,7 @@ fi
 isOwned()
 {
 	IP=$1
-	IPF=/usr/local/directadmin/data/admin/ips/$IP
+	IPF=/home/runner/work/Admini/Admini/backend/data/admin/ips/$IP
 	if [ ! -s $IPF ]; then
 		#good spot for an error message, but can't echo anything
 		echo "0";
@@ -64,15 +64,15 @@ isOwned()
 }
 
 #ensure IPs are brought forward
-for i in `cat /usr/local/directadmin/data/users/$USERN/user_ip.list`; do
+for i in `cat /home/runner/work/Admini/Admini/backend/data/users/$USERN/user_ip.list`; do
 {
 	if [ "`isOwned $i`" = "1" ]; then
 		echo "$i is owned. Moving the IP to the new Reseller";
 		
-		perl -pi -e "s#$i\n##g" /usr/local/directadmin/data/users/$OLD_RESELLER/ip.list
-		echo "$i" >> /usr/local/directadmin/data/users/$NEW_RESELLER/ip.list
+		perl -pi -e "s#$i\n##g" /home/runner/work/Admini/Admini/backend/data/users/$OLD_RESELLER/ip.list
+		echo "$i" >> /home/runner/work/Admini/Admini/backend/data/users/$NEW_RESELLER/ip.list
 		
-		perl -pi -e "s#reseller=$OLD_RESELLER#reseller=$NEW_RESELLER#g" /usr/local/directadmin/data/admin/ips/$i
+		perl -pi -e "s#reseller=$OLD_RESELLER#reseller=$NEW_RESELLER#g" /home/runner/work/Admini/Admini/backend/data/admin/ips/$i
 	else
 		echo "$i is shared. Leaving the IP with the old Reseller";
 	fi
@@ -81,24 +81,24 @@ done;
 
 
 echo "Removing user from $2 reseller"
-perl -pi -e "s#$USERN\n##g" /usr/local/directadmin/data/users/$2/users.list
+perl -pi -e "s#$USERN\n##g" /home/runner/work/Admini/Admini/backend/data/users/$2/users.list
 
 echo "Adding user to $3 reseller"
-echo "$USERN" >>  /usr/local/directadmin/data/users/$3/users.list
+echo "$USERN" >>  /home/runner/work/Admini/Admini/backend/data/users/$3/users.list
 
 echo "Changing user owner"
-for i in `ls /usr/local/directadmin/data/users/$USERN/domains/*.conf`; do { perl -pi -e "s/creator=$2/creator=$3/g" $i; }; done;
+for i in `ls /home/runner/work/Admini/Admini/backend/data/users/$USERN/domains/*.conf`; do { perl -pi -e "s/creator=$2/creator=$3/g" $i; }; done;
 
 #change the user.conf
-perl -pi -e "s/creator=$2/creator=$3/" /usr/local/directadmin/data/users/$USERN/user.conf
+perl -pi -e "s/creator=$2/creator=$3/" /home/runner/work/Admini/Admini/backend/data/users/$USERN/user.conf
 
 #this is needed to update "show all users" cache.
-echo "action=cache&value=showallusers" >> /usr/local/directadmin/data/task.queue
-echo "action=rewrite&value=httpd&user=$USERN" >> /usr/local/directadmin/data/task.queue
+echo "action=cache&value=showallusers" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+echo "action=rewrite&value=httpd&user=$USERN" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 
 #messy bit that removes the user from the backup_crons.list, but only for type=reseller backups.
 #the user is left in the admin backups still in the type=admin backups.
-perl -pi -e "s/select[0-9]+=$USERN&(.*)(type=reseller)/\$1\$2/" /usr/local/directadmin/data/admin/backup_crons.list
+perl -pi -e "s/select[0-9]+=$USERN&(.*)(type=reseller)/\$1\$2/" /home/runner/work/Admini/Admini/backend/data/admin/backup_crons.list
 
 echo "User has been moved to $3"
 

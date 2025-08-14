@@ -1,22 +1,22 @@
 #!/bin/bash
 
-#script to regenerate the data files in /usr/local/directadmin/data/users/username
+#script to regenerate the data files in /home/runner/work/Admini/Admini/backend/data/users/username
 
 DEBUG=0;
 
-DA_PATH=/usr/local/directadmin
+DA_PATH=/home/runner/work/Admini/Admini/backend
 DA_USR=$DA_PATH/data/users
 
 #change this value if the user was created by someone else.
 CREATOR=admin
 
-IP=`grep -H server /usr/local/directadmin/data/admin/ips/* | cut -d: -f1 | cut -d/ -f8`
+IP=`grep -H server /home/runner/work/Admini/Admini/backend/data/admin/ips/* | cut -d: -f1 | cut -d/ -f8`
 
 #If you don't want the user to be on the server IP, then specify the correct IP here (remove the #)
 #IP=1.2.3.4
 
-NS1=`grep ns1 /usr/local/directadmin/conf/directadmin.conf | cut -d= -f2`
-NS2=`grep ns2 /usr/local/directadmin/conf/directadmin.conf | cut -d= -f2`
+NS1=`grep ns1 /home/runner/work/Admini/Admini/backend/conf/directadmin.conf | cut -d= -f2`
+NS2=`grep ns2 /home/runner/work/Admini/Admini/backend/conf/directadmin.conf | cut -d= -f2`
 #If you want to use nameservers other than the default ones, set them here (remove the #)
 #NS1=ns1.yourns.com
 #NS2=ns2.yourns.com
@@ -218,7 +218,7 @@ add_domain()
 	set_file $DA_USR/$2/domains/$1.subdomains diradmin:diradmin 600
 	set_file $DA_USR/$2/domains/$1.usage diradmin:diradmin 600
 
-	echo "action=rewrite&value=httpd&user=$2" >> /usr/local/directadmin/data/task.queue;
+	echo "action=rewrite&value=httpd&user=$2" >> /home/runner/work/Admini/Admini/backend/data/task.queue;
 }
 
 fix_user()
@@ -242,7 +242,7 @@ fix_user()
 			if [ -e ${HOME_DOMAINS} ]; then
 				echo "${HOME_DOMAINS} is not a directory. This should be fixed manually"
 			else
-				ACCESS_GROUP=`/usr/local/directadmin/directadmin c |grep secure_access_group= | cut -d= -f2`
+				ACCESS_GROUP=`/home/runner/work/Admini/Admini/backend/directadmin c |grep secure_access_group= | cut -d= -f2`
 				DOMAINS_DIR_OWNER="$1:$1"
 				DOMAINS_DIR_PERM=755
 				if [ "${ACCESS_GROUP}" != "" ] && [ "$2" = "admin" ]; then
@@ -254,10 +254,10 @@ fix_user()
 		fi
 	fi
 
-	#create /usr/local/directadmin/data/users/username
+	#create /home/runner/work/Admini/Admini/backend/data/users/username
 	create_dir $DA_USR/$1 diradmin:diradmin 711
 
-        #create /usr/local/directadmin/data/users/username/domains
+        #create /home/runner/work/Admini/Admini/backend/data/users/username/domains
 	create_dir $DA_USR/$1/domains diradmin:diradmin 711	
 	
 	#user.conf

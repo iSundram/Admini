@@ -1,0 +1,12 @@
+[Unit]
+Description=Directadmin userd service for UID %i
+After=syslog.target
+Requires=directadmin-userd@%i.socket
+
+[Service]
+Type=notify
+User=%i
+Slice=user-%i.slice
+ExecStart=/usr/local/directadmin/directadmin userd
+LimitNOFILE=524288
+KillMode=process

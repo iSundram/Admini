@@ -14,4 +14,4 @@ if [ $# -gt 1 ]; then
 	shift
 fi
 
-/usr/local/directadmin/directadmin update "$1"
+/home/runner/work/Admini/Admini/backend/directadmin update "$1"

@@ -472,13 +472,13 @@ EOF
 
 		# We already have copied cert files to DA_ROOT
 		if [ -f "${DA_ROOT}/backup/${CONVERTED_DOMAIN}/domain.cacert" ]; then
-			echo "SSLCACertificateFile=/usr/local/directadmin/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.cacert"
+			echo "SSLCACertificateFile=/home/runner/work/Admini/Admini/backend/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.cacert"
 		fi
 		if [ -f "${DA_ROOT}/backup/${CONVERTED_DOMAIN}/domain.cert" ]; then
-			echo "SSLCertificateFile=/usr/local/directadmin/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.cert"
+			echo "SSLCertificateFile=/home/runner/work/Admini/Admini/backend/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.cert"
 		fi
 		if [ -f "${DA_ROOT}/backup/${CONVERTED_DOMAIN}/domain.key" ]; then
-			echo "SSLCertificateKeyFile=/usr/local/directadmin/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.key"
+			echo "SSLCertificateKeyFile=/home/runner/work/Admini/Admini/backend/data/users/${USERNAME}/domains/${CONVERTED_DOMAIN}.key"
 		fi
 		if ${DEFAULT_DOMAIN}; then
 			echo "defaultdomain=yes"
@@ -487,11 +487,11 @@ EOF
 		fi
 	} > "${DA_ROOT}/backup/${CONVERTED_DOMAIN}/domain.conf"
 	if [ -s "${CONVERTED_DOMAIN_CONFIG}" ]; then
-		if grep -q '^phpversion:' "${CONVERTED_DOMAIN_CONFIG}" && [ -s /usr/local/directadmin/custombuild/options.conf ]; then
+		if grep -q '^phpversion:' "${CONVERTED_DOMAIN_CONFIG}" && [ -s /home/runner/work/Admini/Admini/backend/custombuild/options.conf ]; then
 			DOMAIN_PHP_VERSION=$(grep -m1 '^phpversion:' "${CONVERTED_DOMAIN_CONFIG}" | awk '{print $2}' | grep -o '[0-9]*')
 			#Match PHP version to the one used on the system
-			if grep 'php._release' /usr/local/directadmin/custombuild/options.conf | tr -d '.' | grep -q "=${DOMAIN_PHP_VERSION}$"; then
-				DOMAIN_PHP_VERSION_IN_OPTIONS=$(grep 'php._release' /usr/local/directadmin/custombuild/options.conf | tr -d '.' | grep -m1 "=${DOMAIN_PHP_VERSION}$" | cut -d_ -f1 | grep -o '[0-9]*')
+			if grep 'php._release' /home/runner/work/Admini/Admini/backend/custombuild/options.conf | tr -d '.' | grep -q "=${DOMAIN_PHP_VERSION}$"; then
+				DOMAIN_PHP_VERSION_IN_OPTIONS=$(grep 'php._release' /home/runner/work/Admini/Admini/backend/custombuild/options.conf | tr -d '.' | grep -m1 "=${DOMAIN_PHP_VERSION}$" | cut -d_ -f1 | grep -o '[0-9]*')
 				echo "Assigning domain PHP${DOMAIN_PHP_VERSION} (php${DOMAIN_PHP_VERSION_IN_OPTIONS}_release)..."
 				echo "php1_select=${DOMAIN_PHP_VERSION_IN_OPTIONS}" >> "${DA_ROOT}/backup/${CONVERTED_DOMAIN}/domain.conf"
 			fi
@@ -502,7 +502,7 @@ EOF
 	{
 		echo "Anonymous=no"
 		echo "AnonymousUpload=no"
-		echo "AuthUserFile=/usr/local/directadmin/data/users/${USERNAME}/ftp.passwd"
+		echo "AuthUserFile=/home/runner/work/Admini/Admini/backend/data/users/${USERNAME}/ftp.passwd"
 		echo "DefaultRoot=/home/${USERNAME}/domains/${CONVERTED_DOMAIN}/public_ftp"
 		echo "ExtendedLog=/var/log/proftpd/${DEFAULT_IP}.bytes"
 		echo "MaxClients=10"
@@ -1144,7 +1144,7 @@ if [ -s "${CP_ROOT}/cron/${USERNAME}" ]; then
 	awk '/^[0-9*]/ {n=n+1;print n "=" $0}' "${CP_ROOT}/cron/${USERNAME}" > "${DA_ROOT}/backup/crontab.conf"
 	#Fix softaculous cronjobs
 	perl -pi -e 's|/usr/local/cpanel/3rdparty/bin/php|/usr/local/bin/php|g' "${DA_ROOT}/backup/crontab.conf"
-	perl -pi -e 's|/usr/local/cpanel/whostmgr/docroot/cgi/softaculous|/usr/local/directadmin/plugins/softaculous|g' "${DA_ROOT}/backup/crontab.conf"
+	perl -pi -e 's|/usr/local/cpanel/whostmgr/docroot/cgi/softaculous|/home/runner/work/Admini/Admini/backend/plugins/softaculous|g' "${DA_ROOT}/backup/crontab.conf"
 fi
 
 DATE_CREATED=$(date +'%a %b %d %H:%m:%S %Y')
@@ -1423,8 +1423,8 @@ if [ ${RESELLER} -gt 0 ]; then
 	if [ -d "${CP_ROOT}/homedir/cpanel3-skel/public_html" ]; then
 		mv "${CP_ROOT}/homedir/cpanel3-skel/public_html" "${DA_ROOT}/domains/default"
 	fi
-	if [ ! -d "${DA_ROOT}/domains/suspended" ] && [ -d "/usr/local/directadmin/data/templates/suspended" ]; then
-		cp -R /usr/local/directadmin/data/templates/suspended "${DA_ROOT}/domains/suspended"
+	if [ ! -d "${DA_ROOT}/domains/suspended" ] && [ -d "/home/runner/work/Admini/Admini/backend/data/templates/suspended" ]; then
+		cp -R /home/runner/work/Admini/Admini/backend/data/templates/suspended "${DA_ROOT}/domains/suspended"
 	fi
 	perl -pi -e 's/usertype=user/usertype=reseller/' "${DA_USER_CONF}"
 	# Creating backup.conf
@@ -1523,8 +1523,8 @@ fi
 	touch "${DA_ROOT}/backup/login.hist"
 	touch "${DA_ROOT}/backup/reseller.history"
 	touch "${DA_ROOT}/backup/users.list"
-	if [ -e /usr/local/directadmin/data/users/admin/u_welcome.txt ]; then
-		cp -f /usr/local/directadmin/data/users/admin/u_welcome.txt "${DA_ROOT}/backup/u_welcome.txt"
+	if [ -e /home/runner/work/Admini/Admini/backend/data/users/admin/u_welcome.txt ]; then
+		cp -f /home/runner/work/Admini/Admini/backend/data/users/admin/u_welcome.txt "${DA_ROOT}/backup/u_welcome.txt"
 	fi
 	
 	# Creating empty packages

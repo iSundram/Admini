@@ -10,7 +10,7 @@ Documentation=http://www.directadmin.com
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/directadmin/scripts/startips
+ExecStart=/home/runner/work/Admini/Admini/scripts/startips
 
 [Install]
 WantedBy=multi-user.target

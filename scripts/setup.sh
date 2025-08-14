@@ -64,7 +64,7 @@ fi
 
 #Global variables
 DA_CHANNEL=${DA_CHANNEL:="current"}
-DA_PATH=/usr/local/directadmin
+DA_PATH=/home/runner/work/Admini/Admini/backend
 DACONF=${DA_PATH}/conf/directadmin.conf
 DA_SCRIPTS="${DA_PATH}/scripts"
 

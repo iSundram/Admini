@@ -34,7 +34,7 @@ if command -v ss > /dev/null; then
 	ss -n
 fi
 
-CIP=/usr/local/directadmin/scripts/custom/connection_info_post.sh
+CIP=/home/runner/work/Admini/Admini/scripts/custom/connection_info_post.sh
 if [ -x "${CIP}" ]; then
 	"${CIP}"
 fi

@@ -48,7 +48,7 @@ if [ ! -e $CHOWN ]; then
 	exit 2;
 fi
 
-DKIM_ON=`/usr/local/directadmin/directadmin c | grep dkim= | cut -d= -f2`
+DKIM_ON=`/home/runner/work/Admini/Admini/backend/directadmin c | grep dkim= | cut -d= -f2`
 if [ "$DKIM_ON" -eq 0 ]; then
 	echo "DKIM is not enabled. Add dkim=1 to the directadmin.conf";
 	exit 3;
@@ -65,7 +65,7 @@ if [ "${COUNT}" -gt 0 ]; then
 	#lets see if they've set dkim=0 in their user.conf or domains/domain.com.conf
 	#https://www.directadmin.com/features.php?id=1937
 	D_USER=`grep ^${DOMAIN}: ${DOMAIN_OWNERS} | cut -d\  -f2`
-	USER_CONF=/usr/local/directadmin/data/users/${D_USER}/user.conf
+	USER_CONF=/home/runner/work/Admini/Admini/backend/data/users/${D_USER}/user.conf
 	if [ -s ${USER_CONF} ]; then
 		COUNT=`grep -c dkim=0 ${USER_CONF}`
 		if [ "${COUNT}" -gt 0 ]; then
@@ -73,7 +73,7 @@ if [ "${COUNT}" -gt 0 ]; then
 			exit 4;
 		fi
 
-		DOMAIN_CONF=/usr/local/directadmin/data/users/${D_USER}/domains/${DOMAIN}.conf
+		DOMAIN_CONF=/home/runner/work/Admini/Admini/backend/data/users/${D_USER}/domains/${DOMAIN}.conf
 		if [ -s ${DOMAIN_CONF} ]; then
 			COUNT=`grep -c dkim=0 ${DOMAIN_CONF}`
 			if [ "${COUNT}" -gt 0 ]; then
@@ -92,7 +92,7 @@ if [ ! -e ${PRIV_KEY} ] || [ ! -e ${PUB_KEY} ] || [ "$FORCE" = "1" ]; then
 fi
 
 if [ "$ADD_DNS" -eq 1 ]; then
-	echo "action=rewrite&value=dkim&domain=${DOMAIN}&dns=yes" >> /usr/local/directadmin/data/task.queue
+	echo "action=rewrite&value=dkim&domain=${DOMAIN}&dns=yes" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 fi
 
 exit 0;

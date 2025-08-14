@@ -19,7 +19,7 @@ if [ $# -lt 1 ]; then
 fi
 
 PAYLOAD=$(printf '{"account": "%s", "creator": "%s"}' "$1" "$2")
-OUTPUT=$(curl --insecure --silent --write-out '\n%{http_code}' --data "${PAYLOAD}" "$(/usr/local/directadmin/directadmin api-url)/api/convert-user-to-reseller")
+OUTPUT=$(curl --insecure --silent --write-out '\n%{http_code}' --data "${PAYLOAD}" "$(/home/runner/work/Admini/Admini/backend/directadmin api-url)/api/convert-user-to-reseller")
 CODE=$(echo "${OUTPUT}" | tail -n 1)
 
 if [ "${CODE}" = "200" ] || [ "${CODE}" = "204" ]; then

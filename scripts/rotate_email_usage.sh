@@ -2,7 +2,7 @@
 
 append_and_remove() {
 	local src=$1   # /etc/virtual/usage/john.bytes
-	local dst=$2   # /usr/local/directadmin/data/users/john/bandwidth.tally
+	local dst=$2   # /home/runner/work/Admini/Admini/backend/data/users/john/bandwidth.tally
 
 	if [ -s "${src}" ]; then
 		cat "${src}" >> "${dst}"
@@ -10,7 +10,7 @@ append_and_remove() {
 	fi
 }
 
-for DA_USERDIR in /usr/local/directadmin/data/users/*; do
+for DA_USERDIR in /home/runner/work/Admini/Admini/backend/data/users/*; do
 	if [ ! -d "${DA_USERDIR}" ]; then
 		continue
 	fi

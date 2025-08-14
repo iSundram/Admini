@@ -48,7 +48,7 @@ if [ ! -e ${MYSQL} ]; then
         exit 1
 fi
 
-DEFM=--defaults-extra-file=/usr/local/directadmin/conf/my.cnf
+DEFM=--defaults-extra-file=/home/runner/work/Admini/Admini/backend/conf/my.cnf
 
 # If MySQL a new database does not exist, create it and copy all the data from the old database, then drop the old database
 if ! ${MYSQL} ${DEFM} --skip-column-names -e "SHOW DATABASES LIKE '${NEWUSER_DATABASE}';" -s | grep -m1 -q "${NEWUSER_DATABASE}"; then

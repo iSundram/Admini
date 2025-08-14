@@ -1,13 +1,13 @@
 #!/bin/bash
 
-DA=/usr/local/directadmin/directadmin
+DA=/home/runner/work/Admini/Admini/backend/directadmin
 if [ ! -s ${DA} ]; then
 	echo "Cannot find DirectAdmin binary:";
 	echo "  ${DA}";
 	exit 1;
 fi
 
-DA_CONF=/usr/local/directadmin/conf/directadmin.conf
+DA_CONF=/home/runner/work/Admini/Admini/backend/conf/directadmin.conf
 if [ ! -s ${DA_CONF} ]; then
 	echo "Cannot find DirectAdmin Config File:";
 	echo "  ${DA_CONF}";

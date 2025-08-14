@@ -1,5 +1,5 @@
 #!/bin/bash
-DA_SHARED=/usr/local/directadmin/shared
+DA_SHARED=/home/runner/work/Admini/Admini/backend/shared
 
 if systemctl is-enabled NetworkManager.service -q >/dev/null 2>&1; then
 	NM_DISP=/etc/NetworkManager/dispatcher.d

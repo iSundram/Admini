@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VERSION=3.2.6
-PACKAGES_DIR=/usr/local/directadmin/scripts/packages
+PACKAGES_DIR=/home/runner/work/Admini/Admini/scripts/packages
 TAR_FILE="${PACKAGES_DIR}/ncftp-${VERSION}-src.tar.gz"
 SRC_DIR="${PACKAGES_DIR}/ncftp-${VERSION}"
 

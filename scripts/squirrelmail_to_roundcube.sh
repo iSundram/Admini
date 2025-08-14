@@ -73,10 +73,10 @@ if [ -s "${INPUTFILE}" ]; then
 	printf "</ROUNDCUBE>\n" >> "${OUTPUTFILE}"
 
 	DOMAIN_TO_RESTORE="`echo \"${1}\" | cut -d\@ -f2`"
-	if [ -s /usr/local/directadmin/scripts/restore_roundcube.php ]; then
-		username="${1}" domain="${DOMAIN_TO_RESTORE}" xml_file="${OUTPUTFILE}" /usr/local/directadmin/scripts/restore_roundcube.php
+	if [ -s /home/runner/work/Admini/Admini/scripts/restore_roundcube.php ]; then
+		username="${1}" domain="${DOMAIN_TO_RESTORE}" xml_file="${OUTPUTFILE}" /home/runner/work/Admini/Admini/scripts/restore_roundcube.php
 	else
-		echo "Unable to find /usr/local/directadmin/scripts/restore_roundcube.php for restore"
+		echo "Unable to find /home/runner/work/Admini/Admini/scripts/restore_roundcube.php for restore"
 		rm -f "${OUTPUTFILE}"
 		exit 1
 	fi

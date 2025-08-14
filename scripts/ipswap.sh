@@ -22,7 +22,7 @@ fi
 OLD_IP=$1
 NEW_IP=$2
 
-DIRECTADMIN=/usr/local/directadmin/directadmin
+DIRECTADMIN=/home/runner/work/Admini/Admini/backend/directadmin
 
 HAVE_DOVECOT_PROXY=0
 if [ -s ${DIRECTADMIN} ]; then
@@ -88,8 +88,8 @@ if [ $# = 3 ]; then
 	exit 0;
 fi
 
-IPFILE_OLD=/usr/local/directadmin/data/admin/ips/$OLD_IP
-IPFILE_NEW=/usr/local/directadmin/data/admin/ips/$NEW_IP
+IPFILE_OLD=/home/runner/work/Admini/Admini/backend/data/admin/ips/$OLD_IP
+IPFILE_NEW=/home/runner/work/Admini/Admini/backend/data/admin/ips/$NEW_IP
 
 NEW_IS_ALREADY_SERVER=0
 if [ -s ${IPFILE_NEW} ]; then
@@ -124,13 +124,13 @@ fi
 
 swapfile /etc/proftpd.conf
 swapfile /etc/hosts
-swapfile /usr/local/directadmin/conf/setup.txt
-swapfile /usr/local/directadmin/data/admin/ip.list
-swapfile /usr/local/directadmin/data/admin/show_all_users.cache
+swapfile /home/runner/work/Admini/Admini/backend/conf/setup.txt
+swapfile /home/runner/work/Admini/Admini/backend/data/admin/ip.list
+swapfile /home/runner/work/Admini/Admini/backend/data/admin/show_all_users.cache
 swapfile /etc/virtual/domainips
 swapfile /etc/virtual/helo_data
 
-ULDDU=/usr/local/directadmin/data/users
+ULDDU=/home/runner/work/Admini/Admini/backend/data/users
 
 for i in `ls $ULDDU`; do
 {
@@ -168,15 +168,15 @@ done;
 
 if [ "${HAVE_DOVECOT_PROXY}" = "1" ]; then
 	#swap all /etc/virtual/*/passwd files proxy_maybe=y host=1.2.3.4
-	echo "action=rewrite&value=email_passwd" >> /usr/local/directadmin/data/task.queue
+	echo "action=rewrite&value=email_passwd" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 fi
 
 echo "Updating Linked IPs"
-/usr/local/directadmin/directadmin taskq --debug 100 --run "action=ipswap&value=linked_ips&old=$OLD_IP&new=$NEW_IP"
+/home/runner/work/Admini/Admini/backend/directadmin taskq --debug 100 --run "action=ipswap&value=linked_ips&old=$OLD_IP&new=$NEW_IP"
 
-/usr/local/directadmin/scripts/startips
+/home/runner/work/Admini/Admini/scripts/startips
 #this is needed to update the serial in the db files.
-echo "action=rewrite&value=named" >> /usr/local/directadmin/data/task.queue
-echo "action=cache&value=showallusers" >> /usr/local/directadmin/data/task.queue
+echo "action=rewrite&value=named" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+echo "action=cache&value=showallusers" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 da build rewrite_confs
 log "\n*** Done swapping $OLD_IP to $NEW_IP ***\n";

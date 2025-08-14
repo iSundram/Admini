@@ -8,7 +8,7 @@ User=%i
 Group=%i
 ExecStartPre=-/bin/mkdir -p ${HOME}/.redis/db/
 ExecStartPost=-+/bin/sh -c "if [ -d /sys/fs/cgroup/user.slice ]; then mkdir -p /sys/fs/cgroup/user.slice/user-$(id -u ${USER}).slice/directadmin-exec.scope; echo $MAINPID > /sys/fs/cgroup/user.slice/user-$(id -u ${USER}).slice/directadmin-exec.scope/cgroup.procs; systemctl start user-$(id -u ${USER}).slice; fi"
-ExecStart=/usr/local/bin/redis-server --include /usr/local/directadmin/data/users/${USER}/redis.conf --supervised systemd --dir ${HOME}/.redis/db/ --port 0 --unixsocket ${HOME}/.redis/redis.sock --unixsocketperm 770
+ExecStart=/usr/local/bin/redis-server --include /home/runner/work/Admini/Admini/backend/data/users/${USER}/redis.conf --supervised systemd --dir ${HOME}/.redis/db/ --port 0 --unixsocket ${HOME}/.redis/redis.sock --unixsocketperm 770
 Type=notify
 
 UMask=007
