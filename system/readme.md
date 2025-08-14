@@ -14,22 +14,24 @@ Admini is a comprehensive web hosting control panel system implemented in Go wit
 
 ### Frontend/UI Structure
 
-#### 1. Backend Templates (`/backend/templates/`)
-Modern HTML templates served by the Go backend:
-- `login.html` - Login interface for all user types
-- `dashboard.html` - Main administrative dashboard
-- `cpanel.html` - cPanel-style user interface
-
-#### 2. Static Assets (`/backend/static/`)
-- `css/admini-theme.css` - Primary theme and styling
-- `css/cpanel-style.css` - cPanel-compatible styling
-- `images/` - Logo, favicon, and UI images
-
-#### 3. Data Skins (`/data/skins/`)
-Traditional DirectAdmin-compatible skin system:
-- `enhanced/` - Enhanced skin with language files
-- `evolution/` - Modern evolution skin with assets
+#### 1. Data Skins (`/data/skins/`) - **PRIMARY UI SYSTEM**
+Traditional DirectAdmin-compatible skin system (main UI):
+- `enhanced/` - Enhanced skin with traditional DirectAdmin interface
+- `evolution/` - Modern evolution skin with Vue.js assets
 - Includes language files, configuration, and localization
+- **This is the primary UI system that users interact with**
+
+#### 2. Backend Templates (`/backend/templates/`)
+Legacy HTML templates (compatibility only):
+- `login.html` - Fallback login interface
+- `dashboard.html` - Legacy administrative dashboard
+- `cpanel.html` - Legacy cPanel-style user interface
+- **Note: These are kept for compatibility but not the primary UI**
+
+#### 3. Static Assets (`/backend/static/`)
+- `css/admini-theme.css` - Legacy theme and styling
+- `css/cpanel-style.css` - Legacy cPanel-compatible styling
+- `images/` - Logo, favicon, and UI images
 
 ## User Interfaces
 
@@ -43,7 +45,7 @@ Traditional DirectAdmin-compatible skin system:
 - Backup and restore operations
 - Security and monitoring tools
 
-**Template**: `dashboard.html` with admin context
+**Primary UI**: DirectAdmin skin system (`/data/skins/enhanced/admin/`)
 **API Endpoints**: `/CMD_ADMIN*`, `/api/admin/*`
 
 ### 2. AdminiReseller (Reseller Interface)
@@ -55,7 +57,7 @@ Traditional DirectAdmin-compatible skin system:
 - Billing integration
 - Support ticket management
 
-**Template**: `dashboard.html` with reseller context
+**Primary UI**: DirectAdmin skin system (`/data/skins/enhanced/reseller/`)
 **API Endpoints**: `/CMD_RESELLER*`, `/api/reseller/*`
 
 ### 3. AdminiPanel (User Interface - cPanel Style)
@@ -68,7 +70,7 @@ Traditional DirectAdmin-compatible skin system:
 - SSL certificate management
 - Statistics and monitoring
 
-**Template**: `cpanel.html`
+**Primary UI**: DirectAdmin skin system (`/data/skins/evolution/` or `/data/skins/enhanced/user/`)
 **API Endpoints**: `/CMD_*`, `/api/user/*`
 
 ## Server Architecture

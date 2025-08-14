@@ -35,7 +35,7 @@ backend/
 - Flag and argument parsing
 
 ### Core Functionality
-- **Web Server**: HTTP/HTTPS server with DirectAdmin UI
+- **Web Server**: HTTP/HTTPS server with DirectAdmin-compatible skin system
 - **Configuration**: System configuration management
 - **User Management**: Create, modify, suspend/unsuspend users
 - **Domain Management**: Domain operations and SSL
@@ -49,10 +49,13 @@ backend/
 - Configuration API
 - Statistics and monitoring
 
-### Web Interface
-- Login system
-- Admin panel
-- User control panel
+### Web Interface (DirectAdmin Skin System)
+- **Primary UI**: DirectAdmin-compatible skins (`/data/skins/`)
+  - Evolution skin (modern Vue.js interface)
+  - Enhanced skin (traditional DirectAdmin interface)
+- Login system via skin system
+- Admin panel using DirectAdmin skins
+- User control panel with skin-based interface
 - File manager interface
 - Email management
 - Database operations

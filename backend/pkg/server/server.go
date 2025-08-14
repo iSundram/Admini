@@ -25,11 +25,12 @@ func NewServer() *Server {
 	router := gin.New()
 	router.Use(gin.Logger(), gin.Recovery())
 	
-	// Load HTML templates
-	router.LoadHTMLGlob("templates/*")
+	// Load DirectAdmin skin system (primary UI)
+	// Note: Templates from backend/templates/* are kept for compatibility but skins are primary
+	router.LoadHTMLGlob("backend/templates/*")
 	
 	// Serve static files
-	router.Static("/static", "./static")
+	router.Static("/static", "./backend/static")
 	
 	cfg := config.GetConfig()
 	
@@ -71,8 +72,8 @@ func (s *Server) setupRoutes() {
 	// cPanel-style routes
 	s.setupCPanelRoutes()
 	
-	// Static files
-	s.router.Static("/evolution", "./data/skins/evolution")
+	// DirectAdmin-compatible skin system (primary UI)
+	s.router.Static("/evolution", "./data/skins/evolution") 
 	s.router.Static("/enhanced", "./data/skins/enhanced")
 	s.router.StaticFile("/favicon.ico", "./data/skins/evolution/images/favicon.ico")
 }
@@ -312,17 +313,13 @@ func (s *Server) setupAPIRoutes() {
 }
 
 func (s *Server) handleIndex(c *gin.Context) {
-	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title":   "Admini Login",
-		"version": "1.680",
-	})
+	// Redirect to DirectAdmin skin-based login (primary UI)
+	c.Redirect(http.StatusFound, "/evolution/login.html")
 }
 
 func (s *Server) handleLogin(c *gin.Context) {
-	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title":   "Admini Login",
-		"version": "1.680",
-	})
+	// Redirect to DirectAdmin skin-based login (primary UI)
+	c.Redirect(http.StatusFound, "/evolution/login.html")
 }
 
 func (s *Server) handleLoginPost(c *gin.Context) {
@@ -345,11 +342,8 @@ func (s *Server) handleLoginPost(c *gin.Context) {
 			c.Redirect(http.StatusFound, "/CMD_USER/")
 		}
 	} else {
-		c.HTML(http.StatusUnauthorized, "login.html", gin.H{
-			"title":   "Admini Login",
-			"version": "1.680",
-			"error":   "Invalid username or password",
-		})
+		// Redirect back to skin-based login with error
+		c.Redirect(http.StatusFound, "/evolution/login.html?error=invalid_credentials")
 	}
 }
 
