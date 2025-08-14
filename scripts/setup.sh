@@ -2,9 +2,9 @@
 
 ###############################################################################
 # setup.sh
-# DirectAdmin  setup.sh  file  is  the  first  file  to  download  when doing a
-# DirectAdmin Install.  If  you  are unable to run this script with
-# ./setup.sh  then  you probably need to set it's permissions.  You can do this
+# Admini setup.sh file is the first file to download when doing an
+# Admini Install. If you are unable to run this script with
+# ./setup.sh then you probably need to set it's permissions. You can do this
 # by typing the following:
 #
 # chmod 755 setup.sh
