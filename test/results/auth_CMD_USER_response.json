@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admini Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    
+    <div class="admini-header">
+        <div class="admini-flex admini-justify-between admini-items-center">
+            <div>
+                <h1>AdminiPanel</h1>
+                <div class="panel-title">Dashboard</div>
+            </div>
+            <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                Welcome, admin | <a href="/CMD_LOGOUT" style="color: white; text-decoration: underline;">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav class="admini-nav">
+        <ul>
+            
+            <li><a href="/CMD_USER" class="active">Dashboard</a></li>
+            <li><a href="/CMD_DOMAIN" class="">Domains</a></li>
+            <li><a href="/CMD_EMAIL" class="">Email</a></li>
+            <li><a href="/CMD_FILE_MANAGER" class="">File Manager</a></li>
+            <li><a href="/CMD_DB" class="">Databases</a></li>
+            <li><a href="/CMD_SSL" class="">SSL</a></li>
+            <li><a href="/CMD_STATISTICS" class="">Statistics</a></li>
+            
+        </ul>
+    </nav>
+
+    
+    <div class="admini-dashboard">
+        
+        
+        <div class="admini-grid admini-grid-3">
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">2</div>
+                <div class="admini-stat-label">Domains</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">5</div>
+                <div class="admini-stat-label">Email Accounts</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">3</div>
+                <div class="admini-stat-label">Databases</div>
+            </div>
+        </div>
+
+        <div class="admini-grid admini-grid-2" style="margin-top: 2rem;">
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>Quick Actions</h3>
+                </div>
+                <div class="admini-card-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <a href="/CMD_DOMAIN" class="admini-btn admini-btn-primary" style="text-align: center;">Add Domain</a>
+                        <a href="/CMD_EMAIL" class="admini-btn admini-btn-secondary" style="text-align: center;">Create Email</a>
+                        <a href="/CMD_DB" class="admini-btn admini-btn-secondary" style="text-align: center;">New Database</a>
+                        <a href="/CMD_FILE_MANAGER" class="admini-btn admini-btn-secondary" style="text-align: center;">File Manager</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>Account Information</h3>
+                </div>
+                <div class="admini-card-body">
+                    <table class="admini-table">
+                        <tr><td><strong>Username:</strong></td><td>admin</td></tr>
+                        <tr><td><strong>Package:</strong></td><td>Standard</td></tr>
+                        <tr><td><strong>Disk Usage:</strong></td><td>150 MB / 1 GB</td></tr>
+                        <tr><td><strong>Bandwidth:</strong></td><td>2.1 GB / 10 GB</td></tr>
+                        <tr><td><strong>Created:</strong></td><td>2023-01-01</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            console.log('Admini Control Panel loaded');
+            
+            
+            
+        });
+    </script>
+</body>
+</html>

@@ -55,7 +55,7 @@
         {{range $category, $features := .categories}}
         {{if $features}}
         <div class="cpanel-category">
-            <h2 class="cpanel-category-title">{{$category | title}}</h2>
+            <h2 class="cpanel-category-title">{{$category}}</h2>
             <div class="cpanel-features-grid">
                 {{range $features}}
                 <div class="cpanel-feature-card" data-category="{{.Category}}" data-name="{{.Name}}">

@@ -1,0 +1,24 @@
+2025/08/14 09:39:28 Starting Admini server
+panic: template: cpanel.html:58: function "title" not defined
+
+goroutine 1 [running]:
+html/template.Must(...)
+	/opt/hostedtoolcache/go/1.24.5/x64/src/html/template/template.go:368
+github.com/gin-gonic/gin.(*Engine).LoadHTMLGlob(0xc00045a1a0, {0xb95ad6, 0xb})
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:255 +0x2f2
+admini/pkg/server.NewServer()
+	/home/runner/work/Admini/Admini/backend/pkg/server/server.go:29 +0xe5
+admini/cmd.runServer()
+	/home/runner/work/Admini/Admini/backend/cmd/server.go:43 +0x110
+admini/cmd.init.func22(0xc00022fb00?, {0xb87f51?, 0x4?, 0xb87e55?})
+	/home/runner/work/Admini/Admini/backend/cmd/server.go:26 +0xf
+github.com/spf13/cobra.(*Command).execute(0x11519a0, {0xc00041fd20, 0x2, 0x2})
+	/home/runner/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:987 +0xabb
+github.com/spf13/cobra.(*Command).ExecuteC(0x11516c0)
+	/home/runner/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1115 +0x44f
+github.com/spf13/cobra.(*Command).Execute(...)
+	/home/runner/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1039
+admini/cmd.Execute(...)
+	/home/runner/work/Admini/Admini/backend/cmd/root.go:20
+main.main()
+	/home/runner/work/Admini/Admini/backend/main.go:17 +0x1a
