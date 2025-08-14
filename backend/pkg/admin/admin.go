@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"time"
 
-	"directadmin/pkg/config"
+	"admini/pkg/config"
 )
 
 // GetAdminUsername returns the admin username from config
@@ -23,7 +23,7 @@ func PerformBackup() error {
 	fmt.Println("Starting admin backup process...")
 	
 	// Create backup directory if it doesn't exist
-	backupDir := "/usr/local/directadmin/data/admin/admin_backups"
+	backupDir := "/usr/local/admini/data/admin/admin_backups"
 	if err := exec.Command("mkdir", "-p", backupDir).Run(); err != nil {
 		return fmt.Errorf("failed to create backup directory: %v", err)
 	}
@@ -34,9 +34,9 @@ func PerformBackup() error {
 	
 	// Backup critical directories
 	backupPaths := []string{
-		"/usr/local/directadmin/conf",
-		"/usr/local/directadmin/data/admin",
-		"/usr/local/directadmin/data/templates",
+		"/usr/local/admini/conf",
+		"/usr/local/admini/data/admin",
+		"/usr/local/admini/data/templates",
 		"/etc/httpd/conf",
 		"/etc/exim",
 		"/etc/dovecot",

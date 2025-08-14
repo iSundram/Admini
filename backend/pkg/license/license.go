@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"directadmin/pkg/config"
+	"admini/pkg/config"
 )
 
 type License struct {
@@ -19,7 +19,7 @@ type License struct {
 	Valid      bool
 }
 
-const licenseFile = "/usr/local/directadmin/conf/license.key"
+const licenseFile = "/usr/local/admini/conf/license.key"
 
 // GetLicense returns the current license information
 func GetLicense() *License {
@@ -52,7 +52,7 @@ func SetLicense(key string) error {
 	}
 	
 	// Create license directory if it doesn't exist
-	licenseDir := "/usr/local/directadmin/conf"
+	licenseDir := "/usr/local/admini/conf"
 	if err := os.MkdirAll(licenseDir, 0755); err != nil {
 		return fmt.Errorf("failed to create license directory: %v", err)
 	}

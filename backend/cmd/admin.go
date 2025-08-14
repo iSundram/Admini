@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"directadmin/pkg/admin"
+	"admini/pkg/admin"
 	"github.com/spf13/cobra"
 )
 

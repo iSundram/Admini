@@ -14,7 +14,7 @@ var buildCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Running CustomBuild...")
 		// Execute the actual custombuild script
-		cmdExec := exec.Command("/usr/local/directadmin/custombuild/build", args...)
+		cmdExec := exec.Command("/usr/local/admini/custombuild/build", args...)
 		output, err := cmdExec.CombinedOutput()
 		if err != nil {
 			fmt.Printf("CustomBuild failed: %v\n", err)
@@ -26,10 +26,10 @@ var buildCmd = &cobra.Command{
 
 var installCmd = &cobra.Command{
 	Use:   "install",
-	Short: "Run DirectAdmin installer",
-	Long:  "Run the DirectAdmin installation process",
+	Short: "Run Admini installer",
+	Long:  "Run the Admini installation process",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Running DirectAdmin installer...")
+		fmt.Println("Running Admini installer...")
 		// This would typically run the installer script
 		fmt.Println("Installation process initiated")
 	},
@@ -37,10 +37,10 @@ var installCmd = &cobra.Command{
 
 var updateCmd = &cobra.Command{
 	Use:   "update",
-	Short: "Update DirectAdmin",
-	Long:  "Update DirectAdmin to the latest version",
+	Short: "Update Admini",
+	Long:  "Update Admini to the latest version",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Checking for DirectAdmin updates...")
+		fmt.Println("Checking for Admini updates...")
 		// This would typically check and apply updates
 		fmt.Println("Update process initiated")
 	},
@@ -48,8 +48,8 @@ var updateCmd = &cobra.Command{
 
 var webInstallCmd = &cobra.Command{
 	Use:   "web-install",
-	Short: "Run DirectAdmin web installer",
-	Long:  "Run the DirectAdmin web-based installer",
+	Short: "Run Admini web installer",
+	Long:  "Run the Admini web-based installer",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Starting web installer...")
 		// This would start the web-based installation interface
@@ -60,10 +60,10 @@ var webInstallCmd = &cobra.Command{
 var permissionsCmd = &cobra.Command{
 	Use:     "permissions",
 	Aliases: []string{"p"},
-	Short:   "Set DirectAdmin files permissions",
-	Long:    "Set appropriate file permissions for DirectAdmin",
+	Short:   "Set Admini files permissions",
+	Long:    "Set appropriate file permissions for Admini",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Setting DirectAdmin file permissions...")
+		fmt.Println("Setting Admini file permissions...")
 		// This would set the correct file permissions
 		fmt.Println("File permissions updated")
 	},
@@ -84,7 +84,7 @@ var loginUrlCmd = &cobra.Command{
 	Use:     "login-url",
 	Aliases: []string{"create-login-url"},
 	Short:   "Create single-sign-on URL",
-	Long:    "Create a single-sign-on URL for DirectAdmin",
+	Long:    "Create a single-sign-on URL for Admini",
 	Run: func(cmd *cobra.Command, args []string) {
 		// Generate SSO URL
 		fmt.Println("https://localhost:2222/CMD_LOGIN?username=admin&login_key=generated_key_here")

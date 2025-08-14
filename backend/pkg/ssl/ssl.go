@@ -35,7 +35,7 @@ func CreateSelfSigned(domain, user string) error {
 	template := x509.Certificate{
 		SerialNumber: big.NewInt(1),
 		Subject: pkix.Name{
-			Organization:  []string{"DirectAdmin"},
+			Organization:  []string{"Admini"},
 			Country:       []string{"US"},
 			Province:      []string{""},
 			Locality:      []string{""},
@@ -58,7 +58,7 @@ func CreateSelfSigned(domain, user string) error {
 	}
 
 	// Create SSL directory
-	sslDir := filepath.Join("/usr/local/directadmin/data/users", user, "domains", domain)
+	sslDir := filepath.Join("/usr/local/admini/data/users", user, "domains", domain)
 	if err := os.MkdirAll(sslDir, 0755); err != nil {
 		return fmt.Errorf("failed to create SSL directory: %v", err)
 	}
@@ -101,7 +101,7 @@ func CreateSelfSigned(domain, user string) error {
 
 // GetCertificate returns certificate information for a domain
 func GetCertificate(domain, user string) (*Certificate, error) {
-	sslDir := filepath.Join("/usr/local/directadmin/data/users", user, "domains", domain)
+	sslDir := filepath.Join("/usr/local/admini/data/users", user, "domains", domain)
 	certPath := filepath.Join(sslDir, domain+".cert")
 	keyPath := filepath.Join(sslDir, domain+".key")
 
@@ -145,7 +145,7 @@ func GetCertificate(domain, user string) (*Certificate, error) {
 
 // ListCertificates returns all certificates for a user
 func ListCertificates(user string) ([]Certificate, error) {
-	domainsPath := filepath.Join("/usr/local/directadmin/data/users", user, "domains")
+	domainsPath := filepath.Join("/usr/local/admini/data/users", user, "domains")
 	entries, err := os.ReadDir(domainsPath)
 	if err != nil {
 		return nil, err

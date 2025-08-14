@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 )
 
 // EmailManager handles all email-related operations

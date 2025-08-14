@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 
-	"directadmin/pkg/domain"
-	"directadmin/pkg/user"
-	"directadmin/pkg/taskqueue"
+	"admini/pkg/domain"
+	"admini/pkg/user"
+	"admini/pkg/taskqueue"
 	"github.com/spf13/cobra"
 )
 

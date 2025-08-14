@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
-// Comprehensive API handlers for all DirectAdmin functionality
+// Comprehensive API handlers for all Admini functionality
 
 // API User management
 func (s *Server) handleAPIUsers(c *gin.Context) {
@@ -668,9 +668,9 @@ func (s *Server) handleAPIUpdateCustomHTTPd(c *gin.Context) {
 	})
 }
 
-func (s *Server) handleAPIDirectAdminConf(c *gin.Context) {
+func (s *Server) handleAPIAdminiConf(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"title": "DirectAdmin Configuration",
+		"title": "Admini Configuration",
 		"config": map[string]interface{}{
 			"admin_username": "admin",
 			"max_users": 100,
@@ -679,7 +679,7 @@ func (s *Server) handleAPIDirectAdminConf(c *gin.Context) {
 	})
 }
 
-func (s *Server) handleAPIUpdateDirectAdminConf(c *gin.Context) {
+func (s *Server) handleAPIUpdateAdminiConf(c *gin.Context) {
 	var configData map[string]interface{}
 	if err := c.ShouldBindJSON(&configData); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid JSON"})
@@ -688,7 +688,7 @@ func (s *Server) handleAPIUpdateDirectAdminConf(c *gin.Context) {
 	
 	c.JSON(http.StatusOK, gin.H{
 		"status": "success",
-		"message": "DirectAdmin configuration updated successfully",
+		"message": "Admini configuration updated successfully",
 		"config": configData,
 	})
 }

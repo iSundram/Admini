@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"directadmin/pkg/models"
+	"admini/pkg/models"
 	_ "github.com/go-sql-driver/mysql"
 )
 

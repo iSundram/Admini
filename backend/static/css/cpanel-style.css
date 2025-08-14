@@ -1,0 +1,318 @@
+/* cPanel Style CSS for Admini Control Panel */
+
+.cpanel-stats-bar {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--admini-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.cpanel-stat-item {
+    color: var(--admini-text);
+}
+
+.cpanel-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cpanel-search {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cpanel-search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--admini-border);
+    border-radius: 25px;
+    font-size: 1rem;
+    background: white;
+    transition: border-color 0.2s ease;
+}
+
+.cpanel-search-input:focus {
+    outline: none;
+    border-color: var(--admini-primary);
+    box-shadow: 0 0 0 3px rgba(49, 116, 198, 0.1);
+}
+
+.cpanel-category {
+    margin-bottom: 3rem;
+}
+
+.cpanel-category-title {
+    color: var(--admini-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--admini-primary);
+    text-transform: capitalize;
+}
+
+.cpanel-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.cpanel-feature-card {
+    background: white;
+    border: 1px solid var(--admini-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    box-shadow: var(--admini-shadow);
+}
+
+.cpanel-feature-card:hover {
+    border-color: var(--admini-primary);
+    box-shadow: 0 4px 12px rgba(49, 116, 198, 0.15);
+}
+
+.cpanel-feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--admini-primary);
+}
+
+.cpanel-feature-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--admini-text);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cpanel-feature-content p {
+    margin: 0 0 1rem 0;
+    color: var(--admini-text-light);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cpanel-feature-action {
+    text-align: right;
+}
+
+.cpanel-feature-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--admini-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.cpanel-feature-link:hover {
+    background: var(--admini-primary-dark);
+}
+
+.cpanel-quick-actions {
+    background: var(--admini-secondary);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem 0;
+    border: 1px solid var(--admini-border);
+}
+
+.cpanel-quick-actions h2 {
+    margin: 0 0 1.5rem 0;
+    color: var(--admini-text);
+    font-size: 1.3rem;
+}
+
+.cpanel-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.cpanel-quick-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--admini-border);
+}
+
+.cpanel-quick-item h4 {
+    margin: 0 0 1rem 0;
+    color: var(--admini-text);
+    font-size: 1rem;
+}
+
+.cpanel-quick-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cpanel-quick-form input {
+    padding: 0.5rem;
+    border: 1px solid var(--admini-border);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.cpanel-quick-form input:focus {
+    outline: none;
+    border-color: var(--admini-primary);
+}
+
+.cpanel-recent-activity {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--admini-border);
+    margin-top: 2rem;
+}
+
+.cpanel-recent-activity h2 {
+    margin: 0 0 1.5rem 0;
+    color: var(--admini-text);
+    font-size: 1.3rem;
+}
+
+.cpanel-activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cpanel-activity-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--admini-bg-light);
+    border-radius: 6px;
+    border: 1px solid var(--admini-border);
+}
+
+.cpanel-activity-icon {
+    font-size: 1.2rem;
+    color: var(--admini-primary);
+}
+
+.cpanel-activity-content {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.cpanel-activity-time {
+    display: block;
+    color: var(--admini-text-light);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Icon mappings */
+.icon-folder::before { content: "📁"; }
+.icon-ftp::before { content: "🔗"; }
+.icon-connect::before { content: "🌐"; }
+.icon-backup::before { content: "💾"; }
+.icon-wizard::before { content: "🧙"; }
+.icon-disk::before { content: "💽"; }
+.icon-webdisk::before { content: "☁️"; }
+.icon-mysql::before { content: "🗄️"; }
+.icon-postgresql::before { content: "🐘"; }
+.icon-phpmyadmin::before { content: "⚙️"; }
+.icon-phppgadmin::before { content: "🔧"; }
+.icon-remote::before { content: "🌍"; }
+.icon-subdomain::before { content: "🌐"; }
+.icon-addon::before { content: "➕"; }
+.icon-parked::before { content: "🅿️"; }
+.icon-redirect::before { content: "↩️"; }
+.icon-dns::before { content: "🌐"; }
+.icon-ddns::before { content: "🔄"; }
+.icon-email::before { content: "✉️"; }
+.icon-forward::before { content: "📧"; }
+.icon-autorespond::before { content: "🤖"; }
+.icon-default::before { content: "📮"; }
+.icon-mailinglist::before { content: "📬"; }
+.icon-track::before { content: "📍"; }
+.icon-filter::before { content: "🔍"; }
+.icon-auth::before { content: "🔐"; }
+.icon-import::before { content: "📥"; }
+.icon-calendar::before { content: "📅"; }
+.icon-encrypt::before { content: "🔒"; }
+.icon-visitors::before { content: "👥"; }
+.icon-bandwidth::before { content: "📊"; }
+.icon-logs::before { content: "📝"; }
+.icon-errors::before { content: "❌"; }
+.icon-awstats::before { content: "📈"; }
+.icon-webalizer::before { content: "📉"; }
+.icon-webalizer-ftp::before { content: "📂"; }
+.icon-cpu::before { content: "🖥️"; }
+.icon-ssl::before { content: "🔒"; }
+.icon-letsencrypt::before { content: "🔐"; }
+.icon-ipblock::before { content: "🚫"; }
+.icon-hotlink::before { content: "🔗"; }
+.icon-leech::before { content: "🛡️"; }
+.icon-password::before { content: "🔑"; }
+.icon-2fa::before { content: "🔢"; }
+.icon-ssh::before { content: "💻"; }
+.icon-softaculous::before { content: "📦"; }
+.icon-php::before { content: "🐘"; }
+.icon-nodejs::before { content: "🟢"; }
+.icon-python::before { content: "🐍"; }
+.icon-ruby::before { content: "💎"; }
+.icon-cron::before { content: "⏰"; }
+.icon-publisher::before { content: "📤"; }
+.icon-optimize::before { content: "⚡"; }
+.icon-restore::before { content: "🔄"; }
+.icon-terminal::before { content: "💻"; }
+.icon-webprotect::before { content: "🛡️"; }
+.icon-api::before { content: "🔌"; }
+.icon-mime::before { content: "📄"; }
+.icon-apache::before { content: "🪶"; }
+.icon-privacy::before { content: "👁️"; }
+.icon-indexes::before { content: "📑"; }
+.icon-errorpages::before { content: "⚠️"; }
+.icon-multiphp::before { content: "🐘"; }
+.icon-phpini::before { content: "⚙️"; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cpanel-stats-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .cpanel-container {
+        padding: 1rem;
+    }
+    
+    .cpanel-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cpanel-quick-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cpanel-feature-card {
+        padding: 1rem;
+    }
+}
+
+/* Category-specific colors */
+.cpanel-category[data-category="files"] .cpanel-category-title { border-color: #059669; color: #059669; }
+.cpanel-category[data-category="databases"] .cpanel-category-title { border-color: #dc2626; color: #dc2626; }
+.cpanel-category[data-category="domains"] .cpanel-category-title { border-color: #7c3aed; color: #7c3aed; }
+.cpanel-category[data-category="email"] .cpanel-category-title { border-color: #ea580c; color: #ea580c; }
+.cpanel-category[data-category="metrics"] .cpanel-category-title { border-color: #0891b2; color: #0891b2; }
+.cpanel-category[data-category="security"] .cpanel-category-title { border-color: #be123c; color: #be123c; }
+.cpanel-category[data-category="software"] .cpanel-category-title { border-color: #9333ea; color: #9333ea; }
+.cpanel-category[data-category="advanced"] .cpanel-category-title { border-color: #374151; color: #374151; }

@@ -15,10 +15,10 @@ const (
 var versionCmd = &cobra.Command{
 	Use:     "version",
 	Aliases: []string{"v"},
-	Short:   "Print DirectAdmin version",
-	Long:    "Print DirectAdmin version information",
+	Short:   "Print Admini version",
+	Long:    "Print Admini version information",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("DirectAdmin %s %s\n", Version, BuildID)
+		fmt.Printf("Admini %s %s\n", Version, BuildID)
 	},
 }
 
@@ -28,7 +28,7 @@ var infoCmd = &cobra.Command{
 	Short:   "Print binary compile info",
 	Long:    "Print binary compile information",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("DirectAdmin %s\n", Version)
+		fmt.Printf("Admini %s\n", Version)
 		fmt.Printf("Build ID: %s\n", BuildID)
 		fmt.Printf("Compiled with: Go (rebuilt from binary analysis)\n")
 		fmt.Printf("OS: Linux\n")

@@ -3,11 +3,11 @@ package server
 import (
 	"net/http"
 
-	"directadmin/pkg/config"
-	"directadmin/pkg/constants"
-	"directadmin/pkg/email"
-	"directadmin/pkg/filemanager"
-	"directadmin/pkg/database"
+	"admini/pkg/config"
+	"admini/pkg/constants"
+	"admini/pkg/email"
+	"admini/pkg/filemanager"
+	"admini/pkg/database"
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,20 +19,26 @@ type Server struct {
 	databaseManager *database.DatabaseManager
 }
 
-// NewServer creates a new DirectAdmin web server
+// NewServer creates a new Admini web server
 func NewServer() *Server {
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.New()
 	router.Use(gin.Logger(), gin.Recovery())
+	
+	// Load HTML templates
+	router.LoadHTMLGlob("templates/*")
+	
+	// Serve static files
+	router.Static("/static", "./static")
 	
 	cfg := config.GetConfig()
 	
 	s := &Server{
 		router:          router,
 		config:          cfg,
-		emailManager:    email.NewEmailManager("/usr/local/directadmin/data"),
+		emailManager:    email.NewEmailManager("/usr/local/admini/data"),
 		fileManager:     filemanager.NewFileManager("/home", "admin"), // Default user
-		databaseManager: database.NewDatabaseManager("", "/usr/local/directadmin/data"),
+		databaseManager: database.NewDatabaseManager("", "/usr/local/admini/data"),
 	}
 	
 	s.setupRoutes()
@@ -44,7 +50,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) setupRoutes() {
-	// Main DirectAdmin interface
+	// Main Admini interface
 	s.router.GET("/", s.handleIndex)
 	s.router.GET("/"+constants.CMD_LOGIN, s.handleLogin)
 	s.router.POST("/"+constants.CMD_LOGIN, s.handleLoginPost)
@@ -61,6 +67,9 @@ func (s *Server) setupRoutes() {
 	
 	// API endpoints
 	s.setupAPIRoutes()
+	
+	// cPanel-style routes
+	s.setupCPanelRoutes()
 	
 	// Static files
 	s.router.Static("/evolution", "./data/skins/evolution")
@@ -291,9 +300,9 @@ func (s *Server) setupAPIRoutes() {
 		api.GET("/custom-httpd", s.handleAPICustomHTTPd)
 		api.PUT("/custom-httpd", s.handleAPIUpdateCustomHTTPd)
 		
-		// DirectAdmin configuration
-		api.GET("/directadmin-conf", s.handleAPIDirectAdminConf)
-		api.PUT("/directadmin-conf", s.handleAPIUpdateDirectAdminConf)
+		// Admini configuration
+		api.GET("/admini-conf", s.handleAPIAdminiConf)
+		api.PUT("/admini-conf", s.handleAPIUpdateAdminiConf)
 		
 		// Maintenance mode
 		api.GET("/maintenance", s.handleAPIMaintenance)
@@ -304,14 +313,15 @@ func (s *Server) setupAPIRoutes() {
 
 func (s *Server) handleIndex(c *gin.Context) {
 	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title":   "DirectAdmin Login",
+		"title":   "Admini Login",
 		"version": "1.680",
 	})
 }
 
 func (s *Server) handleLogin(c *gin.Context) {
 	c.HTML(http.StatusOK, "login.html", gin.H{
-		"title": "DirectAdmin Login",
+		"title":   "Admini Login",
+		"version": "1.680",
 	})
 }
 
@@ -323,10 +333,22 @@ func (s *Server) handleLoginPost(c *gin.Context) {
 	if s.authenticateUser(username, password) {
 		// Set session/cookie
 		c.SetCookie("session", "authenticated", 3600, "/", "", false, true)
-		c.Redirect(http.StatusFound, "/CMD_ADMIN/")
+		
+		// Determine user level and redirect to appropriate dashboard
+		userLevel := s.getUserLevel(username)
+		switch userLevel {
+		case "admin":
+			c.Redirect(http.StatusFound, "/CMD_ADMIN/")
+		case "reseller":
+			c.Redirect(http.StatusFound, "/CMD_RESELLER/")
+		default:
+			c.Redirect(http.StatusFound, "/CMD_USER/")
+		}
 	} else {
 		c.HTML(http.StatusUnauthorized, "login.html", gin.H{
-			"error": "Invalid credentials",
+			"title":   "Admini Login",
+			"version": "1.680",
+			"error":   "Invalid username or password",
 		})
 	}
 }
@@ -346,10 +368,24 @@ func (s *Server) handleAPILoginKey(c *gin.Context) {
 }
 
 func (s *Server) handleAdminIndex(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"title": "DirectAdmin - Administration",
-		"user":  "admin",
-		"level": "admin",
+	c.HTML(http.StatusOK, "dashboard.html", gin.H{
+		"title":        "AdminiCore Dashboard",
+		"panel_name":   "AdminiCore",
+		"level":        "admin",
+		"username":     s.getCurrentUser(c),
+		"current_page": "dashboard",
+		"stats": gin.H{
+			"total_users":   "142",
+			"total_domains": "367",
+			"server_load":   "0.25",
+		},
+		"system": gin.H{
+			"hostname":       "server.example.com",
+			"os":            "CentOS Stream 8",
+			"kernel":        "4.18.0",
+			"admini_version": "1.680",
+			"uptime":        "15 days, 3 hours",
+		},
 	})
 }
 
@@ -417,8 +453,27 @@ func (s *Server) handleDeleteUser(c *gin.Context) {
 }
 
 func (s *Server) handleUserIndex(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"title": "DirectAdmin - User Panel",
+	c.HTML(http.StatusOK, "dashboard.html", gin.H{
+		"title":        "Dashboard",
+		"panel_name":   "AdminiPanel",
+		"level":        "user",
+		"username":     s.getCurrentUser(c),
+		"current_page": "dashboard",
+		"stats": gin.H{
+			"domains":        "2",
+			"email_accounts": "5",
+			"databases":      "3",
+		},
+		"usage": gin.H{
+			"disk":      "150 MB",
+			"bandwidth": "2.1 GB",
+		},
+		"limits": gin.H{
+			"disk":      "1 GB",
+			"bandwidth": "10 GB",
+		},
+		"package":      "Standard",
+		"created_date": "2023-01-01",
 	})
 }
 
@@ -505,5 +560,18 @@ func (s *Server) apiAuthMiddleware() gin.HandlerFunc {
 func (s *Server) authenticateUser(username, password string) bool {
 	// Basic authentication - in real implementation, check against user database
 	adminUser := s.config.Get("admin_username")
-	return username == adminUser && password != ""
+	// For demo purposes, accept "admin" / "password" or configured admin with any non-empty password
+	return (username == "admin" && password == "password") || (username == adminUser && password != "")
+}
+
+// Helper function for user levels
+func (s *Server) getUserLevel(username string) string {
+	// In a real implementation, this would check the user database
+	adminUser := s.config.Get("admin_username")
+	if username == adminUser {
+		return "admin"
+	}
+	// For demo purposes, assume other users are regular users
+	return "user"
+}r"
 }

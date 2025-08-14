@@ -1,0 +1,443 @@
+/* Admini Control Panel Theme - Primary Color: #3174c6 */
+
+:root {
+    --admini-primary: #3174c6;
+    --admini-primary-dark: #2563a8;
+    --admini-primary-light: #4a86d3;
+    --admini-secondary: #f8fafc;
+    --admini-accent: #059669;
+    --admini-warning: #f59e0b;
+    --admini-danger: #dc2626;
+    --admini-text: #1f2937;
+    --admini-text-light: #6b7280;
+    --admini-border: #e5e7eb;
+    --admini-bg-light: #f9fafb;
+    --admini-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--admini-bg-light);
+    color: var(--admini-text);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.admini-header {
+    background: linear-gradient(135deg, var(--admini-primary) 0%, var(--admini-primary-dark) 100%);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: var(--admini-shadow);
+}
+
+.admini-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.admini-header .panel-title {
+    opacity: 0.9;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Navigation Styles */
+.admini-nav {
+    background: white;
+    border-bottom: 1px solid var(--admini-border);
+    padding: 0;
+}
+
+.admini-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+}
+
+.admini-nav li {
+    white-space: nowrap;
+}
+
+.admini-nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--admini-text);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.admini-nav a:hover,
+.admini-nav a.active {
+    color: var(--admini-primary);
+    border-bottom-color: var(--admini-primary);
+    background-color: rgba(49, 116, 198, 0.05);
+}
+
+/* Card Styles */
+.admini-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--admini-shadow);
+    border: 1px solid var(--admini-border);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.admini-card-header {
+    background: var(--admini-secondary);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--admini-border);
+}
+
+.admini-card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--admini-text);
+}
+
+.admini-card-body {
+    padding: 1.5rem;
+}
+
+/* Dashboard Grid */
+.admini-dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.admini-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.admini-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Stat Cards */
+.admini-stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--admini-shadow);
+    border-left: 4px solid var(--admini-primary);
+}
+
+.admini-stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--admini-primary);
+    margin: 0;
+}
+
+.admini-stat-label {
+    color: var(--admini-text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Buttons */
+.admini-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.5;
+}
+
+.admini-btn-primary {
+    background-color: var(--admini-primary);
+    color: white;
+}
+
+.admini-btn-primary:hover {
+    background-color: var(--admini-primary-dark);
+    transform: translateY(-1px);
+}
+
+.admini-btn-secondary {
+    background-color: var(--admini-secondary);
+    color: var(--admini-text);
+    border: 1px solid var(--admini-border);
+}
+
+.admini-btn-secondary:hover {
+    background-color: var(--admini-border);
+}
+
+.admini-btn-success {
+    background-color: var(--admini-accent);
+    color: white;
+}
+
+.admini-btn-warning {
+    background-color: var(--admini-warning);
+    color: white;
+}
+
+.admini-btn-danger {
+    background-color: var(--admini-danger);
+    color: white;
+}
+
+/* Forms */
+.admini-form-group {
+    margin-bottom: 1rem;
+}
+
+.admini-form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--admini-text);
+}
+
+.admini-form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--admini-border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease;
+}
+
+.admini-form-input:focus {
+    outline: none;
+    border-color: var(--admini-primary);
+    box-shadow: 0 0 0 3px rgba(49, 116, 198, 0.1);
+}
+
+/* Tables */
+.admini-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.admini-table th,
+.admini-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--admini-border);
+}
+
+.admini-table th {
+    background-color: var(--admini-secondary);
+    font-weight: 600;
+    color: var(--admini-text);
+}
+
+.admini-table tr:hover {
+    background-color: rgba(49, 116, 198, 0.02);
+}
+
+/* Login Page */
+.admini-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--admini-primary) 0%, var(--admini-primary-dark) 100%);
+    padding: 2rem;
+}
+
+.admini-login-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.admini-login-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.admini-login-logo h1 {
+    margin: 0;
+    color: var(--admini-primary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.admini-login-logo p {
+    margin: 0.5rem 0 0 0;
+    color: var(--admini-text-light);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admini-dashboard {
+        padding: 1rem;
+    }
+    
+    .admini-header {
+        padding: 1rem;
+    }
+    
+    .admini-header h1 {
+        font-size: 1.25rem;
+    }
+    
+    .admini-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .admini-nav a {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .admini-login-card {
+        padding: 2rem;
+        margin: 1rem;
+    }
+}
+
+/* Status Indicators */
+.admini-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.admini-status-active {
+    background-color: rgba(5, 150, 105, 0.1);
+    color: var(--admini-accent);
+}
+
+.admini-status-inactive {
+    background-color: rgba(107, 114, 128, 0.1);
+    color: var(--admini-text-light);
+}
+
+.admini-status-warning {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--admini-warning);
+}
+
+.admini-status-error {
+    background-color: rgba(220, 38, 38, 0.1);
+    color: var(--admini-danger);
+}
+
+/* Sidebar */
+.admini-sidebar {
+    background: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--admini-border);
+    padding: 2rem 0;
+    overflow-y: auto;
+}
+
+.admini-sidebar-brand {
+    padding: 0 2rem 2rem 2rem;
+    border-bottom: 1px solid var(--admini-border);
+    margin-bottom: 2rem;
+}
+
+.admini-sidebar-brand h2 {
+    margin: 0;
+    color: var(--admini-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.admini-sidebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admini-sidebar-nav li {
+    margin: 0;
+}
+
+.admini-sidebar-nav a {
+    display: block;
+    padding: 0.75rem 2rem;
+    color: var(--admini-text);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.admini-sidebar-nav a:hover,
+.admini-sidebar-nav a.active {
+    background-color: rgba(49, 116, 198, 0.05);
+    border-left-color: var(--admini-primary);
+    color: var(--admini-primary);
+}
+
+.admini-main-content {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+/* Loading Spinner */
+.admini-spinner {
+    border: 3px solid var(--admini-border);
+    border-top: 3px solid var(--admini-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utilities */
+.admini-text-center { text-align: center; }
+.admini-text-right { text-align: right; }
+.admini-mt-1 { margin-top: 0.25rem; }
+.admini-mt-2 { margin-top: 0.5rem; }
+.admini-mt-3 { margin-top: 1rem; }
+.admini-mb-1 { margin-bottom: 0.25rem; }
+.admini-mb-2 { margin-bottom: 0.5rem; }
+.admini-mb-3 { margin-bottom: 1rem; }
+.admini-p-2 { padding: 0.5rem; }
+.admini-p-3 { padding: 1rem; }
+.admini-hidden { display: none; }
+.admini-block { display: block; }
+.admini-flex { display: flex; }
+.admini-justify-between { justify-content: space-between; }
+.admini-items-center { align-items: center; }
