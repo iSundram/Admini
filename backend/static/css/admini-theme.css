@@ -322,6 +322,98 @@ body {
     }
 }
 
+/* Notifications */
+.admini-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 9999;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.3s ease-out;
+}
+
+.admini-notification-success {
+    background-color: var(--admini-accent);
+}
+
+.admini-notification-error {
+    background-color: var(--admini-danger);
+}
+
+.admini-notification-info {
+    background-color: var(--admini-primary);
+}
+
+.admini-notification-warning {
+    background-color: var(--admini-warning);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Form Validation */
+.validation-message {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0;
+}
+
+.validation-message.valid {
+    color: var(--admini-accent);
+}
+
+.validation-message.invalid {
+    color: var(--admini-danger);
+}
+
+.field-valid {
+    border-color: var(--admini-accent) !important;
+}
+
+.field-invalid {
+    border-color: var(--admini-danger) !important;
+}
+
+/* Loading States */
+.admini-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.admini-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.admini-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
 /* Status Indicators */
 .admini-status {
     display: inline-flex;

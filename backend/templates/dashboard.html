@@ -6,6 +6,7 @@
     <title>{{.title}} - Admini Control Panel</title>
     <link rel="stylesheet" href="/static/css/admini-theme.css">
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <script src="/static/js/admini-api.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -56,12 +57,24 @@
         <!-- AdminiCore Dashboard -->
         <div class="admini-grid admini-grid-3">
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.total_users }}</div>
+                <div class="admini-stat-number" data-stat="users">{{.stats.total_users }}</div>
                 <div class="admini-stat-label">Total Users</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.total_domains }}</div>
+                <div class="admini-stat-number" data-stat="domains">{{.stats.total_domains }}</div>
                 <div class="admini-stat-label">Total Domains</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number" data-stat="emails">{{.stats.total_emails }}</div>
+                <div class="admini-stat-label">Email Accounts</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number" data-stat="databases">{{.stats.total_databases }}</div>
+                <div class="admini-stat-label">Databases</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number" data-stat="suspended_users">{{.stats.suspended_users }}</div>
+                <div class="admini-stat-label">Suspended Users</div>
             </div>
             <div class="admini-stat-card">
                 <div class="admini-stat-number">{{.stats.server_load }}</div>
