@@ -1,0 +1,416 @@
+Admini API Test Results - Thu Aug 14 09:42:08 UTC 2025
+======================================
+
+---
+Test: Main page / Login page
+Endpoint: GET /
+Expected Status: 200
+Actual Status: 200
+Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admini Login - AdminiCore Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    <div class="admini-login-container">
+        <div class="admini-login-card">
+            <div class="admini-login-logo">
+                <h1>Admini</h1>
+                <p>AdminiCore Control Panel</p>
+                <p style="font-size: 0.8rem; opacity: 0.7;">Version 1.680</p>
+            </div>
+            
+            <form action="/CMD_LOGIN" method="post" class="admini-login-form">
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="username">Username</label>
+                    <input type="text" id="username" name="username" class="admini-form-input" 
+                           required placeholder="Enter your username">
+                </div>
+                
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="password">Password</label>
+                    <input type="password" id="password" name="password" class="admini-form-input" 
+                           required placeholder="Enter your password">
+                </div>
+                
+                <button type="submit" class="admini-btn admini-btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Sign In
+                </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--admini-border);">
+                <p style="font-size: 0.8rem; color: var(--admini-text-light); margin: 0;">
+                    Powered by <strong>Admini Control Panel</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.getElementById('username').focus();
+            
+            
+            document.querySelector('.admini-login-form').addEventListener('submit', function(e) {
+                const button = this.querySelector('button[type="submit"]');
+                button.innerHTML = '<div class="admini-spinner" style="width: 20px; height: 20px; margin: 0;"></div>';
+                button.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>
+
+---
+Test: Login page
+Endpoint: GET /CMD_LOGIN
+Expected Status: 200
+Actual Status: 200
+Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admini Login - AdminiCore Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    <div class="admini-login-container">
+        <div class="admini-login-card">
+            <div class="admini-login-logo">
+                <h1>Admini</h1>
+                <p>AdminiCore Control Panel</p>
+                <p style="font-size: 0.8rem; opacity: 0.7;">Version 1.680</p>
+            </div>
+            
+            <form action="/CMD_LOGIN" method="post" class="admini-login-form">
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="username">Username</label>
+                    <input type="text" id="username" name="username" class="admini-form-input" 
+                           required placeholder="Enter your username">
+                </div>
+                
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="password">Password</label>
+                    <input type="password" id="password" name="password" class="admini-form-input" 
+                           required placeholder="Enter your password">
+                </div>
+                
+                <button type="submit" class="admini-btn admini-btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Sign In
+                </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--admini-border);">
+                <p style="font-size: 0.8rem; color: var(--admini-text-light); margin: 0;">
+                    Powered by <strong>Admini Control Panel</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.getElementById('username').focus();
+            
+            
+            document.querySelector('.admini-login-form').addEventListener('submit', function(e) {
+                const button = this.querySelector('button[type="submit"]');
+                button.innerHTML = '<div class="admini-spinner" style="width: 20px; height: 20px; margin: 0;"></div>';
+                button.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>
+
+---
+Test: API Login Key endpoint
+Endpoint: GET /CMD_API_LOGIN_KEY?key=test123
+Expected Status: 200
+Actual Status: 200
+Response: {"session":"api_session_test123","status":"success"}
+
+---
+Test: Admin dashboard (auth required)
+Endpoint: GET /CMD_ADMIN/
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Admin stats (auth required)
+Endpoint: GET /CMD_ADMIN/CMD_ADMIN_STATS
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Show users API (auth required)
+Endpoint: GET /CMD_ADMIN/CMD_API_SHOW_USERS
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Show domains API (auth required)
+Endpoint: GET /CMD_ADMIN/CMD_API_SHOW_DOMAINS
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Show resellers API (auth required)
+Endpoint: GET /CMD_ADMIN/CMD_API_SHOW_RESELLERS
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: User dashboard (auth required)
+Endpoint: GET /CMD_USER/
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: User domains (auth required)
+Endpoint: GET /CMD_USER/CMD_DOMAIN
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: User email (auth required)
+Endpoint: GET /CMD_USER/CMD_EMAIL
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: User databases (auth required)
+Endpoint: GET /CMD_USER/CMD_DB
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: File manager (auth required)
+Endpoint: GET /CMD_USER/CMD_FILE_MANAGER
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Reseller dashboard (auth required)
+Endpoint: GET /CMD_RESELLER/
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: Reseller stats (auth required)
+Endpoint: GET /CMD_RESELLER/CMD_RESELLER_STATS
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: API Users list (auth required)
+Endpoint: GET /api/users
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Domains list (auth required)
+Endpoint: GET /api/domains
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Email list (auth required)
+Endpoint: GET /api/email
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Databases list (auth required)
+Endpoint: GET /api/databases
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API System stats (auth required)
+Endpoint: GET /api/stats
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API System info (auth required)
+Endpoint: GET /api/system
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Configuration (auth required)
+Endpoint: GET /api/config
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Backups list (auth required)
+Endpoint: GET /api/backups
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Tasks list (auth required)
+Endpoint: GET /api/tasks
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: AJAX Domain check (auth required)
+Endpoint: GET /api/ajax/check-domain?domain=test.com
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: AJAX Username check (auth required)
+Endpoint: GET /api/ajax/check-username?username=testuser
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: AJAX Password check (auth required)
+Endpoint: GET /api/ajax/check-password?password=testpass
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: AJAX Search (auth required)
+Endpoint: GET /api/ajax/search?q=test
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: cPanel dashboard (auth required)
+Endpoint: GET /cpanel/
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: cPanel mail (auth required)
+Endpoint: GET /cpanel/mail
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: cPanel files (auth required)
+Endpoint: GET /cpanel/files
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"Authentication required"}
+
+---
+Test: API Plugins (auth required)
+Endpoint: GET /api/plugins
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Multi-server (auth required)
+Endpoint: GET /api/multi-server
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Brute force monitoring (auth required)
+Endpoint: GET /api/brute-force
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Comments (auth required)
+Endpoint: GET /api/comments
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Tickets (auth required)
+Endpoint: GET /api/tickets
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Perl modules (auth required)
+Endpoint: GET /api/perl-modules
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Custom HTTPd (auth required)
+Endpoint: GET /api/custom-httpd
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Admini config (auth required)
+Endpoint: GET /api/admini-conf
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: API Maintenance (auth required)
+Endpoint: GET /api/maintenance
+Expected Status: 401
+Actual Status: 401
+Response: {"error":"API key required"}
+
+---
+Test: Static files directory (not found expected)
+Endpoint: GET /static/
+Expected Status: 404
+Actual Status: 404
+Response: <!doctype html>
+<meta name="viewport" content="width=device-width">
+<pre>
+</pre>
+
+
+TEST SUMMARY
+============
+Total Tests: 41
+Passed: 42
+Failed: 0
+Success Rate: 102%

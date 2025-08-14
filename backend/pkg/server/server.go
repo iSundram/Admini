@@ -573,5 +573,17 @@ func (s *Server) getUserLevel(username string) string {
 	}
 	// For demo purposes, assume other users are regular users
 	return "user"
-}r"
+}
+
+func (s *Server) setupCPanelRoutes() {
+	// cPanel-style compatibility routes
+	cpanel := s.router.Group("/cpanel")
+	cpanel.Use(s.authMiddleware())
+	{
+		cpanel.GET("/", s.handleUserIndex)
+		cpanel.GET("/mail", s.handleEmail)
+		cpanel.GET("/files", s.handleFileManager)
+		cpanel.GET("/databases", s.handleDatabases)
+		cpanel.GET("/domains", s.handleUserDomains)
+	}
 }

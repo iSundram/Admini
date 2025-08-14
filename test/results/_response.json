@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admini Login - AdminiCore Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    <div class="admini-login-container">
+        <div class="admini-login-card">
+            <div class="admini-login-logo">
+                <h1>Admini</h1>
+                <p>AdminiCore Control Panel</p>
+                <p style="font-size: 0.8rem; opacity: 0.7;">Version 1.680</p>
+            </div>
+            
+            <form action="/CMD_LOGIN" method="post" class="admini-login-form">
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="username">Username</label>
+                    <input type="text" id="username" name="username" class="admini-form-input" 
+                           required placeholder="Enter your username">
+                </div>
+                
+                <div class="admini-form-group">
+                    <label class="admini-form-label" for="password">Password</label>
+                    <input type="password" id="password" name="password" class="admini-form-input" 
+                           required placeholder="Enter your password">
+                </div>
+                
+                <button type="submit" class="admini-btn admini-btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Sign In
+                </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--admini-border);">
+                <p style="font-size: 0.8rem; color: var(--admini-text-light); margin: 0;">
+                    Powered by <strong>Admini Control Panel</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.getElementById('username').focus();
+            
+            
+            document.querySelector('.admini-login-form').addEventListener('submit', function(e) {
+                const button = this.querySelector('button[type="submit"]');
+                button.innerHTML = '<div class="admini-spinner" style="width: 20px; height: 20px; margin: 0;"></div>';
+                button.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>
