@@ -68,6 +68,9 @@ func (s *Server) setupRoutes() {
 	// API endpoints
 	s.setupAPIRoutes()
 	
+	// cPanel-style routes
+	s.setupCPanelRoutes()
+	
 	// Static files
 	s.router.Static("/evolution", "./data/skins/evolution")
 	s.router.Static("/enhanced", "./data/skins/enhanced")
@@ -570,4 +573,5 @@ func (s *Server) getUserLevel(username string) string {
 	}
 	// For demo purposes, assume other users are regular users
 	return "user"
+}r"
 }

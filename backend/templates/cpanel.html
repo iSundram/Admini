@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}} - Admini Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="stylesheet" href="/static/css/cpanel-style.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <div class="admini-header">
+        <div class="admini-flex admini-justify-between admini-items-center">
+            <div>
+                <h1>AdminiPanel</h1>
+                <div class="panel-title">cPanel Style Interface</div>
+            </div>
+            <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                Welcome, {{.username}} | <a href="/CMD_LOGOUT" style="color: white; text-decoration: underline;">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="cpanel-stats-bar">
+        <div class="cpanel-stat-item">
+            <strong>Disk Usage:</strong> {{.stats.disk_usage}}
+        </div>
+        <div class="cpanel-stat-item">
+            <strong>Bandwidth:</strong> {{.stats.bandwidth_usage}}
+        </div>
+        <div class="cpanel-stat-item">
+            <strong>Email Accounts:</strong> {{.stats.email_accounts}}
+        </div>
+        <div class="cpanel-stat-item">
+            <strong>Databases:</strong> {{.stats.databases}}
+        </div>
+        <div class="cpanel-stat-item">
+            <strong>Subdomains:</strong> {{.stats.subdomains}}
+        </div>
+        <div class="cpanel-stat-item">
+            <strong>Addon Domains:</strong> {{.stats.addon_domains}}
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="cpanel-container">
+        <!-- Search Bar -->
+        <div class="cpanel-search">
+            <input type="text" id="search-features" placeholder="Search features..." class="cpanel-search-input">
+        </div>
+
+        <!-- Category Sections -->
+        {{range $category, $features := .categories}}
+        {{if $features}}
+        <div class="cpanel-category">
+            <h2 class="cpanel-category-title">{{$category | title}}</h2>
+            <div class="cpanel-features-grid">
+                {{range $features}}
+                <div class="cpanel-feature-card" data-category="{{.Category}}" data-name="{{.Name}}">
+                    <div class="cpanel-feature-icon">
+                        <i class="icon-{{.Icon}}">📁</i>
+                    </div>
+                    <div class="cpanel-feature-content">
+                        <h3>{{.Name}}</h3>
+                        <p>{{.Description}}</p>
+                    </div>
+                    <div class="cpanel-feature-action">
+                        <a href="{{.URL}}" class="cpanel-feature-link">Open</a>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+        {{end}}
+        {{end}}
+
+        <!-- Quick Actions Panel -->
+        <div class="cpanel-quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="cpanel-quick-grid">
+                <div class="cpanel-quick-item">
+                    <h4>Create Email Account</h4>
+                    <form class="cpanel-quick-form" data-action="create_email">
+                        <input type="text" name="email" placeholder="Email address" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit" class="admini-btn admini-btn-primary">Create</button>
+                    </form>
+                </div>
+                <div class="cpanel-quick-item">
+                    <h4>Create Database</h4>
+                    <form class="cpanel-quick-form" data-action="create_database">
+                        <input type="text" name="database_name" placeholder="Database name" required>
+                        <button type="submit" class="admini-btn admini-btn-primary">Create</button>
+                    </form>
+                </div>
+                <div class="cpanel-quick-item">
+                    <h4>Create Subdomain</h4>
+                    <form class="cpanel-quick-form" data-action="create_subdomain">
+                        <input type="text" name="subdomain" placeholder="Subdomain name" required>
+                        <button type="submit" class="admini-btn admini-btn-primary">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="cpanel-recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="cpanel-activity-list">
+                {{range .recent_activity}}
+                <div class="cpanel-activity-item">
+                    <div class="cpanel-activity-icon">🔹</div>
+                    <div class="cpanel-activity-content">
+                        <strong>{{.action}}</strong>: {{.target}}
+                        <span class="cpanel-activity-time">{{.time}}</span>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchInput = document.getElementById('search-features');
+            const featureCards = document.querySelectorAll('.cpanel-feature-card');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                featureCards.forEach(card => {
+                    const name = card.dataset.name.toLowerCase();
+                    const category = card.dataset.category.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (name.includes(searchTerm) || category.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = searchTerm === '' ? 'block' : 'none';
+                    }
+                });
+
+                // Hide/show category sections based on visible features
+                document.querySelectorAll('.cpanel-category').forEach(category => {
+                    const visibleCards = category.querySelectorAll('.cpanel-feature-card[style=""], .cpanel-feature-card:not([style])');
+                    category.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                });
+            });
+
+            // Quick action forms
+            document.querySelectorAll('.cpanel-quick-form').forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    formData.append('action', this.dataset.action);
+                    
+                    fetch('/api/quick-actions', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            alert(data.message);
+                            this.reset();
+                        } else {
+                            alert('Error: ' + data.error);
+                        }
+                    })
+                    .catch(error => {
+                        alert('Error: ' + error.message);
+                    });
+                });
+            });
+
+            // Feature card hover effects
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            console.log('AdminiPanel cPanel interface loaded successfully');
+        });
+    </script>
+</body>
+</html>

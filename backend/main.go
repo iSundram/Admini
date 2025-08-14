@@ -7,7 +7,7 @@ import (
 	"admini/cmd"
 )
 
-// Version information - matches the original binary
+// Version information - matches the original binary but now for Admini
 const (
 	Version = "1.680"
 	BuildID = "93708878506b95312f25ee706f2375d1cede8a90"
