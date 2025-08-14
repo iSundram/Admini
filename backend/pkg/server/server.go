@@ -335,11 +335,11 @@ func (s *Server) handleLoginPost(c *gin.Context) {
 		userLevel := s.getUserLevel(username)
 		switch userLevel {
 		case "admin":
-			c.Redirect(http.StatusFound, "/CMD_ADMIN")
+			c.Redirect(http.StatusFound, "/CMD_ADMIN/")
 		case "reseller":
-			c.Redirect(http.StatusFound, "/CMD_RESELLER")
+			c.Redirect(http.StatusFound, "/CMD_RESELLER/")
 		default:
-			c.Redirect(http.StatusFound, "/CMD_USER")
+			c.Redirect(http.StatusFound, "/CMD_USER/")
 		}
 	} else {
 		c.HTML(http.StatusUnauthorized, "login.html", gin.H{
@@ -557,7 +557,8 @@ func (s *Server) apiAuthMiddleware() gin.HandlerFunc {
 func (s *Server) authenticateUser(username, password string) bool {
 	// Basic authentication - in real implementation, check against user database
 	adminUser := s.config.Get("admin_username")
-	return username == adminUser && password != ""
+	// For demo purposes, accept "admin" / "password" or configured admin with any non-empty password
+	return (username == "admin" && password == "password") || (username == adminUser && password != "")
 }
 
 // Helper function for user levels

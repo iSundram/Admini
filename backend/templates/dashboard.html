@@ -12,11 +12,11 @@
     <div class="admini-header">
         <div class="admini-flex admini-justify-between admini-items-center">
             <div>
-                <h1>{{.panel_name | default "AdminiCore"}}</h1>
+                <h1>{{.panel_name}}</h1>
                 <div class="panel-title">{{.title}}</div>
             </div>
             <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">
-                Welcome, {{.username | default "admin"}} | <a href="/CMD_LOGOUT" style="color: white; text-decoration: underline;">Logout</a>
+                Welcome, {{.username}} | <a href="/CMD_LOGOUT" style="color: white; text-decoration: underline;">Logout</a>
             </div>
         </div>
     </div>
@@ -56,15 +56,15 @@
         <!-- AdminiCore Dashboard -->
         <div class="admini-grid admini-grid-3">
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.total_users | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.total_users }}</div>
                 <div class="admini-stat-label">Total Users</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.total_domains | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.total_domains }}</div>
                 <div class="admini-stat-label">Total Domains</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.server_load | default "0.25"}}</div>
+                <div class="admini-stat-number">{{.stats.server_load }}</div>
                 <div class="admini-stat-label">Server Load</div>
             </div>
         </div>
@@ -76,11 +76,11 @@
                 </div>
                 <div class="admini-card-body">
                     <table class="admini-table">
-                        <tr><td><strong>Hostname:</strong></td><td>{{.system.hostname | default "server.example.com"}}</td></tr>
-                        <tr><td><strong>OS:</strong></td><td>{{.system.os | default "Linux"}}</td></tr>
-                        <tr><td><strong>Kernel:</strong></td><td>{{.system.kernel | default "5.4.0"}}</td></tr>
-                        <tr><td><strong>Admini Version:</strong></td><td>{{.system.admini_version | default "1.680"}}</td></tr>
-                        <tr><td><strong>Uptime:</strong></td><td>{{.system.uptime | default "5 days, 12 hours"}}</td></tr>
+                        <tr><td><strong>Hostname:</strong></td><td>{{.system.hostname }}</td></tr>
+                        <tr><td><strong>OS:</strong></td><td>{{.system.os }}</td></tr>
+                        <tr><td><strong>Kernel:</strong></td><td>{{.system.kernel }}</td></tr>
+                        <tr><td><strong>Admini Version:</strong></td><td>{{.system.admini_version }}</td></tr>
+                        <tr><td><strong>Uptime:</strong></td><td>{{.system.uptime }}</td></tr>
                     </table>
                 </div>
             </div>
@@ -119,15 +119,15 @@
         <!-- AdminiReseller Dashboard -->
         <div class="admini-grid admini-grid-3">
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.my_users | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.my_users }}</div>
                 <div class="admini-stat-label">My Users</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.my_domains | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.my_domains }}</div>
                 <div class="admini-stat-label">My Domains</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.bandwidth_usage | default "0%"}}</div>
+                <div class="admini-stat-number">{{.stats.bandwidth_usage }}</div>
                 <div class="admini-stat-label">Bandwidth Usage</div>
             </div>
         </div>
@@ -149,15 +149,15 @@
         <!-- AdminiPanel (User) Dashboard -->
         <div class="admini-grid admini-grid-3">
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.domains | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.domains }}</div>
                 <div class="admini-stat-label">Domains</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.email_accounts | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.email_accounts }}</div>
                 <div class="admini-stat-label">Email Accounts</div>
             </div>
             <div class="admini-stat-card">
-                <div class="admini-stat-number">{{.stats.databases | default "0"}}</div>
+                <div class="admini-stat-number">{{.stats.databases }}</div>
                 <div class="admini-stat-label">Databases</div>
             </div>
         </div>
@@ -183,11 +183,11 @@
                 </div>
                 <div class="admini-card-body">
                     <table class="admini-table">
-                        <tr><td><strong>Username:</strong></td><td>{{.username | default "user"}}</td></tr>
-                        <tr><td><strong>Package:</strong></td><td>{{.package | default "Standard"}}</td></tr>
-                        <tr><td><strong>Disk Usage:</strong></td><td>{{.usage.disk | default "0 MB"}} / {{.limits.disk | default "1 GB"}}</td></tr>
-                        <tr><td><strong>Bandwidth:</strong></td><td>{{.usage.bandwidth | default "0 MB"}} / {{.limits.bandwidth | default "10 GB"}}</td></tr>
-                        <tr><td><strong>Created:</strong></td><td>{{.created_date | default "2023-01-01"}}</td></tr>
+                        <tr><td><strong>Username:</strong></td><td>{{.username}}</td></tr>
+                        <tr><td><strong>Package:</strong></td><td>{{.package}}</td></tr>
+                        <tr><td><strong>Disk Usage:</strong></td><td>{{.usage.disk}} / {{.limits.disk}}</td></tr>
+                        <tr><td><strong>Bandwidth:</strong></td><td>{{.usage.bandwidth}} / {{.limits.bandwidth}}</td></tr>
+                        <tr><td><strong>Created:</strong></td><td>{{.created_date}}</td></tr>
                     </table>
                 </div>
             </div>
