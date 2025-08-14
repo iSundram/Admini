@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DA_PATH=/home/runner/work/Admini/Admini/backend
+DA_PATH=/usr/local/directadmin
 DA_CONFIG=${DA_PATH}/conf/directadmin.conf
 SERVICES_STATUS=${DA_PATH}/data/admin/services.status
 
@@ -193,18 +193,18 @@ then
 fi
 
 # DA 1.664 rework server tls dns provider config
-ACME_SERVER_CERT_DNS_PROVIDER="$(grep -om1 '^dnsprovider=[^;<>|\ ]*' /home/runner/work/Admini/Admini/backend/conf/ca.dnsprovider 2>/dev/null | cut -d= -f2)"
+ACME_SERVER_CERT_DNS_PROVIDER="$(grep -om1 '^dnsprovider=[^;<>|\ ]*' /usr/local/directadmin/conf/ca.dnsprovider 2>/dev/null | cut -d= -f2)"
 if [ -n "${ACME_SERVER_CERT_DNS_PROVIDER}" ]; then
 	${DA_PATH}/directadmin config-set acme_server_cert_dns_provider "${ACME_SERVER_CERT_DNS_PROVIDER}"
-	sed -i '/^dnsprovider=/d' /home/runner/work/Admini/Admini/backend/conf/ca.dnsprovider
+	sed -i '/^dnsprovider=/d' /usr/local/directadmin/conf/ca.dnsprovider
 fi
-if [ "$(da config-get letsencrypt)" = 1 ] && [ -f "/home/runner/work/Admini/Admini/backend/conf/cacert.pem.creation_time" ]; then
-	ADDITIONAL_DOMAINS="$(openssl x509 -in "/home/runner/work/Admini/Admini/backend/conf/cacert.pem" -noout -ext subjectAltName 2>/dev/null | grep -Po '(?<=DNS:)[^,]*' | grep -Fvx "$(da config-get servername)" | paste -sd,)"
+if [ "$(da config-get letsencrypt)" = 1 ] && [ -f "/usr/local/directadmin/conf/cacert.pem.creation_time" ]; then
+	ADDITIONAL_DOMAINS="$(openssl x509 -in "/usr/local/directadmin/conf/cacert.pem" -noout -ext subjectAltName 2>/dev/null | grep -Po '(?<=DNS:)[^,]*' | grep -Fvx "$(da config-get servername)" | paste -sd,)"
 	if [ -n "${ADDITIONAL_DOMAINS}" ]; then
 		${DA_PATH}/directadmin config-set acme_server_cert_additional_domains "${ADDITIONAL_DOMAINS}"
 	fi
 	${DA_PATH}/directadmin config-set acme_server_cert_enabled 1
-	rm -f "/home/runner/work/Admini/Admini/backend/conf/cacert.pem.creation_time"
+	rm -f "/usr/local/directadmin/conf/cacert.pem.creation_time"
 fi
 
 # DA 1.669 move custom FTP and email password change templates to correct location
@@ -374,7 +374,7 @@ for k in cakey cacert carootcert; do
 		continue
 	fi
 	src=$(grep "^${k}=" "${DA_CONFIG}" | cut -d = -f 2-)
-	dst="/home/runner/work/Admini/Admini/backend/conf/${k}.pem"
+	dst="/usr/local/directadmin/conf/${k}.pem"
 	if [ -f "${src}" ] && [ "${src}" != "${dst}" ]; then
 		cp --force --no-target-directory "${src}" "${dst}"
 	fi

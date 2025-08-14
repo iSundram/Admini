@@ -11,7 +11,7 @@ if [ "${MYUID}" != 0 ]; then
 	exit 0;
 fi
 
-DA_BIN=/home/runner/work/Admini/Admini/backend/directadmin
+DA_BIN=/usr/local/directadmin/directadmin
 
 if [ $# -ne 2 ]; then
 	echo "usage: $0 <domain> <web|mail|all>" 
@@ -69,8 +69,8 @@ if [ ${FOUNDDOMAIN} -eq 0 ]; then
 	exit 1
 fi
 
-DA_USERDIR="/home/runner/work/Admini/Admini/backend/data/users/${USER}"
-DA_CONFDIR="/home/runner/work/Admini/Admini/backend/conf"
+DA_USERDIR="/usr/local/directadmin/data/users/${USER}"
+DA_CONFDIR="/usr/local/directadmin/conf"
 
 if [ ! -d "${DA_USERDIR}" ] && [ "${HOSTNAME}" -eq 0 ]; then
 	echo "${DA_USERDIR} not found, exiting..."

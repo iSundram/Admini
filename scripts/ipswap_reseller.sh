@@ -58,8 +58,8 @@ swapfile()
 	log "$1\t: $OLD_IP -> $NEW_IP";
 }
 
-IPFILE_OLD=/usr/local/directadmin/data/admin/ips/$OLD_IP
-IPFILE_NEW=/usr/local/directadmin/data/admin/ips/$NEW_IP
+IPFILE_OLD=/home/runner/work/Admini/Admini/backend/data/admin/ips/$OLD_IP
+IPFILE_NEW=/home/runner/work/Admini/Admini/backend/data/admin/ips/$NEW_IP
 if [ ! -e $IPFILE_NEW ]; then
 	echo -n "$IPFILE_NEW does not exist.  Exiting... ";
 	exit 3;
@@ -70,7 +70,7 @@ if [ "${IP_STATUS}" = "free" ] || [ "${IP_STATUS}" = "owned" ]; then
 	exit 4;
 fi
 
-ULDDU=/usr/local/directadmin/data/users
+ULDDU=/home/runner/work/Admini/Admini/backend/data/users
 if [ ! -e ${ULDDU}/${RESELLER}/users.list ]; then
 	echo "Reseller ${RESELLER} does not exist.  Exiting... ";
 	exit 5;
@@ -118,12 +118,12 @@ for i in `cat ${ULDDU}/${RESELLER}/users.list && echo "${RESELLER}"`; do
 	for d in `cat ${ULDDU}/$i/domains.list`; do
 	{
 		swapfile ${DB_PATH}/$d.db
-		echo "action=rewrite&value=named&domain=$d" >> /usr/local/directadmin/data/task.queue
+		echo "action=rewrite&value=named&domain=$d" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 
 		for p in `cat ${ULDDU}/$i/domains/$d.pointers | cut -d= -f1 2>/dev/null`; do
 		{
 			swapfile ${DB_PATH}/$p.db
-			echo "action=rewrite&value=named&domain=$p" >> /usr/local/directadmin/data/task.queue
+			echo "action=rewrite&value=named&domain=$p" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 		}
 		done;
 	};
@@ -131,12 +131,12 @@ for i in `cat ${ULDDU}/${RESELLER}/users.list && echo "${RESELLER}"`; do
 };
 done;
 
-echo "action=rewrite&value=ipcount" >> /usr/local/directadmin/data/task.queue
-echo "action=rewrite&value=ips" >> /usr/local/directadmin/data/task.queue
-echo "action=cache&value=showallusers" >> /usr/local/directadmin/data/task.queue
-echo "action=rewrite&value=httpd" >> /usr/local/directadmin/data/task.queue
+echo "action=rewrite&value=ipcount" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+echo "action=rewrite&value=ips" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+echo "action=cache&value=showallusers" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+echo "action=rewrite&value=httpd" >> /home/runner/work/Admini/Admini/backend/data/task.queue
 echo "Runing dataskq..."
-/usr/local/directadmin/dataskq d
+/home/runner/work/Admini/Admini/backend/dataskq d
 
 log "\n*** Done swapping $OLD_IP to $NEW_IP ***\n";
 exit 0;

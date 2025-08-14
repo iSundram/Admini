@@ -10,9 +10,9 @@ DA_ADMIN_PASS=
 
 MYSQL_HOST=localhost
 
-SETUP_TXT=/usr/local/directadmin/conf/setup.txt
-MYSQL_CONF=/usr/local/directadmin/conf/mysql.conf
-MY_CNF=/usr/local/directadmin/conf/my.cnf
+SETUP_TXT=/home/runner/work/Admini/Admini/backend/conf/setup.txt
+MYSQL_CONF=/home/runner/work/Admini/Admini/backend/conf/mysql.conf
+MY_CNF=/home/runner/work/Admini/Admini/backend/conf/my.cnf
 
 TMP_MY_CNF=/root/.tmp_my_cnf
 TMP_SQL=/root/.tmp.sql

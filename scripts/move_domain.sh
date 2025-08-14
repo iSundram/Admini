@@ -128,7 +128,7 @@ update_email_settings() {
 		sed -i -e "s/^${p//./\\.}:.*$/${p}: ${NEW_USER}/" /etc/virtual/domainowners
 		# pointers may also have seprate cert files
 		sed -i -e "s/:${OLD_USER}:${p//./\\.}$/:${NEW_USER}:${p}/" /etc/virtual/snidomains
-	done < <(cut -d= -f1 "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
+	done < <(cut -d= -f1 "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
 
 	#/etc/virtual/domain.com
 	update_email_domain_dir
@@ -166,7 +166,7 @@ update_email_settings() {
 		rm -f "${OLD_MAIL_HOME}/imap/${p}"
 		ln -s "${DOMAIN}"           "${NEW_MAIL_HOME}/imap/${p}"
 		chown -h "${NEW_USER}:mail" "${NEW_MAIL_HOME}/imap/${p}"
-	done < <(cut -d= -f1 "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
+	done < <(cut -d= -f1 "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
 
 	#/var/spool/virtual/domain.com (permissions only)
 	if [ -e "/var/spool/virtual/${DOMAIN}" ]; then
@@ -175,15 +175,15 @@ update_email_settings() {
 
 	#/etc/dovecot/conf/sni/domain.com.conf
 	if [ -s "/etc/dovecot/conf/sni/${DOMAIN}.conf"  ]; then
-		sed -i -e "s#/usr/local/directadmin/data/users/${OLD_USER}/#/usr/local/directadmin/data/users/${NEW_USER}/#g" "/etc/dovecot/conf/sni/${DOMAIN}.conf"
+		sed -i -e "s#/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/#/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/#g" "/etc/dovecot/conf/sni/${DOMAIN}.conf"
 	fi
 
 	#cert inclusions for pointers as well
 	while IFS= read -r p; do
 		if [ -s "/etc/dovecot/conf/sni/${p}.conf"  ]; then
-			sed -i -e "s#/usr/local/directadmin/data/users/${OLD_USER}/#/usr/local/directadmin/data/users/${NEW_USER}/#g" "/etc/dovecot/conf/sni/${p}.conf"
+			sed -i -e "s#/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/#/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/#g" "/etc/dovecot/conf/sni/${p}.conf"
 		fi
-	done < <(cut -d= -f1 "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
+	done < <(cut -d= -f1 "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.pointers")
 }
 
 update_ftp_settings() {
@@ -206,7 +206,7 @@ update_ftp_settings() {
 update_da_settings() {
 	echo "Moving domain data to the ${NEW_USER} user."
 	mv -f -T "${OLD_HOME}/domains/${DOMAIN}" "${NEW_HOME}/domains/${DOMAIN}"
-	mv -f "/usr/local/directadmin/data/users/${OLD_USER}/domains/${DOMAIN}."* "/usr/local/directadmin/data/users/${NEW_USER}/domains/"
+	mv -f "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains/${DOMAIN}."* "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/"
 	echo "Setting ownership for ${DOMAIN} domain."
 	chown -R "${NEW_USER}:${NEW_USER}" "${NEW_HOME}/domains/${DOMAIN}"
 
@@ -216,7 +216,7 @@ update_da_settings() {
 		chgrp apache "${NEW_HOME}/domains/${DOMAIN}/public_html" "${NEW_HOME}/domains/${DOMAIN}/private_html"
 	fi
 
-	if [ -s "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.subdomains.docroot.override" ]; then
+	if [ -s "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.subdomains.docroot.override" ]; then
 		while IFS= read -r line; do
 			SUBDOMAIN=$(cut -f1 -d= <<< "${line}")
 			DOCROOT=$(sed -n -e "s|^${SUBDOMAIN}.*[=&]public_html=\([^&]\+\).*$|\1|p" <<< "${line}")
@@ -240,7 +240,7 @@ update_da_settings() {
 				chmod 750    "${NEW_HOME}${RELATIVE_MOVE_PATH}"
 				chgrp apache "${NEW_HOME}${RELATIVE_MOVE_PATH}"
 			fi
-		done < "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.subdomains.docroot.override"
+		done < "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.subdomains.docroot.override"
 	fi
 
 	if [ -e "${NEW_HOME}/domains/${DOMAIN}/stats" ]; then
@@ -249,22 +249,22 @@ update_da_settings() {
 	fi
 
 	echo "Removing domain from ${OLD_USER} user."
-	sed -i -e "\#^${DOMAIN//./\\.}\$#d" "/usr/local/directadmin/data/users/${OLD_USER}/domains.list"
+	sed -i -e "\#^${DOMAIN//./\\.}\$#d" "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains.list"
 
 	echo "Adding domain to ${NEW_USER} user."
-	echo "${DOMAIN}" >> "/usr/local/directadmin/data/users/${NEW_USER}/domains.list"
-	sed -i -e "s#/usr/local/directadmin/data/users/${OLD_USER}/#/usr/local/directadmin/data/users/${NEW_USER}/#g" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}."* 2> /dev/null
-	sed -i -e "s#${OLD_HOME}/#${NEW_HOME}/#g" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}."* 2> /dev/null
-	if [ -d "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.routes" ]; then
-		sed -i -e "s#${OLD_HOME}/#${NEW_HOME}/#g" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.routes/"* 2> /dev/null
+	echo "${DOMAIN}" >> "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains.list"
+	sed -i -e "s#/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/#/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/#g" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}."* 2> /dev/null
+	sed -i -e "s#${OLD_HOME}/#${NEW_HOME}/#g" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}."* 2> /dev/null
+	if [ -d "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.routes" ]; then
+		sed -i -e "s#${OLD_HOME}/#${NEW_HOME}/#g" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.routes/"* 2> /dev/null
 	fi
 
 	#ensure the user.conf doesn't have the old domain. No need for new User, as they'd already have a default.
-	if grep -q -F -x "domain=${DOMAIN}" "/usr/local/directadmin/data/users/${OLD_USER}/user.conf"; then
+	if grep -q -F -x "domain=${DOMAIN}" "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/user.conf"; then
 		#figure out a new default domain.. 
-		DEFAULT_DOMAIN=$(head -n1 "/usr/local/directadmin/data/users/${OLD_USER}/domains.list")
+		DEFAULT_DOMAIN=$(head -n1 "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains.list")
 		#may be filled.. may be empty.
-		sed -i -e "s/^domain=${DOMAIN//./\\.}$/domain=${DEFAULT_DOMAIN}/" "/usr/local/directadmin/data/users/${OLD_USER}/user.conf"
+		sed -i -e "s/^domain=${DOMAIN//./\\.}$/domain=${DEFAULT_DOMAIN}/" "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/user.conf"
 
 		#if the new default domain exists, reset the ~/public_html link.
 		if [ -h "${OLD_HOME}/public_html" ] && [ "${DEFAULT_DOMAIN}" != "" ] && [ -d "${OLD_HOME}/domains/${DEFAULT_DOMAIN}/public_html" ]; then
@@ -275,25 +275,25 @@ update_da_settings() {
 	fi
 
 	echo "Changing domain owner."
-	sed -i -e "s/username=${OLD_USER}/username=${NEW_USER}/g" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.conf"
+	sed -i -e "s/username=${OLD_USER}/username=${NEW_USER}/g" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.conf"
 
 	#ip swapping, if needed.
 	#empty the domain.ip_list, except 1 IP.
-	OLD_IP=$(grep "^ip=" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.conf" | cut -d= -f2)
-	NEW_IP=$(grep "^ip=" "/usr/local/directadmin/data/users/${NEW_USER}/user.conf"              | cut -d= -f2)
+	OLD_IP=$(grep "^ip=" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.conf" | cut -d= -f2)
+	NEW_IP=$(grep "^ip=" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/user.conf"              | cut -d= -f2)
 	if [ "${OLD_IP}" != "${NEW_IP}" ]; then
 		echo "The old IP (${OLD_IP}) does not match the new IP (${NEW_IP}). Swapping..."
 		#./ipswap.sh <oldip> <newip> [<file>]
-		/usr/local/directadmin/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.conf"
-		/usr/local/directadmin/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.ftp"
+		/home/runner/work/Admini/Admini/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.conf"
+		/home/runner/work/Admini/Admini/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.ftp"
 
 		if [ -e /etc/debian_version ]; then
-			/usr/local/directadmin/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/etc/bind/${DOMAIN}.db"
+			/home/runner/work/Admini/Admini/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/etc/bind/${DOMAIN}.db"
 		else
-			/usr/local/directadmin/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/var/named/${DOMAIN}.db"
+			/home/runner/work/Admini/Admini/scripts/ipswap.sh "${OLD_IP}" "${NEW_IP}" "/var/named/${DOMAIN}.db"
 		fi
 
-		echo "${NEW_IP}" > "/usr/local/directadmin/data/users/${NEW_USER}/domains/${DOMAIN}.ip_list"
+		echo "${NEW_IP}" > "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains/${DOMAIN}.ip_list"
 
 		#update the serial:
 		da taskq --run "action=rewrite&value=named&domain=${DOMAIN}"
@@ -324,7 +324,7 @@ update_da_settings() {
 
 	#this is needed to update "show all users" cache.
 	da taskq --run "action=cache&value=showallusers"
-	#this is needed to rewrite /usr/local/directadmin/data/users/USERS/httpd.conf
+	#this is needed to rewrite /home/runner/work/Admini/Admini/backend/data/users/USERS/httpd.conf
 	da taskq --run "action=rewrite&value=httpd&user=${OLD_USER}"
 	da taskq --run "action=rewrite&value=httpd&user=${NEW_USER}"
 }
@@ -341,8 +341,8 @@ update_awstats() {
 }
 
 doChecks() {
-	if [ ! -e "/usr/local/directadmin/data/users/${OLD_USER}/domains.list" ]; then
-		echo "File '/usr/local/directadmin/data/users/${OLD_USER}/domains.list' does not exist. Can not continue."
+	if [ ! -e "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains.list" ]; then
+		echo "File '/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains.list' does not exist. Can not continue."
 		exit 1
 	fi
 
@@ -361,12 +361,12 @@ doChecks() {
 		exit 1
 	fi
 
-	if [ ! -e "/usr/local/directadmin/data/users/${NEW_USER}/domains.list" ]; then
-		echo "File '/usr/local/directadmin/data/users/${NEW_USER}/domains.list' does not exist. Can not continue."
+	if [ ! -e "/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains.list" ]; then
+		echo "File '/home/runner/work/Admini/Admini/backend/data/users/${NEW_USER}/domains.list' does not exist. Can not continue."
 		exit 1
 	fi
 
-	if ! grep -q -F -x "${DOMAIN}" "/usr/local/directadmin/data/users/${OLD_USER}/domains.list"; then
+	if ! grep -q -F -x "${DOMAIN}" "/home/runner/work/Admini/Admini/backend/data/users/${OLD_USER}/domains.list"; then
 		echo "Domain ${DOMAIN} is not owned by ${OLD_USER} user."
 		exit 1
 	fi

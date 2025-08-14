@@ -9,9 +9,9 @@ Wants=network-online.target
 
 [Service]
 Type=notify
-ExecStart=/home/runner/work/Admini/Admini/backend/directadmin server --syslog
+ExecStart=/usr/local/directadmin/directadmin server --syslog
 ExecReload=/bin/kill -HUP $MAINPID
-WorkingDirectory=/home/runner/work/Admini/Admini/backend
+WorkingDirectory=/usr/local/directadmin
 LimitNOFILE=524288
 Restart=always
 StartLimitInterval=0

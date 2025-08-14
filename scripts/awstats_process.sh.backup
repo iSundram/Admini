@@ -40,10 +40,10 @@ fi
 
 #AWSTATS_MODE=1 hard link log files, readble by User
 #AWSTATS_MODE=2 full copies of logs, readble by User
-AWSTATS_MODE=`/home/runner/work/Admini/Admini/backend/directadmin c | grep '^awstats=' | cut -d= -f2`
+AWSTATS_MODE=`/usr/local/directadmin/directadmin c | grep '^awstats=' | cut -d= -f2`
 if [ "${AWSTATS_MODE}" = "0" ] || [ "${AWSTATS_MODE}" = "" ] || [ "${AWSTATS_MODE}" -gt 2 ]; then
 	echo "awstats not enabled from:";
-	echo "/home/runner/work/Admini/Admini/backend/directadmin c | grep '^awstats='";
+	echo "/usr/local/directadmin/directadmin c | grep '^awstats='";
 	echo "awstats=${AWSTATS_MODE}";
 	exit 17
 fi
@@ -72,10 +72,10 @@ if [ "$UHOME" = "" ]; then
 fi
 
 HTTPD=httpd
-if [ "`/home/runner/work/Admini/Admini/backend/directadmin c | grep ^nginx= | cut -d= -f2`" -eq 1 ]; then
+if [ "`/usr/local/directadmin/directadmin c | grep ^nginx= | cut -d= -f2`" -eq 1 ]; then
 	HTTPD=nginx
 fi
-if [ "`/home/runner/work/Admini/Admini/backend/directadmin c | grep ^nginx_proxy= | cut -d= -f2`" -eq 1 ]; then
+if [ "`/usr/local/directadmin/directadmin c | grep ^nginx_proxy= | cut -d= -f2`" -eq 1 ]; then
 	HTTPD=nginx
 fi
 
@@ -238,7 +238,7 @@ convert_awstast_to_user()
 	
 	run_as_user "/bin/mv ${STATS_DIR_USER} ${STATS_DIR}"
 
-	echo "action=delete&value=secure_disposal&user=${USER}&path=${STATS_DIR}.old" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+	echo "action=delete&value=secure_disposal&user=${USER}&path=${STATS_DIR}.old" >> /usr/local/directadmin/data/task.queue
 }
 
 #####################################################
@@ -395,7 +395,7 @@ if [ "${ADD_CGI}" -eq 1 ]; then
 	fi
 
 	EXECCGI=1;
-	DC=/home/runner/work/Admini/Admini/backend/data/users/${USER}/domains/${TOP_DOMAIN}.conf
+	DC=/usr/local/directadmin/data/users/${USER}/domains/${TOP_DOMAIN}.conf
 	if [ -s ${DC} ]; then
 		C=`grep -c "^cgi=OFF" $DC`
 		if [ "${C}" -gt 0 ]; then
@@ -526,7 +526,7 @@ fi
 
 if [ "${CLEAR_AWSTATS_OLD}" = "1" ]; then
 	echo "Clearing ${STATS_DIR} via task.queue. This will run in the background.";
-	echo "action=delete&value=secure_disposal&user=${USER}&path=${STATS_DIR}.old" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+	echo "action=delete&value=secure_disposal&user=${USER}&path=${STATS_DIR}.old" >> /usr/local/directadmin/data/task.queue
 fi
 
 exit $RET;

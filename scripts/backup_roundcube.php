@@ -1,4 +1,4 @@
-#!/usr/local/bin/php -c/usr/local/directadmin/scripts/php_clean.ini
+#!/usr/local/bin/php -c/home/runner/work/Admini/Admini/scripts/php_clean.ini
 <?php
 
 $version = 0.1;
@@ -34,7 +34,7 @@ $domain = getenv("domain");				//Get all email users from this domain.
 $system_username = getenv("username");	//Also get this single system account
 $xml_file = getenv("xml_file");			//and save all info to this file.
 
-$mysql_config_file = "/usr/local/directadmin/conf/mysql.conf";
+$mysql_config_file = "/home/runner/work/Admini/Admini/backend/conf/mysql.conf";
 
 //****************************************************************
 //****************************************************************

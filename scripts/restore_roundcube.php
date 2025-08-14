@@ -1,4 +1,4 @@
-#!/usr/local/bin/php -c/usr/local/directadmin/scripts/php_clean.ini
+#!/usr/local/bin/php -c/home/runner/work/Admini/Admini/scripts/php_clean.ini
 <?php
 
 $version = 0.1;
@@ -87,17 +87,17 @@ if ($high_access_connection)
 {
 	if (version_compare(PHP_VERSION, '5.3.0', '<'))
 	{
-		$mysql_conf = @parse_ini_file("/usr/local/directadmin/conf/mysql.conf", false);
+		$mysql_conf = @parse_ini_file("/home/runner/work/Admini/Admini/backend/conf/mysql.conf", false);
 	}
 	else
 	{
-		$mysql_conf = @parse_ini_file("/usr/local/directadmin/conf/mysql.conf", false, INI_SCANNER_RAW);
+		$mysql_conf = @parse_ini_file("/home/runner/work/Admini/Admini/backend/conf/mysql.conf", false, INI_SCANNER_RAW);
 	}
 }
 
 if ($high_access_connection && $mysql_conf && strlen($mysql_conf['passwd']) > 4)
 {
-	$mysql_conf = parse_ini_file("/usr/local/directadmin/conf/mysql.conf");
+	$mysql_conf = parse_ini_file("/home/runner/work/Admini/Admini/backend/conf/mysql.conf");
 	$mysql_user = $mysql_conf['user'];
 	$mysql_pass = $mysql_conf['passwd'];
 	$mysql_host = 'localhost';

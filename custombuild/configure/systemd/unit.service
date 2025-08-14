@@ -19,7 +19,7 @@ LimitNOFILE=655350
 Type=simple
 Environment="UNITD_OPTIONS=--log /var/log/unit/unit.log --pid /var/run/unit/unit.pid"
 ExecStart=/usr/sbin/unitd $UNITD_OPTIONS --no-daemon
-ExecStartPost=/usr/local/directadmin/custombuild/configure/unit/unit_checks.sh
+ExecStartPost=/home/runner/work/Admini/Admini/backend/custombuild/configure/unit/unit_checks.sh
 ExecReload=
 RuntimeDirectory=unit
 RuntimeDirectoryMode=0755

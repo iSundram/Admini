@@ -23,8 +23,8 @@ if [ -x ${VMSTAT} ]; then
 fi
 
 if [ "$(pgrep -c -x 'mysqld|mariadbd')" -gt 0 ]; then
-	DA_MYSQL=/usr/local/directadmin/conf/mysql.conf
-	DA_MY_CNF=/usr/local/directadmin/conf/my.cnf
+	DA_MYSQL=/home/runner/work/Admini/Admini/backend/conf/mysql.conf
+	DA_MY_CNF=/home/runner/work/Admini/Admini/backend/conf/my.cnf
 	if [ -s $DA_MYSQL ] && [ "$(grep -m1 -c -e "^host=" ${DA_MYSQL})" -gt "0" ]; then
 		MYSQLHOST=$(grep -m1 "^host=" ${DA_MYSQL} | cut -d= -f2)
 	else

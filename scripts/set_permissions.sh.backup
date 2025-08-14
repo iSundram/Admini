@@ -13,7 +13,7 @@ SAVE_LOG=1;
 LOG=/var/log/directadmin/set_perm.log
 ERRLOG=/var/log/directadmin/set_perm.err.log
 
-DAPATH=/home/runner/work/Admini/Admini/backend
+DAPATH=/usr/local/directadmin
 
 RT_GRP="root"
 
@@ -127,7 +127,7 @@ safe_set_file()
 		fi
 	fi
 
-	/home/runner/work/Admini/Admini/backend/directadmin taskq --debug 200 --run "action=set_permissions&from=$1&run_as=$2&path=$3&chown=$4${SAFE_RECURSIVE}${SAFE_CHMOD}"
+	/usr/local/directadmin/directadmin taskq --debug 200 --run "action=set_permissions&from=$1&run_as=$2&path=$3&chown=$4${SAFE_RECURSIVE}${SAFE_CHMOD}"
 }
 
 ###########################################
@@ -193,7 +193,7 @@ set_user_perm()
 		find "${DIR}/skin_customizations" -type f -exec chmod 600 {} \; -exec chown diradmin:diradmin {} \;
 	fi
 
-	SAC=`/home/runner/work/Admini/Admini/backend/directadmin c |grep '^secure_access_group=' | cut -d= -f2`
+	SAC=`/usr/local/directadmin/directadmin c |grep '^secure_access_group=' | cut -d= -f2`
 	if [ "${SAC}" = "" ]; then
 		SAC=mail
 	fi
@@ -330,8 +330,8 @@ user_homes()
 	done
 
 	#reset for secure_access_group
-	if grep -q secure_access_group /home/runner/work/Admini/Admini/backend/conf/directadmin.conf; then
-		echo "action=rewrite&value=secure_access_group" >> /home/runner/work/Admini/Admini/backend/data/task.queue
+	if grep -q secure_access_group /usr/local/directadmin/conf/directadmin.conf; then
+		echo "action=rewrite&value=secure_access_group" >> /usr/local/directadmin/data/task.queue
 	fi
 }
 
@@ -450,7 +450,7 @@ set_domaindir()
 }
 
 set_domaindirs() {
-	for user in `ls /home/runner/work/Admini/Admini/backend/data/users`; do
+	for user in `ls /usr/local/directadmin/data/users`; do
 	{
 		for domain in `grep ": $user" /etc/virtual/domainowners | cut -d: -f1`; do
 		{
@@ -477,8 +477,8 @@ set_dovecot()
 			safe_set_file $UHOME $i $UHOME/imap $i:mail '' 770
 		fi
 
-		if [ -s /home/runner/work/Admini/Admini/backend/data/users/${i}/domains.list ]; then
-			for domain in `cat /home/runner/work/Admini/Admini/backend/data/users/${i}/domains.list`; do {
+		if [ -s /usr/local/directadmin/data/users/${i}/domains.list ]; then
+			for domain in `cat /usr/local/directadmin/data/users/${i}/domains.list`; do {
 				cat /etc/virtual/${domain}/passwd | cut -d: -f6 | sort | uniq | while read line; do {
 					if [ ! -d ${line}/domains ]; then
 						safe_set_file auto $i $line $i:mail '' 770

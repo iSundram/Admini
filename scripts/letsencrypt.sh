@@ -8,9 +8,9 @@ DNS_SERVER="8.8.8.8"
 DNS6_SERVER="2001:4860:4860::8888"
 # Fallback DNS server
 DA_IPV6=false
-LEGO_DATA_PATH=/usr/local/directadmin/data/.lego
+LEGO_DATA_PATH=/home/runner/work/Admini/Admini/backend/data/.lego
 WELLKNOWN_PATH=/var/www/html/.well-known/acme-challenge
-SERVER_CERT_DNSPROVIDER_ENV=/usr/local/directadmin/conf/ca.dnsprovider
+SERVER_CERT_DNSPROVIDER_ENV=/home/runner/work/Admini/Admini/backend/conf/ca.dnsprovider
 DNS_SERVERS=( "8.8.8.8" "1.1.1.1" "2001:4860:4860::8888" "2606:4700:4700::1111")
 
 if [ "$(id -u)" != "0" ]; then
@@ -148,7 +148,7 @@ issue_lego_cert() {
 	local domains=("${@:4}")   # example.com *.example.com
 
 	local email
-	email=$(sed -n 's/^email=\([^,]*\).*$/\1/p' "/usr/local/directadmin/data/users/$(da admin)/user.conf" 2>/dev/null)
+	email=$(sed -n 's/^email=\([^,]*\).*$/\1/p' "/home/runner/work/Admini/Admini/backend/data/users/$(da admin)/user.conf" 2>/dev/null)
 	if [ -z "${email}" ]; then
 		email="admin@$(da config-get servername)"
 	fi
@@ -178,7 +178,7 @@ issue_lego_cert() {
 install_file() {
 	local file_mode=$1  # 640
 	local file_owner=$2 # diradmin:access
-	local src=$3        # /usr/local/directadmin/conf/cacert.pem.combined
+	local src=$3        # /home/runner/work/Admini/Admini/backend/conf/cacert.pem.combined
 	local dst=$4        # /etc/exim.cert
 
 	local tmp_file
@@ -211,9 +211,9 @@ install_file() {
 
 install_lego_cert() {
 	local name=$1       # example.net
-	local dst_key=$2    # /usr/local/directadmin/data/users/{user}/domains/{name}.key
-	local dst_crt=$3    # /usr/local/directadmin/data/users/{user}/domains/{name}.cert
-	local dst_ca_crt=$4 # /usr/local/directadmin/data/users/{user}/domains/{name}.cacert
+	local dst_key=$2    # /home/runner/work/Admini/Admini/backend/data/users/{user}/domains/{name}.key
+	local dst_crt=$3    # /home/runner/work/Admini/Admini/backend/data/users/{user}/domains/{name}.cert
+	local dst_ca_crt=$4 # /home/runner/work/Admini/Admini/backend/data/users/{user}/domains/{name}.cacert
 
 	local src_key="${LEGO_DATA_PATH}/certificates/${name}.key"
 	local src_crt="${LEGO_DATA_PATH}/certificates/${name}.crt"
@@ -255,14 +255,14 @@ command_revoke() {
 	local provider
 	local email
 
-	email=$(sed -n 's/^email=\([^,]*\).*$/\1/p' "/usr/local/directadmin/data/users/$(da admin)/user.conf" 2>/dev/null)
+	email=$(sed -n 's/^email=\([^,]*\).*$/\1/p' "/home/runner/work/Admini/Admini/backend/data/users/$(da admin)/user.conf" 2>/dev/null)
 	if [ -z "${email}" ]; then
 		email="admin@$(da config-get servername)"
 	fi
 
 	user=$(grep -m 1 "^${domain//./\\.}: " /etc/virtual/domainowners | cut -d ' ' -f 2)
-	local domain_conf_file="/usr/local/directadmin/data/users/${user}/domains/${domain}.conf"
-	local domain_ssl_file="/usr/local/directadmin/data/users/${user}/domains/${domain}.ssl"
+	local domain_conf_file="/home/runner/work/Admini/Admini/backend/data/users/${user}/domains/${domain}.conf"
+	local domain_ssl_file="/home/runner/work/Admini/Admini/backend/data/users/${user}/domains/${domain}.ssl"
 	if [ -n "${user}" ] && [ -s "${domain_conf_file}" ]; then
 		provider=$(grep -m1 ^acme_provider= "${domain_conf_file}" | cut -d= -f2)
 	elif [ -n "${user}" ] && [ -s "${domain_ssl_file}" ]; then
@@ -392,7 +392,7 @@ command_do_everything() {
 				PARENT_DOMAIN_NAME_FOUND=$(echo "${TDOMAIN}" | cut -d'.' -f${CHECK_FIELD}-)
 				PARENT_DOMAIN_ESCAPED=${PARENT_DOMAIN_NAME_FOUND//./\\.}
 				PARENT_DOMAIN_OWNER_USER=$(grep -m1 "^${PARENT_DOMAIN_ESCAPED}:" /etc/virtual/domainowners | cut -d' ' -f2)
-				if [ -s "/usr/local/directadmin/data/users/${PARENT_DOMAIN_OWNER_USER}/domains/${PARENT_DOMAIN_NAME_FOUND}.subdomains" ] && grep -q "^${CHILD_NAME}$" "/usr/local/directadmin/data/users/${PARENT_DOMAIN_OWNER_USER}/domains/${PARENT_DOMAIN_NAME_FOUND}.subdomains"; then
+				if [ -s "/home/runner/work/Admini/Admini/backend/data/users/${PARENT_DOMAIN_OWNER_USER}/domains/${PARENT_DOMAIN_NAME_FOUND}.subdomains" ] && grep -q "^${CHILD_NAME}$" "/home/runner/work/Admini/Admini/backend/data/users/${PARENT_DOMAIN_OWNER_USER}/domains/${PARENT_DOMAIN_NAME_FOUND}.subdomains"; then
 					DOMAIN_NAME_FOUND=${TDOMAIN}
 					DOMAIN_ESCAPED=${DOMAIN_NAME_FOUND//./\\.}
 					USER=${PARENT_DOMAIN_OWNER_USER}
@@ -460,8 +460,8 @@ command_do_everything() {
 		exit 1
 	fi
 
-	DA_USERDIR="/usr/local/directadmin/data/users/${USER}"
-	DA_CONFDIR="/usr/local/directadmin/conf"
+	DA_USERDIR="/home/runner/work/Admini/Admini/backend/data/users/${USER}"
+	DA_CONFDIR="/home/runner/work/Admini/Admini/backend/conf"
 
 	if [ ! -d "${DA_USERDIR}" ] && [ "${HOSTNAME}" -eq 0 ]; then
 		echo "${DA_USERDIR} not found, exiting..."
@@ -476,13 +476,13 @@ command_do_everything() {
 		if [ -s "${DNSPROVIDER_FALLBACK}" ]; then
 			if grep -m1 -q "^dnsprovider=inherit-creator$" "${DNSPROVIDER_FALLBACK}"; then
 				CREATOR=$(grep -m1 '^creator=' "${DA_USERDIR}/user.conf" | cut -d= -f2)
-				CREATOR_DNSPROVIDER="/usr/local/directadmin/data/users/${CREATOR}/dnsprovider.conf"
+				CREATOR_DNSPROVIDER="/home/runner/work/Admini/Admini/backend/data/users/${CREATOR}/dnsprovider.conf"
 				if [ -s "${CREATOR_DNSPROVIDER}" ]; then
 					DNSPROVIDER_FALLBACK="${CREATOR_DNSPROVIDER}"
 				fi
 			elif grep -m1 -q "^dnsprovider=inherit-global$" "${DNSPROVIDER_FALLBACK}"; then
-				if [ -s "/usr/local/directadmin/data/admin/dnsprovider.conf" ]; then
-					DNSPROVIDER_FALLBACK="/usr/local/directadmin/data/admin/dnsprovider.conf"
+				if [ -s "/home/runner/work/Admini/Admini/backend/data/admin/dnsprovider.conf" ]; then
+					DNSPROVIDER_FALLBACK="/home/runner/work/Admini/Admini/backend/data/admin/dnsprovider.conf"
 				fi
 			fi
 		fi
@@ -491,9 +491,9 @@ command_do_everything() {
 		CACERT="${DA_USERDIR}/domains/${DOMAIN_NAME_FOUND}.cacert"
 	else
 		DNSPROVIDER_FALLBACK="${DA_CONFDIR}/ca.dnsprovider"
-		KEY=/usr/local/directadmin/conf/cakey.pem
-		CERT=/usr/local/directadmin/conf/cacert.pem
-		CACERT=/usr/local/directadmin/conf/carootcert.pem
+		KEY=/home/runner/work/Admini/Admini/backend/conf/cakey.pem
+		CERT=/home/runner/work/Admini/Admini/backend/conf/cacert.pem
+		CACERT=/home/runner/work/Admini/Admini/backend/conf/carootcert.pem
 	fi
 
 	if [ -s "${CERT}" ] && [ "${action}" = "renew" ]; then
@@ -535,7 +535,7 @@ command_do_everything() {
 		echo "Found wildcard domain name and http challenge type, switching to dns-01 validation."
 		DNSPROVIDER_NAME="exec"
 		CHALLENGETYPE="dns"
-		export EXEC_PATH=/usr/local/directadmin/scripts/letsencrypt.sh
+		export EXEC_PATH=/home/runner/work/Admini/Admini/scripts/letsencrypt.sh
 	fi
 	if [ "${CHALLENGETYPE}" = "http" ]; then
 		RESOLVING_DOMAINS=""

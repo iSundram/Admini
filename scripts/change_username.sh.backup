@@ -7,9 +7,9 @@
 VERBOSE=1
 
 SYSTEM_USER_TO_VIRTUAL_PASSWD=0
-DA_BIN=/home/runner/work/Admini/Admini/backend/directadmin
-TASKQ=/home/runner/work/Admini/Admini/backend/data/task.queue
-DA_DATA_USERS=/home/runner/work/Admini/Admini/backend/data/users
+DA_BIN=/usr/local/directadmin/directadmin
+TASKQ=/usr/local/directadmin/data/task.queue
+DA_DATA_USERS=/usr/local/directadmin/data/users
 PURE_PW=/usr/bin/pure-pw
 
 if [ ! -s "${DA_BIN}" ]; then
@@ -231,7 +231,7 @@ email_swap()
 			MAIL_LOCATION=`grep "^$1:" /etc/virtual/$i/passwd | cut -d: -f6 | perl -p0 -e "s|$1$|$2|g"`
 
 			if [ -z "${MAIL_LOCATION}" ] || [ ! -d "${MAIL_LOCATION}" ]; then
-				MAIL_FOLDER=`/home/runner/work/Admini/Admini/backend/directadmin c | grep '^mail_partition=' | cut -d= -f2`
+				MAIL_FOLDER=`/usr/local/directadmin/directadmin c | grep '^mail_partition=' | cut -d= -f2`
                 MAIL_LOCATION=${NHOME}
                 if [ -z "${MAIL_FOLDER}" ]; then
                     MAIL_FOLDER=${NHOME}/imap/${i}/${1}
@@ -355,7 +355,7 @@ httpd_swap()
 {
 	#/etc/httpd/conf/httpd.conf
 	#/etc/httpd/conf/ips.conf
-	#/home/runner/work/Admini/Admini/backend/data/users/$1/httpd.conf
+	#/usr/local/directadmin/data/users/$1/httpd.conf
 	
 	if [ ! -s /etc/httpd/conf/httpd.conf ]; then
 		return;
@@ -403,19 +403,19 @@ mysql_swap()
 	
 	
 	#use the change_database_username.sh script.
-	MYSQL_CONF=/home/runner/work/Admini/Admini/backend/conf/mysql.conf
+	MYSQL_CONF=/usr/local/directadmin/conf/mysql.conf
 	MYSQL_USER=`cat $MYSQL_CONF | grep user | cut -d= -f2`
 	MYSQL_PASS=`cat $MYSQL_CONF | grep passwd | cut -d= -f2`
 	DBHOST=localhost
 	if [ `grep -c ^host= $MYSQL_CONF` -gt 0 ]; then
 		DBHOST=`cat $MYSQL_CONF | grep ^host= | cut -d= -f2`
 	fi
-	VERBOSE=$VERBOSE DBUSER="$MYSQL_USER" DBPASS="$MYSQL_PASS" DBHOST="$DBHOST" USERNAME="$1" NEWUSERNAME="$2" /usr/local/bin/php -c /home/runner/work/Admini/Admini/scripts/php_clean.ini /home/runner/work/Admini/Admini/scripts/change_database_username.php
+	VERBOSE=$VERBOSE DBUSER="$MYSQL_USER" DBPASS="$MYSQL_PASS" DBHOST="$DBHOST" USERNAME="$1" NEWUSERNAME="$2" /usr/local/bin/php -c /usr/local/directadmin/scripts/php_clean.ini /usr/local/directadmin/scripts/change_database_username.php
 }
 
 mysql_swap_in_public_html()
 {
-	MY_CNF=/home/runner/work/Admini/Admini/backend/conf/my.cnf
+	MY_CNF=/usr/local/directadmin/conf/my.cnf
 	
 	#export -f mysql_swap_db_as_user
 	for database_name in `mysql --defaults-extra-file=${MY_CNF} -e "SHOW DATABASES LIKE '${2}_%';" -sss`; do {
@@ -463,8 +463,8 @@ da_swap()
 	
 	FULL_HTTP_REWRITE=0
 	if [ -e ${DA_DATA_USERS}/$1/reseller.conf ]; then
-		generic_swap $1 $2 /home/runner/work/Admini/Admini/backend/data/admin/reseller.list
-		TEMP="/usr/bin/perl -pi -e 's#reseller=${1}\$#reseller=${2}#g' /home/runner/work/Admini/Admini/backend/data/admin/ips/*";
+		generic_swap $1 $2 /usr/local/directadmin/data/admin/reseller.list
+		TEMP="/usr/bin/perl -pi -e 's#reseller=${1}\$#reseller=${2}#g' /usr/local/directadmin/data/admin/ips/*";
 		eval $TEMP;
 		
 		#change the creator for all accounts we've made.
@@ -478,20 +478,20 @@ da_swap()
 		#now check to see if we are an admin too.  If so, change any resellers/admins who have us as their creator.
 		TYPE=`grep usertype= ${DA_DATA_USERS}/$1/user.conf | cut -d= -f2`
 		if [ "$TYPE" = "admin" ]; then
-			for i in `cat /home/runner/work/Admini/Admini/backend/data/admin/reseller.list; cat /home/runner/work/Admini/Admini/backend/data/admin/admin.list`; do
+			for i in `cat /usr/local/directadmin/data/admin/reseller.list; cat /usr/local/directadmin/data/admin/admin.list`; do
 			{
 				TEMP="/usr/bin/perl -pi -e 's#creator=${1}\$#creator=${2}#g' ${DA_DATA_USERS}/$i/user.conf";
 				eval $TEMP;
 			};
 			done;
 			
-			generic_swap $1 $2 /home/runner/work/Admini/Admini/backend/data/admin/admin.list			
+			generic_swap $1 $2 /usr/local/directadmin/data/admin/admin.list			
 		fi
 
 		#to be safe, rewrite the whole pile with the updated creator, in case anyone is suspended.
 		FULL_HTTP_REWRITE=1
 	fi
-	TEMP="/usr/bin/perl -pi -e 's#value=${1}\$#value=${2}#g' /home/runner/work/Admini/Admini/backend/data/admin/ips/*";
+	TEMP="/usr/bin/perl -pi -e 's#value=${1}\$#value=${2}#g' /usr/local/directadmin/data/admin/ips/*";
 	eval $TEMP;
 
 	sed -i -e "s/^username=${1}\$/username=${2}/g" "${DA_DATA_USERS}/$1/user.conf";

@@ -54,7 +54,7 @@ exec bwrap \
       --bind-try     /tmp/mysql.sock               /tmp/mysql.sock \
       --bind-try     /var/lib/mysql/mysql.sock     /tmp/mysql.sock \
       --ro-bind      /usr                          /usr \
-      --ro-bind-try  /usr/local/directadmin/shared/sendmail /usr/sbin/exim \
+      --ro-bind-try  /home/runner/work/Admini/Admini/backend/shared/sendmail /usr/sbin/exim \
       --tmpfs                                      /usr/lib/modules \
       --tmpfs                                      /usr/lib/systemd \
       --dir                                        /var \

@@ -16,9 +16,9 @@ $ignore_errors = 0;		//power through at your own risk
 
 $exit_code = 0;
 
-$rename_database_sh = '/usr/local/directadmin/scripts/rename_database.sh';
-if (file_exists('/usr/local/directadmin/scripts/custom/rename_database.sh'))
-	$rename_database_sh = '/usr/local/directadmin/scripts/custom/rename_database.sh';
+$rename_database_sh = '/home/runner/work/Admini/Admini/scripts/rename_database.sh';
+if (file_exists('/home/runner/work/Admini/Admini/scripts/custom/rename_database.sh'))
+	$rename_database_sh = '/home/runner/work/Admini/Admini/scripts/custom/rename_database.sh';
 
 if ($username == "" || $username == "root" || $username == "mysql")
 {
