@@ -93,7 +93,7 @@ func (s *Server) handleSystemInfo(c *gin.Context) {
 			"hostname": "server.example.com",
 			"os": "CentOS 8",
 			"kernel": "4.18.0",
-			"directadmin_version": "1.680",
+			"admini_version": "1.680",
 			"php_version": "8.1.0",
 			"mysql_version": "8.0.30",
 			"apache_version": "2.4.53",

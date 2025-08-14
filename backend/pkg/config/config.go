@@ -119,7 +119,7 @@ func (c *Config) PrintAll() {
 	c.mu.RLock()
 	defer c.mu.RUnlock()
 	
-	fmt.Println("DirectAdmin Configuration:")
+	fmt.Println("Admini Configuration:")
 	fmt.Println("==========================")
 	for key, value := range c.values {
 		fmt.Printf("%s=%s\n", key, value)

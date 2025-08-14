@@ -1,6 +1,6 @@
-# DirectAdmin Go Implementation
+# Admini Control Panel - Go Implementation
 
-This directory contains the Go source code implementation of DirectAdmin, reverse-engineered from the original binary.
+This directory contains the Go source code implementation of Admini, a comprehensive web hosting control panel system.
 
 ## Structure
 
@@ -112,7 +112,7 @@ The implementation follows the same architectural patterns as the original Direc
 ## Compatibility
 
 This Go implementation maintains compatibility with:
-- Original DirectAdmin configuration files
+- Admini configuration files
 - Task queue format
 - API endpoints
 - CLI command structure
@@ -141,4 +141,5 @@ go test ./...
 ./directadmin version
 ./directadmin config
 ./directadmin --help
+```dmin --help
 ```

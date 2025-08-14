@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}} - Admini Control Panel</title>
+    <link rel="stylesheet" href="/static/css/admini-theme.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <div class="admini-header">
+        <div class="admini-flex admini-justify-between admini-items-center">
+            <div>
+                <h1>{{.panel_name | default "AdminiCore"}}</h1>
+                <div class="panel-title">{{.title}}</div>
+            </div>
+            <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                Welcome, {{.username | default "admin"}} | <a href="/CMD_LOGOUT" style="color: white; text-decoration: underline;">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="admini-nav">
+        <ul>
+            {{if eq .level "admin"}}
+            <li><a href="/CMD_ADMIN" class="{{if eq .current_page "dashboard"}}active{{end}}">Dashboard</a></li>
+            <li><a href="/CMD_ADMIN_STATS" class="{{if eq .current_page "stats"}}active{{end}}">Statistics</a></li>
+            <li><a href="/CMD_SHOW_USERS" class="{{if eq .current_page "users"}}active{{end}}">Users</a></li>
+            <li><a href="/CMD_SHOW_RESELLERS" class="{{if eq .current_page "resellers"}}active{{end}}">Resellers</a></li>
+            <li><a href="/CMD_IP_MANAGER" class="{{if eq .current_page "ips"}}active{{end}}">IP Management</a></li>
+            <li><a href="/CMD_ADMIN_SETTINGS" class="{{if eq .current_page "settings"}}active{{end}}">Settings</a></li>
+            <li><a href="/CMD_SYSTEM_INFO" class="{{if eq .current_page "system"}}active{{end}}">System Info</a></li>
+            {{else if eq .level "reseller"}}
+            <li><a href="/CMD_RESELLER" class="{{if eq .current_page "dashboard"}}active{{end}}">Dashboard</a></li>
+            <li><a href="/CMD_RESELLER_STATS" class="{{if eq .current_page "stats"}}active{{end}}">Statistics</a></li>
+            <li><a href="/CMD_SHOW_USERS" class="{{if eq .current_page "users"}}active{{end}}">Users</a></li>
+            <li><a href="/CMD_API_PACKAGES" class="{{if eq .current_page "packages"}}active{{end}}">Packages</a></li>
+            <li><a href="/CMD_ACCOUNT_MANAGER" class="{{if eq .current_page "accounts"}}active{{end}}">Accounts</a></li>
+            {{else}}
+            <li><a href="/CMD_USER" class="{{if eq .current_page "dashboard"}}active{{end}}">Dashboard</a></li>
+            <li><a href="/CMD_DOMAIN" class="{{if eq .current_page "domains"}}active{{end}}">Domains</a></li>
+            <li><a href="/CMD_EMAIL" class="{{if eq .current_page "email"}}active{{end}}">Email</a></li>
+            <li><a href="/CMD_FILE_MANAGER" class="{{if eq .current_page "files"}}active{{end}}">File Manager</a></li>
+            <li><a href="/CMD_DB" class="{{if eq .current_page "databases"}}active{{end}}">Databases</a></li>
+            <li><a href="/CMD_SSL" class="{{if eq .current_page "ssl"}}active{{end}}">SSL</a></li>
+            <li><a href="/CMD_STATISTICS" class="{{if eq .current_page "stats"}}active{{end}}">Statistics</a></li>
+            {{end}}
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="admini-dashboard">
+        {{if eq .level "admin"}}
+        <!-- AdminiCore Dashboard -->
+        <div class="admini-grid admini-grid-3">
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.total_users | default "0"}}</div>
+                <div class="admini-stat-label">Total Users</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.total_domains | default "0"}}</div>
+                <div class="admini-stat-label">Total Domains</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.server_load | default "0.25"}}</div>
+                <div class="admini-stat-label">Server Load</div>
+            </div>
+        </div>
+
+        <div class="admini-grid admini-grid-2" style="margin-top: 2rem;">
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>System Information</h3>
+                </div>
+                <div class="admini-card-body">
+                    <table class="admini-table">
+                        <tr><td><strong>Hostname:</strong></td><td>{{.system.hostname | default "server.example.com"}}</td></tr>
+                        <tr><td><strong>OS:</strong></td><td>{{.system.os | default "Linux"}}</td></tr>
+                        <tr><td><strong>Kernel:</strong></td><td>{{.system.kernel | default "5.4.0"}}</td></tr>
+                        <tr><td><strong>Admini Version:</strong></td><td>{{.system.admini_version | default "1.680"}}</td></tr>
+                        <tr><td><strong>Uptime:</strong></td><td>{{.system.uptime | default "5 days, 12 hours"}}</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>Service Status</h3>
+                </div>
+                <div class="admini-card-body">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="admini-flex admini-justify-between admini-items-center">
+                            <span>Apache</span>
+                            <span class="admini-status admini-status-active">Running</span>
+                        </div>
+                        <div class="admini-flex admini-justify-between admini-items-center">
+                            <span>MySQL</span>
+                            <span class="admini-status admini-status-active">Running</span>
+                        </div>
+                        <div class="admini-flex admini-justify-between admini-items-center">
+                            <span>Mail Server</span>
+                            <span class="admini-status admini-status-active">Running</span>
+                        </div>
+                        <div class="admini-flex admini-justify-between admini-items-center">
+                            <span>DNS</span>
+                            <span class="admini-status admini-status-active">Running</span>
+                        </div>
+                        <div class="admini-flex admini-justify-between admini-items-center">
+                            <span>FTP</span>
+                            <span class="admini-status admini-status-active">Running</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{else if eq .level "reseller"}}
+        <!-- AdminiReseller Dashboard -->
+        <div class="admini-grid admini-grid-3">
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.my_users | default "0"}}</div>
+                <div class="admini-stat-label">My Users</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.my_domains | default "0"}}</div>
+                <div class="admini-stat-label">My Domains</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.bandwidth_usage | default "0%"}}</div>
+                <div class="admini-stat-label">Bandwidth Usage</div>
+            </div>
+        </div>
+
+        <div class="admini-card" style="margin-top: 2rem;">
+            <div class="admini-card-header">
+                <h3>Recent Activity</h3>
+            </div>
+            <div class="admini-card-body">
+                <p>Welcome to AdminiReseller - your reseller management panel.</p>
+                <p>From here you can manage your hosting accounts, create new users, and monitor your resources.</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="/CMD_ACCOUNT_MANAGER" class="admini-btn admini-btn-primary">Manage Accounts</a>
+                    <a href="/CMD_API_PACKAGES" class="admini-btn admini-btn-secondary" style="margin-left: 1rem;">View Packages</a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <!-- AdminiPanel (User) Dashboard -->
+        <div class="admini-grid admini-grid-3">
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.domains | default "0"}}</div>
+                <div class="admini-stat-label">Domains</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.email_accounts | default "0"}}</div>
+                <div class="admini-stat-label">Email Accounts</div>
+            </div>
+            <div class="admini-stat-card">
+                <div class="admini-stat-number">{{.stats.databases | default "0"}}</div>
+                <div class="admini-stat-label">Databases</div>
+            </div>
+        </div>
+
+        <div class="admini-grid admini-grid-2" style="margin-top: 2rem;">
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>Quick Actions</h3>
+                </div>
+                <div class="admini-card-body">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <a href="/CMD_DOMAIN" class="admini-btn admini-btn-primary" style="text-align: center;">Add Domain</a>
+                        <a href="/CMD_EMAIL" class="admini-btn admini-btn-secondary" style="text-align: center;">Create Email</a>
+                        <a href="/CMD_DB" class="admini-btn admini-btn-secondary" style="text-align: center;">New Database</a>
+                        <a href="/CMD_FILE_MANAGER" class="admini-btn admini-btn-secondary" style="text-align: center;">File Manager</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admini-card">
+                <div class="admini-card-header">
+                    <h3>Account Information</h3>
+                </div>
+                <div class="admini-card-body">
+                    <table class="admini-table">
+                        <tr><td><strong>Username:</strong></td><td>{{.username | default "user"}}</td></tr>
+                        <tr><td><strong>Package:</strong></td><td>{{.package | default "Standard"}}</td></tr>
+                        <tr><td><strong>Disk Usage:</strong></td><td>{{.usage.disk | default "0 MB"}} / {{.limits.disk | default "1 GB"}}</td></tr>
+                        <tr><td><strong>Bandwidth:</strong></td><td>{{.usage.bandwidth | default "0 MB"}} / {{.limits.bandwidth | default "10 GB"}}</td></tr>
+                        <tr><td><strong>Created:</strong></td><td>{{.created_date | default "2023-01-01"}}</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add some basic interactivity
+            console.log('Admini Control Panel loaded');
+            
+            // Auto-refresh stats every 30 seconds for admin/reseller panels
+            {{if or (eq .level "admin") (eq .level "reseller")}}
+            setInterval(function() {
+                // This would typically fetch updated stats via AJAX
+                console.log('Stats refresh interval');
+            }, 30000);
+            {{end}}
+        });
+    </script>
+</body>
+</html>

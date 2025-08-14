@@ -35,7 +35,7 @@ func CreateSelfSigned(domain, user string) error {
 	template := x509.Certificate{
 		SerialNumber: big.NewInt(1),
 		Subject: pkix.Name{
-			Organization:  []string{"DirectAdmin"},
+			Organization:  []string{"Admini"},
 			Country:       []string{"US"},
 			Province:      []string{""},
 			Locality:      []string{""},

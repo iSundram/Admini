@@ -24,7 +24,7 @@ const (
 
 // Run starts the task queue processor
 func Run() error {
-	log.Println("Starting DirectAdmin task queue processor...")
+	log.Println("Starting Admini task queue processor...")
 	
 	// Create task queue directory if it doesn't exist
 	if err := os.MkdirAll(taskQueueDir, 0755); err != nil {

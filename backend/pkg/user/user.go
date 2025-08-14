@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// User represents a user in DirectAdmin
+// User represents a user in Admini
 type User struct {
 	Username  string
 	Level     string // admin, reseller, user
