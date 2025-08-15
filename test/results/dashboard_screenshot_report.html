@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admini Dashboard Screenshot Test Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .test-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #28a745;
+        }
+        
+        .test-info h2 {
+            color: #28a745;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .info-item strong {
+            color: #495057;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .dashboard-section {
+            margin-bottom: 50px;
+        }
+        
+        .dashboard-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .dashboard-header {
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .dashboard-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .status-success {
+            background: #28a745 !important;
+        }
+        
+        .dashboard-body {
+            padding: 25px;
+        }
+        
+        .screenshot-container {
+            text-align: center;
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .screenshot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 3px solid #e9ecef;
+        }
+        
+        .screenshot-meta {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f3f4;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .summary-section {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .summary-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .timestamp {
+            font-family: monospace;
+            background: rgba(0,0,0,0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📸 Admini Dashboard Screenshot Test</h1>
+            <p>Comprehensive Testing of All Dashboard Interfaces</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Test Information -->
+            <div class="test-info">
+                <h2>🔍 Test Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Test Date:</strong>
+                        <span class="timestamp">Friday, August 15, 2025 - 04:09 UTC</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Base URL:</strong>
+                        http://localhost:2222
+                    </div>
+                    <div class="info-item">
+                        <strong>Browser:</strong>
+                        Playwright (Headless Chrome)
+                    </div>
+                    <div class="info-item">
+                        <strong>Authentication:</strong>
+                        Demo credentials (admin/password)
+                    </div>
+                    <div class="info-item">
+                        <strong>Total Wait Time:</strong>
+                        53+ seconds across all interfaces
+                    </div>
+                    <div class="info-item">
+                        <strong>Screenshot Resolution:</strong>
+                        1920x1080 (Full page capture)
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dashboard Screenshots -->
+            <div class="dashboard-section">
+                <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: #2c3e50;">🎯 Dashboard Interface Screenshots</h2>
+                
+                <!-- Login Interface -->
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <h3>🔐 Login Interface</h3>
+                        <span class="status-badge status-success">✅ Captured Successfully</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="screenshot-container">
+                            <img src="screenshots/admini-login-page-comprehensive.png" alt="Admini Login Page" />
+                            <div class="screenshot-meta">
+                                <strong>Wait Time:</strong> 12 seconds | 
+                                <strong>File:</strong> admini-login-page-comprehensive.png
+                            </div>
+                        </div>
+                        <p><strong>Description:</strong> Clean, professional login interface for the Admini Control Panel. Features responsive design with clear branding and user-friendly authentication form.</p>
+                        <ul class="features-list">
+                            <li>Modern, professional design</li>
+                            <li>Clear branding and version information</li>
+                            <li>Responsive login form</li>
+                            <li>Security-focused interface</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Admin Dashboard -->
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <h3>👑 AdminiCore (Administrator Dashboard)</h3>
+                        <span class="status-badge status-success">✅ Captured Successfully</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="screenshot-container">
+                            <img src="screenshots/admini-admin-dashboard-comprehensive.png" alt="Admin Dashboard" />
+                            <div class="screenshot-meta">
+                                <strong>Wait Time:</strong> 15 seconds | 
+                                <strong>File:</strong> admini-admin-dashboard-comprehensive.png
+                            </div>
+                        </div>
+                        <p><strong>Description:</strong> Comprehensive administrative control panel with system statistics, user management capabilities, and server monitoring tools. Perfect for system administrators managing hosting infrastructure.</p>
+                        <ul class="features-list">
+                            <li>Real-time system statistics (142 users, 367 domains)</li>
+                            <li>Server load monitoring (0.25 load average)</li>
+                            <li>Service status indicators (Apache, MySQL, Mail, DNS, FTP)</li>
+                            <li>System information display (hostname, OS, kernel, version)</li>
+                            <li>Complete navigation menu (Users, Resellers, IP Management, Settings)</li>
+                            <li>Auto-refresh functionality for live data</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Reseller Dashboard -->
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <h3>🏢 AdminiReseller (Reseller Dashboard)</h3>
+                        <span class="status-badge status-success">✅ Captured Successfully</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="screenshot-container">
+                            <img src="screenshots/admini-reseller-dashboard-comprehensive.png" alt="Reseller Dashboard" />
+                            <div class="screenshot-meta">
+                                <strong>Wait Time:</strong> 14 seconds | 
+                                <strong>File:</strong> admini-reseller-dashboard-comprehensive.png
+                            </div>
+                        </div>
+                        <p><strong>Description:</strong> Specialized interface for reseller account management, providing tools for managing client accounts, monitoring resource usage, and handling billing operations.</p>
+                        <ul class="features-list">
+                            <li>Client statistics (15 users, 35 domains)</li>
+                            <li>Bandwidth usage monitoring (65%)</li>
+                            <li>Account management tools</li>
+                            <li>Package management interface</li>
+                            <li>Resource allocation oversight</li>
+                            <li>Quick action buttons for common tasks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- User Dashboard -->
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <h3>👤 AdminiPanel (User Dashboard)</h3>
+                        <span class="status-badge status-success">✅ Captured Successfully</span>
+                    </div>
+                    <div class="dashboard-body">
+                        <div class="screenshot-container">
+                            <img src="screenshots/admini-user-dashboard-comprehensive.png" alt="User Dashboard" />
+                            <div class="screenshot-meta">
+                                <strong>Wait Time:</strong> 12 seconds | 
+                                <strong>File:</strong> admini-user-dashboard-comprehensive.png
+                            </div>
+                        </div>
+                        <p><strong>Description:</strong> cPanel-style hosting control panel for end users. Provides intuitive access to essential hosting features including domain management, email setup, file management, and database operations.</p>
+                        <ul class="features-list">
+                            <li>Account overview (2 domains, 5 email accounts, 3 databases)</li>
+                            <li>Resource usage display (disk: 150MB/1GB, bandwidth: 2.1GB/10GB)</li>
+                            <li>Quick action buttons (Add Domain, Create Email, New Database)</li>
+                            <li>Complete hosting toolset navigation</li>
+                            <li>Account information panel</li>
+                            <li>File manager integration</li>
+                            <li>SSL certificate management access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Summary Section -->
+            <div class="summary-section">
+                <h2>🎉 Test Completion Summary</h2>
+                <p>All dashboard interfaces have been successfully tested and screenshotted with proper wait times as requested (10-15 seconds per interface).</p>
+                
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4/4</span>
+                        <span class="stat-label">Dashboards Captured</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">53+</span>
+                        <span class="stat-label">Total Wait Seconds</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Interface Types</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Admini Control Panel</strong> - Comprehensive Web Hosting Management Solution</p>
+            <p>Test completed successfully with automated browser testing via Playwright</p>
+        </div>
+    </div>
+</body>
+</html>
