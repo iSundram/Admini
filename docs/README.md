@@ -15,13 +15,13 @@
 
 ## Introduction
 
-Admini is a modern, comprehensive web hosting control panel system designed to provide users, resellers, and administrators with powerful tools for managing web hosting environments. Built with Go and featuring a modern web interface, Admini offers all the functionality of traditional control panels with enhanced performance and user experience.
+Admini is a comprehensive web hosting control panel system designed to provide users, resellers, and administrators with powerful tools for managing web hosting environments. Built with Go backend and featuring DirectAdmin-compatible skin system, Admini offers all the functionality of traditional control panels with enhanced performance and user experience.
 
 ### Key Components
 
-- **AdminiCore**: Administrative interface for server administrators
-- **AdminiReseller**: Reseller management panel for hosting resellers  
-- **AdminiPanel**: User control panel with cPanel-style interface
+- **AdminiCore**: Administrative interface using DirectAdmin skin system
+- **AdminiReseller**: Reseller management panel with traditional DirectAdmin interface  
+- **AdminiPanel**: User control panel with DirectAdmin-compatible skins (Evolution & Enhanced)
 
 ### System Requirements
 

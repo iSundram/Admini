@@ -1,5 +1,5 @@
 [Unit]
-Description=Admini Control Panel
+Description=DirectAdmin Control Panel (Admini)
 Documentation=https://github.com/iSundram/Admini
 After=network.target
 
@@ -8,7 +8,7 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/usr/local/admini
-ExecStart=/usr/local/admini/admini server --port 2222
+ExecStart=/usr/local/admini/directadmin server --port 2222
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 RestartSec=10
