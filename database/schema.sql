@@ -795,3 +795,447 @@ CREATE TABLE audit_trail (
     INDEX idx_user_action_time (user_id, action_type, created_at),
     INDEX idx_resource_time (resource_type, resource_id, created_at)
 );
+
+-- ===============================
+-- ENTERPRISE BACKEND SYSTEMS
+-- ===============================
+
+-- Services table for microservices architecture
+CREATE TABLE services (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    host VARCHAR(255) NOT NULL,
+    port INT NOT NULL,
+    protocol VARCHAR(10) DEFAULT 'http',
+    health_endpoint VARCHAR(255) DEFAULT '/health',
+    weight INT DEFAULT 100,
+    status ENUM('active', 'unhealthy', 'maintenance') DEFAULT 'active',
+    registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_health_check TIMESTAMP NULL,
+    metadata JSON DEFAULT NULL
+);
+
+-- API routes for gateway
+CREATE TABLE api_routes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    method VARCHAR(10) NOT NULL,
+    pattern VARCHAR(255) NOT NULL,
+    service_name VARCHAR(128) NOT NULL,
+    middleware JSON DEFAULT NULL,
+    rate_limit JSON DEFAULT NULL,
+    auth_required BOOLEAN DEFAULT TRUE,
+    allowed_roles JSON DEFAULT NULL,
+    timeout INT DEFAULT 30,
+    options JSON DEFAULT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- API request logs
+CREATE TABLE api_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    request_id VARCHAR(50) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    method VARCHAR(10) NOT NULL,
+    path VARCHAR(500) NOT NULL,
+    ip VARCHAR(45) NOT NULL,
+    user_agent TEXT,
+    content_length INT DEFAULT 0,
+    headers JSON DEFAULT NULL,
+    response_status INT DEFAULT NULL,
+    response_time DECIMAL(10,6) DEFAULT NULL,
+    response_size INT DEFAULT NULL
+);
+
+-- Event store for event sourcing
+CREATE TABLE event_store (
+    id VARCHAR(50) PRIMARY KEY,
+    stream_name VARCHAR(128) NOT NULL,
+    event_type VARCHAR(128) NOT NULL,
+    event_data TEXT NOT NULL,
+    metadata TEXT DEFAULT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    version INT DEFAULT 1,
+    aggregate_id VARCHAR(50) DEFAULT NULL
+);
+
+-- Event projections
+CREATE TABLE projections (
+    name VARCHAR(128) PRIMARY KEY,
+    last_position VARCHAR(50) NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Background job logs
+CREATE TABLE job_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    job_id VARCHAR(50) NOT NULL,
+    worker_id VARCHAR(50) NOT NULL,
+    status ENUM('completed', 'failed') NOT NULL,
+    duration DECIMAL(10,6) DEFAULT NULL,
+    result TEXT DEFAULT NULL,
+    error_message TEXT DEFAULT NULL,
+    completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- System monitoring metrics
+CREATE TABLE metric_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    collector VARCHAR(64) NOT NULL,
+    metric_name VARCHAR(128) NOT NULL,
+    value DECIMAL(15,6) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_collector_metric_time (collector, metric_name, timestamp)
+);
+
+-- Monitoring dashboards
+CREATE TABLE monitoring_dashboards (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    config TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Alert rules
+CREATE TABLE alert_rules (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    collector VARCHAR(64) NOT NULL,
+    metric VARCHAR(128) NOT NULL,
+    condition VARCHAR(10) NOT NULL,
+    threshold DECIMAL(15,6) NOT NULL,
+    severity ENUM('info', 'warning', 'critical') NOT NULL,
+    cooldown INT DEFAULT 300,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Alerts
+CREATE TABLE alerts (
+    id VARCHAR(50) PRIMARY KEY,
+    rule_id VARCHAR(50) NOT NULL,
+    collector VARCHAR(64) NOT NULL,
+    metric VARCHAR(128) NOT NULL,
+    value DECIMAL(15,6) NOT NULL,
+    threshold DECIMAL(15,6) NOT NULL,
+    condition VARCHAR(10) NOT NULL,
+    severity ENUM('info', 'warning', 'critical') NOT NULL,
+    message TEXT NOT NULL,
+    triggered_at TIMESTAMP NOT NULL,
+    status ENUM('active', 'resolved') DEFAULT 'active',
+    resolved_at TIMESTAMP NULL,
+    FOREIGN KEY (rule_id) REFERENCES alert_rules(id)
+);
+
+-- Alert recipients
+CREATE TABLE alert_recipients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    severity_level INT NOT NULL, -- 1=info, 2=warning, 3=critical
+    status ENUM('active', 'inactive') DEFAULT 'active'
+);
+
+-- Alert actions for automated responses
+CREATE TABLE alert_actions (
+    id VARCHAR(50) PRIMARY KEY,
+    alert_id VARCHAR(50) NOT NULL,
+    action_type VARCHAR(64) NOT NULL,
+    target VARCHAR(255) NOT NULL,
+    parameters JSON DEFAULT NULL,
+    status ENUM('pending', 'completed', 'failed') DEFAULT 'pending',
+    executed_at TIMESTAMP NULL,
+    FOREIGN KEY (alert_id) REFERENCES alerts(id)
+);
+
+-- Analytics reports
+CREATE TABLE analytics_reports (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    config TEXT NOT NULL,
+    data LONGTEXT NOT NULL,
+    generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Scheduled reports
+CREATE TABLE scheduled_reports (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    config TEXT NOT NULL,
+    schedule VARCHAR(64) NOT NULL, -- cron format
+    next_run TIMESTAMP NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Report results
+CREATE TABLE report_results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    report_id VARCHAR(50) NOT NULL,
+    result_data LONGTEXT NOT NULL,
+    generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (report_id) REFERENCES scheduled_reports(id)
+);
+
+-- Security analysis
+CREATE TABLE security_analysis (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    event_id VARCHAR(50) NOT NULL,
+    threat_level DECIMAL(5,2) NOT NULL,
+    classification JSON NOT NULL,
+    indicators JSON NOT NULL,
+    recommendations JSON NOT NULL,
+    confidence DECIMAL(5,2) NOT NULL,
+    analyzed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Malware detections
+CREATE TABLE malware_detections (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    file_path VARCHAR(500) NOT NULL,
+    threats_found JSON NOT NULL,
+    risk_level ENUM('low', 'medium', 'high', 'critical') NOT NULL,
+    recommendations JSON NOT NULL,
+    scan_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Intrusion detections
+CREATE TABLE intrusion_detections (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    source_ip VARCHAR(45) NOT NULL,
+    target_ip VARCHAR(45) NOT NULL,
+    protocol VARCHAR(10) NOT NULL,
+    intrusion_type VARCHAR(64) NOT NULL,
+    severity ENUM('low', 'medium', 'high', 'critical') NOT NULL,
+    indicators JSON NOT NULL,
+    response_actions JSON NOT NULL,
+    detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Security incidents
+CREATE TABLE security_incidents (
+    id VARCHAR(50) PRIMARY KEY,
+    type VARCHAR(64) NOT NULL,
+    severity ENUM('low', 'medium', 'high', 'critical') NOT NULL,
+    status ENUM('open', 'investigating', 'resolved') DEFAULT 'open',
+    analysis_data JSON NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    resolved_at TIMESTAMP NULL
+);
+
+-- Security alerts
+CREATE TABLE security_alerts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(64) NOT NULL,
+    user_id INT DEFAULT NULL,
+    severity INT NOT NULL,
+    patterns JSON NOT NULL,
+    detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Security rules
+CREATE TABLE security_rules (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    rule_type VARCHAR(64) NOT NULL,
+    condition_data JSON NOT NULL,
+    threat_score DECIMAL(5,2) NOT NULL,
+    description TEXT NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Vulnerability assessments
+CREATE TABLE vulnerability_assessments (
+    id VARCHAR(50) PRIMARY KEY,
+    target VARCHAR(255) NOT NULL,
+    scan_type VARCHAR(64) NOT NULL,
+    vulnerabilities JSON NOT NULL,
+    risk_score DECIMAL(5,2) NOT NULL,
+    recommendations JSON NOT NULL,
+    started_at TIMESTAMP NOT NULL,
+    completed_at TIMESTAMP NOT NULL
+);
+
+-- User sessions for behavioral analysis
+CREATE TABLE user_sessions (
+    id VARCHAR(50) PRIMARY KEY,
+    user_id INT NOT NULL,
+    session_token VARCHAR(128) UNIQUE NOT NULL,
+    ip_address VARCHAR(45) NOT NULL,
+    user_agent TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_activity TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    expires_at TIMESTAMP NOT NULL,
+    status ENUM('active', 'expired', 'terminated') DEFAULT 'active',
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- User activity tracking
+CREATE TABLE user_activity (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    action VARCHAR(128) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ip_address VARCHAR(45) NOT NULL,
+    user_agent TEXT NOT NULL,
+    details JSON DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Login attempts
+CREATE TABLE login_attempts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    ip_address VARCHAR(45) NOT NULL,
+    success BOOLEAN NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    user_agent TEXT DEFAULT NULL,
+    INDEX idx_ip_time (ip_address, timestamp),
+    INDEX idx_username_time (username, timestamp)
+);
+
+-- Integrations
+CREATE TABLE integrations (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    type VARCHAR(64) NOT NULL,
+    provider VARCHAR(64) NOT NULL,
+    config TEXT NOT NULL,
+    status ENUM('active', 'inactive', 'error') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_sync TIMESTAMP NULL,
+    sync_status ENUM('pending', 'running', 'success', 'failed') DEFAULT 'pending'
+);
+
+-- Sync results
+CREATE TABLE sync_results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    integration_id VARCHAR(50) NOT NULL,
+    started_at TIMESTAMP NOT NULL,
+    completed_at TIMESTAMP NULL,
+    records_processed INT DEFAULT 0,
+    records_created INT DEFAULT 0,
+    records_updated INT DEFAULT 0,
+    records_failed INT DEFAULT 0,
+    errors JSON DEFAULT NULL,
+    status ENUM('running', 'completed', 'failed') NOT NULL,
+    FOREIGN KEY (integration_id) REFERENCES integrations(id)
+);
+
+-- Webhooks
+CREATE TABLE webhooks (
+    id VARCHAR(50) PRIMARY KEY,
+    provider VARCHAR(64) NOT NULL,
+    payload TEXT NOT NULL,
+    headers JSON NOT NULL,
+    received_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('processing', 'completed', 'failed') DEFAULT 'processing',
+    result TEXT DEFAULT NULL,
+    error TEXT DEFAULT NULL,
+    processed_at TIMESTAMP NULL
+);
+
+-- Workflows
+CREATE TABLE workflows (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    description TEXT DEFAULT NULL,
+    trigger_config JSON NOT NULL,
+    nodes JSON NOT NULL,
+    connections JSON NOT NULL,
+    variables JSON DEFAULT NULL,
+    settings JSON DEFAULT NULL,
+    status ENUM('active', 'inactive', 'draft') DEFAULT 'active',
+    version INT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Workflow executions
+CREATE TABLE workflow_executions (
+    id VARCHAR(50) PRIMARY KEY,
+    workflow_id VARCHAR(50) NOT NULL,
+    trigger_data JSON NOT NULL,
+    context JSON NOT NULL,
+    status ENUM('running', 'completed', 'failed', 'cancelled') DEFAULT 'running',
+    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP NULL,
+    current_node VARCHAR(50) DEFAULT NULL,
+    variables JSON DEFAULT NULL,
+    execution_log JSON DEFAULT NULL,
+    result JSON DEFAULT NULL,
+    FOREIGN KEY (workflow_id) REFERENCES workflows(id)
+);
+
+-- Workflow triggers
+CREATE TABLE workflow_triggers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    workflow_id VARCHAR(50) NOT NULL,
+    type VARCHAR(64) NOT NULL,
+    config JSON NOT NULL,
+    webhook_url VARCHAR(255) DEFAULT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    FOREIGN KEY (workflow_id) REFERENCES workflows(id)
+);
+
+-- Scheduled workflows
+CREATE TABLE scheduled_workflows (
+    id VARCHAR(50) PRIMARY KEY,
+    workflow_id VARCHAR(50) NOT NULL,
+    schedule_pattern VARCHAR(64) NOT NULL,
+    data JSON DEFAULT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    last_run TIMESTAMP NULL,
+    next_run TIMESTAMP NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (workflow_id) REFERENCES workflows(id)
+);
+
+-- Workflow templates
+CREATE TABLE workflow_templates (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    description TEXT DEFAULT NULL,
+    category VARCHAR(64) DEFAULT NULL,
+    definition TEXT NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Feature usage tracking
+CREATE TABLE feature_usage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT DEFAULT NULL,
+    feature_name VARCHAR(128) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    metadata JSON DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Feedback collection
+CREATE TABLE feedback (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT DEFAULT NULL,
+    type VARCHAR(64) NOT NULL,
+    rating INT DEFAULT NULL,
+    comment TEXT DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Enterprise system indexes for optimal performance
+CREATE INDEX idx_api_logs_timestamp ON api_logs(timestamp);
+CREATE INDEX idx_api_logs_path ON api_logs(path);
+CREATE INDEX idx_event_store_stream ON event_store(stream_name, timestamp);
+CREATE INDEX idx_event_store_aggregate ON event_store(aggregate_id);
+CREATE INDEX idx_alerts_status ON alerts(status, triggered_at);
+CREATE INDEX idx_security_analysis_event ON security_analysis(event_id);
+CREATE INDEX idx_intrusion_source_ip ON intrusion_detections(source_ip);
+CREATE INDEX idx_user_activity_user_time ON user_activity(user_id, timestamp);
+CREATE INDEX idx_login_attempts_ip ON login_attempts(ip_address, timestamp);
+CREATE INDEX idx_integrations_provider ON integrations(provider);
+CREATE INDEX idx_workflows_status ON workflows(status);
+CREATE INDEX idx_workflow_executions_status ON workflow_executions(status, started_at);
+CREATE INDEX idx_feature_usage_feature ON feature_usage(feature_name, timestamp);
