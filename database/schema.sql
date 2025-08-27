@@ -33,20 +33,20 @@ CREATE TABLE packages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     description TEXT,
-    disk_quota BIGINT NOT NULL, -- in MB
-    bandwidth_quota BIGINT NOT NULL, -- in MB
-    domains_limit INT NOT NULL,
-    subdomains_limit INT NOT NULL,
-    email_accounts_limit INT NOT NULL,
-    mysql_databases_limit INT NOT NULL,
-    ftp_accounts_limit INT NOT NULL,
+    disk_quota BIGINT NOT NULL DEFAULT -1, -- in MB, -1 for unlimited
+    bandwidth_quota BIGINT NOT NULL DEFAULT -1, -- in MB, -1 for unlimited
+    email_accounts INT NOT NULL DEFAULT -1, -- -1 for unlimited
+    databases INT NOT NULL DEFAULT -1, -- -1 for unlimited
+    subdomains INT NOT NULL DEFAULT -1, -- -1 for unlimited
+    addon_domains INT NOT NULL DEFAULT 0,
+    ftp_accounts INT NOT NULL DEFAULT -1, -- -1 for unlimited
+    ssl_certificates INT NOT NULL DEFAULT -1, -- -1 for unlimited
     price DECIMAL(10,2) DEFAULT 0.00,
+    features JSON, -- Additional features as JSON
     billing_cycle ENUM('monthly', 'quarterly', 'annually') DEFAULT 'monthly',
     status ENUM('active', 'inactive') DEFAULT 'active',
-    created_by INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE CASCADE
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 -- Domains table
@@ -268,9 +268,84 @@ INSERT INTO system_settings (setting_key, setting_value, description) VALUES
 ('maintenance_mode', '0', 'Enable maintenance mode');
 
 -- Insert default package
-INSERT INTO packages (name, description, disk_quota, bandwidth_quota, domains_limit, subdomains_limit, 
-                     email_accounts_limit, mysql_databases_limit, ftp_accounts_limit, created_by) 
-VALUES ('Basic Package', 'Default package for new users', 1024, 10240, 1, 10, 10, 5, 5, 1);
+INSERT INTO packages (name, description, disk_quota, bandwidth_quota, email_accounts, databases, 
+                     subdomains, addon_domains, ftp_accounts, ssl_certificates, features) 
+VALUES ('Basic Package', 'Default package for new users', 1024, 10240, 10, 5, 10, 0, 5, 1, '["PHP Support", "MySQL Support", "SSL Support"]');
 
--- Update the foreign key reference
-UPDATE packages SET created_by = 1 WHERE id = 1;
+-- IP Addresses table
+CREATE TABLE ip_addresses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ip_address VARCHAR(45) UNIQUE NOT NULL,
+    netmask VARCHAR(45) DEFAULT '255.255.255.0',
+    gateway VARCHAR(45) NULL,
+    assigned_to INT NULL,
+    status ENUM('available', 'assigned', 'reserved') DEFAULT 'available',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (assigned_to) REFERENCES users(id) ON DELETE SET NULL
+);
+
+-- Mail Queue table
+CREATE TABLE mail_queue (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    from_address VARCHAR(320) NOT NULL,
+    to_address VARCHAR(320) NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    headers TEXT,
+    status ENUM('pending', 'sent', 'failed', 'deferred') DEFAULT 'pending',
+    attempts INT DEFAULT 0,
+    last_attempt TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    sent_at TIMESTAMP NULL
+);
+
+-- System Services table
+CREATE TABLE system_services (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    service_name VARCHAR(50) UNIQUE NOT NULL,
+    display_name VARCHAR(100) NOT NULL,
+    status ENUM('running', 'stopped', 'failed') DEFAULT 'stopped',
+    auto_start BOOLEAN DEFAULT TRUE,
+    description TEXT,
+    last_checked TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Security Rules table
+CREATE TABLE security_rules (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    rule_type ENUM('ip_block', 'country_block', 'user_agent_block') NOT NULL,
+    rule_value VARCHAR(255) NOT NULL,
+    action ENUM('block', 'allow') NOT NULL,
+    description TEXT,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Subdomain table
+CREATE TABLE subdomains (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    subdomain VARCHAR(100) NOT NULL,
+    domain_id INT NOT NULL,
+    document_root VARCHAR(500) NOT NULL,
+    status ENUM('active', 'suspended') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_subdomain (subdomain, domain_id)
+);
+
+-- Insert default services
+INSERT INTO system_services (service_name, display_name, description) VALUES
+('apache2', 'Apache Web Server', 'HTTP/HTTPS web server'),
+('mysql', 'MySQL Database Server', 'MySQL database service'),
+('postfix', 'Postfix Mail Server', 'SMTP mail transfer agent'),
+('dovecot', 'Dovecot IMAP/POP3', 'IMAP and POP3 mail server'),
+('bind9', 'BIND DNS Server', 'Domain Name System server'),
+('fail2ban', 'Fail2Ban Security', 'Intrusion prevention system'),
+('clamav', 'ClamAV Antivirus', 'Antivirus scanning service'),
+('pure-ftpd', 'Pure-FTPd Server', 'FTP server daemon');
