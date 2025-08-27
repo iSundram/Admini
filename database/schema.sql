@@ -349,3 +349,287 @@ INSERT INTO system_services (service_name, display_name, description) VALUES
 ('fail2ban', 'Fail2Ban Security', 'Intrusion prevention system'),
 ('clamav', 'ClamAV Antivirus', 'Antivirus scanning service'),
 ('pure-ftpd', 'Pure-FTPd Server', 'FTP server daemon');
+
+-- Two-Factor Authentication table
+CREATE TABLE user_2fa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    secret VARCHAR(32) NOT NULL,
+    backup_codes JSON,
+    enabled BOOLEAN DEFAULT FALSE,
+    last_used TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- API Keys table for advanced API management
+CREATE TABLE api_keys (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    key_name VARCHAR(100) NOT NULL,
+    api_key VARCHAR(64) UNIQUE NOT NULL,
+    permissions JSON, -- API permissions
+    rate_limit_per_minute INT DEFAULT 60,
+    last_used TIMESTAMP NULL,
+    expires_at TIMESTAMP NULL,
+    status ENUM('active', 'inactive', 'expired') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Security Scan Results
+CREATE TABLE security_scans (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    scan_type ENUM('malware', 'vulnerability', 'integrity', 'blacklist') NOT NULL,
+    target_type ENUM('server', 'domain', 'user', 'file') NOT NULL,
+    target_id VARCHAR(255) NOT NULL,
+    scan_status ENUM('pending', 'running', 'completed', 'failed') DEFAULT 'pending',
+    threats_found INT DEFAULT 0,
+    results JSON,
+    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP NULL,
+    next_scan TIMESTAMP NULL
+);
+
+-- Advanced Backup Management
+CREATE TABLE backup_schedules (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    schedule_name VARCHAR(100) NOT NULL,
+    backup_type ENUM('full', 'incremental', 'differential') NOT NULL,
+    includes JSON, -- What to backup
+    frequency ENUM('daily', 'weekly', 'monthly') NOT NULL,
+    retention_days INT DEFAULT 30,
+    storage_type ENUM('local', 's3', 'google_cloud', 'ftp') NOT NULL,
+    storage_config JSON,
+    status ENUM('active', 'paused', 'inactive') DEFAULT 'active',
+    last_backup TIMESTAMP NULL,
+    next_backup TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- System Monitoring
+CREATE TABLE system_monitoring (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    server_id VARCHAR(50) DEFAULT 'local',
+    metric_type ENUM('cpu', 'memory', 'disk', 'network', 'load') NOT NULL,
+    metric_value DECIMAL(10,4) NOT NULL,
+    threshold_warning DECIMAL(10,4) DEFAULT 80.0,
+    threshold_critical DECIMAL(10,4) DEFAULT 95.0,
+    status ENUM('normal', 'warning', 'critical') DEFAULT 'normal',
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Application Installer
+CREATE TABLE applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    app_name VARCHAR(100) NOT NULL,
+    app_version VARCHAR(20) NOT NULL,
+    category ENUM('cms', 'ecommerce', 'forum', 'blog', 'framework', 'tools') NOT NULL,
+    description TEXT,
+    requirements JSON, -- PHP version, extensions, etc.
+    download_url VARCHAR(500),
+    install_script TEXT,
+    config_template JSON,
+    status ENUM('active', 'deprecated', 'beta') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- User Application Installations
+CREATE TABLE user_applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    application_id INT NOT NULL,
+    domain_id INT NOT NULL,
+    install_path VARCHAR(500) NOT NULL,
+    app_url VARCHAR(500),
+    admin_username VARCHAR(50),
+    admin_password VARCHAR(255),
+    database_name VARCHAR(64),
+    version VARCHAR(20),
+    auto_update BOOLEAN DEFAULT FALSE,
+    status ENUM('installing', 'active', 'updating', 'failed', 'removed') DEFAULT 'installing',
+    installed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (application_id) REFERENCES applications(id) ON DELETE CASCADE,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE
+);
+
+-- Email Security (DKIM, SPF, DMARC)
+CREATE TABLE email_security (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    domain_id INT NOT NULL,
+    dkim_enabled BOOLEAN DEFAULT FALSE,
+    dkim_selector VARCHAR(50) DEFAULT 'default',
+    dkim_private_key TEXT,
+    dkim_public_key TEXT,
+    spf_record TEXT,
+    dmarc_policy ENUM('none', 'quarantine', 'reject') DEFAULT 'none',
+    dmarc_record TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE
+);
+
+-- Staging Environments
+CREATE TABLE staging_sites (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    domain_id INT NOT NULL,
+    staging_subdomain VARCHAR(100) NOT NULL,
+    staging_path VARCHAR(500) NOT NULL,
+    sync_type ENUM('manual', 'auto') DEFAULT 'manual',
+    last_sync TIMESTAMP NULL,
+    status ENUM('active', 'syncing', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE
+);
+
+-- Load Balancers
+CREATE TABLE load_balancers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    algorithm ENUM('round_robin', 'least_connections', 'ip_hash') DEFAULT 'round_robin',
+    health_check_url VARCHAR(500),
+    health_check_interval INT DEFAULT 30,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Load Balancer Backends
+CREATE TABLE load_balancer_backends (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    load_balancer_id INT NOT NULL,
+    server_ip VARCHAR(45) NOT NULL,
+    server_port INT DEFAULT 80,
+    weight INT DEFAULT 1,
+    status ENUM('up', 'down', 'maintenance') DEFAULT 'up',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (load_balancer_id) REFERENCES load_balancers(id) ON DELETE CASCADE
+);
+
+-- Webhooks
+CREATE TABLE webhooks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    event_type VARCHAR(50) NOT NULL, -- user.created, domain.added, etc.
+    url VARCHAR(500) NOT NULL,
+    secret VARCHAR(100),
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Webhook Deliveries
+CREATE TABLE webhook_deliveries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    webhook_id INT NOT NULL,
+    event_data JSON,
+    response_status INT,
+    response_body TEXT,
+    delivered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (webhook_id) REFERENCES webhooks(id) ON DELETE CASCADE
+);
+
+-- Servers Management
+CREATE TABLE servers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    server_name VARCHAR(100) NOT NULL,
+    hostname VARCHAR(255) NOT NULL,
+    ip_address VARCHAR(45) NOT NULL,
+    ssh_port INT DEFAULT 22,
+    ssh_username VARCHAR(50),
+    ssh_key TEXT,
+    server_type ENUM('web', 'database', 'mail', 'dns', 'loadbalancer') NOT NULL,
+    status ENUM('online', 'offline', 'maintenance') DEFAULT 'offline',
+    last_check TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Billing and Invoices
+CREATE TABLE invoices (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    invoice_number VARCHAR(50) UNIQUE NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    tax_amount DECIMAL(10,2) DEFAULT 0.00,
+    total_amount DECIMAL(10,2) NOT NULL,
+    status ENUM('draft', 'sent', 'paid', 'overdue', 'cancelled') DEFAULT 'draft',
+    due_date DATE NOT NULL,
+    paid_date DATE NULL,
+    items JSON, -- Invoice line items
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Payment Methods
+CREATE TABLE payment_methods (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    method_type ENUM('credit_card', 'paypal', 'bank_transfer') NOT NULL,
+    provider VARCHAR(50), -- stripe, paypal, etc.
+    provider_id VARCHAR(100),
+    is_default BOOLEAN DEFAULT FALSE,
+    status ENUM('active', 'expired', 'invalid') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Support Tickets
+CREATE TABLE support_tickets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    ticket_number VARCHAR(20) UNIQUE NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    department ENUM('technical', 'billing', 'sales', 'abuse') DEFAULT 'technical',
+    priority ENUM('low', 'medium', 'high', 'urgent') DEFAULT 'medium',
+    status ENUM('open', 'pending', 'resolved', 'closed') DEFAULT 'open',
+    assigned_to INT NULL, -- Admin user ID
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Support Ticket Messages
+CREATE TABLE support_ticket_messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ticket_id INT NOT NULL,
+    user_id INT NOT NULL,
+    message TEXT NOT NULL,
+    is_staff BOOLEAN DEFAULT FALSE,
+    attachments JSON,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ticket_id) REFERENCES support_tickets(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Resource Usage Tracking
+CREATE TABLE resource_usage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    resource_type ENUM('cpu', 'memory', 'disk_io', 'network_in', 'network_out') NOT NULL,
+    usage_value DECIMAL(15,6) NOT NULL,
+    unit VARCHAR(10) NOT NULL, -- MB, GB, %, etc.
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Insert popular applications
+INSERT INTO applications (app_name, app_version, category, description, requirements, status) VALUES
+('WordPress', '6.4', 'cms', 'Popular content management system', '{"php": "7.4+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring"]}', 'active'),
+('Joomla', '5.0', 'cms', 'Flexible content management system', '{"php": "8.0+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring", "xml"]}', 'active'),
+('Drupal', '10.0', 'cms', 'Enterprise content management system', '{"php": "8.1+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring", "xml"]}', 'active'),
+('PrestaShop', '8.1', 'ecommerce', 'Open source e-commerce platform', '{"php": "7.4+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring", "zip"]}', 'active'),
+('Magento', '2.4', 'ecommerce', 'Professional e-commerce platform', '{"php": "8.1+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring", "soap"]}', 'active'),
+('Laravel', '10.0', 'framework', 'PHP web application framework', '{"php": "8.1+", "mysql": "5.7+", "extensions": ["curl", "mbstring", "openssl"]}', 'active'),
+('phpMyAdmin', '5.2', 'tools', 'Web-based MySQL administration tool', '{"php": "7.4+", "mysql": "5.7+", "extensions": ["curl", "mbstring", "mysqli"]}', 'active');
