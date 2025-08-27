@@ -1,0 +1,486 @@
+/* DirectAdmin Inspired Cold Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Cold Color Palette */
+    --da-blue-50: #eff6ff;
+    --da-blue-100: #dbeafe;
+    --da-blue-200: #bfdbfe;
+    --da-blue-300: #93c5fd;
+    --da-blue-400: #60a5fa;
+    --da-blue-500: #3b82f6;
+    --da-blue-600: #2563eb;
+    --da-blue-700: #1d4ed8;
+    --da-blue-800: #1e40af;
+    --da-blue-900: #1e3a8a;
+    
+    --da-slate-50: #f8fafc;
+    --da-slate-100: #f1f5f9;
+    --da-slate-200: #e2e8f0;
+    --da-slate-300: #cbd5e1;
+    --da-slate-400: #94a3b8;
+    --da-slate-500: #64748b;
+    --da-slate-600: #475569;
+    --da-slate-700: #334155;
+    --da-slate-800: #1e293b;
+    --da-slate-900: #0f172a;
+    
+    --da-cyan-50: #ecfeff;
+    --da-cyan-100: #cffafe;
+    --da-cyan-200: #a5f3fc;
+    --da-cyan-300: #67e8f9;
+    --da-cyan-400: #22d3ee;
+    --da-cyan-500: #06b6d4;
+    --da-cyan-600: #0891b2;
+    --da-cyan-700: #0e7490;
+    --da-cyan-800: #155e75;
+    --da-cyan-900: #164e63;
+    
+    /* Theme Variables */
+    --primary: var(--da-blue-600);
+    --primary-hover: var(--da-blue-700);
+    --secondary: var(--da-slate-600);
+    --accent: var(--da-cyan-500);
+    --background: var(--da-slate-50);
+    --surface: #ffffff;
+    --surface-secondary: var(--da-slate-100);
+    --border: var(--da-slate-200);
+    --text-primary: var(--da-slate-900);
+    --text-secondary: var(--da-slate-600);
+    --text-muted: var(--da-slate-400);
+    
+    /* Status Colors */
+    --success: #10b981;
+    --success-bg: #d1fae5;
+    --warning: #f59e0b;
+    --warning-bg: #fef3c7;
+    --danger: #ef4444;
+    --danger-bg: #fee2e2;
+    --info: var(--da-blue-500);
+    --info-bg: var(--da-blue-50);
+}
+
+/* DirectAdmin Style Components */
+.da-header {
+    background: linear-gradient(135deg, var(--da-slate-800) 0%, var(--da-slate-900) 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.da-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--da-cyan-400);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.da-logo:hover {
+    color: var(--da-cyan-300);
+}
+
+.da-nav {
+    background: var(--surface);
+    border-bottom: 2px solid var(--border);
+    padding: 0;
+}
+
+.da-nav-item {
+    display: inline-block;
+}
+
+.da-nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.da-nav-link:hover {
+    color: var(--primary);
+    background: var(--da-blue-50);
+    border-bottom-color: var(--primary);
+}
+
+.da-nav-link.active {
+    color: var(--primary);
+    background: var(--da-blue-50);
+    border-bottom-color: var(--primary);
+    font-weight: 600;
+}
+
+/* DirectAdmin Tables */
+.da-table {
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+}
+
+.da-table table {
+    width: 100%;
+    margin: 0;
+}
+
+.da-table th {
+    background: linear-gradient(135deg, var(--da-slate-100) 0%, var(--da-slate-200) 100%);
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border);
+    text-align: left;
+}
+
+.da-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.da-table tbody tr:hover {
+    background: var(--da-blue-50);
+}
+
+.da-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* DirectAdmin Buttons */
+.da-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    gap: 0.5rem;
+}
+
+.da-btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.da-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+    color: white;
+}
+
+.da-btn-secondary {
+    background: var(--da-slate-100);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.da-btn-secondary:hover {
+    background: var(--da-slate-200);
+    color: var(--text-primary);
+}
+
+.da-btn-success {
+    background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+    color: white;
+}
+
+.da-btn-warning {
+    background: linear-gradient(135deg, var(--warning) 0%, #d97706 100%);
+    color: white;
+}
+
+.da-btn-danger {
+    background: linear-gradient(135deg, var(--danger) 0%, #dc2626 100%);
+    color: white;
+}
+
+.da-btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.da-btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+/* DirectAdmin Forms */
+.da-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.da-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.da-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    background: var(--surface);
+}
+
+.da-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.da-select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.da-textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* DirectAdmin Alerts */
+.da-alert {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.da-alert-success {
+    background: var(--success-bg);
+    color: #065f46;
+    border-left-color: var(--success);
+}
+
+.da-alert-warning {
+    background: var(--warning-bg);
+    color: #92400e;
+    border-left-color: var(--warning);
+}
+
+.da-alert-danger {
+    background: var(--danger-bg);
+    color: #991b1b;
+    border-left-color: var(--danger);
+}
+
+.da-alert-info {
+    background: var(--info-bg);
+    color: #1e40af;
+    border-left-color: var(--info);
+}
+
+/* DirectAdmin Stats Cards */
+.da-stat-card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.da-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.da-stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.da-stat-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.da-stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* DirectAdmin Progress */
+.da-progress {
+    background: var(--da-slate-200);
+    border-radius: 50px;
+    height: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.da-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    border-radius: 50px;
+    transition: width 0.6s ease;
+    position: relative;
+}
+
+.da-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* DirectAdmin Tabs */
+.da-tabs {
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.da-tab {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.da-tab:hover {
+    color: var(--primary);
+    background: var(--da-blue-50);
+}
+
+.da-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: var(--da-blue-50);
+    font-weight: 600;
+}
+
+/* DirectAdmin Panel Layout */
+.da-panel {
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.da-panel-header {
+    background: linear-gradient(135deg, var(--da-slate-100) 0%, var(--da-slate-200) 100%);
+    padding: 1.25rem 1.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.da-panel-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.da-panel-body {
+    padding: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .da-nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .da-stat-value {
+        font-size: 2rem;
+    }
+    
+    .da-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Utility Classes */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.shadow-elevation-1 { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+.shadow-elevation-2 { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12); }
+.shadow-elevation-3 { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16); }

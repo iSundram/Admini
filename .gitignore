@@ -1,0 +1,36 @@
+# Ignore uploaded files and user data
+uploads/
+temp/
+logs/
+
+# Ignore configuration files with sensitive data
+config/database.php
+
+# Ignore cache and session files
+cache/
+sessions/
+
+# Ignore backup files
+backups/
+*.sql.gz
+*.tar.gz
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore composer dependencies (if using)
+vendor/
+
+# Ignore node modules (if using)
+node_modules/
+
+# Ignore build files
+dist/
+build/
