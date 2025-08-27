@@ -633,3 +633,165 @@ INSERT INTO applications (app_name, app_version, category, description, requirem
 ('Magento', '2.4', 'ecommerce', 'Professional e-commerce platform', '{"php": "8.1+", "mysql": "5.7+", "extensions": ["curl", "gd", "mbstring", "soap"]}', 'active'),
 ('Laravel', '10.0', 'framework', 'PHP web application framework', '{"php": "8.1+", "mysql": "5.7+", "extensions": ["curl", "mbstring", "openssl"]}', 'active'),
 ('phpMyAdmin', '5.2', 'tools', 'Web-based MySQL administration tool', '{"php": "7.4+", "mysql": "5.7+", "extensions": ["curl", "mbstring", "mysqli"]}', 'active');
+
+-- Container Management tables
+CREATE TABLE containers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    app_id INT NULL,
+    container_type ENUM('nodejs', 'python', 'docker', 'static') NOT NULL,
+    container_name VARCHAR(100) NOT NULL,
+    port INT NOT NULL,
+    status ENUM('stopped', 'running', 'failed', 'building') DEFAULT 'stopped',
+    config JSON,
+    resource_limits JSON, -- CPU, memory limits
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (app_id) REFERENCES user_applications(id) ON DELETE SET NULL,
+    UNIQUE KEY unique_user_container (user_id, container_name)
+);
+
+-- Container Logs table
+CREATE TABLE container_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    container_id INT NOT NULL,
+    log_level ENUM('info', 'warning', 'error', 'debug') DEFAULT 'info',
+    message TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (container_id) REFERENCES containers(id) ON DELETE CASCADE,
+    INDEX idx_container_timestamp (container_id, timestamp)
+);
+
+-- Git Repositories table
+CREATE TABLE git_repositories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    container_id INT NULL,
+    repo_name VARCHAR(100) NOT NULL,
+    repo_url VARCHAR(500) NOT NULL,
+    branch VARCHAR(100) DEFAULT 'main',
+    deploy_key TEXT,
+    auto_deploy BOOLEAN DEFAULT FALSE,
+    last_commit VARCHAR(40),
+    last_deployed TIMESTAMP NULL,
+    status ENUM('connected', 'failed', 'deploying') DEFAULT 'connected',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (container_id) REFERENCES containers(id) ON DELETE SET NULL
+);
+
+-- Environment Variables table
+CREATE TABLE environment_variables (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    container_id INT NOT NULL,
+    variable_name VARCHAR(100) NOT NULL,
+    variable_value TEXT NOT NULL,
+    is_secret BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (container_id) REFERENCES containers(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_container_variable (container_id, variable_name)
+);
+
+-- Performance Cache Configuration
+CREATE TABLE cache_configuration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    cache_type ENUM('redis', 'memcached', 'file', 'opcache') NOT NULL,
+    config JSON NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- CDN Configuration
+CREATE TABLE cdn_configuration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    domain_id INT NOT NULL,
+    provider ENUM('cloudflare', 'aws_cloudfront', 'maxcdn', 'keycdn') NOT NULL,
+    config JSON NOT NULL,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE
+);
+
+-- Performance Metrics
+CREATE TABLE performance_metrics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    domain_id INT NOT NULL,
+    metric_type ENUM('page_load_time', 'ttfb', 'dom_content_loaded', 'largest_contentful_paint') NOT NULL,
+    metric_value DECIMAL(10,3) NOT NULL,
+    url VARCHAR(500),
+    user_agent VARCHAR(200),
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE,
+    INDEX idx_domain_type_time (domain_id, metric_type, recorded_at)
+);
+
+-- SSL Certificate Management Enhanced
+CREATE TABLE ssl_orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    domain_id INT NOT NULL,
+    certificate_authority ENUM('letsencrypt', 'sectigo', 'digicert', 'custom') NOT NULL,
+    order_status ENUM('pending', 'processing', 'issued', 'failed', 'expired') DEFAULT 'pending',
+    challenge_type ENUM('http-01', 'dns-01', 'tls-alpn-01') DEFAULT 'http-01',
+    order_url VARCHAR(500),
+    challenge_token VARCHAR(100),
+    expires_at TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (domain_id) REFERENCES domains(id) ON DELETE CASCADE
+);
+
+-- Advanced User Permissions
+CREATE TABLE user_permissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    permission_type ENUM('api_access', 'container_management', 'ssl_management', 'backup_management', 'monitoring_access') NOT NULL,
+    permission_value JSON, -- Detailed permissions
+    granted_by INT NOT NULL,
+    granted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expires_at TIMESTAMP NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (granted_by) REFERENCES users(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_user_permission (user_id, permission_type)
+);
+
+-- Notification System
+CREATE TABLE notifications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    notification_type ENUM('security_alert', 'backup_complete', 'ssl_expiry', 'resource_warning', 'system_update') NOT NULL,
+    title VARCHAR(200) NOT NULL,
+    message TEXT NOT NULL,
+    priority ENUM('low', 'medium', 'high', 'critical') DEFAULT 'medium',
+    is_read BOOLEAN DEFAULT FALSE,
+    action_url VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    INDEX idx_user_read_created (user_id, is_read, created_at)
+);
+
+-- Audit Trail Enhanced
+CREATE TABLE audit_trail (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NULL,
+    action_type VARCHAR(50) NOT NULL,
+    resource_type VARCHAR(50) NOT NULL,
+    resource_id VARCHAR(50),
+    old_values JSON,
+    new_values JSON,
+    ip_address VARCHAR(45),
+    user_agent TEXT,
+    session_id VARCHAR(128),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL,
+    INDEX idx_user_action_time (user_id, action_type, created_at),
+    INDEX idx_resource_time (resource_type, resource_id, created_at)
+);
