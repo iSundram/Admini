@@ -6,16 +6,16 @@ from django.urls import path
 from django.conf import settings
 import os
 
-class CyberPanelAdminSite(AdminSite):
-    site_header = "CyberPanel Admin"
-    site_title = "CyberPanel Admin"
-    index_title = "Welcome to CyberPanel Administration"
+class AdminiAdminSite(AdminSite):
+    site_header = "Admini Admin"
+    site_title = "Admini Admin"
+    index_title = "Welcome to Admini Administration"
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.site_header = "CyberPanel Admin"
-        self.site_title = "CyberPanel Admin"
-        self.index_title = "Welcome to CyberPanel Administration"
+        self.site_header = "Admini Admin"
+        self.site_title = "Admini Admin"
+        self.index_title = "Welcome to Admini Administration"
     
     def index(self, request, extra_context=None):
         """
@@ -70,7 +70,7 @@ class CyberPanelAdminSite(AdminSite):
         )(request)
 
 # Create custom admin site instance
-cyberpanel_admin = CyberPanelAdminSite(name='cyberpanel_admin')
+admini_admin = AdminiAdminSite(name='admini_admin')
 
 # Register models with the custom admin site
 from django.contrib.auth.models import User, Group
@@ -81,31 +81,31 @@ from packages.models import Package
 from userManagment.models import Administrator as UserAdmin
 
 # Register default models
-cyberpanel_admin.register(User)
-cyberpanel_admin.register(Group)
+admini_admin.register(User)
+admini_admin.register(Group)
 
-# Register CyberPanel specific models
+# Register Admini specific models
 try:
-    cyberpanel_admin.register(Administrator)
+    admini_admin.register(Administrator)
 except:
     pass
 
 try:
-    cyberpanel_admin.register(Databases)
+    admini_admin.register(Databases)
 except:
     pass
 
 try:
-    cyberpanel_admin.register(Websites)
+    admini_admin.register(Websites)
 except:
     pass
 
 try:
-    cyberpanel_admin.register(Package)
+    admini_admin.register(Package)
 except:
     pass
 
 try:
-    cyberpanel_admin.register(UserAdmin)
+    admini_admin.register(UserAdmin)
 except:
     pass

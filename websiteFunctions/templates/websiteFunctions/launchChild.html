@@ -1,6 +1,6 @@
 {% extends "baseTemplate/index.html" %}
 {% load i18n %}
-{% block title %}{{ childDomain }} - CyberPanel{% endblock %}
+{% block title %}{{ childDomain }} - Admini{% endblock %}
 {% block content %}
 
     {% load static %}
@@ -10,7 +10,7 @@
     <div ng-controller="launchChild" ng-init="childDomainName='{{ childDomain }}'; masterDomain='{{ domain }}'">
 
     <style>
-        /* Ultra-Modern CyberPanel Design System */
+        /* Ultra-Modern Admini Design System */
         /* :root block commented out to allow dark mode variables from base template
         :root {
             --primary-color: #6366f1;

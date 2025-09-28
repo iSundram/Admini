@@ -84,11 +84,11 @@ log_function_end() {
 }
 
 # Initialize logging
-log_info "CyberPanel installation started"
+log_info "Admini installation started"
 log_info "Log file: $LOG_FILE"
 log_info "Debug log file: $DEBUG_LOG_FILE"
 
-#CyberPanel installer script for CentOS 7, CentOS 8, CloudLinux 7, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, openEuler 20.03 and openEuler 22.03
+#Admini installer script for CentOS 7, CentOS 8, CloudLinux 7, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, openEuler 20.03 and openEuler 22.03
 #For whoever may edit this script, please follow:
 #Please use Pre_Install_xxx() and Post_Install_xxx() if you want to something respectively before or after the panel installation
 #and update below accordingly
@@ -130,9 +130,9 @@ Sudo_Test=$(set)
 Set_Default_Variables() {
 log_function_start "Set_Default_Variables"
 
-echo -e "Fetching latest data from CyberPanel server...\n"
+echo -e "Fetching latest data from Admini server...\n"
 echo -e "This may take few seconds..."
-log_info "Fetching latest data from CyberPanel server"
+log_info "Fetching latest data from Admini server"
 
 Silent="Off"
 Server_Edition="OLS"
@@ -459,7 +459,7 @@ log_info "Checking root privileges"
   fi
 
   if [[ $(id -u) != 0 ]] >/dev/null; then
-    echo -e "\nYou must run on root user to install CyberPanel...\n"
+    echo -e "\nYou must run on root user to install Admini...\n"
     echo -e "or run following command: (do NOT miss the quotes)"
     echo -e "\e[31msudo su -c \"sh <(curl https://cyberpanel.sh || wget -O - https://cyberpanel.sh)\"\e[39m"
     log_error "Not running as root user - UID is not 0"
@@ -529,8 +529,8 @@ fi
 if [ -z "$XDG_CURRENT_DESKTOP" ]; then
     echo -e "Desktop OS not detected. Proceeding\n"
 else
-    echo "$XDG_CURRENT_DESKTOP defined appears to be a desktop OS. Bailing as CyberPanel is incompatible."
-    echo -e "\nCyberPanel is supported on server OS types only. Such as Ubuntu 18.04 x86_64, Ubuntu 20.04 x86_64, Ubuntu 20.10 x86_64, Ubuntu 22.04 x86_64, Ubuntu 24.04 x86_64, Ubuntu 24.04.3 x86_64, CentOS 8.x, AlmaLinux 8.x, AlmaLinux 9.x, AlmaLinux 10.x and CloudLinux 7.x...\n"
+    echo "$XDG_CURRENT_DESKTOP defined appears to be a desktop OS. Bailing as Admini is incompatible."
+    echo -e "\nAdmini is supported on server OS types only. Such as Ubuntu 18.04 x86_64, Ubuntu 20.04 x86_64, Ubuntu 20.10 x86_64, Ubuntu 22.04 x86_64, Ubuntu 24.04 x86_64, Ubuntu 24.04.3 x86_64, CentOS 8.x, AlmaLinux 8.x, AlmaLinux 9.x, AlmaLinux 10.x and CloudLinux 7.x...\n"
     exit
 fi
 
@@ -561,8 +561,8 @@ elif grep -q -E "openEuler 20.03|openEuler 22.03" /etc/os-release ; then
   Server_OS="openEuler"
 else
   echo -e "Unable to detect your system..."
-  echo -e "\nCyberPanel is supported on x86_64 based Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, Debian 11, Debian 12, Debian 13, CentOS 7, CentOS 8, CentOS 9, RHEL 8, RHEL 9, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, CloudLinux 7, CloudLinux 8, openEuler 20.03, openEuler 22.03...\n"
-  Debug_Log2 "CyberPanel is supported on x86_64 based Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, Debian 11, Debian 12, Debian 13, CentOS 7, CentOS 8, CentOS 9, RHEL 8, RHEL 9, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, CloudLinux 7, CloudLinux 8, openEuler 20.03, openEuler 22.03... [404]"
+  echo -e "\nAdmini is supported on x86_64 based Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, Debian 11, Debian 12, Debian 13, CentOS 7, CentOS 8, CentOS 9, RHEL 8, RHEL 9, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, CloudLinux 7, CloudLinux 8, openEuler 20.03, openEuler 22.03...\n"
+  Debug_Log2 "Admini is supported on x86_64 based Ubuntu 18.04, Ubuntu 20.04, Ubuntu 20.10, Ubuntu 22.04, Ubuntu 24.04, Ubuntu 24.04.3, Debian 11, Debian 12, Debian 13, CentOS 7, CentOS 8, CentOS 9, RHEL 8, RHEL 9, AlmaLinux 8, AlmaLinux 9, AlmaLinux 10, RockyLinux 8, CloudLinux 7, CloudLinux 8, openEuler 20.03, openEuler 22.03... [404]"
   exit
 fi
 
@@ -594,12 +594,12 @@ echo -e "Checking virtualization type..."
 log_info "Checking virtualization type"
 #if hostnamectl | grep -q "Virtualization: lxc"; then
 #  echo -e "\nLXC detected..."
-#  echo -e "CyberPanel does not support LXC"
+#  echo -e "Admini does not support LXC"
 #  echo -e "Exiting..."
-#  Debug_Log2 "CyberPanel does not support LXC.. [404]"
+#  Debug_Log2 "Admini does not support LXC.. [404]"
 #  exit
 #fi
-#remove per https://github.com/usmannasir/cyberpanel/issues/589
+#remove per https://github.com/iSundram/Admini/issues/589
 
 if hostnamectl | grep -q "Virtualization: openvz"; then
   echo -e "OpenVZ detected...\n"
@@ -704,9 +704,9 @@ fi
 }
 
 Show_Help() {
-echo -e "\nCyberPanel Installer Script Help\n"
+echo -e "\nAdmini Installer Script Help\n"
 echo -e "\nUsage: sh <(curl cyberpanel.sh) --argument"
-echo -e "\n\e[31m-v\e[39m or \e[31m--version\e[39m : choose to install CyberPanel OpenLiteSpeed or CyberPanel Enterprise, available options are \e[31mols\e[39m , \e[31mTRIAL\e[39m and \e[31mSERIAL_NUMBER\e[39m, default ols"
+echo -e "\n\e[31m-v\e[39m or \e[31m--version\e[39m : choose to install Admini OpenLiteSpeed or Admini Enterprise, available options are \e[31mols\e[39m , \e[31mTRIAL\e[39m and \e[31mSERIAL_NUMBER\e[39m, default ols"
 echo -e "Please be aware, this serial number must be obtained from LiteSpeed Store."
 echo -e "And if this serial number has been used before, it must be released/migrated in Store first, otherwise it will fail to start."
 echo -e "\n\e[31m-a\e[39m or \e[31m--addons\e[39m : install addons: memcached, redis, PHP extension for memcached and redis"
@@ -723,7 +723,7 @@ echo -e "e.g.  \e[31m-b 2.0.2\e[39m will install 2.0.2 version"
 echo -e "\n\e[31m--mirror\e[39m : this argument force to use mirror server for majority of repositories, only suggest to use for servers within China"
 echo -e "\nExample:"
 echo -e "\nsh <(curl cyberpanel.sh) -v ols -p r or ./cyberpanel.sh --version ols --password random"
-echo -e "\nThis will install CyberPanel OpenLiteSpeed and randomly generate the password."
+echo -e "\nThis will install Admini OpenLiteSpeed and randomly generate the password."
 echo -e "\nsh <(curl cyberpanel.sh) -v LICENSE_KEY -a -p my_pass_word"
 echo -e "\nThis will install LiteSpeed Enterise , replace LICENSE_KEY to actual license key and set password to my_pass_word\n"
 }
@@ -874,9 +874,9 @@ fi
 }
 
 Interactive_Mode() {
-echo -e "		CyberPanel Installer v$Panel_Version.$Panel_Build
+echo -e "		Admini Installer v$Panel_Version.$Panel_Build
 
-1. Install CyberPanel.
+1. Install Admini.
 
 2. Exit.
 
@@ -899,15 +899,15 @@ esac
 
 
 Interactive_Mode_Set_Parameter() {
-echo -e "		CyberPanel Installer v$Panel_Version.$Panel_Build
+echo -e "		Admini Installer v$Panel_Version.$Panel_Build
 
 RAM check : $(free -m | awk 'NR==2{printf "%s/%sMB (%.2f%%)\n", $3,$2,$3*100/$2 }')
 
 Disk check : $(df -h | awk '$NF=="/"{printf "%d/%dGB (%s)\n", $3,$2,$5}') (Minimal \e[31m10GB\e[39m free space)
 
-1. Install CyberPanel with \e[31mOpenLiteSpeed\e[39m.
+1. Install Admini with \e[31mOpenLiteSpeed\e[39m.
 
-2. Install Cyberpanel with \e[31mLiteSpeed Enterprise\e[39m.
+2. Install Admini with \e[31mLiteSpeed Enterprise\e[39m.
 
 3. Exit.
 
@@ -930,7 +930,7 @@ case "$Input_Number" in
   ;;
 esac
 
-echo -e "\nInstall Full service for CyberPanel? This will include PowerDNS, Postfix and Pure-FTPd."
+echo -e "\nInstall Full service for Admini? This will include PowerDNS, Postfix and Pure-FTPd."
 echo -e ""
 printf "%s" "Full installation [Y/n]: "
 read -r Tmp_Input
@@ -968,7 +968,7 @@ fi
 
   ### Ask if you want to set up this CyberPanel with remote MySQL
 
-echo -e "\nDo you want to setup Remote MySQL? (This will skip installation of local MySQL)"
+  echo -e "\nDo you want to setup Remote MySQL? (This will skip installation of local MySQL)"
 echo -e ""
 printf "%s" "(Default = No) Remote MySQL [y/N]: "
 read -r Tmp_Input
@@ -1793,10 +1793,10 @@ Retry_Command "/root/.acme.sh/acme.sh --upgrade --auto-upgrade"
 Main_Installation() {
 log_function_start "Main_Installation"
 Debug_Log2 "Starting main installation..,30"
-log_info "Starting main CyberPanel installation"
+log_info "Starting main Admini installation"
 if [[ -d /usr/local/CyberCP ]] ; then
-  echo -e "\n CyberPanel already installed, exiting..."
-  Debug_Log2 "CyberPanel already installed, exiting... [404]"
+  echo -e "\n Admini already installed, exiting..."
+  Debug_Log2 "Admini already installed, exiting... [404]"
   exit
 fi
 
@@ -1815,7 +1815,7 @@ if [[ $Server_Edition = "Enterprise" ]] ; then
   Enterprise_Flag="--ent ent --serial "
 fi
 
-sed -i 's|git clone https://github.com/usmannasir/cyberpanel|echo downloaded|g' install.py
+sed -i 's|git clone https://github.com/iSundram/Admini|echo downloaded|g' install.py
 sed -i 's|mirror.cyberpanel.net|cyberpanel.sh|g' install.py
 
 
@@ -1870,7 +1870,7 @@ fi
 
 
 if grep "CyberPanel installation successfully completed" /var/log/installLogs.txt >/dev/null; then
-  echo -e "\nCyberPanel installation sucessfully completed...\n"
+  echo -e "\nAdmini installation sucessfully completed...\n"
   Debug_Log2 "Main installation completed...,70"
 else
   echo -e "Oops, something went wrong..."
@@ -2149,20 +2149,20 @@ log_info "Regenerating SSL certificates for control panel"
 cat <<EOF >/root/cyberpanel/cert_conf
 [req]
 prompt=no
-distinguished_name=cyberpanel
-[cyberpanel]
+distinguished_name=admini
+[admini]
 commonName = www.example.com
 countryName = CP
-localityName = CyberPanel
-organizationName = CyberPanel
-organizationalUnitName = CyberPanel
+localityName = Admini
+organizationName = Admini
+organizationalUnitName = Admini
 stateOrProvinceName = CP
 emailAddress = mail@example.com
-name = CyberPanel
-surname = CyberPanel
-givenName = CyberPanel
+name = Admini
+surname = Admini
+givenName = Admini
 initials = CP
-dnQualifier = CyberPanel
+dnQualifier = Admini
 [server_exts]
 extendedKeyUsage = 1.3.6.1.5.5.7.3.1
 EOF
@@ -2264,9 +2264,9 @@ chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib64 || true
 
 Pre_Install_Setup_Git_URL() {
 if [[ $Server_Country != "CN" ]] ; then
-  Git_User="usmannasir"
-  Git_Content_URL="https://raw.githubusercontent.com/${Git_User}/cyberpanel"
-  Git_Clone_URL="https://github.com/${Git_User}/cyberpanel.git"
+  Git_User="iSundram"
+  Git_Content_URL="https://raw.githubusercontent.com/${Git_User}/Admini"
+  Git_Clone_URL="https://github.com/${Git_User}/Admini.git"
 else
   Git_User="qtwrk"
   Git_Content_URL="https://gitee.com/${Git_User}/cyberpanel/raw"
@@ -2415,7 +2415,7 @@ sed -i 's|http://license.litespeedtech.com/|https://cyberpanel.sh/license.litesp
 
 echo -e "\nInitializing...\n"
 log_info "============================================="
-log_info "CyberPanel installation script started"
+log_info "Admini installation script started"
 log_info "Script version: $Panel_Version.$Panel_Build"
 log_info "Script arguments: $*"
 log_info "============================================="

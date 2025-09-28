@@ -1,6 +1,6 @@
 {% extends "baseTemplate/index.html" %}
 {% load i18n %}
-{% block title %}{% trans "Package Manager - CyberPanel" %}{% endblock %}
+{% block title %}{% trans "Package Manager - Admini" %}{% endblock %}
 {% block content %}
 
 {% load static %}
@@ -805,9 +805,9 @@
                 <i class="fas fa-list tab-icon"></i>
                 {% trans "All Packages" %}
             </button>
-            <button type="button" class="tab-item" ng-click="fetchPackages('CyberPanel')" data-tab="cyberpanel" aria-label="{% trans 'View CyberPanel packages' %}">
+            <button type="button" class="tab-item" ng-click="fetchPackages('Admini')" data-tab="cyberpanel" aria-label="{% trans 'View Admini packages' %}">>
                 <i class="fas fa-shield-alt tab-icon"></i>
-                {% trans "CyberPanel Packages" %}
+                {% trans "Admini Packages" %}
             </button>
         </div>
 
@@ -1037,7 +1037,7 @@ app.controller('listOSPackages', function($scope, $http, $timeout) {
     var originalFetchPackages = $scope.fetchPackages;
     $scope.fetchPackages = function(type) {
         if (type === 'upgrade') $scope.currentTab = 'upgrade';
-        else if (type === 'CyberPanel') $scope.currentTab = 'cyberpanel';
+        else if (type === 'Admini') $scope.currentTab = 'cyberpanel';
         else $scope.currentTab = 'all';
         
         if (originalFetchPackages) {

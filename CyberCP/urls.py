@@ -1,4 +1,4 @@
-"""CyberCP URL Configuration
+"""Admini URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.urls import path, re_path, include
 from django.contrib import admin
-from .admin_config import cyberpanel_admin
+from .admin_config import admini_admin
 
 urlpatterns = [
-    path('admin/', cyberpanel_admin.urls),
+    path('admin/', admini_admin.urls),
     path('base/', include('baseTemplate.urls')),
     path('', include('loginSystem.urls')),
     path('packages/', include('packages.urls')),

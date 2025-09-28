@@ -36,7 +36,7 @@ class remoteTransferUtilities:
 
             if presenseCheck == 0:
                 writeToFile = open(authorized_keys, 'a')
-                writeToFile.writelines("#Added by CyberPanel\n")
+                writeToFile.writelines("#Added by Admini\n")
                 writeToFile.writelines(open(pathToKey,"r").read())
                 writeToFile.writelines("\n")
                 writeToFile.close()
@@ -85,7 +85,7 @@ class remoteTransferUtilities:
                 checkConn = backupUtil.backupUtilities.checkConnection(ipAddress)
                 if checkConn[0] == 0:
                     writeToFile.writelines("[" + time.strftime(
-                        "%m.%d.%Y_%H-%M-%S") + "]" + " Connection to:" + ipAddress + " Failed, please resetup this destination from CyberPanel, aborting. [5010]" + "\n")
+                        "%m.%d.%Y_%H-%M-%S") + "]" + " Connection to:" + ipAddress + " Failed, please resetup this destination from Admini, aborting. [5010]" + "\n")
                     writeToFile.close()
                     return
                 else:
@@ -361,7 +361,7 @@ class remoteTransferUtilities:
 
 def main():
 
-    parser = argparse.ArgumentParser(description='CyberPanel Installer')
+    parser = argparse.ArgumentParser(description='Admini Installer')
     parser.add_argument('function', help='Specific function to call!')
     parser.add_argument('--pathToKey', help='')
 

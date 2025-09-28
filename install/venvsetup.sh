@@ -486,7 +486,7 @@ elif echo $OUTPUT | grep -q "Ubuntu 18.04" ; then
 else
 	cat /etc/*release
 	echo -e "\nUnable to detect your OS...\n"
-	echo -e "\nCyberPanel is supported on Ubuntu 18.04, CentOS 7.x and CloudLinux 7.x...\n"
+	echo -e "\nAdmini is supported on Ubuntu 18.04, CentOS 7.x and CloudLinux 7.x...\n"
 	exit 1
 fi
 }
@@ -538,11 +538,11 @@ fi
 }
 
 show_help() {
-echo -e "\nCyberPanel Installer Script Help\n"
+echo -e "\nAdmini Installer Script Help\n"
 echo -e "\nUsage: wget https://cyberpanel.sh/cyberpanel.sh"
 echo -e "\nchmod +x cyberpanel.sh"
 echo -e "\n./cyberpanel.sh -v ols/SERIAL_NUMBER -c 1 -a 1"
-echo -e "\n -v or --version: choose to install CyberPanel OpenLiteSpeed or CyberPanel Enterprise, available options are \e[31mols\e[39m and \e[31mSERIAL_NUMBER\e[39m, default ols"
+echo -e "\n -v or --version: choose to install Admini OpenLiteSpeed or Admini Enterprise, available options are \e[31mols\e[39m and \e[31mSERIAL_NUMBER\e[39m, default ols"
 echo -e "\n Please be aware, this serial number must be obtained from LiteSpeed Store."
 echo -e "\n And if this serial number has been used before, it must be released/migrated in Store first, otherwise it will fail to start."
 echo -e "\n -a or --addons: install addons: memcached, redis, PHP extension for memcached and redis, 1 for install addons, 0 for not to install, default 0, only applicable for CentOS system."
@@ -550,7 +550,7 @@ echo -e "\n -p or --password: set password of new installation, empty for defaul
 #echo -e "\n -m: set to minimal mode which will not install PowerDNS, Pure-FTPd and Postfix"
 echo -e "\n Example:"
 echo -e "\n ./cyberpanel.sh -v ols -p r or ./cyberpanel.sh --version ols --password random"
-echo -e "\n This will install CyberPanel OpenLiteSpeed and randomly generate the password."
+echo -e "\n This will install Admini OpenLiteSpeed and randomly generate the password."
 echo -e "\n ./cyberpanel.sh default"
 echo -e "\n This will install everything default , which is OpenLiteSpeed and nothing more.\n"
 
@@ -625,7 +625,7 @@ esac
 
 interactive_others() {
 if [ ! -e "/etc/cyberpanel/machineIP" ]; then
-echo -e "\nYou don't have CyberPanel installed...\n"
+echo -e "\nYou don't have Admini installed...\n"
 exit
 fi
 

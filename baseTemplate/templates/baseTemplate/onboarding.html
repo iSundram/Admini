@@ -422,7 +422,7 @@
                 <i class="fas fa-cog"></i>
                 {% trans "Initial Configurations" %}
             </h1>
-            <p>{% trans "Configure Hostname and other default Settings for CyberPanel" %}</p>
+            <p>{% trans "Configure Hostname and other default Settings for Admini" %}</p>
             <a href="https://cyberpanel.net/KnowledgeBase/home/onboarding-and-initial-cyberpanel-configurations/" target="_blank" rel="noopener" class="learn-more-btn">
                 <i class="fas fa-book"></i>
                 {% trans "Learn More" %}
@@ -483,10 +483,10 @@
                         {% trans "Start Configurations" %}
                     </button>
                     
-                    <button type="button" ng-click="RestartCyberPanel()" 
+                    <button type="button" ng-click="RestartAdmini()" 
                             ng-hide="OnboardineDone" class="btn-secondary">
                         <i class="fas fa-sync-alt"></i>
-                        {% trans "Restart CyberPanel" %}
+                        {% trans "Restart Admini" %}
                     </button>
                 </div>
             </form>
@@ -496,7 +496,7 @@
         <div ng-hide="ExecutionStatus" class="progress-section">
             <div class="progress-info">
                 <i class="fas fa-info-circle"></i>
-                <p>{% trans "Note: Once configurations are completed, click Restart CyberPanel above. After clicking Restart CyberPanel, refresh the page to fetch new SSL from the browser." %}</p>
+                <p>{% trans "Note: Once configurations are completed, click Restart Admini above. After clicking Restart Admini, refresh the page to fetch new SSL from the browser." %}</p>
             </div>
             
             <div class="progress-status">

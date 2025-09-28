@@ -708,7 +708,7 @@ def topProcessesStatus(request):
         ipAddress = ipData.split('\n', 1)[0]
 
         data['ipAddress'] = ipAddress
-        data['CyberPanelVersion'] = 'v%s.%s' % (VERSION, str(BUILD))
+        data['AdminiVersion'] = 'v%s.%s' % (VERSION, str(BUILD))
 
         if ProcessUtilities.decideDistro() == ProcessUtilities.cent8:
             data['OS'] = 'Centos 8'

@@ -275,7 +275,7 @@ class cPanelImporter:
                 message = 'SSL set up OK for %s.' % (DomainName)
                 logging.statusWriter(self.logFile, message, 1)
             else:
-                message = 'SSL not detected for %s, you can later issue SSL from Manage SSL in CyberPanel.' % (DomainName)
+                message = 'SSL not detected for %s, you can later issue SSL from Manage SSL in Admini.' % (DomainName)
                 logging.statusWriter(self.logFile, message, 1)
 
             ## Document root
@@ -397,7 +397,7 @@ class cPanelImporter:
                             message = 'SSL set up OK for %s.' % (items)
                             logging.statusWriter(self.logFile, message, 1)
                         else:
-                            message = 'SSL not detected for %s, you can later issue SSL from Manage SSL in CyberPanel.' % (
+                            message = 'SSL not detected for %s, you can later issue SSL from Manage SSL in Admini.' % (
                                 items)
                             logging.statusWriter(self.logFile, message, 1)
 
