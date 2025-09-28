@@ -51,12 +51,12 @@ class FirewallManager:
 
     def getCurrentRules(self, userID = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             rules = FirewallRules.objects.all()
 
@@ -113,12 +113,12 @@ class FirewallManager:
 
     def addRule(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('add_status', 0)
+                return Amanager.loadErrorJson('add_status', 0)
 
             ruleName = data['ruleName']
             ruleProtocol = data['ruleProtocol']
@@ -142,12 +142,12 @@ class FirewallManager:
     def deleteRule(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('delete_status', 0)
+                return Amanager.loadErrorJson('delete_status', 0)
 
             ruleID = data['id']
             ruleProtocol = data['proto']
@@ -173,12 +173,12 @@ class FirewallManager:
         Edit an existing firewall rule
         """
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('edit_status', 0)
+                return Amanager.loadErrorJson('edit_status', 0)
 
             ruleID = data['id']
             newRuleName = data['ruleName']
@@ -244,12 +244,12 @@ class FirewallManager:
     def reloadFirewall(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('reload_status', 0)
+                return Amanager.loadErrorJson('reload_status', 0)
 
             command = 'sudo firewall-cmd --reload'
             res = ProcessUtilities.executioner(command)
@@ -272,12 +272,12 @@ class FirewallManager:
     def startFirewall(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('start_status', 0)
+                return Amanager.loadErrorJson('start_status', 0)
 
             command = 'sudo systemctl start firewalld'
             res = ProcessUtilities.executioner(command)
@@ -300,12 +300,12 @@ class FirewallManager:
     def stopFirewall(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('stop_status', 0)
+                return Amanager.loadErrorJson('stop_status', 0)
 
             command = 'sudo systemctl stop firewalld'
             res = ProcessUtilities.executioner(command)
@@ -328,12 +328,12 @@ class FirewallManager:
     def firewallStatus(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             command = 'systemctl status firewalld'
             status = ProcessUtilities.outputExecutioner(command)
@@ -360,12 +360,12 @@ class FirewallManager:
     def getSSHConfigs(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             type = data['type']
 
@@ -440,12 +440,12 @@ class FirewallManager:
 
     def saveSSHConfigs(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             type = data['type']
             sshPort = data['sshPort']
@@ -502,12 +502,12 @@ class FirewallManager:
 
     def deleteSSHKey(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('delete_status', 0)
+                return Amanager.loadErrorJson('delete_status', 0)
 
             key = data['key']
 
@@ -532,12 +532,12 @@ class FirewallManager:
 
     def addSSHKey(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('add_status', 0)
+                return Amanager.loadErrorJson('add_status', 0)
 
             key = data['key']
 
@@ -590,12 +590,12 @@ class FirewallManager:
 
     def installModSec(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installModSec', 0)
+                return Amanager.loadErrorJson('installModSec', 0)
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
             execPath = execPath + " installModSec"
@@ -668,12 +668,12 @@ class FirewallManager:
 
     def fetchModSecSettings(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
 
@@ -809,12 +809,12 @@ class FirewallManager:
 
     def saveModSecConfigurations(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
 
@@ -962,12 +962,12 @@ class FirewallManager:
 
     def fetchModSecRules(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('modSecInstalled', 0)
+                return Amanager.loadErrorJson('modSecInstalled', 0)
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
 
@@ -1019,12 +1019,12 @@ class FirewallManager:
 
     def saveModSecRules(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             newModSecRules = data['modSecRules']
 
@@ -1078,12 +1078,12 @@ class FirewallManager:
     def getOWASPAndComodoStatus(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('modSecInstalled', 0)
+                return Amanager.loadErrorJson('modSecInstalled', 0)
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
                 confPath = os.path.join(virtualHostUtilities.Server_root, "conf/httpd_config.conf")
@@ -1168,12 +1168,12 @@ class FirewallManager:
     def installModSecRulesPack(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             packName = data['packName']
 
@@ -1217,12 +1217,12 @@ class FirewallManager:
 
     def getRulesFiles(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             packName = data['packName']
 
@@ -1353,12 +1353,12 @@ class FirewallManager:
 
     def enableDisableRuleFile(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             packName = data['packName']
             fileName = data['fileName']
@@ -1406,13 +1406,13 @@ class FirewallManager:
     def installCSF(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " installCSF"
@@ -1475,12 +1475,12 @@ class FirewallManager:
     def removeCSF(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " removeCSF"
@@ -1501,12 +1501,12 @@ class FirewallManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             currentSettings = CSF.fetchCSFSettings()
 
@@ -1529,12 +1529,12 @@ class FirewallManager:
     def changeStatus(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -1563,12 +1563,12 @@ class FirewallManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             protocol = data['protocol']
             ports = data['ports']
@@ -1607,12 +1607,12 @@ class FirewallManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -1667,7 +1667,7 @@ class FirewallManager:
     def submitinstallImunify(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
@@ -1679,7 +1679,7 @@ class FirewallManager:
 
             data = json.loads(self.request.body)
 
-            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/manager/CageFS.py"
             execPath = execPath + " --function submitinstallImunify --key %s" % (data['key'])
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1718,7 +1718,7 @@ class FirewallManager:
     def submitinstallImunifyAV(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
@@ -1728,7 +1728,7 @@ class FirewallManager:
                                                           1)
                 return 0
 
-            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/manager/CageFS.py"
             execPath = execPath + " --function submitinstallImunifyAV"
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1748,12 +1748,12 @@ class FirewallManager:
 
     def fetchlitespeed_Conf(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('modSecInstalled', 0)
+                return Amanager.loadErrorJson('modSecInstalled', 0)
 
             file_path = "/usr/local/lsws/conf/pre_main_global.conf"
 
@@ -1787,12 +1787,12 @@ class FirewallManager:
 
     def saveLitespeed_conf(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('modSecInstalled', 0)
+                return Amanager.loadErrorJson('modSecInstalled', 0)
 
             file_path = "/usr/local/lsws/conf/pre_main_global.conf"
 
@@ -1833,12 +1833,12 @@ class FirewallManager:
         Export all custom firewall rules to a JSON file, excluding default CyberPanel rules
         """
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('exportStatus', 0)
+                return Amanager.loadErrorJson('exportStatus', 0)
 
             # Get all firewall rules
             rules = FirewallRules.objects.all()
@@ -1886,12 +1886,12 @@ class FirewallManager:
         Import firewall rules from a JSON file
         """
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('importStatus', 0)
+                return Amanager.loadErrorJson('importStatus', 0)
 
             # Handle file upload
             if hasattr(self.request, 'FILES') and 'import_file' in self.request.FILES:

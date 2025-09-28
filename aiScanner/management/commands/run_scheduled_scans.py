@@ -255,7 +255,7 @@ class Command(BaseCommand):
                             # Get the hostname from CyberPanel settings
                             try:
                                 from plogical.acl import ACLManager
-                                server_ip = ACLManager.fetchIP()
+                                server_ip = Amanager.fetchIP()
                                 return f"{server_ip}:8090"  # Default CyberPanel port
                             except:
                                 return "localhost:8090"  # Fallback

@@ -99,7 +99,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -143,7 +143,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -190,7 +190,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -238,7 +238,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -280,7 +280,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -300,7 +300,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -335,7 +335,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -356,7 +356,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -399,7 +399,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -489,7 +489,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -520,7 +520,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -569,7 +569,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -600,7 +600,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -638,7 +638,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -658,7 +658,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -692,7 +692,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -723,7 +723,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -744,7 +744,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -822,7 +822,7 @@ class S3Backups(multi.Thread):
             ##
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 BackupLogsDO(owner=plan, timeStamp=time.strftime("%b %d %Y, %H:%M:%S"), level='INFO',
@@ -867,7 +867,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use MINIO Backups.')
@@ -891,7 +891,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use MINIO Backups.')
@@ -926,7 +926,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -946,7 +946,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -977,7 +977,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -1015,7 +1015,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -1035,7 +1035,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -1089,7 +1089,7 @@ class S3Backups(multi.Thread):
             ##
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 BackupLogsMINIO(owner=plan, timeStamp=time.strftime("%b %d %Y, %H:%M:%S"), level='INFO',
@@ -1135,7 +1135,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -1169,7 +1169,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')
@@ -1200,7 +1200,7 @@ class S3Backups(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can use AWS S3 Backups.')

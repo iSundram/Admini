@@ -59,10 +59,10 @@ class DNSManager:
     def NSCreation(self, userID = None, data = None):
         try:
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'createNameServer') == 0:
-                return ACLManager.loadErrorJson('NSCreation', 0)
+            if Amanager.currentContextPermission(currentACL, 'createNameServer') == 0:
+                return Amanager.loadErrorJson('NSCreation', 0)
 
 
             domainForNS = data['domainForNS']
@@ -127,9 +127,9 @@ class DNSManager:
         try:
             admin = Administrator.objects.get(pk=userID)
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'createDNSZone') == 0:
-                return ACLManager.loadErrorJson('zoneCreation', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'createDNSZone') == 0:
+                return Amanager.loadErrorJson('zoneCreation', 0)
 
             zoneDomain = data['zoneDomain']
 
@@ -159,7 +159,7 @@ class DNSManager:
             return HttpResponse(final_json)
 
     def addDeleteDNSRecords(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/powerdns'):
             finalData = {"status": 0}
@@ -167,7 +167,7 @@ class DNSManager:
             finalData = {"status": 1}
 
         # Get DNS zones directly from the Domains table instead of just websites
-        finalData['domainsList'] = ACLManager.findAllDNSZones(currentACL, userID)
+        finalData['domainsList'] = Amanager.findAllDNSZones(currentACL, userID)
 
 
         template = 'dns/addDeleteDNSRecords.html'
@@ -177,20 +177,20 @@ class DNSManager:
     def getCurrentRecordsForDomain(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
 
             zoneDomain = data['selectedZone']
             currentSelection = data['currentSelection']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             domain = Domains.objects.get(name=zoneDomain)
             records = Records.objects.filter(domain_id=domain.id)
@@ -251,10 +251,10 @@ class DNSManager:
     def addDNSRecord(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('add_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('add_status', 0)
 
             zoneDomain = data['selectedZone']
             recordType = data['recordType']
@@ -267,10 +267,10 @@ class DNSManager:
                 raise ValueError("TTL: The item must be lesser than 86401")
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             zone = Domains.objects.get(name=zoneDomain)
             value = ""
@@ -427,25 +427,25 @@ class DNSManager:
     def updateRecord(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('add_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('add_status', 0)
 
             zoneDomain = data['selectedZone']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             record = Records.objects.get(pk=data['id'])
 
-            if ACLManager.VerifyRecordOwner(currentACL, record, zoneDomain) == 1:
+            if Amanager.VerifyRecordOwner(currentACL, record, zoneDomain) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if data['nameNow'] != None:
                 record.name = data['nameNow']
@@ -476,10 +476,10 @@ class DNSManager:
 
     def deleteDNSRecord(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('delete_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('delete_status', 0)
 
             id = data['id']
 
@@ -487,10 +487,10 @@ class DNSManager:
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnershipZone(delRecord.domainOwner.name, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(delRecord.domainOwner.name, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
 
             delRecord.delete()
@@ -505,14 +505,14 @@ class DNSManager:
             return HttpResponse(final_json)
 
     def deleteDNSZone(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         if not os.path.exists('/home/cyberpanel/powerdns'):
             finalData = {"status": 0}
         else:
             finalData = {"status": 1}
 
         # Get DNS zones directly from the Domains table instead of just websites
-        finalData['domainsList'] = ACLManager.findAllDNSZones(currentACL, userID)
+        finalData['domainsList'] = Amanager.findAllDNSZones(currentACL, userID)
         template = 'dns/deleteDNSZone.html'
         proc = httpProc(request, template, finalData, 'deleteZone')
         return proc.render()
@@ -521,22 +521,22 @@ class DNSManager:
         try:
             zoneDomain = data['zoneDomain']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.currentContextPermission(currentACL, 'deleteZone') == 0:
-                return ACLManager.loadErrorJson('delete_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteZone') == 0:
+                return Amanager.loadErrorJson('delete_status', 0)
 
 
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             delZone = Domains.objects.get(name=zoneDomain)
             admin = Administrator.objects.get(pk=userID)
             if currentACL['admin'] == 1:
                 if delZone.admin != admin:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
             delZone.delete()
 
@@ -550,14 +550,14 @@ class DNSManager:
             return HttpResponse(final_json)
 
     def configureDefaultNameServers(self, request=None, userID=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/powerdns'):
             data = {"status": 0}
         else:
             data = {"status": 1}
 
-        data['domainsList'] = ACLManager.findAllDomains(currentACL, userID)
+        data['domainsList'] = Amanager.findAllDomains(currentACL, userID)
         if os.path.exists(DNSManager.defaultNameServersPath):
             nsData = open(DNSManager.defaultNameServersPath, 'r').readlines()
             try:
@@ -583,12 +583,12 @@ class DNSManager:
 
     def saveNSConfigurations(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             nsContent = ''
 
@@ -624,7 +624,7 @@ class DNSManager:
 
                 zone = Domains.objects.get(name=topLevelDomain)
 
-                DNS.createDNSRecord(zone, ns, 'A', ACLManager.fetchIP(), 0, 1400)
+                DNS.createDNSRecord(zone, ns, 'A', Amanager.fetchIP(), 0, 1400)
 
             final_dic = {'status': 1, 'error_message': "None"}
             final_json = json.dumps(final_dic)
@@ -636,7 +636,7 @@ class DNSManager:
             return HttpResponse(final_json)
 
     def addDeleteDNSRecordsCloudFlare(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         if not os.path.exists('/home/cyberpanel/powerdns'):
             status = 0
         else:
@@ -649,7 +649,7 @@ class DNSManager:
 
         if os.path.exists(cfPath):
             CloudFlare = 1
-            domainsList = ACLManager.findAllDomains(currentACL, userID)
+            domainsList = Amanager.findAllDomains(currentACL, userID)
             self.admin = admin
             self.loadCFKeys()
             data = {"domainsList": domainsList, "status": status, 'CloudFlare': CloudFlare, 'cfEmail': self.email,
@@ -667,10 +667,10 @@ class DNSManager:
             cfToken = data['cfToken']
             cfSync = data['cfSync']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('status', 0)
 
             admin = Administrator.objects.get(pk=userID)
             cfPath = '%s%s' % (DNS.CFPath, admin.userName)
@@ -693,10 +693,10 @@ class DNSManager:
     def getCurrentRecordsForDomainCloudFlare(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
 
             zoneDomain = data['selectedZone']
@@ -705,10 +705,10 @@ class DNSManager:
             admin = Administrator.objects.get(pk=userID)
             self.admin = admin
 
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             self.loadCFKeys()
 
@@ -800,10 +800,10 @@ class DNSManager:
 
     def deleteDNSRecordCloudFlare(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             zoneDomain = data['selectedZone']
             id = data['id']
@@ -811,10 +811,10 @@ class DNSManager:
             admin = Administrator.objects.get(pk=userID)
             self.admin = admin
 
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             self.loadCFKeys()
 
@@ -845,10 +845,10 @@ class DNSManager:
     def addDNSRecordCloudFlare(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('add_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('add_status', 0)
 
             zoneDomain = data['selectedZone']
             recordType = data['recordType']
@@ -861,10 +861,10 @@ class DNSManager:
 
             admin = Administrator.objects.get(pk=userID)
             self.admin = admin
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Get zone
 
@@ -1036,20 +1036,20 @@ class DNSManager:
     def syncCF(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('add_status', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('add_status', 0)
 
             zoneDomain = data['selectedZone']
 
             admin = Administrator.objects.get(pk=userID)
             self.admin = admin
 
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Get zone
 
@@ -1074,10 +1074,10 @@ class DNSManager:
 
     def enableProxy(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteRecords') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             zoneDomain = data['selectedZone']
             name = data['name']
@@ -1086,10 +1086,10 @@ class DNSManager:
             admin = Administrator.objects.get(pk=userID)
             self.admin = admin
 
-            if ACLManager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnershipZone(zoneDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             self.loadCFKeys()
 
@@ -1388,7 +1388,7 @@ setuid=pdns
             import sys
             sys.path.append('/usr/local/core')
             os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-            from CyberCP import settings
+            from core import settings
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Configurations reset..,70')
 
@@ -1403,7 +1403,7 @@ setuid=pdns
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Fixing permissions..,90')
 
-            ACLManager.fixPermissions()
+            Amanager.fixPermissions()
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Completed [200].')
 
         except BaseException as msg:

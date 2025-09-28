@@ -18,7 +18,7 @@ from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
 
 def CageFS(request):
     try:
-        templateName = 'CLManager/listWebsites.html'
+        templateName = 'manager/listWebsites.html'
         c = CLManagerMain(request, templateName)
         return c.renderC()
     except KeyError:
@@ -28,12 +28,12 @@ def submitCageFSInstall(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         c = CLManagerMain(request, None, 'submitCageFSInstall')
         c.start()
@@ -59,12 +59,12 @@ def enableOrDisable(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
 
@@ -111,9 +111,9 @@ def enableOrDisable(request):
 def CreatePackage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
-        templateName = 'CLManager/createPackage.html'
-        packageList = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        templateName = 'manager/createPackage.html'
+        packageList = Amanager.loadPackages(userID, currentACL)
         data = {}
         data['packList'] = packageList
         c = CLManagerMain(request, templateName, None, data)
@@ -125,12 +125,12 @@ def submitCreatePackage(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
 
@@ -175,7 +175,7 @@ def submitCreatePackage(request):
 
 def listPackages(request):
     try:
-        templateName = 'CLManager/listPackages.html'
+        templateName = 'manager/listPackages.html'
         c = CLManagerMain(request, templateName)
         return c.renderC()
     except KeyError:
@@ -185,7 +185,7 @@ def fetchPackages(request):
     try:
         userID = request.session['userID']
         wm = CLManagerMain()
-        return wm.fetchPackages(ACLManager.loadedACL(userID))
+        return wm.fetchPackages(Amanager.loadedACL(userID))
     except KeyError:
         return redirect(loadLoginPage)
 
@@ -193,12 +193,12 @@ def deleteCLPackage(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
 
@@ -221,12 +221,12 @@ def saveSettings(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
 
@@ -272,7 +272,7 @@ def saveSettings(request):
 
 def monitorUsage(request):
     try:
-        templateName = 'CLManager/monitorUsage.html'
+        templateName = 'manager/monitorUsage.html'
         c = CLManagerMain(request, templateName)
         return c.renderC()
     except KeyError:
@@ -280,7 +280,7 @@ def monitorUsage(request):
 
 def websiteContainerLimit(request, domain):
     try:
-        templateName = 'CLManager/websiteContainerLimit.html'
+        templateName = 'manager/websiteContainerLimit.html'
         data = {}
         data['domain'] = domain
         c = CLManagerMain(request, templateName, None, data)
@@ -292,12 +292,12 @@ def getUsageData(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
         domain = data['domain']

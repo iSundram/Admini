@@ -22,11 +22,11 @@ def loadFileManagerHome(request,domain):
         
         if Websites.objects.filter(domain=domain).exists():
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 # Get IP address for base template context
-                ipAddress = ACLManager.fetchIP()
+                ipAddress = Amanager.fetchIP()
                 
                 # Prepare context for base template
                 from plogical.acl import ACLManager as ACL
@@ -89,7 +89,7 @@ def loadFileManagerHome(request,domain):
                 
                 return render(request, template, context)
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
         else:
             return HttpResponse("Domain does not exists.")
 
@@ -106,12 +106,12 @@ def changePermissions(request):
             data = json.loads(request.body)
             domainName = data['domainName']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             fm = FM(request, data)
             fm.fixPermissions(domainName)
@@ -139,27 +139,27 @@ def controller(request):
 
             userID = request.session['userID']
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if domainName == '':
                 if currentACL['admin'] == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+                    return Amanager.loadErrorJson('FilemanagerAdmin', 0)
             else:
-                if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+                if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
         except:
             method = data['method']
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+                return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         fm = FM(request, data)
 
@@ -208,14 +208,14 @@ def upload(request):
 
             userID = request.session['userID']
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.checkOwnership(data['domainName'], admin, currentACL) == 1:
+            if Amanager.checkOwnership(data['domainName'], admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
         except:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         fm = FM(request, data)
         return fm.upload()
@@ -240,24 +240,24 @@ def editFile(request):
         except:
             theme = 'cobalt'
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
-        if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+        if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         mode = FM.findMode(fileName)
         modeFiles = FM.findModeFiles(mode)
         additionalOptions = FM.findAdditionalOptions(mode)
         themeFile = FM.findThemeFile(theme)
 
-        if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+        if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
             return render(request, 'filemanager/editFile.html', {'domainName': domainName, 'fileName': fileName,
                                                                  'mode': mode, 'modeFiles': modeFiles, 'theme': theme,
                                                                  'themeFile': themeFile, 'additionalOptions': additionalOptions})
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
     except KeyError:
         return redirect(loadLoginPage)
@@ -272,7 +272,7 @@ def FileManagerRoot(request):
         cosmetic = CyberPanelCosmetic()
         cosmetic.save()
 
-    ipAddressLocal = ACLManager.fetchIP()
+    ipAddressLocal = Amanager.fetchIP()
 
     try:
 
@@ -314,12 +314,12 @@ def downloadFile(request):
 
         domainName = request.GET.get('domainName')
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
-        if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+        if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('permissionsChanged', 0)
+            return Amanager.loadErrorJson('permissionsChanged', 0)
 
         homePath = '/home/%s' % (domainName)
 
@@ -344,12 +344,12 @@ def RootDownloadFile(request):
         fileToDownload = request.build_absolute_uri().split('fileToDownload')[1][1:]
         fileToDownload = iri_to_uri(fileToDownload)
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         response = HttpResponse(content_type='application/force-download')
         response['Content-Disposition'] = 'attachment; filename=%s' % (fileToDownload.split('/')[-1])

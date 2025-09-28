@@ -32,8 +32,8 @@ class PackagesManager:
 
     def deletePacakge(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
-        packageList = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        packageList = Amanager.loadPackages(userID, currentACL)
         proc = httpProc(self.request, 'packages/deletePackage.html',
                         {"packageList": packageList}, 'deletePackage')
         return proc.render()
@@ -42,10 +42,10 @@ class PackagesManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'createPackage') == 0:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createPackage') == 0:
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             data = json.loads(self.request.body)
             packageName = data['packageName'].replace(' ', '')
@@ -100,10 +100,10 @@ class PackagesManager:
     def submitDelete(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deletePackage') == 0:
-                return ACLManager.loadErrorJson('deleteStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deletePackage') == 0:
+                return Amanager.loadErrorJson('deleteStatus', 0)
 
             data = json.loads(self.request.body)
             packageName = data['packageName']
@@ -112,8 +112,8 @@ class PackagesManager:
 
             ## Check package ownership
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.CheckPackageOwnership(delPackage, admin, currentACL) == 0:
-                return ACLManager.loadErrorJson('deleteStatus', 0)
+            if Amanager.CheckPackageOwnership(delPackage, admin, currentACL) == 0:
+                return Amanager.loadErrorJson('deleteStatus', 0)
 
             delPackage.delete()
 
@@ -129,8 +129,8 @@ class PackagesManager:
 
     def modifyPackage(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
-        packageList = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        packageList = Amanager.loadPackages(userID, currentACL)
         proc = httpProc(self.request, 'packages/modifyPackage.html',
                         {"packList": packageList}, 'modifyPackage')
         return proc.render()
@@ -141,17 +141,17 @@ class PackagesManager:
             data = json.loads(self.request.body)
             packageName = data['packageName']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'modifyPackage') == 0:
-                return ACLManager.loadErrorJson('modifyStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'modifyPackage') == 0:
+                return Amanager.loadErrorJson('modifyStatus', 0)
 
             modifyPack = Package.objects.get(packageName=packageName)
 
             ## Check package ownership
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.CheckPackageOwnership(modifyPack, admin, currentACL) == 0:
-                return ACLManager.loadErrorJson('deleteStatus', 0)
+            if Amanager.CheckPackageOwnership(modifyPack, admin, currentACL) == 0:
+                return Amanager.loadErrorJson('deleteStatus', 0)
 
             diskSpace = modifyPack.diskSpace
             bandwidth = modifyPack.bandwidth
@@ -175,12 +175,12 @@ class PackagesManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'modifyPackage') == 0:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'modifyPackage') == 0:
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             data = json.loads(self.request.body)
             packageName = data['packageName']
@@ -241,8 +241,8 @@ class PackagesManager:
 
     def listPackages(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
-        packageList = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        packageList = Amanager.loadPackages(userID, currentACL)
         proc = httpProc(self.request, 'packages/listPackages.html',
                         {"packList": packageList}, 'listPackages')
         return proc.render()
@@ -256,8 +256,8 @@ class PackagesManager:
         try:
             adminUser = data['adminUser']
             admin = Administrator.objects.get(userName=adminUser)
-            currentACL = ACLManager.loadedACL(admin.id)
-            packageList = ACLManager.loadPackages(admin.id, currentACL)
+            currentACL = Amanager.loadedACL(admin.id)
+            packageList = Amanager.loadPackages(admin.id, currentACL)
             return HttpResponse(json.dumps(packageList))
         except BaseException as msg:
             data_ret = {'status': 0, 'error_message': str(msg)}
@@ -268,13 +268,13 @@ class PackagesManager:
         try:
             userID = self.request.session['userID']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listPackages') == 0:
-                return ACLManager.loadErrorJson()
+            if Amanager.currentContextPermission(currentACL, 'listPackages') == 0:
+                return Amanager.loadErrorJson()
 
 
-            packages = ACLManager.loadPackageObjects(userID, currentACL)
+            packages = Amanager.loadPackageObjects(userID, currentACL)
 
             json_data = "["
             checker = 0

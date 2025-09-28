@@ -108,7 +108,7 @@ class virtualHostUtilities:
 
         # Get server IP with error handling
         try:
-            serverIP = ACLManager.fetchIP()
+            serverIP = Amanager.fetchIP()
         except Exception as e:
             message = f'Failed to fetch server IP: {str(e)} [404]'
             logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, message)
@@ -573,7 +573,7 @@ local_name %s {
 
             if LimitsCheck:
 
-                if ACLManager.websitesLimitCheck(admin, 1) == 0:
+                if Amanager.websitesLimitCheck(admin, 1) == 0:
                     logging.CyberCPLogFileWriter.statusWriter(tempStatusPath,
                                                               'You\'ve reached maximum websites limit as a reseller. [404]')
                     return 0, 'You\'ve reached maximum websites limit as a reseller.'
@@ -736,7 +736,7 @@ local_name %s {
             return 1, 'None'
 
         except BaseException as msg:
-            if ACLManager.FindIfChild() == 0:
+            if Amanager.FindIfChild() == 0:
                 vhost.deleteVirtualHostConfigurations(virtualHostName)
             logging.CyberCPLogFileWriter.writeToFile(str(msg) + "  [createVirtualHost]")
             logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, str(msg) + " [404]")
@@ -1612,7 +1612,7 @@ local_name %s {
             return 1, "None"
 
         except BaseException as msg:
-            if ACLManager.FindIfChild() == 0:
+            if Amanager.FindIfChild() == 0:
                 numberOfWebsites = Websites.objects.count() + ChildDomains.objects.count()
                 vhost.deleteCoreConf(virtualHostName, numberOfWebsites)
 

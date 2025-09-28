@@ -28,14 +28,14 @@ class EmailMarketingManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
-            allUsers = ACLManager.findAllUsers()
+            allUsers = Amanager.findAllUsers()
             disabledUsers = EmailMarketing.objects.all()
             disabled = []
             for items in disabledUsers:
@@ -74,12 +74,12 @@ class EmailMarketingManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
             userName = data['userName']
@@ -102,16 +102,16 @@ class EmailMarketingManager:
     def createEmailList(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             proc = httpProc(self.request, 'emailMarketing/createEmailList.html', {'domain': self.domain})
             return proc.render()
@@ -130,16 +130,16 @@ class EmailMarketingManager:
             extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(data['domain'], admin, currentACL) == 1:
+            if Amanager.checkOwnership(data['domain'], admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             # em = EM('createEmailList', extraArgs)
             # em.start()
@@ -157,16 +157,16 @@ class EmailMarketingManager:
     def manageLists(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             listNames = emACL.getEmailsLists(self.domain)
 
@@ -180,16 +180,16 @@ class EmailMarketingManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             proc = httpProc(self.request, 'emailMarketing/configureVerify.html',
                             {'domain': self.domain})
@@ -202,7 +202,7 @@ class EmailMarketingManager:
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(self.request.body)
@@ -213,10 +213,10 @@ class EmailMarketingManager:
 
             emailList = EmailLists.objects.get(listName=self.listName)
 
-            if ACLManager.checkOwnership(emailList.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(emailList.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             logsLen = emailList.validationlog_set.all().count()
 
@@ -273,7 +273,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -307,7 +307,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -319,12 +319,12 @@ class EmailMarketingManager:
             endPageNumber = finalPageNumber + recordstoShow
 
             emailList = EmailLists.objects.get(listName=listName)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             elif emailList.owner.id != userID:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             emails = emailList.emailsinlist_set.all()
 
@@ -382,18 +382,18 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
             listName = data['listName']
 
             delList = EmailLists.objects.get(listName=listName)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] == 1:
                 pass
             elif delList.owner.id != userID:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             delList.delete()
 
@@ -412,18 +412,18 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
             extraArgs = {}
             extraArgs['listName'] = data['listName']
 
             delList = EmailLists.objects.get(listName=extraArgs['listName'])
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] == 1:
                 pass
             elif delList.owner.id != userID:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             em = EM('verificationJob', extraArgs)
             em.start()
@@ -444,7 +444,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -452,11 +452,11 @@ class EmailMarketingManager:
 
             delEmail = EmailsInList.objects.get(id=id)
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] == 1:
                 pass
             elif delEmail.owner.owner.id != userID:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             delEmail.delete()
 
@@ -471,16 +471,16 @@ class EmailMarketingManager:
     def manageSMTP(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             website = Websites.objects.get(domain=self.domain)
             emailLists = website.emaillists_set.all()
@@ -501,7 +501,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
 
             data = json.loads(self.request.body)
@@ -558,9 +558,9 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 allHosts = SMTPHosts.objects.all()
@@ -599,10 +599,10 @@ class EmailMarketingManager:
 
             userID = self.request.session['userID']
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -612,14 +612,14 @@ class EmailMarketingManager:
             if operation == 'delete':
                 delHost = SMTPHosts.objects.get(id=id)
 
-                if ACLManager.VerifySMTPHost(currentACL, delHost.owner, admin) == 0:
-                    return ACLManager.loadErrorJson()
+                if Amanager.VerifySMTPHost(currentACL, delHost.owner, admin) == 0:
+                    return Amanager.loadErrorJson()
 
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
                 if currentACL['admin'] == 1:
                     pass
                 elif delHost.owner.id != userID:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
                 delHost.delete()
                 data_ret = {"status": 1, 'message': 'Successfully deleted.'}
                 json_data = json.dumps(data_ret)
@@ -628,8 +628,8 @@ class EmailMarketingManager:
                 try:
                     verifyHost = SMTPHosts.objects.get(id=id)
 
-                    if ACLManager.VerifySMTPHost(currentACL, verifyHost.owner, admin) == 0:
-                        return ACLManager.loadErrorJson()
+                    if Amanager.VerifySMTPHost(currentACL, verifyHost.owner, admin) == 0:
+                        return Amanager.loadErrorJson()
 
                     verifyLogin = smtplib.SMTP(str(verifyHost.host), int(verifyHost.port))
 
@@ -665,7 +665,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             proc = httpProc(self.request, 'emailMarketing/composeMessages.html',
                             None)
@@ -679,7 +679,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
 
@@ -690,8 +690,8 @@ class EmailMarketingManager:
             replyTo = data['replyTo']
             emailMessage = data['emailMessage']
 
-            if ACLManager.CheckRegEx('[\w\d\s]+$', name) == 0:
-                return ACLManager.loadErrorJson()
+            if Amanager.CheckRegEx('[\w\d\s]+$', name) == 0:
+                return Amanager.loadErrorJson()
 
             admin = Administrator.objects.get(pk=userID)
             newTemplate = EmailTemplate(owner=admin, name=name.replace(' ', ''), subject=subject, fromName=fromName, fromEmail=fromEmail,
@@ -712,9 +712,9 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             templateNames = emACL.allTemplates(currentACL, admin)
             hostNames = emACL.allSMTPHosts(currentACL, admin)
             listNames = emACL.allEmailsLists(currentACL, admin)
@@ -737,12 +737,12 @@ class EmailMarketingManager:
             userID = self.request.session['userID']
             admin = Administrator.objects.get(pk=userID)
             template = EmailTemplate.objects.get(name=self.domain)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             elif template.owner != admin:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             return HttpResponse(template.emailMessage)
         except KeyError as msg:
@@ -755,18 +755,18 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
             selectedTemplate = data['selectedTemplate']
 
             template = EmailTemplate.objects.get(name=selectedTemplate)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             elif template.owner != admin:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             allJobs = EmailJobs.objects.filter(owner=template)
 
@@ -821,13 +821,13 @@ class EmailMarketingManager:
 
             extraArgs['tempStatusPath'] = "/home/cyberpanel/" + data['selectedTemplate'] + '_pendingJob'
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             template = EmailTemplate.objects.get(name=extraArgs['selectedTemplate'])
 
             if currentACL['admin'] == 1:
                 pass
             elif template.owner != admin:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             em = EM('startEmailJob', extraArgs)
             em.start()
@@ -851,12 +851,12 @@ class EmailMarketingManager:
             selectedTemplate = data['selectedTemplate']
 
             delTemplate = EmailTemplate.objects.get(name=selectedTemplate)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             elif delTemplate.owner != admin:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
             delTemplate.delete()
 
             data_ret = {"status": 1}
@@ -873,7 +873,7 @@ class EmailMarketingManager:
             admin = Administrator.objects.get(pk=userID)
 
             if emACL.checkIfEMEnabled(admin.userName) == 0:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(self.request.body)
             id = data['id']

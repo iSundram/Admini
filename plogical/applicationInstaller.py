@@ -124,7 +124,7 @@ class ApplicationInstaller(multi.Thread):
 
         nodeV = ProcessUtilities.fetch_latest_lts_version_for_node()
 
-        if ACLManager.ISARM():
+        if Amanager.ISARM():
             command = f'wget https://nodejs.org/dist/{nodeV}/node-{nodeV}-linux-arm64.tar.xz'
             ProcessUtilities.executioner(command, 'root', True)
 
@@ -1945,7 +1945,7 @@ class ApplicationInstaller(multi.Thread):
 
                 admin = Administrator.objects.get(pk=self.extraArgs['adminID'])
 
-                if ACLManager.checkOwnership(website.domain, admin,
+                if Amanager.checkOwnership(website.domain, admin,
                                              self.extraArgs['currentACL']) == 0:
                     statusFile = open(tempStatusPath, 'w')
                     statusFile.writelines('You dont own this site.[404]')
@@ -2216,7 +2216,7 @@ class ApplicationInstaller(multi.Thread):
         logging.writeToFile("Old site wp version:%s" % old_wp_version)
         
         # Create secure folder
-        ACLManager.CreateSecureDir()
+        Amanager.CreateSecureDir()
         tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
         
         command = f'mkdir -p {tempPath}'
@@ -2278,7 +2278,7 @@ class ApplicationInstaller(multi.Thread):
     def _setupWordPressCore(self, website, old_wp_version, dbNameRestore, dbUser, dbPassword, currentTemp):
         """Download and configure WordPress core"""
         PHPVersion = website.phpSelection
-        php = ACLManager.getPHPString(PHPVersion)
+        php = Amanager.getPHPString(PHPVersion)
         FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
         
         StagingPath = f'/home/{website.domain}/public_html'
@@ -2479,7 +2479,7 @@ class ApplicationInstaller(multi.Thread):
             WPSite = WPSites.objects.get(pk=self.WPid)
 
             ### Create secure folder
-            ACLManager.CreateSecureDir()
+            Amanager.CreateSecureDir()
             self.tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
 
             command = f'mkdir -p {self.tempPath}'
@@ -2626,7 +2626,7 @@ class ApplicationInstaller(multi.Thread):
 
                 ### Create secure folder
 
-                ACLManager.CreateSecureDir()
+                Amanager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
@@ -2783,7 +2783,7 @@ class ApplicationInstaller(multi.Thread):
                 ###Onlye website data
                 ### Create secure folder
 
-                ACLManager.CreateSecureDir()
+                Amanager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
@@ -2942,7 +2942,7 @@ class ApplicationInstaller(multi.Thread):
 
                 ### Create secure folder
 
-                ACLManager.CreateSecureDir()
+                Amanager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
@@ -3193,7 +3193,7 @@ class ApplicationInstaller(multi.Thread):
                 from WebTerminal.CPWebSocket import SSHServer
                 SSHServer.findSSHPort()
 
-                command = f"scp -o StrictHostKeyChecking=no -i {remote_private_key} -P {str(SSHServer.DEFAULT_PORT)} {remotepath} root@{ACLManager.fetchIP()}:{loaclpath}"
+                command = f"scp -o StrictHostKeyChecking=no -i {remote_private_key} -P {str(SSHServer.DEFAULT_PORT)} {remotepath} root@{Amanager.fetchIP()}:{loaclpath}"
 
                 stdin, stdout, stderr = ssh.exec_command(command)
 
@@ -3281,7 +3281,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ### ##Create secure folder
                     #
-                    #         ACLManager.CreateSecureDir()
+                    #         Amanager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
                     #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -3416,7 +3416,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ### Create secure folder
                     #
-                    #                 ACLManager.CreateSecureDir()
+                    #                 Amanager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
                     #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -3515,7 +3515,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ### Create secure folder
                     #
-                    #                 ACLManager.CreateSecureDir()
+                    #                 Amanager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
                     #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -3664,7 +3664,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ### Create secure folder
                     #
-                    #         ACLManager.CreateSecureDir()
+                    #         Amanager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
                     #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -3816,7 +3816,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ### Create secure folder
                     #
-                    #                 ACLManager.CreateSecureDir()
+                    #                 Amanager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
                     #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -3985,7 +3985,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ### Create secure folder
                     #
-                    #                 ACLManager.CreateSecureDir()
+                    #                 Amanager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
                     #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -4210,7 +4210,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ### Create secure folder
                     #
-                    #         ACLManager.CreateSecureDir()
+                    #         Amanager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
                     #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
@@ -4423,7 +4423,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ### ##Create secure folder
                 #
-                #         ACLManager.CreateSecureDir()
+                #         Amanager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
                 #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -4557,7 +4557,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ### Create secure folder
                 #
-                #                 ACLManager.CreateSecureDir()
+                #                 Amanager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
                 #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -4655,7 +4655,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ### Create secure folder
                 #
-                #                 ACLManager.CreateSecureDir()
+                #                 Amanager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
                 #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -4803,7 +4803,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ### Create secure folder
                 #
-                #         ACLManager.CreateSecureDir()
+                #         Amanager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
                 #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -4955,7 +4955,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ### Create secure folder
                 #
-                #                 ACLManager.CreateSecureDir()
+                #                 Amanager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
                 #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -5123,7 +5123,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ### Create secure folder
                 #
-                #                 ACLManager.CreateSecureDir()
+                #                 Amanager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
                 #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -5346,7 +5346,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ### Create secure folder
                 #
-                #         ACLManager.CreateSecureDir()
+                #         Amanager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
                 #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
@@ -5483,7 +5483,7 @@ class ApplicationInstaller(multi.Thread):
 
             ### Create secure folder
 
-            ACLManager.CreateSecureDir()
+            Amanager.CreateSecureDir()
             RandomPath = str(randint(1000, 9999))
             self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
@@ -5863,7 +5863,7 @@ class ApplicationInstaller(multi.Thread):
 
                     ### Create secure folder
 
-                    ACLManager.CreateSecureDir()
+                    Amanager.CreateSecureDir()
                     RandomPath = str(randint(1000, 9999))
                     self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
@@ -6716,7 +6716,7 @@ class ApplicationInstaller(multi.Thread):
             from WebTerminal.CPWebSocket import SSHServer
             SSHServer.findSSHPort()
 
-            command = f"scp -o StrictHostKeyChecking=no -i {remote_private_key} -P {str(SSHServer.DEFAULT_PORT)} {remotepath} root@{ACLManager.fetchIP()}:{loaclpath}"
+            command = f"scp -o StrictHostKeyChecking=no -i {remote_private_key} -P {str(SSHServer.DEFAULT_PORT)} {remotepath} root@{Amanager.fetchIP()}:{loaclpath}"
 
             stdin, stdout, stderr = ssh.exec_command(command)
 

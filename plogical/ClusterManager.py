@@ -320,8 +320,8 @@ password=%s""" % (rootdbpassword, rootdbpassword)
 
             from plogical.acl import ACLManager
             import validators
-            currentACL = ACLManager.loadedACL(1)
-            allSite = ACLManager.findAllSites(currentACL, 1)
+            currentACL = Amanager.loadedACL(1)
+            allSite = Amanager.findAllSites(currentACL, 1)
 
             for website in os.listdir('/home'):
 

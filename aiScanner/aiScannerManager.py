@@ -27,12 +27,12 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:
                 if currentACL.get('aiScannerAccess', 1) == 0:
-                    return ACLManager.loadError()
+                    return Amanager.loadError()
             except (AttributeError, KeyError):
                 # Field doesn't exist yet, allow access for now
                 self.logger.writeToFile(f'[AIScannerManager.scannerHome] aiScannerAccess field not found, allowing access')
@@ -53,7 +53,7 @@ class AIScannerManager:
                 recent_scans = ScanHistory.objects.all().order_by('-started_at')[:10]
             else:
                 # Users can only see their own scans and their sub-users' scans
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 recent_scans = ScanHistory.objects.filter(admin__in=user_admins).order_by('-started_at')[:10]
             
             # Get current balance if payment is configured
@@ -75,12 +75,12 @@ class AIScannerManager:
                     self.logger.writeToFile(f'[AIScannerManager.scannerHome] API balance call failed, keeping stored balance: {current_balance}')
             
             # Check VPS free scans availability
-            server_ip = ACLManager.fetchIP()
+            server_ip = Amanager.fetchIP()
             vps_info = self.check_vps_free_scans(server_ip)
             
             # Get user's websites for scan selection using ACL-aware method
             try:
-                websites = ACLManager.findWebsiteObjects(currentACL, userID)
+                websites = Amanager.findWebsiteObjects(currentACL, userID)
                 self.logger.writeToFile(f'[AIScannerManager.scannerHome] Found {len(websites)} websites for {admin.userName}')
             except Exception as e:
                 self.logger.writeToFile(f'[AIScannerManager.scannerHome] Error fetching websites: {str(e)}')
@@ -128,7 +128,7 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:
@@ -281,7 +281,7 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:
@@ -292,7 +292,7 @@ class AIScannerManager:
                 pass
             
             # Check VPS free scans availability first
-            server_ip = ACLManager.fetchIP()
+            server_ip = Amanager.fetchIP()
             vps_info = self.check_vps_free_scans(server_ip)
             
             # If VPS is eligible for free scans, get or create API key
@@ -335,7 +335,7 @@ class AIScannerManager:
             from websiteFunctions.models import Websites
             try:
                 # Check if user has access to this domain through ACL system
-                if not ACLManager.checkOwnership(domain, admin, currentACL):
+                if not Amanager.checkOwnership(domain, admin, currentACL):
                     return JsonResponse({'success': False, 'error': 'Access denied to this domain'})
                 
                 # Get the website object (we know it exists due to checkOwnership)
@@ -418,7 +418,7 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:
@@ -467,7 +467,7 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:
@@ -482,7 +482,7 @@ class AIScannerManager:
                 scanner_settings = AIScannerSettings.objects.get(admin=admin)
                 if not scanner_settings.is_payment_configured or not scanner_settings.api_key:
                     # Check if this is a VPS with free scans
-                    server_ip = ACLManager.fetchIP()
+                    server_ip = Amanager.fetchIP()
                     vps_info = self.check_vps_free_scans(server_ip)
                     
                     if vps_info.get('is_vps'):
@@ -500,7 +500,7 @@ class AIScannerManager:
                     api_key_to_use = scanner_settings.api_key
             except AIScannerSettings.DoesNotExist:
                 # Check if this is a VPS with free scans
-                server_ip = ACLManager.fetchIP()
+                server_ip = Amanager.fetchIP()
                 vps_info = self.check_vps_free_scans(server_ip)
                 
                 if vps_info.get('is_vps'):
@@ -549,7 +549,7 @@ class AIScannerManager:
             admin = Administrator.objects.get(pk=userID)
             
             # Load ACL permissions
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
             # Check ACL permissions (with fallback for new field)
             try:

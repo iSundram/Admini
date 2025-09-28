@@ -278,7 +278,7 @@ class ACLManager:
 
             ## Admin ACL
 
-            newACL = ACL(name='admin', adminStatus=1, config=ACLManager.AdminACL)
+            newACL = ACL(name='admin', adminStatus=1, config=Amanager.AdminACL)
             newACL.save()
 
             ## Reseller ACL
@@ -296,12 +296,12 @@ class ACLManager:
                          modifyPackage=1,
                          createNameServer=1,
                          restoreBackup=1,
-                         config=ACLManager.ResellerACL
+                         config=Amanager.ResellerACL
                          )
             newACL.save()
 
             ## User ACL
-            newACL = ACL(name='user', config=ACLManager.UserACL)
+            newACL = ACL(name='user', config=Amanager.UserACL)
             newACL.save()
         except:
             pass
@@ -368,7 +368,7 @@ class ACLManager:
         admin = Administrator.objects.get(pk=userID)
         adminNames = []
 
-        finalResponse = ACLManager.loadedACL(userID)
+        finalResponse = Amanager.loadedACL(userID)
 
         if finalResponse['admin'] == 1:
             admins = Administrator.objects.all()
@@ -389,7 +389,7 @@ class ACLManager:
         admin = Administrator.objects.get(pk=userID)
         adminObjects = []
 
-        finalResponse = ACLManager.loadedACL(userID)
+        finalResponse = Amanager.loadedACL(userID)
 
         if finalResponse['admin'] == 1:
             return Administrator.objects.all()
@@ -407,7 +407,7 @@ class ACLManager:
         admin = Administrator.objects.get(pk=userID)
         adminObjects = []
 
-        finalResponse = ACLManager.loadedACL(userID)
+        finalResponse = Amanager.loadedACL(userID)
 
         if finalResponse['admin'] == 1:
             return Administrator.objects.all().exclude(pk=userID).order_by('userName')
@@ -441,7 +441,7 @@ class ACLManager:
         admin = Administrator.objects.get(pk=userID)
         adminNames = []
 
-        finalResponse = ACLManager.loadedACL(userID)
+        finalResponse = Amanager.loadedACL(userID)
 
         if finalResponse['admin'] == 1:
             admins = Administrator.objects.all()
@@ -835,14 +835,14 @@ class ACLManager:
             else:
                 return 1, 'None'
         except CalledProcessError as msg:
-            logging.writeToFile(str(msg) + ' [ACLManager.executeCall]')
+            logging.writeToFile(str(msg) + ' [Amanager.executeCall]')
             return 0, str(msg)
 
     @staticmethod
     def checkContainerOwnership(name, userID):
         try:
             container = Containers.objects.get(name=name)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             if currentACL['admin'] == 1:
@@ -1034,7 +1034,7 @@ class ACLManager:
         from websiteFunctions.models import WPSites
 
         wpsites = WPSites.objects.none()
-        websites = ACLManager.findWebsiteObjects(currentACL, userID)
+        websites = Amanager.findWebsiteObjects(currentACL, userID)
 
         for website in websites:
             wpsites |= website.wpsites_set.all()
@@ -1058,7 +1058,7 @@ class ACLManager:
             url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
             data = {
                 "name": feature,
-                "IP": ACLManager.GetServerIP()
+                "IP": Amanager.GetServerIP()
             }
 
             import requests
@@ -1275,7 +1275,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/manager/CLPackages.py'
             ProcessUtilities.executioner(command, 'root', True)
 
             files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -1332,7 +1332,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod +x /usr/local/core/plogical/renew.py'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/manager/CLPackages.py'
             ProcessUtilities.executioner(command, 'root', True)
 
             clScripts = ['/usr/local/core/tools/panel_info.py',

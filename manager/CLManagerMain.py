@@ -12,7 +12,7 @@ from websiteFunctions.models import Websites
 from manager.models import CLPackages
 from plogical.httpProc import httpProc
 
-class CLManagerMain(multi.Thread):
+class ManagerMain(multi.Thread):
 
     def __init__(self, request=None, templateName=None, function=None, data=None):
         multi.Thread.__init__(self)
@@ -80,19 +80,19 @@ class CLManagerMain(multi.Thread):
             data['activatedPath'] = 1
 
         if data['CL']  == 0:
-            proc = httpProc(self.request, 'CLManager/notAvailable.html', data, 'admin')
+            proc = httpProc(self.request, 'manager/notAvailable.html', data, 'admin')
             return proc.render()
         elif data['activatedPath']  == 0:
-            proc = httpProc(self.request, 'CLManager/notAvailable.html', data, 'admin')
+            proc = httpProc(self.request, 'manager/notAvailable.html', data, 'admin')
             return proc.render()
         else:
-            proc = httpProc(self.request, 'CLManager/cloudLinux.html', data, 'admin')
+            proc = httpProc(self.request, 'manager/cloudLinux.html', data, 'admin')
             return proc.render()
 
     def submitCageFSInstall(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
@@ -102,7 +102,7 @@ class CLManagerMain(multi.Thread):
                                                           1)
                 return 0
 
-            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/manager/CageFS.py"
             execPath = execPath + " --function submitCageFSInstall"
             ProcessUtilities.outputExecutioner(execPath)
 
@@ -112,7 +112,7 @@ class CLManagerMain(multi.Thread):
     def findWebsitesJson(self, currentACL, userID, pageNumber):
         finalPageNumber = ((pageNumber * 10)) - 10
         endPageNumber = finalPageNumber + 10
-        websites = ACLManager.findWebsiteObjects(currentACL, userID)[finalPageNumber:endPageNumber]
+        websites = Amanager.findWebsiteObjects(currentACL, userID)[finalPageNumber:endPageNumber]
 
         json_data = "["
         checker = 0
@@ -138,7 +138,7 @@ class CLManagerMain(multi.Thread):
         return json_data
 
     def websitePagination(self, currentACL, userID):
-        websites = ACLManager.findAllSites(currentACL, userID)
+        websites = Amanager.findAllSites(currentACL, userID)
 
         pages = float(len(websites)) / float(10)
         pagination = []
@@ -157,7 +157,7 @@ class CLManagerMain(multi.Thread):
 
     def getFurtherAccounts(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             json_data = self.findWebsitesJson(currentACL, userID, pageNumber)
             pagination = self.websitePagination(currentACL, userID)
@@ -197,7 +197,7 @@ class CLManagerMain(multi.Thread):
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         json_data = "["
         checker = 0

@@ -177,7 +177,7 @@ def generateAccess(request):
 
         userID = request.session['userID']
         admin = Administrator.objects.get(id=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         ## if user ACL is admin login as root
 
@@ -235,7 +235,7 @@ def generateAccess(request):
         GlobalUserDB(username=admin.userName, password=f.encrypt(password.encode('utf-8')).decode(),
                      token=token).save()
 
-        sites = ACLManager.findWebsiteObjects(currentACL, userID)
+        sites = Amanager.findWebsiteObjects(currentACL, userID)
         mysqlUtilities.addUserToDB(None, admin.userName, password, 1)
 
         for site in sites:
@@ -260,7 +260,7 @@ def fetchDetailsPHPMYAdmin(request):
 
         userID = request.session['userID']
         admin = Administrator.objects.get(id=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         token = request.POST.get('token')
         username = request.POST.get('username')
@@ -324,7 +324,7 @@ def fetchDetailsPHPMYAdmin(request):
             f = Fernet(key)
             password = f.decrypt(gdb.password.encode('utf-8'))
 
-            sites = ACLManager.findWebsiteObjects(currentACL, userID)
+            sites = Amanager.findWebsiteObjects(currentACL, userID)
 
             for site in sites:
                 for db in site.databases_set.all():
@@ -383,12 +383,12 @@ def getMysqlstatus(request):
         userID = request.session['userID']
         finalData = mysqlUtilities.showStatus()
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         finalData = json.dumps(finalData)
         return HttpResponse(finalData)
@@ -400,12 +400,12 @@ def getMysqlstatus(request):
 def restartMySQL(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = {}
 
@@ -424,12 +424,12 @@ def generateRecommendations(request):
     try:
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         detectedRam = data['detectedRam']
@@ -450,12 +450,12 @@ def applyMySQLChanges(request):
 
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         finalData = mysqlUtilities.applyMySQLChanges(data)
@@ -477,12 +477,12 @@ def upgrademysqlnow(request):
         from plogical.virtualHostUtilities import virtualHostUtilities
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         version =data['mysqlversion']
@@ -507,12 +507,12 @@ def upgrademysqlstatus(request):
 
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         statusfile = data['statusfile']

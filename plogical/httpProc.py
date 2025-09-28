@@ -20,7 +20,7 @@ class httpProc:
                 from loginSystem.models import Administrator
                 from plogical.acl import ACLManager
 
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
                 admin = Administrator.objects.get(pk=userID)
 
                 ### Permissions Check
@@ -84,7 +84,7 @@ Please launch the <a href="/base/onboarding">set-up wizard</a> to get maximum ou
                         pass
 
 
-                ACLManager.GetServiceStatus(self.data)
+                Amanager.GetServiceStatus(self.data)
 
                 self.data.update(currentACL)
 

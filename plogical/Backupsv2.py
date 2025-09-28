@@ -1340,7 +1340,7 @@ team_drive =
                 # sudo mv filename /usr/bin/
                 from plogical.acl import ACLManager
 
-                if ACLManager.ISARM():
+                if Amanager.ISARM():
                     command = 'wget -P /home/rustic https://github.com/rustic-rs/rustic/releases/download/%s/rustic-%s-aarch64-unknown-linux-gnu.tar.gz' % (
                         version, version)
                     ProcessUtilities.executioner(command)

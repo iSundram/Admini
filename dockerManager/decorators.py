@@ -16,7 +16,7 @@ def preDockerRun(function):
         except KeyError:
             return redirect(loadLoginPage)
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         if request.method == "POST":
             isPost = True

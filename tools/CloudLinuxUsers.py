@@ -141,8 +141,8 @@ class CloudLinuxUsers(CLMain):
             from loginSystem.models import Administrator
             from plogical.acl import ACLManager
             oAdmin = Administrator.objects.get(userName=self.owner)
-            currentACL = ACLManager.loadedACL(oAdmin.pk)
-            websites = ACLManager.findWebsiteObjects(currentACL, oAdmin.pk)
+            currentACL = Amanager.loadedACL(oAdmin.pk)
+            websites = Amanager.findWebsiteObjects(currentACL, oAdmin.pk)
 
         if self.username != None:
             websites = websites.filter(externalApp=self.username)

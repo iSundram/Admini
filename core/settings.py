@@ -72,7 +72,7 @@ INSTALLED_APPS = [
     's3Backups',
     'dockerManager',
     'containerization',
-    'CLManager',
+    'manager',
     'IncBackups',
     'aiScanner',
     #    'WebTerminal'

@@ -936,7 +936,7 @@ class backupUtilities:
                                     url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
                                     data = {
                                         "name": "all",
-                                        "IP": ACLManager.GetServerIP()
+                                        "IP": Amanager.GetServerIP()
                                     }
 
                                     import requests
@@ -1201,7 +1201,7 @@ class backupUtilities:
                     url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
                     data = {
                         "name": "all",
-                        "IP": ACLManager.GetServerIP()
+                        "IP": Amanager.GetServerIP()
                     }
 
                     import requests

@@ -17,13 +17,13 @@ import json
 
 def dockerPermission(request, userID, context):
 
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] != 1:
         if request.method == "POST":
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
     else:
         return 0
 
@@ -39,12 +39,12 @@ def installDocker(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager(userID, 'submitInstallDocker')
         cm.start()
@@ -62,12 +62,12 @@ def installDocker(request):
 def installImage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.submitInstallImage(userID, json.loads(request.body))
@@ -85,12 +85,12 @@ def viewContainer(request, name):
         request.GET['name'] = name
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager(name)
         coreResult = cm.loadContainerHome(request, userID)
@@ -108,12 +108,12 @@ def viewContainer(request, name):
 def getTags(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getTags(userID, json.loads(request.body))
@@ -128,12 +128,12 @@ def delContainer(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.submitContainerDeletion(userID, json.loads(request.body))
@@ -147,12 +147,12 @@ def delContainer(request):
 def recreateContainer(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.recreateContainer(userID, json.loads(request.body))
@@ -166,12 +166,12 @@ def recreateContainer(request):
 def runContainer(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         return cm.createContainer(request, userID)
@@ -192,12 +192,12 @@ def getContainerLogs(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getContainerLogs(userID, json.loads(request.body))
@@ -211,12 +211,12 @@ def submitContainerCreation(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.submitContainerCreation(userID, json.loads(request.body))
@@ -230,12 +230,12 @@ def submitContainerCreation(request):
 def getContainerList(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         return cm.getContainerList(userID, json.loads(request.body))
@@ -246,12 +246,12 @@ def getContainerList(request):
 def doContainerAction(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.doContainerAction(userID, json.loads(request.body))
@@ -264,12 +264,12 @@ def doContainerAction(request):
 def getContainerStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getContainerStatus(userID, json.loads(request.body))
@@ -282,12 +282,12 @@ def getContainerStatus(request):
 def exportContainer(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.exportContainer(request, userID)
@@ -300,12 +300,12 @@ def exportContainer(request):
 def saveContainerSettings(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.saveContainerSettings(userID, json.loads(request.body))
@@ -318,12 +318,12 @@ def saveContainerSettings(request):
 def getContainerTop(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getContainerTop(userID, json.loads(request.body))
@@ -336,12 +336,12 @@ def getContainerTop(request):
 def assignContainer(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.assignContainer(userID, json.loads(request.body))
@@ -354,12 +354,12 @@ def assignContainer(request):
 def searchImage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.searchImage(userID, json.loads(request.body))
@@ -394,12 +394,12 @@ def manageImages(request):
 def getImageHistory(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getImageHistory(userID, json.loads(request.body))
@@ -412,12 +412,12 @@ def getImageHistory(request):
 def removeImage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.removeImage(userID, json.loads(request.body))
@@ -430,12 +430,12 @@ def removeImage(request):
 def pullImage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.pullImage(userID, json.loads(request.body))
@@ -449,12 +449,12 @@ def getDockersiteList(request):
     import json
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getDockersiteList(userID, json.loads(request.body))
@@ -469,12 +469,12 @@ def getDockersiteList(request):
 def getContainerAppinfo(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getContainerAppinfo(userID, json.loads(request.body))
@@ -488,12 +488,12 @@ def getContainerAppinfo(request):
 def getContainerApplog(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.getContainerApplog(userID, json.loads(request.body))
@@ -507,12 +507,12 @@ def getContainerApplog(request):
 def recreateappcontainer(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.recreateappcontainer(userID, json.loads(request.body))
@@ -526,12 +526,12 @@ def recreateappcontainer(request):
 def RestartContainerAPP(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.RestartContainerAPP(userID, json.loads(request.body))
@@ -545,12 +545,12 @@ def RestartContainerAPP(request):
 def StopContainerAPP(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.StopContainerAPP(userID, json.loads(request.body))
@@ -563,12 +563,12 @@ def StopContainerAPP(request):
 def executeContainerCommand(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         cm = ContainerManager()
         coreResult = cm.executeContainerCommand(userID, json.loads(request.body))
@@ -584,12 +584,12 @@ def loadContainersForImport(request):
     """
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         currentContainer = request.GET.get('currentContainer', '')
         
@@ -641,12 +641,12 @@ def getContainerEnv(request):
     """
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         containerName = request.GET.get('containerName', '')
         

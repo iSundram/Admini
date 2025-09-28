@@ -166,7 +166,7 @@ def verifyLogin(request):
 def loadLoginPage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         cpuRamDisk = SystemInformation.cpuRamDisk()
 
@@ -236,7 +236,7 @@ def loadLoginPage(request):
             newFWRule.save()
 
         if numberOfAdministrator == 0:
-            ACLManager.createDefaultACLs()
+            Amanager.createDefaultACLs()
             acl = ACL.objects.get(name='admin')
 
             token = hashPassword.generateToken('admin', '1234567')

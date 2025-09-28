@@ -13,7 +13,7 @@ from plogical.processUtilities import ProcessUtilities
 
 def loadSSLHome(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
     proc = httpProc(request, 'manageSSL/index.html',
                     currentACL, 'admin')
     return proc.render()
@@ -21,20 +21,20 @@ def loadSSLHome(request):
 
 def manageSSL(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
-    websitesName = ACLManager.findAllSites(currentACL, userID)
+    currentACL = Amanager.loadedACL(userID)
+    websitesName = Amanager.findAllSites(currentACL, userID)
     proc = httpProc(request, 'manageSSL/manageSSL.html',
                     {'websiteList': websitesName}, 'manageSSL')
     return proc.render()
 
 def v2ManageSSL(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
-    websitesName = ACLManager.findAllSites(currentACL, userID)
+    currentACL = Amanager.loadedACL(userID)
+    websitesName = Amanager.findAllSites(currentACL, userID)
 
     data = {}
 
-    if ACLManager.CheckForPremFeature('all'):
+    if Amanager.CheckForPremFeature('all'):
         data['PremStat'] = 1
     else:
         data['PremStat'] = 0
@@ -47,7 +47,7 @@ def v2ManageSSL(request):
         data['SaveSuccess'] = 1
 
 
-    RetStatus, SAVED_CF_Key, SAVED_CF_Email = ACLManager.FetchCloudFlareAPIKeyFromAcme()
+    RetStatus, SAVED_CF_Key, SAVED_CF_Email = Amanager.FetchCloudFlareAPIKeyFromAcme()
     from plogical.dnsUtilities import DNS
     DNS.ConfigurePowerDNSInAcme()
 
@@ -64,24 +64,24 @@ def v2IssueSSL(request):
         userID = request.session['userID']
         admin = Administrator.objects.get(pk=userID)
         try:
-            if ACLManager.CheckForPremFeature('all'):
+            if Amanager.CheckForPremFeature('all'):
                 if request.method == 'POST':
-                    currentACL = ACLManager.loadedACL(userID)
+                    currentACL = Amanager.loadedACL(userID)
 
                     if currentACL['admin'] == 1:
                         pass
                     elif currentACL['manageSSL'] == 1:
                         pass
                     else:
-                        return ACLManager.loadErrorJson('SSL', 0)
+                        return Amanager.loadErrorJson('SSL', 0)
 
                     data = json.loads(request.body)
                     virtualHost = data['virtualHost']
 
-                    if ACLManager.checkOwnership(virtualHost, admin, currentACL) == 1:
+                    if Amanager.checkOwnership(virtualHost, admin, currentACL) == 1:
                         pass
                     else:
-                        return ACLManager.loadErrorJson()
+                        return Amanager.loadErrorJson()
 
                     try:
                         website = ChildDomains.objects.get(domain=virtualHost)
@@ -163,22 +163,22 @@ def issueSSL(request):
         admin = Administrator.objects.get(pk=userID)
         try:
             if request.method == 'POST':
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
 
                 if currentACL['admin'] == 1:
                     pass
                 elif currentACL['manageSSL'] == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson('SSL', 0)
+                    return Amanager.loadErrorJson('SSL', 0)
 
                 data = json.loads(request.body)
                 virtualHost = data['virtualHost']
 
-                if ACLManager.checkOwnership(virtualHost, admin, currentACL) == 1:
+                if Amanager.checkOwnership(virtualHost, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
                 try:
                     website = ChildDomains.objects.get(domain=virtualHost)
@@ -227,8 +227,8 @@ def issueSSL(request):
 
 def sslForHostName(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
-    websitesName = ACLManager.findAllSites(currentACL, userID, 1)
+    currentACL = Amanager.loadedACL(userID)
+    websitesName = Amanager.findAllSites(currentACL, userID, 1)
     proc = httpProc(request, 'manageSSL/sslForHostName.html',
                     {'websiteList': websitesName}, 'hostnameSSL')
     return proc.render()
@@ -240,14 +240,14 @@ def obtainHostNameSSL(request):
         try:
             if request.method == 'POST':
 
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
 
                 if currentACL['admin'] == 1:
                     pass
                 elif currentACL['hostnameSSL'] == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson('SSL', 0)
+                    return Amanager.loadErrorJson('SSL', 0)
 
                 data = json.loads(request.body)
                 virtualHost = data['virtualHost']
@@ -261,10 +261,10 @@ def obtainHostNameSSL(request):
 
                 admin = Administrator.objects.get(pk=userID)
 
-                if ACLManager.checkOwnership(virtualHost, admin, currentACL) == 1:
+                if Amanager.checkOwnership(virtualHost, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
                 ## ssl issue
 
@@ -299,10 +299,10 @@ def obtainHostNameSSL(request):
 
 def sslForMailServer(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
-    websitesName = ACLManager.findAllSites(currentACL, userID)
-    websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+    websitesName = Amanager.findAllSites(currentACL, userID)
+    websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
     proc = httpProc(request, 'manageSSL/sslForMailServer.html',
                     {'websiteList': websitesName}, 'mailServerSSL')
@@ -315,23 +315,23 @@ def obtainMailServerSSL(request):
         try:
             if request.method == 'POST':
 
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
 
                 if currentACL['admin'] == 1:
                     pass
                 elif currentACL['mailServerSSL'] == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson('SSL', 0)
+                    return Amanager.loadErrorJson('SSL', 0)
 
                 data = json.loads(request.body)
                 virtualHost = data['virtualHost']
 
                 admin = Administrator.objects.get(pk=userID)
-                if ACLManager.checkOwnership(virtualHost, admin, currentACL) == 1:
+                if Amanager.checkOwnership(virtualHost, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
                 path = "/home/" + virtualHost + "/public_html"
 
@@ -372,22 +372,22 @@ def getSSLDetails(request):
         admin = Administrator.objects.get(pk=userID)
         try:
             if request.method == 'POST':
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
 
                 if currentACL['admin'] == 1:
                     pass
                 elif currentACL['manageSSL'] == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson('SSL', 0)
+                    return Amanager.loadErrorJson('SSL', 0)
 
                 data = json.loads(request.body)
                 virtualHost = data['virtualHost']
 
-                if ACLManager.checkOwnership(virtualHost, admin, currentACL) == 1:
+                if Amanager.checkOwnership(virtualHost, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
                 try:
                     website = ChildDomains.objects.get(domain=virtualHost)

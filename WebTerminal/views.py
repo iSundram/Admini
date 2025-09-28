@@ -49,12 +49,12 @@ def restart(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         command = 'systemctl restart cpssh'
         ProcessUtilities.executioner(command)

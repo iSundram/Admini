@@ -611,7 +611,7 @@ services:
                         website.phpSelection = 'PHP 8.0'
                         website.save()
 
-                    if ACLManager.checkOwnership(website.domain, self.data['adminID'],
+                    if Amanager.checkOwnership(website.domain, self.data['adminID'],
                                                  self.data['currentACL']) == 0:
                         statusFile = open(tempStatusPath, 'w')
                         statusFile.writelines('You dont own this site.[404]')

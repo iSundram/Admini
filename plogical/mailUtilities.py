@@ -2388,7 +2388,7 @@ class MailServerManagerUtils(multi.Thread):
         command = 'chmod +x /usr/local/core/plogical/renew.py'
         ProcessUtilities.executioner(command)
 
-        command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+        command = 'chmod +x /usr/local/core/manager/CLPackages.py'
         ProcessUtilities.executioner(command)
 
         clScripts = ['/usr/local/core/tools/panel_info.py', '/usr/local/core/tools/CloudLinuxPackages.py',
@@ -2525,7 +2525,7 @@ class MailServerManagerUtils(multi.Thread):
             import sys
             sys.path.append('/usr/local/core')
             os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-            from CyberCP import settings
+            from core import settings
 
             if self.setup_email_Passwords(settings.DATABASES['default']['PASSWORD']) == 0:
                 return 0

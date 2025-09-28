@@ -68,10 +68,10 @@ class ContainerManager(multi.Thread):
 
     def submitInstallDocker(self):
         try:
-            currentACL = ACLManager.loadedACL(self.name)
+            currentACL = Amanager.loadedACL(self.name)
 
-            if ACLManager.currentContextPermission(currentACL, 'createContainer') == 0:
-                return ACLManager.loadError()
+            if Amanager.currentContextPermission(currentACL, 'createContainer') == 0:
+                return Amanager.loadError()
 
             writeToFile = open(ServerStatusUtil.lswsInstallStatusPath, 'w')
             writeToFile.close()
@@ -88,7 +88,7 @@ class ContainerManager(multi.Thread):
         client = docker.from_env()
         dockerAPI = docker.APIClient()
 
-        adminNames = ACLManager.loadAllUsers(userID)
+        adminNames = Amanager.loadAllUsers(userID)
         tag = request.GET.get('tag')
         image = request.GET.get('image')
         tag = tag.split(" (")[0]
@@ -139,11 +139,11 @@ class ContainerManager(multi.Thread):
             name = self.name
 
             # Check if user is admin or has container access
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] != 1:
                 # For non-admin users, check container ownership
-                if ACLManager.checkContainerOwnership(name, userID) != 1:
-                    return ACLManager.loadError()
+                if Amanager.checkContainerOwnership(name, userID) != 1:
+                    return Amanager.loadError()
             # Admin users can access any container, including ones not in database
 
             client = docker.from_env()
@@ -218,8 +218,8 @@ class ContainerManager(multi.Thread):
         client = docker.from_env()
         dockerAPI = docker.APIClient()
 
-        currentACL = ACLManager.loadedACL(userID)
-        containers = ACLManager.findAllContainers(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        containers = Amanager.findAllContainers(currentACL, userID)
 
         allContainers = client.containers.list()
         containersList = []
@@ -235,7 +235,7 @@ class ContainerManager(multi.Thread):
         if not unlistedContainers:
             showUnlistedContainer = False
 
-        adminNames = ACLManager.loadAllUsers(userID)
+        adminNames = Amanager.loadAllUsers(userID)
 
         pages = float(len(containers)) / float(10)
         pagination = []
@@ -263,8 +263,8 @@ class ContainerManager(multi.Thread):
 
             # Check if container is registered in database or unlisted
             if Containers.objects.filter(name=name).exists():
-                if ACLManager.checkContainerOwnership(name, userID) != 1:
-                    return ACLManager.loadErrorJson('containerLogStatus', 0)
+                if Amanager.checkContainerOwnership(name, userID) != 1:
+                    return Amanager.loadErrorJson('containerLogStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -287,7 +287,7 @@ class ContainerManager(multi.Thread):
 
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('createContainerStatus', 0)
+                return Amanager.loadErrorJson('createContainerStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -401,7 +401,7 @@ class ContainerManager(multi.Thread):
 
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('installImageStatus', 0)
+                return Amanager.loadErrorJson('installImageStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -442,7 +442,7 @@ class ContainerManager(multi.Thread):
         try:
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('pullImageStatus', 0)
+                return Amanager.loadErrorJson('pullImageStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -506,11 +506,11 @@ class ContainerManager(multi.Thread):
             name = data['name']
             # Check if container is registered in database or unlisted
             if Containers.objects.filter(name=name).exists():
-                if ACLManager.checkContainerOwnership(name, userID) != 1:
+                if Amanager.checkContainerOwnership(name, userID) != 1:
                     if called:
                         return 'Permission error'
                     else:
-                        return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                        return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -578,9 +578,9 @@ class ContainerManager(multi.Thread):
         try:
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('listContainerStatus', 0)
+                return Amanager.loadErrorJson('listContainerStatus', 0)
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             json_data = self.findContainersJson(currentACL, userID, pageNumber)
             final_dic = {'listContainerStatus': 1, 'error_message': "None", "data": json_data}
@@ -594,11 +594,11 @@ class ContainerManager(multi.Thread):
     def findContainersJson(self, currentACL, userID, pageNumber):
         admin = Administrator.objects.get(pk=userID)
         if admin.acl.adminStatus != 1:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         finalPageNumber = ((pageNumber * 10)) - 10
         endPageNumber = finalPageNumber + 10
-        containers = ACLManager.findContainersObjects(currentACL, userID)[finalPageNumber:endPageNumber]
+        containers = Amanager.findContainersObjects(currentACL, userID)[finalPageNumber:endPageNumber]
 
         json_data = "["
         checker = 0
@@ -620,8 +620,8 @@ class ContainerManager(multi.Thread):
         try:
 
             name = data['name']
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('containerActionStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('containerActionStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -668,8 +668,8 @@ class ContainerManager(multi.Thread):
     def getContainerStatus(self, userID=None, data=None):
         try:
             name = data['name']
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('containerStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('containerStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -698,8 +698,8 @@ class ContainerManager(multi.Thread):
     def exportContainer(self, request=None, userID=None, data=None):
         try:
             name = request.GET.get('name')
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('containerStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('containerStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -728,8 +728,8 @@ class ContainerManager(multi.Thread):
     def getContainerTop(self, userID=None, data=None):
         try:
             name = data['name']
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('containerTopStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('containerTopStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -766,7 +766,7 @@ class ContainerManager(multi.Thread):
             # Todo: add check only for super user i.e. main admin
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('assignContainerStatus', 0)
+                return Amanager.loadErrorJson('assignContainerStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -806,7 +806,7 @@ class ContainerManager(multi.Thread):
         try:
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadErrorJson('searchImageStatus', 0)
+                return Amanager.loadErrorJson('searchImageStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -951,7 +951,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -1028,8 +1028,8 @@ class ContainerManager(multi.Thread):
     def saveContainerSettings(self, userID=None, data=None):
         try:
             name = data['name']
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('saveSettingsStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('saveSettingsStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -1128,8 +1128,8 @@ class ContainerManager(multi.Thread):
     def recreateContainer(self, userID=None, data=None):
         try:
             name = data['name']
-            if ACLManager.checkContainerOwnership(name, userID) != 1:
-                return ACLManager.loadErrorJson('saveSettingsStatus', 0)
+            if Amanager.checkContainerOwnership(name, userID) != 1:
+                return Amanager.loadErrorJson('saveSettingsStatus', 0)
 
             client = docker.from_env()
             dockerAPI = docker.APIClient()
@@ -1180,7 +1180,7 @@ class ContainerManager(multi.Thread):
 
             admin = Administrator.objects.get(pk=userID)
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             image = data['image']
             page = data['page']
@@ -1212,7 +1212,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
 
             name = data['name']
@@ -1239,7 +1239,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             name = data['name']
             containerID = data['id']
@@ -1308,7 +1308,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
 
             name = data['name']
@@ -1338,7 +1338,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             name = data['name']
             WPusername = data['WPusername']
@@ -1381,7 +1381,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             name = data['name']
             containerID = data['id']
@@ -1407,7 +1407,7 @@ class ContainerManager(multi.Thread):
             admin = Administrator.objects.get(pk=userID)
 
             if admin.acl.adminStatus != 1:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             name = data['name']
             containerID = data['id']
@@ -1454,8 +1454,8 @@ class ContainerManager(multi.Thread):
             
             # Check container ownership
             if Containers.objects.filter(name=name).exists():
-                if ACLManager.checkContainerOwnership(name, userID) != 1:
-                    return ACLManager.loadErrorJson('commandStatus', 0)
+                if Amanager.checkContainerOwnership(name, userID) != 1:
+                    return Amanager.loadErrorJson('commandStatus', 0)
 
             # Rate limiting check
             if not self._check_rate_limit(userID, name):

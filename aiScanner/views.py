@@ -94,7 +94,7 @@ def getScanHistory(request):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scan history with ACL respect
         if currentACL['admin'] == 1:
@@ -102,7 +102,7 @@ def getScanHistory(request):
             scans = ScanHistory.objects.all().order_by('-started_at')[:20]
         else:
             # Users can only see their own scans and their sub-users' scans
-            user_admins = ACLManager.loadUserObjects(userID)
+            user_admins = Amanager.loadUserObjects(userID)
             scans = ScanHistory.objects.filter(admin__in=user_admins).order_by('-started_at')[:20]
         
         scan_data = []
@@ -140,7 +140,7 @@ def getScanDetails(request, scan_id):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scan with ACL respect
         try:
@@ -149,7 +149,7 @@ def getScanDetails(request, scan_id):
             # Check if user has access to this scan
             if currentACL['admin'] != 1:
                 # Non-admin users can only see their own scans and their sub-users' scans
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied to this scan'})
         except ScanHistory.DoesNotExist:
@@ -218,9 +218,9 @@ def getPlatformMonitorUrl(request, scan_id):
             
             # Verify access
             from plogical.acl import ACLManager
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] != 1:
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied'})
         except ScanHistory.DoesNotExist:
@@ -256,7 +256,7 @@ def getPlatformMonitorUrl(request, scan_id):
                 from plogical.acl import ACLManager
                 from .aiScannerManager import AIScannerManager
                 
-                server_ip = ACLManager.fetchIP()
+                server_ip = Amanager.fetchIP()
                 sm = AIScannerManager()
                 vps_info = sm.check_vps_free_scans(server_ip)
                 
@@ -336,7 +336,7 @@ def getPlatformScanStatus(request, scan_id):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scan with ACL respect
         try:
@@ -345,7 +345,7 @@ def getPlatformScanStatus(request, scan_id):
             # Check if user has access to this scan
             if currentACL['admin'] != 1:
                 # Non-admin users can only see their own scans and their sub-users' scans
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied to this scan'})
         except ScanHistory.DoesNotExist:

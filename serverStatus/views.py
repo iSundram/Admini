@@ -104,12 +104,12 @@ def stopOrRestartLitespeed(request):
     try:
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('reboot', 0)
+            return Amanager.loadErrorJson('reboot', 0)
 
         data = json.loads(request.body)
 
@@ -142,12 +142,12 @@ def cyberCPMainLogFile(request):
 def getFurtherDataFromLogFile(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('logstatus', 0)
+            return Amanager.loadErrorJson('logstatus', 0)
 
         fewLinesOfLogFile = logging.CyberCPLogFileWriter.readLastNFiles(50, logging.CyberCPLogFileWriter.fileName)
 
@@ -184,12 +184,12 @@ def services(request):
 def servicesStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('serviceAction', 0)
+            return Amanager.loadErrorJson('serviceAction', 0)
 
         lsStatus = []
         sqlStatus = []
@@ -293,12 +293,12 @@ def servicesStatus(request):
 def servicesAction(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('serviceAction', 0)
+            return Amanager.loadErrorJson('serviceAction', 0)
 
         try:
             if request.method == 'POST':
@@ -347,12 +347,12 @@ def switchTOLSWS(request):
     try:
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('status', 0)
+            return Amanager.loadErrorJson('status', 0)
 
         data = json.loads(request.body)
 
@@ -381,12 +381,12 @@ def securityruleUpdate(request):
     try:
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('status', 0)
+            return Amanager.loadErrorJson('status', 0)
 
         data = json.loads(request.body)
 
@@ -441,12 +441,12 @@ def licenseStatus(request):
         userID = request.session['userID']
 
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             command = 'sudo cat /usr/local/lsws/conf/serial.no'
             serial = ProcessUtilities.outputExecutioner(command)
@@ -479,12 +479,12 @@ def refreshLicense(request):
         userID = request.session['userID']
 
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             command = 'sudo /usr/local/lsws/bin/lshttpd -V'
             ProcessUtilities.outputExecutioner(command)
@@ -513,12 +513,12 @@ def changeLicense(request):
         userID = request.session['userID']
 
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             data = json.loads(request.body)
             newKey = data['newKey']
@@ -562,12 +562,12 @@ def topProcesses(request):
 def topProcessesStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         with open("/home/cyberpanel/top", "w") as outfile:
             subprocess.call("top -n1 -b", shell=True, stdout=outfile)
@@ -743,12 +743,12 @@ def killProcess(request):
         userID = request.session['userID']
 
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             data = json.loads(request.body)
             pid = data['pid']
@@ -777,12 +777,12 @@ def fetchPackages(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         data = json.loads(request.body)
         page = int(str(data['page']).rstrip('\n'))
@@ -1028,12 +1028,12 @@ def fetchPackageDetails(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         data = json.loads(request.body)
         package = data['package']
@@ -1059,12 +1059,12 @@ def updatePackage(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         data = json.loads(request.body)
         package = data['package']
@@ -1099,12 +1099,12 @@ def lockStatus(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         data = json.loads(request.body)
         package = data['package']
@@ -1186,12 +1186,12 @@ def submitPortChange(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         data = json.loads(request.body)
         port = data['port']

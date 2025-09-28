@@ -42,7 +42,7 @@ class HAManager(multi.Thread):
                 return 0
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 mesg = 'Only administrators can create clusters. [404]'
@@ -82,7 +82,7 @@ class HAManager(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can create clusters.')
@@ -128,7 +128,7 @@ class HAManager(multi.Thread):
             proc = httpProc(self.request, None, None)
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can create clusters.')
@@ -150,7 +150,7 @@ class HAManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             proc = httpProc(self.request, None, None)
 
             if currentACL['admin'] == 0:
@@ -174,7 +174,7 @@ class HAManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             proc = httpProc(self.request, None, None)
 
             if currentACL['admin'] == 0:
@@ -203,7 +203,7 @@ class HAManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             proc = httpProc(self.request, None, None)
 
             if currentACL['admin'] == 0:

@@ -16,7 +16,7 @@ def scheduledScans(request):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         if request.method == 'GET':
             # Get scheduled scans with ACL respect
@@ -25,7 +25,7 @@ def scheduledScans(request):
                 scheduled_scans = ScheduledScan.objects.all()
             else:
                 # Users can only see their own scheduled scans and their sub-users' scans
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 scheduled_scans = ScheduledScan.objects.filter(admin__in=user_admins)
             
             scan_data = []
@@ -128,7 +128,7 @@ def scheduledScanDetail(request, scan_id):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scheduled scan with ACL respect
         try:
@@ -136,7 +136,7 @@ def scheduledScanDetail(request, scan_id):
             
             # Check if user has access to this scheduled scan
             if currentACL['admin'] != 1:
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scheduled_scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied to this scheduled scan'})
         except ScheduledScan.DoesNotExist:
@@ -188,7 +188,7 @@ def toggleScheduledScan(request, scan_id):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scheduled scan with ACL respect
         try:
@@ -196,7 +196,7 @@ def toggleScheduledScan(request, scan_id):
             
             # Check if user has access to this scheduled scan
             if currentACL['admin'] != 1:
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scheduled_scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied to this scheduled scan'})
         except ScheduledScan.DoesNotExist:
@@ -228,7 +228,7 @@ def scheduledScanExecutions(request, scan_id):
         from plogical.acl import ACLManager
         
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         
         # Get scheduled scan with ACL respect
         try:
@@ -236,7 +236,7 @@ def scheduledScanExecutions(request, scan_id):
             
             # Check if user has access to this scheduled scan
             if currentACL['admin'] != 1:
-                user_admins = ACLManager.loadUserObjects(userID)
+                user_admins = Amanager.loadUserObjects(userID)
                 if scheduled_scan.admin not in user_admins:
                     return JsonResponse({'success': False, 'error': 'Access denied to this scheduled scan'})
         except ScheduledScan.DoesNotExist:

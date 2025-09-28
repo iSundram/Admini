@@ -44,12 +44,12 @@ def modSecAuditLogs(request):
 def getLogsFromFile(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('logstatus', 0)
+            return Amanager.loadErrorJson('logstatus', 0)
 
         data = json.loads(request.body)
         type = data['type']
@@ -93,12 +93,12 @@ def getLogsFromFile(request):
 def clearLogFile(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('cleanStatus', 0)
+            return Amanager.loadErrorJson('cleanStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -150,12 +150,12 @@ def serverMail(request):
 def saveSMTPSettings(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('logstatus', 0)
+            return Amanager.loadErrorJson('logstatus', 0)
 
         data = json.loads(request.body)
         mailer = data['mailer']

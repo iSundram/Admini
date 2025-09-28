@@ -84,12 +84,12 @@ def configservercsf(request):
 @xframe_options_exempt
 def configservercsfiframe(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
         pass
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
     if request.method == 'GET':
         qs = request.GET.urlencode()

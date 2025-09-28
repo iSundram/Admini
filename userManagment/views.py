@@ -18,7 +18,7 @@ def loadUserHome(request):
 
     val = request.session['userID']
     admin = Administrator.objects.get(pk=val)
-    currentACL = ACLManager.loadedACL(val)
+    currentACL = Amanager.loadedACL(val)
 
     if currentACL['admin'] == 1:
         listUsers = 1
@@ -50,15 +50,15 @@ def viewProfile(request):
 
 def createUser(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
+        aclNames = Amanager.unFileteredACLs()
         proc = httpProc(request, 'userManagment/createUser.html',
                         {'aclNames': aclNames, 'securityLevels': SecurityLevel.list()})
         return proc.render()
     elif currentACL['changeUserACL'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
+        aclNames = Amanager.unFileteredACLs()
         proc = httpProc(request, 'userManagment/createUser.html',
                         {'aclNames': aclNames, 'securityLevels': SecurityLevel.list()})
         return proc.render()
@@ -68,13 +68,13 @@ def createUser(request):
                         {'aclNames': aclNames, 'securityLevels': SecurityLevel.list()})
         return proc.render()
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
 
 def apiAccess(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
-    adminNames = ACLManager.loadDeletionUsers(userID, currentACL)
+    currentACL = Amanager.loadedACL(userID)
+    adminNames = Amanager.loadDeletionUsers(userID, currentACL)
     adminNames.append("admin")
     proc = httpProc(request, 'userManagment/apiAccess.html',
                     {'acctNames': adminNames}, 'admin')
@@ -84,7 +84,7 @@ def apiAccess(request):
 def saveChangesAPIAccess(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         data = json.loads(request.body)
 
         if currentACL['admin'] != 1:
@@ -119,12 +119,12 @@ def submitUserCreation(request):
         try:
             try:
                 userID = request.session['userID']
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
                 data = json.loads(request.body)
             except:
                 userID = request['userID']
                 data = request
-                currentACL = ACLManager.loadedACL(userID)
+                currentACL = Amanager.loadedACL(userID)
 
             firstName = data['firstName']
             lastName = data['lastName']
@@ -134,12 +134,12 @@ def submitUserCreation(request):
             websitesLimit = data['websitesLimit']
             selectedACL = data['selectedACL']
 
-            if ACLManager.CheckRegEx("^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$", firstName) == 0:
+            if Amanager.CheckRegEx("^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$", firstName) == 0:
                 data_ret = {'status': 0, 'createStatus': 0, 'error_message': 'First Name can only contain alphabetic characters, and should be more than 2 characters long...'}
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
 
-            if ACLManager.CheckRegEx("^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$", lastName) == 0:
+            if Amanager.CheckRegEx("^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$", lastName) == 0:
                 data_ret = {'status': 0, 'createStatus': 0, 'error_message': 'Last Name can only contain alphabetic characters, and should be more than 2 characters long...'}
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
@@ -172,7 +172,7 @@ def submitUserCreation(request):
             password = hashPassword.hash_password(password)
             currentAdmin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.websitesLimitCheck(currentAdmin, websitesLimit) == 0:
+            if Amanager.websitesLimitCheck(currentAdmin, websitesLimit) == 0:
                 data_ret = {'status': 0, 'createStatus': 0,
                             'error_message': "You've reached maximum websites limit as a reseller."}
 
@@ -257,7 +257,7 @@ def submitUserCreation(request):
 
 def modifyUsers(request):
     userID = request.session['userID']
-    userNames = ACLManager.loadAllUsers(userID)
+    userNames = Amanager.loadAllUsers(userID)
     proc = httpProc(request, 'userManagment/modifyUser.html',
                     {"acctNames": userNames, 'securityLevels': SecurityLevel.list()})
     return proc.render()
@@ -273,7 +273,7 @@ def fetchUserDetails(request):
 
                 user = Administrator.objects.get(userName=accountUsername)
 
-                currentACL = ACLManager.loadedACL(val)
+                currentACL = Amanager.loadedACL(val)
                 loggedUser = Administrator.objects.get(pk=val)
 
                 if currentACL['admin'] == 1:
@@ -357,7 +357,7 @@ def saveModifications(request):
 
             user = Administrator.objects.get(userName=accountUsername)
 
-            currentACL = ACLManager.loadedACL(val)
+            currentACL = Amanager.loadedACL(val)
             loggedUser = Administrator.objects.get(pk=val)
 
             if currentACL['admin'] == 1:
@@ -413,20 +413,20 @@ def saveModifications(request):
 
 def deleteUser(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
-        adminNames = ACLManager.loadDeletionUsers(userID, currentACL)
+        adminNames = Amanager.loadDeletionUsers(userID, currentACL)
         proc = httpProc(request, 'userManagment/deleteUser.html',
                         {"acctNames": adminNames})
         return proc.render()
     elif currentACL['deleteUser'] == 1:
-        adminNames = ACLManager.loadDeletionUsers(userID, currentACL)
+        adminNames = Amanager.loadDeletionUsers(userID, currentACL)
         proc = httpProc(request, 'userManagment/deleteUser.html',
                         {"acctNames": adminNames})
         return proc.render()
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
 
 def submitUserDeletion(request):
@@ -450,16 +450,16 @@ def submitUserDeletion(request):
             except:
                 force = 0
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             currentUser = Administrator.objects.get(pk=userID)
             userInQuestion = Administrator.objects.get(userName=accountUsername)
 
-            if ACLManager.checkUserOwnerShip(currentACL, currentUser, userInQuestion):
+            if Amanager.checkUserOwnerShip(currentACL, currentUser, userInQuestion):
 
                 if force:
-                    userACL = ACLManager.loadedACL(userInQuestion.pk)
-                    websitesName = ACLManager.findAllSites(userACL, userInQuestion.pk)
+                    userACL = Amanager.loadedACL(userInQuestion.pk)
+                    websitesName = Amanager.findAllSites(userACL, userInQuestion.pk)
 
                     from websiteFunctions.website import WebsiteManager
                     wm = WebsiteManager()
@@ -505,7 +505,7 @@ def createACLFunc(request):
     try:
         val = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             data = json.loads(request.body)
@@ -522,7 +522,7 @@ def createACLFunc(request):
 
             finalResponse = {'status': 1}
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         json_data = json.dumps(finalResponse)
         return HttpResponse(json_data)
@@ -533,7 +533,7 @@ def createACLFunc(request):
 
 
 def deleteACL(request):
-    aclNames = ACLManager.findAllACLs()
+    aclNames = Amanager.findAllACLs()
     proc = httpProc(request, 'userManagment/deleteACL.html',
                     {'aclNames': aclNames}, 'admin')
     return proc.render()
@@ -543,7 +543,7 @@ def deleteACLFunc(request):
     try:
         val = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             data = json.loads(request.body)
@@ -556,7 +556,7 @@ def deleteACLFunc(request):
                 finalResponse = {'status': 0, 'errorMesssage': 'This ACL is currently in used by existing users.',
                                  'error_message': 'This ACL is currently in used by existing users.'}
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         json_data = json.dumps(finalResponse)
         return HttpResponse(json_data)
@@ -567,7 +567,7 @@ def deleteACLFunc(request):
 
 
 def modifyACL(request):
-    aclNames = ACLManager.findAllACLs()
+    aclNames = Amanager.findAllACLs()
     proc = httpProc(request, 'userManagment/modifyACL.html',
                     {'aclNames': aclNames}, 'admin')
     return proc.render()
@@ -577,7 +577,7 @@ def fetchACLDetails(request):
     try:
         val = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             data = json.loads(request.body)
@@ -588,7 +588,7 @@ def fetchACLDetails(request):
             finalResponse = json.loads(acl.config)
             finalResponse['status'] = 1
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         json_data = json.dumps(finalResponse)
         return HttpResponse(json_data)
@@ -602,7 +602,7 @@ def submitACLModifications(request):
     try:
         val = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             data = json.loads(request.body)
@@ -628,7 +628,7 @@ def submitACLModifications(request):
 
             finalResponse = {'status': 1}
         else:
-            finalResponse = ACLManager.loadErrorJson()
+            finalResponse = Amanager.loadErrorJson()
 
         json_data = json.dumps(finalResponse)
         return HttpResponse(json_data)
@@ -639,22 +639,22 @@ def submitACLModifications(request):
 
 def changeUserACL(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
-        userNames = ACLManager.findAllUsers()
+        aclNames = Amanager.unFileteredACLs()
+        userNames = Amanager.findAllUsers()
         proc = httpProc(request, 'userManagment/changeUserACL.html',
                         {'aclNames': aclNames, 'usersList': userNames}, 'admin')
         return proc.render()
     elif currentACL['changeUserACL'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
-        userNames = ACLManager.findAllUsers()
+        aclNames = Amanager.unFileteredACLs()
+        userNames = Amanager.findAllUsers()
         proc = httpProc(request, 'userManagment/changeUserACL.html',
                         {'aclNames': aclNames, 'usersList': userNames})
         return proc.render()
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
 
 def changeACLFunc(request):
@@ -669,7 +669,7 @@ def changeACLFunc(request):
             json_data = json.dumps(finalResponse)
             return HttpResponse(json_data)
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             selectedACL = ACL.objects.get(name=data['selectedACL'])
@@ -688,7 +688,7 @@ def changeACLFunc(request):
 
             finalResponse = {'status': 1}
         else:
-            finalResponse = ACLManager.loadErrorJson()
+            finalResponse = Amanager.loadErrorJson()
 
         json_data = json.dumps(finalResponse)
         return HttpResponse(json_data)
@@ -700,22 +700,22 @@ def changeACLFunc(request):
 
 def resellerCenter(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
-        userNames = ACLManager.loadDeletionUsers(userID, currentACL)
-        resellerPrivUsers = ACLManager.userWithResellerPriv(userID)
+        userNames = Amanager.loadDeletionUsers(userID, currentACL)
+        resellerPrivUsers = Amanager.userWithResellerPriv(userID)
         proc = httpProc(request, 'userManagment/resellerCenter.html',
                         {'userToBeModified': userNames, 'resellerPrivUsers': resellerPrivUsers})
         return proc.render()
     elif currentACL['resellerCenter'] == 1:
-        userNames = ACLManager.loadDeletionUsers(userID, currentACL)
-        resellerPrivUsers = ACLManager.userWithResellerPriv(userID)
+        userNames = Amanager.loadDeletionUsers(userID, currentACL)
+        resellerPrivUsers = Amanager.userWithResellerPriv(userID)
         proc = httpProc(request, 'userManagment/resellerCenter.html',
                         {'userToBeModified': userNames, 'resellerPrivUsers': resellerPrivUsers})
         return proc.render()
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
 
 def saveResellerChanges(request):
@@ -730,14 +730,14 @@ def saveResellerChanges(request):
             json_data = json.dumps(finalResponse)
             return HttpResponse(json_data)
 
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if currentACL['admin'] == 1:
             pass
         elif currentACL['resellerCenter'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         loggedUser = Administrator.objects.get(pk=val)
 
@@ -746,11 +746,11 @@ def saveResellerChanges(request):
 
         ### Check user owners
 
-        if ACLManager.checkUserOwnerShip(currentACL, loggedUser, userToBeModified) == 0 or ACLManager.checkUserOwnerShip(currentACL, loggedUser, newOwner) == 0:
-            return ACLManager.loadErrorJson()
+        if Amanager.checkUserOwnerShip(currentACL, loggedUser, userToBeModified) == 0 or Amanager.checkUserOwnerShip(currentACL, loggedUser, newOwner) == 0:
+            return Amanager.loadErrorJson()
 
         try:
-            if ACLManager.websitesLimitCheck(newOwner, data['websitesLimit'], userToBeModified) == 0:
+            if Amanager.websitesLimitCheck(newOwner, data['websitesLimit'], userToBeModified) == 0:
                 finalResponse = {'status': 0,
                                  'errorMessage': "You've reached maximum websites limit as a reseller.",
                                  'error_message': "You've reached maximum websites limit as a reseller."}
@@ -777,21 +777,21 @@ def saveResellerChanges(request):
 
 def listUsers(request):
     userID = request.session['userID']
-    currentACL = ACLManager.loadedACL(userID)
+    currentACL = Amanager.loadedACL(userID)
 
     if currentACL['admin'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
+        aclNames = Amanager.unFileteredACLs()
     elif currentACL['changeUserACL'] == 1:
-        aclNames = ACLManager.unFileteredACLs()
+        aclNames = Amanager.unFileteredACLs()
     elif currentACL['createNewUser'] == 1:
         aclNames = ['user']
     else:
         aclNames = []
 
     if currentACL['admin'] == 1:
-        resellerPrivUsers = ACLManager.userWithResellerPriv(userID)
+        resellerPrivUsers = Amanager.userWithResellerPriv(userID)
     elif currentACL['resellerCenter'] == 1:
-        resellerPrivUsers = ACLManager.userWithResellerPriv(userID)
+        resellerPrivUsers = Amanager.userWithResellerPriv(userID)
     else:
         resellerPrivUsers = []
 
@@ -804,7 +804,7 @@ def listUsers(request):
                         {'aclNames': aclNames, 'resellerPrivUsers': resellerPrivUsers})
         return proc.render()
     else:
-        return ACLManager.loadError()
+        return Amanager.loadError()
 
 def fetchTableUsers(request):
     try:
@@ -813,14 +813,14 @@ def fetchTableUsers(request):
         except:
             userID = request['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
-            users = ACLManager.fetchTableUserObjects(userID)
+            users = Amanager.fetchTableUserObjects(userID)
         elif currentACL['listUsers'] == 1:
-            users = ACLManager.fetchTableUserObjects(userID)
+            users = Amanager.fetchTableUserObjects(userID)
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         json_data = "["
         checker = 0
@@ -882,7 +882,7 @@ def controlUserState(request):
 
             user = Administrator.objects.get(userName=accountUsername)
 
-            currentACL = ACLManager.loadedACL(val)
+            currentACL = Amanager.loadedACL(val)
             loggedUser = Administrator.objects.get(pk=val)
 
             if currentACL['admin'] == 1:
@@ -905,7 +905,7 @@ def controlUserState(request):
 
             extraArgs = {}
             extraArgs['user'] = user
-            extraArgs['currentACL'] = ACLManager.loadedACL(user.pk)
+            extraArgs['currentACL'] = Amanager.loadedACL(user.pk)
             extraArgs['state'] = state
 
             from userManagment.userManager import UserManager

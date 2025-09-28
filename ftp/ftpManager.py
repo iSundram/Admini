@@ -39,7 +39,7 @@ class FTPManager:
 
     def createFTPAccount(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         admin = Administrator.objects.get(pk=userID)
 
@@ -48,7 +48,7 @@ class FTPManager:
                             {"status": 0}, 'createFTPAccount')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         proc = httpProc(self.request, 'ftp/createFTPAccount.html',
                         {'websiteList': websitesName, 'OwnerFTP': admin.userName, "status": 1}, 'createFTPAccount')
@@ -57,10 +57,10 @@ class FTPManager:
     def submitFTPCreation(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'createFTPAccount') == 0:
-                return ACLManager.loadErrorJson('creatFTPStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createFTPAccount') == 0:
+                return Amanager.loadErrorJson('creatFTPStatus', 0)
 
             data = json.loads(self.request.body)
             userName = data['ftpUserName']
@@ -70,10 +70,10 @@ class FTPManager:
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             try:
                 api = data['api']
@@ -110,14 +110,14 @@ class FTPManager:
 
     def deleteFTPAccount(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/pureftpd'):
             proc = httpProc(self.request, 'ftp/deleteFTPAccount.html',
                             {"status": 0}, 'deleteFTPAccount')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         proc = httpProc(self.request, 'ftp/deleteFTPAccount.html',
                         {'websiteList': websitesName, "status": 1}, 'deleteFTPAccount')
@@ -126,19 +126,19 @@ class FTPManager:
     def fetchFTPAccounts(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deleteFTPAccount') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteFTPAccount') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             data = json.loads(self.request.body)
             domain = data['ftpDomain']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             website = Websites.objects.get(domain=domain)
 
@@ -168,10 +168,10 @@ class FTPManager:
     def submitFTPDelete(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deleteFTPAccount') == 0:
-                return ACLManager.loadErrorJson('deleteStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteFTPAccount') == 0:
+                return Amanager.loadErrorJson('deleteStatus', 0)
 
             data = json.loads(self.request.body)
             ftpUserName = data['ftpUsername']
@@ -179,10 +179,10 @@ class FTPManager:
             admin = Administrator.objects.get(pk=userID)
             ftp = Users.objects.get(user=ftpUserName)
 
-            if ACLManager.checkOwnership(ftp.domain.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(ftp.domain.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             FTPUtilities.submitFTPDeletion(ftpUserName)
 
@@ -196,14 +196,14 @@ class FTPManager:
 
     def listFTPAccounts(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/pureftpd'):
             proc = httpProc(self.request, 'ftp/listFTPAccounts.html',
                             {"status": 0}, 'listFTPAccounts')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(self.request, 'ftp/listFTPAccounts.html',
                         {'websiteList': websitesName, "status": 1}, 'listFTPAccounts')
         return proc.render()
@@ -211,10 +211,10 @@ class FTPManager:
     def getAllFTPAccounts(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listFTPAccounts') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'listFTPAccounts') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             data = json.loads(self.request.body)
             selectedDomain = data['selectedDomain']
@@ -222,10 +222,10 @@ class FTPManager:
             domain = Websites.objects.get(domain=selectedDomain)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(selectedDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(selectedDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             records = Users.objects.filter(domain=domain)
 
@@ -257,10 +257,10 @@ class FTPManager:
     def changePassword(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listFTPAccounts') == 0:
-                return ACLManager.loadErrorJson('changePasswordStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'listFTPAccounts') == 0:
+                return Amanager.loadErrorJson('changePasswordStatus', 0)
 
             data = json.loads(self.request.body)
             userName = data['ftpUserName']
@@ -272,7 +272,7 @@ class FTPManager:
             if currentACL['admin'] == 1:
                 pass
             elif ftp.domain.admin != admin:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             FTPUtilities.changeFTPPassword(userName, password)
 
@@ -537,7 +537,7 @@ class FTPManager:
                 command = 'echo 1 > /etc/pure-ftpd/conf/TLS'
                 ProcessUtilities.executioner(command, 'root', True)
 
-                command = 'echo %s > /etc/pure-ftpd/conf/ForcePassiveIP' % (ACLManager.fetchIP())
+                command = 'echo %s > /etc/pure-ftpd/conf/ForcePassiveIP' % (Amanager.fetchIP())
                 ProcessUtilities.executioner(command, 'root', True)
 
                 command = 'echo "40110 40210" > /etc/pure-ftpd/conf/PassivePortRange'
@@ -634,7 +634,7 @@ class FTPManager:
             import sys
             sys.path.append('/usr/local/core')
             os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-            from CyberCP import settings
+            from core import settings
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Configurations reset..,70')
 
@@ -649,7 +649,7 @@ class FTPManager:
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Fixing permissions..,90')
 
-            ACLManager.fixPermissions()
+            Amanager.fixPermissions()
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Completed [200].')
 
         except BaseException as msg:

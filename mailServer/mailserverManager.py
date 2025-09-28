@@ -65,15 +65,15 @@ class MailServerManager(multi.Thread):
 
     def createEmailAccount(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/createEmailAccount.html',
                             {"status": 0}, 'createEmail')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/createEmailAccount.html',
                         {'websiteList': websitesName, "status": 1}, 'createEmail')
@@ -81,15 +81,15 @@ class MailServerManager(multi.Thread):
 
     def listEmails(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/listEmails.html',
                             {"status": 0}, 'listEmails')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/listEmails.html',
                         {'websiteList': websitesName, "status": 1}, 'listEmails')
@@ -99,10 +99,10 @@ class MailServerManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'createEmail') == 0:
-                return ACLManager.loadErrorJson('createEmailStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createEmail') == 0:
+                return Amanager.loadErrorJson('createEmailStatus', 0)
 
             data = json.loads(self.request.body)
             domainName = data['domain']
@@ -115,10 +115,10 @@ class MailServerManager(multi.Thread):
 
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
 
             ## Create email entry
@@ -158,15 +158,15 @@ class MailServerManager(multi.Thread):
 
     def deleteEmailAccount(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/deleteEmailAccount.html',
                             {"status": 0}, 'deleteEmail')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/deleteEmailAccount.html',
                         {'websiteList': websitesName, "status": 1}, 'deleteEmail')
@@ -175,19 +175,19 @@ class MailServerManager(multi.Thread):
     def getEmailsForDomain(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deleteEmail') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteEmail') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             data = json.loads(self.request.body)
             domain = data['domain']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             try:
                 domain = Domains.objects.get(domain=domain)
@@ -240,10 +240,10 @@ class MailServerManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deleteEmail') == 0:
-                return ACLManager.loadErrorJson('deleteEmailStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteEmail') == 0:
+                return Amanager.loadErrorJson('deleteEmailStatus', 0)
 
             data = json.loads(self.request.body)
             email = data['email']
@@ -253,10 +253,10 @@ class MailServerManager(multi.Thread):
             emailOwnerDomain = eUser.emailOwner
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             mailUtilities.deleteEmailAccount(email)
 
@@ -276,7 +276,7 @@ class MailServerManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if data == None:
                 data = json.loads(self.request.body)
@@ -287,10 +287,10 @@ class MailServerManager(multi.Thread):
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(selectedDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(selectedDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             website = Websites.objects.get(domain=selectedDomain)
 
@@ -310,15 +310,15 @@ class MailServerManager(multi.Thread):
 
     def emailForwarding(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/emailForwarding.html',
                             {"status": 0}, 'emailForwarding')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/emailForwarding.html',
                         {'websiteList': websitesName, "status": 1}, 'emailForwarding')
@@ -329,10 +329,10 @@ class MailServerManager(multi.Thread):
         try:
 
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'emailForwarding') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'emailForwarding') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             data = json.loads(self.request.body)
             emailAddress = data['emailAddress']
@@ -342,10 +342,10 @@ class MailServerManager(multi.Thread):
                 eUser = EUsers.objects.get(email=emailAddress)
 
                 admin = Administrator.objects.get(pk=userID)
-                if ACLManager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+                if Amanager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
                 currentForwardings = Forwardings.objects.filter(source=emailAddress)
 
@@ -409,9 +409,9 @@ class MailServerManager(multi.Thread):
     def submitForwardDeletion(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'emailForwarding') == 0:
-                return ACLManager.loadErrorJson('deleteForwardingStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'emailForwarding') == 0:
+                return Amanager.loadErrorJson('deleteForwardingStatus', 0)
 
             data = json.loads(self.request.body)
             destination = data['destination']
@@ -421,10 +421,10 @@ class MailServerManager(multi.Thread):
             eUser = EUsers.objects.get(email=source)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if forwardingOption == 'Forward to email':
                 for items in Forwardings.objects.filter(destination=destination, source=source):
@@ -462,9 +462,9 @@ class MailServerManager(multi.Thread):
     def submitEmailForwardingCreation(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'emailForwarding') == 0:
-                return ACLManager.loadErrorJson('createStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'emailForwarding') == 0:
+                return Amanager.loadErrorJson('createStatus', 0)
 
             data = json.loads(self.request.body)
             source = data['source']
@@ -474,10 +474,10 @@ class MailServerManager(multi.Thread):
             eUser = EUsers.objects.get(email=source)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if Forwardings.objects.filter(source=source, destination=destination).count() > 0:
                 data_ret = {'status': 0, 'createStatus': 0,
@@ -538,19 +538,19 @@ class MailServerManager(multi.Thread):
     def fetchEmails(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listEmails') == 0:
-                return ACLManager.loadErrorJson('status', 0)
+            if Amanager.currentContextPermission(currentACL, 'listEmails') == 0:
+                return Amanager.loadErrorJson('status', 0)
 
             data = json.loads(self.request.body)
             selectedDomain = data['selectedDomain']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(selectedDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(selectedDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
             try:
                 emailDomain = Domains.objects.get(domain=selectedDomain)
             except:
@@ -599,15 +599,15 @@ class MailServerManager(multi.Thread):
 
     def changeEmailAccountPassword(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/changeEmailPassword.html',
                             {"status": 0}, 'changeEmailPassword')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/changeEmailPassword.html',
                         {'websiteList': websitesName, "status": 1}, 'changeEmailPassword')
@@ -616,9 +616,9 @@ class MailServerManager(multi.Thread):
     def submitPasswordChange(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'changeEmailPassword') == 0:
-                return ACLManager.loadErrorJson('passChangeStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'changeEmailPassword') == 0:
+                return Amanager.loadErrorJson('passChangeStatus', 0)
 
             data = json.loads(self.request.body)
             email = data['email']
@@ -628,15 +628,15 @@ class MailServerManager(multi.Thread):
 
             admin = Administrator.objects.get(pk=userID)
             try:
-                if ACLManager.checkOwnership(emailDB.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+                if Amanager.checkOwnership(emailDB.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
             except:
-                if ACLManager.checkOwnership(emailDB.emailOwner.childOwner.domain, admin, currentACL) == 1:
+                if Amanager.checkOwnership(emailDB.emailOwner.childOwner.domain, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadErrorJson()
+                    return Amanager.loadErrorJson()
 
             CentOSPath = '/etc/redhat-release'
             if os.path.exists(CentOSPath):
@@ -664,12 +664,12 @@ class MailServerManager(multi.Thread):
 
     def dkimManager(self):
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         openDKIMInstalled = 1
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         proc = httpProc(self.request, 'mailServer/dkimManager.html',
                         {'websiteList': websitesName, 'openDKIMInstalled': openDKIMInstalled}, 'dkimManager')
@@ -678,19 +678,19 @@ class MailServerManager(multi.Thread):
     def fetchDKIMKeys(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'dkimManager') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'dkimManager') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             data = json.loads(self.request.body)
             domainName = data['domainName']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             try:
 
@@ -733,19 +733,19 @@ class MailServerManager(multi.Thread):
     def generateDKIMKeys(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'dkimManager') == 0:
-                return ACLManager.loadErrorJson('generateStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'dkimManager') == 0:
+                return Amanager.loadErrorJson('generateStatus', 0)
 
             data = json.loads(self.request.body)
             domainName = data['domainName']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " generateKeys --domain " + domainName
@@ -811,9 +811,9 @@ class MailServerManager(multi.Thread):
     def installOpenDKIM(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'dkimManager') == 0:
-                return ACLManager.loadErrorJson('installOpenDKIM', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'dkimManager') == 0:
+                return Amanager.loadErrorJson('installOpenDKIM', 0)
             _thread.start_new_thread(mailUtilities.installOpenDKIM, ('Install', 'openDKIM'))
             final_json = json.dumps({'installOpenDKIM': 1, 'error_message': "None"})
             return HttpResponse(final_json)
@@ -1645,7 +1645,7 @@ milter_default_action = accept
         command = 'chmod +x /usr/local/core/plogical/renew.py'
         ProcessUtilities.executioner(command)
 
-        command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+        command = 'chmod +x /usr/local/core/manager/CLPackages.py'
         ProcessUtilities.executioner(command)
 
         clScripts = ['/usr/local/core/tools/panel_info.py', '/usr/local/core/tools/CloudLinuxPackages.py',
@@ -1829,7 +1829,7 @@ protocol sieve {
             import sys
             sys.path.append('/usr/local/core')
             os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-            from CyberCP import settings
+            from core import settings
 
             if self.setup_email_Passwords(settings.DATABASES['default']['PASSWORD']) == 0:
                 return 0
@@ -1909,15 +1909,15 @@ protocol sieve {
     def EmailLimits(self):
 
         userID = self.request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if not os.path.exists('/home/cyberpanel/postfix'):
             proc = httpProc(self.request, 'mailServer/emailForwarding.html',
                             {"status": 0}, 'emailForwarding')
             return proc.render()
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
-        websitesName = websitesName + ACLManager.findChildDomains(websitesName)
+        websitesName = Amanager.findAllSites(currentACL, userID)
+        websitesName = websitesName + Amanager.findChildDomains(websitesName)
 
         try:
             from plogical.processUtilities import ProcessUtilities
@@ -1926,7 +1926,7 @@ protocol sieve {
                 url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
                 data = {
                     "name": "all",
-                    "IP": ACLManager.fetchIP()
+                    "IP": Amanager.fetchIP()
                 }
 
                 import requests
@@ -1950,9 +1950,9 @@ protocol sieve {
     def SaveEmailLimitsNew(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'emailForwarding') == 0:
-                return ACLManager.loadErrorJson('createStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'emailForwarding') == 0:
+                return Amanager.loadErrorJson('createStatus', 0)
 
             data = json.loads(self.request.body)
             source = data['source']
@@ -1962,10 +1962,10 @@ protocol sieve {
             eUser = EUsers.objects.get(email=source)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(eUser.emailOwner.domainOwner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if mailUtilities.checkIfRspamdInstalled() == 0:
                 execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"

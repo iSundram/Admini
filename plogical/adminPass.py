@@ -43,7 +43,7 @@ def main():
         numberOfAdministrator = Administrator.objects.count()
         if numberOfAdministrator == 0:
 
-            ACLManager.createDefaultACLs()
+            Amanager.createDefaultACLs()
             acl = ACL.objects.get(name='admin')
             token = hashPassword.generateToken('admin', adminPass)
 

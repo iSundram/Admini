@@ -61,7 +61,7 @@ class WebsiteManager:
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "all",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -73,9 +73,9 @@ class WebsiteManager:
         if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
             test_domain_status = 1
 
-        currentACL = ACLManager.loadedACL(userID)
-        adminNames = ACLManager.loadAllUsers(userID)
-        packagesName = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        adminNames = Amanager.loadAllUsers(userID)
+        packagesName = Amanager.loadPackages(userID, currentACL)
         phps = PHPManager.findPHPVersions()
 
         rnpss = randomPassword.generate_pass(10)
@@ -90,7 +90,7 @@ class WebsiteManager:
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "wp-manager",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -99,9 +99,9 @@ class WebsiteManager:
 
 
         if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
-            currentACL = ACLManager.loadedACL(userID)
-            adminNames = ACLManager.loadAllUsers(userID)
-            packagesName = ACLManager.loadPackages(userID, currentACL)
+            currentACL = Amanager.loadedACL(userID)
+            adminNames = Amanager.loadAllUsers(userID)
+            packagesName = Amanager.loadPackages(userID, currentACL)
 
             if len(packagesName) == 0:
                 packagesName = ['Default']
@@ -141,18 +141,18 @@ class WebsiteManager:
 
     def ListWPSites(self, request=None, userID=None, DeleteID=None):
         import json
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         admin = Administrator.objects.get(pk=userID)
         data = {}
-        wp_sites = ACLManager.GetALLWPObjects(currentACL, userID)
+        wp_sites = Amanager.GetALLWPObjects(currentACL, userID)
         data['wp'] = wp_sites
 
         try:
             if DeleteID != None:
                 WPDelete = WPSites.objects.get(pk=DeleteID)
 
-                if ACLManager.checkOwnership(WPDelete.owner.domain, admin, currentACL) == 1:
+                if Amanager.checkOwnership(WPDelete.owner.domain, admin, currentACL) == 1:
                     WPDelete.delete()
         except BaseException as msg:
             pass
@@ -182,21 +182,21 @@ class WebsiteManager:
 
     def WPHome(self, request=None, userID=None, WPid=None, DeleteID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         WPobj = WPSites.objects.get(pk=WPid)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(WPobj.owner.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(WPobj.owner.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         try:
 
             url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
             data = {
                 "name": "wp-manager",
-                "IP": ACLManager.GetServerIP()
+                "IP": Amanager.GetServerIP()
             }
 
             import requests
@@ -234,17 +234,17 @@ class WebsiteManager:
 
     def RestoreHome(self, request=None, userID=None, BackupID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.CheckForPremFeature('wp-manager'):
+        if Amanager.CheckForPremFeature('wp-manager'):
 
             Data['backupobj'] = WPSitesBackup.objects.get(pk=BackupID)
 
-            if ACLManager.CheckIPBackupObjectOwner(currentACL, Data['backupobj'], admin) == 1:
+            if Amanager.CheckIPBackupObjectOwner(currentACL, Data['backupobj'], admin) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             config = json.loads(Data['backupobj'].config)
             Data['FileName'] = config['name']
@@ -254,11 +254,11 @@ class WebsiteManager:
                 if Data['Backuptype'] == 'DataBase Backup' or Data['Backuptype'] == 'Website Backup':
                     Data['WPsites'] = [WPSites.objects.get(pk=Data['backupobj'].WPSiteID)]
                 else:
-                    Data['WPsites'] = ACLManager.GetALLWPObjects(currentACL, userID)
+                    Data['WPsites'] = Amanager.GetALLWPObjects(currentACL, userID)
 
             except:
                 Data['Backuptype'] = None
-                Data['WPsites'] = ACLManager.GetALLWPObjects(currentACL, userID)
+                Data['WPsites'] = Amanager.GetALLWPObjects(currentACL, userID)
 
             proc = httpProc(request, 'websiteFunctions/WPRestoreHome.html',
                             Data, 'createDatabase')
@@ -269,7 +269,7 @@ class WebsiteManager:
 
     def RemoteBackupConfig(self, request=None, userID=None, DeleteID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         try:
             if DeleteID != None:
@@ -278,9 +278,9 @@ class WebsiteManager:
         except:
             pass
 
-        if ACLManager.CheckForPremFeature('wp-manager'):
+        if Amanager.CheckForPremFeature('wp-manager'):
 
-            Data['WPsites'] = ACLManager.GetALLWPObjects(currentACL, userID)
+            Data['WPsites'] = Amanager.GetALLWPObjects(currentACL, userID)
             allcon = RemoteBackupConfig.objects.all()
             Data['backupconfigs'] = []
             for i in allcon:
@@ -318,7 +318,7 @@ class WebsiteManager:
 
     def BackupfileConfig(self, request=None, userID=None, RemoteConfigID=None, DeleteID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
         Data['RemoteConfigID'] = RemoteConfigID
@@ -330,8 +330,8 @@ class WebsiteManager:
         except:
             pass
 
-        if ACLManager.CheckForPremFeature('wp-manager'):
-            Data['WPsites'] = ACLManager.GetALLWPObjects(currentACL, userID)
+        if Amanager.CheckForPremFeature('wp-manager'):
+            Data['WPsites'] = Amanager.GetALLWPObjects(currentACL, userID)
             allsechedule = RemoteBackupSchedule.objects.filter(RemoteBackupConfig=RemoteConfigobj)
             Data['Backupschedule'] = []
             for i in allsechedule:
@@ -354,7 +354,7 @@ class WebsiteManager:
 
     def AddRemoteBackupsite(self, request=None, userID=None, RemoteScheduleID=None, DeleteSiteID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
         Data['RemoteScheduleID'] = RemoteScheduleID
@@ -367,8 +367,8 @@ class WebsiteManager:
         except:
             pass
 
-        if ACLManager.CheckForPremFeature('wp-manager'):
-            Data['WPsites'] = ACLManager.GetALLWPObjects(currentACL, userID)
+        if Amanager.CheckForPremFeature('wp-manager'):
+            Data['WPsites'] = Amanager.GetALLWPObjects(currentACL, userID)
             allRemoteBackupsites = RemoteBackupsites.objects.filter(owner=RemoteBackupScheduleobj)
             Data['RemoteBackupsites'] = []
             for i in allRemoteBackupsites:
@@ -394,13 +394,13 @@ class WebsiteManager:
 
     def RestoreBackups(self, request=None, userID=None, DeleteID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "wp-manager",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -411,16 +411,16 @@ class WebsiteManager:
 
             backobj = WPSitesBackup.objects.filter(owner=admin).order_by('-id')
 
-            # if ACLManager.CheckIPBackupObjectOwner(currentACL, backobj, admin) == 1:
+            # if Amanager.CheckIPBackupObjectOwner(currentACL, backobj, admin) == 1:
             #     pass
             # else:
-            #     return ACLManager.loadError()
+            #     return Amanager.loadError()
 
             try:
                 if DeleteID != None:
                     DeleteIDobj = WPSitesBackup.objects.get(pk=DeleteID)
 
-                    if ACLManager.CheckIPBackupObjectOwner(currentACL, DeleteIDobj, admin) == 1:
+                    if Amanager.CheckIPBackupObjectOwner(currentACL, DeleteIDobj, admin) == 1:
                         config = DeleteIDobj.config
                         conf = json.loads(config)
                         FileName = conf['name']
@@ -464,14 +464,14 @@ class WebsiteManager:
     def AutoLogin(self, request=None, userID=None):
 
         WPid = request.GET.get('id')
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         WPobj = WPSites.objects.get(pk=WPid)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(WPobj.owner.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(WPobj.owner.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         from managePHP.phpManager import PHPManager
 
@@ -481,7 +481,7 @@ class WebsiteManager:
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "wp-manager",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -522,8 +522,8 @@ class WebsiteManager:
 
     def ConfigurePlugins(self, request=None, userID=None, data=None):
 
-        if ACLManager.CheckForPremFeature('wp-manager'):
-            currentACL = ACLManager.loadedACL(userID)
+        if Amanager.CheckForPremFeature('wp-manager'):
+            currentACL = Amanager.loadedACL(userID)
             userobj = Administrator.objects.get(pk=userID)
 
             Selectedplugins = wpplugins.objects.filter(owner=userobj)
@@ -539,10 +539,10 @@ class WebsiteManager:
 
     def Addnewplugin(self, request=None, userID=None, data=None):
         from django.shortcuts import reverse
-        if ACLManager.CheckForPremFeature('wp-manager'):
-            currentACL = ACLManager.loadedACL(userID)
-            adminNames = ACLManager.loadAllUsers(userID)
-            packagesName = ACLManager.loadPackages(userID, currentACL)
+        if Amanager.CheckForPremFeature('wp-manager'):
+            currentACL = Amanager.loadedACL(userID)
+            adminNames = Amanager.loadAllUsers(userID)
+            packagesName = Amanager.loadPackages(userID, currentACL)
             phps = PHPManager.findPHPVersions()
 
             Data = {'packageList': packagesName, "owernList": adminNames, 'phps': phps}
@@ -554,8 +554,8 @@ class WebsiteManager:
 
     def SearchOnkeyupPlugin(self, userID=None, data=None):
         try:
-            if ACLManager.CheckForPremFeature('wp-manager'):
-                currentACL = ACLManager.loadedACL(userID)
+            if Amanager.CheckForPremFeature('wp-manager'):
+                currentACL = Amanager.loadedACL(userID)
 
                 pluginname = data['pluginname']
                 # logging.CyberCPLogFileWriter.writeToFile("Plugin Name ....... %s"%pluginname)
@@ -585,7 +585,7 @@ class WebsiteManager:
 
     def AddNewpluginAjax(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             userobj = Administrator.objects.get(pk=userID)
 
@@ -610,14 +610,14 @@ class WebsiteManager:
 
     def EidtPlugin(self, request=None, userID=None, pluginbID=None):
         Data = {}
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         pluginobj = wpplugins.objects.get(pk=pluginbID)
 
-        if ACLManager.CheckIPPluginObjectOwner(currentACL, pluginobj, admin) == 1:
+        if Amanager.CheckIPPluginObjectOwner(currentACL, pluginobj, admin) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         lmo = json.loads(pluginobj.config)
         Data['Selectedplugins'] = lmo
@@ -630,7 +630,7 @@ class WebsiteManager:
 
     def deletesPlgin(self, userID=None, data=None, ):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             userobj = Administrator.objects.get(pk=userID)
             pluginname = data['pluginname']
@@ -640,10 +640,10 @@ class WebsiteManager:
 
             obj = wpplugins.objects.get(pk=pluginbBucketID, owner=userobj)
 
-            if ACLManager.CheckIPPluginObjectOwner(currentACL, obj, admin) == 1:
+            if Amanager.CheckIPPluginObjectOwner(currentACL, obj, admin) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             ab = []
             ab = json.loads(obj.config)
@@ -662,7 +662,7 @@ class WebsiteManager:
 
     def Addplugineidt(self, userID=None, data=None, ):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             userobj = Administrator.objects.get(pk=userID)
             pluginname = data['pluginname']
@@ -673,10 +673,10 @@ class WebsiteManager:
 
             pObj = wpplugins.objects.get(pk=pluginbBucketID, owner=userobj)
 
-            if ACLManager.CheckIPPluginObjectOwner(currentACL, pObj, admin) == 1:
+            if Amanager.CheckIPPluginObjectOwner(currentACL, pObj, admin) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             listofplugin = json.loads(pObj.config)
             try:
@@ -704,29 +704,29 @@ class WebsiteManager:
             return HttpResponse(json_data)
 
     def modifyWebsite(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         phps = PHPManager.findPHPVersions()
         proc = httpProc(request, 'websiteFunctions/modifyWebsite.html',
                         {'websiteList': websitesName, 'phps': phps}, 'modifyWebsite')
         return proc.render()
 
     def deleteWebsite(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'websiteFunctions/deleteWebsite.html',
                         {'websiteList': websitesName}, 'deleteWebsite')
         return proc.render()
 
     def CreateNewDomain(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         try:
             admin = Administrator.objects.get(pk=userID)
             if admin.defaultSite == 0:
-                websites = ACLManager.findWebsiteObjects(currentACL, userID)
+                websites = Amanager.findWebsiteObjects(currentACL, userID)
                 admin.defaultSite = websites[0].id
                 admin.save()
         except:
@@ -738,7 +738,7 @@ class WebsiteManager:
         except:
             try:
                 admin = Administrator.objects.get(pk=userID)
-                websites = ACLManager.findWebsiteObjects(currentACL, userID)
+                websites = Amanager.findWebsiteObjects(currentACL, userID)
                 admin.defaultSite = websites[0].id
                 admin.save()
                 defaultDomain = websites[0].domain
@@ -749,7 +749,7 @@ class WebsiteManager:
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "all",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -768,25 +768,25 @@ class WebsiteManager:
         return proc.render()
 
     def siteState(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         proc = httpProc(request, 'websiteFunctions/suspendWebsite.html',
                         {'websiteList': websitesName}, 'suspendWebsite')
         return proc.render()
 
     def listWebsites(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         pagination = self.websitePagination(currentACL, userID)
         proc = httpProc(request, 'websiteFunctions/listWebsites.html',
                         {"pagination": pagination})
         return proc.render()
 
     def listChildDomains(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        adminNames = ACLManager.loadAllUsers(userID)
-        packagesName = ACLManager.loadPackages(userID, currentACL)
+        currentACL = Amanager.loadedACL(userID)
+        adminNames = Amanager.loadAllUsers(userID)
+        packagesName = Amanager.loadPackages(userID, currentACL)
         phps = PHPManager.findPHPVersions()
 
         Data = {'packageList': packagesName, "owernList": adminNames, 'phps': phps}
@@ -795,26 +795,26 @@ class WebsiteManager:
         return proc.render()
 
     def listCron(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(request.GET.get('domain'), admin, currentACL) == 1:
+        if Amanager.checkOwnership(request.GET.get('domain'), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/listCron.html',
                         {'domain': request.GET.get('domain')})
         return proc.render()
 
     def domainAlias(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         aliasManager = AliasManager(self.domain)
         noAlias, finalAlisList = aliasManager.fetchAlisForDomains()
@@ -831,16 +831,16 @@ class WebsiteManager:
 
     def FetchWPdata(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -849,7 +849,7 @@ class WebsiteManager:
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
 
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp core version --skip-plugins --skip-themes --path=%s 2>/dev/null' % (
@@ -949,16 +949,16 @@ class WebsiteManager:
     def GetCurrentPlugins(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -966,7 +966,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp plugin list --skip-plugins --skip-themes --format=json --path=%s' % (
@@ -987,16 +987,16 @@ class WebsiteManager:
     def GetCurrentThemes(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1004,7 +1004,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp theme list --skip-plugins --skip-themes --format=json --path=%s' % (
@@ -1025,16 +1025,16 @@ class WebsiteManager:
     def fetchstaging(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             from plogical.phpUtilities import phpUtilities
 
@@ -1053,16 +1053,16 @@ class WebsiteManager:
     def fetchDatabase(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             php = PHPManager.getPHPString(wpsite.owner.phpSelection)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
@@ -1113,7 +1113,7 @@ class WebsiteManager:
     def SaveUpdateConfig(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1123,10 +1123,10 @@ class WebsiteManager:
 
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
 
             php = PHPManager.getPHPString(wpsite.owner.phpSelection)
@@ -1169,7 +1169,7 @@ class WebsiteManager:
     def DeploytoProduction(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1179,15 +1179,15 @@ class WebsiteManager:
 
             ###
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
-            if ACLManager.checkOwnership(StagingObj.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(StagingObj.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             ###
 
@@ -1214,7 +1214,7 @@ class WebsiteManager:
     def WPCreateBackup(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1222,10 +1222,10 @@ class WebsiteManager:
 
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             extraArgs = {}
             extraArgs['adminID'] = admin.pk
@@ -1251,7 +1251,7 @@ class WebsiteManager:
     def RestoreWPbackupNow(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             backupid = data['backupid']
@@ -1261,19 +1261,19 @@ class WebsiteManager:
             #
             #     bwp = WPSites.objects.get(pk=int(backupid))
             #
-            #     if ACLManager.checkOwnership(bwp.owner.domain, admin, currentACL) == 1:
+            #     if Amanager.checkOwnership(bwp.owner.domain, admin, currentACL) == 1:
             #         pass
             #     else:
-            #         return ACLManager.loadError()
+            #         return Amanager.loadError()
             #
             # except:
             #     pass
             #
             # dwp = WPSites.objects.get(pk=int(DesSiteID))
-            # if ACLManager.checkOwnership(dwp.owner.domain, admin, currentACL) == 1:
+            # if Amanager.checkOwnership(dwp.owner.domain, admin, currentACL) == 1:
             #     pass
             # else:
-            #     return ACLManager.loadError()
+            #     return Amanager.loadError()
 
             Domain = data['Domain']
 
@@ -1304,7 +1304,7 @@ class WebsiteManager:
     def SaveBackupConfig(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             ConfigType = data['type']
             if ConfigType == 'SFTP':
@@ -1362,7 +1362,7 @@ class WebsiteManager:
     def SaveBackupSchedule(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             FileRetention = data['FileRetention']
             Backfrequency = data['Backfrequency']
@@ -1433,7 +1433,7 @@ class WebsiteManager:
     def AddWPsiteforRemoteBackup(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             WPid = data['WpsiteID']
             RemoteScheduleID = data['RemoteScheduleID']
@@ -1478,7 +1478,7 @@ class WebsiteManager:
     def UpdateRemoteschedules(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             ScheduleID = data['ScheduleID']
             Frequency = data['Frequency']
@@ -1501,7 +1501,7 @@ class WebsiteManager:
     def ScanWordpressSite(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             allweb = Websites.objects.all()
@@ -1557,16 +1557,16 @@ class WebsiteManager:
     def installwpcore(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1575,7 +1575,7 @@ class WebsiteManager:
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
 
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             ###fetch WP version
@@ -1601,16 +1601,16 @@ class WebsiteManager:
     def dataintegrity(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1619,7 +1619,7 @@ class WebsiteManager:
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
 
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             ###fetch WP version
@@ -1640,7 +1640,7 @@ class WebsiteManager:
     def UpdatePlugins(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1648,10 +1648,10 @@ class WebsiteManager:
             pluginarray = data['pluginarray']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1659,7 +1659,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             extraArgs = {}
@@ -1688,7 +1688,7 @@ class WebsiteManager:
     def UpdateThemes(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1696,10 +1696,10 @@ class WebsiteManager:
             Themearray = data['Themearray']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1707,7 +1707,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             extraArgs = {}
@@ -1736,7 +1736,7 @@ class WebsiteManager:
     def DeletePlugins(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1744,10 +1744,10 @@ class WebsiteManager:
             pluginarray = data['pluginarray']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1755,7 +1755,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             extraArgs = {}
@@ -1784,7 +1784,7 @@ class WebsiteManager:
     def DeleteThemes(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
@@ -1795,14 +1795,14 @@ class WebsiteManager:
 
             Webobj = Websites.objects.get(pk=wpsite.owner_id)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             extraArgs = {}
@@ -1829,17 +1829,17 @@ class WebsiteManager:
     def ChangeStatus(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             plugin = data['plugin']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1847,7 +1847,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp plugin status %s --skip-plugins --skip-themes --path=%s' % (
@@ -1880,17 +1880,17 @@ class WebsiteManager:
     def ChangeStatusThemes(self, userID=None, data=None):
         try:
             # logging.CyberCPLogFileWriter.writeToFile("Error WP ChangeStatusThemes ....... %s")
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             WPManagerID = data['WPid']
             Theme = data['theme']
             wpsite = WPSites.objects.get(pk=WPManagerID)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             path = wpsite.path
 
@@ -1898,7 +1898,7 @@ class WebsiteManager:
 
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             extraArgs = {}
@@ -1923,7 +1923,7 @@ class WebsiteManager:
 
     def CreateStagingNow(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             extraArgs = {}
@@ -1935,10 +1935,10 @@ class WebsiteManager:
 
             wpsite = WPSites.objects.get(pk=data['WPid'])
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             background = ApplicationInstaller('CreateStagingNow', extraArgs)
             background.start()
@@ -1987,18 +1987,18 @@ class WebsiteManager:
         value = data.get('value') or data.get('settingValue')
 
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             wpsite = WPSites.objects.get(pk=siteId)
 
-            if ACLManager.checkOwnership(wpsite.owner.domain, admin, currentACL) != 1:
-                return ACLManager.loadError()
+            if Amanager.checkOwnership(wpsite.owner.domain, admin, currentACL) != 1:
+                return Amanager.loadError()
 
             # Get PHP version and path
             Webobj = Websites.objects.get(pk=wpsite.owner_id)
             Vhuser = Webobj.externalApp
             PHPVersion = Webobj.phpSelection
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
 
             # Update the appropriate setting based on the setting type
@@ -2095,7 +2095,7 @@ Require valid-user
 
     def submitWorpressCreation(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             extraArgs = {}
@@ -2145,7 +2145,7 @@ Require valid-user
 
     def submitWebsiteCreation(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             domain = data['domainName']
             adminEmail = data['adminEmail']
@@ -2158,7 +2158,7 @@ Require valid-user
 
                 domain_data = {
                     "name": "test-domain",
-                    "IP": ACLManager.GetServerIP(),
+                    "IP": Amanager.GetServerIP(),
                     "domain": data['domainName']
                 }
 
@@ -2174,14 +2174,14 @@ Require valid-user
             loggedUser = Administrator.objects.get(pk=userID)
             newOwner = Administrator.objects.get(userName=websiteOwner)
 
-            if ACLManager.currentContextPermission(currentACL, 'createWebsite') == 0:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createWebsite') == 0:
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
-            if ACLManager.checkOwnerProtection(currentACL, loggedUser, newOwner) == 0:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+            if Amanager.checkOwnerProtection(currentACL, loggedUser, newOwner) == 0:
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
             if currentACL['admin'] == 0:
-                if ACLManager.CheckDomainBlackList(domain) == 0:
+                if Amanager.CheckDomainBlackList(domain) == 0:
                     data_ret = {'status': 0, 'createWebSiteStatus': 0, 'error_message': "Blacklisted domain."}
                     json_data = json.dumps(data_ret)
                     return HttpResponse(json_data)
@@ -2253,7 +2253,7 @@ Require valid-user
     def submitDomainCreation(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             try:
@@ -2291,7 +2291,7 @@ Require valid-user
 
                 domain_data = {
                     "name": "test-domain",
-                    "IP": ACLManager.GetServerIP(),
+                    "IP": Amanager.GetServerIP(),
                     "domain": data['domainName']
                 }
 
@@ -2304,13 +2304,13 @@ Require valid-user
                     json_data = json.dumps(data_ret)
                     return HttpResponse(json_data)
 
-            if ACLManager.checkOwnership(masterDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(masterDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
             if data['path'].find('..') > -1:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
             if currentACL['admin'] != 1:
                 data['openBasedir'] = 1
@@ -2353,7 +2353,7 @@ Require valid-user
     def fetchDomains(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             masterDomain = data['masterDomain']
 
@@ -2362,10 +2362,10 @@ Require valid-user
             except:
                 alias = 0
 
-            if ACLManager.checkOwnership(masterDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(masterDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             cdManager = ChildDomainManager(masterDomain)
             json_data = cdManager.findChildDomainsJson(alias)
@@ -2380,7 +2380,7 @@ Require valid-user
 
     def searchWebsites(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             try:
                 json_data = self.searchWebsitesJson(currentACL, userID, data['patternAdded'])
             except BaseException as msg:
@@ -2400,9 +2400,9 @@ Require valid-user
 
     def searchChilds(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            websites = ACLManager.findWebsiteObjects(currentACL, userID)
+            websites = Amanager.findWebsiteObjects(currentACL, userID)
             childDomains = []
 
             for web in websites:
@@ -2421,7 +2421,7 @@ Require valid-user
 
     def getFurtherAccounts(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             json_data = self.findWebsitesJson(currentACL, userID, pageNumber)
             pagination = self.websitePagination(currentACL, userID)
@@ -2436,7 +2436,7 @@ Require valid-user
 
     def fetchWebsitesList(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             recordsToShow = int(data['recordsToShow'])
 
@@ -2448,7 +2448,7 @@ Require valid-user
             if os.path.exists(ProcessUtilities.debugPath):
                 logging.CyberCPLogFileWriter.writeToFile(f'Fetch sites step 2..')
 
-            websites = ACLManager.findWebsiteObjects(currentACL, userID)
+            websites = Amanager.findWebsiteObjects(currentACL, userID)
 
             if os.path.exists(ProcessUtilities.debugPath):
                 logging.CyberCPLogFileWriter.writeToFile(f'Fetch sites step 3..')
@@ -2474,12 +2474,12 @@ Require valid-user
 
     def fetchChildDomainsMain(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             recordsToShow = int(data['recordsToShow'])
 
             endPageNumber, finalPageNumber = self.recordsPointer(pageNumber, recordsToShow)
-            websites = ACLManager.findWebsiteObjects(currentACL, userID)
+            websites = Amanager.findWebsiteObjects(currentACL, userID)
             childDomains = []
 
             for web in websites:
@@ -2781,24 +2781,24 @@ Require valid-user
 
                 domain_data = {
                     "name": "test-domain",
-                    "IP": ACLManager.GetServerIP(),
+                    "IP": Amanager.GetServerIP(),
                     "domain": data['websiteName']
                 }
 
                 import requests
                 response = requests.post(url, data=json.dumps(domain_data))
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'deleteWebsite') == 0:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'deleteWebsite') == 0:
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             websiteName = data['websiteName']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(websiteName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(websiteName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             ## Deleting master domain
 
@@ -2832,14 +2832,14 @@ Require valid-user
 
                 domain_data = {
                     "name": "test-domain",
-                    "IP": ACLManager.GetServerIP(),
+                    "IP": Amanager.GetServerIP(),
                     "domain": data['websiteName']
                 }
 
                 import requests
                 response = requests.post(url, data=json.dumps(domain_data))
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             websiteName = data['websiteName']
 
@@ -2848,10 +2848,10 @@ Require valid-user
             except:
                 DeleteDocRoot = 0
 
-            if ACLManager.checkOwnership(websiteName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(websiteName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " deleteDomain --virtualHostName " + websiteName + ' --DeleteDocRoot %s' % (
@@ -2869,9 +2869,9 @@ Require valid-user
 
     def submitWebsiteStatus(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'suspendWebsite') == 0:
-                return ACLManager.loadErrorJson('websiteStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'suspendWebsite') == 0:
+                return Amanager.loadErrorJson('websiteStatus', 0)
 
             websiteName = data['websiteName']
             state = data['state']
@@ -2879,10 +2879,10 @@ Require valid-user
             website = Websites.objects.get(domain=websiteName)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(websiteName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(websiteName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteStatus', 0)
+                return Amanager.loadErrorJson('websiteStatus', 0)
 
             if state == "Suspend":
                 confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + websiteName
@@ -3258,18 +3258,18 @@ context /cyberpanel_suspension_page.html {
     def submitWebsiteModify(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'modifyWebsite') == 0:
-                return ACLManager.loadErrorJson('modifyStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'modifyWebsite') == 0:
+                return Amanager.loadErrorJson('modifyStatus', 0)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(data['websiteToBeModified'], admin, currentACL) == 1:
+            if Amanager.checkOwnership(data['websiteToBeModified'], admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
-            packs = ACLManager.loadPackages(userID, currentACL)
-            admins = ACLManager.loadAllUsers(userID)
+            packs = Amanager.loadPackages(userID, currentACL)
+            admins = Amanager.loadAllUsers(userID)
 
             ## Get packs name
 
@@ -3325,12 +3325,12 @@ context /cyberpanel_suspension_page.html {
     def fetchWebsiteDataJSON(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'createWebsite') == 0:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'createWebsite') == 0:
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
-            packs = ACLManager.loadPackages(userID, currentACL)
-            admins = ACLManager.loadAllUsers(userID)
+            packs = Amanager.loadPackages(userID, currentACL)
+            admins = Amanager.loadAllUsers(userID)
 
             ## Get packs name
 
@@ -3382,21 +3382,21 @@ context /cyberpanel_suspension_page.html {
             phpVersion = data['phpVersion']
             newUser = data['admin']
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'modifyWebsite') == 0:
-                return ACLManager.loadErrorJson('saveStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'modifyWebsite') == 0:
+                return Amanager.loadErrorJson('saveStatus', 0)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             newOwner = Administrator.objects.get(userName=newUser)
-            if ACLManager.checkUserOwnerShip(currentACL, admin, newOwner) == 1:
+            if Amanager.checkUserOwnerShip(currentACL, admin, newOwner) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
+                return Amanager.loadErrorJson('websiteDeleteStatus', 0)
 
             confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + domain
             completePathToConfigFile = confPath + "/vhost.conf"
@@ -3449,14 +3449,14 @@ context /cyberpanel_suspension_page.html {
 
         if Websites.objects.filter(domain=self.domain).exists():
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             website = Websites.objects.get(domain=self.domain)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             Data = {}
 
@@ -3532,7 +3532,7 @@ context /cyberpanel_suspension_page.html {
             url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
             addon_data = {
                 "name": "all",
-                "IP": ACLManager.GetServerIP()
+                "IP": Amanager.GetServerIP()
             }
             import requests
             import json
@@ -3674,13 +3674,13 @@ context /cyberpanel_suspension_page.html {
     def launchChild(self, request=None, userID=None, data=None):
 
         if ChildDomains.objects.filter(domain=self.childDomain).exists():
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -3758,17 +3758,17 @@ context /cyberpanel_suspension_page.html {
 
     def getDataFromLogFile(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
         logType = data['logType']
         self.domain = data['virtualHost']
         page = data['page']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('logstatus', 0)
+            return Amanager.loadErrorJson('logstatus', 0)
 
         if logType == 1:
             fileName = "/home/" + self.domain + "/logs/" + self.domain + ".access_log"
@@ -3830,16 +3830,16 @@ context /cyberpanel_suspension_page.html {
 
     def fetchErrorLogs(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
         self.domain = data['virtualHost']
         page = data['page']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('logstatus', 0)
+            return Amanager.loadErrorJson('logstatus', 0)
 
         fileName = "/home/" + self.domain + "/logs/" + self.domain + ".error_log"
 
@@ -3869,14 +3869,14 @@ context /cyberpanel_suspension_page.html {
 
     def getDataFromConfigFile(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         self.domain = data['virtualHost']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('configstatus', 0)
+            return Amanager.loadErrorJson('configstatus', 0)
 
         command = 'cat %s' % ('/usr/local/lsws/conf/dvhost_redis.conf')
 
@@ -3904,10 +3904,10 @@ context /cyberpanel_suspension_page.html {
 
     def saveConfigsToFile(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] != 1:
-            return ACLManager.loadErrorJson('configstatus', 0)
+            return Amanager.loadErrorJson('configstatus', 0)
 
         configData = data['configData']
         self.domain = data['virtualHost']
@@ -3967,14 +3967,14 @@ context /cyberpanel_suspension_page.html {
 
     def getRewriteRules(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         self.domain = data['virtualHost']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('rewriteStatus', 0)
+            return Amanager.loadErrorJson('rewriteStatus', 0)
 
         try:
             childDom = ChildDomains.objects.get(domain=self.domain)
@@ -4007,15 +4007,15 @@ context /cyberpanel_suspension_page.html {
     def saveRewriteRules(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             self.domain = data['virtualHost']
             rewriteRules = data['rewriteRules'].encode('utf-8')
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('rewriteStatus', 0)
+                return Amanager.loadErrorJson('rewriteStatus', 0)
 
             ## writing data temporary to file
 
@@ -4055,16 +4055,16 @@ context /cyberpanel_suspension_page.html {
 
     def saveSSL(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         self.domain = data['virtualHost']
         key = data['key']
         cert = data['cert']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('sslStatus', 0)
+            return Amanager.loadErrorJson('sslStatus', 0)
 
         mailUtilities.checkHome()
 
@@ -4099,15 +4099,15 @@ context /cyberpanel_suspension_page.html {
 
     def changePHP(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         self.domain = data['childDomain']
         phpVersion = data['phpSelection']
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('changePHP', 0)
+            return Amanager.loadErrorJson('changePHP', 0)
 
         confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + self.domain
         completePathToConfigFile = confPath + "/vhost.conf"
@@ -4148,14 +4148,14 @@ context /cyberpanel_suspension_page.html {
     def getWebsiteCron(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('getWebsiteCron', 0)
+                return Amanager.loadErrorJson('getWebsiteCron', 0)
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -4222,16 +4222,16 @@ context /cyberpanel_suspension_page.html {
     def getCronbyLine(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             line = data['line']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('getWebsiteCron', 0)
+                return Amanager.loadErrorJson('getWebsiteCron', 0)
 
             if Websites.objects.filter(domain=self.domain).exists():
                 pass
@@ -4286,7 +4286,7 @@ context /cyberpanel_suspension_page.html {
     def saveCronChanges(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -4299,10 +4299,10 @@ context /cyberpanel_suspension_page.html {
             weekday = data['weekday']
             command = data['cronCommand']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('getWebsiteCron', 0)
+                return Amanager.loadErrorJson('getWebsiteCron', 0)
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -4335,16 +4335,16 @@ context /cyberpanel_suspension_page.html {
 
     def remCronbyLine(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             line = data['line']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('addNewCron', 0)
+                return Amanager.loadErrorJson('addNewCron', 0)
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -4378,7 +4378,7 @@ context /cyberpanel_suspension_page.html {
     def addNewCron(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -4389,10 +4389,10 @@ context /cyberpanel_suspension_page.html {
             weekday = data['weekday']
             command = data['cronCommand']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('addNewCron', 0)
+                return Amanager.loadErrorJson('addNewCron', 0)
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -4444,7 +4444,7 @@ context /cyberpanel_suspension_page.html {
     def submitAliasCreation(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['masterDomain']
@@ -4456,10 +4456,10 @@ context /cyberpanel_suspension_page.html {
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('createAliasStatus', 0)
+                return Amanager.loadErrorJson('createAliasStatus', 0)
 
             sslpath = "/home/" + self.domain + "/public_html"
 
@@ -4495,21 +4495,21 @@ context /cyberpanel_suspension_page.html {
     def issueAliasSSL(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['masterDomain']
             aliasDomain = data['aliasDomain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('sslStatus', 0)
+                return Amanager.loadErrorJson('sslStatus', 0)
 
-            if ACLManager.AliasDomainCheck(currentACL, aliasDomain, self.domain) == 1:
+            if Amanager.AliasDomainCheck(currentACL, aliasDomain, self.domain) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('sslStatus', 0)
+                return Amanager.loadErrorJson('sslStatus', 0)
 
             sslpath = "/home/" + self.domain + "/public_html"
 
@@ -4537,21 +4537,21 @@ context /cyberpanel_suspension_page.html {
     def delateAlias(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['masterDomain']
             aliasDomain = data['aliasDomain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('deleteAlias', 0)
+                return Amanager.loadErrorJson('deleteAlias', 0)
 
-            if ACLManager.AliasDomainCheck(currentACL, aliasDomain, self.domain) == 1:
+            if Amanager.AliasDomainCheck(currentACL, aliasDomain, self.domain) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('deleteAlias', 0)
+                return Amanager.loadErrorJson('deleteAlias', 0)
 
             ## Create Configurations
 
@@ -4577,7 +4577,7 @@ context /cyberpanel_suspension_page.html {
     def changeOpenBasedir(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             self.domain = data['domainName']
             openBasedirValue = data['openBasedirValue']
@@ -4585,7 +4585,7 @@ context /cyberpanel_suspension_page.html {
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('changeOpenBasedir', 0)
+                return Amanager.loadErrorJson('changeOpenBasedir', 0)
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changeOpenBasedir --virtualHostName '" + self.domain + "' --openBasedirValue " + openBasedirValue
@@ -4601,13 +4601,13 @@ context /cyberpanel_suspension_page.html {
             return HttpResponse(json_data)
 
     def wordpressInstall(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/installWordPress.html', {'domainName': self.domain})
         return proc.render()
@@ -4615,15 +4615,15 @@ context /cyberpanel_suspension_page.html {
     def installWordpress(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             mailUtilities.checkHome()
 
@@ -4659,7 +4659,7 @@ context /cyberpanel_suspension_page.html {
         try:
             statusFile = data['statusFile']
 
-            if ACLManager.CheckStatusFilleLoc(statusFile):
+            if Amanager.CheckStatusFilleLoc(statusFile):
                 pass
             else:
                 data_ret = {'abort': 1, 'installStatus': 0, 'installationProgress': "100",
@@ -4701,13 +4701,13 @@ context /cyberpanel_suspension_page.html {
             return HttpResponse(json_data)
 
     def joomlaInstall(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/installJoomla.html', {'domainName': self.domain})
         return proc.render()
@@ -4715,15 +4715,15 @@ context /cyberpanel_suspension_page.html {
     def installJoomla(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             extraArgs = {}
 
@@ -4757,14 +4757,14 @@ context /cyberpanel_suspension_page.html {
             return HttpResponse(json_data)
 
     def setupGit(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         website = Websites.objects.get(domain=self.domain)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         path = '/home/cyberpanel/' + self.domain + '.git'
 
@@ -4813,15 +4813,15 @@ StrictHostKeyChecking no
 
     def setupGitRepo(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             mailUtilities.checkHome()
 
@@ -4870,15 +4870,15 @@ StrictHostKeyChecking no
 
     def detachRepo(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             mailUtilities.checkHome()
 
@@ -4903,15 +4903,15 @@ StrictHostKeyChecking no
 
     def changeBranch(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             mailUtilities.checkHome()
 
@@ -4936,25 +4936,25 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def installPrestaShop(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/installPrestaShop.html', {'domainName': self.domain})
         return proc.render()
 
     def installMagento(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/installMagento.html', {'domainName': self.domain})
         return proc.render()
@@ -4962,15 +4962,15 @@ StrictHostKeyChecking no
     def magentoInstall(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             mailUtilities.checkHome()
 
@@ -5007,13 +5007,13 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def installMautic(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         proc = httpProc(request, 'websiteFunctions/installMautic.html', {'domainName': self.domain})
         return proc.render()
@@ -5021,15 +5021,15 @@ StrictHostKeyChecking no
     def mauticInstall(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             #### Before installing mautic change php to 8.1
 
@@ -5073,15 +5073,15 @@ StrictHostKeyChecking no
     def prestaShopInstall(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('installStatus', 0)
+                return Amanager.loadErrorJson('installStatus', 0)
 
             mailUtilities.checkHome()
 
@@ -5186,7 +5186,7 @@ StrictHostKeyChecking no
 
     def searchWebsitesJson(self, currentlACL, userID, searchTerm):
 
-        websites = ACLManager.searchWebsiteObjects(currentlACL, userID, searchTerm)
+        websites = Amanager.searchWebsiteObjects(currentlACL, userID, searchTerm)
 
         json_data = []
 
@@ -5251,7 +5251,7 @@ StrictHostKeyChecking no
     def findWebsitesJson(self, currentACL, userID, pageNumber):
         finalPageNumber = ((pageNumber * 10)) - 10
         endPageNumber = finalPageNumber + 10
-        websites = ACLManager.findWebsiteObjects(currentACL, userID)[finalPageNumber:endPageNumber]
+        websites = Amanager.findWebsiteObjects(currentACL, userID)[finalPageNumber:endPageNumber]
 
         json_data = "["
         checker = 0
@@ -5290,7 +5290,7 @@ StrictHostKeyChecking no
         return json_data
 
     def websitePagination(self, currentACL, userID):
-        websites = ACLManager.findAllSites(currentACL, userID)
+        websites = Amanager.findAllSites(currentACL, userID)
 
         pages = float(len(websites)) / float(10)
         pagination = []
@@ -5328,7 +5328,7 @@ StrictHostKeyChecking no
     def getSwitchStatus(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             try:
@@ -5349,10 +5349,10 @@ StrictHostKeyChecking no
 
             self.domain = data['domainName']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
                 finalConfPath = ApacheVhost.configBasePath + self.domain + '.conf'
@@ -5397,16 +5397,16 @@ StrictHostKeyChecking no
 
     def switchServer(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         domainName = data['domainName']
         phpVersion = data['phpSelection']
         server = data['server']
 
-        if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+        if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
         execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
@@ -5423,7 +5423,7 @@ StrictHostKeyChecking no
     def tuneSettings(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             domainName = data['domainName']
             pmMaxChildren = data['pmMaxChildren']
@@ -5432,10 +5432,10 @@ StrictHostKeyChecking no
             pmMaxSpareServers = data['pmMaxSpareServers']
             phpPath = data['phpPath']
 
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if int(pmStartServers) < int(pmMinSpareServers) or int(pmStartServers) > int(pmMinSpareServers):
                 data_ret = {'status': 0,
@@ -5523,13 +5523,13 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def sshAccess(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         website = Websites.objects.get(domain=self.domain)
         externalApp = website.externalApp
@@ -5616,7 +5616,7 @@ StrictHostKeyChecking no
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "all",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
         import requests
         import json
@@ -5669,15 +5669,15 @@ StrictHostKeyChecking no
     def saveSSHAccessChanges(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             website = Websites.objects.get(domain=self.domain)
 
@@ -5705,13 +5705,13 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def setupStaging(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         website = Websites.objects.get(domain=self.domain)
         externalApp = website.externalApp
@@ -5723,7 +5723,7 @@ StrictHostKeyChecking no
     def startCloning(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['masterDomain']
@@ -5738,10 +5738,10 @@ StrictHostKeyChecking no
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             extraArgs = {}
             extraArgs['domain'] = data['domainName']
@@ -5769,13 +5769,13 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def syncToMaster(self, request=None, userID=None, data=None, childDomain=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         website = Websites.objects.get(domain=self.domain)
         externalApp = website.externalApp
@@ -5787,7 +5787,7 @@ StrictHostKeyChecking no
     def startSync(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             if not validators.domain(data['childDomain']):
@@ -5797,10 +5797,10 @@ StrictHostKeyChecking no
 
             self.domain = data['childDomain']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             extraArgs = {}
             extraArgs['childDomain'] = data['childDomain']
@@ -5858,13 +5858,13 @@ StrictHostKeyChecking no
             return HttpResponse(json_data)
 
     def manageGIT(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         try:
             website = Websites.objects.get(domain=self.domain)
@@ -6040,21 +6040,21 @@ StrictHostKeyChecking no
     def fetchFolderDetails(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             gitPath = '%s/.git' % (self.folder)
             command = 'ls -la %s' % (gitPath)
@@ -6116,7 +6116,7 @@ StrictHostKeyChecking no
 
                 port = ProcessUtilities.fetchCurrentPort()
 
-                webHookURL = 'https://%s:%s/websites/%s/webhook' % (ACLManager.fetchIP(), port, self.domain)
+                webHookURL = 'https://%s:%s/websites/%s/webhook' % (Amanager.fetchIP(), port, self.domain)
 
                 data_ret = {'status': 1, 'repo': 1, 'finalBranches': branches, 'deploymentKey': deploymentKey,
                             'remote': remote, 'remoteResult': remoteResult, 'totalCommits': totalCommits,
@@ -6136,21 +6136,21 @@ StrictHostKeyChecking no
     def initRepo(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             website = Websites.objects.get(domain=self.masterDomain)
 
@@ -6189,7 +6189,7 @@ StrictHostKeyChecking no
     def setupRemote(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -6198,38 +6198,38 @@ StrictHostKeyChecking no
             self.gitUsername = data['gitUsername']
             self.gitReponame = data['gitReponame']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             ## Security checks
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if self.gitHost.find(':') > -1:
                 gitHostDomain = self.gitHost.split(':')[0]
                 gitHostPort = self.gitHost.split(':')[1]
 
                 if not validators.domain(gitHostDomain):
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
                 try:
                     gitHostPort = int(gitHostPort)
                 except:
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             else:
                 if not validators.domain(self.gitHost):
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
-            if ACLManager.validateInput(self.gitUsername) and ACLManager.validateInput(self.gitReponame):
+            if Amanager.validateInput(self.gitUsername) and Amanager.validateInput(self.gitReponame):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             ### set default ssh key
 
@@ -6283,29 +6283,29 @@ StrictHostKeyChecking no
     def changeGitBranch(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
             self.branchName = data['branchName']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Security check
 
-            if ACLManager.validateInput(self.branchName):
+            if Amanager.validateInput(self.branchName):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             if self.branchName.find('*') > -1:
                 data_ret = {'status': 0, 'commandStatus': 'Already on this branch.',
@@ -6313,7 +6313,7 @@ StrictHostKeyChecking no
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s checkout %s' % (self.folder, self.branchName.strip(' '))
             commandStatus = ProcessUtilities.outputExecutioner(command, self.externalApp)
@@ -6343,33 +6343,33 @@ StrictHostKeyChecking no
     def createNewBranch(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
             self.newBranchName = data['newBranchName']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Security check
 
-            if ACLManager.validateInput(self.newBranchName):
+            if Amanager.validateInput(self.newBranchName):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             ##
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s checkout -b "%s"' % (self.folder, self.newBranchName)
             commandStatus = ProcessUtilities.outputExecutioner(command, self.externalApp)
@@ -6399,31 +6399,31 @@ StrictHostKeyChecking no
     def commitChanges(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
             self.commitMessage = data['commitMessage']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             # security check
 
-            if ACLManager.validateInput(self.commitMessage):
+            if Amanager.validateInput(self.commitMessage):
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             ## Check if remote exists
 
@@ -6487,23 +6487,23 @@ StrictHostKeyChecking no
     def gitPull(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             ### set default ssh key
 
@@ -6541,23 +6541,23 @@ StrictHostKeyChecking no
     def gitPush(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             ### set default ssh key
 
@@ -6601,7 +6601,7 @@ StrictHostKeyChecking no
     def attachRepoGIT(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -6615,41 +6615,41 @@ StrictHostKeyChecking no
             except:
                 self.overrideData = False
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if self.gitHost.find(':') > -1:
                 gitHostDomain = self.gitHost.split(':')[0]
                 gitHostPort = self.gitHost.split(':')[1]
 
                 if not validators.domain(gitHostDomain):
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
                 try:
                     gitHostPort = int(gitHostPort)
                 except:
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
             else:
                 if not validators.domain(self.gitHost):
-                    return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                    return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             ## Security check
 
-            if ACLManager.validateInput(self.gitUsername) and ACLManager.validateInput(self.gitReponame):
+            if Amanager.validateInput(self.gitUsername) and Amanager.validateInput(self.gitReponame):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             ##
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             if self.overrideData:
                 command = 'rm -rf %s' % (self.folder)
@@ -6702,23 +6702,23 @@ StrictHostKeyChecking no
     def removeTracking(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'rm -rf %s/.git' % (self.folder)
             ProcessUtilities.executioner(command, self.externalApp)
@@ -6749,21 +6749,21 @@ StrictHostKeyChecking no
     def fetchGitignore(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             command = 'cat %s/.gitignore' % (self.folder)
             gitIgnoreContent = ProcessUtilities.outputExecutioner(command, self.externalAppLocal)
@@ -6783,7 +6783,7 @@ StrictHostKeyChecking no
     def saveGitIgnore(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -6792,15 +6792,15 @@ StrictHostKeyChecking no
 
             tempPath = "/home/cyberpanel/" + str(randint(1000, 9999))
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Write to temp file
 
@@ -6810,7 +6810,7 @@ StrictHostKeyChecking no
 
             ## Move to original file
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'mv %s %s/.gitignore' % (tempPath, self.folder)
             ProcessUtilities.executioner(command, self.externalApp)
@@ -6834,25 +6834,25 @@ StrictHostKeyChecking no
     def fetchCommits(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             initCommand = """log --pretty=format:"%h|%s|%cn|%cd" -50"""
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s %s' % (self.folder, initCommand)
             commits = ProcessUtilities.outputExecutioner(command, self.externalApp).split('\n')
@@ -6892,33 +6892,33 @@ StrictHostKeyChecking no
     def fetchFiles(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
             self.folder = data['folder']
             self.commit = data['commit']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## Security check
 
-            if ACLManager.validateInput(self.commit):
+            if Amanager.validateInput(self.commit):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
             ##
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s diff-tree --no-commit-id --name-only -r %s' % (self.folder, self.commit)
             files = ProcessUtilities.outputExecutioner(command, self.externalApp).split('\n')
@@ -6941,7 +6941,7 @@ StrictHostKeyChecking no
     def fetchChangesInFile(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -6949,24 +6949,24 @@ StrictHostKeyChecking no
             self.file = data['file']
             self.commit = data['commit']
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ## security check
 
-            if ACLManager.validateInput(self.commit) and self.file.find('..') == -1:
+            if Amanager.validateInput(self.commit) and self.file.find('..') == -1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 'Invalid characters in your input.')
+                return Amanager.loadErrorJson('status', 'Invalid characters in your input.')
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s show %s -- %s/%s' % (
                 self.folder, self.commit, self.folder, self.file.strip('\n').strip(' '))
@@ -7032,7 +7032,7 @@ StrictHostKeyChecking no
     def saveGitConfigurations(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -7066,15 +7066,15 @@ StrictHostKeyChecking no
 
             dic['folder'] = self.folder
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             ##
 
@@ -7123,7 +7123,7 @@ StrictHostKeyChecking no
     def fetchGitLogs(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             self.domain = data['domain']
@@ -7131,15 +7131,15 @@ StrictHostKeyChecking no
             recordsToShow = int(data['recordsToShow'])
             page = int(data['page'])
 
-            if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             if self.folderCheck():
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             logs = self.masterWebsite.gitlogs_set.all().order_by('-id')
 
@@ -7181,7 +7181,7 @@ StrictHostKeyChecking no
 
             ## Check if remote exists
 
-            self.externalApp = ACLManager.FetchExternalApp(self.domain)
+            self.externalApp = Amanager.FetchExternalApp(self.domain)
 
             command = 'git -C %s pull' % (self.folder)
             commandStatus = ProcessUtilities.outputExecutioner(command, self.externalApp)
@@ -7271,16 +7271,16 @@ StrictHostKeyChecking no
     def getSSHConfigs(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             domain = data['domain']
             website = Websites.objects.get(domain=domain)
 
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             pathToKeyFile = "/home/%s/.ssh/authorized_keys" % (domain)
 
@@ -7327,15 +7327,15 @@ StrictHostKeyChecking no
     def deleteSSHKey(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             domain = data['domain']
 
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             key = data['key']
             pathToKeyFile = "/home/%s/.ssh/authorized_keys" % (domain)
@@ -7365,16 +7365,16 @@ StrictHostKeyChecking no
 
     def addSSHKey(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             domain = data['domain']
             website = Websites.objects.get(domain=domain)
 
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             key = data['key']
             pathToKeyFile = "/home/%s/.ssh/authorized_keys" % (domain)
@@ -7411,18 +7411,18 @@ StrictHostKeyChecking no
             return HttpResponse(final_json)
 
     def ApacheManager(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(self.domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(self.domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         phps = PHPManager.findPHPVersions()
         apachePHPs = PHPManager.findApachePHPVersions()
 
-        if ACLManager.CheckForPremFeature('all'):
+        if Amanager.CheckForPremFeature('all'):
             apachemanager = 1
         else:
             apachemanager = 0
@@ -7433,10 +7433,10 @@ StrictHostKeyChecking no
 
     def saveApacheConfigsToFile(self, userID=None, data=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] != 1:
-            return ACLManager.loadErrorJson('configstatus', 0)
+            return Amanager.loadErrorJson('configstatus', 0)
 
         configData = data['configData']
         self.domain = data['domainName']
@@ -7474,12 +7474,12 @@ StrictHostKeyChecking no
     def CreateDockerPackage(self, request=None, userID=None, data=None, DeleteID=None):
         Data = {}
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         try:
             if DeleteID != None:
@@ -7496,12 +7496,12 @@ StrictHostKeyChecking no
 
     def AssignPackage(self, request=None, userID=None, data=None, DeleteID=None):
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         try:
             if DeleteID != None:
@@ -7510,7 +7510,7 @@ StrictHostKeyChecking no
         except:
             pass
 
-        adminNames = ACLManager.loadAllUsers(userID)
+        adminNames = Amanager.loadAllUsers(userID)
         dockerpackages = DockerPackages.objects.all()
         assignpackage = PackageAssignment.objects.all()
         Data = {'adminNames': adminNames, 'DockerPackages': dockerpackages, 'assignpackage': assignpackage}
@@ -7522,7 +7522,7 @@ StrictHostKeyChecking no
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "docker-manager",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -7530,7 +7530,7 @@ StrictHostKeyChecking no
         Status = response.json()['status']
 
         if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
-            adminNames = ACLManager.loadAllUsers(userID)
+            adminNames = Amanager.loadAllUsers(userID)
             Data = {'adminNames': adminNames}
 
             if PackageAssignment.objects.all().count() == 0:
@@ -7558,12 +7558,12 @@ StrictHostKeyChecking no
     def AddDockerpackage(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             admin = Administrator.objects.get(pk=userID)
 
@@ -7586,12 +7586,12 @@ StrictHostKeyChecking no
 
     def Getpackage(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             admin = Administrator.objects.get(pk=userID)
             id = data['id']
@@ -7620,12 +7620,12 @@ StrictHostKeyChecking no
     def Updatepackage(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             admin = Administrator.objects.get(pk=userID)
             id = data['id']
@@ -7654,12 +7654,12 @@ StrictHostKeyChecking no
     def AddAssignment(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
 
             admin = Administrator.objects.get(pk=userID)
@@ -7692,7 +7692,7 @@ StrictHostKeyChecking no
     def submitDockerSiteCreation(self, userID=None, data=None):
         try:
             admin = Administrator.objects.get(pk=userID)
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             sitename = data['sitename']
             Owner = data['Owner']
@@ -7754,13 +7754,13 @@ StrictHostKeyChecking no
                 final_json = json.dumps(final_dic)
                 return HttpResponse(final_json)
 
-            if ACLManager.currentContextPermission(currentACL, 'createWebsite') == 0:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createWebsite') == 0:
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
-            if ACLManager.checkOwnerProtection(currentACL, loggedUser, newOwner) == 0:
-                return ACLManager.loadErrorJson('createWebSiteStatus', 0)
+            if Amanager.checkOwnerProtection(currentACL, loggedUser, newOwner) == 0:
+                return Amanager.loadErrorJson('createWebSiteStatus', 0)
 
-            if ACLManager.CheckDomainBlackList(Domain) == 0:
+            if Amanager.CheckDomainBlackList(Domain) == 0:
                 data_ret = {'status': 0, 'createWebSiteStatus': 0, 'error_message': "Blacklisted domain."}
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
@@ -7800,17 +7800,17 @@ StrictHostKeyChecking no
 
     def ListDockerSites(self, request=None, userID=None, data=None, DeleteID=None):
         admin = Administrator.objects.get(pk=userID)
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         fdata={}
 
         try:
             if DeleteID != None:
 
                 DockerSitesDelete = DockerSites.objects.get(pk=DeleteID)
-                if ACLManager.checkOwnership(DockerSitesDelete.admin.domain, admin, currentACL) == 1:
+                if Amanager.checkOwnership(DockerSitesDelete.admin.domain, admin, currentACL) == 1:
                     pass
                 else:
-                    return ACLManager.loadError()
+                    return Amanager.loadError()
 
                 passdata={}
                 passdata["domain"] = DockerSitesDelete.admin.domain
@@ -7833,14 +7833,14 @@ StrictHostKeyChecking no
 
     def fetchDockersite(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             pageNumber = int(data['page'])
             recordsToShow = int(data['recordsToShow'])
 
 
             endPageNumber, finalPageNumber = self.recordsPointer(pageNumber, recordsToShow)
 
-            dockersites = ACLManager.findDockersiteObjects(currentACL, userID)
+            dockersites = Amanager.findDockersiteObjects(currentACL, userID)
             pagination = self.getPagination(len(dockersites), recordsToShow)
             logging.CyberCPLogFileWriter.writeToFile("Our dockersite" + str(dockersites))
 
@@ -7862,7 +7862,7 @@ StrictHostKeyChecking no
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "docker-manager",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -7870,15 +7870,15 @@ StrictHostKeyChecking no
         Status = response.json()['status']
 
         if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             ds = DockerSites.objects.get(pk=self.domain)
 
-            if ACLManager.checkOwnership(ds.admin.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(ds.admin.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             proc = httpProc(request, 'websiteFunctions/DockerSiteHome.html',
                             {'dockerSite': ds})
@@ -7889,14 +7889,14 @@ StrictHostKeyChecking no
         
     def fetchWPSitesForDomain(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             
             domain = data['domain']
             website = Websites.objects.get(domain=domain)
             
-            if ACLManager.checkOwnership(domain, admin, currentACL) != 1:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.checkOwnership(domain, admin, currentACL) != 1:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             wp_sites = WPSites.objects.filter(owner=website)
             sites = []
@@ -7904,7 +7904,7 @@ StrictHostKeyChecking no
             Vhuser = website.externalApp
             PHPVersion = website.phpSelection
 
-            php = ACLManager.getPHPString(PHPVersion)
+            php = Amanager.getPHPString(PHPVersion)
             FinalPHPPath = '/usr/local/lsws/lsphp%s/bin/php' % (php)
             
             for site in wp_sites:
@@ -7982,7 +7982,7 @@ StrictHostKeyChecking no
 
     def fetchWPBackups(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             WPid = data['WPid']
             

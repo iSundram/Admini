@@ -30,9 +30,9 @@ class tuningManager:
         return proc.render()
 
     def phpTuning(self, request, userID):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
-            websitesName = ACLManager.findAllSites(currentACL, userID)
+            websitesName = Amanager.findAllSites(currentACL, userID)
             OLS = 1
             proc = httpProc(request, 'tuning/phpTuning.html',
                             {'websiteList': websitesName, 'OLS': OLS}, 'admin')
@@ -46,12 +46,12 @@ class tuningManager:
     def tuneLitespeed(self, userID, data):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             status = data['status']
             if status == "fetch":
@@ -121,12 +121,12 @@ class tuningManager:
     def tunePHP(self, userID, data):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             status = data['status']
             domainSelection = data.get('domainSelection')

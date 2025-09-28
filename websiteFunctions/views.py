@@ -1557,7 +1557,7 @@ def sshAccess(request, domain):
         # url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         # data = {
         #     "name": "all",
-        #     "IP": ACLManager.GetServerIP()
+        #     "IP": Amanager.GetServerIP()
         # }
         # import requests
         # import json
@@ -2077,7 +2077,7 @@ def get_website_resources(request):
             return JsonResponse({'status': 0, 'error_message': 'Unauthorized access'})
 
         # Verify domain ownership
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         from websiteFunctions.models import Websites
         try:
@@ -2085,10 +2085,10 @@ def get_website_resources(request):
         except Websites.DoesNotExist:
             return JsonResponse({'status': 0, 'error_message': 'Website not found'})
 
-        if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+        if Amanager.checkOwnership(domain, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         # Get resource usage data using externalApp
         resource_data = get_website_resource_usage(website.externalApp)
@@ -2124,8 +2124,8 @@ def get_terminal_jwt(request):
         from plogical.acl import ACLManager
         from loginSystem.models import Administrator
         admin = Administrator.objects.get(pk=user_id)
-        currentACL = ACLManager.loadedACL(user_id)
-        if ACLManager.checkOwnership(domain, admin, currentACL) != 1:
+        currentACL = Amanager.loadedACL(user_id)
+        if Amanager.checkOwnership(domain, admin, currentACL) != 1:
             logger.error("User not authorized for domain")
             return JsonResponse({'status': 0, 'error_message': 'Not authorized'})
         try:

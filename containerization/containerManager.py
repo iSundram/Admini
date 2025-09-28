@@ -108,7 +108,7 @@ class ContainerManager(multi.Thread):
     def submitContainerInstall(self):
         try:
             userID = self.request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass

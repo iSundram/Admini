@@ -1289,12 +1289,12 @@ def installExtensions(request):
 def getExtensionsInformation(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1394,12 +1394,12 @@ def getExtensionsInformation(request):
 def submitExtensionRequest(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('extensionRequestStatus', 0)
+            return Amanager.loadErrorJson('extensionRequestStatus', 0)
         try:
             if request.method == 'POST':
 
@@ -1433,12 +1433,12 @@ def submitExtensionRequest(request):
 def getRequestStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('extensionRequestStatus', 0)
+            return Amanager.loadErrorJson('extensionRequestStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1558,12 +1558,12 @@ def getRequestStatus(request):
 def getRequestStatusApache(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('extensionRequestStatus', 0)
+            return Amanager.loadErrorJson('extensionRequestStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1701,12 +1701,12 @@ def editPHPConfigs(request):
 def getCurrentPHPConfig(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
         try:
             if request.method == 'POST':
 
@@ -1785,12 +1785,12 @@ def getCurrentPHPConfig(request):
 def savePHPConfigBasic(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
         try:
             if request.method == 'POST':
 
@@ -1866,12 +1866,12 @@ def savePHPConfigBasic(request):
 def getCurrentAdvancedPHPConfig(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
         try:
             if request.method == 'POST':
 
@@ -1903,12 +1903,12 @@ def getCurrentAdvancedPHPConfig(request):
 def savePHPConfigAdvance(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         if request.method == 'POST':
             try:
@@ -1953,12 +1953,12 @@ def savePHPConfigAdvance(request):
 def restartPHP(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('status', 0)
+            return Amanager.loadErrorJson('status', 0)
 
         command = 'killall lsphp'
         ProcessUtilities.executioner(command)

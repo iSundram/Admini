@@ -402,7 +402,7 @@ class vhost:
 
                 ## Child check, to make sure no database entires are being deleted from child node
 
-                if ACLManager.FindIfChild() == 0:
+                if Amanager.FindIfChild() == 0:
 
                     ### Delete Docker Sites first before website deletion
 
@@ -496,7 +496,7 @@ class vhost:
 
                 ## child check to make sure no database entires are being deleted from child server
 
-                if ACLManager.FindIfChild() == 0:
+                if Amanager.FindIfChild() == 0:
                     for items in databases:
                         mysqlUtilities.deleteDatabase(items.dbName, items.dbUser)
 
@@ -901,7 +901,7 @@ class vhost:
     def finalizeDomainCreation(virtualHostUser, path):
         try:
 
-            ACLManager.CreateSecureDir()
+            Amanager.CreateSecureDir()
 
             RanddomFileName = str(randint(1000, 9999))
 

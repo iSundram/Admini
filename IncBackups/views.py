@@ -49,7 +49,7 @@ def _get_destinations(local: bool = False):
 
 def _get_user_acl(request):
     user_id = request.session['userID']
-    current_acl = ACLManager.loadedACL(user_id)
+    current_acl = Amanager.loadedACL(user_id)
     return user_id, current_acl
 
 
@@ -59,10 +59,10 @@ def create_backup(request):
 
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'createBackup') == 0:
-            return ACLManager.loadError()
+        if Amanager.currentContextPermission(current_acl, 'createBackup') == 0:
+            return Amanager.loadError()
 
-        websites = ACLManager.findAllSites(current_acl, user_id)
+        websites = Amanager.findAllSites(current_acl, user_id)
 
         destinations = _get_destinations(local=True)
 
@@ -76,8 +76,8 @@ def create_backup(request):
 def backup_destinations(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
-            return ACLManager.loadError()
+        if Amanager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
+            return Amanager.loadError()
 
         return def_renderer(request, 'IncBackups/incrementalDestinations.html', {}, 'addDeleteDestinations')
     except BaseException as msg:
@@ -88,8 +88,8 @@ def backup_destinations(request):
 def add_destination(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
-            return ACLManager.loadErrorJson('destStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
+            return Amanager.loadErrorJson('destStatus', 0)
 
         data = json.loads(request.body)
 
@@ -181,8 +181,8 @@ def add_destination(request):
 def populate_current_records(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         data = json.loads(request.body)
 
@@ -222,8 +222,8 @@ def populate_current_records(request):
 def remove_destination(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
-            return ACLManager.loadErrorJson('destStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'addDeleteDestinations') == 0:
+            return Amanager.loadErrorJson('destStatus', 0)
 
         data = json.loads(request.body)
 
@@ -254,10 +254,10 @@ def fetch_current_backups(request):
         data = json.loads(request.body)
         backup_domain = data['websiteToBeBacked']
 
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         if 'backupDestinations' in data:
             backup_destinations = data['backupDestinations']
@@ -300,10 +300,10 @@ def submit_backup_creation(request):
         backup_domain = data['websiteToBeBacked']
         backup_destinations = data['backupDestinations']
 
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('metaStatus', 0)
+            return Amanager.loadErrorJson('metaStatus', 0)
 
         temp_path = Path("/home/cyberpanel/") / str(randint(1000, 9999))
 
@@ -338,12 +338,12 @@ def get_backup_status(request):
 
         user_id, current_acl = _get_user_acl(request)
         admin = Administrator.objects.get(pk=user_id)
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
-        if ACLManager.CheckStatusFilleLoc(status):
+        if Amanager.CheckStatusFilleLoc(status):
             pass
         else:
             data_ret = {'abort': 1, 'installStatus': 0, 'installationProgress': "100",
@@ -400,10 +400,10 @@ def delete_backup(request):
         data = json.loads(request.body)
         backup_domain = data['websiteToBeBacked']
 
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         backup_id = data['backupID']
 
@@ -429,10 +429,10 @@ def fetch_restore_points(request):
         data = json.loads(request.body)
         backup_domain = data['websiteToBeBacked']
 
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         data = json.loads(request.body)
         job_id = data['id']
@@ -465,10 +465,10 @@ def restore_point(request):
         backup_domain = data['websiteToBeBacked']
         job_id = data['jobid']
 
-        if ACLManager.checkOwnership(backup_domain, admin, current_acl) == 1:
+        if Amanager.checkOwnership(backup_domain, admin, current_acl) == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('metaStatus', 0)
+            return Amanager.loadErrorJson('metaStatus', 0)
 
         temp_path = Path("/home/cyberpanel/") / str(randint(1000, 9999))
 
@@ -505,10 +505,10 @@ def restore_point(request):
 def schedule_backups(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadError()
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadError()
 
-        websites = ACLManager.findAllSites(current_acl, user_id)
+        websites = Amanager.findAllSites(current_acl, user_id)
 
         destinations = _get_destinations(local=True)
 
@@ -522,8 +522,8 @@ def schedule_backups(request):
 def submit_backup_schedule(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('scheduleStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('scheduleStatus', 0)
 
         data = json.loads(request.body)
 
@@ -555,8 +555,8 @@ def submit_backup_schedule(request):
 def get_current_backup_schedules(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         records = BackupJob.objects.all()
 
@@ -579,8 +579,8 @@ def get_current_backup_schedules(request):
 def fetch_sites(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         data = json.loads(request.body)
 
@@ -604,8 +604,8 @@ def fetch_sites(request):
 def schedule_delete(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('scheduleStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('scheduleStatus', 0)
 
         data = json.loads(request.body)
 
@@ -624,10 +624,10 @@ def schedule_delete(request):
 def restore_remote_backups(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'createBackup') == 0:
-            return ACLManager.loadError()
+        if Amanager.currentContextPermission(current_acl, 'createBackup') == 0:
+            return Amanager.loadError()
 
-        websites = ACLManager.findAllSites(current_acl, user_id)
+        websites = Amanager.findAllSites(current_acl, user_id)
 
         destinations = _get_destinations()
 
@@ -641,8 +641,8 @@ def restore_remote_backups(request):
 def save_changes(request):
     try:
         user_id, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('scheduleStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('scheduleStatus', 0)
 
         data = json.loads(request.body)
 
@@ -669,8 +669,8 @@ def save_changes(request):
 def remove_site(request):
     try:
         _, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('scheduleStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('scheduleStatus', 0)
 
         data = json.loads(request.body)
 
@@ -690,8 +690,8 @@ def remove_site(request):
 def add_website(request):
     try:
         _, current_acl = _get_user_acl(request)
-        if ACLManager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
-            return ACLManager.loadErrorJson('scheduleStatus', 0)
+        if Amanager.currentContextPermission(current_acl, 'scheduleBackups') == 0:
+            return Amanager.loadErrorJson('scheduleStatus', 0)
 
         data = json.loads(request.body)
 
@@ -718,15 +718,15 @@ def ConfigureV2Backup(request):
     try:
         user_id, current_acl = _get_user_acl(request)
 
-        if ACLManager.currentContextPermission(current_acl, 'createBackup') == 0:
-            return ACLManager.loadError()
+        if Amanager.currentContextPermission(current_acl, 'createBackup') == 0:
+            return Amanager.loadError()
 
-        if ACLManager.CheckForPremFeature('all'):
+        if Amanager.CheckForPremFeature('all'):
             BackupStat = 1
         else:
             BackupStat = 0
 
-        websites = ACLManager.findAllSites(current_acl, user_id)
+        websites = Amanager.findAllSites(current_acl, user_id)
         #
         # destinations = _get_destinations(local=True)
         proc = httpProc(request, 'IncBackups/ConfigureV2Backup.html', {'websiteList': websites, 'BackupStat': BackupStat})
@@ -753,14 +753,14 @@ def ConfigureV2BackupSetup(request):
 
         # logging.writeToFile('domainname is ====%s'%(request.GET.get))
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
 
-        if ACLManager.checkOwnership(website, admin, currentACL) == 1:
+        if Amanager.checkOwnership(website, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         cpbuv2 = CPBackupsV2(
             {'domain': website, 'BasePath': '/home/backup', 'BackupDatabase': 1, 'BackupData': 1,
@@ -811,13 +811,13 @@ def CreateV2BackupButton(request):
         Selectedrepo = data['Selectedrepo']
 
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(Selectedwebsite, admin, currentACL) == 1:
+        if Amanager.checkOwnership(Selectedwebsite, admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
 
         extra_args = {}
@@ -873,13 +873,13 @@ def RestorePathV2(request):
         Selectedwebsite = data['selwebsite']
         Selectedrepo = data['selectedrepo']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         extra_args = {}
         extra_args['function'] = 'InitiateRestore'
@@ -917,13 +917,13 @@ def DeleteSnapshotV2Final(request):
         Selectedwebsite = data['selwebsite']
         Selectedrepo = data['selectedrepo']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         extra_args = {}
         extra_args['function'] = 'InitiateRestore'
@@ -959,13 +959,13 @@ def selectwebsiteRetorev2(request):
         data = json.loads(request.body)
         Selectedwebsite = data['Selectedwebsite']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         obj = Websites.objects.get(domain = str(Selectedwebsite))
         #/home/cyberpanel.net/.config/rclone/rclone.conf
@@ -1001,13 +1001,13 @@ def ConfigureSftpV2Backup(request):
         UserName = data['UserName']
         Repo_Name = data['Repo_Name']
         #sshPort = data['sshPort']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         req_data = {}
         req_data['name'] = 'SFTP'
@@ -1056,13 +1056,13 @@ def selectwebsiteCreatev2(request):
         data = json.loads(request.body)
         Selectedwebsite = data['Selectedwebsite']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
         obj = Websites.objects.get(domain = str(Selectedwebsite))
         #/home/cyberpanel.net/.config/rclone/rclone.conf
@@ -1128,13 +1128,13 @@ def selectreporestorev2(request):
         data = json.loads(request.body)
         Selectedrepo = data['Selectedrepo']
         Selectedwebsite= data['Selectedwebsite']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
 
         # f'rustic -r testremote snapshots --password "" --json 2>/dev/null'
@@ -1177,13 +1177,13 @@ def DeleteScheduleV2(request):
         websiteDatabases = data['websiteDatabases']
         websiteEmails = data['websiteEmails']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
 
         status, message = CPBackupsV2.DeleteSchedule(Selectedwebsite, repo, frequency, websiteData, websiteDatabases, websiteEmails)
@@ -1218,13 +1218,13 @@ def CreateScheduleV2(request):
         # extra_args['BackupEmails'] = data['websiteEmails'] if 'websiteEmails' in data else False
         # extra_args['BackupDatabase'] = data['websiteDatabases'] if 'websiteDatabases' in data else False
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
 
         status, message = CPBackupsV2.CreateScheduleV2(Selectedwebsite, repo, frequency, websiteData, websiteDatabases, websiteEmails, retention)
@@ -1251,13 +1251,13 @@ def DeleteV2BackupButton(request):
         Selectedwebsite = data['Selectedwebsite']
         repo = data['Selectedrepo']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
 
-        if ACLManager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
+        if Amanager.checkOwnership(str(Selectedwebsite), admin, currentACL) == 1:
             pass
         else:
-            return ACLManager.loadError()
+            return Amanager.loadError()
 
 
         obj = Websites.objects.get(domain=Selectedwebsite)

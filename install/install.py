@@ -787,7 +787,7 @@ password="%s"
         command = 'chmod +x /usr/local/core/plogical/renew.py'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+        command = 'chmod +x /usr/local/core/manager/CLPackages.py'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         clScripts = ['/usr/local/core/tools/panel_info.py', '/usr/local/core/tools/CloudLinuxPackages.py',

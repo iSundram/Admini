@@ -270,7 +270,7 @@ class sslUtilities:
                     except BaseException as msg:
                         website = Websites.objects.get(domain=virtualHostName)
                         externalApp = website.externalApp
-                        docRoot = ACLManager.FindDocRootOfSite(None, virtualHostName)
+                        docRoot = Amanager.FindDocRootOfSite(None, virtualHostName)
                         DocumentRoot = f'    DocumentRoot {docRoot}\n'
 
                     data = open(completePathToConfigFile, 'r').readlines()
@@ -337,7 +337,7 @@ class sslUtilities:
         try:
             import tldextract
 
-            RetStatus, SAVED_CF_Key, SAVED_CF_Email = ACLManager.FetchCloudFlareAPIKeyFromAcme()
+            RetStatus, SAVED_CF_Key, SAVED_CF_Email = Amanager.FetchCloudFlareAPIKeyFromAcme()
             no_cache_extract = tldextract.TLDExtract(cache_dir=None)
 
             if RetStatus:
@@ -382,7 +382,7 @@ class sslUtilities:
             topLevelDomain = extractDomain.domain + '.' + extractDomain.suffix
             zone = Domains.objects.get(name=topLevelDomain)
 
-            DNS.createDNSRecord(zone, f'cptest.{topLevelDomain}', 'A', ACLManager.GetServerIP(), 0, 3600)
+            DNS.createDNSRecord(zone, f'cptest.{topLevelDomain}', 'A', Amanager.GetServerIP(), 0, 3600)
 
             time.sleep(2)
 
@@ -391,7 +391,7 @@ class sslUtilities:
             logging.CyberCPLogFileWriter.writeToFile(f'PDNS Result: {str(result)}.')
 
             # Return the IP address as a string
-            if result[4][0] == ACLManager.GetServerIP():
+            if result[4][0] == Amanager.GetServerIP():
                 return 1, None
 
             else:

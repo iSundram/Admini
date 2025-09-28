@@ -45,15 +45,15 @@ class BackupManager:
 
     def loadBackupHome(self, request=None, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             proc = httpProc(request, 'backup/index.html', currentACL)
             return proc.render()
         except BaseException as msg:
             return HttpResponse(str(msg))
 
     def backupSite(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         command = 'chmod 755 /home/backup'
         ProcessUtilities.executioner(command)
@@ -62,57 +62,57 @@ class BackupManager:
         return proc.render()
 
     def RestoreV2backupSite(self, request=None, userID=None, data=None):
-        if ACLManager.CheckForPremFeature('all'):
+        if Amanager.CheckForPremFeature('all'):
             BackupStat = 1
         else:
             BackupStat = 0
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'IncBackups/RestoreV2Backup.html', {'websiteList': websitesName, 'BackupStat': BackupStat}, 'createBackup')
         return proc.render()
 
     def CreateV2backupSite(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'IncBackups/CreateV2Backup.html', {'websiteList': websitesName}, 'createBackup')
         return proc.render()
     def DeleteRepoV2(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'IncBackups/DeleteV2repo.html', {'websiteList': websitesName}, 'createBackup')
         return proc.render()
 
     def schedulev2Backups(self, request=None, userID=None, data=None):
 
-        if ACLManager.CheckForPremFeature('all'):
+        if Amanager.CheckForPremFeature('all'):
             BackupStat = 1
         else:
             BackupStat = 0
 
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'IncBackups/ScheduleV2Backup.html', {'websiteList': websitesName, "BackupStat": BackupStat}, 'createBackup')
         return proc.render()
 
     def gDrive(self, request=None, userID=None, data=None):
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         gDriveAcctsList = []
         gDriveAccts = admin.gdrive_set.all()
         for items in gDriveAccts:
             gDriveAcctsList.append(items.name)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         proc = httpProc(request, 'backup/googleDrive.html', {'accounts': gDriveAcctsList, 'websites': websitesName},
                         'createBackup')
         return proc.render()
 
     def gDriveSetup(self, userID=None, request=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'createBackup') == 0:
-                return ACLManager.loadError()
+            if Amanager.currentContextPermission(currentACL, 'createBackup') == 0:
+                return Amanager.loadError()
 
             gDriveData = {}
             gDriveData['token'] = request.GET.get('t')
@@ -133,7 +133,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -144,10 +144,10 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL) == 1:
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             logs = gD.gdrivejoblogs_set.all().order_by('-id')
 
@@ -199,7 +199,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -210,10 +210,10 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL) == 1:
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             websites = gD.gdrivesites_set.all()
 
@@ -261,7 +261,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -271,11 +271,11 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL) == 1 and ACLManager.checkOwnership(
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL) == 1 and Amanager.checkOwnership(
                     selectedWebsite, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             gdSite = GDriveSites(owner=gD, domain=selectedWebsite)
             gdSite.save()
@@ -293,7 +293,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -302,10 +302,10 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL):
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             gD.delete()
 
@@ -322,7 +322,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -332,10 +332,10 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL):
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             gD.runTime = backupFrequency
 
@@ -355,7 +355,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -367,10 +367,10 @@ class BackupManager:
             gD = GDrive.objects.get(name=selectedAccount)
             # logging.CyberCPLogFileWriter.writeToFile("...... GDrive obj...%s " % GDrive)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL):
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL):
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
 
 
@@ -396,7 +396,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -406,11 +406,11 @@ class BackupManager:
 
             gD = GDrive.objects.get(name=selectedAccount)
 
-            if ACLManager.checkGDriveOwnership(gD, admin, currentACL) == 1 and ACLManager.checkOwnership(website, admin,
+            if Amanager.checkGDriveOwnership(gD, admin, currentACL) == 1 and Amanager.checkOwnership(website, admin,
                                                                                                          currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('status', 0)
+                return Amanager.loadErrorJson('status', 0)
 
             sites = GDriveSites.objects.filter(owner=gD, domain=website)
 
@@ -436,7 +436,7 @@ class BackupManager:
             ext = ".tar.gz"
 
             command = 'sudo chown -R  cyberpanel:cyberpanel ' + path
-            ACLManager.executeCall(command)
+            Amanager.executeCall(command)
 
             files = os.listdir(path)
             for filename in files:
@@ -447,19 +447,19 @@ class BackupManager:
 
     def getCurrentBackups(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             backupDomain = data['websiteToBeBacked']
 
-            if ACLManager.checkOwnership(backupDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(backupDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
-            if ACLManager.checkOwnership(backupDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(backupDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             website = Websites.objects.get(domain=backupDomain)
 
@@ -497,15 +497,15 @@ class BackupManager:
     def submitBackupCreation(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
             backupDomain = data['websiteToBeBacked']
             website = Websites.objects.get(domain=backupDomain)
 
-            if ACLManager.checkOwnership(backupDomain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(backupDomain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson('metaStatus', 0)
+                return Amanager.loadErrorJson('metaStatus', 0)
 
             ## defining paths
 
@@ -646,12 +646,12 @@ class BackupManager:
             backup = Backups.objects.get(id=backupID)
 
             domainName = backup.website.domain
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(domainName, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domainName, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             path = "/home/" + domainName + "/backup/" + backup.fileName + ".tar.gz"
             command = 'sudo rm -f ' + path
@@ -677,11 +677,11 @@ class BackupManager:
             else:
                 dir = "CyberPanelRestore"
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             execPath = "sudo nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " submitRestore --backupFile " + backupFile + " --dir " + dir
@@ -762,10 +762,10 @@ class BackupManager:
 
     def submitDestinationCreation(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
-                return ACLManager.loadErrorJson('destStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
+                return Amanager.loadErrorJson('destStatus', 0)
 
             finalDic = {}
 
@@ -827,10 +827,10 @@ class BackupManager:
 
     def getCurrentBackupDestinations(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             destinations = NormalBackupDests.objects.all()
 
@@ -873,10 +873,10 @@ class BackupManager:
 
     def getConnectionStatus(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
-                return ACLManager.loadErrorJson('connStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
+                return Amanager.loadErrorJson('connStatus', 0)
 
             ipAddress = data['IPAddress']
 
@@ -902,10 +902,10 @@ class BackupManager:
     def deleteDestination(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
-                return ACLManager.loadErrorJson('delStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'addDeleteDestinations') == 0:
+                return Amanager.loadErrorJson('delStatus', 0)
 
             nameOrPath = data['nameOrPath']
             type = data['type']
@@ -923,16 +923,16 @@ class BackupManager:
 
     def scheduleBackup(self, request, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadError()
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadError()
             
             destinations = NormalBackupDests.objects.all()
             dests = []
             for dest in destinations:
                 dests.append(dest.name)
-            websitesName = ACLManager.findAllSites(currentACL, userID)
+            websitesName = Amanager.findAllSites(currentACL, userID)
             proc = httpProc(request, 'backup/backupSchedule.html', {'destinations': dests, 'websites': websitesName},
                             'scheduleBackups')
             return proc.render()
@@ -942,10 +942,10 @@ class BackupManager:
 
     def getCurrentBackupSchedules(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             records = backupSchedules.objects.all()
 
@@ -980,10 +980,10 @@ class BackupManager:
             backupFrequency = data['backupFrequency']
             backupRetention = data['backupRetention']
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             nbd = NormalBackupDests.objects.get(name=selectedAccount)
 
@@ -1011,10 +1011,10 @@ class BackupManager:
 
     def scheduleDelete(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             backupDest = data['destLoc']
             backupFreq = data['frequency']
@@ -1077,10 +1077,10 @@ class BackupManager:
 
     def submitRemoteBackups(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson()
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson()
 
             ipAddress = data['ipAddress']
             password = data['password']
@@ -1200,10 +1200,10 @@ class BackupManager:
 
     def starRemoteTransfer(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson('remoteTransferStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson('remoteTransferStatus', 0)
 
             ipAddress = data['ipAddress']
             password = data['password']
@@ -1293,10 +1293,10 @@ class BackupManager:
 
     def getRemoteTransferStatus(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson('remoteTransferStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson('remoteTransferStatus', 0)
 
             ipAddress = data['ipAddress']
             password = data['password']
@@ -1338,9 +1338,9 @@ class BackupManager:
 
     def remoteBackupRestore(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson('remoteTransferStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson('remoteTransferStatus', 0)
 
             backupDir = data['backupDir']
 
@@ -1368,10 +1368,10 @@ class BackupManager:
 
     def localRestoreStatus(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson('remoteTransferStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson('remoteTransferStatus', 0)
 
             backupDir = data['backupDir']
 
@@ -1420,10 +1420,10 @@ class BackupManager:
     def cancelRemoteBackup(self, userID=None, data=None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'remoteBackups') == 0:
-                return ACLManager.loadErrorJson('cancelStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'remoteBackups') == 0:
+                return Amanager.loadErrorJson('cancelStatus', 0)
 
             ipAddress = data['ipAddress']
             password = data['password']
@@ -1473,12 +1473,12 @@ class BackupManager:
 
     def fetchLogs(self, userID=None, data=None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             page = int(str(data['page']).rstrip('\n'))
             recordsToShow = int(data['recordsToShow'])
@@ -1545,7 +1545,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
 
@@ -1554,8 +1554,8 @@ class BackupManager:
             page = int(str(data['page']).strip('\n'))
 
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             try:
                 nbd = NormalBackupJobs.objects.get(name=selectedAccount)
@@ -1641,7 +1641,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
 
@@ -1649,8 +1649,8 @@ class BackupManager:
 
             nbd = NormalBackupDests.objects.get(name=selectedAccount)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             allJobs = nbd.normalbackupjobs_set.all()
 
@@ -1672,12 +1672,12 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             selectedJob = data['selectedJob']
             type = data['type']
@@ -1731,7 +1731,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
 
@@ -1745,8 +1745,8 @@ class BackupManager:
                 nbj = NormalBackupJobs.objects.filter(name=selectedJob).first()
             website = Websites.objects.get(domain=selectedWebsite)
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             try:
                 NormalBackupSites.objects.get(owner=nbj, domain=website).delete()
@@ -1766,7 +1766,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -1781,8 +1781,8 @@ class BackupManager:
                 # If multiple jobs exist with same name, get the first one
                 nbj = NormalBackupJobs.objects.filter(name=selectedJob).first()
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             config = json.loads(nbj.config)
             config[IncScheduler.frequency] = backupFrequency
@@ -1810,7 +1810,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
 
@@ -1822,8 +1822,8 @@ class BackupManager:
                 # If multiple jobs exist with same name, get the first one
                 nbj = NormalBackupJobs.objects.filter(name=selectedJob).first()
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             nbj.delete()
 
@@ -1840,7 +1840,7 @@ class BackupManager:
         try:
 
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -1849,8 +1849,8 @@ class BackupManager:
             recordsToShow = int(data['recordsToShow'])
             page = int(str(data['page']).strip('\n'))
 
-            if ACLManager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
-                return ACLManager.loadErrorJson('scheduleStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'scheduleBackups') == 0:
+                return Amanager.loadErrorJson('scheduleStatus', 0)
 
             try:
                 nbj = NormalBackupJobs.objects.get(name=selectedJob)
@@ -1907,17 +1907,17 @@ class BackupManager:
     def CreateV2BackupStatus(self, userID=None, data=None):
         try:
             domain = data['domain']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             statusFile = f'/home/cyberpanel/{domain}_rustic_backup_log'
 
-            if ACLManager.CheckStatusFilleLoc(statusFile, domain):
+            if Amanager.CheckStatusFilleLoc(statusFile, domain):
                 pass
             else:
                 data_ret = {'abort': 1, 'installStatus': 0, 'installationProgress': "100",
@@ -2021,7 +2021,7 @@ class BackupManager:
                         'sub': subscription,
                         'key': ProcessUtilities.outputExecutioner(f'cat /root/.ssh/cyberpanel.pub'),  # Replace with the actual SSH public key
                         'sftpUser': backup_plan.sftpUser,
-                        'serverIP': ACLManager.fetchIP(), # Replace with the actual server IP,
+                        'serverIP': Amanager.fetchIP(), # Replace with the actual server IP,
                         'planName': plan_name
                     }
 
@@ -2108,7 +2108,7 @@ class BackupManager:
 
     def ManageOCBackups(self, request=None, userID=None, data=None):
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         admin = Administrator.objects.get(pk=userID)
         from IncBackups.models import OneClickBackups
         ocb = OneClickBackups.objects.get(pk = request.GET.get('id'), owner=admin)
@@ -2117,7 +2117,7 @@ class BackupManager:
         for dest in destinations:
             dests.append(dest.name)
 
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         proc = httpProc(request, 'backup/OneClickBackupSchedule.html', {'destination': NormalBackupDests.objects.get(name=ocb.sftpUser).name, 'websites': websitesName},
                         'scheduleBackups')
@@ -2126,13 +2126,13 @@ class BackupManager:
     def RestoreOCBackups(self, request=None, userID=None, data=None):
         try:
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             from IncBackups.models import OneClickBackups
             
@@ -2146,7 +2146,7 @@ class BackupManager:
             try:
                 ocb = OneClickBackups.objects.get(pk=backup_id, owner=admin)
             except OneClickBackups.DoesNotExist:
-                return ACLManager.loadErrorJson('restoreStatus', 0)
+                return Amanager.loadErrorJson('restoreStatus', 0)
         except Exception as msg:
             logging.CyberCPLogFileWriter.writeToFile(str(msg) + ' [RestoreOCBackups]')
             return HttpResponse("Error: " + str(msg))
@@ -2245,7 +2245,7 @@ class BackupManager:
     def fetchOCSites(self, request=None, userID=None, data=None):
         try:
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             data = json.loads(request.body)
             id = data['idValue']
@@ -2298,12 +2298,12 @@ class BackupManager:
     def StartOCRestore(self, request=None, userID=None, data=None):
         try:
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             data = json.loads(request.body)
             id = data['idValue']
@@ -2338,7 +2338,7 @@ class BackupManager:
         user = Administrator.objects.get(pk=userID)
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
         import json
 
         data = json.loads(request.body)
@@ -2363,7 +2363,7 @@ class BackupManager:
             'key': ProcessUtilities.outputExecutioner(f'cat /root/.ssh/cyberpanel.pub'),
             # Replace with the actual SSH public key
             'sftpUser': ocb.sftpUser,
-            'serverIP': ACLManager.fetchIP(),  # Replace with the actual server IP
+            'serverIP': Amanager.fetchIP(),  # Replace with the actual server IP
             'planName': ocb.planName
         }
 
@@ -2472,7 +2472,7 @@ class BackupManager:
             payload = {
                 'subscription_id': subscription_id,
                 'key': ProcessUtilities.outputExecutioner(f'cat /root/.ssh/cyberpanel.pub'),
-                'serverIP': ACLManager.fetchIP(),
+                'serverIP': Amanager.fetchIP(),
                 'email': data['email'],
                 'code': data['code']
             }

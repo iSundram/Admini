@@ -747,7 +747,7 @@ class FileManager:
             try:
                 self.data['home'] = '/home/%s' % (self.data['domainName'])
 
-                ACLManager.CreateSecureDir()
+                Amanager.CreateSecureDir()
                 tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
 
                 domainName = self.data['domainName']
@@ -767,7 +767,7 @@ class FileManager:
             except:
                 self.data['home'] = '/'
 
-                ACLManager.CreateSecureDir()
+                Amanager.CreateSecureDir()
                 tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
                 writeToFile = open(tempPath, 'wb')
                 writeToFile.write(self.data['fileContent'].encode('utf-8'))
@@ -792,7 +792,7 @@ class FileManager:
             finalData['uploadStatus'] = 1
             finalData['answer'] = 'File transfer completed.'
 
-            ACLManager.CreateSecureDir()
+            Amanager.CreateSecureDir()
             UploadPath = '/usr/local/core/tmp/'
 
             ## Random file name
@@ -821,7 +821,7 @@ class FileManager:
                 if result.find('->') > -1:
                     return self.ajaxPre(0, "Symlink attack.")
 
-                if ACLManager.commandInjectionCheck(self.data['completePath'] + '/' + myfile.name) == 1:
+                if Amanager.commandInjectionCheck(self.data['completePath'] + '/' + myfile.name) == 1:
                     return self.ajaxPre(0, 'Not allowed to move in this path, please choose location inside home!')
 
                 if (self.data['completePath'] + '/' + myfile.name).find(pathCheck) == -1 or (
@@ -843,7 +843,7 @@ class FileManager:
                 command = 'ls -la %s' % (self.data['completePath'])
                 result = ProcessUtilities.outputExecutioner(command)
                 logging.writeToFile("upload file res %s" % result)
-                if ACLManager.commandInjectionCheck(self.data['completePath'] + '/' + myfile.name) == 1:
+                if Amanager.commandInjectionCheck(self.data['completePath'] + '/' + myfile.name) == 1:
                     return self.ajaxPre(0, 'Not allowed to move in this path, please choose location inside home!')
 
                 if (self.data['completePath'] + '/' + myfile.name).find(pathCheck) == -1 or (

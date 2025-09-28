@@ -155,9 +155,9 @@ def restart_affected_services():
 
 # Try to import settings, but handle case where CyberCP directory is damaged
 try:
-    from CyberCP import settings
+    from core import settings
 except ImportError:
-    print("WARNING: Cannot import CyberCP settings. Attempting recovery...")
+    print("WARNING: Cannot import core.settings. Attempting recovery...")
     
     def recover_database_credentials():
         """Attempt to recover or reset database credentials"""
@@ -2242,7 +2242,7 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
         try:
             connection, cursor = Upgrade.setupConnection('cyberpanel')
 
-            query = """CREATE TABLE `CLManager_clpackages` (
+            query = """CREATE TABLE `manager_clpackages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `speed` varchar(50) NOT NULL,
@@ -2257,8 +2257,8 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
   `owner_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
-  KEY `CLManager_clpackages_owner_id_9898c1e8_fk_packages_package_id` (`owner_id`),
-  CONSTRAINT `CLManager_clpackages_owner_id_9898c1e8_fk_packages_package_id` FOREIGN KEY (`owner_id`) REFERENCES `packages_package` (`id`)
+  KEY `manager_clpackages_owner_id_9898c1e8_fk_packages_package_id` (`owner_id`),
+  CONSTRAINT `manager_clpackages_owner_id_9898c1e8_fk_packages_package_id` FOREIGN KEY (`owner_id`) REFERENCES `packages_package` (`id`)
 )"""
             try:
                 cursor.execute(query)
@@ -3025,7 +3025,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/manager/CLPackages.py'
             Upgrade.executioner(command, 'chmod CLPackages', 0)
 
             files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -3081,7 +3081,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod +x /usr/local/core/plogical/renew.py'
             Upgrade.executioner(command, command, 0)
 
-            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/manager/CLPackages.py'
             Upgrade.executioner(command, command, 0)
 
             clScripts = ['/usr/local/core/tools/panel_info.py',
@@ -4502,7 +4502,7 @@ pm.max_spare_servers = 3
                     imunifyAVPath = '/usr/local/core/public/imunifyav'
 
                     if os.path.exists(imunifyAVPath):
-                        execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
+                        execPath = "/usr/local/core/bin/python /usr/local/core/manager/CageFS.py"
                         command = execPath + " --function submitinstallImunifyAV"
                         Upgrade.executioner(command, command, 1)
 
@@ -4593,7 +4593,7 @@ pm.max_spare_servers = 3
             if os.path.exists(imunifyAVPath):
                 Upgrade.stdOut("ImunifyAV directory found, reconfiguring...")
                 if os.path.exists(configPath):
-                    execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
+                    execPath = "/usr/local/core/bin/python /usr/local/core/manager/CageFS.py"
                     command = execPath + " --function submitinstallImunifyAV"
                     if Upgrade.executioner(command, command, 1):
                         Upgrade.stdOut("ImunifyAV reconfigured successfully")

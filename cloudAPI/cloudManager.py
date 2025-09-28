@@ -132,14 +132,14 @@ class CloudManager:
     def fetchWebsiteData(self):
         try:
 
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
             website = Websites.objects.get(domain=self.data['domainName'])
             admin = Administrator.objects.get(pk=self.admin.pk)
 
-            if ACLManager.checkOwnership(self.data['domainName'], admin, currentACL) == 1:
+            if Amanager.checkOwnership(self.data['domainName'], admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             Data = {}
 
@@ -351,7 +351,7 @@ class CloudManager:
         try:
             statusFile = self.data['statusFile']
 
-            if ACLManager.CheckStatusFilleLoc(statusFile):
+            if Amanager.CheckStatusFilleLoc(statusFile):
                 pass
             else:
                 data_ret = {'abort': 1, 'installStatus': 0, 'installationProgress': "100",
@@ -463,16 +463,16 @@ class CloudManager:
     def fetchACLs(self):
         try:
             userID = self.admin.pk
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
-                aclNames = ACLManager.unFileteredACLs()
+                aclNames = Amanager.unFileteredACLs()
             elif currentACL['changeUserACL'] == 1:
-                aclNames = ACLManager.unFileteredACLs()
+                aclNames = Amanager.unFileteredACLs()
             elif currentACL['createNewUser'] == 1:
                 aclNames = ['user']
             else:
-                return ACLManager.loadError()
+                return Amanager.loadError()
 
             json_data = "["
             checker = 0
@@ -503,7 +503,7 @@ class CloudManager:
     def fetchUsers(self):
         try:
             userID = self.admin.pk
-            allUsers = ACLManager.loadUserObjects(userID)
+            allUsers = Amanager.loadUserObjects(userID)
 
             json_data = "["
             checker = 0
@@ -549,7 +549,7 @@ class CloudManager:
     def userWithResellerPriv(self):
         try:
             userID = self.admin.pk
-            allUsers = ACLManager.userWithResellerPriv(userID)
+            allUsers = Amanager.userWithResellerPriv(userID)
 
             json_data = "["
             checker = 0
@@ -595,12 +595,12 @@ class CloudManager:
     def findAllACLs(self, request):
         try:
             userID = self.admin.pk
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
             if currentACL['admin'] == 1:
-                aclNames = ACLManager.findAllACLs()
+                aclNames = Amanager.findAllACLs()
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             json_data = "["
             checker = 0
@@ -652,12 +652,12 @@ class CloudManager:
     def fetchPackages(self, request):
         try:
             userID = self.admin.pk
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'deletePackage') == 0:
-                return ACLManager.loadError()
+            if Amanager.currentContextPermission(currentACL, 'deletePackage') == 0:
+                return Amanager.loadError()
 
-            packageList = ACLManager.loadPackageObjects(userID, currentACL)
+            packageList = Amanager.loadPackageObjects(userID, currentACL)
 
             json_data = "["
             checker = 0
@@ -1071,7 +1071,7 @@ class CloudManager:
     def showStatus(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1086,7 +1086,7 @@ class CloudManager:
     def fetchRam(self, request):
         try:
             # request.session['userID'] = self.admin.pk
-            # currentACL = ACLManager.loadedACL(self.admin.pk)
+            # currentACL = Amanager.loadedACL(self.admin.pk)
             #
             # if currentACL['admin'] == 0:
             #     return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1117,7 +1117,7 @@ class CloudManager:
     def applyMySQLChanges(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1135,7 +1135,7 @@ class CloudManager:
     def restartMySQL(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1150,7 +1150,7 @@ class CloudManager:
     def fetchDatabasesMYSQL(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1165,7 +1165,7 @@ class CloudManager:
     def fetchTables(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1180,7 +1180,7 @@ class CloudManager:
     def deleteTable(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1195,7 +1195,7 @@ class CloudManager:
     def fetchTableData(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1210,7 +1210,7 @@ class CloudManager:
     def fetchStructure(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 0:
                 return self.ajaxPre(0, 'Only administrators can see MySQL status.')
@@ -1421,12 +1421,12 @@ class CloudManager:
     def submitContainerInstall(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            currentACL = ACLManager.loadedACL(self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
 
             if currentACL['admin'] == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             c = ContainerManager(request, None, 'submitContainerInstall')
             c.start()
@@ -1521,8 +1521,8 @@ class CloudManager:
 
     def fetchAllSites(self):
         try:
-            currentACL = ACLManager.loadedACL(self.admin.pk)
-            websites = ACLManager.findAllWebsites(currentACL, self.admin.pk)
+            currentACL = Amanager.loadedACL(self.admin.pk)
+            websites = Amanager.findAllWebsites(currentACL, self.admin.pk)
 
             final_dic = {'status': 1, 'websites': websites}
             final_json = json.dumps(final_dic)
@@ -2737,7 +2737,7 @@ class CloudManager:
 
     def FetchMasterBootStrapStatus(self):
         try:
-            from CyberCP import settings
+            from core import settings
 
             data = {}
             data['status'] = 1

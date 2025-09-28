@@ -608,7 +608,7 @@ context /.well-known/acme-challenge {
                     except BaseException as msg:
                         website = Websites.objects.get(domain=virtualHostName)
                         externalApp = website.externalApp
-                        docRoot = ACLManager.FindDocRootOfSite(None, virtualHostName)
+                        docRoot = Amanager.FindDocRootOfSite(None, virtualHostName)
                         DocumentRoot = f'    DocumentRoot {docRoot}\n'
 
                     data = open(completePathToConfigFile, 'r').readlines()

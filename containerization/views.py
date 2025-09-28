@@ -28,12 +28,12 @@ def submitContainerInstall(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         c = ContainerManager(request, None, 'submitContainerInstall')
         c.start()
@@ -61,12 +61,12 @@ def fetchWebsiteLimits(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
         domain = data['domain']
@@ -126,12 +126,12 @@ def saveWebsiteLimits(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
         domain = data['domain']
@@ -273,12 +273,12 @@ def getUsageData(request):
     try:
 
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
         domain = data['domain']

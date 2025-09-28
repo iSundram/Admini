@@ -102,7 +102,7 @@ def listFTPAccounts(request):
 def ResetFTPConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
 
         proc = httpProc(request, 'ftp/ResetFTPconf.html')
@@ -116,12 +116,12 @@ def resetftpnow(request):
         from plogical.virtualHostUtilities import virtualHostUtilities
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
@@ -145,12 +145,12 @@ def getresetstatus(request):
 
         userID = request.session['userID']
 
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
         statusfile = data['statusfile']

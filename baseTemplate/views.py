@@ -95,7 +95,7 @@ def upgrade_cyberpanel(request):
 def getAdminStatus(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
 
         if os.path.exists('/home/cyberpanel/postfix'):
             currentACL['emailAsWhole'] = 1
@@ -131,7 +131,7 @@ def getAdminStatus(request):
 def getSystemStatus(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         admin = Administrator.objects.get(pk=val)
         
         # Admin users get full system information
@@ -231,7 +231,7 @@ def getSystemStatus(request):
 def getLoadAverage(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         
         # Only admins should see system load averages
         if not currentACL.get('admin', 0):
@@ -289,14 +289,14 @@ def versionManagment(request):
 def upgrade(request):
     try:
         admin = request.session['userID']
-        currentACL = ACLManager.loadedACL(admin)
+        currentACL = Amanager.loadedACL(admin)
 
         data = json.loads(request.body)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         from plogical.applicationInstaller import ApplicationInstaller
 
@@ -318,11 +318,11 @@ def upgrade(request):
 def upgradeStatus(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('FilemanagerAdmin', 0)
+            return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         try:
             if request.method == 'POST':
@@ -389,11 +389,11 @@ def design(request):
         cosmetic.save()
 
     val = request.session['userID']
-    currentACL = ACLManager.loadedACL(val)
+    currentACL = Amanager.loadedACL(val)
     if currentACL['admin'] == 1:
         pass
     else:
-        return ACLManager.loadErrorJson('reboot', 0)
+        return Amanager.loadErrorJson('reboot', 0)
 
     finalData = {}
 
@@ -429,13 +429,13 @@ def design(request):
 def getthemedata(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         data = json.loads(request.body)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('reboot', 0)
+            return Amanager.loadErrorJson('reboot', 0)
 
         # logging.CyberCPLogFileWriter.writeToFile(str(data) + "  [themedata]")
 
@@ -463,12 +463,12 @@ def onboarding(request):
 def runonboarding(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
         hostname = data['hostname']
@@ -500,12 +500,12 @@ def runonboarding(request):
 def RestartCyberPanel(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
 
         command = 'systemctl restart lscpd'
@@ -524,7 +524,7 @@ def RestartCyberPanel(request):
 def getDashboardStats(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         admin = Administrator.objects.get(pk=val)
         
         # Check if user is admin
@@ -589,7 +589,7 @@ def getDashboardStats(request):
 def getTrafficStats(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         
         # Only admins should see system-wide network stats
         if not currentACL.get('admin', 0):
@@ -617,7 +617,7 @@ def getTrafficStats(request):
 def getDiskIOStats(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         
         # Only admins should see system-wide disk I/O stats
         if not currentACL.get('admin', 0):
@@ -651,7 +651,7 @@ def getDiskIOStats(request):
 def getCPULoadGraph(request):
     try:
         val = request.session['userID']
-        currentACL = ACLManager.loadedACL(val)
+        currentACL = Amanager.loadedACL(val)
         
         # Only admins should see system-wide CPU stats
         if not currentACL.get('admin', 0):
@@ -682,7 +682,7 @@ def getRecentSSHLogins(request):
         user_id = request.session.get('userID')
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
 
@@ -753,7 +753,7 @@ def getRecentSSHLogs(request):
         user_id = request.session.get('userID')
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
         from plogical.processUtilities import ProcessUtilities
@@ -790,12 +790,12 @@ def analyzeSSHSecurity(request):
         user_id = request.session.get('userID')
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
         
         # Check if user has CyberPanel addons
-        if not ACLManager.CheckForPremFeature('all'):
+        if not Amanager.CheckForPremFeature('all'):
             return HttpResponse(json.dumps({
                 'status': 0,
                 'addon_required': True,
@@ -1109,12 +1109,12 @@ def blockIPAddress(request):
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
         
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
         
         # Check if user has CyberPanel addons
-        if not ACLManager.CheckForPremFeature('all'):
+        if not Amanager.CheckForPremFeature('all'):
             return HttpResponse(json.dumps({
                 'status': 0,
                 'error': 'Premium feature required'
@@ -1245,7 +1245,7 @@ def getSSHUserActivity(request):
         user_id = request.session.get('userID')
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
         data = json.loads(request.body.decode('utf-8'))
@@ -1376,7 +1376,7 @@ def getTopProcesses(request):
         if not user_id:
             return HttpResponse(json.dumps({'error': 'Not logged in'}), content_type='application/json', status=403)
         
-        currentACL = ACLManager.loadedACL(user_id)
+        currentACL = Amanager.loadedACL(user_id)
         if not currentACL.get('admin', 0):
             return HttpResponse(json.dumps({'error': 'Admin only'}), content_type='application/json', status=403)
         

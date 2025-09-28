@@ -214,7 +214,7 @@ class IncScheduler(multi.Thread):
             diskUsage = math.floor(psutil.disk_usage('/')[3])
 
             from plogical.acl import ACLManager
-            message = '%s - Disk Usage Warning - CyberPanel' % (ACLManager.fetchIP())
+            message = '%s - Disk Usage Warning - CyberPanel' % (Amanager.fetchIP())
 
             if diskUsage >= 50 and diskUsage <= 60:
 
@@ -948,11 +948,11 @@ Automatic backup failed for %s on %s.
                                     # Define the payload to send in the POST request
                                     payload = {
                                         'sub': ocb.subscription,
-                                        'subject': f'Failed to backup {site.domain} on {ACLManager.fetchIP()}.',
-                                        'message':f'Hi, \n\n Failed to create backup for {site.domain} on on {ACLManager.fetchIP()}. \n\n Please contact our support team at: http://platform.cyberpersons.com\n\nThank you.',
+                                        'subject': f'Failed to backup {site.domain} on {Amanager.fetchIP()}.',
+                                        'message':f'Hi, \n\n Failed to create backup for {site.domain} on on {Amanager.fetchIP()}. \n\n Please contact our support team at: http://platform.cyberpersons.com\n\nThank you.',
                                         # Replace with the actual SSH public key
                                         'sftpUser': ocb.sftpUser,
-                                        'serverIP': ACLManager.fetchIP(),  # Replace with the actual server IP
+                                        'serverIP': Amanager.fetchIP(),  # Replace with the actual server IP
                                     }
 
                                     # Convert the payload to JSON format

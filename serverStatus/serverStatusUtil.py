@@ -109,7 +109,7 @@ class ServerStatusUtil(multi.Thread):
             # Get the latest LSWS Enterprise version dynamically
             lsws_version = ServerStatusUtil.getLatestLSWSVersion()
 
-            if ACLManager.ISARM():
+            if Amanager.ISARM():
                 command = f'wget https://www.litespeedtech.com/packages/6.0/lsws-{lsws_version}-ent-aarch64-linux.tar.gz'
             else:
 
@@ -124,7 +124,7 @@ class ServerStatusUtil(multi.Thread):
             if os.path.exists(f'/usr/local/core/lsws-{lsws_version}/'):
                 shutil.rmtree(f'/usr/local/core/lsws-{lsws_version}/')
 
-            if ACLManager.ISARM():
+            if Amanager.ISARM():
                 command = f'tar zxf lsws-{lsws_version}-ent-aarch64-linux.tar.gz -C /usr/local/core'
             else:
                 command = f'tar zxf lsws-{lsws_version}-ent-x86_64-linux.tar.gz -C /usr/local/core'

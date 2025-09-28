@@ -37,7 +37,7 @@ def startContainer(request):
     try:
         if request.method == 'POST':
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -83,7 +83,7 @@ def stopContainer(request):
     try:
         if request.method == 'POST':
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)
@@ -129,7 +129,7 @@ def restartContainer(request):
     try:
         if request.method == 'POST':
             userID = request.session['userID']
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
 
             data = json.loads(request.body)

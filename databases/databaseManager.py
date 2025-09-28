@@ -35,8 +35,8 @@ class DatabaseManager:
         return proc.render()
 
     def createDatabase(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         template = 'databases/createDatabase.html'
         proc = httpProc(request, template, {'websitesList': websitesName}, 'createDatabase')
         return proc.render()
@@ -44,10 +44,10 @@ class DatabaseManager:
     def submitDBCreation(self, userID = None, data = None, rAPI = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.currentContextPermission(currentACL, 'createDatabase') == 0:
-                return ACLManager.loadErrorJson('createDBStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'createDatabase') == 0:
+                return Amanager.loadErrorJson('createDBStatus', 0)
 
             databaseWebsite = data['databaseWebsite']
             dbName = data['dbName']
@@ -55,10 +55,10 @@ class DatabaseManager:
             dbPassword = data['dbPassword']
             webUsername = data['webUserName']
 
-            if ACLManager.checkOwnership(databaseWebsite, admin, currentACL) == 1:
+            if Amanager.checkOwnership(databaseWebsite, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             if rAPI == None:
                 dbName = webUsername + "_" + dbName
@@ -81,8 +81,8 @@ class DatabaseManager:
             return HttpResponse(json_data)
 
     def deleteDatabase(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
         template = 'databases/deleteDatabase.html'
         proc = httpProc(request, template, {'websitesList': websitesName}, 'deleteDatabase')
         return proc.render()
@@ -97,7 +97,7 @@ class DatabaseManager:
                 url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
                 data = {
                     "name": "Filemanager",
-                    "IP": ACLManager.fetchIP()
+                    "IP": Amanager.fetchIP()
                 }
 
                 import requests
@@ -142,17 +142,17 @@ class DatabaseManager:
     def fetchDatabases(self, userID = None, data = None):
         try:
 
-            currentACL = ACLManager.loadedACL(userID)
-            if ACLManager.currentContextPermission(currentACL, 'deleteDatabase') == 0:
-                return ACLManager.loadErrorJson('fetchStatus', 0)
+            currentACL = Amanager.loadedACL(userID)
+            if Amanager.currentContextPermission(currentACL, 'deleteDatabase') == 0:
+                return Amanager.loadErrorJson('fetchStatus', 0)
 
             databaseWebsite = data['databaseWebsite']
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(databaseWebsite, admin, currentACL) == 1:
+            if Amanager.checkOwnership(databaseWebsite, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             website = Websites.objects.get(domain=databaseWebsite)
             databases = Databases.objects.filter(website=website)
@@ -183,18 +183,18 @@ class DatabaseManager:
 
     def submitDatabaseDeletion(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.currentContextPermission(currentACL, 'deleteDatabase') == 0:
-                return ACLManager.loadErrorJson('deleteStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'deleteDatabase') == 0:
+                return Amanager.loadErrorJson('deleteStatus', 0)
 
             dbName = data['dbName']
             db = Databases.objects.get(dbName=dbName)
 
-            if ACLManager.checkOwnership(db.website.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(db.website.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             result = mysqlUtilities.submitDBDeletion(dbName)
 
@@ -213,18 +213,18 @@ class DatabaseManager:
             return HttpResponse(json_data)
 
     def listDBs(self, request = None, userID = None):
-        currentACL = ACLManager.loadedACL(userID)
-        AllWebsites = ACLManager.findAllSites(currentACL, userID)
+        currentACL = Amanager.loadedACL(userID)
+        AllWebsites = Amanager.findAllSites(currentACL, userID)
         template = 'databases/listDataBases.html'
         proc = httpProc(request, template, {'AllWebsites': AllWebsites}, 'listDatabases')
         return proc.render()
 
     def changePassword(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listDatabases') == 0:
-                return ACLManager.loadErrorJson('changePasswordStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'listDatabases') == 0:
+                return Amanager.loadErrorJson('changePasswordStatus', 0)
 
             userName = data['dbUserName']
             dbPassword = data['dbPassword']
@@ -233,10 +233,10 @@ class DatabaseManager:
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             try:
                 meta = DBMeta.objects.get(database=db[0], key=DatabaseManager.REMOTE_ACCESS)
@@ -262,20 +262,20 @@ class DatabaseManager:
 
     def remoteAccess(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listDatabases') == 0:
-                return ACLManager.loadErrorJson('changePasswordStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'listDatabases') == 0:
+                return Amanager.loadErrorJson('changePasswordStatus', 0)
 
             userName = data['dbUserName']
 
             db = Databases.objects.filter(dbUser=userName)
 
             admin = Administrator.objects.get(pk=userID)
-            if ACLManager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             try:
                 meta = DBMeta.objects.get(database=db[0], key=DatabaseManager.REMOTE_ACCESS)
@@ -295,10 +295,10 @@ class DatabaseManager:
 
     def allowRemoteIP(self, userID = None, data = None):
         try:
-            currentACL = ACLManager.loadedACL(userID)
+            currentACL = Amanager.loadedACL(userID)
 
-            if ACLManager.currentContextPermission(currentACL, 'listDatabases') == 0:
-                return ACLManager.loadErrorJson('changePasswordStatus', 0)
+            if Amanager.currentContextPermission(currentACL, 'listDatabases') == 0:
+                return Amanager.loadErrorJson('changePasswordStatus', 0)
 
             userName = data['dbUserName']
             remoteIP = data['remoteIP']
@@ -307,10 +307,10 @@ class DatabaseManager:
 
             admin = Administrator.objects.get(pk=userID)
 
-            if ACLManager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
+            if Amanager.checkOwnership(db[0].website.domain, admin, currentACL) == 1:
                 pass
             else:
-                return ACLManager.loadErrorJson()
+                return Amanager.loadErrorJson()
 
             mysqlUtilities.allowRemoteAccess(db[0].dbName, userName, remoteIP)
             mysqlUtilities.createDatabase(db[0].dbName, userName, 'cyberpanel', 0, remoteIP)
@@ -343,8 +343,8 @@ class DatabaseManager:
             path = '/etc/cyberpanel/' + admin.userName
 
 
-            currentACL = ACLManager.loadedACL(userID)
-            websiteOBJs = ACLManager.findWebsiteObjects(currentACL, userID)
+            currentACL = Amanager.loadedACL(userID)
+            websiteOBJs = Amanager.findWebsiteObjects(currentACL, userID)
             finalUserPassword = randomPassword.generate_pass()
 
             writeToFile = open(path, 'w')

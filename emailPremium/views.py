@@ -35,12 +35,12 @@ def emailPolicyServer(request):
 def fetchPolicyServerStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -74,12 +74,12 @@ def fetchPolicyServerStatus(request):
 def savePolicyServerStatus(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -164,12 +164,12 @@ def listDomains(request):
 def getFurtherDomains(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         try:
 
@@ -243,12 +243,12 @@ def getFurtherDomains(request):
 def enableDisableEmailLimits(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         try:
             if request.method == 'POST':
@@ -328,12 +328,12 @@ def emailLimits(request, domain):
 def changeDomainLimit(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
@@ -368,12 +368,12 @@ def changeDomainLimit(request):
 def getFurtherEmail(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -428,12 +428,12 @@ def getFurtherEmail(request):
 def enableDisableIndividualEmailLimits(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
@@ -492,12 +492,12 @@ def emailPage(request, emailAddress):
 def getEmailStats(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
@@ -530,12 +530,12 @@ def getEmailStats(request):
 def enableDisableIndividualEmailLogs(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
@@ -568,12 +568,12 @@ def enableDisableIndividualEmailLogs(request):
 def changeDomainEmailLimitsIndividual(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -642,12 +642,12 @@ def changeDomainEmailLimitsIndividual(request):
 def getEmailLogs(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -696,12 +696,12 @@ def getEmailLogs(request):
 def flushEmailLogs(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -744,12 +744,12 @@ def spamAssassinHome(request):
 def installSpamAssassin(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
@@ -836,12 +836,12 @@ def installStatusSpamAssassin(request):
 def fetchSpamAssassinSettings(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -912,12 +912,12 @@ def fetchSpamAssassinSettings(request):
 def saveSpamAssassinConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -987,12 +987,12 @@ def mailQueue(request):
 def fetchMailQueue(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         data = json.loads(request.body)
 
@@ -1024,12 +1024,12 @@ def fetchMailQueue(request):
 def fetchMessage(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
 
             data = json.loads(request.body)
@@ -1056,12 +1056,12 @@ def fetchMessage(request):
 def flushQueue(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
 
             command = 'postqueue -f'
@@ -1085,12 +1085,12 @@ def flushQueue(request):
 def delete(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
 
             data = json.loads(request.body)
@@ -1139,12 +1139,12 @@ def MailScanner(request):
 def installMailScanner(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
 
             ### Check selinux
@@ -1177,12 +1177,12 @@ def installMailScanner(request):
 def installStatusMailScanner(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         try:
             if request.method == 'POST':
@@ -1236,7 +1236,7 @@ def Rspamd(request):
     url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
     data = {
         "name": "email-debugger",
-        "IP": ACLManager.GetServerIP()
+        "IP": Amanager.GetServerIP()
     }
 
     import requests
@@ -1263,17 +1263,17 @@ def Rspamd(request):
 def installRspamd(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "email-debugger",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -1301,12 +1301,12 @@ def installRspamd(request):
 def installStatusRspamd(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -1358,17 +1358,17 @@ def installStatusRspamd(request):
 def fetchRspamdSettings(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('fetchStatus', 0)
+            return Amanager.loadErrorJson('fetchStatus', 0)
 
         url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
         data = {
             "name": "email-debugger",
-            "IP": ACLManager.GetServerIP()
+            "IP": Amanager.GetServerIP()
         }
 
         import requests
@@ -1587,12 +1587,12 @@ def fetchRspamdSettings(request):
 def saveRspamdConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1623,12 +1623,12 @@ def saveRspamdConfigurations(request):
 def savepostfixConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1659,12 +1659,12 @@ def savepostfixConfigurations(request):
 def saveRedisConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1695,12 +1695,12 @@ def saveRedisConfigurations(request):
 def saveclamavConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson('saveStatus', 0)
+            return Amanager.loadErrorJson('saveStatus', 0)
 
         try:
             if request.method == 'POST':
@@ -1732,12 +1732,12 @@ def unistallRspamd(request):
     try:
         logging.CyberCPLogFileWriter.writeToFile("unistallRspamd...1")
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
 
         try:
@@ -1766,12 +1766,12 @@ def unistallRspamd(request):
 def uninstallStatusRspamd(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             if request.method == 'POST':
 
@@ -1823,12 +1823,12 @@ def uninstallStatusRspamd(request):
 def FetchRspamdLog(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         fileName = "/var/log/rspamd/rspamd.log"
         try:
@@ -1851,12 +1851,12 @@ def FetchRspamdLog(request):
 def RestartRspamd(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         try:
             command = "systemctl restart rspamd"
             ProcessUtilities.executioner(command)
@@ -1887,7 +1887,7 @@ def EmailDebugger(request):
     url = "https://platform.cyberpersons.com/CyberpanelAdOns/Adonpermission"
     data = {
         "name": "email-debugger",
-        "IP": ACLManager.GetServerIP()
+        "IP": Amanager.GetServerIP()
     }
 
     import requests
@@ -1896,14 +1896,14 @@ def EmailDebugger(request):
 
     if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
-        currentACL = ACLManager.loadedACL(userID)
-        websitesName = ACLManager.findAllSites(currentACL, userID)
+            return Amanager.loadErrorJson()
+        currentACL = Amanager.loadedACL(userID)
+        websitesName = Amanager.findAllSites(currentACL, userID)
 
         proc = httpProc(request, 'emailPremium/EmailDebugger.html',
                         {'websiteList': websitesName}, 'admin')
@@ -1914,14 +1914,14 @@ def EmailDebugger(request):
 def RunServerLevelEmailChecks(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
-        if ACLManager.CheckForPremFeature('email-debugger'):
+        if Amanager.CheckForPremFeature('email-debugger'):
             ob = CloudManager()
             res = ob.RunServerLevelEmailChecks()
             return res
@@ -1938,13 +1938,13 @@ def RunServerLevelEmailChecks(request):
 def ResetEmailConfigurations(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
-        if ACLManager.CheckForPremFeature('email-debugger'):
+            return Amanager.loadErrorJson()
+        if Amanager.CheckForPremFeature('email-debugger'):
             ob = CloudManager()
             res = ob.ResetEmailConfigurations()
             return res
@@ -1960,12 +1960,12 @@ def ResetEmailConfigurations(request):
 def statusFunc(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
 
         ob = CloudManager(json.loads(request.body))
         res = ob.statusFunc()
@@ -1978,20 +1978,20 @@ def statusFunc(request):
 def ReadReport(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
-        if ACLManager.CheckForPremFeature('email-debugger'):
+            return Amanager.loadErrorJson()
+        if Amanager.CheckForPremFeature('email-debugger'):
             try:
                 ob = CloudManager(json.loads(request.body))
                 res = ob.ReadReport()
                 Result = json.loads(res.content)
                 status = Result['status']
                 #fetch Ip
-                IP = ACLManager.GetServerIP()
+                IP = Amanager.GetServerIP()
                 if status == 1:
                     def CheckPort(port):
                         import socket
@@ -2063,13 +2063,13 @@ def ReadReport(request):
 def debugEmailForSite(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
-        if ACLManager.CheckForPremFeature('email-debugger'):
+            return Amanager.loadErrorJson()
+        if Amanager.CheckForPremFeature('email-debugger'):
             ob = CloudManager(json.loads(request.body))
             res = ob.debugEmailForSite()
             return res
@@ -2083,14 +2083,14 @@ def debugEmailForSite(request):
 def fixMailSSL(request):
     try:
         userID = request.session['userID']
-        currentACL = ACLManager.loadedACL(userID)
+        currentACL = Amanager.loadedACL(userID)
 
         if currentACL['admin'] == 1:
             pass
         else:
-            return ACLManager.loadErrorJson()
+            return Amanager.loadErrorJson()
         admin = Administrator.objects.get(pk=userID)
-        if ACLManager.CheckForPremFeature('email-debugger'):
+        if Amanager.CheckForPremFeature('email-debugger'):
             cm = CloudManager(json.loads(request.body), admin)
             res = cm.fixMailSSL(request)
             if os.path.exists(ProcessUtilities.debugPath):
