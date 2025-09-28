@@ -27,8 +27,8 @@ class DNS:
     nsd_base = "/etc/nsd/nsd.conf"
     zones_base_dir = "/usr/local/lsws/conf/zones/"
     create_zone_dir = "/usr/local/lsws/conf/zones"
-    defaultNameServersPath = '/home/cyberpanel/defaultNameservers'
-    CFPath = '/home/cyberpanel/CloudFlare'
+    defaultNameServersPath = '/home/core/defaultNameservers'
+    CFPath = '/home/core/CloudFlare'
 
     ## DNS Functions
 

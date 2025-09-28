@@ -32,7 +32,7 @@ if [ $? -eq 0 ]; then
     echo "To verify the reset, you can:"
     echo "1. Check the CyberPanel logs: /usr/local/lscp/logs/error.log"
     echo "2. Check individual domain bandwidth in CyberPanel web interface"
-    echo "3. Check bandwidth metadata files: ls -la /home/cyberpanel/*.bwmeta"
+    echo "3. Check bandwidth metadata files: ls -la /home/core/*.bwmeta"
 else
     echo ""
     echo "Bandwidth reset failed. Please check the logs for details."

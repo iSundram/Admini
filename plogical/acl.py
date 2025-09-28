@@ -109,7 +109,7 @@ class ACLManager:
             ipData = f.read()
             ipAddress = ipData.split('\n', 1)[0]
 
-            config = json.loads(open('/home/cyberpanel/cluster', 'r').read())
+            config = json.loads(open('/home/core/cluster', 'r').read())
             if config['failoverServerIP'] == ipAddress:
                 return 1
             else:
@@ -966,10 +966,10 @@ class ACLManager:
                     return 1
             return 0
 
-        if (statusFile[:18] != "/home/cyberpanel/." or statusFile[:16] == "/home/cyberpanel" or statusFile[:4] == '/tmp' or statusFile[
+        if (statusFile[:18] != "/home/core/." or statusFile[:16] == "/home/core" or statusFile[:4] == '/tmp' or statusFile[
                                                                                                                  :18] == '/usr/local/core') \
                 and statusFile != '/usr/local/core/CyberCP/settings.py' and statusFile.find(
-            '..') == -1 and statusFile != '/home/cyberpanel/.my.cnf' and statusFile != '/home/cyberpanel/.bashrc' and statusFile != '/home/cyberpanel/.bash_logout' and statusFile != '/home/cyberpanel/.profile':
+            '..') == -1 and statusFile != '/home/core/.my.cnf' and statusFile != '/home/core/.bashrc' and statusFile != '/home/core/.bash_logout' and statusFile != '/home/core/.profile':
             return 1
         else:
             return 0
@@ -1004,12 +1004,12 @@ class ACLManager:
 
     @staticmethod
     def GetServiceStatus(dic):
-        if os.path.exists('/home/cyberpanel/postfix'):
+        if os.path.exists('/home/core/postfix'):
             dic['emailAsWhole'] = 1
         else:
             dic['emailAsWhole'] = 0
 
-        if os.path.exists('/home/cyberpanel/pureftpd'):
+        if os.path.exists('/home/core/pureftpd'):
             dic['ftpAsWhole'] = 1
         else:
             dic['ftpAsWhole'] = 0
@@ -1413,7 +1413,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'sysctl --system'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod 700 %s' % ('/home/cyberpanel')
+            command = 'chmod 700 %s' % ('/home/core')
             ProcessUtilities.executioner(command, 'root', True)
 
             destPrivKey = "/usr/local/lscp/conf/key.pem"

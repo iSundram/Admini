@@ -124,7 +124,7 @@ def resetftpnow(request):
             return Amanager.loadErrorJson('FilemanagerAdmin', 0)
 
         data = json.loads(request.body)
-        tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+        tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
         execPath = f"/usr/local/core/bin/python /usr/local/core/ftp/ftpManager.py ResetFTPConfigurations --tempStatusPath {tempStatusPath}"
 

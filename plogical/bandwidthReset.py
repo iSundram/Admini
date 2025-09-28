@@ -90,7 +90,7 @@ class BandwidthReset:
             import glob
             
             # Clean up main bandwidth metadata files
-            metadata_files = glob.glob("/home/cyberpanel/*.bwmeta")
+            metadata_files = glob.glob("/home/core/*.bwmeta")
             for file_path in metadata_files:
                 try:
                     # Reset the metadata file to 0 usage

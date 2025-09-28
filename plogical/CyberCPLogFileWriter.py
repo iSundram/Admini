@@ -5,7 +5,7 @@ import os
 import smtplib
 
 class CyberCPLogFileWriter:
-    fileName = "/home/cyberpanel/error-logs.txt"
+    fileName = "/home/core/error-logs.txt"
 
     @staticmethod
     def AddFromHeader(sender, message):
@@ -22,7 +22,7 @@ class CyberCPLogFileWriter:
     @staticmethod
     def SendEmail(sender, receivers, message, subject=None, type=None):
         try:
-            smtpPath = '/home/cyberpanel/smtpDetails'
+            smtpPath = '/home/core/smtpDetails'
 
             if os.path.exists(smtpPath):
                 import json
@@ -67,7 +67,7 @@ class CyberCPLogFileWriter:
             try:
                 if os.path.exists(emailPath):
                     SUBJECT = "CyberPanel log reporting"
-                    adminEmailPath = '/home/cyberpanel/adminEmail'
+                    adminEmailPath = '/home/core/adminEmail'
                     adminEmail = open(adminEmailPath, 'r').read().rstrip('\n')
                     sender = 'root@%s' % (socket.gethostname())
                     TO = [adminEmail]

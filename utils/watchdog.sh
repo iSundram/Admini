@@ -151,15 +151,15 @@ fi
 while [ true = true ]
 	do
 		if [[ $NAME == "pdns" ]] ; then
-			if [ -f /home/cyberpanel/powerdns ] ; then
+			if [ -f /home/core/powerdns ] ; then
 				check_service
 			fi
 		elif [[ $NAME == "postfix" ]] ; then
-			if  [ -f /home/cyberpanel/postfix ] ; then
+			if  [ -f /home/core/postfix ] ; then
 				check_service
 			fi
 		elif [[ $name == "pure-ftpd" ]] || [[ $name == "pure-ftpd-mysql" ]] ; then
-			if [ -f /home/cyberpanel/pureftpd ] ; then
+			if [ -f /home/core/pureftpd ] ; then
 				if [ -f /etc/lsb-release ] ; then
 					NAME="pure-ftpd-mysql"
 				else

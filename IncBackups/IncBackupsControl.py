@@ -123,7 +123,7 @@ class IncJobs(multi.Thread):
 
     def getAWSData(self):
         key = self.backupDestinations.split('/')[-1]
-        path = '/home/cyberpanel/aws/%s' % (key)
+        path = '/home/core/aws/%s' % (key)
         secret = open(path, 'r').read()
         return key, secret
 
@@ -387,10 +387,10 @@ class IncJobs(multi.Thread):
 
                 ## Restore proper permissions
 
-                command = 'chown cyberpanel:cyberpanel /home/cyberpanel'
+                command = 'chown cyberpanel:cyberpanel /home/core'
                 ProcessUtilities.executioner(command)
 
-                command = 'chmod 755 /home/cyberpanel'
+                command = 'chmod 755 /home/core'
                 ProcessUtilities.executioner(command)
 
                 ##

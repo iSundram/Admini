@@ -12,7 +12,7 @@ from plogical.processUtilities import ProcessUtilities
 
 
 class CSF(multi.Thread):
-    installLogPath = "/home/cyberpanel/csfInstallLog"
+    installLogPath = "/home/core/csfInstallLog"
     csfURL = 'https://download.configserver.com/csf.tgz'
 
     def __init__(self, installApp, extraArgs):
@@ -673,8 +673,8 @@ cp cyberpanel/cyberpanel.pl /usr/local/csf/bin/
 chmod 700 /usr/local/csf/bin/cyberpanel.pl
 cp -avf cyberpanel/configservercsf /usr/local/core/
 
-mkdir /home/cyberpanel/plugins
-touch /home/cyberpanel/plugins/configservercsf
+mkdir /home/core/plugins
+touch /home/core/plugins/configservercsf
 
 if ! cat /usr/local/core/CyberCP/settings.py | grep -q configservercsf; then
     sed -i "/pluginHolder/ i \ \ \ \ 'configservercsf'," /usr/local/core/CyberCP/settings.py

@@ -16,7 +16,7 @@ from django.urls import reverse
 
 class phpUtilities:
 
-    installLogPath = "/home/cyberpanel/phpExtensionRequestLog"
+    installLogPath = "/home/core/phpExtensionRequestLog"
 
     @staticmethod
     def installPHPExtension(extension,extensions):

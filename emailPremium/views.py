@@ -939,7 +939,7 @@ def saveSpamAssassinConfigurations(request):
 
                 ## writing data temporary to file
 
-                tempConfigPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                tempConfigPath = "/home/core/" + str(randint(1000, 9999))
 
                 confPath = open(tempConfigPath, "w")
 
@@ -1597,7 +1597,7 @@ def saveRspamdConfigurations(request):
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
-                tempfilepath = "/home/cyberpanel/tempfilerspamdconfigs"
+                tempfilepath = "/home/core/tempfilerspamdconfigs"
                 json_object = json.dumps(data, indent=4)
                 writeDataToFile = open(tempfilepath, "w")
                 writeDataToFile.write(json_object)
@@ -1633,7 +1633,7 @@ def savepostfixConfigurations(request):
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
-                tempfilepath = "/home/cyberpanel/tempfilepostfixconfigs"
+                tempfilepath = "/home/core/tempfilepostfixconfigs"
                 json_object = json.dumps(data, indent=4)
                 writeDataToFile = open(tempfilepath, "w")
                 writeDataToFile.write(json_object)
@@ -1669,7 +1669,7 @@ def saveRedisConfigurations(request):
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
-                tempfilepath = "/home/cyberpanel/saveRedisConfigurations"
+                tempfilepath = "/home/core/saveRedisConfigurations"
                 json_object = json.dumps(data, indent=4)
                 writeDataToFile = open(tempfilepath, "w")
                 writeDataToFile.write(json_object)
@@ -1705,7 +1705,7 @@ def saveclamavConfigurations(request):
         try:
             if request.method == 'POST':
                 data = json.loads(request.body)
-                tempfilepath = "/home/cyberpanel/saveclamavConfigurations"
+                tempfilepath = "/home/core/saveclamavConfigurations"
                 json_object = json.dumps(data, indent=4)
                 writeDataToFile = open(tempfilepath, "w")
                 writeDataToFile.write(json_object)

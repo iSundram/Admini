@@ -27,7 +27,7 @@ class backupSchedule:
     INFO = 0
     ERROR = 1
     backupLog = ''
-    runningPath = '/home/cyberpanel/remoteBackupPID'
+    runningPath = '/home/core/remoteBackupPID'
 
     @staticmethod
     def remoteBackupLogging(fileName, message, status = 0):
@@ -53,7 +53,7 @@ class backupSchedule:
 
             ###
             randNBR = str(randint(10**9, 10**10 - 1))
-            pathToFile = "/home/cyberpanel/" + randNBR
+            pathToFile = "/home/core/" + randNBR
             file = open(pathToFile, "w+")
             file.close()
 
@@ -70,7 +70,7 @@ class backupSchedule:
 
             backupSchedule.remoteBackupLogging(backupLogPath, "Waiting for backup to complete.. ")
             time.sleep(5)
-            schedulerPath = '/home/cyberpanel/%s-backup.txt' % (virtualHost)
+            schedulerPath = '/home/core/%s-backup.txt' % (virtualHost)
 
             killCounter = 0
 

@@ -569,10 +569,10 @@ def topProcessesStatus(request):
         else:
             return Amanager.loadError()
 
-        with open("/home/cyberpanel/top", "w") as outfile:
+        with open("/home/core/top", "w") as outfile:
             subprocess.call("top -n1 -b", shell=True, stdout=outfile)
 
-        data = open('/home/cyberpanel/top', 'r').readlines()
+        data = open('/home/core/top', 'r').readlines()
 
         json_data = "["
         checker = 0
@@ -1131,7 +1131,7 @@ def lockStatus(request):
             yumConfData = ProcessUtilities.outputExecutioner('cat %s' % (yumConf))
             data = yumConfData.splitlines()
 
-            yumConfTmp = '/home/cyberpanel/yumTemp'
+            yumConfTmp = '/home/core/yumTemp'
 
             if type == 0:
                 writeToFile = open(yumConfTmp, 'w')
@@ -1176,7 +1176,7 @@ def lockStatus(request):
         return HttpResponse(json_data)
 
 
-def CyberPanelPort(request):
+def AdminiPort(request):
     port = ProcessUtilities.fetchCurrentPort()
     proc = httpProc(request, "serverStatus/changeCyberPanelPort.html", {'port': port}, 'admin')
     return proc.render()

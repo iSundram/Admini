@@ -35,12 +35,12 @@ except:
 
 class mailUtilities:
 
-    installLogPath = "/home/cyberpanel/openDKIMInstallLog"
-    spamassassinInstallLogPath = "/home/cyberpanel/spamassassinInstallLogPath"
-    RspamdInstallLogPath = "/home/cyberpanel/RspamdInstallLogPath"
-    RspamdUnInstallLogPath = "/home/cyberpanel/RspamdUnInstallLogPath"
-    cyberPanelHome = "/home/cyberpanel"
-    mailScannerInstallLogPath = "/home/cyberpanel/mailScannerInstallLogPath"
+    installLogPath = "/home/core/openDKIMInstallLog"
+    spamassassinInstallLogPath = "/home/core/spamassassinInstallLogPath"
+    RspamdInstallLogPath = "/home/core/RspamdInstallLogPath"
+    RspamdUnInstallLogPath = "/home/core/RspamdUnInstallLogPath"
+    cyberPanelHome = "/home/core"
+    mailScannerInstallLogPath = "/home/core/mailScannerInstallLogPath"
     RSpamdLogPath = '/var/log/rspamd/rspamd.log'
 
     @staticmethod
@@ -1127,7 +1127,7 @@ LogFile /var/log/clamav/clamav.log
     def changeRspamdConfig(install, changeRspamdConfig):
         try:
 
-            tempfilepath = "/home/cyberpanel/tempfilerspamdconfigs"
+            tempfilepath = "/home/core/tempfilerspamdconfigs"
             file= open(tempfilepath, "r")
             jsondata1 = file.read()
             jsondata = json.loads(jsondata1)
@@ -1209,7 +1209,7 @@ LogFile /var/log/clamav/clamav.log
     @staticmethod
     def changePostfixConfig(install , changePostfixConfig):
         try:
-            tempfilepath = "/home/cyberpanel/tempfilepostfixconfigs"
+            tempfilepath = "/home/core/tempfilepostfixconfigs"
             file = open(tempfilepath, "r")
             jsondata1 = file.read()
             jsondata = json.loads(jsondata1)
@@ -1246,7 +1246,7 @@ LogFile /var/log/clamav/clamav.log
     @staticmethod
     def changeRedisxConfig(install, changeRedisxConfig):
         try:
-            tempfilepath = "/home/cyberpanel/saveRedisConfigurations"
+            tempfilepath = "/home/core/saveRedisConfigurations"
             file = open(tempfilepath, "r")
             jsondata1 = file.read()
             jsondata = json.loads(jsondata1)
@@ -1282,7 +1282,7 @@ LogFile /var/log/clamav/clamav.log
     @staticmethod
     def changeclamavConfig(install, changeclamavConfig):
         try:
-            tempfilepath = "/home/cyberpanel/saveclamavConfigurations"
+            tempfilepath = "/home/core/saveclamavConfigurations"
             file = open(tempfilepath, "r")
             jsondata1 = file.read()
             jsondata = json.loads(jsondata1)
@@ -2587,10 +2587,10 @@ class MailServerManagerUtils(multi.Thread):
 
             self.fixCyberPanelPermissions()
 
-            command = '/usr/local/core/bin/python /usr/local/core/dns/dnsManager.py ResetDNSConfigurations --tempStatusPath /home/cyberpanel/dnscheck'
+            command = '/usr/local/core/bin/python /usr/local/core/dns/dnsManager.py ResetDNSConfigurations --tempStatusPath /home/core/dnscheck'
             ProcessUtilities.executioner(command)
 
-            command = 'touch /home/cyberpanel/postfix'
+            command = 'touch /home/core/postfix'
             ProcessUtilities.executioner(command)
 
             ###

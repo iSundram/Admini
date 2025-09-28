@@ -250,7 +250,7 @@ KeepAliveTimeout 5
 sudo cyberpanel --update
 
 # Or use the upgrade script
-sudo ./cyberpanel_upgrade.sh
+sudo ./core_upgrade.sh
 ```
 
 ### System Maintenance

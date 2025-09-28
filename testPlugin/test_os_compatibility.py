@@ -251,7 +251,7 @@ class OSCompatibilityTester:
         
         try:
             # Test if we can create files in plugin directory
-            plugin_dir = "/home/cyberpanel/plugins"
+            plugin_dir = "/home/core/plugins"
             cyberpanel_dir = "/usr/local/core"
             
             can_create_plugin_dir = True

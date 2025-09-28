@@ -138,7 +138,7 @@ class cPanelImporter:
                 Cert.append(items)
 
 
-        KeyPath = '/home/cyberpanel/%s' % (str(randint(1000, 9999)))
+        KeyPath = '/home/core/%s' % (str(randint(1000, 9999)))
 
         writeToFile = open(KeyPath, 'w')
 
@@ -149,7 +149,7 @@ class cPanelImporter:
 
         ##
 
-        CertPath = '/home/cyberpanel/%s' % (str(randint(1000, 9999)))
+        CertPath = '/home/core/%s' % (str(randint(1000, 9999)))
 
         writeToFile = open(CertPath, 'w')
 
@@ -615,7 +615,7 @@ class cPanelImporter:
                 mysqlport = '3306'
                 mysqluser = 'root'
 
-            cnfPath = '/home/cyberpanel/.my.cnf'
+            cnfPath = '/home/core/.my.cnf'
 
             if not os.path.exists(cnfPath):
                 cnfContent = """[mysqldump]
@@ -657,7 +657,7 @@ password=%s
                         message = 'Failed while restoring database %s from backup file %s, error message: %s' % (items.replace('.sql', ''), self.backupFile, str(msg))
                         logging.statusWriter(self.logFile, message, 1)
 
-                    command =  f'mysql --defaults-file=/home/cyberpanel/.my.cnf -u {mysqluser} --host={mysqlhost} --port {mysqlport} ' + items.replace('.sql', '')
+                    command =  f'mysql --defaults-file=/home/core/.my.cnf -u {mysqluser} --host={mysqlhost} --port {mysqlport} ' + items.replace('.sql', '')
 
                     message = f'Full command to restore DB {command}'
                     logging.statusWriter(self.logFile, message, 1)
@@ -1006,7 +1006,7 @@ password=%s
 
 
 def main():
-    LogFile = '/home/cyberpanel/%s' % (str(randint(1000, 9999)))
+    LogFile = '/home/core/%s' % (str(randint(1000, 9999)))
     message = 'Backup logs to be generated in %s' % (LogFile)
     print(message)
 

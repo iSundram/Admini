@@ -389,7 +389,7 @@ def saveModifications(request):
 
             user.save()
 
-            adminEmailPath = '/home/cyberpanel/adminEmail'
+            adminEmailPath = '/home/core/adminEmail'
 
             if accountUsername == 'admin':
                 writeToFile = open(adminEmailPath, 'w')

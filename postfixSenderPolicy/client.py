@@ -7,7 +7,7 @@ import argparse
 from plogical.mailUtilities import mailUtilities
 
 class cacheClient:
-    cleaningPath = '/home/cyberpanel/purgeCache'
+    cleaningPath = '/home/core/purgeCache'
 
     @staticmethod
     def handleCachePurgeRequest(command):

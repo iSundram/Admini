@@ -249,7 +249,7 @@ class PHPManager:
         command = "cat " + path
         data = ProcessUtilities.outputExecutioner(command).splitlines()
 
-        tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+        tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
         writeToFile = open(tempStatusPath, 'w')
 
@@ -360,7 +360,7 @@ class PHPManager:
 
         path = PHPManager.FindPHPFPMPath(phpVersion)
 
-        tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+        tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
         writeToFile = open(tempStatusPath, 'w')
         writeToFile.write(configData)

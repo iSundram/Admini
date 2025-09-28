@@ -83,7 +83,7 @@ class Docker_Sites(multi.Thread):
 
                 ports = f'{tcpIN},8088'
 
-                portsPath = '/home/cyberpanel/' + str(randint(1000, 9999))
+                portsPath = '/home/core/' + str(randint(1000, 9999))
 
                 if os.path.exists(portsPath):
                     os.remove(portsPath)
@@ -101,7 +101,7 @@ class Docker_Sites(multi.Thread):
 
                 ports = f'{tcpOUT},8088'
 
-                portsPath = '/home/cyberpanel/' + str(randint(1000, 9999))
+                portsPath = '/home/core/' + str(randint(1000, 9999))
 
                 if os.path.exists(portsPath):
                     os.remove(portsPath)
@@ -445,7 +445,7 @@ services:
                 logging.statusWriter(self.JobID, f'Error {str(message)} . [404]')
                 return 0
 
-            TempCompose = f'/home/cyberpanel/{self.data["finalURL"]}-docker-compose.yml'
+            TempCompose = f'/home/core/{self.data["finalURL"]}-docker-compose.yml'
 
             WriteToFile = open(TempCompose, 'w')
             WriteToFile.write(WPSite)
@@ -1257,7 +1257,7 @@ services:
                 self.data['ServiceName'] = self.data["SiteName"].replace(' ', '-')
                 compose_config = self.generate_compose_config()
                 
-                TempCompose = f'/home/cyberpanel/{self.data["finalURL"]}-docker-compose.yml'
+                TempCompose = f'/home/core/{self.data["finalURL"]}-docker-compose.yml'
                 with open(TempCompose, 'w') as f:
                     f.write(compose_config)
                 
@@ -1489,7 +1489,7 @@ def Main():
             # port, SitePath, CPUsSite, MemorySite, SiteName
             # finalURL, blogTitle, adminUser, adminPassword, adminEmail, htaccessPath, externalApp
             data = {
-                "JobID": '/home/cyberpanel/hey.txt',
+                "JobID": '/home/core/hey.txt',
                 "ComposePath": "/home/docker.cyberpanel.net/docker-compose.yml",
                 "MySQLPath": '/home/docker.cyberpanel.net/public_html/sqldocker',
                 "MySQLRootPass": 'testdbwp12345',

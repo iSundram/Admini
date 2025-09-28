@@ -15,7 +15,7 @@ import grp
 
 
 class SetupConn:
-    cleaningPath = '/home/cyberpanel/purgeCache'
+    cleaningPath = '/home/core/purgeCache'
     applicationPath = '/usr/local/core/postfixSenderPolicy/pid'
     serverAddress = '/var/log/policyServerSocket'
 

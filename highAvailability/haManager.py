@@ -180,7 +180,7 @@ class HAManager(multi.Thread):
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can create clusters.')
 
-            composePath = '/home/cyberpanel/composePath'
+            composePath = '/home/core/composePath'
 
             if not os.path.exists(composePath):
                 os.mkdir(composePath)
@@ -209,7 +209,7 @@ class HAManager(multi.Thread):
             if currentACL['admin'] == 0:
                 return proc.ajax(0, 'Only administrators can create clusters.')
 
-            composePath = '/home/cyberpanel/composePath'
+            composePath = '/home/core/composePath'
             composeFile = composePath + '/docker-compose.yml'
 
             data = open(composeFile, 'r').readlines()

@@ -541,7 +541,7 @@ class FirewallManager:
 
             key = data['key']
 
-            tempPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempPath, "w")
             writeToFile.write(key)
@@ -849,7 +849,7 @@ class FirewallManager:
                 ## writing data temporary to file
 
 
-                tempConfigPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                tempConfigPath = "/home/core/" + str(randint(1000, 9999))
 
                 confPath = open(tempConfigPath, "w")
 
@@ -905,7 +905,7 @@ class FirewallManager:
                 ## writing data temporary to file
 
 
-                tempConfigPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                tempConfigPath = "/home/core/" + str(randint(1000, 9999))
 
                 confPath = open(tempConfigPath, "w")
 
@@ -1573,7 +1573,7 @@ class FirewallManager:
             protocol = data['protocol']
             ports = data['ports']
 
-            portsPath = '/home/cyberpanel/' + str(randint(1000, 9999))
+            portsPath = '/home/core/' + str(randint(1000, 9999))
 
             if os.path.exists(portsPath):
                 os.remove(portsPath)
@@ -1801,7 +1801,7 @@ class FirewallManager:
 
             currentLitespeed_conf = data['modSecRules']
 
-            tempRulesPath = '/home/cyberpanel/pre_main_global.conf'
+            tempRulesPath = '/home/core/pre_main_global.conf'
 
             WriteToFile = open(tempRulesPath, 'w')
             WriteToFile.write(currentLitespeed_conf)

@@ -43,7 +43,7 @@ class FTPManager:
 
         admin = Administrator.objects.get(pk=userID)
 
-        if not os.path.exists('/home/cyberpanel/pureftpd'):
+        if not os.path.exists('/home/core/pureftpd'):
             proc = httpProc(self.request, 'ftp/createFTPAccount.html',
                             {"status": 0}, 'createFTPAccount')
             return proc.render()
@@ -112,7 +112,7 @@ class FTPManager:
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/pureftpd'):
+        if not os.path.exists('/home/core/pureftpd'):
             proc = httpProc(self.request, 'ftp/deleteFTPAccount.html',
                             {"status": 0}, 'deleteFTPAccount')
             return proc.render()
@@ -198,7 +198,7 @@ class FTPManager:
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/pureftpd'):
+        if not os.path.exists('/home/core/pureftpd'):
             proc = httpProc(self.request, 'ftp/listFTPAccounts.html',
                             {"status": 0}, 'listFTPAccounts')
             return proc.render()

@@ -37,7 +37,7 @@ from plogical.IncScheduler import IncScheduler
 from django.http import JsonResponse
 
 class BackupManager:
-    localBackupPath = '/home/cyberpanel/localBackupPath'
+    localBackupPath = '/home/core/localBackupPath'
 
     def __init__(self, domain=None, childDomain=None):
         self.domain = domain
@@ -1038,7 +1038,7 @@ class BackupManager:
 
             command = "cat " + path
             output = ProcessUtilities.outputExecutioner(command).split('\n')
-            tempCronPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempCronPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempCronPath, 'w')
 
@@ -1146,7 +1146,7 @@ class BackupManager:
 
             mailUtilities.checkHome()
 
-            pathToKey = "/home/cyberpanel/" + str(randint(1000, 9999))
+            pathToKey = "/home/core/" + str(randint(1000, 9999))
 
             vhost = open(pathToKey, "w")
             vhost.write(pubKey)
@@ -1915,7 +1915,7 @@ class BackupManager:
             else:
                 return Amanager.loadError()
 
-            statusFile = f'/home/cyberpanel/{domain}_rustic_backup_log'
+            statusFile = f'/home/core/{domain}_rustic_backup_log'
 
             if Amanager.CheckStatusFilleLoc(statusFile, domain):
                 pass
@@ -1925,7 +1925,7 @@ class BackupManager:
                 json_data = json.dumps(data_ret)
                 return HttpResponse(json_data)
 
-            #currentStatus:"cat: /home/cyberpanel/9219: No such file or directory"
+            #currentStatus:"cat: /home/core/9219: No such file or directory"
 
             statusData = ProcessUtilities.outputExecutioner("cat " + statusFile).splitlines()
 
@@ -2316,7 +2316,7 @@ class BackupManager:
             extraArgs['folder'] = folder
             extraArgs['backupfile'] = backupfile
             extraArgs['userID'] = userID
-            extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+            extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
 
             statusFile = open(extraArgs['tempStatusPath'], 'w')
             statusFile.writelines("Restore started..")

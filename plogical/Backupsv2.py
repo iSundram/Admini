@@ -132,8 +132,8 @@ class CPBackupsV2(multi.Thread):
 
         ##
 
-        self.StatusFile = f'/home/cyberpanel/{self.website.domain}_rustic_backup_log'
-        self.StatusFile_Restore = f'/home/cyberpanel/{self.website.domain}_rustic_backup_log_Restore'
+        self.StatusFile = f'/home/core/{self.website.domain}_rustic_backup_log'
+        self.StatusFile_Restore = f'/home/core/{self.website.domain}_rustic_backup_log_Restore'
 
         ## restore or backup?
 
@@ -1073,7 +1073,7 @@ team_drive =
     @staticmethod
     def FetchCurrentSchedules(website):
         try:
-            finalConfigPath = f'/home/cyberpanel/v2backups/{website}'
+            finalConfigPath = f'/home/core/v2backups/{website}'
 
             if os.path.exists(finalConfigPath):
                 command = f'cat {finalConfigPath}'
@@ -1128,7 +1128,7 @@ team_drive =
     @staticmethod
     def DeleteSchedule(website, repo, frequency, websiteData, websiteDatabases, websiteEmails):
         try:
-            finalConfigPath = f'/home/cyberpanel/v2backups/{website}'
+            finalConfigPath = f'/home/core/v2backups/{website}'
 
             if os.path.exists(finalConfigPath):
                 command = f'cat {finalConfigPath}'
@@ -1162,11 +1162,11 @@ team_drive =
     def CreateScheduleV2(website, repo, frequency, websiteData, websiteDatabases, websiteEmails, retention):
         try:
 
-            finalConfigPath = f'/home/cyberpanel/v2backups/{website}'
+            finalConfigPath = f'/home/core/v2backups/{website}'
 
-            if not os.path.exists('/home/cyberpanel/v2backups/'):
+            if not os.path.exists('/home/core/v2backups/'):
 
-                command = 'mkdir -p /home/cyberpanel/v2backups/'
+                command = 'mkdir -p /home/core/v2backups/'
                 ProcessUtilities.executioner(command, 'cyberpanel')
 
 

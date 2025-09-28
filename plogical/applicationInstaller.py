@@ -1587,7 +1587,7 @@ class ApplicationInstaller(multi.Thread):
 
                 import re
                 from plogical.virtualHostUtilities import virtualHostUtilities
-                tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                tempStatusPath = "/home/core/" + str(randint(1000, 9999))
                 externalApp = "".join(re.findall("[a-zA-Z]+", self.extraArgs['domain']))[:5] + str(randint(1000, 9999))
 
                 virtualHostUtilities.createVirtualHost(self.extraArgs['domain'], self.extraArgs['email'], 'PHP 8.1',
@@ -1607,7 +1607,7 @@ class ApplicationInstaller(multi.Thread):
 
             currentTemp = self.extraArgs['tempStatusPath']
             self.extraArgs['domainName'] = self.extraArgs['domain']
-            self.extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+            self.extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
             self.extraArgs['blogTitle'] = self.extraArgs['title']
             self.extraArgs['adminUser'] = self.extraArgs['userName']
             self.extraArgs['adminPassword'] = self.extraArgs['password']
@@ -2006,7 +2006,7 @@ class ApplicationInstaller(multi.Thread):
                 pass
 
             currentTemp = self.extraArgs['tempStatusPath']
-            self.extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+            self.extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
             self.extraArgs['SavedPlugins'] = SavedPlugins
             self.extraArgs['AllPluginsList'] = AllPluginsList
             self.installWordPress()
@@ -2676,12 +2676,12 @@ class ApplicationInstaller(multi.Thread):
                 config['SFTP_ID'] = SFTP_ID
 
                 ###############Create config.Json file
-                # command = "sudo -u %s touch /home/cyberpanel/config.json" % (VHuser)
+                # command = "sudo -u %s touch /home/core/config.json" % (VHuser)
                 # ProcessUtilities.executioner(command)
                 ###### write into config
 
                 json_object = json.dumps(config, indent=4)
-                configPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                configPath = "/home/core/" + str(randint(1000, 9999))
                 file = open(configPath, "w")
                 file.write(json_object)
                 file.close()
@@ -2833,12 +2833,12 @@ class ApplicationInstaller(multi.Thread):
                 config['SFTP_ID'] = SFTP_ID
 
                 ###############Create config.Json file
-                # command = "sudo -u %s touch /home/cyberpanel/config.json" % (VHuser)
+                # command = "sudo -u %s touch /home/core/config.json" % (VHuser)
                 # ProcessUtilities.executioner(command)
                 ###### write into config
 
                 json_object = json.dumps(config, indent=4)
-                configPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                configPath = "/home/core/" + str(randint(1000, 9999))
                 file = open(configPath, "w")
                 file.write(json_object)
                 file.close()
@@ -2985,11 +2985,11 @@ class ApplicationInstaller(multi.Thread):
                 config['BackupDestination'] = BackupDestination
                 config['SFTP_ID'] = SFTP_ID
                 ###############Create config.Json file
-                # command = "sudo -u %s touch /home/cyberpanel/config.json" % (VHuser)
+                # command = "sudo -u %s touch /home/core/config.json" % (VHuser)
                 # ProcessUtilities.executioner(command)
                 ###### write into config
                 json_object = json.dumps(config, indent=4)
-                configPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                configPath = "/home/core/" + str(randint(1000, 9999))
                 file = open(configPath, "w")
                 file.write(json_object)
                 file.close()
@@ -3186,7 +3186,7 @@ class ApplicationInstaller(multi.Thread):
                 sftp = ssh.open_sftp()
 
                 logging.statusWriter(self.tempStatusPath, 'Downloading Backups...,15')
-                loaclpath = "/home/cyberpanel/%s.tar.gz" % BackUpFileName
+                loaclpath = "/home/core/%s.tar.gz" % BackUpFileName
                 remotepath = "%s/%s.tar.gz" % (Path, BackUpFileName)
                 logging.writeToFile("Downloading start")
 
@@ -3228,7 +3228,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 # with pysftp.Connection(HostName, username=Username, password=Password, cnopts=cnopts) as sftp:
                 #     logging.statusWriter(self.tempStatusPath, 'Downloading Backups...,15')
-                #     loaclpath = "/home/cyberpanel/%s.tar.gz" % BackUpFileName
+                #     loaclpath = "/home/core/%s.tar.gz" % BackUpFileName
                 #     remotepath = "%s/%s.tar.gz" % (Path, BackUpFileName)
                 #     logging.writeToFile("Downloading start")
                 #     sftp.get(str(remotepath), str(loaclpath))
@@ -4369,7 +4369,7 @@ class ApplicationInstaller(multi.Thread):
                     verify=False
                 )
 
-                FinalZipPath = "/home/cyberpanel/%s.tar.gz" % (uploadfilename)
+                FinalZipPath = "/home/core/%s.tar.gz" % (uploadfilename)
                 try:
                     client.download_file(BucketName, uploadfilename, FinalZipPath)
                 except BaseException as msg:
@@ -6709,7 +6709,7 @@ class ApplicationInstaller(multi.Thread):
             sftp = ssh.open_sftp()
 
             logging.statusWriter(self.tempStatusPath, 'Downloading Backups...,15')
-            loaclpath = f'/home/cyberpanel/{backupfile}'
+            loaclpath = f'/home/core/{backupfile}'
             remotepath = f'cpbackups/{folder}/{backupfile}'
             logging.writeToFile("Downloading start")
 
@@ -6733,7 +6733,7 @@ class ApplicationInstaller(multi.Thread):
                     statusFile.close()
 
                     try:
-                        sftp.get(f'cpbackups/{folder}/{backupfile}', f'/home/cyberpanel/{backupfile}',
+                        sftp.get(f'cpbackups/{folder}/{backupfile}', f'/home/core/{backupfile}',
                                  callback=self.UpdateDownloadStatus)
                     except BaseException as msg:
                         logging.writeToFile(f"Failed to download file {str(msg)} [404]")
@@ -6768,14 +6768,14 @@ class ApplicationInstaller(multi.Thread):
             # ssh.connect(ip, username=ocb.sftpUser, pkey=key)
             # sftp = ssh.open_sftp()
             #
-            # sftp.get(f'cpbackups/{folder}/{backupfile}', f'/home/cyberpanel/{backupfile}', callback=self.UpdateDownloadStatus)
+            # sftp.get(f'cpbackups/{folder}/{backupfile}', f'/home/core/{backupfile}', callback=self.UpdateDownloadStatus)
 
             if not os.path.exists('/home/backup'):
                 command = 'mkdir /home/backup'
                 ProcessUtilities.executioner(command)
 
 
-            command = f'mv /home/cyberpanel/{backupfile} /home/backup/{backupfile}'
+            command = f'mv /home/core/{backupfile} /home/backup/{backupfile}'
             ProcessUtilities.executioner(command)
 
             from backup.backupManager import BackupManager

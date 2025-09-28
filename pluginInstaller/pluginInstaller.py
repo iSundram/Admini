@@ -9,8 +9,8 @@ import time
 from plogical.processUtilities import ProcessUtilities
 
 class pluginInstaller:
-    installLogPath = "/home/cyberpanel/modSecInstallLog"
-    tempRulesFile = "/home/cyberpanel/tempModSecRules"
+    installLogPath = "/home/core/modSecInstallLog"
+    tempRulesFile = "/home/core/tempModSecRules"
     mirrorPath = "cyberpanel.net"
 
     @staticmethod
@@ -65,7 +65,7 @@ class pluginInstaller:
 
     @staticmethod
     def informCyberPanel(pluginName):
-        pluginPath = '/home/cyberpanel/plugins'
+        pluginPath = '/home/core/plugins'
 
         if not os.path.exists(pluginPath):
             os.mkdir(pluginPath)
@@ -259,7 +259,7 @@ class pluginInstaller:
 
     @staticmethod
     def informCyberPanelRemoval(pluginName):
-        pluginPath = '/home/cyberpanel/plugins'
+        pluginPath = '/home/core/plugins'
         pluginFile = pluginPath + '/' + pluginName
         if os.path.exists(pluginFile):
             os.remove(pluginFile)

@@ -14,8 +14,8 @@ from plogical.installUtilities import installUtilities
 
 class modSec:
 
-    installLogPath = "/home/cyberpanel/modSecInstallLog"
-    tempRulesFile = "/home/cyberpanel/tempModSecRules"
+    installLogPath = "/home/core/modSecInstallLog"
+    tempRulesFile = "/home/core/tempModSecRules"
     mirrorPath = "cyberpanel.net"
 
     @staticmethod

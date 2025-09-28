@@ -31,7 +31,7 @@ echo -e "========================================\n" >> /var/log/cyberpanel_upgr
 #### this is temp code for csf
 
 rm -Rfv /usr/local/core/configservercsf
-rm -fv /home/cyberpanel/plugins/configservercsf
+rm -fv /home/core/plugins/configservercsf
 rm -Rfv /usr/local/core/public/static/configservercsf
 
 sed -i "/configservercsf/d" /usr/local/core/CyberCP/settings.py

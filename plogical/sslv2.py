@@ -449,7 +449,7 @@ class sslUtilities:
             subprocess.check_output(shlex.split(command))
 
             # if ProcessUtilities.decideDistro() == ProcessUtilities.ubuntu:
-            #     acmePath = '/home/cyberpanel/.acme.sh/acme.sh'
+            #     acmePath = '/home/core/.acme.sh/acme.sh'
 
             if aliasDomain is None:
 

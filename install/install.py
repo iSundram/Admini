@@ -882,7 +882,7 @@ password="%s"
         command = 'sysctl --system'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = 'chmod 700 %s' % ('/home/cyberpanel')
+        command = 'chmod 700 %s' % ('/home/core')
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         destPrivKey = "/usr/local/lscp/conf/key.pem"
@@ -2443,7 +2443,7 @@ milter_default_action = accept
     @staticmethod
     def enableDisableDNS(state):
         try:
-            servicePath = '/home/cyberpanel/powerdns'
+            servicePath = '/home/core/powerdns'
 
             if state == 'off':
 
@@ -2469,7 +2469,7 @@ milter_default_action = accept
     @staticmethod
     def enableDisableEmail(state):
         try:
-            servicePath = '/home/cyberpanel/postfix'
+            servicePath = '/home/core/postfix'
 
             if state == 'off':
 
@@ -2495,7 +2495,7 @@ milter_default_action = accept
     @staticmethod
     def enableDisableFTP(state, distro):
         try:
-            servicePath = '/home/cyberpanel/pureftpd'
+            servicePath = '/home/core/pureftpd'
 
             if state == 'off':
 
@@ -2698,7 +2698,7 @@ vmail
         preFlightsChecks.stdOut("Starting deferred services that depend on database tables...")
         
         # Start PowerDNS if it was installed
-        if os.path.exists('/home/cyberpanel/powerdns'):
+        if os.path.exists('/home/core/powerdns'):
             preFlightsChecks.stdOut("Starting PowerDNS service...")
             command = 'systemctl start pdns'
             result = preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
@@ -2716,7 +2716,7 @@ vmail
                     preFlightsChecks.stdOut("[WARNING] Could not verify PowerDNS service status")
         
         # Start Pure-FTPd if it was installed
-        if os.path.exists('/home/cyberpanel/pureftpd'):
+        if os.path.exists('/home/core/pureftpd'):
             # Configure Pure-FTPd for Ubuntu 24.04 (SHA512 password hashing compatibility)
             if self.distro == ubuntu:
                 import install_utils

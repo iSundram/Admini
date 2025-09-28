@@ -89,7 +89,7 @@ def fetchStatus(request):
                     return HttpResponse(json_data)
 
                 elif service == 'postfix':
-                    if os.path.exists('/home/cyberpanel/postfix'):
+                    if os.path.exists('/home/core/postfix'):
                         data_ret = {'status': 1, 'error_message': 'None', 'installCheck': 1}
                         json_data = json.dumps(data_ret)
                         return HttpResponse(json_data)
@@ -99,7 +99,7 @@ def fetchStatus(request):
                         return HttpResponse(json_data)
 
                 elif service == 'pureftpd':
-                    if os.path.exists('/home/cyberpanel/pureftpd'):
+                    if os.path.exists('/home/core/pureftpd'):
                         data_ret = {'status': 1, 'error_message': 'None', 'installCheck': 1}
                         json_data = json.dumps(data_ret)
                         return HttpResponse(json_data)
@@ -139,7 +139,7 @@ def saveStatus(request):
 
                 if service == 'powerdns':
 
-                    servicePath = '/home/cyberpanel/powerdns'
+                    servicePath = '/home/core/powerdns'
                     if status == True:
                         writeToFile = open(servicePath, 'w+')
                         writeToFile.close()
@@ -211,7 +211,7 @@ def saveStatus(request):
 
                 elif service == 'postfix':
 
-                    servicePath = '/home/cyberpanel/postfix'
+                    servicePath = '/home/core/postfix'
                     if status == True:
                         writeToFile = open(servicePath, 'w+')
                         writeToFile.close()
@@ -235,7 +235,7 @@ def saveStatus(request):
                     else:
                         serviceName = 'pure-ftpd'
 
-                    servicePath = '/home/cyberpanel/pureftpd'
+                    servicePath = '/home/core/pureftpd'
                     if status == True:
                         writeToFile = open(servicePath, 'w+')
                         writeToFile.close()
@@ -274,8 +274,8 @@ def manageApplications(request):
 
     ## ElasticSearch
 
-    esPath = '/home/cyberpanel/elasticsearch'
-    rPath = '/home/cyberpanel/redis'
+    esPath = '/home/core/elasticsearch'
+    rPath = '/home/core/redis'
 
     if os.path.exists(esPath):
         installed = 'Installed'

@@ -24,7 +24,7 @@ urlpatterns = [
     path('fetchPackageDetails', views.fetchPackageDetails, name='fetchPackageDetails'),
     path('updatePackage', views.updatePackage, name='updatePackage'),
     path('lockStatus', views.lockStatus, name='lockStatus'),
-    path('CyberPanelPort', views.CyberPanelPort, name='CyberPanelPort'),
+    path('AdminiPort', views.AdminiPort, name='AdminiPort'),
     path('submitPortChange', views.submitPortChange, name='submitPortChange'),
 
     path('Switchoffsecurity', views.Switchoffsecurity, name='Switchoffsecurity'),

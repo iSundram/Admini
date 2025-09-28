@@ -510,14 +510,14 @@ def remoteTransfer(request):
                 dir = str(randint(1000, 9999))
 
                 ##save this port into file
-                portpath = "/home/cyberpanel/remote_port"
+                portpath = "/home/core/remote_port"
                 writeToFile = open(portpath, 'w')
                 writeToFile.writelines(port)
                 writeToFile.close()
 
 
                 mailUtilities.checkHome()
-                path = "/home/cyberpanel/accounts-" + str(randint(1000, 9999))
+                path = "/home/core/accounts-" + str(randint(1000, 9999))
                 writeToFile = open(path, 'w')
 
                 for items in accountsToTransfer:

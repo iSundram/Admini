@@ -314,7 +314,7 @@ class Upgrade:
     openEulerPath = '/etc/openEuler-release'
     FromCloud = 0
     SnappyVersion = '2.38.2'
-    LogPathNew = '/home/cyberpanel/upgrade_logs'
+    LogPathNew = '/home/core/upgrade_logs'
     SoftUpgrade = 0
 
     AdminACL = '{"adminStatus":1, "versionManagement": 1, "createNewUser": 1, "listUsers": 1, "deleteUser":1 , "resellerCenter": 1, ' \
@@ -2573,15 +2573,15 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
     @staticmethod
     def enableServices():
         try:
-            servicePath = '/home/cyberpanel/powerdns'
+            servicePath = '/home/core/powerdns'
             writeToFile = open(servicePath, 'w+')
             writeToFile.close()
 
-            servicePath = '/home/cyberpanel/postfix'
+            servicePath = '/home/core/postfix'
             writeToFile = open(servicePath, 'w+')
             writeToFile.close()
 
-            servicePath = '/home/cyberpanel/pureftpd'
+            servicePath = '/home/core/pureftpd'
             writeToFile = open(servicePath, 'w+')
             writeToFile.close()
         except:
@@ -3162,7 +3162,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'sysctl --system'
             Upgrade.executioner(command, 0)
 
-            command = 'chmod 700 %s' % ('/home/cyberpanel')
+            command = 'chmod 700 %s' % ('/home/core')
             Upgrade.executioner(command, 0)
 
             destPrivKey = "/usr/local/lscp/conf/key.pem"
@@ -3450,7 +3450,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
             ## Take backup of configurations
 
-            configbackups = '/home/cyberpanel/configbackups'
+            configbackups = '/home/core/configbackups'
 
             command = 'mkdir %s' % (configbackups)
             Upgrade.executioner(command, 0)

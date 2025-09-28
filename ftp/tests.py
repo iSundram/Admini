@@ -55,7 +55,7 @@ class TestFTP(TestCase):
 
         import os
         self.assertEqual(ok,1)
-        self.assertEqual(os.path.exists('/home/cyberpanel.xyz/unittest'), True)
+        self.assertEqual(os.path.exists('/home/core.xyz/unittest'), True)
 
         # Delete FTP
 

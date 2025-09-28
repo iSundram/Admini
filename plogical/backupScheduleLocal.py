@@ -20,8 +20,8 @@ from datetime import datetime
 from websiteFunctions.models import BackupJob
 
 class backupScheduleLocal:
-    localBackupPath = '/home/cyberpanel/localBackupPath'
-    runningPath = '/home/cyberpanel/localBackupPID'
+    localBackupPath = '/home/core/localBackupPath'
+    runningPath = '/home/core/localBackupPID'
     now = datetime.now()
 
     @staticmethod

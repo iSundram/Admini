@@ -271,7 +271,7 @@ class mysqlUtilities:
                 mysqluser = 'root'
 
 
-            cnfPath = '/home/cyberpanel/.my.cnf'
+            cnfPath = '/home/core/.my.cnf'
 
             if not os.path.exists(cnfPath):
                 cnfContent = """[mysqldump]
@@ -295,7 +295,7 @@ password=%s
                 command = 'rm -f ' + tempStoragePath + "/" + databaseName + '.sql'
                 ProcessUtilities.executioner(command)
 
-                command = 'mysqldump --defaults-file=/home/cyberpanel/.my.cnf -u %s --host=%s --port %s %s' % (mysqluser, mysqlhost, mysqlport, databaseName)
+                command = 'mysqldump --defaults-file=/home/core/.my.cnf -u %s --host=%s --port %s %s' % (mysqluser, mysqlhost, mysqlport, databaseName)
 
                 # if os.path.exists(ProcessUtilities.debugPath):
                 #     logging.CyberCPLogFileWriter.writeToFile(command)
@@ -305,7 +305,7 @@ password=%s
                 # cmd = shlex.split(command)
                 #
                 # try:
-                #     errorPath = '/home/cyberpanel/error-logs.txt'
+                #     errorPath = '/home/core/error-logs.txt'
                 #     errorLog = open(errorPath, 'a')
                 #     with open(tempStoragePath + "/" + databaseName + '.sql', 'w') as f:
                 #         res = subprocess.call(cmd, stdout=f, stderr=errorLog, shell=SHELL)
@@ -342,7 +342,7 @@ password=%s
             else:
                 SHELL = True
 
-                command = f'mysqldump --defaults-file=/home/cyberpanel/.my.cnf -u {mysqluser} --host={mysqlhost} --port {mysqlport} --add-drop-table --allow-keywords --complete-insert --quote-names --skip-comments {databaseName} 2>/dev/null | sudo -u {externalApp} rustic -r {RusticRepoName} backup --stdin-filename {databaseName}.sql - --password "" --json 2>/dev/null'
+                command = f'mysqldump --defaults-file=/home/core/.my.cnf -u {mysqluser} --host={mysqlhost} --port {mysqlport} --add-drop-table --allow-keywords --complete-insert --quote-names --skip-comments {databaseName} 2>/dev/null | sudo -u {externalApp} rustic -r {RusticRepoName} backup --stdin-filename {databaseName}.sql - --password "" --json 2>/dev/null'
 
                 if os.path.exists(ProcessUtilities.debugPath):
                     logging.CyberCPLogFileWriter.writeToFile(command)
@@ -389,7 +389,7 @@ password=%s
                 mysqlport = '3306'
                 mysqluser = 'root'
 
-            cnfPath = '/home/cyberpanel/.my.cnf'
+            cnfPath = '/home/core/.my.cnf'
 
             if not os.path.exists(cnfPath):
                 cnfContent = """[mysqldump]
@@ -410,7 +410,7 @@ password=%s
 
             if rustic == 0:
 
-                command = 'mysql --defaults-file=/home/cyberpanel/.my.cnf -u %s --host=%s --port %s %s' % (mysqluser, mysqlhost, mysqlport, databaseName)
+                command = 'mysql --defaults-file=/home/core/.my.cnf -u %s --host=%s --port %s %s' % (mysqluser, mysqlhost, mysqlport, databaseName)
                 if os.path.exists(ProcessUtilities.debugPath):
                     logging.CyberCPLogFileWriter.writeToFile(f'{command} {tempStoragePath}/{databaseName} ' )
                 cmd = shlex.split(command)
@@ -443,7 +443,7 @@ password=%s
 
                 return 1
             else:
-                command = f'sudo -u {externalApp} rustic -r {RusticRepoName} dump {snapshotid}:{databaseName}.sql --password "" 2>/dev/null | mysql --defaults--file=/home/cyberpanel/.my.cnf -u %s --host=%s --port %s %s' % (
+                command = f'sudo -u {externalApp} rustic -r {RusticRepoName} dump {snapshotid}:{databaseName}.sql --password "" 2>/dev/null | mysql --defaults--file=/home/core/.my.cnf -u %s --host=%s --port %s %s' % (
                 mysqluser, mysqlhost, mysqlport, databaseName)
                 if os.path.exists(ProcessUtilities.debugPath):
                     logging.CyberCPLogFileWriter.writeToFile(f'{command} {tempStoragePath}/{databaseName} ')
@@ -623,7 +623,7 @@ password=%s
 
             ## Temp
 
-            tempPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempPath = "/home/core/" + str(randint(1000, 9999))
             writeToFile = open(tempPath, 'w')
             writeToFile.write(data['suggestedContent'])
             writeToFile.close()

@@ -85,7 +85,7 @@ class virtualHostUtilities:
         if skipRDNSCheck:
             pass
         else:
-            if os.path.exists('/home/cyberpanel/postfix'):
+            if os.path.exists('/home/core/postfix'):
                 pass
             else:
                 message = 'This server does not come with postfix installed. [404]'
@@ -444,7 +444,7 @@ class virtualHostUtilities:
 
             result = virtualHostUtilities.createDomain(virtualHostName, childDomain, 'PHP 7.3', childPath, 1, 0, 0,
                                                        admin.userName, 0,
-                                                       "/home/cyberpanel/" + str(randint(1000, 9999)))
+                                                       "/home/core/" + str(randint(1000, 9999)))
 
             if result[0] == 0:
                 sslUtilities.issueSSLForDomain(childDomain, admin.email, childPath)
@@ -562,7 +562,7 @@ local_name %s {
     @staticmethod
     def createVirtualHost(virtualHostName, administratorEmail, phpVersion, virtualHostUser, ssl,
                           dkimCheck, openBasedir, websiteOwner, packageName, apache,
-                          tempStatusPath='/home/cyberpanel/fakePath', mailDomain=None, LimitsCheck=1):
+                          tempStatusPath='/home/core/fakePath', mailDomain=None, LimitsCheck=1):
         try:
 
             logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, 'Running some checks..,0')
@@ -619,7 +619,7 @@ local_name %s {
                     logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, 'This domain exists as Alias. [404]')
                     return 0, "This domain exists as Alias."
 
-            postfixPath = '/home/cyberpanel/postfix'
+            postfixPath = '/home/core/postfix'
 
             if os.path.exists(postfixPath):
                 retValues = mailUtilities.setupDKIM(virtualHostName)
@@ -705,7 +705,7 @@ local_name %s {
 
             ## DKIM Check
 
-            postFixPath = '/home/cyberpanel/postfix'
+            postFixPath = '/home/core/postfix'
 
             if os.path.exists(postFixPath):
                 if dkimCheck == 1:
@@ -1461,7 +1461,7 @@ local_name %s {
 
     @staticmethod
     def createDomain(masterDomain, virtualHostName, phpVersion, path, ssl, dkimCheck, openBasedir, owner, apache,
-                     tempStatusPath='/home/cyberpanel/fakePath', LimitsCheck=1, alias = 0):
+                     tempStatusPath='/home/core/fakePath', LimitsCheck=1, alias = 0):
         try:
 
             logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, 'Running some checks..,0')
@@ -1528,7 +1528,7 @@ local_name %s {
 
             logging.CyberCPLogFileWriter.statusWriter(tempStatusPath, 'DKIM Setup..,30')
 
-            postFixPath = '/home/cyberpanel/postfix'
+            postFixPath = '/home/core/postfix'
 
             if os.path.exists(postFixPath):
                 retValues = mailUtilities.setupDKIM(virtualHostName)
@@ -1602,7 +1602,7 @@ local_name %s {
 
             ## DKIM Check
 
-            postFixPath = '/home/cyberpanel/postfix'
+            postFixPath = '/home/core/postfix'
 
             if os.path.exists(postFixPath):
                 if dkimCheck == 1:
@@ -2044,7 +2044,7 @@ def main():
         try:
             tempStatusPath = args.tempStatusPath
         except:
-            tempStatusPath = '/home/cyberpanel/fakePath'
+            tempStatusPath = '/home/core/fakePath'
 
         virtualHostUtilities.createVirtualHost(args.virtualHostName, args.administratorEmail, args.phpVersion,
                                                args.virtualHostUser, int(args.ssl), dkimCheck, openBasedir,
@@ -2052,7 +2052,7 @@ def main():
                                                int(args.mailDomain))
     elif args.function == "setupAutoDiscover":
         admin = Administrator.objects.get(userName=args.websiteOwner)
-        virtualHostUtilities.setupAutoDiscover(1, '/home/cyberpanel/templogs', args.virtualHostName, admin)
+        virtualHostUtilities.setupAutoDiscover(1, '/home/core/templogs', args.virtualHostName, admin)
     elif args.function == "deleteVirtualHostConfigurations":
         vhost.deleteVirtualHostConfigurations(args.virtualHostName)
     elif args.function == "createDomain":
@@ -2074,7 +2074,7 @@ def main():
         try:
             tempStatusPath = args.tempStatusPath
         except:
-            tempStatusPath = '/home/cyberpanel/fakePath'
+            tempStatusPath = '/home/core/fakePath'
 
         try:
             aliasDomain = int(args.aliasDomain)

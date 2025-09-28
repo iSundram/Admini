@@ -40,8 +40,8 @@ except:
 import threading as multi
 
 class IncScheduler(multi.Thread):
-    logPath = '/home/cyberpanel/incbackuplogs'
-    gitFolder = '/home/cyberpanel/git'
+    logPath = '/home/core/incbackuplogs'
+    gitFolder = '/home/core/git'
 
     timeFormat = time.strftime("%m.%d.%Y_%H-%M-%S")
 
@@ -67,7 +67,7 @@ class IncScheduler(multi.Thread):
     def startBackup(type):
         try:
             logging.statusWriter(IncScheduler.logPath, 'Starting Incremental Backup job..', 1)
-            tempPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempPath = "/home/core/" + str(randint(1000, 9999))
             for job in BackupJob.objects.all():
                 logging.statusWriter(IncScheduler.logPath, 'Job Description:\n\n Destination: %s, Frequency: %s.\n ' % (
                     job.destination, job.frequency), 1)
@@ -595,7 +595,7 @@ class IncScheduler(multi.Thread):
                                                     domain, time.strftime("%m.%d.%Y_%H-%M-%S"))).save()
 
                             SUBJECT = "Automatic backup failed for %s on %s." % (domain, currentTime)
-                            adminEmailPath = '/home/cyberpanel/adminEmail'
+                            adminEmailPath = '/home/core/adminEmail'
                             adminEmail = open(adminEmailPath, 'r').read().rstrip('\n')
                             sender = 'root@%s' % (socket.gethostname())
                             TO = [adminEmail]
@@ -825,7 +825,7 @@ Automatic backup failed for %s on %s.
                                                     domain, time.strftime("%m.%d.%Y_%H-%M-%S"))).save()
 
                             SUBJECT = "Automatic backup failed for %s on %s." % (domain, currentTime)
-                            adminEmailPath = '/home/cyberpanel/adminEmail'
+                            adminEmailPath = '/home/core/adminEmail'
                             adminEmail = open(adminEmailPath, 'r').read().rstrip('\n')
                             sender = 'root@%s' % (socket.gethostname())
                             TO = [adminEmail]
@@ -977,7 +977,7 @@ Automatic backup failed for %s on %s.
 
     @staticmethod
     def fetchAWSKeys():
-        path = '/home/cyberpanel/.aws'
+        path = '/home/core/.aws'
         credentials = path + '/credentials'
 
         data = open(credentials, 'r').readlines()
@@ -1056,7 +1056,7 @@ Automatic backup failed for %s on %s.
             for items in plan.websitesinplan_set.all():
 
                 from plogical.backupUtilities import backupUtilities
-                tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+                tempStatusPath = "/home/core/" + str(randint(1000, 9999))
                 extraArgs = {}
                 extraArgs['domain'] = items.domain
                 extraArgs['tempStatusPath'] = tempStatusPath
@@ -1066,7 +1066,7 @@ Automatic backup failed for %s on %s.
                 extraArgs['port'] = '0'
                 extraArgs['ip'] = '0'
                 extraArgs['destinationDomain'] = 'None'
-                extraArgs['path'] = '/home/cyberpanel/backups/%s/backup-' % (
+                extraArgs['path'] = '/home/core/backups/%s/backup-' % (
                     items.domain) + items.domain + "-" + time.strftime("%m.%d.%Y_%H-%M-%S")
 
                 bu = backupUtilities(extraArgs)
@@ -1253,7 +1253,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = config.RemoteBackupConfig.configtype
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1286,7 +1286,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = config.RemoteBackupConfig.configtype
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1318,7 +1318,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = "SFTP"
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1349,7 +1349,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = "SFTP"
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1381,7 +1381,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = "SFTP"
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1413,7 +1413,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = "SFTP"
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1445,7 +1445,7 @@ Automatic backup failed for %s on %s.
                                 extraArgs['BackupDestination'] = "SFTP"
                                 extraArgs['SFTPID'] = config.RemoteBackupConfig_id
 
-                                extraArgs['tempStatusPath'] = "/home/cyberpanel/" + str(randint(1000, 9999))
+                                extraArgs['tempStatusPath'] = "/home/core/" + str(randint(1000, 9999))
                                 background = ApplicationInstaller('WPCreateBackup', extraArgs)
                                 status, msg, backupID = background.WPCreateBackup()
                                 if status == 1:
@@ -1652,9 +1652,9 @@ Automatic backup failed for %s on %s.
             from loginSystem.models import Administrator
             import json
             import time
-            if os.path.exists('/home/cyberpanel/v2backups'):
+            if os.path.exists('/home/core/v2backups'):
                 for website in Websites.objects.all():
-                    finalConfigPath = f'/home/cyberpanel/v2backups/{website.domain}'
+                    finalConfigPath = f'/home/core/v2backups/{website.domain}'
                     if os.path.exists(finalConfigPath):
 
                         command = f'cat {finalConfigPath}'
@@ -1684,7 +1684,7 @@ Automatic backup failed for %s on %s.
 
                                     if RetStatus == 0:
                                         SUBJECT = "Automatic Backupv2 failed for %s on %s." % (website.domain, time.strftime("%m.%d.%Y_%H-%M-%S"))
-                                        adminEmailPath = '/home/cyberpanel/adminEmail'
+                                        adminEmailPath = '/home/core/adminEmail'
                                         adminEmail = open(adminEmailPath, 'r').read().rstrip('\n')
                                         sender = 'root@%s' % (socket.gethostname())
                                         error = ProcessUtilities.outputExecutioner(f'cat {background.StatusFile}')
@@ -1735,7 +1735,7 @@ Automatic Backupv2 failed for %s on %s.
                 CurrentHostName = mailUtilities.FetchPostfixHostname()
                 skipRDNSCheck = 1
 
-            virtualHostUtilities.OnBoardingHostName(CurrentHostName, '/home/cyberpanel/onboarding_temp_path', skipRDNSCheck)
+            virtualHostUtilities.OnBoardingHostName(CurrentHostName, '/home/core/onboarding_temp_path', skipRDNSCheck)
         except BaseException as msg:
             logging.writeToFile(f'{str(msg)}. [Cron.CheckHostName]')
 

@@ -113,7 +113,7 @@ class CageFS:
             logging.CyberCPLogFileWriter.statusWriter(ServerStatusUtil.lswsInstallStatusPath,
                                                       "Important components reinstalled..\n", 1)
 
-            activatedPath = '/home/cyberpanel/cloudlinux'
+            activatedPath = '/home/core/cloudlinux'
 
             writeToFile = open(activatedPath, 'a')
             writeToFile.write('CLInstalled')
@@ -149,7 +149,7 @@ class CageFS:
     def submitinstallImunify(key):
         try:
 
-            imunifyKeyPath = '/home/cyberpanel/imunifyKeyPath'
+            imunifyKeyPath = '/home/core/imunifyKeyPath'
 
             ##
 

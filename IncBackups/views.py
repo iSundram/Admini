@@ -132,7 +132,7 @@ def add_destination(request):
                 command = 'cat /root/.ssh/config'
                 current_config = pu.outputExecutioner(command)
 
-                tmp_file = '/home/cyberpanel/sshconfig'
+                tmp_file = '/home/core/sshconfig'
                 with open(tmp_file, 'w') as outfile:
                     if current_config.find('cat') == -1:
                         outfile.write(current_config)
@@ -305,7 +305,7 @@ def submit_backup_creation(request):
         else:
             return Amanager.loadErrorJson('metaStatus', 0)
 
-        temp_path = Path("/home/cyberpanel/") / str(randint(1000, 9999))
+        temp_path = Path("/home/core/") / str(randint(1000, 9999))
 
         extra_args = {}
         extra_args['website'] = backup_domain
@@ -470,7 +470,7 @@ def restore_point(request):
         else:
             return Amanager.loadErrorJson('metaStatus', 0)
 
-        temp_path = Path("/home/cyberpanel/") / str(randint(1000, 9999))
+        temp_path = Path("/home/core/") / str(randint(1000, 9999))
 
         if data['reconstruct'] == 'remote':
             extraArgs = {}
@@ -968,7 +968,7 @@ def selectwebsiteRetorev2(request):
             return Amanager.loadError()
 
         obj = Websites.objects.get(domain = str(Selectedwebsite))
-        #/home/cyberpanel.net/.config/rclone/rclone.conf
+        #/home/core.net/.config/rclone/rclone.conf
         path = '/home/%s/.config/rclone/rclone.conf' %(obj.domain)
 
         command = 'cat %s'%(path)
@@ -1065,7 +1065,7 @@ def selectwebsiteCreatev2(request):
             return Amanager.loadError()
 
         obj = Websites.objects.get(domain = str(Selectedwebsite))
-        #/home/cyberpanel.net/.config/rclone/rclone.conf
+        #/home/core.net/.config/rclone/rclone.conf
         path = '/home/%s/.config/rclone/rclone.conf' %(obj.domain)
 
         command = 'cat %s'%(path)

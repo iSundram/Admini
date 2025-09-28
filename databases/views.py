@@ -204,7 +204,7 @@ def generateAccess(request):
             json_data = json.dumps(data_ret)
             return HttpResponse(json_data)
 
-        keySavePath = '/home/cyberpanel/phpmyadmin_%s' % (admin.userName)
+        keySavePath = '/home/core/phpmyadmin_%s' % (admin.userName)
         try:
             GlobalUserDB.objects.get(username=admin.userName).delete()
         except:
@@ -319,7 +319,7 @@ def fetchDetailsPHPMYAdmin(request):
                     #     'root', password)
                     # return redirect(returnURL)
 
-            keySavePath = '/home/cyberpanel/phpmyadmin_%s' % (admin.userName)
+            keySavePath = '/home/core/phpmyadmin_%s' % (admin.userName)
             key = ProcessUtilities.outputExecutioner('cat %s' % (keySavePath)).strip('\n').encode()
             f = Fernet(key)
             password = f.decrypt(gdb.password.encode('utf-8'))
@@ -486,7 +486,7 @@ def upgrademysqlnow(request):
 
         data = json.loads(request.body)
         version =data['mysqlversion']
-        tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+        tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
 
 

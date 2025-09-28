@@ -97,12 +97,12 @@ def getAdminStatus(request):
         val = request.session['userID']
         currentACL = Amanager.loadedACL(val)
 
-        if os.path.exists('/home/cyberpanel/postfix'):
+        if os.path.exists('/home/core/postfix'):
             currentACL['emailAsWhole'] = 1
         else:
             currentACL['emailAsWhole'] = 0
 
-        if os.path.exists('/home/cyberpanel/pureftpd'):
+        if os.path.exists('/home/core/pureftpd'):
             currentACL['ftpAsWhole'] = 1
         else:
             currentACL['ftpAsWhole'] = 0
@@ -478,7 +478,7 @@ def runonboarding(request):
         except:
             rDNSCheck = 0
 
-        tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+        tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
         WriteToFile = open(tempStatusPath, 'w')
         WriteToFile.write('Starting')

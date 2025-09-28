@@ -921,18 +921,18 @@ fi
 if [[ $SERVER_COUNTRY == "CN" ]] ; then
 	wget https://cyberpanel.sh/cyberpanel-git.tar.gz
 	tar xzvf cyberpanel-git.tar.gz > /dev/null
-	cp -r cyberpanel /usr/local/cyberpanel
-	cd cyberpanel/install
+	cp -r Admini /usr/local/core
+	cd Admini/install
 else
 	if [[ $DEV == "ON" ]] ; then
 	git clone https://github.com/usmannasir/cyberpanel
-	cd cyberpanel
+	cd Admini
 	git checkout $BRANCH_NAME
 	cd -
-	cd cyberpanel/install
+	cd Admini/install
 	else
 	git clone https://github.com/usmannasir/cyberpanel
-	cd cyberpanel/install
+	cd Admini/install
 	fi
 fi
 curl https://cyberpanel.sh/?version

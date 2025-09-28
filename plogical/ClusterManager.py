@@ -18,8 +18,8 @@ class ClusterManager:
 
     LogURL = "https://platform.cyberpersons.com/HighAvailability/RecvData"
     UptimeURL = "https://platform.cyberpersons.com/servers/UptimeReport"
-    ClusterFile = '/home/cyberpanel/cluster'
-    CloudConfig = '/home/cyberpanel/cloud'
+    ClusterFile = '/home/core/cluster'
+    CloudConfig = '/home/core/cloud'
     vhostConfPath = '/usr/local/lsws/conf/vhosts'
 
     def __init__(self, type):
@@ -80,7 +80,7 @@ class ClusterManager:
                 cronPath = '/var/spool/cron/crontabs/root'
 
             ClusterPath = self.FetchMySQLConfigFile()
-            ClusterConfigPath = '/home/cyberpanel/cluster'
+            ClusterConfigPath = '/home/core/cluster'
             config = json.loads(open(ClusterConfigPath, 'r').read())
 
 
@@ -188,7 +188,7 @@ class ClusterManager:
     def BootChild(self):
         try:
 
-            ChildData = '/home/cyberpanel/childaata'
+            ChildData = '/home/core/childaata'
             data = json.loads(open(ChildData, 'r').read())
 
             ## CyberPanel DB Creds
@@ -269,7 +269,7 @@ class ClusterManager:
 
             ## Update root password in .my.cnf
 
-            writeToFile = open('/home/cyberpanel/.my.cnf', 'w')
+            writeToFile = open('/home/core/.my.cnf', 'w')
             content = """[mysqldump]
 user=root
 password=%s
@@ -305,7 +305,7 @@ password=%s""" % (rootdbpassword, rootdbpassword)
                 confPath = '%s/%s' % (ClusterManager.vhostConfPath, website.domain)
                 if not os.path.exists(confPath):
                     self.PostStatus('Domain %s found in master server, creating on child server now..' % (website.domain))
-                    virtualHostUtilities.createVirtualHost(website.domain, website.adminEmail, website.phpSelection, website.externalApp, 1, 1, 0, website.admin.userName, website.package.packageName, 0, '/home/cyberpanel/temp', 1, 0)
+                    virtualHostUtilities.createVirtualHost(website.domain, website.adminEmail, website.phpSelection, website.externalApp, 1, 1, 0, website.admin.userName, website.package.packageName, 0, '/home/core/temp', 1, 0)
                     self.PostStatus('Domain %s successfully created.' % (website.domain))
 
 

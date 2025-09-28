@@ -67,7 +67,7 @@ class MailServerManager(multi.Thread):
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/createEmailAccount.html',
                             {"status": 0}, 'createEmail')
             return proc.render()
@@ -83,7 +83,7 @@ class MailServerManager(multi.Thread):
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/listEmails.html',
                             {"status": 0}, 'listEmails')
             return proc.render()
@@ -132,7 +132,7 @@ class MailServerManager(multi.Thread):
                     lt = '30d'
                     limitString = f'@{domainName} {str(EmailLimits)}/{lt}\n'
 
-                    RandomFile = "/home/cyberpanel/" + str(randint(100000, 999999))
+                    RandomFile = "/home/core/" + str(randint(100000, 999999))
                     writeToFile = open(RandomFile, 'w')
                     writeToFile.write(limitString)
                     writeToFile.close()
@@ -160,7 +160,7 @@ class MailServerManager(multi.Thread):
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/deleteEmailAccount.html',
                             {"status": 0}, 'deleteEmail')
             return proc.render()
@@ -312,7 +312,7 @@ class MailServerManager(multi.Thread):
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/emailForwarding.html',
                             {"status": 0}, 'emailForwarding')
             return proc.render()
@@ -601,7 +601,7 @@ class MailServerManager(multi.Thread):
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/changeEmailPassword.html',
                             {"status": 0}, 'changeEmailPassword')
             return proc.render()
@@ -1911,7 +1911,7 @@ protocol sieve {
         userID = self.request.session['userID']
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/postfix'):
+        if not os.path.exists('/home/core/postfix'):
             proc = httpProc(self.request, 'mailServer/emailForwarding.html',
                             {"status": 0}, 'emailForwarding')
             return proc.render()
@@ -1979,7 +1979,7 @@ protocol sieve {
 
             limitString = f'{source} {str(numberofEmails)}/{duration}\n'
 
-            RandomFile = "/home/cyberpanel/" + str(randint(100000, 999999))
+            RandomFile = "/home/core/" + str(randint(100000, 999999))
             writeToFile = open(RandomFile, 'w')
             writeToFile.write(limitString)
             writeToFile.close()

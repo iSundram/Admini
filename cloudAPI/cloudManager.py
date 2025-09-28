@@ -808,7 +808,7 @@ class CloudManager:
     def setupManager(self, request):
         try:
             request.session['userID'] = self.admin.pk
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
             self.data['tempStatusPath'] = tempStatusPath
 
             ham = HAManager(request, self.data, 'setupNode')
@@ -1469,8 +1469,8 @@ class CloudManager:
     def RunServerLevelEmailChecks(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
-            reportFile = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
+            reportFile = "/home/core/" + str(randint(1000, 9999))
 
             extraArgs = {'tempStatusPath': tempStatusPath, 'reportFile': reportFile}
 
@@ -1501,7 +1501,7 @@ class CloudManager:
     def ResetEmailConfigurations(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1579,7 +1579,7 @@ class CloudManager:
     def ResetFTPConfigurations(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1618,7 +1618,7 @@ class CloudManager:
     def ResetDNSConfigurations(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1639,7 +1639,7 @@ class CloudManager:
     def SubmitCloudBackup(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1676,7 +1676,7 @@ class CloudManager:
                 destinationDomain = 'None'
 
             import time
-            BackupPath = '/home/cyberpanel/backups/%s/backup-' % (self.data['domain']) + self.data[
+            BackupPath = '/home/core/backups/%s/backup-' % (self.data['domain']) + self.data[
                 'domain'] + "-" + time.strftime("%m.%d.%Y_%H-%M-%S")
 
             execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
@@ -1697,7 +1697,7 @@ class CloudManager:
         try:
 
             backupDomain = self.data['domainName']
-            backupsPath = '/home/cyberpanel/backups/%s/' % (backupDomain)
+            backupsPath = '/home/core/backups/%s/' % (backupDomain)
             try:
                 backups = os.listdir(backupsPath)
                 backups.reverse()
@@ -1775,7 +1775,7 @@ class CloudManager:
 
             backupDomain = self.data['domainName']
             backupFile = self.data['backupFile']
-            backupsPathComplete = '/home/cyberpanel/backups/%s/%s' % (backupDomain, backupFile)
+            backupsPathComplete = '/home/core/backups/%s/%s' % (backupDomain, backupFile)
 
             command = 'rm -f %s' % (backupsPathComplete)
             ProcessUtilities.executioner(command)
@@ -1790,7 +1790,7 @@ class CloudManager:
     def SubmitCloudBackupRestore(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1814,7 +1814,7 @@ class CloudManager:
             return self.ajaxPre(0, str(msg))
 
     def fetchAWSKeys(self):
-        path = '/home/cyberpanel/.aws'
+        path = '/home/core/.aws'
         credentials = path + '/credentials'
 
         data = open(credentials, 'r').readlines()
@@ -1916,7 +1916,7 @@ class CloudManager:
     def SubmitS3BackupRestore(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -1937,7 +1937,7 @@ class CloudManager:
     def DeployWordPress(self):
         try:
 
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             writeToFile = open(tempStatusPath, 'w')
             writeToFile.write('Starting..,0')
@@ -2506,7 +2506,7 @@ class CloudManager:
             ## Create backup path so that file can be sent here later. If just submitting the key, no need to create backup folder domain.
 
             try:
-                BackupPath = '/home/cyberpanel/backups/%s' % (self.data['domain'])
+                BackupPath = '/home/core/backups/%s' % (self.data['domain'])
                 command = 'mkdir -p %s' % (BackupPath)
                 ProcessUtilities.executioner(command, 'cyberpanel')
             except:
@@ -2718,7 +2718,7 @@ class CloudManager:
     def SetupCluster(self):
         try:
 
-            ClusterConfigPath = '/home/cyberpanel/cluster'
+            ClusterConfigPath = '/home/core/cluster'
             writeToFile = open(ClusterConfigPath, 'w')
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
@@ -2814,7 +2814,7 @@ class CloudManager:
     def BootChild(self):
         try:
 
-            ChildData = '/home/cyberpanel/childaata'
+            ChildData = '/home/core/childaata'
             writeToFile = open(ChildData, 'w')
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
@@ -2990,7 +2990,7 @@ class CloudManager:
             except:
                 pass
 
-            CloudConfigPath = '/home/cyberpanel/cloud'
+            CloudConfigPath = '/home/core/cloud'
             writeToFile = open(CloudConfigPath, 'w')
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
@@ -3061,7 +3061,7 @@ class CloudManager:
                 return self.ajaxPre(0, 'Invalid domain name format')
 
             # Create status file path
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             # Prepare website data
             website_data = {
@@ -4430,7 +4430,7 @@ To manage n8n:
 
             # Prepare temp status path
             from random import randint
-            tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
+            tempStatusPath = "/home/core/" + str(randint(1000, 9999))
 
             # Prepare data structure exactly like working submitDockerSiteCreation
             docker_data = {
@@ -4554,7 +4554,7 @@ To manage n8n:
                     # Try to find the status file from previous installations
                     import os
                     import glob
-                    possible_files = glob.glob(f'/home/cyberpanel/*')
+                    possible_files = glob.glob(f'/home/core/*')
                     for f in possible_files:
                         try:
                             with open(f, 'r') as file:
@@ -4637,7 +4637,7 @@ To manage n8n:
                 return self.ajaxPre(0, delete_result['error_message'])
 
             # Clean up status files
-            status_file_path = f'/home/cyberpanel/n8n_install_{domain_name.replace(".", "_")}_status'
+            status_file_path = f'/home/core/n8n_install_{domain_name.replace(".", "_")}_status'
             try:
                 if os.path.exists(status_file_path):
                     os.remove(status_file_path)

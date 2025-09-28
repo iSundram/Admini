@@ -161,11 +161,11 @@ fi
 #echo -e "If you want to cancel, please press CTRL + C to cancel it"
 #sleep 10
 echo -e "CyberPanel upgrading..."
-rm -f /usr/local/cyberpanel_upgrade.sh
-wget -O /usr/local/cyberpanel_upgrade.sh -q https://$GIT_CONTENT_URL/${BRANCH_NAME}/cyberpanel_upgrade.sh
-chmod 700 /usr/local/cyberpanel_upgrade.sh
-/usr/local/cyberpanel_upgrade.sh
-rm -f /usr/local/cyberpanel_upgrade.sh
+rm -f /usr/local/core_upgrade.sh
+wget -O /usr/local/core_upgrade.sh -q https://$GIT_CONTENT_URL/${BRANCH_NAME}/core_upgrade.sh
+chmod 700 /usr/local/core_upgrade.sh
+/usr/local/core_upgrade.sh
+rm -f /usr/local/core_upgrade.sh
 exit
 }
 

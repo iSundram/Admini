@@ -27,7 +27,7 @@ from plogical.processUtilities import ProcessUtilities
 from plogical.httpProc import httpProc
 
 class DNSManager:
-    defaultNameServersPath = '/home/cyberpanel/defaultNameservers'
+    defaultNameServersPath = '/home/core/defaultNameservers'
 
     def __init__(self, extraArgs=None):
         self.extraArgs = extraArgs
@@ -47,7 +47,7 @@ class DNSManager:
     def createNameserver(self, request = None, userID = None):
         mailUtilities.checkHome()
 
-        if os.path.exists('/home/cyberpanel/powerdns'):
+        if os.path.exists('/home/core/powerdns'):
             finalData = {"status": 1}
         else:
             finalData = {"status": 0}
@@ -114,7 +114,7 @@ class DNSManager:
 
     def createDNSZone(self, request = None, userID = None):
 
-        if os.path.exists('/home/cyberpanel/powerdns'):
+        if os.path.exists('/home/core/powerdns'):
             finalData = {'status': 1}
         else:
             finalData = {'status': 0}
@@ -161,7 +161,7 @@ class DNSManager:
     def addDeleteDNSRecords(self, request = None, userID = None):
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/powerdns'):
+        if not os.path.exists('/home/core/powerdns'):
             finalData = {"status": 0}
         else:
             finalData = {"status": 1}
@@ -506,7 +506,7 @@ class DNSManager:
 
     def deleteDNSZone(self, request = None, userID = None):
         currentACL = Amanager.loadedACL(userID)
-        if not os.path.exists('/home/cyberpanel/powerdns'):
+        if not os.path.exists('/home/core/powerdns'):
             finalData = {"status": 0}
         else:
             finalData = {"status": 1}
@@ -552,7 +552,7 @@ class DNSManager:
     def configureDefaultNameServers(self, request=None, userID=None):
         currentACL = Amanager.loadedACL(userID)
 
-        if not os.path.exists('/home/cyberpanel/powerdns'):
+        if not os.path.exists('/home/core/powerdns'):
             data = {"status": 0}
         else:
             data = {"status": 1}
@@ -637,7 +637,7 @@ class DNSManager:
 
     def addDeleteDNSRecordsCloudFlare(self, request = None, userID = None):
         currentACL = Amanager.loadedACL(userID)
-        if not os.path.exists('/home/cyberpanel/powerdns'):
+        if not os.path.exists('/home/core/powerdns'):
             status = 0
         else:
             status = 1

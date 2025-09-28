@@ -75,7 +75,7 @@ def fetchWebsiteLimits(request):
         try:
             websiteLimits = ContainerLimits.objects.get(owner=website)
         except:
-            confPathTemp = "/home/cyberpanel/" + str(randint(1000, 9999))
+            confPathTemp = "/home/core/" + str(randint(1000, 9999))
             confPath = '/etc/cgconfig.d/' + domain
             count = ContainerLimits.objects.all().count() + 1
             hexValue = ContainerManager.fetchHexValue(count)
@@ -157,7 +157,7 @@ def saveWebsiteLimits(request):
         if enforce == True:
             if websiteLimits.enforce == 0:
 
-                cgrulesTemp = "/home/cyberpanel/" + str(randint(1000, 9999))
+                cgrulesTemp = "/home/core/" + str(randint(1000, 9999))
                 cgrules = '/etc/cgrules.conf'
                 enforceString = '{}  cpu,memory,blkio,net_cls  {}/\n'.format(website.externalApp, website.externalApp)
 
@@ -183,7 +183,7 @@ def saveWebsiteLimits(request):
 
             ## Main Conf File
 
-            confPathTemp = "/home/cyberpanel/" + str(randint(1000, 9999))
+            confPathTemp = "/home/core/" + str(randint(1000, 9999))
             confPath = '/etc/cgconfig.d/' + domain
             cfs_quota_us = multiprocessing.cpu_count() * 1000
             finalContent = ContainerManager.prepConf(website.externalApp, str(cpuPers * cfs_quota_us), str(100000),
@@ -215,7 +215,7 @@ def saveWebsiteLimits(request):
         else:
             websiteLimits.enforce = 0
 
-            cgrulesTemp = "/home/cyberpanel/" + str(randint(1000, 9999))
+            cgrulesTemp = "/home/core/" + str(randint(1000, 9999))
             cgrules = '/etc/cgrules.conf'
 
             cgrulesData = ProcessUtilities.outputExecutioner('sudo cat /etc/cgrules.conf').splitlines()
@@ -298,7 +298,7 @@ def getUsageData(request):
 
                 elif type == 'io':
 
-                    path = '/home/cyberpanel/' + website.externalApp
+                    path = '/home/core/' + website.externalApp
                     blkioPath = path + '/blkio'
 
                     if not os.path.exists(path):

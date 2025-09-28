@@ -61,12 +61,12 @@ BUILD = 4
 
 class backupUtilities:
     Server_root = "/usr/local/lsws"
-    completeKeyPath = "/home/cyberpanel/.ssh"
-    destinationsPath = "/home/cyberpanel/destinations"
+    completeKeyPath = "/home/core/.ssh"
+    destinationsPath = "/home/core/destinations"
     licenseKey = '/usr/local/lsws/conf/license.key'
     NiceDefault = '10'
     CPUDefault = '1000'
-    CloudBackupConfigPath = '/home/cyberpanel/CloudBackup.json'
+    CloudBackupConfigPath = '/home/core/CloudBackup.json'
     time = 10
 
     def __init__(self, extraArgs):
@@ -86,7 +86,7 @@ class backupUtilities:
                 command = f"echo 'Setting up meta data..' > {status}"
                 ProcessUtilities.executioner(command, website.externalApp)
             else:
-                status = '/home/cyberpanel/dummy'
+                status = '/home/core/dummy'
 
             if os.path.exists(ProcessUtilities.debugPath):
                 logging.CyberCPLogFileWriter.writeToFile(f'Creating meta for {backupDomain}.')
@@ -420,7 +420,7 @@ class backupUtilities:
         ## /home/example.com/backup - backupPath
         ## /home/backup/<random_number> - CPHomeStorage
 
-        ### CPHomeStorage /home/cyberpanel/<random_number>
+        ### CPHomeStorage /home/core/<random_number>
 
 
         pidFile = '%sBackupRoot' % (backupPath)
@@ -486,7 +486,7 @@ class backupUtilities:
 
 
                 completPathToConf = f'{backupUtilities.Server_root}/conf/vhosts/{actualChildDomain}/vhost.conf'
-                TempConfPath = f'/home/cyberpanel/{actualChildDomain}.vhost.conf'
+                TempConfPath = f'/home/core/{actualChildDomain}.vhost.conf'
 
                 if os.path.exists(completPathToConf):
                     #copy(completPathToConf, f'{tempStoragePath}/{actualChildDomain}.vhost.conf')
@@ -946,7 +946,7 @@ class backupUtilities:
                                     if (Status == 1):
 
                                         childConfPathinBKUPApache = completPath + '/' + domain + '.apache.conf'
-                                        tempStatusPath = '/home/cyberpanel/fakePath'
+                                        tempStatusPath = '/home/core/fakePath'
 
                                         if os.path.exists(ProcessUtilities.debugPath):
                                             logging.CyberCPLogFileWriter.writeToFile(f'Conf path of apache for child domain {domain} in backup is {childConfPathinBKUPApache}')
@@ -1214,7 +1214,7 @@ class backupUtilities:
                         if os.path.exists(ProcessUtilities.debugPath):
                             logging.CyberCPLogFileWriter.writeToFile(f'Conf path of apache for main site {masterDomain} in backup is {confPathApache}')
 
-                        tempStatusPath = '/home/cyberpanel/fakePath'
+                        tempStatusPath = '/home/core/fakePath'
 
                         childData = open(confPathMainSite, 'r').read()
 
@@ -1981,7 +1981,7 @@ class backupUtilities:
         logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                   'Creating final archive..,80')
 
-        command = 'nice -n %s tar czf %s.tar.gz -C %s %s' % (self.nice, self.BackupPath, '/home/cyberpanel/backups/%s' % (self.extraArgs['domain']), self.BackupPath.split('/')[-1])
+        command = 'nice -n %s tar czf %s.tar.gz -C %s %s' % (self.nice, self.BackupPath, '/home/core/backups/%s' % (self.extraArgs['domain']), self.BackupPath.split('/')[-1])
         ProcessUtilities.executioner(command)
 
         command = 'rm -rf %s' % (self.BackupPath)
@@ -1999,7 +1999,7 @@ class backupUtilities:
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                       'Sending file to destination server..,90')
 
-            command = "scp -o StrictHostKeyChecking=no -P %s -i /root/.ssh/cyberpanel %s root@%s:/home/cyberpanel/backups/%s/" % (self.extraArgs['port'], finalPath, self.extraArgs['ip'], self.extraArgs['destinationDomain'])
+            command = "scp -o StrictHostKeyChecking=no -P %s -i /root/.ssh/cyberpanel %s root@%s:/home/core/backups/%s/" % (self.extraArgs['port'], finalPath, self.extraArgs['ip'], self.extraArgs['destinationDomain'])
             ProcessUtilities.outputExecutioner(command)
 
         logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Completed [200].')
@@ -2021,20 +2021,20 @@ class backupUtilities:
                 self.cpu = backupUtilities.CPUDefault
                 self.time = int(backupUtilities.time)
 
-            self.BackupPath = '/home/cyberpanel/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'])
+            self.BackupPath = '/home/core/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'])
             self.website = Websites.objects.get(domain=self.extraArgs['domain'])
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                       'Extracting main archive..,0')
 
 
-            command = 'tar -xf %s -C %s' % (self.BackupPath, '/home/cyberpanel/backups/%s/' % (self.extraArgs['domain']))
+            command = 'tar -xf %s -C %s' % (self.BackupPath, '/home/core/backups/%s/' % (self.extraArgs['domain']))
             ProcessUtilities.executioner(command)
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                       'Main Archive extracted,20')
 
-            self.extractedPath = '/home/cyberpanel/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].rstrip('.tar.gz'))
+            self.extractedPath = '/home/core/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].rstrip('.tar.gz'))
 
             self.dataPath = '%s/data' % (self.extractedPath)
             self.databasesPath = '%s/databases' % (self.extractedPath)
@@ -2055,7 +2055,7 @@ class backupUtilities:
                             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                                       'Creating %s,20' % (child['domain']))
                             virtualHostUtilities.createDomain(self.website.domain, child['domain'], child['php'], child['path'], 1, 0, 0,
-                                                              self.website.admin.userName, 0, "/home/cyberpanel/" + str(randint(1000, 9999)))
+                                                              self.website.admin.userName, 0, "/home/core/" + str(randint(1000, 9999)))
 
                 except BaseException as msg:
                     logging.CyberCPLogFileWriter.writeToFile('%s [SubmitCloudBackupRestore:1533]' % str(msg))
@@ -2174,7 +2174,7 @@ class backupUtilities:
     ### Cloud Backup functions ends
 
     def fetchAWSKeys(self):
-        path = '/home/cyberpanel/.aws'
+        path = '/home/core/.aws'
         credentials = path + '/credentials'
 
         data = open(credentials, 'r').readlines()
@@ -2224,7 +2224,7 @@ class backupUtilities:
                     aws_secret_access_key=aws_secret_access_key,
                 )
 
-            self.BackupPath = '/home/cyberpanel/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].split('/')[-1])
+            self.BackupPath = '/home/core/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].split('/')[-1])
 
             s3.Bucket(plan.bucket).download_file(self.extraArgs['backupFile'], self.BackupPath)
 
@@ -2238,13 +2238,13 @@ class backupUtilities:
                                                       'Extracting main archive..,0')
 
 
-            command = 'tar -xf %s -C %s' % (self.BackupPath, '/home/cyberpanel/backups/%s/' % (self.extraArgs['domain']))
+            command = 'tar -xf %s -C %s' % (self.BackupPath, '/home/core/backups/%s/' % (self.extraArgs['domain']))
             ProcessUtilities.executioner(command)
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                       'Main Archive extracted,20')
 
-            self.extractedPath = '/home/cyberpanel/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].split('/')[-1].rstrip('.tar.gz'))
+            self.extractedPath = '/home/core/backups/%s/%s' % (self.extraArgs['domain'], self.extraArgs['backupFile'].split('/')[-1].rstrip('.tar.gz'))
 
             self.dataPath = '%s/data' % (self.extractedPath)
             self.databasesPath = '%s/databases' % (self.extractedPath)
@@ -2265,7 +2265,7 @@ class backupUtilities:
                             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'],
                                                                       'Creating %s,20' % (child['domain']))
                             virtualHostUtilities.createDomain(self.website.domain, child['domain'], child['php'], child['path'], 1, 0, 0,
-                                                              self.website.admin.userName, 0, "/home/cyberpanel/" + str(randint(1000, 9999)))
+                                                              self.website.admin.userName, 0, "/home/core/" + str(randint(1000, 9999)))
 
                 except BaseException as msg:
                     logging.CyberCPLogFileWriter.writeToFile('%s [SubmitCloudBackupRestore:1533]' % str(msg))
@@ -2353,7 +2353,7 @@ def submitBackupCreation(tempStoragePath, backupName, backupPath, backupDomain):
         ## /home/example.com/backup/backup-example.com-02.13.2018_10-24-52 -- tempStoragePath
         ## backup-example.com-02.13.2018_10-24-52 -- backup name
         ## /home/example.com/backup - backupPath
-        ## /home/cyberpanel/1047.xml - metaPath
+        ## /home/core/1047.xml - metaPath
         ## /home/backup/<random_number> - CPHomeStorage
 
         status = os.path.join(backupPath, 'status')
@@ -2397,7 +2397,7 @@ def submitBackupCreation(tempStoragePath, backupName, backupPath, backupDomain):
 
         ##
 
-        schedulerPath = f'/home/cyberpanel/{backupDomain}-backup.txt'
+        schedulerPath = f'/home/core/{backupDomain}-backup.txt'
 
         ##
 
@@ -2452,12 +2452,12 @@ def submitBackupCreation(tempStoragePath, backupName, backupPath, backupDomain):
         for database in databases:
 
             dbName = database.find('dbName').text
-            res = mysqlUtilities.mysqlUtilities.createDatabaseBackup(dbName, '/home/cyberpanel')
+            res = mysqlUtilities.mysqlUtilities.createDatabaseBackup(dbName, '/home/core')
             if res == 0:
                 ## This login can be further improved later.
                 logging.CyberCPLogFileWriter.writeToFile('Failed to create database backup for %s. This could be false positive, moving on.' % (dbName))
 
-            command = f'mv /home/cyberpanel/{dbName}.sql {CPHomeStorage}/{dbName}.sql'
+            command = f'mv /home/core/{dbName}.sql {CPHomeStorage}/{dbName}.sql'
             ProcessUtilities.executioner(command)
 
 

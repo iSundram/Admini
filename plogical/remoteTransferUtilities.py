@@ -181,7 +181,7 @@ class remoteTransferUtilities:
                         logging.CyberCPLogFileWriter.writeToFile(str(msg) + " [remoteTransferUtilities.backupProcess:173]")
                         pass
 
-                portpath = "/home/cyberpanel/remote_port"
+                portpath = "/home/core/remote_port"
                 os.remove(portpath)
 
                 writeToFile = open(backupLogPath, "a")
@@ -204,7 +204,7 @@ class remoteTransferUtilities:
     def sendBackup(completedPathToSend, IPAddress, folderNumber,writeToFile):
         try:
             ## complete path is a path to the file need to send
-            portpath = "/home/cyberpanel/remote_port"
+            portpath = "/home/core/remote_port"
 
             logging.CyberCPLogFileWriter.writeToFile("habbi--------open file:%s"%portpath)
 

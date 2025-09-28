@@ -454,7 +454,7 @@ class vhost:
 
                 ## Remove git conf folder if present
 
-                gitPath = '/home/cyberpanel/git/%s' % (virtualHostName)
+                gitPath = '/home/core/git/%s' % (virtualHostName)
 
                 if os.path.exists(gitPath):
                     shutil.rmtree(gitPath)
@@ -786,7 +786,7 @@ class vhost:
                 print("0,0")
                 return 0,0
 
-            bwmeta = "/home/cyberpanel/%s.bwmeta" % (domainName)
+            bwmeta = "/home/core/%s.bwmeta" % (domainName)
 
             if not os.path.exists(path):
                 print("0,0")
