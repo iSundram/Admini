@@ -1435,11 +1435,11 @@ Download_Requirement
 echo -e "Creating CyberPanel virtual environment..."
 
 # First ensure the directory exists
-mkdir -p /usr/local/CyberPanel
+mkdir -p /usr/local/core
 
 if [[ "$Server_OS" = "Ubuntu" ]] && ([[ "$Server_OS_Version" = "22" ]] || [[ "$Server_OS_Version" = "24" ]]) ; then
   echo -e "Ubuntu 22.04/24.04 detected, using python3 -m venv..."
-  if python3 -m venv /usr/local/CyberPanel 2>&1; then
+  if python3 -m venv /usr/local/core 2>&1; then
     echo -e "Virtual environment created successfully"
   else
     echo -e "python3 -m venv failed, trying virtualenv..."
@@ -1450,24 +1450,24 @@ if [[ "$Server_OS" = "Ubuntu" ]] && ([[ "$Server_OS_Version" = "22" ]] || [[ "$S
       # For Ubuntu 22.04, install virtualenv via apt
       Retry_Command "DEBIAN_FRONTEND=noninteractive apt-get install -y python3-virtualenv"
     fi
-    virtualenv -p /usr/bin/python3 /usr/local/CyberPanel
+    virtualenv -p /usr/bin/python3 /usr/local/core
   fi
 else
-  virtualenv -p /usr/bin/python3 /usr/local/CyberPanel
+  virtualenv -p /usr/bin/python3 /usr/local/core
 fi
 
 # Verify virtual environment was created
-if [[ ! -f /usr/local/CyberPanel/bin/activate ]]; then
+if [[ ! -f /usr/local/core/bin/activate ]]; then
   echo -e "ERROR: Virtual environment creation failed!"
   exit 1
 fi
 
 if [ "$Server_OS" = "Ubuntu" ]; then
   # shellcheck disable=SC1091
-  . /usr/local/CyberPanel/bin/activate
+  . /usr/local/core/bin/activate
 else
   # shellcheck disable=SC1091
-  source /usr/local/CyberPanel/bin/activate
+  source /usr/local/core/bin/activate
 fi
 
 Debug_Log2 "Installing requirments..,3"
@@ -1485,12 +1485,12 @@ Retry_Command "git clone ${Git_Clone_URL}"
 
 echo -e "\nCyberPanel source code downloaded...\n"
 
-cd cyberpanel || exit
+cd Admini || exit
 git checkout "$Branch_Name"
   Check_Return "git checkout"
 cd - || exit
-cp -r cyberpanel /usr/local/cyberpanel
-cd cyberpanel/install || exit
+cp -r Admini /usr/local/core
+cd Admini/install || exit
 
 Debug_Log2 "Necessary components installed..,5"
 }
@@ -1866,7 +1866,7 @@ if [[ "$Debug" = "On" ]] ; then
   Debug_Log "Final_Flags" "${Final_Flags[@]}"
 fi
 
-/usr/local/CyberPanel/bin/python install.py "${Final_Flags[@]}"
+/usr/local/core/bin/python install.py "${Final_Flags[@]}"
 
 
 if grep "CyberPanel installation successfully completed" /var/log/installLogs.txt >/dev/null; then
@@ -1964,7 +1964,7 @@ Post_Install_Addon_Redis() {
 
   if pgrep "redis" ; then
     echo -e "\n\nRedis installed and running..."
-    touch /home/cyberpanel/redis
+    touch /home/core/redis
   fi
 }
 
@@ -2146,7 +2146,7 @@ fi
 Post_Install_Regenerate_Cert() {
 log_function_start "Post_Install_Regenerate_Cert"
 log_info "Regenerating SSL certificates for control panel"
-cat <<EOF >/root/cyberpanel/cert_conf
+cat <<EOF >/root/Admini/cert_conf
 [req]
 prompt=no
 distinguished_name=admini
@@ -2166,7 +2166,7 @@ dnQualifier = Admini
 [server_exts]
 extendedKeyUsage = 1.3.6.1.5.5.7.3.1
 EOF
-openssl req -x509 -config /root/cyberpanel/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout /usr/local/lscp/conf/key.pem -out /usr/local/lscp/conf/cert.pem
+openssl req -x509 -config /root/Admini/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout /usr/local/lscp/conf/key.pem -out /usr/local/lscp/conf/cert.pem
 
 if [[ "$Server_Edition" = "OLS" ]]; then
   Key_Path="/usr/local/lsws/admin/conf/webadmin.key"
@@ -2175,8 +2175,8 @@ else
   Key_Path="/usr/local/lsws/admin/conf/cert/admin.key"
   Cert_Path="/usr/local/lsws/admin/conf/cert/admin.crt"
 fi
-openssl req -x509 -config /root/cyberpanel/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout "$Key_Path" -out "$Cert_Path"
-rm -f /root/cyberpanel/cert_conf
+openssl req -x509 -config /root/Admini/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout "$Key_Path" -out "$Cert_Path"
+rm -f /root/Admini/cert_conf
 }
 
 Post_Install_Required_Components() {
@@ -2305,10 +2305,10 @@ curl --silent -o /etc/profile.d/cyberpanel.sh https://cyberpanel.sh/?banner 2>/d
 chmod 700 /etc/profile.d/cyberpanel.sh
 echo "$Admin_Pass" > /etc/cyberpanel/adminPass
 chmod 600 /etc/cyberpanel/adminPass
-/usr/local/CyberPanel/bin/python /usr/local/core/plogical/adminPass.py --password "$Admin_Pass"
+/usr/local/core/bin/python /usr/local/core/plogical/adminPass.py --password "$Admin_Pass"
 mkdir -p /etc/opendkim
 
-echo '/usr/local/CyberPanel/bin/python /usr/local/core/plogical/adminPass.py --password "$@"' > /usr/bin/adminPass
+echo '/usr/local/core/bin/python /usr/local/core/plogical/adminPass.py --password "$@"' > /usr/bin/adminPass
 echo "systemctl restart lscpd" >> /usr/bin/adminPass
 echo "echo \$@ > /etc/cyberpanel/adminPass" >> /usr/bin/adminPass
 chmod 700 /usr/bin/adminPass
