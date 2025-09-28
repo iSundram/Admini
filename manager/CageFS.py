@@ -1,9 +1,9 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import sys
 import os
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 django.setup()
 import plogical.CyberCPLogFileWriter as logging
@@ -177,7 +177,7 @@ class CageFS:
             integrationFile = '/etc/sysconfig/imunify360/integration.conf'
 
             content = """[paths]
-ui_path =/usr/local/CyberCP/public/imunify
+ui_path =/usr/local/core/public/imunify
 [web_server]
 server_type = litespeed
 graceful_restart_script = /usr/local/lsws/bin/lswsctrl restart
@@ -197,7 +197,7 @@ pattern_to_watch = ^/home/.+?/(public_html|public_ftp|private_html)(/.*)?$
 
             ### address issue to create imunify dir - https://app.clickup.com/t/86engx249
 
-            command = 'mkdir /usr/local/CyberCP/public/imunify'
+            command = 'mkdir /usr/local/core/public/imunify'
             ProcessUtilities.executioner(command)
 
             command = 'pkill -f "bash i360deploy.sh"'
@@ -244,7 +244,7 @@ pattern_to_watch = ^/home/.+?/(public_html|public_ftp|private_html)(/.*)?$
             integrationFile = '/etc/sysconfig/imunify360/integration.conf'
 
             content = """[paths]
-ui_path = /usr/local/CyberCP/public/imunifyav
+ui_path = /usr/local/core/public/imunifyav
 ui_path_owner = lscpd:lscpd
 """
 
@@ -266,7 +266,7 @@ ui_path_owner = lscpd:lscpd
             command = 'bash imav-deploy.sh --uninstall --yes'
             ServerStatusUtil.executioner(command, statusFile)
 
-            command = 'mkdir -p /usr/local/CyberCP/public/imunifyav'
+            command = 'mkdir -p /usr/local/core/public/imunifyav'
             ServerStatusUtil.executioner(command, statusFile)
 
             command = 'bash imav-deploy.sh --yes'

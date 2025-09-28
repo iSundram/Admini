@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
@@ -10,8 +10,8 @@ import paramiko
 from plogical.applicationInstaller import ApplicationInstaller
 from plogical.httpProc import httpProc
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import json
 from plogical.acl import ACLManager
@@ -622,7 +622,7 @@ class BackupManager:
             backupCancellationDomain = data['backupCancellationDomain']
             fileName = data['fileName']
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " cancelBackupCreation --backupCancellationDomain " + backupCancellationDomain + " --fileName " + fileName
             subprocess.call(shlex.split(execPath))
 
@@ -683,7 +683,7 @@ class BackupManager:
             else:
                 return ACLManager.loadErrorJson()
 
-            execPath = "sudo nice -n 10 /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "sudo nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " submitRestore --backupFile " + backupFile + " --dir " + dir
             ProcessUtilities.popenExecutioner(execPath)
             time.sleep(4)
@@ -784,7 +784,7 @@ class BackupManager:
                 except:
                     finalDic['user'] = "root"
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
                 execPath = execPath + " submitDestinationCreation --ipAddress " + finalDic['ipAddress'] + " --password " \
                            + finalDic['password'] + " --port " + finalDic['port'] + ' --user %s' % (finalDic['user'])
 
@@ -880,7 +880,7 @@ class BackupManager:
 
             ipAddress = data['IPAddress']
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " getConnectionStatus --ipAddress " + ipAddress
 
             output = ProcessUtilities.executioner(execPath)
@@ -1154,7 +1154,7 @@ class BackupManager:
 
             ##
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/remoteTransferUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/remoteTransferUtilities.py"
             execPath = execPath + " writeAuthKey --pathToKey " + pathToKey
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1244,7 +1244,7 @@ class BackupManager:
 
                 r = requests.post(url, data=finalData, verify=False)
 
-                if os.path.exists('/usr/local/CyberCP/debug'):
+                if os.path.exists('/usr/local/core/debug'):
                     message = 'Remote transfer initiation status: %s' % (r.text)
                     logging.CyberCPLogFileWriter.writeToFile(message)
 
@@ -1349,7 +1349,7 @@ class BackupManager:
 
             ##
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/remoteTransferUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/remoteTransferUtilities.py"
             execPath = execPath + " remoteBackupRestore --backupDirComplete " + backupDirComplete + " --backupDir " + str(
                 backupDir)
 

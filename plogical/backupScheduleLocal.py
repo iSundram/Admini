@@ -1,10 +1,10 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:
@@ -32,7 +32,7 @@ class backupScheduleLocal:
                 output = ProcessUtilities.outputExecutioner('ps aux')
                 pid = open(backupScheduleLocal.runningPath, 'r').read()
 
-                if output.find('/usr/local/CyberCP/plogical/backupScheduleLocal.py') > -1 and output.find(pid) > -1:
+                if output.find('/usr/local/core/plogical/backupScheduleLocal.py') > -1 and output.find(pid) > -1:
                     print('\n\nLocal backup is already running with PID: %s. If you want to run again kindly kill the backup process: \n\n kill -9 %s.\n\n' % (pid, pid))
                     return 0
                 else:

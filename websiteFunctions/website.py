@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import html
 import os
 import os.path
@@ -9,8 +9,8 @@ from databases.models import Databases
 from plogical.DockerSites import Docker_Sites
 from plogical.httpProc import httpProc
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import json
 from plogical.acl import ACLManager
@@ -2228,7 +2228,7 @@ Require valid-user
 
             ## Create Configurations
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " createVirtualHost --virtualHostName " + domain + \
                        " --administratorEmail " + adminEmail + " --phpVersion '" + phpSelection + \
                        "' --virtualHostUser " + externalApp + " --ssl " + str(1) + " --dkimCheck " \
@@ -2330,7 +2330,7 @@ Require valid-user
             except:
                 apacheBackend = "0"
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
 
             execPath = execPath + " createDomain --masterDomain " + masterDomain + " --virtualHostName " + domain + \
                        " --phpVersion '" + phpSelection + "' --ssl " + str(1) + " --dkimCheck " + str(1) \
@@ -2802,7 +2802,7 @@ Require valid-user
 
             ## Deleting master domain
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " deleteVirtualHostConfigurations --virtualHostName " + websiteName
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -2853,7 +2853,7 @@ Require valid-user
             else:
                 return ACLManager.loadErrorJson('websiteDeleteStatus', 0)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " deleteDomain --virtualHostName " + websiteName + ' --DeleteDocRoot %s' % (
                 str(DeleteDocRoot))
             ProcessUtilities.outputExecutioner(execPath)
@@ -2889,7 +2889,7 @@ Require valid-user
                 vhostConfPath = confPath + "/vhost.conf"
                 
                 # Ensure suspension page exists and has proper permissions
-                suspensionPagePath = "/usr/local/CyberCP/websiteFunctions/suspension.html"
+                suspensionPagePath = "/usr/local/core/websiteFunctions/suspension.html"
                 if not os.path.exists(suspensionPagePath):
                     # Create default suspension page if it doesn't exist
                     defaultSuspensionHTML = """<!DOCTYPE html>
@@ -2990,7 +2990,7 @@ END_rules
 }
 
 context /cyberpanel_suspension_page.html {
-  location                        /usr/local/CyberCP/websiteFunctions/suspension.html
+  location                        /usr/local/core/websiteFunctions/suspension.html
   accessible                      1
   extraHeaders                    X-Frame-Options: DENY
   allowBrowse                     1
@@ -3401,7 +3401,7 @@ context /cyberpanel_suspension_page.html {
             confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + domain
             completePathToConfigFile = confPath + "/vhost.conf"
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changePHP --phpVersion '" + phpVersion + "' --path " + completePathToConfigFile
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -3431,7 +3431,7 @@ context /cyberpanel_suspension_page.html {
             # isPU = IncScheduler('CalculateAndUpdateDiskUsage', {})
             # isPU.start()
 
-            command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/IncScheduler.py UpdateDiskUsageForce'
+            command = '/usr/local/core/bin/python /usr/local/core/plogical/IncScheduler.py UpdateDiskUsageForce'
             ProcessUtilities.outputExecutioner(command)
 
             ##
@@ -3588,7 +3588,7 @@ context /cyberpanel_suspension_page.html {
 
             import secrets
 
-            fastapi_file = '/usr/local/CyberCP/fastapi_ssh_server.py'
+            fastapi_file = '/usr/local/core/fastapi_ssh_server.py'
             from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter
             try:
                 
@@ -3616,7 +3616,7 @@ context /cyberpanel_suspension_page.html {
                 local_service_path = 'fastapi_ssh_server.service'
                 check_service = ProcessUtilities.outputExecutioner(f'test -f {service_path} && echo exists || echo missing')
                 if 'missing' in check_service:
-                    ProcessUtilities.outputExecutioner(f'cp /usr/local/CyberCP/fastapi_ssh_server.service {service_path}')
+                    ProcessUtilities.outputExecutioner(f'cp /usr/local/core/fastapi_ssh_server.service {service_path}')
                     ProcessUtilities.outputExecutioner('systemctl daemon-reload')
             except Exception as e:
                 CyberCPLogFileWriter.writeLog(f"Failed to copy or reload fastapi_ssh_server.service: {e}")
@@ -3939,7 +3939,7 @@ context /cyberpanel_suspension_page.html {
 
             ## save configuration data
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " saveVHostConfigs --path " + filePath + " --tempPath " + tempPath
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -4082,7 +4082,7 @@ context /cyberpanel_suspension_page.html {
 
         ## writing data temporary to file
 
-        execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+        execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
         execPath = execPath + " saveSSL --virtualHostName " + self.domain + " --tempKeyPath " + tempKeyPath + " --tempCertPath " + tempCertPath
         output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -4112,7 +4112,7 @@ context /cyberpanel_suspension_page.html {
         confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + self.domain
         completePathToConfigFile = confPath + "/vhost.conf"
 
-        execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+        execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
         execPath = execPath + " changePHP --phpVersion '" + phpVersion + "' --path " + completePathToConfigFile
         ProcessUtilities.popenExecutioner(execPath)
 
@@ -4129,7 +4129,7 @@ context /cyberpanel_suspension_page.html {
 
                     confPath = virtualHostUtilities.Server_root + "/conf/vhosts/" + alias.domain
                     completePathToConfigFile = confPath + "/vhost.conf"
-                    execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+                    execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
                     execPath = execPath + " changePHP --phpVersion '" + phpVersion + "' --path " + completePathToConfigFile
                     ProcessUtilities.popenExecutioner(execPath)
                 except BaseException as msg:
@@ -4170,7 +4170,7 @@ context /cyberpanel_suspension_page.html {
 
             crons = []
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
             execPath = execPath + " getWebsiteCron --externalApp " + website.externalApp
 
             f = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
@@ -4245,7 +4245,7 @@ context /cyberpanel_suspension_page.html {
 
             try:
                 CronUtil.CronPrem(1)
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
                 execPath = execPath + " getWebsiteCron --externalApp " + website.externalApp
 
                 f = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
@@ -4310,7 +4310,7 @@ context /cyberpanel_suspension_page.html {
 
             CronUtil.CronPrem(1)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
             execPath = execPath + " saveCronChanges --externalApp " + website.externalApp + " --line " + str(
                 line) + " --finalCron '" + finalCron + "'"
             output = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
@@ -4350,7 +4350,7 @@ context /cyberpanel_suspension_page.html {
 
             CronUtil.CronPrem(1)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
             execPath = execPath + " remCronbyLine --externalApp " + website.externalApp + " --line " + str(
                 line)
             output = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
@@ -4410,7 +4410,7 @@ context /cyberpanel_suspension_page.html {
 
             finalCron = "%s %s %s %s %s %s" % (minute, hour, monthday, month, weekday, command)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/cronUtil.py"
             execPath = execPath + " addNewCron --externalApp " + website.externalApp + " --finalCron '" + finalCron + "'"
             output = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
 
@@ -4465,7 +4465,7 @@ context /cyberpanel_suspension_page.html {
 
             ## Create Configurations
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
 
             execPath = execPath + " createAlias --masterDomain " + self.domain + " --aliasDomain " + aliasDomain + " --ssl " + str(
                 ssl) + " --sslPath " + sslpath + " --administratorEmail " + admin.email + ' --websiteOwner ' + admin.userName
@@ -4515,7 +4515,7 @@ context /cyberpanel_suspension_page.html {
 
             ## Create Configurations
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " issueAliasSSL --masterDomain " + self.domain + " --aliasDomain " + aliasDomain + " --sslPath " + sslpath + " --administratorEmail " + admin.email
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -4555,7 +4555,7 @@ context /cyberpanel_suspension_page.html {
 
             ## Create Configurations
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " deleteAlias --masterDomain " + self.domain + " --aliasDomain " + aliasDomain
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -4587,7 +4587,7 @@ context /cyberpanel_suspension_page.html {
             else:
                 return ACLManager.loadErrorJson('changeOpenBasedir', 0)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changeOpenBasedir --virtualHostName '" + self.domain + "' --openBasedirValue " + openBasedirValue
             output = ProcessUtilities.popenExecutioner(execPath)
 
@@ -5035,7 +5035,7 @@ StrictHostKeyChecking no
 
             completePathToConfigFile = f'/usr/local/lsws/conf/vhosts/{self.domain}/vhost.conf'
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changePHP --phpVersion 'PHP 8.1' --path " + completePathToConfigFile
             ProcessUtilities.executioner(execPath)
 
@@ -5104,7 +5104,7 @@ StrictHostKeyChecking no
 
             completePathToConfigFile = f'/usr/local/lsws/conf/vhosts/{self.domain}/vhost.conf'
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changePHP --phpVersion 'PHP 8.3' --path " + completePathToConfigFile
             ProcessUtilities.executioner(execPath)
 
@@ -5409,7 +5409,7 @@ StrictHostKeyChecking no
             return ACLManager.loadErrorJson()
 
         tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
-        execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+        execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
         execPath = execPath + " switchServer --phpVersion '" + phpVersion + "' --server " + str(
             server) + " --virtualHostName " + domainName + " --tempStatusPath " + tempStatusPath
         ProcessUtilities.popenExecutioner(execPath)
@@ -5541,7 +5541,7 @@ StrictHostKeyChecking no
         import os
         from plogical.processUtilities import ProcessUtilities
 
-        fastapi_file = '/usr/local/CyberCP/fastapi_ssh_server.py'
+        fastapi_file = '/usr/local/core/fastapi_ssh_server.py'
         from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter
         try:
             
@@ -5567,7 +5567,7 @@ StrictHostKeyChecking no
             local_service_path = 'fastapi_ssh_server.service'
             check_service = ProcessUtilities.outputExecutioner(f'test -f {service_path} && echo exists || echo missing')
             if 'missing' in check_service:
-                ProcessUtilities.outputExecutioner(f'cp /usr/local/CyberCP/fastapi_ssh_server.service {service_path}')
+                ProcessUtilities.outputExecutioner(f'cp /usr/local/core/fastapi_ssh_server.service {service_path}')
                 ProcessUtilities.outputExecutioner('systemctl daemon-reload')
         except Exception as e:
             CyberCPLogFileWriter.writeLog(f"Failed to copy or reload fastapi_ssh_server.service: {e}")
@@ -7344,7 +7344,7 @@ StrictHostKeyChecking no
             command = f'chown {website.externalApp}:{website.externalApp} {pathToKeyFile}'
             ProcessUtilities.outputExecutioner(command)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
             execPath = execPath + " deleteSSHKey --key '%s' --path %s" % (key, pathToKeyFile)
 
             output = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
@@ -7391,7 +7391,7 @@ StrictHostKeyChecking no
             writeToFile.write(key)
             writeToFile.close()
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
             execPath = execPath + " addSSHKey --tempPath %s --path %s" % (tempPath, pathToKeyFile)
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -7457,7 +7457,7 @@ StrictHostKeyChecking no
 
         ## save configuration data
 
-        execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+        execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
         execPath = execPath + " saveApacheConfigsToFile --path " + filePath + " --tempPath " + tempPath
 
         output = ProcessUtilities.outputExecutioner(execPath)

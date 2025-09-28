@@ -9,7 +9,7 @@ import json
 from django.shortcuts import HttpResponse
 from math import ceil
 from websiteFunctions.models import Websites
-from CLManager.models import CLPackages
+from manager.models import CLPackages
 from plogical.httpProc import httpProc
 
 class CLManagerMain(multi.Thread):
@@ -102,7 +102,7 @@ class CLManagerMain(multi.Thread):
                                                           1)
                 return 0
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
             execPath = execPath + " --function submitCageFSInstall"
             ProcessUtilities.outputExecutioner(execPath)
 

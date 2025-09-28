@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
 from plogical.installUtilities import installUtilities
 import argparse

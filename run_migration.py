@@ -10,10 +10,10 @@ import sys
 import django
 
 # Add the project directory to Python path
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 
 # Set up Django environment
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CyberCP.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 django.setup()
 
 from django.core.management import execute_from_command_line

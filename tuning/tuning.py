@@ -1,12 +1,12 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os.path
 import sys
 import django
 
 from plogical.httpProc import httpProc
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from django.http import HttpResponse
 import json
@@ -100,7 +100,7 @@ class tuningManager:
                 inMemCache = str(data['inMemCache'])
                 gzipCompression = data['gzipCompression']
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/tuning.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/tuning.py"
                 execPath = execPath + " saveTuningDetails --maxConn " + maxConn + " --maxSSLConn " + maxSSLConn + " --connTime " + connTime + " --keepAlive " + keepAlive + " --inMemCache '" + inMemCache + "' --gzipCompression " + gzipCompression
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -159,7 +159,7 @@ class tuningManager:
                 procHardLimit = str(data['procHardLimit'])
                 persistConn = data['persistConn']
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/tuning.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/tuning.py"
                 execPath = execPath + " tunePHP --virtualHost " + domainSelection + " --initTimeout " + initTimeout + " --maxConns " + maxConns + " --memSoftLimit " + memSoftLimit + " --memHardLimit '" + memHardLimit + "' --procSoftLimit " + procSoftLimit + " --procHardLimit " + procHardLimit + " --persistConn " + persistConn
 
                 output = ProcessUtilities.outputExecutioner(execPath)

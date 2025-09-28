@@ -62,7 +62,7 @@ class CyberCPLogFileWriter:
 
             ## Send Email
 
-            emailPath = '/usr/local/CyberCP/emailDebug'
+            emailPath = '/usr/local/core/emailDebug'
 
             try:
                 if os.path.exists(emailPath):
@@ -116,7 +116,7 @@ Subject: %s
     @staticmethod
     def statusWriter(tempStatusPath, mesg, append = None):
         try:
-            if os.path.exists('/usr/local/CyberCP/debug'):
+            if os.path.exists('/usr/local/core/debug'):
                 print(mesg)
             if append == None:
                 statusFile = open(tempStatusPath, 'w')

@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import json
 import os
 import sys
@@ -8,7 +8,7 @@ import socket
 import shutil
 import docker
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 
 try:
     import django
@@ -92,7 +92,7 @@ class Docker_Sites(multi.Thread):
                 writeToFile.write(ports)
                 writeToFile.close()
 
-                execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+                execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
                 execPath = execPath + f" modifyPorts --protocol TCP_IN --ports " + portsPath
                 ProcessUtilities.executioner(execPath)
 
@@ -110,7 +110,7 @@ class Docker_Sites(multi.Thread):
                 writeToFile.write(ports)
                 writeToFile.close()
 
-                execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+                execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
                 execPath = execPath + f" modifyPorts --protocol TCP_OUT --ports " + portsPath
                 ProcessUtilities.executioner(execPath)
 
@@ -381,7 +381,7 @@ REWRITERULE ^(.*)$ HTTP://docker{port}/$1 [P]
                 if os.path.exists(ProcessUtilities.debugPath):
                     logging.writeToFile(f'About to run docker install function...')
 
-                execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/dockerManager/dockerInstall.py"
+                execPath = "/usr/local/core/bin/python /usr/local/core/dockerManager/dockerInstall.py"
                 ProcessUtilities.executioner(execPath)
 
             logging.statusWriter(self.JobID, 'Docker is ready to use..,10')
@@ -503,13 +503,13 @@ services:
 
             ### Set up Proxy
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/DockerSites.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/DockerSites.py"
             execPath = execPath + f" SetupProxy --port {self.data['port']}"
             ProcessUtilities.executioner(execPath)
 
             ### Set up ht access
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/DockerSites.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/DockerSites.py"
             execPath = execPath + f" SetupHTAccess --port {self.data['port']} --htaccess {self.data['htaccessPath']}"
             ProcessUtilities.executioner(execPath, self.data['externalApp'])
 
@@ -1143,7 +1143,7 @@ services:
             if isinstance(error, DockerDeploymentError):
                 if error.error_code == self.ERROR_DOCKER_NOT_INSTALLED:
                     # Attempt to install Docker
-                    execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/dockerManager/dockerInstall.py"
+                    execPath = "/usr/local/core/bin/python /usr/local/core/dockerManager/dockerInstall.py"
                     ProcessUtilities.executioner(execPath)
                     return True
                     
@@ -1290,13 +1290,13 @@ services:
                 logging.statusWriter(self.JobID, 'Containers healthy...,70')
 
                 # Setup proxy
-                execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/DockerSites.py"
+                execPath = "/usr/local/core/bin/python /usr/local/core/plogical/DockerSites.py"
                 execPath = execPath + f" SetupProxy --port {self.data['port']}"
                 ProcessUtilities.executioner(execPath)
                 logging.statusWriter(self.JobID, 'Proxy configured...,80')
 
                 # Setup n8n vhost configuration instead of htaccess
-                execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/DockerSites.py"
+                execPath = "/usr/local/core/bin/python /usr/local/core/plogical/DockerSites.py"
                 execPath = execPath + f" SetupN8NVhost --domain {self.data['finalURL']} --port {self.data['port']}"
                 ProcessUtilities.executioner(execPath)
                 logging.statusWriter(self.JobID, 'N8N vhost configured...,90')

@@ -14,7 +14,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Check if CyberPanel is installed
-if [ ! -f "/usr/local/CyberCP/bin/python" ]; then
+if [ ! -f "/usr/local/core/bin/python" ]; then
     echo "CyberPanel not found. Please ensure CyberPanel is installed."
     exit 1
 fi
@@ -23,7 +23,7 @@ echo "Resetting bandwidth for all domains..."
 echo ""
 
 # Run the bandwidth reset script
-/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/bandwidthReset.py --reset-all
+/usr/local/core/bin/python /usr/local/core/plogical/bandwidthReset.py --reset-all
 
 if [ $? -eq 0 ]; then
     echo ""

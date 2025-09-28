@@ -1,9 +1,9 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import sys
 import time
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import plogical.CyberCPLogFileWriter as logging
 from serverStatus.serverStatusUtil import ServerStatusUtil
 from plogical.processUtilities import ProcessUtilities

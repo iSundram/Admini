@@ -1,9 +1,9 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os.path
 import sys
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from plogical import CyberCPLogFileWriter as logging
 import subprocess
@@ -89,18 +89,18 @@ class backupSchedule:
 
                 ifRunning = ProcessUtilities.outputExecutioner('ps aux')
 
-                if os.path.exists('/usr/local/CyberCP/debug'):
+                if os.path.exists('/usr/local/core/debug'):
                     message = 'Output of px aux when running remote backup status check: %s' % (ifRunning)
                     logging.CyberCPLogFileWriter.writeToFile(message)
 
 
                 if (ifRunning.find('startBackup') > -1 or ifRunning.find('BackupRoot') > -1) and ifRunning.find('/%s/' % (backupDomain)):
-                    if os.path.exists('/usr/local/CyberCP/debug'):
+                    if os.path.exists('/usr/local/core/debug'):
                         message = 'If running found.'
                         logging.CyberCPLogFileWriter.writeToFile(message)
 
                     if os.path.exists(status):
-                        if os.path.exists('/usr/local/CyberCP/debug'):
+                        if os.path.exists('/usr/local/core/debug'):
                             message = 'If running found. and status file exists'
                             logging.CyberCPLogFileWriter.writeToFile(message)
 
@@ -128,7 +128,7 @@ class backupSchedule:
                             return 1, tempStoragePath
 
                         elif status.find("[5009]") > -1:
-                            if os.path.exists('/usr/local/CyberCP/debug'):
+                            if os.path.exists('/usr/local/core/debug'):
                                 message = 'If running found. status file exists but error'
                                 logging.CyberCPLogFileWriter.writeToFile(message)
                             ## removing status file, so that backup can re-run
@@ -166,7 +166,7 @@ class backupSchedule:
                             return 0, tempStoragePath
 
                         elif os.path.exists(schedulerPath):
-                            if os.path.exists('/usr/local/CyberCP/debug'):
+                            if os.path.exists('/usr/local/core/debug'):
                                 message = 'If running found. status file exists, scheduler path also exists hence killed'
                                 logging.CyberCPLogFileWriter.writeToFile(message)
                             backupSchedule.remoteBackupLogging(backupLogPath, 'Backup process killed. Error: %s' % (
@@ -178,11 +178,11 @@ class backupSchedule:
                             return 0, 'Backup process killed.'
 
                 else:
-                    if os.path.exists('/usr/local/CyberCP/debug'):
+                    if os.path.exists('/usr/local/core/debug'):
                         message = 'If running not found.'
                         logging.CyberCPLogFileWriter.writeToFile(message)
                     if os.path.exists(status):
-                        if os.path.exists('/usr/local/CyberCP/debug'):
+                        if os.path.exists('/usr/local/core/debug'):
                             message = 'if running not found, Status file exists'
                             logging.CyberCPLogFileWriter.writeToFile(message)
                         status = open(status, 'r').read()
@@ -209,7 +209,7 @@ class backupSchedule:
                             return 1, tempStoragePath
                         elif os.path.exists(schedulerPath):
 
-                            if os.path.exists('/usr/local/CyberCP/debug'):
+                            if os.path.exists('/usr/local/core/debug'):
                                 message = 'if running not found, Status file exists, scheduler path exists thus killed.'
                                 logging.CyberCPLogFileWriter.writeToFile(message)
 
@@ -220,12 +220,12 @@ class backupSchedule:
                             ProcessUtilities.normalExecutioner(command)
                             return 0, 'Backup process killed.'
                     else:
-                        if os.path.exists('/usr/local/CyberCP/debug'):
+                        if os.path.exists('/usr/local/core/debug'):
                             message = 'Status file does not exists.'
                             logging.CyberCPLogFileWriter.writeToFile(message)
                         if killCounter == 1:
 
-                            if os.path.exists('/usr/local/CyberCP/debug'):
+                            if os.path.exists('/usr/local/core/debug'):
                                 message = 'if running not found, Status file  does not exists, kill counter 1, thus killed'
                                 logging.CyberCPLogFileWriter.writeToFile(message)
 
@@ -234,7 +234,7 @@ class backupSchedule:
 
                             return 0, 'Backup process killed without reporting any error. [184]'
                         elif os.path.exists(schedulerPath):
-                            if os.path.exists('/usr/local/CyberCP/debug'):
+                            if os.path.exists('/usr/local/core/debug'):
                                 message = 'if running not found, Status file does not exists, scheduler path found thus killed'
                                 logging.CyberCPLogFileWriter.writeToFile(message)
                             backupSchedule.remoteBackupLogging(backupLogPath, 'Backup process killed. Error: %s' % (
@@ -392,7 +392,7 @@ class backupSchedule:
 
                 output = ProcessUtilities.outputExecutioner('ps aux')
 
-                if output.find('/usr/local/CyberCP/plogical/backupSchedule.py') > -1 and output.find(pid) > -1:
+                if output.find('/usr/local/core/plogical/backupSchedule.py') > -1 and output.find(pid) > -1:
                     print(
                         '\n\nRemote backup is already running with PID: %s. If you want to run again kindly kill the backup process: \n\n kill -9 %s.\n\n' % (
                         pid, pid))

@@ -1,7 +1,7 @@
 import argparse
 import os
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical import CyberCPLogFileWriter as logging
 from plogical import backupUtilities as backupUtil
 import time
@@ -293,7 +293,7 @@ class remoteTransferUtilities:
                     writeToFile.close()
 
                     backupFile = backup
-                    execPath = "sudo nice -n 10 /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+                    execPath = "sudo nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
                     execPath = execPath + " submitRestore --backupFile " + backupFile + " --dir " + dir
                     subprocess.Popen(shlex.split(execPath))
                     time.sleep(4)

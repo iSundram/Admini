@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 # coding=utf-8
 import os.path
 import sys
@@ -8,8 +8,8 @@ import django
 from django.shortcuts import redirect
 
 from plogical.httpProc import httpProc
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from django.http import HttpResponse
 try:
@@ -137,7 +137,7 @@ class MailServerManager(multi.Thread):
                     writeToFile.write(limitString)
                     writeToFile.close()
 
-                    execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                    execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                     execPath = execPath + f" SaveEmailLimitsNew --tempConfigPath {RandomFile}"
                     ProcessUtilities.outputExecutioner(execPath)
 
@@ -294,7 +294,7 @@ class MailServerManager(multi.Thread):
 
             website = Websites.objects.get(domain=selectedDomain)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = '%s setupAutoDiscover --virtualHostName %s --websiteOwner %s' % (execPath, selectedDomain, website.admin.userName)
 
             ProcessUtilities.executioner(execPath)
@@ -747,7 +747,7 @@ class MailServerManager(multi.Thread):
             else:
                 return ACLManager.loadErrorJson()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " generateKeys --domain " + domainName
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -756,13 +756,13 @@ class MailServerManager(multi.Thread):
 
             if output.find("1,None") > -1:
 
-                command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python3.6/site-packages/tldextract/.suffix_cache'
+                command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python3.6/site-packages/tldextract/.suffix_cache'
                 ProcessUtilities.executioner(command)
 
-                command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python3.8/site-packages/tldextract/.suffix_cache'
+                command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python3.8/site-packages/tldextract/.suffix_cache'
                 ProcessUtilities.executioner(command)
 
-                command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python*/site-packages/tldextract/.suffix_cache'
+                command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python*/site-packages/tldextract/.suffix_cache'
                 ProcessUtilities.executioner(command, None, True)
 
                 import tldextract
@@ -829,7 +829,7 @@ class MailServerManager(multi.Thread):
 
             if installStatus.find("[200]") > -1:
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " configureOpenDKIM"
 
                 output = ProcessUtilities.outputExecutioner(execPath)
@@ -1043,11 +1043,11 @@ class MailServerManager(multi.Thread):
         try:
 
 
-            mysql_virtual_domains = "/usr/local/CyberCP/install/email-configs-one/mysql-virtual_domains.cf"
-            mysql_virtual_forwardings = "/usr/local/CyberCP/install/email-configs-one/mysql-virtual_forwardings.cf"
-            mysql_virtual_mailboxes = "/usr/local/CyberCP/install/email-configs-one/mysql-virtual_mailboxes.cf"
-            mysql_virtual_email2email = "/usr/local/CyberCP/install/email-configs-one/mysql-virtual_email2email.cf"
-            dovecotmysql = "/usr/local/CyberCP/install/email-configs-one/dovecot-sql.conf.ext"
+            mysql_virtual_domains = "/usr/local/core/install/email-configs-one/mysql-virtual_domains.cf"
+            mysql_virtual_forwardings = "/usr/local/core/install/email-configs-one/mysql-virtual_forwardings.cf"
+            mysql_virtual_mailboxes = "/usr/local/core/install/email-configs-one/mysql-virtual_mailboxes.cf"
+            mysql_virtual_email2email = "/usr/local/core/install/email-configs-one/mysql-virtual_email2email.cf"
+            dovecotmysql = "/usr/local/core/install/email-configs-one/dovecot-sql.conf.ext"
 
             ### update password:
 
@@ -1240,24 +1240,24 @@ class MailServerManager(multi.Thread):
 
             # Cleanup config files for ubuntu
             if ProcessUtilities.decideDistro() == ProcessUtilities.ubuntu:
-                self.centos_lib_dir_to_ubuntu("/usr/local/CyberCP/install/email-configs-one/master.cf", "/usr/libexec/", "/usr/lib/")
-                self.centos_lib_dir_to_ubuntu("/usr/local/CyberCP/install/email-configs-one/main.cf", "/usr/libexec/postfix",
+                self.centos_lib_dir_to_ubuntu("/usr/local/core/install/email-configs-one/master.cf", "/usr/libexec/", "/usr/lib/")
+                self.centos_lib_dir_to_ubuntu("/usr/local/core/install/email-configs-one/main.cf", "/usr/libexec/postfix",
                                               "/usr/lib/postfix/sbin")
 
 
             ########### Copy config files
             import shutil
 
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/mysql-virtual_domains.cf", "/etc/postfix/mysql-virtual_domains.cf")
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/mysql-virtual_forwardings.cf",
+            shutil.copy("/usr/local/core/install/email-configs-one/mysql-virtual_domains.cf", "/etc/postfix/mysql-virtual_domains.cf")
+            shutil.copy("/usr/local/core/install/email-configs-one/mysql-virtual_forwardings.cf",
                         "/etc/postfix/mysql-virtual_forwardings.cf")
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/mysql-virtual_mailboxes.cf", "/etc/postfix/mysql-virtual_mailboxes.cf")
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/mysql-virtual_email2email.cf",
+            shutil.copy("/usr/local/core/install/email-configs-one/mysql-virtual_mailboxes.cf", "/etc/postfix/mysql-virtual_mailboxes.cf")
+            shutil.copy("/usr/local/core/install/email-configs-one/mysql-virtual_email2email.cf",
                         "/etc/postfix/mysql-virtual_email2email.cf")
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/main.cf", main)
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/master.cf", master)
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/dovecot.conf", dovecot)
-            shutil.copy("/usr/local/CyberCP/install/email-configs-one/dovecot-sql.conf.ext", dovecotmysql)
+            shutil.copy("/usr/local/core/install/email-configs-one/main.cf", main)
+            shutil.copy("/usr/local/core/install/email-configs-one/master.cf", master)
+            shutil.copy("/usr/local/core/install/email-configs-one/dovecot.conf", dovecot)
+            shutil.copy("/usr/local/core/install/email-configs-one/dovecot-sql.conf.ext", dovecotmysql)
 
 
             ######################################## Permissions
@@ -1510,18 +1510,18 @@ milter_default_action = accept
     def fixCyberPanelPermissions(self):
 
         ###### fix Core CyberPanel permissions
-        command = "find /usr/local/CyberCP -type d -exec chmod 0755 {} \;"
+        command = "find /usr/local/core -type d -exec chmod 0755 {} \;"
         ProcessUtilities.executioner(command)
 
-        command = "find /usr/local/CyberCP -type f -exec chmod 0644 {} \;"
+        command = "find /usr/local/core -type f -exec chmod 0644 {} \;"
         ProcessUtilities.executioner(command)
 
-        command = "chmod -R 755 /usr/local/CyberCP/bin"
+        command = "chmod -R 755 /usr/local/core/bin"
         ProcessUtilities.executioner(command)
 
         ## change owner
 
-        command = "chown -R root:root /usr/local/CyberCP"
+        command = "chown -R root:root /usr/local/core"
         ProcessUtilities.executioner(command)
 
         ########### Fix LSCPD
@@ -1538,7 +1538,7 @@ milter_default_action = accept
         command = "chmod -R 755 /usr/local/lscp/fcgi-bin"
         ProcessUtilities.executioner(command)
 
-        command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/tmp"
+        command = "chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin/tmp"
         ProcessUtilities.executioner(command)
 
         ## change owner
@@ -1574,22 +1574,22 @@ milter_default_action = accept
         ProcessUtilities.executioner(command)
 
         # Fix SnappyMail public directory ownership (critical fix)
-        command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/snappymail/data 2>/dev/null || true"
+        command = "chown -R lscpd:lscpd /usr/local/core/public/snappymail/data 2>/dev/null || true"
         ProcessUtilities.executioner(command)
 
-        command = "chmod 700 /usr/local/CyberCP/cli/cyberPanel.py"
+        command = "chmod 700 /usr/local/core/cli/cyberPanel.py"
         ProcessUtilities.executioner(command)
 
-        command = "chmod 700 /usr/local/CyberCP/plogical/upgradeCritical.py"
+        command = "chmod 700 /usr/local/core/plogical/upgradeCritical.py"
         ProcessUtilities.executioner(command)
 
-        command = "chmod 755 /usr/local/CyberCP/postfixSenderPolicy/client.py"
+        command = "chmod 755 /usr/local/core/postfixSenderPolicy/client.py"
         ProcessUtilities.executioner(command)
 
-        command = "chmod 640 /usr/local/CyberCP/CyberCP/settings.py"
+        command = "chmod 640 /usr/local/core/CyberCP/settings.py"
         ProcessUtilities.executioner(command)
 
-        command = "chown root:cyberpanel /usr/local/CyberCP/CyberCP/settings.py"
+        command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
         ProcessUtilities.executioner(command)
 
         files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -1629,8 +1629,8 @@ milter_default_action = accept
         command = 'chmod 644 /etc/postfix/dynamicmaps.cf'
         subprocess.call(command, shell=True)
 
-        fileM = ['/usr/local/lsws/FileManager/', '/usr/local/CyberCP/install/FileManager',
-                 '/usr/local/CyberCP/serverStatus/litespeed/FileManager', '/usr/local/lsws/Example/html/FileManager']
+        fileM = ['/usr/local/lsws/FileManager/', '/usr/local/core/install/FileManager',
+                 '/usr/local/core/serverStatus/litespeed/FileManager', '/usr/local/lsws/Example/html/FileManager']
 
         for items in fileM:
             try:
@@ -1642,29 +1642,29 @@ milter_default_action = accept
         command = 'chmod 755 /etc/pure-ftpd/'
         subprocess.call(command, shell=True)
 
-        command = 'chmod +x /usr/local/CyberCP/plogical/renew.py'
+        command = 'chmod +x /usr/local/core/plogical/renew.py'
         ProcessUtilities.executioner(command)
 
-        command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+        command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
         ProcessUtilities.executioner(command)
 
-        clScripts = ['/usr/local/CyberCP/CLScript/panel_info.py', '/usr/local/CyberCP/CLScript/CloudLinuxPackages.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxUsers.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxDomains.py'
-            , '/usr/local/CyberCP/CLScript/CloudLinuxResellers.py', '/usr/local/CyberCP/CLScript/CloudLinuxAdmins.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxDB.py', '/usr/local/CyberCP/CLScript/UserInfo.py']
+        clScripts = ['/usr/local/core/tools/panel_info.py', '/usr/local/core/tools/CloudLinuxPackages.py',
+                     '/usr/local/core/tools/CloudLinuxUsers.py',
+                     '/usr/local/core/tools/CloudLinuxDomains.py'
+            , '/usr/local/core/tools/CloudLinuxResellers.py', '/usr/local/core/tools/CloudLinuxAdmins.py',
+                     '/usr/local/core/tools/CloudLinuxDB.py', '/usr/local/core/tools/UserInfo.py']
 
         for items in clScripts:
             command = 'chmod +x %s' % (items)
             ProcessUtilities.executioner(command)
 
-        command = 'chmod 600 /usr/local/CyberCP/plogical/adminPass.py'
+        command = 'chmod 600 /usr/local/core/plogical/adminPass.py'
         ProcessUtilities.executioner(command)
 
         command = 'chmod 600 /etc/cagefs/exclude/cyberpanelexclude'
         ProcessUtilities.executioner(command)
 
-        command = "find /usr/local/CyberCP/ -name '*.pyc' -delete"
+        command = "find /usr/local/core/ -name '*.pyc' -delete"
         ProcessUtilities.executioner(command)
 
         if ProcessUtilities.decideDistro() == ProcessUtilities.centos or ProcessUtilities.cent8:
@@ -1827,8 +1827,8 @@ protocol sieve {
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Resetting configurations..,40')
 
             import sys
-            sys.path.append('/usr/local/CyberCP')
-            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+            sys.path.append('/usr/local/core')
+            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
             from CyberCP import settings
 
             if self.setup_email_Passwords(settings.DATABASES['default']['PASSWORD']) == 0:
@@ -1968,11 +1968,11 @@ protocol sieve {
                 return ACLManager.loadErrorJson()
 
             if mailUtilities.checkIfRspamdInstalled() == 0:
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " installRspamd"
                 ProcessUtilities.executioner(execPath)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " SetupEmailLimits"
             ProcessUtilities.executioner(execPath)
 
@@ -1984,7 +1984,7 @@ protocol sieve {
             writeToFile.write(limitString)
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + f" SaveEmailLimitsNew --tempConfigPath {RandomFile}"
             result = ProcessUtilities.outputExecutioner(execPath)
 

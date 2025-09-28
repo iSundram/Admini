@@ -1,6 +1,6 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import plogical.CyberCPLogFileWriter as logging
 import argparse
 from plogical.mailUtilities import mailUtilities

@@ -1,6 +1,6 @@
 import argparse
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical.processUtilities import ProcessUtilities
 
 def main():
@@ -9,7 +9,7 @@ def main():
     parser.add_argument('function', help='Specific a function to call!')
     args = parser.parse_args()
 
-    command = f"/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/IncScheduler.py '{args.function}'"
+    command = f"/usr/local/core/bin/python /usr/local/core/plogical/IncScheduler.py '{args.function}'"
     ProcessUtilities.normalExecutioner(command)
 
 

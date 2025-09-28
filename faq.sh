@@ -44,7 +44,7 @@ Yes , but after you changed , please make sure you have updated the password in 
 
 ${RED}/etc/cyberpanel/mysqlPassword${NC}
 
-${RED}/usr/local/CyberCP/CyberCP/settings.py${NC}
+${RED}/usr/local/core/CyberCP/settings.py${NC}
 
 otherwise CyberPanel will not have access to database.
 

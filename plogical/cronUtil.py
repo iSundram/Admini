@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import argparse
 from plogical.processUtilities import ProcessUtilities
 from random import randint, seed

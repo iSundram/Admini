@@ -361,7 +361,7 @@ def switchTOLSWS(request):
         except:
             licenseKey = 'trial'
 
-        execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/serverStatus/serverStatusUtil.py"
+        execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/serverStatus/serverStatusUtil.py"
         execPath = execPath + " switchTOLSWS --licenseKey " + licenseKey
 
         ProcessUtilities.popenExecutioner(execPath)
@@ -796,7 +796,7 @@ def fetchPackages(request):
 
             if type == 'CyberPanel':
 
-                command = 'cat /usr/local/CyberCP/AllCPUbuntu.json'
+                command = 'cat /usr/local/core/AllCPUbuntu.json'
                 packages = json.loads(ProcessUtilities.outputExecutioner(command))
 
             else:
@@ -885,7 +885,7 @@ def fetchPackages(request):
                     else:
                         startForUpdate = startForUpdate + 1
             elif type == 'CyberPanel':
-                command = 'cat /usr/local/CyberCP/CPCent7repo.json'
+                command = 'cat /usr/local/core/CPCent7repo.json'
                 packages = json.loads(ProcessUtilities.outputExecutioner(command))
 
         ## make list of packages that need update

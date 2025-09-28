@@ -1,9 +1,9 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os,sys
 import time
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import subprocess
 import shlex
@@ -118,33 +118,33 @@ class ServerStatusUtil(multi.Thread):
             if ServerStatusUtil.executioner(command, statusFile) == 0:
                 return 0
 
-            if os.path.exists('/usr/local/CyberCP/lsws-6.0/'):
-                shutil.rmtree('/usr/local/CyberCP/lsws-6.0')
+            if os.path.exists('/usr/local/core/lsws-6.0/'):
+                shutil.rmtree('/usr/local/core/lsws-6.0')
 
-            if os.path.exists(f'/usr/local/CyberCP/lsws-{lsws_version}/'):
-                shutil.rmtree(f'/usr/local/CyberCP/lsws-{lsws_version}/')
+            if os.path.exists(f'/usr/local/core/lsws-{lsws_version}/'):
+                shutil.rmtree(f'/usr/local/core/lsws-{lsws_version}/')
 
             if ACLManager.ISARM():
-                command = f'tar zxf lsws-{lsws_version}-ent-aarch64-linux.tar.gz -C /usr/local/CyberCP'
+                command = f'tar zxf lsws-{lsws_version}-ent-aarch64-linux.tar.gz -C /usr/local/core'
             else:
-                command = f'tar zxf lsws-{lsws_version}-ent-x86_64-linux.tar.gz -C /usr/local/CyberCP'
+                command = f'tar zxf lsws-{lsws_version}-ent-x86_64-linux.tar.gz -C /usr/local/core'
 
             if ServerStatusUtil.executioner(command, statusFile) == 0:
                 return 0
 
             if licenseKey == 'trial':
-                command = f'wget -q --output-document=/usr/local/CyberCP/lsws-{lsws_version}/trial.key http://license.litespeedtech.com/reseller/trial.key'
+                command = f'wget -q --output-document=/usr/local/core/lsws-{lsws_version}/trial.key http://license.litespeedtech.com/reseller/trial.key'
                 if ServerStatusUtil.executioner(command, statusFile) == 0:
                     return 0
             else:
-                writeSerial = open(f'/usr/local/CyberCP/lsws-{lsws_version}/serial.no', 'w')
+                writeSerial = open(f'/usr/local/core/lsws-{lsws_version}/serial.no', 'w')
                 writeSerial.writelines(licenseKey)
                 writeSerial.close()
 
-            shutil.copy('/usr/local/CyberCP/serverStatus/litespeed/install.sh', f'/usr/local/CyberCP/lsws-{lsws_version}/')
-            shutil.copy('/usr/local/CyberCP/serverStatus/litespeed/functions.sh', f'/usr/local/CyberCP/lsws-{lsws_version}/')
+            shutil.copy('/usr/local/core/serverStatus/litespeed/install.sh', f'/usr/local/core/lsws-{lsws_version}/')
+            shutil.copy('/usr/local/core/serverStatus/litespeed/functions.sh', f'/usr/local/core/lsws-{lsws_version}/')
 
-            os.chdir(f'/usr/local/CyberCP/lsws-{lsws_version}/')
+            os.chdir(f'/usr/local/core/lsws-{lsws_version}/')
 
             command = 'chmod +x install.sh'
             if ServerStatusUtil.executioner(command, statusFile) == 0:
@@ -160,9 +160,9 @@ class ServerStatusUtil(multi.Thread):
 
             os.chdir(cwd)
             confPath = '/usr/local/lsws/conf/'
-            shutil.copy('/usr/local/CyberCP/serverStatus/litespeed/httpd_config.xml', confPath)
-            shutil.copy('/usr/local/CyberCP/serverStatus/litespeed/modsec.conf', confPath)
-            shutil.copy('/usr/local/CyberCP/serverStatus/litespeed/httpd.conf', confPath)
+            shutil.copy('/usr/local/core/serverStatus/litespeed/httpd_config.xml', confPath)
+            shutil.copy('/usr/local/core/serverStatus/litespeed/modsec.conf', confPath)
+            shutil.copy('/usr/local/core/serverStatus/litespeed/httpd.conf', confPath)
 
             try:
                 command = 'chown -R lsadm:lsadm ' + confPath
@@ -171,7 +171,7 @@ class ServerStatusUtil(multi.Thread):
                 pass
 
             try:
-                os.rmdir(f"/usr/local/CyberCP/lsws-{lsws_version}")
+                os.rmdir(f"/usr/local/core/lsws-{lsws_version}")
             except:
                 pass
 
@@ -195,7 +195,7 @@ class ServerStatusUtil(multi.Thread):
             fileManagerPath = ServerStatusUtil.serverRootPath+"FileManager"
             if os.path.exists(fileManagerPath):
                 shutil.rmtree(fileManagerPath)
-            shutil.copytree("/usr/local/CyberCP/serverStatus/litespeed/FileManager",fileManagerPath)
+            shutil.copytree("/usr/local/core/serverStatus/litespeed/FileManager",fileManagerPath)
 
             ## remove unnecessary files
 

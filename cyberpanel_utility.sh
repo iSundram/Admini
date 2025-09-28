@@ -62,7 +62,7 @@ if [[ $TMP_YN == "1" ]] ; then
 	fi
 		rm -f /etc/cyberpanel/watchdog.sh
 		rm -f /usr/local/bin/watchdog
-		wget -O /etc/cyberpanel/watchdog.sh https://$GIT_CONTENT_URL/$BRANCH_NAME/CPScripts/watchdog.sh
+		wget -O /etc/cyberpanel/watchdog.sh https://$GIT_CONTENT_URL/$BRANCH_NAME/utils/watchdog.sh
 		chmod 700 /etc/cyberpanel/watchdog.sh
 		ln -s /etc/cyberpanel/watchdog.sh /usr/local/bin/watchdog
 		echo -e "\nWatchDog has been installed/updated..."

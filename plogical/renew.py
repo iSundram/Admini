@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
@@ -7,8 +7,8 @@ from typing import Union, Optional
 from datetime import datetime, timedelta
 import time
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
 from websiteFunctions.models import Websites, ChildDomains

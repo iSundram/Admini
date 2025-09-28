@@ -642,7 +642,7 @@ password="%s"
 
         ### Applying migrations
 
-        os.chdir("/usr/local/CyberCP")
+        os.chdir("/usr/local/core")
 
         command = "/usr/local/CyberPanel/bin/python manage.py makemigrations"
         preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
@@ -652,18 +652,18 @@ password="%s"
         command = "/usr/local/CyberPanel/bin/python manage.py migrate"
         preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
 
-        if not os.path.exists("/usr/local/CyberCP/public"):
-            os.mkdir("/usr/local/CyberCP/public")
+        if not os.path.exists("/usr/local/core/public"):
+            os.mkdir("/usr/local/core/public")
 
         command = "/usr/local/CyberPanel/bin/python manage.py collectstatic --noinput --clear"
         preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
 
         ## Moving static content to lscpd location
-        command = 'mv static /usr/local/CyberCP/public/'
+        command = 'mv static /usr/local/core/public/'
         preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
 
         try:
-            path = "/usr/local/CyberCP/version.txt"
+            path = "/usr/local/core/version.txt"
             writeToFile = open(path, 'w')
             writeToFile.writelines('%s\n' % (VERSION))
             writeToFile.writelines(str(BUILD))
@@ -681,18 +681,18 @@ password="%s"
         command = "usermod -G lscpd,lsadm,nogroup lscpd"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "find /usr/local/CyberCP -type d -exec chmod 0755 {} \;"
+        command = "find /usr/local/core -type d -exec chmod 0755 {} \;"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "find /usr/local/CyberCP -type f -exec chmod 0644 {} \;"
+        command = "find /usr/local/core -type f -exec chmod 0644 {} \;"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod -R 755 /usr/local/CyberCP/bin"
+        command = "chmod -R 755 /usr/local/core/bin"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         ## change owner
 
-        command = "chown -R root:root /usr/local/CyberCP"
+        command = "chown -R root:root /usr/local/core"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         ########### Fix LSCPD
@@ -709,7 +709,7 @@ password="%s"
         command = "chmod -R 755 /usr/local/lscp/fcgi-bin"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/tmp"
+        command = "chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin/tmp"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         ## change owner
@@ -720,19 +720,19 @@ password="%s"
         command = "chown -R lscpd:lscpd /usr/local/lscp/cyberpanel/rainloop"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod 700 /usr/local/CyberCP/cli/cyberPanel.py"
+        command = "chmod 700 /usr/local/core/cli/cyberPanel.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod 700 /usr/local/CyberCP/plogical/upgradeCritical.py"
+        command = "chmod 700 /usr/local/core/plogical/upgradeCritical.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod 755 /usr/local/CyberCP/postfixSenderPolicy/client.py"
+        command = "chmod 755 /usr/local/core/postfixSenderPolicy/client.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod 640 /usr/local/CyberCP/CyberCP/settings.py"
+        command = "chmod 640 /usr/local/core/CyberCP/settings.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chown root:cyberpanel /usr/local/CyberCP/CyberCP/settings.py"
+        command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -772,8 +772,8 @@ password="%s"
         command = 'chmod 644 /etc/postfix/dynamicmaps.cf'
         subprocess.call(command, shell=True)
 
-        fileM = ['/usr/local/lsws/FileManager/', '/usr/local/CyberCP/install/FileManager',
-                 '/usr/local/CyberCP/serverStatus/litespeed/FileManager', '/usr/local/lsws/Example/html/FileManager']
+        fileM = ['/usr/local/lsws/FileManager/', '/usr/local/core/install/FileManager',
+                 '/usr/local/core/serverStatus/litespeed/FileManager', '/usr/local/lsws/Example/html/FileManager']
 
         for items in fileM:
             try:
@@ -784,29 +784,29 @@ password="%s"
         command = 'chmod 755 /etc/pure-ftpd/'
         subprocess.call(command, shell=True)
 
-        command = 'chmod +x /usr/local/CyberCP/plogical/renew.py'
+        command = 'chmod +x /usr/local/core/plogical/renew.py'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+        command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        clScripts = ['/usr/local/CyberCP/CLScript/panel_info.py', '/usr/local/CyberCP/CLScript/CloudLinuxPackages.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxUsers.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxDomains.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxResellers.py', '/usr/local/CyberCP/CLScript/CloudLinuxAdmins.py',
-                     '/usr/local/CyberCP/CLScript/CloudLinuxDB.py', '/usr/local/CyberCP/CLScript/UserInfo.py']
+        clScripts = ['/usr/local/core/tools/panel_info.py', '/usr/local/core/tools/CloudLinuxPackages.py',
+                     '/usr/local/core/tools/CloudLinuxUsers.py',
+                     '/usr/local/core/tools/CloudLinuxDomains.py',
+                     '/usr/local/core/tools/CloudLinuxResellers.py', '/usr/local/core/tools/CloudLinuxAdmins.py',
+                     '/usr/local/core/tools/CloudLinuxDB.py', '/usr/local/core/tools/UserInfo.py']
 
         for items in clScripts:
             command = 'chmod +x %s' % (items)
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = 'chmod 600 /usr/local/CyberCP/plogical/adminPass.py'
+        command = 'chmod 600 /usr/local/core/plogical/adminPass.py'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         command = 'chmod 600 /etc/cagefs/exclude/cyberpanelexclude'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "find /usr/local/CyberCP/ -name '*.pyc' -delete"
+        command = "find /usr/local/core/ -name '*.pyc' -delete"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         if self.is_centos_family():
@@ -855,12 +855,12 @@ password="%s"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         # Fix SnappyMail public directory ownership early
-        command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/snappymail/data 2>/dev/null || true"
+        command = "chown -R lscpd:lscpd /usr/local/core/public/snappymail/data 2>/dev/null || true"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         snappymailinipath = '/usr/local/lscp/cyberpanel/snappymail/data/_data_/_default_/configs/application.ini'
 
-        command = 'chmod 600 /usr/local/CyberCP/public/snappymail.php'
+        command = 'chmod 600 /usr/local/core/public/snappymail.php'
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
         ###
@@ -909,22 +909,22 @@ password="%s"
     def download_install_phpmyadmin(self):
         try:
 
-            if not os.path.exists("/usr/local/CyberCP/public"):
-                os.mkdir("/usr/local/CyberCP/public")
+            if not os.path.exists("/usr/local/core/public"):
+                os.mkdir("/usr/local/core/public")
 
-            command = 'wget -O /usr/local/CyberCP/public/phpmyadmin.zip https://github.com/usmannasir/cyberpanel/raw/stable/phpmyadmin.zip'
+            command = 'wget -O /usr/local/core/public/phpmyadmin.zip https://github.com/usmannasir/cyberpanel/raw/stable/phpmyadmin.zip'
 
             preFlightsChecks.call(command, self.distro, '[download_install_phpmyadmin]',
                                   command, 1, 0, os.EX_OSERR)
 
-            command = 'unzip /usr/local/CyberCP/public/phpmyadmin.zip -d /usr/local/CyberCP/public'
+            command = 'unzip /usr/local/core/public/phpmyadmin.zip -d /usr/local/core/public'
             preFlightsChecks.call(command, self.distro, '[download_install_phpmyadmin]',
                                   command, 1, 0, os.EX_OSERR)
 
-            command = 'mv /usr/local/CyberCP/public/phpMyAdmin-*-all-languages /usr/local/CyberCP/public/phpmyadmin'
+            command = 'mv /usr/local/core/public/phpMyAdmin-*-all-languages /usr/local/core/public/phpmyadmin'
             subprocess.call(command, shell=True)
 
-            command = 'rm -f /usr/local/CyberCP/public/phpmyadmin.zip'
+            command = 'rm -f /usr/local/core/public/phpmyadmin.zip'
             preFlightsChecks.call(command, self.distro, '[download_install_phpmyadmin]',
                                   command, 1, 0, os.EX_OSERR)
 
@@ -932,9 +932,9 @@ password="%s"
 
             rString = install_utils.generate_random_string(32)
 
-            data = open('/usr/local/CyberCP/public/phpmyadmin/config.sample.inc.php', 'r').readlines()
+            data = open('/usr/local/core/public/phpmyadmin/config.sample.inc.php', 'r').readlines()
 
-            writeToFile = open('/usr/local/CyberCP/public/phpmyadmin/config.inc.php', 'w')
+            writeToFile = open('/usr/local/core/public/phpmyadmin/config.inc.php', 'w')
 
             writeE = 1
 
@@ -960,26 +960,26 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
                     if writeE:
                         writeToFile.writelines(items)
 
-            writeToFile.writelines("$cfg['TempDir'] = '/usr/local/CyberCP/public/phpmyadmin/tmp';\n")
+            writeToFile.writelines("$cfg['TempDir'] = '/usr/local/core/public/phpmyadmin/tmp';\n")
 
             writeToFile.close()
 
-            os.mkdir('/usr/local/CyberCP/public/phpmyadmin/tmp')
+            os.mkdir('/usr/local/core/public/phpmyadmin/tmp')
 
-            command = 'chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin'
-            preFlightsChecks.call(command, self.distro, '[chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin]',
-                                  'chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin', 1, 0, os.EX_OSERR)
+            command = 'chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin'
+            preFlightsChecks.call(command, self.distro, '[chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin]',
+                                  'chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin', 1, 0, os.EX_OSERR)
 
             if self.remotemysql == 'ON':
                 command = "sed -i 's|'localhost'|'%s'|g' %s" % (
-                    self.mysqlhost, '/usr/local/CyberCP/public/phpmyadmin/config.inc.php')
+                    self.mysqlhost, '/usr/local/core/public/phpmyadmin/config.inc.php')
                 preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            command = 'cp /usr/local/CyberCP/plogical/phpmyadminsignin.php /usr/local/CyberCP/public/phpmyadmin/phpmyadminsignin.php'
+            command = 'cp /usr/local/core/plogical/phpmyadminsignin.php /usr/local/core/public/phpmyadmin/phpmyadminsignin.php'
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
             if self.remotemysql == 'ON':
-                command = "sed -i 's|localhost|%s|g' /usr/local/CyberCP/public/phpmyadmin/phpmyadminsignin.php" % (
+                command = "sed -i 's|localhost|%s|g' /usr/local/core/public/phpmyadmin/phpmyadminsignin.php" % (
                     self.mysqlhost)
                 preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
@@ -1429,13 +1429,13 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
         try:
             #######
 
-            if not os.path.exists("/usr/local/CyberCP/public"):
-                os.mkdir("/usr/local/CyberCP/public")
+            if not os.path.exists("/usr/local/core/public"):
+                os.mkdir("/usr/local/core/public")
 
-            if os.path.exists("/usr/local/CyberCP/public/snappymail"):
+            if os.path.exists("/usr/local/core/public/snappymail"):
                 return 0
 
-            os.chdir("/usr/local/CyberCP/public")
+            os.chdir("/usr/local/core/public")
 
             command = 'wget https://github.com/the-djmaze/snappymail/releases/download/v%s/snappymail-%s.zip' % (preFlightsChecks.SnappyVersion, preFlightsChecks.SnappyVersion)
 
@@ -1443,7 +1443,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             #############
 
-            command = 'unzip snappymail-%s.zip -d /usr/local/CyberCP/public/snappymail' % (preFlightsChecks.SnappyVersion)
+            command = 'unzip snappymail-%s.zip -d /usr/local/core/public/snappymail' % (preFlightsChecks.SnappyVersion)
             preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
 
             try:
@@ -1453,7 +1453,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             #######
 
-            os.chdir("/usr/local/CyberCP/public/snappymail")
+            os.chdir("/usr/local/core/public/snappymail")
 
             command = 'find . -type d -exec chmod 755 {} \;'
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
@@ -1494,7 +1494,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
             # Fix SnappyMail public directory ownership immediately after creation
-            command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/snappymail/data 2>/dev/null || true"
+            command = "chown -R lscpd:lscpd /usr/local/core/public/snappymail/data 2>/dev/null || true"
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
             command = "mkdir -p /usr/local/lscp/cyberpanel/rainloop/data"
@@ -1516,9 +1516,9 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 #             # writeToFile.write(labsData)
 #             # writeToFile.close()
 #
-#             iPath = os.listdir('/usr/local/CyberCP/public/snappymail/snappymail/v/')
+#             iPath = os.listdir('/usr/local/core/public/snappymail/snappymail/v/')
 #
-#             path = "/usr/local/CyberCP/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
+#             path = "/usr/local/core/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
 #
 #             data = open(path, 'r').readlines()
 #             writeToFile = open(path, 'w')
@@ -1532,8 +1532,8 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 #
 #             writeToFile.close()
 #
-#             includeFileOldPath = '/usr/local/CyberCP/public/snappymail/_include.php'
-#             includeFileNewPath = '/usr/local/CyberCP/public/snappymail/include.php'
+#             includeFileOldPath = '/usr/local/core/public/snappymail/_include.php'
+#             includeFileNewPath = '/usr/local/core/public/snappymail/include.php'
 #
 #             if os.path.exists(includeFileOldPath):
 #                 writeToFile = open(includeFileOldPath, 'a')
@@ -1605,10 +1605,10 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 #             command = f'chmod 600 {PluginsFilePath}'
 #             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            command = f'wget -O /usr/local/CyberCP/snappymail_cyberpanel.php  https://raw.githubusercontent.com/the-djmaze/snappymail/master/integrations/cyberpanel/install.php'
+            command = f'wget -O /usr/local/core/snappymail_cyberpanel.php  https://raw.githubusercontent.com/the-djmaze/snappymail/master/integrations/cyberpanel/install.php'
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            command = f'/usr/local/lsws/lsphp80/bin/php /usr/local/CyberCP/snappymail_cyberpanel.php'
+            command = f'/usr/local/lsws/lsphp80/bin/php /usr/local/core/snappymail_cyberpanel.php'
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
 
@@ -1775,7 +1775,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
                         lscpdSelection = 'lscpd.0.4.0'
 
 
-            command = f'cp -f /usr/local/CyberCP/{lscpdSelection} /usr/local/lscp/bin/{lscpdSelection}'
+            command = f'cp -f /usr/local/core/{lscpdSelection} /usr/local/lscp/bin/{lscpdSelection}'
             preFlightsChecks.call(command, self.distro, command, command, 1, 1, os.EX_OSERR)
 
             command = 'rm -f /usr/local/lscp/bin/lscpd'
@@ -1945,10 +1945,10 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             command = "make"
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            if not os.path.exists('/usr/local/CyberCP/bin/'):
-                os.mkdir('/usr/local/CyberCP/bin/')
+            if not os.path.exists('/usr/local/core/bin/'):
+                os.mkdir('/usr/local/core/bin/')
 
-            command = "cp lswsgi /usr/local/CyberCP/bin/"
+            command = "cp lswsgi /usr/local/core/bin/"
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
             os.chdir(self.cwd)
@@ -1979,11 +1979,11 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             command = "mkdir -p " + path
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            path = "/usr/local/CyberCP/conf/"
+            path = "/usr/local/core/conf/"
             command = "mkdir -p " + path
             preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-            path = "/usr/local/CyberCP/conf/token_env"
+            path = "/usr/local/core/conf/token_env"
             writeToFile = open(path, "w")
             writeToFile.write("abc\n")
             writeToFile.close()
@@ -2047,22 +2047,22 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             cronFile = open(cronPath, "w")
 
             content = """
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/findBWUsage.py >/dev/null 2>&1
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
-0 0 1 * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
-0 2 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/upgradeCritical.py >/dev/null 2>&1
-0 0 * * 4 /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/renew.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/plogical/findBWUsage.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
+0 0 1 * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
+0 2 * * * /usr/local/core/bin/python /usr/local/core/plogical/upgradeCritical.py >/dev/null 2>&1
+0 0 * * 4 /usr/local/core/bin/python /usr/local/core/plogical/renew.py >/dev/null 2>&1
 7 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null
-0 0 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Daily
-0 0 * * 0 /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Weekly
+0 0 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Daily
+0 0 * * 0 /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Weekly
 
-*/30 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '30 Minutes'
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Hour'
-0 */6 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '6 Hours'
-0 */12 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '12 Hours'
-0 1 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Day'
-0 0 */3 * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '3 Days'
-0 0 * * 0 /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Week'
+*/30 * * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '30 Minutes'
+0 * * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Hour'
+0 */6 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '6 Hours'
+0 */12 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '12 Hours'
+0 1 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Day'
+0 0 */3 * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '3 Days'
+0 0 * * 0 /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Week'
 
 */3 * * * * if ! find /home/*/public_html/ -maxdepth 2 -type f -newer /usr/local/lsws/cgid -name '.htaccess' -exec false {} +; then /usr/local/lsws/bin/lswsctrl restart; fi
 """
@@ -2247,10 +2247,10 @@ milter_default_action = accept
         return 1
 
     def setupCLI(self):
-        command = "ln -s /usr/local/CyberCP/cli/cyberPanel.py /usr/bin/cyberpanel"
+        command = "ln -s /usr/local/core/cli/cyberPanel.py /usr/bin/cyberpanel"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
-        command = "chmod +x /usr/local/CyberCP/cli/cyberPanel.py"
+        command = "chmod +x /usr/local/core/cli/cyberPanel.py"
         preFlightsChecks.call(command, self.distro, command, command, 1, 0, os.EX_OSERR)
 
     def setupPHPSymlink(self):
@@ -2541,7 +2541,7 @@ milter_default_action = accept
     @staticmethod
     def setUpFirstAccount():
         try:
-            command = 'python /usr/local/CyberCP/plogical/adminPass.py --password 1234567'
+            command = 'python /usr/local/core/plogical/adminPass.py --password 1234567'
             subprocess.call(shlex.split(command))
         except:
             pass
@@ -2576,7 +2576,7 @@ milter_default_action = accept
         except:
             pass
 
-    def installCLScripts(self):
+    def installtoolss(self):
         try:
 
             CentOSPath = '/etc/redhat-release'
@@ -2588,16 +2588,16 @@ milter_default_action = accept
 
                 content = """[integration_scripts]
 
-panel_info = /usr/local/CyberCP/CLScript/panel_info.py
-packages = /usr/local/CyberCP/CLScript/CloudLinuxPackages.py
-users = /usr/local/CyberCP/CLScript/CloudLinuxUsers.py
-domains = /usr/local/CyberCP/CLScript/CloudLinuxDomains.py
-resellers = /usr/local/CyberCP/CLScript/CloudLinuxResellers.py
-admins = /usr/local/CyberCP/CLScript/CloudLinuxAdmins.py
-db_info = /usr/local/CyberCP/CLScript/CloudLinuxDB.py
+panel_info = /usr/local/core/tools/panel_info.py
+packages = /usr/local/core/tools/CloudLinuxPackages.py
+users = /usr/local/core/tools/CloudLinuxUsers.py
+domains = /usr/local/core/tools/CloudLinuxDomains.py
+resellers = /usr/local/core/tools/CloudLinuxResellers.py
+admins = /usr/local/core/tools/CloudLinuxAdmins.py
+db_info = /usr/local/core/tools/CloudLinuxDB.py
 
 [lvemanager_config]
-ui_user_info =/usr/local/CyberCP/CLScript/UserInfo.py
+ui_user_info =/usr/local/core/tools/UserInfo.py
 base_path = /usr/local/lvemanager
 run_service = 1
 service_port = 9000
@@ -2751,7 +2751,7 @@ def configure_jwt_secret():
     try:
         import secrets
         secret = secrets.token_urlsafe(32)
-        fastapi_file = '/usr/local/CyberCP/fastapi_ssh_server.py'
+        fastapi_file = '/usr/local/core/fastapi_ssh_server.py'
         with open(fastapi_file, 'r') as f:
             lines = f.readlines()
         with open(fastapi_file, 'w') as f:
@@ -2840,7 +2840,7 @@ def main():
         mysqldb = ''
 
     distro = get_distro()
-    checks = preFlightsChecks("/usr/local/lsws/", args.publicip, "/usr/local", cwd, "/usr/local/CyberCP", distro,
+    checks = preFlightsChecks("/usr/local/lsws/", args.publicip, "/usr/local", cwd, "/usr/local/core", distro,
                               remotemysql, mysqlhost, mysqldb, mysqluser, mysqlpassword, mysqlport)
     checks.mountTemp()
     checks.installQuota()
@@ -2938,7 +2938,7 @@ def main():
         preFlightsChecks.stdOut("Pure-FTPD will be installed and enabled.")
         checks.enableDisableFTP('on', distro)
 
-    checks.installCLScripts()
+    checks.installtoolss()
     # checks.disablePackegeUpdates()
 
     try:
@@ -2957,7 +2957,7 @@ admin_password = "12345"
         content = """<?php
 
 $_ENV['snappymail_INCLUDE_AS_API'] = true;
-include '/usr/local/CyberCP/public/snappymail/index.php';
+include '/usr/local/core/public/snappymail/index.php';
 
 $oConfig = \snappymail\Api::Config();
 $oConfig->SetPassword('%s');
@@ -2965,11 +2965,11 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
 ?>""" % (generate_pass())
 
-        writeToFile = open('/usr/local/CyberCP/public/snappymail.php', 'w')
+        writeToFile = open('/usr/local/core/public/snappymail.php', 'w')
         writeToFile.write(content)
         writeToFile.close()
 
-        command = '/usr/local/lsws/lsphp83/bin/php /usr/local/CyberCP/public/snappymail.php'
+        command = '/usr/local/lsws/lsphp83/bin/php /usr/local/core/public/snappymail.php'
         subprocess.call(shlex.split(command))
 
         command = "chown -R lscpd:lscpd /usr/local/lscp/cyberpanel/snappymail/data"
@@ -2984,7 +2984,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
         subprocess.call(shlex.split(command))
 
         # Fix SnappyMail public directory ownership (critical fix)
-        command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/snappymail/data 2>/dev/null || true"
+        command = "chown -R lscpd:lscpd /usr/local/core/public/snappymail/data 2>/dev/null || true"
         subprocess.call(shlex.split(command))
     except:
         pass

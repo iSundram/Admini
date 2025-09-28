@@ -315,14 +315,14 @@ def removeInstall(request):
 
             if appName == 'Elasticsearch':
                 if status == 'Installing':
-                    command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/manageServices/serviceManager.py --function InstallElasticSearch'
+                    command = '/usr/local/core/bin/python /usr/local/core/manageServices/serviceManager.py --function InstallElasticSearch'
                 else:
-                    command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/manageServices/serviceManager.py --function RemoveElasticSearch'
+                    command = '/usr/local/core/bin/python /usr/local/core/manageServices/serviceManager.py --function RemoveElasticSearch'
             elif appName == 'Redis':
                 if status == 'Installing':
-                    command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/manageServices/serviceManager.py --function InstallRedis'
+                    command = '/usr/local/core/bin/python /usr/local/core/manageServices/serviceManager.py --function InstallRedis'
                 else:
-                    command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/manageServices/serviceManager.py --function RemoveRedis'
+                    command = '/usr/local/core/bin/python /usr/local/core/manageServices/serviceManager.py --function RemoveRedis'
 
             ProcessUtilities.popenExecutioner(command)
             data_ret = {'status': 1}

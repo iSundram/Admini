@@ -9,7 +9,7 @@ import getpass
 import codecs
 
 class ProcessUtilities(multi.Thread):
-    debugPath = '/usr/local/CyberCP/debug'
+    debugPath = '/usr/local/core/debug'
     litespeedProcess = "litespeed"
     ent = 1
     OLS = 0
@@ -528,7 +528,7 @@ class ProcessUtilities(multi.Thread):
     @staticmethod
     def BuildCommand(path, functionName, parameters):
 
-        execPath = "/usr/local/CyberCP/bin/python %s %s " % (path, functionName)
+        execPath = "/usr/local/core/bin/python %s %s " % (path, functionName)
         for key, value in parameters.items():
             execPath = execPath + ' --%s %s' % (key, value)
 

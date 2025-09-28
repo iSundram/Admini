@@ -7,8 +7,8 @@ import pwd
 import grp
 import re
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 import shlex
 import subprocess
 import shutil
@@ -25,7 +25,7 @@ def update_all_config_files_with_password(new_password):
     config_updates = [
         # Django settings
         {
-            'path': '/usr/local/CyberCP/CyberCP/settings.py',
+            'path': '/usr/local/core/CyberCP/settings.py',
             'updates': [
                 (r"('cyberpanel'[^}]+?'PASSWORD':\s*')[^']+'", r"\1%s'" % new_password)
             ]
@@ -172,7 +172,7 @@ except ImportError:
         cyberpanel_password = None
         
         # Try to read existing settings.py to get cyberpanel password
-        settings_path = '/usr/local/CyberCP/CyberCP/settings.py'
+        settings_path = '/usr/local/core/CyberCP/settings.py'
         if os.path.exists(settings_path):
             try:
                 with open(settings_path, 'r') as f:
@@ -624,26 +624,26 @@ class Upgrade:
         try:
             cwd = os.getcwd()
 
-            if not os.path.exists("/usr/local/CyberCP/public"):
-                os.mkdir("/usr/local/CyberCP/public")
+            if not os.path.exists("/usr/local/core/public"):
+                os.mkdir("/usr/local/core/public")
 
             try:
-                shutil.rmtree("/usr/local/CyberCP/public/phpmyadmin")
+                shutil.rmtree("/usr/local/core/public/phpmyadmin")
             except:
                 pass
 
             Upgrade.stdOut("Installing phpMyAdmin...", 0)
             
-            command = 'wget -q -O /usr/local/CyberCP/public/phpmyadmin.zip https://github.com/usmannasir/cyberpanel/raw/stable/phpmyadmin.zip'
+            command = 'wget -q -O /usr/local/core/public/phpmyadmin.zip https://github.com/usmannasir/cyberpanel/raw/stable/phpmyadmin.zip'
             Upgrade.executioner_silent(command, 'Download phpMyAdmin')
 
-            command = 'unzip -q /usr/local/CyberCP/public/phpmyadmin.zip -d /usr/local/CyberCP/public/'
+            command = 'unzip -q /usr/local/core/public/phpmyadmin.zip -d /usr/local/core/public/'
             Upgrade.executioner_silent(command, 'Extract phpMyAdmin')
 
-            command = 'mv /usr/local/CyberCP/public/phpMyAdmin-*-all-languages /usr/local/CyberCP/public/phpmyadmin'
+            command = 'mv /usr/local/core/public/phpMyAdmin-*-all-languages /usr/local/core/public/phpmyadmin'
             subprocess.call(command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-            command = 'rm -f /usr/local/CyberCP/public/phpmyadmin.zip'
+            command = 'rm -f /usr/local/core/public/phpmyadmin.zip'
             Upgrade.executioner_silent(command, 'Cleanup phpMyAdmin zip')
             
             Upgrade.stdOut("phpMyAdmin installation completed.", 0)
@@ -652,9 +652,9 @@ class Upgrade:
 
             rString = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(32)])
 
-            data = open('/usr/local/CyberCP/public/phpmyadmin/config.sample.inc.php', 'r').readlines()
+            data = open('/usr/local/core/public/phpmyadmin/config.sample.inc.php', 'r').readlines()
 
-            writeToFile = open('/usr/local/CyberCP/public/phpmyadmin/config.inc.php', 'w')
+            writeToFile = open('/usr/local/core/public/phpmyadmin/config.inc.php', 'w')
 
             writeE = 1
 
@@ -680,13 +680,13 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
                     if writeE:
                         writeToFile.writelines(items)
 
-            writeToFile.writelines("$cfg['TempDir'] = '/usr/local/CyberCP/public/phpmyadmin/tmp';\n")
+            writeToFile.writelines("$cfg['TempDir'] = '/usr/local/core/public/phpmyadmin/tmp';\n")
 
             writeToFile.close()
 
-            os.mkdir('/usr/local/CyberCP/public/phpmyadmin/tmp')
+            os.mkdir('/usr/local/core/public/phpmyadmin/tmp')
 
-            command = 'cp /usr/local/CyberCP/plogical/phpmyadminsignin.php /usr/local/CyberCP/public/phpmyadmin/phpmyadminsignin.php'
+            command = 'cp /usr/local/core/plogical/phpmyadminsignin.php /usr/local/core/public/phpmyadmin/phpmyadminsignin.php'
             Upgrade.executioner(command, 0)
 
             passFile = "/etc/cyberpanel/mysqlPassword"
@@ -700,7 +700,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
                 mysqlport = jsonData['mysqlport']
                 mysqlhost = jsonData['mysqlhost']
 
-                command = "sed -i 's|localhost|%s|g' /usr/local/CyberCP/public/phpmyadmin/phpmyadminsignin.php" % (
+                command = "sed -i 's|localhost|%s|g' /usr/local/core/public/phpmyadmin/phpmyadminsignin.php" % (
                     mysqlhost)
                 Upgrade.executioner(command, 0)
 
@@ -732,20 +732,20 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
         try:
             #######
 
-            # if os.path.exists("/usr/local/CyberCP/public/rainloop"):
+            # if os.path.exists("/usr/local/core/public/rainloop"):
             #
             #     if os.path.exists("/usr/local/lscp/cyberpanel/rainloop/data"):
             #         pass
             #     else:
-            #         command = "mv /usr/local/CyberCP/public/rainloop/data /usr/local/lscp/cyberpanel/rainloop/data"
+            #         command = "mv /usr/local/core/public/rainloop/data /usr/local/lscp/cyberpanel/rainloop/data"
             #         Upgrade.executioner(command, 0)
             #
             #         command = "chown -R lscpd:lscpd /usr/local/lscp/cyberpanel/rainloop/data"
             #         Upgrade.executioner(command, 0)
             #
-            #     iPath = os.listdir('/usr/local/CyberCP/public/rainloop/rainloop/v/')
+            #     iPath = os.listdir('/usr/local/core/public/rainloop/rainloop/v/')
             #
-            #     path = "/usr/local/CyberCP/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
+            #     path = "/usr/local/core/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
             #
             #     data = open(path, 'r').readlines()
             #     writeToFile = open(path, 'w')
@@ -762,10 +762,10 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             cwd = os.getcwd()
 
-            if not os.path.exists("/usr/local/CyberCP/public"):
-                os.mkdir("/usr/local/CyberCP/public")
+            if not os.path.exists("/usr/local/core/public"):
+                os.mkdir("/usr/local/core/public")
 
-            os.chdir("/usr/local/CyberCP/public")
+            os.chdir("/usr/local/core/public")
 
             count = 1
 
@@ -787,11 +787,11 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             count = 0
 
-            if os.path.exists('/usr/local/CyberCP/public/snappymail'):
-                shutil.rmtree('/usr/local/CyberCP/public/snappymail')
+            if os.path.exists('/usr/local/core/public/snappymail'):
+                shutil.rmtree('/usr/local/core/public/snappymail')
 
             while (1):
-                command = 'unzip -q snappymail-%s.zip -d /usr/local/CyberCP/public/snappymail' % (Upgrade.SnappyVersion)
+                command = 'unzip -q snappymail-%s.zip -d /usr/local/core/public/snappymail' % (Upgrade.SnappyVersion)
 
                 cmd = shlex.split(command)
                 res = subprocess.call(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -808,7 +808,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             #######
 
-            os.chdir("/usr/local/CyberCP/public/snappymail")
+            os.chdir("/usr/local/core/public/snappymail")
 
             count = 0
 
@@ -839,9 +839,9 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
                     break
             ######
 
-            iPath = os.listdir('/usr/local/CyberCP/public/snappymail/snappymail/v/')
+            iPath = os.listdir('/usr/local/core/public/snappymail/snappymail/v/')
 
-            path = "/usr/local/CyberCP/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
+            path = "/usr/local/core/public/snappymail/snappymail/v/%s/include.php" % (iPath[0])
 
             data = open(path, 'r').readlines()
             writeToFile = open(path, 'w')
@@ -858,10 +858,10 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             command = "mkdir -p /usr/local/lscp/cyberpanel/rainloop/data/_data_/_default_/configs/"
             Upgrade.executioner_silent(command, 'mkdir snappymail configs', 0)
 
-            command = f'wget -q -O /usr/local/CyberCP/snappymail_cyberpanel.php  https://raw.githubusercontent.com/the-djmaze/snappymail/master/integrations/cyberpanel/install.php'
+            command = f'wget -q -O /usr/local/core/snappymail_cyberpanel.php  https://raw.githubusercontent.com/the-djmaze/snappymail/master/integrations/cyberpanel/install.php'
             Upgrade.executioner_silent(command, 'verify certificate', 0)
 
-            command = f'/usr/local/lsws/lsphp83/bin/php /usr/local/CyberCP/snappymail_cyberpanel.php'
+            command = f'/usr/local/lsws/lsphp83/bin/php /usr/local/core/snappymail_cyberpanel.php'
             Upgrade.executioner_silent(command, 'verify certificate', 0)
 
             # labsPath = '/usr/local/lscp/cyberpanel/rainloop/data/_data_/_default_/configs/application.ini'
@@ -875,8 +875,8 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
             #             writeToFile.write(labsData)
             #             writeToFile.close()
 
-            includeFileOldPath = '/usr/local/CyberCP/public/snappymail/_include.php'
-            includeFileNewPath = '/usr/local/CyberCP/public/snappymail/include.php'
+            includeFileOldPath = '/usr/local/core/public/snappymail/_include.php'
+            includeFileNewPath = '/usr/local/core/public/snappymail/include.php'
 
             # if os.path.exists(includeFileOldPath):
             #     writeToFile = open(includeFileOldPath, 'a')
@@ -1000,7 +1000,7 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
 
             try:
                 Content = {"version":version_number,"build":version_build}
-                path = "/usr/local/CyberCP/version.txt"
+                path = "/usr/local/core/version.txt"
                 writeToFile = open(path, 'w')
                 writeToFile.write(json.dumps(Content))
                 writeToFile.close()
@@ -1016,10 +1016,10 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
     def setupCLI():
         try:
 
-            command = "ln -s /usr/local/CyberCP/cli/cyberPanel.py /usr/bin/cyberpanel"
+            command = "ln -s /usr/local/core/cli/cyberPanel.py /usr/bin/cyberpanel"
             Upgrade.executioner(command, 'CLI Symlink', 0)
 
-            command = "chmod +x /usr/local/CyberCP/cli/cyberPanel.py"
+            command = "chmod +x /usr/local/core/cli/cyberPanel.py"
             Upgrade.executioner(command, 'CLI Permissions', 0)
 
         except OSError as msg:
@@ -1029,31 +1029,31 @@ $cfg['Servers'][$i]['LogoutURL'] = 'phpmyadminsignin.php?logout';
     @staticmethod
     def staticContent():
 
-        command = "rm -rf /usr/local/CyberCP/public/static"
+        command = "rm -rf /usr/local/core/public/static"
         Upgrade.executioner(command, 'Remove old static content', 0)
 
         ##
 
-        if not os.path.exists("/usr/local/CyberCP/public"):
-            os.mkdir("/usr/local/CyberCP/public")
+        if not os.path.exists("/usr/local/core/public"):
+            os.mkdir("/usr/local/core/public")
 
         cwd = os.getcwd()
 
-        os.chdir('/usr/local/CyberCP')
+        os.chdir('/usr/local/core')
 
         command = '/usr/local/CyberPanel/bin/python manage.py collectstatic --noinput --clear'
         Upgrade.executioner(command, 'Remove old static content', 0)
 
         os.chdir(cwd)
 
-        shutil.move("/usr/local/CyberCP/static", "/usr/local/CyberCP/public/")
+        shutil.move("/usr/local/core/static", "/usr/local/core/public/")
 
     @staticmethod
     def upgradeVersion():
         try:
 
             import django
-            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
             django.setup()
             from baseTemplate.models import version
 
@@ -2384,7 +2384,7 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
         try:
 
             cwd = os.getcwd()
-            os.chdir('/usr/local/CyberCP')
+            os.chdir('/usr/local/core')
 
             command = '/usr/local/CyberPanel/bin/python manage.py makemigrations'
             Upgrade.executioner(command, 'python manage.py makemigrations', 0)
@@ -2594,21 +2594,21 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
         backup_dir = tempfile.mkdtemp(prefix='cyberpanel_backup_')
         
         critical_files = [
-            '/usr/local/CyberCP/CyberCP/settings.py',
-            '/usr/local/CyberCP/.git/config',  # Git configuration
+            '/usr/local/core/CyberCP/settings.py',
+            '/usr/local/core/.git/config',  # Git configuration
         ]
         
         # Also backup any custom configurations
         custom_configs = [
-            '/usr/local/CyberCP/baseTemplate/static/baseTemplate/custom/',
-            '/usr/local/CyberCP/public/phpmyadmin/config.inc.php',
-            '/usr/local/CyberCP/rainloop/data/_data_/',
+            '/usr/local/core/baseTemplate/static/baseTemplate/custom/',
+            '/usr/local/core/public/phpmyadmin/config.inc.php',
+            '/usr/local/core/rainloop/data/_data_/',
         ]
         
         # Backup Imunify360 directories and configuration
         imunify_paths = [
-            '/usr/local/CyberCP/public/imunify',
-            '/usr/local/CyberCP/public/imunifyav',
+            '/usr/local/core/public/imunify',
+            '/usr/local/core/public/imunifyav',
             '/etc/sysconfig/imunify360/integration.conf',
         ]
 
@@ -2709,7 +2709,7 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
     },
 }\n""" % (dbName, dbUser, password, host, port, rootdbName, rootdbdbUser, rootdbpassword, host, port)
 
-            settingsFile = '/usr/local/CyberCP/CyberCP/settings.py'
+            settingsFile = '/usr/local/core/CyberCP/settings.py'
 
             Upgrade.stdOut("Critical files backed up to: " + backup_dir)
 
@@ -2751,7 +2751,7 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
                 return 0, 'Failed to clone CyberPanel repository'
             
             # Checkout the correct branch
-            os.chdir('/usr/local/CyberCP')
+            os.chdir('/usr/local/core')
             command = 'git checkout %s' % (branch)
             if not Upgrade.executioner(command, command, 1):
                 Upgrade.stdOut(f"Warning: Failed to checkout branch {branch}, continuing with default branch")
@@ -2840,7 +2840,7 @@ CREATE TABLE `websiteFunctions_backupsv2` (`id` integer AUTO_INCREMENT NOT NULL 
                         if result.find('22.04') > -1 or result.find('24.04') > -1:
                             lscpdSelection = 'lscpd.0.4.0'
 
-                command = f'cp -f /usr/local/CyberCP/{lscpdSelection} /usr/local/lscp/bin/{lscpdSelection}'
+                command = f'cp -f /usr/local/core/{lscpdSelection} /usr/local/lscp/bin/{lscpdSelection}'
                 Upgrade.executioner(command, command, 0)
 
                 command = 'rm -f /usr/local/lscp/bin/lscpd'
@@ -2943,7 +2943,7 @@ milter_default_action = accept
 
                 content = """<?php
 $_ENV['snappymail_INCLUDE_AS_API'] = true;
-include '/usr/local/CyberCP/public/snappymail/index.php';
+include '/usr/local/core/public/snappymail/index.php';
 
 $oConfig = \snappymail\Api::Config();
 $oConfig->SetPassword('%s');
@@ -2951,7 +2951,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
 ?>""" % (generate_pass())
 
-                writeToFile = open('/usr/local/CyberCP/public/snappymail.php', 'w')
+                writeToFile = open('/usr/local/core/public/snappymail.php', 'w')
                 writeToFile.write(content)
                 writeToFile.close()
 
@@ -2971,18 +2971,18 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
             ###### fix Core CyberPanel permissions
 
-            command = "find /usr/local/CyberCP -type d -exec chmod 0755 {} \;"
+            command = "find /usr/local/core -type d -exec chmod 0755 {} \;"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "find /usr/local/CyberCP -type f -exec chmod 0644 {} \;"
+            command = "find /usr/local/core -type f -exec chmod 0644 {} \;"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chmod -R 755 /usr/local/CyberCP/bin"
+            command = "chmod -R 755 /usr/local/core/bin"
             Upgrade.executioner(command, 'chown core code', 0)
 
             ## change owner
 
-            command = "chown -R root:root /usr/local/CyberCP"
+            command = "chown -R root:root /usr/local/core"
             Upgrade.executioner(command, 'chown core code', 0)
 
             ########### Fix LSCPD
@@ -2999,7 +2999,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chmod -R 755 /usr/local/lscp/fcgi-bin"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/tmp"
+            command = "chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin/tmp"
             Upgrade.executioner(command, 'chown core code', 0)
 
             ## change owner
@@ -3010,22 +3010,22 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chown -R lscpd:lscpd /usr/local/lscp/cyberpanel/rainloop"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chmod 700 /usr/local/CyberCP/cli/cyberPanel.py"
+            command = "chmod 700 /usr/local/core/cli/cyberPanel.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chmod 700 /usr/local/CyberCP/plogical/upgradeCritical.py"
+            command = "chmod 700 /usr/local/core/plogical/upgradeCritical.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chmod 755 /usr/local/CyberCP/postfixSenderPolicy/client.py"
+            command = "chmod 755 /usr/local/core/postfixSenderPolicy/client.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chmod 640 /usr/local/CyberCP/CyberCP/settings.py"
+            command = "chmod 640 /usr/local/core/CyberCP/settings.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = "chown root:cyberpanel /usr/local/CyberCP/CyberCP/settings.py"
+            command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
             Upgrade.executioner(command, 'chown core code', 0)
 
-            command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
             Upgrade.executioner(command, 'chmod CLPackages', 0)
 
             files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -3056,8 +3056,8 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 640 /etc/dovecot/dovecot-sql.conf.ext'
             subprocess.call(command, shell=True)
 
-            fileM = ['/usr/local/lsws/FileManager/', '/usr/local/CyberCP/install/FileManager',
-                     '/usr/local/CyberCP/serverStatus/litespeed/FileManager',
+            fileM = ['/usr/local/lsws/FileManager/', '/usr/local/core/install/FileManager',
+                     '/usr/local/core/serverStatus/litespeed/FileManager',
                      '/usr/local/lsws/Example/html/FileManager']
 
             for items in fileM:
@@ -3078,31 +3078,31 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 644 /etc/postfix/dynamicmaps.cf'
             subprocess.call(command, shell=True)
 
-            command = 'chmod +x /usr/local/CyberCP/plogical/renew.py'
+            command = 'chmod +x /usr/local/core/plogical/renew.py'
             Upgrade.executioner(command, command, 0)
 
-            command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
             Upgrade.executioner(command, command, 0)
 
-            clScripts = ['/usr/local/CyberCP/CLScript/panel_info.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxPackages.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxUsers.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxDomains.py'
-                , '/usr/local/CyberCP/CLScript/CloudLinuxResellers.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxAdmins.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxDB.py', '/usr/local/CyberCP/CLScript/UserInfo.py']
+            clScripts = ['/usr/local/core/tools/panel_info.py',
+                         '/usr/local/core/tools/CloudLinuxPackages.py',
+                         '/usr/local/core/tools/CloudLinuxUsers.py',
+                         '/usr/local/core/tools/CloudLinuxDomains.py'
+                , '/usr/local/core/tools/CloudLinuxResellers.py',
+                         '/usr/local/core/tools/CloudLinuxAdmins.py',
+                         '/usr/local/core/tools/CloudLinuxDB.py', '/usr/local/core/tools/UserInfo.py']
 
             for items in clScripts:
                 command = 'chmod +x %s' % (items)
                 Upgrade.executioner(command, 0)
 
-            command = 'chmod 600 /usr/local/CyberCP/plogical/adminPass.py'
+            command = 'chmod 600 /usr/local/core/plogical/adminPass.py'
             Upgrade.executioner(command, 0)
 
             command = 'chmod 600 /etc/cagefs/exclude/cyberpanelexclude'
             Upgrade.executioner(command, 0)
 
-            command = "find /usr/local/CyberCP/ -name '*.pyc' -delete"
+            command = "find /usr/local/core/ -name '*.pyc' -delete"
             Upgrade.executioner(command, 0)
 
             if os.path.exists(Upgrade.CentOSPath) or os.path.exists(Upgrade.openEulerPath):
@@ -3121,10 +3121,10 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 640 /usr/local/lscp/cyberpanel/logs/access.log'
             Upgrade.executioner(command, 0)
 
-            command = '/usr/local/lsws/lsphp83/bin/php /usr/local/CyberCP/public/snappymail.php'
+            command = '/usr/local/lsws/lsphp83/bin/php /usr/local/core/public/snappymail.php'
             Upgrade.executioner_silent(command, 'Configure SnappyMail')
 
-            command = 'chmod 600 /usr/local/CyberCP/public/snappymail.php'
+            command = 'chmod 600 /usr/local/core/public/snappymail.php'
             Upgrade.executioner_silent(command, 'Secure SnappyMail config')
 
             ###
@@ -3477,7 +3477,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
                     Upgrade.executioner(command, 0)
 
                 import django
-                os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+                os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
                 django.setup()
                 from mailServer.models import EUsers
 
@@ -3651,7 +3651,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
         Upgrade.executioner(command, 0)
 
     @staticmethod
-    def installCLScripts():
+    def installtoolss():
         try:
 
             CentOSPath = '/etc/redhat-release'
@@ -3663,16 +3663,16 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
                 content = """[integration_scripts]
 
-panel_info = /usr/local/CyberCP/CLScript/panel_info.py
-packages = /usr/local/CyberCP/CLScript/CloudLinuxPackages.py
-users = /usr/local/CyberCP/CLScript/CloudLinuxUsers.py
-domains = /usr/local/CyberCP/CLScript/CloudLinuxDomains.py
-resellers = /usr/local/CyberCP/CLScript/CloudLinuxResellers.py
-admins = /usr/local/CyberCP/CLScript/CloudLinuxAdmins.py
-db_info = /usr/local/CyberCP/CLScript/CloudLinuxDB.py
+panel_info = /usr/local/core/tools/panel_info.py
+packages = /usr/local/core/tools/CloudLinuxPackages.py
+users = /usr/local/core/tools/CloudLinuxUsers.py
+domains = /usr/local/core/tools/CloudLinuxDomains.py
+resellers = /usr/local/core/tools/CloudLinuxResellers.py
+admins = /usr/local/core/tools/CloudLinuxAdmins.py
+db_info = /usr/local/core/tools/CloudLinuxDB.py
 
 [lvemanager_config]
-ui_user_info = /usr/local/CyberCP/CLScript/UserInfo.py
+ui_user_info = /usr/local/core/tools/UserInfo.py
 base_path = /usr/local/lvemanager
 run_service = 1
 service_port = 9000
@@ -3742,14 +3742,14 @@ vmail
 
             if data.find('findBWUsage') == -1:
                 content = """
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/findBWUsage.py >/dev/null 2>&1
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
-0 0 1 * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
-0 2 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/upgradeCritical.py >/dev/null 2>&1
-0 0 * * 4 /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/renew.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/plogical/findBWUsage.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
+0 0 1 * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
+0 2 * * * /usr/local/core/bin/python /usr/local/core/plogical/upgradeCritical.py >/dev/null 2>&1
+0 0 * * 4 /usr/local/core/bin/python /usr/local/core/plogical/renew.py >/dev/null 2>&1
 7 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null
 */3 * * * * if ! find /home/*/public_html/ -maxdepth 2 -type f -newer /usr/local/lsws/cgid -name '.htaccess' -exec false {} +; then /usr/local/lsws/bin/lswsctrl restart; fi
-* * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
+* * * * * /usr/local/core/bin/python /usr/local/core/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
 """
 
                 writeToFile = open(cronPath, 'w')
@@ -3758,8 +3758,8 @@ vmail
 
             if data.find('IncScheduler.py') == -1:
                 content = """
-0 12 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Daily
-0 0 * * 0 /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Weekly
+0 12 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Daily
+0 0 * * 0 /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Weekly
 """
                 writeToFile = open(cronPath, 'a')
                 writeToFile.write(content)
@@ -3767,13 +3767,13 @@ vmail
 
             if data.find("IncScheduler.py '30 Minutes'") == -1:
                 content = """
-*/30 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '30 Minutes'
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Hour'
-0 */6 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '6 Hours'
-0 */12 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '12 Hours'
-0 1 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Day'
-0 0 */3 * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '3 Days'
-0 0 * * 0 /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py '1 Week'
+*/30 * * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '30 Minutes'
+0 * * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Hour'
+0 */6 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '6 Hours'
+0 */12 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '12 Hours'
+0 1 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Day'
+0 0 */3 * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '3 Days'
+0 0 * * 0 /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py '1 Week'
 """
                 writeToFile = open(cronPath, 'a')
                 writeToFile.write(content)
@@ -3782,7 +3782,7 @@ vmail
             # Add AI Scanner scheduled scans cron job if missing
             if data.find('run_scheduled_scans') == -1:
                 content = """
-* * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
+* * * * * /usr/local/core/bin/python /usr/local/core/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
 """
                 writeToFile = open(cronPath, 'a')
                 writeToFile.write(content)
@@ -3791,15 +3791,15 @@ vmail
 
         else:
             content = """
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/findBWUsage.py >/dev/null 2>&1
-0 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
-0 0 1 * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
-0 2 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/upgradeCritical.py >/dev/null 2>&1
-0 0 * * 4 /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/renew.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/plogical/findBWUsage.py >/dev/null 2>&1
+0 * * * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py hourlyCleanup >/dev/null 2>&1
+0 0 1 * * /usr/local/core/bin/python /usr/local/core/postfixSenderPolicy/client.py monthlyCleanup >/dev/null 2>&1
+0 2 * * * /usr/local/core/bin/python /usr/local/core/plogical/upgradeCritical.py >/dev/null 2>&1
+0 0 * * 4 /usr/local/core/bin/python /usr/local/core/plogical/renew.py >/dev/null 2>&1
 7 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null
-0 0 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Daily
-0 0 * * 0 /usr/local/CyberCP/bin/python /usr/local/CyberCP/IncBackups/IncScheduler.py Weekly
-* * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
+0 0 * * * /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Daily
+0 0 * * 0 /usr/local/core/bin/python /usr/local/core/IncBackups/IncScheduler.py Weekly
+* * * * * /usr/local/core/bin/python /usr/local/core/manage.py run_scheduled_scans >/usr/local/lscp/logs/scheduled_scans.log 2>&1
 """
             writeToFile = open(cronPath, 'w')
             writeToFile.write(content)
@@ -3827,8 +3827,8 @@ vmail
 
     @staticmethod
     def UpdateConfigOfCustomACL():
-        sys.path.append('/usr/local/CyberCP')
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+        sys.path.append('/usr/local/core')
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
         import django
         django.setup()
         from loginSystem.models import ACL
@@ -4302,7 +4302,7 @@ pm.max_spare_servers = 3
 
         ##
 
-        # execPath = "sudo /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/csf.py"
+        # execPath = "sudo /usr/local/core/bin/python /usr/local/core/plogical/csf.py"
         # execPath = execPath + " removeCSF"
         # Upgrade.executioner(execPath, 'fix csf if there', 0)
 
@@ -4462,7 +4462,7 @@ pm.max_spare_servers = 3
             print("Note: ConfigServer Firewall (CSF) is being discontinued on August 31, 2025")
             
             # Remove CSF and restore firewalld
-            execPath = "sudo /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/csf.py"
+            execPath = "sudo /usr/local/core/bin/python /usr/local/core/plogical/csf.py"
             execPath = execPath + " removeCSF"
             Upgrade.executioner(execPath, 'Remove CSF and restore firewalld', 0)
             
@@ -4471,8 +4471,8 @@ pm.max_spare_servers = 3
 
 
         # Remove configservercsf directory if it exists
-        if os.path.exists('/usr/local/CyberCP/configservercsf'):
-            command = 'rm -rf /usr/local/CyberCP/configservercsf'
+        if os.path.exists('/usr/local/core/configservercsf'):
+            command = 'rm -rf /usr/local/core/configservercsf'
             Upgrade.executioner(command, 'Remove configservercsf directory', 1)
 
 
@@ -4480,7 +4480,7 @@ pm.max_spare_servers = 3
         command = 'systemctl stop cpssh'
         Upgrade.executioner(command, 'fix csf if there', 0)
         Upgrade.AutoUpgradeAcme()
-        Upgrade.installCLScripts()
+        Upgrade.installtoolss()
         Upgrade.runSomeImportantBash()
         Upgrade.FixRSPAMDConfig()
         Upgrade.CreateMissingPoolsforFPM()
@@ -4496,18 +4496,18 @@ pm.max_spare_servers = 3
                     configContent = f.read()
 
                 # Check which product the config file is for by looking at the ui_path
-                if 'ui_path =/usr/local/CyberCP/public/imunifyav' in configContent:
+                if 'ui_path =/usr/local/core/public/imunifyav' in configContent:
                     # This is ImunifyAV configuration
                     Upgrade.stdOut("Detected ImunifyAV configuration, reconfiguring...")
-                    imunifyAVPath = '/usr/local/CyberCP/public/imunifyav'
+                    imunifyAVPath = '/usr/local/core/public/imunifyav'
 
                     if os.path.exists(imunifyAVPath):
-                        execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/CLManager/CageFS.py"
+                        execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
                         command = execPath + " --function submitinstallImunifyAV"
                         Upgrade.executioner(command, command, 1)
 
                         # Set permissions on ImunifyAV execute file
-                        imunifyAVExecute = '/usr/local/CyberCP/public/imunifyav/bin/execute.py'
+                        imunifyAVExecute = '/usr/local/core/public/imunifyav/bin/execute.py'
                         if os.path.exists(imunifyAVExecute):
                             command = 'chmod +x ' + imunifyAVExecute
                             Upgrade.executioner(command, command, 1)
@@ -4517,10 +4517,10 @@ pm.max_spare_servers = 3
                     else:
                         Upgrade.stdOut("ImunifyAV directory not found despite config file existing")
 
-                elif 'ui_path =/usr/local/CyberCP/public/imunify' in configContent:
+                elif 'ui_path =/usr/local/core/public/imunify' in configContent:
                     # This is Imunify360 configuration
                     Upgrade.stdOut("Detected Imunify360 configuration, checking system installation...")
-                    imunify360Path = '/usr/local/CyberCP/public/imunify'
+                    imunify360Path = '/usr/local/core/public/imunify'
 
                     if os.path.exists(imunify360Path):
                         # Check if Imunify360 is actually installed on the system
@@ -4538,7 +4538,7 @@ pm.max_spare_servers = 3
                             Upgrade.stdOut("Imunify360 directory found but system not installed - manual installation may be needed")
 
                         # Set permissions on Imunify360 execute file
-                        imunify360Execute = '/usr/local/CyberCP/public/imunify/bin/execute.py'
+                        imunify360Execute = '/usr/local/core/public/imunify/bin/execute.py'
                         if os.path.exists(imunify360Execute):
                             command = f'chmod +x {imunify360Execute}'
                             Upgrade.executioner(command, f'Setting execute permissions on Imunify360 file', 0)
@@ -4564,8 +4564,8 @@ pm.max_spare_servers = 3
             Upgrade.stdOut("Checking for Imunify360 restoration...")
 
             # Check if Imunify360 directories were restored
-            imunifyPath = '/usr/local/CyberCP/public/imunify'
-            imunifyAVPath = '/usr/local/CyberCP/public/imunifyav'
+            imunifyPath = '/usr/local/core/public/imunify'
+            imunifyAVPath = '/usr/local/core/public/imunifyav'
             configPath = '/etc/sysconfig/imunify360/integration.conf'
 
             Upgrade.stdOut(f"Checking if Imunify360 path exists: {imunifyPath}")
@@ -4593,14 +4593,14 @@ pm.max_spare_servers = 3
             if os.path.exists(imunifyAVPath):
                 Upgrade.stdOut("ImunifyAV directory found, reconfiguring...")
                 if os.path.exists(configPath):
-                    execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/CLManager/CageFS.py"
+                    execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
                     command = execPath + " --function submitinstallImunifyAV"
                     if Upgrade.executioner(command, command, 1):
                         Upgrade.stdOut("ImunifyAV reconfigured successfully")
                         restored = True
 
                     # Ensure execute permissions
-                    executePath = '/usr/local/CyberCP/public/imunifyav/bin/execute.py'
+                    executePath = '/usr/local/core/public/imunifyav/bin/execute.py'
                     if os.path.exists(executePath):
                         command = f'chmod +x {executePath}'
                         Upgrade.executioner(command, command, 1)
@@ -4608,8 +4608,8 @@ pm.max_spare_servers = 3
             # Handle main Imunify execute permissions - comprehensive solution for missing files
             if os.path.exists(imunifyPath):
                 # First, check if the bin directory and execute.py file exist
-                binDir = '/usr/local/CyberCP/public/imunify/bin'
-                executeFile = '/usr/local/CyberCP/public/imunify/bin/execute.py'
+                binDir = '/usr/local/core/public/imunify/bin'
+                executeFile = '/usr/local/core/public/imunify/bin/execute.py'
 
                 if not os.path.exists(binDir):
                     Upgrade.stdOut(f"Warning: Imunify360 bin directory missing at {binDir}")
@@ -4687,7 +4687,7 @@ pm.max_spare_servers = 3
         try:
             Upgrade.stdOut("=== FINAL STEP: Setting Imunify360 Execute Permissions ===")
 
-            executeFile = '/usr/local/CyberCP/public/imunify/bin/execute.py'
+            executeFile = '/usr/local/core/public/imunify/bin/execute.py'
 
             if os.path.exists(executeFile):
                 Upgrade.stdOut(f"Setting execute permissions on: {executeFile}")
@@ -5121,7 +5121,7 @@ extprocessor proxyApacheBackendSSL {
         filePath = '/root/.acme.sh/dns_cyberpanel.sh'
         if os.path.exists(filePath):
             os.remove(filePath)
-        shutil.copy('/usr/local/CyberCP/install/dns_cyberpanel.sh', filePath)
+        shutil.copy('/usr/local/core/install/dns_cyberpanel.sh', filePath)
 
         command = f'chmod +x {filePath}'
         Upgrade.executioner(command, command, 0, True)

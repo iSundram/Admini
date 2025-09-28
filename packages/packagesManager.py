@@ -1,10 +1,10 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os.path
 import sys
 import django
 from plogical.httpProc import httpProc
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from django.shortcuts import redirect
 from django.http import HttpResponse
@@ -222,7 +222,7 @@ class PackagesManager:
                 # isPU.start()
 
                 from plogical.processUtilities import ProcessUtilities
-                command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/IncScheduler.py UpdateDiskUsageForce'
+                command = '/usr/local/core/bin/python /usr/local/core/plogical/IncScheduler.py UpdateDiskUsageForce'
                 ProcessUtilities.outputExecutioner(command)
 
                 data_ret = {'status': 1, 'saveStatus': 1, 'error_message': "None"}

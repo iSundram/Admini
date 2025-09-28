@@ -6,8 +6,8 @@ import sys
 import argparse
 import django
 import requests
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from firewall.models import FirewallRules
 from plogical.firewallUtilities import FirewallUtilities
@@ -98,7 +98,7 @@ class ClusterManager:
                 writeToFile.close()
 
                 writeToFile = open(cronPath, 'a')
-                writeToFile.write('*/5 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function CreatePendingVirtualHosts --type Child\n')
+                writeToFile.write('*/5 * * * * /usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function CreatePendingVirtualHosts --type Child\n')
                 writeToFile.close()
             else:
 
@@ -114,8 +114,8 @@ class ClusterManager:
                 writeToFile.close()
 
                 writeToFile = open(cronPath, 'a')
-                writeToFile.write('*/%s * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function SyncNow --type Master\n' % (str(self.config['syncTime'])))
-                writeToFile.write('*/3 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function PingNow --type Master\n')
+                writeToFile.write('*/%s * * * * /usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function SyncNow --type Master\n' % (str(self.config['syncTime'])))
+                writeToFile.write('*/3 * * * * /usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function PingNow --type Master\n')
                 writeToFile.close()
 
             command = 'systemctl restart cron'
@@ -227,7 +227,7 @@ class ClusterManager:
     },
 }\n""" % (dbName, dbUser, password, host, port, rootdbName, rootdbdbUser, rootdbpassword, host, port)
 
-            settingsFile = '/usr/local/CyberCP/CyberCP/settings.py'
+            settingsFile = '/usr/local/core/CyberCP/settings.py'
 
             settingsData = open(settingsFile, 'r').readlines()
 
@@ -402,7 +402,7 @@ password=%s""" % (rootdbpassword, rootdbpassword)
 
             writeToFile = open(cronPath, 'a')
 
-            writeToFile.write('*/3 * * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function Uptime --type All\n')
+            writeToFile.write('*/3 * * * * /usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function Uptime --type All\n')
             writeToFile.close()
 
 

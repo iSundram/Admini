@@ -1,12 +1,12 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
 import django
 
 from plogical.acl import ACLManager
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:
@@ -38,7 +38,7 @@ import grp
 class vhost:
 
     Server_root = "/usr/local/lsws"
-    cyberPanel = "/usr/local/CyberCP"
+    cyberPanel = "/usr/local/core"
     redisConf = '/usr/local/lsws/conf/dvhost_redis.conf'
 
     @staticmethod
@@ -174,7 +174,7 @@ class vhost:
 
             FNULL = open(os.devnull, 'w')
 
-            shutil.copy("/usr/local/CyberCP/index.html", f"/home/{virtualHostName}/public_html/index.html")
+            shutil.copy("/usr/local/core/index.html", f"/home/{virtualHostName}/public_html/index.html")
 
             command = f"chown {virtualHostUser}:{virtualHostUser} /home/{virtualHostName}/public_html/index.html"
             cmd = shlex.split(command)
@@ -905,13 +905,13 @@ class vhost:
 
             RanddomFileName = str(randint(1000, 9999))
 
-            FullPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RanddomFileName)
+            FullPath = '%s/%s' % ('/usr/local/core/tmp', RanddomFileName)
 
             FNULL = open(os.devnull, 'w')
 
-            #shutil.copy("/usr/local/CyberCP/index.html", path + "/index.html")
+            #shutil.copy("/usr/local/core/index.html", path + "/index.html")
 
-            shutil.copy("/usr/local/CyberCP/index.html", FullPath)
+            shutil.copy("/usr/local/core/index.html", FullPath)
 
             command = "chown " + virtualHostUser + ":" + virtualHostUser + " " + FullPath
             cmd = shlex.split(command)

@@ -230,7 +230,7 @@ def resetDNSnow(request):
         data = json.loads(request.body)
         tempStatusPath = "/home/cyberpanel/" + str(randint(1000, 9999))
 
-        execPath = f"/usr/local/CyberCP/bin/python /usr/local/CyberCP/dns/dnsManager.py ResetDNSConfigurations --tempStatusPath {tempStatusPath}"
+        execPath = f"/usr/local/core/bin/python /usr/local/core/dns/dnsManager.py ResetDNSConfigurations --tempStatusPath {tempStatusPath}"
 
         ProcessUtilities.popenExecutioner(execPath)
         time.sleep(2)

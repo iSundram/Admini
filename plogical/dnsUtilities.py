@@ -1,10 +1,10 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os, sys
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:

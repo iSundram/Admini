@@ -100,8 +100,8 @@ class unInstallCyberPanel:
     def removeCyberPanel(self):
         try:
 
-           shutil.rmtree("/usr/local/CyberCP")
-           os.remove("/usr/local/CyberCP2.tar.gz")
+           shutil.rmtree("/usr/local/core")
+           os.remove("/usr/local/core2.tar.gz")
            shutil.rmtree("/etc/cyberpanel")
 
         except OSError as msg:

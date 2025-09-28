@@ -6,7 +6,7 @@ import os
 
 
 class servCTRL:
-    pidfile = '/usr/local/CyberCP/WebTerminal/pid'
+    pidfile = '/usr/local/core/WebTerminal/pid'
 
     def prepareArguments(self):
 
@@ -20,7 +20,7 @@ class servCTRL:
         if os.path.exists(servCTRL.pidfile):
             self.stop()
 
-        command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/WebTerminal/CPWebSocket.py'
+        command = '/usr/local/core/bin/python /usr/local/core/WebTerminal/CPWebSocket.py'
         subprocess.Popen(shlex.split(command))
 
     def stop(self):

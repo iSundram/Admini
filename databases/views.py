@@ -490,7 +490,7 @@ def upgrademysqlnow(request):
 
 
 
-        execPath = f"/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/mysqlUtilities.py UpgradeMariaDB --version {version} --tempStatusPath {tempStatusPath}"
+        execPath = f"/usr/local/core/bin/python /usr/local/core/plogical/mysqlUtilities.py UpgradeMariaDB --version {version} --tempStatusPath {tempStatusPath}"
         ProcessUtilities.popenExecutioner(execPath)
         time.sleep(2)
 

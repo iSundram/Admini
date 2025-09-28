@@ -68,7 +68,7 @@ table_launch_panelnew=#293a4a
 #========================================================================
 #LOGIN PAGE CHANGE
 echo 'Updating Login Page Background...'
-sed -i 's|        background: '$BACKGROUND_OLD';|        background: '$BACKGROUND_NEW';|g' /usr/local/CyberCP/loginSystem/templates/loginSystem/login.html
+sed -i 's|        background: '$BACKGROUND_OLD';|        background: '$BACKGROUND_NEW';|g' /usr/local/core/loginSystem/templates/loginSystem/login.html
 
 echo 'Updating Colors Header Flag...'
 # COLOR HEADER
@@ -98,13 +98,13 @@ sed -i 's|.bs-badge.badge-absolute{position:absolute;z-index:5;top:-10px;left:-1
 
 
 #CHANGE NAME
-sed -i 's|Cyber <i>Panel</i>|'$CUSTOM_NAME'|g' /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html
-sed -i 's:Login - CyberPanel:'$SERVER_NAME' | PANEL - LOGIN:g' /usr/local/CyberCP/loginSystem/templates/loginSystem/login.html
+sed -i 's|Cyber <i>Panel</i>|'$CUSTOM_NAME'|g' /usr/local/core/baseTemplate/templates/baseTemplate/index.html
+sed -i 's:Login - CyberPanel:'$SERVER_NAME' | PANEL - LOGIN:g' /usr/local/core/loginSystem/templates/loginSystem/login.html
 
 #LOGIN MODIFY CENTER
-sed -i '69,89d' /usr/local/CyberCP/loginSystem/templates/loginSystem/login.html
-sed -i '/row">/a <div class="col-md-2"></div>' /usr/local/CyberCP/loginSystem/templates/loginSystem/login.html
-sed -i '/"col-md-7">/a <center><h2 class="text-transform-upr font-size-17">'$SERVER_NAME' | PANEL - LOGIN</h2></center><div class="divider"></div>'  /usr/local/CyberCP/loginSystem/templates/loginSystem/login.html
+sed -i '69,89d' /usr/local/core/loginSystem/templates/loginSystem/login.html
+sed -i '/row">/a <div class="col-md-2"></div>' /usr/local/core/loginSystem/templates/loginSystem/login.html
+sed -i '/"col-md-7">/a <center><h2 class="text-transform-upr font-size-17">'$SERVER_NAME' | PANEL - LOGIN</h2></center><div class="divider"></div>'  /usr/local/core/loginSystem/templates/loginSystem/login.html
 sed -i 's|body,label{color:#3e4855}|body,label{color:#ffffff}|g' /usr/local/lscp/cyberpanel/static/baseTemplate/assets/finalLoginPageCSS/allCss.css
 
 echo 'COMPLETE!'

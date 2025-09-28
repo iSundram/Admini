@@ -94,7 +94,7 @@ def savePolicyServerStatus(request):
 
                 ## save configuration data
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " savePolicyServerStatus --install " + install
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -752,7 +752,7 @@ def installSpamAssassin(request):
             return ACLManager.loadErrorJson()
         try:
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " installSpamAssassin"
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -779,7 +779,7 @@ def installStatusSpamAssassin(request):
 
                 if installStatus.find("[200]") > -1:
 
-                    execPath = "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin  && /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                    execPath = "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin  && /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                     execPath = execPath + " configureSpamAssassin"
                     output = ProcessUtilities.outputExecutioner(execPath, 'root')
 
@@ -952,7 +952,7 @@ def saveSpamAssassinConfigurations(request):
 
                 ## save configuration data
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " saveSpamAssassinConfigs --tempConfigPath " + tempConfigPath
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1158,7 +1158,7 @@ def installMailScanner(request):
                         {'status': 0, 'error_message': "Disable selinux before installing MailScanner."})
                     return HttpResponse(final_json)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " installMailScanner"
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1283,7 +1283,7 @@ def installRspamd(request):
         if (Status == 1) or ProcessUtilities.decideServer() == ProcessUtilities.ent:
             try:
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " installRspamd"
                 ProcessUtilities.popenExecutioner(execPath)
 
@@ -1603,7 +1603,7 @@ def saveRspamdConfigurations(request):
                 writeDataToFile.write(json_object)
                 writeDataToFile.close()
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " changeRspamdConfig "
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1640,7 +1640,7 @@ def savepostfixConfigurations(request):
                 writeDataToFile.close()
 
                 # status, msg = mailUtilities.changeRspamdConfig(request.body)
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " changePostfixConfig "
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1676,7 +1676,7 @@ def saveRedisConfigurations(request):
                 writeDataToFile.close()
 
                 # status, msg = mailUtilities.changeRspamdConfig(request.body)
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " changeRedisxConfig "
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1712,7 +1712,7 @@ def saveclamavConfigurations(request):
                 writeDataToFile.close()
 
                 # status, msg = mailUtilities.changeRspamdConfig(request.body)
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
                 execPath = execPath + " changeclamavConfig"
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1742,7 +1742,7 @@ def unistallRspamd(request):
 
         try:
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + " uninstallRspamd"
             ProcessUtilities.popenExecutioner(execPath)
 

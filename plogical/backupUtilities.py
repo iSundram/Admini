@@ -2,10 +2,10 @@ import json
 import os
 import sys
 import paramiko
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
     from ApachController.ApacheVhosts import ApacheVhost
@@ -2426,7 +2426,7 @@ def submitBackupCreation(tempStoragePath, backupName, backupPath, backupDomain):
         logging.CyberCPLogFileWriter.writeToFile(backupPath)
         logging.CyberCPLogFileWriter.writeToFile(tempStoragePath)
 
-        execPath = "sudo nice -n 10 /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+        execPath = "sudo nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
         execPath = execPath + " startBackup --tempStoragePath " + tempStoragePath + " --backupName " \
                    + backupName + " --backupPath " + backupPath + ' --backupDomain ' + backupDomain + ' --metaPath %s' % (
                        result[2])
@@ -2465,7 +2465,7 @@ def submitBackupCreation(tempStoragePath, backupName, backupPath, backupDomain):
 
         #output = ProcessUtilities.outputExecutioner(execPath, website.externalApp)
 
-        execPath = "sudo nice -n 10 /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+        execPath = "sudo nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
         execPath = execPath + " BackupRoot --tempStoragePath " + tempStoragePath + " --backupName " \
                    + backupName + " --backupPath " + backupPath + ' --backupDomain ' + backupDomain + ' --metaPath %s --externalApp %s' % (
                        result[2], website.externalApp) + f' --CPHomeStorage {CPHomeStorage}'

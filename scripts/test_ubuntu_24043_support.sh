@@ -103,13 +103,13 @@ fi
 echo ""
 echo "Test 6: CyberPanel Version Detection"
 echo "------------------------------------"
-if [ -f /usr/local/CyberCP/plogical/upgrade.py ]; then
+if [ -f /usr/local/core/plogical/upgrade.py ]; then
     echo "✅ CyberPanel installation found"
     
     # Test if the version detection would work
     if python3 -c "
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 try:
     from plogical.upgrade import Upgrade
     os_type = Upgrade.FindOperatingSytem()

@@ -10,13 +10,13 @@ import json
 import configparser
 from django.http import HttpResponse
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
 import plogical.CyberCPLogFileWriter as logging
 
 import plogical.mysqlUtilities as mysqlUtilities
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:

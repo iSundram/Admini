@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import argparse
 import json
 import os, sys
@@ -6,8 +6,8 @@ import shutil
 import time
 from io import StringIO
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 import django
 django.setup()
@@ -96,7 +96,7 @@ class ApplicationInstaller(multi.Thread):
             logging.writeToFile(str(msg) + ' [ApplicationInstaller.run]')
 
     def UpgradeCP(self):
-        command = f'/usr/local/CyberPanel/bin/python /usr/local/CyberCP/plogical/upgrade.py "SoftUpgrade,{self.data["branchSelect"]}"'
+        command = f'/usr/local/CyberPanel/bin/python /usr/local/core/plogical/upgrade.py "SoftUpgrade,{self.data["branchSelect"]}"'
         ProcessUtilities.executioner(command)
 
     @staticmethod
@@ -653,7 +653,7 @@ class ApplicationInstaller(multi.Thread):
 
             completePathToConfigFile = f'/usr/local/lsws/conf/vhosts/{domainName}/vhost.conf'
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
             execPath = execPath + " changePHP --phpVersion 'PHP 8.3' --path " + completePathToConfigFile
             ProcessUtilities.executioner(execPath)
 
@@ -1309,10 +1309,10 @@ class ApplicationInstaller(multi.Thread):
                 logging.writeToFile(str(msg))
 
             try:
-                os.remove('/usr/local/CyberCP/joomla.zip')
-                os.remove('/usr/local/CyberCP/lscache_plugin.zip')
-                os.remove('/usr/local/CyberCP/pkg_lscache.xml')
-                os.remove('/usr/local/CyberCP/pkg_script.php')
+                os.remove('/usr/local/core/joomla.zip')
+                os.remove('/usr/local/core/lscache_plugin.zip')
+                os.remove('/usr/local/core/pkg_lscache.xml')
+                os.remove('/usr/local/core/pkg_script.php')
             except:
                 pass
 
@@ -1320,17 +1320,17 @@ class ApplicationInstaller(multi.Thread):
             statusFile.writelines('Installing LiteSpeed Cache Joomla plugin..,80')
             statusFile.close()
 
-            command = 'wget https://raw.githubusercontent.com/litespeedtech/lscache-joomla/master/package/lscache-1.3.1.zip -O /usr/local/CyberCP/joomla.zip'
+            command = 'wget https://raw.githubusercontent.com/litespeedtech/lscache-joomla/master/package/lscache-1.3.1.zip -O /usr/local/core/joomla.zip'
             ProcessUtilities.executioner(command)
 
-            command = 'unzip -o /usr/local/CyberCP/joomla.zip -d /usr/local/CyberCP/'
+            command = 'unzip -o /usr/local/core/joomla.zip -d /usr/local/core/'
             ProcessUtilities.executioner(command)
 
-            command = '%s extension:installfile %s --www %s /usr/local/CyberCP/lscache_plugin.zip' % (
+            command = '%s extension:installfile %s --www %s /usr/local/core/lscache_plugin.zip' % (
             joomlaPath, dbUser, finalPath)
             ProcessUtilities.executioner(command)
 
-            command = '%s extension:installfile %s --www %s /usr/local/CyberCP/com_lscache.zip' % (
+            command = '%s extension:installfile %s --www %s /usr/local/core/com_lscache.zip' % (
             joomlaPath, dbUser, finalPath)
             ProcessUtilities.executioner(command)
 
@@ -1663,7 +1663,7 @@ class ApplicationInstaller(multi.Thread):
             if cronData.find('WPAutoUpdates.py') == -1:
                 writeToFile = open(localCronPath, 'a')
                 writeToFile.write(
-                    '0 12 * * * /usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/WPAutoUpdates.py\n')
+                    '0 12 * * * /usr/local/core/bin/python /usr/local/core/plogical/WPAutoUpdates.py\n')
                 writeToFile.close()
 
         except BaseException as msg:
@@ -2217,7 +2217,7 @@ class ApplicationInstaller(multi.Thread):
         
         # Create secure folder
         ACLManager.CreateSecureDir()
-        tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', str(randint(1000, 9999)))
+        tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
         
         command = f'mkdir -p {tempPath}'
         ProcessUtilities.executioner(command)
@@ -2251,7 +2251,7 @@ class ApplicationInstaller(multi.Thread):
         coreResult = ab.submitWebsiteCreation(UserID, DataToPass)
         coreResult1 = json.loads((coreResult).content)
         
-        if os.path.exists('/usr/local/CyberCP/debug'):
+        if os.path.exists('/usr/local/core/debug'):
             logging.writeToFile("Creating website result....%s" % coreResult1)
         
         reutrntempath = coreResult1['tempStatusPath']
@@ -2480,7 +2480,7 @@ class ApplicationInstaller(multi.Thread):
 
             ### Create secure folder
             ACLManager.CreateSecureDir()
-            self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', str(randint(1000, 9999)))
+            self.tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
 
             command = f'mkdir -p {self.tempPath}'
             ProcessUtilities.executioner(command)
@@ -2628,7 +2628,7 @@ class ApplicationInstaller(multi.Thread):
 
                 ACLManager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
-                self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
                 command = f'mkdir -p {self.tempPath}'
                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -2785,7 +2785,7 @@ class ApplicationInstaller(multi.Thread):
 
                 ACLManager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
-                self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
                 command = f'mkdir -p {self.tempPath}'
                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -2944,7 +2944,7 @@ class ApplicationInstaller(multi.Thread):
 
                 ACLManager.CreateSecureDir()
                 RandomPath = str(randint(1000, 9999))
-                self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
                 command = f'mkdir -p {self.tempPath}'
                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3283,7 +3283,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ACLManager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
-                    #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #         command = f'mkdir -p {self.tempPath}'
                     #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3327,7 +3327,7 @@ class ApplicationInstaller(multi.Thread):
                     #             raise BaseException(stdout)
                     #
                     #         # dump Mysql file in unzippath path
-                    #         unzippathdb = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                    #         unzippathdb = "%s/ab/usr/local/core/tmp/%s/%s" % (
                     #         self.tempPath, oldtemppath, DumpFileName)
                     #         # command = "mysql -u root %s < %s" % (Finaldbname, unzippathdb)
                     #         command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -3418,7 +3418,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ACLManager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
-                    #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #                 command = f'mkdir -p {self.tempPath}'
                     #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3462,7 +3462,7 @@ class ApplicationInstaller(multi.Thread):
                     #                 if result == 0:
                     #                     raise BaseException(stdout)
                     #
-                    #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (
+                    #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (
                     #                 self.tempPath, oldtemppath)
                     #
                     #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -3517,7 +3517,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ACLManager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
-                    #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #                 command = f'mkdir -p {self.tempPath}'
                     #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3561,7 +3561,7 @@ class ApplicationInstaller(multi.Thread):
                     #                 if result == 0:
                     #                     raise BaseException(stdout)
                     #
-                    #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (
+                    #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (
                     #                 self.tempPath, oldtemppath)
                     #
                     #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
@@ -3666,7 +3666,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ACLManager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
-                    #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #         command = f'mkdir -p {self.tempPath}'
                     #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3712,9 +3712,9 @@ class ApplicationInstaller(multi.Thread):
                     #         logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                     #         ###Copy backup content to newsite
                     #         if oldhome == "0":
-                    #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                    #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                     #         else:
-                    #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                    #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                     #                 self.tempPath, oldtemppath)
                     #
                     #         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -3818,7 +3818,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ACLManager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
-                    #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #                 command = f'mkdir -p {self.tempPath}'
                     #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -3862,7 +3862,7 @@ class ApplicationInstaller(multi.Thread):
                     #                 if result == 0:
                     #                     raise BaseException(stdout)
                     #
-                    #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (
+                    #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (
                     #                 self.tempPath, oldtemppath)
                     #
                     #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -3878,7 +3878,7 @@ class ApplicationInstaller(multi.Thread):
                     #                     raise BaseException(stdout)
                     #
                     #                 # dump Mysql file in unzippath path
-                    #                 unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                    #                 unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                     #                     self.tempPath, oldtemppath, DumpFileName)
                     #                 # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                     #                 command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -3987,7 +3987,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #                 ACLManager.CreateSecureDir()
                     #                 RandomPath = str(randint(1000, 9999))
-                    #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #                 command = f'mkdir -p {self.tempPath}'
                     #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4031,7 +4031,7 @@ class ApplicationInstaller(multi.Thread):
                     #                 if result == 0:
                     #                     raise BaseException(stdout)
                     #
-                    #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (
+                    #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (
                     #                 self.tempPath, oldtemppath)
                     #
                     #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
@@ -4047,7 +4047,7 @@ class ApplicationInstaller(multi.Thread):
                     #                     raise BaseException(stdout)
                     #
                     #                 # dump Mysql file in unzippath path
-                    #                 unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                    #                 unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                     #                     self.tempPath, oldtemppath, DumpFileName)
                     #                 # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                     #                 command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -4212,7 +4212,7 @@ class ApplicationInstaller(multi.Thread):
                     #
                     #         ACLManager.CreateSecureDir()
                     #         RandomPath = str(randint(1000, 9999))
-                    #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                     #
                     #         command = f'mkdir -p {self.tempPath}'
                     #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4258,9 +4258,9 @@ class ApplicationInstaller(multi.Thread):
                     #         logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                     #         ###Copy backup content to newsite
                     #         if oldhome == "0":
-                    #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                    #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                     #         else:
-                    #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                    #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                     #             self.tempPath, oldtemppath)
                     #
                     #         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -4276,7 +4276,7 @@ class ApplicationInstaller(multi.Thread):
                     #             raise BaseException(stdout)
                     #
                     #         # dump Mysql file in unzippath path
-                    #         unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                    #         unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                     #         self.tempPath, oldtemppath, DumpFileName)
                     #         # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                     #         command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -4425,7 +4425,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ACLManager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
-                #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #         command = f'mkdir -p {self.tempPath}'
                 #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4469,7 +4469,7 @@ class ApplicationInstaller(multi.Thread):
                 #             raise BaseException(stdout)
                 #
                 #         # dump Mysql file in unzippath path
-                #         unzippathdb = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
+                #         unzippathdb = "%s/ab/usr/local/core/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
                 #         # command = "mysql -u root %s < %s" % (Finaldbname, unzippathdb)
                 #         command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
                 #             VHuser, FinalPHPPath, newWPpath, unzippathdb)
@@ -4559,7 +4559,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ACLManager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
-                #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #                 command = f'mkdir -p {self.tempPath}'
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4603,7 +4603,7 @@ class ApplicationInstaller(multi.Thread):
                 #                 if result == 0:
                 #                     raise BaseException(stdout)
                 #
-                #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #
                 #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4657,7 +4657,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ACLManager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
-                #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #                 command = f'mkdir -p {self.tempPath}'
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4701,7 +4701,7 @@ class ApplicationInstaller(multi.Thread):
                 #                 if result == 0:
                 #                     raise BaseException(stdout)
                 #
-                #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #
                 #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4805,7 +4805,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ACLManager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
-                #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #         command = f'mkdir -p {self.tempPath}'
                 #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -4851,9 +4851,9 @@ class ApplicationInstaller(multi.Thread):
                 #         logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                 #         ###Copy backup content to newsite
                 #         if oldhome == "0":
-                #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #         else:
-                #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                 #                 self.tempPath, oldtemppath)
                 #
                 #         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -4957,7 +4957,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ACLManager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
-                #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #                 command = f'mkdir -p {self.tempPath}'
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5001,7 +5001,7 @@ class ApplicationInstaller(multi.Thread):
                 #                 if result == 0:
                 #                     raise BaseException(stdout)
                 #
-                #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #
                 #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5016,7 +5016,7 @@ class ApplicationInstaller(multi.Thread):
                 #                     raise BaseException(stdout)
                 #
                 #                 # dump Mysql file in unzippath path
-                #                 unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                #                 unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                 #                     self.tempPath, oldtemppath, DumpFileName)
                 #                 # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                 #                 command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -5125,7 +5125,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #                 ACLManager.CreateSecureDir()
                 #                 RandomPath = str(randint(1000, 9999))
-                #                 self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #                 self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #                 command = f'mkdir -p {self.tempPath}'
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5169,7 +5169,7 @@ class ApplicationInstaller(multi.Thread):
                 #                 if result == 0:
                 #                     raise BaseException(stdout)
                 #
-                #                 unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #                 unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #
                 #                 command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
                 #                 result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5184,7 +5184,7 @@ class ApplicationInstaller(multi.Thread):
                 #                     raise BaseException(stdout)
                 #
                 #                 # dump Mysql file in unzippath path
-                #                 unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                #                 unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                 #                     self.tempPath, oldtemppath, DumpFileName)
                 #                 # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                 #                 command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
@@ -5348,7 +5348,7 @@ class ApplicationInstaller(multi.Thread):
                 #
                 #         ACLManager.CreateSecureDir()
                 #         RandomPath = str(randint(1000, 9999))
-                #         self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                #         self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
                 #
                 #         command = f'mkdir -p {self.tempPath}'
                 #         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5394,9 +5394,9 @@ class ApplicationInstaller(multi.Thread):
                 #         logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                 #         ###Copy backup content to newsite
                 #         if oldhome == "0":
-                #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                 #         else:
-                #             unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                #             unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                 #                 self.tempPath, oldtemppath)
                 #
                 #         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -5412,7 +5412,7 @@ class ApplicationInstaller(multi.Thread):
                 #             raise BaseException(stdout)
                 #
                 #         # dump Mysql file in unzippath path
-                #         unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
+                #         unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
                 #         # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                 #         command = 'sudo -u %s %s -d error_reporting=0 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
                 #             VHuser, FinalPHPPath, newWPpath, unzippath2)
@@ -5485,7 +5485,7 @@ class ApplicationInstaller(multi.Thread):
 
             ACLManager.CreateSecureDir()
             RandomPath = str(randint(1000, 9999))
-            self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+            self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
             command = f'mkdir -p {self.tempPath}'
             result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5583,7 +5583,7 @@ class ApplicationInstaller(multi.Thread):
 
                     # dump Mysql file in unzippath path
 
-                    unzippathdb = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
+                    unzippathdb = "%s/ab/usr/local/core/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
                     # command = "mysql -u root %s < %s" % (Finaldbname, unzippathdb)
                     command = 'sudo -u %s %s -d error_reporting=0 -d memory_limit=350M -d max_execution_time=400 /usr/bin/wp --allow-root --skip-plugins --skip-themes --path=%s --quiet db import %s' % (
                         VHuser, FinalPHPPath, newWPpath, unzippathdb)
@@ -5683,7 +5683,7 @@ class ApplicationInstaller(multi.Thread):
                             Newurl = finalurl
 
 
-                            # unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                            # unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                             #
                             # command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
                             # result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5748,7 +5748,7 @@ class ApplicationInstaller(multi.Thread):
                         ### Create secure folder
 
 
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
 
                         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
                         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5865,7 +5865,7 @@ class ApplicationInstaller(multi.Thread):
 
                     ACLManager.CreateSecureDir()
                     RandomPath = str(randint(1000, 9999))
-                    self.tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', RandomPath)
+                    self.tempPath = '%s/%s' % ('/usr/local/core/tmp', RandomPath)
 
                     command = f'mkdir -p {self.tempPath}'
                     result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -5911,9 +5911,9 @@ class ApplicationInstaller(multi.Thread):
                     logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                     ###Copy backup content to newsite
                     if oldhome == "0":
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                     else:
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                             self.tempPath, oldtemppath)
 
                     command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -6039,7 +6039,7 @@ class ApplicationInstaller(multi.Thread):
 
                         ### need to work on when site restore to new url then change db
 
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
 
                         command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
                         result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -6082,7 +6082,7 @@ class ApplicationInstaller(multi.Thread):
 
 
                         # dump Mysql file in unzippath path
-                        unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                        unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                                 self.tempPath, oldtemppath, DumpFileName)
                         # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                         command = f'sudo -u {VHuser} {FinalPHPPath} -d error_reporting=0 -d memory_limit=350M -d max_execution_time=400 /usr/bin/wp --allow-root ' \
@@ -6180,7 +6180,7 @@ class ApplicationInstaller(multi.Thread):
                         #     ### Create secure folder
                         #
                         #
-                        #     unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        #     unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                         #
                         #     command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
                         #     result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -6195,7 +6195,7 @@ class ApplicationInstaller(multi.Thread):
                         #         raise BaseException(stdout)
                         #
                         #     # dump Mysql file in unzippath path
-                        #     unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                        #     unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                         #         self.tempPath, oldtemppath, DumpFileName)
                         #     # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                         #     command = f'sudo -u {VHuser} {FinalPHPPath} -d error_reporting=0 /usr/bin/wp --allow-root ' \
@@ -6303,7 +6303,7 @@ class ApplicationInstaller(multi.Thread):
                         #     ### Create secure folder
                         #
                         #
-                        #     unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        #     unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                         #
                         #     command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, WPpath)
                         #     result, stdout = ProcessUtilities.outputExecutioner(command, None, None, None, 1)
@@ -6318,7 +6318,7 @@ class ApplicationInstaller(multi.Thread):
                         #         raise BaseException(stdout)
                         #
                         #     # dump Mysql file in unzippath path
-                        #     unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (
+                        #     unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (
                         #         self.tempPath, oldtemppath, DumpFileName)
                         #     # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
                         #
@@ -6451,7 +6451,7 @@ class ApplicationInstaller(multi.Thread):
 
                     from plogical.vhost import vhost
                     vhFile = f'/usr/local/lsws/conf/vhosts/{NewWPsite.owner.domain}/vhost.conf'
-                    execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/virtualHostUtilities.py"
+                    execPath = "/usr/local/core/bin/python /usr/local/core/plogical/virtualHostUtilities.py"
                     execPath = execPath + f" changePHP --phpVersion '{config['WebphpSelection']}'  --path " + vhFile
                     ProcessUtilities.popenExecutioner(execPath)
 
@@ -6501,9 +6501,9 @@ class ApplicationInstaller(multi.Thread):
                     logging.statusWriter(self.tempStatusPath, 'Copying Data File...,60')
                     ###Copy backup content to newsite
                     if oldhome == "0":
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/" % (self.tempPath, oldtemppath)
                     else:
-                        unzippath = "%s/ab/usr/local/CyberCP/tmp/%s/public_html/public_html/" % (
+                        unzippath = "%s/ab/usr/local/core/tmp/%s/public_html/public_html/" % (
                         self.tempPath, oldtemppath)
 
                     command = "sudo -u %s cp -R %s* %s" % (VHuser, unzippath, newWPpath)
@@ -6544,7 +6544,7 @@ class ApplicationInstaller(multi.Thread):
 
                     # dump Mysql file in unzippath path
 
-                    unzippath2 = "%s/ab/usr/local/CyberCP/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
+                    unzippath2 = "%s/ab/usr/local/core/tmp/%s/%s" % (self.tempPath, oldtemppath, DumpFileName)
 
                     # command = "mysql -u root %s < %s" % (Finaldbname, unzippath2)
 

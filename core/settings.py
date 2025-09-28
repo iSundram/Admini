@@ -87,11 +87,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'CyberCP.secMiddleware.secMiddleware',
-    'CyberCP.phpmyadminMiddleware.PhpMyAdminAccessMiddleware'
+    'core.secMiddleware.secMiddleware',
+    'core.phpmyadminMiddleware.PhpMyAdminAccessMiddleware'
 ]
 
-ROOT_URLCONF = 'CyberCP.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
@@ -113,7 +113,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CyberCP.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -202,7 +202,7 @@ LANGUAGES = (
     ('nb', _('Norwegian Bokmål')),
 )
 
-MEDIA_URL = '/usr/local/CyberCP/tmp/'
+MEDIA_URL = '/usr/local/core/tmp/'
 MEDIA_ROOT = MEDIA_URL
 DATA_UPLOAD_MAX_MEMORY_SIZE = 2147483648
 

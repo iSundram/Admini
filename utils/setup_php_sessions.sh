@@ -36,10 +36,10 @@ fi
 # Setup a cron to clear stuff older then session.gc_maxlifetime currently set in the php.ini for each version
 
 # Create cron file if missing.
-if [[ ! -e /usr/local/CyberCP/bin/cleansessions ]]; then
-	touch /usr/local/CyberCP/bin/cleansessions
-	chmod +x /usr/local/CyberCP/bin/cleansessions
-	cat >> /usr/local/CyberCP/bin/cleansessions <<"EOL"
+if [[ ! -e /usr/local/core/bin/cleansessions ]]; then
+	touch /usr/local/core/bin/cleansessions
+	chmod +x /usr/local/core/bin/cleansessions
+	cat >> /usr/local/core/bin/cleansessions <<"EOL"
 #!/bin/bash
 for version in $(ls /usr/local/lsws|grep lsphp); do echo ""; echo "PHP $version"; session_time=$(/usr/local/lsws/${version}/bin/php -i |grep -Ei 'session.gc_maxlifetime'| grep -Eo "[[:digit:]]+"|sort -u); find -O3 "/var/lib/lsphp/session/${version}" -ignore_readdir_race -depth -mindepth 1 -name 'sess_*' -type f -cmin 120 -delete; done
 EOL
@@ -48,12 +48,12 @@ fi
 
 # Create crontab only if not exist
 echo "Installing PHP Session cleaning cron"
-command="/usr/local/CyberCP/bin/cleansessions >/dev/null 2>&1"
+command="/usr/local/core/bin/cleansessions >/dev/null 2>&1"
 job="09,39 * * * * $command"
 cat <(grep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -
 
 echo "Checking cleansessions file"
-cat /usr/local/CyberCP/bin/cleansessions
+cat /usr/local/core/bin/cleansessions
 
 # Set to a 4 hour default as the 24 min default is kinda low and logs people out too often and as a global default in shared scenario its hard for clients to know how to override this while working in their admin area backends etc.
 grep -Eilr '^memory_limit' --include=\*php.ini /usr/local/lsws/lsphp* | xargs sed -i -e "s/^session.gc_maxlifetime.*/session.gc_maxlifetime = '14400'/g"

@@ -816,7 +816,7 @@ fi
 
 main_install() {
 
-if [[ -e /usr/local/CyberCP ]] ; then
+if [[ -e /usr/local/core ]] ; then
 	echo -e "\n CyberPanel already installed, exiting..."
 #exit
 fi
@@ -961,8 +961,8 @@ fi
 if grep "CyberPanel installation successfully completed" /var/log/installLogs.txt > /dev/null; then
 
 if [[ $DEV == "ON" ]] ; then
-python3.6 -m venv /usr/local/CyberCP
-source /usr/local/CyberCP/bin/activate
+python3.6 -m venv /usr/local/core
+source /usr/local/core/bin/activate
 wget -O requirements.txt https://raw.githubusercontent.com/usmannasir/cyberpanel/$BRANCH_NAME/requirments.txt
 pip3.6 install --ignore-installed -r requirements.txt
 systemctl restart lscpd
@@ -1020,10 +1020,10 @@ DISK2=$(df -h | awk '$NF=="/"{printf "%d/%dGB (%s)\n", $3,$2,$5}')
 ELAPSED="$(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec"
 MYSQLPASSWD=$(cat /etc/cyberpanel/mysqlPassword)
 echo "$ADMIN_PASS" > /etc/cyberpanel/adminPass
-/usr/local/CyberPanel/bin/python2 /usr/local/CyberCP/plogical/adminPass.py --password $ADMIN_PASS
+/usr/local/CyberPanel/bin/python2 /usr/local/core/plogical/adminPass.py --password $ADMIN_PASS
 systemctl restart lscpd
 systemctl restart lsws
-echo "/usr/local/CyberPanel/bin/python2 /usr/local/CyberCP/plogical/adminPass.py --password \"\$@\"" > /usr/bin/adminPass
+echo "/usr/local/CyberPanel/bin/python2 /usr/local/core/plogical/adminPass.py --password \"\$@\"" > /usr/bin/adminPass
 echo "systemctl restart lscpd" >> /usr/bin/adminPass
 chmod +x /usr/bin/adminPass
 if [[ $VERSION = "OLS" ]] ; then
@@ -1111,16 +1111,16 @@ options edns0" /etc/resolv.conf
 		fi
 	fi
 	if [[ $VERSION = "ENT" ]] ; then
-		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.5-ent-x86_64-linux.tar.gz|https://cyberpanel.sh/packages/5.0/lsws-5.3.5-ent-x86_64-linux.tar.gz|g' /usr/local/CyberCP/install/installCyberPanel.py
-		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|https://cyberpanel.sh/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|https://'$DOWNLOAD_SERVER'/litespeed/lsws-'$LSWS_STABLE_VER'-ent-x86_64-linux.tar.gz|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.5-ent-x86_64-linux.tar.gz|https://cyberpanel.sh/packages/5.0/lsws-5.3.5-ent-x86_64-linux.tar.gz|g' /usr/local/core/install/installCyberPanel.py
+		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|https://cyberpanel.sh/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|g' /usr/local/core/serverStatus/serverStatusUtil.py
+		sed -i 's|https://www.litespeedtech.com/packages/5.0/lsws-5.3.8-ent-x86_64-linux.tar.gz|https://'$DOWNLOAD_SERVER'/litespeed/lsws-'$LSWS_STABLE_VER'-ent-x86_64-linux.tar.gz|g' /usr/local/core/serverStatus/serverStatusUtil.py
 		echo -e "If you have install LiteSpeed Enterprise, please run \e[31m/usr/local/lsws/admin/misc/lsup.sh\033[39m to update it to latest."
 	fi
 fi
 
-sed -i 's|lsws-5.3.8|lsws-'$LSWS_STABLE_VER'|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i 's|lsws-5.4.2|lsws-'$LSWS_STABLE_VER'|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i 's|lsws-5.3.5|lsws-'$LSWS_STABLE_VER'|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+sed -i 's|lsws-5.3.8|lsws-'$LSWS_STABLE_VER'|g' /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i 's|lsws-5.4.2|lsws-'$LSWS_STABLE_VER'|g' /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i 's|lsws-5.3.5|lsws-'$LSWS_STABLE_VER'|g' /usr/local/core/serverStatus/serverStatusUtil.py
 
 if [[ $SILENT != "ON" ]] ; then
 printf "%s" "Would you like to restart your server now? [y/N]: "

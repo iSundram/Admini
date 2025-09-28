@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 
 import os.path
 import sys
@@ -7,8 +7,8 @@ from datetime import datetime
 
 from plogical.DockerSites import Docker_Sites
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import json
 from plogical.acl import ACLManager
@@ -76,7 +76,7 @@ class ContainerManager(multi.Thread):
             writeToFile = open(ServerStatusUtil.lswsInstallStatusPath, 'w')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/dockerManager/dockerInstall.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/dockerManager/dockerInstall.py"
             ProcessUtilities.executioner(execPath)
 
             time.sleep(2)

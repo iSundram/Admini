@@ -108,7 +108,7 @@ def add_destination(request):
                 final_json = json.dumps(final_dic)
                 return HttpResponse(final_json)
 
-            python_path = Path('/usr/local/CyberCP/bin/python')
+            python_path = Path('/usr/local/core/bin/python')
             backup_utils = Path(vhu.cyberPanel) / "plogical/backupUtilities.py"
 
             exec_args = "submitDestinationCreation --ipAddress %s --password %s --port %s --user %s" % \

@@ -13,7 +13,7 @@ def installed(request):
     if os.path.exists(pluginPath):
         for plugin in os.listdir(pluginPath):
             data = {}
-            completePath = '/usr/local/CyberCP/' + plugin + '/meta.xml'
+            completePath = '/usr/local/core/' + plugin + '/meta.xml'
             pluginMetaData = ElementTree.parse(completePath)
 
             data['name'] = pluginMetaData.find('name').text

@@ -57,7 +57,7 @@ def versionManagement(request):
     r = requests.get(u)
     latestcomit = r.json()[0]['sha']
 
-    command = "git -C /usr/local/CyberCP/ rev-parse HEAD"
+    command = "git -C /usr/local/core/ rev-parse HEAD"
     output = ProcessUtilities.outputExecutioner(command)
 
     Currentcomt = output.rstrip("\n")
@@ -268,7 +268,7 @@ def versionManagment(request):
     r = requests.get(u)
     latestcomit = r.json()[0]['sha']
 
-    command = "git -C /usr/local/CyberCP/ rev-parse HEAD"
+    command = "git -C /usr/local/core/ rev-parse HEAD"
     output = ProcessUtilities.outputExecutioner(command)
 
     Currentcomt = output.rstrip("\n")
@@ -484,7 +484,7 @@ def runonboarding(request):
         WriteToFile.write('Starting')
         WriteToFile.close()
 
-        command = f'/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/virtualHostUtilities.py OnBoardingHostName --virtualHostName {hostname} --path {tempStatusPath} --rdns {rDNSCheck}'
+        command = f'/usr/local/core/bin/python /usr/local/core/plogical/virtualHostUtilities.py OnBoardingHostName --virtualHostName {hostname} --path {tempStatusPath} --rdns {rDNSCheck}'
         ProcessUtilities.popenExecutioner(command)
 
         dic = {'status': 1, 'tempStatusPath': tempStatusPath}

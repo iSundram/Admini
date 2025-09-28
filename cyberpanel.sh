@@ -1794,7 +1794,7 @@ Main_Installation() {
 log_function_start "Main_Installation"
 Debug_Log2 "Starting main installation..,30"
 log_info "Starting main Admini installation"
-if [[ -d /usr/local/CyberCP ]] ; then
+if [[ -d /usr/local/core ]] ; then
   echo -e "\n Admini already installed, exiting..."
   Debug_Log2 "Admini already installed, exiting... [404]"
   exit
@@ -1972,9 +1972,9 @@ Post_Install_PHP_Session_Setup() {
 log_function_start "Post_Install_PHP_Session_Setup"
 echo -e "\nSetting up PHP session storage path...\n"
 log_info "Setting up PHP session storage configuration"
-#wget -O /root/php_session_script.sh "${Git_Content_URL}/stable/CPScripts/setup_php_sessions.sh"
-chmod +x /usr/local/CyberCP/CPScripts/setup_php_sessions.sh
-bash /usr/local/CyberCP/CPScripts/setup_php_sessions.sh
+#wget -O /root/php_session_script.sh "${Git_Content_URL}/stable/utils/setup_php_sessions.sh"
+chmod +x /usr/local/core/utils/setup_php_sessions.sh
+bash /usr/local/core/utils/setup_php_sessions.sh
 #rm -f /root/php_session_script.sh
 Debug_Log2 "Setting up PHP session conf...,90"
 }
@@ -2037,7 +2037,7 @@ Post_Install_Setup_Watchdog() {
 log_function_start "Post_Install_Setup_Watchdog"
 if [[ "$Watchdog" = "On" ]]; then
   log_info "Setting up watchdog monitoring service"
-  wget -O /etc/cyberpanel/watchdog.sh "${Git_Content_URL}/stable/CPScripts/watchdog.sh"
+  wget -O /etc/cyberpanel/watchdog.sh "${Git_Content_URL}/stable/utils/watchdog.sh"
   chmod 700 /etc/cyberpanel/watchdog.sh
   ln -s /etc/cyberpanel/watchdog.sh /usr/local/bin/watchdog
   #shellcheck disable=SC2009
@@ -2073,7 +2073,7 @@ fi
 Post_Install_Display_Final_Info() {
 log_function_start "Post_Install_Display_Final_Info"
 log_info "Preparing final installation information"
-snappymailAdminPass=$(grep SetPassword /usr/local/CyberCP/public/snappymail.php| sed -e 's|$oConfig->SetPassword(||g' -e "s|');||g" -e "s|'||g")
+snappymailAdminPass=$(grep SetPassword /usr/local/core/public/snappymail.php| sed -e 's|$oConfig->SetPassword(||g' -e "s|');||g" -e "s|'||g")
 Elapsed_Time="$((Time_Count / 3600)) hrs $(((SECONDS / 60) % 60)) min $((Time_Count % 60)) sec"
 echo "###################################################################"
 echo "                CyberPanel Successfully Installed                  "
@@ -2185,21 +2185,21 @@ Debug_Log2 "Finalization..,80"
 echo -e "Creating CyberCP virtual environment..."
 
 # First ensure the directory exists
-mkdir -p /usr/local/CyberCP
+mkdir -p /usr/local/core
 
 if [[ "$Server_OS" = "Ubuntu" ]] && ([[ "$Server_OS_Version" = "22" ]] || [[ "$Server_OS_Version" = "24" ]]) ; then
   echo -e "Ubuntu 22.04/24.04 detected, using python3 -m venv..."
-  if python3 -m venv /usr/local/CyberCP 2>&1; then
+  if python3 -m venv /usr/local/core 2>&1; then
     echo -e "Virtual environment created successfully"
   else
     echo -e "python3 -m venv failed, trying virtualenv..."
     # Ensure virtualenv is properly installed
     pip3 install --upgrade virtualenv
-    virtualenv -p /usr/bin/python3 /usr/local/CyberCP
+    virtualenv -p /usr/bin/python3 /usr/local/core
   fi
 elif [[ "$Server_OS" = "CentOS" ]] && ([[ "$Server_OS_Version" = "9" ]] || [[ "$Server_OS_Version" = "10" ]]) ; then
   echo -e "AlmaLinux/Rocky Linux 9/10 detected, using python3 -m venv..."
-  if python3 -m venv /usr/local/CyberCP 2>&1; then
+  if python3 -m venv /usr/local/core 2>&1; then
     echo -e "Virtual environment created successfully"
   else
     echo -e "python3 -m venv failed, trying virtualenv..."
@@ -2207,25 +2207,25 @@ elif [[ "$Server_OS" = "CentOS" ]] && ([[ "$Server_OS_Version" = "9" ]] || [[ "$
     pip3 install --upgrade virtualenv
     # Find the correct python3 path
     PYTHON_PATH=$(which python3 2>/dev/null || which python3.9 2>/dev/null || echo "/usr/bin/python3")
-    virtualenv -p "$PYTHON_PATH" /usr/local/CyberCP
+    virtualenv -p "$PYTHON_PATH" /usr/local/core
   fi
 else
-  virtualenv -p /usr/bin/python3 /usr/local/CyberCP
+  virtualenv -p /usr/bin/python3 /usr/local/core
 fi
 
 # Verify virtual environment was created
-if [[ ! -f /usr/local/CyberCP/bin/activate ]]; then
+if [[ ! -f /usr/local/core/bin/activate ]]; then
   echo -e "ERROR: Virtual environment creation failed!"
   exit 1
 fi
 
 if [[ "$Server_OS" = "Ubuntu" ]] && [[ "$Server_OS_Version" = "20" ]] ; then
   # shellcheck disable=SC1091
-  . /usr/local/CyberCP/bin/activate
+  . /usr/local/core/bin/activate
    Check_Return
 else
   # shellcheck disable=SC1091
-  source /usr/local/CyberCP/bin/activate
+  source /usr/local/core/bin/activate
    Check_Return
 
 fi
@@ -2235,7 +2235,7 @@ Retry_Command "pip install --default-timeout=3600 -r /usr/local/requirments.txt"
 
 # Verify Django installation
 echo -e "Verifying Django installation..."
-if ! /usr/local/CyberCP/bin/python -c "import django" 2>/dev/null; then
+if ! /usr/local/core/bin/python -c "import django" 2>/dev/null; then
   echo -e "WARNING: Django not found, reinstalling requirements..."
   pip install --upgrade pip setuptools wheel packaging
   pip install --default-timeout=3600 --ignore-installed -r /usr/local/requirments.txt
@@ -2245,21 +2245,21 @@ fi
 
 if [[ "$Server_OS" = "Ubuntu" ]] && ([[ "$Server_OS_Version" = "22" ]] || [[ "$Server_OS_Version" = "24" ]]) ; then
   # Ubuntu 24.04 ships with Python 3.12, but using 3.10 for compatibility with CyberPanel
-  cp /usr/bin/python3.10 /usr/local/CyberCP/bin/python3
+  cp /usr/bin/python3.10 /usr/local/core/bin/python3
 else
   if [[ "$Server_OS_Version" = "9" ]] || [[ "$Server_OS_Version" = "10" ]] || [[ "$Server_OS_Version" = "8" ]] || [[ "$Server_OS_Version" = "20" ]] || [[ "$Server_OS_Version" = "24" ]]; then
     echo "PYTHONHOME=/usr" > /usr/local/lscp/conf/pythonenv.conf
   else
     # Uncomment and use the following lines if necessary for other OS versions
-    # rsync -av --ignore-existing /usr/lib64/python3.9/ /usr/local/CyberCP/lib64/python3.9/
+    # rsync -av --ignore-existing /usr/lib64/python3.9/ /usr/local/core/lib64/python3.9/
     # Check_Return
     :
   fi
 fi
 
 
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib64 || true
+chown -R cyberpanel:cyberpanel /usr/local/core/lib
+chown -R cyberpanel:cyberpanel /usr/local/core/lib64 || true
 }
 
 Pre_Install_Setup_Git_URL() {
@@ -2290,9 +2290,9 @@ if [[ -f /etc/pure-ftpd/pure-ftpd.conf ]]; then
   sed -i 's|NoAnonymous                 no|NoAnonymous                 yes|g' /etc/pure-ftpd/pure-ftpd.conf
 fi
 
-sed -i "s|lsws-5.3.8|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i "s|lsws-5.4.2|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i "s|lsws-5.3.5|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.3.8|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.4.2|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.3.5|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
 
 
 if [[ ! -f /usr/bin/cyberpanel_utility ]]; then
@@ -2305,10 +2305,10 @@ curl --silent -o /etc/profile.d/cyberpanel.sh https://cyberpanel.sh/?banner 2>/d
 chmod 700 /etc/profile.d/cyberpanel.sh
 echo "$Admin_Pass" > /etc/cyberpanel/adminPass
 chmod 600 /etc/cyberpanel/adminPass
-/usr/local/CyberPanel/bin/python /usr/local/CyberCP/plogical/adminPass.py --password "$Admin_Pass"
+/usr/local/CyberPanel/bin/python /usr/local/core/plogical/adminPass.py --password "$Admin_Pass"
 mkdir -p /etc/opendkim
 
-echo '/usr/local/CyberPanel/bin/python /usr/local/CyberCP/plogical/adminPass.py --password "$@"' > /usr/bin/adminPass
+echo '/usr/local/CyberPanel/bin/python /usr/local/core/plogical/adminPass.py --password "$@"' > /usr/bin/adminPass
 echo "systemctl restart lscpd" >> /usr/bin/adminPass
 echo "echo \$@ > /etc/cyberpanel/adminPass" >> /usr/bin/adminPass
 chmod 700 /usr/bin/adminPass
@@ -2405,12 +2405,12 @@ HostName=$(hostname --fqdn); [ -n "$(dig @1.1.1.1 +short "$HostName")" ]  &&  ec
 }
 
 Post_Install_CN_Replacement() {
-sed -i 's|wp core download|wp core download https://cyberpanel.sh/wordpress.org/latest.tar.gz|g' /usr/local/CyberCP/plogical/applicationInstaller.py
-sed -i 's|https://raw.githubusercontent.com/|https://cyberpanel.sh/raw.githubusercontent.com/|g' /usr/local/CyberCP/plogical/applicationInstaller.py
-sed -i 's|wp plugin install litespeed-cache|wp plugin install  https://cyberpanel.sh/downloads.wordpress.org/plugin/litespeed-cache.zip|g' /usr/local/CyberCP/plogical/applicationInstaller.py
+sed -i 's|wp core download|wp core download https://cyberpanel.sh/wordpress.org/latest.tar.gz|g' /usr/local/core/plogical/applicationInstaller.py
+sed -i 's|https://raw.githubusercontent.com/|https://cyberpanel.sh/raw.githubusercontent.com/|g' /usr/local/core/plogical/applicationInstaller.py
+sed -i 's|wp plugin install litespeed-cache|wp plugin install  https://cyberpanel.sh/downloads.wordpress.org/plugin/litespeed-cache.zip|g' /usr/local/core/plogical/applicationInstaller.py
 
-sed -i 's|https://www.litespeedtech.com/|https://cyberpanel.sh/www.litespeedtech.com/|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i 's|http://license.litespeedtech.com/|https://cyberpanel.sh/license.litespeedtech.com/|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+sed -i 's|https://www.litespeedtech.com/|https://cyberpanel.sh/www.litespeedtech.com/|g' /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i 's|http://license.litespeedtech.com/|https://cyberpanel.sh/license.litespeedtech.com/|g' /usr/local/core/serverStatus/serverStatusUtil.py
 }
 
 echo -e "\nInitializing...\n"

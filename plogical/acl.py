@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os,sys
 import random
 import string
@@ -7,9 +7,9 @@ from ApachController.ApacheVhosts import ApacheVhost
 from manageServices.models import PDNSStatus
 from .processUtilities import ProcessUtilities
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from loginSystem.models import Administrator, ACL
 from django.shortcuts import HttpResponse
@@ -967,8 +967,8 @@ class ACLManager:
             return 0
 
         if (statusFile[:18] != "/home/cyberpanel/." or statusFile[:16] == "/home/cyberpanel" or statusFile[:4] == '/tmp' or statusFile[
-                                                                                                                 :18] == '/usr/local/CyberCP') \
-                and statusFile != '/usr/local/CyberCP/CyberCP/settings.py' and statusFile.find(
+                                                                                                                 :18] == '/usr/local/core') \
+                and statusFile != '/usr/local/core/CyberCP/settings.py' and statusFile.find(
             '..') == -1 and statusFile != '/home/cyberpanel/.my.cnf' and statusFile != '/home/cyberpanel/.bashrc' and statusFile != '/home/cyberpanel/.bash_logout' and statusFile != '/home/cyberpanel/.profile':
             return 1
         else:
@@ -989,7 +989,7 @@ class ACLManager:
     def CreateSecureDir():
         ### Check if upload path tmp dir is not available
 
-        UploadPath = '/usr/local/CyberCP/tmp/'
+        UploadPath = '/usr/local/core/tmp/'
 
         if not os.path.exists(UploadPath):
             command = 'mkdir %s' % (UploadPath)
@@ -1194,7 +1194,7 @@ class ACLManager:
 
                 content = """<?php
 $_ENV['snappymail_INCLUDE_AS_API'] = true;
-include '/usr/local/CyberCP/public/snappymail/index.php';
+include '/usr/local/core/public/snappymail/index.php';
 
 $oConfig = \snappymail\Api::Config();
 $oConfig->SetPassword('%s');
@@ -1202,7 +1202,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
 ?>""" % (generate_pass())
 
-                writeToFile = open('/usr/local/CyberCP/public/snappymail.php', 'w')
+                writeToFile = open('/usr/local/core/public/snappymail.php', 'w')
                 writeToFile.write(content)
                 writeToFile.close()
 
@@ -1221,18 +1221,18 @@ echo $oConfig->Save() ? 'Done' : 'Error';
 
             ###### fix Core CyberPanel permissions
 
-            command = "find /usr/local/CyberCP -type d -exec chmod 0755 {} \;"
+            command = "find /usr/local/core -type d -exec chmod 0755 {} \;"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "find /usr/local/CyberCP -type f -exec chmod 0644 {} \;"
+            command = "find /usr/local/core -type f -exec chmod 0644 {} \;"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chmod -R 755 /usr/local/CyberCP/bin"
+            command = "chmod -R 755 /usr/local/core/bin"
             ProcessUtilities.executioner(command, 'root', True)
 
             ## change owner
 
-            command = "chown -R root:root /usr/local/CyberCP"
+            command = "chown -R root:root /usr/local/core"
             ProcessUtilities.executioner(command, 'root', True)
 
             ########### Fix LSCPD
@@ -1249,7 +1249,7 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chmod -R 755 /usr/local/lscp/fcgi-bin"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chown -R lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/tmp"
+            command = "chown -R lscpd:lscpd /usr/local/core/public/phpmyadmin/tmp"
             ProcessUtilities.executioner(command, 'root', True)
 
             ## change owner
@@ -1260,22 +1260,22 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = "chown -R lscpd:lscpd /usr/local/lscp/cyberpanel/rainloop"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chmod 700 /usr/local/CyberCP/cli/cyberPanel.py"
+            command = "chmod 700 /usr/local/core/cli/cyberPanel.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chmod 700 /usr/local/CyberCP/plogical/upgradeCritical.py"
+            command = "chmod 700 /usr/local/core/plogical/upgradeCritical.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chmod 755 /usr/local/CyberCP/postfixSenderPolicy/client.py"
+            command = "chmod 755 /usr/local/core/postfixSenderPolicy/client.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chmod 640 /usr/local/CyberCP/CyberCP/settings.py"
+            command = "chmod 640 /usr/local/core/CyberCP/settings.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "chown root:cyberpanel /usr/local/CyberCP/CyberCP/settings.py"
+            command = "chown root:cyberpanel /usr/local/core/CyberCP/settings.py"
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
             ProcessUtilities.executioner(command, 'root', True)
 
             files = ['/etc/yum.repos.d/MariaDB.repo', '/etc/pdns/pdns.conf', '/etc/systemd/system/lscpd.service',
@@ -1306,8 +1306,8 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 640 /etc/dovecot/dovecot-sql.conf.ext'
             ProcessUtilities.executioner(command, 'root', True)
 
-            fileM = ['/usr/local/lsws/FileManager/', '/usr/local/CyberCP/install/FileManager',
-                     '/usr/local/CyberCP/serverStatus/litespeed/FileManager',
+            fileM = ['/usr/local/lsws/FileManager/', '/usr/local/core/install/FileManager',
+                     '/usr/local/core/serverStatus/litespeed/FileManager',
                      '/usr/local/lsws/Example/html/FileManager']
 
             import shutil
@@ -1329,31 +1329,31 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 644 /etc/postfix/dynamicmaps.cf'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod +x /usr/local/CyberCP/plogical/renew.py'
+            command = 'chmod +x /usr/local/core/plogical/renew.py'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod +x /usr/local/CyberCP/CLManager/CLPackages.py'
+            command = 'chmod +x /usr/local/core/CLManager/CLPackages.py'
             ProcessUtilities.executioner(command, 'root', True)
 
-            clScripts = ['/usr/local/CyberCP/CLScript/panel_info.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxPackages.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxUsers.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxDomains.py'
-                , '/usr/local/CyberCP/CLScript/CloudLinuxResellers.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxAdmins.py',
-                         '/usr/local/CyberCP/CLScript/CloudLinuxDB.py', '/usr/local/CyberCP/CLScript/UserInfo.py']
+            clScripts = ['/usr/local/core/tools/panel_info.py',
+                         '/usr/local/core/tools/CloudLinuxPackages.py',
+                         '/usr/local/core/tools/CloudLinuxUsers.py',
+                         '/usr/local/core/tools/CloudLinuxDomains.py'
+                , '/usr/local/core/tools/CloudLinuxResellers.py',
+                         '/usr/local/core/tools/CloudLinuxAdmins.py',
+                         '/usr/local/core/tools/CloudLinuxDB.py', '/usr/local/core/tools/UserInfo.py']
 
             for items in clScripts:
                 command = 'chmod +x %s' % (items)
                 ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod 600 /usr/local/CyberCP/plogical/adminPass.py'
+            command = 'chmod 600 /usr/local/core/plogical/adminPass.py'
             ProcessUtilities.executioner(command, 'root', True)
 
             command = 'chmod 600 /etc/cagefs/exclude/cyberpanelexclude'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = "find /usr/local/CyberCP/ -name '*.pyc' -delete"
+            command = "find /usr/local/core/ -name '*.pyc' -delete"
             ProcessUtilities.executioner(command, 'root', True)
 
             if ProcessUtilities.decideDistro() == ProcessUtilities.centos or ProcessUtilities.decideDistro() == ProcessUtilities.cent8:
@@ -1372,10 +1372,10 @@ echo $oConfig->Save() ? 'Done' : 'Error';
             command = 'chmod 640 /usr/local/lscp/cyberpanel/logs/access.log'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = '/usr/local/lsws/lsphp83/bin/php /usr/local/CyberCP/public/snappymail.php'
+            command = '/usr/local/lsws/lsphp83/bin/php /usr/local/core/public/snappymail.php'
             ProcessUtilities.executioner(command, 'root', True)
 
-            command = 'chmod 600 /usr/local/CyberCP/public/snappymail.php'
+            command = 'chmod 600 /usr/local/core/public/snappymail.php'
             ProcessUtilities.executioner(command, 'root', True)
 
             ###

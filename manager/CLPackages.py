@@ -1,14 +1,14 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import argparse
 from websiteFunctions.models import Websites
-from CLManager.models import CLPackages
+from manager.models import CLPackages
 import pwd
 
 class CLinuxPackages:

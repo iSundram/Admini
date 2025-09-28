@@ -27,8 +27,8 @@ from managePHP.phpManager import PHPManager
 from managePHP.views import submitExtensionRequest, getRequestStatusApache
 from containerization.views import *
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 
 class CloudManager:
@@ -965,7 +965,7 @@ class CloudManager:
 
             request.session['userID'] = self.admin.pk
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/IncScheduler.py forceRunAWSBackup --planName %s" % (
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/IncScheduler.py forceRunAWSBackup --planName %s" % (
                 self.data['planName'])
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1507,7 +1507,7 @@ class CloudManager:
             writeToFile.write('Starting..,0')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/mailUtilities.py"
             execPath = execPath + ' ResetEmailConfigurations --tempStatusPath %s' % (tempStatusPath)
 
             ProcessUtilities.popenExecutioner(execPath)
@@ -1585,7 +1585,7 @@ class CloudManager:
             writeToFile.write('Starting..,0')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/ftp/ftpManager.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/ftp/ftpManager.py"
             execPath = execPath + ' ResetFTPConfigurations --tempStatusPath %s' % (tempStatusPath)
 
             ProcessUtilities.popenExecutioner(execPath)
@@ -1624,7 +1624,7 @@ class CloudManager:
             writeToFile.write('Starting..,0')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/dns/dnsManager.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/dns/dnsManager.py"
             execPath = execPath + ' ResetDNSConfigurations --tempStatusPath %s' % (tempStatusPath)
 
             ProcessUtilities.popenExecutioner(execPath)
@@ -1679,7 +1679,7 @@ class CloudManager:
             BackupPath = '/home/cyberpanel/backups/%s/backup-' % (self.data['domain']) + self.data[
                 'domain'] + "-" + time.strftime("%m.%d.%Y_%H-%M-%S")
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " CloudBackup --backupDomain %s --data %s --emails %s --databases %s --tempStoragePath %s " \
                                   "--path %s --port %s --ip %s --destinationDomain %s" % (
                            self.data['domain'], data, emails, databases, tempStatusPath, BackupPath, port, ip,
@@ -1801,7 +1801,7 @@ class CloudManager:
             except:
                 sourceDomain = 'None'
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " SubmitCloudBackupRestore --backupDomain %s --backupFile %s --sourceDomain %s --tempStoragePath %s" % (
                 self.data['domain'], self.data['backupFile'], sourceDomain, tempStatusPath)
             ProcessUtilities.popenExecutioner(execPath)
@@ -1922,7 +1922,7 @@ class CloudManager:
             writeToFile.write('Starting..,0')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/backupUtilities.py"
             execPath = execPath + " SubmitS3BackupRestore --backupDomain %s --backupFile '%s' --tempStoragePath %s --planName %s" % (
                 self.data['domain'], self.data['backupFile'], tempStatusPath, self.data['planName'])
             ProcessUtilities.popenExecutioner(execPath)
@@ -1943,7 +1943,7 @@ class CloudManager:
             writeToFile.write('Starting..,0')
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/applicationInstaller.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/applicationInstaller.py"
             execPath = execPath + " DeployWordPress --tempStatusPath %s --appsSet '%s' --domain '%s' --email '%s' --password '%s' " \
                                   "--pluginUpdates '%s' --themeUpdates '%s' --title '%s' --updates '%s' --userName '%s' " \
                                   "--version '%s' --createSite %s" % (
@@ -2686,7 +2686,7 @@ class CloudManager:
             except:
                 ftp = '0'
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/CyberPanelUpgrade.py --branch %s --mail %s --dns %s --ftp %s" % (
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/CyberPanelUpgrade.py --branch %s --mail %s --dns %s --ftp %s" % (
                 self.data['CyberPanelBranch'], mail, dns, ftp)
 
             ProcessUtilities.executioner(execPath)
@@ -2703,7 +2703,7 @@ class CloudManager:
 
             type = self.data['type']
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function %s --type %s" % (
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function %s --type %s" % (
                 'DetachCluster', type)
             ProcessUtilities.executioner(execPath)
 
@@ -2723,7 +2723,7 @@ class CloudManager:
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function SetupCluster --type %s" % (
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function SetupCluster --type %s" % (
             self.data['type'])
             ProcessUtilities.executioner(execPath)
 
@@ -2800,7 +2800,7 @@ class CloudManager:
     def BootMaster(self):
         try:
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function BootMaster --type Master"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function BootMaster --type Master"
             ProcessUtilities.executioner(execPath)
 
             final_json = json.dumps({'status': 1})
@@ -2819,7 +2819,7 @@ class CloudManager:
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function BootChild --type Child"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function BootChild --type Child"
             ProcessUtilities.executioner(execPath)
 
             final_json = json.dumps({'status': 1})
@@ -2833,7 +2833,7 @@ class CloudManager:
     def CreatePendingVirtualHosts(self):
         try:
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function CreatePendingVirtualHosts --type Child"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function CreatePendingVirtualHosts --type Child"
             ProcessUtilities.popenExecutioner(execPath)
 
             final_json = json.dumps({'status': 1})
@@ -2847,13 +2847,13 @@ class CloudManager:
     def SwitchDNS(self):
         try:
 
-            command = 'chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib/python3.8/site-packages/tldextract/.suffix_cache/'
+            command = 'chown -R cyberpanel:cyberpanel /usr/local/core/lib/python3.8/site-packages/tldextract/.suffix_cache/'
             ProcessUtilities.executioner(command)
 
-            command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python3.8/site-packages/tldextract/.suffix_cache'
+            command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python3.8/site-packages/tldextract/.suffix_cache'
             ProcessUtilities.executioner(command)
 
-            command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python*/site-packages/tldextract/.suffix_cache'
+            command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python*/site-packages/tldextract/.suffix_cache'
             ProcessUtilities.executioner(command, None, True)
 
             ##
@@ -2908,13 +2908,13 @@ class CloudManager:
 
             ### For child domainsa
 
-            command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python3.6/site-packages/tldextract/.suffix_cache'
+            command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python3.6/site-packages/tldextract/.suffix_cache'
             ProcessUtilities.executioner(command)
 
-            command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python3.8/site-packages/tldextract/.suffix_cache'
+            command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python3.8/site-packages/tldextract/.suffix_cache'
             ProcessUtilities.executioner(command)
 
-            command = 'chown cyberpanel:cyberpanel -R /usr/local/CyberCP/lib/python*/site-packages/tldextract/.suffix_cache'
+            command = 'chown cyberpanel:cyberpanel -R /usr/local/core/lib/python*/site-packages/tldextract/.suffix_cache'
             ProcessUtilities.executioner(command, None, True)
 
             from websiteFunctions.models import ChildDomains
@@ -2969,7 +2969,7 @@ class CloudManager:
 
             type = self.data['type']
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function %s --type %s" % (
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function %s --type %s" % (
                 'DebugCluster', type)
             ProcessUtilities.executioner(execPath)
 
@@ -2995,7 +2995,7 @@ class CloudManager:
             writeToFile.write(json.dumps(self.data))
             writeToFile.close()
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function UptimeMonitor --type All"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function UptimeMonitor --type All"
             ProcessUtilities.executioner(execPath)
 
             final_json = json.dumps({'status': 1})
@@ -3027,7 +3027,7 @@ class CloudManager:
     def SyncToMaster(self):
         try:
 
-            command = '/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/ClusterManager.py --function SyncToMaster --type Failover'
+            command = '/usr/local/core/bin/python /usr/local/core/plogical/ClusterManager.py --function SyncToMaster --type Failover'
             ProcessUtilities.executioner(command)
 
             final_json = json.dumps({'status': 1})

@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import os
 import gc
 import time

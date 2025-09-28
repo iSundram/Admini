@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical import CyberCPLogFileWriter as logging
 import subprocess
 import shlex
@@ -279,7 +279,7 @@ class phpUtilities:
 
         finalConfPath = ApacheVhost.configBasePath + domainName + '.conf'
 
-        if os.path.exists('/usr/local/CyberCP/debug'):
+        if os.path.exists('/usr/local/core/debug'):
             logging.CyberCPLogFileWriter.writeToFile(f'Apache conf file in GetPHPVersionFromFile {finalConfPath}')
 
         virtualHostName = domainName
@@ -397,7 +397,7 @@ class phpUtilities:
                 #result = result.rsplit("lsphp", 1)[0] + "php"
                 return result
 
-        if os.path.exists('/usr/local/CyberCP/debug'):
+        if os.path.exists('/usr/local/core/debug'):
             logging.CyberCPLogFileWriter.writeToFile(f'VHFile in GetPHPVersion {vhFile}')
 
         if ProcessUtilities.decideServer() == ProcessUtilities.OLS:

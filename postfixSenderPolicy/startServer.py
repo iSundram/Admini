@@ -1,8 +1,8 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os,sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import socket
 import os
@@ -16,7 +16,7 @@ import grp
 
 class SetupConn:
     cleaningPath = '/home/cyberpanel/purgeCache'
-    applicationPath = '/usr/local/CyberCP/postfixSenderPolicy/pid'
+    applicationPath = '/usr/local/core/postfixSenderPolicy/pid'
     serverAddress = '/var/log/policyServerSocket'
 
 

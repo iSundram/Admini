@@ -63,6 +63,6 @@ fi
 sed -i 's/\/^Received:\/ HOLD/\/^Received:\/ IGNORE/g' /etc/postfix/header_checks
 rm -rf /etc/MailScanner
 rm -rf /usr/share/MailScanner
-rm -rf /usr/local/CyberCP/public/mailwatch
+rm -rf /usr/local/core/public/mailwatch
 
 systemctl restart postfix dovecot

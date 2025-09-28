@@ -252,7 +252,7 @@ class OSCompatibilityTester:
         try:
             # Test if we can create files in plugin directory
             plugin_dir = "/home/cyberpanel/plugins"
-            cyberpanel_dir = "/usr/local/CyberCP"
+            cyberpanel_dir = "/usr/local/core"
             
             can_create_plugin_dir = True
             can_create_cyberpanel_dir = True
@@ -324,7 +324,7 @@ class OSCompatibilityTester:
         print("\n⚡ Testing CyberPanel Integration...")
         
         try:
-            cyberpanel_dir = "/usr/local/CyberCP"
+            cyberpanel_dir = "/usr/local/core"
             
             # Check if CyberPanel is installed
             cyberpanel_installed = os.path.exists(cyberpanel_dir)

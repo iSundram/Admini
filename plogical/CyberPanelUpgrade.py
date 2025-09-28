@@ -4,8 +4,8 @@ import sys
 import argparse
 import requests
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 class UpgradeCyberPanel:
 
@@ -33,10 +33,10 @@ class UpgradeCyberPanel:
 
         from plogical.upgrade import Upgrade
 
-        command = 'rm -rf /usr/local/CyberCP'
+        command = 'rm -rf /usr/local/core'
         Upgrade.executioner(command, command)
 
-        command = 'mv /usr/local/CyberCPBak /usr/local/CyberCP'
+        command = 'mv /usr/local/coreBak /usr/local/core'
         Upgrade.executioner(command, command)
         Upgrade.fixPermissions()
 
@@ -52,7 +52,7 @@ class UpgradeCyberPanel:
 
         self.PostStatus('Backing up current installation..,5')
 
-        command = 'cp -R /usr/local/CyberCP /usr/local/CyberCPBak'
+        command = 'cp -R /usr/local/core /usr/local/coreBak'
         Upgrade.executioner(command, command)
 
         if not Upgrade.executioner(command, command, 1):

@@ -242,13 +242,13 @@ sed -i 's/^Quarantine Whole Message =.*/Quarantine Whole Message = yes/' /etc/Ma
 sed -i 's/^Spam List =.*/Spam List = SBL + XBL/' /etc/MailScanner/MailScanner.conf
 sed -i 's/^Sign Clean Messages =.*/Sign Clean Messages = no/' /etc/MailScanner/MailScanner.conf
 
-mkdir /usr/local/CyberCP/public/mailwatch
+mkdir /usr/local/core/public/mailwatch
 
-cd /usr/local/CyberCP/public/mailwatch
+cd /usr/local/core/public/mailwatch
 
 git clone --depth=1 https://github.com/mailwatch/MailWatch.git --branch 1.2 --single-branch
 
-mv /usr/local/CyberCP/public/mailwatch/MailWatch/* /usr/local/CyberCP/public/mailwatch/
+mv /usr/local/core/public/mailwatch/MailWatch/* /usr/local/core/public/mailwatch/
 
 PASSWORD=$(cat /etc/cyberpanel/mysqlPassword)
 USER=root
@@ -257,21 +257,21 @@ ADMINPASS=$(cat /etc/cyberpanel/adminPass)
 
 ### Fix a bug in MailWatch SQL File
 
-sed -i 's/char(512)/char(255)/g' /usr/local/CyberCP/public/mailwatch/create.sql
+sed -i 's/char(512)/char(255)/g' /usr/local/core/public/mailwatch/create.sql
 
 ##
 
-mysql -u${USER} -p${PASSWORD} <"/usr/local/CyberCP/public/mailwatch/create.sql"
+mysql -u${USER} -p${PASSWORD} <"/usr/local/core/public/mailwatch/create.sql"
 mysql -u${USER} -p${PASSWORD} -e "use mailscanner"
 mysql -u${USER} -D${DATABASE} -p${PASSWORD} -e "GRANT ALL ON mailscanner.* TO root@localhost IDENTIFIED BY '${PASSWORD}';"
 mysql -u${USER} -D${DATABASE} -p${PASSWORD} -e "FLUSH PRIVILEGES;"
 mysql -u${USER} -D${DATABASE} -p${PASSWORD} -e "INSERT INTO mailscanner.users SET username = 'admin', password = MD5('${ADMINPASS}'), fullname = 'admin', type = 'A';"
 
-cp /usr/local/CyberCP/public/mailwatch/mailscanner/conf.php.example /usr/local/CyberCP/public/mailwatch/mailscanner/conf.php
+cp /usr/local/core/public/mailwatch/mailscanner/conf.php.example /usr/local/core/public/mailwatch/mailscanner/conf.php
 
-sed -i "s/^define('DB_USER',.*/define('DB_USER','root');/" /usr/local/CyberCP/public/mailwatch/mailscanner/conf.php
-sed -i "s/^define('DB_PASS',.*/define('DB_PASS','${PASSWORD}');/" /usr/local/CyberCP/public/mailwatch/mailscanner/conf.php
-sed -i "s/^define('MAILWATCH_HOME',.*/define(\'MAILWATCH_HOME\', \'\/usr\/local\/CyberCP\/public\/mailwatch\/mailscanner');/" /usr/local/CyberCP/public/mailwatch/mailscanner/conf.php
+sed -i "s/^define('DB_USER',.*/define('DB_USER','root');/" /usr/local/core/public/mailwatch/mailscanner/conf.php
+sed -i "s/^define('DB_PASS',.*/define('DB_PASS','${PASSWORD}');/" /usr/local/core/public/mailwatch/mailscanner/conf.php
+sed -i "s/^define('MAILWATCH_HOME',.*/define(\'MAILWATCH_HOME\', \'\/usr\/local\/CyberCP\/public\/mailwatch\/mailscanner');/" /usr/local/core/public/mailwatch/mailscanner/conf.php
 
 MSDEFAULT=/etc/MailScanner/defaults
 if [ -f "$MSDEFAULT" ]; then
@@ -281,15 +281,15 @@ elif [ ! -f "$MSDEFAULT" ]; then
   echo "run_mailscanner=1" >>/etc/MailScanner/defaults
 fi
 
-cp /usr/local/CyberCP/public/mailwatch/MailScanner_perl_scripts/MailWatchConf.pm /usr/share/MailScanner/perl/custom/
+cp /usr/local/core/public/mailwatch/MailScanner_perl_scripts/MailWatchConf.pm /usr/share/MailScanner/perl/custom/
 sed -i 's/^my (\$db_user) = .*/my (\$db_user) = \x27'${USER}'\x27;/' /usr/share/MailScanner/perl/custom/MailWatchConf.pm
 sed -i 's/^my (\$db_pass) = .*/my (\$db_pass) = \x27'${PASSWORD}'\x27;/' /usr/share/MailScanner/perl/custom/MailWatchConf.pm
-ln -s /usr/local/CyberCP/public/mailwatch/MailScanner_perl_scripts/MailWatch.pm /usr/share/MailScanner/perl/custom
-ln -s /usr/local/CyberCP/public/mailwatch/MailScanner_perl_scripts/SQLBlackWhiteList.pm /usr/share/MailScanner/perl/custom
-ln -s /usr/local/CyberCP/public/mailwatch/MailScanner_perl_scripts/SQLSpamSettings.pm /usr/share/MailScanner/perl/custom
-sed -i "s/^\$pathToFunctions =.*/\$pathToFunctions = '\/usr\/local\/CyberCP\/public\/mailwatch\/mailscanner\/functions.php';/" /usr/local/CyberCP/public/mailwatch/upgrade.php
+ln -s /usr/local/core/public/mailwatch/MailScanner_perl_scripts/MailWatch.pm /usr/share/MailScanner/perl/custom
+ln -s /usr/local/core/public/mailwatch/MailScanner_perl_scripts/SQLBlackWhiteList.pm /usr/share/MailScanner/perl/custom
+ln -s /usr/local/core/public/mailwatch/MailScanner_perl_scripts/SQLSpamSettings.pm /usr/share/MailScanner/perl/custom
+sed -i "s/^\$pathToFunctions =.*/\$pathToFunctions = '\/usr\/local\/CyberCP\/public\/mailwatch\/mailscanner\/functions.php';/" /usr/local/core/public/mailwatch/upgrade.php
 
-/usr/local/lsws/lsphp72/bin/php /usr/local/CyberCP/public/mailwatch/upgrade.php
+/usr/local/lsws/lsphp72/bin/php /usr/local/core/public/mailwatch/upgrade.php
 systemctl enable mailscanner
 systemctl restart mailscanner
 

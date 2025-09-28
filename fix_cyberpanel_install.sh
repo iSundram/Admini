@@ -26,22 +26,22 @@ print_error() {
 }
 
 # Check if virtual environment exists
-if [[ ! -f /usr/local/CyberCP/bin/activate ]]; then
+if [[ ! -f /usr/local/core/bin/activate ]]; then
     print_error "CyberPanel virtual environment not found!"
     print_status "Creating virtual environment..."
     
     # Try python3 -m venv first
-    if python3 -m venv --system-site-packages /usr/local/CyberCP 2>/dev/null; then
+    if python3 -m venv --system-site-packages /usr/local/core 2>/dev/null; then
         print_status "Virtual environment created successfully with python3 -m venv"
     else
         # Fallback to virtualenv
-        virtualenv -p /usr/bin/python3 --system-site-packages /usr/local/CyberCP
+        virtualenv -p /usr/bin/python3 --system-site-packages /usr/local/core
     fi
 fi
 
 # Activate virtual environment
 print_status "Activating CyberPanel virtual environment..."
-source /usr/local/CyberCP/bin/activate
+source /usr/local/core/bin/activate
 
 # Check if Django is already installed
 if python -c "import django" 2>/dev/null; then
@@ -73,7 +73,7 @@ else
 fi
 
 # Install WSGI-LSAPI if not present
-if [[ ! -f /usr/local/CyberCP/bin/lswsgi ]]; then
+if [[ ! -f /usr/local/core/bin/lswsgi ]]; then
     print_status "Installing WSGI-LSAPI..."
     
     cd /tmp
@@ -83,21 +83,21 @@ if [[ ! -f /usr/local/CyberCP/bin/lswsgi ]]; then
     tar xf wsgi-lsapi-2.1.tgz
     cd wsgi-lsapi-2.1
     
-    /usr/local/CyberCP/bin/python ./configure.py
+    /usr/local/core/bin/python ./configure.py
     make
     
-    cp lswsgi /usr/local/CyberCP/bin/
+    cp lswsgi /usr/local/core/bin/
     print_status "WSGI-LSAPI installed successfully"
 fi
 
 # Fix permissions
 print_status "Fixing permissions..."
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib 2>/dev/null || true
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib64 2>/dev/null || true
+chown -R cyberpanel:cyberpanel /usr/local/core/lib 2>/dev/null || true
+chown -R cyberpanel:cyberpanel /usr/local/core/lib64 2>/dev/null || true
 
 # Test Django installation
 print_status "Testing Django installation..."
-cd /usr/local/CyberCP
+cd /usr/local/core
 
 if python manage.py check 2>&1 | grep -q "System check identified no issues"; then
     print_status "Django is working correctly!"

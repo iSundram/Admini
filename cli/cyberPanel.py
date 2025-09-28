@@ -1,10 +1,10 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os, sys
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from inspect import stack
 from cli.cliLogger import cliLogger as logger
@@ -30,7 +30,7 @@ from plogical.backupSchedule import backupSchedule
 # All that we see or seem is but a dream within a dream.
 
 def get_cyberpanel_version():
-    with open('/usr/local/CyberCP/version.txt') as version:
+    with open('/usr/local/core/version.txt') as version:
         version_file = version.read()
         version = json.loads(str(version_file))
     return f"{version['version']}.{version['build']}"

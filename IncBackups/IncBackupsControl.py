@@ -1,12 +1,12 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import shlex
 import subprocess
 import sys
 import requests
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 import django
 
@@ -111,7 +111,7 @@ class IncJobs(multi.Thread):
             return 1
         else:
             if self.jobid.type[:8] == 'database':
-                self.restoreTarget = '/usr/local/CyberCP/tmp/'
+                self.restoreTarget = '/usr/local/core/tmp/'
             elif self.jobid.type[:4] == 'data':
                 self.restoreTarget = '/home/'
             elif self.jobid.type[:5] == 'email':
@@ -396,7 +396,7 @@ class IncJobs(multi.Thread):
                 ##
 
                 if mysqlUtilities.mysqlUtilities.restoreDatabaseBackup(self.path.split('/')[-1].rstrip('.sql'),
-                                                                       '/usr/local/CyberCP/tmp', 'dummy', 'dummy') == 0:
+                                                                       '/usr/local/core/tmp', 'dummy', 'dummy') == 0:
                     raise BaseException
             else:
 
@@ -417,9 +417,9 @@ class IncJobs(multi.Thread):
 
             try:
                 if self.reconstruct == 'remote':
-                    os.remove('/usr/local/CyberCP/tmp/%s' % (self.path.split('/')[-1]))
+                    os.remove('/usr/local/core/tmp/%s' % (self.path.split('/')[-1]))
                 else:
-                    os.remove('/usr/local/CyberCP/tmp/%s.sql' % (self.jobid.type.split(':')[1]))
+                    os.remove('/usr/local/core/tmp/%s.sql' % (self.jobid.type.split(':')[1]))
                     os.remove('/home/%s/%s.sql' % (self.website.domain, self.jobid.type.split(':')[1]))
             except BaseException as msg:
                 logging.writeToFile(str(msg))
@@ -476,7 +476,7 @@ class IncJobs(multi.Thread):
                         return 0
 
             metaPathNew = '/home/%s/meta.xml' % (self.website)
-            execPath = "nice -n 10 /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/restoreMeta.py"
+            execPath = "nice -n 10 /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/restoreMeta.py"
             execPath = execPath + " submitRestore --metaPath %s --statusFile %s" % (metaPathNew, self.statusPath)
             result = ProcessUtilities.outputExecutioner(execPath)
             logging.statusWriter(self.statusPath, result, 1)
@@ -647,7 +647,7 @@ class IncJobs(multi.Thread):
 
                 ###
 
-                UploadPath = '/usr/local/CyberCP/tmp'
+                UploadPath = '/usr/local/core/tmp'
 
                 if not os.path.exists(UploadPath):
                     command = 'mkdir %s' % (UploadPath)
@@ -685,7 +685,7 @@ class IncJobs(multi.Thread):
                         return 0
 
                 try:
-                    dbPath = '/usr/local/CyberCP/tmp/%s.sql' % (items.dbName)
+                    dbPath = '/usr/local/core/tmp/%s.sql' % (items.dbName)
                     command = 'rm -f %s' % (dbPath)
                     ProcessUtilities.executioner(command, self.externalApp)
                 except BaseException as msg:

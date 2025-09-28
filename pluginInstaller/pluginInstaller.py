@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import subprocess
 import shlex
 import argparse
@@ -24,7 +24,7 @@ class pluginInstaller:
 
     @staticmethod
     def migrationsEnabled(pluginName: str) -> bool:
-        pluginHome = '/usr/local/CyberCP/' + pluginName
+        pluginHome = '/usr/local/core/' + pluginName
         return os.path.exists(pluginHome + '/enable_migrations')
 
     ### Functions Related to plugin installation.
@@ -32,13 +32,13 @@ class pluginInstaller:
     @staticmethod
     def extractPlugin(pluginName):
         pathToPlugin = pluginName + '.zip'
-        command = 'unzip ' + pathToPlugin + ' -d /usr/local/CyberCP'
+        command = 'unzip ' + pathToPlugin + ' -d /usr/local/core'
         subprocess.call(shlex.split(command))
 
     @staticmethod
     def upgradingSettingsFile(pluginName):
-        data = open("/usr/local/CyberCP/CyberCP/settings.py", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/CyberCP/settings.py", 'w')
+        data = open("/usr/local/core/CyberCP/settings.py", 'r').readlines()
+        writeToFile = open("/usr/local/core/CyberCP/settings.py", 'w')
 
         for items in data:
             if items.find("'emailPremium',") > -1:
@@ -51,8 +51,8 @@ class pluginInstaller:
 
     @staticmethod
     def upgradingURLs(pluginName):
-        data = open("/usr/local/CyberCP/CyberCP/urls.py", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/CyberCP/urls.py", 'w')
+        data = open("/usr/local/core/CyberCP/urls.py", 'r').readlines()
+        writeToFile = open("/usr/local/core/CyberCP/urls.py", 'w')
 
         for items in data:
             if items.find("manageservices") > -1:
@@ -76,8 +76,8 @@ class pluginInstaller:
 
     @staticmethod
     def addInterfaceLink(pluginName):
-        data = open("/usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html", 'w')
+        data = open("/usr/local/core/baseTemplate/templates/baseTemplate/index.html", 'r').readlines()
+        writeToFile = open("/usr/local/core/baseTemplate/templates/baseTemplate/index.html", 'w')
 
         for items in data:
             if items.find("{# pluginsList #}") > -1:
@@ -97,12 +97,12 @@ class pluginInstaller:
         command = "rm -rf /usr/local/lscp/cyberpanel/static"
         subprocess.call(shlex.split(command))
 
-        os.chdir('/usr/local/CyberCP')
+        os.chdir('/usr/local/core')
 
-        command = "/usr/local/CyberCP/bin/python manage.py collectstatic --noinput"
+        command = "/usr/local/core/bin/python manage.py collectstatic --noinput"
         subprocess.call(shlex.split(command))
 
-        command = "mv /usr/local/CyberCP/static /usr/local/lscp/cyberpanel"
+        command = "mv /usr/local/core/static /usr/local/lscp/cyberpanel"
         subprocess.call(shlex.split(command))
 
 
@@ -111,17 +111,17 @@ class pluginInstaller:
     @staticmethod
     def installMigrations(pluginName):
         currentDir = os.getcwd()
-        os.chdir('/usr/local/CyberCP')
-        command = "/usr/local/CyberCP/bin/python manage.py makemigrations %s" % pluginName
+        os.chdir('/usr/local/core')
+        command = "/usr/local/core/bin/python manage.py makemigrations %s" % pluginName
         subprocess.call(shlex.split(command))
-        command = "/usr/local/CyberCP/bin/python manage.py migrate %s" % pluginName
+        command = "/usr/local/core/bin/python manage.py migrate %s" % pluginName
         subprocess.call(shlex.split(command))
         os.chdir(currentDir)
 
 
     @staticmethod
     def preInstallScript(pluginName):
-        pluginHome = '/usr/local/CyberCP/' + pluginName
+        pluginHome = '/usr/local/core/' + pluginName
 
         if os.path.exists(pluginHome + '/pre_install'):
             command = 'chmod +x ' + pluginHome + '/pre_install'
@@ -132,7 +132,7 @@ class pluginInstaller:
 
     @staticmethod
     def postInstallScript(pluginName):
-        pluginHome = '/usr/local/CyberCP/' + pluginName
+        pluginHome = '/usr/local/core/' + pluginName
 
         if os.path.exists(pluginHome + '/post_install'):
             command = 'chmod +x ' + pluginHome + '/post_install'
@@ -143,7 +143,7 @@ class pluginInstaller:
 
     @staticmethod
     def preRemoveScript(pluginName):
-        pluginHome = '/usr/local/CyberCP/' + pluginName
+        pluginHome = '/usr/local/core/' + pluginName
 
         if os.path.exists(pluginHome + '/pre_remove'):
             command = 'chmod +x ' + pluginHome + '/pre_remove'
@@ -228,14 +228,14 @@ class pluginInstaller:
 
     @staticmethod
     def removeFiles(pluginName):
-        pluginPath = '/usr/local/CyberCP/' + pluginName
+        pluginPath = '/usr/local/core/' + pluginName
         if os.path.exists(pluginPath):
             shutil.rmtree(pluginPath)
 
     @staticmethod
     def removeFromSettings(pluginName):
-        data = open("/usr/local/CyberCP/CyberCP/settings.py", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/CyberCP/settings.py", 'w')
+        data = open("/usr/local/core/CyberCP/settings.py", 'r').readlines()
+        writeToFile = open("/usr/local/core/CyberCP/settings.py", 'w')
 
         for items in data:
             if items.find(pluginName) > -1:
@@ -246,8 +246,8 @@ class pluginInstaller:
 
     @staticmethod
     def removeFromURLs(pluginName):
-        data = open("/usr/local/CyberCP/CyberCP/urls.py", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/CyberCP/urls.py", 'w')
+        data = open("/usr/local/core/CyberCP/urls.py", 'r').readlines()
+        writeToFile = open("/usr/local/core/CyberCP/urls.py", 'w')
 
         for items in data:
             if items.find(pluginName) > -1:
@@ -266,8 +266,8 @@ class pluginInstaller:
 
     @staticmethod
     def removeInterfaceLink(pluginName):
-        data = open("/usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html", 'r').readlines()
-        writeToFile = open("/usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html", 'w')
+        data = open("/usr/local/core/baseTemplate/templates/baseTemplate/index.html", 'r').readlines()
+        writeToFile = open("/usr/local/core/baseTemplate/templates/baseTemplate/index.html", 'w')
 
         for items in data:
             if items.find(pluginName) > -1 and items.find('<li>') > -1:
@@ -279,8 +279,8 @@ class pluginInstaller:
     @staticmethod
     def removeMigrations(pluginName):
         currentDir = os.getcwd()
-        os.chdir('/usr/local/CyberCP')
-        command = "/usr/local/CyberCP/bin/python manage.py migrate %s zero" % pluginName
+        os.chdir('/usr/local/core')
+        command = "/usr/local/core/bin/python manage.py migrate %s zero" % pluginName
         subprocess.call(shlex.split(command))
         os.chdir(currentDir)
 

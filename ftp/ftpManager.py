@@ -1,10 +1,10 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os.path
 import sys
 import errno
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import json
 from plogical.httpProc import httpProc
@@ -382,10 +382,10 @@ class FTPManager:
         #
         #     if os.path.exists(ftpdPath):
         #         shutil.rmtree(ftpdPath)
-        #         shutil.copytree("/usr/local/CyberCP/install/pure-ftpd-one", ftpdPath)
+        #         shutil.copytree("/usr/local/core/install/pure-ftpd-one", ftpdPath)
         #
         #     else:
-        #         shutil.copytree("/usr/local/CyberCP/install/pure-ftpd-one", ftpdPath)
+        #         shutil.copytree("/usr/local/core/install/pure-ftpd-one", ftpdPath)
         #
         #
         #     if ProcessUtilities.decideDistro() == ProcessUtilities.ubuntu:
@@ -479,7 +479,7 @@ class FTPManager:
 
             ### let see if this is needed the chdir
             cwd = os.getcwd()
-            os.chdir('/usr/local/CyberCP/install')
+            os.chdir('/usr/local/core/install')
             ftpdPath = "/etc/pure-ftpd"
             import shutil
 
@@ -632,8 +632,8 @@ class FTPManager:
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Resetting configurations..,40')
 
             import sys
-            sys.path.append('/usr/local/CyberCP')
-            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+            sys.path.append('/usr/local/core')
+            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
             from CyberCP import settings
 
             logging.CyberCPLogFileWriter.statusWriter(self.extraArgs['tempStatusPath'], 'Configurations reset..,70')

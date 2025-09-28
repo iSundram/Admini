@@ -4,8 +4,8 @@ import tornado.ioloop
 import tornado.web
 import sys
 import os
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
 import paramiko
 import os
@@ -139,7 +139,7 @@ application = tornado.web.Application([
 
 if __name__ == "__main__":
 
-    pidfile = '/usr/local/CyberCP/WebTerminal/pid'
+    pidfile = '/usr/local/core/WebTerminal/pid'
 
     writeToFile = open(pidfile, 'w')
     writeToFile.write(str(os.getpid()))

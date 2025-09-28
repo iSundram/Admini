@@ -30,14 +30,14 @@ echo -e "========================================\n" >> /var/log/cyberpanel_upgr
 
 #### this is temp code for csf
 
-rm -Rfv /usr/local/CyberCP/configservercsf
+rm -Rfv /usr/local/core/configservercsf
 rm -fv /home/cyberpanel/plugins/configservercsf
-rm -Rfv /usr/local/CyberCP/public/static/configservercsf
+rm -Rfv /usr/local/core/public/static/configservercsf
 
-sed -i "/configservercsf/d" /usr/local/CyberCP/CyberCP/settings.py
-sed -i "/configservercsf/d" /usr/local/CyberCP/CyberCP/urls.py
+sed -i "/configservercsf/d" /usr/local/core/CyberCP/settings.py
+sed -i "/configservercsf/d" /usr/local/core/CyberCP/urls.py
 if [ ! -e /etc/cxs/cxs.pl ]; then
-    sed -i "/configserver/d" /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html
+    sed -i "/configserver/d" /usr/local/core/baseTemplate/templates/baseTemplate/index.html
 fi
 #systemctl restart lscpd
 ### this is temp code for csf
@@ -262,7 +262,7 @@ fi
 # check command success or not
 
 Regenerate_Cert() {
-  cat <<EOF >/usr/local/CyberCP/cert_conf
+  cat <<EOF >/usr/local/core/cert_conf
 [req]
 prompt=no
 distinguished_name=cyberpanel
@@ -283,7 +283,7 @@ dnQualifier = CyberPanel
 extendedKeyUsage = 1.3.6.1.5.5.7.3.1
 EOF
   if [[ $1 == "8090" ]]; then
-    openssl req -x509 -config /usr/local/CyberCP/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout /usr/local/lscp/conf/key.pem -out /usr/local/lscp/conf/cert.pem
+    openssl req -x509 -config /usr/local/core/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout /usr/local/lscp/conf/key.pem -out /usr/local/lscp/conf/cert.pem
   fi
 
   if [[ $1 == "7080" ]]; then
@@ -294,9 +294,9 @@ EOF
       key_path="/usr/local/lsws/admin/conf/cert/admin.key"
       cert_path="/usr/local/lsws/admin/conf/cert/admin.crt"
     fi
-    openssl req -x509 -config /usr/local/CyberCP/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout $key_path -out $cert_path
+    openssl req -x509 -config /usr/local/core/cert_conf -extensions 'server_exts' -nodes -days 820 -newkey rsa:2048 -keyout $key_path -out $cert_path
   fi
-  rm -f /usr/local/CyberCP/cert_conf
+  rm -f /usr/local/core/cert_conf
 }
 
 Retry_Command() {
@@ -590,10 +590,10 @@ echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Checking CyberCP directory integrity..."
 
 # Define essential CyberCP components
 CYBERCP_ESSENTIAL_DIRS=(
-    "/usr/local/CyberCP/CyberCP"
-    "/usr/local/CyberCP/plogical"
-    "/usr/local/CyberCP/websiteFunctions"
-    "/usr/local/CyberCP/manage"
+    "/usr/local/core/CyberCP"
+    "/usr/local/core/plogical"
+    "/usr/local/core/websiteFunctions"
+    "/usr/local/core/manage"
 )
 
 CYBERCP_MISSING=0
@@ -609,9 +609,9 @@ if [ $CYBERCP_MISSING -eq 1 ]; then
     echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] RECOVERY: CyberCP installation appears damaged or incomplete. Initiating recovery..." | tee -a /var/log/cyberpanel_upgrade_debug.log
     
     # Backup any remaining configuration files if they exist
-    if [ -f "/usr/local/CyberCP/CyberCP/settings.py" ]; then
+    if [ -f "/usr/local/core/CyberCP/settings.py" ]; then
         echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Backing up existing settings.py..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-        cp /usr/local/CyberCP/CyberCP/settings.py /tmp/cyberpanel_settings_backup.py
+        cp /usr/local/core/CyberCP/settings.py /tmp/cyberpanel_settings_backup.py
     fi
     
     # Clone fresh CyberPanel repository
@@ -629,12 +629,12 @@ if [ $CYBERCP_MISSING -eq 1 ]; then
         # Copy missing components while preserving existing configurations
         for dir in "${CYBERCP_ESSENTIAL_DIRS[@]}"; do
             if [ ! -d "$dir" ]; then
-                # Extract relative path after /usr/local/CyberCP/
-                relative_path=${dir#/usr/local/CyberCP/}
-                if [ -d "/usr/local/CyberCP_recovery_tmp/$relative_path" ]; then
+                # Extract relative path after /usr/local/core/
+                relative_path=${dir#/usr/local/core/}
+                if [ -d "/usr/local/core_recovery_tmp/$relative_path" ]; then
                     echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Restoring missing directory: $dir" | tee -a /var/log/cyberpanel_upgrade_debug.log
                     mkdir -p "$(dirname "$dir")"
-                    cp -r "/usr/local/CyberCP_recovery_tmp/$relative_path" "$dir"
+                    cp -r "/usr/local/core_recovery_tmp/$relative_path" "$dir"
                 fi
             fi
         done
@@ -642,11 +642,11 @@ if [ $CYBERCP_MISSING -eq 1 ]; then
         # Restore settings.py if it was backed up
         if [ -f "/tmp/cyberpanel_settings_backup.py" ]; then
             echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Restoring backed up settings.py..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-            cp /tmp/cyberpanel_settings_backup.py /usr/local/CyberCP/CyberCP/settings.py
+            cp /tmp/cyberpanel_settings_backup.py /usr/local/core/CyberCP/settings.py
         fi
         
         # Clean up temporary clone
-        rm -rf /usr/local/CyberCP_recovery_tmp
+        rm -rf /usr/local/core_recovery_tmp
         
         echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Recovery completed. CyberCP structure restored." | tee -a /var/log/cyberpanel_upgrade_debug.log
     else
@@ -929,36 +929,36 @@ echo -e "\n[$(date +"%Y-%m-%d %H:%M:%S")] Starting post-upgrade cleanup..." | te
 
 # Check if we need to recreate due to Python 2
 NEEDS_RECREATE=0
-if [[ -f /usr/local/CyberCP/bin/python2 ]]; then
+if [[ -f /usr/local/core/bin/python2 ]]; then
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Found Python 2 in CyberCP, will recreate with Python 3..." | tee -a /var/log/cyberpanel_upgrade_debug.log
   NEEDS_RECREATE=1
 fi
 
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Removing old CyberCP virtual environment directories..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-rm -rf /usr/local/CyberCP/bin
-rm -rf /usr/local/CyberCP/lib
-rm -rf /usr/local/CyberCP/lib64
-rm -rf /usr/local/CyberCP/pyvenv.cfg
+rm -rf /usr/local/core/bin
+rm -rf /usr/local/core/lib
+rm -rf /usr/local/core/lib64
+rm -rf /usr/local/core/pyvenv.cfg
 
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Checking CyberCP virtual environment status after cleanup..." | tee -a /var/log/cyberpanel_upgrade_debug.log
 
 # After removing directories, we always need to recreate
-if [[ $NEEDS_RECREATE -eq 1 ]] || [[ ! -d /usr/local/CyberCP/bin ]]; then
+if [[ $NEEDS_RECREATE -eq 1 ]] || [[ ! -d /usr/local/core/bin ]]; then
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Creating/recreating CyberCP virtual environment with Python 3..." | tee -a /var/log/cyberpanel_upgrade_debug.log
   
   # First ensure the directory exists
-  mkdir -p /usr/local/CyberCP
+  mkdir -p /usr/local/core
   
   # For Ubuntu 22.04+, we need to handle virtualenv differently
   VENV_SUCCESS=0
   
   # First try using python3 -m venv (more reliable on Ubuntu 22.04)
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Attempting to create virtual environment using python3 -m venv..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-  virtualenv_output=$(python3 -m venv --system-site-packages /usr/local/CyberCP 2>&1)
+  virtualenv_output=$(python3 -m venv --system-site-packages /usr/local/core 2>&1)
   VENV_CODE=$?
   echo "$virtualenv_output" | tee -a /var/log/cyberpanel_upgrade_debug.log
   
-  if [[ $VENV_CODE -eq 0 ]] && [[ -f /usr/local/CyberCP/bin/activate ]]; then
+  if [[ $VENV_CODE -eq 0 ]] && [[ -f /usr/local/core/bin/activate ]]; then
     echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Virtual environment created successfully using python3 -m venv" | tee -a /var/log/cyberpanel_upgrade_debug.log
     VENV_SUCCESS=1
   else
@@ -978,9 +978,9 @@ if [[ $NEEDS_RECREATE -eq 1 ]] || [[ ! -d /usr/local/CyberCP/bin ]]; then
     if [[ "$Server_OS" = "CentOS" ]] && ([[ "$Server_OS_Version" = "9" ]] || [[ "$Server_OS_Version" = "10" ]]); then
       PYTHON_PATH=$(which python3 2>/dev/null || which python3.9 2>/dev/null || echo "/usr/bin/python3")
       echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Using Python path: $PYTHON_PATH" | tee -a /var/log/cyberpanel_upgrade_debug.log
-      virtualenv_output=$(virtualenv -p "$PYTHON_PATH" /usr/local/CyberCP 2>&1)
+      virtualenv_output=$(virtualenv -p "$PYTHON_PATH" /usr/local/core 2>&1)
     else
-      virtualenv_output=$(virtualenv -p /usr/bin/python3 /usr/local/CyberCP 2>&1)
+      virtualenv_output=$(virtualenv -p /usr/bin/python3 /usr/local/core 2>&1)
     fi
     VENV_CODE=$?
     echo "$virtualenv_output" | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -990,12 +990,12 @@ if [[ $NEEDS_RECREATE -eq 1 ]] || [[ ! -d /usr/local/CyberCP/bin ]]; then
       echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] WARNING: TypeError detected, attempting workaround..." | tee -a /var/log/cyberpanel_upgrade_debug.log
       
       # Try alternative method using explicit system-site-packages
-      virtualenv_output=$(virtualenv --python=/usr/bin/python3 --system-site-packages /usr/local/CyberCP 2>&1)
+      virtualenv_output=$(virtualenv --python=/usr/bin/python3 --system-site-packages /usr/local/core 2>&1)
       VENV_CODE=$?
       echo "$virtualenv_output" | tee -a /var/log/cyberpanel_upgrade_debug.log
     fi
     
-    if [[ -f /usr/local/CyberCP/bin/activate ]]; then
+    if [[ -f /usr/local/core/bin/activate ]]; then
       echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Virtual environment created successfully" | tee -a /var/log/cyberpanel_upgrade_debug.log
       VENV_SUCCESS=1
       VENV_CODE=0
@@ -1015,7 +1015,7 @@ if [[ $NEEDS_RECREATE -eq 1 ]] || [[ ! -d /usr/local/CyberCP/bin ]]; then
   fi
 else
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] CyberCP virtualenv already exists, skipping recreation" | tee -a /var/log/cyberpanel_upgrade_debug.log
-  echo -e "\nNo need to re-setup virtualenv at /usr/local/CyberCP...\n"
+  echo -e "\nNo need to re-setup virtualenv at /usr/local/core...\n"
 fi
 
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Removing old requirements file..." | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -1028,7 +1028,7 @@ echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Installing Python packages..." | tee -a 
 if [ "$Server_OS" = "Ubuntu" ]; then
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Ubuntu detected, activating virtual environment..." | tee -a /var/log/cyberpanel_upgrade_debug.log
   # shellcheck disable=SC1091
-  . /usr/local/CyberCP/bin/activate 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
+  . /usr/local/core/bin/activate 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
   ACTIVATE_CODE=$?
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Activate returned code: $ACTIVATE_CODE" | tee -a /var/log/cyberpanel_upgrade_debug.log
   Check_Return
@@ -1042,12 +1042,12 @@ if [ "$Server_OS" = "Ubuntu" ]; then
 else
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Non-Ubuntu OS, activating virtual environment..." | tee -a /var/log/cyberpanel_upgrade_debug.log
   # shellcheck disable=SC1091
-  source /usr/local/CyberCP/bin/activate 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
+  source /usr/local/core/bin/activate 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
   ACTIVATE_CODE=$?
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Activate returned code: $ACTIVATE_CODE" | tee -a /var/log/cyberpanel_upgrade_debug.log
   Check_Return
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Installing requirements..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-  /usr/local/CyberCP/bin/pip3 install --default-timeout=3600 --ignore-installed -r /usr/local/requirments.txt 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
+  /usr/local/core/bin/pip3 install --default-timeout=3600 --ignore-installed -r /usr/local/requirments.txt 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
   PIP_CODE=$?
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Pip install returned code: $PIP_CODE" | tee -a /var/log/cyberpanel_upgrade_debug.log
   Check_Return
@@ -1055,11 +1055,11 @@ fi
 
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Verifying Django installation..." | tee -a /var/log/cyberpanel_upgrade_debug.log
 # Test if Django is installed
-if ! /usr/local/CyberCP/bin/python -c "import django" 2>/dev/null; then
+if ! /usr/local/core/bin/python -c "import django" 2>/dev/null; then
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] WARNING: Django not found, installing requirements again..." | tee -a /var/log/cyberpanel_upgrade_debug.log
   
   # Re-activate virtual environment
-  source /usr/local/CyberCP/bin/activate
+  source /usr/local/core/bin/activate
   
   # Re-install requirements
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Re-installing Python requirements..." | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -1086,15 +1086,15 @@ echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Configuring WSGI..." | tee -a /var/log/c
 make 2>&1 | tee -a /var/log/cyberpanel_upgrade_debug.log
 
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Installing lswsgi binary..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-rm -f /usr/local/CyberCP/bin/lswsgi
-cp lswsgi /usr/local/CyberCP/bin/
+rm -f /usr/local/core/bin/lswsgi
+cp lswsgi /usr/local/core/bin/
 
 # Return to original directory
 cd "$UPGRADE_CWD" || cd /root
 
 # Final verification
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Running final verification..." | tee -a /var/log/cyberpanel_upgrade_debug.log
-if /usr/local/CyberCP/bin/python -c "import django" 2>/dev/null && [[ -f /usr/local/CyberCP/bin/lswsgi ]]; then
+if /usr/local/core/bin/python -c "import django" 2>/dev/null && [[ -f /usr/local/core/bin/lswsgi ]]; then
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] All components successfully installed!" | tee -a /var/log/cyberpanel_upgrade_debug.log
 else
   echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] WARNING: Some components may be missing, check logs" | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -1162,13 +1162,13 @@ Post_Upgrade_System_Tweak() {
     fi
   fi
 
-sed -i "s|lsws-5.3.8|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i "s|lsws-5.4.2|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-sed -i "s|lsws-5.3.5|lsws-$LSWS_Stable_Version|g" /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.3.8|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.4.2|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
+sed -i "s|lsws-5.3.5|lsws-$LSWS_Stable_Version|g" /usr/local/core/serverStatus/serverStatusUtil.py
 
 if [[ "$Server_Country" = "CN" ]] ; then
-  sed -i 's|https://www.litespeedtech.com/|https://cyberpanel.sh/www.litespeedtech.com/|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
-  sed -i 's|http://license.litespeedtech.com/|https://cyberpanel.sh/license.litespeedtech.com/|g' /usr/local/CyberCP/serverStatus/serverStatusUtil.py
+  sed -i 's|https://www.litespeedtech.com/|https://cyberpanel.sh/www.litespeedtech.com/|g' /usr/local/core/serverStatus/serverStatusUtil.py
+  sed -i 's|http://license.litespeedtech.com/|https://cyberpanel.sh/license.litespeedtech.com/|g' /usr/local/core/serverStatus/serverStatusUtil.py
 fi
 
 sed -i 's|python2|python|g' /usr/bin/adminPass
@@ -1209,7 +1209,7 @@ if [[ -f /etc/cyberpanel/watchdog.sh ]] ; then
 	watchdog kill
 	rm -f /etc/cyberpanel/watchdog.sh
 	rm -f /usr/local/bin/watchdog
-	wget -O /etc/cyberpanel/watchdog.sh "${Git_Content_URL}/${Branch_Name}/CPScripts/watchdog.sh"
+	wget -O /etc/cyberpanel/watchdog.sh "${Git_Content_URL}/${Branch_Name}/utils/watchdog.sh"
 	chmod 700 /etc/cyberpanel/watchdog.sh
 	ln -s /etc/cyberpanel/watchdog.sh /usr/local/bin/watchdog
 	watchdog status
@@ -1219,8 +1219,8 @@ fi
 rm -f /usr/local/composer.sh
 rm -f /usr/local/requirments.txt
 
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib
-chown -R cyberpanel:cyberpanel /usr/local/CyberCP/lib64
+chown -R cyberpanel:cyberpanel /usr/local/core/lib
+chown -R cyberpanel:cyberpanel /usr/local/core/lib64
 
 # Fix missing lsphp binary in /usr/local/lscp/fcgi-bin/ after upgrade
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Checking and restoring lsphp binary if missing..." | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -1331,15 +1331,15 @@ if [[ ! -f /usr/local/lscp/bin/lscpd ]] || [[ ! -s /usr/local/lscp/bin/lscpd ]];
     echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Selected lscpd binary: $lscpd_selection" | tee -a /var/log/cyberpanel_upgrade_debug.log
 
     # Copy the selected binary from CyberCP to lscp bin
-    if [[ -f /usr/local/CyberCP/${lscpd_selection} ]]; then
-        cp -f /usr/local/CyberCP/${lscpd_selection} /usr/local/lscp/bin/${lscpd_selection}
+    if [[ -f /usr/local/core/${lscpd_selection} ]]; then
+        cp -f /usr/local/core/${lscpd_selection} /usr/local/lscp/bin/${lscpd_selection}
         rm -f /usr/local/lscp/bin/lscpd
         mv /usr/local/lscp/bin/${lscpd_selection} /usr/local/lscp/bin/lscpd
         chmod 755 /usr/local/lscp/bin/lscpd
         chown root:root /usr/local/lscp/bin/lscpd
         echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] lscpd binary restored successfully from ${lscpd_selection}" | tee -a /var/log/cyberpanel_upgrade_debug.log
     else
-        echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] ERROR: Could not find lscpd source binary ${lscpd_selection} in /usr/local/CyberCP/" | tee -a /var/log/cyberpanel_upgrade_debug.log
+        echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] ERROR: Could not find lscpd source binary ${lscpd_selection} in /usr/local/core/" | tee -a /var/log/cyberpanel_upgrade_debug.log
     fi
 else
     echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] lscpd binary exists and is valid" | tee -a /var/log/cyberpanel_upgrade_debug.log
@@ -1349,7 +1349,7 @@ if [[ "$Server_OS_Version" = "9" ]] || [[ "$Server_OS_Version" = "10" ]] || [[ "
     echo "PYTHONHOME=/usr" > /usr/local/lscp/conf/pythonenv.conf
   else
     # Uncomment and use the following lines if necessary for other OS versions
-    # rsync -av --ignore-existing /usr/lib64/python3.9/ /usr/local/CyberCP/lib64/python3.9/
+    # rsync -av --ignore-existing /usr/lib64/python3.9/ /usr/local/core/lib64/python3.9/
     # Check_Return
     :
 fi
@@ -1380,7 +1380,7 @@ echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Set SnappyMail data directory permission
 usermod -a -G lscpd nobody 2>/dev/null || true
 
 # Fix SnappyMail public directory ownership (critical fix)
-chown -R lscpd:lscpd /usr/local/CyberCP/public/snappymail/data 2>/dev/null || true
+chown -R lscpd:lscpd /usr/local/core/public/snappymail/data 2>/dev/null || true
 echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] Added web server users to lscpd group and fixed SnappyMail ownership" | tee -a /var/log/cyberpanel_upgrade_debug.log
 
 systemctl restart lscpd

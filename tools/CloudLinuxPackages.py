@@ -1,9 +1,9 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import sys
 import os.path
 import django
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:
@@ -11,7 +11,7 @@ except:
 from packages.models import Package
 import argparse
 import json
-from CLScript.CLMain import CLMain
+from tools.CLMain import CLMain
 from loginSystem.models import Administrator
 
 

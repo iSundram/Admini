@@ -3,9 +3,9 @@ import shutil
 import urllib
 from urllib.parse import unquote
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 try:
     django.setup()
 except:
@@ -987,7 +987,7 @@ password=%s
     def allowRemoteAccess(dbName, userName, remoteIP):
         try:
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/plogical/mysqlUtilities.py enableRemoteMYSQL"
+            execPath = "/usr/local/core/bin/python /usr/local/core/plogical/mysqlUtilities.py enableRemoteMYSQL"
             ProcessUtilities.executioner(execPath)
 
             return 1

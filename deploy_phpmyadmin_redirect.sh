@@ -12,25 +12,25 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Backup original phpMyAdmin index.php if it exists
-if [ -f "/usr/local/CyberCP/public/phpmyadmin/index.php" ]; then
+if [ -f "/usr/local/core/public/phpmyadmin/index.php" ]; then
     echo "Backing up original phpMyAdmin index.php..."
-    cp /usr/local/CyberCP/public/phpmyadmin/index.php /usr/local/CyberCP/public/phpmyadmin/index.php.backup.$(date +%Y%m%d_%H%M%S)
+    cp /usr/local/core/public/phpmyadmin/index.php /usr/local/core/public/phpmyadmin/index.php.backup.$(date +%Y%m%d_%H%M%S)
 fi
 
 # Deploy the redirect index.php
 echo "Deploying phpMyAdmin access control..."
-cp /usr/local/CyberCP/phpmyadmin_index_redirect.php /usr/local/CyberCP/public/phpmyadmin/index.php
+cp /usr/local/core/phpmyadmin_index_redirect.php /usr/local/core/public/phpmyadmin/index.php
 
 # Deploy .htaccess for additional protection
 echo "Deploying .htaccess protection..."
-cp /usr/local/CyberCP/phpmyadmin_htaccess /usr/local/CyberCP/public/phpmyadmin/.htaccess
+cp /usr/local/core/phpmyadmin_htaccess /usr/local/core/public/phpmyadmin/.htaccess
 
 # Set proper permissions
 echo "Setting permissions..."
-chown lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/index.php
-chmod 644 /usr/local/CyberCP/public/phpmyadmin/index.php
-chown lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/.htaccess
-chmod 644 /usr/local/CyberCP/public/phpmyadmin/.htaccess
+chown lscpd:lscpd /usr/local/core/public/phpmyadmin/index.php
+chmod 644 /usr/local/core/public/phpmyadmin/index.php
+chown lscpd:lscpd /usr/local/core/public/phpmyadmin/.htaccess
+chmod 644 /usr/local/core/public/phpmyadmin/.htaccess
 
 # Restart LiteSpeed to ensure changes take effect
 echo "Restarting LiteSpeed..."
@@ -46,7 +46,7 @@ echo "  will now be redirected to the CyberPanel login page (/base/)"
 echo "- Authenticated users will continue to access phpMyAdmin normally"
 echo ""
 echo "To revert changes, restore the backup:"
-echo "cp /usr/local/CyberCP/public/phpmyadmin/index.php.backup.* /usr/local/CyberCP/public/phpmyadmin/index.php"
+echo "cp /usr/local/core/public/phpmyadmin/index.php.backup.* /usr/local/core/public/phpmyadmin/index.php"
 echo ""
 echo "Test the implementation by:"
 echo "1. Opening an incognito/private browser window"

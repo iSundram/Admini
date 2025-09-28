@@ -27,7 +27,7 @@ def terminal(request):
 
     ## setting up ssh server
     path = '/etc/systemd/system/cpssh.service'
-    curPath = '/usr/local/CyberCP/WebTerminal/cpssh.service'
+    curPath = '/usr/local/core/WebTerminal/cpssh.service'
 
     if not os.path.exists(path):
         command = 'mv %s %s' % (curPath, path)

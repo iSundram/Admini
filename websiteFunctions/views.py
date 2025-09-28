@@ -1540,7 +1540,7 @@ def sshAccess(request, domain):
         #     local_service_path = 'fastapi_ssh_server.service'
         #     check_service = ProcessUtilities.outputExecutioner(f'test -f {service_path} && echo exists || echo missing')
         #     if 'missing' in check_service:
-        #         ProcessUtilities.outputExecutioner(f'cp /usr/local/CyberCP/fastapi_ssh_server.service {service_path}')
+        #         ProcessUtilities.outputExecutioner(f'cp /usr/local/core/fastapi_ssh_server.service {service_path}')
         #         ProcessUtilities.outputExecutioner('systemctl daemon-reload')
         # except Exception as e:
         #     CyberCPLogFileWriter.writeLog(f"Failed to copy or reload fastapi_ssh_server.service: {e}")
@@ -2143,7 +2143,7 @@ def get_terminal_jwt(request):
         # Read JWT_SECRET from fastapi_ssh_server.py using ProcessUtilities
         jwt_secret = None
         try:
-            content = ProcessUtilities.outputExecutioner('cat /usr/local/CyberCP/fastapi_ssh_server.py')
+            content = ProcessUtilities.outputExecutioner('cat /usr/local/core/fastapi_ssh_server.py')
             for line in content.splitlines():
                 m = re.match(r'\s*JWT_SECRET\s*=\s*[\'"](.+)[\'"]', line)
                 if m and m.group(1) != 'REPLACE_ME_WITH_INSTALLER':

@@ -748,7 +748,7 @@ class FileManager:
                 self.data['home'] = '/home/%s' % (self.data['domainName'])
 
                 ACLManager.CreateSecureDir()
-                tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', str(randint(1000, 9999)))
+                tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
 
                 domainName = self.data['domainName']
                 website = Websites.objects.get(domain=domainName)
@@ -768,7 +768,7 @@ class FileManager:
                 self.data['home'] = '/'
 
                 ACLManager.CreateSecureDir()
-                tempPath = '%s/%s' % ('/usr/local/CyberCP/tmp', str(randint(1000, 9999)))
+                tempPath = '%s/%s' % ('/usr/local/core/tmp', str(randint(1000, 9999)))
                 writeToFile = open(tempPath, 'wb')
                 writeToFile.write(self.data['fileContent'].encode('utf-8'))
                 writeToFile.close()
@@ -793,7 +793,7 @@ class FileManager:
             finalData['answer'] = 'File transfer completed.'
 
             ACLManager.CreateSecureDir()
-            UploadPath = '/usr/local/CyberCP/tmp/'
+            UploadPath = '/usr/local/core/tmp/'
 
             ## Random file name
 

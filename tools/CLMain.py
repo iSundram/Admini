@@ -2,7 +2,7 @@ import json
 
 class CLMain():
     def __init__(self):
-        self.path = '/usr/local/CyberCP/version.txt'
+        self.path = '/usr/local/core/version.txt'
         #versionInfo = json.loads(open(self.path, 'r').read())
         self.version = '2.4'
         self.build = '4'

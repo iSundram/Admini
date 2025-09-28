@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
@@ -10,8 +10,8 @@ import django
 # SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 # sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 from random import randint
 
 django.setup()
@@ -35,7 +35,7 @@ try:
     from websiteFunctions.models import Websites, ChildDomains, aliasDomains
     from loginSystem.models import Administrator
     from packages.models import Package
-    from CLManager.models import CLPackages
+    from manager.models import CLPackages
 except:
     pass
 
@@ -49,7 +49,7 @@ class virtualHostUtilities:
     lsws = 3
 
     Server_root = "/usr/local/lsws"
-    cyberPanel = "/usr/local/CyberCP"
+    cyberPanel = "/usr/local/core"
     redisConf = '/usr/local/lsws/conf/dvhost_redis.conf'
     vhostConfPath = '/usr/local/lsws/conf'
 
@@ -1816,7 +1816,7 @@ local_name %s {
 
             confPath = f'{virtualHostUtilities.vhostConfPath}/vhosts/{vhostName}/vhost.conf'
             htpassword = f'{vhostPassDir}/{wpid}'
-            htpasstemp = f'/usr/local/CyberCP/{wpid}'
+            htpasstemp = f'/usr/local/core/{wpid}'
 
             command = f'touch {htpasstemp}'
             ProcessUtilities.executioner(command)

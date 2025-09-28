@@ -1,8 +1,8 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 import json
-from CLScript.CLMain import CLMain
+from tools.CLMain import CLMain
 
 
 class PanelInfo(CLMain):

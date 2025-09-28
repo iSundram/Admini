@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import subprocess
 import threading as multi
 from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
@@ -90,7 +90,7 @@ class StagingSetup(multi.Thread):
 
             logging.statusWriter(tempStatusPath, 'Creating domain for staging environment..,5')
             phpSelection = website.phpSelection
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/virtualHostUtilities.py"
 
             execPath = execPath + " createDomain --masterDomain " + masterDomain + " --virtualHostName " + domain + \
                        " --phpVersion '" + phpSelection + "' --ssl 1 --dkimCheck 0 --openBasedir 0 --path " + path + ' --websiteOwner ' \

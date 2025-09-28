@@ -12,7 +12,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Find the most recent backup
-LATEST_BACKUP=$(ls -t /usr/local/CyberCP/public/phpmyadmin/index.php.backup.* 2>/dev/null | head -n1)
+LATEST_BACKUP=$(ls -t /usr/local/core/public/phpmyadmin/index.php.backup.* 2>/dev/null | head -n1)
 
 if [ -z "$LATEST_BACKUP" ]; then
     echo "No backup found. Cannot rollback changes."
@@ -24,18 +24,18 @@ echo "Found backup: $LATEST_BACKUP"
 echo "Restoring original phpMyAdmin index.php..."
 
 # Restore the original index.php
-cp "$LATEST_BACKUP" /usr/local/CyberCP/public/phpmyadmin/index.php
+cp "$LATEST_BACKUP" /usr/local/core/public/phpmyadmin/index.php
 
 # Remove the .htaccess file if it exists
-if [ -f "/usr/local/CyberCP/public/phpmyadmin/.htaccess" ]; then
+if [ -f "/usr/local/core/public/phpmyadmin/.htaccess" ]; then
     echo "Removing .htaccess file..."
-    rm /usr/local/CyberCP/public/phpmyadmin/.htaccess
+    rm /usr/local/core/public/phpmyadmin/.htaccess
 fi
 
 # Set proper permissions
 echo "Setting permissions..."
-chown lscpd:lscpd /usr/local/CyberCP/public/phpmyadmin/index.php
-chmod 644 /usr/local/CyberCP/public/phpmyadmin/index.php
+chown lscpd:lscpd /usr/local/core/public/phpmyadmin/index.php
+chmod 644 /usr/local/core/public/phpmyadmin/index.php
 
 # Restart LiteSpeed to ensure changes take effect
 echo "Restarting LiteSpeed..."

@@ -1,16 +1,16 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import subprocess, signal
 import shlex
 import argparse
 import os
 import sys
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical.CyberCPLogFileWriter import CyberCPLogFileWriter as logging
 
 
 class policyCTRL:
-    applicationPath = '/usr/local/CyberCP/postfixSenderPolicy/pid'
-    cleaningPID = '/usr/local/CyberCP/postfixSenderPolicy/cpid'
+    applicationPath = '/usr/local/core/postfixSenderPolicy/pid'
+    cleaningPID = '/usr/local/core/postfixSenderPolicy/cpid'
 
     def prepareArguments(self):
 
@@ -24,7 +24,7 @@ class policyCTRL:
         if os.path.exists(policyCTRL.applicationPath):
             self.stop()
 
-        command = '/usr/local/CyberCP/postfixSenderPolicy/startServer.py'
+        command = '/usr/local/core/postfixSenderPolicy/startServer.py'
         subprocess.Popen(shlex.split(command))
 
     def stop(self):

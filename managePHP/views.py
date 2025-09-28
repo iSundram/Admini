@@ -1408,10 +1408,10 @@ def submitExtensionRequest(request):
                 type = data['type']
 
                 if type == "install":
-                    execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
+                    execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
                     execPath = execPath + " installPHPExtension --extension " + extensionName
                 else:
-                    execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
+                    execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
                     execPath = execPath + " unInstallPHPExtension --extension " + extensionName
 
                 ProcessUtilities.popenExecutioner(execPath)
@@ -1835,7 +1835,7 @@ def savePHPConfigBasic(request):
 
                 ##
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
                 execPath = execPath + " savePHPConfigBasic --phpVers '" + phpVers + "' --allow_url_fopen '" + allow_url_fopen +\
                            "' --display_errors '" + display_errors + "' --file_uploads '" + file_uploads + "' --allow_url_include '" \
                            + allow_url_include + "' --memory_limit " + memory_limit + " --max_execution_time " + \
@@ -1925,7 +1925,7 @@ def savePHPConfigAdvance(request):
                 vhost.write(data['configData'])
                 vhost.close()
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/phpUtilities.py"
                 execPath = execPath + " savePHPConfigAdvance --phpVers " + path + " --tempPath " + tempPath
 
                 output = ProcessUtilities.outputExecutioner(execPath)

@@ -1,4 +1,4 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import os
 import os.path
 import sys
@@ -7,8 +7,8 @@ import django
 from loginSystem.models import Administrator
 from plogical.httpProc import httpProc
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 import json
 from plogical.acl import ACLManager
@@ -456,7 +456,7 @@ class FirewallManager:
             else:
                 rootLogin = "0"
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
             execPath = execPath + " saveSSHConfigs --type " + str(type) + " --sshPort " + sshPort + " --rootLogin " + rootLogin
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -511,7 +511,7 @@ class FirewallManager:
 
             key = data['key']
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
             execPath = execPath + " deleteSSHKey --key '" + key + "'"
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -547,7 +547,7 @@ class FirewallManager:
             writeToFile.write(key)
             writeToFile.close()
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/firewallUtilities.py"
             execPath = execPath + " addSSHKey --tempPath " + tempPath
 
             output = ProcessUtilities.outputExecutioner(execPath)
@@ -597,7 +597,7 @@ class FirewallManager:
             else:
                 return ACLManager.loadErrorJson('installModSec', 0)
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
             execPath = execPath + " installModSec"
 
             ProcessUtilities.popenExecutioner(execPath)
@@ -620,7 +620,7 @@ class FirewallManager:
 
             if installStatus.find("[200]") > -1:
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
                 execPath = execPath + " installModSecConfigs"
 
                 output = ProcessUtilities.outputExecutioner(execPath)
@@ -865,7 +865,7 @@ class FirewallManager:
 
                 ## save configuration data
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
 
                 execPath = execPath + " saveModSecConfigs --tempConfigPath " + tempConfigPath
 
@@ -920,7 +920,7 @@ class FirewallManager:
 
                 ## save configuration data
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
 
                 execPath = execPath + " saveModSecConfigs --tempConfigPath " + tempConfigPath
 
@@ -1036,7 +1036,7 @@ class FirewallManager:
 
             ## save configuration data
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
             execPath = execPath + " saveModSecRules"
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1179,7 +1179,7 @@ class FirewallManager:
 
             if ProcessUtilities.decideServer() == ProcessUtilities.OLS:
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
                 execPath = execPath + " " + packName
 
                 output = ProcessUtilities.outputExecutioner(execPath)
@@ -1197,7 +1197,7 @@ class FirewallManager:
                 #     final_json = json.dumps({'installStatus': 0, 'error_message': "OWASP will be available later.", })
                 #     return HttpResponse(final_json)
 
-                execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+                execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
                 execPath = execPath + " " + packName
                 output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1369,7 +1369,7 @@ class FirewallManager:
             else:
                 functionName = 'enableRuleFile'
 
-            execPath = "/usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
+            execPath = "/usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/modSec.py"
 
             execPath = execPath + " " + functionName + ' --packName ' + packName + ' --fileName "%s"' % (fileName)
 
@@ -1414,7 +1414,7 @@ class FirewallManager:
             else:
                 return ACLManager.loadErrorJson('installStatus', 0)
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " installCSF"
 
             ProcessUtilities.popenExecutioner(execPath)
@@ -1482,7 +1482,7 @@ class FirewallManager:
             else:
                 return ACLManager.loadErrorJson('installStatus', 0)
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " removeCSF"
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1541,7 +1541,7 @@ class FirewallManager:
             controller = data['controller']
             status = data['status']
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " changeStatus --controller " + controller + " --status " + status
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1585,7 +1585,7 @@ class FirewallManager:
             command = 'chmod 600 %s' % (portsPath)
             ProcessUtilities.executioner(command)
 
-            execPath = "sudo /usr/local/CyberCP/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
+            execPath = "sudo /usr/local/core/bin/python " + virtualHostUtilities.cyberPanel + "/plogical/csf.py"
             execPath = execPath + " modifyPorts --protocol " + protocol + " --ports " + portsPath
             output = ProcessUtilities.outputExecutioner(execPath)
 
@@ -1679,7 +1679,7 @@ class FirewallManager:
 
             data = json.loads(self.request.body)
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
             execPath = execPath + " --function submitinstallImunify --key %s" % (data['key'])
             ProcessUtilities.popenExecutioner(execPath)
 
@@ -1728,7 +1728,7 @@ class FirewallManager:
                                                           1)
                 return 0
 
-            execPath = "/usr/local/CyberCP/bin/python /usr/local/CyberCP/CLManager/CageFS.py"
+            execPath = "/usr/local/core/bin/python /usr/local/core/CLManager/CageFS.py"
             execPath = execPath + " --function submitinstallImunifyAV"
             ProcessUtilities.popenExecutioner(execPath)
 

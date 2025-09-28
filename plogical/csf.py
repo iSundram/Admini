@@ -1,7 +1,7 @@
-#!/usr/local/CyberCP/bin/python
+#!/usr/local/core/bin/python
 import sys
 
-sys.path.append('/usr/local/CyberCP')
+sys.path.append('/usr/local/core')
 from plogical import CyberCPLogFileWriter as logging
 import subprocess
 import shlex
@@ -63,8 +63,8 @@ import os.path
 import sys
 import django
 
-sys.path.append('/usr/local/CyberCP')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CyberCP.settings")
+sys.path.append('/usr/local/core')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 django.setup()
 from plogical.acl import ACLManager
 
@@ -664,29 +664,29 @@ fi
 chown -Rf root:root /etc/csf /var/lib/csf /usr/local/csf
 chown -f root:root /usr/sbin/csf /usr/sbin/lfd /etc/logrotate.d/lfd /etc/cron.d/csf-cron /etc/cron.d/lfd-cron /usr/local/man/man1/csf.1 /usr/lib/systemd/system/lfd.service /usr/lib/systemd/system/csf.service /etc/init.d/lfd /etc/init.d/csf
 
-mkdir -vp /usr/local/CyberCP/public/static/configservercsf/
-cp -avf csf/* /usr/local/CyberCP/public/static/configservercsf/
+mkdir -vp /usr/local/core/public/static/configservercsf/
+cp -avf csf/* /usr/local/core/public/static/configservercsf/
 cp -avf csf/* cyberpanel/configservercsf/static/configservercsf/
-chmod 755 /usr/local/CyberCP/public/static/configservercsf/
+chmod 755 /usr/local/core/public/static/configservercsf/
 
 cp cyberpanel/cyberpanel.pl /usr/local/csf/bin/
 chmod 700 /usr/local/csf/bin/cyberpanel.pl
-cp -avf cyberpanel/configservercsf /usr/local/CyberCP/
+cp -avf cyberpanel/configservercsf /usr/local/core/
 
 mkdir /home/cyberpanel/plugins
 touch /home/cyberpanel/plugins/configservercsf
 
-if ! cat /usr/local/CyberCP/CyberCP/settings.py | grep -q configservercsf; then
-    sed -i "/pluginHolder/ i \ \ \ \ 'configservercsf'," /usr/local/CyberCP/CyberCP/settings.py
+if ! cat /usr/local/core/CyberCP/settings.py | grep -q configservercsf; then
+    sed -i "/pluginHolder/ i \ \ \ \ 'configservercsf'," /usr/local/core/CyberCP/settings.py
 fi
-if ! cat /usr/local/CyberCP/CyberCP/urls.py | grep -q configservercsf; then
-    sed -i "/pluginHolder/ i \ \ \ \ path('configservercsf/',include('configservercsf.urls'))," /usr/local/CyberCP/CyberCP/urls.py
+if ! cat /usr/local/core/CyberCP/urls.py | grep -q configservercsf; then
+    sed -i "/pluginHolder/ i \ \ \ \ path('configservercsf/',include('configservercsf.urls'))," /usr/local/core/CyberCP/urls.py
 fi
-#if ! cat /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html | grep -q configservercsf; then
-#    sed -i "/url 'csf'/ i <li><a href='/configservercsf/' title='ConfigServer Security and Firewall'><span>ConfigServer Security \&amp; Firewall</span></a></li>" /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html
+#if ! cat /usr/local/core/baseTemplate/templates/baseTemplate/index.html | grep -q configservercsf; then
+#    sed -i "/url 'csf'/ i <li><a href='/configservercsf/' title='ConfigServer Security and Firewall'><span>ConfigServer Security \&amp; Firewall</span></a></li>" /usr/local/core/baseTemplate/templates/baseTemplate/index.html
 #fi
-#if ! cat /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html | grep -q configserver; then
-#    sed -i "/trans 'Plugins'/ i \{\% include \"/usr/local/CyberCP/configservercsf/templates/configservercsf/menu.html\" \%\}" /usr/local/CyberCP/baseTemplate/templates/baseTemplate/index.html
+#if ! cat /usr/local/core/baseTemplate/templates/baseTemplate/index.html | grep -q configserver; then
+#    sed -i "/trans 'Plugins'/ i \{\% include \"/usr/local/core/configservercsf/templates/configservercsf/menu.html\" \%\}" /usr/local/core/baseTemplate/templates/baseTemplate/index.html
 #fi
 
 service lscpd restart
@@ -1032,7 +1032,7 @@ echo
             cmd = shlex.split(command)
             subprocess.call(cmd)
 
-            os.chdir('/usr/local/CyberCP')
+            os.chdir('/usr/local/core')
 
             #
 
